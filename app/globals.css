@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brevo-light: #F0FDF4;
+  --color-brevo-green: #10B981;
+  --color-brevo-dark: #065F46;
+}
+
+body {
+  background-color: var(--color-brevo-light);
+  color: rgb(17 24 39);
+}
