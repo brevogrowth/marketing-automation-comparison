@@ -78,53 +78,132 @@ export const BenchmarkGrid = ({
                                                 <p className="text-xs text-gray-500">{range.insight}</p>
                                             </div>
 
-                                            {/* Market Range Visual */}
+                                            {/* Combined Market Visual & Input */}
                                             <div className="flex-1 min-w-[300px]">
+                                                {/* Market Range Labels */}
                                                 <div className="flex justify-between text-xs text-gray-500 mb-2">
                                                     <span>Low: {range.low}{kpi.unit}</span>
                                                     <span className="font-medium text-gray-900">Median: {range.median}{kpi.unit}</span>
                                                     <span>High: {range.high}{kpi.unit}</span>
                                                 </div>
-                                                <div className="h-2 bg-gray-100 rounded-full overflow-hidden relative">
-                                                    {/* Median Marker */}
-                                                    <div className="absolute top-0 bottom-0 bg-gray-300 w-1 left-1/2 transform -translate-x-1/2" />
 
-                                                    {/* User Value Marker (if comparing) */}
-                                                    {isComparing && userVal && (
-                                                        <div
-                                                            className={`absolute top-0 bottom-0 w-2 rounded-full transform -translate-x-1/2 transition-all duration-500 ${status === 'good' ? 'bg-green-500' : status === 'bad' ? 'bg-red-500' : 'bg-yellow-500'
-                                                                }`}
-                                                            style={{
-                                                                left: `${Math.min(Math.max(((parseFloat(userVal) - range.low) / (range.high - range.low)) * 50 + 25, 0), 100)}%`
-                                                            }}
-                                                        />
-                                                    )}
-                                                </div>
-                                            </div>
+                                                {!isComparing ? (
+                                                    /* Static Market Bar (View Only) */
+                                                    <div className="h-2 bg-gray-100 rounded-full overflow-hidden relative">
+                                                        <div className="absolute top-0 bottom-0 bg-gray-300 w-1 left-1/2 transform -translate-x-1/2" />
+                                                    </div>
+                                                ) : (
+                                                    /* Interactive Slider (Analysis Mode) */
+                                                    <div className="animate-fade-in-up">
+                                                        <div className="relative h-8 flex items-center">
+                                                            <input
+                                                                type="range"
+                                                                min={0}
+                                                                max={parseFloat(range.high.toString()) * 2}
+                                                                step={kpi.unit === '%' ? 0.1 : 1}
+                                                                value={userVal || 0}
+                                                                onChange={(e) => onValueChange(kpi.id, e.target.value)}
+                                                                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-brevo-green z-10 relative"
+                                                            />
+                                                            {/* Median Marker on Slider Track */}
+                                                            <div
+                                                                className="absolute top-3 bottom-3 bg-gray-400 w-0.5 z-0 pointer-events-none"
+                                                                style={{ left: '50%' }} // Approximate median for visual reference
+                                                            />
+                                                        </div>
 
-                                            {/* User Input (Comparison Mode) */}
-                                            {isComparing && (
-                                                <div className="w-full md:w-32 animate-fade-in-up">
-                                                    <label className="block text-xs font-medium text-gray-500 mb-1">
-                                                        My Value
-                                                    </label>
-                                                    <div className="relative rounded-md shadow-sm">
-                                                        <input
-                                                            type="number"
-                                                            value={userVal}
-                                                            onChange={(e) => onValueChange(kpi.id, e.target.value)}
-                                                            className={`block w-full rounded-md sm:text-sm p-2 border ${status === 'good' ? 'border-green-300 focus:border-green-500 focus:ring-green-500 bg-green-50' :
-                                                                status === 'bad' ? 'border-red-300 focus:border-red-500 focus:ring-red-500 bg-red-50' :
-                                                                    'border-gray-200 focus:border-brevo-green focus:ring-brevo-green'
-                                                                }`}
-                                                            placeholder="-"
-                                                        />
-                                                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                                                            <span className="text-gray-500 sm:text-xs">{kpi.unit}</span>
+                                                        <div className="flex justify-between items-start mt-2 gap-4">
+                                                            {/* Feedback Text */}
+                                                            <span className={`text-xs italic font-medium transition-all duration-300 flex-1 ${status === 'good' ? 'text-brevo-green' :
+                                                                status === 'bad' ? 'text-red-500' : 'text-gray-400'
+                                                                }`}>
+                                                                {(() => {
+                                                                    if (!userVal) return 'Move the slider to set your value';
+                                                                    const val = parseFloat(userVal);
+                                                                    const lowerIsBetter = ['cac', 'return_rate', 'cart_abandon', 'marketing_spend', 'churn_rate'].includes(kpi.id);
+
+                                                                    // Define levels: 0=Disaster, 1=Bad, 2=Average, 3=Good, 4=Amazing
+                                                                    let level = 2;
+                                                                    if (lowerIsBetter) {
+                                                                        if (val > range.high * 1.5) level = 0;
+                                                                        else if (val > range.high) level = 1;
+                                                                        else if (val > range.median) level = 2;
+                                                                        else if (val <= range.low * 0.8) level = 4;
+                                                                        else level = 3;
+                                                                    } else {
+                                                                        if (val < range.low * 0.5) level = 0;
+                                                                        else if (val < range.low) level = 1;
+                                                                        else if (val < range.median) level = 2;
+                                                                        else if (val >= range.high * 1.2) level = 4;
+                                                                        else level = 3;
+                                                                    }
+
+                                                                    const MESSAGES = {
+                                                                        0: [ // Disaster
+                                                                            "Ouch. Let's pretend this didn't happen. 🙈",
+                                                                            "My grandma gets better numbers. And she doesn't have a website.",
+                                                                            "Are you trying to lose money? Because it's working.",
+                                                                            "I've seen better stats on a broken calculator.",
+                                                                            "This is a safe space, but... wow."
+                                                                        ],
+                                                                        1: [ // Bad
+                                                                            "Room for improvement. A lot of it. 😬",
+                                                                            "Not quite there yet. Keep pushing!",
+                                                                            "You're leaving money on the table.",
+                                                                            "Competitors are eating your lunch right now.",
+                                                                            "Time to roll up those sleeves."
+                                                                        ],
+                                                                        2: [ // Average
+                                                                            "Average. Just like everyone else. 😐",
+                                                                            "Middle of the pack. Safe, but boring.",
+                                                                            "Not bad, not great. Just... okay.",
+                                                                            "You exist. That's a start.",
+                                                                            "Perfectly adequate. If you like adequate."
+                                                                        ],
+                                                                        3: [ // Good
+                                                                            "Not bad! You might actually know what you're doing. 👏",
+                                                                            "Solid numbers. Respect.",
+                                                                            "You're beating the average. Nice.",
+                                                                            "Looking good! Keep it up.",
+                                                                            "Finally, some green numbers!"
+                                                                        ],
+                                                                        4: [ // Amazing
+                                                                            "Wow. Are you sure? Cut your salary and take stock options! 🚀",
+                                                                            "Unicorn status pending. 🦄",
+                                                                            "Stop showing off. (Just kidding, don't stop).",
+                                                                            "You're crushing it. Teach us your ways.",
+                                                                            "Absolute legend. 🏆"
+                                                                        ]
+                                                                    };
+
+                                                                    // Deterministic selection based on KPI ID and Level
+                                                                    // This ensures the message is stable for a specific KPI at a specific level,
+                                                                    // but varies across different KPIs.
+                                                                    const msgIndex = (kpi.id.charCodeAt(0) + kpi.id.length + level) % 5;
+                                                                    return MESSAGES[level as keyof typeof MESSAGES][msgIndex];
+                                                                })()}
+                                                            </span>
+
+                                                            {/* Number Input */}
+                                                            <div className="relative w-24 flex-shrink-0">
+                                                                <input
+                                                                    type="number"
+                                                                    value={userVal}
+                                                                    onChange={(e) => onValueChange(kpi.id, e.target.value)}
+                                                                    className={`block w-full rounded-md sm:text-sm p-1.5 border text-right pr-8 ${status === 'good' ? 'border-green-300 focus:border-green-500 focus:ring-green-500 bg-green-50' :
+                                                                        status === 'bad' ? 'border-red-300 focus:border-red-500 focus:ring-red-500 bg-red-50' :
+                                                                            'border-gray-200 focus:border-brevo-green focus:ring-brevo-green'
+                                                                        }`}
+                                                                    placeholder="-"
+                                                                />
+                                                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                                                                    <span className="text-gray-500 sm:text-xs">{kpi.unit}</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            )}
+                                                )}
+                                            </div>
 
                                         </div>
                                     </div>
