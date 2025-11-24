@@ -70,7 +70,10 @@ export default function V4Page() {
         );
 
         try {
-            const response = await fetch('/api/analyze', {
+            // Step 1: Create the analysis job
+            setLogs(['Starting analysis...']);
+
+            const createResponse = await fetch('/api/analyze', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -82,54 +85,63 @@ export default function V4Page() {
                 }),
             });
 
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            if (!createResponse.ok) {
+                const errorData = await createResponse.json();
+                throw new Error(errorData.error || `HTTP ${createResponse.status}: ${createResponse.statusText}`);
             }
 
-            if (!response.body) {
-                throw new Error('No response body');
+            const { conversationId, status: createStatus } = await createResponse.json();
+
+            if (createStatus !== 'created' || !conversationId) {
+                throw new Error('Failed to create analysis job');
             }
 
-            const reader = response.body.getReader();
-            const decoder = new TextDecoder();
-            let buffer = '';
+            setLogs(prev => [...prev, `Job created (ID: ${conversationId.slice(0, 8)}...)`]);
+            setLogs(prev => [...prev, 'Waiting for AI agent to process...']);
 
-            while (true) {
-                const { done, value } = await reader.read();
-                if (done) break;
+            // Step 2: Poll for results
+            const MAX_POLLS = 60;  // 60 polls × 5s = 5 minutes max
+            const POLL_INTERVAL = 5000; // 5 seconds
+            const startTime = Date.now();
 
-                buffer += decoder.decode(value, { stream: true });
-                const lines = buffer.split('\n');
+            for (let i = 0; i < MAX_POLLS; i++) {
+                await new Promise(resolve => setTimeout(resolve, POLL_INTERVAL));
 
-                // Keep the last incomplete line in the buffer
-                buffer = lines.pop() || '';
+                const elapsed = Math.floor((Date.now() - startTime) / 1000);
+                setLogs(prev => [...prev.slice(0, -1), `Polling... (${elapsed}s elapsed)`]);
 
-                for (const line of lines) {
-                    if (line.startsWith('data: ')) {
-                        try {
-                            const payload = JSON.parse(line.slice(6));
+                const pollResponse = await fetch(`/api/analyze/${conversationId}`);
 
-                            if (payload.type === 'log') {
-                                setLogs(prev => [...prev, payload.data]);
-                            } else if (payload.type === 'text') {
-                                console.log('[TEXT RECEIVED]', payload.data);
-                                setAnalysis(prev => prev + payload.data);
-                            } else if (payload.type === 'error') {
-                                setError(payload.data);
-                                setIsLoading(false);
-                            }
-                        } catch (e) {
-                            console.warn('Failed to parse SSE line:', line);
-                        }
-                    }
+                if (!pollResponse.ok) {
+                    const errorData = await pollResponse.json();
+                    throw new Error(errorData.error || `Polling failed: ${pollResponse.status}`);
+                }
+
+                const pollData = await pollResponse.json();
+
+                if (pollData.status === 'complete') {
+                    setLogs(prev => [...prev, 'Analysis complete!']);
+                    setAnalysis(pollData.analysis);
+                    setIsLoading(false);
+                    return;
+                }
+
+                if (pollData.status === 'error') {
+                    throw new Error(pollData.error || 'Analysis failed');
+                }
+
+                // Still pending - update log with status message
+                if (pollData.message) {
+                    setLogs(prev => [...prev.slice(0, -1), `${pollData.message} (${elapsed}s)`]);
                 }
             }
 
-            setIsLoading(false);
+            // Timeout after 5 minutes
+            throw new Error('Analysis timed out after 5 minutes. Please try again.');
 
-        } catch (err: any) {
-            console.error('Error starting analysis:', err);
-            setError(err.message || 'An unexpected error occurred');
+        } catch (err: unknown) {
+            console.error('Error during analysis:', err);
+            setError(err instanceof Error ? err.message : 'An unexpected error occurred');
             setIsLoading(false);
         }
     };
