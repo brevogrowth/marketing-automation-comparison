@@ -8,7 +8,7 @@ export const runtime = 'nodejs';
 const AnalysisSchema = z.object({
     userValues: z.record(z.string()),
     priceTier: z.enum(['Budget', 'Mid-Range', 'Luxury']),
-    industry: z.enum(['Fashion', 'Home', 'Beauty', 'Electronics'])
+    industry: z.enum(['Fashion', 'Home']) // Only industries available in retailBenchmarks
 });
 
 export async function POST(request: Request) {
