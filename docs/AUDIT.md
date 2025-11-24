@@ -28,15 +28,15 @@
 
 **Gravité** : 🔴 CRITIQUE
 
-Le fichier `.env` contient des clés API Dust.tt et a été commité dans git :
+Le fichier `.env` contenait des clés API Dust.tt et avait été commité dans git :
 
 ```bash
-DUST_API_KEY=sk-ccb99863d1ab812c71d9f4e361996b63
-DUST_WORKSPACE_ID=BEjN1UpVix
-DUST_ASSISTANT_ID=RhjhrweQDk
+DUST_API_KEY=sk-******************* (INVALIDATED)
+DUST_WORKSPACE_ID=********** (INVALIDATED)
+DUST_ASSISTANT_ID=********** (INVALIDATED)
 ```
 
-**Impact** : Ces clés sont accessibles publiquement sur GitHub et peuvent être utilisées par n'importe qui.
+**Impact** : Ces clés étaient accessibles publiquement sur GitHub. Elles ont été invalidées.
 
 **Actions requises** :
 1. ✅ Invalider immédiatement ces clés dans Dust.tt
