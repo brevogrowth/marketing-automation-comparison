@@ -5,11 +5,9 @@
   command = "npm run build"
   publish = ".next"
 
-# Function timeout configuration
+# Note: Function timeout is configured via maxDuration in route.ts
 # With async polling pattern, both endpoints complete quickly (<10s)
 # No Pro plan needed!
-[functions]
-  timeout = 10  # Both POST and GET endpoints return immediately
 
 # Cache optimization for static assets
 [[headers]]
