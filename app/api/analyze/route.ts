@@ -171,6 +171,11 @@ Tone: Professional, insightful, direct. Avoid generic advice.`;
                                 const event = rawEvent.data || rawEvent;
                                 const eventType = event.type;
 
+                                // Log event types for debugging (only first few)
+                                if (eventType && eventType !== 'generation_tokens') {
+                                    send('log', `Event: ${eventType}`);
+                                }
+
                                 // Stream tokens as they arrive (if model supports streaming)
                                 if (eventType === 'generation_tokens' && event.text) {
                                     send('text', event.text);
