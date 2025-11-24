@@ -1,0 +1,97 @@
+industry,price_tier,metric_id,category,name,unit,description,low,median,high,insight
+Fashion,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,20,40,60,Low margins require highly efficient acquisition.
+Fashion,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,30,45,70,Standard range for branded mid-market apparel.
+Fashion,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,80,150,300,High LTV justifies significant upfront investment.
+Fashion,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,5.0,7.0,Volume-driven models need high efficiency.
+Fashion,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.0,5.5,Healthy balance of brand and performance.
+Fashion,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.0,3.0,4.5,Brand equity investment lowers immediate ROAS.
+Fashion,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,15,20,Tight controls on spend.
+Fashion,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,15,20,25,Growth-focused allocation.
+Fashion,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,18,25,Significant spend on brand awareness.
+Fashion,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,2.5,3.5,5.0,Impulse buys drive higher conversion.
+Fashion,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.8,2.4,3.5,Considered purchases take longer.
+Fashion,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.8,1.2,1.8,Exclusive nature means lower volume.
+Fashion,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,1.5,2.2,3.0,Mobile-first audience.
+Fashion,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,1.0,1.5,2.2,Gap between desktop and mobile is common.
+Fashion,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.4,0.7,1.0,Research on mobile; buy on desktop.
+Fashion,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,65,70,75,Price sensitivity drives abandonment.
+Fashion,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,70,75,80,Comparison shopping is prevalent.
+Fashion,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,75,80,85,High consideration period.
+Fashion,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,40,55,70,Multiple items per basket.
+Fashion,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,80,110,150,Core benchmark for mid-market.
+Fashion,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,300,500,1000,Single item value drives AOV.
+Fashion,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,20,25,35,Low loyalty; high churn.
+Fashion,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,25,35,45,Brand affinity builds retention.
+Fashion,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,30,45,60,High loyalty among core clientele.
+Fashion,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.8,2.5,3.5,Frequent low-value purchases.
+Fashion,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.5,2.1,2.8,Seasonal purchasing patterns.
+Fashion,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.1,1.4,1.8,Occasional investment pieces.
+Fashion,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,15,20,25,Fit issues common.
+Fashion,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,20,25,35,Free returns encourage ordering multiple sizes.
+Fashion,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,25,30,40,High expectations drive returns.
+Fashion,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,45,50,55,Volume play.
+Fashion,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,55,60,65,Healthy margins for branding.
+Fashion,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,70,75,85,Brand premium drives high margins.
+Fashion,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,2.5,3.5,5.0,High volume requires strong unit economics.
+Fashion,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,4.0,6.0,Healthy growth engine.
+Fashion,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.5,5.0,8.0,Exceptional brand value drives high ratios.
+Fashion,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,4.0,6.0,9.0,Must be high to sustain low margins.
+Fashion,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.5,5.0,7.0,Balanced growth and profitability.
+Fashion,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.5,4.0,6.0,Brand building investment lowers short-term MER.
+Fashion,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,20,30,Critical for low-cost retention.
+Fashion,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,20,25,35,The backbone of profitable growth.
+Fashion,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,15,25,Personalized clienteling drives this.
+Fashion,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,High impact for flash sales.
+Fashion,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,12,Growing channel for engagement.
+Fashion,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,5,Used sparingly for VIP service.
+Fashion,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,60,70,80,High churn is typical; focus on acquisition volume.
+Fashion,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,40,50,60,Retention is key to profitability.
+Fashion,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,20,30,40,Client relationships reduce churn significantly.
+Home,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,20,35,55,Lower frequency purchases increase acquisition cost.
+Home,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,45,65,95,Considered purchases require more touchpoints.
+Home,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,120,220,400,Premium positioning demands high-touch marketing.
+Home,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,6.5,Seasonal peaks boost efficiency.
+Home,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,3.5,5.0,Longer sales cycles reduce immediate ROAS.
+Home,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,1.8,2.5,4.0,Brand and showroom investment lowers digital ROAS.
+Home,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,18,25,Competitive market requires sustained presence.
+Home,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,18,24,30,Lifestyle positioning drives higher spend.
+Home,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,15,22,30,Showroom and brand experience investment.
+Home,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.8,2.8,4.2,Research phase leads to moderate conversion.
+Home,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.2,1.8,2.8,High consideration category.
+Home,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.5,0.9,1.4,Showroom visits and consultations lower online conversion.
+Home,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,1.0,1.6,2.4,Mobile for inspiration; desktop for purchase.
+Home,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.7,1.2,1.8,Tablet and desktop preferred for larger purchases.
+Home,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.3,0.5,0.8,Desktop dominates luxury home purchases.
+Home,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,68,73,78,Shipping costs major barrier.
+Home,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,73,78,83,Extended consideration period.
+Home,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,78,83,88,Consultation and customization needs.
+Home,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,65,85,110,Room refresh purchases.
+Home,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,130,170,230,Coordinated home styling.
+Home,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,450,750,1500,Statement pieces and collections.
+Home,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,15,20,28,Infrequent category need.
+Home,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,20,28,38,Room-by-room purchasing builds loyalty.
+Home,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,25,38,50,Collection building drives repeat purchases.
+Home,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.2,1.8,2.6,Seasonal and need-based purchases.
+Home,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.0,1.5,2.2,Project-based purchasing.
+Home,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,0.8,1.1,1.5,Occasional investment pieces.
+Home,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,12,16,22,Size and fit less critical.
+Home,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,16,22,30,Color and material expectations.
+Home,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,20,26,35,High expectations for quality and finish.
+Home,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,40,46,52,Competitive pricing pressure.
+Home,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,50,56,62,Design and curation add value.
+Home,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,65,72,82,Brand and craftsmanship premium.
+Home,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,2.0,3.0,4.5,Lower frequency requires efficiency.
+Home,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,2.5,3.5,5.5,Room completion drives LTV.
+Home,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,4.5,7.5,Collection building creates long-term value.
+Home,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.5,5.5,8.5,Seasonal efficiency critical.
+Home,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.0,4.5,6.5,Balanced brand and performance.
+Home,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.2,3.5,5.5,Showroom and experience investment.
+Home,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,18,24,35,Promotional focus drives email.
+Home,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,22,28,40,Inspiration and seasonal campaigns.
+Home,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,18,28,Personalized curation and launches.
+Home,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,8,Flash sales and clearance.
+Home,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,New arrivals and limited editions.
+Home,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,2,4,VIP previews only.
+Home,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,65,75,85,Infrequent need drives high churn.
+Home,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,50,60,70,Project completion reduces return rate.
+Home,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,30,40,50,Relationship building reduces churn.

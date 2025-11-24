@@ -19,7 +19,7 @@ export const SidebarInputs = ({
   setIsComparing
 }: SidebarInputsProps) => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-[0_16px_48px_0_rgba(0,0,0,0.08)] border border-gray-100 h-full flex flex-col">
+    <div className="bg-white p-6 rounded-xl shadow-[0_16px_48px_0_rgba(0,0,0,0.08)] border border-gray-100 flex flex-col">
       <div className="mb-8">
         <h2 className="text-lg font-bold text-gray-900 mb-2">1. Business Profile</h2>
         <p className="text-sm text-gray-500 mb-6">

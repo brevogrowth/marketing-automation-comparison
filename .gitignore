@@ -23,6 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
 
 # vercel
@@ -33,3 +34,25 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Benchmark sync
+*.backup
+data/benchmarks-test.csv
+
+# Dev tests and debug files
+.dev-tests/
+test_*.txt
+test_*.js
+test-*.js
+debug_*.txt
+
+# Windows artifacts
+nul
