@@ -38,8 +38,7 @@ export const SidebarInputs = ({
             >
               <option value="Fashion">Fashion & Apparel</option>
               <option value="Home">Home & Living</option>
-              <option value="Beauty">Beauty & Cosmetics</option>
-              <option value="Electronics">Consumer Electronics</option>
+              {/* Beauty and Electronics - Coming soon (no benchmark data yet) */}
             </select>
           </div>
 
@@ -52,9 +51,9 @@ export const SidebarInputs = ({
               onChange={(e) => setPriceTier(e.target.value as PriceTier)}
               className="w-full rounded-md border-gray-300 shadow-sm focus:border-brevo-green focus:ring-brevo-green sm:text-sm p-2 border"
             >
-              <option value="Budget">Budget (0 - 50€)</option>
-              <option value="Mid-Range">Mid-Range (50 - 150€)</option>
-              <option value="Luxury">Luxury (150€+)</option>
+              <option value="Budget">Entry-Level (AOV &lt; 50€)</option>
+              <option value="Mid-Range">Mid-Market (AOV 50-150€)</option>
+              <option value="Luxury">Premium (AOV &gt; 150€)</option>
             </select>
           </div>
         </div>

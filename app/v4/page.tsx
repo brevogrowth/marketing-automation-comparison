@@ -26,6 +26,7 @@ export default function V4Page() {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [loadingMessageIndex, setLoadingMessageIndex] = useState(0);
+    const [showProcessLogs, setShowProcessLogs] = useState(false);
     const analysisRef = useRef<HTMLDivElement>(null);
 
     // Rotate loading messages every 20 seconds
@@ -157,6 +158,18 @@ export default function V4Page() {
 
             <Header />
 
+            {/* Fixed Instruction Banner - Shows when in comparing mode */}
+            {isComparing && !showAnalysis && (
+                <div className="sticky top-0 z-50 bg-gradient-to-r from-brevo-green to-brevo-dark-green text-white py-3 px-4 shadow-lg">
+                    <div className="max-w-7xl mx-auto flex items-center justify-center gap-3">
+                        <span className="text-xl">📊</span>
+                        <p className="text-sm md:text-base font-medium">
+                            <span className="font-bold">Analysis Mode:</span> Enter your KPIs below, select the ones you want to analyze, then click &quot;Generate AI Analysis&quot;
+                        </p>
+                    </div>
+                </div>
+            )}
+
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
                 {/* Header Section */}
@@ -241,20 +254,26 @@ export default function V4Page() {
                                             </p>
                                         </div>
 
-                                        {/* Process Log */}
+                                        {/* Process Log - Collapsible */}
                                         {logs.length > 0 && (
-                                            <div className="border-t border-gray-100 pt-6">
-                                                <h3 className="text-sm font-semibold text-gray-700 mb-3 flex items-center gap-2">
-                                                    <span className="text-brevo-green">●</span> Process Log
-                                                </h3>
-                                                <div className="space-y-1 text-sm text-gray-600 font-mono max-h-48 overflow-y-auto">
-                                                    {logs.map((log, idx) => (
-                                                        <div key={idx} className="flex items-start gap-2">
-                                                            <span className="text-gray-400 flex-shrink-0">[{idx + 1}]</span>
-                                                            <span>{log}</span>
-                                                        </div>
-                                                    ))}
-                                                </div>
+                                            <div className="border-t border-gray-100 pt-4">
+                                                <button
+                                                    onClick={() => setShowProcessLogs(!showProcessLogs)}
+                                                    className="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-2 transition-colors"
+                                                >
+                                                    <span className={`transform transition-transform ${showProcessLogs ? 'rotate-90' : ''}`}>▶</span>
+                                                    See process logs ({logs.length})
+                                                </button>
+                                                {showProcessLogs && (
+                                                    <div className="mt-3 space-y-1 text-sm text-gray-600 font-mono max-h-48 overflow-y-auto">
+                                                        {logs.map((log, idx) => (
+                                                            <div key={idx} className="flex items-start gap-2">
+                                                                <span className="text-gray-400 flex-shrink-0">[{idx + 1}]</span>
+                                                                <span>{log}</span>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                )}
                                             </div>
                                         )}
                                     </div>
