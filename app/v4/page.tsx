@@ -7,6 +7,13 @@ import { BenchmarkGrid } from '@/components/BenchmarkGrid';
 import { AiAnalysisResult } from '@/components/AiAnalysisResult';
 import { retailBenchmarks, Industry, PriceTier } from '@/data/retailBenchmarks';
 
+const LOADING_MESSAGES = [
+    { title: "Analyzing your data...", subtitle: "This may take 2-3 minutes. Our AI is reviewing your KPIs against industry benchmarks." },
+    { title: "Comparing with market data...", subtitle: "We're examining thousands of data points from similar retailers." },
+    { title: "Identifying opportunities...", subtitle: "Our AI is finding the best growth levers for your business." },
+    { title: "Crafting recommendations...", subtitle: "Almost there! Generating your personalized strategic insights." }
+];
+
 export default function V4Page() {
     const [industry, setIndustry] = useState<Industry>('Fashion');
     const [priceTier, setPriceTier] = useState<PriceTier>('Mid-Range');
@@ -18,7 +25,22 @@ export default function V4Page() {
     const [analysis, setAnalysis] = useState<string>('');
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [loadingMessageIndex, setLoadingMessageIndex] = useState(0);
     const analysisRef = useRef<HTMLDivElement>(null);
+
+    // Rotate loading messages every 20 seconds
+    React.useEffect(() => {
+        if (!isLoading) {
+            setLoadingMessageIndex(0);
+            return;
+        }
+
+        const interval = setInterval(() => {
+            setLoadingMessageIndex(prev => (prev + 1) % LOADING_MESSAGES.length);
+        }, 20000); // 20 seconds
+
+        return () => clearInterval(interval);
+    }, [isLoading]);
 
     const handleValueChange = (id: string, value: string) => {
         setUserValues(prev => ({ ...prev, [id]: value }));
@@ -199,8 +221,12 @@ export default function V4Page() {
                                         {/* Loading Spinner */}
                                         <div className="text-center mb-6">
                                             <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-brevo-green border-t-transparent mb-4"></div>
-                                            <h3 className="text-xl font-bold text-gray-900 mb-2">Analyzing your data...</h3>
-                                            <p className="text-gray-500">Our AI agent is crafting your personalized strategy</p>
+                                            <h3 className="text-xl font-bold text-gray-900 mb-2">
+                                                {LOADING_MESSAGES[loadingMessageIndex].title}
+                                            </h3>
+                                            <p className="text-gray-500 max-w-2xl mx-auto">
+                                                {LOADING_MESSAGES[loadingMessageIndex].subtitle}
+                                            </p>
                                         </div>
 
                                         {/* Process Log */}
