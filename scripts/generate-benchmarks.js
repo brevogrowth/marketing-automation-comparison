@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Script to convert benchmarks.csv to retailBenchmarks.ts
+ * Script to convert benchmarks.csv to benchmarks.ts
  * Usage: node scripts/generate-benchmarks.js
  */
 
@@ -10,7 +10,7 @@ const path = require('path');
 
 // File paths
 const CSV_PATH = path.join(__dirname, '../data/benchmarks.csv');
-const OUTPUT_PATH = path.join(__dirname, '../data/retailBenchmarks.ts');
+const OUTPUT_PATH = path.join(__dirname, '../data/benchmarks.ts');
 
 /**
  * Parse CSV line handling commas and special characters
@@ -154,7 +154,7 @@ export interface BenchmarkData {
     };
 }
 
-export const retailBenchmarks: Record<Industry, BenchmarkData[]> = {\n`;
+export const benchmarks: Record<Industry, BenchmarkData[]> = {\n`;
 
   industries.forEach((industry, idx) => {
     ts += `    ${industry}: [\n`;

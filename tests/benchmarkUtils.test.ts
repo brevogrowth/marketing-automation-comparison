@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { getBenchmarkStatus, getBenchmarkLevel, getHumorousMessage } from '../utils/benchmarkUtils';
-import { BenchmarkData } from '../data/retailBenchmarks';
+import { BenchmarkData } from '../data/benchmarks';
 
 // Mock Benchmark Data
 const mockKpiHigherBetter: BenchmarkData = {

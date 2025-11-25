@@ -47,9 +47,12 @@ describe('POST /api/analyze', () => {
         });
 
         it('should validate industry is one of allowed values', () => {
-            const validIndustries = ['Fashion', 'Home'];
+            const validIndustries = [
+                'Fashion', 'Home', 'Beauty', 'Electronics', 'Sports', 'Family', 'Food', 'Luxury',
+                'SaaS', 'Services', 'Manufacturing', 'Wholesale'
+            ];
             validIndustries.forEach(industry => {
-                expect(['Fashion', 'Home']).toContain(industry);
+                expect(validIndustries).toContain(industry);
             });
         });
 
@@ -60,7 +63,11 @@ describe('POST /api/analyze', () => {
 
         it('should reject invalid industry', () => {
             const invalidIndustry = 'Tech';
-            expect(['Fashion', 'Home']).not.toContain(invalidIndustry);
+            const validIndustries = [
+                'Fashion', 'Home', 'Beauty', 'Electronics', 'Sports', 'Family', 'Food', 'Luxury',
+                'SaaS', 'Services', 'Manufacturing', 'Wholesale'
+            ];
+            expect(validIndustries).not.toContain(invalidIndustry);
         });
     });
 
@@ -420,9 +427,13 @@ describe('Integration Scenarios', () => {
                 industry: 'Tech',            // Should be Fashion|Home
             };
 
+            const validIndustries = [
+                'Fashion', 'Home', 'Beauty', 'Electronics', 'Sports', 'Family', 'Food', 'Luxury',
+                'SaaS', 'Services', 'Manufacturing', 'Wholesale'
+            ];
             expect(typeof invalidInput.userValues).not.toBe('object');
             expect(['Budget', 'Mid-Range', 'Luxury']).not.toContain(invalidInput.priceTier);
-            expect(['Fashion', 'Home']).not.toContain(invalidInput.industry);
+            expect(validIndustries).not.toContain(invalidInput.industry);
         });
 
         it('should handle Dust API failure', () => {

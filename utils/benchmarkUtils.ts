@@ -1,4 +1,4 @@
-import { BenchmarkData, PriceTier } from '@/data/retailBenchmarks';
+import { BenchmarkData, PriceTier } from '@/data/benchmarks';
 
 export type BenchmarkStatus = 'good' | 'bad' | 'neutral';
 

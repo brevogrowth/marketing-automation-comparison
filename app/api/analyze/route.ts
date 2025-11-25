@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
-import { retailBenchmarks, PriceTier, Industry } from '@/data/retailBenchmarks';
+import { benchmarks, PriceTier, Industry } from '@/data/benchmarks';
 
 export const runtime = 'nodejs';
 // Reduced timeout - this endpoint now returns immediately
@@ -10,7 +10,12 @@ export const maxDuration = 10;
 const AnalysisSchema = z.object({
     userValues: z.record(z.string()),
     priceTier: z.enum(['Budget', 'Mid-Range', 'Luxury']),
-    industry: z.enum(['Fashion', 'Home']) // Only industries available in retailBenchmarks
+    industry: z.enum([
+        // B2C Retail
+        'Fashion', 'Home', 'Beauty', 'Electronics', 'Sports', 'Family', 'Food', 'Luxury',
+        // B2B
+        'SaaS', 'Services', 'Manufacturing', 'Wholesale'
+    ])
 });
 
 export async function POST(request: Request) {
@@ -31,18 +36,23 @@ export async function POST(request: Request) {
             );
         }
 
+        // Determine B2B or B2C
+        const b2bIndustries = ['SaaS', 'Services', 'Manufacturing', 'Wholesale'];
+        const isB2B = b2bIndustries.includes(industry);
+        const businessType = isB2B ? 'B2B' : 'B2C Retail';
+
         // Construct prompt
-        let prompt = `You are a Senior Retail Strategy Consultant for B2C brands.
-Your client is a ${industry} retailer with a ${priceTier} price positioning.
+        let prompt = `You are a Senior ${isB2B ? 'B2B Marketing' : 'Retail Strategy'} Consultant.
+Your client is a ${industry} company in the ${businessType} sector with a ${priceTier} price positioning.
 
 Here is their performance data compared to market benchmarks:
 `;
 
-        const selectedIndustry = (industry && retailBenchmarks[industry as Industry])
+        const selectedIndustry = (industry && benchmarks[industry as Industry])
             ? industry
             : 'Fashion';
 
-        const relevantBenchmarks = retailBenchmarks[selectedIndustry as Industry];
+        const relevantBenchmarks = benchmarks[selectedIndustry as Industry];
 
         relevantBenchmarks.forEach((kpi) => {
             const range = kpi.ranges[priceTier as PriceTier];

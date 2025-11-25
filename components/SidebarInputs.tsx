@@ -1,5 +1,5 @@
 import React from 'react';
-import { Industry, PriceTier } from '@/data/retailBenchmarks';
+import { Industry, PriceTier } from '@/data/benchmarks';
 
 interface SidebarInputsProps {
   industry: Industry;
@@ -36,9 +36,22 @@ export const SidebarInputs = ({
               onChange={(e) => setIndustry(e.target.value as Industry)}
               className="w-full rounded-md border-gray-300 shadow-sm focus:border-brevo-green focus:ring-brevo-green sm:text-sm p-2 border"
             >
-              <option value="Fashion">Fashion & Apparel</option>
-              <option value="Home">Home & Living</option>
-              {/* Beauty and Electronics - Coming soon (no benchmark data yet) */}
+              <optgroup label="B2C Retail">
+                <option value="Fashion">Fashion & Apparel</option>
+                <option value="Home">Home & Living</option>
+                <option value="Beauty">Beauty & Wellness</option>
+                <option value="Electronics">Electronics & Tech</option>
+                <option value="Sports">Sports & Outdoor</option>
+                <option value="Family">Family & Pets</option>
+                <option value="Food">Food & Beverage</option>
+                <option value="Luxury">Luxury & Jewelry</option>
+              </optgroup>
+              <optgroup label="B2B">
+                <option value="SaaS">SaaS & Software</option>
+                <option value="Services">Professional Services</option>
+                <option value="Manufacturing">Manufacturing & Industrial</option>
+                <option value="Wholesale">Wholesale & Distribution</option>
+              </optgroup>
             </select>
           </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BenchmarkData, PriceTier } from '@/data/retailBenchmarks';
+import { BenchmarkData, PriceTier } from '@/data/benchmarks';
 import { getBenchmarkStatus, getBenchmarkLevel, getHumorousMessage } from '@/utils/benchmarkUtils';
 
 interface BenchmarkGridProps {

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { SidebarInputs } from '@/components/SidebarInputs';
 import { BenchmarkGrid } from '@/components/BenchmarkGrid';
 import { AiAnalysisResult } from '@/components/AiAnalysisResult';
-import { retailBenchmarks, Industry, PriceTier } from '@/data/retailBenchmarks';
+import { benchmarks, Industry, PriceTier } from '@/data/benchmarks';
 
 const LOADING_MESSAGES = [
     { title: "Analyzing your data...", subtitle: "This may take 2-3 minutes. Our AI is reviewing your KPIs against industry benchmarks." },
@@ -147,7 +147,7 @@ export default function V4Page() {
         }
     };
 
-    const currentBenchmarks = retailBenchmarks[industry];
+    const currentBenchmarks = benchmarks[industry];
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
