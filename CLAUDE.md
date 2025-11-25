@@ -1,41 +1,41 @@
-# 🤖 Guide pour Claude Code
+# Claude Code Development Guide
 
-Ce fichier contient les directives pour Claude Code lors du développement sur ce projet.
-
----
-
-## 🎯 Contexte Business
-
-### Qu'est-ce que ce projet ?
-
-**Brevo KPI Benchmark** est un **market asset stratégique** pour la prospection mid-market de Brevo. C'est un outil interactif permettant aux retailers B2C de comparer leurs KPIs marketing avec les benchmarks sectoriels et d'obtenir des recommandations personnalisées via IA.
-
-### Objectifs stratégiques
-
-1. **Lead Generation** : Attirer des prospects mid-market (Fashion, Home, etc.) en offrant de la valeur gratuite
-2. **Qualification** : Les données saisies révèlent le niveau de maturité et les pain points du prospect
-3. **Nurturing** : L'analyse AI positionne Brevo comme expert et suggère ses solutions (CRM, Email, SMS, Automation)
-4. **Conversion** : CTAs vers essai gratuit Brevo et démos
-
-### Audience cible
-
-- **Profil** : Directeurs Marketing / Growth de retailers B2C
-- **Taille** : Mid-market (10-500 employés, 1-50M€ CA)
-- **Industries** : Fashion, Home & Living (Beauty et Electronics prévus)
-- **Maturité** : Utilisent déjà email marketing, cherchent à optimiser
-
-### Proposition de valeur
-
-> "Comparez vos KPIs aux standards du marché et obtenez des recommandations AI personnalisées pour améliorer votre stratégie CRM et Automation."
+This file contains directives for Claude Code when developing on this project.
 
 ---
 
-## 🏗️ Architecture Technique
+## Business Context
 
-### Stack technique
+### What is this project?
 
-| Composant | Technologie | Version |
-|-----------|-------------|---------|
+**Brevo KPI Benchmark** is a **strategic marketing asset** for Brevo's mid-market prospecting. It's an interactive tool that allows B2C retailers and B2B companies to compare their marketing KPIs against industry benchmarks and receive personalized AI-powered recommendations.
+
+### Strategic Objectives
+
+1. **Lead Generation** - Attract mid-market prospects by offering free value
+2. **Qualification** - User inputs reveal maturity level and pain points
+3. **Nurturing** - AI analysis positions Brevo as an expert and suggests its solutions (CRM, Email, SMS, Automation)
+4. **Conversion** - CTAs to Brevo free trial and demos
+
+### Target Audience
+
+- **Profile**: Marketing Directors / Growth Leaders
+- **Size**: Mid-market (10-500 employees, 1-50M revenue)
+- **Industries**: 12 verticals (B2C: Fashion, Beauty, Home, Electronics, Food, Sports, Luxury, Family | B2B: SaaS, Services, Manufacturing, Wholesale)
+- **Maturity**: Already using email marketing, looking to optimize
+
+### Value Proposition
+
+> "Compare your KPIs to market standards and get personalized AI recommendations to improve your CRM and Automation strategy."
+
+---
+
+## Technical Architecture
+
+### Tech Stack
+
+| Component | Technology | Version |
+|-----------|------------|---------|
 | Framework | Next.js (App Router) | 16.x |
 | UI | React + Tailwind CSS | 19.x / 4.x |
 | Language | TypeScript (strict) | 5.x |
@@ -43,20 +43,20 @@ Ce fichier contient les directives pour Claude Code lors du développement sur c
 | Validation | Zod | 3.x |
 | Tests | Vitest + Playwright | 2.x / 1.x |
 | Hosting | Netlify Free | - |
-| Data | CSV → TypeScript (auto-généré) | - |
+| Data | CSV → TypeScript (auto-generated) | - |
 
-### Versions de l'application
+### Application Versions
 
-| Route | Description | Statut |
+| Route | Description | Status |
 |-------|-------------|--------|
-| `/` | Landing page statique | ✅ Legacy |
-| `/v2` | Grille interactive avec traffic lights | ✅ Stable |
-| `/v3` | Analyse comparative détaillée | ✅ Stable |
-| `/v4` | **Analyse AI via Dust.tt** | 🚧 Active |
+| `/` | Static landing page | Legacy |
+| `/v2` | Interactive grid with traffic lights | Stable |
+| `/v3` | Detailed comparative analysis | Stable |
+| `/v4` | **AI analysis via Dust.tt** | Active |
 
-**Focus actuel** : Version `/v4` avec intégration Dust.tt
+**Current Focus**: Version `/v4` with Dust.tt integration and improved UX
 
-### Architecture API (Pattern Async Polling)
+### API Architecture (Async Polling Pattern)
 
 ```
 ┌─────────────────┐                        ┌────────────────┐
@@ -75,71 +75,77 @@ Ce fichier contient les directives pour Claude Code lors du développement sur c
          ▼                                 └───────────────┘
 ```
 
-**Pourquoi ce pattern ?**
-- Netlify Free timeout = 10 secondes
-- Dust.tt génération AI = ~3 minutes
-- Streaming SSE impossible → Polling async obligatoire
+**Why this pattern?**
+- Netlify Free timeout = 10 seconds
+- Dust.tt AI generation = ~3 minutes
+- SSE streaming impossible → Async polling required
 
-### Structure des dossiers
+### Folder Structure
 
 ```
 app/
 ├── api/
 │   └── analyze/
-│       ├── route.ts              # POST - Créer conversation Dust
+│       ├── route.ts              # POST - Create Dust conversation
 │       └── [conversationId]/
-│           └── route.ts          # GET - Poll status (à implémenter)
-├── v2/page.tsx                   # Grille interactive
-├── v3/page.tsx                   # Analyse comparative
-├── v4/page.tsx                   # Analyse AI (principal)
-├── layout.tsx                    # Layout global + fonts
-└── globals.css                   # Styles Tailwind
+│           └── route.ts          # GET - Poll status
+├── v2/page.tsx                   # Interactive grid
+├── v3/page.tsx                   # Comparative analysis
+├── v4/page.tsx                   # AI analysis (main)
+├── layout.tsx                    # Global layout + fonts
+└── globals.css                   # Tailwind styles
 
 components/
-├── BenchmarkGrid.tsx             # Grille KPIs avec inputs
-├── AiAnalysisResult.tsx          # Affichage résultat Markdown AI
-├── SidebarInputs.tsx             # Sélecteur industry/priceTier
-├── Header.tsx                    # Navigation Brevo
-└── [30+ autres]                  # Composants legacy (à refactorer)
+├── BenchmarkGrid.tsx             # KPI grid with collapsible sections
+├── AiAnalysisResult.tsx          # Markdown AI result display
+├── SidebarInputs.tsx             # Industry/priceTier selector
+├── Header.tsx                    # Brevo navigation
+└── [30+ others]                  # Legacy components (to refactor)
 
 data/
-├── benchmarks.csv                # Source de vérité (sync Google Sheets)
-└── retailBenchmarks.ts           # ⚠️ AUTO-GÉNÉRÉ - ne pas éditer
+├── benchmarks.csv                # Source of truth (sync Google Sheets)
+├── benchmarks.ts                 # AUTO-GENERATED - do not edit
+└── metricExplanations.ts         # "Why this metric?" content
 
 utils/
-└── benchmarkUtils.ts             # Logique traffic lights & scores
+└── benchmarkUtils.ts             # Traffic lights & scoring logic
 
 scripts/
 ├── generate-benchmarks.js        # CSV → TypeScript
 └── sync-from-gsheet.js           # Google Sheets → CSV
 
 tests/
-├── benchmarkUtils.test.ts        # Tests unitaires logique métier
-└── dust-integration.spec.ts      # Tests E2E Playwright
+├── benchmarkUtils.test.ts        # Unit tests for business logic
+└── dust-integration.spec.ts      # E2E Playwright tests
 
-docs/                             # Documentation détaillée
+docs/                             # Detailed documentation
 ```
 
 ---
 
-## 📊 Modèle de Données
+## Data Model
 
 ### Industries & Price Tiers
 
 ```typescript
-type Industry = 'Fashion' | 'Home';  // Beauty, Electronics à venir
+type Industry =
+  // B2C
+  | 'Fashion' | 'Beauty' | 'Home' | 'Electronics' | 'Food' | 'Sports' | 'Luxury' | 'Family'
+  // B2B
+  | 'SaaS' | 'Services' | 'Manufacturing' | 'Wholesale';
+
 type PriceTier = 'Budget' | 'Mid-Range' | 'Luxury';
 ```
 
-### KPIs (16 métriques par industrie)
+### KPI Categories
 
-| Catégorie | Métriques | Direction |
-|-----------|-----------|-----------|
+| Category | Metrics | Direction |
+|----------|---------|-----------|
 | **Strategic Efficiency** | LTV:CAC, MER | Higher is better |
-| **Acquisition** | CAC, ROAS, Marketing % | CAC: lower, autres: higher |
-| **Conversion** | Conv Desktop/Mobile, Cart Abandon, AOV | Cart: lower, autres: higher |
+| **Acquisition** | CAC, ROAS, Marketing % | CAC: lower, others: higher |
+| **Conversion** | Conv Desktop/Mobile, Cart Abandon, AOV | Cart: lower, others: higher |
 | **Channel Mix** | Email %, SMS % | Higher is better |
-| **Retention** | Repeat Rate, Purchase Freq, Churn | Churn: lower, autres: higher |
+| **Retention** | Repeat Rate, Purchase Freq, Churn | Churn: lower, others: higher |
 | **Economics** | Return Rate, Gross Margin | Return: lower, Margin: higher |
 
 ### Traffic Lights Logic
@@ -149,34 +155,34 @@ type PriceTier = 'Budget' | 'Mid-Range' | 'Luxury';
 getBenchmarkStatus(value, benchmark, metricId) → 'good' | 'average' | 'poor' | 'unknown'
 
 // Higher is Better (ROAS, LTV, etc.)
-- value > high → 'good' (vert)
-- median ≤ value ≤ high → 'average' (jaune)
-- value < median → 'poor' (rouge)
+- value > high → 'good' (green)
+- median ≤ value ≤ high → 'average' (yellow)
+- value < median → 'poor' (red)
 
 // Lower is Better (CAC, Churn, etc.)
-- value < low → 'good' (vert)
-- low ≤ value ≤ median → 'average' (jaune)
-- value > median → 'poor' (rouge)
+- value < low → 'good' (green)
+- low ≤ value ≤ median → 'average' (yellow)
+- value > median → 'poor' (red)
 ```
 
 ---
 
-## 🔌 Intégrations
+## Integrations
 
 ### Dust.tt (AI Analysis)
 
-**Configuration** :
+**Configuration**:
 ```env
-DUST_WORKSPACE_ID=xxx    # Workspace Brevo
+DUST_WORKSPACE_ID=xxx    # Brevo workspace
 DUST_API_KEY=sk-xxx      # API Key (secret!)
-DUST_ASSISTANT_ID=xxx    # Agent configuré pour retail analysis
+DUST_ASSISTANT_ID=xxx    # Agent configured for retail analysis
 ```
 
-**Endpoints utilisés** :
+**Endpoints used**:
 1. `POST /w/{workspace}/assistant/conversations` (blocking: false)
 2. `GET /w/{workspace}/assistant/conversations/{id}`
 
-**Format réponse conversation** :
+**Conversation response format**:
 ```json
 {
   "conversation": {
@@ -189,145 +195,145 @@ DUST_ASSISTANT_ID=xxx    # Agent configuré pour retail analysis
 }
 ```
 
-**Statuts agent** : `created` → `running` → `succeeded` | `failed` | `cancelled`
+**Agent statuses**: `created` → `running` → `succeeded` | `failed` | `cancelled`
 
 ### Netlify
 
-**Contraintes Netlify Free** :
-- ⏱️ Timeout serverless : **10 secondes max**
-- ❌ Background Functions : Non disponible
-- ❌ Edge Functions : Non nécessaire
+**Netlify Free Constraints**:
+- Serverless timeout: **10 seconds max**
+- Background Functions: Not available
+- Edge Functions: Not needed
 
-**Configuration** (`netlify.toml`) :
+**Configuration** (`netlify.toml`):
 ```toml
 [build]
   command = "npm run build"
   publish = ".next"
 
 [functions]
-  timeout = 10  # Pattern async = réponses rapides
+  timeout = 10  # Async pattern = fast responses
 ```
 
 ### Google Sheets (Benchmarks)
 
-**Sheet source** : [Brevo KPI Benchmarks](https://docs.google.com/spreadsheets/d/1Q6U5y8GLPnY4QZcoRgbJkAGq9LJ20YmXXU1KvJ7NWuQ/edit)
+**Source sheet**: [Brevo KPI Benchmarks](https://docs.google.com/spreadsheets/d/1Q6U5y8GLPnY4QZcoRgbJkAGq9LJ20YmXXU1KvJ7NWuQ/edit)
 
-**Workflow** :
+**Workflow**:
 ```bash
-# Sync depuis Google Sheets
+# Sync from Google Sheets
 npm run sync:benchmarks
 
-# Générer TypeScript depuis CSV local
+# Generate TypeScript from local CSV
 npm run generate:benchmarks
 ```
 
-⚠️ **Ne jamais éditer `data/retailBenchmarks.ts` manuellement**
+> **Never edit `data/benchmarks.ts` manually**
 
 ---
 
-## 🚨 Contraintes & Décisions Importantes
+## Constraints & Key Decisions
 
-### Pattern Async obligatoire (pas de streaming)
+### Async Pattern Required (No Streaming)
 
-| Approche | Compatible Netlify Free | Temps |
-|----------|------------------------|-------|
-| ~~Streaming SSE~~ | ❌ Timeout 10s | ~3min |
-| **Async Polling** | ✅ Requêtes <5s | ~3min |
+| Approach | Netlify Free Compatible | Time |
+|----------|------------------------|------|
+| ~~Streaming SSE~~ | Timeout 10s | ~3min |
+| **Async Polling** | Requests <5s | ~3min |
 
-### Sécurité
+### Security
 
-- ❌ Pas d'auth sur `/api/analyze` (asset public)
-- ⚠️ Rate limiting recommandé (10 req/min/IP)
-- ✅ Validation Zod sur inputs
-- ✅ Secrets dans variables d'environnement Netlify
+- No auth on `/api/analyze` (public asset)
+- Rate limiting recommended (10 req/min/IP)
+- Zod validation on inputs
+- Secrets in Netlify environment variables
 
 ### Performance
 
-- Components non mémorisés (React.memo manquant)
-- Pas de lazy loading des pages v2/v3/v4
-- Bundle non optimisé (~500KB)
+- Components not memoized (React.memo missing)
+- No lazy loading for v2/v3/v4 pages
+- Bundle not optimized (~500KB)
 
 ---
 
-## 🧪 Protocole de Tests et Debugging
+## Testing & Debugging Protocol
 
-### ❌ NE JAMAIS créer de fichiers de test/debug à la racine
+### DO NOT create test/debug files at root
 
-**Interdits** :
-- `test_*.txt`, `test_*.js` à la racine
-- `debug_*.txt`, `debug_*.log` à la racine
-- Fichiers temporaires sans extension
+**Forbidden**:
+- `test_*.txt`, `test_*.js` at root
+- `debug_*.txt`, `debug_*.log` at root
+- Temporary files without extension
 
-### ✅ À la place, utiliser
+### Use instead
 
-#### 1. Tests unitaires (tests/)
+#### 1. Unit tests (tests/)
 
 ```bash
 tests/
-├── benchmarkUtils.test.ts        # Tests logique métier
+├── benchmarkUtils.test.ts        # Business logic tests
 ├── components/
-│   └── BenchmarkGrid.test.tsx    # Tests composants
+│   └── BenchmarkGrid.test.tsx    # Component tests
 └── api/
-    └── analyze.test.ts           # Tests routes API
+    └── analyze.test.ts           # API route tests
 ```
 
-**Commandes** :
+**Commands**:
 ```bash
-npm test              # Run tous les tests
+npm test              # Run all tests
 npm test -- --watch   # Watch mode
-npm test -- --ui      # UI Vitest
+npm test -- --ui      # Vitest UI
 npm test -- --coverage
 ```
 
-#### 2. Tests E2E (Playwright)
+#### 2. E2E Tests (Playwright)
 
 ```bash
 npx playwright test           # Run E2E
-npx playwright test --ui      # Mode UI
+npx playwright test --ui      # UI mode
 npx playwright test --debug   # Debug mode
 ```
 
-#### 3. Scripts de test temporaires (.dev-tests/)
+#### 3. Temporary test scripts (.dev-tests/)
 
-**Pour les tests API ou debugging ponctuel** :
+**For API tests or ad-hoc debugging**:
 
 ```bash
 .dev-tests/
-├── test-dust-api.js          # Test intégration Dust
-├── test-async-api.js         # Test pattern polling
-└── output/                   # Sorties de tests (gitignored)
+├── test-dust-api.js          # Dust integration test
+├── test-async-api.js         # Polling pattern test
+└── output/                   # Test outputs (gitignored)
 ```
 
 ```bash
 node .dev-tests/test-dust-api.js
 ```
 
-**Note** : `.dev-tests/` est dans `.gitignore`
+**Note**: `.dev-tests/` is in `.gitignore`
 
-### Workflow de test recommandé
+### Recommended test workflow
 
 ```bash
-# 1. Créer test unitaire
-touch tests/nouvelle-feature.test.ts
+# 1. Create unit test
+touch tests/new-feature.test.ts
 
-# 2. Implémenter
-# utils/nouvelle-feature.ts
+# 2. Implement
+# utils/new-feature.ts
 
-# 3. Tester
+# 3. Test
 npm test
 
 # 4. Commit
 git add tests/ utils/
-git commit -m "feat: Ajouter nouvelle feature avec tests"
+git commit -m "feat: Add new feature with tests"
 ```
 
 ---
 
-## 📝 Conventions
+## Conventions
 
 ### Commits
 
-Format : `<type>(<scope>): <message>`
+Format: `<type>(<scope>): <message>`
 
 ```bash
 feat(v4): Add async polling for Dust analysis
@@ -339,18 +345,18 @@ chore(deps): Update Next.js to 16.0.4
 
 ### Code Style
 
-- TypeScript strict mode obligatoire
-- Composants fonctionnels avec hooks
-- Props typées explicitement
-- Pas de `any` (typer correctement)
-- Pas de `console.log` en production
+- TypeScript strict mode required
+- Functional components with hooks
+- Explicitly typed props
+- No `any` (type correctly)
+- No `console.log` in production
 
-### Nommage fichiers
+### File Naming
 
 ```
 components/
 ├── ComponentName.tsx      # PascalCase
-├── ComponentName.test.tsx # Tests associés
+├── ComponentName.test.tsx # Associated tests
 
 utils/
 └── functionName.ts        # camelCase
@@ -361,68 +367,68 @@ tests/
 
 ---
 
-## ✅ Checklist avant commit
+## Pre-commit Checklist
 
-- [ ] Tests passent (`npm test`)
-- [ ] Build réussit (`npm run build`)
-- [ ] Types valides (`npx tsc --noEmit`)
-- [ ] Pas de fichiers debug à la racine
-- [ ] Pas de `console.log` de debug
-- [ ] Pas de `any` non justifié
+- [ ] Tests pass (`npm test`)
+- [ ] Build succeeds (`npm run build`)
+- [ ] Types valid (`npx tsc --noEmit`)
+- [ ] No debug files at root
+- [ ] No debug `console.log`
+- [ ] No unjustified `any`
 
 ---
 
-## 🚫 Anti-patterns à éviter
+## Anti-patterns to Avoid
 
-### ❌ Éditer retailBenchmarks.ts manuellement
+### DO NOT edit benchmarks.ts manually
 ```bash
-# MAUVAIS
-vim data/retailBenchmarks.ts
+# BAD
+vim data/benchmarks.ts
 
-# BON
+# GOOD
 npm run generate:benchmarks
 ```
 
-### ❌ Utiliser streaming SSE (timeout Netlify)
+### DO NOT use streaming SSE (Netlify timeout)
 ```typescript
-// MAUVAIS - Timeout après 10s
+// BAD - Timeout after 10s
 const stream = new ReadableStream({ ... });
 return new Response(stream, { headers: { 'Content-Type': 'text/event-stream' } });
 
-// BON - Pattern async polling
+// GOOD - Async polling pattern
 return NextResponse.json({ status: 'created', conversationId });
 ```
 
-### ❌ Secrets en dur dans le code
+### DO NOT hardcode secrets
 ```typescript
-// MAUVAIS
+// BAD
 const apiKey = 'sk-xxxxxxxx';
 
-// BON
+// GOOD
 const apiKey = process.env.DUST_API_KEY;
 ```
 
-### ❌ Fichiers temporaires à la racine
+### DO NOT create temporary files at root
 ```bash
-# MAUVAIS
+# BAD
 touch test_output.txt
 
-# BON
+# GOOD
 mkdir -p .dev-tests/output
 touch .dev-tests/output/result.txt
 ```
 
 ---
 
-## 📚 Ressources
+## Resources
 
-### Documentation projet
-- [docs/SYNC.md](docs/SYNC.md) - Synchronisation Google Sheets
-- [docs/BENCHMARKS.md](docs/BENCHMARKS.md) - Structure des données
-- [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) - Guide développeur
-- [docs/AUDIT.md](docs/AUDIT.md) - Audit technique
+### Project Documentation
+- [docs/SYNC.md](docs/SYNC.md) - Google Sheets synchronization
+- [docs/BENCHMARKS.md](docs/BENCHMARKS.md) - Data structure
+- [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) - Developer guide
+- [docs/AUDIT.md](docs/AUDIT.md) - Technical audit
 
-### Documentation externe
+### External Documentation
 - [Next.js Docs](https://nextjs.org/docs)
 - [Dust.tt API](https://docs.dust.tt/reference/developer-platform-overview)
 - [Netlify Functions](https://docs.netlify.com/functions/overview/)
@@ -431,10 +437,13 @@ touch .dev-tests/output/result.txt
 
 ---
 
-## 📅 Historique des décisions
+## Decision History
 
-| Date | Décision | Raison |
+| Date | Decision | Reason |
 |------|----------|--------|
-| Nov 2025 | Migration streaming → async polling | Netlify Free timeout 10s |
-| Nov 2025 | Intégration Dust.tt | AI analysis pour v4 |
-| Nov 2025 | Ajout heartbeat (abandonné) | Timeout incompatible |
+| Nov 2025 | Streaming → Async polling migration | Netlify Free 10s timeout |
+| Nov 2025 | Dust.tt integration | AI analysis for v4 |
+| Nov 2025 | Heartbeat approach (abandoned) | Timeout incompatible |
+| Nov 2025 | Expanded to 12 industries | B2B market coverage |
+| Nov 2025 | Collapsible UI sections | Reduce cognitive load |
+| Nov 2025 | "Why this metric?" toggles | Educational UX improvement |

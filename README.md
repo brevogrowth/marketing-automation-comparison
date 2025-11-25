@@ -1,187 +1,182 @@
-# 📊 Brevo KPI Benchmark
+# Brevo KPI Benchmark
 
-Application Next.js pour analyser et comparer vos KPIs e-commerce avec les benchmarks sectoriels. Obtenez des insights personnalisés basés sur votre industrie, votre pricing et votre taille d'entreprise.
+A strategic marketing asset for Brevo's mid-market prospecting. This interactive benchmarking tool helps B2C and B2B businesses compare their marketing KPIs against industry standards and receive AI-powered recommendations.
 
-## ✨ Fonctionnalités
+**Live Demo:** [brevo-kpi-benchmark.netlify.app](https://brevo-kpi-benchmark.netlify.app)
 
-- 📈 **3 versions d'analyse** : Grille interactive, analyse comparative, et analyse AI
-- 🤖 **AI-Powered Insights** : Recommandations personnalisées via Dust.tt
-- 🎯 **Traffic Lights System** : Visualisation immédiate de vos performances (vert/jaune/rouge)
-- 📊 **Benchmarks sectoriels** : 3+ industries avec données réelles
-- 🔄 **Synchronisation automatique** : Google Sheets → CSV → TypeScript
+## Features
 
-## 🚀 Démarrage rapide
+- **12 Industries Supported** - B2C (Fashion, Beauty, Home, Electronics, Food, Sports, Luxury, Family) and B2B (SaaS, Services, Manufacturing, Wholesale)
+- **3 Price Tiers** - Budget, Mid-Range, and Luxury segments with tailored benchmarks
+- **Traffic Light System** - Instant visual feedback (green/yellow/red) on your performance
+- **AI-Powered Analysis** - Personalized strategic recommendations via Dust.tt
+- **Collapsible UI** - Clean interface with expandable sections and "Why this metric?" explanations
+- **Research-Backed Data** - Benchmarks sourced from industry reports and real data
+
+## Quick Start
 
 ### Installation
 
 ```bash
-# Cloner le repository
+# Clone the repository
 git clone https://github.com/brevogrowth/brevo-kpi-benchmark.git
 cd brevo-kpi-benchmark
 
-# Installer les dépendances
+# Install dependencies
 npm install
 
-# Configurer les variables d'environnement (optionnel pour v4)
+# Configure environment variables (required for AI analysis)
 cp .env.example .env.local
-# Éditer .env.local avec vos clés Dust.tt
+# Edit .env.local with your Dust.tt credentials
 ```
 
-### Développement
+### Development
 
 ```bash
-# Lancer le serveur de développement
+# Start development server
 npm run dev
 
-# Lancer les tests
+# Run unit tests
 npm test
 
-# Lancer les tests E2E
+# Run E2E tests
 npx playwright test
 
-# Build de production
+# Production build
 npm run build
 npm start
 ```
 
-Ouvrir [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000)
 
-## 📊 Versions disponibles
+## Application Versions
 
-- **v2** (`/v2`) - Grille interactive avec traffic lights (vert/jaune/rouge)
-- **v3** (`/v3`) - Analyse comparative détaillée avec insights sectoriels
-- **v4** (`/v4`) - Analyse AI via Dust.tt avec recommandations personnalisées
+| Route | Description | Status |
+|-------|-------------|--------|
+| `/` | Static landing page | Legacy |
+| `/v2` | Interactive grid with traffic lights | Stable |
+| `/v3` | Detailed comparative analysis | Stable |
+| `/v4` | **AI-powered analysis via Dust.tt** | Active |
 
-## 🗂️ Gestion des Benchmarks
-
-### Synchronisation Google Sheets
-
-```bash
-# Sync manuelle depuis Google Sheets
-npm run sync:benchmarks
-
-# Génération TypeScript depuis CSV local
-npm run generate:benchmarks
-```
-
-**Google Sheet** : [Brevo KPI Benchmarks](https://docs.google.com/spreadsheets/d/1Q6U5y8GLPnY4QZcoRgbJkAGq9LJ20YmXXU1KvJ7NWuQ/edit)
-
-**Documentation complète** : [docs/](docs/)
-- [docs/SYNC.md](docs/SYNC.md) - Guide de synchronisation
-- [docs/BENCHMARKS.md](docs/BENCHMARKS.md) - Structure des données
-- [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) - Guide développeur
-
-## 🏗️ Structure du projet
+## Project Structure
 
 ```
 app/
-├── v2/          # Grille interactive avec traffic lights
-├── v3/          # Analyse comparative
-├── v4/          # Analyse AI
-└── api/analyze/ # Endpoint AI Dust.tt
+├── v2/              # Interactive benchmark grid
+├── v3/              # Comparative analysis
+├── v4/              # AI analysis (main version)
+└── api/analyze/     # Dust.tt AI endpoint
 
-components/      # Composants React
-├── BenchmarkGrid.tsx
-├── AiAnalysisResult.tsx
-└── SidebarInputs.tsx
+components/
+├── BenchmarkGrid.tsx       # KPI grid with collapsible sections
+├── AiAnalysisResult.tsx    # Markdown rendering for AI output
+└── SidebarInputs.tsx       # Industry/price tier selector
 
 data/
-├── benchmarks.csv          # Source de vérité (sync Google Sheets)
-└── retailBenchmarks.ts     # Auto-généré depuis CSV
-
-scripts/
-├── generate-benchmarks.js  # CSV → TypeScript
-└── sync-from-gsheet.js     # Google Sheets → CSV
+├── benchmarks.csv          # Source of truth (synced from Google Sheets)
+├── benchmarks.ts           # Auto-generated TypeScript (DO NOT EDIT)
+└── metricExplanations.ts   # "Why this metric?" content
 
 utils/
-└── benchmarkUtils.ts       # Logique métier (traffic lights, scores)
+└── benchmarkUtils.ts       # Traffic light logic & scoring
 
-tests/
-└── benchmarkUtils.test.ts  # Tests unitaires
+scripts/
+├── generate-benchmarks.js  # CSV → TypeScript generator
+└── sync-from-gsheet.js     # Google Sheets → CSV sync
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Framework** : Next.js 16 (App Router)
-- **UI** : React 19, Tailwind CSS 4, Shadcn/ui
-- **Language** : TypeScript (strict mode)
-- **AI** : Dust.tt API (streaming responses)
-- **Tests** : Vitest (unitaires) + Playwright (E2E)
-- **Validation** : Zod
-- **Data** : CSV synchronisé depuis Google Sheets
+| Component | Technology | Version |
+|-----------|------------|---------|
+| Framework | Next.js (App Router) | 16.x |
+| UI | React + Tailwind CSS | 19.x / 4.x |
+| Language | TypeScript (strict) | 5.x |
+| AI | Dust.tt API | v1 |
+| Validation | Zod | 3.x |
+| Testing | Vitest + Playwright | 2.x / 1.x |
+| Hosting | Netlify | Free tier |
 
-## 🧪 Tests
+## Benchmark Data Management
+
+### Sync from Google Sheets
 
 ```bash
-# Tests unitaires (Vitest)
-npm test
+# Manual sync from Google Sheets
+npm run sync:benchmarks
 
-# Tests avec couverture
-npm test -- --coverage
-
-# Tests E2E (Playwright)
-npx playwright test
-
-# Tests E2E en mode UI
-npx playwright test --ui
+# Generate TypeScript from local CSV
+npm run generate:benchmarks
 ```
 
-**Couverture actuelle** :
-- ✅ `benchmarkUtils.ts` - Tests unitaires complets
-- ⚠️ Composants React - À ajouter
-- ⚠️ API routes - À ajouter
+**Source Sheet:** [Brevo KPI Benchmarks](https://docs.google.com/spreadsheets/d/1Q6U5y8GLPnY4QZcoRgbJkAGq9LJ20YmXXU1KvJ7NWuQ/edit)
 
-## 🔒 Configuration (.env.local)
+> **Warning:** Never edit `data/benchmarks.ts` manually. Always use `npm run generate:benchmarks`.
 
-Pour utiliser la version v4 (analyse AI), créez un fichier `.env.local` :
+## Environment Variables
+
+Create a `.env.local` file for the AI analysis feature (v4):
 
 ```bash
-# Dust.tt Configuration (requis pour v4)
+# Dust.tt Configuration (required for v4)
 DUST_WORKSPACE_ID=your_workspace_id
 DUST_API_KEY=your_api_key
 DUST_ASSISTANT_ID=your_assistant_id
 ```
 
-⚠️ **IMPORTANT** : Ne committez JAMAIS le fichier `.env` avec vos secrets !
+> **Security:** Never commit `.env.local` with real credentials.
 
-## 📚 Documentation
+## Testing
 
-| Fichier | Description |
-|---------|-------------|
-| [docs/SYNC.md](docs/SYNC.md) | Synchronisation Google Sheets (automatique et manuelle) |
-| [docs/BENCHMARKS.md](docs/BENCHMARKS.md) | Structure des benchmarks, ajout d'industries, métriques |
-| [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) | Guide développeur, tests, validation |
-| [CLAUDE.md](CLAUDE.md) | Conventions pour développement avec Claude Code |
+```bash
+# Unit tests (Vitest)
+npm test
+npm test -- --coverage
+npm test -- --watch
 
-## 🔗 Liens utiles
+# E2E tests (Playwright)
+npx playwright test
+npx playwright test --ui
+npx playwright test --debug
+```
 
-- **Application** : http://localhost:3000
-- **Google Sheet** : https://docs.google.com/spreadsheets/d/1Q6U5y8GLPnY4QZcoRgbJkAGq9LJ20YmXXU1KvJ7NWuQ/edit
-- **Repository** : https://github.com/brevogrowth/brevo-kpi-benchmark
-- **GitHub Actions** : Sync automatique tous les lundis à 9h UTC
+## Documentation
 
-## 🐛 Issues connues et TODOs
+| File | Description |
+|------|-------------|
+| [CLAUDE.md](CLAUDE.md) | Development guidelines for Claude Code |
+| [docs/SYNC.md](docs/SYNC.md) | Google Sheets synchronization guide |
+| [docs/BENCHMARKS.md](docs/BENCHMARKS.md) | Benchmark data structure |
+| [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) | Developer guide |
+| [docs/AUDIT.md](docs/AUDIT.md) | Technical audit & roadmap |
 
-Voir [docs/AUDIT.md](docs/AUDIT.md) pour l'audit complet de la codebase.
+## Architecture Highlights
 
-**Priorités** :
-- [ ] Refactoriser duplication de composants (HeroSection v1/v2/v3)
-- [ ] Ajouter tests pour composants React
-- [ ] Optimiser performance (React.memo, lazy loading)
-- [ ] Configurer ESLint + Prettier
-- [ ] Ajouter rate limiting sur `/api/analyze`
+### Async Polling Pattern
 
-## 🤝 Contributing
+Due to Netlify Free tier's 10-second timeout constraint, AI analysis uses an async polling pattern instead of streaming:
 
-Les contributions sont les bienvenues ! Veuillez :
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/amazing-feature`)
-3. Commit vos changements (`git commit -m 'feat: Add amazing feature'`)
-4. Push vers la branche (`git push origin feature/amazing-feature`)
-5. Ouvrir une Pull Request
+1. **POST /api/analyze** - Creates a Dust.tt conversation (returns in ~2s)
+2. **GET /api/analyze/[id]** - Polls for completion (every 5s for up to 5 min)
 
-Suivez les conventions définies dans [CLAUDE.md](CLAUDE.md).
+This enables AI-powered analysis that takes 2-3 minutes without hitting serverless timeouts.
 
-## 📝 License
+### UX Improvements (Latest)
 
-Projet Brevo - Usage interne.
+- **Collapsible Sections** - Category headers are closed by default to reduce cognitive load
+- **"Why this metric?"** - Each KPI has an expandable explanation with definition, importance, and best practices
+- **Animated Transitions** - Smooth chevron animations and content reveals
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'feat: Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+Follow the conventions in [CLAUDE.md](CLAUDE.md).
+
+## License
+
+Brevo Internal Project - All rights reserved.
