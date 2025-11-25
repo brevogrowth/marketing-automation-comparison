@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BenchmarkData, PriceTier } from '@/data/benchmarks';
 import { getBenchmarkStatus, getBenchmarkLevel, getHumorousMessage } from '@/utils/benchmarkUtils';
+import { metricExplanations } from '@/data/metricExplanations';
 
 interface BenchmarkGridProps {
     benchmarks: BenchmarkData[];
@@ -11,6 +12,16 @@ interface BenchmarkGridProps {
     selectedKpis: string[];
     onToggleKpi: (id: string) => void;
 }
+
+// Category icons for visual distinction
+const categoryIcons: Record<string, string> = {
+    'Strategic Efficiency': '🎯',
+    'Acquisition': '📈',
+    'Conversion': '🛒',
+    'Channel Mix': '📱',
+    'Retention': '🔄',
+    'Economics': '💰'
+};
 
 export const BenchmarkGrid = ({
     benchmarks,
@@ -23,6 +34,20 @@ export const BenchmarkGrid = ({
 }: BenchmarkGridProps) => {
 
     const categories = ['Strategic Efficiency', 'Acquisition', 'Conversion', 'Channel Mix', 'Retention', 'Economics'];
+
+    // Track which sections are open (all closed by default)
+    const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
+
+    // Track which "Why this metric?" toggles are open
+    const [openExplanations, setOpenExplanations] = useState<Record<string, boolean>>({});
+
+    const toggleSection = (category: string) => {
+        setOpenSections(prev => ({ ...prev, [category]: !prev[category] }));
+    };
+
+    const toggleExplanation = (metricId: string) => {
+        setOpenExplanations(prev => ({ ...prev, [metricId]: !prev[metricId] }));
+    };
 
     const handleToggle = (kpi: BenchmarkData) => {
         const isSelected = selectedKpis.includes(kpi.id);
@@ -41,15 +66,33 @@ export const BenchmarkGrid = ({
                 const categoryKpis = benchmarks.filter(b => b.category === category);
                 if (categoryKpis.length === 0) return null;
 
+                const isOpen = openSections[category] ?? false;
+                const kpiCount = categoryKpis.length;
+
                 return (
                     <div key={category} className="bg-white rounded-xl shadow-[0_16px_48px_0_rgba(0,0,0,0.08)] border border-gray-100 overflow-hidden">
-                        <div className="bg-green-50 px-6 py-4 flex justify-between items-center border-b border-green-100">
+                        <button
+                            onClick={() => toggleSection(category)}
+                            className="w-full bg-green-50 px-6 py-4 flex justify-between items-center border-b border-green-100 hover:bg-green-100 transition-colors cursor-pointer"
+                        >
                             <div className="flex items-center gap-3">
+                                <span className="text-xl">{categoryIcons[category] || '📊'}</span>
                                 <h3 className="text-lg font-bold text-brevo-dark-green">{category}</h3>
+                                <span className="text-sm text-gray-500 font-normal">({kpiCount} metrics)</span>
                             </div>
-                        </div>
+                            <div className="flex items-center gap-2">
+                                <svg
+                                    className={`w-5 h-5 text-brevo-dark-green transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
 
-                        <div className="divide-y divide-gray-100">
+                        <div className={`divide-y divide-gray-100 transition-all duration-300 ${isOpen ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                             {categoryKpis.map(kpi => {
                                 const range = kpi.ranges[priceTier];
                                 const userVal = userValues[kpi.id] || '';
@@ -72,7 +115,7 @@ export const BenchmarkGrid = ({
                                                         />
                                                     </div>
                                                 )}
-                                                <div>
+                                                <div className="flex-1">
                                                     <div className="flex items-center gap-2 mb-1">
                                                         <h4 className={`text-sm font-bold ${isSelected || !isComparing ? 'text-gray-900' : 'text-gray-500'}`}>{kpi.name}</h4>
                                                         <div className="group relative">
@@ -84,7 +127,62 @@ export const BenchmarkGrid = ({
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <p className="text-xs text-gray-500">{range.insight}</p>
+                                                    <p className="text-xs text-gray-500 mb-2">{range.insight}</p>
+
+                                                    {/* Why this metric? Toggle */}
+                                                    {metricExplanations[kpi.id] && (
+                                                        <div className="mt-1">
+                                                            <button
+                                                                onClick={() => toggleExplanation(kpi.id)}
+                                                                className="text-xs text-brevo-green hover:text-brevo-dark-green font-medium flex items-center gap-1 transition-colors"
+                                                            >
+                                                                <svg
+                                                                    className={`w-3 h-3 transition-transform duration-200 ${openExplanations[kpi.id] ? 'rotate-90' : ''}`}
+                                                                    fill="none"
+                                                                    viewBox="0 0 24 24"
+                                                                    stroke="currentColor"
+                                                                >
+                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                                </svg>
+                                                                Why this metric?
+                                                            </button>
+
+                                                            {/* Explanation Content */}
+                                                            <div className={`overflow-hidden transition-all duration-300 ${openExplanations[kpi.id] ? 'max-h-[500px] opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                                                                <div className="bg-gray-50 rounded-lg p-4 text-xs space-y-3 border border-gray-100">
+                                                                    {/* Definition */}
+                                                                    <div>
+                                                                        <h5 className="font-semibold text-gray-900 mb-1">Definition</h5>
+                                                                        <p className="text-gray-600">{metricExplanations[kpi.id].definition}</p>
+                                                                        {metricExplanations[kpi.id].formula && (
+                                                                            <p className="text-gray-500 mt-1 font-mono bg-white px-2 py-1 rounded inline-block">
+                                                                                Formula: {metricExplanations[kpi.id].formula}
+                                                                            </p>
+                                                                        )}
+                                                                    </div>
+
+                                                                    {/* Why it matters */}
+                                                                    <div>
+                                                                        <h5 className="font-semibold text-gray-900 mb-1">Why it matters</h5>
+                                                                        <p className="text-gray-600">{metricExplanations[kpi.id].importance}</p>
+                                                                    </div>
+
+                                                                    {/* Best practices */}
+                                                                    <div>
+                                                                        <h5 className="font-semibold text-gray-900 mb-1">Best practices</h5>
+                                                                        <ul className="text-gray-600 space-y-1">
+                                                                            {metricExplanations[kpi.id].bestPractices.map((practice, idx) => (
+                                                                                <li key={idx} className="flex items-start gap-2">
+                                                                                    <span className="text-brevo-green mt-0.5">•</span>
+                                                                                    <span>{practice}</span>
+                                                                                </li>
+                                                                            ))}
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )}
                                                 </div>
                                             </div>
 
