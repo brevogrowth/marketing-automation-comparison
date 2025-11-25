@@ -197,8 +197,8 @@ export default function V4Page() {
                                 setIsComparing(val);
                                 if (val) {
                                     // Auto-select critical KPIs when entering analysis mode
-                                    // Selecting a few key metrics by default as requested
-                                    setSelectedKpis(['cac', 'retention_rate', 'conversion_rate']);
+                                    // These 3 KPIs exist across all industries (B2C and B2B)
+                                    setSelectedKpis(['cac', 'repeat_rate', 'conv_rate']);
                                 } else {
                                     setShowAnalysis(false);
                                     setSelectedKpis([]);

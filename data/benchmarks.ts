@@ -131,6 +131,18 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Churn Rate',
+            unit: '%',
+            description: 'Percentage of customers who do not return within 12 months.',
+            ranges: {
+                'Budget': { low: 45, median: 55, high: 65, insight: 'Replenishment reduces churn.' },
+                'Mid-Range': { low: 35, median: 45, high: 55, insight: 'Loyalty programs retain customers.' },
+                'Luxury': { low: 25, median: 35, high: 45, insight: 'Brand devotion minimizes churn.' },
+            },
+        },
+        {
             id: 'return_rate',
             category: 'Economics',
             name: 'Return Rate',
@@ -200,18 +212,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 3, median: 7, high: 14, insight: 'Flash sales and restocks.' },
                 'Mid-Range': { low: 4, median: 9, high: 16, insight: 'New launch alerts effective.' },
                 'Luxury': { low: 2, median: 4, high: 8, insight: 'VIP early access only.' },
-            },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 45, median: 55, high: 65, insight: 'Replenishment reduces churn.' },
-                'Mid-Range': { low: 35, median: 45, high: 55, insight: 'Loyalty programs retain customers.' },
-                'Luxury': { low: 25, median: 35, high: 45, insight: 'Brand devotion minimizes churn.' },
             },
         }
     ],
@@ -325,6 +325,18 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Churn Rate',
+            unit: '%',
+            description: 'Percentage of customers who do not return within 12 months.',
+            ranges: {
+                'Budget': { low: 65, median: 75, high: 85, insight: 'Infrequent purchase category.' },
+                'Mid-Range': { low: 55, median: 65, high: 75, insight: 'Upgrade cycles help retention.' },
+                'Luxury': { low: 45, median: 55, high: 65, insight: 'Brand ecosystem reduces churn.' },
+            },
+        },
+        {
             id: 'return_rate',
             category: 'Economics',
             name: 'Return Rate',
@@ -394,18 +406,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 2, median: 4, high: 8, insight: 'Flash deals work well.' },
                 'Mid-Range': { low: 2, median: 5, high: 10, insight: 'Restock and launch alerts.' },
                 'Luxury': { low: 1, median: 2, high: 5, insight: 'Concierge service updates.' },
-            },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 65, median: 75, high: 85, insight: 'Infrequent purchase category.' },
-                'Mid-Range': { low: 55, median: 65, high: 75, insight: 'Upgrade cycles help retention.' },
-                'Luxury': { low: 45, median: 55, high: 65, insight: 'Brand ecosystem reduces churn.' },
             },
         }
     ],
@@ -519,6 +519,18 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Churn Rate',
+            unit: '%',
+            description: 'Percentage of customers who do not return within 12 months.',
+            ranges: {
+                'Budget': { low: 45, median: 55, high: 65, insight: 'Kids age out of products.' },
+                'Mid-Range': { low: 38, median: 48, high: 58, insight: 'Multi-child families stay longer.' },
+                'Luxury': { low: 30, median: 40, high: 50, insight: 'Premium brand loyalty endures.' },
+            },
+        },
+        {
             id: 'return_rate',
             category: 'Economics',
             name: 'Return Rate',
@@ -588,18 +600,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 3, median: 7, high: 14, insight: 'Flash sales and restocks.' },
                 'Mid-Range': { low: 4, median: 9, high: 16, insight: 'Size reminders effective.' },
                 'Luxury': { low: 2, median: 5, high: 10, insight: 'Exclusive launch access.' },
-            },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 45, median: 55, high: 65, insight: 'Kids age out of products.' },
-                'Mid-Range': { low: 38, median: 48, high: 58, insight: 'Multi-child families stay longer.' },
-                'Luxury': { low: 30, median: 40, high: 50, insight: 'Premium brand loyalty endures.' },
             },
         }
     ],
@@ -713,6 +713,18 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Churn Rate',
+            unit: '%',
+            description: 'Percentage of customers who do not return within 12 months.',
+            ranges: {
+                'Budget': { low: 60, median: 70, high: 80, insight: 'High churn is typical; focus on acquisition volume.' },
+                'Mid-Range': { low: 40, median: 50, high: 60, insight: 'Retention is key to profitability.' },
+                'Luxury': { low: 20, median: 30, high: 40, insight: 'Client relationships reduce churn significantly.' },
+            },
+        },
+        {
             id: 'return_rate',
             category: 'Economics',
             name: 'Return Rate',
@@ -783,18 +795,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Mid-Range': { low: 3, median: 7, high: 12, insight: 'Growing channel for engagement.' },
                 'Luxury': { low: 1, median: 3, high: 5, insight: 'Used sparingly for VIP service.' },
             },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 60, median: 70, high: 80, insight: 'High churn is typical; focus on acquisition volume.' },
-                'Mid-Range': { low: 40, median: 50, high: 60, insight: 'Retention is key to profitability.' },
-                'Luxury': { low: 20, median: 30, high: 40, insight: 'Client relationships reduce churn significantly.' },
-            },
         }
     ],
     Food: [
@@ -843,7 +843,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 3.5, median: 5, high: 7, insight: 'Low price point impulse buys.' },
                 'Mid-Range': { low: 2.5, median: 3.8, high: 5.5, insight: 'Quality content drives conversion.' },
-                'Luxury': { low: 1.5, median: 2.5, high: 3.8, insight: 'Gourmet consideration phase.' },
+                'Luxury': { low: 1.5, median: 2.5, high: 3.8, insight: 'Gourmet story sells.' },
             },
         },
         {
@@ -853,9 +853,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of mobile visitors who make a purchase.',
             ranges: {
-                'Budget': { low: 2.5, median: 3.8, high: 5.5, insight: 'Quick reorder convenience.' },
-                'Mid-Range': { low: 1.8, median: 2.8, high: 4.2, insight: 'Recipe inspiration drives mobile.' },
-                'Luxury': { low: 1, median: 1.7, high: 2.6, insight: 'Gift purchases on mobile.' },
+                'Budget': { low: 2.2, median: 3.2, high: 4.6, insight: 'Quick reorder habits.' },
+                'Mid-Range': { low: 1.6, median: 2.5, high: 3.6, insight: 'Recipe-driven mobile orders.' },
+                'Luxury': { low: 0.9, median: 1.5, high: 2.4, insight: 'Desktop preferred for premium gifts.' },
             },
         },
         {
@@ -865,9 +865,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of carts created that are not purchased.',
             ranges: {
-                'Budget': { low: 55, median: 62, high: 70, insight: 'Low commitment threshold.' },
-                'Mid-Range': { low: 60, median: 68, high: 75, insight: 'Shipping cost sensitivity.' },
-                'Luxury': { low: 65, median: 72, high: 80, insight: 'Higher price point hesitation.' },
+                'Budget': { low: 62, median: 68, high: 74, insight: 'Shipping cost barrier.' },
+                'Mid-Range': { low: 65, median: 72, high: 78, insight: 'Perishable concerns.' },
+                'Luxury': { low: 68, median: 75, high: 82, insight: 'Gift hesitation.' },
             },
         },
         {
@@ -877,9 +877,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '€',
             description: 'Average revenue per transaction.',
             ranges: {
-                'Budget': { low: 25, median: 38, high: 55, insight: 'Subscription box value.' },
-                'Mid-Range': { low: 45, median: 65, high: 90, insight: 'Curated box subscriptions.' },
-                'Luxury': { low: 80, median: 120, high: 180, insight: 'Gourmet gift baskets.' },
+                'Budget': { low: 28, median: 42, high: 58, insight: 'Regular grocery top-ups.' },
+                'Mid-Range': { low: 50, median: 72, high: 100, insight: 'Specialty baskets.' },
+                'Luxury': { low: 85, median: 130, high: 200, insight: 'Gourmet gift boxes.' },
             },
         },
         {
@@ -889,9 +889,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of customers who buy more than once.',
             ranges: {
-                'Budget': { low: 40, median: 52, high: 65, insight: 'Consumable nature drives repeats.' },
-                'Mid-Range': { low: 45, median: 58, high: 72, insight: 'Subscription stickiness.' },
-                'Luxury': { low: 35, median: 48, high: 62, insight: 'Gifting and special occasions.' },
+                'Budget': { low: 35, median: 48, high: 62, insight: 'Consumable repeat nature.' },
+                'Mid-Range': { low: 40, median: 55, high: 70, insight: 'Subscription success.' },
+                'Luxury': { low: 30, median: 45, high: 60, insight: 'Gift-giving seasonality impacts.' },
             },
         },
         {
@@ -901,81 +901,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '#/yr',
             description: 'Average number of orders per customer per year.',
             ranges: {
-                'Budget': { low: 4, median: 6, high: 9, insight: 'Monthly subscriptions common.' },
-                'Mid-Range': { low: 3.5, median: 5, high: 7.5, insight: 'Bi-weekly to monthly.' },
-                'Luxury': { low: 2, median: 3.5, high: 5.5, insight: 'Special occasion purchases.' },
-            },
-        },
-        {
-            id: 'return_rate',
-            category: 'Economics',
-            name: 'Return Rate',
-            unit: '%',
-            description: 'Percentage of items returned.',
-            ranges: {
-                'Budget': { low: 2, median: 4, high: 7, insight: 'Perishables rarely returned.' },
-                'Mid-Range': { low: 3, median: 5, high: 9, insight: 'Quality guarantees used sparingly.' },
-                'Luxury': { low: 2, median: 4, high: 8, insight: 'Premium quality minimizes returns.' },
-            },
-        },
-        {
-            id: 'gross_margin',
-            category: 'Economics',
-            name: 'Gross Margin',
-            unit: '%',
-            description: 'Revenue minus Cost of Goods Sold (COGS).',
-            ranges: {
-                'Budget': { low: 35, median: 42, high: 50, insight: 'Commodity pressure.' },
-                'Mid-Range': { low: 45, median: 54, high: 62, insight: 'Curation adds value.' },
-                'Luxury': { low: 55, median: 65, high: 75, insight: 'Artisan premium pricing.' },
-            },
-        },
-        {
-            id: 'ltv_cac',
-            category: 'Strategic Efficiency',
-            name: 'LTV:CAC Ratio',
-            unit: 'x',
-            description: 'Lifetime Value divided by Customer Acquisition Cost.',
-            ranges: {
-                'Budget': { low: 4, median: 6, high: 9, insight: 'Subscription LTV exceptional.' },
-                'Mid-Range': { low: 4.5, median: 7, high: 10, insight: 'Loyalty programs compound value.' },
-                'Luxury': { low: 3.5, median: 5.5, high: 8.5, insight: 'Gifting expands customer base.' },
-            },
-        },
-        {
-            id: 'mer',
-            category: 'Strategic Efficiency',
-            name: 'Marketing Efficiency Ratio (MER)',
-            unit: 'x',
-            description: 'Total Revenue / Total Marketing Spend.',
-            ranges: {
-                'Budget': { low: 3, median: 4.5, high: 7, insight: 'Trial costs impact efficiency.' },
-                'Mid-Range': { low: 2.8, median: 4, high: 6, insight: 'Content investment compounds.' },
-                'Luxury': { low: 3, median: 4.5, high: 7, insight: 'Premium margins help MER.' },
-            },
-        },
-        {
-            id: 'email_rev_share',
-            category: 'Channel Mix',
-            name: 'Email Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Email Marketing.',
-            ranges: {
-                'Budget': { low: 25, median: 35, high: 48, insight: 'Replenishment reminders key.' },
-                'Mid-Range': { low: 28, median: 38, high: 52, insight: 'Recipe content drives engagement.' },
-                'Luxury': { low: 20, median: 30, high: 42, insight: 'Exclusive offerings via email.' },
-            },
-        },
-        {
-            id: 'sms_rev_share',
-            category: 'Channel Mix',
-            name: 'SMS Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to SMS Marketing.',
-            ranges: {
-                'Budget': { low: 5, median: 10, high: 18, insight: 'Delivery and restock alerts.' },
-                'Mid-Range': { low: 6, median: 12, high: 20, insight: 'Flash sales effective.' },
-                'Luxury': { low: 3, median: 7, high: 12, insight: 'Limited release alerts.' },
+                'Budget': { low: 4, median: 6, high: 9, insight: 'Weekly/biweekly orders.' },
+                'Mid-Range': { low: 3, median: 4.5, high: 7, insight: 'Monthly subscriptions.' },
+                'Luxury': { low: 2, median: 3.2, high: 5, insight: 'Occasion-based purchases.' },
             },
         },
         {
@@ -985,9 +913,81 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of customers who do not return within 12 months.',
             ranges: {
-                'Budget': { low: 35, median: 45, high: 55, insight: 'Subscription fatigue factor.' },
-                'Mid-Range': { low: 30, median: 40, high: 50, insight: 'Variety keeps subscribers.' },
-                'Luxury': { low: 40, median: 50, high: 60, insight: 'Occasion-based purchasing.' },
+                'Budget': { low: 35, median: 45, high: 55, insight: 'Subscription fatigue.' },
+                'Mid-Range': { low: 28, median: 38, high: 48, insight: 'Quality loyalty.' },
+                'Luxury': { low: 35, median: 48, high: 60, insight: 'Gift buyer one-time risk.' },
+            },
+        },
+        {
+            id: 'return_rate',
+            category: 'Economics',
+            name: 'Return Rate',
+            unit: '%',
+            description: 'Percentage of items returned.',
+            ranges: {
+                'Budget': { low: 2, median: 4, high: 7, insight: 'Perishable; low returns.' },
+                'Mid-Range': { low: 3, median: 5, high: 9, insight: 'Quality issues rare.' },
+                'Luxury': { low: 4, median: 7, high: 12, insight: 'Damaged premium goods.' },
+            },
+        },
+        {
+            id: 'gross_margin',
+            category: 'Economics',
+            name: 'Gross Margin',
+            unit: '%',
+            description: 'Revenue minus Cost of Goods Sold (COGS).',
+            ranges: {
+                'Budget': { low: 30, median: 38, high: 46, insight: 'Commodity pricing pressure.' },
+                'Mid-Range': { low: 40, median: 50, high: 60, insight: 'Quality premium.' },
+                'Luxury': { low: 50, median: 62, high: 75, insight: 'Artisan pricing power.' },
+            },
+        },
+        {
+            id: 'ltv_cac',
+            category: 'Strategic Efficiency',
+            name: 'LTV:CAC Ratio',
+            unit: 'x',
+            description: 'Lifetime Value divided by Customer Acquisition Cost.',
+            ranges: {
+                'Budget': { low: 3, median: 4.5, high: 7, insight: 'High repeat drives LTV.' },
+                'Mid-Range': { low: 3.5, median: 5.5, high: 8.5, insight: 'Subscription models excel.' },
+                'Luxury': { low: 3, median: 4.5, high: 7, insight: 'Gift repeat varies.' },
+            },
+        },
+        {
+            id: 'mer',
+            category: 'Strategic Efficiency',
+            name: 'Marketing Efficiency Ratio (MER)',
+            unit: 'x',
+            description: 'Total Revenue / Total Marketing Spend.',
+            ranges: {
+                'Budget': { low: 3, median: 4.5, high: 7, insight: 'Trial investment high.' },
+                'Mid-Range': { low: 3, median: 4.5, high: 6.5, insight: 'Content compounds.' },
+                'Luxury': { low: 2.8, median: 4, high: 6, insight: 'Brand building required.' },
+            },
+        },
+        {
+            id: 'email_rev_share',
+            category: 'Channel Mix',
+            name: 'Email Revenue Share',
+            unit: '%',
+            description: 'Percentage of total revenue attributed to Email Marketing.',
+            ranges: {
+                'Budget': { low: 22, median: 32, high: 45, insight: 'Replenishment and recipes.' },
+                'Mid-Range': { low: 28, median: 38, high: 50, insight: 'Subscription nurturing.' },
+                'Luxury': { low: 18, median: 28, high: 40, insight: 'Seasonal gift campaigns.' },
+            },
+        },
+        {
+            id: 'sms_rev_share',
+            category: 'Channel Mix',
+            name: 'SMS Revenue Share',
+            unit: '%',
+            description: 'Percentage of total revenue attributed to SMS Marketing.',
+            ranges: {
+                'Budget': { low: 4, median: 9, high: 16, insight: 'Flash sales and restocks.' },
+                'Mid-Range': { low: 5, median: 11, high: 18, insight: 'Delivery updates and reorder.' },
+                'Luxury': { low: 2, median: 5, high: 10, insight: 'VIP and limited releases.' },
             },
         }
     ],
@@ -1101,6 +1101,18 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Churn Rate',
+            unit: '%',
+            description: 'Percentage of customers who do not return within 12 months.',
+            ranges: {
+                'Budget': { low: 65, median: 75, high: 85, insight: 'Infrequent need drives high churn.' },
+                'Mid-Range': { low: 50, median: 60, high: 70, insight: 'Project completion reduces return rate.' },
+                'Luxury': { low: 30, median: 40, high: 50, insight: 'Relationship building reduces churn.' },
+            },
+        },
+        {
             id: 'return_rate',
             category: 'Economics',
             name: 'Return Rate',
@@ -1171,18 +1183,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Mid-Range': { low: 2, median: 5, high: 10, insight: 'New arrivals and limited editions.' },
                 'Luxury': { low: 1, median: 2, high: 4, insight: 'VIP previews only.' },
             },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 65, median: 75, high: 85, insight: 'Infrequent need drives high churn.' },
-                'Mid-Range': { low: 50, median: 60, high: 70, insight: 'Project completion reduces return rate.' },
-                'Luxury': { low: 30, median: 40, high: 50, insight: 'Relationship building reduces churn.' },
-            },
         }
     ],
     Luxury: [
@@ -1193,9 +1193,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '€',
             description: 'Total marketing spend divided by new customers acquired.',
             ranges: {
-                'Budget': { low: 45, median: 80, high: 130, insight: 'Entry luxury still requires investment.' },
-                'Mid-Range': { low: 100, median: 180, high: 300, insight: 'Brand experience investment significant.' },
-                'Luxury': { low: 250, median: 450, high: 800, insight: 'Ultra-luxury clienteling premium.' },
+                'Budget': { low: 45, median: 80, high: 140, insight: 'Aspirational market acquisition.' },
+                'Mid-Range': { low: 100, median: 200, high: 400, insight: 'High-touch brand experience.' },
+                'Luxury': { low: 300, median: 600, high: 1500, insight: 'Ultra-premium positioning.' },
             },
         },
         {
@@ -1205,9 +1205,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: 'x',
             description: 'Total revenue divided by total marketing spend.',
             ranges: {
-                'Budget': { low: 2.5, median: 3.5, high: 5, insight: 'Accessible luxury volume helps.' },
-                'Mid-Range': { low: 2, median: 2.8, high: 4, insight: 'Brand equity investment reduces ROAS.' },
-                'Luxury': { low: 1.5, median: 2.2, high: 3.2, insight: 'Ultra-high touch reduces immediate returns.' },
+                'Budget': { low: 3, median: 4.5, high: 6.5, insight: 'Aspirational buyer efficiency.' },
+                'Mid-Range': { low: 2.5, median: 3.5, high: 5, insight: 'Brand experience investment.' },
+                'Luxury': { low: 1.5, median: 2.5, high: 4, insight: 'Ultra-luxury brand building.' },
             },
         },
         {
@@ -1217,9 +1217,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Total marketing budget as a percentage of gross revenue.',
             ranges: {
-                'Budget': { low: 10, median: 15, high: 22, insight: 'Digital-first accessible luxury.' },
-                'Mid-Range': { low: 12, median: 18, high: 26, insight: 'Editorial and event investment.' },
-                'Luxury': { low: 8, median: 14, high: 22, insight: 'Word of mouth reduces need.' },
+                'Budget': { low: 10, median: 16, high: 24, insight: 'Aspirational market reach.' },
+                'Mid-Range': { low: 12, median: 20, high: 30, insight: 'Brand and experience investment.' },
+                'Luxury': { low: 8, median: 15, high: 25, insight: 'Ultra-premium reputation-driven.' },
             },
         },
         {
@@ -1229,9 +1229,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of desktop visitors who make a purchase.',
             ranges: {
-                'Budget': { low: 1.2, median: 1.9, high: 2.8, insight: 'Aspirational browsing common.' },
-                'Mid-Range': { low: 0.7, median: 1.2, high: 1.8, insight: 'High consideration purchases.' },
-                'Luxury': { low: 0.3, median: 0.6, high: 1, insight: 'Boutique and concierge preferred.' },
+                'Budget': { low: 1.5, median: 2.2, high: 3.2, insight: 'Aspirational browsing common.' },
+                'Mid-Range': { low: 0.8, median: 1.4, high: 2.2, insight: 'High consideration purchases.' },
+                'Luxury': { low: 0.4, median: 0.8, high: 1.3, insight: 'Invitation-only exclusivity.' },
             },
         },
         {
@@ -1241,9 +1241,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of mobile visitors who make a purchase.',
             ranges: {
-                'Budget': { low: 0.7, median: 1.2, high: 1.8, insight: 'Research phase on mobile.' },
-                'Mid-Range': { low: 0.4, median: 0.7, high: 1.1, insight: 'Desktop or store preferred.' },
-                'Luxury': { low: 0.2, median: 0.4, high: 0.6, insight: 'Personal shopping dominates.' },
+                'Budget': { low: 0.8, median: 1.3, high: 2, insight: 'Impulse accessories.' },
+                'Mid-Range': { low: 0.4, median: 0.8, high: 1.3, insight: 'Desktop dominates high-ticket.' },
+                'Luxury': { low: 0.2, median: 0.4, high: 0.7, insight: 'Boutique visits preferred.' },
             },
         },
         {
@@ -1253,9 +1253,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of carts created that are not purchased.',
             ranges: {
-                'Budget': { low: 72, median: 78, high: 84, insight: 'Price consideration significant.' },
-                'Mid-Range': { low: 76, median: 82, high: 88, insight: 'High ticket hesitation.' },
-                'Luxury': { low: 80, median: 86, high: 92, insight: 'Concierge completion preferred.' },
+                'Budget': { low: 70, median: 76, high: 82, insight: 'Price barrier for aspirational.' },
+                'Mid-Range': { low: 75, median: 81, high: 87, insight: 'Consideration period extended.' },
+                'Luxury': { low: 78, median: 84, high: 90, insight: 'Personal shopping preferred.' },
             },
         },
         {
@@ -1265,9 +1265,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '€',
             description: 'Average revenue per transaction.',
             ranges: {
-                'Budget': { low: 180, median: 280, high: 420, insight: 'Entry-level fine jewelry.' },
-                'Mid-Range': { low: 450, median: 750, high: 1200, insight: 'Statement pieces.' },
-                'Luxury': { low: 1500, median: 3500, high: 8000, insight: 'Investment and heirloom pieces.' },
+                'Budget': { low: 180, median: 280, high: 420, insight: 'Entry luxury items.' },
+                'Mid-Range': { low: 500, median: 900, high: 1600, insight: 'Core luxury purchases.' },
+                'Luxury': { low: 2000, median: 5000, high: 15000, insight: 'Ultra-premium items.' },
             },
         },
         {
@@ -1277,9 +1277,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of customers who buy more than once.',
             ranges: {
-                'Budget': { low: 25, median: 35, high: 48, insight: 'Collection building starts.' },
-                'Mid-Range': { low: 32, median: 45, high: 60, insight: 'Brand devotion develops.' },
-                'Luxury': { low: 45, median: 60, high: 75, insight: 'Lifetime clientele relationships.' },
+                'Budget': { low: 25, median: 35, high: 48, insight: 'Aspirational loyalty building.' },
+                'Mid-Range': { low: 35, median: 50, high: 65, insight: 'Brand devotion grows.' },
+                'Luxury': { low: 50, median: 68, high: 82, insight: 'Lifetime client relationships.' },
             },
         },
         {
@@ -1289,81 +1289,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '#/yr',
             description: 'Average number of orders per customer per year.',
             ranges: {
-                'Budget': { low: 1.2, median: 1.6, high: 2.2, insight: 'Gift and self-purchase occasions.' },
-                'Mid-Range': { low: 1, median: 1.4, high: 1.9, insight: 'Annual milestone purchases.' },
-                'Luxury': { low: 0.8, median: 1.1, high: 1.5, insight: 'Major life event purchases.' },
-            },
-        },
-        {
-            id: 'return_rate',
-            category: 'Economics',
-            name: 'Return Rate',
-            unit: '%',
-            description: 'Percentage of items returned.',
-            ranges: {
-                'Budget': { low: 8, median: 12, high: 18, insight: 'Sizing for jewelry/watches.' },
-                'Mid-Range': { low: 10, median: 15, high: 22, insight: 'High expectations for quality.' },
-                'Luxury': { low: 5, median: 9, high: 14, insight: 'Concierge ensures fit pre-purchase.' },
-            },
-        },
-        {
-            id: 'gross_margin',
-            category: 'Economics',
-            name: 'Gross Margin',
-            unit: '%',
-            description: 'Revenue minus Cost of Goods Sold (COGS).',
-            ranges: {
-                'Budget': { low: 60, median: 68, high: 76, insight: 'Entry luxury margins healthy.' },
-                'Mid-Range': { low: 68, median: 76, high: 84, insight: 'Brand premium significant.' },
-                'Luxury': { low: 75, median: 83, high: 90, insight: 'Heritage and craftsmanship premium.' },
-            },
-        },
-        {
-            id: 'ltv_cac',
-            category: 'Strategic Efficiency',
-            name: 'LTV:CAC Ratio',
-            unit: 'x',
-            description: 'Lifetime Value divided by Customer Acquisition Cost.',
-            ranges: {
-                'Budget': { low: 3, median: 4.5, high: 7, insight: 'Collection growth drives LTV.' },
-                'Mid-Range': { low: 3.5, median: 5.5, high: 8.5, insight: 'Brand loyalty exceptional.' },
-                'Luxury': { low: 4.5, median: 7, high: 12, insight: 'Lifetime relationships create immense value.' },
-            },
-        },
-        {
-            id: 'mer',
-            category: 'Strategic Efficiency',
-            name: 'Marketing Efficiency Ratio (MER)',
-            unit: 'x',
-            description: 'Total Revenue / Total Marketing Spend.',
-            ranges: {
-                'Budget': { low: 4, median: 6, high: 9, insight: 'High AOV drives efficiency.' },
-                'Mid-Range': { low: 3.5, median: 5.5, high: 8, insight: 'Brand investment balanced.' },
-                'Luxury': { low: 4.5, median: 7, high: 11, insight: 'Word of mouth amplifies spend.' },
-            },
-        },
-        {
-            id: 'email_rev_share',
-            category: 'Channel Mix',
-            name: 'Email Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Email Marketing.',
-            ranges: {
-                'Budget': { low: 12, median: 18, high: 28, insight: 'New collection alerts.' },
-                'Mid-Range': { low: 10, median: 16, high: 25, insight: 'Exclusive previews.' },
-                'Luxury': { low: 8, median: 14, high: 22, insight: 'Personal advisor communications.' },
-            },
-        },
-        {
-            id: 'sms_rev_share',
-            category: 'Channel Mix',
-            name: 'SMS Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to SMS Marketing.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Appointment reminders.' },
-                'Mid-Range': { low: 1, median: 2, high: 5, insight: 'VIP event invitations.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Concierge updates only.' },
+                'Budget': { low: 1.2, median: 1.8, high: 2.6, insight: 'Occasional treats.' },
+                'Mid-Range': { low: 1, median: 1.5, high: 2.2, insight: 'Seasonal collection updates.' },
+                'Luxury': { low: 0.8, median: 1.2, high: 1.8, insight: 'Bespoke and special commissions.' },
             },
         },
         {
@@ -1376,6 +1304,78 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 48, median: 58, high: 68, insight: 'Aspirational buyers churn higher.' },
                 'Mid-Range': { low: 35, median: 45, high: 55, insight: 'Collection building reduces churn.' },
                 'Luxury': { low: 20, median: 30, high: 40, insight: 'Lifetime clients rarely churn.' },
+            },
+        },
+        {
+            id: 'return_rate',
+            category: 'Economics',
+            name: 'Return Rate',
+            unit: '%',
+            description: 'Percentage of items returned.',
+            ranges: {
+                'Budget': { low: 18, median: 24, high: 32, insight: 'Quality expectation mismatch.' },
+                'Mid-Range': { low: 15, median: 20, high: 28, insight: 'Boutique validation reduces returns.' },
+                'Luxury': { low: 10, median: 15, high: 22, insight: 'Bespoke fit minimizes returns.' },
+            },
+        },
+        {
+            id: 'gross_margin',
+            category: 'Economics',
+            name: 'Gross Margin',
+            unit: '%',
+            description: 'Revenue minus Cost of Goods Sold (COGS).',
+            ranges: {
+                'Budget': { low: 55, median: 62, high: 70, insight: 'Entry luxury margins.' },
+                'Mid-Range': { low: 65, median: 72, high: 80, insight: 'Premium brand power.' },
+                'Luxury': { low: 75, median: 82, high: 90, insight: 'Ultra-premium pricing power.' },
+            },
+        },
+        {
+            id: 'ltv_cac',
+            category: 'Strategic Efficiency',
+            name: 'LTV:CAC Ratio',
+            unit: 'x',
+            description: 'Lifetime Value divided by Customer Acquisition Cost.',
+            ranges: {
+                'Budget': { low: 3, median: 4.5, high: 7, insight: 'Building aspirational loyalty.' },
+                'Mid-Range': { low: 4, median: 6, high: 9.5, insight: 'Strong brand relationships.' },
+                'Luxury': { low: 5, median: 8, high: 14, insight: 'Lifetime value exceptional.' },
+            },
+        },
+        {
+            id: 'mer',
+            category: 'Strategic Efficiency',
+            name: 'Marketing Efficiency Ratio (MER)',
+            unit: 'x',
+            description: 'Total Revenue / Total Marketing Spend.',
+            ranges: {
+                'Budget': { low: 3.5, median: 5.5, high: 8.5, insight: 'Aspirational efficiency.' },
+                'Mid-Range': { low: 3, median: 4.5, high: 7, insight: 'Brand building investment.' },
+                'Luxury': { low: 4, median: 6.5, high: 10, insight: 'Reputation-driven efficiency.' },
+            },
+        },
+        {
+            id: 'email_rev_share',
+            category: 'Channel Mix',
+            name: 'Email Revenue Share',
+            unit: '%',
+            description: 'Percentage of total revenue attributed to Email Marketing.',
+            ranges: {
+                'Budget': { low: 12, median: 18, high: 28, insight: 'Aspiration nurturing.' },
+                'Mid-Range': { low: 15, median: 22, high: 32, insight: 'Collection previews and events.' },
+                'Luxury': { low: 10, median: 16, high: 26, insight: 'Exclusive clienteling.' },
+            },
+        },
+        {
+            id: 'sms_rev_share',
+            category: 'Channel Mix',
+            name: 'SMS Revenue Share',
+            unit: '%',
+            description: 'Percentage of total revenue attributed to SMS Marketing.',
+            ranges: {
+                'Budget': { low: 1, median: 3, high: 6, insight: 'Appointment reminders.' },
+                'Mid-Range': { low: 1, median: 2, high: 5, insight: 'VIP event invitations.' },
+                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Concierge updates only.' },
             },
         }
     ],
@@ -1419,37 +1419,13 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
         {
             id: 'conv_rate',
             category: 'Conversion',
-            name: 'Conversion Rate (Desktop)',
+            name: 'Quote to Order Conversion',
             unit: '%',
-            description: 'Percentage of desktop visitors who make a purchase.',
+            description: 'Percentage of quotes that convert to orders.',
             ranges: {
-                'Budget': { low: 1.8, median: 3, high: 4.5, insight: 'Catalog ordering conversion.' },
-                'Mid-Range': { low: 1.2, median: 2.2, high: 3.5, insight: 'Quote request rate.' },
-                'Luxury': { low: 0.6, median: 1.2, high: 2, insight: 'RFQ driven process.' },
-            },
-        },
-        {
-            id: 'mobile_conv',
-            category: 'Conversion',
-            name: 'Conversion Rate (Mobile)',
-            unit: '%',
-            description: 'Percentage of mobile visitors who make a purchase.',
-            ranges: {
-                'Budget': { low: 0.8, median: 1.5, high: 2.5, insight: 'Quick reorders on mobile.' },
-                'Mid-Range': { low: 0.5, median: 1, high: 1.8, insight: 'Desktop preferred for specs.' },
-                'Luxury': { low: 0.2, median: 0.5, high: 1, insight: 'Complex specs need desktop.' },
-            },
-        },
-        {
-            id: 'cart_abandon',
-            category: 'Conversion',
-            name: 'Cart Abandonment Rate',
-            unit: '%',
-            description: 'Percentage of carts created that are not purchased.',
-            ranges: {
-                'Budget': { low: 55, median: 65, high: 75, insight: 'Approval process delays.' },
-                'Mid-Range': { low: 60, median: 70, high: 80, insight: 'Procurement complexity.' },
-                'Luxury': { low: 65, median: 75, high: 85, insight: 'Long approval chains.' },
+                'Budget': { low: 18, median: 28, high: 40, insight: 'Small order conversion.' },
+                'Mid-Range': { low: 15, median: 25, high: 35, insight: 'Mid-size project conversion.' },
+                'Luxury': { low: 12, median: 20, high: 30, insight: 'Enterprise procurement rate.' },
             },
         },
         {
@@ -1469,7 +1445,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Retention',
             name: 'Repeat Customer Rate',
             unit: '%',
-            description: 'Percentage of customers who buy more than once.',
+            description: 'Percentage of customers who reorder within 12 months.',
             ranges: {
                 'Budget': { low: 50, median: 62, high: 75, insight: 'Consumable reorders.' },
                 'Mid-Range': { low: 55, median: 68, high: 80, insight: 'Maintenance and supply cycles.' },
@@ -1479,7 +1455,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
         {
             id: 'purchase_freq',
             category: 'Retention',
-            name: 'Purchase Frequency',
+            name: 'Orders per Customer',
             unit: '#/yr',
             description: 'Average number of orders per customer per year.',
             ranges: {
@@ -1489,11 +1465,23 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Customer Loss Rate',
+            unit: '%',
+            description: 'Percentage of customers who do not reorder within 12 months.',
+            ranges: {
+                'Budget': { low: 22, median: 32, high: 45, insight: 'Supplier switching moderate.' },
+                'Mid-Range': { low: 18, median: 28, high: 40, insight: 'Technical relationships sticky.' },
+                'Luxury': { low: 10, median: 18, high: 28, insight: 'Capital equipment loyalty high.' },
+            },
+        },
+        {
             id: 'return_rate',
             category: 'Economics',
-            name: 'Return Rate',
+            name: 'Return/Defect Rate',
             unit: '%',
-            description: 'Percentage of items returned.',
+            description: 'Percentage of orders with returns or defects.',
             ranges: {
                 'Budget': { low: 4, median: 7, high: 12, insight: 'Wrong part orders.' },
                 'Mid-Range': { low: 3, median: 6, high: 10, insight: 'Spec mismatch returns.' },
@@ -1547,30 +1535,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Mid-Range': { low: 10, median: 18, high: 28, insight: 'Technical updates and specs.' },
                 'Luxury': { low: 6, median: 12, high: 22, insight: 'Account management comms.' },
             },
-        },
-        {
-            id: 'sms_rev_share',
-            category: 'Channel Mix',
-            name: 'SMS Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to SMS Marketing.',
-            ranges: {
-                'Budget': { low: 0.5, median: 2, high: 5, insight: 'Order and delivery updates.' },
-                'Mid-Range': { low: 0.3, median: 1, high: 3, insight: 'Shipping notifications.' },
-                'Luxury': { low: 0.1, median: 0.5, high: 2, insight: 'Installation scheduling.' },
-            },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 22, median: 32, high: 45, insight: 'Supplier switching moderate.' },
-                'Mid-Range': { low: 18, median: 28, high: 40, insight: 'Technical relationships sticky.' },
-                'Luxury': { low: 10, median: 18, high: 28, insight: 'Capital equipment loyalty high.' },
-            },
         }
     ],
     SaaS: [
@@ -1613,85 +1577,49 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
         {
             id: 'conv_rate',
             category: 'Conversion',
-            name: 'Conversion Rate (Desktop)',
+            name: 'Trial to Paid Conversion',
             unit: '%',
-            description: 'Percentage of desktop visitors who make a purchase.',
+            description: 'Percentage of free trial users who convert to paid.',
             ranges: {
-                'Budget': { low: 2, median: 3.5, high: 5.5, insight: 'Free trial signup rate.' },
-                'Mid-Range': { low: 1.5, median: 2.5, high: 4, insight: 'Demo request rate.' },
+                'Budget': { low: 2, median: 3.5, high: 5.5, insight: 'Self-serve conversion rate.' },
+                'Mid-Range': { low: 1.5, median: 2.5, high: 4, insight: 'Demo request conversion.' },
                 'Luxury': { low: 0.8, median: 1.5, high: 2.5, insight: 'Contact sales conversion.' },
-            },
-        },
-        {
-            id: 'mobile_conv',
-            category: 'Conversion',
-            name: 'Conversion Rate (Mobile)',
-            unit: '%',
-            description: 'Percentage of mobile visitors who make a purchase.',
-            ranges: {
-                'Budget': { low: 1, median: 1.8, high: 3, insight: 'Mobile signups for simple tools.' },
-                'Mid-Range': { low: 0.6, median: 1.2, high: 2, insight: 'Desktop preferred for B2B.' },
-                'Luxury': { low: 0.3, median: 0.7, high: 1.2, insight: 'Enterprise research on mobile only.' },
-            },
-        },
-        {
-            id: 'cart_abandon',
-            category: 'Conversion',
-            name: 'Cart Abandonment Rate',
-            unit: '%',
-            description: 'Percentage of carts created that are not purchased.',
-            ranges: {
-                'Budget': { low: 50, median: 60, high: 70, insight: 'Checkout friction.' },
-                'Mid-Range': { low: 55, median: 65, high: 75, insight: 'Approval process delays.' },
-                'Luxury': { low: 60, median: 70, high: 80, insight: 'Procurement complexity.' },
-            },
-        },
-        {
-            id: 'aov',
-            category: 'Conversion',
-            name: 'Average Order Value (AOV)',
-            unit: '€',
-            description: 'Average revenue per transaction.',
-            ranges: {
-                'Budget': { low: 15, median: 35, high: 60, insight: 'Monthly subscription value.' },
-                'Mid-Range': { low: 80, median: 200, high: 400, insight: 'Annual contract value monthly.' },
-                'Luxury': { low: 500, median: 1500, high: 4000, insight: 'Enterprise monthly contract.' },
             },
         },
         {
             id: 'repeat_rate',
             category: 'Retention',
-            name: 'Repeat Customer Rate',
+            name: 'Net Revenue Retention',
             unit: '%',
-            description: 'Percentage of customers who buy more than once.',
+            description: 'Net revenue from existing customers after expansion and churn.',
             ranges: {
-                'Budget': { low: 70, median: 80, high: 88, insight: 'Subscription model retention.' },
-                'Mid-Range': { low: 75, median: 85, high: 92, insight: 'Contract renewals.' },
-                'Luxury': { low: 82, median: 90, high: 96, insight: 'Enterprise stickiness high.' },
+                'Budget': { low: 70, median: 80, high: 88, insight: 'SMB retention rate.' },
+                'Mid-Range': { low: 85, median: 95, high: 110, insight: 'Mid-market NRR with expansion.' },
+                'Luxury': { low: 100, median: 115, high: 135, insight: 'Enterprise expansion revenue.' },
             },
         },
         {
             id: 'purchase_freq',
             category: 'Retention',
-            name: 'Purchase Frequency',
-            unit: '#/yr',
-            description: 'Average number of orders per customer per year.',
+            name: 'Expansion Rate',
+            unit: '%',
+            description: 'Annual rate of revenue expansion from existing customers.',
             ranges: {
-                'Budget': { low: 10, median: 11, high: 12, insight: 'Monthly recurring billing.' },
-                'Mid-Range': { low: 4, median: 6, high: 12, insight: 'Quarterly to monthly billing.' },
-                'Luxury': { low: 1, median: 2, high: 4, insight: 'Annual to quarterly billing.' },
+                'Budget': { low: 5, median: 12, high: 22, insight: 'Upsell to higher tiers.' },
+                'Mid-Range': { low: 10, median: 20, high: 35, insight: 'Seat and feature expansion.' },
+                'Luxury': { low: 15, median: 30, high: 50, insight: 'Enterprise account growth.' },
             },
         },
         {
-            id: 'return_rate',
-            category: 'Economics',
-            name: 'Return Rate',
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Churn Rate',
             unit: '%',
-            description: 'Percentage of items returned.',
+            description: 'Percentage of customers who cancel within 12 months.',
             ranges: {
-                'Budget': { low: 8, median: 15, high: 25, insight: 'Monthly churn rate.' },
-                'Mid-Range': { low: 5, median: 10, high: 18, insight: 'Annual churn rate.' },
-                'Luxury': { low: 3, median: 6, high: 12, insight: 'Enterprise churn rate.' },
+                'Budget': { low: 15, median: 25, high: 35, insight: 'SMB churn higher.' },
+                'Mid-Range': { low: 10, median: 18, high: 28, insight: 'Mid-market stickier.' },
+                'Luxury': { low: 5, median: 10, high: 18, insight: 'Enterprise retention strong.' },
             },
         },
         {
@@ -1741,30 +1669,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Mid-Range': { low: 12, median: 20, high: 32, insight: 'Nurture and expansion.' },
                 'Luxury': { low: 8, median: 15, high: 25, insight: 'Account-based marketing.' },
             },
-        },
-        {
-            id: 'sms_rev_share',
-            category: 'Channel Mix',
-            name: 'SMS Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to SMS Marketing.',
-            ranges: {
-                'Budget': { low: 0.5, median: 2, high: 5, insight: 'Transactional only.' },
-                'Mid-Range': { low: 0.5, median: 1.5, high: 4, insight: 'Security and alerts.' },
-                'Luxury': { low: 0.2, median: 1, high: 3, insight: 'Executive alerts only.' },
-            },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 15, median: 25, high: 35, insight: 'SMB churn higher.' },
-                'Mid-Range': { low: 10, median: 18, high: 28, insight: 'Mid-market stickier.' },
-                'Luxury': { low: 5, median: 10, high: 18, insight: 'Enterprise retention strong.' },
-            },
         }
     ],
     Services: [
@@ -1807,57 +1711,21 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
         {
             id: 'conv_rate',
             category: 'Conversion',
-            name: 'Conversion Rate (Desktop)',
+            name: 'Lead to Client Conversion',
             unit: '%',
-            description: 'Percentage of desktop visitors who make a purchase.',
+            description: 'Percentage of leads that become paying clients.',
             ranges: {
-                'Budget': { low: 1.5, median: 2.8, high: 4.5, insight: 'Contact form conversion.' },
-                'Mid-Range': { low: 1, median: 2, high: 3.2, insight: 'Consultation request rate.' },
+                'Budget': { low: 1.5, median: 2.8, high: 4.5, insight: 'Small project conversion.' },
+                'Mid-Range': { low: 1, median: 2, high: 3.2, insight: 'Consultation process.' },
                 'Luxury': { low: 0.5, median: 1.2, high: 2, insight: 'RFP and referral driven.' },
-            },
-        },
-        {
-            id: 'mobile_conv',
-            category: 'Conversion',
-            name: 'Conversion Rate (Mobile)',
-            unit: '%',
-            description: 'Percentage of mobile visitors who make a purchase.',
-            ranges: {
-                'Budget': { low: 0.8, median: 1.5, high: 2.5, insight: 'Quick contact requests.' },
-                'Mid-Range': { low: 0.5, median: 1, high: 1.8, insight: 'Desktop preferred for B2B.' },
-                'Luxury': { low: 0.2, median: 0.6, high: 1.2, insight: 'Research only on mobile.' },
-            },
-        },
-        {
-            id: 'cart_abandon',
-            category: 'Conversion',
-            name: 'Cart Abandonment Rate',
-            unit: '%',
-            description: 'Percentage of carts created that are not purchased.',
-            ranges: {
-                'Budget': { low: 45, median: 55, high: 65, insight: 'Quote abandonment rate.' },
-                'Mid-Range': { low: 50, median: 60, high: 70, insight: 'Proposal rejection rate.' },
-                'Luxury': { low: 55, median: 65, high: 75, insight: 'Long decision cycles.' },
-            },
-        },
-        {
-            id: 'aov',
-            category: 'Conversion',
-            name: 'Average Order Value (AOV)',
-            unit: '€',
-            description: 'Average revenue per transaction.',
-            ranges: {
-                'Budget': { low: 500, median: 1500, high: 3500, insight: 'Small project value.' },
-                'Mid-Range': { low: 3000, median: 8000, high: 18000, insight: 'Mid-size engagement.' },
-                'Luxury': { low: 20000, median: 60000, high: 200000, insight: 'Enterprise project value.' },
             },
         },
         {
             id: 'repeat_rate',
             category: 'Retention',
-            name: 'Repeat Customer Rate',
+            name: 'Client Retention Rate',
             unit: '%',
-            description: 'Percentage of customers who buy more than once.',
+            description: 'Percentage of clients who engage again within 24 months.',
             ranges: {
                 'Budget': { low: 30, median: 42, high: 55, insight: 'Project-based repeat.' },
                 'Mid-Range': { low: 40, median: 55, high: 70, insight: 'Retainer development.' },
@@ -1867,9 +1735,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
         {
             id: 'purchase_freq',
             category: 'Retention',
-            name: 'Purchase Frequency',
+            name: 'Engagements per Client',
             unit: '#/yr',
-            description: 'Average number of orders per customer per year.',
+            description: 'Average number of projects per client per year.',
             ranges: {
                 'Budget': { low: 1.5, median: 2.5, high: 4, insight: 'Multiple small projects.' },
                 'Mid-Range': { low: 1.2, median: 2, high: 3.2, insight: 'Annual to quarterly.' },
@@ -1877,15 +1745,15 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'return_rate',
-            category: 'Economics',
-            name: 'Return Rate',
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Client Loss Rate',
             unit: '%',
-            description: 'Percentage of items returned.',
+            description: 'Percentage of clients who do not return within 12 months.',
             ranges: {
-                'Budget': { low: 5, median: 10, high: 18, insight: 'Project cancellation rate.' },
-                'Mid-Range': { low: 4, median: 8, high: 15, insight: 'Contract termination rate.' },
-                'Luxury': { low: 2, median: 5, high: 10, insight: 'Strategic relationships stable.' },
+                'Budget': { low: 40, median: 52, high: 65, insight: 'Project completion churn.' },
+                'Mid-Range': { low: 28, median: 40, high: 52, insight: 'Retainer retention better.' },
+                'Luxury': { low: 15, median: 25, high: 38, insight: 'Strategic relationships endure.' },
             },
         },
         {
@@ -1934,30 +1802,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 10, median: 18, high: 28, insight: 'Newsletter and updates.' },
                 'Mid-Range': { low: 12, median: 20, high: 32, insight: 'Thought leadership content.' },
                 'Luxury': { low: 8, median: 15, high: 25, insight: 'Account-based nurturing.' },
-            },
-        },
-        {
-            id: 'sms_rev_share',
-            category: 'Channel Mix',
-            name: 'SMS Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to SMS Marketing.',
-            ranges: {
-                'Budget': { low: 0.2, median: 1, high: 3, insight: 'Appointment reminders.' },
-                'Mid-Range': { low: 0.2, median: 0.8, high: 2, insight: 'Meeting confirmations.' },
-                'Luxury': { low: 0.1, median: 0.5, high: 1.5, insight: 'Executive alerts only.' },
-            },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 40, median: 52, high: 65, insight: 'Project completion churn.' },
-                'Mid-Range': { low: 28, median: 40, high: 52, insight: 'Retainer retention better.' },
-                'Luxury': { low: 15, median: 25, high: 38, insight: 'Strategic relationships endure.' },
             },
         }
     ],
@@ -2071,6 +1915,18 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Churn Rate',
+            unit: '%',
+            description: 'Percentage of customers who do not return within 12 months.',
+            ranges: {
+                'Budget': { low: 55, median: 65, high: 75, insight: 'Seasonal buyer dropout.' },
+                'Mid-Range': { low: 45, median: 55, high: 65, insight: 'Fitness commitment varies.' },
+                'Luxury': { low: 35, median: 45, high: 55, insight: 'Enthusiast dedication reduces churn.' },
+            },
+        },
+        {
             id: 'return_rate',
             category: 'Economics',
             name: 'Return Rate',
@@ -2141,18 +1997,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Mid-Range': { low: 3, median: 7, high: 13, insight: 'Event and launch alerts.' },
                 'Luxury': { low: 1, median: 3, high: 6, insight: 'VIP access updates.' },
             },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 55, median: 65, high: 75, insight: 'Seasonal buyer dropout.' },
-                'Mid-Range': { low: 45, median: 55, high: 65, insight: 'Fitness commitment varies.' },
-                'Luxury': { low: 35, median: 45, high: 55, insight: 'Enthusiast dedication reduces churn.' },
-            },
         }
     ],
     Wholesale: [
@@ -2195,37 +2039,13 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
         {
             id: 'conv_rate',
             category: 'Conversion',
-            name: 'Conversion Rate (Desktop)',
+            name: 'Account Activation Rate',
             unit: '%',
-            description: 'Percentage of desktop visitors who make a purchase.',
+            description: 'Percentage of new accounts that place first order.',
             ranges: {
-                'Budget': { low: 3.5, median: 5.5, high: 8, insight: 'Quick reorder conversion.' },
-                'Mid-Range': { low: 2.5, median: 4, high: 6, insight: 'Account setup conversion.' },
-                'Luxury': { low: 1.5, median: 2.8, high: 4.5, insight: 'Large account qualification.' },
-            },
-        },
-        {
-            id: 'mobile_conv',
-            category: 'Conversion',
-            name: 'Conversion Rate (Mobile)',
-            unit: '%',
-            description: 'Percentage of mobile visitors who make a purchase.',
-            ranges: {
-                'Budget': { low: 2, median: 3.2, high: 5, insight: 'Quick reorders on mobile.' },
-                'Mid-Range': { low: 1.2, median: 2.2, high: 3.5, insight: 'Field ordering on mobile.' },
-                'Luxury': { low: 0.8, median: 1.5, high: 2.5, insight: 'Desktop preferred for large orders.' },
-            },
-        },
-        {
-            id: 'cart_abandon',
-            category: 'Conversion',
-            name: 'Cart Abandonment Rate',
-            unit: '%',
-            description: 'Percentage of carts created that are not purchased.',
-            ranges: {
-                'Budget': { low: 45, median: 55, high: 65, insight: 'Quick checkout for regulars.' },
-                'Mid-Range': { low: 50, median: 60, high: 70, insight: 'Approval process delays.' },
-                'Luxury': { low: 55, median: 65, high: 75, insight: 'Large order considerations.' },
+                'Budget': { low: 35, median: 50, high: 68, insight: 'Quick reorder conversion.' },
+                'Mid-Range': { low: 28, median: 42, high: 58, insight: 'Account setup conversion.' },
+                'Luxury': { low: 20, median: 35, high: 50, insight: 'Large account qualification.' },
             },
         },
         {
@@ -2243,9 +2063,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
         {
             id: 'repeat_rate',
             category: 'Retention',
-            name: 'Repeat Customer Rate',
+            name: 'Repeat Account Rate',
             unit: '%',
-            description: 'Percentage of customers who buy more than once.',
+            description: 'Percentage of accounts that reorder within 12 months.',
             ranges: {
                 'Budget': { low: 55, median: 68, high: 80, insight: 'Regular reorder cycles.' },
                 'Mid-Range': { low: 62, median: 75, high: 86, insight: 'Supplier relationships stable.' },
@@ -2255,9 +2075,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
         {
             id: 'purchase_freq',
             category: 'Retention',
-            name: 'Purchase Frequency',
+            name: 'Orders per Account',
             unit: '#/yr',
-            description: 'Average number of orders per customer per year.',
+            description: 'Average number of orders per account per year.',
             ranges: {
                 'Budget': { low: 8, median: 14, high: 24, insight: 'Frequent small orders.' },
                 'Mid-Range': { low: 6, median: 10, high: 18, insight: 'Monthly ordering cycles.' },
@@ -2265,11 +2085,23 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
+            id: 'churn_rate',
+            category: 'Retention',
+            name: 'Annual Account Loss Rate',
+            unit: '%',
+            description: 'Percentage of accounts that do not reorder within 12 months.',
+            ranges: {
+                'Budget': { low: 18, median: 28, high: 40, insight: 'Supplier switching moderate.' },
+                'Mid-Range': { low: 14, median: 22, high: 32, insight: 'Territory relationships sticky.' },
+                'Luxury': { low: 8, median: 15, high: 24, insight: 'Strategic partnerships endure.' },
+            },
+        },
+        {
             id: 'return_rate',
             category: 'Economics',
             name: 'Return Rate',
             unit: '%',
-            description: 'Percentage of items returned.',
+            description: 'Percentage of orders with returns.',
             ranges: {
                 'Budget': { low: 3, median: 5, high: 9, insight: 'Damaged goods returns.' },
                 'Mid-Range': { low: 2, median: 4, high: 7, insight: 'Quality issues minimal.' },
@@ -2322,30 +2154,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 15, median: 24, high: 35, insight: 'Promotion and catalog emails.' },
                 'Mid-Range': { low: 12, median: 20, high: 30, insight: 'New product and pricing.' },
                 'Luxury': { low: 8, median: 14, high: 24, insight: 'Account management comms.' },
-            },
-        },
-        {
-            id: 'sms_rev_share',
-            category: 'Channel Mix',
-            name: 'SMS Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to SMS Marketing.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 7, insight: 'Order and delivery alerts.' },
-                'Mid-Range': { low: 0.5, median: 2, high: 5, insight: 'Shipping notifications.' },
-                'Luxury': { low: 0.2, median: 1, high: 3, insight: 'Delivery scheduling.' },
-            },
-        },
-        {
-            id: 'churn_rate',
-            category: 'Retention',
-            name: 'Annual Churn Rate',
-            unit: '%',
-            description: 'Percentage of customers who do not return within 12 months.',
-            ranges: {
-                'Budget': { low: 18, median: 28, high: 40, insight: 'Supplier switching moderate.' },
-                'Mid-Range': { low: 14, median: 22, high: 32, insight: 'Territory relationships sticky.' },
-                'Luxury': { low: 8, median: 15, high: 24, insight: 'Strategic partnerships endure.' },
             },
         }
     ]

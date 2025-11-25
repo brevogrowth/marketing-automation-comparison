@@ -26,6 +26,9 @@ Fashion,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of custom
 Fashion,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.8,2.5,3.5,Frequent low-value purchases.
 Fashion,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.5,2.1,2.8,Seasonal purchasing patterns.
 Fashion,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.1,1.4,1.8,Occasional investment pieces.
+Fashion,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,60,70,80,High churn is typical; focus on acquisition volume.
+Fashion,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,40,50,60,Retention is key to profitability.
+Fashion,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,20,30,40,Client relationships reduce churn significantly.
 Fashion,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,15,20,25,Fit issues common.
 Fashion,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,20,25,35,Free returns encourage ordering multiple sizes.
 Fashion,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,25,30,40,High expectations drive returns.
@@ -44,9 +47,6 @@ Fashion,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of t
 Fashion,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,High impact for flash sales.
 Fashion,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,12,Growing channel for engagement.
 Fashion,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,5,Used sparingly for VIP service.
-Fashion,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,60,70,80,High churn is typical; focus on acquisition volume.
-Fashion,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,40,50,60,Retention is key to profitability.
-Fashion,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,20,30,40,Client relationships reduce churn significantly.
 Home,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,20,35,55,Lower frequency purchases increase acquisition cost.
 Home,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,45,65,95,Considered purchases require more touchpoints.
 Home,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,120,220,400,Premium positioning demands high-touch marketing.
@@ -74,6 +74,9 @@ Home,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers
 Home,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.2,1.8,2.6,Seasonal and need-based purchases.
 Home,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.0,1.5,2.2,Project-based purchasing.
 Home,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,0.8,1.1,1.5,Occasional investment pieces.
+Home,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,65,75,85,Infrequent need drives high churn.
+Home,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,50,60,70,Project completion reduces return rate.
+Home,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,30,40,50,Relationship building reduces churn.
 Home,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,12,16,22,Size and fit less critical.
 Home,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,16,22,30,Color and material expectations.
 Home,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,20,26,35,High expectations for quality and finish.
@@ -92,9 +95,6 @@ Home,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of tota
 Home,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,8,Flash sales and clearance.
 Home,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,New arrivals and limited editions.
 Home,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,2,4,VIP previews only.
-Home,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,65,75,85,Infrequent need drives high churn.
-Home,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,50,60,70,Project completion reduces return rate.
-Home,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,30,40,50,Relationship building reduces churn.
 Beauty,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,12,22,35,High repeat potential justifies lower CAC targets.
 Beauty,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,25,40,60,Brand storytelling increases touchpoints.
 Beauty,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,60,110,200,Prestige positioning demands premium channels.
@@ -122,6 +122,9 @@ Beauty,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of custome
 Beauty,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,2.5,3.5,5.0,Monthly replenishment common.
 Beauty,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,2.2,3.0,4.2,Seasonal launches drive frequency.
 Beauty,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.8,2.5,3.5,Quarterly luxury rituals.
+Beauty,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Replenishment reduces churn.
+Beauty,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,35,45,55,Loyalty programs retain customers.
+Beauty,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,25,35,45,Brand devotion minimizes churn.
 Beauty,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,5,8,12,Low returns in consumables.
 Beauty,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,8,12,18,Shade matching issues moderate.
 Beauty,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,10,15,22,High expectations for efficacy.
@@ -140,9 +143,6 @@ Beauty,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of to
 Beauty,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,14,Flash sales and restocks.
 Beauty,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,4,9,16,New launch alerts effective.
 Beauty,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,4,8,VIP early access only.
-Beauty,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Replenishment reduces churn.
-Beauty,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,35,45,55,Loyalty programs retain customers.
-Beauty,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,25,35,45,Brand devotion minimizes churn.
 Electronics,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,15,28,45,Price comparison drives channel mix.
 Electronics,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,35,55,85,Feature education increases touchpoints.
 Electronics,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,80,140,250,Tech enthusiast targeting is precise.
@@ -170,6 +170,9 @@ Electronics,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of cu
 Electronics,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.3,1.8,2.5,Cable and accessory refills.
 Electronics,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.0,1.4,2.0,Annual upgrade cycles.
 Electronics,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,0.8,1.1,1.5,Multi-year replacement cycles.
+Electronics,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,65,75,85,Infrequent purchase category.
+Electronics,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,55,65,75,Upgrade cycles help retention.
+Electronics,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Brand ecosystem reduces churn.
 Electronics,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,10,14,20,Compatibility issues drive returns.
 Electronics,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,12,18,25,Feature mismatch common.
 Electronics,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,8,13,18,Informed buyers return less.
@@ -188,9 +191,6 @@ Electronics,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage 
 Electronics,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,4,8,Flash deals work well.
 Electronics,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,Restock and launch alerts.
 Electronics,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,2,5,Concierge service updates.
-Electronics,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,65,75,85,Infrequent purchase category.
-Electronics,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,55,65,75,Upgrade cycles help retention.
-Electronics,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Brand ecosystem reduces churn.
 Sports,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,18,32,50,Seasonal demand spikes acquisition.
 Sports,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,30,50,80,Performance marketing effective.
 Sports,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,70,130,220,Athlete endorsements drive cost.
@@ -218,6 +218,9 @@ Sports,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of custome
 Sports,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.8,2.5,3.5,Seasonal gear updates.
 Sports,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.5,2.2,3.0,Training cycle purchases.
 Sports,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.2,1.7,2.4,Equipment upgrade cycles.
+Sports,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,55,65,75,Seasonal buyer dropout.
+Sports,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Fitness commitment varies.
+Sports,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,35,45,55,Enthusiast dedication reduces churn.
 Sports,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,14,19,26,Size and fit issues.
 Sports,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,16,22,30,Technical fit requirements.
 Sports,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,12,17,24,Informed buyers return less.
@@ -236,9 +239,6 @@ Sports,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of to
 Sports,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,Flash sales effective.
 Sports,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,13,Event and launch alerts.
 Sports,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,6,VIP access updates.
-Sports,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,55,65,75,Seasonal buyer dropout.
-Sports,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Fitness commitment varies.
-Sports,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,35,45,55,Enthusiast dedication reduces churn.
 Family,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,15,28,45,Parent communities enable efficient targeting.
 Family,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,28,45,70,Safety and quality messaging increases cost.
 Family,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,55,95,160,Premium parenting audience more expensive.
@@ -266,6 +266,9 @@ Family,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of custome
 Family,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,2.5,3.5,5.0,Constant growth needs.
 Family,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,2.0,3.0,4.2,Seasonal and milestone purchases.
 Family,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.5,2.2,3.2,Key milestone investments.
+Family,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Kids age out of products.
+Family,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,38,48,58,Multi-child families stay longer.
+Family,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,30,40,50,Premium brand loyalty endures.
 Family,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,12,17,24,Size and preference issues.
 Family,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,14,20,28,Quality expectations moderate.
 Family,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,10,15,22,Informed purchases return less.
@@ -284,9 +287,6 @@ Family,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of to
 Family,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,14,Flash sales and restocks.
 Family,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,4,9,16,Size reminders effective.
 Family,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,Exclusive launch access.
-Family,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Kids age out of products.
-Family,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,38,48,58,Multi-child families stay longer.
-Family,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,30,40,50,Premium brand loyalty endures.
 Food,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,8,15,25,Low barrier trial offers effective.
 Food,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,18,32,50,Quality story requires education.
 Food,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,40,70,120,Artisan positioning premium.
@@ -298,91 +298,91 @@ Food,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total market
 Food,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,20,28,Premium brand positioning.
 Food,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,3.5,5.0,7.0,Low price point impulse buys.
 Food,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,2.5,3.8,5.5,Quality content drives conversion.
-Food,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.5,2.5,3.8,Gourmet consideration phase.
-Food,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,2.5,3.8,5.5,Quick reorder convenience.
-Food,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,1.8,2.8,4.2,Recipe inspiration drives mobile.
-Food,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,1.0,1.7,2.6,Gift purchases on mobile.
-Food,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,55,62,70,Low commitment threshold.
-Food,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,60,68,75,Shipping cost sensitivity.
-Food,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,65,72,80,Higher price point hesitation.
-Food,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,25,38,55,Subscription box value.
-Food,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,45,65,90,Curated box subscriptions.
-Food,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,80,120,180,Gourmet gift baskets.
-Food,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,40,52,65,Consumable nature drives repeats.
-Food,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,45,58,72,Subscription stickiness.
-Food,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,35,48,62,Gifting and special occasions.
-Food,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,4.0,6.0,9.0,Monthly subscriptions common.
-Food,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,3.5,5.0,7.5,Bi-weekly to monthly.
-Food,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,2.0,3.5,5.5,Special occasion purchases.
-Food,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,2,4,7,Perishables rarely returned.
-Food,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,3,5,9,Quality guarantees used sparingly.
-Food,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,2,4,8,Premium quality minimizes returns.
-Food,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,35,42,50,Commodity pressure.
-Food,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,45,54,62,Curation adds value.
-Food,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,55,65,75,Artisan premium pricing.
-Food,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,4.0,6.0,9.0,Subscription LTV exceptional.
-Food,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,4.5,7.0,10.0,Loyalty programs compound value.
-Food,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.5,5.5,8.5,Gifting expands customer base.
-Food,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.0,4.5,7.0,Trial costs impact efficiency.
-Food,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.8,4.0,6.0,Content investment compounds.
-Food,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.0,4.5,7.0,Premium margins help MER.
-Food,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,25,35,48,Replenishment reminders key.
-Food,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,28,38,52,Recipe content drives engagement.
-Food,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,20,30,42,Exclusive offerings via email.
-Food,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,5,10,18,Delivery and restock alerts.
-Food,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,6,12,20,Flash sales effective.
-Food,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,12,Limited release alerts.
-Food,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,35,45,55,Subscription fatigue factor.
-Food,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,30,40,50,Variety keeps subscribers.
-Food,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,40,50,60,Occasion-based purchasing.
-Luxury,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,45,80,130,Entry luxury still requires investment.
-Luxury,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,100,180,300,Brand experience investment significant.
-Luxury,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,250,450,800,Ultra-luxury clienteling premium.
-Luxury,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,3.5,5.0,Accessible luxury volume helps.
-Luxury,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.0,2.8,4.0,Brand equity investment reduces ROAS.
-Luxury,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,1.5,2.2,3.2,Ultra-high touch reduces immediate returns.
-Luxury,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,15,22,Digital-first accessible luxury.
-Luxury,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,18,26,Editorial and event investment.
-Luxury,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,8,14,22,Word of mouth reduces need.
-Luxury,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.2,1.9,2.8,Aspirational browsing common.
-Luxury,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.7,1.2,1.8,High consideration purchases.
-Luxury,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.3,0.6,1.0,Boutique and concierge preferred.
-Luxury,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.7,1.2,1.8,Research phase on mobile.
-Luxury,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.4,0.7,1.1,Desktop or store preferred.
-Luxury,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.2,0.4,0.6,Personal shopping dominates.
-Luxury,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,72,78,84,Price consideration significant.
-Luxury,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,76,82,88,High ticket hesitation.
-Luxury,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,80,86,92,Concierge completion preferred.
-Luxury,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,180,280,420,Entry-level fine jewelry.
-Luxury,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,450,750,1200,Statement pieces.
-Luxury,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,1500,3500,8000,Investment and heirloom pieces.
-Luxury,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,25,35,48,Collection building starts.
-Luxury,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,32,45,60,Brand devotion develops.
-Luxury,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,45,60,75,Lifetime clientele relationships.
-Luxury,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.2,1.6,2.2,Gift and self-purchase occasions.
-Luxury,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.0,1.4,1.9,Annual milestone purchases.
-Luxury,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,0.8,1.1,1.5,Major life event purchases.
-Luxury,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,8,12,18,Sizing for jewelry/watches.
-Luxury,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,10,15,22,High expectations for quality.
-Luxury,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,5,9,14,Concierge ensures fit pre-purchase.
-Luxury,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,60,68,76,Entry luxury margins healthy.
-Luxury,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,68,76,84,Brand premium significant.
-Luxury,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,75,83,90,Heritage and craftsmanship premium.
-Luxury,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,4.5,7.0,Collection growth drives LTV.
-Luxury,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.5,5.5,8.5,Brand loyalty exceptional.
-Luxury,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,4.5,7.0,12.0,Lifetime relationships create immense value.
-Luxury,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,4.0,6.0,9.0,High AOV drives efficiency.
-Luxury,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.5,5.5,8.0,Brand investment balanced.
-Luxury,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,4.5,7.0,11.0,Word of mouth amplifies spend.
-Luxury,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,18,28,New collection alerts.
-Luxury,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,25,Exclusive previews.
-Luxury,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,Personal advisor communications.
-Luxury,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,6,Appointment reminders.
-Luxury,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,2,5,VIP event invitations.
-Luxury,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.5,1.5,3,Concierge updates only.
+Food,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.5,2.5,3.8,Gourmet story sells.
+Food,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,2.2,3.2,4.6,Quick reorder habits.
+Food,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,1.6,2.5,3.6,Recipe-driven mobile orders.
+Food,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.9,1.5,2.4,Desktop preferred for premium gifts.
+Food,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,62,68,74,Shipping cost barrier.
+Food,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,65,72,78,Perishable concerns.
+Food,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,68,75,82,Gift hesitation.
+Food,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,28,42,58,Regular grocery top-ups.
+Food,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,50,72,100,Specialty baskets.
+Food,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,85,130,200,Gourmet gift boxes.
+Food,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,35,48,62,Consumable repeat nature.
+Food,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,40,55,70,Subscription success.
+Food,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,30,45,60,Gift-giving seasonality impacts.
+Food,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,4.0,6.0,9.0,Weekly/biweekly orders.
+Food,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,3.0,4.5,7.0,Monthly subscriptions.
+Food,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,2.0,3.2,5.0,Occasion-based purchases.
+Food,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,35,45,55,Subscription fatigue.
+Food,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,28,38,48,Quality loyalty.
+Food,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,35,48,60,Gift buyer one-time risk.
+Food,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,2,4,7,Perishable; low returns.
+Food,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,3,5,9,Quality issues rare.
+Food,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,4,7,12,Damaged premium goods.
+Food,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,30,38,46,Commodity pricing pressure.
+Food,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,40,50,60,Quality premium.
+Food,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,50,62,75,Artisan pricing power.
+Food,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,4.5,7.0,High repeat drives LTV.
+Food,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.5,5.5,8.5,Subscription models excel.
+Food,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,4.5,7.0,Gift repeat varies.
+Food,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.0,4.5,7.0,Trial investment high.
+Food,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.0,4.5,6.5,Content compounds.
+Food,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.8,4.0,6.0,Brand building required.
+Food,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,22,32,45,Replenishment and recipes.
+Food,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,28,38,50,Subscription nurturing.
+Food,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,18,28,40,Seasonal gift campaigns.
+Food,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,4,9,16,Flash sales and restocks.
+Food,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,5,11,18,Delivery updates and reorder.
+Food,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,VIP and limited releases.
+Luxury,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,45,80,140,Aspirational market acquisition.
+Luxury,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,100,200,400,High-touch brand experience.
+Luxury,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,300,600,1500,Ultra-premium positioning.
+Luxury,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,6.5,Aspirational buyer efficiency.
+Luxury,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,3.5,5.0,Brand experience investment.
+Luxury,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,1.5,2.5,4.0,Ultra-luxury brand building.
+Luxury,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,16,24,Aspirational market reach.
+Luxury,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,20,30,Brand and experience investment.
+Luxury,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,8,15,25,Ultra-premium reputation-driven.
+Luxury,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.5,2.2,3.2,Aspirational browsing common.
+Luxury,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.8,1.4,2.2,High consideration purchases.
+Luxury,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.4,0.8,1.3,Invitation-only exclusivity.
+Luxury,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.8,1.3,2.0,Impulse accessories.
+Luxury,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.4,0.8,1.3,Desktop dominates high-ticket.
+Luxury,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.2,0.4,0.7,Boutique visits preferred.
+Luxury,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,70,76,82,Price barrier for aspirational.
+Luxury,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,75,81,87,Consideration period extended.
+Luxury,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,78,84,90,Personal shopping preferred.
+Luxury,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,180,280,420,Entry luxury items.
+Luxury,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,500,900,1600,Core luxury purchases.
+Luxury,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,2000,5000,15000,Ultra-premium items.
+Luxury,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,25,35,48,Aspirational loyalty building.
+Luxury,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,35,50,65,Brand devotion grows.
+Luxury,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,50,68,82,Lifetime client relationships.
+Luxury,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.2,1.8,2.6,Occasional treats.
+Luxury,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.0,1.5,2.2,Seasonal collection updates.
+Luxury,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,0.8,1.2,1.8,Bespoke and special commissions.
 Luxury,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,48,58,68,Aspirational buyers churn higher.
 Luxury,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,35,45,55,Collection building reduces churn.
 Luxury,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,20,30,40,Lifetime clients rarely churn.
+Luxury,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,18,24,32,Quality expectation mismatch.
+Luxury,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,15,20,28,Boutique validation reduces returns.
+Luxury,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,10,15,22,Bespoke fit minimizes returns.
+Luxury,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,55,62,70,Entry luxury margins.
+Luxury,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,65,72,80,Premium brand power.
+Luxury,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,75,82,90,Ultra-premium pricing power.
+Luxury,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,4.5,7.0,Building aspirational loyalty.
+Luxury,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,4.0,6.0,9.5,Strong brand relationships.
+Luxury,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,5.0,8.0,14.0,Lifetime value exceptional.
+Luxury,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.5,5.5,8.5,Aspirational efficiency.
+Luxury,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.0,4.5,7.0,Brand building investment.
+Luxury,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,4.0,6.5,10.0,Reputation-driven efficiency.
+Luxury,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,18,28,Aspiration nurturing.
+Luxury,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,22,32,Collection previews and events.
+Luxury,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,26,Exclusive clienteling.
+Luxury,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,6,Appointment reminders.
+Luxury,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,2,5,VIP event invitations.
+Luxury,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.5,1.5,3,Concierge updates only.
 SaaS,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,50,120,220,Self-serve acquisition efficient.
 SaaS,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,200,450,800,Sales-assisted increases CAC.
 SaaS,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,800,2000,5000,Enterprise sales teams expensive.
@@ -392,27 +392,18 @@ SaaS,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marke
 SaaS,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,20,35,50,Growth investment heavy.
 SaaS,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,25,40,55,Sales and marketing combined.
 SaaS,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,15,28,42,Enterprise efficiency improves.
-SaaS,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,2.0,3.5,5.5,Free trial signup rate.
-SaaS,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.5,2.5,4.0,Demo request rate.
-SaaS,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.8,1.5,2.5,Contact sales conversion.
-SaaS,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,1.0,1.8,3.0,Mobile signups for simple tools.
-SaaS,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.6,1.2,2.0,Desktop preferred for B2B.
-SaaS,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.3,0.7,1.2,Enterprise research on mobile only.
-SaaS,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,50,60,70,Checkout friction.
-SaaS,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,55,65,75,Approval process delays.
-SaaS,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,60,70,80,Procurement complexity.
-SaaS,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,15,35,60,Monthly subscription value.
-SaaS,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,80,200,400,Annual contract value monthly.
-SaaS,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,500,1500,4000,Enterprise monthly contract.
-SaaS,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,70,80,88,Subscription model retention.
-SaaS,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,75,85,92,Contract renewals.
-SaaS,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,82,90,96,Enterprise stickiness high.
-SaaS,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,10,11,12,Monthly recurring billing.
-SaaS,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,4,6,12,Quarterly to monthly billing.
-SaaS,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1,2,4,Annual to quarterly billing.
-SaaS,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,8,15,25,Monthly churn rate.
-SaaS,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,5,10,18,Annual churn rate.
-SaaS,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,3,6,12,Enterprise churn rate.
+SaaS,Budget,conv_rate,Conversion,Trial to Paid Conversion,%,Percentage of free trial users who convert to paid.,2.0,3.5,5.5,Self-serve conversion rate.
+SaaS,Mid-Range,conv_rate,Conversion,Trial to Paid Conversion,%,Percentage of free trial users who convert to paid.,1.5,2.5,4.0,Demo request conversion.
+SaaS,Luxury,conv_rate,Conversion,Trial to Paid Conversion,%,Percentage of free trial users who convert to paid.,0.8,1.5,2.5,Contact sales conversion.
+SaaS,Budget,repeat_rate,Retention,Net Revenue Retention,%,Net revenue from existing customers after expansion and churn.,70,80,88,SMB retention rate.
+SaaS,Mid-Range,repeat_rate,Retention,Net Revenue Retention,%,Net revenue from existing customers after expansion and churn.,85,95,110,Mid-market NRR with expansion.
+SaaS,Luxury,repeat_rate,Retention,Net Revenue Retention,%,Net revenue from existing customers after expansion and churn.,100,115,135,Enterprise expansion revenue.
+SaaS,Budget,purchase_freq,Retention,Expansion Rate,%,Annual rate of revenue expansion from existing customers.,5,12,22,Upsell to higher tiers.
+SaaS,Mid-Range,purchase_freq,Retention,Expansion Rate,%,Annual rate of revenue expansion from existing customers.,10,20,35,Seat and feature expansion.
+SaaS,Luxury,purchase_freq,Retention,Expansion Rate,%,Annual rate of revenue expansion from existing customers.,15,30,50,Enterprise account growth.
+SaaS,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who cancel within 12 months.,15,25,35,SMB churn higher.
+SaaS,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who cancel within 12 months.,10,18,28,Mid-market stickier.
+SaaS,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who cancel within 12 months.,5,10,18,Enterprise retention strong.
 SaaS,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,70,78,85,Software margins excellent.
 SaaS,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,72,80,87,Scale improves margins.
 SaaS,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,68,76,84,Services reduce pure SaaS margin.
@@ -425,12 +416,6 @@ SaaS,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Re
 SaaS,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,25,38,Onboarding and upgrade emails.
 SaaS,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,32,Nurture and expansion.
 SaaS,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,15,25,Account-based marketing.
-SaaS,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.5,2,5,Transactional only.
-SaaS,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.5,1.5,4,Security and alerts.
-SaaS,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.2,1,3,Executive alerts only.
-SaaS,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,15,25,35,SMB churn higher.
-SaaS,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,10,18,28,Mid-market stickier.
-SaaS,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,5,10,18,Enterprise retention strong.
 Services,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,100,250,450,Small project acquisition.
 Services,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,300,700,1400,Relationship building investment.
 Services,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,1000,3000,8000,Enterprise BD expensive.
@@ -440,27 +425,18 @@ Services,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total m
 Services,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,8,14,22,Referral-driven business.
 Services,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,18,28,Content and event marketing.
 Services,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,6,12,20,Reputation and referrals dominate.
-Services,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.5,2.8,4.5,Contact form conversion.
-Services,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.0,2.0,3.2,Consultation request rate.
-Services,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.5,1.2,2.0,RFP and referral driven.
-Services,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.8,1.5,2.5,Quick contact requests.
-Services,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.5,1.0,1.8,Desktop preferred for B2B.
-Services,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.2,0.6,1.2,Research only on mobile.
-Services,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,45,55,65,Quote abandonment rate.
-Services,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,50,60,70,Proposal rejection rate.
-Services,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,55,65,75,Long decision cycles.
-Services,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,500,1500,3500,Small project value.
-Services,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,3000,8000,18000,Mid-size engagement.
-Services,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,20000,60000,200000,Enterprise project value.
-Services,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,30,42,55,Project-based repeat.
-Services,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,40,55,70,Retainer development.
-Services,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,55,70,85,Strategic partnership retention.
-Services,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.5,2.5,4.0,Multiple small projects.
-Services,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.2,2.0,3.2,Annual to quarterly.
-Services,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.0,1.5,2.5,Major annual engagements.
-Services,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,5,10,18,Project cancellation rate.
-Services,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,4,8,15,Contract termination rate.
-Services,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,2,5,10,Strategic relationships stable.
+Services,Budget,conv_rate,Conversion,Lead to Client Conversion,%,Percentage of leads that become paying clients.,1.5,2.8,4.5,Small project conversion.
+Services,Mid-Range,conv_rate,Conversion,Lead to Client Conversion,%,Percentage of leads that become paying clients.,1.0,2.0,3.2,Consultation process.
+Services,Luxury,conv_rate,Conversion,Lead to Client Conversion,%,Percentage of leads that become paying clients.,0.5,1.2,2.0,RFP and referral driven.
+Services,Budget,repeat_rate,Retention,Client Retention Rate,%,Percentage of clients who engage again within 24 months.,30,42,55,Project-based repeat.
+Services,Mid-Range,repeat_rate,Retention,Client Retention Rate,%,Percentage of clients who engage again within 24 months.,40,55,70,Retainer development.
+Services,Luxury,repeat_rate,Retention,Client Retention Rate,%,Percentage of clients who engage again within 24 months.,55,70,85,Strategic partnership retention.
+Services,Budget,purchase_freq,Retention,Engagements per Client,#/yr,Average number of projects per client per year.,1.5,2.5,4.0,Multiple small projects.
+Services,Mid-Range,purchase_freq,Retention,Engagements per Client,#/yr,Average number of projects per client per year.,1.2,2.0,3.2,Annual to quarterly.
+Services,Luxury,purchase_freq,Retention,Engagements per Client,#/yr,Average number of projects per client per year.,1.0,1.5,2.5,Major annual engagements.
+Services,Budget,churn_rate,Retention,Annual Client Loss Rate,%,Percentage of clients who do not return within 12 months.,40,52,65,Project completion churn.
+Services,Mid-Range,churn_rate,Retention,Annual Client Loss Rate,%,Percentage of clients who do not return within 12 months.,28,40,52,Retainer retention better.
+Services,Luxury,churn_rate,Retention,Annual Client Loss Rate,%,Percentage of clients who do not return within 12 months.,15,25,38,Strategic relationships endure.
 Services,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,35,45,55,Labor-intensive delivery.
 Services,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,40,52,65,Efficiency improves with scale.
 Services,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,45,58,72,Premium positioning pricing.
@@ -473,12 +449,6 @@ Services,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Tota
 Services,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,18,28,Newsletter and updates.
 Services,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,32,Thought leadership content.
 Services,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,15,25,Account-based nurturing.
-Services,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.2,1,3,Appointment reminders.
-Services,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.2,0.8,2,Meeting confirmations.
-Services,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.1,0.5,1.5,Executive alerts only.
-Services,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,40,52,65,Project completion churn.
-Services,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,28,40,52,Retainer retention better.
-Services,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,15,25,38,Strategic relationships endure.
 Manufacturing,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,80,180,350,Trade show and catalog driven.
 Manufacturing,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,250,550,1000,Technical sales process.
 Manufacturing,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,800,2200,5500,Enterprise procurement cycles.
@@ -488,27 +458,24 @@ Manufacturing,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by to
 Manufacturing,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,4,8,14,Catalog and trade focus.
 Manufacturing,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,5,10,16,Technical content investment.
 Manufacturing,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,4,8,14,Relationship-driven sales.
-Manufacturing,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.8,3.0,4.5,Catalog ordering conversion.
-Manufacturing,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.2,2.2,3.5,Quote request rate.
-Manufacturing,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,0.6,1.2,2.0,RFQ driven process.
-Manufacturing,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.8,1.5,2.5,Quick reorders on mobile.
-Manufacturing,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.5,1.0,1.8,Desktop preferred for specs.
-Manufacturing,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.2,0.5,1.0,Complex specs need desktop.
-Manufacturing,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,55,65,75,Approval process delays.
-Manufacturing,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,60,70,80,Procurement complexity.
-Manufacturing,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,65,75,85,Long approval chains.
+Manufacturing,Budget,conv_rate,Conversion,Quote to Order Conversion,%,Percentage of quotes that convert to orders.,18,28,40,Small order conversion.
+Manufacturing,Mid-Range,conv_rate,Conversion,Quote to Order Conversion,%,Percentage of quotes that convert to orders.,15,25,35,Mid-size project conversion.
+Manufacturing,Luxury,conv_rate,Conversion,Quote to Order Conversion,%,Percentage of quotes that convert to orders.,12,20,30,Enterprise procurement rate.
 Manufacturing,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,250,500,900,Small parts orders.
 Manufacturing,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,800,2000,4500,Equipment and supplies.
 Manufacturing,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,5000,15000,45000,Machinery and systems.
-Manufacturing,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,50,62,75,Consumable reorders.
-Manufacturing,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,55,68,80,Maintenance and supply cycles.
-Manufacturing,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,60,75,88,Capital equipment relationships.
-Manufacturing,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,4.0,7.0,12.0,Regular consumable orders.
-Manufacturing,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,2.5,4.5,8.0,Quarterly supply orders.
-Manufacturing,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,0.8,1.5,3.0,Annual capital purchases.
-Manufacturing,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,4,7,12,Wrong part orders.
-Manufacturing,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,3,6,10,Spec mismatch returns.
-Manufacturing,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,2,4,8,Engineered solutions fit.
+Manufacturing,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who reorder within 12 months.,50,62,75,Consumable reorders.
+Manufacturing,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who reorder within 12 months.,55,68,80,Maintenance and supply cycles.
+Manufacturing,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who reorder within 12 months.,60,75,88,Capital equipment relationships.
+Manufacturing,Budget,purchase_freq,Retention,Orders per Customer,#/yr,Average number of orders per customer per year.,4.0,7.0,12.0,Regular consumable orders.
+Manufacturing,Mid-Range,purchase_freq,Retention,Orders per Customer,#/yr,Average number of orders per customer per year.,2.5,4.5,8.0,Quarterly supply orders.
+Manufacturing,Luxury,purchase_freq,Retention,Orders per Customer,#/yr,Average number of orders per customer per year.,0.8,1.5,3.0,Annual capital purchases.
+Manufacturing,Budget,churn_rate,Retention,Annual Customer Loss Rate,%,Percentage of customers who do not reorder within 12 months.,22,32,45,Supplier switching moderate.
+Manufacturing,Mid-Range,churn_rate,Retention,Annual Customer Loss Rate,%,Percentage of customers who do not reorder within 12 months.,18,28,40,Technical relationships sticky.
+Manufacturing,Luxury,churn_rate,Retention,Annual Customer Loss Rate,%,Percentage of customers who do not reorder within 12 months.,10,18,28,Capital equipment loyalty high.
+Manufacturing,Budget,return_rate,Economics,Return/Defect Rate,%,Percentage of orders with returns or defects.,4,7,12,Wrong part orders.
+Manufacturing,Mid-Range,return_rate,Economics,Return/Defect Rate,%,Percentage of orders with returns or defects.,3,6,10,Spec mismatch returns.
+Manufacturing,Luxury,return_rate,Economics,Return/Defect Rate,%,Percentage of orders with returns or defects.,2,4,8,Engineered solutions fit.
 Manufacturing,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,25,32,42,Commodity parts pressure.
 Manufacturing,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,30,40,52,Technical expertise premium.
 Manufacturing,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,35,48,62,Custom solutions premium.
@@ -521,12 +488,6 @@ Manufacturing,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x
 Manufacturing,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,30,Catalog and promotion emails.
 Manufacturing,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,18,28,Technical updates and specs.
 Manufacturing,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,12,22,Account management comms.
-Manufacturing,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.5,2,5,Order and delivery updates.
-Manufacturing,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.3,1,3,Shipping notifications.
-Manufacturing,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.1,0.5,2,Installation scheduling.
-Manufacturing,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,22,32,45,Supplier switching moderate.
-Manufacturing,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,18,28,40,Technical relationships sticky.
-Manufacturing,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,10,18,28,Capital equipment loyalty high.
 Wholesale,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,60,140,280,Trade show and catalog driven.
 Wholesale,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,180,400,750,Territory sales investment.
 Wholesale,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,500,1200,2800,Enterprise account development.
@@ -536,27 +497,24 @@ Wholesale,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total 
 Wholesale,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,3,6,10,Catalog and trade focus.
 Wholesale,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,4,8,13,Territory coverage.
 Wholesale,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,3,6,11,Account management focused.
-Wholesale,Budget,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,3.5,5.5,8.0,Quick reorder conversion.
-Wholesale,Mid-Range,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,2.5,4.0,6.0,Account setup conversion.
-Wholesale,Luxury,conv_rate,Conversion,Conversion Rate (Desktop),%,Percentage of desktop visitors who make a purchase.,1.5,2.8,4.5,Large account qualification.
-Wholesale,Budget,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,2.0,3.2,5.0,Quick reorders on mobile.
-Wholesale,Mid-Range,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,1.2,2.2,3.5,Field ordering on mobile.
-Wholesale,Luxury,mobile_conv,Conversion,Conversion Rate (Mobile),%,Percentage of mobile visitors who make a purchase.,0.8,1.5,2.5,Desktop preferred for large orders.
-Wholesale,Budget,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,45,55,65,Quick checkout for regulars.
-Wholesale,Mid-Range,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,50,60,70,Approval process delays.
-Wholesale,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of carts created that are not purchased.,55,65,75,Large order considerations.
+Wholesale,Budget,conv_rate,Conversion,Account Activation Rate,%,Percentage of new accounts that place first order.,35,50,68,Quick reorder conversion.
+Wholesale,Mid-Range,conv_rate,Conversion,Account Activation Rate,%,Percentage of new accounts that place first order.,28,42,58,Account setup conversion.
+Wholesale,Luxury,conv_rate,Conversion,Account Activation Rate,%,Percentage of new accounts that place first order.,20,35,50,Large account qualification.
 Wholesale,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,300,600,1100,Small retailer orders.
 Wholesale,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,1000,2500,5000,Regional distributor orders.
 Wholesale,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,5000,15000,40000,National account orders.
-Wholesale,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,55,68,80,Regular reorder cycles.
-Wholesale,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,62,75,86,Supplier relationships stable.
-Wholesale,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,70,82,92,Strategic partnerships endure.
-Wholesale,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,8.0,14.0,24.0,Frequent small orders.
-Wholesale,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,6.0,10.0,18.0,Monthly ordering cycles.
-Wholesale,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,4.0,7.0,12.0,Quarterly to monthly large orders.
-Wholesale,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,3,5,9,Damaged goods returns.
-Wholesale,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,2,4,7,Quality issues minimal.
-Wholesale,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,1,3,5,Premium quality assurance.
+Wholesale,Budget,repeat_rate,Retention,Repeat Account Rate,%,Percentage of accounts that reorder within 12 months.,55,68,80,Regular reorder cycles.
+Wholesale,Mid-Range,repeat_rate,Retention,Repeat Account Rate,%,Percentage of accounts that reorder within 12 months.,62,75,86,Supplier relationships stable.
+Wholesale,Luxury,repeat_rate,Retention,Repeat Account Rate,%,Percentage of accounts that reorder within 12 months.,70,82,92,Strategic partnerships endure.
+Wholesale,Budget,purchase_freq,Retention,Orders per Account,#/yr,Average number of orders per account per year.,8.0,14.0,24.0,Frequent small orders.
+Wholesale,Mid-Range,purchase_freq,Retention,Orders per Account,#/yr,Average number of orders per account per year.,6.0,10.0,18.0,Monthly ordering cycles.
+Wholesale,Luxury,purchase_freq,Retention,Orders per Account,#/yr,Average number of orders per account per year.,4.0,7.0,12.0,Quarterly to monthly large orders.
+Wholesale,Budget,churn_rate,Retention,Annual Account Loss Rate,%,Percentage of accounts that do not reorder within 12 months.,18,28,40,Supplier switching moderate.
+Wholesale,Mid-Range,churn_rate,Retention,Annual Account Loss Rate,%,Percentage of accounts that do not reorder within 12 months.,14,22,32,Territory relationships sticky.
+Wholesale,Luxury,churn_rate,Retention,Annual Account Loss Rate,%,Percentage of accounts that do not reorder within 12 months.,8,15,24,Strategic partnerships endure.
+Wholesale,Budget,return_rate,Economics,Return Rate,%,Percentage of orders with returns.,3,5,9,Damaged goods returns.
+Wholesale,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of orders with returns.,2,4,7,Quality issues minimal.
+Wholesale,Luxury,return_rate,Economics,Return Rate,%,Percentage of orders with returns.,1,3,5,Premium quality assurance.
 Wholesale,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,15,20,28,Volume pricing thin.
 Wholesale,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,18,25,35,Service value add.
 Wholesale,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,22,32,45,Strategic value premium.
@@ -569,9 +527,3 @@ Wholesale,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Tot
 Wholesale,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,24,35,Promotion and catalog emails.
 Wholesale,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,30,New product and pricing.
 Wholesale,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,24,Account management comms.
-Wholesale,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,7,Order and delivery alerts.
-Wholesale,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.5,2,5,Shipping notifications.
-Wholesale,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.2,1,3,Delivery scheduling.
-Wholesale,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,18,28,40,Supplier switching moderate.
-Wholesale,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,14,22,32,Territory relationships sticky.
-Wholesale,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,8,15,24,Strategic partnerships endure.
