@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { SidebarInputs } from '@/components/SidebarInputs';
 import { BenchmarkGrid } from '@/components/BenchmarkGrid';
 import { AiAnalysisResult } from '@/components/AiAnalysisResult';
+import { IntroBlock } from '@/components/IntroBlock';
 import { benchmarks, Industry, PriceTier } from '@/data/benchmarks';
 
 const LOADING_MESSAGES = [
@@ -173,15 +174,14 @@ export default function V4Page() {
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
                 {/* Header Section */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-8">
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                        Marketing KPI Benchmark <span className="text-brevo-green">v4</span>
+                        Marketing KPI Benchmark
                     </h1>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Compare your performance against B2C Retail standards.
-                        Unlock personalized AI insights to optimize your strategy.
-                    </p>
                 </div>
+
+                {/* Intro Block with Toggles */}
+                <IntroBlock />
 
                 <div className="flex flex-col lg:flex-row gap-8">
 
