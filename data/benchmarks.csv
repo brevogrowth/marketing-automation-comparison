@@ -29,9 +29,9 @@ Fashion,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of
 Fashion,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,60,70,80,High churn is typical; focus on acquisition volume.
 Fashion,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,40,50,60,Retention is key to profitability.
 Fashion,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,20,30,40,Client relationships reduce churn significantly.
-Fashion,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,15,20,25,Fit issues common.
-Fashion,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,20,25,35,Free returns encourage ordering multiple sizes.
-Fashion,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,25,30,40,High expectations drive returns.
+Fashion,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,20,28,38,Fit issues common in value segment.
+Fashion,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,25,35,45,Free returns encourage ordering multiple sizes.
+Fashion,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,30,40,50,High expectations and multiple size ordering.
 Fashion,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,45,50,55,Volume play.
 Fashion,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,55,60,65,Healthy margins for branding.
 Fashion,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,70,75,85,Brand premium drives high margins.
@@ -173,10 +173,10 @@ Electronics,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average numbe
 Electronics,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,65,75,85,Infrequent purchase category.
 Electronics,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,55,65,75,Upgrade cycles help retention.
 Electronics,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who do not return within 12 months.,45,55,65,Brand ecosystem reduces churn.
-Electronics,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,10,14,20,Compatibility issues drive returns.
-Electronics,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,12,18,25,Feature mismatch common.
-Electronics,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,8,13,18,Informed buyers return less.
-Electronics,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,15,22,30,Commodity pricing pressure.
+Electronics,Budget,return_rate,Economics,Return Rate,%,Percentage of items returned.,12,18,25,Compatibility issues drive returns.
+Electronics,Mid-Range,return_rate,Economics,Return Rate,%,Percentage of items returned.,15,22,30,Feature mismatch and buyer remorse common.
+Electronics,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,10,15,22,Informed buyers still have expectations.
+Electronics,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,8,15,22,Commodity pricing and Amazon pressure.
 Electronics,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,22,30,40,Brand premium possible.
 Electronics,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,35,45,55,Innovation premium pricing.
 Electronics,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,2.0,3.0,4.5,Accessory margins help LTV.
@@ -212,9 +212,9 @@ Sports,Luxury,cart_abandon,Conversion,Cart Abandonment Rate,%,Percentage of cart
 Sports,Budget,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,50,72,95,Multi-item activewear orders.
 Sports,Mid-Range,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,90,130,180,Technical apparel and footwear.
 Sports,Luxury,aov,Conversion,Average Order Value (AOV),€,Average revenue per transaction.,250,400,700,Premium equipment and gear.
-Sports,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,22,30,40,Activewear replacement cycles.
-Sports,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,28,38,50,Fitness community loyalty.
-Sports,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,32,45,58,Enthusiast loyalty strong.
+Sports,Budget,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,28,38,50,Activewear replacement and community.
+Sports,Mid-Range,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,35,48,60,Fitness community power drives loyalty.
+Sports,Luxury,repeat_rate,Retention,Repeat Customer Rate,%,Percentage of customers who buy more than once.,42,55,68,Enthusiast community loyalty exceptional.
 Sports,Budget,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.8,2.5,3.5,Seasonal gear updates.
 Sports,Mid-Range,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.5,2.2,3.0,Training cycle purchases.
 Sports,Luxury,purchase_freq,Retention,Purchase Frequency,#/yr,Average number of orders per customer per year.,1.2,1.7,2.4,Equipment upgrade cycles.
@@ -239,9 +239,9 @@ Sports,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of to
 Sports,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,Flash sales effective.
 Sports,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,13,Event and launch alerts.
 Sports,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,6,VIP access updates.
-Family,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,15,28,45,Parent communities enable efficient targeting.
-Family,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,28,45,70,Safety and quality messaging increases cost.
-Family,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,55,95,160,Premium parenting audience more expensive.
+Family,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,22,40,65,Competitive parent targeting drives CAC up.
+Family,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,40,65,100,Safety messaging and competition increase cost.
+Family,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,75,130,220,Premium parenting audience highly competitive.
 Family,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,5.0,7.5,Growth spurts drive repeat purchases.
 Family,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,6.5,Quality justifies mid-range pricing.
 Family,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,3.5,5.0,Premium positioning needs patience.
@@ -275,9 +275,9 @@ Family,Luxury,return_rate,Economics,Return Rate,%,Percentage of items returned.,
 Family,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,42,50,58,Volume and basics focus.
 Family,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,52,60,68,Quality and safety premium.
 Family,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,62,70,80,Premium brand margins.
-Family,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,4.5,6.5,Multi-year customer journey.
-Family,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.5,5.0,7.5,Brand loyalty across children.
-Family,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,4.0,6.0,9.0,Premium parents high LTV.
+Family,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,2.5,3.8,5.5,Multi-year journey but high CAC.
+Family,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,4.2,6.5,Brand loyalty balanced by acquisition cost.
+Family,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.5,5.0,7.5,Premium parents high LTV but expensive.
 Family,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,4.0,6.0,9.5,Community referrals boost efficiency.
 Family,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.5,5.0,7.5,Content marketing compounds.
 Family,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.0,4.5,6.5,Brand building investment.
@@ -330,7 +330,7 @@ Food,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Re
 Food,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,3.0,4.5,6.5,Content compounds.
 Food,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.8,4.0,6.0,Brand building required.
 Food,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,22,32,45,Replenishment and recipes.
-Food,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,28,38,50,Subscription nurturing.
+Food,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,25,35,45,Subscription nurturing important.
 Food,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,18,28,40,Seasonal gift campaigns.
 Food,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,4,9,16,Flash sales and restocks.
 Food,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,5,11,18,Delivery updates and reorder.
@@ -413,9 +413,9 @@ SaaS,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided 
 SaaS,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.0,3.5,5.5,Growth mode efficiency.
 SaaS,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.2,3.8,6.0,Balanced growth.
 SaaS,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.8,4.5,7.5,Enterprise efficiency higher.
-SaaS,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,25,38,Onboarding and upgrade emails.
-SaaS,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,32,Nurture and expansion.
-SaaS,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,15,25,Account-based marketing.
+SaaS,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,30,Onboarding and upgrade emails effective.
+SaaS,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,26,Nurture sequences support sales.
+SaaS,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,12,20,Account-based marketing and direct sales.
 Services,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,100,250,450,Small project acquisition.
 Services,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,300,700,1400,Relationship building investment.
 Services,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,1000,3000,8000,Enterprise BD expensive.
@@ -446,9 +446,9 @@ Services,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divi
 Services,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,5.0,8.0,12.0,Referral efficiency.
 Services,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,4.5,7.0,11.0,Content compounds returns.
 Services,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,6.0,10.0,16.0,Reputation-driven efficiency.
-Services,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,18,28,Newsletter and updates.
-Services,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,32,Thought leadership content.
-Services,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,15,25,Account-based nurturing.
+Services,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,Newsletter supports relationship building.
+Services,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,26,Thought leadership nurtures leads.
+Services,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,11,18,Direct relationship management dominates.
 Manufacturing,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,80,180,350,Trade show and catalog driven.
 Manufacturing,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,250,550,1000,Technical sales process.
 Manufacturing,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,800,2200,5500,Enterprise procurement cycles.
@@ -485,15 +485,15 @@ Manufacturing,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value
 Manufacturing,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,8.0,12.0,18.0,High AOV drives efficiency.
 Manufacturing,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,7.0,10.0,15.0,Technical sales efficiency.
 Manufacturing,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,8.0,12.0,18.0,Large deals boost MER.
-Manufacturing,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,30,Catalog and promotion emails.
-Manufacturing,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,18,28,Technical updates and specs.
-Manufacturing,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,12,22,Account management comms.
+Manufacturing,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,Catalog and promotion emails support sales.
+Manufacturing,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,12,20,Technical updates support relationship.
+Manufacturing,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,4,8,15,Account management direct contact dominates.
 Wholesale,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,60,140,280,Trade show and catalog driven.
 Wholesale,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,180,400,750,Territory sales investment.
 Wholesale,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,500,1200,2800,Enterprise account development.
-Wholesale,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,6.0,10.0,16.0,High volume efficiency.
-Wholesale,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,5.0,8.5,14.0,Repeat orders compound.
-Wholesale,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,4.0,7.0,12.0,Large account value high.
+Wholesale,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,5.0,8.5,14.0,High volume efficiency (MER-like metric).
+Wholesale,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,4.5,7.5,12.0,Repeat orders compound returns.
+Wholesale,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,6.0,10.0,Large account value but long cycles.
 Wholesale,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,3,6,10,Catalog and trade focus.
 Wholesale,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,4,8,13,Territory coverage.
 Wholesale,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,3,6,11,Account management focused.
@@ -524,6 +524,6 @@ Wholesale,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value div
 Wholesale,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,10.0,16.0,26.0,High volume efficiency.
 Wholesale,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,9.0,14.0,22.0,Territory efficiency.
 Wholesale,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,10.0,16.0,26.0,Large account efficiency.
-Wholesale,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,24,35,Promotion and catalog emails.
-Wholesale,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,30,New product and pricing.
-Wholesale,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,24,Account management comms.
+Wholesale,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,25,Promotion emails support sales teams.
+Wholesale,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,New product alerts support relationship.
+Wholesale,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,5,10,18,Direct account management dominates.

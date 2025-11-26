@@ -343,9 +343,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of items returned.',
             ranges: {
-                'Budget': { low: 10, median: 14, high: 20, insight: 'Compatibility issues drive returns.' },
-                'Mid-Range': { low: 12, median: 18, high: 25, insight: 'Feature mismatch common.' },
-                'Luxury': { low: 8, median: 13, high: 18, insight: 'Informed buyers return less.' },
+                'Budget': { low: 12, median: 18, high: 25, insight: 'Compatibility issues drive returns.' },
+                'Mid-Range': { low: 15, median: 22, high: 30, insight: 'Feature mismatch and buyer remorse common.' },
+                'Luxury': { low: 10, median: 15, high: 22, insight: 'Informed buyers still have expectations.' },
             },
         },
         {
@@ -355,7 +355,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Revenue minus Cost of Goods Sold (COGS).',
             ranges: {
-                'Budget': { low: 15, median: 22, high: 30, insight: 'Commodity pricing pressure.' },
+                'Budget': { low: 8, median: 15, high: 22, insight: 'Commodity pricing and Amazon pressure.' },
                 'Mid-Range': { low: 22, median: 30, high: 40, insight: 'Brand premium possible.' },
                 'Luxury': { low: 35, median: 45, high: 55, insight: 'Innovation premium pricing.' },
             },
@@ -417,9 +417,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '€',
             description: 'Total marketing spend divided by new customers acquired.',
             ranges: {
-                'Budget': { low: 15, median: 28, high: 45, insight: 'Parent communities enable efficient targeting.' },
-                'Mid-Range': { low: 28, median: 45, high: 70, insight: 'Safety and quality messaging increases cost.' },
-                'Luxury': { low: 55, median: 95, high: 160, insight: 'Premium parenting audience more expensive.' },
+                'Budget': { low: 22, median: 40, high: 65, insight: 'Competitive parent targeting drives CAC up.' },
+                'Mid-Range': { low: 40, median: 65, high: 100, insight: 'Safety messaging and competition increase cost.' },
+                'Luxury': { low: 75, median: 130, high: 220, insight: 'Premium parenting audience highly competitive.' },
             },
         },
         {
@@ -561,9 +561,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: 'x',
             description: 'Lifetime Value divided by Customer Acquisition Cost.',
             ranges: {
-                'Budget': { low: 3, median: 4.5, high: 6.5, insight: 'Multi-year customer journey.' },
-                'Mid-Range': { low: 3.5, median: 5, high: 7.5, insight: 'Brand loyalty across children.' },
-                'Luxury': { low: 4, median: 6, high: 9, insight: 'Premium parents high LTV.' },
+                'Budget': { low: 2.5, median: 3.8, high: 5.5, insight: 'Multi-year journey but high CAC.' },
+                'Mid-Range': { low: 3, median: 4.2, high: 6.5, insight: 'Brand loyalty balanced by acquisition cost.' },
+                'Luxury': { low: 3.5, median: 5, high: 7.5, insight: 'Premium parents high LTV but expensive.' },
             },
         },
         {
@@ -731,9 +731,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of items returned.',
             ranges: {
-                'Budget': { low: 15, median: 20, high: 25, insight: 'Fit issues common.' },
-                'Mid-Range': { low: 20, median: 25, high: 35, insight: 'Free returns encourage ordering multiple sizes.' },
-                'Luxury': { low: 25, median: 30, high: 40, insight: 'High expectations drive returns.' },
+                'Budget': { low: 20, median: 28, high: 38, insight: 'Fit issues common in value segment.' },
+                'Mid-Range': { low: 25, median: 35, high: 45, insight: 'Free returns encourage ordering multiple sizes.' },
+                'Luxury': { low: 30, median: 40, high: 50, insight: 'High expectations and multiple size ordering.' },
             },
         },
         {
@@ -974,7 +974,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             description: 'Percentage of total revenue attributed to Email Marketing.',
             ranges: {
                 'Budget': { low: 22, median: 32, high: 45, insight: 'Replenishment and recipes.' },
-                'Mid-Range': { low: 28, median: 38, high: 50, insight: 'Subscription nurturing.' },
+                'Mid-Range': { low: 25, median: 35, high: 45, insight: 'Subscription nurturing important.' },
                 'Luxury': { low: 18, median: 28, high: 40, insight: 'Seasonal gift campaigns.' },
             },
         },
@@ -1531,9 +1531,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of total revenue attributed to Email Marketing.',
             ranges: {
-                'Budget': { low: 12, median: 20, high: 30, insight: 'Catalog and promotion emails.' },
-                'Mid-Range': { low: 10, median: 18, high: 28, insight: 'Technical updates and specs.' },
-                'Luxury': { low: 6, median: 12, high: 22, insight: 'Account management comms.' },
+                'Budget': { low: 8, median: 14, high: 22, insight: 'Catalog and promotion emails support sales.' },
+                'Mid-Range': { low: 6, median: 12, high: 20, insight: 'Technical updates support relationship.' },
+                'Luxury': { low: 4, median: 8, high: 15, insight: 'Account management direct contact dominates.' },
             },
         }
     ],
@@ -1665,9 +1665,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of total revenue attributed to Email Marketing.',
             ranges: {
-                'Budget': { low: 15, median: 25, high: 38, insight: 'Onboarding and upgrade emails.' },
-                'Mid-Range': { low: 12, median: 20, high: 32, insight: 'Nurture and expansion.' },
-                'Luxury': { low: 8, median: 15, high: 25, insight: 'Account-based marketing.' },
+                'Budget': { low: 12, median: 20, high: 30, insight: 'Onboarding and upgrade emails effective.' },
+                'Mid-Range': { low: 10, median: 16, high: 26, insight: 'Nurture sequences support sales.' },
+                'Luxury': { low: 6, median: 12, high: 20, insight: 'Account-based marketing and direct sales.' },
             },
         }
     ],
@@ -1799,9 +1799,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of total revenue attributed to Email Marketing.',
             ranges: {
-                'Budget': { low: 10, median: 18, high: 28, insight: 'Newsletter and updates.' },
-                'Mid-Range': { low: 12, median: 20, high: 32, insight: 'Thought leadership content.' },
-                'Luxury': { low: 8, median: 15, high: 25, insight: 'Account-based nurturing.' },
+                'Budget': { low: 8, median: 14, high: 22, insight: 'Newsletter supports relationship building.' },
+                'Mid-Range': { low: 10, median: 16, high: 26, insight: 'Thought leadership nurtures leads.' },
+                'Luxury': { low: 6, median: 11, high: 18, insight: 'Direct relationship management dominates.' },
             },
         }
     ],
@@ -1897,9 +1897,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of customers who buy more than once.',
             ranges: {
-                'Budget': { low: 22, median: 30, high: 40, insight: 'Activewear replacement cycles.' },
-                'Mid-Range': { low: 28, median: 38, high: 50, insight: 'Fitness community loyalty.' },
-                'Luxury': { low: 32, median: 45, high: 58, insight: 'Enthusiast loyalty strong.' },
+                'Budget': { low: 28, median: 38, high: 50, insight: 'Activewear replacement and community.' },
+                'Mid-Range': { low: 35, median: 48, high: 60, insight: 'Fitness community power drives loyalty.' },
+                'Luxury': { low: 42, median: 55, high: 68, insight: 'Enthusiast community loyalty exceptional.' },
             },
         },
         {
@@ -2019,9 +2019,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: 'x',
             description: 'Total revenue divided by total marketing spend.',
             ranges: {
-                'Budget': { low: 6, median: 10, high: 16, insight: 'High volume efficiency.' },
-                'Mid-Range': { low: 5, median: 8.5, high: 14, insight: 'Repeat orders compound.' },
-                'Luxury': { low: 4, median: 7, high: 12, insight: 'Large account value high.' },
+                'Budget': { low: 5, median: 8.5, high: 14, insight: 'High volume efficiency (MER-like metric).' },
+                'Mid-Range': { low: 4.5, median: 7.5, high: 12, insight: 'Repeat orders compound returns.' },
+                'Luxury': { low: 3.5, median: 6, high: 10, insight: 'Large account value but long cycles.' },
             },
         },
         {
@@ -2151,9 +2151,9 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             unit: '%',
             description: 'Percentage of total revenue attributed to Email Marketing.',
             ranges: {
-                'Budget': { low: 15, median: 24, high: 35, insight: 'Promotion and catalog emails.' },
-                'Mid-Range': { low: 12, median: 20, high: 30, insight: 'New product and pricing.' },
-                'Luxury': { low: 8, median: 14, high: 24, insight: 'Account management comms.' },
+                'Budget': { low: 10, median: 16, high: 25, insight: 'Promotion emails support sales teams.' },
+                'Mid-Range': { low: 8, median: 14, high: 22, insight: 'New product alerts support relationship.' },
+                'Luxury': { low: 5, median: 10, high: 18, insight: 'Direct account management dominates.' },
             },
         }
     ]
