@@ -9,10 +9,10 @@ import { IntroBlock } from '@/components/IntroBlock';
 import { benchmarks, Industry, PriceTier } from '@/data/benchmarks';
 
 const LOADING_MESSAGES = [
-    { title: "Analyzing your data...", subtitle: "This may take 2-3 minutes. Our AI is reviewing your KPIs against industry benchmarks." },
-    { title: "Comparing with market data...", subtitle: "We're examining thousands of data points from similar retailers." },
-    { title: "Identifying opportunities...", subtitle: "Our AI is finding the best growth levers for your business." },
-    { title: "Crafting recommendations...", subtitle: "Almost there! Generating your personalized strategic insights." }
+    { title: "Analyzing your data...", subtitle: "Our AI is reviewing your KPIs against industry benchmarks.", step: 1 },
+    { title: "Comparing with market data...", subtitle: "Examining thousands of data points from similar businesses.", step: 2 },
+    { title: "Identifying opportunities...", subtitle: "Finding the best growth levers for your business.", step: 3 },
+    { title: "Crafting recommendations...", subtitle: "Almost there! Generating your personalized strategic insights.", step: 4 }
 ];
 
 export default function V4Page() {
@@ -162,11 +162,17 @@ export default function V4Page() {
             {/* Fixed Instruction Banner - Shows when in comparing mode */}
             {isComparing && !showAnalysis && (
                 <div className="sticky top-0 z-50 bg-gradient-to-r from-brevo-green to-brevo-dark-green text-white py-3 px-4 shadow-lg">
-                    <div className="max-w-7xl mx-auto flex items-center justify-center gap-3">
-                        <span className="text-xl">📊</span>
+                    <div className="max-w-7xl mx-auto flex items-center justify-center gap-4">
                         <p className="text-sm md:text-base font-medium">
-                            <span className="font-bold">Analysis Mode:</span> Enter your KPIs below, select the ones you want to analyze, then click &quot;Generate AI Analysis&quot;
+                            📊 Pick metrics • Set values • Generate insights
                         </p>
+                        <button
+                            onClick={handleGenerateAnalysis}
+                            className="hidden sm:flex items-center gap-1.5 bg-white text-brevo-dark-green px-4 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100 transition-colors"
+                        >
+                            <span>✨</span>
+                            Generate Analysis
+                        </button>
                     </div>
                 </div>
             )}
@@ -221,14 +227,15 @@ export default function V4Page() {
 
                         {/* Analysis Action */}
                         {isComparing && !showAnalysis && (
-                            <div className="mt-12 flex justify-center">
+                            <div className="mt-12 flex flex-col items-center gap-3">
                                 <button
                                     onClick={handleGenerateAnalysis}
                                     className="bg-brevo-green text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:bg-brevo-dark-green transition-all transform hover:-translate-y-1 flex items-center gap-2"
                                 >
                                     <span>✨</span>
-                                    Generate AI Analysis
+                                    Get My AI Recommendations
                                 </button>
+                                <p className="text-sm text-gray-500">Free • Takes 2-3 minutes</p>
                             </div>
                         )}
 
@@ -246,6 +253,9 @@ export default function V4Page() {
                                         {/* Loading Spinner */}
                                         <div className="text-center mb-6">
                                             <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-brevo-green border-t-transparent mb-4"></div>
+                                            <p className="text-xs text-brevo-green font-medium mb-2">
+                                                Step {LOADING_MESSAGES[loadingMessageIndex].step} of 4
+                                            </p>
                                             <h3 className="text-xl font-bold text-gray-900 mb-2">
                                                 {LOADING_MESSAGES[loadingMessageIndex].title}
                                             </h3>
@@ -305,23 +315,22 @@ export default function V4Page() {
 
                         <div className="relative z-10 max-w-3xl mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                                Ready to beat the benchmarks?
+                                Ready to turn insights into growth?
                             </h2>
                             <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
-                                Stop guessing. Start converting. Brevo gives you the complete toolkit—
+                                Stop guessing. Start converting.
+                                <br className="hidden md:block" />
+                                <span className="md:mt-2 md:inline-block">Brevo gives you the complete toolkit—
                                 <span className="text-white font-semibold"> CRM, Email, SMS, and Automation</span>—to
-                                turn these insights into revenue.
+                                turn these insights into revenue.</span>
                             </p>
-                            <div className="flex flex-col sm:flex-row justify-center gap-4">
-                                <a href="#" className="bg-brevo-green text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brevo-dark-green transition-all duration-300 shadow-[0_4px_14px_0_rgba(0,146,93,0.39)]">
-                                    Get Started for Free
-                                </a>
-                                <a href="#" className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300">
-                                    Book a Demo
+                            <div className="flex justify-center">
+                                <a href="https://www.brevo.com/contact/" className="bg-brevo-green text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brevo-dark-green transition-all duration-300 shadow-[0_4px_14px_0_rgba(0,146,93,0.39)]">
+                                    Talk to an Expert
                                 </a>
                             </div>
                             <p className="mt-6 text-sm text-gray-400">
-                                No credit card required. 100% free plan available.
+                                No commitment required. 100% free plan available.
                             </p>
                         </div>
                     </div>

@@ -35,8 +35,10 @@ export const BenchmarkGrid = ({
 
     const categories = ['Strategic Efficiency', 'Acquisition', 'Conversion', 'Channel Mix', 'Retention', 'Economics'];
 
-    // Track which sections are open (all closed by default)
-    const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
+    // Track which sections are open (first section open by default)
+    const [openSections, setOpenSections] = useState<Record<string, boolean>>({
+        'Strategic Efficiency': true
+    });
 
     // Track which "Why this metric?" toggles are open
     const [openExplanations, setOpenExplanations] = useState<Record<string, boolean>>({});
@@ -190,9 +192,9 @@ export const BenchmarkGrid = ({
                                             <div className="flex-1 min-w-[300px]">
                                                 {/* Market Range Labels */}
                                                 <div className="flex justify-between text-xs text-gray-500 mb-2">
-                                                    <span>Low: {range.low}{kpi.unit}</span>
+                                                    <span>Below avg: {range.low}{kpi.unit}</span>
                                                     <span className="font-medium text-gray-900">Median: {range.median}{kpi.unit}</span>
-                                                    <span>High: {range.high}{kpi.unit}</span>
+                                                    <span>Top performers: {range.high}{kpi.unit}</span>
                                                 </div>
 
                                                 {!isComparing ? (

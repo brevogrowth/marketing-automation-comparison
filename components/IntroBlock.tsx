@@ -12,24 +12,22 @@ interface InfoToggle {
 const infoToggles: InfoToggle[] = [
     {
         id: 'what',
-        question: 'What is this tool?',
+        question: 'What will I learn?',
         icon: '🎯',
         answer: (
             <div className="space-y-2">
                 <p>
-                    This benchmark tool helps you <strong>compare your marketing KPIs</strong> against
-                    industry standards for your specific sector and price positioning.
+                    Discover how your marketing KPIs <strong>compare to industry leaders</strong> in your sector and price tier.
                 </p>
                 <p>
-                    Select your industry, enter your metrics, and get instant visual feedback
-                    (green/yellow/red) plus AI-powered strategic recommendations.
+                    Get instant visual feedback (green/yellow/red) on each metric, plus <strong>AI-powered strategic recommendations</strong> tailored to your business.
                 </p>
             </div>
         )
     },
     {
         id: 'data',
-        question: 'Where does the data come from?',
+        question: 'Can I trust this data?',
         icon: '📊',
         answer: (
             <div className="space-y-2">
@@ -50,7 +48,7 @@ const infoToggles: InfoToggle[] = [
     },
     {
         id: 'how',
-        question: 'How to use it?',
+        question: 'How do I get my analysis?',
         icon: '🚀',
         answer: (
             <div className="space-y-3">
@@ -60,11 +58,11 @@ const infoToggles: InfoToggle[] = [
                 </div>
                 <div className="flex items-start gap-3">
                     <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
-                    <p><strong>Enable analysis mode</strong> — Click "Compare my KPIs" to enter your data</p>
+                    <p><strong>Enter your KPIs</strong> — Click "Enter My KPIs" to start comparing</p>
                 </div>
                 <div className="flex items-start gap-3">
                     <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
-                    <p><strong>Input your metrics</strong> — Use sliders or type values for the KPIs you want to analyze</p>
+                    <p><strong>Adjust your values</strong> — Use sliders or type values for the metrics you want to analyze</p>
                 </div>
                 <div className="flex items-start gap-3">
                     <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">4</span>

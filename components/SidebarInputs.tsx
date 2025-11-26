@@ -21,9 +21,9 @@ export const SidebarInputs = ({
   return (
     <div className="bg-white p-6 rounded-xl shadow-[0_16px_48px_0_rgba(0,0,0,0.08)] border border-gray-100 flex flex-col">
       <div className="mb-8">
-        <h2 className="text-lg font-bold text-gray-900 mb-2">1. Business Profile</h2>
+        <h2 className="text-lg font-bold text-gray-900 mb-2">1. Your Industry</h2>
         <p className="text-sm text-gray-500 mb-6">
-          Define your business model to benchmark against relevant peers.
+          Pick your sector and price tier — we&apos;ll show relevant benchmarks.
         </p>
 
         <div className="space-y-6">
@@ -75,9 +75,9 @@ export const SidebarInputs = ({
       <hr className="border-gray-100 mb-8" />
 
       <div className="mb-8">
-        <h2 className="text-lg font-bold text-gray-900 mb-2">2. Analysis Mode</h2>
+        <h2 className="text-lg font-bold text-gray-900 mb-2">2. Compare Your KPIs</h2>
         <p className="text-sm text-gray-500 mb-6">
-          Input your own data to unlock AI-powered insights and recommendations.
+          Enter your metrics and get personalized AI recommendations.
         </p>
 
         <button
@@ -87,7 +87,7 @@ export const SidebarInputs = ({
             : 'bg-brevo-green border-transparent text-white hover:bg-brevo-dark-green shadow-md hover:shadow-lg transform hover:-translate-y-0.5'
             }`}
         >
-          {isComparing ? 'Exit Analysis Mode' : 'Start Analysis'}
+          {isComparing ? 'Done Comparing' : 'Enter My KPIs'}
         </button>
       </div>
 
