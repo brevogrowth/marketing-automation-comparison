@@ -6,105 +6,58 @@ interface InfoToggle {
     id: string;
     question: string;
     answer: React.ReactNode;
-    icon: string;
 }
 
 const infoToggles: InfoToggle[] = [
     {
         id: 'what',
         question: 'What will I learn?',
-        icon: '🎯',
         answer: (
-            <div className="space-y-2">
-                <p>
-                    Discover how your marketing KPIs <strong>compare to industry leaders</strong> in your sector and price tier.
-                </p>
-                <p>
-                    Get instant visual feedback (green/yellow/red) on each metric, plus <strong>AI-powered strategic recommendations</strong> tailored to your business.
-                </p>
-            </div>
+            <p>
+                Compare your KPIs to industry leaders and get <strong>AI-powered recommendations</strong> tailored to your business.
+            </p>
         )
     },
     {
         id: 'data',
         question: 'Can I trust this data?',
-        icon: '📊',
         answer: (
-            <div className="space-y-2">
-                <p>
-                    Our benchmarks are <strong>curated and validated by industry experts</strong>:
-                </p>
-                <ul className="list-disc list-inside space-y-1 text-gray-600">
-                    <li><strong>Cartelis</strong> — CRM & Marketing Automation consulting</li>
-                    <li><strong>Epsilon</strong> — Data-driven marketing expertise</li>
-                    <li><strong>Brevo Analytics</strong> — Aggregated insights from 500K+ businesses</li>
-                </ul>
-                <p className="text-sm text-gray-500 mt-2">
-                    Data is segmented by industry and price tier to ensure relevant comparisons.
-                </p>
-            </div>
+            <p>
+                Benchmarks curated by <strong>Cartelis</strong>, <strong>Epsilon</strong>, and <strong>Brevo Analytics</strong> (500K+ businesses), segmented by industry and price tier.
+            </p>
         )
     },
     {
         id: 'how',
-        question: 'How do I get my analysis?',
-        icon: '🚀',
+        question: 'How does it work?',
         answer: (
-            <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                    <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
-                    <p><strong>Select your profile</strong> — Choose your industry and price tier in the sidebar</p>
-                </div>
-                <div className="flex items-start gap-3">
-                    <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
-                    <p><strong>Enter your KPIs</strong> — Click "Enter My KPIs" to start comparing</p>
-                </div>
-                <div className="flex items-start gap-3">
-                    <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
-                    <p><strong>Adjust your values</strong> — Use sliders or type values for the metrics you want to analyze</p>
-                </div>
-                <div className="flex items-start gap-3">
-                    <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">4</span>
-                    <p><strong>Get AI insights</strong> — Generate personalized recommendations based on your data</p>
-                </div>
-            </div>
+            <p>
+                <strong>1.</strong> Select your industry <strong>2.</strong> Click "Enter My KPIs" <strong>3.</strong> Set your values <strong>4.</strong> Generate AI insights
+            </p>
         )
     }
 ];
 
 export const IntroBlock = () => {
-    const [openToggles, setOpenToggles] = useState<Record<string, boolean>>({});
+    const [openToggle, setOpenToggle] = useState<string | null>(null);
 
     const toggleInfo = (id: string) => {
-        setOpenToggles(prev => ({ ...prev, [id]: !prev[id] }));
+        setOpenToggle(prev => prev === id ? null : id);
     };
 
     return (
-        <div className="bg-white rounded-2xl shadow-[0_16px_48px_0_rgba(0,0,0,0.08)] border border-gray-100 overflow-hidden mb-10">
-            {/* Header */}
-            <div className="bg-white px-6 py-6 border-b border-gray-200">
-                <p className="text-lg md:text-xl font-semibold text-gray-900 leading-relaxed">
-                    Compare your performance against industry standards.
-                </p>
-                <p className="text-base md:text-lg text-gray-600 mt-1">
-                    Unlock personalized AI insights to optimize your marketing strategy.
-                </p>
-            </div>
-
-            {/* Toggles */}
-            <div className="divide-y divide-gray-100">
+        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden mb-8">
+            {/* Compact Toggles - Horizontal on desktop */}
+            <div className="flex flex-col sm:flex-row sm:divide-x divide-y sm:divide-y-0 divide-gray-200">
                 {infoToggles.map((toggle) => (
-                    <div key={toggle.id}>
+                    <div key={toggle.id} className="flex-1">
                         <button
                             onClick={() => toggleInfo(toggle.id)}
-                            className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            className={`w-full px-4 py-3 flex items-center justify-between hover:bg-gray-50 transition-colors ${openToggle === toggle.id ? 'bg-gray-50' : ''}`}
                         >
-                            <div className="flex items-center gap-3">
-                                <span className="text-xl">{toggle.icon}</span>
-                                <span className="font-medium text-gray-900">{toggle.question}</span>
-                            </div>
+                            <span className="text-sm font-medium text-gray-700">{toggle.question}</span>
                             <svg
-                                className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${openToggles[toggle.id] ? 'rotate-180' : ''}`}
+                                className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${openToggle === toggle.id ? 'rotate-180' : ''}`}
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -112,16 +65,16 @@ export const IntroBlock = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-
-                        {/* Content */}
-                        <div className={`overflow-hidden transition-all duration-300 ${openToggles[toggle.id] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                            <div className="px-6 pb-5 pt-1 text-gray-700 text-sm leading-relaxed">
-                                {toggle.answer}
-                            </div>
-                        </div>
                     </div>
                 ))}
             </div>
+
+            {/* Expanded Content */}
+            {openToggle && (
+                <div className="px-4 py-3 bg-gray-50 border-t border-gray-200 text-sm text-gray-600">
+                    {infoToggles.find(t => t.id === openToggle)?.answer}
+                </div>
+            )}
         </div>
     );
 };

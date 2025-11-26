@@ -152,11 +152,6 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
-            {/* Co-branding Banner */}
-            <div className="bg-brevo-dark-green text-white text-center py-2 text-sm font-medium">
-                Made by Brevo + Cartelis
-            </div>
-
             <Header />
 
             {/* Fixed Instruction Banner - Shows when in comparing mode */}
