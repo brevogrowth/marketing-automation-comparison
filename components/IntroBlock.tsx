@@ -85,10 +85,12 @@ export const IntroBlock = () => {
     return (
         <div className="bg-white rounded-2xl shadow-[0_16px_48px_0_rgba(0,0,0,0.08)] border border-gray-100 overflow-hidden mb-10">
             {/* Header */}
-            <div className="bg-gradient-to-r from-brevo-green to-brevo-dark-green px-6 py-5 text-white">
-                <p className="text-lg md:text-xl font-medium leading-relaxed">
+            <div className="bg-white px-6 py-6 border-b border-gray-200">
+                <p className="text-lg md:text-xl font-semibold text-gray-900 leading-relaxed">
                     Compare your performance against industry standards.
-                    <span className="hidden md:inline"> Unlock personalized AI insights to optimize your marketing strategy.</span>
+                </p>
+                <p className="text-base md:text-lg text-gray-600 mt-1">
+                    Unlock personalized AI insights to optimize your marketing strategy.
                 </p>
             </div>
 
