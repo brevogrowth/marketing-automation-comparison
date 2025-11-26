@@ -11,18 +11,29 @@ interface InfoToggle {
 const infoToggles: InfoToggle[] = [
     {
         id: 'how',
-        question: 'How does it work?',
+        question: '🚀 How does it work?',
         answer: (
-            <div className="space-y-2">
-                <p><strong>1. Select your profile</strong> — Choose your industry and price tier in the sidebar to get relevant benchmarks.</p>
-                <p><strong>2. Enter your KPIs</strong> — Click "Enter My KPIs" and use sliders or type values for the metrics you want to analyze.</p>
-                <p><strong>3. Get AI insights</strong> — Generate personalized recommendations based on how your data compares to industry standards.</p>
+            <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                    <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+                    <div>
+                        <p className="font-semibold text-gray-900">Explore industry benchmarks</p>
+                        <p className="text-gray-600">Select your industry and price tier to instantly see key KPIs and market standards. No signup required.</p>
+                    </div>
+                </div>
+                <div className="flex items-start gap-3">
+                    <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+                    <div>
+                        <p className="font-semibold text-gray-900">Compare & get AI recommendations</p>
+                        <p className="text-gray-600">Enter your own KPIs to see how you stack up, then generate personalized AI insights to improve your strategy.</p>
+                    </div>
+                </div>
             </div>
         )
     },
     {
         id: 'what',
-        question: 'What will I learn?',
+        question: '🎯 What will I learn?',
         answer: (
             <div className="space-y-2">
                 <p>Discover how your marketing KPIs <strong>compare to industry leaders</strong> in your sector and price tier.</p>
@@ -32,7 +43,7 @@ const infoToggles: InfoToggle[] = [
     },
     {
         id: 'data',
-        question: 'Can I trust this data?',
+        question: '📊 Can I trust this data?',
         answer: (
             <div className="space-y-2">
                 <p>Our benchmarks are <strong>curated and validated by industry experts</strong>:</p>
