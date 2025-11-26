@@ -32,13 +32,12 @@ const infoToggles: InfoToggle[] = [
         answer: (
             <div className="space-y-2">
                 <p>
-                    Our benchmarks are compiled from <strong>multiple authoritative sources</strong>:
+                    Our benchmarks are <strong>curated and validated by industry experts</strong>:
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-gray-600">
-                    <li>Industry reports (Klaviyo, Omnisend, Mailchimp, HubSpot)</li>
-                    <li>E-commerce platforms data (Shopify, BigCommerce)</li>
-                    <li>Research firms (Statista, eMarketer, Forrester)</li>
-                    <li>SaaS benchmarking studies (OpenView, ChartMogul, ProfitWell)</li>
+                    <li><strong>Cartelis</strong> — CRM & Marketing Automation consulting</li>
+                    <li><strong>Epsilon</strong> — Data-driven marketing expertise</li>
+                    <li><strong>Brevo Analytics</strong> — Aggregated insights from 500K+ businesses</li>
                 </ul>
                 <p className="text-sm text-gray-500 mt-2">
                     Data is segmented by industry and price tier to ensure relevant comparisons.

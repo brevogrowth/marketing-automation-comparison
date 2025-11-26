@@ -330,7 +330,7 @@ export default function V4Page() {
                                 </a>
                             </div>
                             <p className="mt-6 text-sm text-gray-400">
-                                No commitment required. 100% free plan available.
+                                No commitment required. Get a personalized demo.
                             </p>
                         </div>
                     </div>

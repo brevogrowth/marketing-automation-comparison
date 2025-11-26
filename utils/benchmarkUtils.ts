@@ -56,40 +56,40 @@ export const getBenchmarkLevel = (
 };
 
 const MESSAGES = {
-    0: [ // Disaster
-        "Ouch. Let's pretend this didn't happen. 🙈",
-        "My grandma gets better numbers. And she doesn't have a website.",
-        "Are you trying to lose money? Because it's working.",
-        "I've seen better stats on a broken calculator.",
-        "This is a safe space, but... wow."
+    0: [ // Needs significant improvement
+        "This is a key area to focus on — we'll help you identify quick wins.",
+        "Big opportunity here. Small changes can drive major results.",
+        "This metric has strong improvement potential.",
+        "Let's work on this together — it's a priority area.",
+        "Room for growth here. Our analysis will show you how."
     ],
-    1: [ // Bad
-        "Room for improvement. A lot of it. 😬",
-        "Not quite there yet. Keep pushing!",
-        "You're leaving money on the table.",
-        "Competitors are eating your lunch right now.",
-        "Time to roll up those sleeves."
+    1: [ // Below average
+        "Slightly below benchmark — a few optimizations can help.",
+        "You're close. Some targeted improvements will get you there.",
+        "This metric could use some attention.",
+        "There's potential here. Let's unlock it.",
+        "A good focus area for your next optimization sprint."
     ],
     2: [ // Average
-        "Average. Just like everyone else. 😐",
-        "Middle of the pack. Safe, but boring.",
-        "Not bad, not great. Just... okay.",
-        "You exist. That's a start.",
-        "Perfectly adequate. If you like adequate."
+        "Right at the industry average — solid foundation.",
+        "On par with the market. Room to stand out.",
+        "Matching industry standards. Ready to go further?",
+        "A stable baseline. Let's push for above-average.",
+        "Good starting point. Small tweaks can elevate this."
     ],
     3: [ // Good
-        "Not bad! You might actually know what you're doing. 👏",
-        "Solid numbers. Respect.",
-        "You're beating the average. Nice.",
-        "Looking good! Keep it up.",
-        "Finally, some green numbers!"
+        "Above average — you're doing well here! 👏",
+        "Strong performance. Keep up the momentum.",
+        "Better than most. Nice work!",
+        "Looking good! You're ahead of the curve.",
+        "Solid results. This is working for you."
     ],
-    4: [ // Amazing
-        "Wow. Are you sure? Cut your salary and take stock options! 🚀",
-        "Unicorn status pending. 🦄",
-        "Stop showing off. (Just kidding, don't stop).",
-        "You're crushing it. Teach us your ways.",
-        "Absolute legend. 🏆"
+    4: [ // Excellent
+        "Excellent! You're among top performers. 🚀",
+        "Outstanding results. Industry-leading performance.",
+        "Top tier. This is best-in-class territory.",
+        "Impressive! You're setting the benchmark. 🏆",
+        "Exceptional performance. Others should learn from you."
     ]
 };
 
