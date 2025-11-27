@@ -33,7 +33,7 @@ export const Contributors: React.FC = () => {
     return (
         <div className="bg-gray-50 rounded-xl border border-gray-200 p-6 mt-8">
             <div className="text-center mb-6">
-                <h3 className="text-lg font-semibold text-gray-900">Thanks to our contributors</h3>
+                <h3 className="text-lg font-semibold text-gray-900">Thanks to our expert partners</h3>
                 <p className="text-sm text-gray-600 mt-1">
                     These industry experts collaborated on building this benchmark framework.
                 </p>
