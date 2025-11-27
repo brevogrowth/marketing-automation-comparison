@@ -6,6 +6,7 @@ import { SidebarInputs } from '@/components/SidebarInputs';
 import { BenchmarkGrid } from '@/components/BenchmarkGrid';
 import { AiAnalysisResult } from '@/components/AiAnalysisResult';
 import { IntroBlock } from '@/components/IntroBlock';
+import { Contributors } from '@/components/Contributors';
 import { benchmarks, Industry, PriceTier } from '@/data/benchmarks';
 
 const LOADING_MESSAGES = [
@@ -301,8 +302,11 @@ export default function Home() {
                     </div>
                 </div>
 
+                {/* Contributors Section */}
+                <Contributors />
+
                 {/* CTA Section */}
-                <div className="mt-24">
+                <div className="mt-16">
                     <div className="bg-[#0B1221] rounded-[2.5rem] p-12 md:p-16 text-center relative overflow-hidden">
                         {/* Abstract Background Shapes */}
                         <div className="absolute top-0 left-0 w-64 h-64 bg-brevo-green opacity-20 blur-[100px] rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
