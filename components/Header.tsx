@@ -16,14 +16,14 @@ export const Header: React.FC = () => {
                 priority
               />
             </a>
-            <span className="hidden sm:block text-gray-500">|</span>
-            <span className="hidden sm:block text-sm font-medium text-gray-300">Marketing KPI Benchmark</span>
+            <span className="hidden sm:block text-white/50">|</span>
+            <span className="hidden sm:block text-sm font-medium text-white">Marketing KPI Benchmark</span>
           </div>
           <a
             href="https://www.brevo.com/contact/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-brevo-green text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-brevo-dark-green transition-colors"
+            className="bg-white text-[#0B996E] px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Get a demo
           </a>
