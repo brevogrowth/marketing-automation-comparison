@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect, Suspense } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { SidebarInputs } from '@/components/SidebarInputs';
@@ -9,37 +9,22 @@ import { AiAnalysisResult } from '@/components/AiAnalysisResult';
 import { IntroBlock } from '@/components/IntroBlock';
 import { Contributors } from '@/components/Contributors';
 import { benchmarks, Industry, PriceTier } from '@/data/benchmarks';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 // Valid values for URL parameters
 const VALID_INDUSTRIES: Industry[] = ['Beauty', 'Electronics', 'Family', 'Fashion', 'Food', 'Home', 'Luxury', 'Manufacturing', 'SaaS', 'Services', 'Sports', 'Wholesale'];
 const VALID_PRICE_TIERS: PriceTier[] = ['Budget', 'Mid-Range', 'Luxury'];
 
-// Wrapper component to handle Suspense for useSearchParams
 export default function Home() {
-    return (
-        <Suspense fallback={<HomeLoading />}>
-            <HomeContent />
-        </Suspense>
-    );
-}
-
-function HomeLoading() {
-    return (
-        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-4 border-brevo-green border-t-transparent"></div>
-        </div>
-    );
-}
-
-const LOADING_MESSAGES = [
-    { title: "Analyzing your data...", subtitle: "Our AI is reviewing your KPIs against industry benchmarks.", step: 1 },
-    { title: "Comparing with market data...", subtitle: "Examining thousands of data points from similar businesses.", step: 2 },
-    { title: "Identifying opportunities...", subtitle: "Finding the best growth levers for your business.", step: 3 },
-    { title: "Crafting recommendations...", subtitle: "Almost there! Generating your personalized strategic insights.", step: 4 }
-];
-
-function HomeContent() {
     const searchParams = useSearchParams();
+    const { t, language } = useLanguage();
+
+    const LOADING_MESSAGES = [
+        { title: t.analysis.generating, subtitle: t.analysis.comparingDataDesc, step: 1 },
+        { title: t.analysis.comparingData, subtitle: t.analysis.comparingDataDesc, step: 2 },
+        { title: t.analysis.findingOpportunities, subtitle: t.analysis.findingOpportunitiesDesc, step: 3 },
+        { title: t.analysis.craftingRecs, subtitle: t.analysis.craftingRecsDesc, step: 4 }
+    ];
 
     const [industry, setIndustry] = useState<Industry>('Fashion');
     const [priceTier, setPriceTier] = useState<PriceTier>('Mid-Range');
@@ -77,7 +62,7 @@ function HomeContent() {
         }
 
         const interval = setInterval(() => {
-            setLoadingMessageIndex(prev => (prev + 1) % LOADING_MESSAGES.length);
+            setLoadingMessageIndex(prev => (prev + 1) % 4);
         }, 20000); // 20 seconds
 
         return () => clearInterval(interval);
@@ -122,7 +107,8 @@ function HomeContent() {
                 body: JSON.stringify({
                     userValues: selectedValues,
                     priceTier,
-                    industry
+                    industry,
+                    language
                 }),
             });
 
@@ -198,14 +184,14 @@ function HomeContent() {
                 <div className="sticky top-0 z-50 bg-gradient-to-r from-brevo-green to-brevo-dark-green text-white py-3 px-4 shadow-lg">
                     <div className="max-w-7xl mx-auto flex items-center justify-center gap-4">
                         <p className="text-sm md:text-base font-medium">
-                            Pick metrics - Set values - Generate insights
+                            {t.banner.instruction}
                         </p>
                         <button
                             onClick={handleGenerateAnalysis}
                             className="hidden sm:flex items-center gap-1.5 bg-white text-brevo-dark-green px-4 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100 transition-colors"
                         >
                             <span>*</span>
-                            Generate Analysis
+                            {t.banner.generateAnalysis}
                         </button>
                     </div>
                 </div>
@@ -216,7 +202,7 @@ function HomeContent() {
                 {/* Header Section */}
                 <div className="text-center mb-8">
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                        Marketing KPI Benchmark
+                        {t.header.title}
                     </h1>
                 </div>
 
@@ -267,9 +253,9 @@ function HomeContent() {
                                     className="bg-brevo-green text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:bg-brevo-dark-green transition-all transform hover:-translate-y-1 flex items-center gap-2"
                                 >
                                     <span>*</span>
-                                    Get My AI Recommendations
+                                    {t.analysis.getRecommendations}
                                 </button>
-                                <p className="text-sm text-gray-500">Free - Takes 2-3 minutes</p>
+                                <p className="text-sm text-gray-500">{t.analysis.free}</p>
                             </div>
                         )}
 
@@ -278,7 +264,7 @@ function HomeContent() {
                             <div ref={analysisRef} className="mt-12" id="analysis-section">
                                 {/* Section Title */}
                                 <div className="mb-6">
-                                    <h2 className="text-2xl font-bold text-gray-900">* AI Analysis</h2>
+                                    <h2 className="text-2xl font-bold text-gray-900">* {t.analysis.title}</h2>
                                 </div>
 
                                 {/* Loading State & Process Logs - Combined */}
@@ -288,7 +274,7 @@ function HomeContent() {
                                         <div className="text-center mb-6">
                                             <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-brevo-green border-t-transparent mb-4"></div>
                                             <p className="text-xs text-brevo-green font-medium mb-2">
-                                                Step {LOADING_MESSAGES[loadingMessageIndex].step} of 4
+                                                {t.analysis.step} {LOADING_MESSAGES[loadingMessageIndex].step} {t.analysis.of} 4
                                             </p>
                                             <h3 className="text-xl font-bold text-gray-900 mb-2">
                                                 {LOADING_MESSAGES[loadingMessageIndex].title}
@@ -306,7 +292,7 @@ function HomeContent() {
                                                     className="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-2 transition-colors"
                                                 >
                                                     <span className={`transform transition-transform ${showProcessLogs ? 'rotate-90' : ''}`}>▶</span>
-                                                    See process logs ({logs.length})
+                                                    {t.analysis.seeProcessLogs} ({logs.length})
                                                 </button>
                                                 {showProcessLogs && (
                                                     <div className="mt-3 space-y-1 text-sm text-gray-600 font-mono max-h-48 overflow-y-auto">
@@ -352,22 +338,21 @@ function HomeContent() {
 
                         <div className="relative z-10 max-w-3xl mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                                Ready to turn insights into growth?
+                                {t.cta.title}
                             </h2>
                             <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
-                                Stop guessing. Start converting.
+                                {t.cta.subtitle}
                                 <br className="hidden md:block" />
-                                <span className="md:mt-2 md:inline-block">Brevo gives you the complete toolkit—
-                                <span className="text-white font-semibold"> CRM, Email, SMS, and Automation</span>—to
-                                turn these insights into revenue.</span>
+                                <span className="md:mt-2 md:inline-block">{t.cta.description}
+                                <span className="text-white font-semibold"> {t.cta.features}</span>{t.cta.descriptionEnd}</span>
                             </p>
                             <div className="flex justify-center">
                                 <a href="https://www.brevo.com/contact/" className="bg-brevo-green text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brevo-dark-green transition-all duration-300 shadow-[0_4px_14px_0_rgba(0,146,93,0.39)]">
-                                    Talk to an Expert
+                                    {t.cta.button}
                                 </a>
                             </div>
                             <p className="mt-6 text-sm text-gray-400">
-                                No commitment required. Get a personalized demo.
+                                {t.cta.note}
                             </p>
                         </div>
                     </div>

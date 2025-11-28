@@ -1,65 +1,61 @@
 'use client';
 
 import React, { useState } from 'react';
-
-interface InfoToggle {
-    id: string;
-    question: string;
-    answer: React.ReactNode;
-}
-
-const infoToggles: InfoToggle[] = [
-    {
-        id: 'how',
-        question: '🚀 How does it work?',
-        answer: (
-            <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                    <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
-                    <div>
-                        <p className="font-semibold text-gray-900">Explore industry benchmarks</p>
-                        <p className="text-gray-600">Select your industry and price tier to instantly see key KPIs and market standards. No signup required.</p>
-                    </div>
-                </div>
-                <div className="flex items-start gap-3">
-                    <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
-                    <div>
-                        <p className="font-semibold text-gray-900">Compare & get AI recommendations</p>
-                        <p className="text-gray-600">Enter your own KPIs to see how you stack up, then generate personalized AI insights to improve your strategy.</p>
-                    </div>
-                </div>
-            </div>
-        )
-    },
-    {
-        id: 'what',
-        question: '🎯 What will I learn?',
-        answer: (
-            <div className="space-y-2">
-                <p>Discover how your marketing KPIs <strong>compare to industry leaders</strong> in your sector and price tier.</p>
-                <p>Get instant visual feedback (green/yellow/red) on each metric, plus <strong>AI-powered strategic recommendations</strong> tailored to your specific situation.</p>
-            </div>
-        )
-    },
-    {
-        id: 'data',
-        question: '📊 Can I trust this data?',
-        answer: (
-            <div className="space-y-2">
-                <p>Our benchmarks are <strong>curated and validated by industry experts</strong>:</p>
-                <ul className="list-disc list-inside text-gray-600 space-y-1">
-                    <li><strong>Cartelis</strong> — CRM & Marketing Automation consulting</li>
-                    <li><strong>Epsilon</strong> — Data-driven marketing expertise</li>
-                    <li><strong>Brevo Analytics</strong> — Aggregated insights from 500K+ businesses</li>
-                </ul>
-                <p className="text-gray-500">Data is segmented by industry and price tier to ensure relevant comparisons.</p>
-            </div>
-        )
-    }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const IntroBlock = () => {
     const [openToggle, setOpenToggle] = useState<string | null>(null);
+    const { t } = useLanguage();
+
+    const infoToggles = [
+        {
+            id: 'how',
+            question: `${t.intro.how.question}`,
+            answer: (
+                <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                        <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+                        <div>
+                            <p className="font-semibold text-gray-900">{t.intro.how.step1Title}</p>
+                            <p className="text-gray-600">{t.intro.how.step1Desc}</p>
+                        </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <span className="bg-brevo-green text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+                        <div>
+                            <p className="font-semibold text-gray-900">{t.intro.how.step2Title}</p>
+                            <p className="text-gray-600">{t.intro.how.step2Desc}</p>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+        {
+            id: 'what',
+            question: `${t.intro.what.question}`,
+            answer: (
+                <div className="space-y-2">
+                    <p dangerouslySetInnerHTML={{ __html: t.intro.what.answer1 }} />
+                    <p dangerouslySetInnerHTML={{ __html: t.intro.what.answer2 }} />
+                </div>
+            )
+        },
+        {
+            id: 'data',
+            question: `${t.intro.data.question}`,
+            answer: (
+                <div className="space-y-2">
+                    <p dangerouslySetInnerHTML={{ __html: t.intro.data.intro }} />
+                    <ul className="list-disc list-inside text-gray-600 space-y-1">
+                        <li dangerouslySetInnerHTML={{ __html: t.intro.data.cartelis }} />
+                        <li dangerouslySetInnerHTML={{ __html: t.intro.data.epsilon }} />
+                        <li dangerouslySetInnerHTML={{ __html: t.intro.data.brevo }} />
+                    </ul>
+                    <p className="text-gray-500">{t.intro.data.note}</p>
+                </div>
+            )
+        }
+    ];
 
     const toggleInfo = (id: string) => {
         setOpenToggle(prev => prev === id ? null : id);

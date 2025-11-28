@@ -1,0 +1,226 @@
+{
+  "common": {
+    "language": "Deutsch",
+    "langCode": "de"
+  },
+  "header": {
+    "title": "Marketing KPI Benchmark",
+    "cta": "Demo anfordern"
+  },
+  "intro": {
+    "how": {
+      "question": "Wie funktioniert es?",
+      "step1Title": "Branchen-Benchmarks erkunden",
+      "step1Desc": "W\u00e4hlen Sie Ihre Branche und Preissegment, um sofort wichtige KPIs und Marktstandards zu sehen. Keine Anmeldung erforderlich.",
+      "step2Title": "Vergleichen und KI-Empfehlungen erhalten",
+      "step2Desc": "Geben Sie Ihre eigenen KPIs ein, um zu sehen, wie Sie abschneiden, und generieren Sie personalisierte KI-Insights zur Verbesserung Ihrer Strategie."
+    },
+    "what": {
+      "question": "Was werde ich lernen?",
+      "answer1": "Entdecken Sie, wie Ihre Marketing-KPIs <strong>im Vergleich zu Branchenf\u00fchrern</strong> in Ihrem Sektor und Preissegment abschneiden.",
+      "answer2": "Erhalten Sie sofortiges visuelles Feedback (gr\u00fcn/gelb/rot) zu jeder Kennzahl sowie <strong>KI-gest\u00fctzte strategische Empfehlungen</strong>, die auf Ihre spezifische Situation zugeschnitten sind."
+    },
+    "data": {
+      "question": "Kann ich diesen Daten vertrauen?",
+      "intro": "Unsere Benchmarks werden <strong>von Branchenexperten kuratiert und validiert</strong>:",
+      "cartelis": "<strong>Cartelis</strong> \u2014 CRM & Marketing Automation Beratung",
+      "epsilon": "<strong>Epsilon</strong> \u2014 Datengetriebene Marketing-Expertise",
+      "brevo": "<strong>Brevo Analytics</strong> \u2014 Aggregierte Insights von \u00fcber 500K Unternehmen",
+      "note": "Daten werden nach Branche und Preissegment segmentiert, um relevante Vergleiche zu erm\u00f6glichen."
+    }
+  },
+  "sidebar": {
+    "step1Title": "1. Ihre Branche",
+    "step1Desc": "W\u00e4hlen Sie Ihren Sektor und Preissegment \u2014 wir zeigen relevante Benchmarks.",
+    "industryLabel": "Branche",
+    "priceTierLabel": "Preispositionierung",
+    "step2Title": "2. Vergleichen Sie Ihre KPIs",
+    "step2Desc": "Geben Sie Ihre Kennzahlen ein und erhalten Sie personalisierte KI-Empfehlungen.",
+    "enterKpis": "Meine KPIs eingeben",
+    "doneComparing": "Vergleich beenden",
+    "readyTitle": "Bereit zur Analyse",
+    "readyDesc": "Tragen Sie Ihre Kennzahlen im Raster ein und klicken Sie dann auf \"KI-Analyse generieren\" am Ende der Seite."
+  },
+  "industries": {
+    "b2cRetail": "B2C Einzelhandel",
+    "b2b": "B2B",
+    "Fashion": "Mode & Bekleidung",
+    "Home": "Wohnen & Leben",
+    "Beauty": "Beauty & Wellness",
+    "Electronics": "Elektronik & Tech",
+    "Sports": "Sport & Outdoor",
+    "Family": "Familie & Haustiere",
+    "Food": "Lebensmittel & Getr\u00e4nke",
+    "Luxury": "Luxus & Schmuck",
+    "SaaS": "SaaS & Software",
+    "Services": "Professional Services",
+    "Manufacturing": "Fertigung & Industrie",
+    "Wholesale": "Gro\u00dfhandel & Distribution"
+  },
+  "priceTiers": {
+    "Budget": "Einstieg (AOV < 50\u20ac)",
+    "Mid-Range": "Mittelklasse (AOV 50-150\u20ac)",
+    "Luxury": "Premium (AOV > 150\u20ac)"
+  },
+  "categories": {
+    "Strategic Efficiency": "Strategische Effizienz",
+    "Acquisition": "Akquisition",
+    "Conversion": "Conversion",
+    "Channel Mix": "Kanal-Mix",
+    "Retention": "Kundenbindung",
+    "Economics": "Wirtschaftlichkeit"
+  },
+  "kpis": {
+    "cac": {
+      "name": "Kundenakquisitionskosten (CAC)",
+      "description": "Gesamte Marketingausgaben geteilt durch gewonnene Neukunden."
+    },
+    "roas": {
+      "name": "Blended ROAS",
+      "description": "Gesamtumsatz geteilt durch gesamte Marketingausgaben."
+    },
+    "marketing_spend": {
+      "name": "Marketing % vom Umsatz",
+      "description": "Prozentsatz des Umsatzes f\u00fcr Marketing."
+    },
+    "ltv_cac": {
+      "name": "LTV:CAC Verh\u00e4ltnis",
+      "description": "Customer Lifetime Value geteilt durch Akquisitionskosten."
+    },
+    "mer": {
+      "name": "Marketing Efficiency Ratio (MER)",
+      "description": "Gesamtumsatz geteilt durch gesamte Marketingausgaben."
+    },
+    "conv_rate": {
+      "name": "Conversion Rate",
+      "description": "Prozentsatz der Besucher, die einen Kauf abschlie\u00dfen."
+    },
+    "conv_desktop": {
+      "name": "Desktop Conversion Rate",
+      "description": "Conversion Rate f\u00fcr Desktop-Nutzer."
+    },
+    "conv_mobile": {
+      "name": "Mobile Conversion Rate",
+      "description": "Conversion Rate f\u00fcr Mobile-Nutzer."
+    },
+    "cart_abandonment": {
+      "name": "Warenkorbabbruchrate",
+      "description": "Prozentsatz der abgebrochenen Warenk\u00f6rbe vor dem Checkout."
+    },
+    "aov": {
+      "name": "Durchschnittlicher Bestellwert (AOV)",
+      "description": "Durchschnittlicher Umsatz pro Transaktion."
+    },
+    "email_revenue": {
+      "name": "E-Mail Umsatzanteil",
+      "description": "Prozentsatz des Umsatzes aus E-Mail-Marketing."
+    },
+    "sms_revenue": {
+      "name": "SMS Umsatzanteil",
+      "description": "Prozentsatz des Umsatzes aus SMS-Marketing."
+    },
+    "repeat_rate": {
+      "name": "Wiederkaufsrate",
+      "description": "Prozentsatz der Kunden mit mehr als einem Kauf."
+    },
+    "purchase_frequency": {
+      "name": "Kaufh\u00e4ufigkeit",
+      "description": "Durchschnittliche Anzahl K\u00e4ufe pro Kunde pro Jahr."
+    },
+    "churn_rate": {
+      "name": "Abwanderungsrate",
+      "description": "Prozentsatz der Kunden, die aufh\u00f6ren zu kaufen."
+    },
+    "ltv": {
+      "name": "Customer Lifetime Value (LTV)",
+      "description": "Erwarteter Gesamtumsatz eines Kunden \u00fcber seine Lebensdauer."
+    },
+    "return_rate": {
+      "name": "Retourenquote",
+      "description": "Prozentsatz der zur\u00fcckgesendeten Bestellungen."
+    },
+    "gross_margin": {
+      "name": "Bruttomarge",
+      "description": "Umsatz minus Wareneinsatz, als Prozentsatz."
+    },
+    "lead_conv": {
+      "name": "Lead-zu-Kunde Rate",
+      "description": "Prozentsatz der Leads, die zu Kunden werden."
+    },
+    "sql_rate": {
+      "name": "SQL Conversion Rate",
+      "description": "Prozentsatz der MQLs, die zu Sales Qualified Leads werden."
+    },
+    "sales_cycle": {
+      "name": "Verkaufszyklus L\u00e4nge",
+      "description": "Durchschnittliche Tage vom Erstkontakt bis zum Abschluss."
+    },
+    "nrr": {
+      "name": "Net Revenue Retention (NRR)",
+      "description": "Umsatz von Bestandskunden inklusive Expansion."
+    },
+    "expansion_revenue": {
+      "name": "Expansion Revenue",
+      "description": "Umsatz aus Upsells und Cross-Sells an Bestandskunden."
+    },
+    "arr_growth": {
+      "name": "ARR Wachstumsrate",
+      "description": "J\u00e4hrliches wiederkehrendes Umsatzwachstum Jahr \u00fcber Jahr."
+    },
+    "cac_payback": {
+      "name": "CAC Payback Periode",
+      "description": "Monate zur R\u00fcckgewinnung der Kundenakquisitionskosten."
+    }
+  },
+  "benchmark": {
+    "belowAvg": "Unter Durchschnitt",
+    "median": "Median",
+    "topPerformers": "Top-Performer",
+    "metrics": "Kennzahlen",
+    "whyMetric": "Warum diese Kennzahl?",
+    "definition": "Definition",
+    "formula": "Formel",
+    "whyMatters": "Warum es wichtig ist",
+    "bestPractices": "Best Practices",
+    "selectToAnalyze": "Zur Analyse ausw\u00e4hlen",
+    "moveSlider": "Schieberegler bewegen, um Ihren Wert festzulegen"
+  },
+  "analysis": {
+    "title": "KI-Analyse",
+    "getRecommendations": "Meine KI-Empfehlungen erhalten",
+    "free": "Kostenlos - Dauert 2-3 Minuten",
+    "generating": "Analyse Ihrer Daten...",
+    "comparingData": "Vergleich mit Marktdaten...",
+    "comparingDataDesc": "Untersuchung tausender Datenpunkte von \u00e4hnlichen Unternehmen.",
+    "findingOpportunities": "Chancen identifizieren...",
+    "findingOpportunitiesDesc": "Suche nach den besten Wachstumshebeln f\u00fcr Ihr Unternehmen.",
+    "craftingRecs": "Empfehlungen erstellen...",
+    "craftingRecsDesc": "Fast fertig! Generierung Ihrer personalisierten strategischen Insights.",
+    "step": "Schritt",
+    "of": "von",
+    "seeProcessLogs": "Prozess-Logs anzeigen",
+    "resultTitle": "KI Performance-Analyse",
+    "resultSubtitle": "Personalisierte Insights basierend auf Ihren Daten",
+    "exportPdf": "PDF exportieren"
+  },
+  "banner": {
+    "instruction": "Kennzahlen ausw\u00e4hlen - Werte setzen - Insights generieren",
+    "generateAnalysis": "Analyse generieren"
+  },
+  "contributors": {
+    "title": "Dank an unsere Expertenpartner",
+    "subtitle": "Diese Branchenexperten haben an der Erstellung dieses Benchmark-Frameworks mitgewirkt.",
+    "cartelis": "Operative Beratungsfirma spezialisiert auf Datenstrategie und CRM. Half bei der Definition der Benchmark-Methodik und Branchensegmentierung.",
+    "epsilon": "Marketing-Technologie-F\u00fchrer f\u00fcr personalisiertes Kundenengagement. Trug Akquisitions- und Kundenbindungsstandards bei.",
+    "niji": "Franz\u00f6sisches Digital-Transformations-Beratungs- und Technologieunternehmen. Lieferte E-Commerce-Conversion-Benchmarks und UX-Insights."
+  },
+  "cta": {
+    "title": "Bereit, Insights in Wachstum zu verwandeln?",
+    "subtitle": "H\u00f6ren Sie auf zu raten. Fangen Sie an zu konvertieren.",
+    "description": "Brevo gibt Ihnen das komplette Toolkit\u2014",
+    "features": "CRM, E-Mail, SMS und Automation",
+    "descriptionEnd": "\u2014um diese Insights in Umsatz zu verwandeln.",
+    "button": "Mit einem Experten sprechen",
+    "note": "Keine Verpflichtung. Erhalten Sie eine personalisierte Demo."
+  }
+}

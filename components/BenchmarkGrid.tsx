@@ -1,7 +1,10 @@
+'use client';
+
 import React, { useState } from 'react';
 import { BenchmarkData, PriceTier } from '@/data/benchmarks';
 import { getBenchmarkStatus, getBenchmarkLevel, getHumorousMessage } from '@/utils/benchmarkUtils';
 import { metricExplanations } from '@/data/metricExplanations';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface BenchmarkGridProps {
     benchmarks: BenchmarkData[];
@@ -32,6 +35,7 @@ export const BenchmarkGrid = ({
     selectedKpis,
     onToggleKpi
 }: BenchmarkGridProps) => {
+    const { t } = useLanguage();
 
     const categories = ['Strategic Efficiency', 'Acquisition', 'Conversion', 'Channel Mix', 'Retention', 'Economics'];
 
@@ -79,8 +83,8 @@ export const BenchmarkGrid = ({
                         >
                             <div className="flex items-center gap-3">
                                 <span className="text-xl">{categoryIcons[category] || '📊'}</span>
-                                <h3 className="text-lg font-bold text-brevo-dark-green">{category}</h3>
-                                <span className="text-sm text-gray-500 font-normal">({kpiCount} metrics)</span>
+                                <h3 className="text-lg font-bold text-brevo-dark-green">{t.categories[category as keyof typeof t.categories] || category}</h3>
+                                <span className="text-sm text-gray-500 font-normal">({kpiCount} {t.benchmark.metrics})</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <svg
@@ -119,13 +123,13 @@ export const BenchmarkGrid = ({
                                                 )}
                                                 <div className="flex-1">
                                                     <div className="flex items-center gap-2 mb-1">
-                                                        <h4 className={`text-sm font-bold ${isSelected || !isComparing ? 'text-gray-900' : 'text-gray-500'}`}>{kpi.name}</h4>
+                                                        <h4 className={`text-sm font-bold ${isSelected || !isComparing ? 'text-gray-900' : 'text-gray-500'}`}>{t.kpis[kpi.id as keyof typeof t.kpis]?.name || kpi.name}</h4>
                                                         <div className="group relative">
                                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400 cursor-help" viewBox="0 0 20 20" fill="currentColor">
                                                                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                                                             </svg>
                                                             <div className="absolute left-0 bottom-full mb-2 hidden group-hover:block w-64 bg-gray-900 text-white text-xs rounded p-2 z-10">
-                                                                {kpi.description}
+                                                                {t.kpis[kpi.id as keyof typeof t.kpis]?.description || kpi.description}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -146,7 +150,7 @@ export const BenchmarkGrid = ({
                                                                 >
                                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                                                 </svg>
-                                                                Why this metric?
+                                                                {t.benchmark.whyMetric}
                                                             </button>
 
                                                             {/* Explanation Content */}
@@ -154,24 +158,24 @@ export const BenchmarkGrid = ({
                                                                 <div className="bg-gray-50 rounded-lg p-4 text-xs space-y-3 border border-gray-100">
                                                                     {/* Definition */}
                                                                     <div>
-                                                                        <h5 className="font-semibold text-gray-900 mb-1">Definition</h5>
+                                                                        <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.definition}</h5>
                                                                         <p className="text-gray-600">{metricExplanations[kpi.id].definition}</p>
                                                                         {metricExplanations[kpi.id].formula && (
                                                                             <p className="text-gray-500 mt-1 font-mono bg-white px-2 py-1 rounded inline-block">
-                                                                                Formula: {metricExplanations[kpi.id].formula}
+                                                                                {t.benchmark.formula}: {metricExplanations[kpi.id].formula}
                                                                             </p>
                                                                         )}
                                                                     </div>
 
                                                                     {/* Why it matters */}
                                                                     <div>
-                                                                        <h5 className="font-semibold text-gray-900 mb-1">Why it matters</h5>
+                                                                        <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.whyMatters}</h5>
                                                                         <p className="text-gray-600">{metricExplanations[kpi.id].importance}</p>
                                                                     </div>
 
                                                                     {/* Best practices */}
                                                                     <div>
-                                                                        <h5 className="font-semibold text-gray-900 mb-1">Best practices</h5>
+                                                                        <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.bestPractices}</h5>
                                                                         <ul className="text-gray-600 space-y-1">
                                                                             {metricExplanations[kpi.id].bestPractices.map((practice, idx) => (
                                                                                 <li key={idx} className="flex items-start gap-2">
@@ -192,9 +196,9 @@ export const BenchmarkGrid = ({
                                             <div className="flex-1 min-w-[300px]">
                                                 {/* Market Range Labels */}
                                                 <div className="flex justify-between text-xs text-gray-500 mb-2">
-                                                    <span>Below avg: {range.low}{kpi.unit}</span>
-                                                    <span className="font-medium text-gray-900">Median: {range.median}{kpi.unit}</span>
-                                                    <span>Top performers: {range.high}{kpi.unit}</span>
+                                                    <span>{t.benchmark.belowAvg}: {range.low}{kpi.unit}</span>
+                                                    <span className="font-medium text-gray-900">{t.benchmark.median}: {range.median}{kpi.unit}</span>
+                                                    <span>{t.benchmark.topPerformers}: {range.high}{kpi.unit}</span>
                                                 </div>
 
                                                 {!isComparing ? (
@@ -228,8 +232,8 @@ export const BenchmarkGrid = ({
                                                                 status === 'bad' ? 'text-red-500' : 'text-gray-400'
                                                                 }`}>
                                                                 {(() => {
-                                                                    if (!isSelected) return 'Select to analyze';
-                                                                    if (!userVal) return 'Move the slider to set your value';
+                                                                    if (!isSelected) return t.benchmark.selectToAnalyze;
+                                                                    if (!userVal) return t.benchmark.moveSlider;
 
                                                                     const level = getBenchmarkLevel(kpi, userVal, priceTier);
                                                                     return getHumorousMessage(kpi.id, level);

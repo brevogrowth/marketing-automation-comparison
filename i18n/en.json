@@ -1,0 +1,226 @@
+{
+  "common": {
+    "language": "English",
+    "langCode": "en"
+  },
+  "header": {
+    "title": "Marketing KPI Benchmark",
+    "cta": "Get a demo"
+  },
+  "intro": {
+    "how": {
+      "question": "How does it work?",
+      "step1Title": "Explore industry benchmarks",
+      "step1Desc": "Select your industry and price tier to instantly see key KPIs and market standards. No signup required.",
+      "step2Title": "Compare & get AI recommendations",
+      "step2Desc": "Enter your own KPIs to see how you stack up, then generate personalized AI insights to improve your strategy."
+    },
+    "what": {
+      "question": "What will I learn?",
+      "answer1": "Discover how your marketing KPIs <strong>compare to industry leaders</strong> in your sector and price tier.",
+      "answer2": "Get instant visual feedback (green/yellow/red) on each metric, plus <strong>AI-powered strategic recommendations</strong> tailored to your specific situation."
+    },
+    "data": {
+      "question": "Can I trust this data?",
+      "intro": "Our benchmarks are <strong>curated and validated by industry experts</strong>:",
+      "cartelis": "<strong>Cartelis</strong> — CRM & Marketing Automation consulting",
+      "epsilon": "<strong>Epsilon</strong> — Data-driven marketing expertise",
+      "brevo": "<strong>Brevo Analytics</strong> — Aggregated insights from 500K+ businesses",
+      "note": "Data is segmented by industry and price tier to ensure relevant comparisons."
+    }
+  },
+  "sidebar": {
+    "step1Title": "1. Your Industry",
+    "step1Desc": "Pick your sector and price tier — we'll show relevant benchmarks.",
+    "industryLabel": "Industry",
+    "priceTierLabel": "Price Positioning",
+    "step2Title": "2. Compare Your KPIs",
+    "step2Desc": "Enter your metrics and get personalized AI recommendations.",
+    "enterKpis": "Enter My KPIs",
+    "doneComparing": "Done Comparing",
+    "readyTitle": "Ready to Analyze",
+    "readyDesc": "Fill in your metrics in the grid, then click \"Generate AI Analysis\" at the bottom of the page."
+  },
+  "industries": {
+    "b2cRetail": "B2C Retail",
+    "b2b": "B2B",
+    "Fashion": "Fashion & Apparel",
+    "Home": "Home & Living",
+    "Beauty": "Beauty & Wellness",
+    "Electronics": "Electronics & Tech",
+    "Sports": "Sports & Outdoor",
+    "Family": "Family & Pets",
+    "Food": "Food & Beverage",
+    "Luxury": "Luxury & Jewelry",
+    "SaaS": "SaaS & Software",
+    "Services": "Professional Services",
+    "Manufacturing": "Manufacturing & Industrial",
+    "Wholesale": "Wholesale & Distribution"
+  },
+  "priceTiers": {
+    "Budget": "Entry-Level (AOV < 50€)",
+    "Mid-Range": "Mid-Market (AOV 50-150€)",
+    "Luxury": "Premium (AOV > 150€)"
+  },
+  "categories": {
+    "Strategic Efficiency": "Strategic Efficiency",
+    "Acquisition": "Acquisition",
+    "Conversion": "Conversion",
+    "Channel Mix": "Channel Mix",
+    "Retention": "Retention",
+    "Economics": "Economics"
+  },
+  "kpis": {
+    "cac": {
+      "name": "Customer Acquisition Cost (CAC)",
+      "description": "Total marketing spend divided by new customers acquired."
+    },
+    "roas": {
+      "name": "Blended ROAS",
+      "description": "Total revenue divided by total marketing spend."
+    },
+    "marketing_spend": {
+      "name": "Marketing Spend % of Revenue",
+      "description": "Percentage of revenue allocated to marketing."
+    },
+    "ltv_cac": {
+      "name": "LTV:CAC Ratio",
+      "description": "Customer lifetime value divided by acquisition cost."
+    },
+    "mer": {
+      "name": "Marketing Efficiency Ratio (MER)",
+      "description": "Total revenue divided by total marketing spend."
+    },
+    "conv_rate": {
+      "name": "Conversion Rate",
+      "description": "Percentage of visitors who complete a purchase."
+    },
+    "conv_desktop": {
+      "name": "Desktop Conversion Rate",
+      "description": "Conversion rate for desktop users."
+    },
+    "conv_mobile": {
+      "name": "Mobile Conversion Rate",
+      "description": "Conversion rate for mobile users."
+    },
+    "cart_abandonment": {
+      "name": "Cart Abandonment Rate",
+      "description": "Percentage of carts abandoned before checkout."
+    },
+    "aov": {
+      "name": "Average Order Value (AOV)",
+      "description": "Average revenue per transaction."
+    },
+    "email_revenue": {
+      "name": "Email Revenue Share",
+      "description": "Percentage of revenue from email marketing."
+    },
+    "sms_revenue": {
+      "name": "SMS Revenue Share",
+      "description": "Percentage of revenue from SMS marketing."
+    },
+    "repeat_rate": {
+      "name": "Repeat Purchase Rate",
+      "description": "Percentage of customers who make more than one purchase."
+    },
+    "purchase_frequency": {
+      "name": "Purchase Frequency",
+      "description": "Average number of purchases per customer per year."
+    },
+    "churn_rate": {
+      "name": "Churn Rate",
+      "description": "Percentage of customers who stop buying."
+    },
+    "ltv": {
+      "name": "Customer Lifetime Value (LTV)",
+      "description": "Total revenue expected from a customer over their lifetime."
+    },
+    "return_rate": {
+      "name": "Return Rate",
+      "description": "Percentage of orders returned."
+    },
+    "gross_margin": {
+      "name": "Gross Margin",
+      "description": "Revenue minus cost of goods sold, as percentage."
+    },
+    "lead_conv": {
+      "name": "Lead-to-Customer Rate",
+      "description": "Percentage of leads that become customers."
+    },
+    "sql_rate": {
+      "name": "SQL Conversion Rate",
+      "description": "Percentage of MQLs that become Sales Qualified Leads."
+    },
+    "sales_cycle": {
+      "name": "Sales Cycle Length",
+      "description": "Average days from first contact to closed deal."
+    },
+    "nrr": {
+      "name": "Net Revenue Retention (NRR)",
+      "description": "Revenue retained from existing customers including expansion."
+    },
+    "expansion_revenue": {
+      "name": "Expansion Revenue",
+      "description": "Revenue from upsells and cross-sells to existing customers."
+    },
+    "arr_growth": {
+      "name": "ARR Growth Rate",
+      "description": "Annual Recurring Revenue year-over-year growth."
+    },
+    "cac_payback": {
+      "name": "CAC Payback Period",
+      "description": "Months to recover customer acquisition cost."
+    }
+  },
+  "benchmark": {
+    "belowAvg": "Below avg",
+    "median": "Median",
+    "topPerformers": "Top performers",
+    "metrics": "metrics",
+    "whyMetric": "Why this metric?",
+    "definition": "Definition",
+    "formula": "Formula",
+    "whyMatters": "Why it matters",
+    "bestPractices": "Best practices",
+    "selectToAnalyze": "Select to analyze",
+    "moveSlider": "Move the slider to set your value"
+  },
+  "analysis": {
+    "title": "AI Analysis",
+    "getRecommendations": "Get My AI Recommendations",
+    "free": "Free - Takes 2-3 minutes",
+    "generating": "Analyzing your data...",
+    "comparingData": "Comparing with market data...",
+    "comparingDataDesc": "Examining thousands of data points from similar businesses.",
+    "findingOpportunities": "Identifying opportunities...",
+    "findingOpportunitiesDesc": "Finding the best growth levers for your business.",
+    "craftingRecs": "Crafting recommendations...",
+    "craftingRecsDesc": "Almost there! Generating your personalized strategic insights.",
+    "step": "Step",
+    "of": "of",
+    "seeProcessLogs": "See process logs",
+    "resultTitle": "AI Performance Analysis",
+    "resultSubtitle": "Personalized insights based on your data",
+    "exportPdf": "Export PDF"
+  },
+  "banner": {
+    "instruction": "Pick metrics - Set values - Generate insights",
+    "generateAnalysis": "Generate Analysis"
+  },
+  "contributors": {
+    "title": "Thanks to our expert partners",
+    "subtitle": "These industry experts collaborated on building this benchmark framework.",
+    "cartelis": "Operational consulting firm specializing in data strategy and CRM. Helped define benchmark methodology and industry segmentation.",
+    "epsilon": "Marketing technology leader enabling personalized customer engagement. Contributed acquisition and retention metrics standards.",
+    "niji": "French digital transformation consulting and technology company. Provided e-commerce conversion benchmarks and UX insights."
+  },
+  "cta": {
+    "title": "Ready to turn insights into growth?",
+    "subtitle": "Stop guessing. Start converting.",
+    "description": "Brevo gives you the complete toolkit—",
+    "features": "CRM, Email, SMS, and Automation",
+    "descriptionEnd": "—to turn these insights into revenue.",
+    "button": "Talk to an Expert",
+    "note": "No commitment required. Get a personalized demo."
+  }
+}

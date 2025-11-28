@@ -1,10 +1,13 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface Partner {
     name: string;
     logo: string;
-    description: string;
+    descriptionKey: 'cartelis' | 'epsilon' | 'niji';
     website: string;
 }
 
@@ -12,30 +15,32 @@ const partners: Partner[] = [
     {
         name: 'Cartelis',
         logo: '/cartelis-logo.svg',
-        description: 'Operational consulting firm specializing in data strategy and CRM. Helped define benchmark methodology and industry segmentation.',
+        descriptionKey: 'cartelis',
         website: 'https://www.cartelis.com'
     },
     {
         name: 'Epsilon',
         logo: '/epsilon-logo.svg',
-        description: 'Marketing technology leader enabling personalized customer engagement. Contributed acquisition and retention metrics standards.',
+        descriptionKey: 'epsilon',
         website: 'https://www.epsilon.com'
     },
     {
         name: 'Niji',
         logo: '/niji-logo.svg',
-        description: 'French digital transformation consulting and technology company. Provided e-commerce conversion benchmarks and UX insights.',
+        descriptionKey: 'niji',
         website: 'https://www.niji.fr'
     }
 ];
 
 export const Contributors: React.FC = () => {
+    const { t } = useLanguage();
+
     return (
         <div className="bg-gray-50 rounded-xl border border-gray-200 p-6 mt-8">
             <div className="text-center mb-6">
-                <h3 className="text-lg font-semibold text-gray-900">Thanks to our expert partners</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t.contributors.title}</h3>
                 <p className="text-sm text-gray-600 mt-1">
-                    These industry experts collaborated on building this benchmark framework.
+                    {t.contributors.subtitle}
                 </p>
             </div>
 
@@ -58,7 +63,7 @@ export const Contributors: React.FC = () => {
                             />
                         </div>
                         <p className="text-sm text-gray-600 text-center leading-relaxed">
-                            {partner.description}
+                            {t.contributors[partner.descriptionKey]}
                         </p>
                     </a>
                 ))}

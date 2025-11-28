@@ -1,0 +1,226 @@
+{
+  "common": {
+    "language": "Fran\u00e7ais",
+    "langCode": "fr"
+  },
+  "header": {
+    "title": "Benchmark KPI Marketing",
+    "cta": "Demander une d\u00e9mo"
+  },
+  "intro": {
+    "how": {
+      "question": "Comment \u00e7a marche ?",
+      "step1Title": "Explorez les benchmarks sectoriels",
+      "step1Desc": "S\u00e9lectionnez votre secteur et gamme de prix pour voir instantan\u00e9ment les KPIs cl\u00e9s et standards du march\u00e9. Sans inscription.",
+      "step2Title": "Comparez et obtenez des recommandations IA",
+      "step2Desc": "Entrez vos propres KPIs pour voir comment vous vous situez, puis g\u00e9n\u00e9rez des insights IA personnalis\u00e9s pour am\u00e9liorer votre strat\u00e9gie."
+    },
+    "what": {
+      "question": "Qu'est-ce que je vais apprendre ?",
+      "answer1": "D\u00e9couvrez comment vos KPIs marketing <strong>se comparent aux leaders du secteur</strong> dans votre industrie et gamme de prix.",
+      "answer2": "Obtenez un feedback visuel instantan\u00e9 (vert/jaune/rouge) sur chaque m\u00e9trique, ainsi que des <strong>recommandations strat\u00e9giques IA</strong> adapt\u00e9es \u00e0 votre situation."
+    },
+    "data": {
+      "question": "Puis-je faire confiance \u00e0 ces donn\u00e9es ?",
+      "intro": "Nos benchmarks sont <strong>valid\u00e9s par des experts du secteur</strong> :",
+      "cartelis": "<strong>Cartelis</strong> \u2014 Conseil en CRM & Marketing Automation",
+      "epsilon": "<strong>Epsilon</strong> \u2014 Expertise en marketing data-driven",
+      "brevo": "<strong>Brevo Analytics</strong> \u2014 Insights agr\u00e9g\u00e9s de plus de 500K entreprises",
+      "note": "Les donn\u00e9es sont segment\u00e9es par secteur et gamme de prix pour des comparaisons pertinentes."
+    }
+  },
+  "sidebar": {
+    "step1Title": "1. Votre secteur",
+    "step1Desc": "Choisissez votre secteur et gamme de prix \u2014 nous afficherons les benchmarks correspondants.",
+    "industryLabel": "Secteur",
+    "priceTierLabel": "Positionnement prix",
+    "step2Title": "2. Comparez vos KPIs",
+    "step2Desc": "Entrez vos m\u00e9triques et obtenez des recommandations IA personnalis\u00e9es.",
+    "enterKpis": "Entrer mes KPIs",
+    "doneComparing": "Terminer la comparaison",
+    "readyTitle": "Pr\u00eat \u00e0 analyser",
+    "readyDesc": "Renseignez vos m\u00e9triques dans la grille, puis cliquez sur \"G\u00e9n\u00e9rer l'analyse IA\" en bas de page."
+  },
+  "industries": {
+    "b2cRetail": "Retail B2C",
+    "b2b": "B2B",
+    "Fashion": "Mode & Habillement",
+    "Home": "Maison & D\u00e9coration",
+    "Beauty": "Beaut\u00e9 & Bien-\u00eatre",
+    "Electronics": "\u00c9lectronique & Tech",
+    "Sports": "Sport & Outdoor",
+    "Family": "Famille & Animaux",
+    "Food": "Alimentation & Boissons",
+    "Luxury": "Luxe & Joaillerie",
+    "SaaS": "SaaS & Logiciel",
+    "Services": "Services professionnels",
+    "Manufacturing": "Industrie & Fabrication",
+    "Wholesale": "Commerce de gros & Distribution"
+  },
+  "priceTiers": {
+    "Budget": "Entr\u00e9e de gamme (PM < 50\u20ac)",
+    "Mid-Range": "Milieu de gamme (PM 50-150\u20ac)",
+    "Luxury": "Premium (PM > 150\u20ac)"
+  },
+  "categories": {
+    "Strategic Efficiency": "Efficacit\u00e9 strat\u00e9gique",
+    "Acquisition": "Acquisition",
+    "Conversion": "Conversion",
+    "Channel Mix": "Mix canal",
+    "Retention": "R\u00e9tention",
+    "Economics": "\u00c9conomie"
+  },
+  "kpis": {
+    "cac": {
+      "name": "Co\u00fbt d'acquisition client (CAC)",
+      "description": "D\u00e9penses marketing totales divis\u00e9es par le nombre de nouveaux clients acquis."
+    },
+    "roas": {
+      "name": "ROAS global",
+      "description": "Revenu total divis\u00e9 par les d\u00e9penses marketing totales."
+    },
+    "marketing_spend": {
+      "name": "D\u00e9penses marketing % du CA",
+      "description": "Pourcentage du chiffre d'affaires allou\u00e9 au marketing."
+    },
+    "ltv_cac": {
+      "name": "Ratio LTV:CAC",
+      "description": "Valeur vie client divis\u00e9e par le co\u00fbt d'acquisition."
+    },
+    "mer": {
+      "name": "Ratio d'efficacit\u00e9 marketing (MER)",
+      "description": "Revenu total divis\u00e9 par les d\u00e9penses marketing totales."
+    },
+    "conv_rate": {
+      "name": "Taux de conversion",
+      "description": "Pourcentage de visiteurs qui finalisent un achat."
+    },
+    "conv_desktop": {
+      "name": "Taux de conversion desktop",
+      "description": "Taux de conversion pour les utilisateurs desktop."
+    },
+    "conv_mobile": {
+      "name": "Taux de conversion mobile",
+      "description": "Taux de conversion pour les utilisateurs mobiles."
+    },
+    "cart_abandonment": {
+      "name": "Taux d'abandon panier",
+      "description": "Pourcentage de paniers abandonn\u00e9s avant le paiement."
+    },
+    "aov": {
+      "name": "Panier moyen (AOV)",
+      "description": "Revenu moyen par transaction."
+    },
+    "email_revenue": {
+      "name": "Part CA email",
+      "description": "Pourcentage du CA provenant de l'email marketing."
+    },
+    "sms_revenue": {
+      "name": "Part CA SMS",
+      "description": "Pourcentage du CA provenant du SMS marketing."
+    },
+    "repeat_rate": {
+      "name": "Taux de r\u00e9achat",
+      "description": "Pourcentage de clients qui effectuent plus d'un achat."
+    },
+    "purchase_frequency": {
+      "name": "Fr\u00e9quence d'achat",
+      "description": "Nombre moyen d'achats par client par an."
+    },
+    "churn_rate": {
+      "name": "Taux d'attrition",
+      "description": "Pourcentage de clients qui arr\u00eatent d'acheter."
+    },
+    "ltv": {
+      "name": "Valeur vie client (LTV)",
+      "description": "Revenu total attendu d'un client sur toute sa dur\u00e9e de vie."
+    },
+    "return_rate": {
+      "name": "Taux de retour",
+      "description": "Pourcentage de commandes retourn\u00e9es."
+    },
+    "gross_margin": {
+      "name": "Marge brute",
+      "description": "Revenu moins co\u00fbt des marchandises, en pourcentage."
+    },
+    "lead_conv": {
+      "name": "Taux de conversion lead-client",
+      "description": "Pourcentage de leads qui deviennent clients."
+    },
+    "sql_rate": {
+      "name": "Taux de conversion SQL",
+      "description": "Pourcentage de MQL qui deviennent des Sales Qualified Leads."
+    },
+    "sales_cycle": {
+      "name": "Dur\u00e9e du cycle de vente",
+      "description": "Jours moyens du premier contact \u00e0 la signature."
+    },
+    "nrr": {
+      "name": "R\u00e9tention nette du revenu (NRR)",
+      "description": "Revenu conserv\u00e9 des clients existants incluant l'expansion."
+    },
+    "expansion_revenue": {
+      "name": "Revenu d'expansion",
+      "description": "Revenu des upsells et cross-sells aux clients existants."
+    },
+    "arr_growth": {
+      "name": "Croissance ARR",
+      "description": "Croissance ann\u00e9e sur ann\u00e9e du revenu r\u00e9current annuel."
+    },
+    "cac_payback": {
+      "name": "P\u00e9riode de remboursement CAC",
+      "description": "Mois pour r\u00e9cup\u00e9rer le co\u00fbt d'acquisition client."
+    }
+  },
+  "benchmark": {
+    "belowAvg": "Sous la moyenne",
+    "median": "M\u00e9diane",
+    "topPerformers": "Top performers",
+    "metrics": "m\u00e9triques",
+    "whyMetric": "Pourquoi cette m\u00e9trique ?",
+    "definition": "D\u00e9finition",
+    "formula": "Formule",
+    "whyMatters": "Pourquoi c'est important",
+    "bestPractices": "Bonnes pratiques",
+    "selectToAnalyze": "S\u00e9lectionner pour analyser",
+    "moveSlider": "D\u00e9placez le curseur pour d\u00e9finir votre valeur"
+  },
+  "analysis": {
+    "title": "Analyse IA",
+    "getRecommendations": "Obtenir mes recommandations IA",
+    "free": "Gratuit - Prend 2-3 minutes",
+    "generating": "Analyse de vos donn\u00e9es...",
+    "comparingData": "Comparaison avec les donn\u00e9es march\u00e9...",
+    "comparingDataDesc": "Examen de milliers de points de donn\u00e9es d'entreprises similaires.",
+    "findingOpportunities": "Identification des opportunit\u00e9s...",
+    "findingOpportunitiesDesc": "Recherche des meilleurs leviers de croissance pour votre entreprise.",
+    "craftingRecs": "\u00c9laboration des recommandations...",
+    "craftingRecsDesc": "Presque termin\u00e9 ! G\u00e9n\u00e9ration de vos insights strat\u00e9giques personnalis\u00e9s.",
+    "step": "\u00c9tape",
+    "of": "sur",
+    "seeProcessLogs": "Voir les logs du processus",
+    "resultTitle": "Analyse de performance IA",
+    "resultSubtitle": "Insights personnalis\u00e9s bas\u00e9s sur vos donn\u00e9es",
+    "exportPdf": "Exporter en PDF"
+  },
+  "banner": {
+    "instruction": "Choisissez des m\u00e9triques - D\u00e9finissez les valeurs - G\u00e9n\u00e9rez des insights",
+    "generateAnalysis": "G\u00e9n\u00e9rer l'analyse"
+  },
+  "contributors": {
+    "title": "Merci \u00e0 nos partenaires experts",
+    "subtitle": "Ces experts du secteur ont collabor\u00e9 \u00e0 la cr\u00e9ation de ce r\u00e9f\u00e9rentiel.",
+    "cartelis": "Cabinet de conseil op\u00e9rationnel sp\u00e9cialis\u00e9 en strat\u00e9gie data et CRM. A contribu\u00e9 \u00e0 d\u00e9finir la m\u00e9thodologie et la segmentation sectorielle.",
+    "epsilon": "Leader en technologie marketing pour l'engagement client personnalis\u00e9. A contribu\u00e9 aux standards d'acquisition et de r\u00e9tention.",
+    "niji": "Cabinet fran\u00e7ais de conseil et technologie en transformation digitale. A fourni les benchmarks de conversion e-commerce et insights UX."
+  },
+  "cta": {
+    "title": "Pr\u00eat \u00e0 transformer vos insights en croissance ?",
+    "subtitle": "Arr\u00eatez de deviner. Commencez \u00e0 convertir.",
+    "description": "Brevo vous donne la bo\u00eete \u00e0 outils compl\u00e8te\u2014",
+    "features": "CRM, Email, SMS et Automation",
+    "descriptionEnd": "\u2014pour transformer ces insights en revenus.",
+    "button": "Parler \u00e0 un expert",
+    "note": "Sans engagement. Obtenez une d\u00e9mo personnalis\u00e9e."
+  }
+}
