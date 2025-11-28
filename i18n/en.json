@@ -67,6 +67,7 @@
     "Acquisition": "Acquisition",
     "Conversion": "Conversion",
     "Channel Mix": "Channel Mix",
+    "Email Marketing": "Email Marketing",
     "Retention": "Retention",
     "Economics": "Economics"
   },
@@ -170,6 +171,30 @@
     "cac_payback": {
       "name": "CAC Payback Period",
       "description": "Months to recover customer acquisition cost."
+    },
+    "email_open_rate": {
+      "name": "Email Open Rate",
+      "description": "Percentage of delivered emails that are opened."
+    },
+    "email_click_rate": {
+      "name": "Email Click Rate",
+      "description": "Percentage of delivered emails that receive a click."
+    },
+    "email_ctor": {
+      "name": "Click-to-Open Rate (CTOR)",
+      "description": "Percentage of opened emails that receive a click."
+    },
+    "email_unsub_rate": {
+      "name": "Unsubscribe Rate",
+      "description": "Percentage of recipients who unsubscribe per campaign."
+    },
+    "email_bounce_rate": {
+      "name": "Bounce Rate",
+      "description": "Percentage of emails that fail to deliver."
+    },
+    "email_deliverability": {
+      "name": "Deliverability Rate",
+      "description": "Percentage of emails successfully delivered to inbox."
     }
   },
   "benchmark": {

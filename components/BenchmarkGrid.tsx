@@ -22,6 +22,7 @@ const categoryIcons: Record<string, string> = {
     'Acquisition': '📈',
     'Conversion': '🛒',
     'Channel Mix': '📱',
+    'Email Marketing': '✉️',
     'Retention': '🔄',
     'Economics': '💰'
 };
@@ -37,7 +38,7 @@ export const BenchmarkGrid = ({
 }: BenchmarkGridProps) => {
     const { t } = useLanguage();
 
-    const categories = ['Strategic Efficiency', 'Acquisition', 'Conversion', 'Channel Mix', 'Retention', 'Economics'];
+    const categories = ['Strategic Efficiency', 'Acquisition', 'Conversion', 'Channel Mix', 'Email Marketing', 'Retention', 'Economics'];
 
     // Track which sections are open (first section open by default)
     const [openSections, setOpenSections] = useState<Record<string, boolean>>({

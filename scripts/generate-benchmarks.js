@@ -140,7 +140,7 @@ export type PriceTier = 'Budget' | 'Mid-Range' | 'Luxury';
 
 export interface BenchmarkData {
     id: string;
-    category: 'Strategic Efficiency' | 'Acquisition' | 'Conversion' | 'Channel Mix' | 'Retention' | 'Economics';
+    category: 'Strategic Efficiency' | 'Acquisition' | 'Conversion' | 'Channel Mix' | 'Email Marketing' | 'Retention' | 'Economics';
     name: string;
     unit: string;
     description: string;

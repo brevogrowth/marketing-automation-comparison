@@ -14,7 +14,7 @@ export const getBenchmarkStatus = (
     const range = kpi.ranges[priceTier];
 
     // Logic depends on KPI type (higher is better vs lower is better)
-    const lowerIsBetter = ['cac', 'return_rate', 'cart_abandon', 'marketing_spend', 'churn_rate'].includes(kpi.id);
+    const lowerIsBetter = ['cac', 'return_rate', 'cart_abandon', 'marketing_spend', 'churn_rate', 'email_unsub_rate', 'email_bounce_rate'].includes(kpi.id);
 
     if (lowerIsBetter) {
         if (val <= range.low) return 'good';
@@ -37,7 +37,7 @@ export const getBenchmarkLevel = (
     if (isNaN(val)) return 2;
 
     const range = kpi.ranges[priceTier];
-    const lowerIsBetter = ['cac', 'return_rate', 'cart_abandon', 'marketing_spend', 'churn_rate'].includes(kpi.id);
+    const lowerIsBetter = ['cac', 'return_rate', 'cart_abandon', 'marketing_spend', 'churn_rate', 'email_unsub_rate', 'email_bounce_rate'].includes(kpi.id);
 
     // Define levels: 0=Disaster, 1=Bad, 2=Average, 3=Good, 4=Amazing
     if (lowerIsBetter) {

@@ -67,8 +67,9 @@
     "Acquisition": "Acquisition",
     "Conversion": "Conversion",
     "Channel Mix": "Mix canal",
-    "Retention": "R\u00e9tention",
-    "Economics": "\u00c9conomie"
+    "Email Marketing": "Email Marketing",
+    "Retention": "Rétention",
+    "Economics": "Économie"
   },
   "kpis": {
     "cac": {
@@ -168,8 +169,32 @@
       "description": "Croissance ann\u00e9e sur ann\u00e9e du revenu r\u00e9current annuel."
     },
     "cac_payback": {
-      "name": "P\u00e9riode de remboursement CAC",
-      "description": "Mois pour r\u00e9cup\u00e9rer le co\u00fbt d'acquisition client."
+      "name": "Période de remboursement CAC",
+      "description": "Mois pour récupérer le coût d'acquisition client."
+    },
+    "email_open_rate": {
+      "name": "Taux d'ouverture email",
+      "description": "Pourcentage d'emails délivrés qui sont ouverts."
+    },
+    "email_click_rate": {
+      "name": "Taux de clic email",
+      "description": "Pourcentage d'emails délivrés qui reçoivent un clic."
+    },
+    "email_ctor": {
+      "name": "Taux de clic sur ouverture (CTOR)",
+      "description": "Pourcentage d'emails ouverts qui reçoivent un clic."
+    },
+    "email_unsub_rate": {
+      "name": "Taux de désabonnement",
+      "description": "Pourcentage de destinataires qui se désabonnent par campagne."
+    },
+    "email_bounce_rate": {
+      "name": "Taux de rebond",
+      "description": "Pourcentage d'emails qui échouent à la livraison."
+    },
+    "email_deliverability": {
+      "name": "Taux de délivrabilité",
+      "description": "Pourcentage d'emails délivrés avec succès en boîte de réception."
     }
   },
   "benchmark": {

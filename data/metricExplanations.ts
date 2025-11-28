@@ -199,6 +199,74 @@ export const metricExplanations: Record<string, MetricExplanation> = {
         formula: "(Revenue - COGS) ÷ Revenue × 100"
     },
 
+    // Email Marketing Metrics
+    email_open_rate: {
+        definition: "The percentage of delivered emails that recipients open. This is the first engagement indicator for your email campaigns.",
+        importance: "Open rate is your first filter for email effectiveness. Low opens suggest subject line issues, poor sender reputation, or list quality problems. However, note that Apple Mail Privacy Protection can inflate open rates.",
+        bestPractices: [
+            "A/B test subject lines systematically",
+            "Optimize send times based on your audience",
+            "Keep sender name consistent and recognizable",
+            "Maintain clean lists to protect sender reputation"
+        ],
+        formula: "Unique Opens ÷ Delivered Emails × 100"
+    },
+    email_click_rate: {
+        definition: "The percentage of delivered emails where at least one link was clicked. Also called Click-Through Rate (CTR).",
+        importance: "Click rate measures actual engagement with your email content. It shows whether your message and offers resonate with subscribers and drive them to take action.",
+        bestPractices: [
+            "Use clear, action-oriented CTAs",
+            "Place primary CTA above the fold",
+            "Personalize content based on segments",
+            "Ensure mobile-responsive design"
+        ],
+        formula: "Unique Clicks ÷ Delivered Emails × 100"
+    },
+    email_ctor: {
+        definition: "Click-to-Open Rate measures the percentage of people who clicked after opening the email. It isolates content effectiveness from deliverability.",
+        importance: "CTOR is the purest measure of email content quality. A high open rate with low CTOR means your subject line works but content disappoints. This helps diagnose where to focus optimization.",
+        bestPractices: [
+            "Align content with subject line promise",
+            "Use compelling visuals and scannable layouts",
+            "Test different content formats and lengths",
+            "Create urgency or exclusivity when appropriate"
+        ],
+        formula: "Unique Clicks ÷ Unique Opens × 100"
+    },
+    email_unsub_rate: {
+        definition: "The percentage of recipients who unsubscribe per email campaign. This is a key indicator of subscriber satisfaction and content relevance.",
+        importance: "Unsubscribes signal content-audience mismatch or frequency fatigue. While some churn is natural, consistently high unsubscribe rates damage long-term list value and can indicate reputation problems.",
+        bestPractices: [
+            "Segment lists for relevance",
+            "Let subscribers manage frequency preferences",
+            "Deliver on the promise made at signup",
+            "Monitor unsubscribe reasons for patterns"
+        ],
+        formula: "Unsubscribes ÷ Delivered Emails × 100"
+    },
+    email_bounce_rate: {
+        definition: "The percentage of sent emails that fail to deliver. Includes hard bounces (permanent failures) and soft bounces (temporary issues).",
+        importance: "High bounce rates damage sender reputation and can lead to blacklisting. Hard bounces above 2% are a red flag that requires immediate list cleaning. ISPs monitor this closely.",
+        bestPractices: [
+            "Use double opt-in for new subscribers",
+            "Remove hard bounces immediately",
+            "Re-engage or remove inactive subscribers",
+            "Validate email addresses at collection"
+        ],
+        formula: "Bounced Emails ÷ Sent Emails × 100"
+    },
+    email_deliverability: {
+        definition: "The percentage of sent emails that successfully reach recipients' inboxes (not spam or promotions folders).",
+        importance: "Deliverability is the foundation of email marketing ROI. Even perfect content fails if it doesn't reach the inbox. This metric reflects your overall email health and sender reputation.",
+        bestPractices: [
+            "Authenticate with SPF, DKIM, and DMARC",
+            "Maintain consistent sending volumes",
+            "Monitor blacklist status regularly",
+            "Warm up new IPs and domains gradually"
+        ],
+        formula: "Emails Delivered to Inbox ÷ Emails Sent × 100"
+    },
+
     // B2B Specific Metrics
     win_rate: {
         definition: "The percentage of qualified opportunities that result in closed deals.",
