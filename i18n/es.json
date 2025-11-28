@@ -11,7 +11,7 @@
     "how": {
       "question": "\u00bfC\u00f3mo funciona?",
       "step1Title": "Explora los benchmarks del sector",
-      "step1Desc": "Selecciona tu industria y rango de precios para ver instant\u00e1neamente los KPIs clave y est\u00e1ndares del mercado. Sin registro.",
+      "step1Desc": "Selecciona tu industria y rango de precios para ver instant\u00e1neamente los KPIs clave y est\u00e1ndares del mercado. No requiere registro.",
       "step2Title": "Compara y obtiene recomendaciones IA",
       "step2Desc": "Introduce tus propios KPIs para ver c\u00f3mo te posicionas, luego genera insights IA personalizados para mejorar tu estrategia."
     },
@@ -112,7 +112,7 @@
       "description": "Ingreso medio por transacci\u00f3n."
     },
     "email_revenue": {
-      "name": "Cuota de ingresos email",
+      "name": "Ingresos por Email",
       "description": "Porcentaje de ingresos del email marketing."
     },
     "sms_revenue": {
@@ -128,7 +128,7 @@
       "description": "N\u00famero medio de compras por cliente al a\u00f1o."
     },
     "churn_rate": {
-      "name": "Tasa de abandono",
+      "name": "Tasa de Cancelaci\u00f3n (Churn)",
       "description": "Porcentaje de clientes que dejan de comprar."
     },
     "ltv": {
@@ -216,7 +216,7 @@
   },
   "cta": {
     "title": "\u00bfListo para convertir insights en crecimiento?",
-    "subtitle": "Deja de adivinar. Empieza a convertir.",
+    "subtitle": "Deja de suponer. Empieza a convertir.",
     "description": "Brevo te da el kit completo\u2014",
     "features": "CRM, Email, SMS y Automatizaci\u00f3n",
     "descriptionEnd": "\u2014para convertir estos insights en ingresos.",

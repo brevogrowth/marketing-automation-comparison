@@ -11,14 +11,14 @@
     "how": {
       "question": "Wie funktioniert es?",
       "step1Title": "Branchen-Benchmarks erkunden",
-      "step1Desc": "W\u00e4hlen Sie Ihre Branche und Preissegment, um sofort wichtige KPIs und Marktstandards zu sehen. Keine Anmeldung erforderlich.",
+      "step1Desc": "W\u00e4hlen Sie Ihre Branche und Preissegment, um sofort wichtige KPIs und Marktstandards zu sehen. Ohne Anmeldung.",
       "step2Title": "Vergleichen und KI-Empfehlungen erhalten",
       "step2Desc": "Geben Sie Ihre eigenen KPIs ein, um zu sehen, wie Sie abschneiden, und generieren Sie personalisierte KI-Insights zur Verbesserung Ihrer Strategie."
     },
     "what": {
       "question": "Was werde ich lernen?",
       "answer1": "Entdecken Sie, wie Ihre Marketing-KPIs <strong>im Vergleich zu Branchenf\u00fchrern</strong> in Ihrem Sektor und Preissegment abschneiden.",
-      "answer2": "Erhalten Sie sofortiges visuelles Feedback (gr\u00fcn/gelb/rot) zu jeder Kennzahl sowie <strong>KI-gest\u00fctzte strategische Empfehlungen</strong>, die auf Ihre spezifische Situation zugeschnitten sind."
+      "answer2": "Sofortiges visuelles Feedback erhalten (gr\u00fcn/gelb/rot) zu jeder Kennzahl sowie <strong>KI-gest\u00fctzte strategische Empfehlungen</strong>, die auf Ihre spezifische Situation zugeschnitten sind."
     },
     "data": {
       "question": "Kann ich diesen Daten vertrauen?",
@@ -80,7 +80,7 @@
       "description": "Gesamtumsatz geteilt durch gesamte Marketingausgaben."
     },
     "marketing_spend": {
-      "name": "Marketing % vom Umsatz",
+      "name": "Marketingausgaben (% vom Umsatz)",
       "description": "Prozentsatz des Umsatzes f\u00fcr Marketing."
     },
     "ltv_cac": {
@@ -216,7 +216,7 @@
   },
   "cta": {
     "title": "Bereit, Insights in Wachstum zu verwandeln?",
-    "subtitle": "H\u00f6ren Sie auf zu raten. Fangen Sie an zu konvertieren.",
+    "subtitle": "Schluss mit Raten. Starten Sie die Konvertierung.",
     "description": "Brevo gibt Ihnen das komplette Toolkit\u2014",
     "features": "CRM, E-Mail, SMS und Automation",
     "descriptionEnd": "\u2014um diese Insights in Umsatz zu verwandeln.",

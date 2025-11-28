@@ -11,7 +11,7 @@
     "how": {
       "question": "Comment \u00e7a marche ?",
       "step1Title": "Explorez les benchmarks sectoriels",
-      "step1Desc": "S\u00e9lectionnez votre secteur et gamme de prix pour voir instantan\u00e9ment les KPIs cl\u00e9s et standards du march\u00e9. Sans inscription.",
+      "step1Desc": "S\u00e9lectionnez votre secteur et gamme de prix pour voir instantan\u00e9ment les KPIs cl\u00e9s et standards du march\u00e9. Aucune inscription requise.",
       "step2Title": "Comparez et obtenez des recommandations IA",
       "step2Desc": "Entrez vos propres KPIs pour voir comment vous vous situez, puis g\u00e9n\u00e9rez des insights IA personnalis\u00e9s pour am\u00e9liorer votre strat\u00e9gie."
     },
@@ -21,7 +21,7 @@
       "answer2": "Obtenez un feedback visuel instantan\u00e9 (vert/jaune/rouge) sur chaque m\u00e9trique, ainsi que des <strong>recommandations strat\u00e9giques IA</strong> adapt\u00e9es \u00e0 votre situation."
     },
     "data": {
-      "question": "Puis-je faire confiance \u00e0 ces donn\u00e9es ?",
+      "question": "Ces donn\u00e9es sont-elles fiables ?",
       "intro": "Nos benchmarks sont <strong>valid\u00e9s par des experts du secteur</strong> :",
       "cartelis": "<strong>Cartelis</strong> \u2014 Conseil en CRM & Marketing Automation",
       "epsilon": "<strong>Epsilon</strong> \u2014 Expertise en marketing data-driven",
@@ -33,7 +33,7 @@
     "step1Title": "1. Votre secteur",
     "step1Desc": "Choisissez votre secteur et gamme de prix \u2014 nous afficherons les benchmarks correspondants.",
     "industryLabel": "Secteur",
-    "priceTierLabel": "Positionnement prix",
+    "priceTierLabel": "Positionnement tarifaire",
     "step2Title": "2. Comparez vos KPIs",
     "step2Desc": "Entrez vos m\u00e9triques et obtenez des recommandations IA personnalis\u00e9es.",
     "enterKpis": "Entrer mes KPIs",
@@ -112,7 +112,7 @@
       "description": "Revenu moyen par transaction."
     },
     "email_revenue": {
-      "name": "Part CA email",
+      "name": "Part du CA Email",
       "description": "Pourcentage du CA provenant de l'email marketing."
     },
     "sms_revenue": {
@@ -216,7 +216,7 @@
   },
   "cta": {
     "title": "Pr\u00eat \u00e0 transformer vos insights en croissance ?",
-    "subtitle": "Arr\u00eatez de deviner. Commencez \u00e0 convertir.",
+    "subtitle": "Fini les suppositions. Place \u00e0 la conversion.",
     "description": "Brevo vous donne la bo\u00eete \u00e0 outils compl\u00e8te\u2014",
     "features": "CRM, Email, SMS et Automation",
     "descriptionEnd": "\u2014pour transformer ces insights en revenus.",
