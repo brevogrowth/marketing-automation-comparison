@@ -100,32 +100,32 @@
       "name": "Taux de conversion desktop",
       "description": "Taux de conversion pour les utilisateurs desktop."
     },
-    "conv_mobile": {
+    "mobile_conv": {
       "name": "Taux de conversion mobile",
       "description": "Taux de conversion pour les utilisateurs mobiles."
     },
-    "cart_abandonment": {
+    "cart_abandon": {
       "name": "Taux d'abandon panier",
-      "description": "Pourcentage de paniers abandonn\u00e9s avant le paiement."
+      "description": "Pourcentage de paniers abandonnés avant le paiement."
     },
     "aov": {
       "name": "Panier moyen (AOV)",
       "description": "Revenu moyen par transaction."
     },
-    "email_revenue": {
+    "email_rev_share": {
       "name": "Part du CA Email",
       "description": "Pourcentage du CA provenant de l'email marketing."
     },
-    "sms_revenue": {
+    "sms_rev_share": {
       "name": "Part CA SMS",
       "description": "Pourcentage du CA provenant du SMS marketing."
     },
     "repeat_rate": {
-      "name": "Taux de r\u00e9achat",
+      "name": "Taux de réachat",
       "description": "Pourcentage de clients qui effectuent plus d'un achat."
     },
-    "purchase_frequency": {
-      "name": "Fr\u00e9quence d'achat",
+    "purchase_freq": {
+      "name": "Fréquence d'achat",
       "description": "Nombre moyen d'achats par client par an."
     },
     "churn_rate": {

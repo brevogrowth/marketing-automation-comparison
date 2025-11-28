@@ -100,33 +100,33 @@
       "name": "Tasa de conversi\u00f3n desktop",
       "description": "Tasa de conversi\u00f3n para usuarios de escritorio."
     },
-    "conv_mobile": {
-      "name": "Tasa de conversi\u00f3n m\u00f3vil",
-      "description": "Tasa de conversi\u00f3n para usuarios m\u00f3viles."
+    "mobile_conv": {
+      "name": "Tasa de conversión móvil",
+      "description": "Tasa de conversión para usuarios móviles."
     },
-    "cart_abandonment": {
+    "cart_abandon": {
       "name": "Tasa de abandono de carrito",
       "description": "Porcentaje de carritos abandonados antes del checkout."
     },
     "aov": {
       "name": "Valor medio del pedido (AOV)",
-      "description": "Ingreso medio por transacci\u00f3n."
+      "description": "Ingreso medio por transacción."
     },
-    "email_revenue": {
+    "email_rev_share": {
       "name": "Ingresos por Email",
       "description": "Porcentaje de ingresos del email marketing."
     },
-    "sms_revenue": {
+    "sms_rev_share": {
       "name": "Cuota de ingresos SMS",
       "description": "Porcentaje de ingresos del SMS marketing."
     },
     "repeat_rate": {
       "name": "Tasa de recompra",
-      "description": "Porcentaje de clientes que realizan m\u00e1s de una compra."
+      "description": "Porcentaje de clientes que realizan más de una compra."
     },
-    "purchase_frequency": {
+    "purchase_freq": {
       "name": "Frecuencia de compra",
-      "description": "N\u00famero medio de compras por cliente al a\u00f1o."
+      "description": "Número medio de compras por cliente al año."
     },
     "churn_rate": {
       "name": "Tasa de Cancelaci\u00f3n (Churn)",

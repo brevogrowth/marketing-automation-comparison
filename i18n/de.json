@@ -100,11 +100,11 @@
       "name": "Desktop Conversion Rate",
       "description": "Conversion Rate für Desktop-Nutzer."
     },
-    "conv_mobile": {
+    "mobile_conv": {
       "name": "Mobile Conversion Rate",
       "description": "Conversion Rate für Mobile-Nutzer."
     },
-    "cart_abandonment": {
+    "cart_abandon": {
       "name": "Cart Abandonment Rate",
       "description": "Anteil der Warenkörbe, die vor dem Checkout abgebrochen werden."
     },
@@ -112,11 +112,11 @@
       "name": "Average Order Value (AOV)",
       "description": "Durchschnittlicher Umsatz pro Bestellung."
     },
-    "email_revenue": {
+    "email_rev_share": {
       "name": "Email Revenue Share",
       "description": "Umsatzanteil aus E-Mail-Marketing."
     },
-    "sms_revenue": {
+    "sms_rev_share": {
       "name": "SMS Revenue Share",
       "description": "Umsatzanteil aus SMS-Marketing."
     },
@@ -124,7 +124,7 @@
       "name": "Repeat Purchase Rate",
       "description": "Anteil der Kunden mit mehr als einem Kauf."
     },
-    "purchase_frequency": {
+    "purchase_freq": {
       "name": "Purchase Frequency",
       "description": "Durchschnittliche Anzahl Käufe pro Kunde pro Jahr."
     },
