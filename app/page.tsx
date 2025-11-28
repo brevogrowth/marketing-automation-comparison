@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { SidebarInputs } from '@/components/SidebarInputs';
 import { BenchmarkGrid } from '@/components/BenchmarkGrid';
@@ -9,6 +10,27 @@ import { IntroBlock } from '@/components/IntroBlock';
 import { Contributors } from '@/components/Contributors';
 import { benchmarks, Industry, PriceTier } from '@/data/benchmarks';
 
+// Valid values for URL parameters
+const VALID_INDUSTRIES: Industry[] = ['Beauty', 'Electronics', 'Family', 'Fashion', 'Food', 'Home', 'Luxury', 'Manufacturing', 'SaaS', 'Services', 'Sports', 'Wholesale'];
+const VALID_PRICE_TIERS: PriceTier[] = ['Budget', 'Mid-Range', 'Luxury'];
+
+// Wrapper component to handle Suspense for useSearchParams
+export default function Home() {
+    return (
+        <Suspense fallback={<HomeLoading />}>
+            <HomeContent />
+        </Suspense>
+    );
+}
+
+function HomeLoading() {
+    return (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-4 border-brevo-green border-t-transparent"></div>
+        </div>
+    );
+}
+
 const LOADING_MESSAGES = [
     { title: "Analyzing your data...", subtitle: "Our AI is reviewing your KPIs against industry benchmarks.", step: 1 },
     { title: "Comparing with market data...", subtitle: "Examining thousands of data points from similar businesses.", step: 2 },
@@ -16,7 +38,9 @@ const LOADING_MESSAGES = [
     { title: "Crafting recommendations...", subtitle: "Almost there! Generating your personalized strategic insights.", step: 4 }
 ];
 
-export default function Home() {
+function HomeContent() {
+    const searchParams = useSearchParams();
+
     const [industry, setIndustry] = useState<Industry>('Fashion');
     const [priceTier, setPriceTier] = useState<PriceTier>('Mid-Range');
     const [isComparing, setIsComparing] = useState(false);
@@ -31,8 +55,22 @@ export default function Home() {
     const [showProcessLogs, setShowProcessLogs] = useState(false);
     const analysisRef = useRef<HTMLDivElement>(null);
 
+    // Read URL parameters on mount
+    useEffect(() => {
+        const industryParam = searchParams.get('industry');
+        const priceTierParam = searchParams.get('priceTier');
+
+        if (industryParam && VALID_INDUSTRIES.includes(industryParam as Industry)) {
+            setIndustry(industryParam as Industry);
+        }
+
+        if (priceTierParam && VALID_PRICE_TIERS.includes(priceTierParam as PriceTier)) {
+            setPriceTier(priceTierParam as PriceTier);
+        }
+    }, [searchParams]);
+
     // Rotate loading messages every 20 seconds
-    React.useEffect(() => {
+    useEffect(() => {
         if (!isLoading) {
             setLoadingMessageIndex(0);
             return;
