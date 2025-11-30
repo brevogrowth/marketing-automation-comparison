@@ -240,19 +240,6 @@
         "Combinar con email para maximizar alcance"
       ]
     },
-    "push_rev_share": {
-      "name": "Cuota de ingresos Push Notifications",
-      "description": "Porcentaje de ingresos por notificaciones push.",
-      "definition": "La cuota de ingresos Push mide el porcentaje de ingresos totales atribuibles a campañas de notificaciones push enviadas a través de aplicación móvil o navegador web.",
-      "importance": "Las notificaciones push ofrecen entrega instantánea con alta visibilidad. Son ideales para retailers con app móvil para impulsar engagement inmediato y reactivación.",
-      "formula": "Ingresos Push ÷ Ingresos Totales × 100",
-      "bestPractices": [
-        "Personalizar notificaciones según el comportamiento del usuario",
-        "Usar rich media (imágenes, botones) cuando sea posible",
-        "Respetar preferencias de usuario y zonas horarias",
-        "Probar horarios de envío óptimos para tu audiencia"
-      ]
-    },
     "social_rev_share": {
       "name": "Cuota de ingresos Redes Sociales",
       "description": "Porcentaje de ingresos de canales de redes sociales.",

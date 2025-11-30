@@ -215,18 +215,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Growing channel for app-based retailers.' },
-                'Mid-Range': { low: 2, median: 4, high: 8, insight: 'Effective for flash sales and restock alerts.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Used selectively for VIP notifications.' },
-            },
-        },
-        {
             id: 'social_rev_share',
             category: 'Channel Mix',
             name: 'Social Media Revenue Share',
@@ -526,18 +514,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 2, median: 4, high: 8, insight: 'Flash deals work well.' },
                 'Mid-Range': { low: 2, median: 5, high: 10, insight: 'Restock and launch alerts.' },
                 'Luxury': { low: 1, median: 2, high: 5, insight: 'Concierge service updates.' },
-            },
-        },
-        {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Growing channel for app-based retailers.' },
-                'Mid-Range': { low: 2, median: 4, high: 8, insight: 'Effective for flash sales and restock alerts.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Used selectively for VIP notifications.' },
             },
         },
         {
@@ -843,18 +819,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Growing channel for app-based retailers.' },
-                'Mid-Range': { low: 2, median: 4, high: 8, insight: 'Effective for flash sales and restock alerts.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Used selectively for VIP notifications.' },
-            },
-        },
-        {
             id: 'social_rev_share',
             category: 'Channel Mix',
             name: 'Social Media Revenue Share',
@@ -1154,18 +1118,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 2, median: 5, high: 10, insight: 'High impact for flash sales.' },
                 'Mid-Range': { low: 3, median: 7, high: 12, insight: 'Growing channel for engagement.' },
                 'Luxury': { low: 1, median: 3, high: 5, insight: 'Used sparingly for VIP service.' },
-            },
-        },
-        {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Growing channel for app-based retailers.' },
-                'Mid-Range': { low: 2, median: 4, high: 8, insight: 'Effective for flash sales and restock alerts.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Used selectively for VIP notifications.' },
             },
         },
         {
@@ -1471,18 +1423,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Growing channel for app-based retailers.' },
-                'Mid-Range': { low: 2, median: 4, high: 8, insight: 'Effective for flash sales and restock alerts.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Used selectively for VIP notifications.' },
-            },
-        },
-        {
             id: 'social_rev_share',
             category: 'Channel Mix',
             name: 'Social Media Revenue Share',
@@ -1782,18 +1722,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 1, median: 3, high: 8, insight: 'Flash sales and clearance.' },
                 'Mid-Range': { low: 2, median: 5, high: 10, insight: 'New arrivals and limited editions.' },
                 'Luxury': { low: 1, median: 2, high: 4, insight: 'VIP previews only.' },
-            },
-        },
-        {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Growing channel for app-based retailers.' },
-                'Mid-Range': { low: 2, median: 4, high: 8, insight: 'Effective for flash sales and restock alerts.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Used selectively for VIP notifications.' },
             },
         },
         {
@@ -2099,18 +2027,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Growing channel for app-based retailers.' },
-                'Mid-Range': { low: 2, median: 4, high: 8, insight: 'Effective for flash sales and restock alerts.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Used selectively for VIP notifications.' },
-            },
-        },
-        {
             id: 'social_rev_share',
             category: 'Channel Mix',
             name: 'Social Media Revenue Share',
@@ -2377,18 +2293,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 0.5, median: 1, high: 2, insight: 'Limited but growing for product updates.' },
-                'Mid-Range': { low: 0.3, median: 0.8, high: 1.5, insight: 'Supplement to email communication.' },
-                'Luxury': { low: 0.1, median: 0.5, high: 1, insight: 'Minimal use in enterprise contexts.' },
-            },
-        },
-        {
             id: 'social_rev_share',
             category: 'Channel Mix',
             name: 'Social Media Revenue Share',
@@ -2631,18 +2535,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 0.5, median: 1, high: 2, insight: 'Limited but growing for product updates.' },
-                'Mid-Range': { low: 0.3, median: 0.8, high: 1.5, insight: 'Supplement to email communication.' },
-                'Luxury': { low: 0.1, median: 0.5, high: 1, insight: 'Minimal use in enterprise contexts.' },
-            },
-        },
-        {
             id: 'social_rev_share',
             category: 'Channel Mix',
             name: 'Social Media Revenue Share',
@@ -2882,18 +2774,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 8, median: 14, high: 22, insight: 'Newsletter supports relationship building.' },
                 'Mid-Range': { low: 10, median: 16, high: 26, insight: 'Thought leadership nurtures leads.' },
                 'Luxury': { low: 6, median: 11, high: 18, insight: 'Direct relationship management dominates.' },
-            },
-        },
-        {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 0.5, median: 1, high: 2, insight: 'Limited but growing for product updates.' },
-                'Mid-Range': { low: 0.3, median: 0.8, high: 1.5, insight: 'Supplement to email communication.' },
-                'Luxury': { low: 0.1, median: 0.5, high: 1, insight: 'Minimal use in enterprise contexts.' },
             },
         },
         {
@@ -3199,18 +3079,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 1, median: 3, high: 6, insight: 'Growing channel for app-based retailers.' },
-                'Mid-Range': { low: 2, median: 4, high: 8, insight: 'Effective for flash sales and restock alerts.' },
-                'Luxury': { low: 0.5, median: 1.5, high: 3, insight: 'Used selectively for VIP notifications.' },
-            },
-        },
-        {
             id: 'social_rev_share',
             category: 'Channel Mix',
             name: 'Social Media Revenue Share',
@@ -3474,18 +3342,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Budget': { low: 10, median: 16, high: 25, insight: 'Promotion emails support sales teams.' },
                 'Mid-Range': { low: 8, median: 14, high: 22, insight: 'New product alerts support relationship.' },
                 'Luxury': { low: 5, median: 10, high: 18, insight: 'Direct account management dominates.' },
-            },
-        },
-        {
-            id: 'push_rev_share',
-            category: 'Channel Mix',
-            name: 'Push Notifications Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Push Notifications.',
-            ranges: {
-                'Budget': { low: 0.5, median: 1, high: 2, insight: 'Limited but growing for product updates.' },
-                'Mid-Range': { low: 0.3, median: 0.8, high: 1.5, insight: 'Supplement to email communication.' },
-                'Luxury': { low: 0.1, median: 0.5, high: 1, insight: 'Minimal use in enterprise contexts.' },
             },
         },
         {

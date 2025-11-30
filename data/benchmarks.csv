@@ -45,17 +45,14 @@ Fashion,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of t
 Fashion,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,20,25,35,The backbone of profitable growth.
 Fashion,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,15,25,Personalized clienteling drives this.
 Fashion,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,High impact for flash sales.
-Fashion,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,1,3,6,Growing channel for app-based retailers.
 Fashion,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,8,15,25,Key discovery channel for budget shoppers.
 Fashion,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,25,35,50,Heavy reliance on paid for volume acquisition.
 Fashion,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,25,38,SEO critical for sustainable growth.
 Fashion,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,12,Growing channel for engagement.
-Fashion,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,2,4,8,Effective for flash sales and restock alerts.
 Fashion,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,10,18,28,Instagram and TikTok drive engagement.
 Fashion,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,20,30,42,Balanced with owned channels.
 Fashion,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,18,28,40,Content strategy drives organic traffic.
 Fashion,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,5,Used sparingly for VIP service.
-Fashion,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1.5,3,Used selectively for VIP notifications.
 Fashion,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,5,10,18,Brand awareness focus over direct sales.
 Fashion,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,10,18,28,Brand protection and targeted reach.
 Fashion,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
@@ -105,17 +102,14 @@ Home,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of tota
 Home,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,22,28,40,Inspiration and seasonal campaigns.
 Home,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,18,28,Personalized curation and launches.
 Home,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,8,Flash sales and clearance.
-Home,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,1,3,6,Growing channel for app-based retailers.
 Home,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,8,15,25,Key discovery channel for budget shoppers.
 Home,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,25,35,50,Heavy reliance on paid for volume acquisition.
 Home,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,25,38,SEO critical for sustainable growth.
 Home,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,New arrivals and limited editions.
-Home,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,2,4,8,Effective for flash sales and restock alerts.
 Home,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,10,18,28,Instagram and TikTok drive engagement.
 Home,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,20,30,42,Balanced with owned channels.
 Home,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,18,28,40,Content strategy drives organic traffic.
 Home,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,2,4,VIP previews only.
-Home,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1.5,3,Used selectively for VIP notifications.
 Home,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,5,10,18,Brand awareness focus over direct sales.
 Home,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,10,18,28,Brand protection and targeted reach.
 Home,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
@@ -165,17 +159,14 @@ Beauty,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of to
 Beauty,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,25,32,42,Personalized routines drive email.
 Beauty,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,22,32,Exclusive launches via email.
 Beauty,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,14,Flash sales and restocks.
-Beauty,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,1,3,6,Growing channel for app-based retailers.
 Beauty,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,8,15,25,Key discovery channel for budget shoppers.
 Beauty,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,25,35,50,Heavy reliance on paid for volume acquisition.
 Beauty,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,25,38,SEO critical for sustainable growth.
 Beauty,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,4,9,16,New launch alerts effective.
-Beauty,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,2,4,8,Effective for flash sales and restock alerts.
 Beauty,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,10,18,28,Instagram and TikTok drive engagement.
 Beauty,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,20,30,42,Balanced with owned channels.
 Beauty,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,18,28,40,Content strategy drives organic traffic.
 Beauty,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,4,8,VIP early access only.
-Beauty,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1.5,3,Used selectively for VIP notifications.
 Beauty,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,5,10,18,Brand awareness focus over direct sales.
 Beauty,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,10,18,28,Brand protection and targeted reach.
 Beauty,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
@@ -225,17 +216,14 @@ Electronics,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage 
 Electronics,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,22,32,Launch notifications key.
 Electronics,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,25,Exclusive previews for VIPs.
 Electronics,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,4,8,Flash deals work well.
-Electronics,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,1,3,6,Growing channel for app-based retailers.
 Electronics,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,8,15,25,Key discovery channel for budget shoppers.
 Electronics,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,25,35,50,Heavy reliance on paid for volume acquisition.
 Electronics,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,25,38,SEO critical for sustainable growth.
 Electronics,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,Restock and launch alerts.
-Electronics,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,2,4,8,Effective for flash sales and restock alerts.
 Electronics,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,10,18,28,Instagram and TikTok drive engagement.
 Electronics,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,20,30,42,Balanced with owned channels.
 Electronics,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,18,28,40,Content strategy drives organic traffic.
 Electronics,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,2,5,Concierge service updates.
-Electronics,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1.5,3,Used selectively for VIP notifications.
 Electronics,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,5,10,18,Brand awareness focus over direct sales.
 Electronics,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,10,18,28,Brand protection and targeted reach.
 Electronics,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
@@ -285,17 +273,14 @@ Sports,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of to
 Sports,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,20,27,38,Training tips and products.
 Sports,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,18,28,Expert content drives engagement.
 Sports,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,Flash sales effective.
-Sports,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,1,3,6,Growing channel for app-based retailers.
 Sports,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,8,15,25,Key discovery channel for budget shoppers.
 Sports,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,25,35,50,Heavy reliance on paid for volume acquisition.
 Sports,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,25,38,SEO critical for sustainable growth.
 Sports,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,13,Event and launch alerts.
-Sports,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,2,4,8,Effective for flash sales and restock alerts.
 Sports,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,10,18,28,Instagram and TikTok drive engagement.
 Sports,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,20,30,42,Balanced with owned channels.
 Sports,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,18,28,40,Content strategy drives organic traffic.
 Sports,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,6,VIP access updates.
-Sports,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1.5,3,Used selectively for VIP notifications.
 Sports,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,5,10,18,Brand awareness focus over direct sales.
 Sports,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,10,18,28,Brand protection and targeted reach.
 Sports,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
@@ -345,17 +330,14 @@ Family,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of to
 Family,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,25,33,45,Milestone email journeys.
 Family,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,18,26,38,Personalized recommendations.
 Family,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,3,7,14,Flash sales and restocks.
-Family,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,1,3,6,Growing channel for app-based retailers.
 Family,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,8,15,25,Key discovery channel for budget shoppers.
 Family,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,25,35,50,Heavy reliance on paid for volume acquisition.
 Family,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,25,38,SEO critical for sustainable growth.
 Family,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,4,9,16,Size reminders effective.
-Family,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,2,4,8,Effective for flash sales and restock alerts.
 Family,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,10,18,28,Instagram and TikTok drive engagement.
 Family,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,20,30,42,Balanced with owned channels.
 Family,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,18,28,40,Content strategy drives organic traffic.
 Family,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,Exclusive launch access.
-Family,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1.5,3,Used selectively for VIP notifications.
 Family,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,5,10,18,Brand awareness focus over direct sales.
 Family,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,10,18,28,Brand protection and targeted reach.
 Family,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
@@ -405,17 +387,14 @@ Food,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of tota
 Food,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,25,35,45,Subscription nurturing important.
 Food,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,18,28,40,Seasonal gift campaigns.
 Food,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,4,9,16,Flash sales and restocks.
-Food,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,1,3,6,Growing channel for app-based retailers.
 Food,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,8,15,25,Key discovery channel for budget shoppers.
 Food,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,25,35,50,Heavy reliance on paid for volume acquisition.
 Food,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,25,38,SEO critical for sustainable growth.
 Food,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,5,11,18,Delivery updates and reorder.
-Food,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,2,4,8,Effective for flash sales and restock alerts.
 Food,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,10,18,28,Instagram and TikTok drive engagement.
 Food,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,20,30,42,Balanced with owned channels.
 Food,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,18,28,40,Content strategy drives organic traffic.
 Food,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,2,5,10,VIP and limited releases.
-Food,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1.5,3,Used selectively for VIP notifications.
 Food,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,5,10,18,Brand awareness focus over direct sales.
 Food,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,10,18,28,Brand protection and targeted reach.
 Food,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
@@ -465,17 +444,14 @@ Luxury,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of to
 Luxury,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,15,22,32,Collection previews and events.
 Luxury,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,26,Exclusive clienteling.
 Luxury,Budget,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,3,6,Appointment reminders.
-Luxury,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,1,3,6,Growing channel for app-based retailers.
 Luxury,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,8,15,25,Key discovery channel for budget shoppers.
 Luxury,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,25,35,50,Heavy reliance on paid for volume acquisition.
 Luxury,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,25,38,SEO critical for sustainable growth.
 Luxury,Mid-Range,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,1,2,5,VIP event invitations.
-Luxury,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,2,4,8,Effective for flash sales and restock alerts.
 Luxury,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,10,18,28,Instagram and TikTok drive engagement.
 Luxury,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,20,30,42,Balanced with owned channels.
 Luxury,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,18,28,40,Content strategy drives organic traffic.
 Luxury,Luxury,sms_rev_share,Channel Mix,SMS Revenue Share,%,Percentage of total revenue attributed to SMS Marketing.,0.5,1.5,3,Concierge updates only.
-Luxury,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1.5,3,Used selectively for VIP notifications.
 Luxury,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,5,10,18,Brand awareness focus over direct sales.
 Luxury,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,10,18,28,Brand protection and targeted reach.
 Luxury,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
@@ -510,17 +486,14 @@ SaaS,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Re
 SaaS,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.2,3.8,6.0,Balanced growth.
 SaaS,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.8,4.5,7.5,Enterprise efficiency higher.
 SaaS,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,12,20,30,Onboarding and upgrade emails effective.
-SaaS,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1,2,Limited but growing for product updates.
 SaaS,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,3,6,12,LinkedIn dominates B2B social revenue.
 SaaS,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,15,25,38,Search ads key for SMB acquisition.
 SaaS,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,20,32,48,Strong organic reduces CAC significantly.
 SaaS,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,26,Nurture sequences support sales.
-SaaS,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.3,0.8,1.5,Supplement to email communication.
 SaaS,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,4,8,14,Thought leadership supports lead gen.
 SaaS,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,12,22,35,LinkedIn Ads and Google Ads mix.
 SaaS,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,25,38,52,Thought leadership content key driver.
 SaaS,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,12,20,Account-based marketing and direct sales.
-SaaS,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.1,0.5,1,Minimal use in enterprise contexts.
 SaaS,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,2,5,10,Relationship-based sales reduce social impact.
 SaaS,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,5,12,22,Account-based targeting over broad paid.
 SaaS,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,28,42,Expertise-based content attracts leads.
@@ -555,17 +528,14 @@ Services,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Tota
 Services,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,4.5,7.0,11.0,Content compounds returns.
 Services,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,6.0,10.0,16.0,Reputation-driven efficiency.
 Services,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,Newsletter supports relationship building.
-Services,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1,2,Limited but growing for product updates.
 Services,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,3,6,12,LinkedIn dominates B2B social revenue.
 Services,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,15,25,38,Search ads key for SMB acquisition.
 Services,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,20,32,48,Strong organic reduces CAC significantly.
 Services,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,26,Thought leadership nurtures leads.
-Services,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.3,0.8,1.5,Supplement to email communication.
 Services,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,4,8,14,Thought leadership supports lead gen.
 Services,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,12,22,35,LinkedIn Ads and Google Ads mix.
 Services,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,25,38,52,Thought leadership content key driver.
 Services,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,11,18,Direct relationship management dominates.
-Services,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.1,0.5,1,Minimal use in enterprise contexts.
 Services,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,2,5,10,Relationship-based sales reduce social impact.
 Services,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,5,12,22,Account-based targeting over broad paid.
 Services,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,28,42,Expertise-based content attracts leads.
@@ -606,17 +576,14 @@ Manufacturing,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x
 Manufacturing,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,7.0,10.0,15.0,Technical sales efficiency.
 Manufacturing,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,8.0,12.0,18.0,Large deals boost MER.
 Manufacturing,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,Catalog and promotion emails support sales.
-Manufacturing,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1,2,Limited but growing for product updates.
 Manufacturing,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,3,6,12,LinkedIn dominates B2B social revenue.
 Manufacturing,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,15,25,38,Search ads key for SMB acquisition.
 Manufacturing,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,20,32,48,Strong organic reduces CAC significantly.
 Manufacturing,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,12,20,Technical updates support relationship.
-Manufacturing,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.3,0.8,1.5,Supplement to email communication.
 Manufacturing,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,4,8,14,Thought leadership supports lead gen.
 Manufacturing,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,12,22,35,LinkedIn Ads and Google Ads mix.
 Manufacturing,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,25,38,52,Thought leadership content key driver.
 Manufacturing,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,4,8,15,Account management direct contact dominates.
-Manufacturing,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.1,0.5,1,Minimal use in enterprise contexts.
 Manufacturing,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,2,5,10,Relationship-based sales reduce social impact.
 Manufacturing,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,5,12,22,Account-based targeting over broad paid.
 Manufacturing,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,28,42,Expertise-based content attracts leads.
@@ -657,17 +624,14 @@ Wholesale,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Tot
 Wholesale,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,9.0,14.0,22.0,Territory efficiency.
 Wholesale,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,10.0,16.0,26.0,Large account efficiency.
 Wholesale,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,25,Promotion emails support sales teams.
-Wholesale,Budget,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.5,1,2,Limited but growing for product updates.
 Wholesale,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,3,6,12,LinkedIn dominates B2B social revenue.
 Wholesale,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,15,25,38,Search ads key for SMB acquisition.
 Wholesale,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,20,32,48,Strong organic reduces CAC significantly.
 Wholesale,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,New product alerts support relationship.
-Wholesale,Mid-Range,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.3,0.8,1.5,Supplement to email communication.
 Wholesale,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,4,8,14,Thought leadership supports lead gen.
 Wholesale,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,12,22,35,LinkedIn Ads and Google Ads mix.
 Wholesale,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,25,38,52,Thought leadership content key driver.
 Wholesale,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,5,10,18,Direct account management dominates.
-Wholesale,Luxury,push_rev_share,Channel Mix,Push Notifications Revenue Share,%,Percentage of total revenue attributed to Push Notifications.,0.1,0.5,1,Minimal use in enterprise contexts.
 Wholesale,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,2,5,10,Relationship-based sales reduce social impact.
 Wholesale,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,5,12,22,Account-based targeting over broad paid.
 Wholesale,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,28,42,Expertise-based content attracts leads.

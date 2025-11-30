@@ -240,19 +240,6 @@
         "Use for transactional updates and flash sales"
       ]
     },
-    "push_rev_share": {
-      "name": "Push Notifications Revenue Share",
-      "description": "Percentage of revenue from push notifications.",
-      "definition": "The percentage of total revenue attributed to push notification campaigns sent via mobile app or web browser.",
-      "importance": "Push notifications offer instant delivery with high visibility. They're ideal for app-based retailers to drive immediate engagement and re-engagement.",
-      "formula": "Push-Attributed Revenue ÷ Total Revenue × 100",
-      "bestPractices": [
-        "Personalize notifications based on user behavior",
-        "Use rich media (images, buttons) when available",
-        "Respect user preferences and time zones",
-        "Test optimal sending times for your audience"
-      ]
-    },
     "social_rev_share": {
       "name": "Social Media Revenue Share",
       "description": "Percentage of revenue from social media channels.",

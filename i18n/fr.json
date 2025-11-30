@@ -240,19 +240,6 @@
         "Combiner avec l'email pour maximiser la portée"
       ]
     },
-    "push_rev_share": {
-      "name": "Part CA Push Notifications",
-      "description": "Pourcentage du CA provenant des notifications push.",
-      "definition": "La part du CA Push mesure le pourcentage du chiffre d'affaires attribuable aux campagnes de notifications push envoyées via application mobile ou navigateur web.",
-      "importance": "Les notifications push offrent une livraison instantanée avec une haute visibilité. Elles sont idéales pour les retailers avec application mobile pour stimuler l'engagement immédiat et la réactivation.",
-      "formula": "CA Push ÷ CA Total × 100",
-      "bestPractices": [
-        "Personnaliser les notifications selon le comportement utilisateur",
-        "Utiliser du contenu enrichi (images, boutons) quand disponible",
-        "Respecter les préférences et fuseaux horaires des utilisateurs",
-        "Tester les horaires d'envoi optimaux pour votre audience"
-      ]
-    },
     "social_rev_share": {
       "name": "Part CA Réseaux Sociaux",
       "description": "Pourcentage du CA provenant des réseaux sociaux.",
