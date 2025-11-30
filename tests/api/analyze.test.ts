@@ -206,9 +206,9 @@ describe('GET /api/analyze/[conversationId]', () => {
 
     describe('Polling Status Responses', () => {
         it('should return pending when no agent message exists', () => {
-            const contentArrays: unknown[][] = [];
+            const contentArrays: { type: string }[][] = [];
             const hasAgentMessage = contentArrays.some(group =>
-                Array.isArray(group) && group.some((m: { type: string }) => m.type === 'agent_message')
+                Array.isArray(group) && group.some(m => m.type === 'agent_message')
             );
 
             expect(hasAgentMessage).toBe(false);
@@ -252,22 +252,28 @@ describe('GET /api/analyze/[conversationId]', () => {
     describe('Response Parsing', () => {
         it('should correctly parse nested content structure', () => {
             // Simulate Dust API response structure
+            interface DustMessage {
+                type: string;
+                content: string;
+                status?: string;
+            }
+
             const dustResponse = {
                 conversation: {
                     sId: 'test-conversation-id',
                     content: [
                         [{ type: 'user_message', content: 'User prompt...' }],
                         [{ type: 'agent_message', status: 'succeeded', content: '# Analysis' }],
-                    ],
+                    ] as DustMessage[][],
                 },
             };
 
             const contentArrays = dustResponse.conversation.content;
-            let agentMessage = null;
+            let agentMessage: DustMessage | null = null;
 
             for (const messageGroup of contentArrays) {
                 if (Array.isArray(messageGroup)) {
-                    const agent = messageGroup.find((m: { type: string }) => m.type === 'agent_message');
+                    const agent = messageGroup.find(m => m.type === 'agent_message');
                     if (agent) {
                         agentMessage = agent;
                         break;

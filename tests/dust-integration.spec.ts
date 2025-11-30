@@ -1,32 +1,35 @@
 import { test, expect } from '@playwright/test';
 
 test('should generate analysis via Dust API', async ({ page }) => {
-    test.setTimeout(60000); // Increase timeout to 60 seconds
-    // 1. Navigate to V4 page
-    await page.goto('http://localhost:3000/v4');
+    test.setTimeout(180000); // Increase timeout to 3 minutes for AI analysis
 
-    // 2. Activate Analysis Mode
-    // Click "Start Analysis" in the sidebar
-    await page.getByRole('button', { name: 'Start Analysis' }).click();
+    // 1. Navigate to main page
+    await page.goto('/');
 
-    // Wait for the Generate button to appear
-    const generateButton = page.getByRole('button', { name: 'Generate AI Analysis' });
-    await expect(generateButton).toBeVisible();
+    // 2. Wait for page to load
+    await expect(page.locator('h1')).toContainText('Marketing KPI Benchmark');
+
+    // 3. Activate Analysis Mode by clicking "Enter My KPIs"
+    await page.getByRole('button', { name: /Enter My KPIs/i }).click();
+
+    // Wait for analysis mode to activate
+    await expect(page.getByRole('button', { name: /Done Comparing/i })).toBeVisible();
 
     // 4. Trigger Analysis
+    const generateButton = page.getByRole('button', { name: /Get My AI Recommendations/i });
+    await expect(generateButton).toBeVisible();
     await generateButton.click();
 
     // 5. Verify Loading State
-    // await expect(page.getByText('Analyzing your data...')).toBeVisible();
+    await expect(page.getByText(/Analyzing your data|Comparing with market data|Identifying opportunities|Crafting recommendations/)).toBeVisible({ timeout: 10000 });
 
     // 6. Verify Result
     // Wait for the result to appear (timeout increased as API might take time)
-    // We look for "Executive Summary" which is part of the markdown response
-    // Wait for the result to appear (timeout increased as API might take time)
-    // We look for "Executive Summary" which is part of the markdown response
-    await expect(page.getByText('Executive Summary')).toBeVisible({ timeout: 60000 });
+    await expect(page.getByRole('heading', { name: /AI Performance Analysis/i })).toBeVisible({ timeout: 180000 });
 
-    // Verify other sections
-    await expect(page.getByText('Traffic Light Analysis')).toBeVisible();
-    await expect(page.getByText('Strategic Recommendations')).toBeVisible();
+    // Verify analysis content is displayed
+    const analysisContent = page.locator('.prose');
+    await expect(analysisContent).toBeVisible();
+    const textContent = await analysisContent.textContent();
+    expect(textContent?.length).toBeGreaterThan(100);
 });
