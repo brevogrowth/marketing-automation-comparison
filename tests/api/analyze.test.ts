@@ -73,7 +73,6 @@ describe('POST /api/analyze', () => {
 
     describe('Prompt Construction', () => {
         it('should construct a valid prompt with user data', () => {
-            const userValues = { cac: '45', retention_rate: '32' };
             const priceTier = 'Mid-Range';
             const industry = 'Fashion';
 
@@ -87,7 +86,7 @@ describe('POST /api/analyze', () => {
             ];
 
             // Build prompt as done in route.ts
-            let prompt = `You are a Senior Retail Strategy Consultant for B2C brands.
+            const prompt = `You are a Senior Retail Strategy Consultant for B2C brands.
 Your client is a ${industry} retailer with a ${priceTier} price positioning.`;
 
             expectedPromptContains.forEach(text => {
@@ -322,7 +321,6 @@ describe('Frontend Polling Logic', () => {
         });
 
         it('should calculate elapsed time correctly', () => {
-            const startTime = Date.now();
             const mockElapsed = 30000; // 30 seconds
             const expectedElapsedSec = Math.floor(mockElapsed / 1000);
 

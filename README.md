@@ -74,8 +74,7 @@ components/
 
 data/
 ├── benchmarks.csv          # Source of truth (synced from Google Sheets)
-├── benchmarks.ts           # Auto-generated TypeScript (DO NOT EDIT)
-└── metricExplanations.ts   # "Why this metric?" content
+└── benchmarks.ts           # Auto-generated TypeScript (DO NOT EDIT)
 
 utils/
 └── benchmarkUtils.ts       # Traffic light logic & scoring

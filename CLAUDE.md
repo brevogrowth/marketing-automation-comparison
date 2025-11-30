@@ -104,8 +104,7 @@ components/
 
 data/
 ├── benchmarks.csv                # Source of truth (sync Google Sheets)
-├── benchmarks.ts                 # AUTO-GENERATED - do not edit
-└── metricExplanations.ts         # "Why this metric?" content
+└── benchmarks.ts                 # AUTO-GENERATED - do not edit
 
 utils/
 └── benchmarkUtils.ts             # Traffic lights & scoring logic

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, memo, useCallback, useMemo } from 'react';
 import { BenchmarkData, PriceTier } from '@/data/benchmarks';
 import { getBenchmarkStatus, getBenchmarkLevel, getHumorousMessage } from '@/utils/benchmarkUtils';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -26,7 +26,10 @@ const categoryIcons: Record<string, string> = {
     'Economics': '💰'
 };
 
-export const BenchmarkGrid = ({
+// Static categories array (defined outside component to avoid recreating on each render)
+const categories = ['Strategic Efficiency', 'Acquisition', 'Conversion', 'Channel Mix', 'Email Marketing', 'Retention', 'Economics'];
+
+const BenchmarkGridComponent = ({
     benchmarks,
     priceTier,
     userValues,
@@ -37,8 +40,6 @@ export const BenchmarkGrid = ({
 }: BenchmarkGridProps) => {
     const { t } = useLanguage();
 
-    const categories = ['Strategic Efficiency', 'Acquisition', 'Conversion', 'Channel Mix', 'Email Marketing', 'Retention', 'Economics'];
-
     // Track which sections are open (first section open by default)
     const [openSections, setOpenSections] = useState<Record<string, boolean>>({
         'Strategic Efficiency': true
@@ -47,15 +48,15 @@ export const BenchmarkGrid = ({
     // Track which "Why this metric?" toggles are open
     const [openExplanations, setOpenExplanations] = useState<Record<string, boolean>>({});
 
-    const toggleSection = (category: string) => {
+    const toggleSection = useCallback((category: string) => {
         setOpenSections(prev => ({ ...prev, [category]: !prev[category] }));
-    };
+    }, []);
 
-    const toggleExplanation = (metricId: string) => {
+    const toggleExplanation = useCallback((metricId: string) => {
         setOpenExplanations(prev => ({ ...prev, [metricId]: !prev[metricId] }));
-    };
+    }, []);
 
-    const handleToggle = (kpi: BenchmarkData) => {
+    const handleToggle = useCallback((kpi: BenchmarkData) => {
         const isSelected = selectedKpis.includes(kpi.id);
         onToggleKpi(kpi.id);
 
@@ -64,13 +65,21 @@ export const BenchmarkGrid = ({
             const range = kpi.ranges[priceTier];
             onValueChange(kpi.id, range.median.toString());
         }
-    };
+    }, [selectedKpis, onToggleKpi, userValues, priceTier, onValueChange]);
+
+    // Memoize benchmarks grouped by category
+    const benchmarksByCategory = useMemo(() => {
+        return categories.reduce((acc, category) => {
+            acc[category] = benchmarks.filter(b => b.category === category);
+            return acc;
+        }, {} as Record<string, BenchmarkData[]>);
+    }, [benchmarks]);
 
     return (
         <div className="space-y-12">
             {categories.map(category => {
-                const categoryKpis = benchmarks.filter(b => b.category === category);
-                if (categoryKpis.length === 0) return null;
+                const categoryKpis = benchmarksByCategory[category];
+                if (!categoryKpis || categoryKpis.length === 0) return null;
 
                 const isOpen = openSections[category] ?? false;
                 const kpiCount = categoryKpis.length;
@@ -286,3 +295,6 @@ export const BenchmarkGrid = ({
         </div>
     );
 };
+
+// Memoize the component to prevent unnecessary re-renders
+export const BenchmarkGrid = memo(BenchmarkGridComponent);

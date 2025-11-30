@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { memo, useCallback } from 'react';
 import { Industry, PriceTier } from '@/data/benchmarks';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -13,7 +13,7 @@ interface SidebarInputsProps {
   setIsComparing: (b: boolean) => void;
 }
 
-export const SidebarInputs = ({
+const SidebarInputsComponent = ({
   industry,
   setIndustry,
   priceTier,
@@ -22,6 +22,18 @@ export const SidebarInputs = ({
   setIsComparing
 }: SidebarInputsProps) => {
   const { t } = useLanguage();
+
+  const handleIndustryChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
+    setIndustry(e.target.value as Industry);
+  }, [setIndustry]);
+
+  const handlePriceTierChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
+    setPriceTier(e.target.value as PriceTier);
+  }, [setPriceTier]);
+
+  const handleCompareToggle = useCallback(() => {
+    setIsComparing(!isComparing);
+  }, [setIsComparing, isComparing]);
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-[0_16px_48px_0_rgba(0,0,0,0.08)] border border-gray-100 flex flex-col">
@@ -38,7 +50,7 @@ export const SidebarInputs = ({
             </label>
             <select
               value={industry}
-              onChange={(e) => setIndustry(e.target.value as Industry)}
+              onChange={handleIndustryChange}
               className="w-full rounded-md border-gray-300 shadow-sm focus:border-brevo-green focus:ring-brevo-green sm:text-sm p-2 border"
             >
               <optgroup label={t.industries.b2cRetail}>
@@ -66,7 +78,7 @@ export const SidebarInputs = ({
             </label>
             <select
               value={priceTier}
-              onChange={(e) => setPriceTier(e.target.value as PriceTier)}
+              onChange={handlePriceTierChange}
               className="w-full rounded-md border-gray-300 shadow-sm focus:border-brevo-green focus:ring-brevo-green sm:text-sm p-2 border"
             >
               <option value="Budget">{t.priceTiers.Budget}</option>
@@ -86,7 +98,7 @@ export const SidebarInputs = ({
         </p>
 
         <button
-          onClick={() => setIsComparing(!isComparing)}
+          onClick={handleCompareToggle}
           className={`w-full flex justify-center py-3 px-4 border rounded-md shadow-sm text-sm font-medium transition-all duration-200 ${isComparing
             ? 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
             : 'bg-brevo-green border-transparent text-white hover:bg-brevo-dark-green shadow-md hover:shadow-lg transform hover:-translate-y-0.5'
@@ -107,3 +119,6 @@ export const SidebarInputs = ({
     </div>
   );
 };
+
+// Memoize the component to prevent unnecessary re-renders
+export const SidebarInputs = memo(SidebarInputsComponent);

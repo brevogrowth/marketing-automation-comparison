@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { memo, useCallback, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -8,13 +8,18 @@ interface AiAnalysisResultProps {
     analysis: string;
 }
 
-export const AiAnalysisResult = ({ analysis }: AiAnalysisResultProps) => {
+const AiAnalysisResultComponent = ({ analysis }: AiAnalysisResultProps) => {
     const { t } = useLanguage();
 
-    const handleExportPDF = () => {
+    const handleExportPDF = useCallback(() => {
         // Use browser print dialog for PDF export
         window.print();
-    };
+    }, []);
+
+    // Memoize the markdown rendering as it can be expensive
+    const renderedMarkdown = useMemo(() => (
+        <ReactMarkdown>{analysis}</ReactMarkdown>
+    ), [analysis]);
 
     return (
         <div className="animate-fade-in-up space-y-8">
@@ -43,10 +48,13 @@ export const AiAnalysisResult = ({ analysis }: AiAnalysisResultProps) => {
 
                 <div className="p-8">
                     <div className="prose prose-lg max-w-none prose-headings:text-brevo-dark-green prose-a:text-brevo-green hover:prose-a:text-brevo-dark-green prose-strong:text-brevo-dark-green">
-                        <ReactMarkdown>{analysis}</ReactMarkdown>
+                        {renderedMarkdown}
                     </div>
                 </div>
             </div>
         </div>
     );
 };
+
+// Memoize the component to prevent unnecessary re-renders
+export const AiAnalysisResult = memo(AiAnalysisResultComponent);
