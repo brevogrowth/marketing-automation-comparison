@@ -211,11 +211,11 @@ const BenchmarkGridComponent = ({
 
                                             {/* Combined Market Visual & Input */}
                                             <div className="flex-1 min-w-[300px]">
-                                                {/* Market Range Labels */}
-                                                <div className="flex justify-between text-xs text-gray-500 mb-2">
-                                                    <span>{t.benchmark.belowAvg}: {range.low}{kpi.unit}</span>
-                                                    <span className="font-medium text-gray-900">{t.benchmark.median}: {range.median}{kpi.unit}</span>
-                                                    <span>{t.benchmark.topPerformers}: {range.high}{kpi.unit}</span>
+                                                {/* Market Range Labels - Médiane mise en avant */}
+                                                <div className="flex justify-between text-xs mb-2">
+                                                    <span className="text-gray-400">{t.benchmark.belowAvg}: {range.low}{kpi.unit}</span>
+                                                    <span className="font-semibold text-gray-900">{t.benchmark.median}: {range.median}{kpi.unit}</span>
+                                                    <span className="text-gray-400">{t.benchmark.topPerformers}: {range.high}{kpi.unit}</span>
                                                 </div>
 
                                                 {!isComparing ? (
@@ -226,6 +226,7 @@ const BenchmarkGridComponent = ({
                                                 ) : (
                                                     /* Interactive Slider (Analysis Mode) */
                                                     <div className={`transition-all duration-300 ${isSelected ? 'opacity-100' : 'opacity-40 grayscale pointer-events-none'}`}>
+                                                        {/* Slider */}
                                                         <div className="relative h-8 flex items-center">
                                                             <input
                                                                 type="range"
@@ -239,20 +240,25 @@ const BenchmarkGridComponent = ({
                                                             {/* Median Marker on Slider Track */}
                                                             <div
                                                                 className="absolute top-3 bottom-3 bg-gray-400 w-0.5 z-0 pointer-events-none"
-                                                                style={{ left: '50%' }} // Approximate median for visual reference
+                                                                style={{ left: '50%' }}
                                                             />
                                                         </div>
 
-                                                        {/* Centered Value Input + Micro-feedback */}
+                                                        {/* Centered Value Input + Label + Micro-feedback */}
                                                         <div className="mt-3 flex flex-col items-center gap-1">
+                                                            {/* Label "Votre valeur" */}
+                                                            <span className="text-[10px] uppercase tracking-wider font-medium text-gray-500">
+                                                                {t.benchmark.yourValue}
+                                                            </span>
+
                                                             {/* Input centré */}
-                                                            <div className="relative w-28">
+                                                            <div className="relative w-24">
                                                                 <input
                                                                     type="number"
                                                                     value={userVal}
                                                                     onChange={(e) => onValueChange(kpi.id, e.target.value)}
                                                                     disabled={!isSelected}
-                                                                    className={`block w-full rounded-md sm:text-sm p-1.5 border text-center font-medium pr-8 ${
+                                                                    className={`block w-full rounded-md sm:text-sm p-1.5 border text-center font-medium ${
                                                                         status === 'good' ? 'border-green-300 focus:border-green-500 focus:ring-green-500 bg-green-50 text-green-900' :
                                                                         status === 'bad' ? 'border-red-300 focus:border-red-500 focus:ring-red-500 bg-red-50 text-red-900' :
                                                                         'border-gray-200 focus:border-brevo-green focus:ring-brevo-green text-gray-900'
