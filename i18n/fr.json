@@ -73,128 +73,438 @@
   },
   "kpis": {
     "cac": {
-      "name": "Co\u00fbt d'acquisition client (CAC)",
-      "description": "D\u00e9penses marketing totales divis\u00e9es par le nombre de nouveaux clients acquis."
+      "name": "Coût d'acquisition client (CAC)",
+      "description": "Dépenses marketing totales divisées par le nombre de nouveaux clients acquis.",
+      "insight": "Connaître votre coût de croissance.",
+      "definition": "Le coût d'acquisition client représente le coût total pour acquérir un nouveau client, incluant toutes les dépenses marketing et commerciales.",
+      "importance": "Le CAC impacte directement la rentabilité et détermine la vitesse à laquelle vous pouvez scaler. Une hausse du CAC est souvent le premier signe de saturation du marché ou d'allocation inefficace des dépenses.",
+      "formula": "Coûts Marketing & Commerciaux ÷ Nouveaux Clients Acquis",
+      "bestPractices": [
+        "Calculer le CAC par canal et type de campagne",
+        "Inclure les coûts souvent oubliés (outils, agences, création)",
+        "Comparer les tendances CAC mois après mois",
+        "Corréler les variations du CAC avec les conditions du marché"
+      ]
     },
     "roas": {
       "name": "ROAS global",
-      "description": "Revenu total divis\u00e9 par les d\u00e9penses marketing totales."
+      "description": "Revenu total divisé par les dépenses marketing totales.",
+      "insight": "Mesurer l'efficacité publicitaire.",
+      "definition": "Le Return on Ad Spend mesure le revenu généré pour chaque euro investi dans les campagnes publicitaires.",
+      "importance": "Le ROAS aide à évaluer la performance au niveau des campagnes et guide l'allocation budgétaire. Cependant, il ne prend pas en compte la valeur vie client ou l'effet organique de la notoriété de marque.",
+      "formula": "Revenus Publicitaires ÷ Dépenses Publicitaires",
+      "bestPractices": [
+        "Définir des objectifs ROAS différents par type de campagne (marque vs. performance)",
+        "Tenir compte des fenêtres d'attribution et des limites des modèles",
+        "Ne pas chasser le ROAS au détriment du volume",
+        "Comparer le ROAS reporté par les plateformes vs. le ROAS réellement mesuré"
+      ]
     },
     "marketing_spend": {
-      "name": "D\u00e9penses marketing % du CA",
-      "description": "Pourcentage du chiffre d'affaires allou\u00e9 au marketing."
+      "name": "Dépenses marketing % du CA",
+      "description": "Pourcentage du chiffre d'affaires alloué au marketing.",
+      "insight": "Benchmarker votre investissement.",
+      "definition": "Le pourcentage du chiffre d'affaires total alloué aux activités marketing, incluant médias payants, contenu, outils et équipe.",
+      "importance": "Ce ratio aide à comparer votre niveau d'investissement aux standards du secteur et indique la maturité de votre stade de croissance. Les entreprises en phase de démarrage dépensent généralement plus ; les entreprises matures optimisent l'efficacité.",
+      "formula": "Budget Marketing Total ÷ CA Brut × 100",
+      "bestPractices": [
+        "Ajuster les objectifs selon les ambitions de croissance",
+        "Inclure tous les coûts marketing, pas seulement les médias",
+        "Suivre le mix entre dépenses marque et performance",
+        "Planifier les variations saisonnières du ratio de dépenses"
+      ]
     },
     "ltv_cac": {
       "name": "Ratio LTV:CAC",
-      "description": "Valeur vie client divis\u00e9e par le co\u00fbt d'acquisition."
+      "description": "Valeur vie client divisée par le coût d'acquisition.",
+      "insight": "Moteur de croissance saine.",
+      "definition": "Le ratio LTV:CAC compare la valeur vie d'un client (revenu total généré sur la durée de la relation) au coût de son acquisition.",
+      "importance": "C'est probablement la métrique la plus critique pour une croissance durable. Un ratio inférieur à 3:1 suggère que vous dépensez trop pour acquérir des clients qui ne génèrent pas assez de valeur. Au-dessus de 5:1, vous sous-investissez peut-être dans la croissance.",
+      "formula": "LTV ÷ CAC",
+      "bestPractices": [
+        "Suivre la LTV par cohorte, pas seulement les moyennes",
+        "Inclure tous les coûts d'acquisition (pubs, contenu, ventes)",
+        "Segmenter par canal pour identifier les meilleures sources",
+        "Considérer la période de remboursement en plus du ratio"
+      ]
     },
     "mer": {
-      "name": "Ratio d'efficacit\u00e9 marketing (MER)",
-      "description": "Revenu total divis\u00e9 par les d\u00e9penses marketing totales."
+      "name": "Ratio d'efficacité marketing (MER)",
+      "description": "Revenu total divisé par les dépenses marketing totales.",
+      "insight": "Croissance et rentabilité équilibrées.",
+      "definition": "Le Ratio d'Efficacité Marketing mesure le revenu total généré par euro dépensé en marketing, incluant les canaux payants et organiques.",
+      "importance": "Contrairement au ROAS qui se concentre sur des campagnes spécifiques, le MER donne une vision globale de l'efficacité marketing. Il aide à identifier quand les canaux organiques compensent des canaux payants sous-performants.",
+      "formula": "Revenu Total ÷ Dépenses Marketing Totales",
+      "bestPractices": [
+        "Suivre le MER en parallèle du ROAS par canal",
+        "Définir des objectifs MER basés sur votre marge brute",
+        "Surveiller la baisse du MER à mesure que vous scalez (normal mais à gérer)",
+        "Utiliser le MER pour valider l'efficacité de la stratégie globale"
+      ]
     },
     "conv_rate": {
       "name": "Taux de conversion",
-      "description": "Pourcentage de visiteurs qui finalisent un achat."
+      "description": "Pourcentage de visiteurs qui finalisent un achat.",
+      "insight": "La métrique reine de l'e-commerce.",
+      "definition": "Le taux de conversion mesure le pourcentage de visiteurs qui effectuent un achat, indiquant l'efficacité globale de votre site à transformer les visiteurs en clients.",
+      "importance": "Même de petites améliorations du taux de conversion peuvent avoir un impact significatif sur le chiffre d'affaires. C'est souvent le levier le plus rentable par rapport à l'augmentation du trafic.",
+      "formula": "Commandes ÷ Sessions × 100",
+      "bestPractices": [
+        "Segmenter par source de trafic et type d'appareil",
+        "Comparer aux benchmarks du secteur avec prudence (la définition varie)",
+        "Concentrez-vous sur le taux de conversion des nouveaux visiteurs vs. visiteurs de retour",
+        "Tester systématiquement les parcours clés"
+      ]
     },
     "conv_desktop": {
       "name": "Taux de conversion desktop",
-      "description": "Taux de conversion pour les utilisateurs desktop."
+      "description": "Taux de conversion pour les utilisateurs desktop.",
+      "insight": "Optimiser pour les sessions à forte intention.",
+      "definition": "Le taux de conversion desktop mesure spécifiquement le pourcentage de visiteurs sur ordinateur qui finalisent un achat.",
+      "importance": "Les utilisateurs desktop ont généralement une intention d'achat plus élevée et passent plus de temps à rechercher. Comprendre ce taux aide à prioriser les efforts d'optimisation UX.",
+      "formula": "Commandes Desktop ÷ Sessions Desktop × 100",
+      "bestPractices": [
+        "Optimiser pour les écrans larges avec des images produit détaillées",
+        "Proposer des tableaux comparatifs et des filtres avancés",
+        "S'assurer que le checkout utilise efficacement l'espace écran",
+        "Tester différentes mises en page de navigation"
+      ]
     },
     "mobile_conv": {
       "name": "Taux de conversion mobile",
-      "description": "Taux de conversion pour les utilisateurs mobiles."
+      "description": "Taux de conversion pour les utilisateurs mobiles.",
+      "insight": "Combler le gap avec le desktop.",
+      "definition": "Le taux de conversion mobile mesure le pourcentage de visiteurs sur smartphones qui finalisent un achat.",
+      "importance": "Le trafic mobile représente souvent plus de 60% des visites mais convertit généralement moins bien. Améliorer ce taux est une opportunité de croissance majeure.",
+      "formula": "Commandes Mobile ÷ Sessions Mobile × 100",
+      "bestPractices": [
+        "Simplifier le checkout au maximum (auto-fill, Apple/Google Pay)",
+        "Optimiser la vitesse de chargement (objectif < 3 secondes)",
+        "Utiliser des CTAs larges et bien espacés",
+        "Tester régulièrement sur différents appareils"
+      ]
     },
     "cart_abandon": {
       "name": "Taux d'abandon panier",
-      "description": "Pourcentage de paniers abandonnés avant le paiement."
+      "description": "Pourcentage de paniers abandonnés avant le paiement.",
+      "insight": "Récupérer le chiffre d'affaires perdu.",
+      "definition": "Le taux d'abandon panier mesure le pourcentage d'acheteurs qui ajoutent des articles au panier mais ne finalisent pas l'achat.",
+      "importance": "C'est une mine d'or de revenus potentiels. Comprendre pourquoi les clients abandonnent permet d'optimiser le tunnel et de récupérer des ventes via l'automation.",
+      "formula": "(Paniers Créés - Commandes) ÷ Paniers Créés × 100",
+      "bestPractices": [
+        "Implémenter des emails d'abandon panier multi-étapes",
+        "Proposer la sauvegarde du panier et les rappels",
+        "Afficher clairement les frais de livraison dès le début",
+        "Simplifier le checkout (guest checkout, moins d'étapes)"
+      ]
     },
     "aov": {
       "name": "Panier moyen (AOV)",
-      "description": "Revenu moyen par transaction."
+      "description": "Revenu moyen par transaction.",
+      "insight": "Maximiser chaque transaction.",
+      "definition": "Le panier moyen représente le montant moyen dépensé par commande, indicateur clé de la capacité à générer de la valeur par transaction.",
+      "importance": "Augmenter l'AOV est souvent plus rentable qu'acquérir de nouveaux clients. C'est un levier direct sur la rentabilité.",
+      "formula": "Chiffre d'Affaires Total ÷ Nombre de Commandes",
+      "bestPractices": [
+        "Implémenter des seuils de livraison gratuite stratégiques",
+        "Proposer des bundles et upsells pertinents",
+        "Utiliser la recommandation produit cross-sell",
+        "Tester différentes stratégies de pricing et promotions"
+      ]
     },
     "email_rev_share": {
       "name": "Part du CA Email",
-      "description": "Pourcentage du CA provenant de l'email marketing."
+      "description": "Pourcentage du CA provenant de l'email marketing.",
+      "insight": "Votre canal le plus rentable.",
+      "definition": "La part du CA email mesure le pourcentage du chiffre d'affaires total attribuable aux campagnes et automations email.",
+      "importance": "L'email reste le canal marketing avec le meilleur ROI. Une part élevée indique une base clients engagée et une stratégie d'automation mature.",
+      "formula": "CA Email ÷ CA Total × 100",
+      "bestPractices": [
+        "Équilibrer campagnes promotionnelles et contenu de valeur",
+        "Développer les flows d'automation (welcome, abandon, post-achat)",
+        "Segmenter finement pour personnaliser les messages",
+        "Monitorer l'attribution multi-touch pour une vue réaliste"
+      ]
     },
     "sms_rev_share": {
       "name": "Part CA SMS",
-      "description": "Pourcentage du CA provenant du SMS marketing."
+      "description": "Pourcentage du CA provenant du SMS marketing.",
+      "insight": "Canal haute conversion à exploiter.",
+      "definition": "La part du CA SMS mesure le pourcentage du chiffre d'affaires attribuable aux campagnes et automations SMS.",
+      "importance": "Le SMS offre des taux d'ouverture exceptionnels (>90%) et fonctionne particulièrement bien pour les offres urgentes et les rappels.",
+      "formula": "CA SMS ÷ CA Total × 100",
+      "bestPractices": [
+        "Utiliser pour les offres flash et l'urgence",
+        "Intégrer aux parcours automation (abandon, livraison)",
+        "Respecter les préférences de fréquence des clients",
+        "Combiner avec l'email pour maximiser la portée"
+      ]
     },
     "repeat_rate": {
       "name": "Taux de réachat",
-      "description": "Pourcentage de clients qui effectuent plus d'un achat."
+      "description": "Pourcentage de clients qui effectuent plus d'un achat.",
+      "insight": "Fidélité et qualité produit.",
+      "definition": "Le taux de réachat mesure le pourcentage de clients qui reviennent effectuer au moins un deuxième achat.",
+      "importance": "Acquérir un nouveau client coûte 5 à 25 fois plus cher que de fidéliser un client existant. Ce taux révèle la vraie valeur de votre base clients.",
+      "formula": "Clients Multi-Achats ÷ Total Clients × 100",
+      "bestPractices": [
+        "Mettre en place un programme de fidélité attractif",
+        "Développer les flows de réengagement post-achat",
+        "Analyser les cohortes pour identifier les meilleurs profils",
+        "Personnaliser les recommandations basées sur l'historique"
+      ]
     },
     "purchase_freq": {
       "name": "Fréquence d'achat",
-      "description": "Nombre moyen d'achats par client par an."
+      "description": "Nombre moyen d'achats par client par an.",
+      "insight": "Engagement et habitudes d'achat.",
+      "definition": "La fréquence d'achat représente le nombre moyen de commandes passées par client sur une période donnée (généralement 12 mois).",
+      "importance": "Augmenter la fréquence d'achat est un levier majeur de croissance de la LTV. Elle reflète l'engagement et la satisfaction client.",
+      "formula": "Total Commandes ÷ Total Clients Uniques (sur 12 mois)",
+      "bestPractices": [
+        "Créer des raisons de revenir régulièrement (nouveautés, éditions limitées)",
+        "Mettre en place des automations de réapprovisionnement",
+        "Utiliser la gamification et les programmes de récompenses",
+        "Analyser les cycles d'achat par catégorie produit"
+      ]
     },
     "churn_rate": {
       "name": "Taux d'attrition",
-      "description": "Pourcentage de clients qui arr\u00eatent d'acheter."
+      "description": "Pourcentage de clients qui arrêtent d'acheter.",
+      "insight": "Rétention et alerte précoce.",
+      "definition": "Le taux d'attrition (churn) mesure le pourcentage de clients qui n'ont pas effectué d'achat pendant une période définie.",
+      "importance": "Réduire le churn a un impact direct sur la rentabilité. Identifier les signaux d'alerte permet d'intervenir avant la perte du client.",
+      "formula": "Clients Perdus ÷ Total Clients (début de période) × 100",
+      "bestPractices": [
+        "Définir clairement ce qu'est un client 'perdu' pour votre activité",
+        "Mettre en place des campagnes de réactivation automatisées",
+        "Analyser les raisons de départ via enquêtes",
+        "Identifier et agir sur les signaux prédictifs de churn"
+      ]
     },
     "ltv": {
       "name": "Valeur vie client (LTV)",
-      "description": "Revenu total attendu d'un client sur toute sa dur\u00e9e de vie."
+      "description": "Revenu total attendu d'un client sur toute sa durée de vie.",
+      "insight": "Valeur long terme de vos clients.",
+      "definition": "La LTV représente le revenu total qu'un client génère sur l'ensemble de sa relation avec votre marque.",
+      "importance": "Comprendre la LTV permet de déterminer combien investir en acquisition et quels segments clients prioriser.",
+      "formula": "AOV × Fréquence d'Achat × Durée de Vie Client",
+      "bestPractices": [
+        "Calculer la LTV par cohorte et par canal d'acquisition",
+        "Segmenter les clients par niveau de LTV pour personnaliser l'approche",
+        "Investir dans les programmes d'augmentation de la LTV",
+        "Utiliser la LTV prédictive pour optimiser l'acquisition"
+      ]
     },
     "return_rate": {
       "name": "Taux de retour",
-      "description": "Pourcentage de commandes retourn\u00e9es."
+      "description": "Pourcentage de commandes retournées.",
+      "insight": "Qualité produit et adéquation client.",
+      "definition": "Le taux de retour mesure le pourcentage de commandes qui sont retournées par les clients.",
+      "importance": "Les retours impactent directement la marge. Un taux élevé peut signaler des problèmes de qualité, de description produit ou de sizing.",
+      "formula": "Commandes Retournées ÷ Total Commandes × 100",
+      "bestPractices": [
+        "Améliorer les descriptions et visuels produits",
+        "Proposer des guides de tailles détaillés",
+        "Analyser les motifs de retour pour identifier les problèmes",
+        "Considérer les retours dans le calcul de la rentabilité client"
+      ]
     },
     "gross_margin": {
       "name": "Marge brute",
-      "description": "Revenu moins co\u00fbt des marchandises, en pourcentage."
+      "description": "Revenu moins coût des marchandises, en pourcentage.",
+      "insight": "Santé économique de votre activité.",
+      "definition": "La marge brute représente le pourcentage du chiffre d'affaires restant après déduction du coût des marchandises vendues.",
+      "importance": "La marge brute détermine votre capacité à investir en marketing et opérations. Elle doit être suffisante pour couvrir tous les autres coûts.",
+      "formula": "(CA - Coût des Marchandises) ÷ CA × 100",
+      "bestPractices": [
+        "Monitorer la marge par catégorie et produit",
+        "Intégrer la marge dans la stratégie promotionnelle",
+        "Optimiser la supply chain pour améliorer les coûts",
+        "Utiliser la marge pour définir les budgets marketing par produit"
+      ]
     },
     "lead_conv": {
       "name": "Taux de conversion lead-client",
-      "description": "Pourcentage de leads qui deviennent clients."
+      "description": "Pourcentage de leads qui deviennent clients.",
+      "insight": "Efficacité de votre funnel commercial.",
+      "definition": "Le taux de conversion lead-client mesure le pourcentage de leads capturés qui se transforment finalement en clients payants.",
+      "importance": "Ce taux révèle l'efficacité combinée de vos efforts marketing et commerciaux. Il aide à identifier où le funnel perd des opportunités.",
+      "formula": "Nouveaux Clients ÷ Total Leads × 100",
+      "bestPractices": [
+        "Qualifier les leads efficacement dès l'entrée",
+        "Mettre en place des nurturing sequences automatisées",
+        "Aligner marketing et ventes sur la définition d'un lead qualifié",
+        "Analyser les parcours des leads convertis vs. perdus"
+      ]
     },
     "sql_rate": {
       "name": "Taux de conversion SQL",
-      "description": "Pourcentage de MQL qui deviennent des Sales Qualified Leads."
+      "description": "Pourcentage de MQL qui deviennent des Sales Qualified Leads.",
+      "insight": "Qualité de la qualification marketing.",
+      "definition": "Le taux de conversion SQL mesure combien de Marketing Qualified Leads sont acceptés par l'équipe commerciale comme opportunités qualifiées.",
+      "importance": "Ce taux révèle l'alignement entre marketing et ventes. Un taux faible indique un problème de critères de qualification ou de qualité des leads.",
+      "formula": "SQL ÷ MQL × 100",
+      "bestPractices": [
+        "Définir des critères clairs et partagés MQL → SQL",
+        "Mettre en place un feedback loop régulier ventes → marketing",
+        "Utiliser le lead scoring pour prioriser les meilleurs leads",
+        "Analyser les attributs des MQL qui convertissent le mieux"
+      ]
     },
     "sales_cycle": {
-      "name": "Dur\u00e9e du cycle de vente",
-      "description": "Jours moyens du premier contact \u00e0 la signature."
+      "name": "Durée du cycle de vente",
+      "description": "Jours moyens du premier contact à la signature.",
+      "insight": "Vélocité et prévisibilité des ventes.",
+      "definition": "La durée du cycle de vente mesure le temps moyen entre le premier contact avec un prospect et la conclusion de la vente.",
+      "importance": "Un cycle plus court améliore la prévisibilité du pipeline et réduit les coûts de vente. Comprendre les facteurs d'allongement permet d'optimiser le processus.",
+      "formula": "Somme des Durées de Deals Conclus ÷ Nombre de Deals",
+      "bestPractices": [
+        "Identifier les étapes qui créent le plus de friction",
+        "Fournir les bons contenus au bon moment du cycle",
+        "Qualifier plus strictement pour se concentrer sur les deals à forte probabilité",
+        "Analyser les différences de cycle par segment client"
+      ]
     },
     "nrr": {
-      "name": "R\u00e9tention nette du revenu (NRR)",
-      "description": "Revenu conserv\u00e9 des clients existants incluant l'expansion."
+      "name": "Rétention nette du revenu (NRR)",
+      "description": "Revenu conservé des clients existants incluant l'expansion.",
+      "insight": "Croissance depuis votre base clients.",
+      "definition": "Le NRR mesure le pourcentage du revenu récurrent conservé des clients existants, incluant upsells et expansion, moins le churn et les contractions.",
+      "importance": "Un NRR supérieur à 100% signifie que vous croissez même sans nouveaux clients. C'est l'indicateur ultime de la santé d'un modèle SaaS.",
+      "formula": "(MRR Initial + Expansion - Churn - Contraction) ÷ MRR Initial × 100",
+      "bestPractices": [
+        "Investir dans le Customer Success pour réduire le churn",
+        "Développer des parcours d'upsell naturels",
+        "Monitorer les signaux d'alerte de contraction",
+        "Segmenter le NRR par cohorte et par plan"
+      ]
     },
     "expansion_revenue": {
       "name": "Revenu d'expansion",
-      "description": "Revenu des upsells et cross-sells aux clients existants."
+      "description": "Revenu des upsells et cross-sells aux clients existants.",
+      "insight": "Croissance à moindre coût.",
+      "definition": "Le revenu d'expansion représente le revenu additionnel généré par les clients existants via upsells, cross-sells ou extension d'usage.",
+      "importance": "Développer les clients existants coûte beaucoup moins cher que d'en acquérir de nouveaux. C'est un moteur de croissance rentable.",
+      "formula": "Somme des Revenus Additionnels Clients Existants",
+      "bestPractices": [
+        "Identifier les triggers d'expansion (usage, satisfaction)",
+        "Former les équipes Customer Success aux opportunités d'upsell",
+        "Créer des parcours d'upgrade naturels dans le produit",
+        "Mesurer et récompenser l'expansion au même titre que l'acquisition"
+      ]
     },
     "arr_growth": {
       "name": "Croissance ARR",
-      "description": "Croissance ann\u00e9e sur ann\u00e9e du revenu r\u00e9current annuel."
+      "description": "Croissance année sur année du revenu récurrent annuel.",
+      "insight": "Vélocité de croissance globale.",
+      "definition": "La croissance ARR mesure l'augmentation du revenu récurrent annuel d'une année à l'autre.",
+      "importance": "L'ARR Growth est l'indicateur clé de la performance d'un SaaS. Il guide les décisions d'investissement et de valorisation.",
+      "formula": "(ARR Actuel - ARR Année N-1) ÷ ARR Année N-1 × 100",
+      "bestPractices": [
+        "Décomposer la croissance (new, expansion, churn)",
+        "Comparer aux benchmarks selon votre stade et secteur",
+        "Monitorer le ratio acquisition vs. expansion",
+        "Projeter sur 12 mois glissants pour lisser la saisonnalité"
+      ]
     },
     "cac_payback": {
       "name": "Période de remboursement CAC",
-      "description": "Mois pour récupérer le coût d'acquisition client."
+      "description": "Mois pour récupérer le coût d'acquisition client.",
+      "insight": "Vitesse de retour sur investissement.",
+      "definition": "La période de remboursement CAC indique le nombre de mois nécessaires pour qu'un client génère assez de marge pour couvrir son coût d'acquisition.",
+      "importance": "Ce délai impacte directement vos besoins en trésorerie et la soutenabilité de votre croissance. Un payback court permet de réinvestir plus vite.",
+      "formula": "CAC ÷ (ARPU Mensuel × Marge Brute)",
+      "bestPractices": [
+        "Viser un payback < 12 mois pour une croissance saine",
+        "Analyser par segment et canal d'acquisition",
+        "Optimiser l'onboarding pour accélérer la monétisation",
+        "Considérer les coûts de service client dans le calcul"
+      ]
     },
     "email_open_rate": {
       "name": "Taux d'ouverture email",
-      "description": "Pourcentage d'emails délivrés qui sont ouverts."
+      "description": "Pourcentage d'emails délivrés qui sont ouverts.",
+      "insight": "Pertinence de vos objets et timing.",
+      "definition": "Le taux d'ouverture mesure le pourcentage de destinataires qui ouvrent vos emails parmi ceux qui les ont reçus.",
+      "importance": "C'est le premier indicateur d'engagement. Il reflète la qualité de vos objets d'email, votre réputation d'expéditeur et la pertinence perçue.",
+      "formula": "Emails Ouverts ÷ Emails Délivrés × 100",
+      "bestPractices": [
+        "Tester systématiquement vos objets d'email (A/B test)",
+        "Optimiser le timing d'envoi par segment",
+        "Personnaliser l'expéditeur et le preheader",
+        "Maintenir une liste propre pour préserver la délivrabilité"
+      ]
     },
     "email_click_rate": {
       "name": "Taux de clic email",
-      "description": "Pourcentage d'emails délivrés qui reçoivent un clic."
+      "description": "Pourcentage d'emails délivrés qui reçoivent un clic.",
+      "insight": "Engagement et pertinence du contenu.",
+      "definition": "Le taux de clic mesure le pourcentage de destinataires qui cliquent sur au moins un lien dans votre email.",
+      "importance": "Le clic est l'action qui mène à la conversion. Un bon taux de clic indique un contenu pertinent et des CTAs efficaces.",
+      "formula": "Emails Cliqués ÷ Emails Délivrés × 100",
+      "bestPractices": [
+        "Avoir un CTA clair et visible",
+        "Personnaliser le contenu selon les préférences",
+        "Optimiser pour le mobile (boutons larges)",
+        "Tester différents formats de contenu"
+      ]
     },
     "email_ctor": {
       "name": "Taux de clic sur ouverture (CTOR)",
-      "description": "Pourcentage d'emails ouverts qui reçoivent un clic."
+      "description": "Pourcentage d'emails ouverts qui reçoivent un clic.",
+      "insight": "Qualité du contenu email.",
+      "definition": "Le CTOR mesure le pourcentage de personnes qui cliquent après avoir ouvert votre email, isolant ainsi la performance du contenu.",
+      "importance": "Contrairement au taux de clic global, le CTOR évalue spécifiquement la qualité du contenu, indépendamment de l'objet et de la délivrabilité.",
+      "formula": "Emails Cliqués ÷ Emails Ouverts × 100",
+      "bestPractices": [
+        "Aligner le contenu avec la promesse de l'objet",
+        "Utiliser un design scannable avec hiérarchie visuelle claire",
+        "Placer les éléments importants au-dessus de la ligne de flottaison",
+        "Tester différentes mises en page et longueurs de contenu"
+      ]
     },
     "email_unsub_rate": {
       "name": "Taux de désabonnement",
-      "description": "Pourcentage de destinataires qui se désabonnent par campagne."
+      "description": "Pourcentage de destinataires qui se désabonnent par campagne.",
+      "insight": "Pression commerciale et pertinence.",
+      "definition": "Le taux de désabonnement mesure le pourcentage de destinataires qui choisissent de ne plus recevoir vos emails après une campagne.",
+      "importance": "Un taux élevé signale une pression commerciale excessive ou un manque de pertinence. Il impacte aussi votre réputation d'expéditeur.",
+      "formula": "Désabonnements ÷ Emails Délivrés × 100",
+      "bestPractices": [
+        "Respecter les préférences de fréquence des abonnés",
+        "Segmenter pour envoyer du contenu pertinent",
+        "Proposer des options de préférences plutôt que le désabonnement total",
+        "Monitorer les pics après certains types de campagnes"
+      ]
     },
     "email_bounce_rate": {
       "name": "Taux de rebond",
-      "description": "Pourcentage d'emails qui échouent à la livraison."
+      "description": "Pourcentage d'emails qui échouent à la livraison.",
+      "insight": "Qualité de votre base de données.",
+      "definition": "Le taux de rebond mesure le pourcentage d'emails qui n'atteignent pas la boîte de réception du destinataire.",
+      "importance": "Un taux de rebond élevé dégrade votre réputation d'expéditeur et peut impacter la délivrabilité de toutes vos campagnes.",
+      "formula": "Emails Rebondis ÷ Emails Envoyés × 100",
+      "bestPractices": [
+        "Implémenter la validation email à l'inscription",
+        "Nettoyer régulièrement les adresses invalides",
+        "Distinguer soft bounces (temporaires) et hard bounces (permanents)",
+        "Utiliser le double opt-in pour les nouvelles inscriptions"
+      ]
     },
     "email_deliverability": {
       "name": "Taux de délivrabilité",
-      "description": "Pourcentage d'emails délivrés avec succès en boîte de réception."
+      "description": "Pourcentage d'emails délivrés avec succès en boîte de réception.",
+      "insight": "Réputation d'expéditeur et hygiène de liste.",
+      "definition": "Le taux de délivrabilité mesure le pourcentage d'emails qui arrivent effectivement en boîte de réception (pas en spam).",
+      "importance": "Sans bonne délivrabilité, tout le reste est inutile. C'est le fondement de la performance email.",
+      "formula": "Emails Délivrés en Inbox ÷ Emails Envoyés × 100",
+      "bestPractices": [
+        "Authentifier vos domaines (SPF, DKIM, DMARC)",
+        "Maintenir une liste propre et engagée",
+        "Utiliser un sous-domaine dédié aux emails marketing",
+        "Monitorer les placements en spam via des outils dédiés"
+      ]
     }
   },
   "benchmark": {

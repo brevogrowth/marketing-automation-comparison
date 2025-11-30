@@ -74,127 +74,437 @@
   "kpis": {
     "cac": {
       "name": "Customer Acquisition Cost (CAC)",
-      "description": "Total marketing spend divided by new customers acquired."
+      "description": "Total marketing spend divided by new customers acquired.",
+      "insight": "Know your cost to grow.",
+      "definition": "Customer Acquisition Cost represents the total cost to acquire one new customer, including all marketing and sales expenses.",
+      "importance": "CAC directly impacts profitability and determines how fast you can scale. Rising CAC is often the first sign of market saturation or inefficient spend allocation.",
+      "formula": "Total Marketing & Sales Costs ÷ New Customers Acquired",
+      "bestPractices": [
+        "Calculate CAC by channel and campaign type",
+        "Include often-forgotten costs (tools, agency fees, creative)",
+        "Compare CAC trends month-over-month",
+        "Correlate CAC changes with market conditions"
+      ]
     },
     "roas": {
       "name": "Blended ROAS",
-      "description": "Total revenue divided by total marketing spend."
+      "description": "Total revenue divided by total marketing spend.",
+      "insight": "Measure ad efficiency.",
+      "definition": "Return on Ad Spend measures the revenue generated for every euro invested in advertising campaigns.",
+      "importance": "ROAS helps evaluate campaign-level performance and guides budget allocation. However, it doesn't account for customer lifetime value or organic lift from brand awareness.",
+      "formula": "Revenue from Ads ÷ Ad Spend",
+      "bestPractices": [
+        "Set different ROAS targets by campaign objective (brand vs. performance)",
+        "Account for attribution windows and model limitations",
+        "Don't chase ROAS at the expense of scale",
+        "Compare platform-reported vs. actual tracked ROAS"
+      ]
     },
     "marketing_spend": {
       "name": "Marketing Spend % of Revenue",
-      "description": "Percentage of revenue allocated to marketing."
+      "description": "Percentage of revenue allocated to marketing.",
+      "insight": "Benchmark your investment.",
+      "definition": "The percentage of total revenue allocated to marketing activities, including paid media, content, tools, and team costs.",
+      "importance": "This ratio helps benchmark your investment level against industry standards and indicates growth stage maturity. Early-stage companies typically spend more; mature ones optimize for efficiency.",
+      "formula": "Total Marketing Budget ÷ Gross Revenue × 100",
+      "bestPractices": [
+        "Adjust targets based on growth objectives",
+        "Include all marketing costs, not just media",
+        "Track the mix between brand and performance spend",
+        "Plan for seasonal variations in spend ratio"
+      ]
     },
     "ltv_cac": {
       "name": "LTV:CAC Ratio",
-      "description": "Customer lifetime value divided by acquisition cost."
+      "description": "Customer lifetime value divided by acquisition cost.",
+      "insight": "Healthy growth engine.",
+      "definition": "The LTV:CAC ratio compares the lifetime value of a customer (total revenue they generate over their relationship with you) to the cost of acquiring them.",
+      "importance": "This is arguably the most critical metric for sustainable growth. A ratio below 3:1 suggests you're spending too much to acquire customers who don't generate enough value. Above 5:1 might indicate you're under-investing in growth.",
+      "formula": "LTV ÷ CAC",
+      "bestPractices": [
+        "Track cohort-based LTV, not just averages",
+        "Include all acquisition costs (ads, content, sales)",
+        "Segment by channel to identify best-performing sources",
+        "Consider payback period alongside ratio"
+      ]
     },
     "mer": {
       "name": "Marketing Efficiency Ratio (MER)",
-      "description": "Total revenue divided by total marketing spend."
+      "description": "Total revenue divided by total marketing spend.",
+      "insight": "Balanced growth and profitability.",
+      "definition": "Marketing Efficiency Ratio measures total revenue generated per euro spent on marketing, including both paid and organic channels.",
+      "importance": "Unlike ROAS which focuses on specific campaigns, MER gives you the full picture of marketing efficiency. It helps identify when organic channels are compensating for underperforming paid ones.",
+      "formula": "Total Revenue ÷ Total Marketing Spend",
+      "bestPractices": [
+        "Track MER alongside individual channel ROAS",
+        "Set MER targets based on your gross margin",
+        "Watch for MER declines as you scale (normal but must be managed)",
+        "Use MER to validate blended strategy effectiveness"
+      ]
     },
     "conv_rate": {
       "name": "Conversion Rate",
-      "description": "Percentage of visitors who complete a purchase."
+      "description": "Percentage of visitors who complete a purchase.",
+      "insight": "Your efficiency multiplier.",
+      "definition": "The percentage of desktop website visitors who complete a purchase during their session.",
+      "importance": "Conversion rate is your efficiency multiplier - even small improvements create significant revenue impact. Desktop typically converts higher than mobile due to easier comparison shopping.",
+      "formula": "Desktop Purchases ÷ Desktop Visitors × 100",
+      "bestPractices": [
+        "Segment by traffic source (paid vs. organic converts differently)",
+        "A/B test checkout flow continuously",
+        "Monitor micro-conversions (add to cart, checkout start)",
+        "Don't optimize for CVR at the expense of traffic quality"
+      ]
     },
     "conv_desktop": {
       "name": "Desktop Conversion Rate",
-      "description": "Conversion rate for desktop users."
+      "description": "Conversion rate for desktop users.",
+      "insight": "Higher intent, higher conversion.",
+      "definition": "The percentage of desktop website visitors who complete a purchase during their session.",
+      "importance": "Desktop users typically show higher purchase intent and convert at 2-3x mobile rates. They're often in research mode with larger screens for comparison.",
+      "formula": "Desktop Purchases ÷ Desktop Sessions × 100",
+      "bestPractices": [
+        "Optimize product pages for comparison shopping",
+        "Ensure fast page load times",
+        "Use clear CTAs and trust signals",
+        "Implement exit-intent strategies"
+      ]
     },
     "mobile_conv": {
       "name": "Mobile Conversion Rate",
-      "description": "Conversion rate for mobile users."
+      "description": "Conversion rate for mobile users.",
+      "insight": "Majority traffic, growing opportunity.",
+      "definition": "The percentage of mobile website visitors who complete a purchase during their session.",
+      "importance": "With 60-70% of traffic now mobile, this metric increasingly determines overall performance. Mobile conversion is typically 30-50% lower than desktop but improving rapidly.",
+      "formula": "Mobile Purchases ÷ Mobile Visitors × 100",
+      "bestPractices": [
+        "Optimize for thumb-friendly navigation",
+        "Implement mobile payment options (Apple Pay, Google Pay)",
+        "Reduce form fields and use autofill",
+        "Test page speed - every second costs conversions"
+      ]
     },
     "cart_abandon": {
       "name": "Cart Abandonment Rate",
-      "description": "Percentage of carts abandoned before checkout."
+      "description": "Percentage of carts abandoned before checkout.",
+      "insight": "Your biggest opportunity.",
+      "definition": "The percentage of shopping carts that are created but not converted into purchases.",
+      "importance": "Cart abandonment represents your biggest conversion opportunity - these visitors showed clear purchase intent. Industry average is 70-80%, but even small reductions drive significant revenue.",
+      "formula": "(Carts Created - Completed Purchases) ÷ Carts Created × 100",
+      "bestPractices": [
+        "Implement abandoned cart email sequences (ideally 3-part)",
+        "Be transparent about shipping costs early",
+        "Offer guest checkout",
+        "Test exit-intent offers carefully"
+      ]
     },
     "aov": {
       "name": "Average Order Value (AOV)",
-      "description": "Average revenue per transaction."
+      "description": "Average revenue per transaction.",
+      "insight": "Increase without acquiring more.",
+      "definition": "Average Order Value is the mean revenue per transaction across all orders.",
+      "importance": "AOV directly impacts profitability - higher AOV often means better unit economics. It's usually easier to increase AOV from existing customers than to acquire new ones.",
+      "formula": "Total Revenue ÷ Number of Orders",
+      "bestPractices": [
+        "Use strategic free shipping thresholds",
+        "Implement product bundles and kits",
+        "Show 'frequently bought together' recommendations",
+        "Test upsells at checkout (carefully)"
+      ]
     },
     "email_rev_share": {
       "name": "Email Revenue Share",
-      "description": "Percentage of revenue from email marketing."
+      "description": "Percentage of revenue from email marketing.",
+      "insight": "Your highest-ROI channel.",
+      "definition": "The percentage of total revenue attributed to email marketing campaigns and automations.",
+      "importance": "Email is typically your highest-ROI channel with near-zero marginal cost. Strong email revenue share indicates healthy owned audience engagement and reduced dependency on paid acquisition.",
+      "formula": "Email-Attributed Revenue ÷ Total Revenue × 100",
+      "bestPractices": [
+        "Balance promotional vs. value-add content",
+        "Segment lists for relevance",
+        "Automate lifecycle emails (welcome, post-purchase, win-back)",
+        "Monitor deliverability and engagement metrics"
+      ]
     },
     "sms_rev_share": {
       "name": "SMS Revenue Share",
-      "description": "Percentage of revenue from SMS marketing."
+      "description": "Percentage of revenue from SMS marketing.",
+      "insight": "High engagement, use wisely.",
+      "definition": "The percentage of total revenue attributed to SMS marketing campaigns.",
+      "importance": "SMS has 98% open rates vs. 20% for email. It's ideal for time-sensitive offers and high-intent moments, but requires careful frequency management to avoid opt-outs.",
+      "formula": "SMS-Attributed Revenue ÷ Total Revenue × 100",
+      "bestPractices": [
+        "Reserve SMS for high-value, time-sensitive messages",
+        "Keep messages short and action-oriented",
+        "Respect frequency (1-4 messages/month max)",
+        "Use for transactional updates and flash sales"
+      ]
     },
     "repeat_rate": {
       "name": "Repeat Purchase Rate",
-      "description": "Percentage of customers who make more than one purchase."
+      "description": "Percentage of customers who make more than one purchase.",
+      "insight": "Foundation of profitable growth.",
+      "definition": "The percentage of customers who make more than one purchase within a defined period (typically 12 months).",
+      "importance": "Repeat customers are 5-25x cheaper to convert than new ones and typically have higher AOV. This metric is the foundation of sustainable, profitable growth.",
+      "formula": "Customers with 2+ Orders ÷ Total Customers × 100",
+      "bestPractices": [
+        "Implement a post-purchase email sequence",
+        "Create loyalty or rewards programs",
+        "Personalize recommendations based on purchase history",
+        "Track time-to-second-purchase to optimize timing"
+      ]
     },
     "purchase_freq": {
       "name": "Purchase Frequency",
-      "description": "Average number of purchases per customer per year."
+      "description": "Average number of purchases per customer per year.",
+      "insight": "Multiply customer value.",
+      "definition": "The average number of orders placed per customer over a 12-month period.",
+      "importance": "Frequency directly multiplies LTV. Understanding your natural purchase cycle helps time marketing touchpoints and identify at-risk customers before they churn.",
+      "formula": "Total Orders ÷ Unique Customers (12-month period)",
+      "bestPractices": [
+        "Map your product's natural replenishment cycle",
+        "Implement subscription or auto-replenishment options",
+        "Create new purchase occasions (gifts, seasonal)",
+        "Trigger re-engagement at optimal intervals"
+      ]
     },
     "churn_rate": {
       "name": "Churn Rate",
-      "description": "Percentage of customers who stop buying."
+      "description": "Percentage of customers who stop buying.",
+      "insight": "Silent killer of growth.",
+      "definition": "The percentage of customers who do not make a repeat purchase within 12 months of their last order.",
+      "importance": "Churn is the silent killer of growth - you might be acquiring customers fast while losing them faster. Reducing churn often has higher ROI than increasing acquisition.",
+      "formula": "Customers Not Returning in 12 Months ÷ Total Active Customers × 100",
+      "bestPractices": [
+        "Identify at-risk customers before they churn (RFM analysis)",
+        "Implement win-back campaigns",
+        "Survey churned customers to understand why",
+        "Calculate cost of churn vs. cost of retention"
+      ]
     },
     "ltv": {
       "name": "Customer Lifetime Value (LTV)",
-      "description": "Total revenue expected from a customer over their lifetime."
+      "description": "Total revenue expected from a customer over their lifetime.",
+      "insight": "The ultimate growth metric.",
+      "definition": "The total revenue a customer generates throughout their entire relationship with your business.",
+      "importance": "LTV determines how much you can invest in acquisition and retention. It's the ultimate measure of customer relationship quality.",
+      "formula": "AOV × Purchase Frequency × Customer Lifespan",
+      "bestPractices": [
+        "Calculate LTV by cohort and acquisition channel",
+        "Track leading indicators (engagement, NPS)",
+        "Focus on increasing frequency and reducing churn",
+        "Compare LTV to CAC for sustainable growth"
+      ]
     },
     "return_rate": {
       "name": "Return Rate",
-      "description": "Percentage of orders returned."
+      "description": "Percentage of orders returned.",
+      "insight": "Protect your margins.",
+      "definition": "The percentage of sold items that are returned by customers.",
+      "importance": "Returns directly eat into margin and create operational costs. High returns often signal sizing/fit issues, poor product descriptions, or quality problems.",
+      "formula": "Items Returned ÷ Items Sold × 100",
+      "bestPractices": [
+        "Improve product descriptions and sizing guides",
+        "Add more product photos and videos",
+        "Analyze return reasons by category",
+        "Consider virtual try-on or AR tools"
+      ]
     },
     "gross_margin": {
       "name": "Gross Margin",
-      "description": "Revenue minus cost of goods sold, as percentage."
+      "description": "Revenue minus cost of goods sold, as percentage.",
+      "insight": "Your profit ceiling.",
+      "definition": "The percentage of revenue remaining after subtracting the direct cost of goods sold (COGS).",
+      "importance": "Gross margin sets the ceiling for all other spending - marketing, operations, profit. Low margin businesses need higher volume and efficiency to survive.",
+      "formula": "(Revenue - COGS) ÷ Revenue × 100",
+      "bestPractices": [
+        "Negotiate with suppliers as you scale",
+        "Analyze margin by product category",
+        "Consider private label for margin improvement",
+        "Don't sacrifice margin for revenue growth"
+      ]
     },
     "lead_conv": {
       "name": "Lead-to-Customer Rate",
-      "description": "Percentage of leads that become customers."
+      "description": "Percentage of leads that become customers.",
+      "insight": "Measure funnel efficiency.",
+      "definition": "The percentage of qualified leads that convert to opportunities or customers.",
+      "importance": "Lead conversion efficiency determines how much you can afford to pay for leads. Low conversion often indicates poor targeting or nurturing gaps.",
+      "formula": "Converted Leads ÷ Total Qualified Leads × 100",
+      "bestPractices": [
+        "Define clear SQL criteria with sales alignment",
+        "Implement lead scoring based on behavior",
+        "Create targeted nurture sequences",
+        "Analyze conversion by source and persona"
+      ]
     },
     "sql_rate": {
       "name": "SQL Conversion Rate",
-      "description": "Percentage of MQLs that become Sales Qualified Leads."
+      "description": "Percentage of MQLs that become Sales Qualified Leads.",
+      "insight": "Marketing-sales alignment.",
+      "definition": "The percentage of marketing qualified leads that become sales qualified leads.",
+      "importance": "SQL rate measures marketing-sales alignment and lead quality. Low rates create tension between teams and waste resources.",
+      "formula": "SQLs Generated ÷ MQLs Generated × 100",
+      "bestPractices": [
+        "Align on MQL and SQL definitions with sales",
+        "Implement feedback loops from sales to marketing",
+        "Review and update qualification criteria quarterly",
+        "Track speed-to-follow-up on MQLs"
+      ]
     },
     "sales_cycle": {
       "name": "Sales Cycle Length",
-      "description": "Average days from first contact to closed deal."
+      "description": "Average days from first contact to closed deal.",
+      "insight": "Forecast with accuracy.",
+      "definition": "The average number of days from first contact to closed deal.",
+      "importance": "Cycle length impacts cash flow and forecast accuracy. Longer cycles require more nurturing investment but often yield larger deals.",
+      "formula": "Sum of Days to Close ÷ Number of Deals",
+      "bestPractices": [
+        "Map your buyer's journey to identify bottlenecks",
+        "Create content for each decision stage",
+        "Implement lead scoring to prioritize ready buyers",
+        "Track cycle by deal size (larger deals naturally take longer)"
+      ]
     },
     "nrr": {
       "name": "Net Revenue Retention (NRR)",
-      "description": "Revenue retained from existing customers including expansion."
+      "description": "Revenue retained from existing customers including expansion.",
+      "insight": "Growth without new customers.",
+      "definition": "Net Revenue Retention measures revenue from existing customers including expansion, contraction, and churn.",
+      "importance": "NRR above 100% means you grow even without new customers. It's the strongest indicator of product-market fit and customer satisfaction.",
+      "formula": "(Start MRR + Expansion - Contraction - Churn) ÷ Start MRR × 100",
+      "bestPractices": [
+        "Track expansion revenue (upsells, cross-sells)",
+        "Monitor early warning signs of contraction",
+        "Invest in customer success proactively",
+        "Identify expansion triggers and replicate them"
+      ]
     },
     "expansion_revenue": {
       "name": "Expansion Revenue",
-      "description": "Revenue from upsells and cross-sells to existing customers."
+      "description": "Revenue from upsells and cross-sells to existing customers.",
+      "insight": "Grow within your base.",
+      "definition": "Additional revenue generated from existing customers through upsells, cross-sells, or plan upgrades.",
+      "importance": "Expansion revenue is the most efficient growth lever - no acquisition cost required. High expansion indicates strong product-market fit.",
+      "formula": "Revenue from Upsells + Cross-sells",
+      "bestPractices": [
+        "Identify expansion-ready accounts proactively",
+        "Create clear upgrade paths in your product",
+        "Train customer success on expansion conversations",
+        "Monitor usage patterns that predict expansion"
+      ]
     },
     "arr_growth": {
       "name": "ARR Growth Rate",
-      "description": "Annual Recurring Revenue year-over-year growth."
+      "description": "Annual Recurring Revenue year-over-year growth.",
+      "insight": "Your growth velocity.",
+      "definition": "The year-over-year percentage change in Annual Recurring Revenue.",
+      "importance": "ARR growth rate is the primary valuation driver for SaaS companies. It indicates market traction and future potential.",
+      "formula": "(Current ARR - Previous Year ARR) ÷ Previous Year ARR × 100",
+      "bestPractices": [
+        "Track new vs. expansion vs. churned ARR separately",
+        "Monitor growth efficiency (ARR per sales rep)",
+        "Compare to Rule of 40 benchmark",
+        "Forecast based on pipeline and conversion rates"
+      ]
     },
     "cac_payback": {
       "name": "CAC Payback Period",
-      "description": "Months to recover customer acquisition cost."
+      "description": "Months to recover customer acquisition cost.",
+      "insight": "Cash efficiency indicator.",
+      "definition": "The number of months required to recover the cost of acquiring a customer through their subscription payments.",
+      "importance": "Payback period directly impacts cash flow and capital needs. Shorter payback means faster reinvestment in growth.",
+      "formula": "CAC ÷ (Monthly Revenue × Gross Margin)",
+      "bestPractices": [
+        "Target under 12 months for efficient growth",
+        "Compare payback by segment and channel",
+        "Factor in expected expansion revenue",
+        "Balance payback with LTV for optimal investment"
+      ]
     },
     "email_open_rate": {
       "name": "Email Open Rate",
-      "description": "Percentage of delivered emails that are opened."
+      "description": "Percentage of delivered emails that are opened.",
+      "insight": "First engagement filter.",
+      "definition": "The percentage of delivered emails that recipients open. This is the first engagement indicator for your email campaigns.",
+      "importance": "Open rate is your first filter for email effectiveness. Low opens suggest subject line issues, poor sender reputation, or list quality problems. However, note that Apple Mail Privacy Protection can inflate open rates.",
+      "formula": "Unique Opens ÷ Delivered Emails × 100",
+      "bestPractices": [
+        "A/B test subject lines systematically",
+        "Optimize send times based on your audience",
+        "Keep sender name consistent and recognizable",
+        "Maintain clean lists to protect sender reputation"
+      ]
     },
     "email_click_rate": {
       "name": "Email Click Rate",
-      "description": "Percentage of delivered emails that receive a click."
+      "description": "Percentage of delivered emails that receive a click.",
+      "insight": "True engagement measure.",
+      "definition": "The percentage of delivered emails where at least one link was clicked. Also called Click-Through Rate (CTR).",
+      "importance": "Click rate measures actual engagement with your email content. It shows whether your message and offers resonate with subscribers and drive them to take action.",
+      "formula": "Unique Clicks ÷ Delivered Emails × 100",
+      "bestPractices": [
+        "Use clear, action-oriented CTAs",
+        "Place primary CTA above the fold",
+        "Personalize content based on segments",
+        "Ensure mobile-responsive design"
+      ]
     },
     "email_ctor": {
       "name": "Click-to-Open Rate (CTOR)",
-      "description": "Percentage of opened emails that receive a click."
+      "description": "Percentage of opened emails that receive a click.",
+      "insight": "Content quality indicator.",
+      "definition": "Click-to-Open Rate measures the percentage of people who clicked after opening the email. It isolates content effectiveness from deliverability.",
+      "importance": "CTOR is the purest measure of email content quality. A high open rate with low CTOR means your subject line works but content disappoints. This helps diagnose where to focus optimization.",
+      "formula": "Unique Clicks ÷ Unique Opens × 100",
+      "bestPractices": [
+        "Align content with subject line promise",
+        "Use compelling visuals and scannable layouts",
+        "Test different content formats and lengths",
+        "Create urgency or exclusivity when appropriate"
+      ]
     },
     "email_unsub_rate": {
       "name": "Unsubscribe Rate",
-      "description": "Percentage of recipients who unsubscribe per campaign."
+      "description": "Percentage of recipients who unsubscribe per campaign.",
+      "insight": "Audience satisfaction signal.",
+      "definition": "The percentage of recipients who unsubscribe per email campaign. This is a key indicator of subscriber satisfaction and content relevance.",
+      "importance": "Unsubscribes signal content-audience mismatch or frequency fatigue. While some churn is natural, consistently high unsubscribe rates damage long-term list value and can indicate reputation problems.",
+      "formula": "Unsubscribes ÷ Delivered Emails × 100",
+      "bestPractices": [
+        "Segment lists for relevance",
+        "Let subscribers manage frequency preferences",
+        "Deliver on the promise made at signup",
+        "Monitor unsubscribe reasons for patterns"
+      ]
     },
     "email_bounce_rate": {
       "name": "Bounce Rate",
-      "description": "Percentage of emails that fail to deliver."
+      "description": "Percentage of emails that fail to deliver.",
+      "insight": "List health indicator.",
+      "definition": "The percentage of sent emails that fail to deliver. Includes hard bounces (permanent failures) and soft bounces (temporary issues).",
+      "importance": "High bounce rates damage sender reputation and can lead to blacklisting. Hard bounces above 2% are a red flag that requires immediate list cleaning. ISPs monitor this closely.",
+      "formula": "Bounced Emails ÷ Sent Emails × 100",
+      "bestPractices": [
+        "Use double opt-in for new subscribers",
+        "Remove hard bounces immediately",
+        "Re-engage or remove inactive subscribers",
+        "Validate email addresses at collection"
+      ]
     },
     "email_deliverability": {
       "name": "Deliverability Rate",
-      "description": "Percentage of emails successfully delivered to inbox."
+      "description": "Percentage of emails successfully delivered to inbox.",
+      "insight": "Foundation of email ROI.",
+      "definition": "The percentage of sent emails that successfully reach recipients' inboxes (not spam or promotions folders).",
+      "importance": "Deliverability is the foundation of email marketing ROI. Even perfect content fails if it doesn't reach the inbox. This metric reflects your overall email health and sender reputation.",
+      "formula": "Emails Delivered to Inbox ÷ Emails Sent × 100",
+      "bestPractices": [
+        "Authenticate with SPF, DKIM, and DMARC",
+        "Maintain consistent sending volumes",
+        "Monitor blacklist status regularly",
+        "Warm up new IPs and domains gradually"
+      ]
     }
   },
   "benchmark": {

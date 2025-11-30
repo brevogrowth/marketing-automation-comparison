@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { BenchmarkData, PriceTier } from '@/data/benchmarks';
 import { getBenchmarkStatus, getBenchmarkLevel, getHumorousMessage } from '@/utils/benchmarkUtils';
-import { metricExplanations } from '@/data/metricExplanations';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 interface BenchmarkGridProps {
@@ -134,62 +133,75 @@ export const BenchmarkGrid = ({
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <p className="text-xs text-gray-500 mb-2">{range.insight}</p>
+                                                    {(() => {
+                                                        const kpiTranslation = t.kpis[kpi.id as keyof typeof t.kpis];
+                                                        const insight = kpiTranslation && 'insight' in kpiTranslation ? (kpiTranslation as { insight?: string }).insight : range.insight;
+                                                        return <p className="text-xs text-gray-500 mb-2">{insight}</p>;
+                                                    })()}
 
                                                     {/* Why this metric? Toggle */}
-                                                    {metricExplanations[kpi.id] && (
-                                                        <div className="mt-1">
-                                                            <button
-                                                                onClick={() => toggleExplanation(kpi.id)}
-                                                                className="text-xs text-brevo-green hover:text-brevo-dark-green font-medium flex items-center gap-1 transition-colors"
-                                                            >
-                                                                <svg
-                                                                    className={`w-3 h-3 transition-transform duration-200 ${openExplanations[kpi.id] ? 'rotate-90' : ''}`}
-                                                                    fill="none"
-                                                                    viewBox="0 0 24 24"
-                                                                    stroke="currentColor"
+                                                    {(() => {
+                                                        const kpiTranslation = t.kpis[kpi.id as keyof typeof t.kpis] as { definition?: string; importance?: string; formula?: string; bestPractices?: string[] } | undefined;
+                                                        const hasExplanation = kpiTranslation && 'definition' in kpiTranslation;
+
+                                                        if (!hasExplanation) return null;
+
+                                                        return (
+                                                            <div className="mt-1">
+                                                                <button
+                                                                    onClick={() => toggleExplanation(kpi.id)}
+                                                                    className="text-xs text-brevo-green hover:text-brevo-dark-green font-medium flex items-center gap-1 transition-colors"
                                                                 >
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                                {t.benchmark.whyMetric}
-                                                            </button>
+                                                                    <svg
+                                                                        className={`w-3 h-3 transition-transform duration-200 ${openExplanations[kpi.id] ? 'rotate-90' : ''}`}
+                                                                        fill="none"
+                                                                        viewBox="0 0 24 24"
+                                                                        stroke="currentColor"
+                                                                    >
+                                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                                    </svg>
+                                                                    {t.benchmark.whyMetric}
+                                                                </button>
 
-                                                            {/* Explanation Content */}
-                                                            <div className={`overflow-hidden transition-all duration-300 ${openExplanations[kpi.id] ? 'max-h-[500px] opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
-                                                                <div className="bg-gray-50 rounded-lg p-4 text-xs space-y-3 border border-gray-100">
-                                                                    {/* Definition */}
-                                                                    <div>
-                                                                        <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.definition}</h5>
-                                                                        <p className="text-gray-600">{metricExplanations[kpi.id].definition}</p>
-                                                                        {metricExplanations[kpi.id].formula && (
-                                                                            <p className="text-gray-500 mt-1 font-mono bg-white px-2 py-1 rounded inline-block">
-                                                                                {t.benchmark.formula}: {metricExplanations[kpi.id].formula}
-                                                                            </p>
+                                                                {/* Explanation Content */}
+                                                                <div className={`overflow-hidden transition-all duration-300 ${openExplanations[kpi.id] ? 'max-h-[500px] opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                                                                    <div className="bg-gray-50 rounded-lg p-4 text-xs space-y-3 border border-gray-100">
+                                                                        {/* Definition */}
+                                                                        <div>
+                                                                            <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.definition}</h5>
+                                                                            <p className="text-gray-600">{kpiTranslation?.definition}</p>
+                                                                            {kpiTranslation?.formula && (
+                                                                                <p className="text-gray-500 mt-1 font-mono bg-white px-2 py-1 rounded inline-block">
+                                                                                    {t.benchmark.formula}: {kpiTranslation.formula}
+                                                                                </p>
+                                                                            )}
+                                                                        </div>
+
+                                                                        {/* Why it matters */}
+                                                                        <div>
+                                                                            <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.whyMatters}</h5>
+                                                                            <p className="text-gray-600">{kpiTranslation?.importance}</p>
+                                                                        </div>
+
+                                                                        {/* Best practices */}
+                                                                        {kpiTranslation?.bestPractices && (
+                                                                            <div>
+                                                                                <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.bestPractices}</h5>
+                                                                                <ul className="text-gray-600 space-y-1">
+                                                                                    {kpiTranslation.bestPractices.map((practice, idx) => (
+                                                                                        <li key={idx} className="flex items-start gap-2">
+                                                                                            <span className="text-brevo-green mt-0.5">•</span>
+                                                                                            <span>{practice}</span>
+                                                                                        </li>
+                                                                                    ))}
+                                                                                </ul>
+                                                                            </div>
                                                                         )}
-                                                                    </div>
-
-                                                                    {/* Why it matters */}
-                                                                    <div>
-                                                                        <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.whyMatters}</h5>
-                                                                        <p className="text-gray-600">{metricExplanations[kpi.id].importance}</p>
-                                                                    </div>
-
-                                                                    {/* Best practices */}
-                                                                    <div>
-                                                                        <h5 className="font-semibold text-gray-900 mb-1">{t.benchmark.bestPractices}</h5>
-                                                                        <ul className="text-gray-600 space-y-1">
-                                                                            {metricExplanations[kpi.id].bestPractices.map((practice, idx) => (
-                                                                                <li key={idx} className="flex items-start gap-2">
-                                                                                    <span className="text-brevo-green mt-0.5">•</span>
-                                                                                    <span>{practice}</span>
-                                                                                </li>
-                                                                            ))}
-                                                                        </ul>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    )}
+                                                        );
+                                                    })()}
                                                 </div>
                                             </div>
 

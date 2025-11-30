@@ -74,127 +74,437 @@
   "kpis": {
     "cac": {
       "name": "Customer Acquisition Cost (CAC)",
-      "description": "Gesamte Marketingausgaben geteilt durch Anzahl gewonnener Neukunden."
+      "description": "Gesamte Marketingausgaben geteilt durch Anzahl gewonnener Neukunden.",
+      "insight": "Kennen Sie Ihre Wachstumskosten.",
+      "definition": "Die Customer Acquisition Cost repräsentieren die Gesamtkosten zur Gewinnung eines neuen Kunden, einschließlich aller Marketing- und Vertriebsausgaben.",
+      "importance": "CAC beeinflusst direkt die Profitabilität und bestimmt, wie schnell Sie skalieren können. Steigende CAC sind oft das erste Anzeichen für Marktsättigung oder ineffiziente Ausgabenallokation.",
+      "formula": "Marketing- & Vertriebskosten ÷ Gewonnene Neukunden",
+      "bestPractices": [
+        "CAC nach Kanal und Kampagnentyp berechnen",
+        "Versteckte Kosten einbeziehen (Tools, Agenturen, Kreation)",
+        "CAC-Trends monatlich vergleichen",
+        "CAC-Veränderungen mit Marktbedingungen korrelieren"
+      ]
     },
     "roas": {
       "name": "Blended ROAS",
-      "description": "Gesamtumsatz geteilt durch gesamte Marketingausgaben."
+      "description": "Gesamtumsatz geteilt durch gesamte Marketingausgaben.",
+      "insight": "Werbeeffizienz messen.",
+      "definition": "Der Return on Ad Spend misst den Umsatz, der für jeden in Werbekampagnen investierten Euro generiert wird.",
+      "importance": "ROAS hilft bei der Bewertung der Kampagnenperformance und leitet die Budgetallokation. Er berücksichtigt jedoch nicht den Customer Lifetime Value oder organische Brand-Awareness-Effekte.",
+      "formula": "Werbeumsatz ÷ Werbeausgaben",
+      "bestPractices": [
+        "Unterschiedliche ROAS-Ziele nach Kampagnentyp definieren (Brand vs. Performance)",
+        "Attributionsfenster und Modelllimitierungen berücksichtigen",
+        "ROAS nicht auf Kosten des Volumens optimieren",
+        "Plattform-ROAS vs. tatsächlich gemessenen ROAS vergleichen"
+      ]
     },
     "marketing_spend": {
       "name": "Marketing Spend (% Revenue)",
-      "description": "Anteil des Umsatzes, der für Marketing aufgewendet wird."
+      "description": "Anteil des Umsatzes, der für Marketing aufgewendet wird.",
+      "insight": "Ihre Investition benchmarken.",
+      "definition": "Der Prozentsatz des Gesamtumsatzes, der für Marketingaktivitäten aufgewendet wird, einschließlich Paid Media, Content, Tools und Team.",
+      "importance": "Dieses Verhältnis hilft, Ihr Investitionsniveau mit Branchenstandards zu vergleichen und zeigt Ihre Wachstums-Reifephase an. Startups geben typischerweise mehr aus; reife Unternehmen optimieren die Effizienz.",
+      "formula": "Gesamtes Marketing-Budget ÷ Bruttoumsatz × 100",
+      "bestPractices": [
+        "Ziele an Wachstumsambitionen anpassen",
+        "Alle Marketingkosten einbeziehen, nicht nur Media",
+        "Mix zwischen Brand- und Performance-Ausgaben tracken",
+        "Saisonale Schwankungen bei Ausgabenquoten einplanen"
+      ]
     },
     "ltv_cac": {
       "name": "LTV:CAC Ratio",
-      "description": "Customer Lifetime Value geteilt durch Akquisitionskosten."
+      "description": "Customer Lifetime Value geteilt durch Akquisitionskosten.",
+      "insight": "Motor für nachhaltiges Wachstum.",
+      "definition": "Das LTV:CAC Ratio vergleicht den Lifetime Value eines Kunden (Gesamtumsatz über die Beziehungsdauer) mit den Kosten seiner Akquisition.",
+      "importance": "Dies ist vermutlich die kritischste Metrik für nachhaltiges Wachstum. Ein Verhältnis unter 3:1 deutet darauf hin, dass Sie zu viel für die Akquisition von Kunden ausgeben, die nicht genug Wert generieren. Über 5:1 unterinvestieren Sie möglicherweise in Wachstum.",
+      "formula": "LTV ÷ CAC",
+      "bestPractices": [
+        "LTV nach Kohorte tracken, nicht nur Durchschnitte",
+        "Alle Akquisitionskosten einbeziehen (Ads, Content, Sales)",
+        "Nach Kanal segmentieren, um beste Quellen zu identifizieren",
+        "Payback-Periode zusätzlich zum Ratio berücksichtigen"
+      ]
     },
     "mer": {
       "name": "Marketing Efficiency Ratio (MER)",
-      "description": "Gesamtumsatz geteilt durch gesamte Marketingausgaben."
+      "description": "Gesamtumsatz geteilt durch gesamte Marketingausgaben.",
+      "insight": "Wachstum und Profitabilität balancieren.",
+      "definition": "Das Marketing Efficiency Ratio misst den Gesamtumsatz pro ausgegebenem Marketing-Euro, einschließlich Paid- und Organic-Kanälen.",
+      "importance": "Im Gegensatz zum ROAS, der sich auf spezifische Kampagnen konzentriert, gibt MER einen ganzheitlichen Blick auf die Marketingeffizienz. Es hilft zu erkennen, wann organische Kanäle unterperformende Paid-Kanäle kompensieren.",
+      "formula": "Gesamtumsatz ÷ Gesamte Marketingausgaben",
+      "bestPractices": [
+        "MER parallel zum kanalspezifischen ROAS tracken",
+        "MER-Ziele basierend auf Ihrer Bruttomarge setzen",
+        "MER-Rückgang beim Skalieren überwachen (normal, aber zu managen)",
+        "MER zur Validierung der Gesamtstrategie-Effektivität nutzen"
+      ]
     },
     "conv_rate": {
       "name": "Conversion Rate",
-      "description": "Anteil der Besucher, die einen Kauf abschließen."
+      "description": "Anteil der Besucher, die einen Kauf abschließen.",
+      "insight": "Die König-Metrik im E-Commerce.",
+      "definition": "Die Conversion Rate misst den Prozentsatz der Besucher, die einen Kauf tätigen und zeigt die Gesamteffektivität Ihrer Website bei der Umwandlung von Besuchern in Kunden.",
+      "importance": "Selbst kleine Verbesserungen der Conversion Rate können erhebliche Auswirkungen auf den Umsatz haben. Es ist oft der rentabelste Hebel im Vergleich zur Traffic-Steigerung.",
+      "formula": "Bestellungen ÷ Sessions × 100",
+      "bestPractices": [
+        "Nach Traffic-Quelle und Gerätetyp segmentieren",
+        "Vorsicht beim Vergleich mit Branchen-Benchmarks (Definitionen variieren)",
+        "Auf Conversion Rate von Neu- vs. Wiederkehrenden Besuchern fokussieren",
+        "Systematisch kritische Journeys testen"
+      ]
     },
     "conv_desktop": {
       "name": "Desktop Conversion Rate",
-      "description": "Conversion Rate für Desktop-Nutzer."
+      "description": "Conversion Rate für Desktop-Nutzer.",
+      "insight": "Für High-Intent-Sessions optimieren.",
+      "definition": "Die Desktop Conversion Rate misst spezifisch den Prozentsatz der Desktop-Besucher, die einen Kauf abschließen.",
+      "importance": "Desktop-Nutzer haben typischerweise eine höhere Kaufabsicht und verbringen mehr Zeit mit der Recherche. Das Verständnis dieser Rate hilft bei der Priorisierung von UX-Optimierungen.",
+      "formula": "Desktop-Bestellungen ÷ Desktop-Sessions × 100",
+      "bestPractices": [
+        "Für große Bildschirme mit detaillierten Produktbildern optimieren",
+        "Vergleichstabellen und erweiterte Filter anbieten",
+        "Sicherstellen, dass der Checkout den Bildschirmplatz effektiv nutzt",
+        "Verschiedene Navigations-Layouts testen"
+      ]
     },
     "mobile_conv": {
       "name": "Mobile Conversion Rate",
-      "description": "Conversion Rate für Mobile-Nutzer."
+      "description": "Conversion Rate für Mobile-Nutzer.",
+      "insight": "Die Lücke zum Desktop schließen.",
+      "definition": "Die Mobile Conversion Rate misst den Prozentsatz der Smartphone-Besucher, die einen Kauf abschließen.",
+      "importance": "Mobile Traffic macht oft über 60% der Besuche aus, konvertiert aber typischerweise schlechter. Die Verbesserung dieser Rate ist eine wichtige Wachstumschance.",
+      "formula": "Mobile-Bestellungen ÷ Mobile-Sessions × 100",
+      "bestPractices": [
+        "Checkout maximal vereinfachen (Auto-fill, Apple/Google Pay)",
+        "Ladegeschwindigkeit optimieren (Ziel < 3 Sekunden)",
+        "Große, gut platzierte CTAs verwenden",
+        "Regelmäßig auf verschiedenen Geräten testen"
+      ]
     },
     "cart_abandon": {
       "name": "Cart Abandonment Rate",
-      "description": "Anteil der Warenkörbe, die vor dem Checkout abgebrochen werden."
+      "description": "Anteil der Warenkörbe, die vor dem Checkout abgebrochen werden.",
+      "insight": "Verlorenen Umsatz zurückgewinnen.",
+      "definition": "Die Cart Abandonment Rate misst den Prozentsatz der Käufer, die Artikel in den Warenkorb legen, aber den Kauf nicht abschließen.",
+      "importance": "Es ist eine Goldgrube potenzieller Einnahmen. Das Verständnis, warum Kunden abbrechen, ermöglicht Funnel-Optimierung und Verkaufsrückgewinnung durch Automation.",
+      "formula": "(Erstellte Warenkörbe - Bestellungen) ÷ Erstellte Warenkörbe × 100",
+      "bestPractices": [
+        "Mehrstufige Warenkorb-Abbruch-E-Mails implementieren",
+        "Warenkorb-Speicherung und Erinnerungen anbieten",
+        "Versandkosten frühzeitig transparent anzeigen",
+        "Checkout vereinfachen (Gastkauf, weniger Schritte)"
+      ]
     },
     "aov": {
       "name": "Average Order Value (AOV)",
-      "description": "Durchschnittlicher Umsatz pro Bestellung."
+      "description": "Durchschnittlicher Umsatz pro Bestellung.",
+      "insight": "Jede Transaktion maximieren.",
+      "definition": "Der Average Order Value repräsentiert den durchschnittlichen Betrag pro Bestellung, ein Schlüsselindikator für die Wertgenerierung pro Transaktion.",
+      "importance": "AOV zu steigern ist oft profitabler als neue Kunden zu gewinnen. Es ist ein direkter Hebel für die Rentabilität.",
+      "formula": "Gesamtumsatz ÷ Anzahl Bestellungen",
+      "bestPractices": [
+        "Strategische Versandkostenfrei-Schwellen implementieren",
+        "Relevante Bundles und Upsells anbieten",
+        "Cross-Sell-Produktempfehlungen nutzen",
+        "Verschiedene Pricing- und Promotionstrategien testen"
+      ]
     },
     "email_rev_share": {
       "name": "Email Revenue Share",
-      "description": "Umsatzanteil aus E-Mail-Marketing."
+      "description": "Umsatzanteil aus E-Mail-Marketing.",
+      "insight": "Ihr profitabelster Kanal.",
+      "definition": "Der Email Revenue Share misst den Prozentsatz des Gesamtumsatzes, der E-Mail-Kampagnen und -Automationen zugeordnet werden kann.",
+      "importance": "E-Mail bleibt der Marketingkanal mit dem besten ROI. Ein hoher Anteil zeigt eine engagierte Kundenbasis und eine reife Automationsstrategie.",
+      "formula": "E-Mail-Umsatz ÷ Gesamtumsatz × 100",
+      "bestPractices": [
+        "Promotionskampagnen und wertvollen Content ausbalancieren",
+        "Automations-Flows entwickeln (Welcome, Abandon, Post-Purchase)",
+        "Fein segmentieren für personalisierte Nachrichten",
+        "Multi-Touch-Attribution für realistische Sicht überwachen"
+      ]
     },
     "sms_rev_share": {
       "name": "SMS Revenue Share",
-      "description": "Umsatzanteil aus SMS-Marketing."
+      "description": "Umsatzanteil aus SMS-Marketing.",
+      "insight": "High-Conversion-Kanal nutzen.",
+      "definition": "Der SMS Revenue Share misst den Prozentsatz des Umsatzes, der SMS-Kampagnen und -Automationen zugeordnet werden kann.",
+      "importance": "SMS bietet außergewöhnliche Öffnungsraten (>90%) und funktioniert besonders gut für zeitkritische Angebote und Erinnerungen.",
+      "formula": "SMS-Umsatz ÷ Gesamtumsatz × 100",
+      "bestPractices": [
+        "Für Flash-Angebote und Dringlichkeit nutzen",
+        "In Automations-Journeys integrieren (Abandon, Lieferung)",
+        "Frequenzpräferenzen der Kunden respektieren",
+        "Mit E-Mail kombinieren für maximale Reichweite"
+      ]
     },
     "repeat_rate": {
       "name": "Repeat Purchase Rate",
-      "description": "Anteil der Kunden mit mehr als einem Kauf."
+      "description": "Anteil der Kunden mit mehr als einem Kauf.",
+      "insight": "Loyalität und Produktqualität.",
+      "definition": "Die Repeat Purchase Rate misst den Prozentsatz der Kunden, die mindestens einen zweiten Kauf tätigen.",
+      "importance": "Einen neuen Kunden zu gewinnen kostet 5-25x mehr als einen bestehenden zu halten. Diese Rate zeigt den wahren Wert Ihrer Kundenbasis.",
+      "formula": "Multi-Kauf-Kunden ÷ Gesamtkunden × 100",
+      "bestPractices": [
+        "Attraktives Treueprogramm einführen",
+        "Post-Purchase-Reaktivierungs-Flows entwickeln",
+        "Kohorten analysieren, um beste Profile zu identifizieren",
+        "Empfehlungen basierend auf Kaufhistorie personalisieren"
+      ]
     },
     "purchase_freq": {
       "name": "Purchase Frequency",
-      "description": "Durchschnittliche Anzahl Käufe pro Kunde pro Jahr."
+      "description": "Durchschnittliche Anzahl Käufe pro Kunde pro Jahr.",
+      "insight": "Engagement und Kaufverhalten.",
+      "definition": "Die Purchase Frequency repräsentiert die durchschnittliche Anzahl der Bestellungen pro Kunde über einen Zeitraum (typischerweise 12 Monate).",
+      "importance": "Die Steigerung der Kauffrequenz ist ein wichtiger Hebel für LTV-Wachstum. Sie spiegelt Kundenengagement und -zufriedenheit wider.",
+      "formula": "Gesamtbestellungen ÷ Einzigartige Kunden (über 12 Monate)",
+      "bestPractices": [
+        "Gründe für regelmäßige Wiederkehr schaffen (Neuheiten, limitierte Editionen)",
+        "Nachbestellungs-Automationen einrichten",
+        "Gamification und Belohnungsprogramme nutzen",
+        "Kaufzyklen nach Produktkategorie analysieren"
+      ]
     },
     "churn_rate": {
       "name": "Churn Rate",
-      "description": "Anteil der Kunden, die nicht mehr kaufen."
+      "description": "Anteil der Kunden, die nicht mehr kaufen.",
+      "insight": "Retention und Frühwarnung.",
+      "definition": "Die Churn Rate misst den Prozentsatz der Kunden, die über einen definierten Zeitraum keinen Kauf getätigt haben.",
+      "importance": "Churn zu reduzieren hat direkten Einfluss auf die Profitabilität. Warnsignale zu erkennen ermöglicht Intervention vor dem Kundenverlust.",
+      "formula": "Verlorene Kunden ÷ Gesamtkunden (Periodenbeginn) × 100",
+      "bestPractices": [
+        "Klar definieren, was ein 'verlorener' Kunde für Ihr Geschäft bedeutet",
+        "Automatisierte Reaktivierungskampagnen einrichten",
+        "Abwanderungsgründe durch Umfragen analysieren",
+        "Prädiktive Churn-Signale identifizieren und darauf reagieren"
+      ]
     },
     "ltv": {
       "name": "Customer Lifetime Value (LTV)",
-      "description": "Erwarteter Gesamtumsatz eines Kunden über die Kundenbeziehung."
+      "description": "Erwarteter Gesamtumsatz eines Kunden über die Kundenbeziehung.",
+      "insight": "Langfristiger Kundenwert.",
+      "definition": "Der LTV repräsentiert den Gesamtumsatz, den ein Kunde über die gesamte Beziehung zu Ihrer Marke generiert.",
+      "importance": "Das Verständnis des LTV ermöglicht die Bestimmung, wie viel in Akquisition investiert werden soll und welche Kundensegmente priorisiert werden sollten.",
+      "formula": "AOV × Kauffrequenz × Kundenlebensdauer",
+      "bestPractices": [
+        "LTV nach Kohorte und Akquisitionskanal berechnen",
+        "Kunden nach LTV-Level segmentieren für personalisierten Ansatz",
+        "In LTV-Steigerungsprogramme investieren",
+        "Prädiktiven LTV zur Akquisitionsoptimierung nutzen"
+      ]
     },
     "return_rate": {
       "name": "Return Rate",
-      "description": "Anteil der retournierten Bestellungen."
+      "description": "Anteil der retournierten Bestellungen.",
+      "insight": "Produktqualität und Kundenanpassung.",
+      "definition": "Die Return Rate misst den Prozentsatz der Bestellungen, die von Kunden retourniert werden.",
+      "importance": "Retouren beeinflussen direkt die Marge. Eine hohe Rate kann auf Probleme mit Qualität, Produktbeschreibung oder Größen hinweisen.",
+      "formula": "Retournierte Bestellungen ÷ Gesamtbestellungen × 100",
+      "bestPractices": [
+        "Produktbeschreibungen und Bilder verbessern",
+        "Detaillierte Größenratgeber anbieten",
+        "Retourengründe analysieren, um Probleme zu identifizieren",
+        "Retouren bei der Berechnung der Kundenprofitabilität berücksichtigen"
+      ]
     },
     "gross_margin": {
       "name": "Gross Margin",
-      "description": "Umsatz minus Wareneinsatz, in Prozent."
+      "description": "Umsatz minus Wareneinsatz, in Prozent.",
+      "insight": "Wirtschaftliche Gesundheit Ihres Geschäfts.",
+      "definition": "Die Gross Margin repräsentiert den Prozentsatz des Umsatzes nach Abzug der Wareneinsatzkosten.",
+      "importance": "Die Gross Margin bestimmt Ihre Fähigkeit, in Marketing und Operations zu investieren. Sie muss ausreichend sein, um alle anderen Kosten zu decken.",
+      "formula": "(Umsatz - Wareneinsatz) ÷ Umsatz × 100",
+      "bestPractices": [
+        "Marge nach Kategorie und Produkt überwachen",
+        "Marge in die Promotionsstrategie integrieren",
+        "Supply Chain zur Kostenoptimierung verbessern",
+        "Marge zur Definition von Marketingbudgets pro Produkt nutzen"
+      ]
     },
     "lead_conv": {
       "name": "Lead-to-Customer Rate",
-      "description": "Anteil der Leads, die zu Kunden werden."
+      "description": "Anteil der Leads, die zu Kunden werden.",
+      "insight": "Effizienz Ihres Sales-Funnels.",
+      "definition": "Die Lead-to-Customer Rate misst den Prozentsatz der erfassten Leads, die letztendlich zu zahlenden Kunden werden.",
+      "importance": "Diese Rate zeigt die kombinierte Effektivität Ihrer Marketing- und Vertriebsbemühungen. Sie hilft zu identifizieren, wo der Funnel Opportunities verliert.",
+      "formula": "Neukunden ÷ Gesamt-Leads × 100",
+      "bestPractices": [
+        "Leads effektiv von Anfang an qualifizieren",
+        "Automatisierte Nurturing-Sequenzen einrichten",
+        "Marketing und Vertrieb auf Lead-Qualifizierungsdefinition abstimmen",
+        "Journeys von konvertierten vs. verlorenen Leads analysieren"
+      ]
     },
     "sql_rate": {
       "name": "SQL Conversion Rate",
-      "description": "Anteil der MQLs, die zu Sales Qualified Leads werden."
+      "description": "Anteil der MQLs, die zu Sales Qualified Leads werden.",
+      "insight": "Qualität der Marketing-Qualifizierung.",
+      "definition": "Die SQL Conversion Rate misst, wie viele Marketing Qualified Leads vom Vertriebsteam als qualifizierte Opportunities akzeptiert werden.",
+      "importance": "Diese Rate zeigt die Abstimmung zwischen Marketing und Vertrieb. Eine niedrige Rate deutet auf Probleme mit Qualifizierungskriterien oder Lead-Qualität hin.",
+      "formula": "SQL ÷ MQL × 100",
+      "bestPractices": [
+        "Klare, gemeinsame Kriterien für MQL → SQL definieren",
+        "Regelmäßige Feedback-Loops zwischen Vertrieb und Marketing einrichten",
+        "Lead Scoring zur Priorisierung der besten Leads nutzen",
+        "Attribute der am besten konvertierenden MQLs analysieren"
+      ]
     },
     "sales_cycle": {
       "name": "Sales Cycle Length",
-      "description": "Durchschnittliche Tage vom Erstkontakt bis zum Abschluss."
+      "description": "Durchschnittliche Tage vom Erstkontakt bis zum Abschluss.",
+      "insight": "Verkaufsgeschwindigkeit und Vorhersagbarkeit.",
+      "definition": "Die Sales Cycle Length misst die durchschnittliche Zeit zwischen dem ersten Kontakt mit einem Prospect und dem Verkaufsabschluss.",
+      "importance": "Ein kürzerer Zyklus verbessert die Pipeline-Vorhersagbarkeit und reduziert Vertriebskosten. Das Verständnis von Verlängerungsfaktoren ermöglicht Prozessoptimierung.",
+      "formula": "Summe der Deal-Dauern ÷ Anzahl Deals",
+      "bestPractices": [
+        "Schritte mit der größten Friction identifizieren",
+        "Richtigen Content zum richtigen Zeitpunkt im Zyklus bereitstellen",
+        "Strenger qualifizieren, um auf Deals mit hoher Wahrscheinlichkeit zu fokussieren",
+        "Zyklusunterschiede nach Kundensegment analysieren"
+      ]
     },
     "nrr": {
       "name": "Net Revenue Retention (NRR)",
-      "description": "Umsatz von Bestandskunden inklusive Expansion Revenue."
+      "description": "Umsatz von Bestandskunden inklusive Expansion Revenue.",
+      "insight": "Wachstum aus Ihrer Kundenbasis.",
+      "definition": "NRR misst den Prozentsatz des wiederkehrenden Umsatzes von Bestandskunden, einschließlich Upsells und Expansion, abzüglich Churn und Downgrades.",
+      "importance": "Ein NRR über 100% bedeutet, dass Sie auch ohne Neukunden wachsen. Es ist der ultimative Indikator für die Gesundheit eines SaaS-Geschäftsmodells.",
+      "formula": "(Initial-MRR + Expansion - Churn - Contraction) ÷ Initial-MRR × 100",
+      "bestPractices": [
+        "In Customer Success investieren, um Churn zu reduzieren",
+        "Natürliche Upsell-Journeys entwickeln",
+        "Warnsignale für Downgrades überwachen",
+        "NRR nach Kohorte und Tarif segmentieren"
+      ]
     },
     "expansion_revenue": {
       "name": "Expansion Revenue",
-      "description": "Umsatz aus Upselling und Cross-Selling bei Bestandskunden."
+      "description": "Umsatz aus Upselling und Cross-Selling bei Bestandskunden.",
+      "insight": "Wachstum zu geringeren Kosten.",
+      "definition": "Expansion Revenue repräsentiert zusätzliche Einnahmen von Bestandskunden durch Upsells, Cross-Sells oder Nutzungserweiterung.",
+      "importance": "Bestandskunden zu entwickeln ist viel günstiger als neue zu gewinnen. Es ist ein profitabler Wachstumsmotor.",
+      "formula": "Summe der zusätzlichen Umsätze von Bestandskunden",
+      "bestPractices": [
+        "Expansion-Trigger identifizieren (Nutzung, Zufriedenheit)",
+        "Customer Success-Teams für Upsell-Opportunities schulen",
+        "Natürliche Upgrade-Pfade im Produkt schaffen",
+        "Expansion genauso messen und belohnen wie Akquisition"
+      ]
     },
     "arr_growth": {
       "name": "ARR Growth Rate",
-      "description": "Jährliche Wachstumsrate des Annual Recurring Revenue."
+      "description": "Jährliche Wachstumsrate des Annual Recurring Revenue.",
+      "insight": "Gesamte Wachstumsgeschwindigkeit.",
+      "definition": "Die ARR Growth Rate misst die Steigerung des jährlichen wiederkehrenden Umsatzes im Jahresvergleich.",
+      "importance": "ARR Growth ist der Schlüsselindikator für SaaS-Performance. Er leitet Investment- und Bewertungsentscheidungen.",
+      "formula": "(Aktuelles ARR - ARR Vorjahr) ÷ ARR Vorjahr × 100",
+      "bestPractices": [
+        "Wachstum aufschlüsseln (new, expansion, churn)",
+        "Mit Benchmarks nach Ihrer Phase und Branche vergleichen",
+        "Verhältnis von Akquisition vs. Expansion überwachen",
+        "Auf gleitenden 12-Monatsbasis projizieren, um Saisonalität auszugleichen"
+      ]
     },
     "cac_payback": {
       "name": "CAC Payback Period",
-      "description": "Monate bis zur Amortisation der Kundenakquisitionskosten."
+      "description": "Monate bis zur Amortisation der Kundenakquisitionskosten.",
+      "insight": "Geschwindigkeit der Investitionsrendite.",
+      "definition": "Die CAC Payback Period gibt an, wie viele Monate es dauert, bis ein Kunde genug Marge generiert, um seine Akquisitionskosten zu decken.",
+      "importance": "Diese Zeitspanne beeinflusst direkt Ihren Kapitalbedarf und die Nachhaltigkeit Ihres Wachstums. Ein kurzer Payback ermöglicht schnellere Reinvestition.",
+      "formula": "CAC ÷ (Monatlicher ARPU × Bruttomarge)",
+      "bestPractices": [
+        "Payback < 12 Monate für gesundes Wachstum anstreben",
+        "Nach Segment und Akquisitionskanal analysieren",
+        "Onboarding optimieren, um Monetarisierung zu beschleunigen",
+        "Kundenservice-Kosten in die Berechnung einbeziehen"
+      ]
     },
     "email_open_rate": {
       "name": "Email Open Rate",
-      "description": "Anteil der zugestellten E-Mails, die geöffnet werden."
+      "description": "Anteil der zugestellten E-Mails, die geöffnet werden.",
+      "insight": "Relevanz Ihrer Betreffzeilen und Timing.",
+      "definition": "Die Open Rate misst den Prozentsatz der Empfänger, die Ihre E-Mails öffnen, von denen, die sie erhalten haben.",
+      "importance": "Es ist der erste Engagement-Indikator. Er spiegelt die Qualität Ihrer Betreffzeilen, Ihre Absender-Reputation und die wahrgenommene Relevanz wider.",
+      "formula": "Geöffnete E-Mails ÷ Zugestellte E-Mails × 100",
+      "bestPractices": [
+        "Betreffzeilen systematisch testen (A/B-Test)",
+        "Sendezeiten nach Segment optimieren",
+        "Absender und Preheader personalisieren",
+        "Saubere Liste pflegen, um Zustellbarkeit zu erhalten"
+      ]
     },
     "email_click_rate": {
       "name": "Email Click Rate",
-      "description": "Anteil der zugestellten E-Mails, die einen Klick erhalten."
+      "description": "Anteil der zugestellten E-Mails, die einen Klick erhalten.",
+      "insight": "Engagement und Content-Relevanz.",
+      "definition": "Die Click Rate misst den Prozentsatz der Empfänger, die auf mindestens einen Link in Ihrer E-Mail klicken.",
+      "importance": "Der Klick ist die Aktion, die zur Conversion führt. Eine gute Click Rate zeigt relevanten Content und effektive CTAs.",
+      "formula": "Geklickte E-Mails ÷ Zugestellte E-Mails × 100",
+      "bestPractices": [
+        "Klaren, sichtbaren CTA haben",
+        "Content nach Präferenzen personalisieren",
+        "Für Mobile optimieren (große Buttons)",
+        "Verschiedene Content-Formate testen"
+      ]
     },
     "email_ctor": {
       "name": "Click-to-Open Rate (CTOR)",
-      "description": "Anteil der geöffneten E-Mails, die einen Klick erhalten."
+      "description": "Anteil der geöffneten E-Mails, die einen Klick erhalten.",
+      "insight": "E-Mail-Content-Qualität.",
+      "definition": "Der CTOR misst den Prozentsatz der Personen, die nach dem Öffnen Ihrer E-Mail klicken und isoliert damit die Content-Performance.",
+      "importance": "Im Gegensatz zur globalen Click Rate bewertet der CTOR spezifisch die Content-Qualität, unabhängig von Betreffzeile und Zustellbarkeit.",
+      "formula": "Geklickte E-Mails ÷ Geöffnete E-Mails × 100",
+      "bestPractices": [
+        "Content mit dem Versprechen der Betreffzeile abstimmen",
+        "Scannable Design mit klarer visueller Hierarchie verwenden",
+        "Wichtige Elemente above the fold platzieren",
+        "Verschiedene Layouts und Content-Längen testen"
+      ]
     },
     "email_unsub_rate": {
       "name": "Unsubscribe Rate",
-      "description": "Anteil der Empfänger, die sich pro Kampagne abmelden."
+      "description": "Anteil der Empfänger, die sich pro Kampagne abmelden.",
+      "insight": "Werbedruck und Relevanz.",
+      "definition": "Die Unsubscribe Rate misst den Prozentsatz der Empfänger, die sich nach einer Kampagne von Ihren E-Mails abmelden.",
+      "importance": "Eine hohe Rate signalisiert übermäßigen Werbedruck oder mangelnde Relevanz. Sie beeinflusst auch Ihre Absender-Reputation.",
+      "formula": "Abmeldungen ÷ Zugestellte E-Mails × 100",
+      "bestPractices": [
+        "Frequenzpräferenzen der Abonnenten respektieren",
+        "Segmentieren, um relevanten Content zu senden",
+        "Präferenzoptionen statt kompletter Abmeldung anbieten",
+        "Spitzen nach bestimmten Kampagnentypen überwachen"
+      ]
     },
     "email_bounce_rate": {
       "name": "Bounce Rate",
-      "description": "Anteil der E-Mails, die nicht zugestellt werden können."
+      "description": "Anteil der E-Mails, die nicht zugestellt werden können.",
+      "insight": "Qualität Ihrer Datenbank.",
+      "definition": "Die Bounce Rate misst den Prozentsatz der E-Mails, die den Posteingang des Empfängers nicht erreichen.",
+      "importance": "Eine hohe Bounce Rate schadet Ihrer Absender-Reputation und kann die Zustellbarkeit aller Ihrer Kampagnen beeinträchtigen.",
+      "formula": "Gebounced E-Mails ÷ Gesendete E-Mails × 100",
+      "bestPractices": [
+        "E-Mail-Validierung bei der Anmeldung implementieren",
+        "Ungültige Adressen regelmäßig bereinigen",
+        "Soft Bounces (temporär) und Hard Bounces (permanent) unterscheiden",
+        "Double Opt-in für Neuanmeldungen verwenden"
+      ]
     },
     "email_deliverability": {
       "name": "Deliverability Rate",
-      "description": "Anteil der E-Mails, die erfolgreich im Posteingang zugestellt werden."
+      "description": "Anteil der E-Mails, die erfolgreich im Posteingang zugestellt werden.",
+      "insight": "Absender-Reputation und Listen-Hygiene.",
+      "definition": "Die Deliverability Rate misst den Prozentsatz der E-Mails, die tatsächlich im Posteingang ankommen (nicht im Spam).",
+      "importance": "Ohne gute Zustellbarkeit ist alles andere nutzlos. Es ist das Fundament der E-Mail-Performance.",
+      "formula": "In Inbox zugestellte E-Mails ÷ Gesendete E-Mails × 100",
+      "bestPractices": [
+        "Domains authentifizieren (SPF, DKIM, DMARC)",
+        "Saubere, engagierte Liste pflegen",
+        "Dedizierte Subdomain für Marketing-E-Mails verwenden",
+        "Spam-Platzierungen mit dedizierten Tools überwachen"
+      ]
     }
   },
   "benchmark": {
