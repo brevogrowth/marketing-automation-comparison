@@ -237,7 +237,41 @@
     "subtitle": "Ces experts du secteur ont collabor\u00e9 \u00e0 la cr\u00e9ation de ce r\u00e9f\u00e9rentiel.",
     "cartelis": "Cabinet de conseil op\u00e9rationnel sp\u00e9cialis\u00e9 en strat\u00e9gie data et CRM. A contribu\u00e9 \u00e0 d\u00e9finir la m\u00e9thodologie et la segmentation sectorielle.",
     "epsilon": "Leader en technologie marketing pour l'engagement client personnalis\u00e9. A contribu\u00e9 aux standards d'acquisition et de r\u00e9tention.",
-    "niji": "Cabinet fran\u00e7ais de conseil et technologie en transformation digitale. A fourni les benchmarks de conversion e-commerce et insights UX."
+    "niji": "Cabinet fran\u00e7ais de conseil et technologie en transformation digitale. A fourni les benchmarks de conversion e-commerce et insights UX.",
+    "expertsTitle": "Experts du march\u00e9",
+    "expertsSubtitle": "Leaders du secteur qui ont contribu\u00e9 \u00e0 valider nos benchmarks.",
+    "experts": {
+      "expert1": {
+        "name": "Sophie Martin",
+        "role": "Directrice Croissance E-commerce",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert2": {
+        "name": "Thomas Dubois",
+        "role": "Strat\u00e8ge CRM & R\u00e9tention",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert3": {
+        "name": "Marie Laurent",
+        "role": "Experte Marketing Automation",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert4": {
+        "name": "Pierre Bernard",
+        "role": "Responsable Data & Analytics",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert5": {
+        "name": "Claire Moreau",
+        "role": "Consultante Exp\u00e9rience Client",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert6": {
+        "name": "Antoine Petit",
+        "role": "Directeur Performance Marketing",
+        "linkedin": "https://www.linkedin.com/in/"
+      }
+    }
   },
   "cta": {
     "title": "Pr\u00eat \u00e0 transformer vos insights en croissance ?",

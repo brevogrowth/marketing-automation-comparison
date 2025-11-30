@@ -237,7 +237,41 @@
     "subtitle": "Estos expertos del sector colaboraron en la construcci\u00f3n de este marco de referencia.",
     "cartelis": "Consultora operativa especializada en estrategia de datos y CRM. Ayud\u00f3 a definir la metodolog\u00eda de benchmark y segmentaci\u00f3n sectorial.",
     "epsilon": "L\u00edder en tecnolog\u00eda de marketing para engagement personalizado. Contribuy\u00f3 con est\u00e1ndares de adquisici\u00f3n y retenci\u00f3n.",
-    "niji": "Empresa francesa de consultor\u00eda y tecnolog\u00eda en transformaci\u00f3n digital. Proporcion\u00f3 benchmarks de conversi\u00f3n e-commerce e insights UX."
+    "niji": "Empresa francesa de consultor\u00eda y tecnolog\u00eda en transformaci\u00f3n digital. Proporcion\u00f3 benchmarks de conversi\u00f3n e-commerce e insights UX.",
+    "expertsTitle": "Expertos del mercado",
+    "expertsSubtitle": "L\u00edderes del sector que contribuyeron a validar nuestros benchmarks.",
+    "experts": {
+      "expert1": {
+        "name": "Sophie Martin",
+        "role": "Directora de Crecimiento E-commerce",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert2": {
+        "name": "Thomas Dubois",
+        "role": "Estratega CRM y Retenci\u00f3n",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert3": {
+        "name": "Marie Laurent",
+        "role": "Experta en Marketing Automation",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert4": {
+        "name": "Pierre Bernard",
+        "role": "Responsable de Data y Analytics",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert5": {
+        "name": "Claire Moreau",
+        "role": "Consultora Experiencia de Cliente",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert6": {
+        "name": "Antoine Petit",
+        "role": "Director de Performance Marketing",
+        "linkedin": "https://www.linkedin.com/in/"
+      }
+    }
   },
   "cta": {
     "title": "\u00bfListo para convertir insights en crecimiento?",

@@ -26,9 +26,7 @@ export const Header: React.FC = () => {
             <span className="hidden sm:block text-sm font-medium text-white">{t.header.title}</span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="bg-white rounded-lg">
-              <LanguageSelector />
-            </div>
+            <LanguageSelector />
             <a
               href="https://www.brevo.com/contact/"
               target="_blank"

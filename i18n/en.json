@@ -237,7 +237,41 @@
     "subtitle": "These industry experts collaborated on building this benchmark framework.",
     "cartelis": "Operational consulting firm specializing in data strategy and CRM. Helped define benchmark methodology and industry segmentation.",
     "epsilon": "Marketing technology leader enabling personalized customer engagement. Contributed acquisition and retention metrics standards.",
-    "niji": "French digital transformation consulting and technology company. Provided e-commerce conversion benchmarks and UX insights."
+    "niji": "French digital transformation consulting and technology company. Provided e-commerce conversion benchmarks and UX insights.",
+    "expertsTitle": "Market Experts",
+    "expertsSubtitle": "Industry leaders who contributed their expertise to validate our benchmarks.",
+    "experts": {
+      "expert1": {
+        "name": "Sophie Martin",
+        "role": "E-commerce Growth Director",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert2": {
+        "name": "Thomas Dubois",
+        "role": "CRM & Retention Strategist",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert3": {
+        "name": "Marie Laurent",
+        "role": "Marketing Automation Expert",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert4": {
+        "name": "Pierre Bernard",
+        "role": "Data & Analytics Lead",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert5": {
+        "name": "Claire Moreau",
+        "role": "Customer Experience Consultant",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      "expert6": {
+        "name": "Antoine Petit",
+        "role": "Performance Marketing Director",
+        "linkedin": "https://www.linkedin.com/in/"
+      }
+    }
   },
   "cta": {
     "title": "Ready to turn insights into growth?",
