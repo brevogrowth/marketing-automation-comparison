@@ -240,6 +240,58 @@
         "Mit E-Mail kombinieren für maximale Reichweite"
       ]
     },
+    "push_rev_share": {
+      "name": "Push Notifications Revenue Share",
+      "description": "Umsatzanteil aus Push-Benachrichtigungen.",
+      "definition": "Der Push Revenue Share misst den Prozentsatz des Gesamtumsatzes, der Push-Benachrichtigungs-Kampagnen über mobile Apps oder Web-Browser zugeordnet werden kann.",
+      "importance": "Push-Benachrichtigungen bieten sofortige Zustellung mit hoher Sichtbarkeit. Sie sind ideal für App-basierte Retailers, um sofortiges Engagement und Re-Engagement zu fördern.",
+      "formula": "Push-Umsatz ÷ Gesamtumsatz × 100",
+      "bestPractices": [
+        "Benachrichtigungen basierend auf Nutzerverhalten personalisieren",
+        "Rich Media (Bilder, Buttons) wenn möglich nutzen",
+        "Nutzerpräferenzen und Zeitzonen respektieren",
+        "Optimale Sendezeiten für Ihre Zielgruppe testen"
+      ]
+    },
+    "social_rev_share": {
+      "name": "Social Media Revenue Share",
+      "description": "Umsatzanteil aus Social-Media-Kanälen.",
+      "definition": "Der Social Media Revenue Share misst den Prozentsatz des Gesamtumsatzes, der Social-Media-Marketing zugeordnet werden kann (organische Posts, Social Commerce, Influencer-Partnerschaften).",
+      "importance": "Social Media treibt Discovery und Brand Awareness, besonders bei jüngeren Zielgruppen. Es wird zunehmend zum direkten Verkaufskanal durch Social-Commerce-Funktionen.",
+      "formula": "Social-Umsatz ÷ Gesamtumsatz × 100",
+      "bestPractices": [
+        "Nativen Content für jede Plattform erstellen",
+        "Shopping-Funktionen auf Instagram/Facebook/TikTok aktivieren",
+        "Attribution jenseits des Last-Click messen",
+        "User-Generated-Content-Strategie aufbauen"
+      ]
+    },
+    "paid_rev_share": {
+      "name": "Paid Advertising Revenue Share",
+      "description": "Umsatzanteil aus bezahlter Werbung.",
+      "definition": "Der Paid Advertising Revenue Share misst den Prozentsatz des Gesamtumsatzes, der bezahlten Werbekanälen zugeordnet werden kann (Search Ads, Display Ads, Social Ads, Retargeting).",
+      "importance": "Bezahlte Werbung bietet vorhersagbares, skalierbares Wachstum, erfordert aber sorgfältiges ROAS-Monitoring. Übermäßige Abhängigkeit von Paid kann Margen erodieren.",
+      "formula": "Paid-Umsatz ÷ Gesamtumsatz × 100",
+      "bestPractices": [
+        "Plattformen diversifizieren, um Risiko zu reduzieren",
+        "Prospecting und Retargeting ausbalancieren",
+        "CAC-Trends pro Kanal überwachen",
+        "Paid- und CRM-Strategien für kohärente Journeys integrieren"
+      ]
+    },
+    "organic_rev_share": {
+      "name": "Organic Search Revenue Share",
+      "description": "Umsatzanteil aus organischer Suche (SEO).",
+      "definition": "Der Organic Search Revenue Share misst den Prozentsatz des Gesamtumsatzes, der organischem Suchtraffic zugeordnet werden kann (unbezahlte Suchmaschinenergebnisse).",
+      "importance": "Organische Suche liefert nachhaltigen, High-Intent-Traffic ohne Mediakosten. Starkes SEO reduziert CAC und baut langfristigen Wettbewerbsvorteil auf.",
+      "formula": "Organic-Search-Umsatz ÷ Gesamtumsatz × 100",
+      "bestPractices": [
+        "In qualitativ hochwertigen Content investieren, der auf Kaufabsicht-Keywords zielt",
+        "Produktseiten für die Suche optimieren",
+        "Domain-Autorität mit relevanten Backlinks aufbauen",
+        "Rankings und organischen Traffic regelmäßig überwachen"
+      ]
+    },
     "repeat_rate": {
       "name": "Repeat Purchase Rate",
       "description": "Anteil der Kunden mit mehr als einem Kauf.",

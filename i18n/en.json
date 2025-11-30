@@ -240,6 +240,58 @@
         "Use for transactional updates and flash sales"
       ]
     },
+    "push_rev_share": {
+      "name": "Push Notifications Revenue Share",
+      "description": "Percentage of revenue from push notifications.",
+      "definition": "The percentage of total revenue attributed to push notification campaigns sent via mobile app or web browser.",
+      "importance": "Push notifications offer instant delivery with high visibility. They're ideal for app-based retailers to drive immediate engagement and re-engagement.",
+      "formula": "Push-Attributed Revenue ÷ Total Revenue × 100",
+      "bestPractices": [
+        "Personalize notifications based on user behavior",
+        "Use rich media (images, buttons) when available",
+        "Respect user preferences and time zones",
+        "Test optimal sending times for your audience"
+      ]
+    },
+    "social_rev_share": {
+      "name": "Social Media Revenue Share",
+      "description": "Percentage of revenue from social media channels.",
+      "definition": "The percentage of total revenue attributed to social media marketing (organic posts, social commerce, influencer partnerships).",
+      "importance": "Social media drives discovery and brand awareness, especially for younger demographics. It's increasingly becoming a direct sales channel with social commerce features.",
+      "formula": "Social-Attributed Revenue ÷ Total Revenue × 100",
+      "bestPractices": [
+        "Focus on platforms where your audience is most active",
+        "Invest in shoppable content and social commerce",
+        "Balance organic content with paid social advertising",
+        "Leverage user-generated content and reviews"
+      ]
+    },
+    "paid_rev_share": {
+      "name": "Paid Advertising Revenue Share",
+      "description": "Percentage of revenue from paid advertising.",
+      "definition": "The percentage of total revenue attributed to paid advertising channels (search ads, display ads, social ads, retargeting).",
+      "importance": "Paid advertising provides predictable, scalable growth but requires careful ROAS monitoring. Over-reliance on paid can erode margins.",
+      "formula": "Paid-Attributed Revenue ÷ Total Revenue × 100",
+      "bestPractices": [
+        "Diversify across multiple paid channels",
+        "Implement proper attribution tracking",
+        "Balance paid acquisition with owned channel development",
+        "Regularly optimize campaigns based on ROAS data"
+      ]
+    },
+    "organic_rev_share": {
+      "name": "Organic Search Revenue Share",
+      "description": "Percentage of revenue from organic search (SEO).",
+      "definition": "The percentage of total revenue attributed to organic search traffic (non-paid search engine results).",
+      "importance": "Organic search provides sustainable, high-intent traffic with no media cost. Strong SEO reduces CAC and builds long-term competitive advantage.",
+      "formula": "Organic-Search-Attributed Revenue ÷ Total Revenue × 100",
+      "bestPractices": [
+        "Invest in content marketing and technical SEO",
+        "Optimize product pages for search intent",
+        "Build quality backlinks through PR and partnerships",
+        "Monitor and improve Core Web Vitals scores"
+      ]
+    },
     "repeat_rate": {
       "name": "Repeat Purchase Rate",
       "description": "Percentage of customers who make more than one purchase.",

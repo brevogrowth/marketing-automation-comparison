@@ -142,11 +142,6 @@ const BenchmarkGridComponent = ({
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {(() => {
-                                                        const kpiTranslation = t.kpis[kpi.id as keyof typeof t.kpis];
-                                                        const insight = kpiTranslation && 'insight' in kpiTranslation ? (kpiTranslation as { insight?: string }).insight : range.insight;
-                                                        return <p className="text-xs text-gray-500 mb-2">{insight}</p>;
-                                                    })()}
 
                                                     {/* Why this metric? Toggle */}
                                                     {(() => {

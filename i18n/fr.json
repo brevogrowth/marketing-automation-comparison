@@ -240,6 +240,58 @@
         "Combiner avec l'email pour maximiser la portée"
       ]
     },
+    "push_rev_share": {
+      "name": "Part CA Push Notifications",
+      "description": "Pourcentage du CA provenant des notifications push.",
+      "definition": "La part du CA Push mesure le pourcentage du chiffre d'affaires attribuable aux campagnes de notifications push envoyées via application mobile ou navigateur web.",
+      "importance": "Les notifications push offrent une livraison instantanée avec une haute visibilité. Elles sont idéales pour les retailers avec application mobile pour stimuler l'engagement immédiat et la réactivation.",
+      "formula": "CA Push ÷ CA Total × 100",
+      "bestPractices": [
+        "Personnaliser les notifications selon le comportement utilisateur",
+        "Utiliser du contenu enrichi (images, boutons) quand disponible",
+        "Respecter les préférences et fuseaux horaires des utilisateurs",
+        "Tester les horaires d'envoi optimaux pour votre audience"
+      ]
+    },
+    "social_rev_share": {
+      "name": "Part CA Réseaux Sociaux",
+      "description": "Pourcentage du CA provenant des réseaux sociaux.",
+      "definition": "La part du CA réseaux sociaux mesure le pourcentage du chiffre d'affaires attribuable au marketing sur les réseaux sociaux (posts organiques, social commerce, partenariats influenceurs).",
+      "importance": "Les réseaux sociaux stimulent la découverte et la notoriété de marque, particulièrement auprès des jeunes audiences. Ils deviennent de plus en plus un canal de vente directe avec les fonctionnalités de social commerce.",
+      "formula": "CA Réseaux Sociaux ÷ CA Total × 100",
+      "bestPractices": [
+        "Créer du contenu natif adapté à chaque plateforme",
+        "Activer les fonctionnalités shopping sur Instagram/Facebook/TikTok",
+        "Mesurer l'attribution au-delà du dernier clic",
+        "Construire une stratégie de contenu généré par les utilisateurs (UGC)"
+      ]
+    },
+    "paid_rev_share": {
+      "name": "Part CA Publicité Payante",
+      "description": "Pourcentage du CA provenant de la publicité payante.",
+      "definition": "La part du CA publicité payante mesure le pourcentage du chiffre d'affaires attribuable aux canaux publicitaires payants (search ads, display, social ads, retargeting).",
+      "importance": "La publicité payante offre une croissance prévisible et scalable mais nécessite un suivi rigoureux du ROAS. Une dépendance excessive au paid peut éroder les marges.",
+      "formula": "CA Paid ÷ CA Total × 100",
+      "bestPractices": [
+        "Diversifier les plateformes pour réduire le risque",
+        "Équilibrer prospection et retargeting",
+        "Monitorer les tendances CAC par canal",
+        "Intégrer les stratégies paid et CRM pour des parcours cohérents"
+      ]
+    },
+    "organic_rev_share": {
+      "name": "Part CA Référencement Naturel",
+      "description": "Pourcentage du CA provenant du référencement naturel (SEO).",
+      "definition": "La part du CA SEO mesure le pourcentage du chiffre d'affaires attribuable au trafic de recherche organique (résultats non-payants des moteurs de recherche).",
+      "importance": "Le référencement naturel génère un trafic durable et à forte intention sans coût média. Un bon SEO réduit le CAC et construit un avantage compétitif long terme.",
+      "formula": "CA SEO ÷ CA Total × 100",
+      "bestPractices": [
+        "Investir dans du contenu de qualité ciblant des mots-clés à intention d'achat",
+        "Optimiser les pages produits pour la recherche",
+        "Construire une autorité de domaine avec des backlinks pertinents",
+        "Monitorer les positions et le trafic organique régulièrement"
+      ]
+    },
     "repeat_rate": {
       "name": "Taux de réachat",
       "description": "Pourcentage de clients qui effectuent plus d'un achat.",

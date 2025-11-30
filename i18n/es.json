@@ -240,6 +240,58 @@
         "Combinar con email para maximizar alcance"
       ]
     },
+    "push_rev_share": {
+      "name": "Cuota de ingresos Push Notifications",
+      "description": "Porcentaje de ingresos por notificaciones push.",
+      "definition": "La cuota de ingresos Push mide el porcentaje de ingresos totales atribuibles a campañas de notificaciones push enviadas a través de aplicación móvil o navegador web.",
+      "importance": "Las notificaciones push ofrecen entrega instantánea con alta visibilidad. Son ideales para retailers con app móvil para impulsar engagement inmediato y reactivación.",
+      "formula": "Ingresos Push ÷ Ingresos Totales × 100",
+      "bestPractices": [
+        "Personalizar notificaciones según el comportamiento del usuario",
+        "Usar rich media (imágenes, botones) cuando sea posible",
+        "Respetar preferencias de usuario y zonas horarias",
+        "Probar horarios de envío óptimos para tu audiencia"
+      ]
+    },
+    "social_rev_share": {
+      "name": "Cuota de ingresos Redes Sociales",
+      "description": "Porcentaje de ingresos de canales de redes sociales.",
+      "definition": "La cuota de ingresos de redes sociales mide el porcentaje de ingresos totales atribuibles al marketing en redes sociales (posts orgánicos, social commerce, partnerships con influencers).",
+      "importance": "Las redes sociales impulsan el descubrimiento y la notoriedad de marca, especialmente entre audiencias jóvenes. Se están convirtiendo cada vez más en un canal de venta directa con funcionalidades de social commerce.",
+      "formula": "Ingresos Social ÷ Ingresos Totales × 100",
+      "bestPractices": [
+        "Crear contenido nativo para cada plataforma",
+        "Activar funcionalidades de shopping en Instagram/Facebook/TikTok",
+        "Medir atribución más allá del último clic",
+        "Construir una estrategia de contenido generado por usuarios (UGC)"
+      ]
+    },
+    "paid_rev_share": {
+      "name": "Cuota de ingresos Publicidad Pagada",
+      "description": "Porcentaje de ingresos de publicidad pagada.",
+      "definition": "La cuota de ingresos de publicidad pagada mide el porcentaje de ingresos totales atribuibles a canales de publicidad pagada (search ads, display ads, social ads, retargeting).",
+      "importance": "La publicidad pagada proporciona crecimiento predecible y escalable pero requiere monitoreo cuidadoso del ROAS. La dependencia excesiva del paid puede erosionar los márgenes.",
+      "formula": "Ingresos Paid ÷ Ingresos Totales × 100",
+      "bestPractices": [
+        "Diversificar plataformas para reducir el riesgo",
+        "Equilibrar prospección y retargeting",
+        "Monitorear tendencias de CAC por canal",
+        "Integrar estrategias paid y CRM para recorridos coherentes"
+      ]
+    },
+    "organic_rev_share": {
+      "name": "Cuota de ingresos SEO",
+      "description": "Porcentaje de ingresos de búsqueda orgánica (SEO).",
+      "definition": "La cuota de ingresos SEO mide el porcentaje de ingresos totales atribuibles al tráfico de búsqueda orgánica (resultados no pagados de motores de búsqueda).",
+      "importance": "La búsqueda orgánica proporciona tráfico sostenible y de alta intención sin coste de medios. Un buen SEO reduce el CAC y construye ventaja competitiva a largo plazo.",
+      "formula": "Ingresos Orgánicos ÷ Ingresos Totales × 100",
+      "bestPractices": [
+        "Invertir en contenido de calidad orientado a keywords de intención de compra",
+        "Optimizar páginas de producto para búsqueda",
+        "Construir autoridad de dominio con backlinks relevantes",
+        "Monitorear posiciones y tráfico orgánico regularmente"
+      ]
+    },
     "repeat_rate": {
       "name": "Tasa de recompra",
       "description": "Porcentaje de clientes que realizan más de una compra.",
