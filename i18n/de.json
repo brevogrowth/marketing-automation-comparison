@@ -570,7 +570,10 @@
     "whyMatters": "Warum ist das wichtig?",
     "bestPractices": "Best Practices",
     "selectToAnalyze": "Zur Analyse auswählen",
-    "moveSlider": "Schieberegler bewegen um Ihren Wert einzugeben"
+    "moveSlider": "Schieberegler bewegen um Ihren Wert einzugeben",
+    "microFeedbackGood": "✓ Gute Ergebnisse",
+    "microFeedbackAverage": "→ Verbesserungspotenzial",
+    "microFeedbackBad": "↗ Fokusbereich"
   },
   "analysis": {
     "title": "KI-Analyse",

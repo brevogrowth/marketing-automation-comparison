@@ -2,7 +2,7 @@
 
 import React, { useState, memo, useCallback, useMemo } from 'react';
 import { BenchmarkData, PriceTier } from '@/data/benchmarks';
-import { getBenchmarkStatus, getBenchmarkLevel, getHumorousMessage } from '@/utils/benchmarkUtils';
+import { getBenchmarkStatus } from '@/utils/benchmarkUtils';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 interface BenchmarkGridProps {
@@ -243,37 +243,38 @@ const BenchmarkGridComponent = ({
                                                             />
                                                         </div>
 
-                                                        <div className="flex justify-between items-start mt-2 gap-4">
-                                                            {/* Feedback Text */}
-                                                            <span className={`text-xs italic font-medium transition-all duration-300 flex-1 ${status === 'good' ? 'text-brevo-green' :
-                                                                status === 'bad' ? 'text-red-500' : 'text-gray-400'
-                                                                }`}>
-                                                                {(() => {
-                                                                    if (!isSelected) return t.benchmark.selectToAnalyze;
-                                                                    if (!userVal) return t.benchmark.moveSlider;
-
-                                                                    const level = getBenchmarkLevel(kpi, userVal, priceTier);
-                                                                    return getHumorousMessage(kpi.id, level);
-                                                                })()}
-                                                            </span>
-
-                                                            {/* Number Input */}
-                                                            <div className="relative w-24 flex-shrink-0">
+                                                        {/* Centered Value Input + Micro-feedback */}
+                                                        <div className="mt-3 flex flex-col items-center gap-1">
+                                                            {/* Input centré */}
+                                                            <div className="relative w-28">
                                                                 <input
                                                                     type="number"
                                                                     value={userVal}
                                                                     onChange={(e) => onValueChange(kpi.id, e.target.value)}
                                                                     disabled={!isSelected}
-                                                                    className={`block w-full rounded-md sm:text-sm p-1.5 border text-right pr-8 ${status === 'good' ? 'border-green-300 focus:border-green-500 focus:ring-green-500 bg-green-50' :
-                                                                        status === 'bad' ? 'border-red-300 focus:border-red-500 focus:ring-red-500 bg-red-50' :
-                                                                            'border-gray-200 focus:border-brevo-green focus:ring-brevo-green'
-                                                                        }`}
+                                                                    className={`block w-full rounded-md sm:text-sm p-1.5 border text-center font-medium pr-8 ${
+                                                                        status === 'good' ? 'border-green-300 focus:border-green-500 focus:ring-green-500 bg-green-50 text-green-900' :
+                                                                        status === 'bad' ? 'border-red-300 focus:border-red-500 focus:ring-red-500 bg-red-50 text-red-900' :
+                                                                        'border-gray-200 focus:border-brevo-green focus:ring-brevo-green text-gray-900'
+                                                                    }`}
                                                                     placeholder="-"
                                                                 />
                                                                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                                                                     <span className="text-gray-500 sm:text-xs">{kpi.unit}</span>
                                                                 </div>
                                                             </div>
+
+                                                            {/* Micro-feedback centré */}
+                                                            {isSelected && userVal && (
+                                                                <span className={`text-xs font-medium ${
+                                                                    status === 'good' ? 'text-green-600' :
+                                                                    status === 'bad' ? 'text-red-500' : 'text-amber-500'
+                                                                }`}>
+                                                                    {status === 'good' && t.benchmark.microFeedbackGood}
+                                                                    {status === 'bad' && t.benchmark.microFeedbackBad}
+                                                                    {status === 'neutral' && t.benchmark.microFeedbackAverage}
+                                                                </span>
+                                                            )}
                                                         </div>
                                                     </div>
                                                 )}

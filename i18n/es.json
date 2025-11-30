@@ -570,7 +570,10 @@
     "whyMatters": "Por qu\u00e9 importa",
     "bestPractices": "Mejores pr\u00e1cticas",
     "selectToAnalyze": "Seleccionar para analizar",
-    "moveSlider": "Mueve el control deslizante para establecer tu valor"
+    "moveSlider": "Mueve el control deslizante para establecer tu valor",
+    "microFeedbackGood": "✓ Buenos resultados",
+    "microFeedbackAverage": "→ Margen de mejora",
+    "microFeedbackBad": "↗ Área de enfoque"
   },
   "analysis": {
     "title": "An\u00e1lisis IA",

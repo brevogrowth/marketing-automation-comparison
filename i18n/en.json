@@ -570,7 +570,10 @@
     "whyMatters": "Why it matters",
     "bestPractices": "Best practices",
     "selectToAnalyze": "Select to analyze",
-    "moveSlider": "Move the slider to set your value"
+    "moveSlider": "Move the slider to set your value",
+    "microFeedbackGood": "✓ Solid results",
+    "microFeedbackAverage": "→ Room to grow",
+    "microFeedbackBad": "↗ Focus area"
   },
   "analysis": {
     "title": "AI Analysis",
