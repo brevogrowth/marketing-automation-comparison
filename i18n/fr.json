@@ -86,6 +86,19 @@
         "Corréler les variations du CAC avec les conditions du marché"
       ]
     },
+    "cac_payback": {
+      "name": "Délai de récupération du CAC",
+      "description": "Temps nécessaire pour récupérer le coût d'acquisition client.",
+      "definition": "Le délai de récupération du CAC mesure le nombre de mois nécessaires pour récupérer le coût d'acquisition d'un client grâce à sa contribution à la marge brute.",
+      "importance": "Le CAC Payback est critique pour la planification de croissance SaaS. Un délai court permet un recyclage rapide du capital et la capacité à réinvestir. Un délai supérieur à 18 mois signale souvent des problèmes d'unit economics.",
+      "formula": "CAC ÷ (ARPU × Marge Brute)",
+      "bestPractices": [
+        "Viser un délai inférieur à 12 mois pour le SaaS venture-backed",
+        "Suivre le payback par segment client et canal d'acquisition",
+        "Améliorer le payback en augmentant l'ARPU ou réduisant le CAC",
+        "Considérer le payback avec le LTV:CAC pour une vision complète"
+      ]
+    },
     "roas": {
       "name": "ROAS global",
       "description": "Revenu total divisé par les dépenses marketing totales.",

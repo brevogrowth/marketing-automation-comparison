@@ -2,9 +2,9 @@ industry,price_tier,metric_id,category,name,unit,description,low,median,high,ins
 Fashion,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,20,40,60,Low margins require highly efficient acquisition.
 Fashion,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,30,45,70,Standard range for branded mid-market apparel.
 Fashion,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,80,150,300,High LTV justifies significant upfront investment.
-Fashion,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,5.0,7.0,Volume-driven models need high efficiency.
-Fashion,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.0,5.5,Healthy balance of brand and performance.
-Fashion,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.0,3.0,4.5,Brand equity investment lowers immediate ROAS.
+Fashion,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.5,5.0,7.0,Volume-driven models need high efficiency.
+Fashion,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,4.0,5.5,Healthy balance of brand and performance.
+Fashion,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.0,3.0,4.5,Brand equity investment lowers immediate ROAS.
 Fashion,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,15,20,Tight controls on spend.
 Fashion,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,15,20,25,Growth-focused allocation.
 Fashion,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,18,25,Significant spend on brand awareness.
@@ -59,9 +59,9 @@ Fashion,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Perc
 Home,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,20,35,55,Lower frequency purchases increase acquisition cost.
 Home,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,45,65,95,Considered purchases require more touchpoints.
 Home,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,120,220,400,Premium positioning demands high-touch marketing.
-Home,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,6.5,Seasonal peaks boost efficiency.
-Home,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,3.5,5.0,Longer sales cycles reduce immediate ROAS.
-Home,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,1.8,2.5,4.0,Brand and showroom investment lowers digital ROAS.
+Home,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,4.5,6.5,Seasonal peaks boost efficiency.
+Home,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.5,3.5,5.0,Longer sales cycles reduce immediate ROAS.
+Home,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,1.8,2.5,4.0,Brand and showroom investment lowers digital ROAS.
 Home,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,18,25,Competitive market requires sustained presence.
 Home,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,18,24,30,Lifestyle positioning drives higher spend.
 Home,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,15,22,30,Showroom and brand experience investment.
@@ -116,9 +116,9 @@ Home,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percent
 Beauty,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,12,22,35,High repeat potential justifies lower CAC targets.
 Beauty,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,25,40,60,Brand storytelling increases touchpoints.
 Beauty,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,60,110,200,Prestige positioning demands premium channels.
-Beauty,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,4.0,6.0,8.5,Replenishment cycles boost efficiency.
-Beauty,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,5.0,7.0,Loyalty programs enhance returns.
-Beauty,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,3.5,5.0,Sampling and experience investment impacts ROAS.
+Beauty,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,4.0,6.0,8.5,Replenishment cycles boost efficiency.
+Beauty,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.5,5.0,7.0,Loyalty programs enhance returns.
+Beauty,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.5,3.5,5.0,Sampling and experience investment impacts ROAS.
 Beauty,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,18,24,Social-first acquisition keeps costs low.
 Beauty,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,18,25,32,Influencer partnerships drive spend.
 Beauty,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,15,22,30,Editorial and PR investment significant.
@@ -173,9 +173,9 @@ Beauty,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Perce
 Electronics,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,15,28,45,Price comparison drives channel mix.
 Electronics,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,35,55,85,Feature education increases touchpoints.
 Electronics,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,80,140,250,Tech enthusiast targeting is precise.
-Electronics,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,5.0,7.5,11.0,High AOV boosts efficiency.
-Electronics,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,4.0,6.0,9.0,Seasonal peaks (Black Friday) skew annual.
-Electronics,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,7.0,Launch cycles drive variation.
+Electronics,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,5.0,7.5,11.0,High AOV boosts efficiency.
+Electronics,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,4.0,6.0,9.0,Seasonal peaks (Black Friday) skew annual.
+Electronics,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,4.5,7.0,Launch cycles drive variation.
 Electronics,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,6,10,14,Thin margins limit spend.
 Electronics,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,8,13,18,Product launches require investment.
 Electronics,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,16,22,Brand positioning for premium.
@@ -230,9 +230,9 @@ Electronics,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,
 Sports,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,18,32,50,Seasonal demand spikes acquisition.
 Sports,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,30,50,80,Performance marketing effective.
 Sports,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,70,130,220,Athlete endorsements drive cost.
-Sports,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,5.5,8.0,Seasonal peaks boost returns.
-Sports,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,6.5,Year-round fitness market.
-Sports,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.2,3.5,5.0,Premium positioning needs patience.
+Sports,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.5,5.5,8.0,Seasonal peaks boost returns.
+Sports,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,4.5,6.5,Year-round fitness market.
+Sports,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.2,3.5,5.0,Premium positioning needs patience.
 Sports,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,16,22,Competitive discounting market.
 Sports,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,14,20,28,Influencer and athlete partnerships.
 Sports,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,18,26,Premium brand building.
@@ -287,9 +287,9 @@ Sports,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Perce
 Family,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,22,40,65,Competitive parent targeting drives CAC up.
 Family,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,40,65,100,Safety messaging and competition increase cost.
 Family,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,75,130,220,Premium parenting audience highly competitive.
-Family,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,5.0,7.5,Growth spurts drive repeat purchases.
-Family,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,6.5,Quality justifies mid-range pricing.
-Family,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,3.5,5.0,Premium positioning needs patience.
+Family,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.5,5.0,7.5,Growth spurts drive repeat purchases.
+Family,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,4.5,6.5,Quality justifies mid-range pricing.
+Family,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.5,3.5,5.0,Premium positioning needs patience.
 Family,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,15,22,Efficient parent network marketing.
 Family,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,14,20,28,Content and community investment.
 Family,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,18,26,Brand positioning for premium parents.
@@ -344,9 +344,9 @@ Family,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Perce
 Food,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,8,15,25,Low barrier trial offers effective.
 Food,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,18,32,50,Quality story requires education.
 Food,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,40,70,120,Artisan positioning premium.
-Food,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,6.5,Subscription models boost returns.
-Food,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,4.0,5.5,Repeat purchases drive efficiency.
-Food,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.0,3.0,4.5,Gourmet audience targeted.
+Food,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,4.5,6.5,Subscription models boost returns.
+Food,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.5,4.0,5.5,Repeat purchases drive efficiency.
+Food,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.0,3.0,4.5,Gourmet audience targeted.
 Food,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,15,22,30,Trial and sampling investment.
 Food,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,18,26,35,Content and recipe marketing.
 Food,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,20,28,Premium brand positioning.
@@ -401,9 +401,9 @@ Food,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percent
 Luxury,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,45,80,140,Aspirational market acquisition.
 Luxury,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,100,200,400,High-touch brand experience.
 Luxury,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,300,600,1500,Ultra-premium positioning.
-Luxury,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,4.5,6.5,Aspirational buyer efficiency.
-Luxury,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,3.5,5.0,Brand experience investment.
-Luxury,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,1.5,2.5,4.0,Ultra-luxury brand building.
+Luxury,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,4.5,6.5,Aspirational buyer efficiency.
+Luxury,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.5,3.5,5.0,Brand experience investment.
+Luxury,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,1.5,2.5,4.0,Ultra-luxury brand building.
 Luxury,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,16,24,Aspirational market reach.
 Luxury,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,12,20,30,Brand and experience investment.
 Luxury,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,8,15,25,Ultra-premium reputation-driven.
@@ -457,10 +457,10 @@ Luxury,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percen
 Luxury,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,8,15,25,Brand searches dominate organic.
 SaaS,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,50,120,220,Self-serve acquisition efficient.
 SaaS,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,200,450,800,Sales-assisted increases CAC.
-SaaS,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,800,2000,5000,Enterprise sales teams expensive.
-SaaS,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,5.0,8.0,Freemium conversion efficiency.
-SaaS,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,4.0,6.5,Demo and trial conversion.
-SaaS,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.0,3.0,5.0,Long sales cycles reduce immediate ROAS.
+SaaS,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,3000,8000,15000,Enterprise sales teams expensive.
+SaaS,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,5.0,8.0,Freemium conversion efficiency.
+SaaS,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.5,4.0,6.5,Demo and trial conversion.
+SaaS,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.0,3.0,5.0,Long sales cycles reduce immediate ROAS.
 SaaS,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,20,35,50,Growth investment heavy.
 SaaS,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,25,40,55,Sales and marketing combined.
 SaaS,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,15,28,42,Enterprise efficiency improves.
@@ -475,13 +475,13 @@ SaaS,Mid-Range,purchase_freq,Retention,Expansion Rate,%,Annual rate of revenue e
 SaaS,Luxury,purchase_freq,Retention,Expansion Rate,%,Annual rate of revenue expansion from existing customers.,15,30,50,Enterprise account growth.
 SaaS,Budget,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who cancel within 12 months.,15,25,35,SMB churn higher.
 SaaS,Mid-Range,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who cancel within 12 months.,10,18,28,Mid-market stickier.
-SaaS,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who cancel within 12 months.,5,10,18,Enterprise retention strong.
+SaaS,Luxury,churn_rate,Retention,Annual Churn Rate,%,Percentage of customers who cancel within 12 months.,3,7,12,Enterprise retention strong.
 SaaS,Budget,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,70,78,85,Software margins excellent.
 SaaS,Mid-Range,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,72,80,87,Scale improves margins.
 SaaS,Luxury,gross_margin,Economics,Gross Margin,%,Revenue minus Cost of Goods Sold (COGS).,68,76,84,Services reduce pure SaaS margin.
 SaaS,Budget,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,5.0,8.0,Efficient self-serve model.
 SaaS,Mid-Range,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.5,5.5,9.0,Strong unit economics.
-SaaS,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,4.0,6.5,12.0,Enterprise LTV exceptional.
+SaaS,Luxury,ltv_cac,Strategic Efficiency,LTV:CAC Ratio,x,Lifetime Value divided by Customer Acquisition Cost.,3.0,5.0,9.0,Enterprise LTV exceptional.
 SaaS,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.0,3.5,5.5,Growth mode efficiency.
 SaaS,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.2,3.8,6.0,Balanced growth.
 SaaS,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,2.8,4.5,7.5,Enterprise efficiency higher.
@@ -500,9 +500,9 @@ SaaS,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percent
 Services,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,100,250,450,Small project acquisition.
 Services,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,300,700,1400,Relationship building investment.
 Services,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,1000,3000,8000,Enterprise BD expensive.
-Services,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,5.0,8.0,Small engagement efficiency.
-Services,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.5,4.0,6.5,Longer sales cycles.
-Services,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,2.0,3.2,5.0,Enterprise relationship investment.
+Services,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,5.0,8.0,Small engagement efficiency.
+Services,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.5,4.0,6.5,Longer sales cycles.
+Services,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,2.0,3.2,5.0,Enterprise relationship investment.
 Services,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,8,14,22,Referral-driven business.
 Services,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,10,18,28,Content and event marketing.
 Services,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,6,12,20,Reputation and referrals dominate.
@@ -541,10 +541,10 @@ Services,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Perc
 Services,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,28,42,Expertise-based content attracts leads.
 Manufacturing,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,80,180,350,Trade show and catalog driven.
 Manufacturing,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,250,550,1000,Technical sales process.
-Manufacturing,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,800,2200,5500,Enterprise procurement cycles.
-Manufacturing,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,4.0,7.0,11.0,High order values boost returns.
-Manufacturing,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,6.0,9.5,Repeat orders compound.
-Manufacturing,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.0,5.0,8.0,Long sales cycles reduce immediate ROAS.
+Manufacturing,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,2000,5000,12000,Enterprise procurement cycles.
+Manufacturing,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,4.0,7.0,11.0,High order values boost returns.
+Manufacturing,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.5,6.0,9.5,Repeat orders compound.
+Manufacturing,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.0,5.0,8.0,Long sales cycles reduce immediate ROAS.
 Manufacturing,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,4,8,14,Catalog and trade focus.
 Manufacturing,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,5,10,16,Technical content investment.
 Manufacturing,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,4,8,14,Relationship-driven sales.
@@ -576,23 +576,20 @@ Manufacturing,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x
 Manufacturing,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,7.0,10.0,15.0,Technical sales efficiency.
 Manufacturing,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,8.0,12.0,18.0,Large deals boost MER.
 Manufacturing,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,Catalog and promotion emails support sales.
-Manufacturing,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,3,6,12,LinkedIn dominates B2B social revenue.
 Manufacturing,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,15,25,38,Search ads key for SMB acquisition.
 Manufacturing,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,20,32,48,Strong organic reduces CAC significantly.
 Manufacturing,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,6,12,20,Technical updates support relationship.
-Manufacturing,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,4,8,14,Thought leadership supports lead gen.
 Manufacturing,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,12,22,35,LinkedIn Ads and Google Ads mix.
 Manufacturing,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,25,38,52,Thought leadership content key driver.
 Manufacturing,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,4,8,15,Account management direct contact dominates.
-Manufacturing,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,2,5,10,Relationship-based sales reduce social impact.
 Manufacturing,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,5,12,22,Account-based targeting over broad paid.
 Manufacturing,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,28,42,Expertise-based content attracts leads.
 Wholesale,Budget,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,60,140,280,Trade show and catalog driven.
 Wholesale,Mid-Range,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,180,400,750,Territory sales investment.
-Wholesale,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,500,1200,2800,Enterprise account development.
-Wholesale,Budget,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,5.0,8.5,14.0,High volume efficiency (MER-like metric).
-Wholesale,Mid-Range,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,4.5,7.5,12.0,Repeat orders compound returns.
-Wholesale,Luxury,roas,Acquisition,Blended ROAS,x,Total revenue divided by total marketing spend.,3.5,6.0,10.0,Large account value but long cycles.
+Wholesale,Luxury,cac,Acquisition,Customer Acquisition Cost (CAC),€,Total marketing spend divided by new customers acquired.,1000,3000,8000,Enterprise account development.
+Wholesale,Budget,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,5.0,8.5,14.0,High volume efficiency (MER-like metric).
+Wholesale,Mid-Range,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,4.5,7.5,12.0,Repeat orders compound returns.
+Wholesale,Luxury,roas,Acquisition,Blended ROAS,x,Attributed revenue from paid channels divided by ad spend.,3.5,6.0,10.0,Large account value but long cycles.
 Wholesale,Budget,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,3,6,10,Catalog and trade focus.
 Wholesale,Mid-Range,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,4,8,13,Territory coverage.
 Wholesale,Luxury,marketing_spend,Acquisition,Marketing % of Revenue,%,Total marketing budget as a percentage of gross revenue.,3,6,11,Account management focused.
@@ -624,15 +621,12 @@ Wholesale,Budget,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Tot
 Wholesale,Mid-Range,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,9.0,14.0,22.0,Territory efficiency.
 Wholesale,Luxury,mer,Strategic Efficiency,Marketing Efficiency Ratio (MER),x,Total Revenue / Total Marketing Spend.,10.0,16.0,26.0,Large account efficiency.
 Wholesale,Budget,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,10,16,25,Promotion emails support sales teams.
-Wholesale,Budget,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,3,6,12,LinkedIn dominates B2B social revenue.
 Wholesale,Budget,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,15,25,38,Search ads key for SMB acquisition.
 Wholesale,Budget,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,20,32,48,Strong organic reduces CAC significantly.
 Wholesale,Mid-Range,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,8,14,22,New product alerts support relationship.
-Wholesale,Mid-Range,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,4,8,14,Thought leadership supports lead gen.
 Wholesale,Mid-Range,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,12,22,35,LinkedIn Ads and Google Ads mix.
 Wholesale,Mid-Range,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,25,38,52,Thought leadership content key driver.
 Wholesale,Luxury,email_rev_share,Channel Mix,Email Revenue Share,%,Percentage of total revenue attributed to Email Marketing.,5,10,18,Direct account management dominates.
-Wholesale,Luxury,social_rev_share,Channel Mix,Social Media Revenue Share,%,Percentage of total revenue attributed to Social Media channels.,2,5,10,Relationship-based sales reduce social impact.
 Wholesale,Luxury,paid_rev_share,Channel Mix,Paid Advertising Revenue Share,%,Percentage of total revenue attributed to Paid Advertising channels.,5,12,22,Account-based targeting over broad paid.
 Wholesale,Luxury,organic_rev_share,Channel Mix,Organic Search Revenue Share,%,Percentage of total revenue attributed to Organic Search (SEO).,15,28,42,Expertise-based content attracts leads.
 Fashion,Budget,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,18,25,35,Engaging subject lines drive opens in budget segment.
@@ -676,7 +670,7 @@ Beauty,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of
 Beauty,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,28,38,52,Exclusive previews drive engagement.
 Beauty,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.5,4.0,6.0,Tutorial content drives clicks.
 Beauty,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.0,5.0,7.5,Personalized recommendations work.
-Beauty,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,4.0,6.5,10.0,VIP content generates action.
+Beauty,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,4.0,5.0,9.0,VIP content generates action.
 Beauty,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,12,15,20,How-to content converts.
 Beauty,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,14,17,23,Routine builders engage.
 Beauty,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,15,18,25,Expert content drives action.
@@ -694,7 +688,7 @@ Electronics,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percenta
 Electronics,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,22,32,45,Tech enthusiasts engaged.
 Electronics,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.0,3.2,5.0,Price comparison drives clicks.
 Electronics,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.5,4.0,6.0,Spec highlights work.
-Electronics,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.5,8.5,Enthusiast content performs.
+Electronics,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.0,8.5,Enthusiast content performs.
 Electronics,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,12,15,19,Clear deals convert.
 Electronics,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,13,16,21,Feature comparisons engage.
 Electronics,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,15,18,24,Expert reviews drive action.
@@ -712,7 +706,7 @@ Sports,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of
 Sports,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,25,35,48,Enthusiast community engaged.
 Sports,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.2,3.5,5.5,Gear deals drive clicks.
 Sports,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.8,4.5,7.0,Training tips convert.
-Sports,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.5,8.5,Expert content performs.
+Sports,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.0,8.5,Expert content performs.
 Sports,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,11,14,19,Deal clarity matters.
 Sports,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,13,16,22,Performance tips engage.
 Sports,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,14,17,24,Community content converts.
@@ -730,7 +724,7 @@ Family,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of
 Family,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,28,38,50,Personalized journeys engage.
 Family,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.8,4.2,6.5,Practical tips drive clicks.
 Family,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.2,5.0,7.5,Safety content converts.
-Family,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,4.0,6.0,9.0,Premium recommendations work.
+Family,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,4.0,5.0,9.0,Premium recommendations work.
 Family,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,12,15,20,Relevant age content key.
 Family,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,13,16,22,Milestone timing critical.
 Family,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,14,17,24,Curated selection converts.
@@ -747,8 +741,8 @@ Food,Budget,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of deli
 Food,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,25,36,50,Subscription reminders engage.
 Food,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,28,40,55,Gourmet content resonates.
 Food,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.0,4.5,7.0,Reorder CTAs effective.
-Food,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.5,8.5,Recipe links convert.
-Food,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,4.5,7.0,11.0,Exclusive releases drive action.
+Food,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.0,8.5,Recipe links convert.
+Food,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,4.5,5.0,9.0,Exclusive releases drive action.
 Food,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,13,16,22,Easy reorder converts.
 Food,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,14,17,24,Recipe engagement high.
 Food,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,16,19,26,Curated selections perform.
@@ -766,7 +760,7 @@ Luxury,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of
 Luxury,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,30,42,58,VIP exclusivity drives opens.
 Luxury,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.2,3.5,5.5,Aspiration drives clicks.
 Luxury,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.0,5.0,8.0,Event invites convert.
-Luxury,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,4.5,7.5,12.0,Exclusive access performs.
+Luxury,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,4.5,5.0,9.0,Exclusive access performs.
 Luxury,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,11,14,19,Brand storytelling converts.
 Luxury,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,13,16,22,Collection narratives engage.
 Luxury,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,15,18,25,Bespoke content performs.
@@ -784,7 +778,7 @@ SaaS,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of d
 SaaS,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,25,36,50,Strategic content resonates.
 SaaS,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.5,4.0,6.5,Feature adoption CTAs work.
 SaaS,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.0,5.0,8.0,Upgrade prompts convert.
-SaaS,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.5,9.0,Account expansion content.
+SaaS,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.0,9.0,Account expansion content.
 SaaS,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,12,15,21,Clear product CTAs convert.
 SaaS,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,13,16,23,Use case content engages.
 SaaS,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,14,17,24,Strategic insights drive action.
@@ -802,7 +796,7 @@ Services,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percentage 
 Services,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,28,40,55,Executive content resonates.
 Services,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.0,3.2,5.2,Resource downloads work.
 Services,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.8,4.5,7.2,Case study CTAs convert.
-Services,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.5,9.0,Strategic content performs.
+Services,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.5,5.0,9.0,Strategic content performs.
 Services,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,10,13,18,Practical content converts.
 Services,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,12,15,21,Expert insights engage.
 Services,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,13,16,23,Executive content drives action.
@@ -838,7 +832,7 @@ Wholesale,Mid-Range,email_open_rate,Email Marketing,Email Open Rate,%,Percentage
 Wholesale,Luxury,email_open_rate,Email Marketing,Email Open Rate,%,Percentage of delivered emails that are opened.,24,34,48,Strategic account engagement.
 Wholesale,Budget,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.0,3.2,5.2,Quick reorder links work.
 Wholesale,Mid-Range,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,2.5,4.0,6.5,Catalog browsing converts.
-Wholesale,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.2,5.2,8.5,Custom pricing CTAs perform.
+Wholesale,Luxury,email_click_rate,Email Marketing,Email Click Rate,%,Percentage of delivered emails that receive a click.,3.2,5.0,8.5,Custom pricing CTAs perform.
 Wholesale,Budget,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,11,14,19,Easy ordering converts.
 Wholesale,Mid-Range,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,12,15,20,Product discovery engages.
 Wholesale,Luxury,email_ctor,Email Marketing,Click-to-Open Rate (CTOR),%,Percentage of opened emails that receive a click.,13,16,22,Account-specific content works.
@@ -851,3 +845,6 @@ Wholesale,Luxury,email_bounce_rate,Email Marketing,Bounce Rate,%,Percentage of e
 Wholesale,Budget,email_deliverability,Email Marketing,Deliverability Rate,%,Percentage of emails successfully delivered to inbox.,91,94.5,97.5,B2B filtering varies.
 Wholesale,Mid-Range,email_deliverability,Email Marketing,Deliverability Rate,%,Percentage of emails successfully delivered to inbox.,93,96,98.5,Good sender practices.
 Wholesale,Luxury,email_deliverability,Email Marketing,Deliverability Rate,%,Percentage of emails successfully delivered to inbox.,95,97.5,99.2,Premium relationships help.
+SaaS,Budget,cac_payback,Strategic Efficiency,CAC Payback Period,months,Time to recover customer acquisition cost.,12,18,24,Speed of capital recycling defines growth potential.
+SaaS,Mid-Range,cac_payback,Strategic Efficiency,CAC Payback Period,months,Time to recover customer acquisition cost.,9,12,18,Efficient payback enables faster scaling.
+SaaS,Luxury,cac_payback,Strategic Efficiency,CAC Payback Period,months,Time to recover customer acquisition cost.,6,9,12,Enterprise deals pay back quickly.

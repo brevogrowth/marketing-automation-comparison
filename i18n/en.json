@@ -86,6 +86,19 @@
         "Correlate CAC changes with market conditions"
       ]
     },
+    "cac_payback": {
+      "name": "CAC Payback Period",
+      "description": "Time to recover customer acquisition cost.",
+      "definition": "CAC Payback Period measures how many months it takes to recover the cost of acquiring a customer through their gross margin contribution.",
+      "importance": "CAC Payback is critical for SaaS growth planning. Shorter payback means faster capital recycling and ability to reinvest in growth. A payback over 18 months often signals unit economics issues.",
+      "formula": "CAC ÷ (ARPU × Gross Margin)",
+      "bestPractices": [
+        "Target payback under 12 months for venture-backed SaaS",
+        "Monitor payback by customer segment and acquisition channel",
+        "Improve payback by increasing ARPU or reducing CAC",
+        "Consider payback alongside LTV:CAC for full picture"
+      ]
+    },
     "roas": {
       "name": "Blended ROAS",
       "description": "Total revenue divided by total marketing spend.",

@@ -86,6 +86,19 @@
         "CAC-Veränderungen mit Marktbedingungen korrelieren"
       ]
     },
+    "cac_payback": {
+      "name": "CAC Payback Period",
+      "description": "Zeit bis zur Amortisation der Kundenakquisitionskosten.",
+      "definition": "Die CAC Payback Period misst, wie viele Monate es dauert, die Kosten für die Kundenakquisition durch den Deckungsbeitrag des Kunden zurückzugewinnen.",
+      "importance": "CAC Payback ist entscheidend für SaaS-Wachstumsplanung. Kürzere Payback-Zeiten ermöglichen schnelleres Kapitalrecycling und Reinvestition in Wachstum. Ein Payback über 18 Monate signalisiert oft Unit-Economics-Probleme.",
+      "formula": "CAC ÷ (ARPU × Bruttomarge)",
+      "bestPractices": [
+        "Payback unter 12 Monaten für Venture-backed SaaS anstreben",
+        "Payback nach Kundensegment und Akquisitionskanal überwachen",
+        "Payback durch höheren ARPU oder niedrigere CAC verbessern",
+        "Payback zusammen mit LTV:CAC für vollständiges Bild betrachten"
+      ]
+    },
     "roas": {
       "name": "Blended ROAS",
       "description": "Gesamtumsatz geteilt durch gesamte Marketingausgaben.",

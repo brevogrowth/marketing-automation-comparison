@@ -86,6 +86,19 @@
         "Correlacionar cambios en CAC con condiciones del mercado"
       ]
     },
+    "cac_payback": {
+      "name": "Período de recuperación del CAC",
+      "description": "Tiempo para recuperar el coste de adquisición de cliente.",
+      "definition": "El período de recuperación del CAC mide cuántos meses se necesitan para recuperar el coste de adquirir un cliente a través de su contribución al margen bruto.",
+      "importance": "El CAC Payback es crítico para la planificación del crecimiento SaaS. Un payback más corto significa reciclaje de capital más rápido y capacidad de reinvertir en crecimiento. Un payback superior a 18 meses señala problemas de unit economics.",
+      "formula": "CAC ÷ (ARPU × Margen Bruto)",
+      "bestPractices": [
+        "Apuntar a un payback inferior a 12 meses para SaaS venture-backed",
+        "Monitorear payback por segmento de cliente y canal de adquisición",
+        "Mejorar payback aumentando ARPU o reduciendo CAC",
+        "Considerar payback junto con LTV:CAC para visión completa"
+      ]
+    },
     "roas": {
       "name": "ROAS combinado",
       "description": "Ingresos totales divididos por gasto total en marketing.",

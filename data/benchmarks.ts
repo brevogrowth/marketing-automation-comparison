@@ -39,7 +39,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 4, median: 6, high: 8.5, insight: 'Replenishment cycles boost efficiency.' },
                 'Mid-Range': { low: 3.5, median: 5, high: 7, insight: 'Loyalty programs enhance returns.' },
@@ -271,7 +271,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 2.5, median: 4, high: 6, insight: 'Tutorial content drives clicks.' },
                 'Mid-Range': { low: 3, median: 5, high: 7.5, insight: 'Personalized recommendations work.' },
-                'Luxury': { low: 4, median: 6.5, high: 10, insight: 'VIP content generates action.' },
+                'Luxury': { low: 4, median: 5, high: 9, insight: 'VIP content generates action.' },
             },
         },
         {
@@ -341,7 +341,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 5, median: 7.5, high: 11, insight: 'High AOV boosts efficiency.' },
                 'Mid-Range': { low: 4, median: 6, high: 9, insight: 'Seasonal peaks (Black Friday) skew annual.' },
@@ -573,7 +573,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 2, median: 3.2, high: 5, insight: 'Price comparison drives clicks.' },
                 'Mid-Range': { low: 2.5, median: 4, high: 6, insight: 'Spec highlights work.' },
-                'Luxury': { low: 3.5, median: 5.5, high: 8.5, insight: 'Enthusiast content performs.' },
+                'Luxury': { low: 3.5, median: 5, high: 8.5, insight: 'Enthusiast content performs.' },
             },
         },
         {
@@ -643,7 +643,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 3.5, median: 5, high: 7.5, insight: 'Growth spurts drive repeat purchases.' },
                 'Mid-Range': { low: 3, median: 4.5, high: 6.5, insight: 'Quality justifies mid-range pricing.' },
@@ -875,7 +875,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 2.8, median: 4.2, high: 6.5, insight: 'Practical tips drive clicks.' },
                 'Mid-Range': { low: 3.2, median: 5, high: 7.5, insight: 'Safety content converts.' },
-                'Luxury': { low: 4, median: 6, high: 9, insight: 'Premium recommendations work.' },
+                'Luxury': { low: 4, median: 5, high: 9, insight: 'Premium recommendations work.' },
             },
         },
         {
@@ -945,7 +945,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 3.5, median: 5, high: 7, insight: 'Volume-driven models need high efficiency.' },
                 'Mid-Range': { low: 3, median: 4, high: 5.5, insight: 'Healthy balance of brand and performance.' },
@@ -1247,7 +1247,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 3, median: 4.5, high: 6.5, insight: 'Subscription models boost returns.' },
                 'Mid-Range': { low: 2.5, median: 4, high: 5.5, insight: 'Repeat purchases drive efficiency.' },
@@ -1478,8 +1478,8 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             description: 'Percentage of delivered emails that receive a click.',
             ranges: {
                 'Budget': { low: 3, median: 4.5, high: 7, insight: 'Reorder CTAs effective.' },
-                'Mid-Range': { low: 3.5, median: 5.5, high: 8.5, insight: 'Recipe links convert.' },
-                'Luxury': { low: 4.5, median: 7, high: 11, insight: 'Exclusive releases drive action.' },
+                'Mid-Range': { low: 3.5, median: 5, high: 8.5, insight: 'Recipe links convert.' },
+                'Luxury': { low: 4.5, median: 5, high: 9, insight: 'Exclusive releases drive action.' },
             },
         },
         {
@@ -1549,7 +1549,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 3, median: 4.5, high: 6.5, insight: 'Seasonal peaks boost efficiency.' },
                 'Mid-Range': { low: 2.5, median: 3.5, high: 5, insight: 'Longer sales cycles reduce immediate ROAS.' },
@@ -1851,7 +1851,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 3, median: 4.5, high: 6.5, insight: 'Aspirational buyer efficiency.' },
                 'Mid-Range': { low: 2.5, median: 3.5, high: 5, insight: 'Brand experience investment.' },
@@ -2083,7 +2083,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 2.2, median: 3.5, high: 5.5, insight: 'Aspiration drives clicks.' },
                 'Mid-Range': { low: 3, median: 5, high: 8, insight: 'Event invites convert.' },
-                'Luxury': { low: 4.5, median: 7.5, high: 12, insight: 'Exclusive access performs.' },
+                'Luxury': { low: 4.5, median: 5, high: 9, insight: 'Exclusive access performs.' },
             },
         },
         {
@@ -2145,7 +2145,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 80, median: 180, high: 350, insight: 'Trade show and catalog driven.' },
                 'Mid-Range': { low: 250, median: 550, high: 1000, insight: 'Technical sales process.' },
-                'Luxury': { low: 800, median: 2200, high: 5500, insight: 'Enterprise procurement cycles.' },
+                'Luxury': { low: 2000, median: 5000, high: 12000, insight: 'Enterprise procurement cycles.' },
             },
         },
         {
@@ -2153,7 +2153,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 4, median: 7, high: 11, insight: 'High order values boost returns.' },
                 'Mid-Range': { low: 3.5, median: 6, high: 9.5, insight: 'Repeat orders compound.' },
@@ -2293,18 +2293,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'social_rev_share',
-            category: 'Channel Mix',
-            name: 'Social Media Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Social Media channels.',
-            ranges: {
-                'Budget': { low: 3, median: 6, high: 12, insight: 'LinkedIn dominates B2B social revenue.' },
-                'Mid-Range': { low: 4, median: 8, high: 14, insight: 'Thought leadership supports lead gen.' },
-                'Luxury': { low: 2, median: 5, high: 10, insight: 'Relationship-based sales reduce social impact.' },
-            },
-        },
-        {
             id: 'paid_rev_share',
             category: 'Channel Mix',
             name: 'Paid Advertising Revenue Share',
@@ -2411,7 +2399,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 50, median: 120, high: 220, insight: 'Self-serve acquisition efficient.' },
                 'Mid-Range': { low: 200, median: 450, high: 800, insight: 'Sales-assisted increases CAC.' },
-                'Luxury': { low: 800, median: 2000, high: 5000, insight: 'Enterprise sales teams expensive.' },
+                'Luxury': { low: 3000, median: 8000, high: 15000, insight: 'Enterprise sales teams expensive.' },
             },
         },
         {
@@ -2419,7 +2407,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 3, median: 5, high: 8, insight: 'Freemium conversion efficiency.' },
                 'Mid-Range': { low: 2.5, median: 4, high: 6.5, insight: 'Demo and trial conversion.' },
@@ -2483,7 +2471,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 15, median: 25, high: 35, insight: 'SMB churn higher.' },
                 'Mid-Range': { low: 10, median: 18, high: 28, insight: 'Mid-market stickier.' },
-                'Luxury': { low: 5, median: 10, high: 18, insight: 'Enterprise retention strong.' },
+                'Luxury': { low: 3, median: 7, high: 12, insight: 'Enterprise retention strong.' },
             },
         },
         {
@@ -2507,7 +2495,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 3, median: 5, high: 8, insight: 'Efficient self-serve model.' },
                 'Mid-Range': { low: 3.5, median: 5.5, high: 9, insight: 'Strong unit economics.' },
-                'Luxury': { low: 4, median: 6.5, high: 12, insight: 'Enterprise LTV exceptional.' },
+                'Luxury': { low: 3, median: 5, high: 9, insight: 'Enterprise LTV exceptional.' },
             },
         },
         {
@@ -2591,7 +2579,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 2.5, median: 4, high: 6.5, insight: 'Feature adoption CTAs work.' },
                 'Mid-Range': { low: 3, median: 5, high: 8, insight: 'Upgrade prompts convert.' },
-                'Luxury': { low: 3.5, median: 5.5, high: 9, insight: 'Account expansion content.' },
+                'Luxury': { low: 3.5, median: 5, high: 9, insight: 'Account expansion content.' },
             },
         },
         {
@@ -2641,6 +2629,18 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
                 'Mid-Range': { low: 94, median: 97, high: 99, insight: 'Good sender practices.' },
                 'Luxury': { low: 96, median: 98, high: 99.5, insight: 'Enterprise-grade delivery.' },
             },
+        },
+        {
+            id: 'cac_payback',
+            category: 'Strategic Efficiency',
+            name: 'CAC Payback Period',
+            unit: 'months',
+            description: 'Time to recover customer acquisition cost.',
+            ranges: {
+                'Budget': { low: 12, median: 18, high: 24, insight: 'Speed of capital recycling defines growth potential.' },
+                'Mid-Range': { low: 9, median: 12, high: 18, insight: 'Efficient payback enables faster scaling.' },
+                'Luxury': { low: 6, median: 9, high: 12, insight: 'Enterprise deals pay back quickly.' },
+            },
         }
     ],
     Services: [
@@ -2661,7 +2661,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 3, median: 5, high: 8, insight: 'Small engagement efficiency.' },
                 'Mid-Range': { low: 2.5, median: 4, high: 6.5, insight: 'Longer sales cycles.' },
@@ -2833,7 +2833,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 2, median: 3.2, high: 5.2, insight: 'Resource downloads work.' },
                 'Mid-Range': { low: 2.8, median: 4.5, high: 7.2, insight: 'Case study CTAs convert.' },
-                'Luxury': { low: 3.5, median: 5.5, high: 9, insight: 'Strategic content performs.' },
+                'Luxury': { low: 3.5, median: 5, high: 9, insight: 'Strategic content performs.' },
             },
         },
         {
@@ -2903,7 +2903,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 3.5, median: 5.5, high: 8, insight: 'Seasonal peaks boost returns.' },
                 'Mid-Range': { low: 3, median: 4.5, high: 6.5, insight: 'Year-round fitness market.' },
@@ -3135,7 +3135,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 2.2, median: 3.5, high: 5.5, insight: 'Gear deals drive clicks.' },
                 'Mid-Range': { low: 2.8, median: 4.5, high: 7, insight: 'Training tips convert.' },
-                'Luxury': { low: 3.5, median: 5.5, high: 8.5, insight: 'Expert content performs.' },
+                'Luxury': { low: 3.5, median: 5, high: 8.5, insight: 'Expert content performs.' },
             },
         },
         {
@@ -3197,7 +3197,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 60, median: 140, high: 280, insight: 'Trade show and catalog driven.' },
                 'Mid-Range': { low: 180, median: 400, high: 750, insight: 'Territory sales investment.' },
-                'Luxury': { low: 500, median: 1200, high: 2800, insight: 'Enterprise account development.' },
+                'Luxury': { low: 1000, median: 3000, high: 8000, insight: 'Enterprise account development.' },
             },
         },
         {
@@ -3205,7 +3205,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             category: 'Acquisition',
             name: 'Blended ROAS',
             unit: 'x',
-            description: 'Total revenue divided by total marketing spend.',
+            description: 'Attributed revenue from paid channels divided by ad spend.',
             ranges: {
                 'Budget': { low: 5, median: 8.5, high: 14, insight: 'High volume efficiency (MER-like metric).' },
                 'Mid-Range': { low: 4.5, median: 7.5, high: 12, insight: 'Repeat orders compound returns.' },
@@ -3345,18 +3345,6 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             },
         },
         {
-            id: 'social_rev_share',
-            category: 'Channel Mix',
-            name: 'Social Media Revenue Share',
-            unit: '%',
-            description: 'Percentage of total revenue attributed to Social Media channels.',
-            ranges: {
-                'Budget': { low: 3, median: 6, high: 12, insight: 'LinkedIn dominates B2B social revenue.' },
-                'Mid-Range': { low: 4, median: 8, high: 14, insight: 'Thought leadership supports lead gen.' },
-                'Luxury': { low: 2, median: 5, high: 10, insight: 'Relationship-based sales reduce social impact.' },
-            },
-        },
-        {
             id: 'paid_rev_share',
             category: 'Channel Mix',
             name: 'Paid Advertising Revenue Share',
@@ -3401,7 +3389,7 @@ export const benchmarks: Record<Industry, BenchmarkData[]> = {
             ranges: {
                 'Budget': { low: 2, median: 3.2, high: 5.2, insight: 'Quick reorder links work.' },
                 'Mid-Range': { low: 2.5, median: 4, high: 6.5, insight: 'Catalog browsing converts.' },
-                'Luxury': { low: 3.2, median: 5.2, high: 8.5, insight: 'Custom pricing CTAs perform.' },
+                'Luxury': { low: 3.2, median: 5, high: 8.5, insight: 'Custom pricing CTAs perform.' },
             },
         },
         {
