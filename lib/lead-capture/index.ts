@@ -1,61 +1,47 @@
 /**
  * Lead Capture Module
- * Reusable lead capture system for Next.js applications
+ * Re-exports from the @brevo/lead-capture package (packages/lead-capture)
  *
- * @example
- * ```tsx
- * // In your layout.tsx
- * import { LeadCaptureProvider } from '@/lib/lead-capture';
- *
- * export default function Layout({ children }) {
- *   return (
- *     <LeadCaptureProvider config={{
- *       apiEndpoint: '/api/lead',
- *       blockFreeEmails: true,
- *     }}>
- *       {children}
- *     </LeadCaptureProvider>
- *   );
- * }
- *
- * // In your component
- * import { useLeadGate } from '@/lib/lead-capture';
- *
- * function MyComponent() {
- *   const { requireLead } = useLeadGate();
- *
- *   const handleAction = () => {
- *     requireLead({
- *       reason: 'feature_access',
- *       onSuccess: () => doSomething(),
- *     });
- *   };
- *
- *   return <button onClick={handleAction}>Access Feature</button>;
- * }
- * ```
+ * This file provides backwards compatibility with existing imports.
+ * For new code, import directly from the package once published to npm.
  */
 
-// Core exports
-export { LeadCaptureProvider, useLeadCaptureContext } from './LeadCaptureProvider';
-export { useLeadGate } from './useLeadGate';
-export { LeadGateModal } from './LeadGateModal';
+// Re-export everything from the package source
+// Modal Mode
+export { LeadCaptureProvider } from '../../packages/lead-capture/src/modal/LeadCaptureProvider';
+export { LeadGateModal } from '../../packages/lead-capture/src/modal/LeadGateModal';
+export { useLeadGate } from '../../packages/lead-capture/src/modal/useLeadGate';
 
-// Utilities
-export { submitLead, buildLeadData } from './api';
+// Form Mode
+export { LeadCaptureForm } from '../../packages/lead-capture/src/form/LeadCaptureForm';
+export { useLeadForm } from '../../packages/lead-capture/src/form/useLeadForm';
+
+// Core Utilities
 export {
   isValidEmail,
   isFreeEmail,
-  validateLeadEmail,
-  getEmailDomain,
-} from './validation';
+  validateProfessionalEmail,
+  DEFAULT_FREE_EMAIL_DOMAINS,
+} from '../../packages/lead-capture/src/core/validation';
+export { submitLead } from '../../packages/lead-capture/src/core/api';
+export {
+  isLeadCaptured,
+  markLeadCaptured,
+  getCapturedLead,
+  resetLeadCapture,
+} from '../../packages/lead-capture/src/core/storage';
+export { getTranslations, translations } from '../../packages/lead-capture/src/core/translations';
 
-// Types
+// Re-export types
 export type {
   LeadCaptureConfig,
-  LeadCaptureTranslations,
-  LeadData,
+  ModalConfig,
   TriggerOptions,
-  LeadCaptureContextValue,
-  SupportedLanguage,
-} from './types';
+  UseLeadGateReturn,
+  CustomField,
+  LeadCaptureFormProps,
+  UseLeadFormReturn,
+  LeadData,
+  LeadFormData,
+  LeadCaptureTranslations,
+} from '../../packages/lead-capture/src/core/types';

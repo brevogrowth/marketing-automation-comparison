@@ -1,0 +1,15 @@
+{
+  "modalTitle": "Desbloquear acceso completo",
+  "modalDescription": "Ingrese su correo electrónico profesional para acceder a todas las funciones y recibir información personalizada.",
+  "emailLabel": "Correo Profesional",
+  "emailPlaceholder": "tu@empresa.com",
+  "submitButton": "Continuar",
+  "loadingButton": "Por favor espere...",
+  "closeButton": "Cerrar",
+  "invalidEmailError": "Por favor ingrese una dirección de correo válida",
+  "freeEmailError": "Por favor use su correo electrónico profesional",
+  "requiredFieldError": "Este campo es obligatorio",
+  "networkError": "Ocurrió un error. Por favor intente de nuevo.",
+  "successMessage": "¡Gracias! Ahora tiene acceso completo.",
+  "legalText": "Al continuar, acepta recibir comunicaciones de marketing de Brevo."
+}
