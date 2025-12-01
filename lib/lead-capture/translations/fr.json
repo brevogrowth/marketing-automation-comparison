@@ -1,0 +1,13 @@
+{
+  "title": "Accédez à votre analyse personnalisée",
+  "description": "Entrez votre email professionnel pour obtenir des insights IA et des comparaisons de benchmarks adaptés à votre secteur.",
+  "emailLabel": "Email professionnel",
+  "emailPlaceholder": "prenom.nom@entreprise.com",
+  "submitButton": "Obtenir mon analyse",
+  "loadingButton": "Chargement...",
+  "freeEmailError": "Veuillez utiliser votre email professionnel (pas Gmail, Yahoo, etc.)",
+  "invalidEmailError": "Veuillez entrer une adresse email valide",
+  "networkError": "Erreur de connexion. Veuillez réessayer.",
+  "successMessage": "Merci ! Votre analyse est en cours de préparation...",
+  "legalText": "En soumettant ce formulaire, vous acceptez de recevoir des communications marketing de Brevo. Vous pouvez vous désinscrire à tout moment."
+}

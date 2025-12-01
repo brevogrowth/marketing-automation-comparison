@@ -2,6 +2,7 @@
 
 import React, { Suspense } from 'react';
 import { LanguageProvider } from '@/contexts/LanguageContext';
+import { LeadCaptureProvider } from '@/lib/lead-capture';
 
 interface ProvidersProps {
   children: React.ReactNode;
@@ -19,7 +20,16 @@ export function Providers({ children }: ProvidersProps) {
   return (
     <Suspense fallback={<ProvidersFallback />}>
       <LanguageProvider>
-        {children}
+        <LeadCaptureProvider
+          config={{
+            apiEndpoint: '/api/lead',
+            storageKey: 'brevo_kpi_lead',
+            mode: 'blocking',
+            blockFreeEmails: true,
+          }}
+        >
+          {children}
+        </LeadCaptureProvider>
       </LanguageProvider>
     </Suspense>
   );

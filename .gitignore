@@ -56,3 +56,6 @@ debug_*.txt
 
 # Windows artifacts
 nul
+
+# Local Netlify folder
+.netlify

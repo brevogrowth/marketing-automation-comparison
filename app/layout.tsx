@@ -5,6 +5,11 @@ import { Providers } from '@/components/Providers'
 export const metadata: Metadata = {
   title: 'Marketing KPI Benchmark - Brevo',
   description: 'Benchmark des KPIs marketing pour votre secteur',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({

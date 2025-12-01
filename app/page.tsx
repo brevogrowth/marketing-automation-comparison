@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { SidebarInputs } from '@/components/SidebarInputs';
@@ -10,6 +10,7 @@ import { IntroBlock } from '@/components/IntroBlock';
 import { Contributors } from '@/components/Contributors';
 import { benchmarks, Industry, PriceTier } from '@/data/benchmarks';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useLeadGate } from '@/lib/lead-capture';
 
 // Valid values for URL parameters
 const VALID_INDUSTRIES: Industry[] = ['Beauty', 'Electronics', 'Family', 'Fashion', 'Food', 'Home', 'Luxury', 'Manufacturing', 'SaaS', 'Services', 'Sports', 'Wholesale'];
@@ -18,6 +19,7 @@ const VALID_PRICE_TIERS: PriceTier[] = ['Budget', 'Mid-Range', 'Luxury'];
 export default function Home() {
     const searchParams = useSearchParams();
     const { t, language } = useLanguage();
+    const { requireLead } = useLeadGate();
 
     const LOADING_MESSAGES = [
         { title: t.analysis.generating, subtitle: t.analysis.comparingDataDesc, step: 1 },
@@ -78,7 +80,8 @@ export default function Home() {
         );
     };
 
-    const handleGenerateAnalysis = async () => {
+    // Core analysis logic - called after lead capture
+    const runAnalysis = useCallback(async () => {
         setShowAnalysis(true);
         setIsLoading(true);
         setLogs([]);
@@ -171,7 +174,21 @@ export default function Home() {
             setError(err instanceof Error ? err.message : 'An unexpected error occurred');
             setIsLoading(false);
         }
-    };
+    }, [userValues, selectedKpis, priceTier, industry, language]);
+
+    // Wrapper that requires lead capture before analysis
+    const handleGenerateAnalysis = useCallback(() => {
+        requireLead({
+            reason: 'generate_analysis',
+            context: {
+                industry,
+                priceTier,
+            },
+            onSuccess: () => {
+                runAnalysis();
+            },
+        });
+    }, [requireLead, industry, priceTier, runAnalysis]);
 
     const currentBenchmarks = benchmarks[industry];
 
