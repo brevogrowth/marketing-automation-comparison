@@ -27,8 +27,21 @@ export function LeadCaptureProvider({ children, config }: LeadCaptureProviderPro
   const storageKey = config.storageKey || DEFAULT_STORAGE_KEY;
 
   // Check localStorage on mount (client-side only)
+  // Support ?force=true URL parameter to reset lead capture state (for testing)
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      // Check for ?force=true parameter to reset lead capture
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('force') === 'true') {
+        localStorage.removeItem(storageKey);
+        // Clean URL without reloading (remove force param)
+        urlParams.delete('force');
+        const newUrl = urlParams.toString()
+          ? `${window.location.pathname}?${urlParams.toString()}`
+          : window.location.pathname;
+        window.history.replaceState({}, '', newUrl);
+      }
+
       const stored = localStorage.getItem(storageKey);
       if (stored === 'true') {
         setIsUnlocked(true);

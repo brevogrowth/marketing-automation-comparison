@@ -292,7 +292,66 @@ npx playwright test --ui      # UI mode
 npx playwright test --debug   # Debug mode
 ```
 
-#### 3. Temporary test scripts (.dev-tests/)
+#### 3. Production Testing with MCP (Playwright preferred)
+
+**When to use**: Testing features directly on production (https://brevo-kpi-benchmark.netlify.app/)
+
+**Recommended**: Use Playwright MCP tools (consistent with project E2E tests). Puppeteer is available as fallback.
+
+**Playwright MCP Setup** (one-time):
+```bash
+# The MCP uses chromium-1179. If missing, copy from nearest version:
+cp -r "$LOCALAPPDATA/ms-playwright/chromium-1181" "$LOCALAPPDATA/ms-playwright/chromium-1179"
+```
+
+**Available MCP tools** (Claude Code):
+```
+# Playwright (preferred)
+mcp__playwright__playwright_navigate    - Navigate to URL
+mcp__playwright__playwright_screenshot  - Take screenshot
+mcp__playwright__playwright_click       - Click elements
+mcp__playwright__playwright_fill        - Fill form inputs
+mcp__playwright__playwright_select      - Select dropdown values
+mcp__playwright__playwright_evaluate    - Run JavaScript
+mcp__playwright__playwright_close       - Close browser
+
+# Puppeteer (fallback if Playwright browsers not installed)
+mcp__puppeteer__puppeteer_navigate
+mcp__puppeteer__puppeteer_screenshot
+mcp__puppeteer__puppeteer_click
+mcp__puppeteer__puppeteer_fill
+mcp__puppeteer__puppeteer_select
+mcp__puppeteer__puppeteer_evaluate
+```
+
+**Quick test with `?force=true`**:
+```
+# Reset lead capture state and test popup
+https://brevo-kpi-benchmark.netlify.app/?force=true
+
+# Combine with other params
+https://brevo-kpi-benchmark.netlify.app/?force=true&industry=Beauty
+```
+
+**Example workflow** (testing lead capture popup):
+```
+1. Navigate to: https://brevo-kpi-benchmark.netlify.app/?force=true
+2. Change industry dropdown
+3. Take screenshot to verify popup appears
+4. Submit form and verify success
+```
+
+**Common debugging scenarios**:
+- **Feature not working locally but works in prod**: Check localStorage/sessionStorage state
+- **Popup not appearing**: Add `?force=true` to URL or verify storage key is not set
+- **Visual regression**: Take screenshots before/after changes
+
+**LocalStorage keys used by this app**:
+| Key | Purpose | Reset method |
+|-----|---------|--------------|
+| `brevo_kpi_lead` | Lead capture gate | `?force=true` URL param or `localStorage.removeItem('brevo_kpi_lead')` |
+
+#### 4. Temporary test scripts (.dev-tests/)
 
 **For API tests or ad-hoc debugging**:
 
@@ -325,6 +384,32 @@ npm test
 git add tests/ utils/
 git commit -m "feat: Add new feature with tests"
 ```
+
+### Testing Lead Capture Feature
+
+The lead capture popup uses localStorage to track if a user has already provided their email.
+
+**Easiest way to test** (recommended):
+```
+# Just add ?force=true to any URL
+http://localhost:3000/?force=true
+https://brevo-kpi-benchmark.netlify.app/?force=true
+```
+
+This automatically clears localStorage and removes the param from URL (clean state).
+
+**Alternative - DevTools console**:
+```javascript
+localStorage.removeItem('brevo_kpi_lead');
+location.reload();
+```
+
+**Popup trigger conditions** (see `app/page.tsx:77-110`):
+1. User changes industry selector AND
+2. `isUnlocked` is `false` (localStorage key not set) AND
+3. `hasInteracted` is `false` (first interaction in session)
+
+**Implementation**: `lib/lead-capture/LeadCaptureProvider.tsx:31-43`
 
 ---
 
