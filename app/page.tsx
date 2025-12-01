@@ -19,7 +19,7 @@ const VALID_PRICE_TIERS: PriceTier[] = ['Budget', 'Mid-Range', 'Luxury'];
 export default function Home() {
     const searchParams = useSearchParams();
     const { t, language } = useLanguage();
-    const { requireLead } = useLeadGate();
+    const { requireLead, isUnlocked } = useLeadGate();
 
     const LOADING_MESSAGES = [
         { title: t.analysis.generating, subtitle: t.analysis.comparingDataDesc, step: 1 },
@@ -69,6 +69,45 @@ export default function Home() {
 
         return () => clearInterval(interval);
     }, [isLoading]);
+
+    // Track if user has interacted with selectors (to trigger popup only on first interaction)
+    const [hasInteracted, setHasInteracted] = useState(false);
+
+    // Wrapper for industry change - triggers lead capture on first interaction
+    const handleIndustryChange = (newIndustry: Industry) => {
+        if (!isUnlocked && !hasInteracted) {
+            // First interaction and not unlocked - show popup
+            requireLead({
+                reason: 'industry_change',
+                context: { industry: newIndustry, priceTier },
+                onSuccess: () => {
+                    setHasInteracted(true);
+                    setIndustry(newIndustry);
+                },
+            });
+        } else {
+            // Already unlocked or has interacted - change directly
+            setIndustry(newIndustry);
+        }
+    };
+
+    // Wrapper for price tier change - triggers lead capture on first interaction
+    const handlePriceTierChange = (newPriceTier: PriceTier) => {
+        if (!isUnlocked && !hasInteracted) {
+            // First interaction and not unlocked - show popup
+            requireLead({
+                reason: 'price_tier_change',
+                context: { industry, priceTier: newPriceTier },
+                onSuccess: () => {
+                    setHasInteracted(true);
+                    setPriceTier(newPriceTier);
+                },
+            });
+        } else {
+            // Already unlocked or has interacted - change directly
+            setPriceTier(newPriceTier);
+        }
+    };
 
     const handleValueChange = (id: string, value: string) => {
         setUserValues(prev => ({ ...prev, [id]: value }));
@@ -178,7 +217,6 @@ export default function Home() {
 
     // Wrapper that requires lead capture before analysis
     const handleGenerateAnalysis = () => {
-        console.log('[LeadCapture] handleGenerateAnalysis called, calling requireLead');
         requireLead({
             reason: 'generate_analysis',
             context: {
@@ -186,7 +224,6 @@ export default function Home() {
                 priceTier,
             },
             onSuccess: () => {
-                console.log('[LeadCapture] onSuccess callback triggered');
                 runAnalysis();
             },
         });
@@ -234,9 +271,9 @@ export default function Home() {
                     <div className="lg:w-1/4">
                         <SidebarInputs
                             industry={industry}
-                            setIndustry={setIndustry}
+                            setIndustry={handleIndustryChange}
                             priceTier={priceTier}
-                            setPriceTier={setPriceTier}
+                            setPriceTier={handlePriceTierChange}
                             isComparing={isComparing}
                             setIsComparing={(val) => {
                                 setIsComparing(val);
