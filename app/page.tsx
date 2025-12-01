@@ -177,7 +177,8 @@ export default function Home() {
     }, [userValues, selectedKpis, priceTier, industry, language]);
 
     // Wrapper that requires lead capture before analysis
-    const handleGenerateAnalysis = useCallback(() => {
+    const handleGenerateAnalysis = () => {
+        console.log('[LeadCapture] handleGenerateAnalysis called, calling requireLead');
         requireLead({
             reason: 'generate_analysis',
             context: {
@@ -185,10 +186,11 @@ export default function Home() {
                 priceTier,
             },
             onSuccess: () => {
+                console.log('[LeadCapture] onSuccess callback triggered');
                 runAnalysis();
             },
         });
-    }, [requireLead, industry, priceTier, runAnalysis]);
+    };
 
     const currentBenchmarks = benchmarks[industry];
 

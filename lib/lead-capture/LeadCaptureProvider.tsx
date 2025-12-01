@@ -38,13 +38,16 @@ export function LeadCaptureProvider({ children, config }: LeadCaptureProviderPro
   }, [storageKey]);
 
   const requireLead = useCallback((options: TriggerOptions) => {
+    console.log('[LeadCapture] requireLead called, isUnlocked:', isUnlocked);
     // If already unlocked, call success immediately
     if (isUnlocked) {
+      console.log('[LeadCapture] Already unlocked, calling onSuccess directly');
       options.onSuccess();
       return;
     }
 
     // Store the trigger options and open modal
+    console.log('[LeadCapture] Opening modal...');
     setCurrentTrigger(options);
     setIsModalOpen(true);
   }, [isUnlocked]);
