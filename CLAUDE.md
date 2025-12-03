@@ -89,6 +89,7 @@ app/
 │       ├── route.ts              # POST - Create Dust conversation
 │       └── [conversationId]/
 │           └── route.ts          # GET - Poll status
+├── page.tsx                      # Main landing page with lead capture
 ├── v2/page.tsx                   # Interactive grid
 ├── v3/page.tsx                   # Comparative analysis
 ├── v4/page.tsx                   # AI analysis (main)
@@ -101,6 +102,29 @@ components/
 ├── SidebarInputs.tsx             # Industry/priceTier selector
 ├── Header.tsx                    # Brevo navigation
 └── [30+ others]                  # Legacy components (to refactor)
+
+packages/
+└── lead-capture/                 # @brevo/lead-capture NPM package
+    ├── src/
+    │   ├── core/
+    │   │   ├── api.ts            # Brevo API integration + retry logic
+    │   │   ├── storage.ts        # localStorage management
+    │   │   ├── types.ts          # TypeScript interfaces
+    │   │   ├── validation.ts     # Email validation (100+ blocked domains)
+    │   │   └── translations/     # i18n (en, fr, de, es)
+    │   ├── modal/
+    │   │   ├── LeadCaptureProvider.tsx  # Context provider
+    │   │   ├── LeadGateModal.tsx        # Modal component
+    │   │   └── useLeadGate.ts           # Hook for gating
+    │   └── form/
+    │       ├── LeadCaptureForm.tsx      # Standalone form
+    │       └── useLeadForm.ts           # Form hook
+    └── tests/
+        └── validation.test.ts    # 45 validation tests
+
+lib/
+└── lead-capture/                 # Re-exports from @brevo/lead-capture
+    └── index.ts                  # Backwards compatibility layer
 
 data/
 ├── benchmarks.csv                # Source of truth (sync Google Sheets)
@@ -115,7 +139,8 @@ scripts/
 
 tests/
 ├── benchmarkUtils.test.ts        # Unit tests for business logic
-└── dust-integration.spec.ts      # E2E Playwright tests
+├── full-user-journey.spec.ts     # E2E Playwright tests (9 tests)
+└── dust-integration.spec.ts      # AI integration E2E test
 
 docs/                             # Detailed documentation
 ```
@@ -227,6 +252,42 @@ npm run generate:benchmarks
 ```
 
 > **Never edit `data/benchmarks.ts` manually**
+
+### Lead Capture (`@brevo/lead-capture`)
+
+**Purpose**: Capture professional emails before users can access AI analysis features.
+
+**Architecture**:
+```tsx
+// 1. Wrap app with provider
+<LeadCaptureProvider config={{
+  brevoListId: 123,
+  language: 'fr',
+  blockFreeEmails: true
+}}>
+  <App />
+</LeadCaptureProvider>
+
+// 2. Use hook to gate features
+const { isUnlocked, showModal, capturedLead } = useLeadGate();
+
+// 3. Trigger modal on user interaction
+if (!isUnlocked) showModal();
+```
+
+**Key Features**:
+- **Email Validation**: Blocks 100+ free email domains
+- **Backup Strategy**: Failed submissions saved to localStorage, retried on next visit
+- **Multi-Language**: EN, FR, DE, ES built-in translations
+- **Theming**: Customizable colors, border radius, shadows
+
+**LocalStorage Keys**:
+| Key | Purpose |
+|-----|---------|
+| `brevo_kpi_lead` | Captured lead data (email, timestamp) |
+| `brevo_lead_backup` | Failed submissions awaiting retry |
+
+**API Integration**: Submits to Brevo API via `/api/leads` endpoint with contact creation.
 
 ---
 
@@ -350,6 +411,7 @@ https://brevo-kpi-benchmark.netlify.app/?force=true&industry=Beauty
 | Key | Purpose | Reset method |
 |-----|---------|--------------|
 | `brevo_kpi_lead` | Lead capture gate | `?force=true` URL param or `localStorage.removeItem('brevo_kpi_lead')` |
+| `brevo_lead_backup` | Failed lead submissions awaiting retry | `localStorage.removeItem('brevo_lead_backup')` |
 
 #### 4. Temporary test scripts (.dev-tests/)
 
@@ -525,9 +587,33 @@ touch .dev-tests/output/result.txt
 
 | Date | Decision | Reason |
 |------|----------|--------|
+| Dec 2025 | `@brevo/lead-capture` package | Reusable module for future marketing assets |
+| Dec 2025 | 100+ blocked email domains | Comprehensive free email filtering |
+| Dec 2025 | Lead backup/retry strategy | Handle API failures gracefully |
+| Dec 2025 | E2E tests with localStorage bypass | Avoid lead modal blocking tests |
 | Nov 2025 | Streaming → Async polling migration | Netlify Free 10s timeout |
 | Nov 2025 | Dust.tt integration | AI analysis for v4 |
 | Nov 2025 | Heartbeat approach (abandoned) | Timeout incompatible |
 | Nov 2025 | Expanded to 12 industries | B2B market coverage |
 | Nov 2025 | Collapsible UI sections | Reduce cognitive load |
 | Nov 2025 | "Why this metric?" toggles | Educational UX improvement |
+
+---
+
+## Test Coverage Summary
+
+| Category | Tests | File |
+|----------|-------|------|
+| Email Validation | 45 | `packages/lead-capture/tests/validation.test.ts` |
+| Benchmark Utils | 15 | `tests/benchmarkUtils.test.ts` |
+| Lead Capture API | 18 | `packages/lead-capture/tests/api.test.ts` |
+| E2E Smoke Tests | 9 | `tests/full-user-journey.spec.ts` |
+| AI Integration | 1 | `tests/dust-integration.spec.ts` |
+
+**Total**: 88 unit tests + 10 E2E tests
+
+Run all tests:
+```bash
+npm test              # Unit tests (Vitest)
+npx playwright test   # E2E tests (Playwright)
+```

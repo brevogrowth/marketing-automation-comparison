@@ -4,12 +4,16 @@ A strategic marketing asset for Brevo's mid-market prospecting. This interactive
 
 **Live Demo:** [brevo-kpi-benchmark.netlify.app](https://brevo-kpi-benchmark.netlify.app)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/brevo-kpi-benchmark/deploys)
+
 ## Features
 
 - **12 Industries Supported** - B2C (Fashion, Beauty, Home, Electronics, Food, Sports, Luxury, Family) and B2B (SaaS, Services, Manufacturing, Wholesale)
 - **3 Price Tiers** - Budget, Mid-Range, and Luxury segments with tailored benchmarks
 - **Traffic Light System** - Instant visual feedback (green/yellow/red) on your performance
 - **AI-Powered Analysis** - Personalized strategic recommendations via Dust.tt
+- **Lead Capture Module** - Reusable `@brevo/lead-capture` package with professional email validation
+- **Multi-Language Support** - English, French, German, and Spanish
 - **Collapsible UI** - Clean interface with expandable sections and "Why this metric?" explanations
 - **Research-Backed Data** - Benchmarks sourced from industry reports and real data
 
@@ -62,15 +66,27 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ```
 app/
-├── v2/              # Interactive benchmark grid
-├── v3/              # Comparative analysis
-├── v4/              # AI analysis (main version)
-└── api/analyze/     # Dust.tt AI endpoint
+├── page.tsx                # Main landing page with lead capture
+├── v2/                     # Interactive benchmark grid
+├── v3/                     # Comparative analysis
+├── v4/                     # AI analysis (main version)
+└── api/analyze/            # Dust.tt AI endpoint (async polling)
 
 components/
 ├── BenchmarkGrid.tsx       # KPI grid with collapsible sections
 ├── AiAnalysisResult.tsx    # Markdown rendering for AI output
 └── SidebarInputs.tsx       # Industry/price tier selector
+
+packages/
+└── lead-capture/           # @brevo/lead-capture NPM package
+    ├── src/
+    │   ├── core/           # Validation, API, storage, translations
+    │   ├── modal/          # LeadCaptureProvider, LeadGateModal
+    │   └── form/           # LeadCaptureForm component
+    └── tests/              # Validation unit tests
+
+lib/
+└── lead-capture/           # Re-exports from @brevo/lead-capture
 
 data/
 ├── benchmarks.csv          # Source of truth (synced from Google Sheets)
@@ -82,6 +98,11 @@ utils/
 scripts/
 ├── generate-benchmarks.js  # CSV → TypeScript generator
 └── sync-from-gsheet.js     # Google Sheets → CSV sync
+
+tests/
+├── benchmarkUtils.test.ts  # Unit tests for business logic
+├── full-user-journey.spec.ts # E2E tests (Playwright)
+└── dust-integration.spec.ts  # AI integration E2E test
 ```
 
 ## Tech Stack
@@ -128,15 +149,43 @@ DUST_ASSISTANT_ID=your_assistant_id
 ## Testing
 
 ```bash
-# Unit tests (Vitest)
+# Unit tests (Vitest) - 88 tests
 npm test
 npm test -- --coverage
 npm test -- --watch
 
-# E2E tests (Playwright)
+# E2E tests (Playwright) - 9 smoke tests + AI integration
 npx playwright test
 npx playwright test --ui
 npx playwright test --debug
+
+# Test specific file
+npx playwright test full-user-journey
+
+# Skip AI tests (faster)
+npx playwright test --grep-invert "AI"
+```
+
+### Test Coverage
+
+| Category | Tests | Coverage |
+|----------|-------|----------|
+| Email Validation | 45 | 100+ free domains |
+| Benchmark Utils | 15 | Traffic lights, scoring |
+| Lead Capture API | 18 | Retry, backup strategy |
+| E2E Smoke Tests | 9 | Full user journey |
+| AI Integration | 1 | Dust.tt analysis |
+
+### Testing Lead Capture
+
+```bash
+# Reset lead capture state for testing
+# Add ?force=true to any URL
+http://localhost:3000/?force=true
+
+# Or via DevTools console
+localStorage.removeItem('brevo_kpi_lead');
+location.reload();
 ```
 
 ## Documentation
@@ -160,11 +209,34 @@ Due to Netlify Free tier's 10-second timeout constraint, AI analysis uses an asy
 
 This enables AI-powered analysis that takes 2-3 minutes without hitting serverless timeouts.
 
+### Lead Capture Module (`@brevo/lead-capture`)
+
+A reusable, framework-agnostic lead capture solution:
+
+- **Professional Email Validation** - Blocks 100+ free email domains (Gmail, Yahoo, Hotmail, etc.)
+- **Modal & Form Modes** - Flexible integration options
+- **Multi-Language** - Built-in translations (EN, FR, DE, ES)
+- **Backup/Retry Strategy** - Automatic retry of failed lead submissions
+- **Customizable Theming** - Override colors, border radius, shadows
+
+```tsx
+import { LeadCaptureProvider, useLeadGate } from '@brevo/lead-capture';
+
+function App() {
+  return (
+    <LeadCaptureProvider config={{ brevoListId: 123 }}>
+      <YourComponent />
+    </LeadCaptureProvider>
+  );
+}
+```
+
 ### UX Improvements (Latest)
 
 - **Collapsible Sections** - Category headers are closed by default to reduce cognitive load
 - **"Why this metric?"** - Each KPI has an expandable explanation with definition, importance, and best practices
 - **Animated Transitions** - Smooth chevron animations and content reveals
+- **Lead Gate Modal** - Captures professional emails on first interaction
 
 ## Contributing
 

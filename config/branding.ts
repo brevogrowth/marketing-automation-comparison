@@ -41,8 +41,8 @@ export const branding = {
   links: {
     /** Main website */
     website: 'https://www.brevo.com',
-    /** Demo request page */
-    demo: 'https://www.brevo.com/contact/',
+    /** Demo request page (enterprise contact) */
+    demo: 'https://www.brevo.com/enterprise/contact-us/',
     /** Privacy policy */
     privacy: 'https://www.brevo.com/legal/privacypolicy/',
     /** Free trial signup */
