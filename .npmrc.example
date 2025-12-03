@@ -1,0 +1,15 @@
+# GitHub Packages configuration for @brevogrowth scope
+# Copy this file to .npmrc and set your token
+
+@brevogrowth:registry=https://npm.pkg.github.com
+
+# Option 1: Use environment variable (recommended for CI/CD)
+//npm.pkg.github.com/:_authToken=${NPM_TOKEN}
+
+# Option 2: Use token directly (local development only - NEVER commit!)
+# //npm.pkg.github.com/:_authToken=ghp_your_token_here
+
+# To create a token:
+# 1. Go to https://github.com/settings/tokens
+# 2. Generate new token (classic) with `read:packages` scope
+# 3. Set as NPM_TOKEN environment variable or paste above

@@ -59,3 +59,6 @@ nul
 
 # Local Netlify folder
 .netlify
+
+# npm auth token - only ignore if it contains hardcoded secrets
+# .npmrc is safe to commit when using ${NPM_TOKEN} environment variable

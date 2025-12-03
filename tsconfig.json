@@ -37,9 +37,6 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "packages/*/node_modules",
-    "packages/*/dist",
-    "packages/*/tsup.config.ts"
+    "node_modules"
   ]
 }

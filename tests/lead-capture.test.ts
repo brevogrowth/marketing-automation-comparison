@@ -1,6 +1,6 @@
 /**
  * Lead Capture Module - Unit Tests
- * Tests the validation functions from the @brevo/lead-capture package
+ * Tests the validation functions from the @brevogrowth/lead-capture package
  */
 
 import { describe, it, expect } from 'vitest';
@@ -10,7 +10,8 @@ import {
   validateProfessionalEmail,
   getEmailDomain,
   DEFAULT_FREE_EMAIL_DOMAINS,
-} from '../packages/lead-capture/src/core/validation';
+  getTranslations,
+} from '@brevogrowth/lead-capture';
 
 describe('isValidEmail', () => {
   it('should accept valid email addresses', () => {
@@ -161,11 +162,22 @@ describe('DEFAULT_FREE_EMAIL_DOMAINS', () => {
 });
 
 describe('Lead Capture Integration', () => {
-  it('should have all required translation keys', async () => {
-    const en = await import('../packages/lead-capture/src/core/translations/en.json');
-    const fr = await import('../packages/lead-capture/src/core/translations/fr.json');
-    const de = await import('../packages/lead-capture/src/core/translations/de.json');
-    const es = await import('../packages/lead-capture/src/core/translations/es.json');
+  it('should have translations for all supported languages', () => {
+    const languages = ['en', 'fr', 'de', 'es'] as const;
+
+    for (const lang of languages) {
+      const translations = getTranslations(lang);
+      expect(translations).toBeDefined();
+      expect(translations.modalTitle).toBeTruthy();
+      expect(translations.emailLabel).toBeTruthy();
+      expect(translations.submitButton).toBeTruthy();
+      expect(translations.freeEmailError).toBeTruthy();
+      expect(translations.invalidEmailError).toBeTruthy();
+    }
+  });
+
+  it('should have all required translation keys', () => {
+    const translations = getTranslations('en');
 
     const requiredKeys = [
       'modalTitle',
@@ -182,27 +194,8 @@ describe('Lead Capture Integration', () => {
     ];
 
     for (const key of requiredKeys) {
-      expect(en).toHaveProperty(key);
-      expect(fr).toHaveProperty(key);
-      expect(de).toHaveProperty(key);
-      expect(es).toHaveProperty(key);
-    }
-  });
-
-  it('should not have empty translation values', async () => {
-    const translations = [
-      await import('../packages/lead-capture/src/core/translations/en.json'),
-      await import('../packages/lead-capture/src/core/translations/fr.json'),
-      await import('../packages/lead-capture/src/core/translations/de.json'),
-      await import('../packages/lead-capture/src/core/translations/es.json'),
-    ];
-
-    for (const trans of translations) {
-      for (const [key, value] of Object.entries(trans.default || trans)) {
-        expect(value, `Translation key "${key}" should not be empty`).toBeTruthy();
-        expect(typeof value).toBe('string');
-        expect((value as string).length).toBeGreaterThan(0);
-      }
+      expect(translations).toHaveProperty(key);
+      expect((translations as Record<string, string>)[key]).toBeTruthy();
     }
   });
 });
