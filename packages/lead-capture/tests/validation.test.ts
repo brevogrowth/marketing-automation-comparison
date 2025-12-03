@@ -1,6 +1,6 @@
 /**
- * Lead Capture Module - Unit Tests
- * Tests the validation functions from the @brevo/lead-capture package
+ * Lead Capture Package - Validation Tests
+ * Tests for the core validation functions
  */
 
 import { describe, it, expect } from 'vitest';
@@ -10,7 +10,7 @@ import {
   validateProfessionalEmail,
   getEmailDomain,
   DEFAULT_FREE_EMAIL_DOMAINS,
-} from '../packages/lead-capture/src/core/validation';
+} from '../src/core/validation';
 
 describe('isValidEmail', () => {
   it('should accept valid email addresses', () => {
@@ -38,7 +38,7 @@ describe('isValidEmail', () => {
   });
 
   it('should accept short but valid emails', () => {
-    expect(isValidEmail('a@b.co')).toBe(true); // short but valid
+    expect(isValidEmail('a@b.co')).toBe(true);
   });
 });
 
@@ -158,51 +158,10 @@ describe('DEFAULT_FREE_EMAIL_DOMAINS', () => {
     expect(DEFAULT_FREE_EMAIL_DOMAINS).toContain('web.de');
     expect(DEFAULT_FREE_EMAIL_DOMAINS).toContain('free.fr');
   });
-});
 
-describe('Lead Capture Integration', () => {
-  it('should have all required translation keys', async () => {
-    const en = await import('../packages/lead-capture/src/core/translations/en.json');
-    const fr = await import('../packages/lead-capture/src/core/translations/fr.json');
-    const de = await import('../packages/lead-capture/src/core/translations/de.json');
-    const es = await import('../packages/lead-capture/src/core/translations/es.json');
-
-    const requiredKeys = [
-      'modalTitle',
-      'modalDescription',
-      'emailLabel',
-      'emailPlaceholder',
-      'submitButton',
-      'loadingButton',
-      'freeEmailError',
-      'invalidEmailError',
-      'networkError',
-      'successMessage',
-      'legalText',
-    ];
-
-    for (const key of requiredKeys) {
-      expect(en).toHaveProperty(key);
-      expect(fr).toHaveProperty(key);
-      expect(de).toHaveProperty(key);
-      expect(es).toHaveProperty(key);
-    }
-  });
-
-  it('should not have empty translation values', async () => {
-    const translations = [
-      await import('../packages/lead-capture/src/core/translations/en.json'),
-      await import('../packages/lead-capture/src/core/translations/fr.json'),
-      await import('../packages/lead-capture/src/core/translations/de.json'),
-      await import('../packages/lead-capture/src/core/translations/es.json'),
-    ];
-
-    for (const trans of translations) {
-      for (const [key, value] of Object.entries(trans.default || trans)) {
-        expect(value, `Translation key "${key}" should not be empty`).toBeTruthy();
-        expect(typeof value).toBe('string');
-        expect((value as string).length).toBeGreaterThan(0);
-      }
-    }
+  it('should contain disposable email providers', () => {
+    expect(DEFAULT_FREE_EMAIL_DOMAINS).toContain('tempmail.com');
+    expect(DEFAULT_FREE_EMAIL_DOMAINS).toContain('guerrillamail.com');
+    expect(DEFAULT_FREE_EMAIL_DOMAINS).toContain('mailinator.com');
   });
 });

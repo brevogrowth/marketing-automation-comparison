@@ -5,6 +5,24 @@ import { useLeadCaptureContext } from './LeadCaptureContext';
 import { validateProfessionalEmail } from '../core/validation';
 import { submitLead } from '../core/api';
 import { getTranslations } from '../core/translations';
+import type { ThemeConfig } from '../core/types';
+
+// Default theme values
+const DEFAULT_THEME: Required<ThemeConfig> = {
+  primaryColor: '#00925D',
+  primaryHover: '#007A4D',
+  errorColor: '#EF4444',
+  successColor: '#059669',
+  borderRadius: '0.5rem',
+  modalMaxWidth: '28rem',
+};
+
+function getTheme(theme?: ThemeConfig): Required<ThemeConfig> {
+  return {
+    ...DEFAULT_THEME,
+    ...theme,
+  };
+}
 
 export function LeadGateModal() {
   const { isModalOpen, closeModal, unlock, config, pendingCallback } = useLeadCaptureContext();
@@ -16,6 +34,7 @@ export function LeadGateModal() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const t = getTranslations(config.language, config.translations);
+  const theme = getTheme(config.theme);
   const isPassive = config.mode === 'passive';
 
   // Focus input when modal opens
@@ -90,6 +109,9 @@ export function LeadGateModal() {
     }
   };
 
+  // Generate colors with opacity for backgrounds
+  const primaryBgLight = `${theme.primaryColor}1A`; // ~10% opacity
+
   return (
     <div
       style={{
@@ -113,7 +135,7 @@ export function LeadGateModal() {
           backgroundColor: 'white',
           borderRadius: '1rem',
           boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-          maxWidth: '28rem',
+          maxWidth: theme.modalMaxWidth,
           width: '100%',
           padding: '2rem',
           position: 'relative',
@@ -148,7 +170,7 @@ export function LeadGateModal() {
             style={{
               width: '3rem',
               height: '3rem',
-              backgroundColor: 'rgba(0, 146, 93, 0.1)',
+              backgroundColor: primaryBgLight,
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -158,8 +180,8 @@ export function LeadGateModal() {
             }}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19 11H5V21H19V11Z" stroke="#00925D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M17 11V7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7V11" stroke="#00925D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M19 11H5V21H19V11Z" stroke={theme.primaryColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M17 11V7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7V11" stroke={theme.primaryColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
           <h2
@@ -203,24 +225,24 @@ export function LeadGateModal() {
               style={{
                 width: '100%',
                 padding: '0.75rem',
-                borderRadius: '0.5rem',
-                border: `1px solid ${error ? '#EF4444' : '#D1D5DB'}`,
+                borderRadius: theme.borderRadius,
+                border: `1px solid ${error ? theme.errorColor : '#D1D5DB'}`,
                 fontSize: '1rem',
                 outline: 'none',
                 boxSizing: 'border-box',
                 transition: 'border-color 0.15s, box-shadow 0.15s',
               }}
               onFocus={(e) => {
-                e.target.style.borderColor = '#00925D';
-                e.target.style.boxShadow = '0 0 0 3px rgba(0, 146, 93, 0.1)';
+                e.target.style.borderColor = theme.primaryColor;
+                e.target.style.boxShadow = `0 0 0 3px ${primaryBgLight}`;
               }}
               onBlur={(e) => {
-                e.target.style.borderColor = error ? '#EF4444' : '#D1D5DB';
+                e.target.style.borderColor = error ? theme.errorColor : '#D1D5DB';
                 e.target.style.boxShadow = 'none';
               }}
             />
             {error && (
-              <p style={{ fontSize: '0.75rem', color: '#EF4444', marginTop: '0.25rem' }}>
+              <p style={{ fontSize: '0.75rem', color: theme.errorColor, marginTop: '0.25rem' }}>
                 {error}
               </p>
             )}
@@ -232,20 +254,20 @@ export function LeadGateModal() {
             style={{
               width: '100%',
               padding: '0.75rem 1rem',
-              backgroundColor: isLoading ? '#9CA3AF' : '#00925D',
+              backgroundColor: isLoading ? '#9CA3AF' : theme.primaryColor,
               color: 'white',
               fontWeight: 700,
-              borderRadius: '0.5rem',
+              borderRadius: theme.borderRadius,
               border: 'none',
               fontSize: '1rem',
               cursor: isLoading ? 'not-allowed' : 'pointer',
               transition: 'background-color 0.15s',
             }}
             onMouseEnter={(e) => {
-              if (!isLoading) e.currentTarget.style.backgroundColor = '#007A4D';
+              if (!isLoading) e.currentTarget.style.backgroundColor = theme.primaryHover;
             }}
             onMouseLeave={(e) => {
-              if (!isLoading) e.currentTarget.style.backgroundColor = '#00925D';
+              if (!isLoading) e.currentTarget.style.backgroundColor = theme.primaryColor;
             }}
           >
             {isLoading ? t.loadingButton : t.submitButton}

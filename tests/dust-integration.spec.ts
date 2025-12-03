@@ -3,8 +3,15 @@ import { test, expect } from '@playwright/test';
 test('should generate analysis via Dust API', async ({ page }) => {
     test.setTimeout(180000); // Increase timeout to 3 minutes for AI analysis
 
-    // 1. Navigate to main page
+    // 1. Navigate to main page and set localStorage to bypass lead capture
     await page.goto('/');
+    await page.evaluate(() => {
+        localStorage.setItem('brevo_kpi_lead', JSON.stringify({
+            email: 'test@example.com',
+            capturedAt: new Date().toISOString()
+        }));
+    });
+    await page.reload();
 
     // 2. Wait for page to load
     await expect(page.locator('h1')).toContainText('Marketing KPI Benchmark');

@@ -6,6 +6,38 @@ export const runtime = 'nodejs';
 // Reduced timeout - this endpoint now returns immediately
 export const maxDuration = 10;
 
+// Rate limiting configuration
+const rateLimit = new Map<string, { count: number; resetTime: number }>();
+const RATE_LIMIT = 10; // requests
+const RATE_WINDOW = 60 * 1000; // 1 minute
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const record = rateLimit.get(ip);
+
+  if (!record || now > record.resetTime) {
+    rateLimit.set(ip, { count: 1, resetTime: now + RATE_WINDOW });
+    return true;
+  }
+
+  if (record.count >= RATE_LIMIT) {
+    return false;
+  }
+
+  record.count++;
+  return true;
+}
+
+// Clean up old entries periodically (every 5 minutes)
+setInterval(() => {
+  const now = Date.now();
+  rateLimit.forEach((record, ip) => {
+    if (now > record.resetTime) {
+      rateLimit.delete(ip);
+    }
+  });
+}, 5 * 60 * 1000);
+
 // Zod schema for request validation
 const AnalysisSchema = z.object({
     userValues: z.record(z.string()),
@@ -138,6 +170,18 @@ Tono: Profesional, perspicaz, directo. Evite consejos genéricos.`
 };
 
 export async function POST(request: Request) {
+    // Rate limiting check
+    const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
+               request.headers.get('x-real-ip') ||
+               'unknown';
+
+    if (!checkRateLimit(ip)) {
+        return NextResponse.json(
+            { error: 'Rate limit exceeded. Try again in 1 minute.' },
+            { status: 429 }
+        );
+    }
+
     try {
         // Validate request body
         const body = await request.json();

@@ -21,9 +21,10 @@ export {
   isValidEmail,
   isFreeEmail,
   validateProfessionalEmail,
+  getEmailDomain,
   DEFAULT_FREE_EMAIL_DOMAINS,
 } from '../../packages/lead-capture/src/core/validation';
-export { submitLead } from '../../packages/lead-capture/src/core/api';
+export { submitLead, retryFailedLeads } from '../../packages/lead-capture/src/core/api';
 export {
   isLeadCaptured,
   markLeadCaptured,
@@ -34,6 +35,7 @@ export { getTranslations, translations } from '../../packages/lead-capture/src/c
 
 // Re-export types
 export type {
+  ThemeConfig,
   LeadCaptureConfig,
   ModalConfig,
   TriggerOptions,

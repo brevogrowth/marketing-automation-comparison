@@ -14,8 +14,8 @@ export { useLeadForm } from './form/useLeadForm';
 // ============================================
 // CORE UTILITIES
 // ============================================
-export { isValidEmail, isFreeEmail, validateProfessionalEmail, DEFAULT_FREE_EMAIL_DOMAINS } from './core/validation';
-export { submitLead } from './core/api';
+export { isValidEmail, isFreeEmail, validateProfessionalEmail, getEmailDomain, DEFAULT_FREE_EMAIL_DOMAINS } from './core/validation';
+export { submitLead, retryFailedLeads } from './core/api';
 export { isLeadCaptured, markLeadCaptured, getCapturedLead, resetLeadCapture } from './core/storage';
 export { getTranslations, translations } from './core/translations';
 
@@ -23,6 +23,7 @@ export { getTranslations, translations } from './core/translations';
 // TYPES
 // ============================================
 export type {
+  ThemeConfig,
   LeadCaptureConfig,
   ModalConfig,
   TriggerOptions,

@@ -1,4 +1,23 @@
 // ============================================
+// THEME CONFIGURATION
+// ============================================
+
+export interface ThemeConfig {
+  /** Primary brand color (default: '#00925D') */
+  primaryColor?: string;
+  /** Primary hover color (default: '#007A4D') */
+  primaryHover?: string;
+  /** Error color (default: '#EF4444') */
+  errorColor?: string;
+  /** Success color (default: '#059669') */
+  successColor?: string;
+  /** Border radius (default: '0.5rem') */
+  borderRadius?: string;
+  /** Modal max width (default: '28rem') */
+  modalMaxWidth?: string;
+}
+
+// ============================================
 // CONFIGURATION
 // ============================================
 
@@ -23,6 +42,9 @@ export interface LeadCaptureConfig {
 
   /** Override des traductions */
   translations?: Partial<LeadCaptureTranslations>;
+
+  /** Theme customization */
+  theme?: ThemeConfig;
 }
 
 // ============================================
