@@ -9,7 +9,7 @@
 # NPM_TOKEN must be set in Netlify UI (Site settings > Environment variables)
 # Create a GitHub PAT with `read:packages` scope
 [build.environment]
-  NPM_CONFIG_@brevogrowth:registry = "https://npm.pkg.github.com"
+  "NPM_CONFIG_@brevogrowth:registry" = "https://npm.pkg.github.com"
 
 # Note: Function timeout is configured via maxDuration in route.ts
 # With async polling pattern, both endpoints complete quickly (<10s)
