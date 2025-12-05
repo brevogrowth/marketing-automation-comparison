@@ -33,6 +33,9 @@ const LeadDataSchema = z.object({
 type LeadData = z.infer<typeof LeadDataSchema>;
 
 export async function POST(request: NextRequest) {
+  // Debug result tracking
+  let forwardResult: { status?: number; body?: string; error?: string } = {};
+
   try {
     // Parse request body
     const body = await request.json();
@@ -104,6 +107,8 @@ export async function POST(request: NextRequest) {
         clearTimeout(timeoutId);
 
         const responseText = await response.text();
+        forwardResult = { status: response.status, body: responseText };
+
         if (!response.ok) {
           console.error('[Lead API] Lead Hub returned error:', response.status, responseText);
         } else {
@@ -111,10 +116,13 @@ export async function POST(request: NextRequest) {
         }
       } catch (webhookError) {
         // Log error but don't fail the request (fail-open pattern)
-        console.error('[Lead API] Lead Hub error:', webhookError instanceof Error ? webhookError.message : webhookError);
+        const errorMsg = webhookError instanceof Error ? webhookError.message : String(webhookError);
+        forwardResult = { error: errorMsg };
+        console.error('[Lead API] Lead Hub error:', errorMsg);
       }
     } else {
       console.warn('[Lead API] LEAD_HUB_URL not configured - check Netlify environment variables');
+      forwardResult = { error: 'LEAD_HUB_URL not configured' };
       // No lead-hub configured - log the lead data for debugging
       console.log('[Lead API] No LEAD_HUB_URL configured. Lead received:', {
         email: leadData.email,
@@ -131,8 +139,9 @@ export async function POST(request: NextRequest) {
       message: 'Lead received',
       _debug: {
         leadHubConfigured: !!leadHubUrl,
-        leadHubUrl: leadHubUrl ? `${leadHubUrl.substring(0, 30)}...` : null,
+        leadHubUrl: leadHubUrl ? `${leadHubUrl.substring(0, 50)}...` : null,
         apiKeyConfigured: !!leadHubApiKey,
+        forwardResult,
       },
     });
   } catch (error) {
@@ -143,6 +152,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       message: 'Lead received',
+      _debug: { error: error instanceof Error ? error.message : 'Unknown error' },
     });
   }
 }
