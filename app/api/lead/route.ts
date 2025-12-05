@@ -72,34 +72,31 @@ export async function POST(request: NextRequest) {
           headers['Authorization'] = `Bearer ${leadHubApiKey}`;
         }
 
+        // Format payload according to Lead Hub CaptureRequestSchema
         const response = await fetch(leadHubUrl, {
           method: 'POST',
           headers,
           body: JSON.stringify({
-            // Core lead data
-            email: leadData.email,
-            timestamp: leadData.timestamp,
-            language: leadData.language,
-
-            // Source app identification
-            app: 'kpi-benchmark',
-            projectId: leadData.projectId,
-
-            // Capture context
-            trigger: leadData.trigger,
-            context: leadData.context, // App-specific: { industry, priceTier, ... }
-            customFields: leadData.customFields,
-
-            // Browser/client metadata
-            metadata: {
-              page: leadData.source.page,
-              referrer: leadData.source.referrer,
-              userAgent: leadData.source.userAgent,
-              ip: request.headers.get('x-forwarded-for')?.split(',')[0] || 'unknown',
+            // Lead object (required by Lead Hub schema)
+            lead: {
+              email: leadData.email,
+              projectId: 'kpi-benchmark', // Required by Lead Hub
+              source: leadData.trigger || 'website',
+              metadata: {
+                // App-specific context
+                language: leadData.language,
+                trigger: leadData.trigger,
+                context: leadData.context, // { industry, priceTier, ... }
+                customFields: leadData.customFields,
+                // Browser/client metadata
+                page: leadData.source.page,
+                referrer: leadData.source.referrer,
+                userAgent: leadData.source.userAgent,
+                ip: request.headers.get('x-forwarded-for')?.split(',')[0] || 'unknown',
+              },
             },
-
-            // Server-side timestamp
-            receivedAt: new Date().toISOString(),
+            // Optional timestamp
+            timestamp: leadData.timestamp,
           }),
           signal: controller.signal,
         });
