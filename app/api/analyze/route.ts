@@ -192,6 +192,11 @@ export async function POST(request: Request) {
         const gatewayApiKey = process.env.AI_GATEWAY_API_KEY;
 
         if (!gatewayUrl || !gatewayApiKey) {
+            console.error('[Analyze] Missing env vars:', {
+                hasUrl: !!gatewayUrl,
+                hasKey: !!gatewayApiKey,
+                urlValue: gatewayUrl ? gatewayUrl.substring(0, 20) + '...' : 'undefined'
+            });
             return NextResponse.json(
                 { error: 'AI Gateway not configured' },
                 { status: 500 }
@@ -268,7 +273,10 @@ ${langConfig.prompt.replace('{data}', dataString)}`;
                 const errorText = await gatewayResponse.text();
                 console.error('[Analyze] Gateway error:', gatewayResponse.status, errorText);
                 return NextResponse.json(
-                    { error: 'AI service temporarily unavailable' },
+                    {
+                        error: 'AI service temporarily unavailable',
+                        debug: { status: gatewayResponse.status, message: errorText.substring(0, 200) }
+                    },
                     { status: 502 }
                 );
             }
