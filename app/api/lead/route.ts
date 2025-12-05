@@ -1,6 +1,9 @@
 /**
  * Lead Capture API Route
- * Receives lead data and forwards to Brevo Lead Hub for centralized processing.
+ * Receives lead data from @brevogrowth/lead-capture package and forwards to Brevo Lead Hub.
+ *
+ * This API accepts the generic LeadData format from the package and enriches it
+ * with app-specific data before forwarding to Lead Hub.
  *
  * Required environment variables:
  * - LEAD_HUB_URL: https://brevo-lead-hub.netlify.app/api/capture
@@ -10,21 +13,21 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 
-// Zod schema for lead data validation
+// Zod schema matching @brevogrowth/lead-capture LeadData interface
+// This is the generic format sent by the package - app-agnostic
 const LeadDataSchema = z.object({
   email: z.string().email(),
-  timestamp: z.string().datetime(),
+  timestamp: z.string(),
   language: z.string().min(2).max(10),
+  projectId: z.string().optional(),
+  trigger: z.string().optional(),
   source: z.object({
     page: z.string(),
-    trigger: z.string(),
-    industry: z.string().optional(),
-    priceTier: z.string().optional(),
-  }),
-  metadata: z.object({
-    userAgent: z.string(),
     referrer: z.string(),
+    userAgent: z.string(),
   }),
+  context: z.record(z.unknown()).optional(), // App-specific data (industry, priceTier, etc.)
+  customFields: z.record(z.string()).optional(),
 });
 
 type LeadData = z.infer<typeof LeadDataSchema>;
@@ -73,15 +76,30 @@ export async function POST(request: NextRequest) {
           method: 'POST',
           headers,
           body: JSON.stringify({
-            ...leadData,
-            // Add server-side data
-            receivedAt: new Date().toISOString(),
-            source: {
-              ...leadData.source,
-              app: 'kpi-benchmark',
-              // Add client IP if available
+            // Core lead data
+            email: leadData.email,
+            timestamp: leadData.timestamp,
+            language: leadData.language,
+
+            // Source app identification
+            app: 'kpi-benchmark',
+            projectId: leadData.projectId,
+
+            // Capture context
+            trigger: leadData.trigger,
+            context: leadData.context, // App-specific: { industry, priceTier, ... }
+            customFields: leadData.customFields,
+
+            // Browser/client metadata
+            metadata: {
+              page: leadData.source.page,
+              referrer: leadData.source.referrer,
+              userAgent: leadData.source.userAgent,
               ip: request.headers.get('x-forwarded-for')?.split(',')[0] || 'unknown',
             },
+
+            // Server-side timestamp
+            receivedAt: new Date().toISOString(),
           }),
           signal: controller.signal,
         });
@@ -100,8 +118,8 @@ export async function POST(request: NextRequest) {
       console.log('[Lead API] No LEAD_HUB_URL configured. Lead received:', {
         email: leadData.email,
         timestamp: leadData.timestamp,
-        trigger: leadData.source.trigger,
-        industry: leadData.source.industry,
+        trigger: leadData.trigger,
+        context: leadData.context,
       });
     }
 
