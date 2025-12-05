@@ -187,17 +187,19 @@ export async function POST(request: Request) {
         const body = await request.json();
         const { userValues, priceTier, industry, language } = AnalysisSchema.parse(body);
 
-        // Get Dust.tt credentials
-        const workspaceId = process.env.DUST_WORKSPACE_ID;
-        const apiKey = process.env.DUST_API_KEY;
-        const assistantId = process.env.DUST_ASSISTANT_ID;
+        // Get AI Gateway configuration
+        const gatewayUrl = process.env.AI_GATEWAY_URL;
+        const gatewayApiKey = process.env.AI_GATEWAY_API_KEY;
 
-        if (!workspaceId || !apiKey || !assistantId) {
+        if (!gatewayUrl || !gatewayApiKey) {
             return NextResponse.json(
-                { error: 'Missing Dust API credentials' },
+                { error: 'AI Gateway not configured' },
                 { status: 500 }
             );
         }
+
+        // Agent alias configured in brevo-ai-gateway
+        const AGENT_ALIAS = 'kpi-benchmark-analyst';
 
         // Get language-specific config
         const langConfig = languageConfig[language] || languageConfig.en;
@@ -237,46 +239,59 @@ ${intro}
 
 ${langConfig.prompt.replace('{data}', dataString)}`;
 
-        // Create conversation with Dust (non-blocking)
-        const createResponse = await fetch(
-            `https://dust.tt/api/v1/w/${workspaceId}/assistant/conversations`,
-            {
+        // Call AI Gateway (non-blocking)
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 8000);
+
+        try {
+            const gatewayResponse = await fetch(`${gatewayUrl}/api/v1/analyze`, {
                 method: 'POST',
                 headers: {
-                    'Authorization': `Bearer ${apiKey}`,
                     'Content-Type': 'application/json',
+                    'x-api-key': gatewayApiKey,
                 },
                 body: JSON.stringify({
-                    message: {
-                        content: prompt,
-                        mentions: [{ configurationId: assistantId }],
-                        context: {
-                            timezone: "Europe/Paris",
-                            username: "KPI_Tool_User"
-                        }
+                    agentAlias: AGENT_ALIAS,
+                    prompt,
+                    metadata: {
+                        client: 'kpi-benchmark',
+                        industry,
+                        language,
+                        priceTier,
                     },
-                    blocking: false,  // Non-blocking: return immediately
                 }),
+                signal: controller.signal,
+            });
+            clearTimeout(timeout);
+
+            if (!gatewayResponse.ok) {
+                const errorText = await gatewayResponse.text();
+                console.error('[Analyze] Gateway error:', gatewayResponse.status, errorText);
+                return NextResponse.json(
+                    { error: 'AI service temporarily unavailable' },
+                    { status: 502 }
+                );
             }
-        );
 
-        if (!createResponse.ok) {
-            const errorText = await createResponse.text();
-            return NextResponse.json(
-                { error: `Failed to create conversation: ${createResponse.statusText} - ${errorText}` },
-                { status: 502 }
-            );
+            const { jobId } = await gatewayResponse.json();
+
+            // Return immediately with job ID (frontend expects "conversationId")
+            return NextResponse.json({
+                status: 'created',
+                conversationId: jobId,
+                message: `Analysis started. Poll /api/analyze/${jobId} for results.`
+            });
+
+        } catch (err) {
+            clearTimeout(timeout);
+            if (err instanceof Error && err.name === 'AbortError') {
+                return NextResponse.json(
+                    { error: 'AI service timeout' },
+                    { status: 504 }
+                );
+            }
+            throw err;
         }
-
-        const createData = await createResponse.json();
-        const conversationId = createData.conversation.sId;
-
-        // Return immediately with conversation ID
-        return NextResponse.json({
-            status: 'created',
-            conversationId,
-            message: 'Analysis started. Poll /api/analyze/' + conversationId + ' for results.'
-        });
 
     } catch (error) {
         if (error instanceof z.ZodError) {

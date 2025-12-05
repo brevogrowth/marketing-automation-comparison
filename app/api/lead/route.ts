@@ -32,6 +32,41 @@ const LeadDataSchema = z.object({
 
 type LeadData = z.infer<typeof LeadDataSchema>;
 
+/**
+ * Extract the traffic source from available data
+ * Priority: utm_source > referrer domain > 'direct'
+ */
+function extractTrafficSource(leadData: LeadData): string {
+  // 1. Try to extract utm_source from the page URL
+  try {
+    const pageUrl = new URL(leadData.source.page, 'http://localhost');
+    const utmSource = pageUrl.searchParams.get('utm_source');
+    if (utmSource) {
+      return utmSource;
+    }
+  } catch {
+    // Invalid URL, continue to next source
+  }
+
+  // 2. Try to extract domain from referrer
+  if (leadData.source.referrer) {
+    try {
+      const referrerUrl = new URL(leadData.source.referrer);
+      // Return simplified domain (e.g., "google" from "www.google.com")
+      const hostname = referrerUrl.hostname.replace(/^www\./, '');
+      const domain = hostname.split('.')[0];
+      if (domain && domain !== 'localhost') {
+        return domain;
+      }
+    } catch {
+      // Invalid referrer URL, continue
+    }
+  }
+
+  // 3. Default to 'direct' (no referrer, no UTM)
+  return 'direct';
+}
+
 export async function POST(request: NextRequest) {
   try {
     // Parse request body
@@ -81,7 +116,7 @@ export async function POST(request: NextRequest) {
             lead: {
               email: leadData.email,
               projectId: 'kpi-benchmark', // Required by Lead Hub
-              source: leadData.trigger || 'website',
+              source: extractTrafficSource(leadData), // utm_source > referrer > 'direct'
               metadata: {
                 // App-specific context
                 language: leadData.language,
