@@ -103,14 +103,18 @@ export async function POST(request: NextRequest) {
 
         clearTimeout(timeoutId);
 
+        const responseText = await response.text();
         if (!response.ok) {
-          console.error('[Lead API] Lead Hub returned error:', response.status, await response.text());
+          console.error('[Lead API] Lead Hub returned error:', response.status, responseText);
+        } else {
+          console.log('[Lead API] Lead Hub success:', response.status, responseText);
         }
       } catch (webhookError) {
         // Log error but don't fail the request (fail-open pattern)
-        console.error('[Lead API] Lead Hub error:', webhookError);
+        console.error('[Lead API] Lead Hub error:', webhookError instanceof Error ? webhookError.message : webhookError);
       }
     } else {
+      console.warn('[Lead API] LEAD_HUB_URL not configured - check Netlify environment variables');
       // No lead-hub configured - log the lead data for debugging
       console.log('[Lead API] No LEAD_HUB_URL configured. Lead received:', {
         email: leadData.email,
@@ -121,9 +125,15 @@ export async function POST(request: NextRequest) {
     }
 
     // Always return success (fail-open)
+    // Include debug info temporarily to diagnose forwarding issues
     return NextResponse.json({
       success: true,
       message: 'Lead received',
+      _debug: {
+        leadHubConfigured: !!leadHubUrl,
+        leadHubUrl: leadHubUrl ? `${leadHubUrl.substring(0, 30)}...` : null,
+        apiKeyConfigured: !!leadHubApiKey,
+      },
     });
   } catch (error) {
     console.error('[Lead API] Error processing lead:', error);
