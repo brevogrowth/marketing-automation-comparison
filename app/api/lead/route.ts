@@ -33,6 +33,8 @@ const LeadDataSchema = z.object({
 type LeadData = z.infer<typeof LeadDataSchema>;
 
 export async function POST(request: NextRequest) {
+  let forwardResult: { status?: number; body?: string; error?: string } | null = null;
+
   try {
     // Parse request body
     const body = await request.json();
@@ -103,15 +105,20 @@ export async function POST(request: NextRequest) {
 
         clearTimeout(timeoutId);
 
+        const responseText = await response.text();
+        forwardResult = { status: response.status, body: responseText };
+
         if (!response.ok) {
-          const responseText = await response.text();
           console.error('[Lead API] Lead Hub returned error:', response.status, responseText);
         }
       } catch (webhookError) {
         // Log error but don't fail the request (fail-open pattern)
-        console.error('[Lead API] Lead Hub error:', webhookError instanceof Error ? webhookError.message : webhookError);
+        const errMsg = webhookError instanceof Error ? webhookError.message : String(webhookError);
+        forwardResult = { error: errMsg };
+        console.error('[Lead API] Lead Hub error:', errMsg);
       }
     } else {
+      forwardResult = { error: 'LEAD_HUB_URL not configured' };
       console.warn('[Lead API] LEAD_HUB_URL not configured - check Netlify environment variables');
       // No lead-hub configured - log the lead data for debugging
       console.log('[Lead API] No LEAD_HUB_URL configured. Lead received:', {
@@ -123,9 +130,15 @@ export async function POST(request: NextRequest) {
     }
 
     // Always return success (fail-open)
+    // TEMP DEBUG: Include forward result to diagnose issue
     return NextResponse.json({
       success: true,
       message: 'Lead received',
+      _debug: {
+        leadHubConfigured: !!leadHubUrl,
+        apiKeyConfigured: !!leadHubApiKey,
+        forwardResult,
+      },
     });
   } catch (error) {
     console.error('[Lead API] Error processing lead:', error);
