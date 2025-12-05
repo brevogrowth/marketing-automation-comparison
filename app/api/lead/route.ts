@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
 
         // Add API key authentication if configured
         if (leadHubApiKey) {
-          headers['X-API-Key'] = leadHubApiKey;
+          headers['Authorization'] = `Bearer ${leadHubApiKey}`;
         }
 
         const response = await fetch(leadHubUrl, {
