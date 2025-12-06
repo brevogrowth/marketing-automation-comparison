@@ -1,0 +1,209 @@
+{
+  "introduction": "This marketing relationship plan is designed for wholesale and distribution businesses looking to strengthen retailer relationships and drive consistent ordering through strategic communication.",
+  "company_summary": {
+    "name": "Wholesale & Distribution Company",
+    "website": "example-wholesale.com",
+    "activities": "B2B wholesale distribution, including product sourcing, inventory management, and retailer supply",
+    "target": "Retail buyers, purchasing managers, and business owners who need reliable product supply for their stores",
+    "industry": "Wholesale",
+    "business_model": "B2B Wholesale"
+  },
+  "programs_list": [
+    {
+      "program_name": "Retailer Onboarding",
+      "target": "New wholesale customers",
+      "objective": "Establish ordering habits and build strong retailer relationships from day one",
+      "kpi": "Time to first reorder, Onboarding satisfaction, Account activation rate",
+      "description": "Comprehensive onboarding to help new retailers set up accounts and understand ordering processes.",
+      "scenarios": [
+        {
+          "scenario_target": "New retail accounts",
+          "scenario_objective": "Establish smooth ordering relationship",
+          "main_messages_ideas": "Account setup, Catalog overview, Ordering process, First order support",
+          "message_sequence": [
+            {
+              "title": "Welcome to Partnership",
+              "description": "Day 1: Account confirmation",
+              "content": "Welcome! Your wholesale account is active - Here's how to get started"
+            },
+            {
+              "title": "Catalog Highlights",
+              "description": "Day 2: Product overview",
+              "content": "Our bestsellers: Products your customers will love"
+            },
+            {
+              "title": "Ordering Made Easy",
+              "description": "Day 5: Process guide",
+              "content": "Your ordering guide: Minimums, shipping, and payment terms"
+            },
+            {
+              "title": "First Order Check-in",
+              "description": "After first order",
+              "content": "How was your first order experience? We're here to help"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Reorder Automation",
+      "target": "Active retailers with regular ordering patterns",
+      "objective": "Ensure consistent reordering and prevent stockouts",
+      "kpi": "Reorder frequency, Average order value, Account retention",
+      "description": "Proactive reorder reminders based on purchasing patterns and inventory cycles.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers based on order history",
+          "scenario_objective": "Drive timely reorders",
+          "main_messages_ideas": "Reorder reminder, Best seller restock, Season prep, Volume savings",
+          "message_sequence": [
+            {
+              "title": "Time to Reorder",
+              "description": "Based on typical order cycle",
+              "content": "Based on your sales pattern, it's time to restock [Products]"
+            },
+            {
+              "title": "Bestseller Alert",
+              "description": "For fast-moving items",
+              "content": "[Product] is flying off shelves - Restock before you run out"
+            },
+            {
+              "title": "Volume Savings",
+              "description": "Encourage larger orders",
+              "content": "Order more, save more: Volume pricing available this month"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "New Product Introduction",
+      "target": "All active retailers",
+      "objective": "Drive adoption of new products and expand retailer assortments",
+      "kpi": "New product adoption rate, Assortment expansion, Trial order conversion",
+      "description": "Strategic communication to introduce new products and encourage trials.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers by category fit",
+          "scenario_objective": "Generate new product orders",
+          "main_messages_ideas": "New arrival preview, Trial offer, Success stories, Intro pricing",
+          "message_sequence": [
+            {
+              "title": "New Arrival Preview",
+              "description": "2 weeks before availability",
+              "content": "Coming soon: [New Product] - Pre-order for first availability"
+            },
+            {
+              "title": "Product Details",
+              "description": "At launch",
+              "content": "[New Product] is here: Specs, pricing, and POS materials"
+            },
+            {
+              "title": "Intro Offer",
+              "description": "First month",
+              "content": "Introductory pricing: Try [New Product] with special first-order discount"
+            },
+            {
+              "title": "Success Stories",
+              "description": "Month 2",
+              "content": "How retailers are selling [New Product] - Tips and results"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Seasonal Preparation",
+      "target": "All retailers ahead of peak seasons",
+      "objective": "Maximize seasonal inventory preparation and sales",
+      "kpi": "Pre-season order volume, Seasonal revenue, Stock availability",
+      "description": "Advance communication to help retailers prepare for seasonal demand.",
+      "scenarios": [
+        {
+          "scenario_target": "All active retailers",
+          "scenario_objective": "Drive pre-season ordering",
+          "main_messages_ideas": "Season preview, Early bird deals, Inventory planning, Deadline reminders",
+          "message_sequence": [
+            {
+              "title": "Season Preview",
+              "description": "8 weeks before season",
+              "content": "[Season] is coming: Preview our seasonal collection"
+            },
+            {
+              "title": "Early Order Incentive",
+              "description": "6 weeks before season",
+              "content": "Order early for [Season]: Best pricing + guaranteed stock"
+            },
+            {
+              "title": "Planning Support",
+              "description": "4 weeks before season",
+              "content": "[Season] planning: Recommended quantities based on your sales"
+            },
+            {
+              "title": "Final Ordering",
+              "description": "2 weeks before season",
+              "content": "Last call for [Season] orders: Ensure you're stocked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Retailer Growth Program",
+      "target": "High-potential and growing retailers",
+      "objective": "Help retailers grow their businesses and increase their purchases",
+      "kpi": "Account growth rate, Category expansion, Partner satisfaction",
+      "description": "Value-added support to help retailers succeed and grow with you.",
+      "scenarios": [
+        {
+          "scenario_target": "Growing retailers by order trend",
+          "scenario_objective": "Accelerate retailer success",
+          "main_messages_ideas": "Growth tips, Merchandising support, Marketing materials, Training resources",
+          "message_sequence": [
+            {
+              "title": "Retail Success Tips",
+              "description": "Monthly content",
+              "content": "This month's retail tip: How to increase [Category] sales"
+            },
+            {
+              "title": "Merchandising Support",
+              "description": "POS and display offers",
+              "content": "Free merchandising kit: Display materials for [Products]"
+            },
+            {
+              "title": "Marketing Materials",
+              "description": "Promotional support",
+              "content": "Your marketing kit: Ready-to-use materials for your store"
+            },
+            {
+              "title": "Partner Tier Upgrade",
+              "description": "When thresholds reached",
+              "content": "Congratulations! You've unlocked [Tier] partner benefits"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Retailer Onboarding",
+      "why_brevo_is_better": "Brevo's B2B automation enables structured onboarding sequences that ensure every new retailer receives consistent, helpful communication.",
+      "omnichannel_channels": "Email for detailed guides + SMS for quick tips and order confirmations",
+      "setup_efficiency": "Pre-built wholesale templates help you create professional onboarding in minutes."
+    },
+    {
+      "scenario_name": "Reorder Automation",
+      "why_brevo_is_better": "Integration with your order management system enables smart reorder reminders based on each retailer's actual purchase patterns.",
+      "omnichannel_channels": "Email for catalog and pricing + SMS for urgent stock alerts",
+      "setup_efficiency": "Order history triggers enable fully automated, personalized reorder timing."
+    },
+    {
+      "scenario_name": "Seasonal Preparation",
+      "why_brevo_is_better": "Calendar-based automation and segmentation ensure timely seasonal communication that helps retailers prepare for peak demand.",
+      "omnichannel_channels": "Email for seasonal catalogs + SMS for deadline reminders",
+      "setup_efficiency": "Annual seasonal campaigns can be templated and scheduled to repeat automatically."
+    }
+  ],
+  "conclusion": "Wholesale and distribution businesses that implement these relationship marketing programs can expect improved retailer retention, more consistent ordering patterns, and stronger partnerships that drive mutual growth."
+}

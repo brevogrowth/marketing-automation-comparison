@@ -1,0 +1,199 @@
+{
+  "introduction": "Ce plan marketing relationnel est conçu pour les retailers d'ameublement et décoration souhaitant construire des relations clients durables grâce à l'inspiration design personnalisée et l'engagement tout au long du cycle de vie.",
+  "company_summary": {
+    "name": "Marque Maison & Mobilier",
+    "website": "exemple-maison.com",
+    "activities": "Commerce d'ameublement et décoration, incluant mobilier, accessoires maison et produits de design intérieur",
+    "target": "Propriétaires et locataires âgés de 25 à 55 ans souhaitant meubler, décorer ou rénover leurs espaces de vie",
+    "industry": "Home",
+    "business_model": "B2C Retail"
+  },
+  "programs_list": [
+    {
+      "program_name": "Bienvenue & Découverte de Style",
+      "target": "Nouveaux abonnés et premiers visiteurs",
+      "objective": "Comprendre les préférences de style des clients et convertir au premier achat sous 45 jours",
+      "kpi": "Taux de complétion du quiz style, Conversion premier achat, Panier moyen",
+      "description": "Un parcours de bienvenue personnalisé qui aide les clients à découvrir leur style intérieur et les guide vers leur premier achat.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux abonnés email",
+          "scenario_objective": "Construire un profil de style et générer le premier achat",
+          "main_messages_ideas": "Bienvenue + quiz style, Inspiration pièces, Showcase bestsellers, Incentive premier achat",
+          "message_sequence": [
+            {
+              "title": "Bienvenue + Quiz Style",
+              "description": "Bienvenue immédiate avec quiz style intérieur",
+              "content": "Bienvenue ! Découvrez votre style intérieur en 2 minutes"
+            },
+            {
+              "title": "Vos Résultats Style",
+              "description": "Jour 2 : Recommandations de style personnalisées",
+              "content": "Vous êtes [Type de Style] ! Voici comment l'adopter chez vous"
+            },
+            {
+              "title": "Inspiration Pièces",
+              "description": "Jour 7 : Looks de pièces curatés pour leur style",
+              "content": "Adoptez le look : Idées salon style [Style]"
+            },
+            {
+              "title": "Offre Premier Achat",
+              "description": "Jour 14 : Incentive pour commencer à shopper",
+              "content": "Commencez votre transformation intérieure avec -10%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Parcours Pièce par Pièce",
+      "target": "Clients ayant effectué leur premier achat de mobilier",
+      "objective": "Étendre les achats clients à d'autres pièces",
+      "kpi": "Taux d'achat cross-catégorie, Articles par commande, Valeur vie client",
+      "description": "Parcours d'upsell stratégique qui guide les clients à meubler leur maison entière, pièce par pièce.",
+      "scenarios": [
+        {
+          "scenario_target": "Acheteurs de mobilier salon",
+          "scenario_objective": "Inspirer des achats pour des pièces complémentaires",
+          "main_messages_ideas": "Complétez le look, Inspiration pièce suivante, Collections assorties, Offres bundle",
+          "message_sequence": [
+            {
+              "title": "Complétez le Look",
+              "description": "Jour 14 post-achat : Articles complémentaires",
+              "content": "Complétez votre salon avec ces ajouts parfaits"
+            },
+            {
+              "title": "Inspiration Salle à Manger",
+              "description": "Jour 30 : Suggestion pièce suivante",
+              "content": "Prêt pour votre prochain projet ? Idées salle à manger assorties à votre style"
+            },
+            {
+              "title": "Collection Maison Entière",
+              "description": "Jour 60 : Showcase collection",
+              "content": "Voyez comment votre style se décline dans chaque pièce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Campagnes Refresh Saisonnières",
+      "target": "Tous les clients actifs",
+      "objective": "Générer des achats saisonniers pour mises à jour et accessoires maison",
+      "kpi": "CA campagnes saisonnières, Croissance catégorie accessoires, Engagement email",
+      "description": "Campagnes saisonnières qui inspirent les clients à rafraîchir leurs espaces avec de nouveaux accessoires et déco.",
+      "scenarios": [
+        {
+          "scenario_target": "Acheteurs de mobilier précédents",
+          "scenario_objective": "Encourager les achats d'accessoires saisonniers",
+          "main_messages_ideas": "Tendances saisonnières, Idées refresh facile, Éditions limitées, Couleur de la saison",
+          "message_sequence": [
+            {
+              "title": "Alerte Tendances Saison",
+              "description": "Début de saison",
+              "content": "Tendances [Saison] : Rafraîchissez votre espace avec ces looks"
+            },
+            {
+              "title": "Mises à Jour Faciles",
+              "description": "Semaine 2 : Rafraîchissements à faible engagement",
+              "content": "5 façons de mettre à jour votre maison pour moins de 100€"
+            },
+            {
+              "title": "Alerte Édition Limitée",
+              "description": "Mi-saison : Messaging de rareté",
+              "content": "Vient de sortir : Collection [Saison] en édition limitée"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Service Post-Achat & Montage",
+      "target": "Acheteurs récents de mobilier",
+      "objective": "Assurer une livraison et un montage réussis, réduire les retours",
+      "kpi": "Réduction taux de retour, Satisfaction client, Réduction tickets support",
+      "description": "Série de communications proactives pour assurer une livraison fluide, un montage réussi et la satisfaction produit.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients en attente de livraison de mobilier",
+          "scenario_objective": "Préparer la livraison et assurer une installation réussie",
+          "main_messages_ideas": "Préparation livraison, Conseils montage, Instructions d'entretien, Check-in satisfaction",
+          "message_sequence": [
+            {
+              "title": "Préparation Livraison",
+              "description": "3 jours avant la livraison",
+              "content": "Votre commande arrive bientôt ! Voici comment vous préparer"
+            },
+            {
+              "title": "Guide de Montage",
+              "description": "Jour de livraison",
+              "content": "Conseils de montage + guides vidéo pour votre nouveau mobilier"
+            },
+            {
+              "title": "Conseils d'Entretien",
+              "description": "Jour 7 post-livraison",
+              "content": "Gardez votre mobilier comme neuf avec ces conseils d'entretien"
+            },
+            {
+              "title": "Check Satisfaction",
+              "description": "Jour 14 : Demande de feedback",
+              "content": "Comment va votre nouveau [produit] ? Nous aimerions votre avis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Déménagement & Événements de Vie",
+      "target": "Clients signalant des changements de vie majeurs",
+      "objective": "Capter les moments d'achat à forte valeur lors des transitions de vie",
+      "kpi": "Taux de captation événements de vie, Panier moyen, Achats multi-catégories",
+      "description": "Campagnes déclenchées pour les clients qui déménagent, rénovent ou vivent des événements de vie majeurs.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients ayant indiqué un déménagement",
+          "scenario_objective": "Devenir leur destination mobilier privilégiée pour le nouvel espace",
+          "main_messages_ideas": "Checklist déménagement, Planification pièces, Essentiels nouveau logement, Offre de bienvenue",
+          "message_sequence": [
+            {
+              "title": "Checklist Déménagement",
+              "description": "À l'indication de déménagement",
+              "content": "Vous déménagez bientôt ? Votre checklist mobilier complète"
+            },
+            {
+              "title": "Planificateur de Pièce",
+              "description": "Semaine 1 : Outils de planification",
+              "content": "Planifiez votre nouvel espace avec notre outil gratuit de planification de pièce"
+            },
+            {
+              "title": "Bundle Nouveau Logement",
+              "description": "Semaine 2 : Offre bundle",
+              "content": "Spécial nouveau logement : Économisez 20% en meublant plusieurs pièces"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Bienvenue & Découverte de Style",
+      "why_brevo_is_better": "L'intégration quiz et le contenu dynamique de Brevo vous permettent de créer des profils de style personnalisés qui génèrent des recommandations ciblées tout au long du parcours client.",
+      "omnichannel_channels": "Email pour l'inspiration visuelle riche + SMS pour les alertes ventes flash",
+      "setup_efficiency": "Les templates pré-construits maison et mobilier vous permettent de démarrer rapidement, avec personnalisation par glisser-déposer pour l'esthétique de votre marque."
+    },
+    {
+      "scenario_name": "Parcours Pièce par Pièce",
+      "why_brevo_is_better": "Le suivi de l'historique d'achat permet des recommandations de cross-sell intelligentes basées sur ce que les clients ont déjà acheté et leurs préférences de style.",
+      "omnichannel_channels": "Email pour l'inspiration détaillée de pièces + SMS pour les alertes stock limité",
+      "setup_efficiency": "Les déclencheurs automatisés basés sur la catégorie d'achat assurent le bon suivi au bon moment."
+    },
+    {
+      "scenario_name": "Service Post-Achat & Montage",
+      "why_brevo_is_better": "Les emails transactionnels et déclenchés par la livraison garantissent que les clients reçoivent un support proactif, réduisant les retours et les tickets support.",
+      "omnichannel_channels": "Email pour les guides détaillés + SMS pour les mises à jour de livraison et conseils rapides",
+      "setup_efficiency": "L'intégration avec les transporteurs permet des déclencheurs automatiques basés sur la livraison."
+    }
+  ],
+  "conclusion": "Les retailers de maison et mobilier qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à une valeur vie client accrue grâce à l'expansion pièce par pièce, des taux de satisfaction plus élevés et un comportement de réachat plus fort grâce aux refresh saisonniers et au marketing événements de vie."
+}

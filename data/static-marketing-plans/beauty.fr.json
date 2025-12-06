@@ -1,0 +1,199 @@
+{
+  "introduction": "Ce plan marketing relationnel est conçu pour les marques de beauté et cosmétiques souhaitant construire des communautés de clients fidèles grâce à des routines de soins et beauté personnalisées.",
+  "company_summary": {
+    "name": "Marque de Beauté",
+    "website": "exemple-beaute.com",
+    "activities": "Commerce de beauté et cosmétiques, incluant soins de la peau, maquillage et produits d'hygiène",
+    "target": "Passionnés de beauté âgés de 18 à 55 ans, recherchant des produits de soins et maquillage de qualité pour leurs routines personnelles",
+    "industry": "Beauty",
+    "business_model": "B2C Retail"
+  },
+  "programs_list": [
+    {
+      "program_name": "Parcours Bienvenue & Profil Peau",
+      "target": "Nouveaux abonnés et premiers visiteurs",
+      "objective": "Construire des profils beauté personnalisés et convertir au premier achat sous 21 jours",
+      "kpi": "Taux de complétion du profil, Conversion premier achat, Engagement quiz peau",
+      "description": "Une séquence de bienvenue personnalisée qui collecte les informations sur le type de peau et fournit des recommandations produits sur mesure.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux abonnés email",
+          "scenario_objective": "Collecter les données du profil peau et personnaliser les recommandations",
+          "main_messages_ideas": "Bienvenue + quiz peau, Routine personnalisée, Éducation produit, Offre premier achat",
+          "message_sequence": [
+            {
+              "title": "Bienvenue + Quiz Peau",
+              "description": "Bienvenue immédiate avec invitation au quiz type de peau",
+              "content": "Bienvenue chez [Marque] ! Faites notre quiz peau de 2 min pour votre routine personnalisée"
+            },
+            {
+              "title": "Votre Routine Personnalisée",
+              "description": "Jour 2 : Basé sur les résultats du quiz",
+              "content": "Votre routine skincare sur mesure est prête"
+            },
+            {
+              "title": "Éducation Ingrédients",
+              "description": "Jour 5 : Éduquer sur les ingrédients clés pour leur type de peau",
+              "content": "Pourquoi [ingrédient] est parfait pour votre peau"
+            },
+            {
+              "title": "Offre Premier Achat",
+              "description": "Jour 10 : Offre kit découverte personnalisé",
+              "content": "Commencez votre routine avec -15% sur votre première commande"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Rappels de Réapprovisionnement",
+      "target": "Clients ayant acheté des produits consommables",
+      "objective": "Générer des achats répétés avant que les produits ne soient épuisés",
+      "kpi": "Taux de réapprovisionnement, Temps entre achats, Conversion abonnement",
+      "description": "Rappels automatisés basés sur l'utilisation moyenne des produits pour garantir que les clients ne manquent jamais de leurs favoris.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients ayant acheté des produits de 30 jours",
+          "scenario_objective": "Rappeler avant épuisement du produit et proposer l'abonnement",
+          "main_messages_ideas": "Rappel stock faible, Récommande facile, Offre abonnement, Économies en lot",
+          "message_sequence": [
+            {
+              "title": "Rappel Stock Faible",
+              "description": "Jour 25 : Basé sur l'utilisation moyenne",
+              "content": "C'est le moment de réapprovisionner ? Votre [produit] est probablement bientôt vide"
+            },
+            {
+              "title": "Récommande Facile",
+              "description": "Jour 28 : Option de récommande en un clic",
+              "content": "Recommandez vos favoris en un clic"
+            },
+            {
+              "title": "Offre Abonnement",
+              "description": "Jour 30 : Présentation de l'abonnement avec remise",
+              "content": "Ne soyez plus jamais à court - Abonnez-vous et économisez 15%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Lancement Produit & Échantillonnage",
+      "target": "Clients actifs et passionnés de beauté",
+      "objective": "Générer du buzz et des essais pour les lancements de nouveaux produits",
+      "kpi": "Taux de demande d'échantillons, Conversion échantillon vers achat, Ventes semaine de lancement",
+      "description": "Campagne multi-touch combinant aperçus exclusifs, opportunités d'échantillonnage et promotions de lancement.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients VIP et abonnés très engagés",
+          "scenario_objective": "Accès anticipé et opportunité d'échantillonnage",
+          "main_messages_ideas": "Aperçu exclusif, Offre échantillon, Shopping accès anticipé, Incentive avis",
+          "message_sequence": [
+            {
+              "title": "Aperçu VIP",
+              "description": "14 jours avant le lancement",
+              "content": "Vous êtes les premiers à découvrir notre dernière innovation"
+            },
+            {
+              "title": "Offre Échantillon Gratuit",
+              "description": "7 jours avant le lancement",
+              "content": "Soyez parmi les premiers à essayer [produit] - demandez votre échantillon gratuit"
+            },
+            {
+              "title": "Accès Anticipé",
+              "description": "1 jour avant le lancement public",
+              "content": "Shoppez avant tout le monde + cadeau avec achat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Éducation Routine Beauté",
+      "target": "Tous les clients selon leurs achats de produits",
+      "objective": "Augmenter la satisfaction produit et l'utilisation, réduire les retours",
+      "kpi": "Taux d'utilisation produit, Satisfaction client, Réduction du taux de retour",
+      "description": "Série de contenus éducatifs enseignant aux clients comment tirer le meilleur de leurs achats.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux acheteurs de produits skincare",
+          "scenario_objective": "Assurer une utilisation correcte du produit et construire l'habitude de routine",
+          "main_messages_ideas": "Comment utiliser, Routine matin vs soir, Conseils de superposition, Attentes avant/après",
+          "message_sequence": [
+            {
+              "title": "Comment Utiliser",
+              "description": "Jour 1 post-achat : Guide d'application",
+              "content": "Obtenez les meilleurs résultats de votre nouveau [produit]"
+            },
+            {
+              "title": "Construction de Routine",
+              "description": "Jour 7 : Intégration routine complète",
+              "content": "Où [produit] s'intègre dans votre routine AM/PM"
+            },
+            {
+              "title": "Calendrier des Résultats",
+              "description": "Jour 14 : Définir les attentes",
+              "content": "À quoi s'attendre : Le calendrier de transformation de votre peau"
+            },
+            {
+              "title": "Point de Contact",
+              "description": "Jour 30 : Enquête de satisfaction",
+              "content": "Comment va votre peau ? Nous aimerions avoir votre avis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programme Fidélité & Parrainage",
+      "target": "Clients récurrents et ambassadeurs de marque",
+      "objective": "Augmenter la valeur vie client et générer de l'acquisition par parrainage",
+      "kpi": "Taux de parrainage, Utilisation des points, Progression niveau VIP",
+      "description": "Programme de fidélité à niveaux avec récompenses beauté, accès exclusif et incentives de parrainage.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients atteignant le statut VIP",
+          "scenario_objective": "Célébrer le jalon et encourager les parrainages",
+          "main_messages_ideas": "Célébration VIP, Avantages exclusifs, Bonus parrainage, Accès anticipé",
+          "message_sequence": [
+            {
+              "title": "Bienvenue VIP",
+              "description": "À l'atteinte du seuil VIP",
+              "content": "Vous êtes VIP ! Voici vos avantages exclusifs"
+            },
+            {
+              "title": "Lancement Parrainage",
+              "description": "1 semaine après le statut VIP",
+              "content": "Partagez l'amour - Offrez 15€, Recevez 15€"
+            },
+            {
+              "title": "Aperçu Exclusif",
+              "description": "Mensuel : Aperçus produits VIP uniquement",
+              "content": "Premier Regard VIP : Découvrez ce qui arrive"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Parcours Bienvenue & Profil Peau",
+      "why_brevo_is_better": "Le créateur de formulaires et l'intégration d'automatisation de Brevo vous permettent de collecter les données du profil peau et de déclencher immédiatement des parcours personnalisés basés sur les réponses des clients.",
+      "omnichannel_channels": "Email pour le contenu éducatif riche + SMS pour les offres urgentes + WhatsApp pour les conseils skincare personnalisés",
+      "setup_efficiency": "Les workflows quiz-to-automation sont faciles à configurer avec des templates pré-construits, et les blocs de contenu dynamique personnalisent selon le type de peau."
+    },
+    {
+      "scenario_name": "Rappels de Réapprovisionnement",
+      "why_brevo_is_better": "Les déclencheurs d'automatisation basés sur les produits vous permettent de configurer des rappels de réapprovisionnement intelligents selon la catégorie de produit et les cycles d'utilisation typiques.",
+      "omnichannel_channels": "Email pour les infos produit détaillées + SMS pour les rappels de récommande rapides",
+      "setup_efficiency": "Configurez une fois et oubliez - Brevo calcule automatiquement le timing optimal de rappel basé sur la date d'achat et le type de produit."
+    },
+    {
+      "scenario_name": "Éducation Routine Beauté",
+      "why_brevo_is_better": "L'automatisation post-achat garantit que chaque client reçoit une éducation pertinente, réduisant les tickets support et augmentant la satisfaction produit.",
+      "omnichannel_channels": "Email pour les tutoriels détaillés + Liens vidéo pour les guides d'application + SMS pour les conseils rapides",
+      "setup_efficiency": "Le contenu peut être segmenté par catégorie de produit et envoyé automatiquement selon les déclencheurs d'achat."
+    }
+  ],
+  "conclusion": "Les marques de beauté qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à des taux d'adoption produit plus élevés, une fréquence de réachat accrue et une fidélité client plus forte grâce à l'éducation et la personnalisation."
+}

@@ -1,0 +1,200 @@
+/**
+ * Marketing Plan Database Operations
+ *
+ * Supabase operations for marketing_plans table.
+ * Key: (company_domain, user_language)
+ */
+
+import type { MarketingPlan, MarketingPlanRow } from '../../src/types/marketing-plan';
+import { getSupabaseClient, isSupabaseConfigured } from './supabase';
+import { normalizeDomain } from './normalize';
+import { deepStructureClone } from '../../src/utils/marketing-plan-parser';
+
+/**
+ * Result type for database operations
+ */
+export interface DbResult<T = void> {
+  success: boolean;
+  data?: T;
+  error?: string;
+}
+
+/**
+ * Get a marketing plan by domain and language
+ *
+ * @param companyDomain - The company domain (will be normalized)
+ * @param userLanguage - The user's language code (e.g., 'en', 'fr')
+ */
+export async function getMarketingPlanByDomain(
+  companyDomain: string,
+  userLanguage: string
+): Promise<DbResult<MarketingPlan | null>> {
+  try {
+    if (!companyDomain) {
+      return { success: false, error: 'Company domain is required' };
+    }
+
+    if (!isSupabaseConfigured()) {
+      console.warn('[DB] Supabase not configured, skipping database lookup');
+      return { success: true, data: null };
+    }
+
+    const normalizedDomain = normalizeDomain(companyDomain);
+    const supabase = getSupabaseClient();
+
+    const { data, error } = await supabase
+      .from('marketing_plans')
+      .select('form_data')
+      .eq('company_domain', normalizedDomain)
+      .eq('user_language', userLanguage)
+      .single();
+
+    if (error) {
+      // PGRST116 = no rows returned, which is not an error
+      if (error.code === 'PGRST116') {
+        return { success: true, data: null };
+      }
+      console.error('[DB] Error fetching marketing plan:', error);
+      return { success: false, error: error.message };
+    }
+
+    if (!data) {
+      return { success: true, data: null };
+    }
+
+    return { success: true, data: data.form_data as MarketingPlan };
+  } catch (error) {
+    console.error('[DB] Unexpected error fetching marketing plan:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
+}
+
+/**
+ * Save a new marketing plan
+ *
+ * @param companyDomain - The company domain (will be normalized)
+ * @param email - The user's email
+ * @param planData - The marketing plan data
+ * @param userLanguage - The user's language code
+ */
+export async function saveMarketingPlan(
+  companyDomain: string,
+  email: string,
+  planData: MarketingPlan,
+  userLanguage: string
+): Promise<DbResult> {
+  try {
+    if (!companyDomain || !email) {
+      return { success: false, error: 'Missing required fields' };
+    }
+
+    if (!isSupabaseConfigured()) {
+      console.warn('[DB] Supabase not configured, skipping save');
+      return { success: true };
+    }
+
+    const normalizedDomain = normalizeDomain(companyDomain);
+    const supabase = getSupabaseClient();
+
+    // Deep clone to preserve nested structure
+    const preservedData = deepStructureClone(planData);
+
+    const { error } = await supabase.from('marketing_plans').insert([
+      {
+        company_domain: normalizedDomain,
+        email,
+        form_data: preservedData,
+        user_language: userLanguage,
+      },
+    ]);
+
+    if (error) {
+      console.error('[DB] Error saving marketing plan:', error);
+      return { success: false, error: error.message };
+    }
+
+    return { success: true };
+  } catch (error) {
+    console.error('[DB] Unexpected error saving marketing plan:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
+}
+
+/**
+ * Update an existing marketing plan (upsert)
+ *
+ * @param companyDomain - The company domain (will be normalized)
+ * @param email - The user's email
+ * @param planData - The marketing plan data
+ * @param userLanguage - The user's language code
+ */
+export async function upsertMarketingPlan(
+  companyDomain: string,
+  email: string,
+  planData: MarketingPlan,
+  userLanguage: string
+): Promise<DbResult> {
+  try {
+    if (!companyDomain) {
+      return { success: false, error: 'Company domain is required' };
+    }
+
+    if (!isSupabaseConfigured()) {
+      console.warn('[DB] Supabase not configured, skipping upsert');
+      return { success: true };
+    }
+
+    const normalizedDomain = normalizeDomain(companyDomain);
+    const supabase = getSupabaseClient();
+
+    // Deep clone to preserve nested structure
+    const preservedData = deepStructureClone(planData);
+
+    const { error } = await supabase.from('marketing_plans').upsert(
+      [
+        {
+          company_domain: normalizedDomain,
+          email,
+          form_data: preservedData,
+          user_language: userLanguage,
+        },
+      ],
+      {
+        onConflict: 'company_domain,user_language',
+      }
+    );
+
+    if (error) {
+      console.error('[DB] Error upserting marketing plan:', error);
+      return { success: false, error: error.message };
+    }
+
+    return { success: true };
+  } catch (error) {
+    console.error('[DB] Unexpected error upserting marketing plan:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
+}
+
+/**
+ * Check if a plan exists for a domain and language
+ *
+ * @param companyDomain - The company domain (will be normalized)
+ * @param userLanguage - The user's language code
+ */
+export async function planExists(
+  companyDomain: string,
+  userLanguage: string
+): Promise<boolean> {
+  const result = await getMarketingPlanByDomain(companyDomain, userLanguage);
+  return result.success && result.data !== null;
+}

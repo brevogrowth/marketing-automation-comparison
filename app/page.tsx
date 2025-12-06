@@ -3,417 +3,486 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Header } from '@/components/Header';
-import { SidebarInputs } from '@/components/SidebarInputs';
-import { BenchmarkGrid } from '@/components/BenchmarkGrid';
-import { AiAnalysisResult } from '@/components/AiAnalysisResult';
-import { IntroBlock } from '@/components/IntroBlock';
+import { MarketingPlanSidebar } from '@/components/MarketingPlanSidebar';
 import { Contributors } from '@/components/Contributors';
-import { benchmarks, Industry, PriceTier } from '@/data/benchmarks';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLeadGate } from '@/lib/lead-capture';
+import { getStaticPlan } from '@/data/static-marketing-plans';
+import type { Industry } from '@/config/industries';
+import type { MarketingPlan } from '@/src/types/marketing-plan';
 
-// Valid values for URL parameters
-const VALID_INDUSTRIES: Industry[] = ['Beauty', 'Electronics', 'Family', 'Fashion', 'Food', 'Home', 'Luxury', 'Manufacturing', 'SaaS', 'Services', 'Sports', 'Wholesale'];
-const VALID_PRICE_TIERS: PriceTier[] = ['Budget', 'Mid-Range', 'Luxury'];
+// Import marketing plan components
+import {
+  PlanHeader,
+  CompanySummary,
+  MarketingPrograms,
+  ProgramDetails,
+  BrevoHelp,
+  BrevoCallToAction,
+  LoadingState,
+  ErrorState,
+} from '@/components/marketing-plan';
+
+// Valid industries
+const VALID_INDUSTRIES: Industry[] = [
+  'Fashion', 'Beauty', 'Home', 'Electronics', 'Food', 'Sports', 'Luxury', 'Family',
+  'SaaS', 'Services', 'Manufacturing', 'Wholesale'
+];
 
 export default function Home() {
-    const searchParams = useSearchParams();
-    const { t, language } = useLanguage();
-    const { requireLead, isUnlocked } = useLeadGate();
+  const searchParams = useSearchParams();
+  const { t, language } = useLanguage();
+  const { requireLead, isUnlocked } = useLeadGate();
 
-    const LOADING_MESSAGES = [
-        { title: t.analysis.generating, subtitle: t.analysis.comparingDataDesc, step: 1 },
-        { title: t.analysis.comparingData, subtitle: t.analysis.comparingDataDesc, step: 2 },
-        { title: t.analysis.findingOpportunities, subtitle: t.analysis.findingOpportunitiesDesc, step: 3 },
-        { title: t.analysis.craftingRecs, subtitle: t.analysis.craftingRecsDesc, step: 4 }
-    ];
+  // State
+  const [industry, setIndustry] = useState<Industry>('Fashion');
+  const [domain, setDomain] = useState('');
+  const [domainError, setDomainError] = useState<string>();
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [plan, setPlan] = useState<MarketingPlan | null>(null);
+  const [planSource, setPlanSource] = useState<'static' | 'db' | 'ai' | null>(null);
+  const [conversationId, setConversationId] = useState<string | null>(null);
+  const [pollCount, setPollCount] = useState(0);
+  const [progress, setProgress] = useState(5);
+  const [elapsedTime, setElapsedTime] = useState(0);
 
-    const [industry, setIndustry] = useState<Industry>('Fashion');
-    const [priceTier, setPriceTier] = useState<PriceTier>('Mid-Range');
-    const [isComparing, setIsComparing] = useState(false);
-    const [userValues, setUserValues] = useState<Record<string, string>>({});
-    const [showAnalysis, setShowAnalysis] = useState(false);
-    const [selectedKpis, setSelectedKpis] = useState<string[]>([]);
-    const [logs, setLogs] = useState<string[]>([]);
-    const [analysis, setAnalysis] = useState<string>('');
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState<string | null>(null);
-    const [loadingMessageIndex, setLoadingMessageIndex] = useState(0);
-    const [showProcessLogs, setShowProcessLogs] = useState(false);
-    const analysisRef = useRef<HTMLDivElement>(null);
+  const planRef = useRef<HTMLDivElement>(null);
+  const startTimeRef = useRef<number | null>(null);
 
-    // Read URL parameters on mount
-    useEffect(() => {
-        const industryParam = searchParams.get('industry');
-        const priceTierParam = searchParams.get('priceTier');
+  // Read URL parameters on mount
+  useEffect(() => {
+    const industryParam = searchParams.get('industry');
+    const domainParam = searchParams.get('domain');
+    const langParam = searchParams.get('lang');
 
-        if (industryParam && VALID_INDUSTRIES.includes(industryParam as Industry)) {
-            setIndustry(industryParam as Industry);
-        }
+    if (industryParam && VALID_INDUSTRIES.includes(industryParam as Industry)) {
+      setIndustry(industryParam as Industry);
+    }
 
-        if (priceTierParam && VALID_PRICE_TIERS.includes(priceTierParam as PriceTier)) {
-            setPriceTier(priceTierParam as PriceTier);
-        }
-    }, [searchParams]);
+    if (domainParam) {
+      setDomain(domainParam);
+      // If domain is in URL, check for existing plan
+      lookupExistingPlan(domainParam, industryParam as Industry || industry);
+    } else {
+      // Load static plan for default industry
+      loadStaticPlan(industryParam as Industry || industry);
+    }
+  }, [searchParams]);
 
-    // Rotate loading messages every 20 seconds
-    useEffect(() => {
-        if (!isLoading) {
-            setLoadingMessageIndex(0);
-            return;
-        }
+  // Load static plan for an industry
+  const loadStaticPlan = useCallback((ind: Industry) => {
+    const staticPlan = getStaticPlan(ind, language);
+    setPlan(staticPlan);
+    setPlanSource('static');
+    setError(null);
+  }, [language]);
 
-        const interval = setInterval(() => {
-            setLoadingMessageIndex(prev => (prev + 1) % 4);
-        }, 20000); // 20 seconds
+  // Lookup existing personalized plan from database
+  const lookupExistingPlan = async (domainToLookup: string, ind: Industry) => {
+    try {
+      const response = await fetch(
+        `/api/marketing-plan/lookup?domain=${encodeURIComponent(domainToLookup)}&language=${language}`
+      );
+      const data = await response.json();
 
-        return () => clearInterval(interval);
-    }, [isLoading]);
-
-    // Track if user has interacted with selectors (to trigger popup only on first interaction)
-    const [hasInteracted, setHasInteracted] = useState(false);
-
-    // Wrapper for industry change - triggers lead capture on first interaction
-    const handleIndustryChange = (newIndustry: Industry) => {
-        if (!isUnlocked && !hasInteracted) {
-            // First interaction and not unlocked - show popup
-            requireLead({
-                reason: 'industry_change',
-                context: { industry: newIndustry, priceTier },
-                onSuccess: () => {
-                    setHasInteracted(true);
-                    setIndustry(newIndustry);
-                },
-            });
-        } else {
-            // Already unlocked or has interacted - change directly
-            setIndustry(newIndustry);
-        }
-    };
-
-    // Wrapper for price tier change - triggers lead capture on first interaction
-    const handlePriceTierChange = (newPriceTier: PriceTier) => {
-        if (!isUnlocked && !hasInteracted) {
-            // First interaction and not unlocked - show popup
-            requireLead({
-                reason: 'price_tier_change',
-                context: { industry, priceTier: newPriceTier },
-                onSuccess: () => {
-                    setHasInteracted(true);
-                    setPriceTier(newPriceTier);
-                },
-            });
-        } else {
-            // Already unlocked or has interacted - change directly
-            setPriceTier(newPriceTier);
-        }
-    };
-
-    const handleValueChange = (id: string, value: string) => {
-        setUserValues(prev => ({ ...prev, [id]: value }));
-    };
-
-    const handleToggleKpi = (id: string) => {
-        setSelectedKpis(prev =>
-            prev.includes(id) ? prev.filter(k => k !== id) : [...prev, id]
-        );
-    };
-
-    // Core analysis logic - called after lead capture
-    const runAnalysis = useCallback(async () => {
-        setShowAnalysis(true);
-        setIsLoading(true);
-        setLogs([]);
-        setAnalysis('');
+      if (data.found && data.plan) {
+        setPlan(data.plan);
+        setPlanSource('db');
         setError(null);
+      } else {
+        // No existing plan, show static
+        loadStaticPlan(ind);
+      }
+    } catch (err) {
+      console.error('Error looking up plan:', err);
+      loadStaticPlan(ind);
+    }
+  };
 
-        // Scroll to analysis section
-        setTimeout(() => {
-            analysisRef.current?.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
+  // Handle industry change
+  const handleIndustryChange = (newIndustry: Industry) => {
+    setIndustry(newIndustry);
 
-        // Filter values to only include selected KPIs
-        const selectedValues = Object.fromEntries(
-            Object.entries(userValues).filter(([key]) => selectedKpis.includes(key))
-        );
+    // If no domain, load static plan for new industry
+    if (!domain.trim()) {
+      loadStaticPlan(newIndustry);
+    }
+  };
 
-        try {
-            // Step 1: Create the analysis job
-            setLogs(['Starting analysis...']);
+  // Validate domain input
+  const validateDomain = (domainInput: string): boolean => {
+    const trimmed = domainInput.trim();
 
-            const createResponse = await fetch('/api/analyze', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    userValues: selectedValues,
-                    priceTier,
-                    industry,
-                    language
-                }),
-            });
+    if (!trimmed) {
+      setDomainError(t.marketingPlan?.errorEmptyDomain || 'Please enter a company domain');
+      return false;
+    }
 
-            if (!createResponse.ok) {
-                const errorData = await createResponse.json();
-                throw new Error(errorData.error || `HTTP ${createResponse.status}: ${createResponse.statusText}`);
-            }
+    // Strip protocol and path
+    const stripped = trimmed.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
 
-            const { conversationId, status: createStatus } = await createResponse.json();
+    if (!stripped.includes('.')) {
+      setDomainError(t.marketingPlan?.errorInvalidDomainFormat || 'Please enter a valid domain (e.g., example.com)');
+      return false;
+    }
 
-            if (createStatus !== 'created' || !conversationId) {
-                throw new Error('Failed to create analysis job');
-            }
+    if (stripped.length < 4) {
+      setDomainError(t.marketingPlan?.errorDomainTooShort || 'Domain appears too short');
+      return false;
+    }
 
-            setLogs(prev => [...prev, `Job created (ID: ${conversationId.slice(0, 8)}...)`]);
-            setLogs(prev => [...prev, 'Waiting for AI agent to process...']);
+    // Check for placeholder domains
+    const placeholders = ['example.com', 'test.com', 'domain.com', 'yourcompany.com'];
+    if (placeholders.includes(stripped.toLowerCase())) {
+      setDomainError(t.marketingPlan?.errorPlaceholderDomain || 'Please enter your actual company domain');
+      return false;
+    }
 
-            // Step 2: Poll for results
-            const MAX_POLLS = 60;  // 60 polls × 5s = 5 minutes max
-            const POLL_INTERVAL = 5000; // 5 seconds
-            const startTime = Date.now();
+    setDomainError(undefined);
+    return true;
+  };
 
-            for (let i = 0; i < MAX_POLLS; i++) {
-                await new Promise(resolve => setTimeout(resolve, POLL_INTERVAL));
+  // Generate static plan (no email required)
+  const handleGenerateStaticPlan = () => {
+    loadStaticPlan(industry);
 
-                const elapsed = Math.floor((Date.now() - startTime) / 1000);
-                setLogs(prev => [...prev.slice(0, -1), `Polling... (${elapsed}s elapsed)`]);
+    // Scroll to plan
+    setTimeout(() => {
+      planRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
 
-                const pollResponse = await fetch(`/api/analyze/${conversationId}`);
+  // Generate personalized plan (requires email)
+  const handleGeneratePersonalizedPlan = () => {
+    if (!validateDomain(domain)) {
+      return;
+    }
 
-                if (!pollResponse.ok) {
-                    const errorData = await pollResponse.json();
-                    throw new Error(errorData.error || `Polling failed: ${pollResponse.status}`);
-                }
+    // Require lead capture
+    requireLead({
+      reason: 'generate_marketing_plan',
+      context: { industry, domain, language },
+      onSuccess: () => {
+        generatePersonalizedPlan();
+      },
+    });
+  };
 
-                const pollData = await pollResponse.json();
+  // Core personalized plan generation
+  const generatePersonalizedPlan = async () => {
+    setIsLoading(true);
+    setError(null);
+    setPlan(null);
+    setPlanSource(null);
+    setConversationId(null);
+    setPollCount(0);
+    setProgress(5);
+    setElapsedTime(0);
+    startTimeRef.current = Date.now();
 
-                if (pollData.status === 'complete') {
-                    setLogs(prev => [...prev, 'Analysis complete!']);
-                    setAnalysis(pollData.analysis);
-                    setIsLoading(false);
-                    return;
-                }
+    // Scroll to loading state
+    setTimeout(() => {
+      planRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
 
-                if (pollData.status === 'error') {
-                    throw new Error(pollData.error || 'Analysis failed');
-                }
+    try {
+      // Step 1: Create the plan generation job
+      const createResponse = await fetch('/api/marketing-plan', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          industry,
+          domain: domain.trim(),
+          language,
+          force: false,
+        }),
+      });
 
-                // Still pending - update log with status message
-                if (pollData.message) {
-                    setLogs(prev => [...prev.slice(0, -1), `${pollData.message} (${elapsed}s)`]);
-                }
-            }
+      if (!createResponse.ok) {
+        const errorData = await createResponse.json();
+        throw new Error(errorData.error || `HTTP ${createResponse.status}`);
+      }
 
-            // Timeout after 5 minutes
-            throw new Error('Analysis timed out after 5 minutes. Please try again.');
+      const createData = await createResponse.json();
 
-        } catch (err: unknown) {
-            console.error('Error during analysis:', err);
-            setError(err instanceof Error ? err.message : 'An unexpected error occurred');
-            setIsLoading(false);
+      // If plan was found in DB or returned as static
+      if (createData.status === 'complete') {
+        setPlan(createData.plan);
+        setPlanSource(createData.source);
+        setIsLoading(false);
+        return;
+      }
+
+      // AI generation started - poll for results
+      if (createData.status === 'created' && createData.conversationId) {
+        setConversationId(createData.conversationId);
+        await pollForResults(createData.conversationId);
+      } else {
+        throw new Error('Unexpected response from API');
+      }
+
+    } catch (err) {
+      console.error('Error generating plan:', err);
+      setError(err instanceof Error ? err.message : 'An unexpected error occurred');
+      setIsLoading(false);
+    }
+  };
+
+  // Poll for AI generation results
+  const pollForResults = async (jobId: string) => {
+    const MAX_POLLS = 60; // 5 minutes max
+    const POLL_INTERVAL = 5000; // 5 seconds
+
+    for (let i = 0; i < MAX_POLLS; i++) {
+      await new Promise(resolve => setTimeout(resolve, POLL_INTERVAL));
+
+      setPollCount(i + 1);
+      setProgress(Math.min(90, 5 + ((i + 1) / MAX_POLLS) * 85));
+      setElapsedTime(Math.floor((Date.now() - (startTimeRef.current || Date.now())) / 1000));
+
+      try {
+        const pollResponse = await fetch(`/api/marketing-plan/${jobId}`);
+        const pollData = await pollResponse.json();
+
+        if (pollData.status === 'complete') {
+          setPlan(pollData.plan);
+          setPlanSource('ai');
+          setIsLoading(false);
+          setProgress(100);
+          return;
         }
-    }, [userValues, selectedKpis, priceTier, industry, language]);
 
-    // Wrapper that requires lead capture before analysis
-    const handleGenerateAnalysis = () => {
-        requireLead({
-            reason: 'generate_analysis',
-            context: {
-                industry,
-                priceTier,
-            },
-            onSuccess: () => {
-                runAnalysis();
-            },
-        });
-    };
+        if (pollData.status === 'error') {
+          throw new Error(pollData.error || 'Plan generation failed');
+        }
 
-    const currentBenchmarks = benchmarks[industry];
+        // Still processing - continue polling
+      } catch (pollError) {
+        console.error('Poll error:', pollError);
+        throw pollError;
+      }
+    }
 
-    return (
-        <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
-            <Header />
+    // Timeout
+    throw new Error('Plan generation timed out. Please try again.');
+  };
 
-            {/* Fixed Instruction Banner - Shows when in comparing mode */}
-            {isComparing && !showAnalysis && (
-                <div className="sticky top-0 z-50 bg-gradient-to-r from-brevo-green to-brevo-dark-green text-white py-3 px-4 shadow-lg">
-                    <div className="max-w-7xl mx-auto flex items-center justify-center gap-4">
-                        <p className="text-sm md:text-base font-medium">
-                            {t.banner.instruction}
-                        </p>
-                        <button
-                            onClick={handleGenerateAnalysis}
-                            className="hidden sm:flex items-center gap-1.5 bg-white text-brevo-dark-green px-4 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100 transition-colors"
-                        >
-                            <span>*</span>
-                            {t.banner.generateAnalysis}
-                        </button>
-                    </div>
-                </div>
+  // Handle cancel during loading
+  const handleCancel = () => {
+    setIsLoading(false);
+    setConversationId(null);
+    loadStaticPlan(industry);
+  };
+
+  // Handle retry after error
+  const handleRetry = () => {
+    if (domain.trim()) {
+      generatePersonalizedPlan();
+    } else {
+      loadStaticPlan(industry);
+    }
+  };
+
+  // Handle try different domain
+  const handleTryDifferentDomain = () => {
+    setError(null);
+    setDomain('');
+    loadStaticPlan(industry);
+  };
+
+  // Get programs as array
+  const programsArray = plan?.programs_list
+    ? (Array.isArray(plan.programs_list)
+      ? plan.programs_list
+      : Object.values(plan.programs_list))
+    : [];
+
+  return (
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
+      <Header />
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Header Section */}
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            {t.marketingPlan?.pageTitle || 'Marketing Relationship Plan Generator'}
+          </h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            {t.marketingPlan?.pageSubtitle || 'Generate a customized marketing relationship plan for your business. Choose an industry template or get a personalized AI-powered plan.'}
+          </p>
+        </div>
+
+        {/* Intro Block */}
+        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden mb-8 p-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-brevo-light rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-brevo-green text-xl font-bold">1</span>
+              </div>
+              <h3 className="font-medium text-gray-900 mb-1">
+                {t.marketingPlan?.step1Title || 'Select Your Industry'}
+              </h3>
+              <p className="text-sm text-gray-500">
+                {t.marketingPlan?.step1Desc || 'Choose from 12 industries to get relevant marketing strategies'}
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-brevo-light rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-brevo-green text-xl font-bold">2</span>
+              </div>
+              <h3 className="font-medium text-gray-900 mb-1">
+                {t.marketingPlan?.step2Title || 'View Template or Personalize'}
+              </h3>
+              <p className="text-sm text-gray-500">
+                {t.marketingPlan?.step2Desc || 'Browse the template plan or enter your domain for AI personalization'}
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-brevo-light rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-brevo-green text-xl font-bold">3</span>
+              </div>
+              <h3 className="font-medium text-gray-900 mb-1">
+                {t.marketingPlan?.step3Title || 'Implement with Brevo'}
+              </h3>
+              <p className="text-sm text-gray-500">
+                {t.marketingPlan?.step3Desc || 'Execute your plan using Brevo\'s omnichannel marketing platform'}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Sidebar */}
+          <div className="lg:w-1/4">
+            <MarketingPlanSidebar
+              industry={industry}
+              setIndustry={handleIndustryChange}
+              domain={domain}
+              setDomain={setDomain}
+              onGenerateStaticPlan={handleGenerateStaticPlan}
+              onGeneratePersonalizedPlan={handleGeneratePersonalizedPlan}
+              isLoading={isLoading}
+              isUnlocked={isUnlocked}
+              domainError={domainError}
+            />
+          </div>
+
+          {/* Main Content - Plan Display */}
+          <div className="lg:w-3/4" ref={planRef}>
+            {/* Loading State */}
+            {isLoading && (
+              <LoadingState
+                companyDomain={domain}
+                progress={progress}
+                pollCount={pollCount}
+                elapsedTimeOverride={elapsedTime}
+                onCancel={handleCancel}
+              />
             )}
 
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            {/* Error State */}
+            {error && !isLoading && (
+              <ErrorState
+                message={error}
+                domainName={domain}
+                onRetry={handleRetry}
+                onTryDifferentDomain={handleTryDifferentDomain}
+              />
+            )}
 
-                {/* Header Section */}
-                <div className="text-center mb-8">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                        {t.header.title}
-                    </h1>
-                </div>
+            {/* Plan Display */}
+            {plan && !isLoading && !error && (
+              <div className="space-y-6">
+                {/* Plan Header */}
+                <PlanHeader
+                  companyName={plan.company_summary?.name || industry}
+                  companyDomain={planSource === 'static' ? undefined : domain}
+                  isPersonalized={planSource !== 'static'}
+                />
 
-                {/* Intro Block with Toggles */}
-                <IntroBlock />
+                {/* CTA Inline (for personalized plans) */}
+                {planSource !== 'static' && (
+                  <BrevoCallToAction variant="inline" />
+                )}
 
-                <div className="flex flex-col lg:flex-row gap-8">
+                {/* Company Summary */}
+                <CompanySummary summary={plan.company_summary} />
 
-                    {/* Sidebar - Business Profile */}
-                    <div className="lg:w-1/4">
-                        <SidebarInputs
-                            industry={industry}
-                            setIndustry={handleIndustryChange}
-                            priceTier={priceTier}
-                            setPriceTier={handlePriceTierChange}
-                            isComparing={isComparing}
-                            setIsComparing={(val) => {
-                                setIsComparing(val);
-                                if (val) {
-                                    // Auto-select critical KPIs when entering analysis mode
-                                    // These 3 KPIs exist across all industries (B2C and B2B)
-                                    setSelectedKpis(['cac', 'repeat_rate', 'conv_rate']);
-                                } else {
-                                    setShowAnalysis(false);
-                                    setSelectedKpis([]);
-                                }
-                            }}
-                        />
-                    </div>
+                {/* Marketing Programs Overview */}
+                <MarketingPrograms programs={plan.programs_list} />
 
-                    {/* Main Content - Benchmark Grid */}
-                    <div className="lg:w-3/4">
-                        <BenchmarkGrid
-                            benchmarks={currentBenchmarks}
-                            priceTier={priceTier}
-                            userValues={userValues}
-                            isComparing={isComparing}
-                            onValueChange={handleValueChange}
-                            selectedKpis={selectedKpis}
-                            onToggleKpi={handleToggleKpi}
-                        />
+                {/* Program Details (expandable) */}
+                {programsArray.length > 0 && (
+                  <div className="space-y-4">
+                    <h2 className="text-lg font-bold text-gray-900">
+                      {t.marketingPlan?.programDetailsTitle || 'Program Details'}
+                    </h2>
+                    {programsArray.map((program, index) => (
+                      <ProgramDetails
+                        key={index}
+                        program={program}
+                        programNumber={index + 1}
+                      />
+                    ))}
+                  </div>
+                )}
 
-                        {/* Analysis Action */}
-                        {isComparing && !showAnalysis && (
-                            <div className="mt-12 flex flex-col items-center gap-3">
-                                <button
-                                    onClick={handleGenerateAnalysis}
-                                    className="bg-brevo-green text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:bg-brevo-dark-green transition-all transform hover:-translate-y-1 flex items-center gap-2"
-                                >
-                                    <span>*</span>
-                                    {t.analysis.getRecommendations}
-                                </button>
-                                <p className="text-sm text-gray-500">{t.analysis.free}</p>
-                            </div>
-                        )}
+                {/* How Brevo Helps */}
+                {plan.how_brevo_helps_you && plan.how_brevo_helps_you.length > 0 && (
+                  <BrevoHelp scenarios={plan.how_brevo_helps_you} />
+                )}
 
-                        {/* AI Analysis Result Section */}
-                        {showAnalysis && (
-                            <div ref={analysisRef} className="mt-12" id="analysis-section">
-                                {/* Section Title */}
-                                <div className="mb-6">
-                                    <h2 className="text-2xl font-bold text-gray-900">* {t.analysis.title}</h2>
-                                </div>
-
-                                {/* Loading State & Process Logs - Combined */}
-                                {(isLoading || logs.length > 0) && !analysis && !error && (
-                                    <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 mb-6">
-                                        {/* Loading Spinner */}
-                                        <div className="text-center mb-6">
-                                            <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-brevo-green border-t-transparent mb-4"></div>
-                                            <p className="text-xs text-brevo-green font-medium mb-2">
-                                                {t.analysis.step} {LOADING_MESSAGES[loadingMessageIndex].step} {t.analysis.of} 4
-                                            </p>
-                                            <h3 className="text-xl font-bold text-gray-900 mb-2">
-                                                {LOADING_MESSAGES[loadingMessageIndex].title}
-                                            </h3>
-                                            <p className="text-gray-500 max-w-2xl mx-auto">
-                                                {LOADING_MESSAGES[loadingMessageIndex].subtitle}
-                                            </p>
-                                        </div>
-
-                                        {/* Process Log - Collapsible */}
-                                        {logs.length > 0 && (
-                                            <div className="border-t border-gray-100 pt-4">
-                                                <button
-                                                    onClick={() => setShowProcessLogs(!showProcessLogs)}
-                                                    className="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-2 transition-colors"
-                                                >
-                                                    <span className={`transform transition-transform ${showProcessLogs ? 'rotate-90' : ''}`}>▶</span>
-                                                    {t.analysis.seeProcessLogs} ({logs.length})
-                                                </button>
-                                                {showProcessLogs && (
-                                                    <div className="mt-3 space-y-1 text-sm text-gray-600 font-mono max-h-48 overflow-y-auto">
-                                                        {logs.map((log, idx) => (
-                                                            <div key={idx} className="flex items-start gap-2">
-                                                                <span className="text-gray-400 flex-shrink-0">[{idx + 1}]</span>
-                                                                <span>{log}</span>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                )}
-                                            </div>
-                                        )}
-                                    </div>
-                                )}
-
-                                {/* Analysis Result */}
-                                {analysis && (
-                                    <AiAnalysisResult analysis={analysis} />
-                                )}
-
-                                {/* Error Display */}
-                                {error && (
-                                    <div className="bg-red-50 border border-red-200 rounded-xl p-6 text-red-800">
-                                        <h3 className="font-bold mb-2">Error</h3>
-                                        <p>{error}</p>
-                                    </div>
-                                )}
-                            </div>
-                        )}
-                    </div>
-                </div>
-
-                {/* Contributors Section */}
-                <Contributors />
-
-                {/* CTA Section */}
-                <div className="mt-16">
-                    <div className="bg-[#0B1221] rounded-[2.5rem] p-12 md:p-16 text-center relative overflow-hidden">
-                        {/* Abstract Background Shapes */}
-                        <div className="absolute top-0 left-0 w-64 h-64 bg-brevo-green opacity-20 blur-[100px] rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
-                        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 opacity-20 blur-[120px] rounded-full transform translate-x-1/3 translate-y-1/3"></div>
-
-                        <div className="relative z-10 max-w-3xl mx-auto">
-                            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                                {t.cta.title}
-                            </h2>
-                            <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
-                                {t.cta.subtitle}
-                                <br className="hidden md:block" />
-                                <span className="md:mt-2 md:inline-block">{t.cta.description}
-                                <span className="text-white font-semibold"> {t.cta.features}</span>{t.cta.descriptionEnd}</span>
-                            </p>
-                            <div className="flex justify-center">
-                                <a href="https://www.brevo.com/contact/" className="bg-brevo-green text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brevo-dark-green transition-all duration-300 shadow-[0_4px_14px_0_rgba(0,146,93,0.39)]">
-                                    {t.cta.button}
-                                </a>
-                            </div>
-                            <p className="mt-6 text-sm text-gray-400">
-                                {t.cta.note}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </main>
+                {/* Conclusion */}
+                {plan.conclusion && (
+                  <div className="bg-white rounded-xl border border-gray-200 p-6">
+                    <h2 className="text-lg font-bold text-gray-900 mb-4">
+                      {t.marketingPlan?.conclusion || 'Conclusion'}
+                    </h2>
+                    <p className="text-gray-600">{plan.conclusion}</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
         </div>
-    );
+
+        {/* Contributors Section */}
+        <Contributors />
+
+        {/* CTA Section */}
+        <div className="mt-16">
+          <div className="bg-[#0B1221] rounded-[2.5rem] p-12 md:p-16 text-center relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-64 h-64 bg-brevo-green opacity-20 blur-[100px] rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 opacity-20 blur-[120px] rounded-full transform translate-x-1/3 translate-y-1/3"></div>
+
+            <div className="relative z-10 max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                {t.marketingPlan?.ctaSectionTitle || 'Ready to Execute Your Marketing Plan?'}
+              </h2>
+              <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
+                {t.marketingPlan?.ctaSectionDesc || 'Brevo provides all the tools you need to implement your marketing relationship programs: Email, SMS, WhatsApp, Marketing Automation, and CRM.'}
+              </p>
+              <div className="flex justify-center">
+                <a
+                  href="https://www.brevo.com/contact/"
+                  className="bg-brevo-green text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brevo-dark-green transition-all duration-300 shadow-[0_4px_14px_0_rgba(0,146,93,0.39)]"
+                >
+                  {t.marketingPlan?.ctaSectionButton || 'Talk to an Expert'}
+                </a>
+              </div>
+              <p className="mt-6 text-sm text-gray-400">
+                {t.marketingPlan?.ctaSectionNote || 'Free consultation, no commitment required'}
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      {/* Sticky CTA Footer (for static plans) */}
+      {plan && planSource === 'static' && !isLoading && !error && (
+        <BrevoCallToAction variant="sticky" />
+      )}
+    </div>
+  );
 }

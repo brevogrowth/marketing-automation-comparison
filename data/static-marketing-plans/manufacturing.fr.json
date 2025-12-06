@@ -1,0 +1,199 @@
+{
+  "introduction": "Ce plan marketing relationnel est conçu pour les entreprises manufacturières souhaitant renforcer leurs relations avec les acheteurs B2B, distributeurs et partenaires grâce à une communication stratégique et un engagement à valeur ajoutée.",
+  "company_summary": {
+    "name": "Entreprise Manufacturière",
+    "website": "exemple-industrie.com",
+    "activities": "Fabrication B2B et produits industriels, incluant équipements, composants, matériaux ou solutions de fabrication spécialisées",
+    "target": "Responsables achats, ingénieurs et décideurs dans les organisations industrielles et commerciales",
+    "industry": "Manufacturing",
+    "business_model": "B2B Manufacturing"
+  },
+  "programs_list": [
+    {
+      "program_name": "Nurturing & Qualification de Leads",
+      "target": "Prospects issus de salons, site web et campagnes marketing",
+      "objective": "Éduquer les prospects sur les solutions et les amener vers l'étape RFQ",
+      "kpi": "Conversion lead vers opportunité, Engagement contenu, Génération de RFQ",
+      "description": "Nurturing éducatif pour démontrer l'expertise technique et les capacités de production.",
+      "scenarios": [
+        {
+          "scenario_target": "Leads salons et demandes site web",
+          "scenario_objective": "Amener les prospects vers la spécification et le RFQ",
+          "main_messages_ideas": "Ressources techniques, Showcase capacités, Études de cas, Offre de consultation",
+          "message_sequence": [
+            {
+              "title": "Remerciement + Ressources",
+              "description": "Après le contact initial",
+              "content": "Merci de nous avoir contactés ! Voici un aperçu de notre [Produit/Capacité]"
+            },
+            {
+              "title": "Approfondissement Technique",
+              "description": "Jour 3 : Spécifications détaillées",
+              "content": "Guide technique : Spécifications et applications [Produit]"
+            },
+            {
+              "title": "Étude de Cas",
+              "description": "Jour 7 : Preuve de capacité",
+              "content": "Comment nous avons résolu [Défi Industrie] pour [Type de Client]"
+            },
+            {
+              "title": "Consultation Ingénierie",
+              "description": "Jour 14 : Offre de consultation technique",
+              "content": "Discutons de vos besoins : Planifiez une consultation ingénierie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Onboarding Client",
+      "target": "Nouveaux clients B2B",
+      "objective": "Assurer une configuration fluide et le succès de la première commande",
+      "kpi": "Taux de succès première commande, Satisfaction onboarding, Taux de récommande",
+      "description": "Onboarding structuré pour établir les processus de commande et les canaux de support technique.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux clients manufacturing",
+          "scenario_objective": "Établir des processus de commande et support fluides",
+          "main_messages_ideas": "Configuration compte, Processus de commande, Support technique, Assurance qualité",
+          "message_sequence": [
+            {
+              "title": "Bienvenue au Partenariat",
+              "description": "Jour 1 : Configuration compte",
+              "content": "Bienvenue à bord ! Voici vos informations de compte et contacts clés"
+            },
+            {
+              "title": "Guide de Commande",
+              "description": "Jour 3 : Comment commander",
+              "content": "Votre guide de commande : Processus, délais et spécifications"
+            },
+            {
+              "title": "Support Technique",
+              "description": "Jour 7 : Ressources support",
+              "content": "Vos ressources de support technique : Assistance ingénierie disponible"
+            },
+            {
+              "title": "Check-in Première Commande",
+              "description": "Après la première livraison",
+              "content": "Comment s'est passée votre première commande ? Nous sommes là pour garantir la qualité"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Récommande & Gestion des Stocks",
+      "target": "Clients actifs avec besoins produits récurrents",
+      "objective": "Assurer des récommandes opportunes et prévenir les ruptures de stock",
+      "kpi": "Taux de récommande, Fréquence moyenne de commande, Rétention valeur commande",
+      "description": "Communication proactive pour supporter la gestion des stocks et les commandes répétées.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients avec patterns de commande réguliers",
+          "scenario_objective": "Faciliter les récommandes opportunes",
+          "main_messages_ideas": "Rappel de récommande, Planification des stocks, Remises volume, Alertes délai",
+          "message_sequence": [
+            {
+              "title": "Rappel de Récommande",
+              "description": "Basé sur le cycle de commande typique",
+              "content": "C'est le moment de recommander ? Selon votre pattern, votre stock est peut-être bas"
+            },
+            {
+              "title": "Planification des Stocks",
+              "description": "Support planification trimestrielle",
+              "content": "Vous planifiez ? Discutons de vos besoins pour le T[X]"
+            },
+            {
+              "title": "Alerte Délai",
+              "description": "Quand la demande est forte",
+              "content": "Alerte délai : Commandez maintenant pour garantir la livraison [Date]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Mises à Jour Produits & Innovation",
+      "target": "Tous les clients et prospects qualifiés",
+      "objective": "Communiquer les nouvelles capacités et améliorations produits",
+      "kpi": "Taux d'adoption produit, Engagement innovation, Revenus cross-sell",
+      "description": "Mises à jour régulières sur les nouveaux produits, améliorations et innovations techniques.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients par catégorie de produit",
+          "scenario_objective": "Générer sensibilisation et adoption des nouvelles offres",
+          "main_messages_ideas": "Lancement nouveau produit, Annonces d'amélioration, Innovations techniques, Options upgrade",
+          "message_sequence": [
+            {
+              "title": "Annonce Nouveau Produit",
+              "description": "Au lancement produit",
+              "content": "Présentation de [Nouveau Produit] : [Capacité] améliorée pour [Application]"
+            },
+            {
+              "title": "Détails Techniques",
+              "description": "Suivi avec spécifications",
+              "content": "Spécifications [Nouveau Produit] : Ce que vous devez savoir"
+            },
+            {
+              "title": "Offre Essai/Échantillon",
+              "description": "Encourager l'essai",
+              "content": "Découvrez [Nouveau Produit] : Demandez des échantillons pour évaluation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Revue Business Annuelle",
+      "target": "Comptes clés et clients stratégiques",
+      "objective": "Renforcer les relations et identifier les opportunités de croissance",
+      "kpi": "Rétention compte, Part de portefeuille, Satisfaction client",
+      "description": "Points de contact annuels structurés pour revoir le partenariat et planifier la collaboration future.",
+      "scenarios": [
+        {
+          "scenario_target": "Top comptes par chiffre d'affaires",
+          "scenario_objective": "Approfondir le partenariat et développer le business",
+          "main_messages_ideas": "Bilan de l'année, Résumé de performance, Planification future, Offres exclusives",
+          "message_sequence": [
+            {
+              "title": "Résumé du Partenariat",
+              "description": "En fin d'année",
+              "content": "Votre année en partenariat : Valeur délivrée et jalons atteints"
+            },
+            {
+              "title": "Invitation Réunion Planification",
+              "description": "Planification T1",
+              "content": "Planifions [Nouvelle Année] : Invitation revue business annuelle"
+            },
+            {
+              "title": "Avantages Partenaire Stratégique",
+              "description": "Programme exclusif",
+              "content": "Vos avantages partenaire stratégique : Programmes exclusifs disponibles"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Nurturing & Qualification de Leads",
+      "why_brevo_is_better": "Le lead scoring de Brevo permet une qualification progressive basée sur l'engagement au contenu technique, aidant les commerciaux à se concentrer sur les prospects prêts à acheter.",
+      "omnichannel_channels": "Email pour le contenu technique + LinkedIn pour le networking professionnel + SMS pour le suivi salon",
+      "setup_efficiency": "Templates B2B manufacturing pré-construits avec contenu axé spécifications pour un lancement rapide."
+    },
+    {
+      "scenario_name": "Récommande & Gestion des Stocks",
+      "why_brevo_is_better": "L'intégration avec votre ERP permet une automatisation basée sur le cycle de commande qui anticipe les besoins clients avant qu'ils ne vous contactent.",
+      "omnichannel_channels": "Email pour les informations de commande détaillées + SMS pour les alertes urgentes",
+      "setup_efficiency": "L'intégration de l'historique de commandes permet un timing de récommande automatisé basé sur les patterns de chaque client."
+    },
+    {
+      "scenario_name": "Revue Business Annuelle",
+      "why_brevo_is_better": "L'intégration CRM permet des déclencheurs de revue annuelle automatisés avec des résumés de partenariat personnalisés pour les comptes clés.",
+      "omnichannel_channels": "Email pour les communications formelles + Intégration calendrier pour la planification de réunions",
+      "setup_efficiency": "Les déclencheurs annuels garantissent qu'aucun compte clé ne manque sa revue business."
+    }
+  ],
+  "conclusion": "Les entreprises manufacturières qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à des relations acheteurs plus fortes, des taux de récommande améliorés grâce à une communication proactive, et des partenariats stratégiques plus profonds grâce à un engagement compte systématique."
+}

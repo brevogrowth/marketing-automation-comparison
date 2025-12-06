@@ -1,0 +1,204 @@
+{
+  "introduction": "Ce plan marketing relationnel est conçu pour les retailers d'électronique et technologie grand public souhaitant construire des relations clients durables grâce à l'expertise produit, le support et les cycles de mise à niveau.",
+  "company_summary": {
+    "name": "Marque Électronique",
+    "website": "exemple-electronique.com",
+    "activities": "Commerce d'électronique grand public, incluant smartphones, ordinateurs, équipements audio et appareils connectés",
+    "target": "Consommateurs technophiles âgés de 18 à 55 ans intéressés par les dernières technologies, gadgets et solutions connectées",
+    "industry": "Electronics",
+    "business_model": "B2C Retail"
+  },
+  "programs_list": [
+    {
+      "program_name": "Bienvenue & Profil Tech",
+      "target": "Nouveaux abonnés et premiers visiteurs",
+      "objective": "Comprendre les préférences tech des clients et convertir au premier achat sous 30 jours",
+      "kpi": "Complétion du profil tech, Conversion premier achat, Engagement catégorie",
+      "description": "Un parcours de bienvenue personnalisé qui identifie les intérêts tech des clients et recommande des produits pertinents.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux abonnés email",
+          "scenario_objective": "Construire un profil de préférences tech et générer le premier achat",
+          "main_messages_ideas": "Bienvenue + sondage intérêts, Spotlight catégorie, Guides d'achat, Offre premier achat",
+          "message_sequence": [
+            {
+              "title": "Bienvenue + Sondage Tech",
+              "description": "Bienvenue immédiate avec quiz intérêts tech",
+              "content": "Bienvenue ! Dites-nous quelle tech vous passionne pour des recommandations personnalisées"
+            },
+            {
+              "title": "Vos Sélections Tech",
+              "description": "Jour 3 : Basé sur les résultats du sondage",
+              "content": "Selon vos intérêts : Top sélection en [Catégorie]"
+            },
+            {
+              "title": "Guide d'Achat",
+              "description": "Jour 7 : Contenu éducatif sur l'intérêt principal",
+              "content": "Le guide ultime pour choisir le bon [Type de Produit]"
+            },
+            {
+              "title": "Offre Premier Achat",
+              "description": "Jour 14 : Incentive pour acheter",
+              "content": "Prêt à upgrader ? Obtenez -10% sur votre première commande"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Onboarding & Configuration Produit",
+      "target": "Acheteurs récents de produits",
+      "objective": "Assurer une configuration produit réussie et maximiser la satisfaction client",
+      "kpi": "Taux de complétion configuration, Réduction taux de retour, Réduction tickets support",
+      "description": "Séquence de support post-achat automatisée pour aider les clients à tirer le meilleur de leurs nouveaux appareils.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux acheteurs smartphone/laptop",
+          "scenario_objective": "Guider à travers la configuration et l'utilisation initiale",
+          "main_messages_ideas": "Guide de démarrage rapide, Trucs et astuces, Recommandations accessoires, Mise en avant fonctionnalités",
+          "message_sequence": [
+            {
+              "title": "Guide de Démarrage Rapide",
+              "description": "Jour 1 post-livraison",
+              "content": "Configurons votre nouveau [Produit] en quelques minutes"
+            },
+            {
+              "title": "Astuces Pro",
+              "description": "Jour 3 : Fonctionnalités cachées et conseils",
+              "content": "5 fonctionnalités que vous ne connaissez peut-être pas sur votre [Produit]"
+            },
+            {
+              "title": "Complétez Votre Configuration",
+              "description": "Jour 7 : Recommandations d'accessoires",
+              "content": "Améliorez votre expérience avec ces accessoires compatibles"
+            },
+            {
+              "title": "Point de Contact",
+              "description": "Jour 14 : Check satisfaction",
+              "content": "Comment va votre nouveau [Produit] ? Nous sommes là pour vous aider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Marketing Cycle de Mise à Niveau",
+      "target": "Clients dont les produits ont 18-24 mois",
+      "objective": "Générer des achats de mise à niveau au timing optimal",
+      "kpi": "Taux de conversion upgrade, Participation trade-in, Valeur moyenne upgrade",
+      "description": "Communications stratégiques calées sur le cycle de vie produit pour encourager les mises à niveau opportunes.",
+      "scenarios": [
+        {
+          "scenario_target": "Propriétaires de smartphones (18+ mois)",
+          "scenario_objective": "Encourager la mise à niveau avec valeur de reprise",
+          "main_messages_ideas": "Comparaison nouvelles fonctionnalités, Valeur de reprise, Bénéfices upgrade, Offre limitée",
+          "message_sequence": [
+            {
+              "title": "Quoi de Neuf",
+              "description": "18 mois : Comparaison nouveau modèle",
+              "content": "Découvrez ce que vous manquez : [Nouveau Modèle] vs votre appareil actuel"
+            },
+            {
+              "title": "Valeur de Reprise",
+              "description": "20 mois : Offre de reprise personnalisée",
+              "content": "Votre [Appareil Actuel] vaut jusqu'à [Valeur]€ pour une mise à niveau"
+            },
+            {
+              "title": "Offre Upgrade",
+              "description": "24 mois : Dernière poussée upgrade",
+              "content": "C'est le moment d'upgrader : Offre spéciale + reprise bonifiée ce mois-ci"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Lancement Nouveau Produit",
+      "target": "Tous les clients intéressés par des catégories de produits spécifiques",
+      "objective": "Maximiser les précommandes et les ventes de la semaine de lancement",
+      "kpi": "Taux de précommande, CA semaine de lancement, Conversion liste d'attente",
+      "description": "Campagne multi-touch pour créer l'anticipation et générer des achats pour les lancements de nouveaux produits.",
+      "scenarios": [
+        {
+          "scenario_target": "Enthousiastes de catégorie (basé sur l'historique d'achat)",
+          "scenario_objective": "Générer des précommandes et une adoption précoce",
+          "main_messages_ideas": "Aperçu exclusif, Avantages précommande, Alerte jour de lancement, Accès avis anticipé",
+          "message_sequence": [
+            {
+              "title": "Aperçu Exclusif",
+              "description": "7 jours avant l'annonce",
+              "content": "Quelque chose de grand arrive en [Catégorie]..."
+            },
+            {
+              "title": "Lancement Précommande",
+              "description": "Jour de l'annonce",
+              "content": "C'est là ! Précommandez [Nouveau Produit] avec des avantages exclusifs"
+            },
+            {
+              "title": "Rappel Précommande",
+              "description": "3 jours avant l'expédition",
+              "content": "Dernière chance pour les avantages précommande - Expédition dans 3 jours !"
+            },
+            {
+              "title": "Jour de Lancement",
+              "description": "Disponibilité générale",
+              "content": "[Nouveau Produit] est maintenant disponible - Achetez maintenant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Garantie Étendue & Protection",
+      "target": "Acheteurs récents d'électronique de haute valeur",
+      "objective": "Augmenter le taux d'attachement garantie étendue et plans de protection",
+      "kpi": "Taux d'attachement garantie, CA plans de protection, Renouvellements post-garantie",
+      "description": "Campagne ciblée pour vendre des garanties étendues et plans de protection pendant la fenêtre de décision.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients ayant acheté sans plan de protection",
+          "scenario_objective": "Convertir à l'achat de garantie étendue sous 30 jours",
+          "main_messages_ideas": "Avantages protection, Vraies histoires de réclamation, Tranquillité d'esprit, Offre limitée",
+          "message_sequence": [
+            {
+              "title": "Protégez Votre Investissement",
+              "description": "Jour 3 post-achat",
+              "content": "Votre nouveau [Produit] mérite une protection complète"
+            },
+            {
+              "title": "Pourquoi la Protection Compte",
+              "description": "Jour 10 : Exemples concrets",
+              "content": "Voyez comment la protection [Produit] a sauvé ces clients"
+            },
+            {
+              "title": "Dernière Chance",
+              "description": "Jour 25 : Message d'urgence",
+              "content": "5 jours restants pour ajouter la protection à votre [Produit]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Bienvenue & Profil Tech",
+      "why_brevo_is_better": "L'intégration sondage et la segmentation dynamique de Brevo vous permettent de collecter les préférences tech et de personnaliser immédiatement le parcours client selon leurs intérêts.",
+      "omnichannel_channels": "Email pour le contenu produit détaillé + SMS pour les deals flash et alertes stock",
+      "setup_efficiency": "Templates pré-construits pour l'industrie électronique avec logique de catégorie produit pour un lancement rapide."
+    },
+    {
+      "scenario_name": "Marketing Cycle de Mise à Niveau",
+      "why_brevo_is_better": "Les déclencheurs d'automatisation basés sur les dates permettent des rappels de mise à niveau parfaitement synchronisés selon la date d'achat et le cycle de vie produit.",
+      "omnichannel_channels": "Email pour le contenu comparatif + SMS pour les alertes valeur de reprise + Push pour les offres limitées",
+      "setup_efficiency": "Configurez une fois et laissez l'automatisation gérer le timing - les déclencheurs s'activent automatiquement selon l'anniversaire d'achat."
+    },
+    {
+      "scenario_name": "Onboarding & Configuration Produit",
+      "why_brevo_is_better": "L'automatisation post-achat garantit que chaque client reçoit le bon contenu d'onboarding selon son achat de produit spécifique.",
+      "omnichannel_channels": "Email pour les guides de configuration détaillés + SMS pour les conseils rapides + Intégration vidéo pour les tutoriels",
+      "setup_efficiency": "Les templates de contenu par catégorie de produit facilitent le maintien de la qualité sur l'ensemble de votre catalogue."
+    }
+  ],
+  "conclusion": "Les retailers d'électronique qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à une valeur vie client plus élevée grâce à des cycles de mise à niveau bien synchronisés, des retours réduits grâce à un meilleur onboarding, et des taux d'attachement plus forts pour les services à haute marge comme les garanties étendues."
+}

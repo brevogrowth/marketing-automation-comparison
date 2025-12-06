@@ -1,0 +1,209 @@
+{
+  "introduction": "Ce plan marketing relationnel est conçu pour les retailers de sport et outdoor souhaitant construire des communautés engagées d'athlètes et passionnés de fitness grâce à une communication axée sur la performance.",
+  "company_summary": {
+    "name": "Marque Sports & Outdoor",
+    "website": "exemple-sports.com",
+    "activities": "Commerce d'équipements sportifs, vêtements de sport et matériel outdoor pour diverses activités sportives et fitness",
+    "target": "Athlètes et passionnés de fitness âgés de 18 à 50 ans poursuivant un mode de vie actif, du fitness occasionnel au sport de compétition",
+    "industry": "Sports",
+    "business_model": "B2C Retail"
+  },
+  "programs_list": [
+    {
+      "program_name": "Bienvenue & Profil Activité",
+      "target": "Nouveaux abonnés et premiers visiteurs",
+      "objective": "Comprendre les intérêts sportifs des clients et convertir au premier achat sous 21 jours",
+      "kpi": "Complétion du profil activité, Conversion premier achat, Engagement catégorie",
+      "description": "Un parcours de bienvenue personnalisé qui identifie les sports et activités préférés pour des recommandations ciblées.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux abonnés email",
+          "scenario_objective": "Construire un profil d'activité et générer le premier achat",
+          "main_messages_ideas": "Bienvenue + quiz sports, Recommandations équipement, Conseils entraînement, Offre premier achat",
+          "message_sequence": [
+            {
+              "title": "Bienvenue + Quiz Sports",
+              "description": "Bienvenue immédiate avec quiz préférences activités",
+              "content": "Bienvenue chez [Marque] ! Dites-nous vos sports pour des sélections équipement personnalisées"
+            },
+            {
+              "title": "Votre Guide Équipement",
+              "description": "Jour 3 : Basé sur les résultats du quiz",
+              "content": "Top sélection pour votre [Sport/Activité]"
+            },
+            {
+              "title": "Contenu Entraînement",
+              "description": "Jour 7 : Conseils d'entraînement spécifiques au sport",
+              "content": "Améliorez votre [Sport] : Conseils pro et recommandations d'entraînement"
+            },
+            {
+              "title": "Offre Premier Achat",
+              "description": "Jour 14 : Incentive pour acheter",
+              "content": "Équipez-vous avec -15% sur votre première commande"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Préparation Sport Saisonnière",
+      "target": "Clients selon leurs préférences sportives",
+      "objective": "Générer des achats d'équipement saisonnier avant la haute saison de chaque sport",
+      "kpi": "Taux de conversion pré-saison, Panier moyen, CA début de saison",
+      "description": "Campagnes opportunes pour aider les athlètes à se préparer pour leurs prochaines saisons sportives avec le bon équipement.",
+      "scenarios": [
+        {
+          "scenario_target": "Passionnés de sports d'hiver",
+          "scenario_objective": "Générer des achats d'équipement ski/snowboard pré-saison",
+          "main_messages_ideas": "Checklist préparation saison, Showcase nouvel équipement, Offres early bird, Rappels révision",
+          "message_sequence": [
+            {
+              "title": "Préparation Saison",
+              "description": "8 semaines avant le début de la saison",
+              "content": "L'hiver arrive ! Préparez votre équipement ski"
+            },
+            {
+              "title": "Nouvel Équipement Saison",
+              "description": "6 semaines avant la saison",
+              "content": "Nouveautés : La collection [Saison] est arrivée"
+            },
+            {
+              "title": "Offres Early Bird",
+              "description": "4 semaines avant la saison",
+              "content": "Spécial early bird : -20% sur l'équipement hiver cette semaine seulement"
+            },
+            {
+              "title": "Dernière Chance",
+              "description": "2 semaines avant la saison",
+              "content": "La saison démarre bientôt ! Dernière chance pour les offres pré-saison"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Marketing Événements & Courses",
+      "target": "Athlètes de compétition et participants aux événements",
+      "objective": "Générer des achats autour des grands événements sportifs et courses",
+      "kpi": "CA lié aux événements, Achats kit jour de course, Inscriptions événements",
+      "description": "Campagnes ciblées autour des grands événements sportifs, marathons et compétitions.",
+      "scenarios": [
+        {
+          "scenario_target": "Coureurs de marathon et participants inscrits aux courses",
+          "scenario_objective": "Maximiser les achats d'équipement et nutrition jour de course",
+          "main_messages_ideas": "Essentiels jour de course, Compte à rebours entraînement, Guide nutrition, Récupération post-course",
+          "message_sequence": [
+            {
+              "title": "Équipement Entraînement",
+              "description": "12 semaines avant l'événement",
+              "content": "Vous préparez [Événement] ? Voici votre liste d'équipement essentiel"
+            },
+            {
+              "title": "Préparation Jour de Course",
+              "description": "4 semaines avant l'événement",
+              "content": "Plus que 4 semaines ! Checklist des essentiels jour de course"
+            },
+            {
+              "title": "Compte à Rebours Final",
+              "description": "1 semaine avant l'événement",
+              "content": "Semaine de course ! Derniers équipements et sélection nutrition"
+            },
+            {
+              "title": "Récupération Post-Course",
+              "description": "Le lendemain de l'événement",
+              "content": "Bravo pour [Événement] ! Essentiels récupération pour votre prochain défi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Upgrade & Remplacement Équipement",
+      "target": "Clients avec équipement vieillissant",
+      "objective": "Générer des upgrades et remplacements d'équipement opportuns",
+      "kpi": "Taux de conversion upgrade, Timing remplacement, Participation trade-in",
+      "description": "Rappels automatisés basés sur la durée de vie typique de l'équipement et les patterns d'utilisation.",
+      "scenarios": [
+        {
+          "scenario_target": "Acheteurs de chaussures de running (6+ mois)",
+          "scenario_objective": "Générer le remplacement de chaussures au timing optimal",
+          "main_messages_ideas": "Check kilométrage, Nouveaux modèles, Valeur trade-in, Avantages upgrade",
+          "message_sequence": [
+            {
+              "title": "Check Kilométrage",
+              "description": "6 mois après l'achat",
+              "content": "Comment vont vos chaussures ? Signes qu'il est temps d'en changer"
+            },
+            {
+              "title": "Alerte Nouveau Modèle",
+              "description": "Quand la nouvelle version sort",
+              "content": "La nouvelle [Modèle Chaussure] est là - découvrez les améliorations"
+            },
+            {
+              "title": "Offre Upgrade",
+              "description": "8 mois après l'achat",
+              "content": "C'est le moment de nouvelles chaussures ? Économisez 20% sur votre prochaine paire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Communauté & Fidélité Athlète",
+      "target": "Clients actifs et ambassadeurs de marque",
+      "objective": "Construire une communauté de marque et augmenter la valeur vie client",
+      "kpi": "Engagement communauté, Taux de réachat, Conversions parrainage",
+      "description": "Programme de fidélité avec avantages athlète, accès exclusif et fonctionnalités communautaires.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients récurrents à haute valeur",
+          "scenario_objective": "Convertir en ambassadeurs de marque et membres de la communauté",
+          "main_messages_ideas": "Statut athlète VIP, Drops exclusifs, Événements communauté, Récompenses parrainage",
+          "message_sequence": [
+            {
+              "title": "Statut Athlète",
+              "description": "À l'atteinte du seuil VIP",
+              "content": "Vous avez gagné le Statut Athlète ! Bienvenue dans l'équipe [Marque]"
+            },
+            {
+              "title": "Accès Exclusif",
+              "description": "Email mensuel VIP",
+              "content": "Athlètes d'Abord : Accès anticipé aux nouvelles sorties"
+            },
+            {
+              "title": "Événement Communauté",
+              "description": "Invitations événements",
+              "content": "Vous êtes invité : Run/ride/workout communauté [Marque]"
+            },
+            {
+              "title": "Lancement Parrainage",
+              "description": "Présentation du programme de parrainage",
+              "content": "Entraînez-vous ensemble : Offrez 20€, Recevez 20€ pour chaque ami qui rejoint"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Bienvenue & Profil Activité",
+      "why_brevo_is_better": "L'intégration sondage et la segmentation dynamique de Brevo vous permettent de construire des profils d'activité détaillés qui alimentent des recommandations produits personnalisées tout au long du parcours client.",
+      "omnichannel_channels": "Email pour les guides équipement détaillés + SMS pour les ventes flash et alertes réapprovisionnement",
+      "setup_efficiency": "Templates pré-construits pour l'industrie sportive avec segmentation basée sur l'activité pour démarrer rapidement."
+    },
+    {
+      "scenario_name": "Préparation Sport Saisonnière",
+      "why_brevo_is_better": "Les déclencheurs d'automatisation basés sur le calendrier permettent des campagnes saisonnières parfaitement synchronisées qui atteignent les athlètes quand ils sont prêts à acheter.",
+      "omnichannel_channels": "Email pour les lookbooks saisonniers + SMS pour les offres limitées + Push pour l'accès anticipé",
+      "setup_efficiency": "Créez les campagnes saisonnières une fois et programmez-les pour se répéter annuellement avec des déclencheurs automatiques."
+    },
+    {
+      "scenario_name": "Marketing Événements & Courses",
+      "why_brevo_is_better": "La segmentation basée sur les événements et l'automatisation du compte à rebours vous aident à créer l'excitation du jour de course et à générer des achats opportuns.",
+      "omnichannel_channels": "Email pour le contenu d'entraînement + SMS pour les rappels semaine de course + Push pour les alertes en temps réel",
+      "setup_efficiency": "L'intégration avec les plateformes d'inscription aux événements permet une configuration automatique des déclencheurs."
+    }
+  ],
+  "conclusion": "Les retailers de sport et outdoor qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à une valeur vie client plus élevée grâce au remplacement opportun de l'équipement, un engagement communautaire plus fort, et des ventes saisonnières accrues grâce à des campagnes de préparation bien synchronisées."
+}

@@ -1,0 +1,226 @@
+{
+  "introduction": "This marketing relationship plan is designed for SaaS companies looking to optimize the customer lifecycle from trial to expansion through strategic communication and engagement.",
+  "company_summary": {
+    "name": "SaaS Company",
+    "website": "example-saas.com",
+    "activities": "Software as a Service provider offering cloud-based business solutions, productivity tools, or specialized applications",
+    "target": "B2B decision-makers and end-users in small to enterprise businesses seeking efficient, scalable software solutions",
+    "industry": "SaaS",
+    "business_model": "B2B Subscription"
+  },
+  "programs_list": [
+    {
+      "program_name": "Trial to Paid Conversion",
+      "target": "Free trial users",
+      "objective": "Convert trial users to paid customers before trial expiration",
+      "kpi": "Trial to paid conversion rate, Time to first value, Feature adoption during trial",
+      "description": "Strategic onboarding sequence to demonstrate value and drive conversion during the trial period.",
+      "scenarios": [
+        {
+          "scenario_target": "New trial sign-ups",
+          "scenario_objective": "Achieve key activation milestones and drive conversion",
+          "main_messages_ideas": "Quick start guide, Key features tutorial, Success stories, Conversion offer",
+          "message_sequence": [
+            {
+              "title": "Welcome + Quick Start",
+              "description": "Immediately after sign-up",
+              "content": "Welcome to [Product]! Here's how to get started in 5 minutes"
+            },
+            {
+              "title": "Key Feature Highlight",
+              "description": "Day 2: Core value proposition",
+              "content": "Have you tried [Key Feature]? Here's how it saves you [X hours/dollars]"
+            },
+            {
+              "title": "Success Story",
+              "description": "Day 5: Social proof",
+              "content": "How [Company] achieved [Result] with [Product]"
+            },
+            {
+              "title": "Trial Ending Reminder",
+              "description": "3 days before trial ends",
+              "content": "Your trial ends in 3 days - Don't lose your progress"
+            },
+            {
+              "title": "Final Conversion Offer",
+              "description": "Last day of trial",
+              "content": "Last chance: Upgrade now and get [Offer]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Customer Onboarding",
+      "target": "New paying customers",
+      "objective": "Drive product adoption and time to value within first 30 days",
+      "kpi": "Onboarding completion rate, Feature adoption, Time to value",
+      "description": "Comprehensive onboarding sequence ensuring customers achieve their first success quickly.",
+      "scenarios": [
+        {
+          "scenario_target": "New customers by plan type",
+          "scenario_objective": "Complete key onboarding milestones",
+          "main_messages_ideas": "Setup guidance, Integration help, Best practices, Success check-in",
+          "message_sequence": [
+            {
+              "title": "Welcome + Setup",
+              "description": "Day 1: Account setup guide",
+              "content": "Welcome aboard! Let's get your [Product] set up for success"
+            },
+            {
+              "title": "Key Configuration",
+              "description": "Day 3: Essential settings",
+              "content": "5 settings to configure for maximum value"
+            },
+            {
+              "title": "Integration Guide",
+              "description": "Day 7: Connect your tools",
+              "content": "Connect [Product] with your favorite tools"
+            },
+            {
+              "title": "Best Practices",
+              "description": "Day 14: Power user tips",
+              "content": "How power users get the most from [Product]"
+            },
+            {
+              "title": "Success Check-in",
+              "description": "Day 30: Satisfaction check",
+              "content": "How's it going? Let's make sure you're getting value"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Feature Adoption & Engagement",
+      "target": "Active customers based on usage patterns",
+      "objective": "Increase feature adoption and product stickiness",
+      "kpi": "Feature adoption rate, DAU/MAU ratio, Session frequency",
+      "description": "Usage-triggered campaigns to encourage adoption of underutilized features.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers not using key features",
+          "scenario_objective": "Drive adoption of high-value features",
+          "main_messages_ideas": "Feature spotlight, Use case examples, Tutorial content, Success metrics",
+          "message_sequence": [
+            {
+              "title": "Feature Introduction",
+              "description": "Based on non-usage trigger",
+              "content": "Did you know? [Feature] can help you [Benefit]"
+            },
+            {
+              "title": "How-To Guide",
+              "description": "Day 3 after intro",
+              "content": "Quick guide: Getting started with [Feature]"
+            },
+            {
+              "title": "Customer Story",
+              "description": "Day 7: Real-world example",
+              "content": "See how [Customer] uses [Feature] to [Result]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expansion & Upsell",
+      "target": "High-usage customers approaching plan limits",
+      "objective": "Drive plan upgrades and seat expansion",
+      "kpi": "Expansion revenue, Upgrade rate, Net revenue retention",
+      "description": "Strategic communication to growing accounts about upgrade opportunities.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers at 80%+ of plan limits",
+          "scenario_objective": "Proactive upgrade before hitting limits",
+          "main_messages_ideas": "Usage approaching limit, Upgrade benefits, ROI calculator, Team expansion",
+          "message_sequence": [
+            {
+              "title": "Usage Alert",
+              "description": "At 80% of limit",
+              "content": "You're approaching your [Limit] - Here are your options"
+            },
+            {
+              "title": "Upgrade Benefits",
+              "description": "At 90% of limit",
+              "content": "Unlock more with [Next Plan]: What you'll get"
+            },
+            {
+              "title": "ROI Case",
+              "description": "If hitting limits regularly",
+              "content": "The ROI of upgrading: What customers like you see"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Churn Prevention & Win-Back",
+      "target": "At-risk and churned customers",
+      "objective": "Prevent churn and recover lost customers",
+      "kpi": "Churn rate reduction, Win-back rate, Reactivation revenue",
+      "description": "Proactive intervention for at-risk accounts and win-back campaigns for churned customers.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers with declining usage",
+          "scenario_objective": "Re-engage before cancellation",
+          "main_messages_ideas": "Check-in outreach, Value reminder, Support offer, Exit survey",
+          "message_sequence": [
+            {
+              "title": "Check-In",
+              "description": "When usage drops significantly",
+              "content": "We noticed you haven't logged in lately - Is everything OK?"
+            },
+            {
+              "title": "Value Reminder",
+              "description": "If no response",
+              "content": "Here's what you're missing: [Key updates and value]"
+            },
+            {
+              "title": "Support Offer",
+              "description": "If still declining",
+              "content": "Let's get you back on track: Free consultation available"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Recently churned customers",
+          "scenario_objective": "Win back within 90 days",
+          "main_messages_ideas": "We miss you, What's new, Comeback offer, Feedback request",
+          "message_sequence": [
+            {
+              "title": "We Miss You",
+              "description": "30 days after churn",
+              "content": "We miss you! Here's what's new at [Product]"
+            },
+            {
+              "title": "Comeback Offer",
+              "description": "60 days after churn",
+              "content": "Come back to [Product]: [Special offer] just for you"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Trial to Paid Conversion",
+      "why_brevo_is_better": "Brevo's event-based automation lets you trigger messages based on user actions (or inactions), ensuring perfectly timed conversion nudges.",
+      "omnichannel_channels": "Email for educational content + In-app messages for contextual prompts + SMS for urgent trial reminders",
+      "setup_efficiency": "Pre-built SaaS templates with trial-specific logic get you started quickly."
+    },
+    {
+      "scenario_name": "Feature Adoption & Engagement",
+      "why_brevo_is_better": "Integration with your product analytics enables behavior-based triggers that reach users with relevant feature education at the right moment.",
+      "omnichannel_channels": "Email for feature tutorials + In-app for contextual tips + Push for engagement reminders",
+      "setup_efficiency": "API integration with your product enables real-time behavioral triggers."
+    },
+    {
+      "scenario_name": "Churn Prevention & Win-Back",
+      "why_brevo_is_better": "Usage-decline triggers enable proactive intervention before customers churn, while segmented win-back campaigns target lost customers effectively.",
+      "omnichannel_channels": "Email for re-engagement content + Personal outreach triggers for high-value accounts + SMS for urgent retention offers",
+      "setup_efficiency": "Churn prediction integration enables automated at-risk customer identification."
+    }
+  ],
+  "conclusion": "SaaS companies that implement these relationship marketing programs can expect higher trial conversion rates, improved net revenue retention through proactive expansion, and reduced churn through early intervention and strategic win-back campaigns."
+}

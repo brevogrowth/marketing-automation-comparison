@@ -1,0 +1,209 @@
+{
+  "introduction": "Ce plan marketing relationnel est conçu pour les entreprises de commerce de gros et distribution souhaitant renforcer leurs relations avec les détaillants et générer des commandes régulières grâce à une communication stratégique.",
+  "company_summary": {
+    "name": "Entreprise de Commerce de Gros & Distribution",
+    "website": "exemple-grossiste.com",
+    "activities": "Distribution B2B en gros, incluant sourcing produits, gestion des stocks et approvisionnement des détaillants",
+    "target": "Acheteurs retail, responsables achats et propriétaires d'entreprise ayant besoin d'un approvisionnement produit fiable pour leurs magasins",
+    "industry": "Wholesale",
+    "business_model": "B2B Wholesale"
+  },
+  "programs_list": [
+    {
+      "program_name": "Onboarding Détaillant",
+      "target": "Nouveaux clients grossiste",
+      "objective": "Établir les habitudes de commande et construire des relations détaillants solides dès le premier jour",
+      "kpi": "Temps jusqu'à la première récommande, Satisfaction onboarding, Taux d'activation compte",
+      "description": "Onboarding complet pour aider les nouveaux détaillants à configurer leurs comptes et comprendre les processus de commande.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux comptes retail",
+          "scenario_objective": "Établir une relation de commande fluide",
+          "main_messages_ideas": "Configuration compte, Aperçu catalogue, Processus de commande, Support première commande",
+          "message_sequence": [
+            {
+              "title": "Bienvenue au Partenariat",
+              "description": "Jour 1 : Confirmation du compte",
+              "content": "Bienvenue ! Votre compte grossiste est actif - Voici comment démarrer"
+            },
+            {
+              "title": "Points Forts du Catalogue",
+              "description": "Jour 2 : Aperçu produits",
+              "content": "Nos bestsellers : Des produits que vos clients vont adorer"
+            },
+            {
+              "title": "Commander Facilement",
+              "description": "Jour 5 : Guide du processus",
+              "content": "Votre guide de commande : Minimums, livraison et conditions de paiement"
+            },
+            {
+              "title": "Check-in Première Commande",
+              "description": "Après la première commande",
+              "content": "Comment s'est passée votre première commande ? Nous sommes là pour vous aider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Automatisation des Récommandes",
+      "target": "Détaillants actifs avec patterns de commande réguliers",
+      "objective": "Assurer des récommandes régulières et prévenir les ruptures de stock",
+      "kpi": "Fréquence de récommande, Panier moyen, Rétention compte",
+      "description": "Rappels de récommande proactifs basés sur les patterns d'achat et cycles d'inventaire.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants selon l'historique de commande",
+          "scenario_objective": "Générer des récommandes opportunes",
+          "main_messages_ideas": "Rappel récommande, Réapprovisionnement bestseller, Préparation saison, Économies volume",
+          "message_sequence": [
+            {
+              "title": "C'est le Moment de Recommander",
+              "description": "Basé sur le cycle de commande typique",
+              "content": "Selon votre pattern de ventes, c'est le moment de réapprovisionner [Produits]"
+            },
+            {
+              "title": "Alerte Bestseller",
+              "description": "Pour les articles à forte rotation",
+              "content": "[Produit] se vend très bien - Réapprovisionnez avant la rupture"
+            },
+            {
+              "title": "Économies Volume",
+              "description": "Encourager les commandes plus importantes",
+              "content": "Commandez plus, économisez plus : Tarifs volume disponibles ce mois-ci"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Introduction Nouveaux Produits",
+      "target": "Tous les détaillants actifs",
+      "objective": "Stimuler l'adoption de nouveaux produits et élargir les assortiments détaillants",
+      "kpi": "Taux d'adoption nouveaux produits, Expansion assortiment, Conversion commande d'essai",
+      "description": "Communication stratégique pour introduire de nouveaux produits et encourager les essais.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants par adéquation catégorie",
+          "scenario_objective": "Générer des commandes de nouveaux produits",
+          "main_messages_ideas": "Aperçu nouvelle arrivée, Offre d'essai, Success stories, Prix de lancement",
+          "message_sequence": [
+            {
+              "title": "Aperçu Nouvelle Arrivée",
+              "description": "2 semaines avant disponibilité",
+              "content": "Bientôt disponible : [Nouveau Produit] - Précommandez pour première disponibilité"
+            },
+            {
+              "title": "Détails Produit",
+              "description": "Au lancement",
+              "content": "[Nouveau Produit] est arrivé : Specs, prix et matériels PLV"
+            },
+            {
+              "title": "Offre de Lancement",
+              "description": "Premier mois",
+              "content": "Prix de lancement : Essayez [Nouveau Produit] avec remise spéciale première commande"
+            },
+            {
+              "title": "Success Stories",
+              "description": "Mois 2",
+              "content": "Comment les détaillants vendent [Nouveau Produit] - Conseils et résultats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Préparation Saisonnière",
+      "target": "Tous les détaillants avant les pics saisonniers",
+      "objective": "Maximiser la préparation des stocks saisonniers et les ventes",
+      "kpi": "Volume commandes pré-saison, CA saisonnier, Disponibilité stock",
+      "description": "Communication anticipée pour aider les détaillants à se préparer à la demande saisonnière.",
+      "scenarios": [
+        {
+          "scenario_target": "Tous les détaillants actifs",
+          "scenario_objective": "Générer des commandes pré-saison",
+          "main_messages_ideas": "Aperçu saison, Offres early bird, Planification stocks, Rappels dates limites",
+          "message_sequence": [
+            {
+              "title": "Aperçu Saison",
+              "description": "8 semaines avant la saison",
+              "content": "[Saison] arrive : Découvrez notre collection saisonnière en avant-première"
+            },
+            {
+              "title": "Incentive Commande Anticipée",
+              "description": "6 semaines avant la saison",
+              "content": "Commandez tôt pour [Saison] : Meilleurs prix + stock garanti"
+            },
+            {
+              "title": "Support Planification",
+              "description": "4 semaines avant la saison",
+              "content": "Planification [Saison] : Quantités recommandées selon vos ventes"
+            },
+            {
+              "title": "Commande Finale",
+              "description": "2 semaines avant la saison",
+              "content": "Dernier appel pour les commandes [Saison] : Assurez votre stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programme Croissance Détaillant",
+      "target": "Détaillants à haut potentiel et en croissance",
+      "objective": "Aider les détaillants à développer leur business et augmenter leurs achats",
+      "kpi": "Taux de croissance compte, Expansion catégorie, Satisfaction partenaire",
+      "description": "Support à valeur ajoutée pour aider les détaillants à réussir et grandir avec vous.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants en croissance selon tendance commandes",
+          "scenario_objective": "Accélérer le succès des détaillants",
+          "main_messages_ideas": "Conseils croissance, Support merchandising, Matériaux marketing, Ressources formation",
+          "message_sequence": [
+            {
+              "title": "Conseils Succès Retail",
+              "description": "Contenu mensuel",
+              "content": "Le conseil retail du mois : Comment augmenter les ventes [Catégorie]"
+            },
+            {
+              "title": "Support Merchandising",
+              "description": "Offres PLV et display",
+              "content": "Kit merchandising gratuit : Matériaux de présentation pour [Produits]"
+            },
+            {
+              "title": "Matériaux Marketing",
+              "description": "Support promotionnel",
+              "content": "Votre kit marketing : Matériaux prêts à l'emploi pour votre magasin"
+            },
+            {
+              "title": "Upgrade Niveau Partenaire",
+              "description": "Quand les seuils sont atteints",
+              "content": "Félicitations ! Vous avez débloqué les avantages partenaire [Niveau]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Onboarding Détaillant",
+      "why_brevo_is_better": "L'automatisation B2B de Brevo permet des séquences d'onboarding structurées qui garantissent que chaque nouveau détaillant reçoit une communication cohérente et utile.",
+      "omnichannel_channels": "Email pour les guides détaillés + SMS pour les conseils rapides et confirmations de commande",
+      "setup_efficiency": "Les templates grossiste pré-construits vous aident à créer un onboarding professionnel en minutes."
+    },
+    {
+      "scenario_name": "Automatisation des Récommandes",
+      "why_brevo_is_better": "L'intégration avec votre système de gestion des commandes permet des rappels de récommande intelligents basés sur les patterns d'achat réels de chaque détaillant.",
+      "omnichannel_channels": "Email pour le catalogue et les prix + SMS pour les alertes stock urgentes",
+      "setup_efficiency": "Les déclencheurs d'historique de commande permettent un timing de récommande entièrement automatisé et personnalisé."
+    },
+    {
+      "scenario_name": "Préparation Saisonnière",
+      "why_brevo_is_better": "L'automatisation basée sur le calendrier et la segmentation garantissent une communication saisonnière opportune qui aide les détaillants à se préparer pour les pics de demande.",
+      "omnichannel_channels": "Email pour les catalogues saisonniers + SMS pour les rappels de dates limites",
+      "setup_efficiency": "Les campagnes saisonnières annuelles peuvent être templatisées et programmées pour se répéter automatiquement."
+    }
+  ],
+  "conclusion": "Les entreprises de commerce de gros et distribution qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à une meilleure rétention des détaillants, des patterns de commande plus réguliers, et des partenariats plus forts qui génèrent une croissance mutuelle."
+}

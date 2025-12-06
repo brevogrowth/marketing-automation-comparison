@@ -195,7 +195,7 @@ describe('Lead Capture Integration', () => {
 
     for (const key of requiredKeys) {
       expect(translations).toHaveProperty(key);
-      expect((translations as Record<string, string>)[key]).toBeTruthy();
+      expect((translations as unknown as Record<string, string>)[key]).toBeTruthy();
     }
   });
 });

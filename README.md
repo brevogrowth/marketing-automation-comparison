@@ -1,6 +1,6 @@
-# Brevo KPI Benchmark
+# Brevo Marketing Relationship Plan Generator
 
-A strategic marketing asset for Brevo's mid-market prospecting. This interactive benchmarking tool enables B2C retailers and B2B companies to compare their marketing KPIs against industry standards and receive AI-powered personalized recommendations.
+A strategic marketing asset for Brevo's mid-market prospecting. This interactive tool enables B2C retailers and B2B companies to generate personalized marketing relationship plans powered by AI.
 
 **Live Demo:** [brevo-kpi-benchmark.netlify.app](https://brevo-kpi-benchmark.netlify.app)
 
@@ -15,36 +15,34 @@ A strategic marketing asset for Brevo's mid-market prospecting. This interactive
 3. [Features](#features)
 4. [User Journey](#user-journey)
 5. [Technical Architecture](#technical-architecture)
-6. [Benchmark Data Reference](#benchmark-data-reference)
-7. [Tech Stack](#tech-stack)
-8. [Quick Start](#quick-start)
-9. [Environment Variables](#environment-variables)
-10. [Lead Capture Integration](#lead-capture-integration)
-11. [AI Analysis Integration](#ai-analysis-integration)
-12. [Data Management](#data-management)
-13. [Testing](#testing)
-14. [Deployment](#deployment)
-15. [Contributing](#contributing)
+6. [Tech Stack](#tech-stack)
+7. [Quick Start](#quick-start)
+8. [Environment Variables](#environment-variables)
+9. [Lead Capture Integration](#lead-capture-integration)
+10. [AI Plan Generation](#ai-plan-generation)
+11. [Static Plans](#static-plans)
+12. [Testing](#testing)
+13. [Deployment](#deployment)
+14. [Contributing](#contributing)
 
 ---
 
 ## Executive Summary
 
-**Brevo KPI Benchmark** is a lead generation tool disguised as a free value-add service. Marketing directors input their KPIs, receive instant traffic-light benchmarking against industry peers, and unlock AI-powered strategic recommendations by providing their professional email.
+**Brevo Marketing Relationship Plan Generator** is a lead generation tool disguised as a free value-add service. Marketing directors select their industry, browse template marketing plans, and unlock AI-powered personalized plans by providing their professional email and company domain.
 
 ### Key Metrics
 
 | Metric | Value |
 |--------|-------|
 | Industries covered | 12 (8 B2C + 4 B2B) |
-| KPIs tracked | 23 unique metrics |
-| Price tiers | 3 (Budget, Mid-Range, Luxury) |
+| Static plan templates | 24 (12 EN + 12 FR) |
 | Languages | 4 (EN, FR, DE, ES) |
-| Benchmark data points | 800+ |
+| AI personalization | Domain-specific analysis |
 
 ### Value Proposition
 
-> *"Compare your KPIs to market standards and get personalized AI recommendations to improve your CRM and Automation strategy."*
+> *"Generate a customized marketing relationship plan for your business. Choose an industry template or get a personalized AI-powered plan."*
 
 ---
 
@@ -55,7 +53,7 @@ A strategic marketing asset for Brevo's mid-market prospecting. This interactive
 | Objective | Implementation |
 |-----------|----------------|
 | **Lead Generation** | Free tool attracts mid-market prospects |
-| **Qualification** | User inputs reveal maturity level and pain points |
+| **Qualification** | Domain input reveals company context |
 | **Nurturing** | AI analysis positions Brevo as expert advisor |
 | **Conversion** | CTAs to Brevo free trial and demo requests |
 
@@ -64,7 +62,7 @@ A strategic marketing asset for Brevo's mid-market prospecting. This interactive
 - **Profile**: Marketing Directors / Growth Leaders / CMOs
 - **Company Size**: Mid-market (10-500 employees, 1M-50M EUR revenue)
 - **Industries**: 12 verticals across B2C retail and B2B services
-- **Maturity**: Already using email marketing, looking to optimize performance
+- **Maturity**: Looking to optimize their CRM and automation strategy
 
 ---
 
@@ -74,18 +72,21 @@ A strategic marketing asset for Brevo's mid-market prospecting. This interactive
 
 | Feature | Description |
 |---------|-------------|
-| **Traffic Light System** | Instant visual feedback (green/yellow/red) comparing user KPIs to market |
-| **Industry Benchmarks** | Research-backed data from industry reports and real performance data |
-| **AI-Powered Analysis** | Personalized strategic recommendations via Dust.tt agent |
-| **Lead Capture** | Professional email validation blocking 100+ free email domains |
+| **Industry Templates** | Pre-built marketing plans for 12 industries |
+| **AI Personalization** | Domain-specific plans via AI Gateway + Dust.tt |
+| **Lead Capture** | Professional email validation blocking 100+ free domains |
+| **Plan Persistence** | Supabase storage for personalized plans |
 | **Multi-Language** | Full support for English, French, German, and Spanish |
 
-### User Interface
+### Plan Components
 
-- **Collapsible Sections** - Clean interface with expandable KPI categories
-- **"Why this metric?"** - Educational tooltips explaining each KPI's importance
-- **Progress Indicators** - Visual feedback during AI analysis (4-step process)
-- **Responsive Design** - Optimized for desktop and mobile devices
+Each marketing plan includes:
+
+- **Company Summary** - Industry, target audience, business model
+- **Marketing Programs** - 4-6 programs with objectives and KPIs
+- **Program Scenarios** - Detailed message sequences per program
+- **Brevo Integration** - How Brevo helps implement each scenario
+- **Call to Action** - Personalized next steps
 
 ---
 
@@ -98,26 +99,25 @@ A strategic marketing asset for Brevo's mid-market prospecting. This interactive
     │                                                                                  │
     │   STEP 1                 STEP 2                 STEP 3                          │
     │   ┌───────────────┐      ┌───────────────┐      ┌───────────────┐               │
-    │   │  LANDING      │      │  LEAD GATE    │      │  KPI INPUT    │               │
+    │   │  LANDING      │      │  STATIC PLAN  │      │  LEAD GATE    │               │
     │   │               │      │               │      │               │               │
-    │   │ • Select      │      │ • Email modal │      │ • Enter your  │               │
-    │   │   Industry    │─────▶│   appears     │─────▶│   KPI values  │               │
-    │   │ • Select      │      │ • Validates   │      │ • See traffic │               │
-    │   │   Price Tier  │      │   pro emails  │      │   lights vs   │               │
-    │   │               │      │               │      │   benchmarks  │               │
+    │   │ • Select      │      │ • View        │      │ • Email modal │               │
+    │   │   Industry    │─────▶│   template    │─────▶│   appears     │               │
+    │   │ • Browse      │      │   plan        │      │ • Enter       │               │
+    │   │   templates   │      │ • Free access │      │   domain      │               │
+    │   │               │      │               │      │               │               │
     │   └───────────────┘      └───────────────┘      └───────┬───────┘               │
     │                                                         │                        │
     │                                                         ▼                        │
     │                          STEP 5                 STEP 4                          │
     │                          ┌───────────────┐      ┌───────────────┐               │
-    │                          │  RESULTS      │      │  AI ANALYSIS  │               │
-    │                          │               │      │               │               │
-    │                          │ • Executive   │      │ • Processing  │               │
-    │                          │   Summary     │◀─────│   indicator   │               │
-    │                          │ • Strengths & │      │ • 4-step      │               │
-    │                          │   Gaps        │      │   progress    │               │
-    │                          │ • 3 Action    │      │ • ~30 seconds │               │
-    │                          │   Items       │      │               │               │
+    │                          │  PERSONALIZED │      │  AI ANALYSIS  │               │
+    │                          │  PLAN         │      │               │               │
+    │                          │               │      │ • Processing  │               │
+    │                          │ • Company-    │◀─────│   indicator   │               │
+    │                          │   specific    │      │ • Progress    │               │
+    │                          │   analysis    │      │   bar         │               │
+    │                          │ • Saved to DB │      │ • ~3 minutes  │               │
     │                          └───────────────┘      └───────────────┘               │
     │                                                                                  │
     └─────────────────────────────────────────────────────────────────────────────────┘
@@ -127,11 +127,11 @@ A strategic marketing asset for Brevo's mid-market prospecting. This interactive
 
 | Step | Action | Technical Implementation |
 |------|--------|-------------------------|
-| 1. Landing | User selects industry and price tier | `SidebarInputs.tsx` component |
-| 2. Lead Gate | Modal captures professional email | `@brevogrowth/lead-capture` package |
-| 3. KPI Input | User enters their metrics | `BenchmarkGrid.tsx` with traffic lights |
-| 4. AI Analysis | System processes data | Async polling via AI Gateway → Dust.tt |
-| 5. Results | Personalized recommendations | `AiAnalysisResult.tsx` markdown renderer |
+| 1. Landing | User selects industry | `MarketingPlanSidebar.tsx` component |
+| 2. Static Plan | View industry template | `getStaticPlan()` from JSON files |
+| 3. Lead Gate | Modal captures email + domain | `@brevogrowth/lead-capture` package |
+| 4. AI Analysis | System analyzes domain | Async polling via AI Gateway → Dust.tt |
+| 5. Personalized | Domain-specific recommendations | Stored in Supabase for future visits |
 
 ---
 
@@ -161,12 +161,12 @@ This project is part of the **Brevo Growth Marketing Assets** ecosystem:
 │              │                         │                         │ /api/v1/analyze  │
 │              ▼                         │                         │                   │
 │   ┌──────────────────────────────────────────────────────────────────────────────┐  │
-│   │                          brevo-kpi-benchmark                                  │  │
+│   │                          brevo-relationship-plan                              │  │
 │   │                          (This Repository)                                    │  │
 │   │                                                                               │  │
 │   │    ┌─────────────┐    ┌─────────────┐    ┌─────────────────────────────┐     │  │
-│   │    │ Lead Modal  │    │ Benchmark   │    │ AI Analysis                  │     │  │
-│   │    │ (from pkg)  │───▶│ Comparison  │───▶│ (via AI Gateway → Dust.tt)   │     │  │
+│   │    │ Lead Modal  │    │ Static/DB   │    │ AI Personalization           │     │  │
+│   │    │ (from pkg)  │───▶│ Plan Lookup │───▶│ (via AI Gateway → Dust.tt)   │     │  │
 │   │    └─────────────┘    └─────────────┘    └─────────────────────────────┘     │  │
 │   │                                                                               │  │
 │   └───────────────────────────────────────────────────────────────────────────────┘  │
@@ -178,32 +178,10 @@ This project is part of the **Brevo Growth Marketing Assets** ecosystem:
 
 | Repository | Purpose | URL |
 |------------|---------|-----|
-| **brevo-kpi-benchmark** | Interactive KPI benchmarking tool | This repo |
+| **brevo-relationship-plan** | Marketing plan generator | This repo |
 | **brevo-ai-gateway** | Unified LLM API abstraction layer | [GitHub](https://github.com/brevogrowth/brevo-ai-gateway) |
 | **brevo-lead-hub** | Centralized lead processing API | [GitHub](https://github.com/brevogrowth/brevo-lead-hub) |
 | **lead-capture** | Reusable NPM package for lead capture UI | [GitHub](https://github.com/brevogrowth/lead-capture) |
-
-### Lead Capture Flow
-
-```
-┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
-│   User visits    │     │   Lead Modal     │     │   /api/lead      │
-│   KPI Benchmark  │────▶│   (@brevogrowth/ │────▶│   (Next.js)      │
-│                  │     │   lead-capture)  │     └────────┬─────────┘
-└──────────────────┘     └──────────────────┘              │
-                                                           │ POST + API Key
-                                                           ▼
-                         ┌────────────────────────────────────────────────┐
-                         │              BREVO LEAD HUB                     │
-                         │       brevo-lead-hub.netlify.app               │
-                         ├────────────────────────────────────────────────┤
-                         │  • Validates API key per client                │
-                         │  • Validates lead data (Zod schema)            │
-                         │  • Extracts traffic source (utm_source)        │
-                         │  • Creates/updates contact in Brevo CRM        │
-                         │  • Adds to segmented lists by industry         │
-                         └────────────────────────────────────────────────┘
-```
 
 ### AI Analysis Flow (Async Polling Pattern)
 
@@ -211,9 +189,10 @@ Due to Netlify's 10-second serverless function timeout, AI analysis uses an asyn
 
 ```
 ┌─────────────────┐                        ┌────────────────┐
-│    Frontend     │  1. POST /api/analyze  │  Next.js API   │
-│   (useAnalysis) │ ─────────────────────▶ │  Route         │
-│                 │ ◀───── jobId ──────────│                │
+│    Frontend     │  1. POST /api/         │  Next.js API   │
+│   (page.tsx)    │     marketing-plan     │  Route         │
+│                 │ ─────────────────────▶ │                │
+│                 │ ◀─ conversationId ─────│                │
 └────────┬────────┘       (~2s)            └───────┬────────┘
          │                                         │
          │                                         │ POST /api/v1/analyze
@@ -229,13 +208,13 @@ Due to Netlify's 10-second serverless function timeout, AI analysis uses an asyn
          │                                │ • Job persistence  │
          │                                └────────┬───────────┘
          │                                         │
-         │ 2. GET /api/analyze/[jobId]             │ Dust.tt API
+         │ 2. GET /api/marketing-plan/[id]         │ Dust.tt API
          │    (polling every 5s)                   │ (blocking: false)
          │                                         ▼
          │◀─── status: pending ────────────┌───────────────┐
          │◀─── status: pending ────────────│   Dust.tt     │
          │◀─── status: complete ───────────│   Agent       │
-         │     + analysis content          │   (~30 sec)   │
+         │     + plan content              │   (~3 min)    │
          ▼                                 └───────────────┘
 ```
 
@@ -243,7 +222,6 @@ Due to Netlify's 10-second serverless function timeout, AI analysis uses an asyn
 
 | Parameter | Value |
 |-----------|-------|
-| Agent Alias | `kpi-benchmark-analyst` |
 | Job ID Format | `dust_xxxxxxxxxxxx` |
 | Polling Interval | 5 seconds |
 | Max Timeout | 5 minutes |
@@ -252,63 +230,82 @@ Due to Netlify's 10-second serverless function timeout, AI analysis uses an asyn
 ### Project Structure
 
 ```
-brevo-kpi-benchmark/
+brevo-relationship-plan/
 │
 ├── app/                              # Next.js App Router
-│   ├── page.tsx                      # Main landing page with lead capture
+│   ├── page.tsx                      # Main page with marketing plan display
 │   ├── layout.tsx                    # Root layout with fonts & providers
 │   ├── globals.css                   # Tailwind CSS styles
 │   └── api/
 │       ├── lead/
 │       │   └── route.ts              # POST - Forward leads to Lead Hub
-│       └── analyze/
-│           ├── route.ts              # POST - Create analysis job
+│       └── marketing-plan/
+│           ├── route.ts              # POST - Create plan / check DB
+│           ├── lookup/
+│           │   └── route.ts          # GET - Lookup by domain
 │           └── [conversationId]/
 │               └── route.ts          # GET - Poll job status
 │
 ├── components/
-│   ├── BenchmarkGrid.tsx             # KPI input grid with traffic lights
-│   ├── AiAnalysisResult.tsx          # Markdown AI output renderer
-│   ├── SidebarInputs.tsx             # Industry/price tier selector
+│   ├── MarketingPlanSidebar.tsx      # Industry + domain input sidebar
 │   ├── Header.tsx                    # Brevo navigation header
 │   ├── Providers.tsx                 # LeadCaptureProvider wrapper
-│   └── ui/                           # Reusable UI components
+│   ├── Contributors.tsx              # Team credits section
+│   └── marketing-plan/               # Marketing plan display components
+│       ├── index.ts                  # Re-exports
+│       ├── PlanHeader.tsx            # Plan title + badges
+│       ├── CompanySummary.tsx        # Company info card
+│       ├── MarketingPrograms.tsx     # Programs overview table
+│       ├── ProgramDetails.tsx        # Expandable program scenarios
+│       ├── BrevoHelp.tsx             # How Brevo helps section
+│       ├── BrevoCallToAction.tsx     # CTA banners
+│       ├── LoadingState.tsx          # Generation progress UI
+│       └── ErrorState.tsx            # Error display + retry
 │
-├── hooks/
-│   └── useAnalysis.ts                # AI analysis state + polling logic
-│
-├── lib/
-│   └── lead-capture/
-│       └── index.ts                  # Re-exports from @brevogrowth/lead-capture
+├── contexts/
+│   └── LanguageContext.tsx           # i18n context provider
 │
 ├── data/
-│   ├── benchmarks.csv                # Source of truth (from Google Sheets)
-│   └── benchmarks.ts                 # AUTO-GENERATED TypeScript (DO NOT EDIT)
+│   └── static-marketing-plans/       # Static plan JSON files
+│       ├── index.ts                  # Plan loader with fallback logic
+│       ├── fashion.en.json           # Fashion industry (EN)
+│       ├── fashion.fr.json           # Fashion industry (FR)
+│       └── ... (24 files total)
 │
-├── utils/
-│   └── benchmarkUtils.ts             # Traffic light logic & scoring
+├── lib/
+│   ├── lead-capture/
+│   │   └── index.ts                  # Re-exports from @brevogrowth/lead-capture
+│   └── marketing-plan/
+│       ├── db.ts                     # Supabase CRUD operations
+│       └── normalize.ts              # Domain normalization
+│
+├── src/
+│   ├── types/
+│   │   └── marketing-plan.ts         # TypeScript type definitions
+│   └── utils/
+│       └── marketing-plan-parser.ts  # AI response parser + validator
+│
+├── i18n/
+│   ├── index.ts                      # Translation loader
+│   ├── en.json                       # English translations
+│   ├── fr.json                       # French translations
+│   ├── de.json                       # German translations
+│   └── es.json                       # Spanish translations
 │
 ├── config/
-│   └── api.ts                        # API endpoints & timeouts
-│
-├── scripts/
-│   ├── generate-benchmarks.js        # CSV → TypeScript generator
-│   └── sync-from-gsheet.js           # Google Sheets → CSV sync
+│   ├── industries.ts                 # Industry type definitions
+│   └── branding.ts                   # Brevo colors + constants
 │
 ├── tests/
-│   ├── benchmarkUtils.test.ts        # Unit tests (Vitest)
+│   ├── lead-capture.test.ts          # Unit tests (Vitest)
 │   ├── full-user-journey.spec.ts     # E2E tests (Playwright)
 │   └── dust-integration.spec.ts      # AI integration E2E
 │
 ├── docs/                             # Additional documentation
-│   ├── SYNC.md                       # Benchmark sync guide
-│   ├── BENCHMARKS.md                 # Data structure docs
-│   └── DEVELOPMENT.md                # Developer guide
+│   └── temp/
+│       └── refactoring-plan.md       # Original refactoring spec
 │
-├── .github/
-│   └── workflows/
-│       ├── playwright.yml            # E2E tests on push
-│       └── sync-benchmarks.yml       # Scheduled benchmark sync
+├── legacy/                           # Archived KPI benchmark code (excluded from build)
 │
 ├── CLAUDE.md                         # Claude Code development guide
 ├── netlify.toml                      # Netlify deployment config
@@ -317,126 +314,15 @@ brevo-kpi-benchmark/
 
 ---
 
-## Benchmark Data Reference
-
-### Industries Covered
-
-#### B2C Retail (8 industries)
-
-| Industry | Description | Key Characteristics |
-|----------|-------------|---------------------|
-| **Fashion** | Apparel, accessories, footwear | High return rates, seasonal patterns |
-| **Beauty** | Cosmetics, skincare, fragrances | High repeat rates, subscription potential |
-| **Home** | Furniture, decor, home goods | High AOV, low frequency |
-| **Electronics** | Consumer electronics, gadgets | Price comparison, spec-driven |
-| **Food** | Food & beverage, grocery | Replenishment cycles, subscription |
-| **Sports** | Sporting goods, fitness | Seasonal, lifestyle-driven |
-| **Luxury** | Premium goods, high-end | High margins, clienteling focus |
-| **Family** | Baby, kids, family products | High LTV, lifecycle marketing |
-
-#### B2B Services (4 industries)
-
-| Industry | Description | Key Characteristics |
-|----------|-------------|---------------------|
-| **SaaS** | Software as a Service | MRR focus, churn critical |
-| **Services** | Professional services | Lead qualification, long sales cycle |
-| **Manufacturing** | Industrial goods | Quote-based, account management |
-| **Wholesale** | Bulk distribution | Volume pricing, repeat orders |
-
-### KPI Categories & Metrics
-
-#### Strategic Efficiency (3 metrics)
-
-| Metric ID | Name | Unit | Direction |
-|-----------|------|------|-----------|
-| `ltv_cac` | LTV:CAC Ratio | x | Higher is better |
-| `mer` | Marketing Efficiency Ratio | x | Higher is better |
-| `cac_payback` | CAC Payback Period | months | Lower is better |
-
-#### Acquisition (3 metrics)
-
-| Metric ID | Name | Unit | Direction |
-|-----------|------|------|-----------|
-| `cac` | Customer Acquisition Cost | EUR | Lower is better |
-| `roas` | Blended ROAS | x | Higher is better |
-| `marketing_spend` | Marketing % of Revenue | % | Context-dependent |
-
-#### Conversion (4 metrics)
-
-| Metric ID | Name | Unit | Direction |
-|-----------|------|------|-----------|
-| `conv_rate` | Conversion Rate (Desktop) | % | Higher is better |
-| `mobile_conv` | Conversion Rate (Mobile) | % | Higher is better |
-| `cart_abandon` | Cart Abandonment Rate | % | Lower is better |
-| `aov` | Average Order Value | EUR | Higher is better |
-
-#### Channel Mix (5 metrics)
-
-| Metric ID | Name | Unit | Direction |
-|-----------|------|------|-----------|
-| `email_rev_share` | Email Revenue Share | % | Higher is better |
-| `sms_rev_share` | SMS Revenue Share | % | Higher is better |
-| `social_rev_share` | Social Media Revenue Share | % | Context-dependent |
-| `paid_rev_share` | Paid Advertising Revenue Share | % | Lower often better |
-| `organic_rev_share` | Organic Search Revenue Share | % | Higher is better |
-
-#### Email Marketing (5 metrics)
-
-| Metric ID | Name | Unit | Direction |
-|-----------|------|------|-----------|
-| `email_open_rate` | Email Open Rate | % | Higher is better |
-| `email_click_rate` | Email Click Rate | % | Higher is better |
-| `email_ctor` | Click-to-Open Rate (CTOR) | % | Higher is better |
-| `email_bounce_rate` | Bounce Rate | % | Lower is better |
-| `email_unsub_rate` | Unsubscribe Rate | % | Lower is better |
-
-#### Retention (4 metrics)
-
-| Metric ID | Name | Unit | Direction |
-|-----------|------|------|-----------|
-| `repeat_rate` | Repeat Customer Rate | % | Higher is better |
-| `purchase_freq` | Purchase Frequency | #/year | Higher is better |
-| `churn_rate` | Annual Churn Rate | % | Lower is better |
-
-#### Economics (2 metrics)
-
-| Metric ID | Name | Unit | Direction |
-|-----------|------|------|-----------|
-| `return_rate` | Return Rate | % | Lower is better |
-| `gross_margin` | Gross Margin | % | Higher is better |
-
-### Price Tiers
-
-| Tier | Description | Typical AOV | Example Brands |
-|------|-------------|-------------|----------------|
-| **Budget** | Value-focused, high volume | < EUR 50 | H&M, Primark, AliExpress |
-| **Mid-Range** | Balanced quality/price | EUR 50-200 | Zara, Sephora, Nike |
-| **Luxury** | Premium positioning | > EUR 200 | Gucci, La Mer, Dyson |
-
-### Traffic Light Logic
-
-```typescript
-// Higher is Better (ROAS, LTV, Conversion, etc.)
-value > high         → GREEN  (Excellent)
-median ≤ value ≤ high → YELLOW (Average)
-value < median       → RED    (Below benchmark)
-
-// Lower is Better (CAC, Churn, Cart Abandonment, etc.)
-value < low          → GREEN  (Excellent)
-low ≤ value ≤ median → YELLOW (Average)
-value > median       → RED    (Above benchmark = bad)
-```
-
----
-
 ## Tech Stack
 
 | Component | Technology | Version | Purpose |
 |-----------|------------|---------|---------|
-| **Framework** | Next.js (App Router) | 16.x | React framework with SSR |
+| **Framework** | Next.js (App Router) | 15.x | React framework with SSR |
 | **Language** | TypeScript | 5.x | Type safety |
 | **UI** | React + Tailwind CSS | 19.x / 4.x | Components & styling |
 | **AI** | Brevo AI Gateway → Dust.tt | v1 | LLM analysis |
+| **Database** | Supabase | - | Plan persistence |
 | **Lead Capture** | @brevogrowth/lead-capture | 1.x | Email capture modal |
 | **Validation** | Zod | 3.x | Schema validation |
 | **Unit Tests** | Vitest | 2.x | Fast unit testing |
@@ -452,13 +338,14 @@ value > median       → RED    (Above benchmark = bad)
 1. **Node.js** 20.x or higher
 2. **GitHub Personal Access Token** with `read:packages` scope (for `@brevogrowth/lead-capture`)
 3. **AI Gateway API Key** (contact team for access)
+4. **Supabase Project** with `marketing_plans` table
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/brevogrowth/brevo-kpi-benchmark.git
-cd brevo-kpi-benchmark
+git clone https://github.com/brevogrowth/brevo-relationship-plan.git
+cd brevo-relationship-plan
 
 # Configure npm for GitHub Packages
 cp .npmrc.example .npmrc
@@ -503,6 +390,9 @@ npx playwright test --ui  # Interactive E2E UI
 | `AI_GATEWAY_API_KEY` | API key for AI Gateway | `gw_xxxxxxxxxxxxx` |
 | `LEAD_HUB_URL` | Lead Hub API endpoint | `https://brevo-lead-hub.netlify.app/api/capture` |
 | `LEAD_HUB_API_KEY` | API key for Lead Hub | `lh_xxxxxxxxxxxxx` |
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | `https://xxx.supabase.co` |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon key | `eyJxxxx...` |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service key | `eyJxxxx...` |
 | `NPM_TOKEN` | GitHub PAT for packages | `ghp_xxxxxxxxxxxxx` |
 
 ### Local Development (.env.local)
@@ -511,6 +401,11 @@ npx playwright test --ui  # Interactive E2E UI
 # Required
 AI_GATEWAY_URL=https://brevo-ai-gateway.netlify.app
 AI_GATEWAY_API_KEY=gw_your_key_here
+
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=https://xxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
 # Optional (leads logged to console if missing)
 LEAD_HUB_URL=https://brevo-lead-hub.netlify.app/api/capture
@@ -557,6 +452,12 @@ export function Providers({ children }) {
 | **Retry Logic** | Failed submissions saved and retried |
 | **Theming** | Customizable colors and styling |
 
+### When Lead Capture Triggers
+
+- **NOT triggered**: Browsing static plans (industry selection)
+- **NOT triggered**: Returning with saved personalized plan
+- **TRIGGERED**: Clicking "Generate My Plan" with domain entered
+
 ### Testing Lead Capture
 
 ```bash
@@ -571,66 +472,154 @@ location.reload();
 
 ---
 
-## AI Analysis Integration
+## AI Plan Generation
 
 ### How It Works
 
-1. **Frontend** sends KPI data to `/api/analyze`
-2. **API Route** forwards to AI Gateway with agent alias
-3. **AI Gateway** routes to Dust.tt, returns `jobId`
-4. **Frontend** polls `/api/analyze/{jobId}` every 5 seconds
-5. **Result** returned as Markdown, rendered in UI
+1. **Frontend** sends industry + domain to `/api/marketing-plan`
+2. **API Route** checks Supabase for existing plan
+3. If not found, forwards to AI Gateway with metadata
+4. **AI Gateway** routes to Dust.tt, returns `conversationId`
+5. **Frontend** polls `/api/marketing-plan/{id}` every 5 seconds
+6. **Result** parsed and stored in Supabase for future visits
 
-### Prompt Structure
+### API Endpoints
 
-The AI receives a structured prompt with:
-- Consultant persona (B2B or B2C specialist)
-- Industry and price tier context
-- User's KPI values vs. market benchmarks
-- Request for Executive Summary, Traffic Lights, and 3 Recommendations
+#### POST `/api/marketing-plan`
 
-### Output Format (Markdown)
+**Request:**
+```json
+{
+  "industry": "SaaS",
+  "domain": "acme.com",
+  "language": "en",
+  "force": false
+}
+```
 
-```markdown
-# Executive Summary
-(2-3 sentences on overall performance)
+**Response (existing plan found):**
+```json
+{
+  "status": "complete",
+  "source": "db",
+  "plan": { /* MarketingPlan */ }
+}
+```
 
-# Traffic Light Analysis
-- **Strengths**: (2 metrics where they excel)
-- **Critical Gaps**: (2 metrics needing attention)
+**Response (new plan initiated):**
+```json
+{
+  "status": "created",
+  "source": "ai",
+  "conversationId": "dust_abc123"
+}
+```
 
-# Strategic Recommendations
-1. **[Action Title]**: [Specific tactics]
-2. **[Action Title]**: [Specific tactics]
-3. **[Action Title]**: [Specific tactics]
+#### GET `/api/marketing-plan/[conversationId]`
+
+**Response (processing):**
+```json
+{
+  "status": "pending",
+  "message": "Generating your marketing plan..."
+}
+```
+
+**Response (complete):**
+```json
+{
+  "status": "complete",
+  "plan": { /* MarketingPlan */ }
+}
+```
+
+#### GET `/api/marketing-plan/lookup?domain=acme.com&language=en`
+
+**Response:**
+```json
+{
+  "found": true,
+  "plan": { /* MarketingPlan */ }
+}
 ```
 
 ---
 
-## Data Management
+## Static Plans
 
-### Benchmark Data Pipeline
+### Structure
+
+Static plans are JSON files in `data/static-marketing-plans/`:
 
 ```
-Google Sheets  ──(sync)──▶  benchmarks.csv  ──(generate)──▶  benchmarks.ts
-   (source)                    (local)                      (TypeScript)
+data/static-marketing-plans/
+├── index.ts              # Loader with fallback logic
+├── fashion.en.json       # Fashion industry (EN)
+├── fashion.fr.json       # Fashion industry (FR)
+├── beauty.en.json
+├── beauty.fr.json
+├── home.en.json
+├── home.fr.json
+├── electronics.en.json
+├── electronics.fr.json
+├── food.en.json
+├── food.fr.json
+├── sports.en.json
+├── sports.fr.json
+├── luxury.en.json
+├── luxury.fr.json
+├── family.en.json
+├── family.fr.json
+├── saas.en.json
+├── saas.fr.json
+├── services.en.json
+├── services.fr.json
+├── manufacturing.en.json
+├── manufacturing.fr.json
+├── wholesale.en.json
+└── wholesale.fr.json
 ```
 
-### Commands
+### Language Fallback
 
-```bash
-# Sync from Google Sheets (requires auth)
-npm run sync:benchmarks
+```typescript
+// data/static-marketing-plans/index.ts
+export function getStaticPlan(industry: Industry, language: string): MarketingPlan {
+  // Try requested language first
+  let plan = plans[`${industry.toLowerCase()}.${language}`];
 
-# Generate TypeScript from local CSV
-npm run generate:benchmarks
+  // Fallback to English if not found
+  if (!plan) {
+    plan = plans[`${industry.toLowerCase()}.en`];
+  }
+
+  return plan;
+}
 ```
 
-### Source Google Sheet
+### Industries Covered
 
-[Brevo KPI Benchmarks](https://docs.google.com/spreadsheets/d/1Q6U5y8GLPnY4QZcoRgbJkAGq9LJ20YmXXU1KvJ7NWuQ/edit)
+#### B2C Retail (8 industries)
 
-> **Warning:** Never edit `data/benchmarks.ts` manually. Always regenerate from CSV.
+| Industry | Description | Key Focus |
+|----------|-------------|-----------|
+| **Fashion** | Apparel, accessories, footwear | Seasonal campaigns, loyalty |
+| **Beauty** | Cosmetics, skincare, fragrances | Personalization, replenishment |
+| **Home** | Furniture, decor, home goods | High-value nurturing |
+| **Electronics** | Consumer electronics, gadgets | Research phase, reviews |
+| **Food** | Food & beverage, grocery | Subscription, replenishment |
+| **Sports** | Sporting goods, fitness | Seasonal, community |
+| **Luxury** | Premium goods, high-end | VIP experience, clienteling |
+| **Family** | Baby, kids, family products | Lifecycle marketing |
+
+#### B2B Services (4 industries)
+
+| Industry | Description | Key Focus |
+|----------|-------------|-----------|
+| **SaaS** | Software as a Service | Onboarding, activation, retention |
+| **Services** | Professional services | Lead qualification, nurturing |
+| **Manufacturing** | Industrial goods | Account management, quotes |
+| **Wholesale** | Bulk distribution | Reorder automation |
 
 ---
 
@@ -658,9 +647,8 @@ npx playwright test full-user-journey  # Specific file
 
 | Category | Tests | Description |
 |----------|-------|-------------|
-| Email Validation | 45 | 100+ blocked domains |
-| Benchmark Utils | 15 | Traffic light logic |
-| Lead Capture API | 18 | Retry & backup |
+| Email Validation | 24 | Professional email validation |
+| Lead Capture API | 18 | Retry & backup logic |
 | E2E Smoke Tests | 9 | Full user journey |
 | AI Integration | 1 | End-to-end AI flow |
 
@@ -680,6 +668,9 @@ The project deploys automatically on push to `master`.
 | `AI_GATEWAY_API_KEY` | Yes | AI Gateway auth |
 | `LEAD_HUB_URL` | Yes | Lead Hub endpoint |
 | `LEAD_HUB_API_KEY` | Yes | Lead Hub auth |
+| `NEXT_PUBLIC_SUPABASE_URL` | Yes | Supabase URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Yes | Supabase anon key |
+| `SUPABASE_SERVICE_ROLE_KEY` | Yes | Supabase service key |
 | `NPM_TOKEN` | Yes | GitHub Packages access |
 
 ### Build Settings (netlify.toml)
@@ -693,14 +684,28 @@ The project deploys automatically on push to `master`.
   NPM_CONFIG_@brevogrowth:registry = "https://npm.pkg.github.com"
 ```
 
-### GitHub Actions
+### Supabase Schema
 
-The repository includes automated workflows:
+```sql
+-- marketing_plans table
+CREATE TABLE IF NOT EXISTS marketing_plans (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  company_domain VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  form_data JSONB NOT NULL,
+  user_language VARCHAR(10) NOT NULL DEFAULT 'en',
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
 
-| Workflow | Trigger | Purpose |
-|----------|---------|---------|
-| `playwright.yml` | Push to master | E2E tests |
-| `sync-benchmarks.yml` | Scheduled | Benchmark data sync |
+-- Unique constraint on domain + language
+CREATE UNIQUE INDEX IF NOT EXISTS idx_marketing_plans_domain_language
+ON marketing_plans (company_domain, user_language);
+
+-- Index for faster lookups
+CREATE INDEX IF NOT EXISTS idx_marketing_plans_domain
+ON marketing_plans (company_domain);
+```
 
 ---
 
@@ -717,7 +722,7 @@ The repository includes automated workflows:
 ```
 <type>(<scope>): <message>
 
-feat(grid): Add new KPI metric
+feat(plan): Add new program scenario
 fix(api): Handle timeout gracefully
 docs(readme): Update architecture diagram
 test(e2e): Add lead capture tests

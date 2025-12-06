@@ -1,0 +1,226 @@
+{
+  "introduction": "Ce plan marketing relationnel est conçu pour les entreprises SaaS souhaitant optimiser le cycle de vie client, de l'essai à l'expansion, grâce à une communication et un engagement stratégiques.",
+  "company_summary": {
+    "name": "Entreprise SaaS",
+    "website": "exemple-saas.com",
+    "activities": "Fournisseur de Software as a Service offrant des solutions business cloud, outils de productivité ou applications spécialisées",
+    "target": "Décideurs B2B et utilisateurs finaux dans les PME et grandes entreprises recherchant des solutions logicielles efficaces et évolutives",
+    "industry": "SaaS",
+    "business_model": "B2B Abonnement"
+  },
+  "programs_list": [
+    {
+      "program_name": "Conversion Essai vers Payant",
+      "target": "Utilisateurs en essai gratuit",
+      "objective": "Convertir les utilisateurs d'essai en clients payants avant expiration",
+      "kpi": "Taux de conversion essai vers payant, Temps jusqu'à première valeur, Adoption fonctionnalités pendant l'essai",
+      "description": "Séquence d'onboarding stratégique pour démontrer la valeur et générer la conversion pendant la période d'essai.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouvelles inscriptions essai",
+          "scenario_objective": "Atteindre les jalons d'activation clés et générer la conversion",
+          "main_messages_ideas": "Guide de démarrage rapide, Tutoriel fonctionnalités clés, Success stories, Offre de conversion",
+          "message_sequence": [
+            {
+              "title": "Bienvenue + Démarrage Rapide",
+              "description": "Immédiatement après inscription",
+              "content": "Bienvenue sur [Produit] ! Voici comment démarrer en 5 minutes"
+            },
+            {
+              "title": "Mise en Avant Fonctionnalité Clé",
+              "description": "Jour 2 : Proposition de valeur principale",
+              "content": "Avez-vous essayé [Fonctionnalité Clé] ? Voici comment elle vous fait gagner [X heures/euros]"
+            },
+            {
+              "title": "Success Story",
+              "description": "Jour 5 : Preuve sociale",
+              "content": "Comment [Entreprise] a atteint [Résultat] avec [Produit]"
+            },
+            {
+              "title": "Rappel Fin d'Essai",
+              "description": "3 jours avant la fin de l'essai",
+              "content": "Votre essai se termine dans 3 jours - Ne perdez pas votre progression"
+            },
+            {
+              "title": "Offre de Conversion Finale",
+              "description": "Dernier jour d'essai",
+              "content": "Dernière chance : Upgradez maintenant et obtenez [Offre]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Onboarding Client",
+      "target": "Nouveaux clients payants",
+      "objective": "Stimuler l'adoption produit et le temps jusqu'à la valeur dans les 30 premiers jours",
+      "kpi": "Taux de complétion onboarding, Adoption fonctionnalités, Temps jusqu'à la valeur",
+      "description": "Séquence d'onboarding complète garantissant que les clients atteignent leur premier succès rapidement.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux clients par type de plan",
+          "scenario_objective": "Compléter les jalons d'onboarding clés",
+          "main_messages_ideas": "Guidance configuration, Aide intégration, Best practices, Check-in succès",
+          "message_sequence": [
+            {
+              "title": "Bienvenue + Configuration",
+              "description": "Jour 1 : Guide de configuration compte",
+              "content": "Bienvenue à bord ! Configurons votre [Produit] pour le succès"
+            },
+            {
+              "title": "Configuration Clé",
+              "description": "Jour 3 : Paramètres essentiels",
+              "content": "5 paramètres à configurer pour une valeur maximale"
+            },
+            {
+              "title": "Guide d'Intégration",
+              "description": "Jour 7 : Connectez vos outils",
+              "content": "Connectez [Produit] avec vos outils favoris"
+            },
+            {
+              "title": "Best Practices",
+              "description": "Jour 14 : Conseils utilisateur avancé",
+              "content": "Comment les power users tirent le meilleur de [Produit]"
+            },
+            {
+              "title": "Check-in Succès",
+              "description": "Jour 30 : Check satisfaction",
+              "content": "Comment ça se passe ? Assurons-nous que vous obtenez de la valeur"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Adoption Fonctionnalités & Engagement",
+      "target": "Clients actifs selon leurs patterns d'utilisation",
+      "objective": "Augmenter l'adoption des fonctionnalités et la sticky-ness produit",
+      "kpi": "Taux d'adoption fonctionnalités, Ratio DAU/MAU, Fréquence des sessions",
+      "description": "Campagnes déclenchées par l'utilisation pour encourager l'adoption des fonctionnalités sous-utilisées.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients n'utilisant pas les fonctionnalités clés",
+          "scenario_objective": "Stimuler l'adoption des fonctionnalités à haute valeur",
+          "main_messages_ideas": "Spotlight fonctionnalité, Exemples de cas d'usage, Contenu tutoriel, Métriques de succès",
+          "message_sequence": [
+            {
+              "title": "Introduction Fonctionnalité",
+              "description": "Basé sur déclencheur de non-utilisation",
+              "content": "Le saviez-vous ? [Fonctionnalité] peut vous aider à [Bénéfice]"
+            },
+            {
+              "title": "Guide Pratique",
+              "description": "Jour 3 après l'intro",
+              "content": "Guide rapide : Démarrer avec [Fonctionnalité]"
+            },
+            {
+              "title": "Témoignage Client",
+              "description": "Jour 7 : Exemple concret",
+              "content": "Voyez comment [Client] utilise [Fonctionnalité] pour [Résultat]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expansion & Upsell",
+      "target": "Clients à forte utilisation approchant les limites du plan",
+      "objective": "Générer des upgrades de plan et expansion de sièges",
+      "kpi": "Revenus d'expansion, Taux d'upgrade, Rétention nette des revenus",
+      "description": "Communication stratégique aux comptes en croissance concernant les opportunités d'upgrade.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients à 80%+ des limites du plan",
+          "scenario_objective": "Upgrade proactif avant d'atteindre les limites",
+          "main_messages_ideas": "Utilisation approchant la limite, Avantages upgrade, Calculateur ROI, Expansion équipe",
+          "message_sequence": [
+            {
+              "title": "Alerte Utilisation",
+              "description": "À 80% de la limite",
+              "content": "Vous approchez votre [Limite] - Voici vos options"
+            },
+            {
+              "title": "Avantages Upgrade",
+              "description": "À 90% de la limite",
+              "content": "Débloquez plus avec [Plan Supérieur] : Ce que vous obtiendrez"
+            },
+            {
+              "title": "Cas ROI",
+              "description": "Si limites atteintes régulièrement",
+              "content": "Le ROI de l'upgrade : Ce que voient les clients comme vous"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Prévention Churn & Win-Back",
+      "target": "Clients à risque et clients perdus",
+      "objective": "Prévenir le churn et récupérer les clients perdus",
+      "kpi": "Réduction du taux de churn, Taux de win-back, Revenus de réactivation",
+      "description": "Intervention proactive pour les comptes à risque et campagnes de win-back pour les clients perdus.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients avec utilisation en déclin",
+          "scenario_objective": "Réengager avant annulation",
+          "main_messages_ideas": "Outreach check-in, Rappel de valeur, Offre support, Enquête de départ",
+          "message_sequence": [
+            {
+              "title": "Check-In",
+              "description": "Quand l'utilisation baisse significativement",
+              "content": "Nous avons remarqué que vous ne vous êtes pas connecté récemment - Tout va bien ?"
+            },
+            {
+              "title": "Rappel de Valeur",
+              "description": "Si pas de réponse",
+              "content": "Voici ce que vous manquez : [Mises à jour clés et valeur]"
+            },
+            {
+              "title": "Offre Support",
+              "description": "Si toujours en déclin",
+              "content": "Remettons-vous sur les rails : Consultation gratuite disponible"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients récemment perdus",
+          "scenario_objective": "Win-back sous 90 jours",
+          "main_messages_ideas": "Tu nous manques, Quoi de neuf, Offre de retour, Demande de feedback",
+          "message_sequence": [
+            {
+              "title": "Tu Nous Manques",
+              "description": "30 jours après le churn",
+              "content": "Vous nous manquez ! Voici les nouveautés chez [Produit]"
+            },
+            {
+              "title": "Offre de Retour",
+              "description": "60 jours après le churn",
+              "content": "Revenez sur [Produit] : [Offre spéciale] rien que pour vous"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Conversion Essai vers Payant",
+      "why_brevo_is_better": "L'automatisation basée sur les événements de Brevo vous permet de déclencher des messages selon les actions (ou inactions) des utilisateurs, assurant des nudges de conversion parfaitement synchronisés.",
+      "omnichannel_channels": "Email pour le contenu éducatif + Messages in-app pour les prompts contextuels + SMS pour les rappels urgents d'essai",
+      "setup_efficiency": "Templates SaaS pré-construits avec logique spécifique à l'essai pour démarrer rapidement."
+    },
+    {
+      "scenario_name": "Adoption Fonctionnalités & Engagement",
+      "why_brevo_is_better": "L'intégration avec votre analytics produit permet des déclencheurs comportementaux qui atteignent les utilisateurs avec une éducation fonctionnalité pertinente au bon moment.",
+      "omnichannel_channels": "Email pour les tutoriels fonctionnalités + In-app pour les conseils contextuels + Push pour les rappels d'engagement",
+      "setup_efficiency": "L'intégration API avec votre produit permet des déclencheurs comportementaux en temps réel."
+    },
+    {
+      "scenario_name": "Prévention Churn & Win-Back",
+      "why_brevo_is_better": "Les déclencheurs de déclin d'utilisation permettent une intervention proactive avant que les clients ne partent, tandis que les campagnes de win-back segmentées ciblent efficacement les clients perdus.",
+      "omnichannel_channels": "Email pour le contenu de réengagement + Déclencheurs d'outreach personnel pour les comptes à haute valeur + SMS pour les offres de rétention urgentes",
+      "setup_efficiency": "L'intégration de prédiction de churn permet l'identification automatisée des clients à risque."
+    }
+  ],
+  "conclusion": "Les entreprises SaaS qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à des taux de conversion d'essai plus élevés, une rétention nette des revenus améliorée grâce à l'expansion proactive, et un churn réduit grâce à l'intervention précoce et aux campagnes de win-back stratégiques."
+}
