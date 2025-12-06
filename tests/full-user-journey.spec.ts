@@ -17,7 +17,7 @@ test.describe('Marketing Plan User Journey', () => {
         // Set localStorage to bypass lead capture modal before navigating
         await page.goto('/');
         await page.evaluate(() => {
-            localStorage.setItem('brevo_kpi_lead', JSON.stringify({
+            localStorage.setItem('brevo_marketing_plan_lead', JSON.stringify({
                 email: 'test@example.com',
                 capturedAt: new Date().toISOString()
             }));
@@ -134,7 +134,7 @@ test.describe('Quick Smoke Tests', () => {
         // Set localStorage to bypass lead capture modal
         await page.goto('/');
         await page.evaluate(() => {
-            localStorage.setItem('brevo_kpi_lead', JSON.stringify({
+            localStorage.setItem('brevo_marketing_plan_lead', JSON.stringify({
                 email: 'test@example.com',
                 capturedAt: new Date().toISOString()
             }));
@@ -200,7 +200,7 @@ test.describe('Lead Capture Flow', () => {
 
         // Clear any existing lead data
         await page.evaluate(() => {
-            localStorage.removeItem('brevo_kpi_lead');
+            localStorage.removeItem('brevo_marketing_plan_lead');
         });
         await page.reload();
 
@@ -241,7 +241,7 @@ test.describe('Lead Capture Flow', () => {
 
         // Verify localStorage was cleared
         const leadData = await page.evaluate(() => {
-            return localStorage.getItem('brevo_kpi_lead');
+            return localStorage.getItem('brevo_marketing_plan_lead');
         });
 
         // force=true should have cleared it (or it should be null)
@@ -261,7 +261,7 @@ test.describe('Industry Plan Loading', () => {
         // Set localStorage to bypass lead capture modal
         await page.goto('/');
         await page.evaluate(() => {
-            localStorage.setItem('brevo_kpi_lead', JSON.stringify({
+            localStorage.setItem('brevo_marketing_plan_lead', JSON.stringify({
                 email: 'test@example.com',
                 capturedAt: new Date().toISOString()
             }));
@@ -336,11 +336,14 @@ test.describe('Custom AI Analysis', () => {
     // Extended timeout for AI analysis (3 minutes + buffer)
     test.setTimeout(240000); // 4 minutes
 
-    test('Generate custom plan with AI analysis and verify results', async ({ page }) => {
+    test('Generate custom plan with AI analysis and verify results @ai', async ({ page }) => {
+        // Skip in CI - requires AI Gateway credentials
+        test.skip(!!process.env.CI, 'AI tests skipped in CI');
+
         // Set localStorage to bypass lead capture modal
         await page.goto('/');
         await page.evaluate(() => {
-            localStorage.setItem('brevo_kpi_lead', JSON.stringify({
+            localStorage.setItem('brevo_marketing_plan_lead', JSON.stringify({
                 email: 'e2e-test@brevo.com',
                 capturedAt: new Date().toISOString()
             }));

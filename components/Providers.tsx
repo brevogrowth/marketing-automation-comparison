@@ -3,6 +3,7 @@
 import React, { Suspense } from 'react';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import { LeadCaptureProvider } from '@/lib/lead-capture';
+import { ErrorBoundary } from './ErrorBoundary';
 
 interface ProvidersProps {
   children: React.ReactNode;
@@ -18,19 +19,21 @@ function ProvidersFallback() {
 
 export function Providers({ children }: ProvidersProps) {
   return (
-    <Suspense fallback={<ProvidersFallback />}>
-      <LanguageProvider>
-        <LeadCaptureProvider
-          config={{
-            apiEndpoint: '/api/lead',
-            storageKey: 'brevo_kpi_lead',
-            mode: 'blocking',
-            blockFreeEmails: true,
-          }}
-        >
-          {children}
-        </LeadCaptureProvider>
-      </LanguageProvider>
-    </Suspense>
+    <ErrorBoundary>
+      <Suspense fallback={<ProvidersFallback />}>
+        <LanguageProvider>
+          <LeadCaptureProvider
+            config={{
+              apiEndpoint: '/api/lead',
+              storageKey: 'brevo_marketing_plan_lead',
+              mode: 'blocking',
+              blockFreeEmails: true,
+            }}
+          >
+            {children}
+          </LeadCaptureProvider>
+        </LanguageProvider>
+      </Suspense>
+    </ErrorBoundary>
   );
 }

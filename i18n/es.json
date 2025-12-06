@@ -665,6 +665,18 @@
     "button": "Hablar con un experto",
     "note": "Sin compromiso. Obt\u00e9n una demo personalizada."
   },
+  "error": {
+    "title": "Algo salió mal",
+    "description": "Pedimos disculpas por las molestias. Ha ocurrido un error inesperado.",
+    "tryAgain": "Intentar de nuevo",
+    "reload": "Recargar página",
+    "contactSupport": "contactar soporte",
+    "persistsMessage": "Si este problema persiste, por favor",
+    "rateLimited": "Demasiadas solicitudes. Por favor, inténtelo de nuevo en un momento.",
+    "networkError": "Error de red. Por favor, compruebe su conexión.",
+    "timeout": "Tiempo de espera agotado. Por favor, inténtelo de nuevo.",
+    "serverError": "Error del servidor. Por favor, inténtelo más tarde."
+  },
   "marketingPlan": {
     "pageTitle": "Generador de Plan de Marketing Relacional",
     "pageSubtitle": "Genera un plan de marketing relacional personalizado para tu negocio. Elige una plantilla del sector u obt\u00e9n un plan personalizado con IA.",

@@ -665,6 +665,18 @@
     "button": "Talk to an Expert",
     "note": "No commitment required. Get a personalized demo."
   },
+  "error": {
+    "title": "Something went wrong",
+    "description": "We apologize for the inconvenience. An unexpected error has occurred.",
+    "tryAgain": "Try Again",
+    "reload": "Reload Page",
+    "contactSupport": "contact support",
+    "persistsMessage": "If this problem persists, please",
+    "rateLimited": "Too many requests. Please try again in a moment.",
+    "networkError": "Network error. Please check your connection.",
+    "timeout": "Request timed out. Please try again.",
+    "serverError": "Server error. Please try again later."
+  },
   "marketingPlan": {
     "pageTitle": "Marketing Relationship Plan Generator",
     "pageSubtitle": "Generate a customized marketing relationship plan for your business. Choose an industry template or get a personalized AI-powered plan.",

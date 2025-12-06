@@ -665,6 +665,18 @@
     "button": "Mit einem Experten sprechen",
     "note": "Unverbindlich. Erhalten Sie eine personalisierte Demo."
   },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Wir entschuldigen uns für die Unannehmlichkeiten. Ein unerwarteter Fehler ist aufgetreten.",
+    "tryAgain": "Erneut versuchen",
+    "reload": "Seite neu laden",
+    "contactSupport": "Support kontaktieren",
+    "persistsMessage": "Wenn dieses Problem weiterhin besteht, bitte",
+    "rateLimited": "Zu viele Anfragen. Bitte versuchen Sie es in einem Moment erneut.",
+    "networkError": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+    "timeout": "Zeitüberschreitung der Anfrage. Bitte versuchen Sie es erneut.",
+    "serverError": "Serverfehler. Bitte versuchen Sie es später erneut."
+  },
   "marketingPlan": {
     "pageTitle": "Marketing-Beziehungsplan Generator",
     "pageSubtitle": "Erstellen Sie einen maßgeschneiderten Marketing-Beziehungsplan für Ihr Unternehmen. Wählen Sie eine Branchenvorlage oder erhalten Sie einen KI-personalisierten Plan.",

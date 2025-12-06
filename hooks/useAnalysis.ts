@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import { apiConfig } from '@/config/api';
 
 interface AnalysisState {
@@ -21,6 +21,7 @@ interface AnalysisParams {
 interface UseAnalysisReturn extends AnalysisState {
   runAnalysis: (params: AnalysisParams) => Promise<void>;
   reset: () => void;
+  retry: () => Promise<void>;
   analysisRef: React.RefObject<HTMLDivElement | null>;
 }
 
@@ -34,9 +35,15 @@ const initialState: AnalysisState = {
 /**
  * Custom hook for managing AI analysis state and API calls.
  *
+ * Features:
+ * - Race condition protection with AbortController
+ * - Automatic cleanup on unmount
+ * - Retry functionality
+ * - Centralized polling logic
+ *
  * Usage:
  * ```tsx
- * const { isLoading, analysis, error, logs, runAnalysis, reset, analysisRef } = useAnalysis();
+ * const { isLoading, analysis, error, logs, runAnalysis, reset, retry, analysisRef } = useAnalysis();
  *
  * const handleAnalyze = () => {
  *   runAnalysis({ userValues, selectedKpis, industry, priceTier, language });
@@ -46,6 +53,21 @@ const initialState: AnalysisState = {
 export function useAnalysis(): UseAnalysisReturn {
   const [state, setState] = useState<AnalysisState>(initialState);
   const analysisRef = useRef<HTMLDivElement>(null);
+
+  // AbortController for cancelling ongoing requests
+  const abortControllerRef = useRef<AbortController | null>(null);
+
+  // Store last params for retry functionality
+  const lastParamsRef = useRef<AnalysisParams | null>(null);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+      }
+    };
+  }, []);
 
   const addLog = useCallback((message: string) => {
     setState(prev => ({
@@ -63,6 +85,18 @@ export function useAnalysis(): UseAnalysisReturn {
 
   const runAnalysis = useCallback(async (params: AnalysisParams) => {
     const { userValues, selectedKpis, industry, priceTier, language } = params;
+
+    // Cancel any ongoing analysis (race condition protection)
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
+    // Create new AbortController for this request
+    const abortController = new AbortController();
+    abortControllerRef.current = abortController;
+
+    // Store params for retry
+    lastParamsRef.current = params;
 
     // Reset and start loading
     setState({
@@ -83,6 +117,11 @@ export function useAnalysis(): UseAnalysisReturn {
     );
 
     try {
+      // Check if already aborted
+      if (abortController.signal.aborted) {
+        return;
+      }
+
       // Step 1: Create the analysis job
       addLog('Starting analysis...');
 
@@ -97,6 +136,7 @@ export function useAnalysis(): UseAnalysisReturn {
           industry,
           language,
         }),
+        signal: abortController.signal,
       });
 
       if (!createResponse.ok) {
@@ -118,12 +158,32 @@ export function useAnalysis(): UseAnalysisReturn {
       const startTime = Date.now();
 
       for (let i = 0; i < maxPolls; i++) {
-        await new Promise(resolve => setTimeout(resolve, pollingInterval));
+        // Check if aborted before polling
+        if (abortController.signal.aborted) {
+          return;
+        }
+
+        await new Promise((resolve, reject) => {
+          const timeoutId = setTimeout(resolve, pollingInterval);
+
+          // Listen for abort during wait
+          abortController.signal.addEventListener('abort', () => {
+            clearTimeout(timeoutId);
+            reject(new DOMException('Aborted', 'AbortError'));
+          }, { once: true });
+        });
+
+        // Check again after wait
+        if (abortController.signal.aborted) {
+          return;
+        }
 
         const elapsed = Math.floor((Date.now() - startTime) / 1000);
         updateLastLog(`Polling... (${elapsed}s elapsed)`);
 
-        const pollResponse = await fetch(`${apiConfig.analyze.endpoint}/${conversationId}`);
+        const pollResponse = await fetch(`${apiConfig.analyze.endpoint}/${conversationId}`, {
+          signal: abortController.signal,
+        });
 
         if (!pollResponse.ok) {
           const errorData = await pollResponse.json();
@@ -156,6 +216,11 @@ export function useAnalysis(): UseAnalysisReturn {
       throw new Error('Analysis timed out after 5 minutes. Please try again.');
 
     } catch (err: unknown) {
+      // Ignore abort errors (user cancelled or component unmounted)
+      if (err instanceof DOMException && err.name === 'AbortError') {
+        return;
+      }
+
       console.error('Error during analysis:', err);
       setState(prev => ({
         ...prev,
@@ -166,13 +231,25 @@ export function useAnalysis(): UseAnalysisReturn {
   }, [addLog, updateLastLog]);
 
   const reset = useCallback(() => {
+    // Cancel ongoing request
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
     setState(initialState);
+    lastParamsRef.current = null;
   }, []);
+
+  const retry = useCallback(async () => {
+    if (lastParamsRef.current) {
+      await runAnalysis(lastParamsRef.current);
+    }
+  }, [runAnalysis]);
 
   return {
     ...state,
     runAnalysis,
     reset,
+    retry,
     analysisRef,
   };
 }

@@ -665,6 +665,18 @@
     "button": "Parler \u00e0 un expert",
     "note": "Sans engagement. Obtenez une d\u00e9mo personnalis\u00e9e."
   },
+  "error": {
+    "title": "Une erreur s'est produite",
+    "description": "Nous nous excusons pour le désagrément. Une erreur inattendue s'est produite.",
+    "tryAgain": "Réessayer",
+    "reload": "Recharger la page",
+    "contactSupport": "contacter le support",
+    "persistsMessage": "Si ce problème persiste, veuillez",
+    "rateLimited": "Trop de requêtes. Veuillez réessayer dans un moment.",
+    "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+    "timeout": "La requête a expiré. Veuillez réessayer.",
+    "serverError": "Erreur serveur. Veuillez réessayer plus tard."
+  },
   "marketingPlan": {
     "pageTitle": "Générateur de Plan Marketing Relationnel",
     "pageSubtitle": "Générez un plan marketing relationnel personnalisé pour votre entreprise. Choisissez un modèle sectoriel ou obtenez un plan personnalisé par IA.",
