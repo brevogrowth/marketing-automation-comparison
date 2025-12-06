@@ -768,6 +768,9 @@
     "ctaTitle": "Ready to turn this plan into results?",
     "ctaDescription": "Your marketing plan is just the beginning. See how Brevo's omnichannel CRM can help you execute every strategy.",
     "ctaButton": "Get Expert Guidance",
-    "ctaSubtext": "Free consultation"
+    "ctaSubtext": "Free consultation",
+    "generatingPlanFor": "Generating plan for",
+    "loadingBannerHint": "You can continue browsing while we analyze your company...",
+    "almostReady": "Almost ready..."
   }
 }

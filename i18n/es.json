@@ -765,9 +765,12 @@
     "whyBrevoBetter": "Por Qu\u00e9 Brevo es Mejor",
     "omnichannelStrategy": "Estrategia Omnicanal",
     "setupEfficiency": "Eficiencia de Configuraci\u00f3n",
-    "ctaTitle": "\u00bfListo para convertir este plan en resultados?",
-    "ctaDescription": "Tu plan de marketing es solo el comienzo. Descubre c\u00f3mo el CRM omnicanal de Brevo puede ayudarte a ejecutar cada estrategia.",
-    "ctaButton": "Obt\u00e9n Asesor\u00eda Experta",
-    "ctaSubtext": "Consulta gratuita"
+    "ctaTitle": "¿Listo para convertir este plan en resultados?",
+    "ctaDescription": "Tu plan de marketing es solo el comienzo. Descubre cómo el CRM omnicanal de Brevo puede ayudarte a ejecutar cada estrategia.",
+    "ctaButton": "Obtén Asesoría Experta",
+    "ctaSubtext": "Consulta gratuita",
+    "generatingPlanFor": "Generando plan para",
+    "loadingBannerHint": "Puedes seguir navegando mientras analizamos tu empresa...",
+    "almostReady": "Casi listo..."
   }
 }

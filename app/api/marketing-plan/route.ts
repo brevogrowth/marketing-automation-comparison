@@ -314,10 +314,10 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain).replace(/{industry}/g
         { status: 400 }
       );
     }
-    // Log error type only, not full details which may contain user data
-    console.error('[Marketing Plan] Error:', error instanceof Error ? error.name : 'Unknown error');
+    // Log error details for debugging
+    console.error('[Marketing Plan] Error:', error instanceof Error ? `${error.name}: ${error.message}` : 'Unknown error');
     return NextResponse.json(
-      { error: 'Failed to process request' },
+      { error: error instanceof Error ? error.message : 'Failed to process request' },
       { status: 500 }
     );
   }

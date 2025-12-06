@@ -57,7 +57,7 @@ const MarketingPlanSidebarComponent = ({
             <span className="text-white font-bold text-sm">1</span>
           </div>
           <h3 className="text-base font-bold text-gray-900">
-            {t.sidebar?.industryPlanTitle || 'Industry Plan'}
+            {t.sidebar?.industryPlanTitle || 'Plan by Type'}
           </h3>
         </div>
 
@@ -119,7 +119,7 @@ const MarketingPlanSidebarComponent = ({
       <div className="flex flex-col">
         {/* Section Header */}
         <div className="flex items-center gap-3 mb-3">
-          <div className="w-7 h-7 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+          <div className="w-7 h-7 bg-brevo-green rounded-full flex items-center justify-center flex-shrink-0">
             <span className="text-white font-bold text-sm">2</span>
           </div>
           <h3 className="text-base font-bold text-gray-900">
@@ -145,7 +145,7 @@ const MarketingPlanSidebarComponent = ({
               className={`w-full pl-10 rounded-lg shadow-sm sm:text-sm p-3 border disabled:opacity-50 disabled:cursor-not-allowed ${
                 domainError
                   ? 'border-red-300 focus:border-red-500 focus:ring-red-500'
-                  : 'border-gray-300 focus:border-purple-500 focus:ring-purple-500'
+                  : 'border-gray-300 focus:border-brevo-green focus:ring-brevo-green'
               }`}
             />
           </div>
@@ -158,7 +158,7 @@ const MarketingPlanSidebarComponent = ({
         <button
           onClick={onGeneratePersonalizedPlan}
           disabled={isLoading || !domain.trim()}
-          className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-medium hover:from-purple-700 hover:to-blue-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
+          className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-brevo-green text-white rounded-lg font-medium hover:bg-brevo-dark-green transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
         >
           {!isUnlocked && <Lock className="h-4 w-4" />}
           <Sparkles className="h-4 w-4" />

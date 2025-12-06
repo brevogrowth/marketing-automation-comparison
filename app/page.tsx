@@ -13,13 +13,12 @@ import type { MarketingPlan } from '@/src/types/marketing-plan';
 
 // Import marketing plan components
 import {
-  PlanHeader,
   CompanySummary,
   MarketingPrograms,
   ProgramDetails,
   BrevoHelp,
   BrevoCallToAction,
-  LoadingState,
+  LoadingBanner,
   ErrorState,
 } from '@/components/marketing-plan';
 
@@ -173,18 +172,19 @@ export default function Home() {
   const generatePersonalizedPlan = async () => {
     setIsLoading(true);
     setError(null);
-    setPlan(null);
-    setPlanSource(null);
+    // Keep the current plan visible while loading (non-blocking UX)
+    // Only clear plan if we don't have one
+    if (!plan) {
+      loadStaticPlan(industry);
+    }
     setConversationId(null);
     setPollCount(0);
     setProgress(5);
     setElapsedTime(0);
     startTimeRef.current = Date.now();
 
-    // Scroll to loading state
-    setTimeout(() => {
-      planRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
+    // Scroll to top to see the loading banner
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     try {
       // Step 1: Create the plan generation job
@@ -310,6 +310,16 @@ export default function Home() {
           </h1>
         </div>
 
+        {/* Loading Banner - Non-blocking, allows user to continue browsing */}
+        {isLoading && (
+          <LoadingBanner
+            companyDomain={domain}
+            progress={progress}
+            elapsedTime={elapsedTime}
+            onCancel={handleCancel}
+          />
+        )}
+
         {/* Intro Accordion */}
         <IntroAccordion />
 
@@ -331,17 +341,6 @@ export default function Home() {
 
           {/* Main Content - Plan Display */}
           <div className="lg:w-3/4" ref={planRef}>
-            {/* Loading State */}
-            {isLoading && (
-              <LoadingState
-                companyDomain={domain}
-                progress={progress}
-                pollCount={pollCount}
-                elapsedTimeOverride={elapsedTime}
-                onCancel={handleCancel}
-              />
-            )}
-
             {/* Error State */}
             {error && !isLoading && (
               <ErrorState
@@ -352,16 +351,9 @@ export default function Home() {
               />
             )}
 
-            {/* Plan Display */}
-            {plan && !isLoading && !error && (
+            {/* Plan Display - Always visible, even during loading for non-blocking UX */}
+            {plan && !error && (
               <div className="space-y-6">
-                {/* Plan Header */}
-                <PlanHeader
-                  companyName={plan.company_summary?.name || industry}
-                  companyDomain={planSource === 'static' ? undefined : domain}
-                  isPersonalized={planSource !== 'static'}
-                />
-
                 {/* CTA Inline (for personalized plans) */}
                 {planSource !== 'static' && (
                   <BrevoCallToAction variant="inline" />
@@ -374,7 +366,7 @@ export default function Home() {
 
                 {/* Marketing Programs Overview */}
                 <h2 className="text-lg font-bold text-gray-900 mb-4">
-                  {t.marketingPlan?.marketingPrograms || 'Marketing Relationship Programs'}
+                  {t.marketingPlan?.marketingPrograms || 'Relationship Programs Overview'}
                 </h2>
                 <MarketingPrograms programs={plan.programs_list} />
 
@@ -442,7 +434,7 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Sticky CTA Footer (for static plans) */}
+      {/* Sticky CTA Footer (for static plans, hidden during loading) */}
       {plan && planSource === 'static' && !isLoading && !error && (
         <BrevoCallToAction variant="sticky" />
       )}

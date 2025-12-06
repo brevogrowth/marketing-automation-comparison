@@ -768,6 +768,9 @@
     "ctaTitle": "Bereit, diesen Plan in Ergebnisse zu verwandeln?",
     "ctaDescription": "Ihr Marketing-Plan ist nur der Anfang. Erfahren Sie, wie Brevos Omnichannel-CRM Ihnen bei der Umsetzung jeder Strategie helfen kann.",
     "ctaButton": "Expertenberatung erhalten",
-    "ctaSubtext": "Kostenlose Beratung"
+    "ctaSubtext": "Kostenlose Beratung",
+    "generatingPlanFor": "Plan wird erstellt für",
+    "loadingBannerHint": "Sie können weiter stöbern, während wir Ihr Unternehmen analysieren...",
+    "almostReady": "Fast fertig..."
   }
 }

@@ -768,6 +768,9 @@
     "ctaTitle": "Prêt à transformer ce plan en résultats ?",
     "ctaDescription": "Votre plan marketing n'est que le début. Découvrez comment le CRM omnicanal de Brevo peut vous aider à exécuter chaque stratégie.",
     "ctaButton": "Obtenir des Conseils d'Expert",
-    "ctaSubtext": "Consultation gratuite"
+    "ctaSubtext": "Consultation gratuite",
+    "generatingPlanFor": "Génération du plan pour",
+    "loadingBannerHint": "Vous pouvez continuer à naviguer pendant que nous analysons votre entreprise...",
+    "almostReady": "Presque prêt..."
   }
 }

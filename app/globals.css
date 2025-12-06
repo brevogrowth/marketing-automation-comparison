@@ -52,3 +52,17 @@ input:focus, select:focus, textarea:focus {
 .btn-primary:hover {
   background-color: var(--color-brand-primary-dark);
 }
+
+/* Slow pulse animation for loading banner */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}

@@ -99,11 +99,6 @@ export const IntroAccordion: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-brevo-light/50 rounded-lg p-4 border border-brevo-green/20">
-                <p className="text-sm text-brevo-dark-green">
-                  <strong>💡 {t.intro?.what?.tipTitle || 'Pro tip'}:</strong> {t.intro?.what?.tipDesc || 'The best relationship plans combine email, SMS, and push notifications to reach customers on their preferred channels.'}
-                </p>
-              </div>
             </div>
           )}
 
