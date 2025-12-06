@@ -236,7 +236,7 @@ export async function POST(request: Request) {
 
     if (!gatewayUrl || !gatewayApiKey) {
       // Fallback to static plan if AI not configured
-      console.warn('[Marketing Plan] AI Gateway not configured, returning static plan');
+      console.warn('[Marketing Plan] AI Gateway not configured, returning static plan for industry:', industry);
       const staticPlan = getStaticPlan(industry as Industry, language);
       return NextResponse.json({
         status: 'complete',
@@ -278,8 +278,8 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain).replace(/{industry}/g
       clearTimeout(timeout);
 
       if (!gatewayResponse.ok) {
-        const errorText = await gatewayResponse.text();
-        console.error('[Marketing Plan] Gateway error:', gatewayResponse.status, errorText);
+        // Log status only, not response body which may contain sensitive data
+        console.error('[Marketing Plan] Gateway error status:', gatewayResponse.status);
         return NextResponse.json(
           { error: 'AI service temporarily unavailable' },
           { status: 502 }
@@ -288,12 +288,12 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain).replace(/{industry}/g
 
       const { jobId } = await gatewayResponse.json();
 
-      // Return immediately with job ID
+      // Return immediately with job ID (don't include domain in response)
       return NextResponse.json({
         status: 'created',
         source: 'ai',
         conversationId: jobId,
-        message: `Plan generation started. Poll /api/marketing-plan/${jobId} for results.`,
+        message: 'Plan generation started. Poll for results.',
       });
 
     } catch (err) {
@@ -314,9 +314,10 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain).replace(/{industry}/g
         { status: 400 }
       );
     }
-    console.error('[Marketing Plan] Error:', error);
+    // Log error type only, not full details which may contain user data
+    console.error('[Marketing Plan] Error:', error instanceof Error ? error.name : 'Unknown error');
     return NextResponse.json(
-      { error: 'Failed to process request', message: error instanceof Error ? error.message : 'Unknown error' },
+      { error: 'Failed to process request' },
       { status: 500 }
     );
   }

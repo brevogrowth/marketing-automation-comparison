@@ -139,22 +139,16 @@ export async function POST(request: NextRequest) {
         clearTimeout(timeoutId);
 
         if (!response.ok) {
-          const responseText = await response.text();
-          console.error('[Lead API] Lead Hub returned error:', response.status, responseText);
+          // Log status only, not response body
+          console.error('[Lead API] Lead Hub error status:', response.status);
         }
       } catch (webhookError) {
-        // Log error but don't fail the request (fail-open pattern)
-        console.error('[Lead API] Lead Hub error:', webhookError instanceof Error ? webhookError.message : webhookError);
+        // Log error type only (fail-open pattern)
+        console.error('[Lead API] Lead Hub error:', webhookError instanceof Error ? webhookError.name : 'Unknown');
       }
     } else {
-      console.warn('[Lead API] LEAD_HUB_URL not configured - check Netlify environment variables');
-      // No lead-hub configured - log the lead data for debugging
-      console.log('[Lead API] No LEAD_HUB_URL configured. Lead received:', {
-        email: leadData.email,
-        timestamp: leadData.timestamp,
-        trigger: leadData.trigger,
-        context: leadData.context,
-      });
+      // Log warning only, no sensitive data
+      console.warn('[Lead API] LEAD_HUB_URL not configured - lead captured but not forwarded');
     }
 
     // Always return success (fail-open)
@@ -163,7 +157,8 @@ export async function POST(request: NextRequest) {
       message: 'Lead received',
     });
   } catch (error) {
-    console.error('[Lead API] Error processing lead:', error);
+    // Log error type only, not details
+    console.error('[Lead API] Error:', error instanceof Error ? error.name : 'Unknown');
 
     // Even on error, return 200 (fail-open)
     // This ensures the user flow isn't blocked

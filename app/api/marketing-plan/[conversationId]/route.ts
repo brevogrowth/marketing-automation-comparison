@@ -90,12 +90,11 @@ export async function GET(
             );
           }
         } catch (parseError) {
-          console.error('[Poll] Parse error:', parseError);
+          // Log error type only, not content which may be sensitive
+          console.error('[Poll] Parse error:', parseError instanceof Error ? parseError.name : 'Unknown');
           return NextResponse.json({
             status: 'error',
             error: 'Failed to parse AI response',
-            details: parseError instanceof Error ? parseError.message : 'Unknown error',
-            rawResponse: typeof data.result === 'string' ? data.result.slice(0, 1000) : undefined,
           });
         }
 
@@ -121,7 +120,8 @@ export async function GET(
     }
 
   } catch (error) {
-    console.error('[Poll] Error:', error);
+    // Log error type only, not full details
+    console.error('[Poll] Error:', error instanceof Error ? error.name : 'Unknown');
     return NextResponse.json(
       { status: 'error', error: 'Failed to check plan status' },
       { status: 500 }
