@@ -1,6 +1,6 @@
 'use client';
 
-import { BarChart3, Target, Lightbulb, TrendingUp } from 'lucide-react';
+import { Target, Lightbulb, TrendingUp } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import type { MarketingProgram } from '@/src/types/marketing-plan';
 
@@ -28,15 +28,6 @@ export function MarketingPrograms({ programs }: MarketingProgramsProps) {
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-8 h-8 bg-brevo-light rounded-lg flex items-center justify-center">
-          <BarChart3 className="h-4 w-4 text-brevo-green" />
-        </div>
-        <h2 className="text-lg font-bold text-gray-900">
-          {t.marketingPlan?.marketingPrograms || 'Marketing Relationship Programs'}
-        </h2>
-      </div>
-
       {/* Desktop table header */}
       <div className="hidden md:grid md:grid-cols-4 gap-4 px-4 py-3 bg-gray-50 rounded-lg mb-2 text-sm font-medium text-gray-600">
         <div>{t.marketingPlan?.programName || 'Program Name'}</div>

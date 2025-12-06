@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { ArrowRight, TrendingUp, Target } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -9,6 +10,29 @@ interface BrevoCallToActionProps {
 
 export function BrevoCallToAction({ variant = 'sticky' }: BrevoCallToActionProps) {
   const { t, language } = useLanguage();
+  const [isVisible, setIsVisible] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    if (variant !== 'sticky') return;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const minScrollThreshold = 300; // Only show after scrolling 300px
+
+      // Show when scrolling up and past threshold
+      if (currentScrollY > minScrollThreshold) {
+        setIsVisible(currentScrollY < lastScrollY);
+      } else {
+        setIsVisible(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [variant, lastScrollY]);
 
   // Generate UTM-tagged URL based on language
   const getCtaUrl = () => {
@@ -52,9 +76,13 @@ export function BrevoCallToAction({ variant = 'sticky' }: BrevoCallToActionProps
     );
   }
 
-  // Sticky footer variant
+  // Sticky footer variant - only visible on scroll up
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-brevo-green to-emerald-500 shadow-2xl border-t-2 border-emerald-300">
+    <div
+      className={`fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-brevo-green to-emerald-500 shadow-2xl border-t-2 border-emerald-300 transition-transform duration-300 ${
+        isVisible ? 'translate-y-0' : 'translate-y-full'
+      }`}
+    >
       <div className="container mx-auto px-4 py-3">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           {/* Left side - Message */}

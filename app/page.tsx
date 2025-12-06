@@ -5,7 +5,6 @@ import { useSearchParams } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { IntroAccordion } from '@/components/IntroAccordion';
 import { MarketingPlanSidebar } from '@/components/MarketingPlanSidebar';
-import { Contributors } from '@/components/Contributors';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLeadGate } from '@/lib/lead-capture';
 import { getStaticPlan } from '@/data/static-marketing-plans';
@@ -306,12 +305,9 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900">
             {t.marketingPlan?.pageTitle || 'Marketing Relationship Plan Generator'}
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            {t.marketingPlan?.pageSubtitle || 'Generate a customized marketing relationship plan for your business. Choose an industry template or get a personalized AI-powered plan.'}
-          </p>
         </div>
 
         {/* Intro Accordion */}
@@ -371,10 +367,15 @@ export default function Home() {
                   <BrevoCallToAction variant="inline" />
                 )}
 
-                {/* Company Summary */}
-                <CompanySummary summary={plan.company_summary} />
+                {/* Company Summary - Only shown for personalized plans */}
+                {planSource !== 'static' && (
+                  <CompanySummary summary={plan.company_summary} />
+                )}
 
                 {/* Marketing Programs Overview */}
+                <h2 className="text-lg font-bold text-gray-900 mb-4">
+                  {t.marketingPlan?.marketingPrograms || 'Marketing Relationship Programs'}
+                </h2>
                 <MarketingPrograms programs={plan.programs_list} />
 
                 {/* Program Details (expandable) */}
@@ -411,9 +412,6 @@ export default function Home() {
             )}
           </div>
         </div>
-
-        {/* Contributors Section */}
-        <Contributors />
 
         {/* CTA Section */}
         <div className="mt-16">

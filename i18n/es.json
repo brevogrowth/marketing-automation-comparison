@@ -9,37 +9,54 @@
     "cta": "Solicitar demo"
   },
   "intro": {
+    "what": {
+      "question": "¿Qué es un \"plan relacional\"?",
+      "intro": "Un plan de marketing relacional es tu hoja de ruta para construir relaciones duraderas con los clientes a través de comunicación automatizada y personalizada.",
+      "programsTitle": "Programas de Marketing",
+      "programsDesc": "Campañas estructuradas como Series de Bienvenida, Abandono de Carrito, Reactivación y programas de Fidelidad — cada uno diseñado para una etapa específica del ciclo de vida del cliente.",
+      "scenariosTitle": "Escenarios Automatizados",
+      "scenariosDesc": "Secuencias de mensajes prediseñadas con triggers, timing e ideas de contenido — listas para implementar en tu plataforma de automatización de marketing.",
+      "tipTitle": "Consejo profesional",
+      "tipDesc": "Los mejores planes relacionales combinan email, SMS y notificaciones push para alcanzar a los clientes en sus canales preferidos."
+    },
     "how": {
       "question": "¿Cómo funciona?",
-      "step1Title": "Selecciona tu industria",
-      "step1Desc": "Elige entre 12 industrias para obtener un plan de marketing relacional adaptado con programas y escenarios relevantes.",
-      "step2Title": "Personalización con IA",
-      "step2Desc": "Introduce el dominio de tu empresa para recibir un plan completamente personalizado con recomendaciones específicas."
+      "step1Title": "Elige tu industria",
+      "step1Desc": "Selecciona entre 12 industrias (Moda, Belleza, SaaS, etc.) para obtener un plan con programas, mensajes y KPIs relevantes adaptados a tu sector.",
+      "step2Title": "Obtén tu plantilla al instante",
+      "step2Desc": "Visualiza un plan relacional completo con 4-6 programas de marketing, cada uno con escenarios y secuencias de mensajes. Sin registro necesario.",
+      "step3Title": "O consigue personalización con IA",
+      "step3Desc": "Introduce el dominio de tu empresa y nuestra IA analizará tu negocio para crear un plan totalmente personalizado con recomendaciones específicas para tu marca."
     },
-    "what": {
-      "question": "¿Qué voy a obtener?",
-      "answer1": "Una <strong>estrategia de marketing relacional completa</strong> con programas de email, SMS y automatización adaptados a tu sector.",
-      "answer2": "<strong>Escenarios concretos y secuencias de mensajes</strong> listos para implementar con la plataforma omnicanal de Brevo."
-    },
-    "data": {
-      "question": "¿Está generado por IA?",
-      "intro": "¡Sí! Nuestros planes son <strong>generados por IA avanzada</strong> entrenada en las mejores prácticas de marketing:",
-      "cartelis": "<strong>Cartelis</strong> — Experiencia en CRM y Marketing Automation",
-      "brevo": "<strong>Brevo</strong> — Insights de más de 500K empresas en todo el mundo",
-      "note": "Los planes se personalizan según tu industria y el análisis de tu empresa."
+    "trust": {
+      "question": "¿Puedo confiar en este plan?",
+      "intro": "¡Absolutamente! Nuestros planes se basan en frameworks de marketing probados y experiencia real:",
+      "expertiseTitle": "Expertise de la Industria",
+      "expertiseDesc": "Desarrollado con Cartelis, una firma consultora líder en CRM y Marketing Automation con más de 10 años de experiencia.",
+      "dataTitle": "Basado en Datos",
+      "dataDesc": "Basado en insights agregados de más de 500.000 empresas de todo el mundo que utilizan Brevo, de todas las industrias y tamaños.",
+      "aiTitle": "Potenciado por IA",
+      "aiDesc": "Nuestra IA está entrenada en las mejores prácticas de campañas de marketing exitosas, asegurando que las recomendaciones sean tanto creativas como efectivas.",
+      "note": "\"Estos planes son puntos de partida. Personalízalos según la voz de tu marca, insights de audiencia y objetivos de negocio.\""
     }
   },
   "sidebar": {
-    "step1Title": "1. Tu industria",
-    "step1Desc": "Elige tu sector y rango de precios \u2014 te mostraremos benchmarks relevantes.",
+    "industryPlanTitle": "Plan por sector",
+    "industryPlanDesc": "Obtén un plan de marketing listo para usar basado en las mejores prácticas de tu sector. Sin registro necesario.",
+    "customPlanTitle": "Plan personalizado",
+    "customPlanDesc": "Nuestra IA analiza tu empresa y crea un plan completamente personalizado con recomendaciones específicas para tu marca.",
+    "domainPlaceholder": "tuempresa.com",
+    "orDivider": "o",
     "industryLabel": "Industria",
     "priceTierLabel": "Posicionamiento de precio",
+    "step1Title": "1. Tu industria",
+    "step1Desc": "Elige tu sector y rango de precios — te mostraremos benchmarks relevantes.",
     "step2Title": "2. Compara tus KPIs",
-    "step2Desc": "Introduce tus m\u00e9tricas y obtiene recomendaciones IA personalizadas.",
+    "step2Desc": "Introduce tus métricas y obtiene recomendaciones IA personalizadas.",
     "enterKpis": "Introducir mis KPIs",
-    "doneComparing": "Terminar comparaci\u00f3n",
+    "doneComparing": "Terminar comparación",
     "readyTitle": "Listo para analizar",
-    "readyDesc": "Completa tus m\u00e9tricas en la cuadr\u00edcula, luego haz clic en \"Generar an\u00e1lisis IA\" al final de la p\u00e1gina."
+    "readyDesc": "Completa tus métricas en la cuadrícula, luego haz clic en \"Generar análisis IA\" al final de la página."
   },
   "industries": {
     "b2cRetail": "Retail B2C",

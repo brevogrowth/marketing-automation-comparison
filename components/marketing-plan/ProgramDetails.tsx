@@ -20,7 +20,15 @@ interface ProgramDetailsProps {
 
 export function ProgramDetails({ program, programNumber }: ProgramDetailsProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [openScenarios, setOpenScenarios] = useState<Record<number, boolean>>({});
   const { t } = useLanguage();
+
+  const toggleScenario = (index: number) => {
+    setOpenScenarios(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
 
   // Get program name
   const programName = program.program_name || program.name || `Program ${programNumber}`;
@@ -96,78 +104,95 @@ export function ProgramDetails({ program, programNumber }: ProgramDetailsProps) 
                 const scenarioObjective = scenario.scenario_objective || scenario.objective || '-';
                 const mainMessages = scenario.main_messages_ideas || scenario.main_message_ideas || scenario.messages || '-';
 
+                const isScenarioOpen = openScenarios[scenarioIndex] ?? false;
+
                 return (
-                  <div key={scenarioIndex} className="bg-gray-50 rounded-lg p-4">
-                    {/* Scenario Header */}
-                    <h4 className="font-medium text-brevo-green mb-3">
-                      {t.marketingPlan?.scenario || 'Scenario'} {scenarioIndex + 1}: {scenarioTarget}
-                    </h4>
+                  <div key={scenarioIndex} className="bg-gray-50 rounded-lg overflow-hidden">
+                    {/* Scenario Header - Clickable Toggle */}
+                    <button
+                      className="w-full flex justify-between items-center p-4 text-left hover:bg-gray-100 transition-colors"
+                      onClick={() => toggleScenario(scenarioIndex)}
+                    >
+                      <h4 className="font-medium text-brevo-green">
+                        {t.marketingPlan?.scenario || 'Scenario'} {scenarioIndex + 1}: {scenarioTarget}
+                      </h4>
+                      {isScenarioOpen ? (
+                        <ChevronUp className="h-4 w-4 text-gray-400 flex-shrink-0" />
+                      ) : (
+                        <ChevronDown className="h-4 w-4 text-gray-400 flex-shrink-0" />
+                      )}
+                    </button>
 
-                    {/* Scenario Details Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                      <div className="bg-white rounded-lg p-3 border border-gray-100">
-                        <div className="flex items-center gap-2 mb-2">
-                          <Target className="h-4 w-4 text-brevo-green" />
-                          <span className="text-xs font-medium text-gray-500">
-                            {t.marketingPlan?.target || 'Target'}
-                          </span>
-                        </div>
-                        <p className="text-sm text-gray-900">{scenarioTarget}</p>
-                      </div>
-
-                      <div className="bg-white rounded-lg p-3 border border-gray-100">
-                        <div className="flex items-center gap-2 mb-2">
-                          <Lightbulb className="h-4 w-4 text-brevo-green" />
-                          <span className="text-xs font-medium text-gray-500">
-                            {t.marketingPlan?.objective || 'Objective'}
-                          </span>
-                        </div>
-                        <p className="text-sm text-gray-900">{scenarioObjective}</p>
-                      </div>
-
-                      <div className="bg-white rounded-lg p-3 border border-gray-100">
-                        <div className="flex items-center gap-2 mb-2">
-                          <MessageCircle className="h-4 w-4 text-brevo-green" />
-                          <span className="text-xs font-medium text-gray-500">
-                            {t.marketingPlan?.mainMessages || 'Main Messages'}
-                          </span>
-                        </div>
-                        <p className="text-sm text-gray-900">{mainMessages}</p>
-                      </div>
-                    </div>
-
-                    {/* Message Sequence */}
-                    {messages.length > 0 && (
-                      <div>
-                        <h5 className="text-sm font-medium text-gray-700 mb-3 flex items-center gap-2">
-                          <Mail className="h-4 w-4 text-brevo-green" />
-                          {t.marketingPlan?.messageSequence || 'Message Sequence'}
-                        </h5>
-                        <div className="space-y-2">
-                          {messages.map((message, msgIndex) => (
-                            <div
-                              key={msgIndex}
-                              className="flex flex-col sm:flex-row sm:items-start gap-2 bg-white rounded-lg p-3 border border-gray-100"
-                            >
-                              <div className="flex-shrink-0">
-                                <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-brevo-light text-brevo-green text-xs font-medium">
-                                  {msgIndex + 1}
-                                </span>
-                              </div>
-                              <div className="flex-1 min-w-0">
-                                <p className="font-medium text-sm text-gray-900">
-                                  {message.title || `Message ${msgIndex + 1}`}
-                                </p>
-                                {message.description && (
-                                  <p className="text-xs text-gray-500 mt-0.5">{message.description}</p>
-                                )}
-                                {message.content && (
-                                  <p className="text-sm text-gray-600 mt-1">{message.content}</p>
-                                )}
-                              </div>
+                    {/* Scenario Content - Collapsible */}
+                    {isScenarioOpen && (
+                      <div className="px-4 pb-4">
+                        {/* Scenario Details Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                          <div className="bg-white rounded-lg p-3 border border-gray-100">
+                            <div className="flex items-center gap-2 mb-2">
+                              <Target className="h-4 w-4 text-brevo-green" />
+                              <span className="text-xs font-medium text-gray-500">
+                                {t.marketingPlan?.target || 'Target'}
+                              </span>
                             </div>
-                          ))}
+                            <p className="text-sm text-gray-900">{scenarioTarget}</p>
+                          </div>
+
+                          <div className="bg-white rounded-lg p-3 border border-gray-100">
+                            <div className="flex items-center gap-2 mb-2">
+                              <Lightbulb className="h-4 w-4 text-brevo-green" />
+                              <span className="text-xs font-medium text-gray-500">
+                                {t.marketingPlan?.objective || 'Objective'}
+                              </span>
+                            </div>
+                            <p className="text-sm text-gray-900">{scenarioObjective}</p>
+                          </div>
+
+                          <div className="bg-white rounded-lg p-3 border border-gray-100">
+                            <div className="flex items-center gap-2 mb-2">
+                              <MessageCircle className="h-4 w-4 text-brevo-green" />
+                              <span className="text-xs font-medium text-gray-500">
+                                {t.marketingPlan?.mainMessages || 'Main Messages'}
+                              </span>
+                            </div>
+                            <p className="text-sm text-gray-900">{mainMessages}</p>
+                          </div>
                         </div>
+
+                        {/* Message Sequence */}
+                        {messages.length > 0 && (
+                          <div>
+                            <h5 className="text-sm font-medium text-gray-700 mb-3 flex items-center gap-2">
+                              <Mail className="h-4 w-4 text-brevo-green" />
+                              {t.marketingPlan?.messageSequence || 'Message Sequence'}
+                            </h5>
+                            <div className="space-y-2">
+                              {messages.map((message, msgIndex) => (
+                                <div
+                                  key={msgIndex}
+                                  className="flex flex-col sm:flex-row sm:items-start gap-2 bg-white rounded-lg p-3 border border-gray-100"
+                                >
+                                  <div className="flex-shrink-0">
+                                    <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-brevo-light text-brevo-green text-xs font-medium">
+                                      {msgIndex + 1}
+                                    </span>
+                                  </div>
+                                  <div className="flex-1 min-w-0">
+                                    <p className="font-medium text-sm text-gray-900">
+                                      {message.title || `Message ${msgIndex + 1}`}
+                                    </p>
+                                    {message.description && (
+                                      <p className="text-xs text-gray-500 mt-0.5">{message.description}</p>
+                                    )}
+                                    {message.content && (
+                                      <p className="text-sm text-gray-600 mt-1">{message.content}</p>
+                                    )}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>

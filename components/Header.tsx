@@ -24,12 +24,7 @@ export const Header: React.FC = () => {
               />
             </a>
             <span className="hidden sm:block text-white/50">|</span>
-            <div className="hidden sm:flex flex-col">
-              <span className="text-sm font-medium text-white">{t.header.title}</span>
-              {t.header.subtitle && (
-                <span className="text-xs text-white/70">{t.header.subtitle}</span>
-              )}
-            </div>
+            <span className="hidden sm:block text-sm font-medium text-white">{t.header.title}</span>
           </div>
           <div className="flex items-center gap-3">
             <LanguageSelector />
