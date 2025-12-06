@@ -57,8 +57,8 @@ test.describe('Marketing Plan User Journey', () => {
         expect(newIndustry).toBe('SaaS');
 
         // Verify static plan content is displayed
-        // The plan should show company summary section
-        await expect(page.getByText(/Company Summary|Résumé|Zusammenfassung|Resumen/i)).toBeVisible({ timeout: 5000 });
+        // The plan should show Marketing Programs section (Company Summary is hidden in template mode)
+        await expect(page.getByText(/Marketing.*Program|Programme|Programm/i).first()).toBeVisible({ timeout: 5000 });
     });
 
     test('3. Tab switching between static and personalized works', async ({ page }) => {
@@ -158,17 +158,16 @@ test.describe('Quick Smoke Tests', () => {
         await expect(ctaLink.first()).toBeVisible();
     });
 
-    test('Contributors section displays partners', async ({ page }) => {
+    test('CTA section displays at bottom', async ({ page }) => {
         await page.waitForLoadState('networkidle');
 
         // Scroll to bottom of page
         await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
         await page.waitForTimeout(500);
 
-        // Verify partner logos are present
-        await expect(page.locator('img[alt="Cartelis"]')).toBeVisible({ timeout: 10000 });
-        await expect(page.locator('img[alt="Epsilon"]')).toBeVisible();
-        await expect(page.locator('img[alt="Niji"]')).toBeVisible();
+        // Verify CTA section is visible
+        const ctaSection = page.getByText(/Ready to Execute|Prêt à exécuter/i);
+        await expect(ctaSection.first()).toBeVisible({ timeout: 10000 });
     });
 
     test('Language selector works', async ({ page }) => {
@@ -248,5 +247,150 @@ test.describe('Lead Capture Flow', () => {
         // force=true should have cleared it (or it should be null)
         // The actual behavior may vary - just verify page loaded successfully
         await expect(page.locator('select').first()).toBeVisible();
+    });
+});
+
+/**
+ * Industry Plan Tests
+ *
+ * Verifies that changing industry correctly loads the corresponding marketing plan
+ */
+test.describe('Industry Plan Loading', () => {
+
+    test.beforeEach(async ({ page }) => {
+        // Set localStorage to bypass lead capture modal
+        await page.goto('/');
+        await page.evaluate(() => {
+            localStorage.setItem('brevo_kpi_lead', JSON.stringify({
+                email: 'test@example.com',
+                capturedAt: new Date().toISOString()
+            }));
+        });
+        await page.reload();
+        await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
+    });
+
+    test('Changing industry loads correct marketing plan with programs', async ({ page }) => {
+        // Get the industry selector
+        const industrySelect = page.locator('select').first();
+        await expect(industrySelect).toBeVisible();
+
+        // Verify default is Fashion
+        expect(await industrySelect.inputValue()).toBe('Fashion');
+
+        // Verify Fashion plan programs are shown (Welcome & Onboarding Journey)
+        await expect(page.getByText(/Welcome.*Onboarding|Onboarding.*Journey/i).first()).toBeVisible({ timeout: 5000 });
+
+        // Change to SaaS industry
+        await industrySelect.selectOption('SaaS');
+        await page.waitForTimeout(1000);
+
+        // Verify SaaS-specific program is displayed (Trial to Paid Conversion)
+        await expect(page.getByText(/Trial.*Paid|Paid.*Conversion/i).first()).toBeVisible({ timeout: 5000 });
+
+        // Verify Template badge is shown (not Personalized)
+        await expect(page.getByText(/Template|Modèle|Vorlage|Plantilla/i).first()).toBeVisible();
+
+        // Verify Marketing Programs section exists
+        await expect(page.getByText(/Marketing.*Program|Programme|Programm/i).first()).toBeVisible();
+
+        // Verify Program Details section exists
+        await expect(page.getByText(/Program Details|Détails|Details/i).first()).toBeVisible();
+
+        // Change to Beauty industry
+        await industrySelect.selectOption('Beauty');
+        await page.waitForTimeout(1000);
+
+        // Verify Beauty-specific content is shown
+        await expect(page.getByText(/Beauty|Beauté|Schönheit|Belleza/i).first()).toBeVisible({ timeout: 5000 });
+
+        // Verify the plan changed (no longer shows SaaS content)
+        const saasContent = page.getByText(/Trial.*Paid.*Conversion/i);
+        await expect(saasContent).not.toBeVisible();
+    });
+
+    test('Industry URL parameter loads correct plan', async ({ page }) => {
+        // Navigate directly to SaaS industry via URL
+        await page.goto('/?industry=SaaS');
+
+        // Wait for page to load
+        await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
+
+        // Verify industry selector shows SaaS
+        const industrySelect = page.locator('select').first();
+        await expect(industrySelect).toHaveValue('SaaS');
+
+        // Verify SaaS-specific program is displayed
+        await expect(page.getByText(/Trial.*Paid|Paid.*Conversion/i).first()).toBeVisible({ timeout: 5000 });
+    });
+});
+
+/**
+ * Custom AI Analysis Tests
+ *
+ * Tests the full custom plan generation flow with 3-minute timeout
+ * This is a long-running test that validates the Dust.tt integration
+ */
+test.describe('Custom AI Analysis', () => {
+
+    // Extended timeout for AI analysis (3 minutes + buffer)
+    test.setTimeout(240000); // 4 minutes
+
+    test('Generate custom plan with AI analysis and verify results', async ({ page }) => {
+        // Set localStorage to bypass lead capture modal
+        await page.goto('/');
+        await page.evaluate(() => {
+            localStorage.setItem('brevo_kpi_lead', JSON.stringify({
+                email: 'e2e-test@brevo.com',
+                capturedAt: new Date().toISOString()
+            }));
+        });
+        await page.reload();
+
+        // Wait for page to load
+        await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
+
+        // Find the domain input in Custom Plan section
+        const domainInput = page.locator('input[placeholder*="yourcompany"]').first();
+        await expect(domainInput).toBeVisible({ timeout: 5000 });
+
+        // Enter a real domain for AI analysis
+        await domainInput.fill('brevo.com');
+        await page.waitForTimeout(500);
+
+        // Click the Generate button
+        const generateButton = page.getByRole('button', { name: /Generate.*Plan|Générer|Generieren|Generar/i });
+        await expect(generateButton).toBeVisible();
+        await generateButton.click();
+
+        // Wait for loading state to appear
+        const loadingIndicator = page.getByText(/Analyzing|Analysing|Analyse|Generando/i);
+        await expect(loadingIndicator.first()).toBeVisible({ timeout: 10000 });
+
+        // Wait for the analysis to complete (up to 3 minutes)
+        // The loading indicator should disappear and be replaced with results
+        await expect(loadingIndicator.first()).not.toBeVisible({ timeout: 180000 });
+
+        // Verify the personalized plan is displayed
+        // 1. Check for Personalized badge (not Template)
+        await expect(page.getByText(/Personalized|Personnalisé|Personalisiert|Personalizado/i).first()).toBeVisible({ timeout: 10000 });
+
+        // 2. Check for Company Summary (only visible for custom plans)
+        await expect(page.getByText(/Company Summary|Résumé.*entreprise|Zusammenfassung|Resumen/i).first()).toBeVisible({ timeout: 5000 });
+
+        // 3. Check for company name in the plan (should contain brevo)
+        await expect(page.getByText(/brevo/i).first()).toBeVisible({ timeout: 5000 });
+
+        // 4. Verify Marketing Programs section exists
+        await expect(page.getByText(/Marketing.*Program|Programme|Programm/i).first()).toBeVisible();
+
+        // 5. Verify Program Details section exists
+        await expect(page.getByText(/Program Details|Détails|Details/i).first()).toBeVisible();
+
+        // 6. Verify at least one program card is rendered
+        const programCards = page.locator('[class*="bg-white"][class*="rounded"]').filter({
+            hasText: /Program|Programme|Programm/i
+        });
+        expect(await programCards.count()).toBeGreaterThan(0);
     });
 });
