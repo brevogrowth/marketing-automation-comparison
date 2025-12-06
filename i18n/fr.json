@@ -10,24 +10,23 @@
   },
   "intro": {
     "how": {
-      "question": "Comment \u00e7a marche ?",
-      "step1Title": "Explorez les benchmarks sectoriels",
-      "step1Desc": "S\u00e9lectionnez votre secteur et gamme de prix pour voir instantan\u00e9ment les KPIs cl\u00e9s et standards du march\u00e9. Aucune inscription requise.",
-      "step2Title": "Comparez et obtenez des recommandations IA",
-      "step2Desc": "Entrez vos propres KPIs pour voir comment vous vous situez, puis g\u00e9n\u00e9rez des insights IA personnalis\u00e9s pour am\u00e9liorer votre strat\u00e9gie."
+      "question": "Comment ça marche ?",
+      "step1Title": "Sélectionnez votre secteur",
+      "step1Desc": "Choisissez parmi 12 secteurs d'activité pour obtenir un plan marketing relationnel adapté avec des programmes et scénarios pertinents.",
+      "step2Title": "Obtenez une personnalisation IA",
+      "step2Desc": "Entrez le domaine de votre entreprise pour recevoir un plan entièrement personnalisé avec des recommandations spécifiques."
     },
     "what": {
-      "question": "Qu'est-ce que je vais apprendre ?",
-      "answer1": "D\u00e9couvrez comment vos KPIs marketing <strong>se comparent aux leaders du secteur</strong> dans votre industrie et gamme de prix.",
-      "answer2": "Obtenez un feedback visuel instantan\u00e9 (vert/jaune/rouge) sur chaque m\u00e9trique, ainsi que des <strong>recommandations strat\u00e9giques IA</strong> adapt\u00e9es \u00e0 votre situation."
+      "question": "Qu'est-ce que je vais obtenir ?",
+      "answer1": "Une <strong>stratégie marketing relationnelle complète</strong> avec des programmes email, SMS et automation adaptés à votre secteur.",
+      "answer2": "Des <strong>scénarios concrets et séquences de messages</strong> prêts à être déployés avec la plateforme omnicanale Brevo."
     },
     "data": {
-      "question": "Ces donn\u00e9es sont-elles fiables ?",
-      "intro": "Nos benchmarks sont <strong>valid\u00e9s par des experts du secteur</strong> :",
-      "cartelis": "<strong>Cartelis</strong> \u2014 Conseil en CRM & Marketing Automation",
-      "epsilon": "<strong>Epsilon</strong> \u2014 Expertise en marketing data-driven",
-      "brevo": "<strong>Brevo Analytics</strong> \u2014 Insights agr\u00e9g\u00e9s de plus de 500K entreprises",
-      "note": "Les donn\u00e9es sont segment\u00e9es par secteur et gamme de prix pour des comparaisons pertinentes."
+      "question": "C'est généré par l'IA ?",
+      "intro": "Oui ! Nos plans sont <strong>générés par une IA avancée</strong> entraînée sur les meilleures pratiques marketing :",
+      "cartelis": "<strong>Cartelis</strong> — Expertise CRM & Marketing Automation",
+      "brevo": "<strong>Brevo</strong> — Insights de plus de 500K entreprises dans le monde",
+      "note": "Les plans sont personnalisés selon votre secteur et l'analyse de votre entreprise."
     }
   },
   "sidebar": {

@@ -11,23 +11,22 @@
   "intro": {
     "how": {
       "question": "Wie funktioniert es?",
-      "step1Title": "Branchen-Benchmarks erkunden",
-      "step1Desc": "Wählen Sie Ihre Branche und Ihr Preissegment, um sofort relevante KPIs und Marktstandards zu sehen. Keine Registrierung erforderlich.",
-      "step2Title": "Vergleichen & KI-Empfehlungen erhalten",
-      "step2Desc": "Geben Sie Ihre eigenen KPIs ein, um Ihre Performance zu bewerten, und erhalten Sie personalisierte KI-Insights zur Optimierung Ihrer Strategie."
+      "step1Title": "Wählen Sie Ihre Branche",
+      "step1Desc": "Wählen Sie aus 12 Branchen, um einen maßgeschneiderten Marketing-Beziehungsplan mit relevanten Programmen und Szenarien zu erhalten.",
+      "step2Title": "KI-gestützte Personalisierung",
+      "step2Desc": "Geben Sie Ihre Unternehmens-Domain ein, um einen vollständig personalisierten Plan mit spezifischen Empfehlungen zu erhalten."
     },
     "what": {
-      "question": "Was erfahre ich?",
-      "answer1": "Erfahren Sie, wie Ihre Marketing-KPIs <strong>im Vergleich zu Branchenführern</strong> in Ihrem Sektor und Preissegment abschneiden.",
-      "answer2": "Erhalten Sie sofortiges visuelles Feedback (grün/gelb/rot) zu jeder Kennzahl sowie <strong>KI-gestützte strategische Empfehlungen</strong>, die auf Ihre spezifische Situation zugeschnitten sind."
+      "question": "Was erhalte ich?",
+      "answer1": "Eine vollständige <strong>Marketing-Beziehungsstrategie</strong> mit E-Mail-, SMS- und Automation-Programmen für Ihre Branche.",
+      "answer2": "Konkrete <strong>Szenarien und Nachrichtensequenzen</strong>, die sofort mit Brevos Omnichannel-Plattform umgesetzt werden können."
     },
     "data": {
-      "question": "Sind die Daten verlässlich?",
-      "intro": "Unsere Benchmarks werden <strong>von Branchenexperten kuratiert und validiert</strong>:",
-      "cartelis": "<strong>Cartelis</strong> — CRM & Marketing Automation Beratung",
-      "epsilon": "<strong>Epsilon</strong> — Datengetriebene Marketing-Expertise",
-      "brevo": "<strong>Brevo Analytics</strong> — Aggregierte Insights von über 500.000 Unternehmen",
-      "note": "Die Daten sind nach Branche und Preissegment segmentiert für relevante Vergleiche."
+      "question": "Wird das von KI erstellt?",
+      "intro": "Ja! Unsere Pläne werden <strong>von fortschrittlicher KI generiert</strong>, die auf Marketing-Best-Practices trainiert wurde:",
+      "cartelis": "<strong>Cartelis</strong> — CRM & Marketing Automation Expertise",
+      "brevo": "<strong>Brevo</strong> — Insights von über 500.000 Unternehmen weltweit",
+      "note": "Pläne werden basierend auf Ihrer Branche und Unternehmensanalyse angepasst."
     }
   },
   "sidebar": {

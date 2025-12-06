@@ -10,24 +10,23 @@
   },
   "intro": {
     "how": {
-      "question": "\u00bfC\u00f3mo funciona?",
-      "step1Title": "Explora los benchmarks del sector",
-      "step1Desc": "Selecciona tu industria y rango de precios para ver instant\u00e1neamente los KPIs clave y est\u00e1ndares del mercado. No requiere registro.",
-      "step2Title": "Compara y obtiene recomendaciones IA",
-      "step2Desc": "Introduce tus propios KPIs para ver c\u00f3mo te posicionas, luego genera insights IA personalizados para mejorar tu estrategia."
+      "question": "¿Cómo funciona?",
+      "step1Title": "Selecciona tu industria",
+      "step1Desc": "Elige entre 12 industrias para obtener un plan de marketing relacional adaptado con programas y escenarios relevantes.",
+      "step2Title": "Personalización con IA",
+      "step2Desc": "Introduce el dominio de tu empresa para recibir un plan completamente personalizado con recomendaciones específicas."
     },
     "what": {
-      "question": "\u00bfQu\u00e9 voy a aprender?",
-      "answer1": "Descubre c\u00f3mo tus KPIs de marketing <strong>se comparan con los l\u00edderes del sector</strong> en tu industria y rango de precios.",
-      "answer2": "Obt\u00e9n feedback visual instant\u00e1neo (verde/amarillo/rojo) en cada m\u00e9trica, adem\u00e1s de <strong>recomendaciones estrat\u00e9gicas potenciadas por IA</strong> adaptadas a tu situaci\u00f3n espec\u00edfica."
+      "question": "¿Qué voy a obtener?",
+      "answer1": "Una <strong>estrategia de marketing relacional completa</strong> con programas de email, SMS y automatización adaptados a tu sector.",
+      "answer2": "<strong>Escenarios concretos y secuencias de mensajes</strong> listos para implementar con la plataforma omnicanal de Brevo."
     },
     "data": {
-      "question": "\u00bfPuedo confiar en estos datos?",
-      "intro": "Nuestros benchmarks est\u00e1n <strong>curados y validados por expertos del sector</strong>:",
-      "cartelis": "<strong>Cartelis</strong> \u2014 Consultor\u00eda de CRM y Marketing Automation",
-      "epsilon": "<strong>Epsilon</strong> \u2014 Experiencia en marketing basado en datos",
-      "brevo": "<strong>Brevo Analytics</strong> \u2014 Insights agregados de m\u00e1s de 500K empresas",
-      "note": "Los datos est\u00e1n segmentados por industria y rango de precios para garantizar comparaciones relevantes."
+      "question": "¿Está generado por IA?",
+      "intro": "¡Sí! Nuestros planes son <strong>generados por IA avanzada</strong> entrenada en las mejores prácticas de marketing:",
+      "cartelis": "<strong>Cartelis</strong> — Experiencia en CRM y Marketing Automation",
+      "brevo": "<strong>Brevo</strong> — Insights de más de 500K empresas en todo el mundo",
+      "note": "Los planes se personalizan según tu industria y el análisis de tu empresa."
     }
   },
   "sidebar": {

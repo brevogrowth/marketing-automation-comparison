@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Header } from '@/components/Header';
+import { IntroAccordion } from '@/components/IntroAccordion';
 import { MarketingPlanSidebar } from '@/components/MarketingPlanSidebar';
 import { Contributors } from '@/components/Contributors';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -313,44 +314,8 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Intro Block */}
-        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden mb-8 p-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-brevo-light rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-brevo-green text-xl font-bold">1</span>
-              </div>
-              <h3 className="font-medium text-gray-900 mb-1">
-                {t.marketingPlan?.step1Title || 'Select Your Industry'}
-              </h3>
-              <p className="text-sm text-gray-500">
-                {t.marketingPlan?.step1Desc || 'Choose from 12 industries to get relevant marketing strategies'}
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-brevo-light rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-brevo-green text-xl font-bold">2</span>
-              </div>
-              <h3 className="font-medium text-gray-900 mb-1">
-                {t.marketingPlan?.step2Title || 'View Template or Personalize'}
-              </h3>
-              <p className="text-sm text-gray-500">
-                {t.marketingPlan?.step2Desc || 'Browse the template plan or enter your domain for AI personalization'}
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-brevo-light rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-brevo-green text-xl font-bold">3</span>
-              </div>
-              <h3 className="font-medium text-gray-900 mb-1">
-                {t.marketingPlan?.step3Title || 'Implement with Brevo'}
-              </h3>
-              <p className="text-sm text-gray-500">
-                {t.marketingPlan?.step3Desc || 'Execute your plan using Brevo\'s omnichannel marketing platform'}
-              </p>
-            </div>
-          </div>
-        </div>
+        {/* Intro Accordion */}
+        <IntroAccordion />
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
