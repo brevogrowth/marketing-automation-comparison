@@ -221,7 +221,7 @@ export default function Home() {
 
   // Poll for AI generation results
   const pollForResults = async (jobId: string) => {
-    const MAX_POLLS = 60; // 5 minutes max
+    const MAX_POLLS = 120; // 10 minutes max
     const POLL_INTERVAL = 5000; // 5 seconds
 
     for (let i = 0; i < MAX_POLLS; i++) {
