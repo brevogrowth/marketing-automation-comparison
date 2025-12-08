@@ -771,6 +771,10 @@
     "ctaSubtext": "Consultation gratuite",
     "generatingPlanFor": "Génération du plan pour",
     "loadingBannerHint": "Vous pouvez continuer à naviguer pendant que nous analysons votre entreprise...",
-    "almostReady": "Presque prêt..."
+    "almostReady": "Presque prêt...",
+    "noPlanFound": "Aucun plan marketing trouvé pour cette entreprise",
+    "errorLoadingPlan": "Échec du chargement du plan marketing",
+    "planFor": "Plan Marketing pour",
+    "savedPlan": "Plan personnalisé généré par IA"
   }
 }

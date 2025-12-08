@@ -771,6 +771,10 @@
     "ctaSubtext": "Kostenlose Beratung",
     "generatingPlanFor": "Plan wird erstellt für",
     "loadingBannerHint": "Sie können weiter stöbern, während wir Ihr Unternehmen analysieren...",
-    "almostReady": "Fast fertig..."
+    "almostReady": "Fast fertig...",
+    "noPlanFound": "Kein Marketingplan für dieses Unternehmen gefunden",
+    "errorLoadingPlan": "Fehler beim Laden des Marketingplans",
+    "planFor": "Marketingplan für",
+    "savedPlan": "KI-generierter personalisierter Plan"
   }
 }

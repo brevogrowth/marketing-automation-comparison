@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import React, { useState, useEffect } from 'react';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { IntroAccordion } from '@/components/IntroAccordion';
 import { MarketingPlanSidebar } from '@/components/MarketingPlanSidebar';
@@ -28,90 +28,97 @@ const VALID_INDUSTRIES: Industry[] = [
   'SaaS', 'Services', 'Manufacturing', 'Wholesale'
 ];
 
-export default function Home() {
-  const searchParams = useSearchParams();
+export default function DomainPlanPage() {
+  const params = useParams();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { t, language } = useLanguage();
   const { requireLead, isUnlocked } = useLeadGate();
 
+  // Extract domain from URL params
+  const urlDomain = params.domain as string;
+
   // State
   const [industry, setIndustry] = useState<Industry>('Fashion');
-  const [domain, setDomain] = useState('');
+  const [domain, setDomain] = useState(urlDomain || '');
   const [domainError, setDomainError] = useState<string>();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [errorDetails, setErrorDetails] = useState<Record<string, unknown> | null>(null);
   const [plan, setPlan] = useState<MarketingPlan | null>(null);
   const [planSource, setPlanSource] = useState<'static' | 'db' | 'ai' | null>(null);
   const [conversationId, setConversationId] = useState<string | null>(null);
-  const [pollCount, setPollCount] = useState(0);
   const [progress, setProgress] = useState(5);
   const [elapsedTime, setElapsedTime] = useState(0);
 
-  const planRef = useRef<HTMLDivElement>(null);
-  const startTimeRef = useRef<number | null>(null);
+  const startTimeRef = React.useRef<number | null>(null);
 
-  // Helper to normalize domain for URL
-  const normalizeForUrl = (d: string): string => {
-    return d.trim().replace(/^https?:\/\//, '').replace(/\/.*$/, '').toLowerCase();
-  };
+  // Load plan from DB on mount
+  useEffect(() => {
+    if (urlDomain) {
+      loadPlanFromDB(urlDomain);
+    }
+  }, [urlDomain, language]);
 
-  // Read URL parameters on mount
+  // Read URL parameters
   useEffect(() => {
     const industryParam = searchParams.get('industry');
-    const domainParam = searchParams.get('domain');
-    const langParam = searchParams.get('lang');
-
     if (industryParam && VALID_INDUSTRIES.includes(industryParam as Industry)) {
       setIndustry(industryParam as Industry);
     }
-
-    if (domainParam) {
-      setDomain(domainParam);
-      // If domain is in URL, check for existing plan
-      lookupExistingPlan(domainParam, industryParam as Industry || industry);
-    } else {
-      // Load static plan for default industry
-      loadStaticPlan(industryParam as Industry || industry);
-    }
   }, [searchParams]);
 
-  // Load static plan for an industry
-  const loadStaticPlan = useCallback((ind: Industry) => {
-    const staticPlan = getStaticPlan(ind, language);
-    setPlan(staticPlan);
-    setPlanSource('static');
+  // Load plan from database
+  const loadPlanFromDB = async (domainToLoad: string) => {
+    setIsLoading(true);
     setError(null);
-  }, [language]);
 
-  // Lookup existing personalized plan from database
-  const lookupExistingPlan = async (domainToLookup: string, ind: Industry) => {
     try {
       const response = await fetch(
-        `/api/marketing-plan/lookup?domain=${encodeURIComponent(domainToLookup)}&language=${language}`
+        `/api/marketing-plan/lookup?domain=${encodeURIComponent(domainToLoad)}&language=${language}`
       );
       const data = await response.json();
 
       if (data.found && data.plan) {
         setPlan(data.plan);
         setPlanSource('db');
-        setError(null);
+        setDomain(domainToLoad);
+
+        // Try to infer industry from plan
+        if (data.plan.company_summary?.industry) {
+          const planIndustry = data.plan.company_summary.industry as Industry;
+          if (VALID_INDUSTRIES.includes(planIndustry)) {
+            setIndustry(planIndustry);
+          }
+        }
       } else {
-        // No existing plan, show static
-        loadStaticPlan(ind);
+        // Plan not found - show option to generate
+        setError(t.marketingPlan?.noPlanFound || `No marketing plan found for ${domainToLoad}`);
+        setDomain(domainToLoad);
+        // Load static plan as fallback
+        loadStaticPlan(industry);
       }
     } catch (err) {
-      console.error('Error looking up plan:', err);
-      loadStaticPlan(ind);
+      console.error('Error loading plan:', err);
+      setError(t.marketingPlan?.errorLoadingPlan || 'Failed to load marketing plan');
+      loadStaticPlan(industry);
+    } finally {
+      setIsLoading(false);
     }
+  };
+
+  // Load static plan for an industry
+  const loadStaticPlan = (ind: Industry) => {
+    const staticPlan = getStaticPlan(ind, language);
+    setPlan(staticPlan);
+    setPlanSource('static');
   };
 
   // Handle industry change
   const handleIndustryChange = (newIndustry: Industry) => {
     setIndustry(newIndustry);
-
-    // If no domain, load static plan for new industry
-    if (!domain.trim()) {
+    if (planSource === 'static') {
       loadStaticPlan(newIndustry);
     }
   };
@@ -125,7 +132,6 @@ export default function Home() {
       return false;
     }
 
-    // Strip protocol and path
     const stripped = trimmed.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
 
     if (!stripped.includes('.')) {
@@ -138,7 +144,6 @@ export default function Home() {
       return false;
     }
 
-    // Check for placeholder domains
     const placeholders = ['example.com', 'test.com', 'domain.com', 'yourcompany.com'];
     if (placeholders.includes(stripped.toLowerCase())) {
       setDomainError(t.marketingPlan?.errorPlaceholderDomain || 'Please enter your actual company domain');
@@ -149,13 +154,12 @@ export default function Home() {
     return true;
   };
 
-  // Generate personalized plan (requires email)
+  // Generate personalized plan
   const handleGeneratePersonalizedPlan = () => {
     if (!validateDomain(domain)) {
       return;
     }
 
-    // Require lead capture
     requireLead({
       reason: 'generate_marketing_plan',
       context: { industry, domain, language },
@@ -167,25 +171,17 @@ export default function Home() {
 
   // Core personalized plan generation
   const generatePersonalizedPlan = async () => {
-    setIsLoading(true);
+    setIsGenerating(true);
     setError(null);
     setErrorDetails(null);
-    // Keep the current plan visible while loading (non-blocking UX)
-    // Only clear plan if we don't have one
-    if (!plan) {
-      loadStaticPlan(industry);
-    }
     setConversationId(null);
-    setPollCount(0);
     setProgress(5);
     setElapsedTime(0);
     startTimeRef.current = Date.now();
 
-    // Scroll to top to see the loading banner
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     try {
-      // Step 1: Create the plan generation job
       const createResponse = await fetch('/api/marketing-plan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -204,21 +200,17 @@ export default function Home() {
 
       const createData = await createResponse.json();
 
-      // If plan was found in DB or returned as static
       if (createData.status === 'complete') {
         setPlan(createData.plan);
         setPlanSource(createData.source);
-        setIsLoading(false);
+        setIsGenerating(false);
 
-        // Redirect to shareable URL if it's a personalized plan
-        if (createData.source === 'db' || createData.source === 'ai') {
-          const normalizedDomain = normalizeForUrl(domain);
-          router.push(`/${normalizedDomain}`);
-        }
+        // Navigate to the domain URL
+        const normalizedDomain = domain.trim().replace(/^https?:\/\//, '').replace(/\/.*$/, '').toLowerCase();
+        router.push(`/${normalizedDomain}`);
         return;
       }
 
-      // AI generation started - poll for results
       if (createData.status === 'created' && createData.conversationId) {
         setConversationId(createData.conversationId);
         await pollForResults(createData.conversationId);
@@ -229,19 +221,18 @@ export default function Home() {
     } catch (err) {
       console.error('Error generating plan:', err);
       setError(err instanceof Error ? err.message : 'An unexpected error occurred');
-      setIsLoading(false);
+      setIsGenerating(false);
     }
   };
 
   // Poll for AI generation results
   const pollForResults = async (jobId: string) => {
-    const MAX_POLLS = 120; // 10 minutes max
-    const POLL_INTERVAL = 5000; // 5 seconds
+    const MAX_POLLS = 120;
+    const POLL_INTERVAL = 5000;
 
     for (let i = 0; i < MAX_POLLS; i++) {
       await new Promise(resolve => setTimeout(resolve, POLL_INTERVAL));
 
-      setPollCount(i + 1);
       setProgress(Math.min(90, 5 + ((i + 1) / MAX_POLLS) * 85));
       setElapsedTime(Math.floor((Date.now() - (startTimeRef.current || Date.now())) / 1000));
 
@@ -252,17 +243,16 @@ export default function Home() {
         if (pollData.status === 'complete') {
           setPlan(pollData.plan);
           setPlanSource('ai');
-          setIsLoading(false);
+          setIsGenerating(false);
           setProgress(100);
 
-          // Redirect to shareable URL
-          const normalizedDomain = normalizeForUrl(domain);
+          // Navigate to the domain URL
+          const normalizedDomain = domain.trim().replace(/^https?:\/\//, '').replace(/\/.*$/, '').toLowerCase();
           router.push(`/${normalizedDomain}`);
           return;
         }
 
         if (pollData.status === 'error') {
-          // Capture debug info for display
           if (pollData.debug) {
             console.error('API Debug info:', JSON.stringify(pollData.debug, null, 2));
             setErrorDetails(pollData.debug);
@@ -270,28 +260,32 @@ export default function Home() {
           throw new Error(pollData.error || 'Plan generation failed');
         }
 
-        // Still processing - continue polling
       } catch (pollError) {
         console.error('Poll error:', pollError);
         throw pollError;
       }
     }
 
-    // Timeout
     throw new Error('Plan generation timed out. Please try again.');
   };
 
   // Handle cancel during loading
   const handleCancel = () => {
-    setIsLoading(false);
+    setIsGenerating(false);
     setConversationId(null);
-    loadStaticPlan(industry);
+    if (urlDomain) {
+      loadPlanFromDB(urlDomain);
+    } else {
+      loadStaticPlan(industry);
+    }
   };
 
   // Handle retry after error
   const handleRetry = () => {
     if (domain.trim()) {
       generatePersonalizedPlan();
+    } else if (urlDomain) {
+      loadPlanFromDB(urlDomain);
     } else {
       loadStaticPlan(industry);
     }
@@ -300,8 +294,7 @@ export default function Home() {
   // Handle try different domain
   const handleTryDifferentDomain = () => {
     setError(null);
-    setDomain('');
-    loadStaticPlan(industry);
+    router.push('/');
   };
 
   // Get programs as array
@@ -311,6 +304,29 @@ export default function Home() {
       : Object.values(plan.programs_list))
     : [];
 
+  // Show loading skeleton while fetching from DB
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
+        <Header />
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="animate-pulse">
+            <div className="h-10 bg-gray-200 rounded w-2/3 mx-auto mb-8"></div>
+            <div className="flex gap-8">
+              <div className="w-1/4">
+                <div className="h-64 bg-gray-200 rounded"></div>
+              </div>
+              <div className="w-3/4 space-y-4">
+                <div className="h-48 bg-gray-200 rounded"></div>
+                <div className="h-96 bg-gray-200 rounded"></div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
       <Header />
@@ -319,12 +335,19 @@ export default function Home() {
         {/* Header Section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900">
-            {t.marketingPlan?.pageTitle || 'Marketing Relationship Plan Generator'}
+            {plan?.company_summary?.name
+              ? `${t.marketingPlan?.planFor || 'Marketing Plan for'} ${plan.company_summary.name}`
+              : t.marketingPlan?.pageTitle || 'Marketing Relationship Plan Generator'}
           </h1>
+          {planSource === 'db' && (
+            <p className="text-gray-500 mt-2">
+              {t.marketingPlan?.savedPlan || 'Personalized AI-generated plan'}
+            </p>
+          )}
         </div>
 
-        {/* Loading Banner - Non-blocking, allows user to continue browsing */}
-        {isLoading && (
+        {/* Loading Banner */}
+        {isGenerating && (
           <LoadingBanner
             companyDomain={domain}
             progress={progress}
@@ -345,16 +368,16 @@ export default function Home() {
               domain={domain}
               setDomain={setDomain}
               onGeneratePersonalizedPlan={handleGeneratePersonalizedPlan}
-              isLoading={isLoading}
+              isLoading={isGenerating}
               isUnlocked={isUnlocked}
               domainError={domainError}
             />
           </div>
 
-          {/* Main Content - Plan Display */}
-          <div className="lg:w-3/4" ref={planRef}>
+          {/* Main Content */}
+          <div className="lg:w-3/4">
             {/* Error State */}
-            {error && !isLoading && (
+            {error && !isGenerating && (
               <ErrorState
                 message={error}
                 details={errorDetails}
@@ -364,7 +387,7 @@ export default function Home() {
               />
             )}
 
-            {/* Plan Display - Always visible, even during loading for non-blocking UX */}
+            {/* Plan Display */}
             {plan && !error && (
               <div className="space-y-6">
                 {/* CTA Inline (for personalized plans) */}
@@ -372,7 +395,7 @@ export default function Home() {
                   <BrevoCallToAction variant="inline" />
                 )}
 
-                {/* Company Summary - Only shown for personalized plans */}
+                {/* Company Summary */}
                 {planSource !== 'static' && (
                   <CompanySummary summary={plan.company_summary} />
                 )}
@@ -383,7 +406,7 @@ export default function Home() {
                 </h2>
                 <MarketingPrograms programs={plan.programs_list} />
 
-                {/* Program Details (expandable) */}
+                {/* Program Details */}
                 {programsArray.length > 0 && (
                   <div className="space-y-4">
                     <h2 className="text-lg font-bold text-gray-900">
@@ -447,8 +470,8 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Sticky CTA Footer (for static plans, hidden during loading) */}
-      {plan && planSource === 'static' && !isLoading && !error && (
+      {/* Sticky CTA Footer */}
+      {plan && planSource === 'static' && !isGenerating && !error && (
         <BrevoCallToAction variant="sticky" />
       )}
     </div>

@@ -1,12 +1,20 @@
 'use client';
 
 import { useState } from 'react';
-import { AlertTriangle, RotateCw, ChevronDown, ChevronUp } from 'lucide-react';
+import { AlertTriangle, RotateCw, ChevronDown, ChevronUp, Bug, FileCode, Database, AlertCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+
+interface DebugInfo {
+  errorMessage?: string;
+  resultType?: string;
+  dataKeys?: string[];
+  resultPreview?: string;
+  [key: string]: unknown;
+}
 
 interface ErrorStateProps {
   message?: string;
-  details?: string;
+  details?: DebugInfo | string | null;
   onRetry: () => void;
   onTryDifferentDomain?: () => void;
   domainName?: string;
@@ -95,9 +103,12 @@ export function ErrorState({
         <div className="mb-6">
           <button
             onClick={() => setShowDetails(!showDetails)}
-            className="w-full flex items-center justify-between px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg transition-colors"
+            className="w-full flex items-center justify-between px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg transition-colors border border-gray-200 rounded-lg"
           >
-            <span>{t.marketingPlan?.technicalDetails || 'Technical details'}</span>
+            <span className="flex items-center gap-2">
+              <Bug className="h-4 w-4" />
+              {t.marketingPlan?.technicalDetails || 'Technical details'}
+            </span>
             {showDetails ? (
               <ChevronUp className="h-4 w-4" />
             ) : (
@@ -105,10 +116,83 @@ export function ErrorState({
             )}
           </button>
           {showDetails && (
-            <div className="mt-2 p-3 bg-gray-50 rounded-lg border border-gray-200">
-              <pre className="text-xs text-gray-600 overflow-auto max-h-40 whitespace-pre-wrap font-mono">
-                {details}
-              </pre>
+            <div className="mt-2 space-y-3">
+              {/* String details (legacy) */}
+              {typeof details === 'string' && (
+                <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                  <pre className="text-xs text-gray-600 overflow-auto max-h-40 whitespace-pre-wrap font-mono">
+                    {details}
+                  </pre>
+                </div>
+              )}
+
+              {/* Structured debug info */}
+              {typeof details === 'object' && details !== null && (
+                <>
+                  {/* Error Message */}
+                  {details.errorMessage && (
+                    <div className="p-3 bg-red-50 rounded-lg border border-red-200">
+                      <div className="flex items-center gap-2 mb-1">
+                        <AlertCircle className="h-4 w-4 text-red-500" />
+                        <span className="text-xs font-semibold text-red-700">Error Message</span>
+                      </div>
+                      <pre className="text-xs text-red-600 overflow-auto whitespace-pre-wrap font-mono">
+                        {details.errorMessage}
+                      </pre>
+                    </div>
+                  )}
+
+                  {/* Result Type & Keys */}
+                  {(details.resultType || details.dataKeys) && (
+                    <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
+                      <div className="flex items-center gap-2 mb-1">
+                        <Database className="h-4 w-4 text-blue-500" />
+                        <span className="text-xs font-semibold text-blue-700">Response Structure</span>
+                      </div>
+                      <div className="text-xs text-blue-600 space-y-1">
+                        {details.resultType && (
+                          <p><span className="font-medium">Type:</span> {details.resultType}</p>
+                        )}
+                        {details.dataKeys && details.dataKeys.length > 0 && (
+                          <p><span className="font-medium">Keys:</span> {details.dataKeys.join(', ')}</p>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Raw Response Preview */}
+                  {details.resultPreview && (
+                    <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                      <div className="flex items-center gap-2 mb-1">
+                        <FileCode className="h-4 w-4 text-gray-500" />
+                        <span className="text-xs font-semibold text-gray-700">Raw Response Preview</span>
+                      </div>
+                      <pre className="text-xs text-gray-600 overflow-auto max-h-60 whitespace-pre-wrap font-mono bg-white p-2 rounded border">
+                        {details.resultPreview}
+                      </pre>
+                    </div>
+                  )}
+
+                  {/* Any additional keys */}
+                  {Object.keys(details).filter(k => !['errorMessage', 'resultType', 'dataKeys', 'resultPreview'].includes(k)).length > 0 && (
+                    <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                      <div className="flex items-center gap-2 mb-1">
+                        <Bug className="h-4 w-4 text-gray-500" />
+                        <span className="text-xs font-semibold text-gray-700">Additional Info</span>
+                      </div>
+                      <pre className="text-xs text-gray-600 overflow-auto max-h-40 whitespace-pre-wrap font-mono">
+                        {JSON.stringify(
+                          Object.fromEntries(
+                            Object.entries(details).filter(([k]) => !['errorMessage', 'resultType', 'dataKeys', 'resultPreview'].includes(k))
+                          ),
+                          null,
+                          2
+                        )}
+                      </pre>
+                    </div>
+                  )}
+                </>
+              )}
             </div>
           )}
         </div>

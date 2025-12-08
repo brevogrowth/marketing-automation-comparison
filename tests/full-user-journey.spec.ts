@@ -366,13 +366,17 @@ test.describe('Custom AI Analysis', () => {
         await expect(generateButton).toBeVisible();
         await generateButton.click();
 
-        // Wait for loading state to appear
-        const loadingIndicator = page.getByText(/Analyzing|Analysing|Analyse|Generando/i);
-        await expect(loadingIndicator.first()).toBeVisible({ timeout: 10000 });
+        // Wait for loading state to appear - LoadingBanner shows "Generating plan for {domain}"
+        const loadingBanner = page.locator('[class*="animate-pulse"]').filter({
+            hasText: /Generating|Générer|Generieren|Generar|brevo\.com/i
+        }).first();
+        await expect(loadingBanner).toBeVisible({ timeout: 15000 });
+        console.log('Loading banner visible - AI generation started');
 
         // Wait for the analysis to complete (up to 3 minutes)
-        // The loading indicator should disappear and be replaced with results
-        await expect(loadingIndicator.first()).not.toBeVisible({ timeout: 180000 });
+        // Either the banner disappears OR Company Summary appears
+        await expect(page.getByText(/Company Summary|Résumé/i).first()).toBeVisible({ timeout: 180000 });
+        console.log('Company Summary visible - AI generation complete');
 
         // Verify the personalized plan is displayed
         // 1. Check for Personalized badge (not Template)

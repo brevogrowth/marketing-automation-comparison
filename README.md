@@ -2,9 +2,9 @@
 
 A strategic marketing asset for Brevo's mid-market prospecting. This interactive tool enables B2C retailers and B2B companies to generate personalized marketing relationship plans powered by AI.
 
-**Live Demo:** [brevo-kpi-benchmark.netlify.app](https://brevo-kpi-benchmark.netlify.app)
+**Live Demo:** [brevo-marketing-relationship-plan.netlify.app](https://brevo-marketing-relationship-plan.netlify.app)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/brevo-kpi-benchmark/deploy-status)](https://app.netlify.com/sites/brevo-kpi-benchmark/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/brevo-marketing-relationship-plan/deploy-status)](https://app.netlify.com/sites/brevo-marketing-relationship-plan/deploys)
 
 ---
 
