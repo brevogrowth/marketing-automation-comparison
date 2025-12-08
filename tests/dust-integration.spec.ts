@@ -195,7 +195,7 @@ test('should show loading state when generating from main page @ai', async ({ pa
 });
 
 test('should show error state for invalid domain @ai', async ({ page }) => {
-    test.setTimeout(60000); // 1 minute timeout
+    test.setTimeout(120000); // 2 minutes timeout - AI might take a while to fail
 
     // 1. Navigate and set up auth
     await page.goto('/');
@@ -214,6 +214,7 @@ test('should show error state for invalid domain @ai', async ({ page }) => {
     const domainInput = page.locator('input[placeholder*="company"], input[placeholder*=".com"]');
     await expect(domainInput).toBeVisible({ timeout: 5000 });
     await domainInput.fill('not-a-valid-domain-xyz-123.com');
+    console.log('[Test] Domain filled: not-a-valid-domain-xyz-123.com');
 
     // 4. Wait a moment for validation
     await page.waitForTimeout(500);
@@ -223,12 +224,31 @@ test('should show error state for invalid domain @ai', async ({ page }) => {
 
     if (await generateButton.isEnabled()) {
         await generateButton.click();
+        console.log('[Test] Generate button clicked');
 
-        // Wait for either error state or loading state
-        const errorOrLoading = page.locator('[class*="Error"], [class*="Loading"], [class*="error"]').first();
-        await expect(errorOrLoading).toBeVisible({ timeout: 30000 });
+        // Wait for either:
+        // A) Loading state (AI generation starts)
+        // B) Error state (AI fails quickly)
+        await Promise.race([
+            page.getByRole('heading', { name: /Generating plan for/i }).waitFor({ timeout: 60000 }),
+            page.getByRole('heading', { name: /Error/i }).waitFor({ timeout: 60000 })
+        ]).catch(() => {
+            // Continue to check what state we're in
+        });
+
+        const hasLoadingBanner = await page.getByRole('heading', { name: /Generating plan for/i }).isVisible().catch(() => false);
+        const hasError = await page.getByRole('heading', { name: /Error/i }).isVisible().catch(() => false);
+
+        console.log('[Test] State after clicking generate:', {
+            hasLoadingBanner,
+            hasError
+        });
+
+        // Either loading started or error appeared - both are valid outcomes
+        expect(hasLoadingBanner || hasError).toBe(true);
     } else {
         // Button disabled is also valid behavior for invalid input
+        console.log('[Test] Button was disabled');
         expect(await generateButton.isDisabled()).toBe(true);
     }
 });
@@ -253,6 +273,7 @@ test('should display detailed error info in toggle when AI parsing fails @ai', a
     const domainInput = page.locator('input[placeholder*="company"], input[placeholder*=".com"]');
     await expect(domainInput).toBeVisible({ timeout: 5000 });
     await domainInput.fill('this-domain-does-not-exist-for-ai-test.xyz');
+    console.log('[Test] Domain filled: this-domain-does-not-exist-for-ai-test.xyz');
 
     // 4. Generate plan
     await page.waitForTimeout(500);
@@ -260,25 +281,44 @@ test('should display detailed error info in toggle when AI parsing fails @ai', a
 
     if (await generateButton.isEnabled()) {
         await generateButton.click();
+        console.log('[Test] Generate button clicked');
 
-        // Wait for either success or error
-        try {
-            // Try to find error state with technical details toggle
-            const errorState = page.locator('[class*="ErrorState"], [class*="error"]').first();
-            await expect(errorState).toBeVisible({ timeout: 90000 });
+        // Wait for either success or error - using heading role selectors
+        await Promise.race([
+            page.getByRole('heading', { name: /Generating plan for/i }).waitFor({ timeout: 90000 }),
+            page.getByRole('heading', { name: /Error/i }).waitFor({ timeout: 90000 }),
+            page.getByRole('heading', { name: /Company Summary/i }).waitFor({ timeout: 90000 })
+        ]).catch(() => {
+            // Continue to check what state we're in
+        });
 
-            // If error appeared, check for technical details button
+        const hasLoadingBanner = await page.getByRole('heading', { name: /Generating plan for/i }).isVisible().catch(() => false);
+        const hasError = await page.getByRole('heading', { name: /Error/i }).isVisible().catch(() => false);
+        const hasSuccess = await page.getByRole('heading', { name: /Company Summary/i }).isVisible().catch(() => false);
+
+        console.log('[Test] State after clicking generate:', {
+            hasLoadingBanner,
+            hasError,
+            hasSuccess
+        });
+
+        // If error appeared, check for technical details button
+        if (hasError) {
             const technicalDetailsButton = page.getByRole('button', { name: /Technical|Technique|Technisch|Técnico/i });
-            if (await technicalDetailsButton.isVisible({ timeout: 5000 })) {
+            if (await technicalDetailsButton.isVisible({ timeout: 5000 }).catch(() => false)) {
                 await technicalDetailsButton.click();
+                console.log('[Test] Technical details button clicked');
 
                 // Verify detailed error info is shown
-                const debugInfo = page.locator('[class*="debug"], pre');
+                const debugInfo = page.locator('pre');
                 await expect(debugInfo.first()).toBeVisible({ timeout: 5000 });
+                console.log('[Test] Technical details panel visible');
             }
-        } catch {
-            // If no error, the plan might have been generated successfully
-            console.log('No error state - plan may have been generated successfully');
+        } else if (hasLoadingBanner || hasSuccess) {
+            console.log('[Test] No error state - AI generation started or succeeded');
         }
+
+        // Either loading started, error appeared, or success - all are valid outcomes
+        expect(hasLoadingBanner || hasError || hasSuccess).toBe(true);
     }
 });
