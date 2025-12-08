@@ -14,7 +14,7 @@ import { test, expect } from '@playwright/test';
 test.skip(!!process.env.CI, 'AI tests skipped in CI - requires AI Gateway credentials');
 
 test('should generate personalized marketing plan and redirect to shareable URL @ai', async ({ page }) => {
-    test.setTimeout(600000); // 10 minutes timeout for AI analysis (can take up to 5-6 minutes)
+    test.setTimeout(720000); // 12 minutes timeout for AI analysis (can take 5-10+ minutes)
 
     // 1. Navigate to main page and set localStorage to bypass lead capture
     await page.goto('/');
@@ -28,11 +28,13 @@ test('should generate personalized marketing plan and redirect to shareable URL 
 
     // 2. Wait for page to load
     await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
+    console.log('[Test] Page loaded');
 
     // 3. Find and fill the domain input
     const domainInput = page.locator('input[placeholder*="company"], input[placeholder*=".com"]');
     await expect(domainInput).toBeVisible({ timeout: 5000 });
     await domainInput.fill('brevo.com');
+    console.log('[Test] Domain filled: brevo.com');
 
     // 4. Wait a moment for validation
     await page.waitForTimeout(500);
@@ -41,22 +43,47 @@ test('should generate personalized marketing plan and redirect to shareable URL 
     const generateButton = page.getByRole('button', { name: /Generate|Générer|Generieren|Generar/i });
     await expect(generateButton).toBeEnabled({ timeout: 5000 });
     await generateButton.click();
+    console.log('[Test] Generate button clicked');
 
     // 6. Verify loading state appears - LoadingBanner shows "Generating plan for {domain}"
     const loadingText = page.getByText(/Generating.*plan.*for|Generating.*brevo|You can continue browsing/i).first();
     await expect(loadingText).toBeVisible({ timeout: 15000 });
-    console.log('Loading state detected');
+    console.log('[Test] Loading state detected - AI generation started');
 
     // 7. Wait for redirect to shareable URL (happens when AI completes)
-    // This is the key indicator that generation succeeded
-    await page.waitForURL(/\/brevo\.com/, { timeout: 540000 }); // 9 minutes for AI generation
-    const currentUrl = page.url();
-    expect(currentUrl).toMatch(/\/brevo\.com/);
-    console.log('Redirected to shareable URL:', currentUrl);
+    // Poll with progress logging every 30 seconds
+    const startTime = Date.now();
+    const maxWaitTime = 660000; // 11 minutes max wait
+
+    while (Date.now() - startTime < maxWaitTime) {
+        const currentUrl = page.url();
+
+        // Check if redirected to shareable URL
+        if (currentUrl.includes('/brevo.com')) {
+            const elapsed = Math.floor((Date.now() - startTime) / 1000);
+            console.log(`[Test] Redirected to shareable URL after ${elapsed}s:`, currentUrl);
+            break;
+        }
+
+        // Log progress every 30 seconds
+        const elapsed = Math.floor((Date.now() - startTime) / 1000);
+        if (elapsed % 30 === 0 && elapsed > 0) {
+            // Try to get progress from page
+            const progressText = await page.locator('text=/\\d+%/').first().textContent().catch(() => 'unknown');
+            console.log(`[Test] Still waiting... ${elapsed}s elapsed, progress: ${progressText}`);
+        }
+
+        await page.waitForTimeout(5000); // Check every 5 seconds
+    }
+
+    // Verify we actually redirected
+    const finalUrl = page.url();
+    expect(finalUrl).toMatch(/\/brevo\.com/);
+    console.log('[Test] Final URL verified:', finalUrl);
 
     // 8. Verify plan content is displayed - Company Summary indicates personalized plan
     await expect(page.getByText(/Company Summary|Résumé|Zusammenfassung|Resumen/i)).toBeVisible({ timeout: 30000 });
-    console.log('Company Summary visible - personalized plan loaded');
+    console.log('[Test] Company Summary visible - personalized plan loaded');
 
     // 9. Verify marketing programs section is visible
     await expect(page.getByText(/Relationship Programs Overview/i).first()).toBeVisible();
@@ -64,6 +91,7 @@ test('should generate personalized marketing plan and redirect to shareable URL 
     // 10. Verify Brevo CTA section appears
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await expect(page.getByText(/Ready to|Prêt à|Bereit|Listo/i)).toBeVisible({ timeout: 5000 });
+    console.log('[Test] Test completed successfully');
 });
 
 test('should load existing plan directly from shareable URL @ai', async ({ page }) => {
