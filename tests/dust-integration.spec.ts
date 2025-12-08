@@ -164,35 +164,28 @@ test('should show loading state when generating from main page @ai', async ({ pa
     // 6. Verify one of these happens:
     //    A) Quick redirect to shareable URL (if plan exists in DB)
     //    B) Loading state appears (if AI generation starts)
-    //    C) Plan content appears directly (if API returns cached immediately)
 
-    // Wait up to 30 seconds for either loading state or redirect
-    const startTime = Date.now();
-    let foundLoadingOrRedirect = false;
+    // Wait for either loading state OR redirect to shareable URL
+    await Promise.race([
+        // Wait for loading banner to appear
+        page.getByRole('heading', { name: /Generating plan for/i }).waitFor({ timeout: 30000 }),
+        // Or wait for redirect to shareable URL
+        page.waitForURL(/\/brevo\.com/, { timeout: 30000 })
+    ]).catch(() => {
+        // If neither happened, that's a failure
+    });
 
-    while (Date.now() - startTime < 30000) {
-        const currentUrl = page.url();
+    const currentUrl = page.url();
+    const hasLoadingBanner = await page.getByRole('heading', { name: /Generating plan for/i }).isVisible().catch(() => false);
 
-        // Check for redirect to shareable URL
-        if (currentUrl.includes('/brevo.com')) {
-            console.log('[Test] Quick redirect to shareable URL detected:', currentUrl);
-            foundLoadingOrRedirect = true;
-            break;
-        }
+    console.log('[Test] State after clicking generate:', {
+        url: currentUrl,
+        hasLoadingBanner,
+        redirectedToShareable: currentUrl.includes('/brevo.com')
+    });
 
-        // Check for loading state
-        const hasLoading = await page.getByText(/Generating.*plan|You can continue browsing/i).isVisible({ timeout: 1000 }).catch(() => false);
-        if (hasLoading) {
-            console.log('[Test] Loading state detected - AI generation started');
-            foundLoadingOrRedirect = true;
-            break;
-        }
-
-        await page.waitForTimeout(1000);
-    }
-
-    // Verify we detected either loading or redirect
-    expect(foundLoadingOrRedirect).toBe(true);
+    // Verify we're either showing loading or got redirected
+    expect(hasLoadingBanner || currentUrl.includes('/brevo.com')).toBe(true);
 
     // If we got redirected, verify the page loads correctly
     if (page.url().includes('/brevo.com')) {
