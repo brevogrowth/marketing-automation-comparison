@@ -235,35 +235,86 @@ export function parsePlanData(
     const extractJSON = (str: string): object | null => {
       // Remove markdown code blocks if present
       let cleaned = str.trim();
-      const jsonBlockMatch = cleaned.match(/```(?:json)?\s*([\s\S]*?)```/);
-      if (jsonBlockMatch) {
-        cleaned = jsonBlockMatch[1].trim();
-      }
 
-      // Try to find JSON object in the string
-      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        try {
-          return JSON.parse(jsonMatch[0]);
-        } catch {
-          console.error('[parsePlanData] Failed to parse extracted JSON');
+      // Try multiple patterns for markdown code blocks
+      // Pattern 1: ```json ... ``` (with closing)
+      const jsonBlockMatch = cleaned.match(/```(?:json)?\s*([\s\S]*?)```/);
+      if (jsonBlockMatch && jsonBlockMatch[1]) {
+        cleaned = jsonBlockMatch[1].trim();
+        console.log('[extractJSON] Extracted from markdown block');
+      } else {
+        // Pattern 2: ```json at start without closing (common AI response pattern)
+        const openBlockMatch = cleaned.match(/^```(?:json)?\s*\n?([\s\S]+)$/);
+        if (openBlockMatch && openBlockMatch[1]) {
+          cleaned = openBlockMatch[1].trim();
+          console.log('[extractJSON] Extracted from open markdown block');
         }
       }
 
-      // Try direct parse
+      // Try to find JSON object - use greedy match from first { to last }
+      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        try {
+          const parsed = JSON.parse(jsonMatch[0]);
+          console.log('[extractJSON] Successfully parsed JSON object');
+          return parsed;
+        } catch (e) {
+          console.error('[extractJSON] JSON.parse failed:', e instanceof Error ? e.message : 'Unknown error');
+          console.error('[extractJSON] JSON preview (first 500 chars):', jsonMatch[0].substring(0, 500));
+          console.error('[extractJSON] JSON preview (last 200 chars):', jsonMatch[0].substring(Math.max(0, jsonMatch[0].length - 200)));
+
+          // Try to repair common JSON issues
+          try {
+            // Sometimes AI responses have trailing content after JSON
+            let jsonStr = jsonMatch[0];
+
+            // Count braces to find the actual end of JSON
+            let braceCount = 0;
+            let jsonEnd = -1;
+            for (let i = 0; i < jsonStr.length; i++) {
+              if (jsonStr[i] === '{') braceCount++;
+              if (jsonStr[i] === '}') {
+                braceCount--;
+                if (braceCount === 0) {
+                  jsonEnd = i + 1;
+                  break;
+                }
+              }
+            }
+
+            if (jsonEnd > 0 && jsonEnd < jsonStr.length) {
+              jsonStr = jsonStr.substring(0, jsonEnd);
+              console.log('[extractJSON] Trimmed JSON to balanced braces');
+              const trimmedParsed = JSON.parse(jsonStr);
+              console.log('[extractJSON] Successfully parsed trimmed JSON');
+              return trimmedParsed;
+            }
+          } catch (repairError) {
+            console.error('[extractJSON] JSON repair failed:', repairError instanceof Error ? repairError.message : 'Unknown');
+          }
+        }
+      }
+
+      // Try direct parse as last resort
       try {
-        return JSON.parse(cleaned);
+        const directParsed = JSON.parse(cleaned);
+        console.log('[extractJSON] Direct parse succeeded');
+        return directParsed;
       } catch {
+        console.error('[extractJSON] All parsing attempts failed');
         return null;
       }
     };
 
     if (typeof responseData === 'string') {
       console.log('[parsePlanData] String content (first 500 chars):', responseData.substring(0, 500));
+      console.log('[parsePlanData] String length:', responseData.length);
       const parsed = extractJSON(responseData);
       if (parsed) {
         responseData = parsed;
-        console.log('[parsePlanData] Parsed string to object');
+        console.log('[parsePlanData] Parsed string to object with keys:', Object.keys(parsed));
+        console.log('[parsePlanData] Has company_summary:', 'company_summary' in parsed);
+        console.log('[parsePlanData] Has programs_list:', 'programs_list' in parsed);
       } else {
         console.error('[parsePlanData] Failed to parse string as JSON');
         throw new Error(`Invalid response: received string that is not valid JSON. First 200 chars: ${responseData.substring(0, 200)}`);
