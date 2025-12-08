@@ -1,96 +1,903 @@
 {
-  "introduction": "Ce plan marketing relationnel complet est conçu pour les marques de luxe et retailers haut de gamme souhaitant cultiver des relations exceptionnelles avec des clients exigeants grâce à un service personnalisé, une attention sur-mesure et une exclusivité significative. Dans l'industrie du luxe, le succès ne se mesure pas au volume de transactions mais à la profondeur des relations clients—chaque interaction est une opportunité de renforcer l'héritage de la marque, le savoir-faire artisanal et l'engagement vers l'excellence. Ce plan couvre l'ensemble du cycle de vie client, de la première découverte jusqu'au statut d'ambassadeur de marque, traitant chaque point de contact comme une expression des valeurs de la marque et un investissement dans des relations durables.",
+  "introduction": "Ce plan de relation marketing complet est conçu pour les marques de luxe et les détaillants haut de gamme cherchant à cultiver des relations exceptionnelles avec une clientèle exigeante grâce à un service personnalisé d'excellence et une exclusivité authentique. Dans l'industrie du luxe, le succès se mesure non par le volume de transactions mais par la profondeur des relations clients—chaque interaction est une opportunité de renforcer l'héritage de la marque, son savoir-faire et son engagement envers l'excellence. Ce plan couvre l'ensemble du cycle de vie client, de la découverte initiale au statut d'ambassadeur de la marque, traitant chaque point de contact comme une expression des valeurs de la marque et un investissement dans des relations durables.",
   "company_summary": {
     "name": "Marque de Luxe",
-    "website": "exemple-luxe.com",
-    "activities": "Commerce de produits de luxe, incluant mode créateur, haute joaillerie, horlogerie de prestige, maroquinerie, accessoires premium et produits lifestyle exclusifs",
-    "target": "Consommateurs aisés à fort pouvoir d'achat recherchant qualité exceptionnelle, exclusivité, service personnalisé et pièces d'exception qui reflètent leur goût raffiné",
-    "industry": "Luxury",
-    "business_model": "B2C Retail",
-    "customer_lifecycle_key_steps": "Découverte > Première Expérience > Construction de la Relation > Reconnaissance VIP > Cercle Intérieur > Ambassadeur de Marque"
+    "website": "example-luxury.com",
+    "activities": "Commerce de détail de produits de luxe, incluant la mode de créateur, la joaillerie fine, l'horlogerie premium, la maroquinerie, les accessoires haut de gamme et les produits de style de vie exclusifs",
+    "target": "Consommateurs aisés avec un fort pouvoir d'achat recherchant une qualité exceptionnelle, l'exclusivité, un service personnalisé et des pièces dignes d'investissement reflétant leur goût raffiné",
+    "industry": "Luxe",
+    "business_model": "Commerce B2C",
+    "customer_lifecycle_key_steps": "Découverte > Première Expérience > Construction de la Relation > Reconnaissance VIP > Cercle Privilégié > Ambassadeur de la Marque"
   },
   "programs_list": [
     {
-      "program_name": "Onboarding VIP & Accueil Conciergerie",
-      "target": "Premiers acheteurs luxe et prospects à haut potentiel",
-      "objective": "Créer un sentiment immédiat d'exclusivité et établir une relation personnelle, en atteignant 80% d'activation du service VIP et 45% de second achat sous 90 jours avec une augmentation du panier moyen de 30%",
-      "kpi": "Taux d'activation service VIP (cible: 80%), Second achat sous 90 jours (cible: 45%), Augmentation panier moyen second achat (cible: +30%), Engagement conseiller personnel (cible: 65%)",
-      "description": "Une expérience d'accueil haut de gamme qui introduit les clients dans l'univers de la marque à travers une attention personnelle, des services exclusifs et une communication soignée. Chaque nouveau client est traité comme le début d'une relation, non d'une transaction, avec un accès immédiat aux services personnalisés et à leur conseiller style dédié.",
+      "program_name": "Accueil VIP & Bienvenue Conciergerie",
+      "target": "Premiers acheteurs de produits de luxe et prospects à fort potentiel",
+      "objective": "Create an immediate sense of exclusivity and establish personal relationship, achieving 80% VIP service activation and 45% second purchase within 90 days with an AOV increase of 30%",
+      "kpi": "VIP service activation rate (target: 80%), Second purchase within 90 days (target: 45%), AOV increase on second purchase (target: +30%), Personal advisor engagement (target: 65%)",
+      "description": "A white-glove welcome experience that introduces clients to the world of the brand through personal attention, exclusive services, and thoughtful communication. Each new client is treated as the beginning of a relationship, not a transaction, with immediate access to personalized services and their dedicated style advisor.",
       "scenarios": [
         {
-          "scenario_target": "Primo-acheteurs au-dessus du seuil de valeur (ex: 1 000€+)",
-          "scenario_objective": "Établir une relation VIP et stimuler l'engagement avec les services exclusifs",
-          "main_messages_ideas": "Bienvenue personnelle du conseiller, introduction services exclusifs, invitation rendez-vous privé, suivi attentionné",
+          "scenario_target": "First-time purchasers above threshold value (e.g., $1,000+)",
+          "scenario_objective": "Establish VIP relationship and drive engagement with exclusive services",
+          "main_messages_ideas": "Personal welcome from advisor, exclusive services introduction, private appointment invitation, thoughtful follow-up",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Une Bienvenue Personnelle chez [Marque]",
-              "timing": "Dans les 4 heures suivant le premier achat",
-              "description": "Message personnel post-achat",
-              "content": "Bienvenue dans la famille [Marque]. Je suis [Nom], votre conseiller style personnel. C'est un plaisir d'être votre guide dans notre univers de savoir-faire d'exception. Si vous désirez quoi que ce soit, je suis à votre entière disposition."
+              "title": "A Personal Welcome to [Brand]",
+              "description": "Within 4 hours of first purchase: Personal message",
+              "content": "Welcome to the [Brand] family. I'm [Name], your personal style advisor. It's my pleasure to be your guide to our world of exceptional craftsmanship. Should you desire anything at all, I'm here for you.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Votre Pièce Est en Route",
-              "timing": "Confirmation expédition",
-              "description": "Anticipation de la livraison",
-              "content": "Votre [Produit] a entamé son voyage vers vous. Créé avec soin, emballé avec révérence—nous espérons qu'il vous apportera joie. Livraison prévue le [Date]."
+              "title": "Your Piece is On Its Way",
+              "description": "Shipping confirmation: Anticipation builder",
+              "content": "Your [Product] has begun its journey to you. Crafted with care, packaged with reverence—we trust it will bring you joy. Expect arrival by [Date].",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Bienvenue dans Notre Univers",
-              "timing": "Jour 3",
-              "description": "Introduction services exclusifs",
-              "content": "En tant que client privilégié, vous avez désormais accès aux services réservés à notre cercle intérieur : présentations privées, accès prioritaire aux nouvelles collections, retouches offertes, et votre conseiller dédié. Comment puis-je vous être utile ?"
+              "title": "Welcoming You to Our World",
+              "description": "Day 3: Introduce exclusive services",
+              "content": "As a valued client, you now have access to services reserved for our inner circle: private viewings, priority access to new collections, complimentary alterations, and your dedicated advisor. How may we be of service?",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Une Invitation Privée",
-              "timing": "Jour 7",
-              "description": "Offre de consultation personnelle",
-              "content": "Ce serait un honneur de vous accueillir pour une séance de styling privée selon votre convenance. Ensemble, nous pourrons explorer des pièces qui complètent votre [Achat Récent] et votre esthétique unique."
+              "title": "A Private Invitation",
+              "description": "Day 7: Personal consultation offer",
+              "content": "I would be honored to welcome you for a private styling session at your convenience. Together, we can explore pieces that complement your [Recent Purchase] and your unique aesthetic.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Comment Appréciez-vous Votre [Produit] ?",
-              "timing": "Jour 14",
-              "description": "Suivi attentionné",
-              "content": "Cela fait deux semaines que [Produit] est à vos côtés. J'espère qu'il répond à toutes vos attentes. Si vous avez des questions sur son entretien ou souhaitez explorer des pièces coordonnées, je suis toujours là pour vous."
+              "title": "How Are You Enjoying Your [Product]?",
+              "description": "Day 14: Thoughtful check-in",
+              "content": "It has been two weeks since [Product] joined you. I hope it is everything you imagined. Should you have any questions about its care or wish to explore coordinating pieces, I'm always here.",
+              "channel": "SMS"
             },
             {
-              "channel": "Email",
-              "title": "Une Suggestion pour Votre Réflexion",
-              "timing": "Jour 30",
-              "description": "Recommandation personnalisée",
-              "content": "Connaissant votre appréciation pour [Style/Catégorie], j'ai pensé que vous pourriez apprécier découvrir [Produit Complémentaire]. Puis-je le réserver pour une présentation privée ?"
+              "title": "A Thought for Your Consideration",
+              "description": "Day 30: Curated recommendation",
+              "content": "Knowing your appreciation for [Style/Category], I thought you might appreciate seeing [Complementary Product]. Shall I set it aside for your private viewing?",
+              "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Visiteurs boutique n'ayant pas acheté mais ayant montré un fort intérêt",
-          "scenario_objective": "Cultiver la relation vers le premier achat",
-          "main_messages_ideas": "Remerciement visite, suivi personnel, invitation à poursuivre la conversation, sans pression",
+          "scenario_target": "In-store visitors who didn't purchase but showed high interest",
+          "scenario_objective": "Nurture relationship toward first purchase",
+          "main_messages_ideas": "Thank you for visiting, personal follow-up, invitation to continue conversation, no pressure",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Merci de Votre Visite",
-              "timing": "Le jour même de la visite boutique",
-              "description": "Remerciement immédiat",
-              "content": "Merci d'avoir passé du temps avec nous aujourd'hui. Ce fut un plaisir de vous présenter notre collection. Si des questions surgissent concernant les pièces que vous avez explorées, je suis là pour vous accompagner."
+              "title": "Thank You for Visiting",
+              "description": "Same day as boutique visit",
+              "content": "Thank you for spending time with us today. It was a pleasure to show you our collection. Should any questions arise about the pieces you explored, I'm here to assist.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "La Pièce Qui a Retenu Votre Attention",
-              "timing": "Jour 3",
-              "description": "Suivi produit spécifique",
-              "content": "J'ai remarqué votre connexion avec [Produit]. Créé avec [Détail sur le savoir-faire], c'est véritablement une pièce exceptionnelle. Si vous souhaitez la revoir à votre convenance, je m'assurerai qu'elle vous attende."
+              "title": "The Piece That Caught Your Eye",
+              "description": "Day 3: Specific product follow-up",
+              "content": "I noticed your connection with [Product]. Crafted with [Detail about craftsmanship], it truly is exceptional. If you'd like to revisit it at your convenience, I'll ensure it's waiting for you.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Une Invitation à Revenir",
-              "timing": "Jour 10",
-              "description": "Invitation douce",
-              "content": "Nos portes vous sont toujours ouvertes. Lorsque vous serez prêt à poursuivre notre conversation, faites-le moi simplement savoir. Aucune obligation—seulement le plaisir de votre compagnie."
+              "title": "Invitation to a Private Moment",
+              "description": "Day 7: Boutique return invitation",
+              "content": "Perhaps you'd enjoy returning when the boutique is at its quietest? I can arrange an after-hours viewing with champagne, allowing you to explore without distraction.",
+              "channel": "Email"
+            },
+            {
+              "title": "An Invitation to Return",
+              "description": "Day 10: Soft invitation",
+              "content": "Our doors are always open to you. When you're ready to continue our conversation, simply let me know. There's no obligation—only the pleasure of your company.",
+              "channel": "Email"
+            },
+            {
+              "title": "Thinking of You",
+              "description": "Day 21: Personal touch",
+              "content": "New pieces have arrived that share the aesthetic you admired during your visit. If you'd like a preview before they're displayed, I'd be delighted to arrange that for you.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Online browsers with high engagement but no purchase",
+          "scenario_objective": "Convert digital interest to boutique experience or online purchase",
+          "main_messages_ideas": "Digital concierge service, video consultation, virtual try-on, boutique invitation",
+          "message_sequence": [
+            {
+              "title": "Your Personal Digital Concierge",
+              "description": "After significant browsing activity",
+              "content": "I noticed you've been exploring our collection online. May I assist? I'm available for video consultation, to answer questions, or to arrange delivery of pieces for you to experience at home.",
+              "channel": "Email"
+            },
+            {
+              "title": "The Items You've Been Admiring",
+              "description": "Day 2: Browsed items focus",
+              "content": "The pieces you've been viewing—[Product 1] and [Product 2]—are exceptional choices. Would you like me to share additional details, styling suggestions, or arrange for you to see them in person?",
+              "channel": "Email"
+            },
+            {
+              "title": "Experience at Home Service",
+              "description": "Day 5: Premium service offer",
+              "content": "We offer a unique service: pieces delivered to your home for private viewing with no obligation. You can experience them in your own environment before deciding. Shall I arrange this?",
+              "channel": "Email"
+            },
+            {
+              "title": "Video Consultation Available",
+              "description": "Day 8: Digital alternative",
+              "content": "If visiting our boutique isn't convenient, I can provide a personal video consultation at your preferred time. I'll show you the pieces in detail and answer all your questions.",
+              "channel": "Email"
+            },
+            {
+              "title": "We're Here When You're Ready",
+              "description": "Day 14: Gentle close",
+              "content": "Take all the time you need. When you're ready—whether that's for more information, a boutique visit, or simply to continue our conversation—I'll be here.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Gift recipients discovering the brand",
+          "scenario_objective": "Convert gift recipients into direct clients",
+          "main_messages_ideas": "Gift acknowledgment, brand introduction, personal relationship offer, exclusive welcome",
+          "message_sequence": [
+            {
+              "title": "A Gift from Someone Special",
+              "description": "When gift is delivered",
+              "content": "You've received a gift from someone who appreciates the extraordinary. I'm [Name], and I'll be your personal guide should you wish to explore our world. Welcome to [Brand].",
+              "channel": "Email"
+            },
+            {
+              "title": "Caring for Your Gift",
+              "description": "Day 2: Care and service",
+              "content": "Your [Product] deserves exceptional care. Here's everything you need to know about maintaining its beauty. Our complimentary services are available to you at any time.",
+              "channel": "Email"
+            },
+            {
+              "title": "An Invitation to Discover More",
+              "description": "Day 10: Collection introduction",
+              "content": "If your gift has sparked curiosity about our collection, I'd be honored to introduce you properly. A private boutique visit, perhaps, with no expectations—simply the pleasure of sharing our craft.",
+              "channel": "Email"
+            },
+            {
+              "title": "Special Welcome Privilege",
+              "description": "Day 21: Exclusive offer",
+              "content": "As the recipient of a [Brand] gift, you're welcome to experience our collection with a special privilege: [Welcome Offer]. Consider it our way of introducing you to the family.",
+              "channel": "Email"
+            },
+            {
+              "title": "We Hope You're Enjoying It",
+              "description": "Day 30: Relationship check",
+              "content": "A month with your [Product]—we hope it's brought joy. Should you wish to add to your collection or simply learn more about [Brand], I remain at your service.",
+              "channel": "SMS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Conciergerie Personnelle & Service d'Excellence",
+      "target": "Clients VIP et Cercle Privilégié recherchant le summum de la commodité et de la personnalisation",
+      "objective": "Provide seamless luxury service achieving 90% service satisfaction, 55% concierge service utilization, and 40% increase in purchase frequency through frictionless experiences",
+      "kpi": "Service satisfaction (target: 90%+), Concierge utilization rate (target: 55%), Purchase frequency increase (target: +40%), Service-driven revenue (target: 35% of VIP revenue)",
+      "description": "An elite service tier offering personal shopping, home delivery with try-on, wardrobe consultation, travel coordination, and 24/7 advisor access. This program removes all friction from the luxury shopping experience, making it effortless for clients to engage with the brand.",
+      "scenarios": [
+        {
+          "scenario_target": "High-value clients needing comprehensive wardrobe solutions",
+          "scenario_objective": "Provide complete wardrobe curation and ongoing styling service",
+          "main_messages_ideas": "Wardrobe audit, seasonal updates, event dressing, complete solutions",
+          "message_sequence": [
+            {
+              "title": "Your Personal Wardrobe Curator",
+              "description": "Service introduction",
+              "content": "As your personal wardrobe curator, I offer comprehensive styling services: seasonal wardrobe audits, event dressing, travel packing, and proactive recommendations. How may I serve you?",
+              "channel": "Email"
+            },
+            {
+              "title": "Shall We Refresh Your Collection?",
+              "description": "Seasonal transition prompt",
+              "content": "As [Season] approaches, I've curated pieces that would elevate your collection and coordinate beautifully with items you already own. May I schedule a private presentation?",
+              "channel": "Email"
+            },
+            {
+              "title": "For Your Upcoming Event",
+              "description": "Event-triggered styling",
+              "content": "I understand you have [Event] approaching. I've selected pieces that would be perfect for the occasion. Would you like me to send them for your review at home?",
+              "channel": "SMS"
+            },
+            {
+              "title": "Travel Wardrobe Service",
+              "description": "Travel-based offering",
+              "content": "Traveling to [Destination]? I can curate a complete travel wardrobe with pieces suited to your itinerary, delivered before departure. Let me handle the details.",
+              "channel": "WhatsApp"
+            },
+            {
+              "title": "Quarterly Wardrobe Review",
+              "description": "Regular service touchpoint",
+              "content": "It's time for our quarterly wardrobe review. I have new pieces that fill gaps I've identified and coordinate with your existing collection. Shall we meet?",
+              "channel": "Email"
+            },
+            {
+              "title": "Proactive Care Reminder",
+              "description": "Service maintenance",
+              "content": "Your [Items] are due for seasonal care and storage. Shall I arrange for our atelier to collect them and ensure they're properly maintained?",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Time-constrained executives requiring effortless shopping",
+          "scenario_objective": "Provide complete shopping service with zero client friction",
+          "main_messages_ideas": "At-home try-on, office delivery, pre-selection, executive convenience",
+          "message_sequence": [
+            {
+              "title": "Shopping Without the Shopping",
+              "description": "Service introduction",
+              "content": "For clients whose time is precious, I offer complete shopping services: I curate, you approve. Pieces come to you—home, office, hotel—for private viewing. Keep only what you love.",
+              "channel": "Email"
+            },
+            {
+              "title": "New Arrivals Selected for You",
+              "description": "Proactive curation",
+              "content": "New pieces have arrived that match your style profile. I've selected five items for your consideration. Reply with your preferred delivery time—home or office—and I'll handle the rest.",
+              "channel": "Email"
+            },
+            {
+              "title": "Delivered to Your Office",
+              "description": "Convenience focus",
+              "content": "Your curated selection will arrive at your office today at [Time]. Try them at your convenience. Simply let me know what you're keeping via SMS, and I'll arrange collection of the rest.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Last-Minute Need?",
+              "description": "Urgent service capability",
+              "content": "Unexpected event requiring something special? Text me the occasion and timing. I'll have appropriate options delivered same-day, ensuring you're impeccably prepared.",
+              "channel": "WhatsApp"
+            },
+            {
+              "title": "Your Preferences Noted",
+              "description": "Learning and adaptation",
+              "content": "I've noted your feedback from recent selections. This refines my understanding of your taste, ensuring future curations are even more precisely aligned with your style.",
+              "channel": "Email"
+            },
+            {
+              "title": "Monthly Delivery Service",
+              "description": "Subscription-style offering",
+              "content": "Many clients appreciate regular deliveries of curated pieces. Would monthly selections interest you? I'll ensure fresh, relevant items arrive without you needing to think about it.",
+              "channel": "Email"
+            },
+            {
+              "title": "Always Available",
+              "description": "24/7 service reminder",
+              "content": "Remember, I'm available 24/7 for any need—urgent or planned. Whether it's 9 AM or 9 PM, simply reach out. Serving you is my priority.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "International clients requiring global service coordination",
+          "scenario_objective": "Provide seamless service across locations and time zones",
+          "main_messages_ideas": "Global shipping, boutique coordination, travel services, time zone respect",
+          "message_sequence": [
+            {
+              "title": "Your Global Concierge",
+              "description": "International service introduction",
+              "content": "Whether you're in [Home City], [Travel City], or anywhere globally, your service remains seamless. I coordinate with our boutiques worldwide to ensure you're always attended to.",
+              "channel": "Email"
+            },
+            {
+              "title": "Arriving in [City]?",
+              "description": "Travel-triggered service",
+              "content": "I see you're traveling to [City]. Our boutique there has been notified. Your preferences are shared, and they're prepared to welcome you. Would you like me to arrange a private appointment?",
+              "channel": "WhatsApp"
+            },
+            {
+              "title": "International Delivery Arranged",
+              "description": "Cross-border logistics",
+              "content": "Your [Product] will meet you in [City], arriving before you do. All customs and logistics are handled. Simply collect it from your hotel concierge upon arrival.",
+              "channel": "Email"
+            },
+            {
+              "title": "Boutique Appointment Confirmed",
+              "description": "Global coordination",
+              "content": "Your appointment at our [City] boutique is confirmed for [Date/Time local]. [Local Advisor Name] will welcome you personally, briefed on your style and preferences.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Time Zone Consideration",
+              "description": "Thoughtful communication",
+              "content": "I'm mindful of your current location and time zone. I'll contact you during convenient hours. Should you need anything urgently, I'm available regardless of my local time.",
+              "channel": "Email"
+            },
+            {
+              "title": "Welcome Home Service",
+              "description": "Return support",
+              "content": "Welcome back to [Home City]. Shall we schedule a visit to review pieces that arrived during your travels? I've held several items I think you'll appreciate.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients requiring gift and special occasion services",
+          "scenario_objective": "Provide complete gift concierge removing all friction from gifting",
+          "main_messages_ideas": "Gift curation, recipient profiling, delivery coordination, follow-up",
+          "message_sequence": [
+            {
+              "title": "Gift Concierge at Your Service",
+              "description": "Service introduction",
+              "content": "Whether for one person or many, I provide complete gift services: selection, personalization, wrapping, delivery, and follow-up. Simply share the occasion and recipient details.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tell Me About the Recipient",
+              "description": "Personalization gathering",
+              "content": "To curate the perfect gift, tell me about [Recipient]: their style, interests, your relationship. This ensures the gift is not just appropriate, but meaningful.",
+              "channel": "Email"
+            },
+            {
+              "title": "Three Perfect Options",
+              "description": "Curated gift selection",
+              "content": "Based on [Recipient's] profile, I've selected three exceptional gifts at different investment levels. Each would be beautifully appropriate. Which resonates with your intention?",
+              "channel": "Email"
+            },
+            {
+              "title": "Personalization Options",
+              "description": "Customization offering",
+              "content": "Your selected gift can be personalized with engraving, monogramming, or custom packaging. Would you like to add a personal touch that makes it even more meaningful?",
+              "channel": "Email"
+            },
+            {
+              "title": "Delivery Coordinated",
+              "description": "Logistics confirmation",
+              "content": "Your gift will arrive at [Location] on [Date], perfectly timed for [Occasion]. Wrapped with care, with your personal message enclosed. Everything is arranged.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Gift Delivered Successfully",
+              "description": "Confirmation and follow-up",
+              "content": "Your gift has been delivered to [Recipient]. If you'd like, I can discretely follow up to ensure satisfaction, or we can simply trust that your thoughtful gesture landed beautifully.",
+              "channel": "WhatsApp"
+            },
+            {
+              "title": "Upcoming Occasions",
+              "description": "Proactive reminders",
+              "content": "Your gift calendar shows [Upcoming Occasion] approaching. Shall I begin preparing options for [Recipient], ensuring you're ahead of the date without stress?",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Histoires de Patrimoine & Savoir-Faire",
+      "target": "Tous les clients, en particulier ceux qui valorisent l'artisanat et l'héritage de la marque",
+      "objective": "Deepen emotional connection through storytelling, achieving 60% content engagement, 35% story-to-purchase correlation, and 45% increase in brand affinity",
+      "kpi": "Content engagement rate (target: 60%), Story-driven purchase attribution (target: 35%), Brand affinity score (target: +45%), Content sharing rate (target: 25%)",
+      "description": "An editorial program that shares the stories behind the craft: master artisans, historical techniques, material sourcing, design inspiration, and brand heritage. This program positions products as the result of human skill, passion, and legacy—not mere objects.",
+      "scenarios": [
+        {
+          "scenario_target": "Engaged clients who appreciate craftsmanship details",
+          "scenario_objective": "Deepen appreciation through artisan and technique stories",
+          "main_messages_ideas": "Master artisan profiles, technique deep-dives, material journeys, creation stories",
+          "message_sequence": [
+            {
+              "title": "Meet the Master: [Artisan Name]",
+              "description": "Artisan profile feature",
+              "content": "[Artisan] has been with [Brand] for [X] years. Their hands have created some of our most extraordinary pieces. Here's their story, and the philosophy that guides their craft.",
+              "channel": "Email"
+            },
+            {
+              "title": "The Art of [Technique]",
+              "description": "Technique education",
+              "content": "The [Technique] used in [Product Category] requires years to master. Here's an intimate look at how our artisans execute this rare skill, and why it creates pieces of exceptional quality.",
+              "channel": "Email"
+            },
+            {
+              "title": "From Source to Atelier",
+              "description": "Material provenance story",
+              "content": "The [Material] in your [Product] traveled far to reach you. From [Source Location] to our atelier, here's the journey of materials chosen for their exceptional qualities and ethical sourcing.",
+              "channel": "Email"
+            },
+            {
+              "title": "Hours in the Making",
+              "description": "Creation time revelation",
+              "content": "A single [Product] requires [X] hours of skilled handwork. Here's a time-lapse journey through its creation, revealing the patience and precision in every piece we create.",
+              "channel": "Email"
+            },
+            {
+              "title": "Why We Use [Material/Technique]",
+              "description": "Quality explanation",
+              "content": "We could use faster methods or less expensive materials. We don't. Here's why [Choice] matters to the longevity, beauty, and integrity of pieces bearing our name.",
+              "channel": "Email"
+            },
+            {
+              "title": "The [Product] Story",
+              "description": "Specific product origin",
+              "content": "The [Product] you own has history. Designed in [Year] by [Designer], inspired by [Inspiration], it represents [Brand Philosophy]. You own a piece of this legacy.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "New clients discovering the brand heritage",
+          "scenario_objective": "Build foundational understanding of brand values and history",
+          "main_messages_ideas": "Brand founding story, heritage milestones, signature pieces, philosophy",
+          "message_sequence": [
+            {
+              "title": "Welcome to Our Story",
+              "description": "Brand history introduction",
+              "content": "[Brand] was founded in [Year] with a vision: [Founding Vision]. This vision still guides everything we create. Here's where we began, and where we're going.",
+              "channel": "Email"
+            },
+            {
+              "title": "Our Signature: [Iconic Product]",
+              "description": "Signature product story",
+              "content": "Every brand has a signature piece. Ours is [Product]. Created in [Year], it embodies everything we value: [Values]. Here's why it became iconic, and why it remains so.",
+              "channel": "Email"
+            },
+            {
+              "title": "Milestones That Shaped Us",
+              "description": "Heritage timeline",
+              "content": "From [Founding] to today, key moments shaped [Brand]: [Milestone 1], [Milestone 2], [Milestone 3]. Each taught us, refined us, and deepened our commitment to excellence.",
+              "channel": "Email"
+            },
+            {
+              "title": "What We Stand For",
+              "description": "Brand philosophy",
+              "content": "Our values aren't marketing language—they're daily practice. Quality over speed. Artisan craft over automation. Timeless beauty over trends. Here's what [Brand] means, beyond the products.",
+              "channel": "Email"
+            },
+            {
+              "title": "Generations of Craft",
+              "description": "Artisan lineage",
+              "content": "Several of our master artisans learned their craft from their predecessors here at [Brand]. This continuity of knowledge ensures techniques are preserved and standards never waver.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Collectors and connoisseurs seeking deeper knowledge",
+          "scenario_objective": "Provide expert-level content for educated clients",
+          "main_messages_ideas": "Technical deep-dives, rare techniques, material science, design evolution",
+          "message_sequence": [
+            {
+              "title": "The Science of [Material]",
+              "description": "Material deep-dive",
+              "content": "Why does [Material] age beautifully while others degrade? Here's the material science behind our selection: molecular structure, durability factors, and why it justifies the investment.",
+              "channel": "Email"
+            },
+            {
+              "title": "Rare Technique: [Historical Method]",
+              "description": "Endangered craft preservation",
+              "content": "[Technique] is nearly lost to time—few artisans remain who can execute it. We've preserved this knowledge, applying it to [Products]. Here's why it matters to collectors.",
+              "channel": "Email"
+            },
+            {
+              "title": "Design Evolution: [Product Line]",
+              "description": "Historical product development",
+              "content": "How has [Product] evolved since [Year]? This historical comparison reveals design refinements while showing respect for the original vision. For collectors, understanding lineage matters.",
+              "channel": "Email"
+            },
+            {
+              "title": "Identifying Authenticity",
+              "description": "Authentication education",
+              "content": "For collectors, authentication matters. Here are the details that identify genuine [Brand] pieces: [Markers]. This knowledge protects your investment and helps you appreciate the care in every detail.",
+              "channel": "Email"
+            },
+            {
+              "title": "Limited Editions: The Making",
+              "description": "Exclusive production insight",
+              "content": "Our limited editions aren't just scarce—they're exceptional. Here's what differentiates [Limited Edition] from standard offerings: materials, techniques, time invested. Only [Number] exist.",
+              "channel": "Email"
+            },
+            {
+              "title": "Conservation and Care",
+              "description": "Long-term maintenance",
+              "content": "Pieces meant to last generations require specific care. Here's our conservation guide: proper storage, professional maintenance schedule, and services available to preserve your collection eternally.",
+              "channel": "Email"
+            },
+            {
+              "title": "Investment Value Factors",
+              "description": "Collection value discussion",
+              "content": "While we create for beauty, not investment, certain factors affect long-term value: rarity, condition, provenance, historical significance. Here's what collectors consider.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients after significant purchases",
+          "scenario_objective": "Enhance satisfaction through story connection",
+          "main_messages_ideas": "Purchase-specific stories, deeper product knowledge, care reminders",
+          "message_sequence": [
+            {
+              "title": "The Story of Your [Product]",
+              "description": "Post-purchase storytelling",
+              "content": "Now that [Product] is yours, you might appreciate knowing its complete story: the inspiration, the artisan who created it, the time invested, and the meaning behind design details you may not have noticed.",
+              "channel": "Email"
+            },
+            {
+              "title": "Who Else Loved This Piece",
+              "description": "Historical significance",
+              "content": "[Product] has been worn by [Notable Owners/Context]. You're now part of this legacy—a connection to [Brand] history and those who appreciated exceptional craft before you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Hidden Details You May Miss",
+              "description": "Detail revelation",
+              "content": "Your [Product] contains details most people never notice: [Detail 1], [Detail 2]. These 'secrets' reflect our philosophy—we do things right even when no one's looking.",
+              "channel": "Email"
+            },
+            {
+              "title": "Caring for Generations",
+              "description": "Legacy framing",
+              "content": "Your [Product] is made to outlast you—literally. With proper care, it can be passed through generations. Here's how to ensure it remains beautiful for your grandchildren.",
+              "channel": "Email"
+            },
+            {
+              "title": "The Artisan's Note",
+              "description": "Personal artisan message",
+              "content": "The artisan who created your [Product]—[Name]—wanted you to know: [Personal message about the craft, pride in the work, or hope for your enjoyment]. A human connection to your piece.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Personnalisation de Produits sur Mesure",
+      "target": "Clients recherchant une personnalisation unique et des modifications sur mesure",
+      "objective": "Drive customization adoption to 40% of eligible purchases, achieve 95% customization satisfaction, and increase AOV by 45% on personalized orders",
+      "kpi": "Customization rate (target: 40%), Customization satisfaction (target: 95%+), AOV increase on custom orders (target: +45%), Repeat customization rate (target: 60%)",
+      "description": "A comprehensive personalization program offering engraving, monogramming, material selection, color customization, sizing adjustments, and design modifications. This program allows clients to make pieces truly their own, increasing emotional connection and perceived value.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients purchasing customizable products",
+          "scenario_objective": "Present personalization options at point of purchase",
+          "main_messages_ideas": "Available customizations, process explanation, inspiration examples, no-pressure offering",
+          "message_sequence": [
+            {
+              "title": "Make It Uniquely Yours",
+              "description": "Point-of-purchase customization offer",
+              "content": "Your [Product] can be personalized to reflect your individuality. Available customizations include: [Options]. Would you like to explore making it uniquely yours?",
+              "channel": "Email"
+            },
+            {
+              "title": "Personalization Inspiration",
+              "description": "Examples and ideas",
+              "content": "Here's how other clients have personalized their [Product]: [Examples]. From subtle monograms to bold custom colors, the possibilities reflect your taste. What speaks to you?",
+              "channel": "Email"
+            },
+            {
+              "title": "The Customization Process",
+              "description": "Process explanation",
+              "content": "Personalizing your [Product] adds [Timeframe] to creation. Here's the process: [Steps]. You'll receive updates throughout, with opportunities to review before completion.",
+              "channel": "Email"
+            },
+            {
+              "title": "Design Consultation Available",
+              "description": "Expert guidance offer",
+              "content": "Not sure which customization suits you best? Our design specialists offer complimentary consultations to help you visualize options and select personalization that enhances, never overwhelms.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Customization Confirmed",
+              "description": "Order confirmation",
+              "content": "Your personalized [Product] is confirmed: [Customization Details]. Our artisans will begin work shortly. I'll update you throughout the creation process.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients who have customized before",
+          "scenario_objective": "Encourage repeat customization and deeper personalization",
+          "main_messages_ideas": "Advanced customization options, consistency across collection, new capabilities",
+          "message_sequence": [
+            {
+              "title": "New Customization Options",
+              "description": "Capability update",
+              "content": "Since your last customization, we've introduced new personalization capabilities: [New Options]. These might interest you for future pieces or to enhance items you already own.",
+              "channel": "Email"
+            },
+            {
+              "title": "Coordinating Your Collection",
+              "description": "Collection consistency",
+              "content": "Your previous customization—[Detail]—created a signature look. Would you like to apply similar personalization to new pieces, creating consistency across your [Brand] collection?",
+              "channel": "Email"
+            },
+            {
+              "title": "Personalization Memory",
+              "description": "Preference recall",
+              "content": "I've noted your customization preferences: [Preferences]. For your new [Product], shall I apply the same personal touches, or would you like to explore something different?",
+              "channel": "Email"
+            },
+            {
+              "title": "Exclusive Customization Offer",
+              "description": "VIP custom options",
+              "content": "As a valued client, you have access to customization options not widely available: [Exclusive Options]. These rare capabilities are reserved for our most discerning clients.",
+              "channel": "Email"
+            },
+            {
+              "title": "Updating Previous Pieces",
+              "description": "Retrofit personalization",
+              "content": "The [Product] you purchased previously can now be personalized retroactively. Shall I arrange for its return to our atelier for customization that brings it in line with your evolved taste?",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Signature Style",
+              "description": "Personal brand development",
+              "content": "Your customization choices have created a distinctive signature: [Style Description]. This personal brand makes your [Brand] pieces unmistakably yours—a collection that tells your story.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Gift purchasers considering personalization",
+          "scenario_objective": "Guide appropriate gift personalization",
+          "main_messages_ideas": "Meaningful personalization, recipient-appropriate options, gift impact",
+          "message_sequence": [
+            {
+              "title": "Personalized Gifting",
+              "description": "Gift customization introduction",
+              "content": "A personalized gift carries deeper meaning. For [Recipient], customization options include: [Appropriate Options]. Which would make the gift feel most personal and thoughtful?",
+              "channel": "Email"
+            },
+            {
+              "title": "The Story Behind Personalization",
+              "description": "Meaning explanation",
+              "content": "When you personalize a gift, you transform it from beautiful object to meaningful memory. [Example of meaningful personalization]. What message would you like your gift to carry?",
+              "channel": "Email"
+            },
+            {
+              "title": "Gift Engraving Ideas",
+              "description": "Inscription guidance",
+              "content": "For gift engraving, consider: dates that matter, meaningful coordinates, phrases that resonate, initials with significance. Our specialists can help craft the perfect inscription—just [X] characters.",
+              "channel": "Email"
+            },
+            {
+              "title": "Subtle or Prominent?",
+              "description": "Personalization positioning",
+              "content": "Personalization can be subtly hidden or prominently displayed. For [Recipient], which feels more appropriate? Discreet interior engraving, or visible monogram that announces ownership?",
+              "channel": "Email"
+            },
+            {
+              "title": "Preview Before Engraving",
+              "description": "Approval process",
+              "content": "Before our artisan engraves your gift, here's a digital preview: [Preview]. Please confirm the text, positioning, and style. Once approved, we'll execute it with precision.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients with special requests beyond standard customization",
+          "scenario_objective": "Guide toward bespoke possibilities",
+          "main_messages_ideas": "Bespoke capabilities, design collaboration, feasibility assessment",
+          "message_sequence": [
+            {
+              "title": "Beyond Standard Customization",
+              "description": "Bespoke introduction",
+              "content": "Your vision exceeds standard customization options—and that excites us. Our bespoke atelier can create modifications beyond our standard menu. Shall we explore what's possible?",
+              "channel": "Email"
+            },
+            {
+              "title": "Feasibility Consultation",
+              "description": "Technical assessment",
+              "content": "Our master artisans have reviewed your request. Here's what's technically feasible: [Assessment]. Some modifications require [Considerations], but we're confident we can realize your vision.",
+              "channel": "Email"
+            },
+            {
+              "title": "Design Development",
+              "description": "Collaborative design",
+              "content": "Based on your vision, our design team has created concepts: [Concepts]. These interpretations aim to capture your intent while maintaining structural integrity and [Brand] aesthetic.",
+              "channel": "Email"
+            },
+            {
+              "title": "Material Selection",
+              "description": "Custom materials",
+              "content": "For your bespoke piece, material selection is crucial. Here are options that achieve your desired effect: [Materials]. Each has different characteristics—which aligns with your vision?",
+              "channel": "Email"
+            },
+            {
+              "title": "Investment and Timeline",
+              "description": "Bespoke parameters",
+              "content": "Your bespoke [Product] requires [Timeframe] and represents an investment of [Amount]. This reflects [Justification]. Shall we proceed with creation?",
+              "channel": "Email"
+            },
+            {
+              "title": "Creation Begins",
+              "description": "Bespoke commencement",
+              "content": "Your bespoke piece has entered our atelier. [Artisan Name] will lead creation. I'll update you at key milestones, with opportunities to provide input as your vision becomes reality.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Vision Realized",
+              "description": "Bespoke completion",
+              "content": "Your bespoke [Product] is complete. It exists nowhere else—only for you. Shall I arrange for its private unveiling at your convenience? This moment deserves to be memorable.",
+              "channel": "SMS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Gestion de la Relation Client Grande Fortune",
+      "target": "Clients de très grande fortune avec un potentiel de dépense supérieur à 100K$ par an",
+      "objective": "Achieve 95% UHNW retention, 70% share of luxury wallet, $250K+ average annual client value, and 80% referral rate within UHNW tier",
+      "kpi": "UHNW retention (target: 95%+), Wallet share (target: 70%), Annual client value (target: $250K+), UHNW referral rate (target: 80%)",
+      "description": "The highest tier of relationship management, combining personal advisory, lifestyle coordination, collection management, and comprehensive luxury services. These relationships transcend retail to become trusted advisor partnerships.",
+      "scenarios": [
+        {
+          "scenario_target": "Newly identified UHNW clients",
+          "scenario_objective": "Elevate service to appropriate level and establish trusted advisor relationship",
+          "main_messages_ideas": "Personal relationship depth, bespoke services, lifestyle integration, privacy assurance",
+          "message_sequence": [
+            {
+              "title": "A Relationship Worthy of You",
+              "description": "UHNW elevation introduction",
+              "content": "Your relationship with [Brand] has reached a significant level. It's my privilege to become your dedicated advisor, offering services reserved for our most valued clients. Allow me to explain what this means.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Dedicated Team",
+              "description": "Team introduction",
+              "content": "Supporting your needs is a specialized team: myself as lead advisor, [Senior Artisan] for bespoke creations, [Service Coordinator] for logistics, and direct access to our CEO for special requests.",
+              "channel": "Email"
+            },
+            {
+              "title": "Understanding Your World",
+              "description": "Lifestyle assessment",
+              "content": "To serve you properly, I'd appreciate understanding your lifestyle: residences, travel patterns, significant events, gifting needs, collection goals. This allows me to anticipate needs before they arise.",
+              "channel": "Email"
+            },
+            {
+              "title": "Privacy and Discretion",
+              "description": "Privacy assurance",
+              "content": "Your privacy is paramount. Our relationship operates under enhanced confidentiality protocols. Your information, preferences, and purchases remain absolutely private, secured at the highest level.",
+              "channel": "Email"
+            },
+            {
+              "title": "Global Service Coordination",
+              "description": "International capability",
+              "content": "Regardless of where you are globally, service follows you. I coordinate with our boutiques worldwide, private aviation partners, and luxury hotel concierges to ensure seamless access.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Direct Line",
+              "description": "Access provision",
+              "content": "This private number reaches me directly, 24/7: [Number]. No operators, no menus. Whether it's 2 PM or 2 AM, urgent or casual, you have immediate access.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Established UHNW clients with ongoing relationships",
+          "scenario_objective": "Maintain relationship depth and anticipate needs",
+          "main_messages_ideas": "Proactive service, need anticipation, lifestyle support, relationship depth",
+          "message_sequence": [
+            {
+              "title": "For Your Upcoming Travel",
+              "description": "Proactive travel support",
+              "content": "I see you're traveling to [Destination] next month. I've coordinated with our boutique there and identified pieces that might interest you. Shall I arrange a private viewing during your visit?",
+              "channel": "WhatsApp"
+            },
+            {
+              "title": "Collection Curation Update",
+              "description": "Portfolio management",
+              "content": "I've been reviewing your [Brand] collection and identified opportunities: pieces that would complete sets, items due for service, and new arrivals that align with your collecting strategy.",
+              "channel": "Email"
+            },
+            {
+              "title": "Exclusive First Preview",
+              "description": "Pre-announcement access",
+              "content": "Before we announce it publicly, you should know: [Exclusive Information]. As one of our most valued clients, you have first opportunity. Your thoughts?",
+              "channel": "Email"
+            },
+            {
+              "title": "Handling Your Gift List",
+              "description": "Comprehensive gifting service",
+              "content": "Your annual gift list is significant. Let me manage it entirely: recipient profiling, piece selection, personalization coordination, delivery scheduling. You simply approve, I execute everything.",
+              "channel": "Email"
+            },
+            {
+              "title": "Anniversary Approaching",
+              "description": "Personal occasion tracking",
+              "content": "Your [Anniversary] with [Person] approaches. Last year you chose [Gift]. This year, I've identified three exceptional options at increasing investment levels. May I present them?",
+              "channel": "SMS"
+            },
+            {
+              "title": "Insurance and Documentation",
+              "description": "Collection management",
+              "content": "Your collection has grown significantly. I've prepared updated appraisals and authentication documentation for your insurance provider. Please review and let me know if you need additional detail.",
+              "channel": "Email"
+            },
+            {
+              "title": "Special Request Capability",
+              "description": "Extraordinary service",
+              "content": "Recently you mentioned [Desire]. While this seems impossible, our team has explored options. Here's what we can arrange: [Solution]. Shall we proceed?",
+              "channel": "Email"
+            },
+            {
+              "title": "Quarterly Review",
+              "description": "Relationship check-in",
+              "content": "Our quarterly review: your collection has grown by [Items], we've coordinated [Services], and you've experienced [Experiences]. Looking ahead to next quarter, here are opportunities I'm tracking.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "UHNW clients considering major acquisitions",
+          "scenario_objective": "Guide significant investments and unique opportunities",
+          "main_messages_ideas": "Investment guidance, exclusive access, authentication, legacy planning",
+          "message_sequence": [
+            {
+              "title": "Rare Opportunity",
+              "description": "Exclusive offering",
+              "content": "A rare opportunity has emerged: [Item]. Only [Number] exist, and this is the first time one has become available in [Timeframe]. Given your collection, I immediately thought of you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Investment Analysis",
+              "description": "Value assessment",
+              "content": "For the [Item] you're considering, here's objective analysis: historical value trends, rarity factors, condition assessment, and projected appreciation. This investment warrants careful consideration.",
+              "channel": "Email"
+            },
+            {
+              "title": "Due Diligence Complete",
+              "description": "Authentication verification",
+              "content": "We've completed comprehensive due diligence on [Item]: provenance verification, authentication by three independent experts, condition analysis. All documentation is attached for your review.",
+              "channel": "Email"
+            },
+            {
+              "title": "Private Viewing Arranged",
+              "description": "Exclusive access",
+              "content": "I've arranged for [Item] to be brought to [Private Location] for your exclusive viewing. No other parties, no time pressure. Examine it thoroughly before deciding.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Acquisition Secured",
+              "description": "Purchase completion",
+              "content": "I've secured [Item] for you. All documentation, insurance, and secure transport are arranged. It will arrive at [Location] on [Date]. Congratulations on this exceptional acquisition.",
+              "channel": "WhatsApp"
+            },
+            {
+              "title": "Legacy Planning",
+              "description": "Long-term strategy",
+              "content": "Your collection has reached investment-grade significance. Have you considered legacy planning? I can connect you with specialists in estate planning for luxury assets, ensuring your collection's future.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "UHNW clients with family members",
+          "scenario_objective": "Extend relationship to family and plan multi-generational engagement",
+          "main_messages_ideas": "Family gifting, next-generation introduction, legacy pieces, family events",
+          "message_sequence": [
+            {
+              "title": "Introducing [Family Member]",
+              "description": "Family extension",
+              "content": "You mentioned [Family Member] has shown interest in [Brand]. With your permission, I'd be honored to extend personalized service to them, ensuring they receive the same attention you enjoy.",
+              "channel": "Email"
+            },
+            {
+              "title": "Generational Pieces",
+              "description": "Legacy planning",
+              "content": "Some clients commission pieces intended to be passed through generations. These heirloom creations require special consideration. If this interests you, our bespoke atelier can create legacy pieces designed to endure.",
+              "channel": "Email"
+            },
+            {
+              "title": "Family Event Support",
+              "description": "Milestone assistance",
+              "content": "With [Family Event] approaching, I can assist with appropriate gifts for all family members: personalized selections that reflect each person while maintaining cohesive quality.",
+              "channel": "Email"
+            },
+            {
+              "title": "Next Generation Introduction",
+              "description": "Youth engagement",
+              "content": "[Young Family Member] is approaching an age where they might appreciate [Entry Category]. Shall I prepare appropriate options that introduce them to [Brand] in an age-appropriate way?",
+              "channel": "Email"
+            },
+            {
+              "title": "Family Collection Strategy",
+              "description": "Coordinated collecting",
+              "content": "Some families develop coordinated collections—each member collecting in their area of interest under a unified strategy. If this appeals to you, I can help architect a multi-generational collecting approach.",
+              "channel": "Email"
             }
           ]
         }
@@ -98,415 +905,318 @@
     },
     {
       "program_name": "Récupération des Considérations Abandonnées",
-      "target": "Clients ayant exprimé un intérêt sans finaliser l'achat (en ligne ou en boutique)",
-      "objective": "Récupérer 25% des considérations haute valeur abandonnées grâce à une approche personnelle tout en maintenant la dignité de la marque",
-      "kpi": "Taux de récupération considérations (cible: 25%), Délai de récupération (cible: <14 jours), Panier récupéré vs standard (cible: +15%), Perception de marque (maintenue)",
-      "description": "Suivi élégant pour les clients ayant montré de l'intérêt pour des pièces spécifiques sans finaliser l'achat. Contrairement à l'abandon de panier traditionnel, la récupération luxe est personnelle, sans précipitation, et axée sur le service plutôt que l'urgence. L'objectif est d'accompagner, pas de pousser.",
+      "target": "Clients ayant exprimé un intérêt mais n'ayant pas finalisé leur achat (en ligne ou en boutique)",
+      "objective": "Recover 25% of high-value abandoned considerations through personal outreach while maintaining brand dignity",
+      "kpi": "Consideration recovery rate (target: 25%), Time to recovery (target: <14 days), Recovery AOV vs standard (target: +15%), Brand perception (maintained)",
+      "description": "Graceful follow-up for clients who showed interest in specific pieces without completing a purchase. Unlike traditional cart abandonment, luxury recovery is personal, unhurried, and focused on service rather than urgency. The goal is to assist, not pressure.",
       "scenarios": [
         {
-          "scenario_target": "Abandon de navigation ou panier en ligne pour articles 500€+",
-          "scenario_objective": "Offrir assistance et service, pas de remises",
-          "main_messages_ideas": "Attention personnelle, questions répondues, vérification disponibilité, sans pression",
+          "scenario_target": "Online browse or cart abandonment for items $500+",
+          "scenario_objective": "Offer assistance and service, not discounts",
+          "main_messages_ideas": "Personal attention, questions answered, availability check, no pressure",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Puis-je Vous Aider ?",
-              "timing": "24 heures après abandon",
-              "description": "Orienté service",
-              "content": "J'ai remarqué que vous exploriez [Produit]. Si vous avez des questions sur son savoir-faire, ses dimensions ou comment le porter, ce serait un plaisir de vous accompagner. Puis-je vous être utile ?"
+              "title": "May I Assist?",
+              "description": "24 hours after abandonment: Service-oriented",
+              "content": "I noticed you were exploring [Product]. If you have any questions about its craftsmanship, sizing, or styling, I would be delighted to assist. May I be of service?",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Une Note sur [Produit]",
-              "timing": "Jour 3",
-              "description": "Storytelling savoir-faire",
-              "content": "Le [Produit] que vous avez admiré a une histoire qui mérite d'être partagée. [Détail sur le savoir-faire]. Si vous souhaitez en savoir plus ou le voir en personne, je peux organiser une présentation privée selon votre convenance."
+              "title": "A Note About [Product]",
+              "description": "Day 3: Craftsmanship storytelling",
+              "content": "The [Product] you admired has a story worth sharing. [Craftsmanship detail]. If you'd like to learn more or see it in person, I can arrange a private viewing at your convenience.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Mise à Jour sur la Disponibilité",
-              "timing": "Jour 7",
-              "description": "Rareté élégante si applicable",
-              "content": "Je tenais à vous informer que [Produit] fait partie des dernières pièces disponibles. Si vous souhaitez procéder, je peux m'assurer qu'elle soit réservée pour vous. Prenez tout le temps nécessaire pour décider."
+              "title": "Available to Answer Questions",
+              "description": "Day 5: Direct communication offer",
+              "content": "Sometimes questions arise that are best answered in conversation. I'm available by phone, video call, or in person to discuss [Product] and ensure you have all information needed to decide.",
+              "channel": "Email"
             },
             {
-              "channel": "SMS",
-              "title": "Proposition d'Appel Personnel",
-              "timing": "Jour 10",
-              "description": "Pour articles haute valeur",
-              "content": "Parfois, une conversation aide. Si vous souhaitez échanger sur [Produit] directement, je suis disponible selon votre convenance. Aucune pression, simplement à votre service."
+              "title": "Availability Update",
+              "description": "Day 7: Gentle scarcity if applicable",
+              "content": "I wanted to let you know that [Product] is one of very few remaining. Should you wish to proceed, I can ensure it's reserved for you. Take all the time you need to decide.",
+              "channel": "Email"
+            },
+            {
+              "title": "Alternative Consideration",
+              "description": "Day 10: Similar options",
+              "content": "If you're still considering [Product], you might also appreciate [Similar Product]. Both offer [Shared Quality] but express it differently. May I provide details on both?",
+              "channel": "Email"
+            },
+            {
+              "title": "Personal Call Offer",
+              "description": "Day 12: For high-value items",
+              "content": "Sometimes a conversation helps. If you'd like to discuss [Product] directly, I'm available at your convenience. No pressure, simply here to serve.",
+              "channel": "SMS"
             }
           ]
         },
         {
-          "scenario_target": "Post-visite boutique sans achat",
-          "scenario_objective": "Continuer à construire la relation",
-          "main_messages_ideas": "Temps de réflexion respecté, informations complémentaires, suggestions alternatives",
+          "scenario_target": "Post-boutique visit without purchase",
+          "scenario_objective": "Continue relationship building",
+          "main_messages_ideas": "Reflection time respected, additional information, alternative suggestions",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Je Pensais à Vous",
-              "timing": "Jour 5 post-visite",
-              "description": "Suivi réflexif",
-              "content": "J'ai repensé à notre conversation sur [Produit]. Voici des informations complémentaires sur sa provenance et son savoir-faire qui pourraient vous intéresser."
+              "title": "Thank You for Your Time",
+              "description": "Day 2 post-visit",
+              "content": "Thank you for visiting yesterday. The pieces you explored—particularly [Product]—suited you beautifully. Should you wish to continue our conversation, I'm at your service.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Quelque Chose Qui Pourrait Vous Séduire",
-              "timing": "Jour 12",
-              "description": "Suggestion alternative",
-              "content": "En réfléchissant à [Produit Original], vous pourriez également apprécier [Alternative]. Les deux partagent [Qualité] mais offrent des expressions différentes. Puis-je organiser pour que vous les voyiez ensemble ?"
+              "title": "Thinking of You",
+              "description": "Day 5 post-visit",
+              "content": "I've been reflecting on our conversation about [Product]. Here's additional information about its provenance and craftsmanship that might be of interest.",
+              "channel": "Email"
+            },
+            {
+              "title": "Extended Private Viewing",
+              "description": "Day 8: Unhurried option",
+              "content": "Some decisions benefit from unhurried consideration. Would you appreciate borrowing [Product] to experience at home for a day or two? This service is available without obligation.",
+              "channel": "Email"
+            },
+            {
+              "title": "Something That May Appeal",
+              "description": "Day 12: Alternative suggestion",
+              "content": "While considering [Original Product], you might also appreciate [Alternative]. Both share [Quality] but offer different expressions. May I arrange for you to see them together?",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Boutique Visit Welcome",
+              "description": "Day 14: Return invitation",
+              "content": "Whether you're ready to decide or simply wish to revisit [Product], you're always welcome. A glass of champagne, unhurried time, and no expectations—just the pleasure of your company.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Wishlist or save-for-later items",
+          "scenario_objective": "Nurture long-term interest",
+          "main_messages_ideas": "Respectful patience, availability updates, relevant moments",
+          "message_sequence": [
+            {
+              "title": "Saved for When You're Ready",
+              "description": "Week 1: Acknowledgment",
+              "content": "I see you've saved [Product] for future consideration. It will be here when you're ready. Should circumstances change or questions arise, simply reach out.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Saved Item: Status Update",
+              "description": "Month 1: Availability update",
+              "content": "The [Product] you saved remains available. If your timeline has shifted or you'd like to proceed, let me know. No pressure—simply keeping you informed.",
+              "channel": "Email"
+            },
+            {
+              "title": "Perfect Timing Opportunity",
+              "description": "When relevant occasion arises",
+              "content": "With [Season/Event] approaching, the [Product] you saved might be particularly relevant. If timing has aligned, I'm here to assist in making it yours.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Taste Remembered",
+              "description": "Month 3: Preference recall",
+              "content": "You saved [Product] months ago. Your excellent taste is noted. If you'd like to revisit it or explore similar pieces, I remember your preferences and can curate accordingly.",
+              "channel": "Email"
+            },
+            {
+              "title": "Scarcity Notification",
+              "description": "If applicable: Final availability",
+              "content": "The [Product] you saved is approaching final availability. If it still speaks to you, this may be the moment to decide. Otherwise, I can alert you to similar pieces when they arrive.",
+              "channel": "Email"
+            },
+            {
+              "title": "What Are You Drawn To Now?",
+              "description": "Month 6: Taste evolution",
+              "content": "Tastes evolve. The [Product] you saved may no longer resonate. Would you like me to refresh my understanding of your current preferences and curate new suggestions?",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Excellence Post-Achat & Entretien des Pièces",
-      "target": "Acheteurs récents dans les 1-30 jours suivant la réception de leur pièce",
-      "objective": "Assurer une satisfaction complète avec 95% de retours positifs, établir une relation d'entretien et générer des recommandations avec 20% d'amélioration du NPS",
-      "kpi": "Taux de satisfaction feedback (cible: 95%+ positif), Utilisation des services (cible: 40%), Taux de retour (cible: <2%), Mentions de recommandation (cible: +20%)",
-      "description": "Parcours post-achat complet qui assure que chaque pièce est chérie et entretenue correctement. Va au-delà du suivi transactionnel pour établir une relation continue autour de l'entretien, la maintenance et l'évolution de la collection du client.",
+      "program_name": "Aperçus Privés & Événements Exclusifs",
+      "target": "VIP and Inner Circle clients based on interests and tier",
+      "objective": "Achieve 65% event attendance, 45% post-event purchase rate, and 95% event satisfaction with NPS above 70",
+      "kpi": "Event attendance rate (target: 65%), Post-event purchase rate (target: 45%), Event satisfaction (target: 95%+), Event NPS (target: 70+)",
+      "description": "Invitation-only events, private viewings, atelier visits, and exclusive experiences reserved for valued clients. These experiences go beyond product presentation to create memorable moments that deepen emotional connection to the brand.",
       "scenarios": [
         {
-          "scenario_target": "Acheteurs de joaillerie fine et pièces précieuses",
-          "scenario_objective": "Établir une relation d'entretien à vie",
-          "main_messages_ideas": "Instructions d'entretien, authentification, conseils assurance, relation de service",
+          "scenario_target": "Top-tier clients for major brand events",
+          "scenario_objective": "Create memorable experiences that strengthen relationship",
+          "main_messages_ideas": "Exclusive invitation, behind-the-scenes access, VIP experience, memorable moments",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Prendre Soin de Votre [Produit]",
-              "timing": "À la livraison",
-              "description": "Guide d'entretien",
-              "content": "Votre [Produit] mérite les meilleurs soins. Ci-joint votre guide d'entretien, incluant recommandations de rangement, instructions de nettoyage et informations sur nos services de maintenance offerts."
+              "title": "A Personal Invitation",
+              "description": "6 weeks before event",
+              "content": "You are cordially invited to [Event Name]—an evening exclusively for our most cherished clients. Join us for [Experience Description]. Your presence would honor us.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Votre Certificat d'Authenticité",
-              "timing": "Jour 2",
-              "description": "Documentation",
-              "content": "Votre certificat d'authenticité et documentation d'expertise sont ci-joints. Nous recommandons de mettre à jour votre couverture assurance pour refléter votre nouvelle pièce. Notre équipe service clients peut vous assister pour toute documentation requise."
+              "title": "Your Evening Awaits",
+              "description": "3 weeks before: Event details",
+              "content": "We're preparing something special for you on [Date]. The evening will include [Highlights]. Please confirm your attendance at your convenience.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Un Échange Personnel",
-              "timing": "Jour 7",
-              "description": "Vérification satisfaction",
-              "content": "Je suis convaincu que votre [Produit] est source de joie. Comment le trouvez-vous ? Je suis là si vous avez des questions sur comment le porter, l'associer ou l'entretenir."
+              "title": "Plus One Welcome",
+              "description": "2 weeks before: Guest invitation",
+              "content": "You're welcome to bring a guest to [Event]. Perhaps someone special who would appreciate [Brand] and the exclusive experience we've created. Please let me know if you'll be accompanied.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Invitation Service Offert",
-              "timing": "Jour 30",
-              "description": "Introduction service",
-              "content": "En tant que client privilégié, vous bénéficiez d'une inspection et d'un nettoyage offerts. Souhaitez-vous que je programme votre premier rendez-vous de service selon votre convenance ?"
+              "title": "A Preview of What Awaits",
+              "description": "1 week before: Anticipation builder",
+              "content": "In one week, we'll welcome you for [Event]. Here's a glimpse of what's in store. May I assist with any arrangements—transportation, accommodation, or special requests?",
+              "channel": "Email"
+            },
+            {
+              "title": "We Look Forward to Seeing You",
+              "description": "Day before event",
+              "content": "Tomorrow evening, we welcome you. A car will collect you at [Time] from [Location]. Simply relax—we've taken care of everything.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Thank You for a Memorable Evening",
+              "description": "Day after event: Gratitude and memento",
+              "content": "Last evening was elevated by your presence. As a memento of our time together, please accept [Gift/Photo]. Until we meet again.",
+              "channel": "Email"
+            },
+            {
+              "title": "Pieces from the Evening",
+              "description": "Day 3 after event: Post-event opportunity",
+              "content": "Several pieces from [Event] captured attention. If any resonated with you, I've attached details and can arrange for private viewing or immediate availability.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Feedback Matters",
+              "description": "Week 1 after event",
+              "content": "Your experience at [Event] matters to us. How did we do? Your candid feedback helps us create even more meaningful experiences for you and our other treasured clients.",
+              "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Acheteurs d'horlogerie et montres",
-          "scenario_objective": "Établir une relation de service continue",
-          "main_messages_ideas": "Assistance réglage, calendrier de service, vérification étanchéité, entretien mouvement",
+          "scenario_target": "Clients interested in craftsmanship (atelier visits)",
+          "scenario_objective": "Deepen appreciation through behind-the-scenes access",
+          "main_messages_ideas": "Artisan experience, craftsmanship journey, exclusive access, brand heritage",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Votre Garde-Temps : Premiers Pas",
-              "timing": "À la livraison",
-              "description": "Guide de démarrage",
-              "content": "Votre [Garde-Temps] est prêt à vous accompagner dans les moments de la vie. Ci-joint votre guide de réglage. Si vous avez besoin d'assistance, notre horloger est disponible pour une consultation de mise en route offerte."
+              "title": "An Invitation to Our Atelier",
+              "description": "For select clients",
+              "content": "For those who appreciate the art behind the beauty, we offer rare access to our atelier. Witness our master artisans at work and understand the hours of dedication in each piece.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Garantie et Service",
-              "timing": "Jour 3",
-              "description": "Documentation garantie",
-              "content": "Votre enregistrement de garantie est complet. Votre [Garde-Temps] est couvert pour [Durée]. J'ai joint votre calendrier de service—nos maîtres horlogers recommandent un entretien [Intervalle de Service] pour maintenir une performance optimale."
+              "title": "Your Atelier Experience",
+              "description": "Confirmation and preparation",
+              "content": "Your visit to our atelier is confirmed for [Date]. You'll witness [Specific Craft] and meet [Artisan Name], who has been with us for [Years]. A truly special experience awaits.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Vivre avec Votre Garde-Temps",
-              "timing": "Jour 14",
-              "description": "Conseils d'utilisation",
-              "content": "Après deux semaines ensemble, vous apprécierez ces conseils de nos horlogers : [Conseils]. N'oubliez pas, nous sommes toujours là pour les ajustements, l'entretien, ou simplement pour partager votre plaisir."
+              "title": "What to Expect",
+              "description": "Pre-visit briefing",
+              "content": "During your atelier visit, you'll see: [Experience Details]. Feel free to ask questions—our artisans enjoy sharing their knowledge with those who appreciate true craftsmanship.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Rappel de Service",
-              "timing": "Selon calendrier de service",
-              "description": "Rappel maintenance",
-              "content": "Votre [Garde-Temps] approche de son intervalle de service recommandé. Souhaitez-vous que j'organise un rendez-vous avec nos maîtres horlogers pour qu'il continue à fonctionner au mieux ?"
+              "title": "Journey Begins Tomorrow",
+              "description": "Day before visit",
+              "content": "Tomorrow you'll enter our atelier. Dress comfortably, bring curiosity, and prepare to see luxury craftsmanship few ever witness. We'll meet you at [Time/Location].",
+              "channel": "SMS"
+            },
+            {
+              "title": "A Token of Your Visit",
+              "description": "Post-visit",
+              "content": "Thank you for visiting our atelier. As a remembrance, please accept this [Token]—a small piece created during your visit. We hope it holds meaning.",
+              "channel": "Email"
+            },
+            {
+              "title": "The Artisan's Message",
+              "description": "Personal follow-up",
+              "content": "[Artisan Name] wanted to thank you personally for your interest in their craft. They enjoyed meeting you and hope the experience deepened your appreciation for the work behind every piece.",
+              "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Acheteurs de maroquinerie et mode",
-          "scenario_objective": "Assurer la satisfaction et générer le second achat",
-          "main_messages_ideas": "Inspiration styling, conseils d'entretien, pièces coordonnées, rangement saisonnier",
+          "scenario_target": "Collectors for limited edition launches",
+          "scenario_objective": "Provide first access to rare pieces",
+          "main_messages_ideas": "Collector priority, rarity emphasis, investment opportunity, exclusive reveal",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Styliser Votre [Produit]",
-              "timing": "Jour 3",
-              "description": "Inspiration styling",
-              "content": "Votre [Produit] offre des possibilités infinies. Voici des suggestions de styling de notre équipe créative, incluant comment le porter du jour au soir."
+              "title": "Collector's First Access",
+              "description": "Pre-launch notification",
+              "content": "As a recognized collector, you receive first notification: [Limited Edition] launches in [Timeframe]. Only [Number] pieces exist. You have 48-hour exclusive access before general release.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Entretenir le Cuir d'Exception",
-              "timing": "Jour 10",
-              "description": "Conseils d'entretien",
-              "content": "Le cuir d'exception développe du caractère avec le temps. Voici comment assurer que votre [Produit] vieillisse magnifiquement : [Conseils d'Entretien]. Nos artisans offrent également des traitements nourrissants offerts."
+              "title": "The Story Behind [Limited Edition]",
+              "description": "Context and significance",
+              "content": "[Limited Edition] represents [Significance]. The inspiration, materials, and craftsmanship make it exceptional. For collectors, here's why this piece matters: [Collector Value].",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Pièces Complémentaires",
-              "timing": "Jour 21",
-              "description": "Cross-sell avec élégance",
-              "content": "Votre [Produit] s'associe magnifiquement avec des pièces de notre [Collection]. Si vous souhaitez explorer des articles qui complètent votre sélection, ce serait un plaisir de vous en proposer."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Collections Exclusives & Avant-Première Privée",
-      "target": "Clients VIP et acheteurs récurrents haute valeur selon leur niveau et préférences",
-      "objective": "Atteindre 50% de participation aux avant-premières, 35% de conversion avant-première vers achat, et capturer 60% des ventes éditions limitées par les clients VIP",
-      "kpi": "Taux de participation avant-première privée (cible: 50%), Taux de conversion avant-première (cible: 35%), Capture VIP éditions limitées (cible: 60%), Satisfaction accès anticipé (cible: 92%)",
-      "description": "Accès anticipé par niveau aux nouvelles collections, éditions limitées et pièces exclusives selon la profondeur de la relation client. Les clients top-tier reçoivent une curation personnelle et premier choix, s'assurant qu'ils se sentent valorisés et ont accès aux pièces les plus convoitées.",
-      "scenarios": [
-        {
-          "scenario_target": "Clients top-tier du Cercle Intérieur",
-          "scenario_objective": "Offrir premier accès et curation personnelle",
-          "main_messages_ideas": "Privilège premier regard, curation personnelle, rendez-vous privé, disponibilité immédiate",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Un Premier Regard Exclusif",
-              "timing": "14 jours avant lancement collection",
-              "description": "Avant-première Cercle Intérieur",
-              "content": "Avant que le monde ne la découvre, je tenais à vous faire vivre [Nom de la Collection]. En tant que l'un de nos clients les plus précieux, vous avez le premier privilège. Puis-je organiser une présentation privée ?"
+              "title": "Private Unveiling Invitation",
+              "description": "Exclusive viewing event",
+              "content": "Join us for the private unveiling of [Limited Edition]. You and a select few collectors will be first to see and handle these rare pieces. Your RSVP reserves your viewing time.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Pièces Sélectionnées pour Vous",
-              "timing": "10 jours avant",
-              "description": "Curation personnelle",
-              "content": "Connaissant votre goût exquis pour [Style], j'ai mis de côté trois pièces de [Collection] qui, je pense, résonneront avec vous. Elles attendent votre considération."
+              "title": "Your Reserved Viewing",
+              "description": "Personal appointment",
+              "content": "Your [Limited Edition] viewing is reserved for [Time]. You'll have unhurried access to examine pieces, review documentation, and decide without others present. Complete privacy for your consideration.",
+              "channel": "SMS"
             },
             {
-              "channel": "Email",
-              "title": "Votre Rendez-vous Privé",
-              "timing": "7 jours avant",
-              "description": "Confirmation rendez-vous",
-              "content": "Votre présentation privée est confirmée pour [Date/Heure]. Du champagne vous attendra, et les pièces seront prêtes pour que vous les découvriez sans interruption."
+              "title": "24-Hour Priority Closing",
+              "description": "Final decision window",
+              "content": "Your priority access concludes in 24 hours. The [Limited Edition] piece you viewed—[Number] of [Total]—remains available. Shall I secure it for your collection?",
+              "channel": "WhatsApp"
             },
             {
-              "channel": "SMS",
-              "title": "Les Pièces Sont Désormais Vôtres à Choisir",
-              "timing": "Jour de la présentation privée ou 24h avant ouverture plus large",
-              "description": "Rappel décision",
-              "content": "La collection ouvre à nos clients VIP demain. Vos pièces sélectionnées restent réservées jusqu'à minuit. Faites-moi simplement part de votre décision."
+              "title": "Secured for You",
+              "description": "Acquisition confirmation",
+              "content": "Congratulations. [Limited Edition #X] is now yours. You've acquired a piece that will appreciate in both financial value and personal significance. All documentation follows shortly.",
+              "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Clients VIP (second niveau)",
-          "scenario_objective": "Offrir accès prioritaire avant disponibilité générale",
-          "main_messages_ideas": "Privilège accès anticipé, highlights collection, fenêtre shopping prioritaire",
+          "scenario_target": "Local clients for boutique events",
+          "scenario_objective": "Drive foot traffic and community building",
+          "main_messages_ideas": "Local community, casual atmosphere, discovery opportunity, social experience",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Avant-Première Prioritaire : [Collection]",
-              "timing": "5 jours avant lancement public",
-              "description": "Invitation avant-première",
-              "content": "En tant que client VIP privilégié, vous êtes invité à découvrir [Collection] avant son dévoilement public. Explorez la collection et sécurisez vos coups de cœur avant qu'ils ne soient disponibles pour tous."
+              "title": "Evening at the Boutique",
+              "description": "Local event invitation",
+              "content": "Join us this [Day] evening for an intimate gathering at our boutique. Preview new arrivals, enjoy refreshments, and connect with fellow [Brand] enthusiasts. Casual, convivial, no pressure.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Sélection pour Votre Considération",
-              "timing": "3 jours avant",
-              "description": "Curation personnalisée",
-              "content": "Selon vos préférences, ces pièces de [Collection] pourraient particulièrement vous séduire : [Sélections]. Votre fenêtre de shopping prioritaire ouvre dans 48 heures."
+              "title": "Bring a Friend",
+              "description": "Guest encouragement",
+              "content": "The more interesting people in the room, the better the evening. Please bring a friend who appreciates quality and good company. We'd love to meet them.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Votre Accès Prioritaire Est Ouvert",
-              "timing": "48 heures avant lancement public",
-              "description": "Ouverture accès",
-              "content": "Votre accès VIP à [Collection] est maintenant actif. Achetez en priorité avant le lancement public. Des pièces limitées vous attendent."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Reconnaissance Jalons & Anniversaires",
-      "target": "Tous les clients selon les jalons de la relation et occasions personnelles",
-      "objective": "Atteindre 90% de complétion de reconnaissance des jalons, 55% de redemption des offres jalons, et un approfondissement mesurable de la relation",
-      "kpi": "Taux de reconnaissance jalons (cible: 90%), Redemption offre jalon (cible: 55%), Taux d'achat anniversaire (cible: 35%), Amélioration sentiment client (cible: +25%)",
-      "description": "Reconnaissance attentionnée des jalons clients, anniversaires et anniversaires de relation qui va au-delà du marketing générique. Chaque reconnaissance est personnalisée, significative, et souvent accompagnée d'un témoignage tangible d'appréciation plutôt que d'une simple remise.",
-      "scenarios": [
-        {
-          "scenario_target": "Anniversaires clients",
-          "scenario_objective": "Créer une expérience d'anniversaire mémorable",
-          "main_messages_ideas": "Message d'anniversaire personnel, cadeau exclusif, privilège spécial, invitation célébration",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Vœux d'Anniversaire de [Marque]",
-              "timing": "Jour de l'anniversaire",
-              "description": "Message personnel",
-              "content": "Joyeux Anniversaire, [Prénom]. En ce jour spécial, nous vous célébrons. En témoignage de notre gratitude, veuillez accepter [Cadeau/Privilège]. Que cette année vous apporte joie et beauté."
+              "title": "What to Expect",
+              "description": "Event preview",
+              "content": "Tomorrow evening: champagne, light bites, first looks at [Collection], and relaxed conversation. Arrive anytime between [Hours]. Stay as long as you'd like. Looking forward to seeing you.",
+              "channel": "SMS"
             },
             {
-              "channel": "Email",
-              "title": "Votre Cadeau d'Anniversaire Vous Attend",
-              "timing": "Jour 1 du mois d'anniversaire",
-              "description": "Notification cadeau",
-              "content": "Votre mois d'anniversaire est arrivé, et avec lui un cadeau spécial de [Marque]. Rendez-nous visite pour recevoir votre [Cadeau] exclusif et déguster une coupe de champagne en votre honneur."
+              "title": "Tonight's Gathering",
+              "description": "Day-of reminder",
+              "content": "We're preparing the boutique for tonight's gathering. Doors open at [Time]. Come when convenient, no RSVP needed. We hope to see you.",
+              "channel": "SMS"
             },
             {
-              "channel": "Email",
-              "title": "Expérience d'Anniversaire",
-              "timing": "1 semaine avant l'anniversaire",
-              "description": "Invitation expérience",
-              "content": "Ce serait un honneur de célébrer votre anniversaire avec vous. Rejoignez-nous pour une [Expérience] privée où vous pourrez découvrir nos dernières créations avec rafraîchissements offerts."
-            }
-          ]
-        },
-        {
-          "scenario_target": "Anniversaires de relation (premier achat)",
-          "scenario_objective": "Célébrer et renforcer la relation",
-          "main_messages_ideas": "Gratitude anniversaire, réflexion sur la relation, privilège exclusif, parcours collection",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Un An Ensemble",
-              "timing": "Premier anniversaire du premier achat",
-              "description": "Célébration premier anniversaire",
-              "content": "Il y a un an, [Produit] trouvait sa place chez vous. Cet anniversaire est significatif pour nous—vous faites partie de notre histoire. En remerciement, veuillez accepter [Privilège Anniversaire]."
-            },
-            {
-              "channel": "Email",
-              "title": "Votre Parcours avec [Marque]",
-              "timing": "Anniversaire multi-années",
-              "description": "Résumé relation",
-              "content": "[X] années ensemble. De [Premier Produit] à aujourd'hui, ce fut un honneur de faire partie de votre collection. À de nombreuses autres années de passion partagée pour l'extraordinaire."
-            },
-            {
-              "channel": "Email",
-              "title": "Invitation Célébration Anniversaire",
-              "timing": "Jalons anniversaires (5, 10 ans)",
-              "description": "Événement anniversaire majeur",
-              "content": "[X] années de passion partagée pour la beauté et le savoir-faire. Ce serait un honneur de célébrer ce jalon lors d'une réception intime. Veuillez nous rejoindre."
-            }
-          ]
-        },
-        {
-          "scenario_target": "Accomplissements de jalons de dépenses",
-          "scenario_objective": "Reconnaître et élever le statut client",
-          "main_messages_ideas": "Élévation de statut, nouveaux privilèges, services dédiés, reconnaissance",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Bienvenue au [Cercle Intérieur/Nouveau Niveau]",
-              "timing": "À l'atteinte du seuil de dépenses",
-              "description": "Élévation de niveau",
-              "content": "Votre appréciation pour le savoir-faire d'exception a atteint un jalon. C'est mon plaisir de vous accueillir au [Nom du Niveau], où de nouveaux privilèges vous attendent. Permettez-moi de vous présenter vos services enrichis."
-            },
-            {
-              "channel": "Email",
-              "title": "Vos Nouveaux Privilèges",
-              "timing": "Jour 3",
-              "description": "Détails bénéfices niveau",
-              "content": "En tant que client [Niveau], vous bénéficiez désormais de : [Liste des avantages exclusifs]. Votre conseiller dédié [Nom] s'assurera que vous profitez de chaque avantage de votre nouveau statut."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Événements Privés & Expériences Exclusives",
-      "target": "Clients VIP et Cercle Intérieur selon leurs intérêts et niveau",
-      "objective": "Atteindre 65% de participation aux événements, 45% de taux d'achat post-événement, et 95% de satisfaction événement avec NPS supérieur à 70",
-      "kpi": "Taux de participation événement (cible: 65%), Taux d'achat post-événement (cible: 45%), Satisfaction événement (cible: 95%+), NPS événement (cible: 70+)",
-      "description": "Événements sur invitation, présentations privées, visites d'atelier et expériences exclusives réservés aux clients privilégiés. Ces expériences vont au-delà de la présentation produit pour créer des moments mémorables qui approfondissent la connexion émotionnelle à la marque.",
-      "scenarios": [
-        {
-          "scenario_target": "Clients top-tier pour événements majeurs de marque",
-          "scenario_objective": "Créer des expériences mémorables qui renforcent la relation",
-          "main_messages_ideas": "Invitation exclusive, accès coulisses, expérience VIP, moments mémorables",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Une Invitation Personnelle",
-              "timing": "6 semaines avant l'événement",
-              "description": "Invitation initiale",
-              "content": "Vous êtes cordialement invité à [Nom de l'Événement]—une soirée exclusivement réservée à nos clients les plus précieux. Rejoignez-nous pour [Description de l'Expérience]. Votre présence nous honorerait."
-            },
-            {
-              "channel": "Email",
-              "title": "Votre Soirée Vous Attend",
-              "timing": "3 semaines avant",
-              "description": "Détails événement",
-              "content": "Nous préparons quelque chose de spécial pour vous le [Date]. La soirée comprendra [Points Forts]. Veuillez confirmer votre présence selon votre convenance."
-            },
-            {
-              "channel": "Email",
-              "title": "Un Aperçu de Ce Qui Vous Attend",
-              "timing": "1 semaine avant",
-              "description": "Construction anticipation",
-              "content": "Dans une semaine, nous vous accueillons pour [Événement]. Voici un aperçu de ce qui est prévu. Puis-je vous aider pour quelque arrangement que ce soit ?"
-            },
-            {
-              "channel": "SMS",
-              "title": "Nous Avons Hâte de Vous Voir",
-              "timing": "Veille de l'événement",
-              "description": "Rappel final",
-              "content": "Demain soir, nous vous accueillons. Une voiture viendra vous chercher à [Heure] à [Lieu]. Détendez-vous simplement—nous avons pris soin de tout."
-            },
-            {
-              "channel": "Email",
-              "title": "Merci pour Cette Merveilleuse Soirée",
-              "timing": "Lendemain de l'événement",
-              "description": "Gratitude et souvenir",
-              "content": "La soirée d'hier a été rehaussée par votre présence. En souvenir de notre moment ensemble, veuillez accepter [Cadeau/Photo]. À notre prochaine rencontre."
-            },
-            {
-              "channel": "Email",
-              "title": "Pièces de la Soirée",
-              "timing": "Jour 3 après l'événement",
-              "description": "Opportunité post-événement",
-              "content": "Plusieurs pièces de [Événement] ont retenu l'attention. Si l'une d'elles a résonné avec vous, j'ai joint les détails et peux organiser une présentation privée ou une disponibilité immédiate."
-            }
-          ]
-        },
-        {
-          "scenario_target": "Clients intéressés par le savoir-faire (visites d'atelier)",
-          "scenario_objective": "Approfondir l'appréciation grâce à l'accès coulisses",
-          "main_messages_ideas": "Expérience artisans, voyage dans le savoir-faire, accès exclusif, héritage de marque",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Une Invitation dans Notre Atelier",
-              "timing": "Pour clients sélectionnés",
-              "description": "Invitation atelier",
-              "content": "Pour ceux qui apprécient l'art derrière la beauté, nous offrons un accès rare à notre atelier. Soyez témoin du travail de nos maîtres artisans et comprenez les heures de dévouement dans chaque pièce."
-            },
-            {
-              "channel": "Email",
-              "title": "Votre Expérience Atelier",
-              "timing": "Confirmation et préparation",
-              "description": "Détails visite",
-              "content": "Votre visite de notre atelier est confirmée pour [Date]. Vous assisterez à [Savoir-faire Spécifique] et rencontrerez [Nom de l'Artisan], qui est avec nous depuis [Années]. Une expérience véritablement spéciale vous attend."
-            },
-            {
-              "channel": "Email",
-              "title": "Un Souvenir de Votre Visite",
-              "timing": "Post-visite",
-              "description": "Remerciement et token",
-              "content": "Merci d'avoir visité notre atelier. En souvenir, veuillez accepter ce [Token]—une petite pièce créée lors de votre visite. Nous espérons qu'elle a du sens pour vous."
+              "title": "Thank You for Coming",
+              "description": "Post-event follow-up",
+              "content": "Thank you for joining us. Your presence made the evening. If any piece you saw appeals to you, or if you'd simply like to revisit in daylight, I'm available.",
+              "channel": "Email"
             }
           ]
         }
@@ -514,201 +1224,721 @@
     },
     {
       "program_name": "Construction de Collection & Évolution de Style",
-      "target": "Clients établis avec achats multiples montrant un comportement de collection",
-      "objective": "Augmenter la possession multi-catégories à 70%, générer la complétion de collection avec 40% de conversion cross-catégorie, et augmenter les dépenses annuelles de 25%",
-      "kpi": "Possession multi-catégories (cible: 70%), Conversion cross-catégorie (cible: 40%), Augmentation dépenses annuelles (cible: +25%), Taux de complétion collection (cible: 30%)",
-      "description": "Programme sophistiqué qui guide les clients dans la construction d'une collection cohérente tout en respectant l'évolution de leur style. Offre une curation attentionnée qui aide les clients à voir les pièces qu'ils possèdent comme partie d'une histoire plus large, encourageant la construction de collection à travers les catégories.",
+      "target": "Established clients with multiple purchases showing collection-building behavior",
+      "objective": "Increase multi-category ownership to 70%, drive collection completion with 40% cross-category conversion, and increase annual client spend by 25%",
+      "kpi": "Multi-category ownership (target: 70%), Cross-category conversion (target: 40%), Annual spend increase (target: +25%), Collection completion rate (target: 30%)",
+      "description": "Sophisticated program that guides clients in building a cohesive collection while respecting their evolving style. Provides thoughtful curation that helps clients see pieces they own as part of a larger story, encouraging collection building across categories.",
       "scenarios": [
         {
-          "scenario_target": "Acheteurs mono-catégorie prêts pour l'expansion",
-          "scenario_objective": "Introduire des catégories complémentaires",
-          "main_messages_ideas": "Évolution de style, pièces complémentaires, construction de collection, introduction catégorie",
+          "scenario_target": "Single-category purchasers ready for expansion",
+          "scenario_objective": "Introduce complementary categories",
+          "main_messages_ideas": "Style evolution, complementary pieces, collection building, category introduction",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Développer Votre Collection [Marque]",
-              "timing": "Après 3ème achat dans la même catégorie",
-              "description": "Introduction cross-catégorie",
-              "content": "Votre collection [Marque] s'est magnifiquement développée. De nombreux clients qui apprécient [Catégorie] trouvent également du plaisir dans notre [Nouvelle Catégorie]. Si vous souhaitez explorer, ce serait un plaisir de vous la présenter."
+              "title": "Expanding Your [Brand] Collection",
+              "description": "After 3rd purchase in same category",
+              "content": "Your [Brand] collection has grown beautifully. Many clients who appreciate [Category] also find joy in our [New Category]. If you'd like to explore, I'd be pleased to introduce you.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Un Complément Parfait",
-              "timing": "Cross-sell spécifique catégorie",
-              "description": "Suggestion pièces coordonnées",
-              "content": "Votre [Pièce Existante] s'associe de façon exquise avec [Catégorie Complémentaire]. Voici comment nos clients les stylent ensemble. Puis-je sélectionner des pièces pour votre considération ?"
+              "title": "A Perfect Complement",
+              "description": "Category-specific cross-sell",
+              "content": "Your [Existing Piece] pairs exquisitely with [Complementary Category]. Here's how clients style them together. Shall I select pieces for your consideration?",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Votre Profil de Style",
-              "timing": "Revue collection annuelle",
-              "description": "Bilan collection",
-              "content": "En examinant votre collection, je vois une belle cohérence dans votre goût pour [Style]. Sur cette base, j'ai identifié des pièces qui compléteraient magnifiquement votre garde-robe/collection."
+              "title": "Cross-Category Coordination",
+              "description": "Visual demonstration",
+              "content": "Here's how [New Category] coordinates with pieces you own: [Styling Examples]. This category expansion would enhance versatility while maintaining cohesion. Interested?",
+              "channel": "Email"
+            },
+            {
+              "title": "Introduction Experience",
+              "description": "New category discovery",
+              "content": "To properly introduce you to [New Category], may I arrange a private session? I'll show you how it complements your existing pieces and demonstrate the quality that defines our approach.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Style Profile",
+              "description": "Annual collection review",
+              "content": "Reviewing your collection, I see a beautiful consistency in your taste for [Style]. Based on this, I've identified pieces that would complete your wardrobe/collection beautifully.",
+              "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Clients haute valeur prêts pour des pièces majeures",
-          "scenario_objective": "Guider vers des pièces signatures et d'investissement",
-          "main_messages_ideas": "Pièces d'investissement, articles signatures, pièces héritage, qualité patrimoine",
+          "scenario_target": "Multi-category collectors seeking cohesion",
+          "scenario_objective": "Guide toward complete, coordinated collection",
+          "main_messages_ideas": "Collection strategy, gap identification, coordinating pieces, signature look",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Une Pièce pour les Âges",
-              "timing": "Quand approprié selon la relation",
-              "description": "Introduction pièces d'exception",
-              "content": "Certaines pièces transcendent le temps—elles deviennent des signatures, transmises de génération en génération. Lorsque vous serez prêt à considérer une telle pièce, ce serait un honneur de vous guider à travers nos créations les plus exceptionnelles."
+              "title": "Your Collection Strategy",
+              "description": "Strategic guidance",
+              "content": "You're building a significant [Brand] collection across categories. With intention, we can create complete cohesion. May I propose a collection strategy that ensures every piece relates to the whole?",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "L'Histoire de [Pièce Signature]",
-              "timing": "Introduction pièce d'investissement",
-              "description": "Présentation pièce majeure",
-              "content": "La [Nom de la Pièce] représente le sommet de notre savoir-faire. Chacune prend [Temps] à créer et devient plus significative avec chaque année qui passe. Si vous souhaitez en savoir plus, je peux organiser une présentation privée."
+              "title": "Collection Audit",
+              "description": "Current state analysis",
+              "content": "I've reviewed your collection: [Summary]. You have strength in [Categories], opportunity in [Gaps]. Here's a roadmap to a complete, coordinated collection that reflects your aesthetic.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Créer Votre Pièce Héritage",
-              "timing": "Opportunité sur-mesure",
-              "description": "Invitation bespoke",
-              "content": "Pour les collectionneurs comme vous, nous offrons le privilège de créer des pièces sur-mesure. Si vous souhaitez commander quelque chose de véritablement unique, nos artisans sont à votre service."
+              "title": "The Missing Pieces",
+              "description": "Gap identification",
+              "content": "Your collection has deliberate gaps—pieces that would unlock new versatility and complete existing sets. I've identified [Number] items that would elevate your collection significantly.",
+              "channel": "Email"
+            },
+            {
+              "title": "Seasonal Rotation Plan",
+              "description": "Collection management",
+              "content": "With collections of your depth, seasonal rotation matters. Here's a strategy for rotating pieces by season, ensuring each gets proper wear while maintaining optimal condition.",
+              "channel": "Email"
+            },
+            {
+              "title": "Signature Pieces",
+              "description": "Investment identification",
+              "content": "Every serious collection includes signature pieces—items of exceptional quality or rarity that anchor the rest. Here are pieces worthy of that designation in your collection.",
+              "channel": "Email"
+            },
+            {
+              "title": "Multi-Year Collection Vision",
+              "description": "Long-term planning",
+              "content": "Great collections aren't built quickly. If you're committed to building a museum-worthy [Brand] collection, here's a multi-year acquisition strategy that respects both budget and availability.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "High-value clients ready for major pieces",
+          "scenario_objective": "Guide toward signature and investment pieces",
+          "main_messages_ideas": "Investment pieces, signature items, legacy pieces, heirloom quality",
+          "message_sequence": [
+            {
+              "title": "A Piece for the Ages",
+              "description": "When appropriate based on relationship",
+              "content": "Some pieces transcend time—they become signatures, passed through generations. When you're ready to consider such a piece, I'd be honored to guide you through our most exceptional offerings.",
+              "channel": "Email"
+            },
+            {
+              "title": "The [Signature Piece] Story",
+              "description": "Introduction to investment piece",
+              "content": "The [Piece Name] represents the pinnacle of our craft. Each takes [Time] to create and becomes more meaningful with each passing year. If you'd like to learn more, I can arrange a private presentation.",
+              "channel": "Email"
+            },
+            {
+              "title": "Investment Value Consideration",
+              "description": "Financial perspective",
+              "content": "While beauty is the primary reason to acquire [Piece], investment value merits discussion. Historical appreciation rates, rarity factors, and market demand suggest [Analysis].",
+              "channel": "Email"
+            },
+            {
+              "title": "Creating Your Legacy Piece",
+              "description": "Bespoke opportunity",
+              "content": "For collectors like yourself, we offer the privilege of creating bespoke pieces. Should you wish to commission something truly unique, our artisans are at your service.",
+              "channel": "Email"
+            },
+            {
+              "title": "Financing Options Available",
+              "description": "Investment facilitation",
+              "content": "For significant acquisitions, we offer discrete financing arrangements that allow you to acquire exceptional pieces while preserving capital flexibility. Terms are favorable and process is private.",
+              "channel": "Email"
+            },
+            {
+              "title": "Private Sale Opportunity",
+              "description": "Exclusive access",
+              "content": "A client is discreetly selling [Significant Piece]. Given your collection and appreciation for [Quality], I wanted you to know before it goes to market. Interested in details?",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients with inconsistent style across purchases",
+          "scenario_objective": "Guide toward cohesive aesthetic",
+          "main_messages_ideas": "Style refinement, aesthetic clarity, coordinating strategy, editing",
+          "message_sequence": [
+            {
+              "title": "Refining Your Aesthetic",
+              "description": "Style guidance offer",
+              "content": "Your [Brand] pieces reflect diverse tastes. This is natural as style evolves. Would you value guidance in refining toward a more cohesive aesthetic that truly represents you?",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Style Direction",
+              "description": "Analysis and recommendation",
+              "content": "Reviewing your collection, I see your strongest aesthetic leaning toward [Style]. Future acquisitions in this direction would create powerful cohesion while pieces in other styles might be reconsidered.",
+              "channel": "Email"
+            },
+            {
+              "title": "Collection Editing",
+              "description": "Removal suggestion",
+              "content": "Sometimes less is more. Certain pieces in your collection don't serve your evolved aesthetic. We offer consignment services for items you'd like to cycle out, funding acquisitions that better fit.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Signature Look",
+              "description": "Identity development",
+              "content": "When people think of your style, what should they envision? Here's a proposal for your signature look—a clear aesthetic that guides all future acquisitions and creates instant recognition.",
+              "channel": "Email"
+            },
+            {
+              "title": "Focused Acquisition Plan",
+              "description": "Disciplined approach",
+              "content": "To achieve collection cohesion, I propose we focus exclusively on [Style/Category] for your next [Number] acquisitions. This discipline will create the unified aesthetic you're seeking.",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Cercle Intérieur & Reconnaissance Ambassadeur",
-      "target": "Clients top-tier et ambassadeurs de marque",
-      "objective": "Atteindre 85% de rétention Cercle Intérieur, 50% d'activation ambassadeur, et 30% des nouveaux clients VIP via recommandation ambassadeur",
-      "kpi": "Rétention Cercle Intérieur (cible: 85%), Taux d'activation ambassadeur (cible: 50%), Contribution parrainage ambassadeur (cible: 30%), Satisfaction ambassadeur (cible: 95%)",
-      "description": "Le plus haut niveau de reconnaissance client, réservé à ceux qui ont démontré une appréciation exceptionnelle pour la marque. Les membres du Cercle Intérieur reçoivent le summum du service personnalisé, accès exclusif et reconnaissance, tandis que les ambassadeurs aident à introduire d'autres personnes à l'expérience de marque.",
+      "program_name": "Reconnaissance des Moments Clés & Anniversaires",
+      "target": "All clients based on relationship milestones and personal occasions",
+      "objective": "Achieve 90% milestone recognition completion, 55% milestone offer redemption, and measurable relationship deepening",
+      "kpi": "Milestone recognition rate (target: 90%), Milestone offer redemption (target: 55%), Anniversary purchase rate (target: 35%), Client sentiment improvement (target: +25%)",
+      "description": "Thoughtful recognition of client milestones, birthdays, and relationship anniversaries that goes beyond generic marketing. Each recognition is personalized, meaningful, and often accompanied by a tangible token of appreciation rather than a mere discount.",
       "scenarios": [
         {
-          "scenario_target": "Membres du Cercle Intérieur",
-          "scenario_objective": "Offrir la reconnaissance ultime et la rétention",
-          "main_messages_ideas": "Privilèges les plus élevés, reconnaissance personnelle, accès exclusif, famille de marque",
+          "scenario_target": "Client birthdays",
+          "scenario_objective": "Create meaningful birthday experience",
+          "main_messages_ideas": "Personal birthday message, exclusive gift, special privilege, celebration invitation",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Bienvenue dans Notre Cercle Intérieur",
-              "timing": "À l'élévation au niveau supérieur",
-              "description": "Accueil Cercle Intérieur",
-              "content": "C'est mon privilège de vous accueillir dans le Cercle Intérieur [Marque]—notre communauté la plus intime de collectionneurs et connaisseurs. Votre appréciation pour notre savoir-faire n'est pas passée inaperçue. Voici les privilèges qui vous appartiennent désormais."
+              "title": "Birthday Wishes from [Brand]",
+              "description": "Day of birthday: Personal message",
+              "content": "Happy Birthday, [Name]. On your special day, we celebrate you. As a token of our appreciation, please accept [Gift/Privilege]. May this year bring you joy and beauty.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Votre Équipe Dédiée",
-              "timing": "Jour 3",
-              "description": "Introduction équipe",
-              "content": "En tant que membre du Cercle Intérieur, vous avez accès à nos conseillers et artisans les plus seniors. Permettez-moi de vous présenter l'équipe dédiée à votre expérience : [Membres de l'Équipe et leurs rôles]."
+              "title": "Your Birthday Gift Awaits",
+              "description": "Day 1 of birthday month: Gift notification",
+              "content": "Your birthday month has arrived, and so has a special gift from [Brand]. Visit us to receive your exclusive [Gift] and enjoy a glass of champagne in your honor.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Invitation Exclusive : Réception Cercle Intérieur",
-              "timing": "Événement annuel Cercle Intérieur",
-              "description": "Événement annuel",
-              "content": "Vous êtes invité à la réception annuelle du Cercle Intérieur—une soirée intime où nos clients les plus précieux rencontrent nos directeurs créatifs et maîtres artisans. Nous espérons que vous nous rejoindrez."
+              "title": "Birthday Experience",
+              "description": "1 week before birthday: Experience invitation",
+              "content": "We would be honored to celebrate your birthday with you. Join us for a private [Experience] where you can explore our latest offerings with complimentary refreshments.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Votre Reconnaissance Annuelle",
-              "timing": "Cadeau annuel Cercle Intérieur",
-              "description": "Cadeau de fin d'année",
-              "content": "À l'approche de la fin d'année, nous réfléchissons à notre relation avec gratitude. Veuillez accepter ce [Cadeau Exclusif] en témoignage de notre reconnaissance pour faire partie de notre famille la plus proche."
+              "title": "A Birthday Surprise",
+              "description": "On birthday: Special delivery",
+              "content": "Something special arrives today—a birthday surprise from [Brand]. We hope it brings a smile. You're valued not just as a client but as a member of our extended family.",
+              "channel": "SMS"
+            },
+            {
+              "title": "For Your Special Day",
+              "description": "Birthday week privilege",
+              "content": "During your birthday week, enjoy [Special Privilege]: priority access to new arrivals, complimentary services, or personal shopping assistance. However we can make this week special, let us know.",
+              "channel": "WhatsApp"
             }
           ]
         },
         {
-          "scenario_target": "Ambassadeurs de marque (ceux qui recommandent)",
-          "scenario_objective": "Reconnaître et encourager le plaidoyer",
-          "main_messages_ideas": "Reconnaissance ambassadeur, gratitude parrainage, privilèges exclusifs, construction communauté",
+          "scenario_target": "Relationship anniversaries (first purchase anniversary)",
+          "scenario_objective": "Celebrate and strengthen relationship",
+          "main_messages_ideas": "Anniversary gratitude, relationship reflection, exclusive privilege, collection journey",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Vous Avez Présenté Quelqu'un de Spécial",
-              "timing": "Quand le filleul effectue un achat",
-              "description": "Notification conversion parrainage",
-              "content": "Votre recommandation a conduit [Ami] à découvrir [Marque]. Merci de partager ce que vous aimez avec ceux que vous aimez. En remerciement, veuillez accepter [Cadeau/Crédit Ambassadeur]."
+              "title": "One Year Together",
+              "description": "First anniversary of first purchase",
+              "content": "One year ago, [Product] found its home with you. This anniversary is meaningful to us—you've been part of our story. As thanks, please accept [Anniversary Privilege].",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Reconnaissance Ambassadeur",
-              "timing": "Après 3+ parrainages réussis",
-              "description": "Élévation statut ambassadeur",
-              "content": "Votre enthousiasme pour [Marque] a touché d'autres de manière significative. Nous sommes heureux de vous reconnaître comme Ambassadeur [Marque] avec des privilèges enrichis et notre plus profonde gratitude."
+              "title": "Your Journey with [Brand]",
+              "description": "Multi-year anniversary: Relationship summary",
+              "content": "[X] years together. From [First Product] to today, it's been an honor to be part of your collection. Here's to many more years of shared appreciation for the extraordinary.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Votre Kit Ambassadeur",
-              "timing": "Pour ambassadeurs actifs",
-              "description": "Outils ambassadeur",
-              "content": "Pour soutenir votre rôle d'Ambassadeur [Marque], veuillez accepter ce portfolio de documents. Partagez-le avec ceux que vous pensez apprécieraient notre univers. Votre parrainage unique offre un accueil spécial à vos présentations."
+              "title": "Anniversary Celebration Invitation",
+              "description": "Milestone anniversaries (5, 10 years)",
+              "content": "[X] years of shared passion for beauty and craftsmanship. We'd be honored to celebrate this milestone with an intimate gathering. Please join us.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Collection Anniversary",
+              "description": "Portfolio reflection",
+              "content": "In [X] years, you've acquired [Number] pieces. Here's a retrospective of your collection's growth. Each piece marks a moment in our relationship—together they tell a beautiful story.",
+              "channel": "Email"
+            },
+            {
+              "title": "Anniversary Privilege",
+              "description": "Tangible recognition",
+              "content": "To mark [X] years together: [Privilege Details]. This reflects our gratitude for your loyalty and our commitment to ensuring you always feel valued.",
+              "channel": "Email"
+            },
+            {
+              "title": "Looking Forward",
+              "description": "Future orientation",
+              "content": "As we celebrate [X] years, let's look ahead. What pieces remain on your wish list? What experiences would you enjoy? How can we make the next [X] years even more meaningful?",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Spending milestone achievements",
+          "scenario_objective": "Recognize and elevate client status",
+          "main_messages_ideas": "Status elevation, new privileges, dedicated services, recognition",
+          "message_sequence": [
+            {
+              "title": "Welcome to [Inner Circle/New Tier]",
+              "description": "Upon reaching spending threshold",
+              "content": "Your appreciation for exceptional craftsmanship has reached a milestone. It is my pleasure to welcome you to [Tier Name], where new privileges await. Allow me to introduce your enhanced services.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your New Privileges",
+              "description": "Day 3: Detailed tier benefits",
+              "content": "As a [Tier] client, you now enjoy: [List of exclusive benefits]. Your dedicated advisor [Name] will ensure you experience every advantage of your new status.",
+              "channel": "Email"
+            },
+            {
+              "title": "Status Recognition Gift",
+              "description": "Tangible acknowledgment",
+              "content": "To mark your elevation to [Tier], please accept this gift: [Item]. It represents our appreciation for your significant relationship with [Brand].",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Tier Benefits Activated",
+              "description": "Service initialization",
+              "content": "Your [Tier] benefits are now active: [Priority Services, Exclusive Access, Enhanced Support]. These privileges are yours indefinitely, as long as you remain part of the [Brand] family.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Celebrating Your Milestone",
+              "description": "Personal recognition",
+              "content": "Reaching [Tier] is significant. It reflects not just spending but genuine appreciation for what we create. This makes you family, and we celebrate you as such.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Personal milestones (engagement, marriage, child birth, career)",
+          "scenario_objective": "Acknowledge life moments and suggest appropriate offerings",
+          "main_messages_ideas": "Life milestone recognition, appropriate gifts, celebration support",
+          "message_sequence": [
+            {
+              "title": "Congratulations on [Milestone]",
+              "description": "When milestone is learned",
+              "content": "Congratulations on [Personal Milestone]. This is a significant moment. If [Brand] can be part of this chapter—whether through a meaningful gift or commemoration—it would be our honor.",
+              "channel": "Email"
+            },
+            {
+              "title": "For This Special Time",
+              "description": "Occasion-appropriate suggestions",
+              "content": "For [Milestone], clients often consider [Product Category]. If you're seeking something meaningful to mark this moment, I've selected pieces that feel appropriate for the significance.",
+              "channel": "Email"
+            },
+            {
+              "title": "Creating a Memory",
+              "description": "Personalization for milestone",
+              "content": "Milestones deserve commemoration. Would you like to create something unique for this moment? Engraving [Date], customization reflecting [Milestone], or bespoke creation that captures the significance?",
+              "channel": "Email"
+            },
+            {
+              "title": "Gift Support",
+              "description": "Gifting assistance",
+              "content": "If you're seeking a gift for [Person] to mark [Milestone], I can help. Share what you know of their taste, and I'll curate options that feel meaningful and appropriate.",
+              "channel": "Email"
+            },
+            {
+              "title": "Remembering Your Moment",
+              "description": "Anniversary of milestone",
+              "content": "One year ago, you celebrated [Milestone]. We remember, and we hope this past year has been everything you hoped. Here's to continued joy.",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Reconquête & Renouvellement de Relation",
-      "target": "Clients inactifs sans engagement depuis 12-36 mois",
-      "objective": "Réactiver 20% des clients VIP inactifs et maintenir la relation de marque avec une approche digne",
-      "kpi": "Taux de réactivation VIP inactifs (cible: 20%), Réponse campagne reconquête (cible: 35%), Rétention post-réactivation (cible: 60%), Dignité de marque (maintenue)",
-      "description": "Réengagement élégant pour les clients dont la relation s'est apaisée. Contrairement aux campagnes de reconquête agressives, le réengagement luxe est digne, sans précipitation, et axé sur le renouvellement de connexion plutôt que sur la pression d'achat. L'objectif est d'accueillir de nouveau, pas de poursuivre.",
+      "program_name": "Excellence Après-Achat & Service",
+      "target": "Recent purchasers within 1-30 days of receiving their piece",
+      "objective": "Ensure complete satisfaction with 95% positive feedback, establish care relationship, and drive referrals with 20% NPS improvement",
+      "kpi": "Satisfaction feedback rate (target: 95%+ positive), Service utilization (target: 40%), Return rate (target: <2%), Referral mentions (target: +20%)",
+      "description": "Comprehensive post-purchase journey that ensures each piece is cherished and cared for properly. Goes beyond transaction follow-up to establish an ongoing relationship around product care, maintenance, and the client's evolving collection.",
       "scenarios": [
         {
-          "scenario_target": "Clients VIP inactifs 12-18 mois",
-          "scenario_objective": "Réengager délicatement sans pression",
-          "main_messages_ideas": "Vous nous avez manqué, nouveautés, invitation sans pression, focus relation",
+          "scenario_target": "Fine jewelry and precious item purchasers",
+          "scenario_objective": "Establish lifetime care relationship",
+          "main_messages_ideas": "Care instructions, authentication, insurance guidance, service relationship",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Nous Avons Pensé à Vous",
-              "timing": "Mois 12",
-              "description": "Réengagement doux",
-              "content": "Cela fait quelque temps que nous n'avons pas eu le plaisir de votre compagnie. Je voulais simplement vous faire savoir que nous pensons à vous, et nos portes vous sont toujours ouvertes quand vous serez prêt à nous rendre visite."
+              "title": "Caring for Your [Product]",
+              "description": "With delivery: Care guide",
+              "content": "Your [Product] deserves the finest care. Enclosed is your care guide, including storage recommendations, cleaning instructions, and information about our complimentary maintenance services.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Ce Que Nous Avons Créé",
-              "timing": "Mois 14",
-              "description": "Actualités marque",
-              "content": "Depuis notre dernière rencontre, nos artisans ont été occupés. Voici un aperçu des nouveautés chez [Marque]. Si une pièce vous appelle, je reste votre guide personnel."
+              "title": "Your Certificate of Authenticity",
+              "description": "Day 2: Documentation",
+              "content": "Your certificate of authenticity and appraisal documentation are attached. We recommend updating your insurance coverage to reflect your new piece. Our client services team can assist with any documentation you require.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Une Invitation Sans Occasion",
-              "timing": "Mois 16",
-              "description": "Invitation douce",
-              "content": "Pas d'événement spécial requis. Simplement une invitation à nous rendre visite, profiter d'un moment de beauté, et échanger. Amenez un ami si vous le souhaitez. Nous serions ravis de vous voir."
+              "title": "A Personal Check-In",
+              "description": "Day 7: Satisfaction check",
+              "content": "I trust your [Product] has been a source of joy. How are you finding it? I'm here should you have any questions about wearing, styling, or caring for your piece.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Insurance Recommendations",
+              "description": "Day 10: Protection guidance",
+              "content": "Your [Product] represents significant value. Here are insurance recommendations: coverage types, appraisal services, and providers specializing in luxury goods. We can facilitate any needed documentation.",
+              "channel": "Email"
+            },
+            {
+              "title": "First Complimentary Service",
+              "description": "Day 30: Service introduction",
+              "content": "As a valued client, you're entitled to complimentary inspection and cleaning. Shall I schedule your first service appointment at your convenience?",
+              "channel": "Email"
+            },
+            {
+              "title": "Service Schedule",
+              "description": "Month 2: Ongoing care",
+              "content": "For optimal longevity, [Product Type] benefits from [Service Schedule]. I'll remind you when service is due, ensuring your piece maintains its beauty indefinitely.",
+              "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Clients haute valeur inactifs 24-36 mois",
-          "scenario_objective": "Dernière approche élégante avant suppression discrète",
-          "main_messages_ideas": "Réflexion sur la relation, changement significatif, invitation de retour exclusive, option de goodbye gracieux",
+          "scenario_target": "Timepiece and watch purchasers",
+          "scenario_objective": "Establish ongoing service relationship",
+          "main_messages_ideas": "Setting assistance, service schedule, water resistance check, movement care",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Une Note de Réflexion",
-              "timing": "Mois 24",
-              "description": "Réengagement réfléchi",
-              "content": "Deux années ont passé depuis [Dernier Achat/Visite]. Beaucoup a changé chez [Marque], et j'ai pensé à vous en dévoilant notre dernière collection. Quand le moment sera venu, ce serait un honneur de nous reconnecter."
+              "title": "Your Timepiece: Getting Started",
+              "description": "With delivery: Setup guide",
+              "content": "Your [Timepiece] is ready to accompany you on life's moments. Enclosed is your setting guide. Should you need assistance, our horologist is available for a complimentary setup consultation.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Si Nos Chemins Se Croisent à Nouveau",
-              "timing": "Mois 30",
-              "description": "Dernière approche douce",
-              "content": "La vie nous emmène dans différentes directions. Si votre chemin vous ramène vers [Marque], sachez que vous serez accueilli chaleureusement. D'ici là, nous vous souhaitons de la beauté en toute chose."
+              "title": "Warranty and Service",
+              "description": "Day 3: Warranty documentation",
+              "content": "Your warranty registration is complete. Your [Timepiece] is covered for [Period]. I've attached your service schedule—our master watchmakers recommend [Service Interval] service to maintain optimal performance.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Respectueusement en Retrait",
-              "timing": "Mois 36",
-              "description": "Option de réduction gracieuse",
-              "content": "Nous respectons votre temps et votre attention. Sauf nouvelle de votre part, nous réduirons nos communications tout en conservant vos préférences. Si jamais vous souhaitez nous recontacter, faites-le simplement. Nous serons là."
+              "title": "Understanding Your Movement",
+              "description": "Day 7: Technical education",
+              "content": "Your [Timepiece] features [Movement Type]. Here's what makes it special, how to care for it, and what performance characteristics to expect. Understanding your watch deepens appreciation.",
+              "channel": "Email"
+            },
+            {
+              "title": "Living with Your Timepiece",
+              "description": "Day 14: Usage tips",
+              "content": "After two weeks together, you may appreciate these tips from our horologists: [Tips]. Remember, we're always here for adjustments, servicing, or simply to share in your enjoyment.",
+              "channel": "Email"
+            },
+            {
+              "title": "Water Resistance Check",
+              "description": "Month 6: Service reminder",
+              "content": "Your [Timepiece]'s water resistance should be tested annually to maintain protection. Shall I schedule this complimentary service? It takes just minutes but provides peace of mind.",
+              "channel": "Email"
+            },
+            {
+              "title": "Service Reminder",
+              "description": "Based on service schedule",
+              "content": "Your [Timepiece] is approaching its recommended service interval. Shall I arrange for our master watchmakers to ensure it continues to perform at its best?",
+              "channel": "Email"
+            },
+            {
+              "title": "Annual Accuracy Check",
+              "description": "Yearly service",
+              "content": "Fine timepieces require annual accuracy verification. Bring your [Timepiece] for complimentary timing check, cleaning, and adjustment. We'll ensure it keeps time as precisely as the day you received it.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Leather goods and fashion purchasers",
+          "scenario_objective": "Ensure satisfaction and drive second purchase",
+          "main_messages_ideas": "Styling inspiration, care tips, coordination pieces, seasonal storage",
+          "message_sequence": [
+            {
+              "title": "Styling Your [Product]",
+              "description": "Day 3: Styling inspiration",
+              "content": "Your [Product] offers endless possibilities. Here are styling suggestions from our creative team, including ways to wear it from day to evening.",
+              "channel": "Email"
+            },
+            {
+              "title": "Caring for Fine Leather",
+              "description": "Day 10: Care guidance",
+              "content": "Fine leather develops character over time. Here's how to ensure your [Product] ages beautifully: [Care Tips]. Our artisans also offer complimentary conditioning treatments.",
+              "channel": "Email"
+            },
+            {
+              "title": "Weather Protection",
+              "description": "Seasonal care",
+              "content": "As weather changes, leather requires adjusted care. For [Season], here's how to protect your [Product] from [Weather Elements] while maintaining its beauty.",
+              "channel": "Email"
+            },
+            {
+              "title": "Complementary Pieces",
+              "description": "Day 21: Cross-sell with taste",
+              "content": "Your [Product] pairs beautifully with pieces from our [Collection]. If you'd like to explore items that complement your selection, I'd be pleased to curate options for you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Hardware Care",
+              "description": "Month 1: Detail maintenance",
+              "content": "The hardware on your [Product]—zippers, clasps, metal details—benefits from occasional care. Here's how to maintain the shine and function for decades of use.",
+              "channel": "Email"
+            },
+            {
+              "title": "Seasonal Storage Service",
+              "description": "Off-season",
+              "content": "For seasonal pieces like [Product], proper storage prevents damage. We offer complimentary storage in climate-controlled conditions. Shall I arrange for collection?",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Reconquête & Renouveau de la Relation",
+      "target": "Lapsed clients with no engagement in 12-36 months",
+      "objective": "Reactivate 20% of lapsed VIP clients and maintain brand relationship with dignified outreach",
+      "kpi": "Lapsed VIP reactivation rate (target: 20%), Win-back campaign response (target: 35%), Reactivation-to-retention (target: 60%), Brand dignity maintained",
+      "description": "Graceful re-engagement for clients whose relationship has quieted. Unlike aggressive win-back campaigns, luxury re-engagement is dignified, unhurried, and focused on renewing connection rather than pushing purchase. The goal is to welcome back, not chase.",
+      "scenarios": [
+        {
+          "scenario_target": "12-18 month lapsed VIP clients",
+          "scenario_objective": "Gently re-engage without pressure",
+          "main_messages_ideas": "We've missed you, what's new, no pressure invitation, relationship focus",
+          "message_sequence": [
+            {
+              "title": "We've Thought of You",
+              "description": "Month 12: Soft re-engagement",
+              "content": "It's been some time since we've had the pleasure of your company. I simply wanted you to know we think of you, and our doors are always open when you're ready to visit.",
+              "channel": "Email"
+            },
+            {
+              "title": "What We've Been Creating",
+              "description": "Month 14: Brand update",
+              "content": "Since we last met, our artisans have been busy. Here's a glimpse of what's new at [Brand]. Should any piece call to you, I remain your personal guide.",
+              "channel": "Email"
+            },
+            {
+              "title": "An Invitation with No Occasion",
+              "description": "Month 16: Soft invitation",
+              "content": "No special event required. Simply an invitation to visit, enjoy a moment of beauty, and catch up. Bring a friend if you'd like. We'd love to see you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Has Your Style Evolved?",
+              "description": "Month 17: Interest check",
+              "content": "Style evolves. Perhaps your tastes have shifted, or life has taken you in new directions. If you're open to it, I'd enjoy learning what appeals to you now.",
+              "channel": "Email"
+            },
+            {
+              "title": "You're Always Welcome",
+              "description": "Month 18: Final gentle touch",
+              "content": "Whether it's been months or years, you're always welcome. No expectations, no pressure—just genuine pleasure in reconnecting whenever you're ready.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "24-36 month lapsed high-value clients",
+          "scenario_objective": "Final elegant outreach before quiet suppression",
+          "main_messages_ideas": "Relationship reflection, significant change, exclusive return invitation, graceful goodbye option",
+          "message_sequence": [
+            {
+              "title": "A Note of Reflection",
+              "description": "Month 24: Thoughtful re-engagement",
+              "content": "Two years have passed since [Last Purchase/Visit]. Much has changed at [Brand], and I thought of you as we unveiled our latest collection. When the time is right, we'd be honored to reconnect.",
+              "channel": "Email"
+            },
+            {
+              "title": "What's New at [Brand]",
+              "description": "Month 27: Major updates",
+              "content": "In two years, much has evolved: [New Offerings, Collections, Services]. If any of this interests you, or if you're simply curious about how [Brand] has grown, I'm here.",
+              "channel": "Email"
+            },
+            {
+              "title": "Welcome Back Privilege",
+              "description": "Month 30: Return incentive",
+              "content": "Should you choose to return, we'd like to welcome you properly: [Welcome Back Offer]. This reflects our appreciation for your past relationship and our hope for its renewal.",
+              "channel": "Email"
+            },
+            {
+              "title": "If Our Paths Should Cross Again",
+              "description": "Month 32: Graceful transition",
+              "content": "Life takes us in different directions. If your path brings you back to [Brand], know that you'll be welcomed warmly. Until then, we wish you beauty in all things.",
+              "channel": "Email"
+            },
+            {
+              "title": "Respectfully Stepping Back",
+              "description": "Month 36: Communication reduction notice",
+              "content": "We respect your time and attention. Unless we hear from you, we'll reduce our communications while keeping your preferences on file. Should you ever wish to reconnect, simply reach out. We'll be here.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Lapsed clients who engaged but never purchased",
+          "scenario_objective": "Re-engage prospects with dignity",
+          "main_messages_ideas": "Barrier understanding, circumstances change, no-pressure reconnection",
+          "message_sequence": [
+            {
+              "title": "We Remember Your Interest",
+              "description": "Month 12: Gentle reminder",
+              "content": "You explored [Brand] with interest but didn't find the right moment. Circumstances change. If the timing is ever right, we'd be delighted to continue the conversation.",
+              "channel": "Email"
+            },
+            {
+              "title": "Has Anything Changed?",
+              "description": "Month 18: Barrier check",
+              "content": "When we last spoke, [Context]. Sometimes what wasn't right then becomes perfect now. If your situation has evolved, I'd enjoy hearing from you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Always Here",
+              "description": "Month 24: Final touch",
+              "content": "You showed interest in [Brand] once. That means something. Whether you return tomorrow or years from now—if ever—you'll be welcomed as someone who appreciates what we do.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Reconnaissance Cercle Privilégié & Ambassadeurs",
+      "target": "Top-tier clients and brand advocates",
+      "objective": "Achieve 85% Inner Circle retention, 50% ambassador activation, and 30% of new VIP clients from ambassador referrals",
+      "kpi": "Inner Circle retention (target: 85%), Ambassador activation rate (target: 50%), Ambassador referral contribution (target: 30%), Ambassador satisfaction (target: 95%)",
+      "description": "The highest tier of client recognition, reserved for those who have demonstrated exceptional appreciation for the brand. Inner Circle members receive the ultimate in personalized service, exclusive access, and recognition, while ambassadors help introduce others to the brand experience.",
+      "scenarios": [
+        {
+          "scenario_target": "Inner Circle members",
+          "scenario_objective": "Provide ultimate recognition and retention",
+          "main_messages_ideas": "Highest privileges, personal recognition, exclusive access, brand family",
+          "message_sequence": [
+            {
+              "title": "Welcome to Our Inner Circle",
+              "description": "Upon elevation to top tier",
+              "content": "It is my privilege to welcome you to the [Brand] Inner Circle—our most intimate community of collectors and connoisseurs. Your appreciation for our craft has not gone unnoticed. Here are the privileges that now belong to you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Dedicated Team",
+              "description": "Day 3: Team introduction",
+              "content": "As an Inner Circle member, you have access to our most senior advisors and artisans. Allow me to introduce the team dedicated to your experience: [Team Members and their roles].",
+              "channel": "Email"
+            },
+            {
+              "title": "Inner Circle Privileges",
+              "description": "Day 7: Detailed benefits",
+              "content": "Your Inner Circle membership includes: 72-hour first access to all releases, dedicated hotline, complimentary annual maintenance, priority bespoke services, exclusive event invitations, and personalized collection curation.",
+              "channel": "Email"
+            },
+            {
+              "title": "Meeting Our Creative Director",
+              "description": "Within first month",
+              "content": "Our Creative Director, [Name], would like to meet you personally. This private meeting offers insight into design philosophy and upcoming directions. Are you available for [Time]?",
+              "channel": "SMS"
+            },
+            {
+              "title": "Exclusive Invitation: Inner Circle Gathering",
+              "description": "Annual Inner Circle event",
+              "content": "You are invited to the annual Inner Circle gathering—an intimate evening where our most treasured clients meet our creative directors and master artisans. We hope you'll join us.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Annual Appreciation",
+              "description": "Annual Inner Circle gift",
+              "content": "As the year closes, we reflect on our relationship with gratitude. Please accept this [Exclusive Gift] as a token of our appreciation for being part of our innermost family.",
+              "channel": "Email"
+            },
+            {
+              "title": "Inner Circle Renewal",
+              "description": "Annual retention",
+              "content": "Another year as Inner Circle family. Your continued patronage and appreciation for our craft means everything. Here's to another year of exceptional experiences together.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Brand ambassadors (those who refer others)",
+          "scenario_objective": "Recognize and encourage advocacy",
+          "main_messages_ideas": "Ambassador recognition, referral appreciation, exclusive privileges, community building",
+          "message_sequence": [
+            {
+              "title": "You've Introduced Someone Special",
+              "description": "When referral makes purchase",
+              "content": "Your recommendation led [Friend] to discover [Brand]. Thank you for sharing what you love with those you love. As thanks, please accept [Ambassador Gift/Credit].",
+              "channel": "Email"
+            },
+            {
+              "title": "Ambassador Recognition",
+              "description": "After 3+ successful referrals",
+              "content": "Your enthusiasm for [Brand] has touched others in meaningful ways. We're pleased to recognize you as a [Brand] Ambassador with enhanced privileges and our deepest gratitude.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Ambassador Kit",
+              "description": "For active ambassadors",
+              "content": "To support your role as a [Brand] Ambassador, please accept this portfolio of materials. Share it with those you believe would appreciate our world. Your unique referral extends special welcome to your introductions.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ambassador Benefits",
+              "description": "Privilege explanation",
+              "content": "As a [Brand] Ambassador, you receive: [Referral Credits, Exclusive Access, Special Events, Priority Services]. These recognize your role in growing our family.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Referral: [Name] Update",
+              "description": "Referral progress",
+              "content": "[Name], whom you introduced, has had a wonderful experience with [Brand]. They wanted me to thank you for the recommendation. Your good taste benefits those around you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ambassador Appreciation Event",
+              "description": "Annual recognition",
+              "content": "We're hosting an intimate gathering for our Ambassadors—people who've shared [Brand] with others. Join us to celebrate your role in our community and meet fellow advocates.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Potential ambassadors (high satisfaction, not yet referring)",
+          "scenario_objective": "Activate advocacy through invitation",
+          "main_messages_ideas": "Satisfaction acknowledgment, referral invitation, benefits preview, no pressure",
+          "message_sequence": [
+            {
+              "title": "Your Love for [Brand]",
+              "description": "High satisfaction recognition",
+              "content": "Your satisfaction with [Brand] is evident in your continued patronage and enthusiastic feedback. This means the world to us. Have you shared [Brand] with others who might appreciate what we do?",
+              "channel": "Email"
+            },
+            {
+              "title": "Introducing Friends to [Brand]",
+              "description": "Ambassador invitation",
+              "content": "Many of our most valued clients introduce friends to [Brand]. When you recommend us, both you and your friend receive special recognition. Would you like details about our Ambassador program?",
+              "channel": "Email"
+            },
+            {
+              "title": "Referral Benefits",
+              "description": "Incentive explanation",
+              "content": "When you introduce someone to [Brand]: you receive [Benefit], they receive [Welcome Benefit], and we gain a client who arrives with your trusted recommendation. Everyone benefits from your good taste.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Unique Referral Link",
+              "description": "Tool provision",
+              "content": "If you'd like to share [Brand], here's your personal referral link: [Link]. Anyone you introduce receives special welcome, and we'll know to thank you properly.",
+              "channel": "Email"
+            },
+            {
+              "title": "No Pressure to Share",
+              "description": "Opt-out respect",
+              "content": "Of course, your relationship with [Brand] is personal. If you prefer to keep it private, we completely understand. The invitation to share is always open, never obligatory.",
+              "channel": "Email"
             }
           ]
         }
@@ -716,150 +1946,137 @@
     },
     {
       "program_name": "Moments Saisonniers & Culturels",
-      "target": "Tous les clients selon la pertinence culturelle et préférences",
-      "objective": "Générer 40% d'engagement sur les campagnes saisonnières, atteindre 30% de conversion cadeaux fêtes, et maintenir des points de contact tout au long de l'année",
-      "kpi": "Engagement campagne saisonnière (cible: 40%), Conversion cadeaux fêtes (cible: 30%), Constance engagement annuel (cible: maintenue), Score pertinence culturelle (cible: 90%)",
-      "description": "Campagnes attentionnées autour des moments culturels, fêtes et saisons de cadeaux qui semblent naturelles plutôt que commerciales. Chaque communication est une opportunité d'ajouter de la beauté à la vie du client, que ce soit à travers des visuels sublimes, des suggestions de cadeaux attentionnées ou des inspirations saisonnières.",
+      "target": "All clients based on cultural relevance and preferences",
+      "objective": "Drive 40% seasonal campaign engagement, achieve 30% holiday gift conversion, and maintain year-round relationship touchpoints",
+      "kpi": "Seasonal campaign engagement (target: 40%), Holiday gift conversion (target: 30%), Year-round engagement consistency (target: maintained), Cultural relevance score (target: 90%)",
+      "description": "Thoughtful campaigns around cultural moments, holidays, and gifting seasons that feel natural rather than commercial. Each communication is an opportunity to add beauty to the client's life, whether through stunning imagery, thoughtful gift suggestions, or seasonal inspiration.",
       "scenarios": [
         {
-          "scenario_target": "Saison des cadeaux de fêtes (novembre-décembre)",
-          "scenario_objective": "Se positionner comme destination cadeaux premium avec focus service",
-          "main_messages_ideas": "Inspiration cadeaux, service personal shopping, cadeaux sans effort, présents significatifs",
+          "scenario_target": "Holiday gifting season (November-December)",
+          "scenario_objective": "Position as premier gifting destination with service focus",
+          "main_messages_ideas": "Gift inspiration, personal shopping service, effortless gifting, meaningful presents",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "L'Art d'Offrir",
-              "timing": "Début novembre",
-              "description": "Introduction saison",
-              "content": "La saison des cadeaux approche. Lorsque seul l'exceptionnel fera l'affaire, laissez-nous vous accompagner. Nos spécialistes cadeaux peuvent sélectionner les présents parfaits pour tous ceux qui comptent."
+              "title": "The Art of Giving",
+              "description": "Early November: Season introduction",
+              "content": "The season of giving approaches. When only the exceptional will do, allow us to assist. Our gift specialists can curate perfect presents for everyone on your list.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Des Cadeaux Qui Parlent",
-              "timing": "Mi-novembre",
-              "description": "Guide cadeaux",
-              "content": "Certains cadeaux n'ont pas besoin de mots. Notre collection festive offre des pièces qui expriment ce que les mots ne peuvent pas dire. Puis-je vous aider à sélectionner quelque chose de significatif ?"
+              "title": "Gifts That Speak",
+              "description": "Mid-November: Gift guide",
+              "content": "Some gifts need no words. Our holiday collection offers pieces that express what words cannot. May I help you select something meaningful?",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Service Personal Shopping",
-              "timing": "Fin novembre",
-              "description": "Offre de service",
-              "content": "Les fêtes devraient être joyeuses, pas stressantes. Notre service de personal shopping s'occupe de tout—sélection, emballage, livraison. Partagez simplement votre liste."
+              "title": "Your Gift List Assistance",
+              "description": "Late November: Comprehensive service",
+              "content": "Share your gift list with me: names, relationships, approximate budgets. I'll curate appropriate options for each person, making your holiday shopping effortless.",
+              "channel": "Email"
             },
             {
-              "channel": "SMS",
-              "title": "Dernière Minute ? Nous Sommes Là",
-              "timing": "Mi-décembre",
-              "description": "Urgence avec service",
-              "content": "Le temps file ? Notre équipe est prête pour la perfection de dernière minute. Livraison le jour même disponible sur articles sélectionnés. Laissez-nous vous aider."
+              "title": "Personal Shopping Service",
+              "description": "Early December: Service emphasis",
+              "content": "The holidays should be joyful, not stressful. Our personal shopping service handles everything—selection, wrapping, delivery. Simply share your list.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Vœux de Saison",
-              "timing": "Fêtes",
-              "description": "Chaleur non-commerciale",
-              "content": "De notre famille à la vôtre, nos vœux les plus chaleureux pour une saison remplie de beauté, de joie et de la compagnie de ceux que vous aimez."
+              "title": "Gift Wrapping & Presentation",
+              "description": "Mid-December: Luxury details",
+              "content": "Every [Brand] gift receives presentation worthy of its contents: hand-wrapped, premium materials, personal message enclosed. The unboxing experience reflects the quality within.",
+              "channel": "Email"
+            },
+            {
+              "title": "Last Moment? We're Here",
+              "description": "Late December: Urgency with service",
+              "content": "Time slipping away? Our team is prepared for last-minute perfection. Same-day delivery available on select items. Let us help.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Season's Greetings",
+              "description": "Holiday: Non-commercial warmth",
+              "content": "From our family to yours, warmest wishes for a season filled with beauty, joy, and the company of those you love.",
+              "channel": "Email"
+            },
+            {
+              "title": "Thank You for a Beautiful Season",
+              "description": "Post-holiday gratitude",
+              "content": "Thank you for including [Brand] in your holiday celebrations. It was our privilege to be part of your meaningful moments. Here's to a beautiful year ahead.",
+              "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Moments culturels et mode tout au long de l'année",
-          "scenario_objective": "Maintenir la relation à travers un contenu pertinent",
-          "main_messages_ideas": "Insights fashion week, moments culturels, transitions saisonnières, actualités marque",
+          "scenario_target": "Year-round cultural and fashion moments",
+          "scenario_objective": "Maintain relationship through relevant content",
+          "main_messages_ideas": "Fashion week insights, cultural moments, seasonal transitions, brand news",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Depuis les Défilés",
-              "timing": "Post-fashion week",
-              "description": "Partage tendances",
-              "content": "De retour de [Fashion Week], voici ce qui inspire notre équipe créative. Ces influences façonneront ce qui est à venir. Un avant-goût, juste pour vous."
+              "title": "From the Runway",
+              "description": "Post-fashion week",
+              "content": "Fresh from [Fashion Week], here's what's inspiring our creative team. These influences will shape what's to come. A preview, just for you.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Une Nouvelle Saison Commence",
-              "timing": "Transition saisonnière",
-              "description": "Contenu saisonnier",
-              "content": "Avec l'arrivée de [Saison], viennent de nouvelles possibilités. Voici comment notre collection effectue magnifiquement la transition vers la nouvelle saison, et des pièces à considérer."
+              "title": "A New Season Begins",
+              "description": "Seasonal transition",
+              "content": "As [Season] arrives, so do new possibilities. Here's how our collection transitions beautifully into the new season, and pieces to consider adding.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Un Moment de Beauté",
-              "timing": "Connexion art/culture",
-              "description": "Inspiration culturelle",
-              "content": "La beauté inspire la beauté. Notre directeur créatif a récemment visité [Exposition d'Art/Événement Culturel], et l'influence est indéniable. Voici l'histoire derrière notre dernière inspiration."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Sur-Mesure & Commandes Spéciales",
-      "target": "Clients ultra-haute valeur et ceux exprimant un intérêt pour le sur-mesure",
-      "objective": "Convertir 30% des demandes sur-mesure, atteindre une valeur moyenne de commande 3x supérieure à l'achat standard, et créer 100% de satisfaction client",
-      "kpi": "Conversion demande sur-mesure (cible: 30%), Panier commande vs standard (cible: 3x), Satisfaction commande (cible: 100%), Expansion collection post-commande (cible: 60%)",
-      "description": "L'expression ultime de la relation client—créer des pièces uniques conçues spécifiquement pour l'individu. Ce programme guide les clients à travers le parcours sur-mesure, de la consultation initiale à la conception, création et livraison de pièces véritablement uniques.",
-      "scenarios": [
-        {
-          "scenario_target": "Clients exprimant un intérêt pour des pièces personnalisées",
-          "scenario_objective": "Guider à travers le parcours sur-mesure",
-          "main_messages_ideas": "Consultation personnelle, collaboration design, parcours de création, construction anticipation",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Créer Quelque Chose d'Uniquement Vôtre",
-              "timing": "Après expression d'intérêt sur-mesure",
-              "description": "Démarrage parcours",
-              "content": "Merci de considérer une création sur-mesure. C'est le début d'un parcours spécial. Nos maîtres artisans seraient honorés de donner vie à votre vision. Commençons-nous par une consultation ?"
+              "title": "A Moment of Beauty",
+              "description": "Art/culture connection",
+              "content": "Beauty inspires beauty. Our creative director recently visited [Art Exhibition/Cultural Event], and the influence is unmistakable. Here's the story behind our latest inspiration.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Votre Consultation Design",
-              "timing": "Post-consultation",
-              "description": "Suivi consultation",
-              "content": "Merci d'avoir partagé votre vision. Notre équipe de design explore les possibilités. Ci-joint les concepts initiaux basés sur notre conversation. Vos retours sont les bienvenus."
+              "title": "Cultural Celebration",
+              "description": "For relevant cultural holidays",
+              "content": "Happy [Cultural Holiday]. For those celebrating, here are pieces that honor the occasion's significance. May your celebration be filled with meaning and joy.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "La Création a Commencé",
-              "timing": "Quand le travail artisanal démarre",
-              "description": "Notification démarrage",
-              "content": "Votre [Pièce] est entrée dans notre atelier. [Nom du Maître Artisan] a commencé le travail minutieux pour donner vie à votre vision. C'est un honneur de créer pour vous."
+              "title": "New Year, New Possibilities",
+              "description": "January: Fresh start",
+              "content": "A new year brings fresh possibilities. Perhaps it's time to evolve your style, start a collection, or invest in that signature piece. How can we be part of your year ahead?",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Nouvelles de l'Atelier",
-              "timing": "Mise à jour mi-création",
-              "description": "Update progression",
-              "content": "Depuis notre atelier : un aperçu de votre [Pièce] en cours de réalisation. [Détail de la Progression]. Nous approchons de l'achèvement et le résultat est extraordinaire."
-            },
-            {
-              "channel": "Email",
-              "title": "Votre Création Vous Attend",
-              "timing": "Notification achèvement",
-              "description": "Annonce finalisation",
-              "content": "C'est terminé. Votre [Pièce] sur-mesure attend sa première présentation. Puis-je organiser sa révélation dans notre boutique ou dans un lieu de votre choix ?"
+              "title": "Spring Renewal",
+              "description": "Spring: Renewal theme",
+              "content": "Spring brings renewal. Fresh colors, lighter materials, renewed energy. Here's how to refresh your collection for the season's brighter mood.",
+              "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Clients post-sur-mesure",
-          "scenario_objective": "Cultiver vers futures commandes et plaidoyer",
-          "main_messages_ideas": "Anniversaire création, future inspiration, encouragement plaidoyer, pièces héritage",
+          "scenario_target": "Clients in specific regions with local events",
+          "scenario_objective": "Demonstrate local relevance and community connection",
+          "main_messages_ideas": "Local events, regional celebrations, community presence",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Un An avec Votre Création",
-              "timing": "1 an anniversaire de la pièce sur-mesure",
-              "description": "Anniversaire création",
-              "content": "Il y a un an, votre [Pièce] sur-mesure est née. Nous espérons qu'elle vous a apporté de la joie. Si vous souhaitez l'entretenir ou commencer une autre création, nous restons à votre service."
+              "title": "At [Local Event]",
+              "description": "Regional event participation",
+              "content": "[Brand] will be present at [Local Event]. If you're attending, please visit us. We'd love to see you and share our latest in person.",
+              "channel": "Email"
             },
             {
-              "channel": "Email",
-              "title": "Inspiration pour Votre Prochaine Création",
-              "timing": "Quand approprié",
-              "description": "Invitation future commande",
-              "content": "Nos artisans ont expérimenté de nouvelles techniques qui nous ont fait penser à vous. Lorsque vous serez prêt à imaginer votre prochaine création, nous avons des possibilités passionnantes à partager."
+              "title": "Celebrating [Regional Holiday]",
+              "description": "Local cultural moment",
+              "content": "Happy [Regional Holiday] to our [Region] clients. We're honoring this occasion with [Special Offering/Event]. Join us in celebrating.",
+              "channel": "Email"
+            },
+            {
+              "title": "Local Community Support",
+              "description": "Community involvement",
+              "content": "[Brand] is proud to support [Local Cause/Organization]. As a valued local client, we wanted you to know about our community involvement and invite your participation if interested.",
+              "channel": "Email"
+            },
+            {
+              "title": "Regional Boutique Event",
+              "description": "Local store experience",
+              "content": "Our [City] boutique is hosting an intimate event for local clients. Join us to preview new arrivals and connect with neighbors who share your appreciation for quality.",
+              "channel": "Email"
             }
           ]
         }
@@ -868,35 +2085,65 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Onboarding VIP & Conciergerie",
-      "why_brevo_is_better": "Les capacités de personnalisation de Brevo permettent une communication véritablement individualisée qui semble personnelle plutôt qu'automatisée, maintenant l'expérience luxe sur tous les points de contact digitaux. Les détails du conseiller personnel peuvent être insérés dynamiquement pour maintenir la connexion humaine.",
-      "omnichannel_channels": "Email pour un storytelling riche et présentation visuelle + SMS pour les messages personnels urgents + WhatsApp pour une conversation style conciergerie",
-      "setup_efficiency": "Le contenu dynamique et les balises de fusion créent des communications personnalisées à grande échelle tout en maintenant l'exclusivité. Les déclencheurs VIP assurent un timing de réponse approprié."
+      "scenario_name": "VIP Onboarding & Concierge",
+      "why_brevo_is_better": "Brevo's personalization capabilities enable truly individualized communication that feels personal rather than automated, maintaining the luxury experience across digital touchpoints. Personal advisor details can be dynamically inserted to maintain human connection.",
+      "omnichannel_channels": "Email for rich storytelling and visual presentation + SMS for time-sensitive personal messages + WhatsApp for concierge-style conversation",
+      "setup_efficiency": "Dynamic content and merge tags create personalized communications at scale while maintaining exclusivity. VIP triggers ensure appropriate response timing."
     },
     {
-      "scenario_name": "Collections Exclusives & Avant-Première",
-      "why_brevo_is_better": "La segmentation avancée garantit que seuls vos clients les plus précieux reçoivent l'accès anticipé, maintenant le sentiment d'exclusivité qui définit le luxe. L'accès par niveau peut être automatisé tout en semblant individuellement orchestré.",
-      "omnichannel_channels": "Email pour les avant-premières visuelles des collections + SMS pour les alertes accès prioritaire + Déclencheurs d'approche personnelle pour les clients top-tier",
-      "setup_efficiency": "L'automatisation par niveau VIP garantit que les bons clients reçoivent toujours les niveaux d'accès appropriés, avec un timing qui respecte la hiérarchie de l'exclusivité."
+      "scenario_name": "Conciergerie Personnelle & Service d'Excellence",
+      "why_brevo_is_better": "Brevo's multi-channel orchestration ensures seamless service across email, SMS, and WhatsApp, allowing advisors to reach clients on their preferred channel at optimal times. Automation handles logistics while preserving personal touch.",
+      "omnichannel_channels": "Email for detailed service communications + SMS for time-sensitive coordination + WhatsApp for ongoing conversational service + On-site widgets for boutique visit booking",
+      "setup_efficiency": "Service request workflows automate coordination while keeping advisors informed. CRM integration ensures complete client preference visibility for truly personalized service."
     },
     {
-      "scenario_name": "Reconnaissance Jalons & Anniversaires",
-      "why_brevo_is_better": "L'automatisation basée sur les dates garantit qu'aucun jalon ne passe inaperçu, tandis que la personnalisation rend chaque point de contact véritablement attentionné. L'intégration avec l'historique d'achat permet une réflexion significative sur la relation.",
-      "omnichannel_channels": "Email pour des messages au design soigné + Intégration courrier physique pour les touches luxe tangibles + Déclencheurs de suivi conseiller personnel",
-      "setup_efficiency": "Configurez les déclencheurs de jalons une fois et laissez l'automatisation gérer le timing sur toute votre base clients tout en maintenant la touche personnelle via les notifications conseillers."
+      "scenario_name": "Histoires de Patrimoine & Savoir-Faire",
+      "why_brevo_is_better": "Brevo's email design capabilities allow luxury brands to create visually stunning storytelling campaigns that do justice to artisan craftsmanship. Rich media support and responsive design ensure stories look exceptional on every device.",
+      "omnichannel_channels": "Email for visual storytelling with rich imagery + Push notifications for story release alerts + On-site widgets to surface relevant stories during browsing",
+      "setup_efficiency": "Content calendar automation ensures consistent storytelling cadence. Engagement tracking identifies which stories resonate, informing future content strategy."
     },
     {
-      "scenario_name": "Événements Privés & Expériences",
-      "why_brevo_is_better": "L'intégration de gestion d'événements permet des invitations, suivi RSVP et follow-up post-événement fluides tout en maintenant l'expérience haut de gamme que les clients attendent.",
-      "omnichannel_channels": "Email pour des invitations élégantes + SMS pour la logistique jour J + Déclencheurs de suivi personnel pour la construction de relation post-événement",
-      "setup_efficiency": "Des workflows événements pré-construits gèrent la logistique tout en préservant le sentiment d'attention personnelle. Les séquences post-événement automatisées captent l'élan."
+      "scenario_name": "Personnalisation de Produits sur Mesure",
+      "why_brevo_is_better": "Brevo's workflow automation guides clients through customization journeys with appropriate communications at each stage: inquiry, design approval, creation updates, completion. Each touchpoint feels personal while being systematically managed.",
+      "omnichannel_channels": "Email for design presentations and approvals + SMS for creation milestones + WhatsApp for design discussions + Push for completion notifications",
+      "setup_efficiency": "Customization workflows automate the journey from inquiry to delivery, with automatic notifications at key milestones. Integration with production systems ensures accurate status updates."
     },
     {
-      "scenario_name": "Cercle Intérieur & Reconnaissance Ambassadeur",
-      "why_brevo_is_better": "L'automatisation de gestion des niveaux garantit que les clients sont élevés aux niveaux de reconnaissance appropriés dès qu'ils se qualifient, avec des séquences de bienvenue personnalisées qui font de chaque élévation une célébration individuelle.",
-      "omnichannel_channels": "Email pour la reconnaissance formelle + SMS pour l'accusé de réception personnel immédiat + Intégration avec CRM pour notification conseiller",
-      "setup_efficiency": "Le suivi automatisé des niveaux et les déclencheurs d'élévation garantissent qu'aucun accomplissement client ne passe inaperçu, tandis que les alertes conseillers personnels maintiennent la relation humaine."
+      "scenario_name": "Gestion de la Relation Client Grande Fortune",
+      "why_brevo_is_better": "Brevo's advanced segmentation and tier management enable different service levels for UHNW clients while maintaining privacy and discretion. Advisor alerts ensure human oversight of all automated touchpoints.",
+      "omnichannel_channels": "Email for formal communications + SMS for immediate personal contact + WhatsApp for ongoing relationship management + Private advisor hotline integration",
+      "setup_efficiency": "UHNW workflows trigger appropriate service levels automatically based on client tier. Advisor dashboards provide complete visibility while automation handles routine coordination."
+    },
+    {
+      "scenario_name": "Exclusive Collections & Preview",
+      "why_brevo_is_better": "Advanced segmentation ensures only your most valued clients receive early access, maintaining the sense of exclusivity that defines luxury. Tiered access can be automated while feeling individually orchestrated.",
+      "omnichannel_channels": "Email for visual collection previews + SMS for priority access alerts + Personal outreach triggers for top-tier clients",
+      "setup_efficiency": "VIP tier automation ensures the right clients always receive appropriate levels of access, with timing that respects the hierarchy of exclusivity."
+    },
+    {
+      "scenario_name": "Private Events & Exclusive Experiences",
+      "why_brevo_is_better": "Event management integration enables seamless invitation, RSVP tracking, and post-event follow-up while maintaining the white-glove experience clients expect. Multi-touch event journeys feel orchestrated, not automated.",
+      "omnichannel_channels": "Email for elegant invitations + SMS for day-of logistics + WhatsApp for personal coordination + Push notifications for event reminders",
+      "setup_efficiency": "Pre-built event workflows handle logistics across invitation, reminder, day-of, and follow-up phases. Automated post-event sequences capture momentum while advisors focus on personal touches."
+    },
+    {
+      "scenario_name": "Construction de Collection & Évolution de Style",
+      "why_brevo_is_better": "Purchase history integration enables intelligent cross-category recommendations based on actual client collections. AI-powered product recommendations can suggest complementary pieces while respecting luxury positioning—recommendations as curation, not algorithms.",
+      "omnichannel_channels": "Email for curated recommendations with rich imagery + SMS for new arrival alerts in relevant categories + On-site widgets showing coordinating pieces",
+      "setup_efficiency": "Collection analysis workflows identify cross-category opportunities automatically. Advisors receive alerts to reach out personally with curated suggestions, combining automation efficiency with personal service."
+    },
+    {
+      "scenario_name": "Reconnaissance des Moments Clés & Anniversaires",
+      "why_brevo_is_better": "Date-based automation ensures no milestone goes unrecognized, while personalization makes each touchpoint feel genuinely thoughtful. Integration with purchase history enables meaningful reflection on the relationship.",
+      "omnichannel_channels": "Email for beautifully designed messages + Physical mail integration for tangible luxury touches + Personal advisor follow-up triggers",
+      "setup_efficiency": "Set up milestone triggers once and let automation handle timing across your entire client base while maintaining personal touch through advisor notifications."
+    },
+    {
+      "scenario_name": "Reconnaissance Cercle Privilégié & Ambassadeurs",
+      "why_brevo_is_better": "Tier management automation ensures clients are elevated to appropriate recognition levels as soon as they qualify, with personalized welcome sequences that make each elevation feel individually celebrated. Referral tracking rewards advocacy systematically.",
+      "omnichannel_channels": "Email for formal recognition + SMS for immediate personal acknowledgment + Integration with CRM for advisor notification",
+      "setup_efficiency": "Automated tier tracking and elevation triggers ensure no client's achievement goes unnoticed, while personal advisor alerts maintain the human relationship. Referral tracking automatically rewards ambassadors."
     }
   ],
-  "conclusion": "Les marques de luxe qui mettent en œuvre ces programmes de marketing relationnel complets peuvent s'attendre à une fidélité client plus profonde, une valeur vie plus élevée grâce à l'accès exclusif et la reconnaissance, et des connexions émotionnelles plus fortes qui transcendent les relations transactionnelles. Dans le luxe, la relation est le produit autant que la pièce elle-même. En traitant chaque point de contact comme une opportunité d'exprimer les valeurs de la marque et d'investir dans des relations durables, vous créez des clients qui deviennent des collectionneurs, des ambassadeurs, et finalement, des membres de la famille de marque. L'objectif n'est pas plus de transactions, mais des relations plus profondes—et de cette profondeur découle un succès commercial durable."
+  "conclusion": "Luxury brands that implement these comprehensive relationship marketing programs can expect deeper client loyalty, higher lifetime value through exclusive access and recognition, and stronger emotional connections that transcend transactional relationships. In luxury, the relationship is the product as much as the piece itself. By treating every touchpoint as an opportunity to express brand values and invest in lasting relationships, you create clients who become collectors, advocates, and ultimately, members of the brand family. The goal is not more transactions, but deeper relationships—and from that depth flows sustainable business success. These 12 programs, encompassing over 40 detailed scenarios with comprehensive message sequences across email, SMS, WhatsApp, push notifications, and on-site channels, provide luxury brands with a complete blueprint for relationship excellence that honors the exclusivity and personalization their clients expect."
 }

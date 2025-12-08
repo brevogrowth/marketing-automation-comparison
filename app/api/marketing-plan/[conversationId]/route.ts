@@ -92,18 +92,28 @@ export async function GET(
         } catch (parseError) {
           // Log detailed error for debugging
           console.error('[Poll] Parse error:', parseError instanceof Error ? parseError.message : 'Unknown');
+
+          // Capture raw data structure for debugging
+          const resultPreview = typeof data.result === 'string'
+            ? data.result.substring(0, 1000)
+            : JSON.stringify(data.result, null, 2).substring(0, 1000);
+
           console.error('[Poll] Data structure:', JSON.stringify({
             hasResult: !!data.result,
             resultType: typeof data.result,
             resultKeys: data.result && typeof data.result === 'object' ? Object.keys(data.result) : [],
             metadata: data.metadata,
+            resultPreview,
           }));
+
           return NextResponse.json({
             status: 'error',
             error: 'Failed to parse AI response',
             debug: {
               errorMessage: parseError instanceof Error ? parseError.message : 'Unknown error',
+              resultType: typeof data.result,
               dataKeys: data.result && typeof data.result === 'object' ? Object.keys(data.result) : [],
+              resultPreview,
             }
           });
         }

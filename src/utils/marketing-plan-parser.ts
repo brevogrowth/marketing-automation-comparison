@@ -224,7 +224,24 @@ export function parsePlanData(
 ): MarketingPlan | null {
   try {
     if (!responseData) {
+      console.error('[parsePlanData] responseData is null/undefined');
       return null;
+    }
+
+    // Debug: Log the incoming data structure
+    console.log('[parsePlanData] Input type:', typeof responseData);
+    if (typeof responseData === 'string') {
+      console.log('[parsePlanData] String content (first 500 chars):', responseData.substring(0, 500));
+      // Try to parse if it's a string
+      try {
+        responseData = JSON.parse(responseData);
+        console.log('[parsePlanData] Parsed string to object');
+      } catch {
+        console.error('[parsePlanData] Failed to parse string as JSON');
+      }
+    }
+    if (typeof responseData === 'object' && responseData !== null) {
+      console.log('[parsePlanData] Top-level keys:', Object.keys(responseData as object));
     }
 
     // Get content from multiple possible paths
@@ -235,6 +252,9 @@ export function parsePlanData(
       ['content', 'json_response'],
       [], // Direct object
     ]);
+
+    console.log('[parsePlanData] Found content via path:', contentPath.join('.') || 'direct');
+    console.log('[parsePlanData] Content type:', typeof content);
 
     // If no nested path worked, try the response itself
     const finalContent =

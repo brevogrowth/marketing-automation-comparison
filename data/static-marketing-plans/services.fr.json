@@ -27,43 +27,37 @@
             {
               "channel": "Email",
               "title": "Votre [Titre Contenu] + Insights Approfondis",
-              "timing": "Immédiat",
-              "description": "Livraison contenu avec ressources connexes",
+              "description": "Immédiat : Livraison contenu avec ressources connexes",
               "content": "Merci d'avoir téléchargé [Titre Contenu] ! Nous espérons que vous le trouverez précieux. Compte tenu de votre intérêt pour [sujet], voici deux ressources complémentaires qui pourraient vous être utiles : [Article blog connexe] et [Étude de cas connexe]. Nous publions régulièrement des insights sur ce sujet - dites-nous si vous souhaitez rester informé."
             },
             {
               "channel": "Email",
               "title": "Notre Perspective : [Tendance Industrie Connexe]",
-              "timing": "J+3",
-              "description": "Thought leadership",
+              "description": "J+3 : Thought leadership",
               "content": "[Nom Expert], notre [Titre], a récemment partagé ses réflexions sur [sujet tendance lié à leur téléchargement]. Insight clé : [Citation ou conclusion percutante]. Lisez l'article complet pour voir comment les organisations leaders répondent à cette tendance."
             },
             {
               "channel": "Email",
               "title": "Comment [Entreprise Similaire] a Atteint [Résultat Spécifique]",
-              "timing": "J+7",
-              "description": "Preuve sociale avec étude de cas",
+              "description": "J+7 : Preuve sociale avec étude de cas",
               "content": "Quand [Entreprise Cliente] a fait face à [défi lié au contenu téléchargé], elle s'est tournée vers nous pour l'aider. Le résultat : [Résultat quantifié]. Lisez l'étude de cas complète pour voir notre approche et comment elle pourrait s'appliquer à votre situation."
             },
             {
               "channel": "Email",
               "title": "Question Rapide sur [Leur Défi]",
-              "timing": "J+12",
-              "description": "Profilage progressif + vérification engagement",
+              "description": "J+12 : Profilage progressif + vérification engagement",
               "content": "Je suis curieux - qu'est-ce qui a motivé votre intérêt pour [sujet du contenu] ? Nous travaillons avec de nombreux leaders [de leur industrie/fonction] sur [défis connexes]. Comprendre votre situation nous aiderait à partager des insights plus pertinents. L'un de ces sujets décrit-il votre focus actuel ? [2-3 options avec liens]"
             },
             {
               "channel": "Email",
               "title": "Consultation Expert de 15 Minutes",
-              "timing": "J+18",
-              "description": "Offre de conversion",
+              "description": "J+18 : Offre de conversion",
               "content": "Parfois, il est utile de discuter de vos défis avec un expert. Notre [expert concerné] propose des consultations gratuites de 15 minutes pour les leaders confrontés à [domaine de défi]. Pas de pitch commercial, juste une perspective. Une conversation rapide serait-elle utile ?"
             },
             {
               "channel": "SMS",
               "title": "Disponibilité Consultation",
-              "timing": "J+21 si fort engagement sans réservation",
-              "description": "Relance personnelle",
+              "description": "J+21 : Si fort engagement sans réservation",
               "content": "Bonjour [Prénom], j'ai vu que vous avez exploré notre contenu sur [sujet]. Notre expert [Prénom] a des créneaux cette semaine pour un échange rapide. 15 min utiles ? [Lien calendrier]"
             }
           ]
@@ -76,29 +70,25 @@
             {
               "channel": "Email",
               "title": "[Nom Événement] Récap + Points Clés à Retenir",
-              "timing": "Dans les 24 heures",
-              "description": "Suivi événement",
+              "description": "Dans les 24 heures : Suivi événement",
               "content": "Merci d'avoir participé à [Nom Événement] ! Voici un récap rapide des points clés de [Intervenant] : [3 enseignements]. Nous avons joint les slides de présentation et enregistré la session si vous souhaitez revisiter certaines sections."
             },
             {
               "channel": "Email",
               "title": "Pour Aller Plus Loin : Ressources sur [Sujet Événement]",
-              "timing": "J+3",
-              "description": "Valeur étendue",
+              "description": "J+3 : Valeur étendue",
               "content": "Vous souhaitez approfondir [sujet événement] ? Voici des ressources supplémentaires créées par notre équipe : [Contenu pertinent]. De plus, [Nom Intervenant] a rédigé un article de suivi répondant aux questions les plus fréquentes de la session."
             },
             {
               "channel": "Email",
               "title": "Échangez avec [Nom Intervenant]",
-              "timing": "J+7",
-              "description": "Offre de connexion personnelle",
+              "description": "J+7 : Offre de connexion personnelle",
               "content": "[Nom Intervenant] a apprécié présenter à [Événement] et est disponible pour de brèves conversations de suivi avec les participants. Si vous avez des questions spécifiques sur l'application de [sujet] à votre organisation, c'est une excellente opportunité d'accompagnement personnalisé."
             },
             {
               "channel": "Email",
               "title": "À Venir : [Événement Connexe]",
-              "timing": "J+14",
-              "description": "Prochaine opportunité d'engagement",
+              "description": "J+14 : Prochaine opportunité d'engagement",
               "content": "Compte tenu de votre intérêt pour [sujet événement], vous pourriez être intéressé par notre prochain [événement]. Cette session se concentrera sur [angle spécifique]. Réservez votre place - nos événements se remplissent généralement rapidement."
             }
           ]
@@ -120,43 +110,37 @@
             {
               "channel": "Email",
               "title": "Bienvenue chez [Nom Cabinet] - Votre Mission Commence !",
-              "timing": "J1",
-              "description": "Accueil formel",
+              "description": "J1 : Accueil formel",
               "content": "Bienvenue chez [Nom Cabinet] ! Nous sommes honorés de nous associer à [Entreprise Cliente] pour [projet/mission]. Ce message présente votre équipe dédiée et décrit ce à quoi vous attendre dans les semaines à venir. Votre équipe : [Noms et rôles des membres]. Prochaine étape : Notre réunion de lancement le [date] où nous alignerons objectifs, calendrier et modalités de travail."
             },
             {
               "channel": "Email",
               "title": "Rencontrez Votre Équipe : [Bio Consultant Principal/Associé]",
-              "timing": "J+2",
-              "description": "Connexion personnelle",
+              "description": "J+2 : Connexion personnelle",
               "content": "Je souhaitais me présenter personnellement en tant que responsable de votre mission. [Brève bio personnelle et expérience pertinente]. Je suis engagé dans votre réussite sur ce projet et reste toujours disponible si vous avez des questions ou préoccupations. Mon numéro direct : [téléphone]. Au plaisir de ce partenariat !"
             },
             {
               "channel": "Email",
               "title": "Comment Nous Travaillons Ensemble : Notre Approche",
-              "timing": "J+5",
-              "description": "Aperçu du processus",
+              "description": "J+5 : Aperçu du processus",
               "content": "Pour assurer un alignement permanent, voici comment nous travaillons typiquement avec nos clients : [Cadence de communication], [Processus de revue des livrables], [Chemins d'escalade], [Jalons clés]. Nous avons constaté que cette approche maintient les projets sur la bonne voie tout en restant flexible à vos besoins. Des questions ou ajustements nécessaires ?"
             },
             {
               "channel": "Email",
               "title": "Mise à Jour Progression Semaine 2",
-              "timing": "J+14",
-              "description": "Premier point d'étape",
+              "description": "J+14 : Premier point d'étape",
               "content": "Nous sommes à deux semaines dans notre mission, et je souhaitais partager une mise à jour rapide : [Accomplissements à ce jour], [Prochaines étapes], [Observations précoces]. Comment vous sentez-vous concernant notre progression jusqu'ici ? J'aimerais connaître votre perspective."
             },
             {
               "channel": "Email",
               "title": "Votre Avis Compte : Demande Feedback 30 Jours",
-              "timing": "J+30",
-              "description": "Feedback formel",
+              "description": "J+30 : Feedback formel",
               "content": "Nous avons atteint le cap du premier mois de notre mission. Votre feedback est crucial pour nous assurer de livrer exactement ce dont vous avez besoin. Merci de prendre 3 minutes pour partager vos impressions : [Lien sondage feedback]. Je lirai vos réponses personnellement et adresserai immédiatement toute préoccupation."
             },
             {
               "channel": "SMS",
               "title": "Relance Feedback",
-              "timing": "J+32 si sondage non complété",
-              "description": "Rappel personnel",
+              "description": "J+32 : Si sondage non complété",
               "content": "Bonjour [Prénom], votre retour sur notre mission est très important pour nous. Juste 3 min : [Lien]. Merci ! - [Prénom Responsable]"
             }
           ]
@@ -169,29 +153,25 @@
             {
               "channel": "Email",
               "title": "Votre Accord Retainer : Ce Qui Est Inclus",
-              "timing": "J1",
-              "description": "Vue d'ensemble retainer",
+              "description": "J1 : Vue d'ensemble retainer",
               "content": "Bienvenue dans notre partenariat retainer ! Ce message résume ce qui est inclus dans votre accord : [Services couverts], [Heures/ressources disponibles], [Engagements temps de réponse], [Cadence reporting]. Nous voulons que vous tiriez pleine valeur de cette relation, alors n'hésitez pas à nous solliciter."
             },
             {
               "channel": "Email",
               "title": "Votre Équipe Dédiée & Comment Nous Joindre",
-              "timing": "J+3",
-              "description": "Accès et disponibilité",
+              "description": "J+3 : Accès et disponibilité",
               "content": "Votre équipe dédiée est là pour vous accompagner : [Membres équipe avec spécialités et coordonnées]. Pour les urgences : [Processus contact urgent]. Pour les demandes quotidiennes : [Processus standard]. Notre objectif est de fonctionner comme une extension de votre équipe."
             },
             {
               "channel": "Email",
               "title": "Planifions Notre Premier Trimestre Ensemble",
-              "timing": "J+7",
-              "description": "Alignement stratégique",
+              "description": "J+7 : Alignement stratégique",
               "content": "Pour maximiser la valeur de notre partenariat, alignons-nous sur les priorités du prochain trimestre. Quelles sont les 3 principales initiatives ou défis où vous souhaiteriez notre soutien ? J'aimerais planifier une brève session pour nous assurer de nous concentrer sur vos besoins à plus fort impact."
             },
             {
               "channel": "Email",
               "title": "Votre Récapitulatif Retainer Mensuel",
-              "timing": "Fin Mois 1",
-              "description": "Rapport utilisation et valeur",
+              "description": "Fin Mois 1 : Rapport utilisation et valeur",
               "content": "Voici votre premier récapitulatif retainer mensuel : [Heures/ressources utilisées], [Travaux réalisés], [Disponibilité restante], [Recommandations pour le mois prochain]. Consacrons-nous notre temps aux bonnes choses ? Connectons-nous si vous souhaitez ajuster notre focus."
             }
           ]
@@ -213,22 +193,19 @@
             {
               "channel": "Email",
               "title": "Jalon Atteint : [Nom du Jalon]",
-              "timing": "À chaque jalon majeur",
-              "description": "Notification accomplissement",
+              "description": "À chaque jalon majeur : Notification accomplissement",
               "content": "Excellente nouvelle - nous avons complété [Nom Jalon] ! Voici ce que cela signifie pour votre organisation : [Valeur délivrée]. Accomplissements clés : [Liste]. Pour la suite, notre prochain jalon est [Prochain Jalon], où nous nous concentrerons sur [Aperçu]. Merci pour votre partenariat pour en arriver là."
             },
             {
               "channel": "Email",
               "title": "Prise de Pouls Rapide",
-              "timing": "Mensuel durant mission active",
-              "description": "Check-in satisfaction",
+              "description": "Mensuel durant mission active : Check-in satisfaction",
               "content": "Juste un rapide check-in : Comment vous sentez-vous concernant la progression de notre mission ? [Option notation simple 1-5]. Si quelque chose nécessite attention, je préfère le savoir maintenant plutôt que plus tard. Votre satisfaction est ma priorité absolue."
             },
             {
               "channel": "SMS",
               "title": "Mise à Jour Jalon",
-              "timing": "Même jour que l'email jalon",
-              "description": "Notification mobile",
+              "description": "Même jour que l'email jalon : Notification mobile",
               "content": "Je viens de vous envoyer une mise à jour sur la complétion de [Nom Jalon]. Ravi de la progression ! N'hésitez pas si vous avez des questions. - [Prénom Responsable]"
             }
           ]
@@ -241,15 +218,13 @@
             {
               "channel": "Email",
               "title": "Quelque Chose Que Nous Avons Observé...",
-              "timing": "Quand opportunité expansion identifiée",
-              "description": "Introduction opportunité",
+              "description": "Quand opportunité expansion identifiée : Introduction opportunité",
               "content": "En travaillant sur [mission actuelle], nous avons remarqué [observation sur besoin/opportunité adjacent(e)]. Bien que ce soit hors de notre périmètre actuel, nous avons une expertise dans ce domaine et pensons que cela vaut la peine d'être mentionné. Souhaiteriez-vous explorer comment nous pourrions vous aider sur ce sujet ?"
             },
             {
               "channel": "Email",
               "title": "Rencontrez l'Un de Nos Autres Experts",
-              "timing": "Si intérêt manifesté",
-              "description": "Introduction collègue",
+              "description": "Si intérêt manifesté : Introduction collègue",
               "content": "J'aimerais vous présenter [Nom Collègue], qui dirige notre practice [domaine de service]. Il/Elle a aidé des organisations comme [clients similaires] avec [défi que vous avez observé]. Seriez-vous ouvert à une brève conversation pour explorer si cela vaut la peine d'être poursuivi ?"
             }
           ]
@@ -270,37 +245,32 @@
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Insights [Mois] : [Sujet Principal]",
-              "timing": "Mensuel",
-              "description": "Newsletter",
+              "title": "Insights Industrie [Mois] : [Sujet Principal]",
+              "description": "Mensuel : Newsletter",
               "content": "Points forts de ce mois : [Article mis en avant sur sujet tendance], [Q&A expert ou interview], [Événements à venir], [Conseil ou outil rapide]. Nous avons sélectionné ces insights basés sur ce que nous observons avec nos clients et sur le marché. Quels sujets devrions-nous couvrir prochainement ?"
             },
             {
               "channel": "Email",
               "title": "Nouvelle Recherche : [Titre Rapport]",
-              "timing": "Trimestriel",
-              "description": "Recherche originale",
+              "description": "Trimestriel : Recherche originale",
               "content": "Notre dernier rapport de recherche est disponible : [Titre Rapport]. Nous avons interrogé [X] leaders et analysé [sources données] pour découvrir [aperçu conclusions clés]. Une découverte surprenante : [Statistique ou insight teaser]. Téléchargez le rapport complet pour voir comment votre organisation se compare."
             },
             {
               "channel": "Email",
               "title": "Le Point de Vue de [Nom Expert] sur [Sujet Chaud]",
-              "timing": "Bi-mensuel",
-              "description": "Commentaire expert",
+              "description": "Bi-mensuel : Commentaire expert",
               "content": "[Nom Expert], notre [Titre], donne son avis sur [sujet chaud actuel]. Sa perspective : [Citation ou insight clé]. Cela génère beaucoup de discussions - nous aimerions entendre vos réflexions."
             },
             {
               "channel": "Email",
               "title": "Session Live : [Sujet] avec [Expert]",
-              "timing": "Mensuel",
-              "description": "Invitation webinaire/événement",
+              "description": "Mensuel : Invitation webinaire/événement",
               "content": "Rejoignez-nous pour [Type Événement] : [Sujet]. [Nom Expert] partagera des insights sur [angle spécifique] et répondra à vos questions en direct. Date : [Date]. Heure : [Heure]. Places limitées - réservez votre place."
             },
             {
               "channel": "Push",
               "title": "Webinaire Demain",
-              "timing": "Rappel événement J-1",
-              "description": "Notification rappel",
+              "description": "Rappel événement J-1 : Notification rappel",
               "content": "N'oubliez pas : [Titre Événement] demain à [heure]. Consultez vos emails pour les détails !"
             }
           ]
@@ -313,15 +283,13 @@
             {
               "channel": "Email",
               "title": "Exclusivité Clients : [Contenu Premium]",
-              "timing": "Trimestriel",
-              "description": "Contenu réservé clients",
+              "description": "Trimestriel : Contenu réservé clients",
               "content": "En tant que client privilégié, vous bénéficiez d'un accès anticipé à [contenu premium] avant sa publication publique. À l'intérieur : [Insights exclusifs]. Nous serions ravis de votre feedback - il contribue à façonner notre réflexion."
             },
             {
               "channel": "Email",
               "title": "Table Ronde Clients : [Sujet]",
-              "timing": "Trimestriel",
-              "description": "Networking clients",
+              "description": "Trimestriel : Networking clients",
               "content": "Vous êtes invité à une discussion table ronde exclusive avec d'autres clients. Sujet : [Sujet pertinent]. C'est une opportunité de partager vos expériences et d'apprendre de pairs confrontés à des défis similaires. Limité à [X] participants pour une discussion intime."
             }
           ]
@@ -343,36 +311,31 @@
             {
               "channel": "Email",
               "title": "En Conclusion : Ce Que Nous Avons Accompli Ensemble",
-              "timing": "Dernière semaine du projet",
-              "description": "Résumé de valeur",
+              "description": "Dernière semaine du projet : Résumé de valeur",
               "content": "Alors que nous approchons de la conclusion de notre [Type Mission], je souhaitais résumer ce que nous avons accompli ensemble : [Livrables clés], [Résultats atteints], [Valeur délivrée]. Ce fut un privilège de travailler avec [Entreprise Cliente] sur cette initiative."
             },
             {
               "channel": "Email",
               "title": "Votre Rapport de Mission & Documentation",
-              "timing": "À la complétion",
-              "description": "Livrables finaux",
+              "description": "À la complétion : Livrables finaux",
               "content": "Vous trouverez en pièce jointe votre rapport de mission complet, incluant : [Synthèse exécutive], [Conclusions/livrables détaillés], [Recommandations pour les prochaines étapes], [Documentation support]. N'hésitez pas à nous contacter si vous avez des questions en examinant ces documents."
             },
             {
               "channel": "Email",
               "title": "Votre Feedback Final : Aidez-Nous à Progresser",
-              "timing": "J+3 après complétion",
-              "description": "Sondage satisfaction",
+              "description": "J+3 après complétion : Sondage satisfaction",
               "content": "Merci d'avoir fait confiance à [Nom Cabinet] pour [Mission]. Votre feedback est incroyablement important pour nous - il nous aide à nous améliorer et nous indique ce que nous faisons bien. Accepteriez-vous de prendre 5 minutes pour partager vos impressions ? [Lien sondage]"
             },
             {
               "channel": "Email",
               "title": "Restons Connectés : Et Après",
-              "timing": "1 semaine après complétion",
-              "description": "Transition relation",
+              "description": "1 semaine après complétion : Transition relation",
               "content": "Bien que notre mission formelle soit terminée, nous aimerions rester connectés. Vous continuerez à recevoir notre [type de contenu pertinent], et je prendrai des nouvelles périodiquement pour voir comment les choses évoluent. En attendant, n'hésitez pas à nous contacter si des questions surgissent concernant la mise en œuvre de nos recommandations."
             },
             {
               "channel": "Email",
               "title": "Connaissez-Vous Quelqu'un Qui Pourrait Bénéficier ?",
-              "timing": "2 semaines après complétion",
-              "description": "Demande recommandation",
+              "description": "2 semaines après complétion : Demande recommandation",
               "content": "Si vous avez été satisfait de notre partenariat, nous serions honorés que vous nous présentiez à des collègues qui pourraient bénéficier d'un travail similaire. Les recommandations sont la façon dont nous avons construit notre practice, et nous traiterions toute mise en relation avec le même soin que nous avons accordé à votre mission."
             }
           ]
@@ -394,36 +357,31 @@
             {
               "channel": "Email",
               "title": "Check-In Trimestriel : Comment Allez-Vous ?",
-              "timing": "Tous les 90 jours",
-              "description": "Point de contact personnel",
+              "description": "Tous les 90 jours : Point de contact personnel",
               "content": "Bonjour [Prénom], cela fait quelques mois depuis que nous avons terminé [Mission], et je voulais prendre de vos nouvelles. Comment avancent les choses avec [initiative connexe] ? J'ai aussi pensé que vous pourriez trouver ce récent [article/insight] pertinent par rapport à ce sur quoi vous travailliez. Pas d'agenda - juste pour garder le contact."
             },
             {
               "channel": "Email",
               "title": "J'ai Pensé Que Cela Vous Intéresserait",
-              "timing": "Continu",
-              "description": "Partage contenu pertinent",
+              "description": "Continu : Partage contenu pertinent",
               "content": "Je suis tombé sur [contenu/actualité] et j'ai immédiatement pensé à vous compte tenu de votre travail sur [sujet mission passée]. J'ai pensé que cela vous intéresserait. J'espère que tout va bien !"
             },
             {
               "channel": "Email",
               "title": "Félicitations pour [Réalisation/Actualité] !",
-              "timing": "Déclenché par actualité/événements",
-              "description": "Reconnaissance",
+              "description": "Déclenché par actualité/événements : Reconnaissance",
               "content": "J'ai vu l'annonce concernant [réalisation entreprise/promotion/jalon]. Félicitations ! C'est formidable de voir [Entreprise Cliente] prospérer. S'il y a quoi que ce soit sur quoi nous pouvons vous aider dans votre croissance continue, n'hésitez pas à nous contacter."
             },
             {
               "channel": "Email",
               "title": "[Anniversaire] Depuis Notre Partenariat",
-              "timing": "Annuel",
-              "description": "Anniversaire relation",
+              "description": "Annuel : Anniversaire relation",
               "content": "Cela fait [X ans] depuis notre première collaboration sur [mission originale]. Le temps passe vite ! J'espère que les [livrables/changements] que nous avons mis en place ensemble continuent à apporter de la valeur. Prenons un café un de ces jours - j'aimerais prendre de vos nouvelles et savoir sur quoi vous travaillez maintenant."
             },
             {
               "channel": "SMS",
               "title": "Un Café Bientôt ?",
-              "timing": "Bi-annuel",
-              "description": "Outreach personnel",
+              "description": "Bi-annuel : Outreach personnel",
               "content": "Bonjour [Prénom], ça fait un moment ! J'aimerais prendre un café ou passer un coup de fil pour prendre de vos nouvelles. Quelles sont vos disponibilités ? - [Prénom Responsable]"
             }
           ]
@@ -436,15 +394,13 @@
             {
               "channel": "Email",
               "title": "J'ai Vu Cela et Pensé à [Entreprise Cliente]",
-              "timing": "Quand actualité/déclencheur détecté",
-              "description": "Outreach proactif",
+              "description": "Quand actualité/déclencheur détecté : Outreach proactif",
               "content": "J'ai remarqué [déclencheur : nouvelle levée de fonds, changement de direction, annonce stratégique, évolution réglementaire]. Félicitations/C'est significatif ! Compte tenu de notre travail passé ensemble sur [domaine connexe], je pensais que vous pourriez envisager [prochaine étape logique]. Nous avons aidé plusieurs clients à naviguer cela - une conversation rapide serait-elle utile ?"
             },
             {
               "channel": "Email",
               "title": "Nouvelle Capacité : [Domaine de Service]",
-              "timing": "Quand nouveau service pertinent pour travail passé",
-              "description": "Introduction nouvelle offre",
+              "description": "Quand nouveau service pertinent pour travail passé : Introduction nouvelle offre",
               "content": "Nous avons développé une nouvelle expertise en [domaine] que je pense pourrait être pertinente pour [Entreprise Cliente] basée sur ce que je sais de vos priorités. [Brève description capacité et valeur]. Seriez-vous intéressé à en savoir plus sur comment cela pourrait aider avec [leur défi probable] ?"
             }
           ]
@@ -466,22 +422,19 @@
             {
               "channel": "Email",
               "title": "Comment [Nom Cabinet] Aide Au-Delà de [Service Actuel]",
-              "timing": "6 mois dans la relation",
-              "description": "Éducation services",
+              "description": "6 mois dans la relation : Éducation services",
               "content": "Vous nous connaissez peut-être principalement pour [service actuel], mais nous aidons aussi les clients avec [services adjacents]. Voici comment ces services complètent ce que nous faisons déjà ensemble et apportent une valeur additionnelle : [Brèves descriptions]. Intéressé à en savoir plus sur l'un de ces services ?"
             },
             {
               "channel": "Email",
               "title": "Beaucoup de Clients Combinent [Services] - Voici Pourquoi",
-              "timing": "Après éducation services",
-              "description": "Preuve sociale",
+              "description": "Après éducation services : Preuve sociale",
               "content": "Pattern intéressant : Beaucoup de nos clients qui ont démarré avec [Service A] ont fini par ajouter [Service B]. Pourquoi ? [Explication des synergies et valeur renforcée]. Souhaiteriez-vous voir comment un client a bénéficié de cette approche combinée ?"
             },
             {
               "channel": "Email",
               "title": "Basé sur Notre Travail Ensemble : Une Suggestion",
-              "timing": "Quand besoin spécifique observé",
-              "description": "Recommandation ciblée",
+              "description": "Quand besoin spécifique observé : Recommandation ciblée",
               "content": "Basé sur ce que nous avons appris de [Entreprise Cliente] à travers notre [mission actuelle], je pense qu'il y a une opportunité de [recommandation spécifique]. Notre équipe [autre service] a une expertise profonde dans ce domaine. Une brève conversation avec [Nom Collègue] serait-elle utile ?"
             }
           ]
@@ -494,15 +447,13 @@
             {
               "channel": "Email",
               "title": "Planification [Année Prochaine] : Parlons Stratégie",
-              "timing": "90 jours avant cycle planification typique",
-              "description": "Initiation conversation stratégique",
+              "description": "90 jours avant cycle planification typique : Initiation conversation stratégique",
               "content": "Alors que nous approchons de [période de planification], j'aimerais planifier une conversation stratégique sur comment nous pouvons soutenir les priorités de [Entreprise Cliente] pour l'année à venir. Basé sur notre travail ensemble, j'ai quelques idées sur où nous pourrions ajouter de la valeur supplémentaire. Auriez-vous du temps pour une discussion de planification stratégique ?"
             },
             {
               "channel": "Email",
               "title": "Votre Proposition de Partenariat [Année]",
-              "timing": "Après conversation stratégique",
-              "description": "Proposition formelle",
+              "description": "Après conversation stratégique : Proposition formelle",
               "content": "Suite à notre discussion sur les priorités [Année Prochaine], j'ai préparé une proposition sur comment nous pouvons étendre notre partenariat : [Vue d'ensemble périmètre élargi]. Cela s'appuie sur notre travail réussi ensemble et adresse les défis additionnels que vous avez mentionnés. Dites-moi quand vous souhaiteriez en discuter."
             }
           ]
@@ -524,29 +475,25 @@
             {
               "channel": "Email",
               "title": "Merci - Votre Feedback Nous Touche Énormément",
-              "timing": "Après feedback positif/NPS",
-              "description": "Remerciement et demande",
+              "description": "Après feedback positif/NPS : Remerciement et demande",
               "content": "Merci pour vos retours si positifs sur notre collaboration ! Cela signifie vraiment beaucoup pour notre équipe. Si vous connaissez des collègues ou pairs confrontés à des défis similaires, nous serions honorés d'une mise en relation. Nous avons construit notre practice grâce aux recommandations de clients comme vous, et nous traiterions toute connexion avec le même soin que nous avons accordé à votre mission."
             },
             {
               "channel": "Email",
               "title": "Accepteriez-Vous de Partager Votre Expérience ?",
-              "timing": "J+7 après feedback positif",
-              "description": "Demande témoignage",
+              "description": "J+7 après feedback positif : Demande témoignage",
               "content": "Votre perspective a du poids auprès d'autres décideurs confrontés à des choix similaires. Seriez-vous disposé à partager un bref témoignage sur votre expérience de travail avec nous ? Cela peut être aussi simple que quelques phrases, et nous l'utiliserions (avec votre approbation) pour aider d'autres organisations à comprendre la valeur que nous apportons."
             },
             {
               "channel": "Email",
               "title": "Racontons Votre Success Story",
-              "timing": "Pour clients avec résultats notables",
-              "description": "Invitation étude de cas",
+              "description": "Pour clients avec résultats notables : Invitation étude de cas",
               "content": "Les résultats que vous avez obtenus avec [Projet] sont remarquables, et nous aimerions aider à raconter cette histoire. Seriez-vous intéressé à être mis en avant dans une étude de cas ? C'est une excellente visibilité pour [Entreprise Cliente] et aide d'autres à apprendre de votre succès. Le processus est simple : une interview de 30 minutes, vous approuvez tout avant publication."
             },
             {
               "channel": "Email",
               "title": "Votre Recommandation : [Nom Recommandé]",
-              "timing": "Après recommandation réussie",
-              "description": "Remerciement recommandation",
+              "description": "Après recommandation réussie : Remerciement recommandation",
               "content": "Merci de nous avoir présentés à [Nom Recommandé] ! Nous avons eu notre première conversation et [mise à jour positive]. Votre recommandation nous touche énormément. En remerciement, [geste de reconnaissance/appréciation]. N'hésitez pas à nous garder en tête pour d'autres mises en relation - les introductions de sources de confiance comme vous sont notre façon préférée de grandir."
             }
           ]
@@ -559,15 +506,13 @@
             {
               "channel": "Email",
               "title": "Invitation : Comité Consultatif Clients",
-              "timing": "Pour clients top",
-              "description": "Invitation advisory",
+              "description": "Pour clients top : Invitation advisory",
               "content": "Compte tenu de notre partenariat solide et de votre perspective précieuse, j'aimerais vous inviter à rejoindre notre Comité Consultatif Clients. En tant que membre, vous auriez un accès anticipé à nos nouvelles réflexions, une influence directe sur l'évolution de nos services, et un networking exclusif avec des leaders pairs. L'engagement est minimal - deux réunions par an plus des opportunités de contribution ponctuelles."
             },
             {
               "channel": "Email",
               "title": "Opportunité de Prise de Parole : [Événement/Publication]",
-              "timing": "Quand opportunité pertinente",
-              "description": "Proposition intervention commune",
+              "description": "Quand opportunité pertinente : Proposition intervention commune",
               "content": "[Événement/Publication] nous a demandé de contribuer, et j'ai immédiatement pensé au travail que nous avons réalisé ensemble. Seriez-vous intéressé à co-présenter/être interviewé sur [sujet] ? C'est une excellente visibilité et un positionnement thought leadership pour nous deux."
             }
           ]
@@ -589,22 +534,19 @@
             {
               "channel": "Email",
               "title": "Cela Fait un Moment - J'espère Que Vous Allez Bien",
-              "timing": "18 mois inactif",
-              "description": "Reconnexion chaleureuse",
+              "description": "18 mois inactif : Reconnexion chaleureuse",
               "content": "Bonjour [Prénom], cela fait un moment depuis notre dernière collaboration sur [Mission Passée]. J'espère que les choses vont bien chez [Entreprise Cliente] ! Je voulais reprendre contact et partager quelques actualités : [Brèves mises à jour cabinet pertinentes pour eux]. J'aimerais savoir sur quoi vous travaillez ces temps-ci - peut-être pourrions-nous prendre un café ?"
             },
             {
               "channel": "Email",
               "title": "J'ai Pensé à Vous : [Développement Pertinent]",
-              "timing": "24 mois inactif",
-              "description": "Outreach valeur-first",
+              "description": "24 mois inactif : Outreach valeur-first",
               "content": "Je suis tombé sur [article/recherche/actualité] et j'ai pensé à notre travail passé ensemble sur [sujet]. Cela pourrait être pertinent si vous êtes encore focalisé sur [domaine]. Pas de pitch - juste pour garder le contact et espérant que c'est utile."
             },
             {
               "channel": "Email",
               "title": "Nous Avons Évolué : Nouvelles Capacités chez [Cabinet]",
-              "timing": "Si pas de réponse",
-              "description": "Quoi de neuf",
+              "description": "Si pas de réponse : Quoi de neuf",
               "content": "Beaucoup de choses ont changé chez [Nom Cabinet] depuis notre dernière collaboration. Nous avons ajouté de nouvelles capacités en [domaines pertinents] que je pense pourraient être précieuses pour [Entreprise Cliente]. Si vous êtes un jour confronté à des défis dans ces domaines, je serais ravi de renouer."
             }
           ]
@@ -617,22 +559,19 @@
             {
               "channel": "Email",
               "title": "Merci pour l'Opportunité",
-              "timing": "Au moment de la perte",
-              "description": "Acceptation gracieuse",
+              "description": "Au moment de la perte : Acceptation gracieuse",
               "content": "Bien que nous soyons déçus de ne pas avoir été retenus pour [Opportunité], nous apprécions l'opportunité de concourir. Nous avons apprécié découvrir vos défis et espérons que [cabinet choisi] délivrera d'excellents résultats. Gardez-nous en tête pour vos besoins futurs - nous serions ravis d'une autre opportunité de travailler ensemble."
             },
             {
               "channel": "Email",
               "title": "Prise de Nouvelles : Comment Se Passe [Projet] ?",
-              "timing": "6 mois après perte",
-              "description": "Check-in courtois",
+              "description": "6 mois après perte : Check-in courtois",
               "content": "Bonjour [Prénom], je voulais prendre des nouvelles sur l'avancement de [projet pour lequel ils ont choisi un autre cabinet]. Nous sommes sincèrement curieux du résultat et espérons que c'est un succès. Si vous avez besoin d'une perspective fraîche ou d'un soutien additionnel, nous sommes là."
             },
             {
               "channel": "Email",
               "title": "[Contenu Pertinent] - J'ai Pensé Que Cela Vous Serait Utile",
-              "timing": "Continu",
-              "description": "Contenu valeur-first",
+              "description": "Continu : Contenu valeur-first",
               "content": "Même si nous n'avons pas eu l'occasion de travailler ensemble sur [opportunité passée], j'ai pensé à vous quand nous avons publié ceci : [Contenu pertinent]. J'espère que c'est utile, quel que soit avec qui vous travaillez !"
             }
           ]
@@ -654,30 +593,244 @@
             {
               "channel": "Email",
               "title": "Mise à Jour Partenaire Trimestrielle : [Nom Cabinet]",
-              "timing": "Trimestriel",
-              "description": "Communication partenaire",
+              "description": "Trimestriel : Communication partenaire",
               "content": "Voici les nouveautés chez [Nom Cabinet] qui pourraient être pertinentes pour notre partenariat : [Nouvelles capacités, gains récents, domaines de focus]. Nous avons aussi identifié quelques opportunités conjointes potentielles : [Brèves descriptions]. Planifions du temps pour discuter de nos collaborations."
             },
             {
               "channel": "Email",
               "title": "Opportunité Co-Marketing : [Initiative]",
-              "timing": "Quand opportunité pertinente",
-              "description": "Proposition collaboration",
+              "description": "Quand opportunité pertinente : Proposition collaboration",
               "content": "Nous planifions [contenu/événement/initiative] et pensons que ce serait plus fort avec votre participation. [Cabinet Partenaire] serait-il intéressé à co-sponsoriser/contribuer ? Les bénéfices incluent : [Leads partagés, portée étendue, positionnement thought leadership]."
             },
             {
               "channel": "Email",
               "title": "Opportunité Conjointe Potentielle : [Client/Projet]",
-              "timing": "Quand opportunité conjointe identifiée",
-              "description": "Proposition approche commune",
+              "description": "Quand opportunité conjointe identifiée : Proposition approche commune",
               "content": "J'ai rencontré une opportunité chez [Entreprise] qui je pense bénéficierait de notre expertise combinée : [Brève description]. Leurs besoins couvrent [notre expertise] et [votre expertise]. Seriez-vous intéressé à explorer une approche conjointe ?"
             },
             {
               "channel": "SMS",
               "title": "Un Échange Partenaire Rapide ?",
-              "timing": "Bi-annuel",
-              "description": "Maintenance relation",
+              "description": "Bi-annuel : Maintenance relation",
               "content": "Bonjour [Prénom], ça fait trop longtemps ! J'aimerais faire le point sur notre partenariat et discuter de ce qui s'annonce. Libre pour un café ou un appel cette semaine ? - [Votre Prénom]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Solutions Sectorielles & Expertise Verticale",
+      "target": "Prospects et clients dans les industries verticales clés où le cabinet possède une expertise approfondie",
+      "objective": "Se positionner comme expert sectoriel dans 3-5 verticales clés avec des taux de conversion supérieurs de 40% pour les prospects ciblés verticalement",
+      "kpi": "Taux engagement spécifique vertical (cible : 35%), Consommation contenu industrie (cible : 50%), Conversion lead vertical (cible : 40% supérieur à général), Acquisition clients sectoriels",
+      "description": "Un programme qui met en valeur l'expertise verticale approfondie via du contenu spécifique industrie, études de cas, benchmarks et insights réglementaires/conformité. Cela positionne le cabinet comme l'expert de référence pour les clients dans des industries spécifiques qui valorisent les connaissances spécialisées.",
+      "scenarios": [
+        {
+          "scenario_target": "Prospects et clients secteur santé",
+          "scenario_objective": "Démontrer l'expertise santé et la connaissance réglementaire",
+          "main_messages_ideas": "Réglementation santé, Conformité HIPAA, Benchmarks industrie, Études de cas santé, Tendances secteur",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Actualités Secteur Santé : [Sujet]",
+              "description": "Mensuel : Contenu spécifique industrie",
+              "content": "Les organisations de santé font face à des défis uniques ce mois-ci : [Évolutions réglementaires récentes, tendances industrie ou défis]. Voici notre analyse de ce que [Sujet] signifie pour les prestataires de soins, payeurs et entreprises sciences de la vie - et comment les organisations avant-gardistes répondent."
+            },
+            {
+              "channel": "Email",
+              "title": "Étude de Cas Santé : [Type de Client]",
+              "description": "Trimestriel : Success story",
+              "content": "Découvrez comment nous avons aidé [Type Client Santé] à naviguer [défi spécifique]. Le résultat : [Résultats quantifiés]. Téléchargez l'étude de cas complète pour voir comment cette approche pourrait fonctionner pour votre organisation."
+            },
+            {
+              "channel": "Email",
+              "title": "Rapport Benchmark Santé [Année]",
+              "description": "Annuel : Rapport recherche",
+              "content": "Notre rapport annuel Benchmark Industrie Santé est disponible ! Comparez votre organisation face à 200+ prestataires de soins sur [métriques clés]. Téléchargez votre copie et voyez où vous vous situez - plus des recommandations actionnables de nos leaders practice santé."
+            },
+            {
+              "channel": "SMS",
+              "title": "Webinaire Santé Demain",
+              "description": "Rappel événement : Notification",
+              "content": "Rappel : webinaire conformité santé demain à [heure]. Nos experts practice santé couvriront [sujet]. Incontournable pour les leaders santé. Rejoignez : [lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Prospects et clients secteur services financiers",
+          "scenario_objective": "Mettre en valeur l'expertise services financiers et la connaissance conformité",
+          "main_messages_ideas": "Conformité réglementaire, Gestion risques, Tendances fintech, Études de cas services financiers, Benchmarks industrie",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Actualités Réglementaires Services Financiers",
+              "description": "Mensuel : Mises à jour conformité",
+              "content": "Développements réglementaires clés affectant les services financiers ce mois-ci : [Mises à jour SEC, FINRA, régulateurs étatiques, etc.]. Notre équipe services financiers décrypte ce que ces changements signifient pour les banques, gestionnaires d'actifs, compagnies d'assurance et entreprises fintech."
+            },
+            {
+              "channel": "Email",
+              "title": "Tendances Services Financiers [Année]",
+              "description": "Trimestriel : Analyse industrie",
+              "content": "Qu'est-ce qui façonne les services financiers au [Trimestre] ? De [tendance 1] à [tendance 2], nos leaders practice services financiers partagent des insights sur la direction de l'industrie - et comment les institutions leaders se préparent."
+            },
+            {
+              "channel": "Email",
+              "title": "Opportunité Partenariat Fintech",
+              "description": "Quand pertinent : Événement industrie",
+              "content": "Nous organisons une table ronde exclusive pour dirigeants services financiers sur [Sujet]. Limité à 15 participants pour une discussion significative. Souhaitez-vous rejoindre [entreprises pairs] pour explorer [Sujet] ? Demandez votre place."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Prospects et clients secteur technologie",
+          "scenario_objective": "Démontrer la compréhension du secteur technologie et l'expertise croissance",
+          "main_messages_ideas": "Stratégies croissance tech, Métriques SaaS, Défis scaling, M&A tech, Tendances industrie",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Insights Croissance Entreprises Tech",
+              "description": "Mensuel : Contenu secteur technologie",
+              "content": "Que font différemment les entreprises tech à croissance rapide ? Notre analyse de [tendance/sujet] révèle des stratégies qui séparent les leaders des retardataires. Insights applicables que vous soyez Série A ou en préparation d'IPO."
+            },
+            {
+              "channel": "Email",
+              "title": "Rapport Benchmark Métriques SaaS",
+              "description": "Trimestriel : Données benchmarking",
+              "content": "Comment vos métriques SaaS se comparent-elles ? Notre dernier rapport benchmark analyse [# entreprises] sur les métriques clés : CAC, LTV, churn, revenu expansion, et plus. Voyez où vous vous comparez et où concentrer vos efforts d'amélioration."
+            },
+            {
+              "channel": "Email",
+              "title": "Table Ronde CFO Tech",
+              "description": "Trimestriel : Networking pairs",
+              "content": "Rejoignez 12 CFO tech pour une discussion privée sur [Sujet - ex : naviguer l'incertitude marché, préparation IPO, stratégie M&A]. Facilité par nos associés practice technologie. Ces sessions produisent systématiquement des insights pairs précieux."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Prospects et clients secteur manufacturing",
+          "scenario_objective": "Mettre en valeur l'expertise manufacturing et la connaissance opérationnelle",
+          "main_messages_ideas": "Supply chain, Industrie 4.0, Excellence opérationnelle, Études de cas manufacturing, Tendances secteur",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Perspectives Industrie Manufacturing",
+              "description": "Mensuel : Contenu industrie",
+              "content": "Les leaders manufacturing font face à [défis/tendances actuels]. Notre dernière analyse couvre les développements supply chain, l'adoption Industrie 4.0, et les stratégies opérationnelles que les manufacturiers leaders mettent en œuvre."
+            },
+            {
+              "channel": "Email",
+              "title": "Étude de Cas Excellence Manufacturing",
+              "description": "Trimestriel : Success story",
+              "content": "Découvrez comment [Client Manufacturing] a atteint [résultat spécifique - réduction coûts, gain efficacité, etc.]. Cette étude de cas détaille l'approche, les défis surmontés, et les résultats obtenus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Gestion Propositions & Réponses Appels d'Offres",
+      "target": "Opportunités actives dans le pipeline commercial, particulièrement réponses appels d'offres formels et situations propositions compétitives",
+      "objective": "Augmenter le taux de gain propositions de 25% et réduire la durée du cycle de vente de 20% grâce à une communication stratégique des propositions",
+      "kpi": "Taux de gain propositions (cible : 35%), Taux de réponse propositions (cible : 80%), Délai soumission proposition, Efficacité suivi, Taux gain compétitif",
+      "description": "Un programme conçu pour soutenir le processus de proposition et d'appel d'offres avec une communication stratégique qui renforce les propositions de valeur, adresse les préoccupations, et maintient l'engagement durant les périodes d'évaluation souvent longues.",
+      "scenarios": [
+        {
+          "scenario_target": "Prospects en évaluation active d'appel d'offres",
+          "scenario_objective": "Maintenir l'engagement et renforcer la valeur durant la période d'évaluation",
+          "main_messages_ideas": "Suivi proposition, Renforcement valeur, Anticipation questions, Disponibilité références, Support évaluation",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Confirmation Réception Proposition",
+              "description": "Immédiat à la soumission : Confirmation",
+              "content": "Merci pour l'opportunité de présenter notre proposition pour [Projet/Mission]. Nous avons soumis notre réponse adressant [exigences clés]. Nous sommes enthousiastes à l'idée de travailler ensemble sur [résultat spécifique]. N'hésitez pas à nous contacter pour toute question."
+            },
+            {
+              "channel": "Email",
+              "title": "Documents Complémentaires : [Sujet Pertinent]",
+              "description": "Semaine 1 : Valeur ajoutée",
+              "content": "Pendant votre évaluation des propositions, j'ai pensé que cela pourrait être pertinent : [Étude de cas, benchmark, ou insight directement lié à leur projet/défi]. Cela fournit un contexte additionnel sur [approche/méthodologie] que nous avons décrite dans notre proposition."
+            },
+            {
+              "channel": "Email",
+              "title": "Disponibilité Références",
+              "description": "Semaine 2 : Preuve sociale",
+              "content": "Dans le cadre de votre processus d'évaluation, nous serions ravis de vous mettre en contact avec des références de missions similaires. [Client 1] a fait face à des défis similaires aux vôtres, et [Client 2] peut témoigner de notre [capacité spécifique]. Faites-moi savoir si ces conversations seraient utiles."
+            },
+            {
+              "channel": "SMS",
+              "title": "Questions sur la Proposition ?",
+              "description": "Semaine 2 : Check-in personnel",
+              "content": "Bonjour [Prénom], j'espère que l'évaluation se passe bien. Ravi de faire un rapide appel si des questions ont émergé sur notre proposition. Je suis là pour aider ! - [Votre Prénom]"
+            },
+            {
+              "channel": "Email",
+              "title": "Support Évaluation",
+              "description": "Semaine 3 : Support proactif",
+              "content": "Nous savons que les processus d'évaluation peuvent soulever des questions additionnelles. Si cela serait utile, nous sommes disponibles pour une discussion de suivi pour : répondre à toute nouvelle question, fournir des détails supplémentaires sur toute section, ou clarifier notre approche. Qu'est-ce qui serait le plus utile ?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Prospects avec décisions propositions en attente",
+          "scenario_objective": "Rester top-of-mind durant la prise de décision sans être insistant",
+          "main_messages_ideas": "Points de contact légers, Contenu pertinent, Signaux de disponibilité, Check-in timing",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "J'ai Pensé Que Cela Vous Serait Pertinent",
+              "description": "Continu : Contenu valeur ajoutée",
+              "content": "Pendant que votre évaluation continue, je suis tombé sur [article/recherche/étude de cas] qui est directement pertinent pour [leur défi]. J'ai pensé que cela pourrait être utile quelle que soit la direction que vous prenez. Pas de réponse nécessaire - je voulais juste partager."
+            },
+            {
+              "channel": "Email",
+              "title": "Check-In Timing",
+              "description": "Basé sur timing attendu : Suivi délicat",
+              "content": "Je voulais prendre des nouvelles alors que nous approchons du timing que vous avez mentionné pour une décision sur [Projet]. Nous restons enthousiastes concernant l'opportunité et sommes prêts à avancer rapidement une fois que vous serez prêt. Y a-t-il autre chose que nous pouvons fournir pour soutenir votre processus de décision ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Équipe Disponible pour Discussion",
+              "description": "Si timing s'étend : Réengagement",
+              "content": "Nous savons que les timings peuvent évoluer, et les décisions de sélection prennent souvent plus longtemps qu'anticipé. Notre équipe reste disponible pour toute discussion additionnelle qui serait utile. Nous sommes engagés à rendre cette décision aussi facile que possible pour votre équipe."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Post-décision proposition (gagnée)",
+          "scenario_objective": "Transition fluide des ventes à la livraison",
+          "main_messages_ideas": "Remerciements, Préparation kickoff, Introduction équipe, Définition attentes",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci pour Votre Confiance",
+              "description": "À la décision : Gratitude et prochaines étapes",
+              "content": "Merci d'avoir choisi [Nom Cabinet] pour [Projet]. Nous sommes honorés de votre confiance et engagés à dépasser vos attentes. Voici ce qui se passe ensuite : [Processus contractualisation, introduction équipe, planification kickoff]. Nous serons en contact sous [délai] pour commencer."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Équipe Mission",
+              "description": "Avant kickoff : Introduction équipe",
+              "content": "Je suis ravi de vous présenter l'équipe qui dirigera votre [Projet] : [Membres équipe avec brèves bios]. Chacun apporte [expertise pertinente]. Nous planifierons une réunion de kickoff pour nous aligner sur les objectifs et l'approche. En attendant, n'hésitez pas à contacter n'importe lequel d'entre nous."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Post-décision proposition (perdue)",
+          "scenario_objective": "Maintenir la relation et apprendre de la perte",
+          "main_messages_ideas": "Acceptation gracieuse, Demande feedback, Relation future, Rester en contact",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci pour l'Opportunité",
+              "description": "À notification de perte : Réponse gracieuse",
+              "content": "Merci de nous avoir informés de votre décision, et pour l'opportunité de présenter notre proposition. Nous vous souhaitons du succès avec [Projet]. Si vous êtes ouvert, nous apprécierions tout feedback sur notre proposition - cela nous aide à nous améliorer. Dans tous les cas, nous espérons que nos chemins se croiseront à nouveau."
+            },
+            {
+              "channel": "Email",
+              "title": "Restons Connectés",
+              "description": "Mois 1 : Maintenance relation",
+              "content": "Nous ne travaillons peut-être pas ensemble sur [Projet], mais nous aimerions toujours rester connectés. Je vous ajoute à notre distribution d'insights industrie - du contenu pertinent sans le pitch commercial. N'hésitez pas à nous contacter à tout moment."
             }
           ]
         }

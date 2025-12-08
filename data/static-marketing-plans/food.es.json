@@ -230,6 +230,178 @@
       ]
     },
     {
+      "program_name": "Inspiración de Recetas y Planificación de Comidas",
+      "target": "Clientes comprometidos que interactúan con contenido de recetas o compran productos de planificación de comidas",
+      "objective": "Aumentar engagement con recetas a 50% de tasa de clics, impulsar adopción de meal kits al 8%, y aumentar AOV en 25% a través de packs basados en recetas",
+      "kpi": "Tasa de clics de email de recetas (objetivo: 50%), Adopción de meal kit/pack (objetivo: 8%), Aumento de AOV impulsado por recetas (objetivo: +25%), Guardados/compartidos de recetas (objetivo: 15%)",
+      "description": "Programa rico en contenido que posiciona la marca como fuente de inspiración culinaria. Proporciona recetas semanales, planes de comidas estacionales, tutoriales de técnicas, y listas de ingredientes comprables para impulsar descubrimiento de productos y compras de múltiples artículos.",
+      "scenarios": [
+        {
+          "scenario_target": "Engagers activos de recetas",
+          "scenario_objective": "Profundizar engagement con contenido e impulsar recetas comprables",
+          "main_messages_ideas": "Receta semanal, herramientas de planificación de comidas, tutoriales de técnicas, colaboraciones con chefs",
+          "message_sequence": [
+            {
+              "title": "La Receta Imprescindible de Esta Semana",
+              "description": "Email de contenido semanal",
+              "content": "Esta semana: [Nombre de Receta] con [Ingrediente Principal]. Obtén la receta con lista de ingredientes comprable con un clic.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tu Plan de Comidas Semanal",
+              "description": "Domingo: Ayuda para planificación semanal",
+              "content": "¡Planifica tu semana! Aquí hay 5 recetas con lista de compra combinada—todo lo que necesitas en un carrito.",
+              "channel": "Email"
+            },
+            {
+              "title": "Domina [Técnica] con [Chef]",
+              "description": "Contenido tutorial quincenal",
+              "content": "¡Aprende a [Técnica] como un profesional! Mira nuestro tutorial paso a paso y compra los ingredientes para practicar en casa.",
+              "channel": "Email"
+            },
+            {
+              "title": "Receta Guardada: Consigue los Ingredientes",
+              "description": "Disparado por guardar/marcar receta",
+              "content": "¡Guardaste [Nombre de Receta]! ¿Listo para hacerla? Todos los ingredientes están disponibles con pedido de un clic.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Compradores de meal kit y packs",
+          "scenario_objective": "Fomentar compras repetidas de meal kit y suscripción",
+          "main_messages_ideas": "Anuncios de nuevos kits, kits por preferencia dietética, beneficios de suscripción, colaboraciones con chefs",
+          "message_sequence": [
+            {
+              "title": "Nuevo Lanzamiento de Meal Kit",
+              "description": "Semanal: Anuncio de nuevo kit",
+              "content": "El meal kit de esta semana: [Nombre del Plato] para 4 personas, listo en 30 minutos. Todos los ingredientes pre-porcionados con instrucciones paso a paso.",
+              "channel": "Email"
+            },
+            {
+              "title": "Colección de Meal Kits [Dietéticos]",
+              "description": "Basado en preferencias del perfil de gustos",
+              "content": "Explora nuestra colección de meal kits [Vegetarianos/Keto/Sin Gluten]—deliciosos, convenientes, y adaptados a tu dieta.",
+              "channel": "Email"
+            },
+            {
+              "title": "Suscripción de Meal Kit Semanal",
+              "description": "Después de 2ª compra de kit",
+              "content": "¿Te encanta la comodidad? Suscríbete a meal kits semanales y ahorra 20%. Salta cualquier semana, cancela cuando quieras.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Preferencias Dietéticas y Gestión de Alergias",
+      "target": "Clientes con restricciones dietéticas, alergias o necesidades nutricionales específicas",
+      "objective": "Lograr 70% de tasa de completado de perfil dietético, 90% de puntuación de confianza en compatibilidad de productos, y 30% más de frecuencia de compra entre compradores dietéticos específicos",
+      "kpi": "Completado de perfil dietético (objetivo: 70%), Uso de filtrado de productos (objetivo: 85%), Adopción de productos seguros dietéticamente (objetivo: 60%), Reducción de tickets de soporte (objetivo: -40%)",
+      "description": "Sistema integral para gestionar restricciones dietéticas y alergias, desde captura detallada de preferencias hasta filtrado de productos, sustituciones seguras, y recomendaciones personalizadas que aseguran que cada compra cumpla con los requisitos de salud y estilo de vida del cliente.",
+      "scenarios": [
+        {
+          "scenario_target": "Compradores conscientes de alergias",
+          "scenario_objective": "Construir confianza a través de seguridad y transparencia",
+          "main_messages_ideas": "Garantía libre de alérgenos, etiquetado detallado, listas de productos seguros, guías de sustitución",
+          "message_sequence": [
+            {
+              "title": "Tu Perfil Seguro de Alergias",
+              "description": "Después de completar perfil de alergias",
+              "content": "¡Tu perfil está listo! Hemos filtrado todos los productos que contienen [Alérgenos]. Navega con confianza—cada recomendación es segura para ti.",
+              "channel": "Email"
+            },
+            {
+              "title": "Colección Certificada Libre de Alérgenos",
+              "description": "Curación de productos",
+              "content": "Presentamos nuestra colección certificada libre de [Alérgeno]: 100+ productos probados y verificados seguros. ¡Compra sin preocupaciones!",
+              "channel": "Email"
+            },
+            {
+              "title": "Nuevos Productos Seguros Para Ti",
+              "description": "Actualizaciones semanales",
+              "content": "¡5 nuevos productos libres de [Alérgeno] añadidos esta semana! Todos verificados seguros según tu perfil de alergias. Explora las novedades.",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Guía de Sustitución Segura",
+              "description": "Contenido educativo",
+              "content": "¿Te gusta una receta pero necesitas evitar [Alérgeno]? Nuestra guía de sustitución muestra intercambios seguros que mantienen sabor y textura.",
+              "channel": "Email"
+            },
+            {
+              "title": "Prevención de Contaminación Cruzada",
+              "description": "Educación de seguridad",
+              "content": "Información importante sobre nuestro abastecimiento y manipulación: Cómo prevenimos la contaminación cruzada de [Alérgeno] desde el proveedor hasta tu puerta.",
+              "channel": "Email"
+            },
+            {
+              "title": "Alerta de Alergia: Actualización de Producto",
+              "description": "Notificación de transparencia",
+              "content": "Aviso: La formulación de [Producto] cambió. Ahora contiene [Alérgeno]. Lo hemos eliminado de tus recomendaciones. Ver alternativas seguras.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Planes de Comidas Seguros de Alergias",
+              "description": "Planificación de comidas curada",
+              "content": "Tu plan de comidas semanal con cero exposición a [Alérgeno]: 7 recetas, lista de compras y guía de preparación. ¡Cocina de forma segura y deliciosa!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Seguidores de estilos de vida dietéticos específicos (Keto, Paleo, Vegano, etc.)",
+          "scenario_objective": "Apoyar adherencia al estilo de vida con productos curados y educación",
+          "main_messages_ideas": "Compatibilidad dietética, seguimiento de macros, consejos de estilo de vida, apoyo comunitario",
+          "message_sequence": [
+            {
+              "title": "Tu Panel [Dieta] Está Listo",
+              "description": "Después de configurar perfil de dieta",
+              "content": "¡Bienvenido a la vida [Keto/Paleo/Vegana]! Tu panel personalizado muestra productos compatibles, recetas amigables con macros y seguimiento de progreso.",
+              "channel": "Email"
+            },
+            {
+              "title": "Esenciales [Dieta] Que Te Faltan",
+              "description": "Completado de categoría",
+              "content": "¡Sube de nivel tu despensa [Dieta]! Aquí hay productos básicos que el 90% de los seguidores de [Dieta] mantienen en stock. ¿Qué falta en la tuya?",
+              "channel": "Email"
+            },
+            {
+              "title": "Recetas Amigables con Macros",
+              "description": "Enfoque nutricional",
+              "content": "¡Alcanza tus macros deliciosamente! Recetas [Dieta] de esta semana con información nutricional completa: [X]g proteína, [Y]g grasa, [Z]g carbos netos por porción.",
+              "channel": "Email"
+            },
+            {
+              "title": "Historia de Éxito [Dieta]",
+              "description": "Prueba social y motivación",
+              "content": "¡Inspirador! Cómo Sarah mantuvo [Dieta] durante 6 meses usando nuestros productos. Lee su historia y consejos para mantenerte en el camino.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ingredientes Ocultos No-[Dieta]",
+              "description": "Educación y concienciación",
+              "content": "¿Sabías que estos ingredientes rompen [Dieta]? Nuestra guía para detectar ingredientes ocultos no compatibles en las etiquetas.",
+              "channel": "Email"
+            },
+            {
+              "title": "Desafío Comunitario [Dieta]",
+              "description": "Programa de engagement",
+              "content": "¡Únete a 500+ seguidores de [Dieta] en nuestro desafío de 30 días! Apoyo diario, recetas, premios y coaching experto. ¡Comienza hoy!",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Tu Informe de Progreso [Dieta]",
+              "description": "Resumen mensual",
+              "content": "Mes 3 en [Dieta]: [X] comidas compatibles hechas, [Y] recetas probadas, [Z] objetivos de macros alcanzados. ¡Sigue con el gran trabajo! Esto es lo que sigue.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "program_name": "Reposición y Conversión a Suscripción",
       "target": "Clientes que compraron productos consumibles (café, té, aceites, especias, básicos de despensa)",
       "objective": "Lograr tasa de conversión a suscripción del 20% y mantener 85% de precisión en timing de reposición con aumento de AOV del 15% para suscriptores",
@@ -320,6 +492,220 @@
       ]
     },
     {
+      "program_name": "Productos Locales y de Temporada",
+      "target": "Clientes interesados en productos alimentarios frescos, locales, de temporada y sostenibles",
+      "objective": "Lograr 40% de tasa de adopción de productos estacionales, 25% de aumento en frecuencia de pedidos durante temporadas altas, y 60% de retención de clientes en programas estacionales",
+      "kpi": "Adopción de productos estacionales (objetivo: 40%), Aumento de frecuencia de pedidos en temporada alta (objetivo: +25%), Retención de programas estacionales (objetivo: 60%), Concienciación de productores locales (objetivo: 70%)",
+      "description": "Celebra la alimentación estacional y el abastecimiento local destacando lo que está fresco ahora, conectando a los clientes con productores locales, y creando emoción alrededor de artículos estacionales de disponibilidad limitada. Impulsa urgencia a través de estacionalidad y construye valores de marca en torno a sostenibilidad y comunidad.",
+      "scenarios": [
+        {
+          "scenario_target": "Entusiastas de la alimentación estacional",
+          "scenario_objective": "Impulsar descubrimiento y compras de productos estacionales",
+          "main_messages_ideas": "Qué está en temporada, momento de sabor pico, disponibilidad limitada, recetas estacionales",
+          "message_sequence": [
+            {
+              "title": "¡La Cosecha de [Temporada] Está Aquí!",
+              "description": "Anuncio de transición de temporada",
+              "content": "¡[Temporada] ha llegado oficialmente! Descubre qué está en su mejor sabor ahora: [Productos Estacionales]. Disponible por tiempo limitado.",
+              "channel": "Email"
+            },
+            {
+              "title": "Temporada Alta: Pide Ahora",
+              "description": "Urgencia de media temporada",
+              "content": "¡[Producto] está en temporada alta AHORA MISMO! Pide esta semana para el mejor sabor y calidad absoluta del año.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Colección de Recetas de [Temporada]",
+              "description": "Contenido de recetas estacionales",
+              "content": "¡Aprovecha [Temporada] al máximo! 15 recetas celebrando ingredientes en su mejor momento desde ensaladas de [Temporada] hasta platos abundantes de [Temporada].",
+              "channel": "Email"
+            },
+            {
+              "title": "Última Llamada: [Temporada] Terminando",
+              "description": "Urgencia de fin de temporada",
+              "content": "¡Últimas 2 semanas para [Productos Estacionales] frescos! Abastécete ahora antes de que termine [Temporada] y estos favoritos desaparezcan hasta el año que viene.",
+              "channel": "Email"
+            },
+            {
+              "title": "Guía de Alimentación Estacional",
+              "description": "Contenido educativo",
+              "content": "¿Por qué comer estacionalmente? Mejor sabor, nutrición, sostenibilidad y valor. Aquí está tu guía para alimentación estacional todo el año.",
+              "channel": "Email"
+            },
+            {
+              "title": "Vista Previa de [Próxima Temporada]",
+              "description": "Construcción de anticipación",
+              "content": "¡Adelanto! [Próxima Temporada] llega en 3 semanas. Aquí está lo que esperar y cómo preparar tu despensa para la transición.",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Preserva la Temporada",
+              "description": "Contenido de extensión",
+              "content": "¡Extiende los sabores de [Temporada]! Aprende a preservar, congelar y encurtir [Productos Estacionales] para disfrutar de la temporada alta todo el año.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Compradores locales y sostenibles",
+          "scenario_objective": "Construir conexión con productores locales y prácticas sostenibles",
+          "main_messages_ideas": "Conoce productores locales, historias de granjas, impacto de sostenibilidad, apoyo comunitario",
+          "message_sequence": [
+            {
+              "title": "Conoce a Tu Productor Local: [Nombre]",
+              "description": "Destacado de productor",
+              "content": "Esta semana: Conoce a [Nombre del Productor], la granja familiar detrás de tus [Productos]. Escucha su historia y ve sus prácticas sostenibles.",
+              "channel": "Email"
+            },
+            {
+              "title": "Compra Local: A Menos de 80km",
+              "description": "Filtrado geográfico",
+              "content": "¡Estos [X] productos vienen de granjas a menos de 80km de ti! Apoya a productores locales y obtén los ingredientes más frescos posibles.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tu Impacto de Sostenibilidad",
+              "description": "Reporte de impacto",
+              "content": "Este año has apoyado [X] granjas locales, reducido [Y] kilómetros de transporte, y mantenido [Z] kg de desperdicio de alimentos fuera de vertederos. ¡Gracias!",
+              "channel": "Email"
+            },
+            {
+              "title": "Invitación a Visita de Granja",
+              "description": "Evento experiencial",
+              "content": "¡Estás invitado! Visita [Granja Local] con nosotros el próximo sábado para un tour, degustación y compras exclusivas en la granja. ¡Confirma ahora!",
+              "channel": "Email"
+            },
+            {
+              "title": "Venta Destacada de Productor Local",
+              "description": "Campaña promocional",
+              "content": "Esta semana: 20% de descuento en todos los productos de [Productor Local]. ¡Escucha su historia y prueba la diferencia que hace lo local!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Garantía de Apoyo Local",
+              "description": "Comunicación de valores de marca",
+              "content": "[X]% de nuestros productos vienen de menos de 160km. Así es como estamos comprometidos a apoyar sistemas alimentarios locales todo el año.",
+              "channel": "Email"
+            },
+            {
+              "title": "Caja Local de Temporada",
+              "description": "Oferta curada",
+              "content": "¡Prueba nuestra Caja Local de Temporada! Selección curada de productos de temporada de granjas cercanas. Contenido cambia mensualmente—¡pide la tuya!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Clases de Cocina y Educación Culinaria",
+      "target": "Clientes interesados en desarrollo de habilidades, aprendizaje culinario y experiencias gastronómicas prácticas",
+      "objective": "Lograr 15% de tasa de inscripción en clases, 85% de tasa de completado para estudiantes inscritos, 40% de tasa de compra de productos durante/después de clases, y 60% de inscripción repetida en clases",
+      "kpi": "Tasa de inscripción en clases (objetivo: 15%), Tasa de completado de clases (objetivo: 85%), Compras de productos impulsadas por clases (objetivo: 40%), Inscripción repetida (objetivo: 60%)",
+      "description": "Programa integral de educación culinaria que ofrece clases de cocina virtuales e presenciales, talleres de desarrollo de habilidades, colaboraciones con chefs, y profundizaciones en técnicas. Impulsa descubrimiento de productos a través de aprendizaje práctico y construye autoridad de marca como destino de educación culinaria.",
+      "scenarios": [
+        {
+          "scenario_target": "Principiantes en clases de cocina",
+          "scenario_objective": "Impulsar inscripción en primera clase y construir confianza",
+          "main_messages_ideas": "Invitación a clase introductoria, énfasis en amigable para principiantes, kits de ingredientes, construcción de confianza",
+          "message_sequence": [
+            {
+              "title": "Únete a Nuestra Clase Introductoria de Cocina Gratuita",
+              "description": "Invitación a primera clase",
+              "content": "¿Nunca has tomado una clase de cocina? ¡Comienza aquí! Nuestra clase introductoria gratuita de 45 minutos cubre habilidades con cuchillos, técnicas básicas y una receta sencilla. ¡Regístrate ahora!",
+              "channel": "Email"
+            },
+            {
+              "title": "¡Tu Clase Comienza Mañana!",
+              "description": "Día anterior: Recordatorio de preparación",
+              "content": "¿Emocionado por la clase de mañana? Aquí está tu lista de ingredientes, checklist de preparación y enlace Zoom. ¡Nos vemos en la cocina!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Kit de Ingredientes de Clase Disponible",
+              "description": "Oferta de pack de productos",
+              "content": "¿Quieres todo entregado? Pide nuestro kit de ingredientes [Nombre de Clase] con todos los productos pre-porcionados y listos. ¡Se envía a tiempo para la clase!",
+              "channel": "Email"
+            },
+            {
+              "title": "¡Lo Lograste! Resumen de Clase",
+              "description": "Seguimiento post-clase",
+              "content": "¡Gran trabajo en la clase de hoy! Aquí está tu tarjeta de receta, grabación de video y 3 variaciones para probar. ¡Comparte tu creación con #[NombreMarca]!",
+              "channel": "Email"
+            },
+            {
+              "title": "Construye Sobre Tus Nuevas Habilidades",
+              "description": "Día 3: Recomendación de siguiente clase",
+              "content": "¿Listo para más? Basado en [Clase Tomada], recomendamos estas 3 clases para continuar desarrollando tus habilidades. ¡Precios anticipados esta semana!",
+              "channel": "Email"
+            },
+            {
+              "title": "Serie para Principiantes: Ahorra 30%",
+              "description": "Upsell de serie",
+              "content": "¡Toma las 4 clases para principiantes y ahorra 30%! Domina técnicas fundamentales y construye confianza en la cocina. ¡Inscríbete en la serie!",
+              "channel": "Email"
+            },
+            {
+              "title": "Tu Viaje Culinario",
+              "description": "Seguimiento de progreso",
+              "content": "¡Has completado 3 clases! Habilidades dominadas: [Técnicas]. ¿Listo para subir de nivel? Las clases intermedias comienzan el mes que viene—¡registro anticipado abierto!",
+              "channel": "Push Notification"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Entusiastas avanzados de cocina",
+          "scenario_objective": "Involucrar con contenido de nivel experto y colaboraciones con chefs",
+          "main_messages_ideas": "Técnicas avanzadas, colaboraciones con chefs, masterclasses, programas de certificación",
+          "message_sequence": [
+            {
+              "title": "Masterclass con [Chef Famoso]",
+              "description": "Anuncio de clase premium",
+              "content": "¡Exclusivo! Aprende [Técnica Avanzada] del Chef con estrella Michelin [Nombre]. Limitado a 50 estudiantes. Acceso anticipado para ti—¡regístrate ahora!",
+              "channel": "Email"
+            },
+            {
+              "title": "Serie de Técnicas Avanzadas",
+              "description": "Especialización de habilidad",
+              "content": "Domina [Técnica]: Serie intensiva de 4 semanas cubriendo métodos profesionales, equipo y recetas. ¡Certificado de completado incluido!",
+              "channel": "Email"
+            },
+            {
+              "title": "Sesión de Preguntas y Respuestas con Chef Pro",
+              "description": "Acceso experto",
+              "content": "¡Únete al Chef [Nombre] para preguntas y respuestas en vivo! Haz tus preguntas avanzadas de cocina y obtén respuestas expertas. Envía preguntas con anticipación o pregunta en vivo.",
+              "channel": "Email"
+            },
+            {
+              "title": "Detrás de la Cocina del Restaurante",
+              "description": "Perspectiva profesional",
+              "content": "¡Ve detrás de escena! Tour virtual de la cocina de [Restaurante] con el Chef [Nombre] revelando técnicas profesionales y secretos de restaurante.",
+              "channel": "Email"
+            },
+            {
+              "title": "Programa de Certificación Culinaria",
+              "description": "Programa integral",
+              "content": "¡Certifícate! Nuestra certificación de Fundamentos Culinarios de 12 semanas cubre técnicas, teoría y estilos de cocina. ¡La inscripción abre el lunes!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Exclusivo: Clase Presencial de Grupo Pequeño",
+              "description": "Experiencia premium",
+              "content": "LIMITADO a 12 estudiantes: Clase presencial en [Ubicación] con el Chef [Nombre]. Aprendizaje práctico, comida de 4 platos, maridaje de vinos. ¡Reserva tu lugar!",
+              "channel": "Email"
+            },
+            {
+              "title": "Beneficios de Graduado de Serie Master",
+              "description": "Recompensas de completado",
+              "content": "¡Felicitaciones por completar [Serie]! Tus beneficios de graduado: Acceso vitalicio a recetas, comunidad de alumni, 20% de descuento en clases futuras, y este regalo!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "program_name": "Campañas de Temporada y Festivas",
       "target": "Todos los clientes activos y suscriptores",
       "objective": "Impulsar 35% de aumento de ingresos durante picos estacionales con 25% de tasa de pedidos regalo y 15% de adquisición de nuevos clientes a través de regalos",
@@ -396,71 +782,6 @@
               "title": "Rebajas de Fin de Temporada",
               "description": "Transición de temporada",
               "content": "¡Última oportunidad para favoritos de [Estación]! Hasta 30% de descuento en artículos estacionales seleccionados hasta agotar existencias.",
-              "channel": "Email"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Planificación de Comidas y Descubrimiento de Recetas",
-      "target": "Clientes comprometidos que interactúan con contenido de recetas o compran productos de planificación de comidas",
-      "objective": "Aumentar engagement con recetas a 50% de tasa de clics, impulsar adopción de meal kits al 8%, y aumentar AOV en 25% a través de packs basados en recetas",
-      "kpi": "Tasa de clics de email de recetas (objetivo: 50%), Adopción de meal kit/pack (objetivo: 8%), Aumento de AOV impulsado por recetas (objetivo: +25%), Guardados/compartidos de recetas (objetivo: 15%)",
-      "description": "Programa rico en contenido que posiciona la marca como fuente de inspiración culinaria. Proporciona recetas semanales, planes de comidas estacionales, tutoriales de técnicas, y listas de ingredientes comprables para impulsar descubrimiento de productos y compras de múltiples artículos.",
-      "scenarios": [
-        {
-          "scenario_target": "Engagers activos de recetas",
-          "scenario_objective": "Profundizar engagement con contenido e impulsar recetas comprables",
-          "main_messages_ideas": "Receta semanal, herramientas de planificación de comidas, tutoriales de técnicas, colaboraciones con chefs",
-          "message_sequence": [
-            {
-              "title": "La Receta Imprescindible de Esta Semana",
-              "description": "Email de contenido semanal",
-              "content": "Esta semana: [Nombre de Receta] con [Ingrediente Principal]. Obtén la receta con lista de ingredientes comprable con un clic.",
-              "channel": "Email"
-            },
-            {
-              "title": "Tu Plan de Comidas Semanal",
-              "description": "Domingo: Ayuda para planificación semanal",
-              "content": "¡Planifica tu semana! Aquí hay 5 recetas con lista de compra combinada—todo lo que necesitas en un carrito.",
-              "channel": "Email"
-            },
-            {
-              "title": "Domina [Técnica] con [Chef]",
-              "description": "Contenido tutorial quincenal",
-              "content": "¡Aprende a [Técnica] como un profesional! Mira nuestro tutorial paso a paso y compra los ingredientes para practicar en casa.",
-              "channel": "Email"
-            },
-            {
-              "title": "Receta Guardada: Consigue los Ingredientes",
-              "description": "Disparado por guardar/marcar receta",
-              "content": "¡Guardaste [Nombre de Receta]! ¿Listo para hacerla? Todos los ingredientes están disponibles con pedido de un clic.",
-              "channel": "SMS"
-            }
-          ]
-        },
-        {
-          "scenario_target": "Compradores de meal kit y packs",
-          "scenario_objective": "Fomentar compras repetidas de meal kit y suscripción",
-          "main_messages_ideas": "Anuncios de nuevos kits, kits por preferencia dietética, beneficios de suscripción, colaboraciones con chefs",
-          "message_sequence": [
-            {
-              "title": "Nuevo Lanzamiento de Meal Kit",
-              "description": "Semanal: Anuncio de nuevo kit",
-              "content": "El meal kit de esta semana: [Nombre del Plato] para 4 personas, listo en 30 minutos. Todos los ingredientes pre-porcionados con instrucciones paso a paso.",
-              "channel": "Email"
-            },
-            {
-              "title": "Colección de Meal Kits [Dietéticos]",
-              "description": "Basado en preferencias del perfil de gustos",
-              "content": "Explora nuestra colección de meal kits [Vegetarianos/Keto/Sin Gluten]—deliciosos, convenientes, y adaptados a tu dieta.",
-              "channel": "Email"
-            },
-            {
-              "title": "Suscripción de Meal Kit Semanal",
-              "description": "Después de 2ª compra de kit",
-              "content": "¿Te encanta la comodidad? Suscríbete a meal kits semanales y ahorra 20%. Salta cualquier semana, cancela cuando quieras.",
               "channel": "Email"
             }
           ]

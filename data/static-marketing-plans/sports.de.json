@@ -230,77 +230,246 @@
       ]
     },
     {
-      "program_name": "Saisonale Sport-Vorbereitung",
-      "target": "Kunden basierend auf ihren Sport-Präferenzen und saisonalen Aktivitäten",
-      "objective": "30% Vorsaison-Kaufrate erreichen, saisonalen AOV um 25% steigern und 40% des saisonalen Ausrüstungsbudgets gewinnen",
-      "kpi": "Vorsaison-Konversionsrate (Ziel: 30%), Saisonale AOV-Steigerung (Ziel: +25%), Früh-Saison-Umsatzanteil (Ziel: 40%), Saison-spezifisches Engagement (Ziel: 35%)",
-      "description": "Strategische Kampagnen, um Athleten bei der Vorbereitung auf ihre kommenden Sportsaisons mit der richtigen Ausrüstung zu helfen. Timing variiert nach Sport – Wintersport-Vorbereitung im Herbst, Radsaison im Frühling, Marathon-Training im Sommer – um Kunden vor Spitzennachfrage zu erreichen.",
+      "program_name": "Trainings-Content & Performance-Programme",
+      "target": "Engagierte Kunden, die mit Trainings-Inhalten interagieren oder Performance-Ziele haben",
+      "objective": "55% Trainings-Content-Engagement-Rate erreichen, 30% Steigerung bei Sport-Kategorie-Käufen fördern und Verweildauer um 40% steigern",
+      "kpi": "Trainings-Content-Engagement (Ziel: 55%), Sport-Kategorie-Kauf-Lift (Ziel: +30%), Verweildauer-Steigerung (Ziel: +40%), Content-Shares (Ziel: 12%)",
+      "description": "Content-reiches Programm, das die Marke als Performance-Partner positioniert. Bietet sport-spezifische Trainingspläne, Technik-Tutorials, Ernährungsführer und Ausrüstungs-Bildung, um Produktentdeckung und Markenbeziehung zu vertiefen.",
       "scenarios": [
         {
-          "scenario_target": "Wintersport-Enthusiasten (Ski, Snowboard, Langlauf)",
-          "scenario_objective": "Vorsaison-Ausrüstungskäufe und Wartung fördern",
-          "main_messages_ideas": "Saison-Vorbereitungs-Checkliste, neue Ausrüstung zeigen, Frühbucher-Deals, Wartungs-Erinnerungen",
+          "scenario_target": "Zielorientierte Athleten mit Trainingszielen",
+          "scenario_objective": "Ziele mit Content und relevanter Ausrüstung unterstützen",
+          "main_messages_ideas": "Personalisierte Trainingspläne, wöchentliche Workouts, Fortschritts-Tracking, Ausrüstungsempfehlungen",
           "message_sequence": [
             {
-              "title": "Winter-Saison-Vorbereitungs-Checkliste",
-              "description": "10 Wochen vor Saison: Planungsphase",
-              "content": "Der Winter kommt! Hier ist Ihre komplette Saison-Vorbereitungs-Checkliste – von Ausrüstungsinspektion bis Wachsen und Bindungscheck. Plus: Sehen Sie, was neu ist für [Saison].",
+              "title": "Ihr Personalisierter Trainingsplan",
+              "description": "Nach Ziel-Identifikation",
+              "content": "Basierend auf Ihrem Ziel, [Ziel], hier ist Ihr personalisierter 8-Wochen-Trainingsplan. Jede Woche enthält Workouts, Ernährungstipps und Ausrüstungsempfehlungen.",
               "channel": "Email"
             },
             {
-              "title": "Neue Saison-Kollektion",
-              "description": "8 Wochen vorher: Neuheiten",
-              "content": "Die [Jahr] Winter-Kollektion ist da! Von Next-Gen-Skiern bis zu beheizter Ausrüstung, entdecken Sie Innovationen, die Ihre Saison transformieren.",
+              "title": "Diese Woche Trainings-Fokus",
+              "description": "Wöchentlich: Trainings-Content",
+              "content": "Woche [X] Fokus: [Trainings-Thema]. Hier sind Ihre Workouts, ein Technik-Tutorial und das Ausrüstungs-Spotlight dieser Woche.",
               "channel": "Email"
             },
             {
-              "title": "Frühbucher-Special",
-              "description": "6 Wochen vorher: Vorsaison-Ersparnis",
-              "content": "Schlagen Sie der Masse! Erhalten Sie 20% Rabatt auf Winterausrüstung nur diese Woche. Frühbucher bekommen die beste Auswahl und garantierte Lieferung vor dem ersten Schnee.",
+              "title": "Fortschritts-Check-In",
+              "description": "Zweiwöchentlich: Fortschritts-Engagement",
+              "content": "Wie läuft Ihr Training? Loggen Sie Ihren Fortschritt und vergleichen Sie sich mit Athleten mit ähnlichen Zielen. Plus: Tipps, um Plateaus zu überwinden.",
               "channel": "Email"
             },
             {
-              "title": "Wartungs-Erinnerung",
-              "description": "4 Wochen vorher: Service-Erinnerung",
-              "content": "Vergessen Sie nicht, Ihre Ausrüstung zu warten! Buchen Sie jetzt einen Service, um den Vorsaison-Ansturm zu vermeiden. Scharfe Kanten und frisches Wachs machen den Unterschied.",
-              "channel": "SMS"
-            },
-            {
-              "title": "Saison Startet Diese Woche",
-              "description": "1 Woche vor Eröffnung: Last Call",
-              "content": "Pisten öffnen in Tagen! Letzte Chance für Vorsaison-Deals. Holen Sie sich alles, was Sie für Tag eins brauchen.",
+              "title": "Ausrüstung Zur Unterstützung Ihres Fortschritts",
+              "description": "Bei Erreichen von Meilensteinen",
+              "content": "Sie machen tolle Fortschritte! Hier ist Ausrüstung, die Athleten auf Ihrem Level nutzen, um auf das nächste Level durchzubrechen.",
               "channel": "Email"
             }
           ]
         },
         {
-          "scenario_target": "Rad- und Outdoor-Enthusiasten (Frühlings-/Sommersport)",
-          "scenario_objective": "Saisonale Ausrüstungskäufe und Upgrades fördern",
-          "main_messages_ideas": "Frühlings-Auffrischung, Rad-Wartung, Sommer-Kollektion, Event-Vorbereitung",
+          "scenario_target": "Sport-Enthusiasten, die lernen und sich verbessern möchten",
+          "scenario_objective": "Engagement durch edukative Inhalte aufbauen",
+          "main_messages_ideas": "Technik-Tutorials, Profi-Athleten-Tipps, Sport-Wissenschaft, Ausrüstungs-Bildung",
           "message_sequence": [
             {
-              "title": "Frühlings-Rad-Vorschau",
-              "description": "8 Wochen vor Saison: Planungsphase",
-              "content": "Die Frühlings-Radsaison ist fast da! Zeit, Ihr Rad abzustauben und Ihre Ausrüstung zu checken. Hier ist unsere Vorsaison-Checkliste und neueste Ankünfte.",
+              "title": "Meistern Sie [Technik] Wie Ein Profi",
+              "description": "Wöchentlicher edukativer Content",
+              "content": "Diese Woche: Meistern Sie [Technik]. Schauen Sie unser Schritt-für-Schritt-Tutorial mit Profi-Athlet [Name] und kaufen Sie die empfohlene Ausrüstung.",
               "channel": "Email"
             },
             {
-              "title": "Neuheiten Für [Sport]",
-              "description": "6 Wochen vorher: Kollektion-Launch",
-              "content": "Frische Ausrüstung für eine frische Saison! Entdecken Sie unsere neue [Sport]-Kollektion – von Leichtgewicht-Trikots bis Performance-Upgrades.",
+              "title": "Die Wissenschaft Von [Sport]",
+              "description": "Zweiwöchentlich: Sport-Wissenschaft-Content",
+              "content": "Warum ist [Wissenschaftliches Konzept] wichtig für [Sport]? Verstehen Sie die Wissenschaft und sehen Sie, wie die richtige Ausrüstung Ihre Performance maximiert.",
               "channel": "Email"
             },
             {
-              "title": "Vorsaison-Service-Special",
-              "description": "4 Wochen vorher: Wartungs-Promotion",
-              "content": "Machen Sie Ihr Rad rennfertig! Buchen Sie diese Woche eine Wartung und sparen Sie 15%. Inklusive Vollinspektion, Einstellung und Reinigung.",
+              "title": "Profi-Athleten-Ausrüstungs-Talk",
+              "description": "Monatlich: Athleten-Features",
+              "content": "Was ist in [Profi-Athlet]s Tasche? Sehen Sie ihr komplettes Ausrüstungs-Setup und erfahren Sie, warum sie jedes Teil wählen.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Ausrüstungs-Wartung & Pflege-Programme",
+      "target": "Kunden, die technische Ausrüstung, wartungspflichtige Produkte oder hochwertige Artikel gekauft haben",
+      "objective": "Produktlebensdauer um 25% verlängern, Retouren aufgrund von Wartungsproblemen um 40% reduzieren und 20% der Kunden zu Wartungsprodukt-Käufen führen",
+      "kpi": "Wartungs-Content-Engagement (Ziel: 42%), Wartungsprodukt-Kaufrate (Ziel: 20%), Produktlebensdauer-Verlängerung (Ziel: +25%), Garantieanspruchs-Reduktion (Ziel: -30%)",
+      "description": "Bildungs-orientiertes Programm, das Kunden hilft, die Lebensdauer und Performance ihrer Ausrüstung durch richtige Pflege, Wartung und rechtzeitigen Service zu maximieren. Reduziert Retouren, erhöht Zufriedenheit und schafft kontinuierliches Engagement mit saisonalen Wartungs-Erinnerungen und Produktpflege-Bildung.",
+      "scenarios": [
+        {
+          "scenario_target": "Käufer von technischem Schuhwerk (Laufschuhe, Wanderstiefel, Radschuhe)",
+          "scenario_objective": "Schuhlebensdauer verlängern und rechtzeitigen Ersatz fördern",
+          "main_messages_ideas": "Einlauf-Tipps, Reinigungsmethoden, Rotations-Vorteile, Verschleiß-Indikatoren, Ersatz-Timing",
+          "message_sequence": [
+            {
+              "title": "Ihre Neuen [Schuhe] Einlaufen",
+              "description": "Tag 1: Einlauf-Anleitung",
+              "content": "Ihre [Schuhe] sind für Performance gebaut, aber sie brauchen ein richtiges Einlaufen. Hier ist unser 2-Wochen-Protokoll, um Blasen zu vermeiden und Komfort zu maximieren.",
               "channel": "Email"
             },
             {
-              "title": "Saison-Kickoff-Sale",
-              "description": "2 Wochen vorher: Launch-Sale",
-              "content": "Die Saison ist DA! Feiern Sie mit 20% Rabatt auf ausgewählte Rad-Ausrüstung. Raus und los geht's!",
+              "title": "Schuhpflege-Essentials",
+              "description": "Woche 2: Reinigung und Pflege",
+              "content": "Halten Sie Ihre [Schuhe] länger leistungsfähig! Hier erfahren Sie, wie Sie sie richtig reinigen, wann Sie Einlegesohlen ersetzen und Lagerungs-Tipps.",
+              "channel": "Email"
+            },
+            {
+              "title": "Warum Schuh-Rotation Wichtig Ist",
+              "description": "Monat 2: Bildung über Rotation",
+              "content": "Jeden Tag in denselben Schuhen laufen? Hier ist, warum die Rotation zwischen 2-3 Paaren die Lebensdauer um 60% verlängert und das Verletzungsrisiko reduziert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Verschleiß-Zeichen, Auf Die Sie Achten Sollten",
+              "description": "Monat 4: Verschleiß-Indikatoren",
+              "content": "Prüfen Sie Ihre [Schuhe] auf diese Verschleißzeichen: [Liste]. Frühzeitiges Erkennen von Verschleiß verhindert Verletzungen und hilft Ihnen, Ihren nächsten Kauf perfekt zu timen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kilometer-Check: Zeit Für Neue Schuhe?",
+              "description": "Monat 6: Ersatz-Timing",
+              "content": "Die meisten [Schuhe] halten 500-800 Kilometer. Wie halten Ihre? Nutzen Sie unser Verschleiß-Checker-Tool, um zu sehen, ob es Zeit für frische Dämpfung ist.",
+              "channel": "Email"
+            },
+            {
+              "title": "Recyceln & Sparen",
+              "description": "Monat 8: Ersatz-Anreiz",
+              "content": "Zeit für neue Schuhe? Recyceln Sie Ihre abgetragenen [Schuhe] und erhalten Sie 20€ Rabatt auf Ihr nächstes Paar. Wir geben ihnen verantwortungsvoll neues Leben.",
               "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Fahrrad- und Rad-Ausrüstungsbesitzer",
+          "scenario_objective": "Regelmäßige Wartung fördern und größere Reparaturen verhindern",
+          "main_messages_ideas": "Vorsaison-Tune-up, Reinigungsprotokolle, Komponenten-Ersatz, DIY vs professioneller Service",
+          "message_sequence": [
+            {
+              "title": "Ihr Fahrrad-Wartungsplan",
+              "description": "Nach Kauf: Wartungs-Bildung",
+              "content": "Gratulation zu Ihrem [Fahrrad]! Hier ist Ihr ganzjähriger Wartungsplan, um es reibungslos laufen zu lassen: was wöchentlich, monatlich und jährlich zu tun ist.",
+              "channel": "Email"
+            },
+            {
+              "title": "Essentieller Fahrrad-Reinigungsführer",
+              "description": "Woche 2: Reinigungs-Bildung",
+              "content": "Regelmäßige Reinigung verlängert die Lebensdauer Ihres Fahrrads. Hier ist unsere Schritt-für-Schritt-Anleitung plus die Reinigungsprodukte, denen Profis vertrauen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Vorsaison-Tune-up-Erinnerung",
+              "description": "Saisonal: Frühlings-Erinnerung",
+              "content": "Die Saison beginnt! Zeit für einen Tune-up. Buchen Sie jetzt einen Service (2 Wochen Wartezeit erwartet) oder nutzen Sie unser DIY-Tune-up-Video und Checkliste.",
+              "channel": "Email"
+            },
+            {
+              "title": "Komponenten-Verschleiß-Check",
+              "description": "Alle 3 Monate: Inspektions-Erinnerung",
+              "content": "Prüfen Sie diese Komponenten auf Verschleiß: Kette, Bremsbeläge, Reifen, Kabel. Hier erfahren Sie, wie Sie jedes Teil inspizieren und wann Sie es ersetzen sollten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Winter-Lagerungs-Tipps",
+              "description": "Saisonal: Herbst/Winter",
+              "content": "Lagern Sie Ihr Fahrrad für den Winter? Hier erfahren Sie, wie Sie es für den Winterschlaf vorbereiten und Rost, Plattstellungen und Komponenten-Degradation verhindern.",
+              "channel": "Email"
+            },
+            {
+              "title": "Service-Erinnerung: Jährlicher Tune-up",
+              "description": "12 Monate: Jährlicher Service",
+              "content": "Es ist ein Jahr her! Zeit für Ihren jährlichen professionellen Tune-up. Buchen Sie jetzt und erhalten Sie 15% Rabatt auf Teile + eine kostenlose Sicherheitsinspektion.",
+              "channel": "Email"
+            },
+            {
+              "title": "Upgrade-Möglichkeit",
+              "description": "Monat 18: Komponenten-Upgrade",
+              "content": "Bereit zum Upgrade? Diese Komponenten verschleißen zuerst an Ihrem [Fahrrad]: [Liste]. Sehen Sie verfügbare Performance-Upgrades für Ihr Modell.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Käufer von technischer Bekleidung (wasserdichte Jacken, isolierte Ausrüstung, Kompression)",
+          "scenario_objective": "Technische Eigenschaften erhalten und Kleidungsstück-Lebensdauer verlängern",
+          "main_messages_ideas": "Waschanleitung, DWR-Behandlung, Lagerung, Reparatur-Optionen, Recycling-Programm",
+          "message_sequence": [
+            {
+              "title": "Pflege Ihrer Technischen [Bekleidung]",
+              "description": "Nach Kauf: Pflege-Anweisungen",
+              "content": "Ihre [Bekleidung] hat technische Features, die besondere Pflege brauchen. Hier erfahren Sie, wie Sie sie waschen, trocknen und lagern, um die Performance zu erhalten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wasserabweisung Wiederherstellen",
+              "description": "Monat 3: DWR-Behandlung",
+              "content": "Wird Ihre [Jacke] nass? Zeit, die DWR-Beschichtung wiederherzustellen! Hier erfahren Sie wie, mit unseren empfohlenen Behandlungsprodukten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Reparieren Statt Ersetzen",
+              "description": "Bei Bedarf: Reparatur-Bildung",
+              "content": "Kleiner Riss oder kaputter Reißverschluss? Ersetzen Sie sie nicht! Hier erfahren Sie, wie Sie Ihre [Bekleidung] selbst reparieren oder unseren Reparaturservice nutzen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Saisonaler Lagerungs-Leitfaden",
+              "description": "Saisonal: Außerhalb-der-Saison-Lagerung",
+              "content": "Lagern Sie Ihre [Ausrüstung] für die Saison? Richtige Lagerung verhindert Schimmel, Gerüche und Degradation. Hier ist unser Protokoll.",
+              "channel": "Email"
+            },
+            {
+              "title": "Lebenslange Garantie-Check",
+              "description": "Jährlich: Garantie-Erinnerung",
+              "content": "Wussten Sie, dass Ihr [Produkt] eine lebenslange Garantie gegen Defekte hat? Hier erfahren Sie, wie Sie einen Anspruch geltend machen und was abgedeckt ist.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Elektronik- und GPS-Gerätebesitzer",
+          "scenario_objective": "Optimale Performance sicherstellen und benutzerverursachte Probleme verhindern",
+          "main_messages_ideas": "Batteriepflege, Firmware-Updates, Datensicherung, Bildschirmschutz, Garantie-Abdeckung",
+          "message_sequence": [
+            {
+              "title": "Maximieren Sie Die Akkulaufzeit Ihres [Geräts]",
+              "description": "Woche 1: Batteriepflege-Bildung",
+              "content": "Ihr [Gerät]-Akku kann bei richtiger Pflege Jahre halten. Hier sind Dos and Don'ts, um Akkulaufzeit und Performance zu maximieren.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wichtiges Firmware-Update",
+              "description": "Wenn Updates verfügbar: Update-Benachrichtigung",
+              "content": "Neue Firmware verfügbar für Ihr [Gerät]! Enthält Bugfixes, neue Features und verbesserte Genauigkeit. Update dauert 5 Minuten.",
+              "channel": "Push"
+            },
+            {
+              "title": "Sichern Sie Ihre Daten",
+              "description": "Monatlich: Datensicherungs-Erinnerung",
+              "content": "Verlieren Sie nicht Ihre Trainingshistorie! Hier erfahren Sie, wie Sie Ihre [Gerät]-Daten in der Cloud sichern und mit Trainingsplattformen synchronisieren.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bildschirmschutz Empfohlen",
+              "description": "Monat 2: Zubehör-Empfehlung",
+              "content": "Schützen Sie Ihren [Gerät]-Bildschirm vor Kratzern und Stößen. Hier sind Displayschutzfolien, die speziell für Ihr Modell entwickelt wurden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Erweiterte Garantie Läuft Aus",
+              "description": "Vor Garantie-Ablauf: Verlängerungs-Angebot",
+              "content": "Ihre 1-Jahres-Garantie läuft in 30 Tagen ab. Verlängern Sie die Abdeckung für 2 weitere Jahre für nur [X]€. Schützen Sie Ihre Investition!",
+              "channel": "Email"
+            },
+            {
+              "title": "Trade-In-Programm",
+              "description": "Jahr 2-3: Upgrade-Möglichkeit",
+              "content": "Neue Modelle sind da! Tauschen Sie Ihr [Gerät] gegen bis zu [X]€ Guthaben für die neueste Version mit verbesserten Features ein.",
+              "channel": "Email"
             }
           ]
         }
@@ -396,6 +565,350 @@
       ]
     },
     {
+      "program_name": "Saisonale Sport-Übergänge",
+      "target": "Multi-Sport-Athleten und saisonale Sportler, die zwischen Aktivitäten wechseln",
+      "objective": "35% Cross-Sport-Kaufrate erreichen, saisonale Übergänge mit 40% Konversion nutzen und ganzjähriges Engagement mit 45% Retention beibehalten",
+      "kpi": "Cross-Sport-Kaufrate (Ziel: 35%), Saisonale Übergangs-Konversion (Ziel: 40%), Ganzjährige Retention (Ziel: 45%), Multi-Sport-Kunden-AOV vs Single-Sport (Ziel: +35%)",
+      "description": "Intelligentes Programm, das Multi-Sport-Athleten bei saisonalen Übergängen unterstützt – von Ski zu Radfahren, von Laufen zu Schwimmen, von Outdoor-Abenteuer zu Fitness-Studio. Hält Kunden das ganze Jahr über engagiert, indem ihre wechselnden sportlichen Interessen antizipiert und relevante Ausrüstung zur richtigen Zeit empfohlen wird.",
+      "scenarios": [
+        {
+          "scenario_target": "Wintersport-Athleten, die zu Frühlings-/Sommersport übergehen",
+          "scenario_objective": "Nahtlosen Übergang zwischen Winter- und Warm-Wetter-Aktivitäten erleichtern",
+          "main_messages_ideas": "Saisonübergangs-Timing, Cross-Training-Vorteile, komplementäre Sportarten, Off-Season-Wartung",
+          "message_sequence": [
+            {
+              "title": "Winter-Saison Endet: Was Kommt Als Nächstes?",
+              "description": "Ende der Wintersaison",
+              "content": "Während sich die Ski-Saison dem Ende nähert, was ist Ihr nächster Sport? Viele Skifahrer wechseln zu Radfahren, Trailrunning oder Wassersport. Hier ist, was Sie brauchen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Halten Sie Ihre Fitness Mit [Alternativ-Sport]",
+              "description": "2 Wochen nach Saisonende",
+              "content": "Off-Season bedeutet nicht Off-Fitness! Hier erfahren Sie, wie [Alternativ-Sport] Ihre Ski-Muskeln in Form hält und neue Herausforderungen bietet.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihre Winter-Ausrüstungs-Lagerungs-Checkliste",
+              "description": "Saisonende: Lagerungs-Leitfaden",
+              "content": "Lagern Sie Ihre Winter-Ausrüstung richtig für maximale Lebensdauer. Hier ist unsere komplette Off-Season-Lagerungs-Checkliste.",
+              "channel": "Email"
+            },
+            {
+              "title": "Frühlings-Sport-Kollektion",
+              "description": "4 Wochen nach Saisonende",
+              "content": "Bereit für neue Abenteuer? Entdecken Sie unsere Frühlings-/Sommer-Kollektion für [Alternativ-Sport]. Nutzen Sie Ihren Winter-Kunden-Status für Early Access.",
+              "channel": "Email"
+            },
+            {
+              "title": "Übergangs-Rabatt: 20% Auf Ihre Nächste Sport-Kategorie",
+              "description": "6 Wochen nach Saisonende",
+              "content": "Versuchen Sie etwas Neues! Erhalten Sie 20% Rabatt auf Ihre erste Bestellung in jeder neuen Sport-Kategorie. Halten Sie Ihre Fitness-Momentum das ganze Jahr über.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Sommer-Outdoor-Athleten, die zu Herbst-/Winter-Aktivitäten übergehen",
+          "scenario_objective": "Warm-Wetter-Athleten in kältere-Wetter-Sportarten einbinden",
+          "main_messages_ideas": "Wetter-Übergänge, Indoor-Alternativen, Cross-Training, Saison-Vorbereitung",
+          "message_sequence": [
+            {
+              "title": "Vorbereitung Auf Kühles Wetter",
+              "description": "Frühherbst: Übergangsphase",
+              "content": "Die Temperaturen fallen! Zeit, Ihre Ausrüstung für kälteres Wetter zu aktualisieren. Hier ist unser Leitfaden zum Schichten und Herbst-Essentials.",
+              "channel": "Email"
+            },
+            {
+              "title": "Halten Sie Momentum: Indoor-Trainings-Optionen",
+              "description": "Spätherbst: Indoor-Alternativen",
+              "content": "Schlechtes Wetter sollte Training nicht stoppen! Entdecken Sie Indoor-Trainings-Ausrüstung und virtuelle Programme, um fit zu bleiben.",
+              "channel": "Email"
+            },
+            {
+              "title": "Winter-Sport-Vorschau",
+              "description": "10 Wochen vor Winter",
+              "content": "Versuchen Sie etwas Neues diesen Winter! Von Langlauf bis Schneeschuhwandern, erkunden Sie Winter-Sportarten, die Ihre Sommer-Fitness ergänzen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihre Sommer-Ausrüstungs-Off-Season-Wartung",
+              "description": "Winterbeginn: Wartungs-Leitfaden",
+              "content": "Bereiten Sie Ihre Sommer-Ausrüstung auf die Lagerung vor. Hier ist, wie Sie Ihr Fahrrad, Paddel und Outdoor-Ausrüstung für den Winter lagern.",
+              "channel": "Email"
+            },
+            {
+              "title": "Winter-Aktivitäts-Rabatt",
+              "description": "8 Wochen vor Winter",
+              "content": "Früher Zugang zur Winter-Kollektion! Als Sommer-Athlet erhalten Sie 20% Rabatt auf neue Winter-Sport-Kategorien. Probieren Sie etwas Neues!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Multi-Sport-Athleten mit 3+ Aktivitätskategorien",
+          "scenario_objective": "Ganzjähriges Engagement maximieren und Cross-Sport-Käufe fördern",
+          "main_messages_ideas": "Ganzjahres-Athlet-Status, Cross-Training-Vorteile, komplettes Ausrüstungs-Setup, Sport-Kombinations-Empfehlungen",
+          "message_sequence": [
+            {
+              "title": "Ihr Multi-Sport-Profil",
+              "description": "Nach 3+ Sport-Identifikation",
+              "content": "Sie sind ein echter Multi-Sport-Athlet! Hier ist Ihr personalisiertes Ganzjahres-Trainings- und Ausrüstungs-Roadmap für [Sportarten].",
+              "channel": "Email"
+            },
+            {
+              "title": "Cross-Training-Vorteile Für [Primärer Sport]",
+              "description": "Zweiwöchentlich: Cross-Training-Bildung",
+              "content": "Wussten Sie, dass [Sekundärer Sport] Ihre [Primärer Sport]-Performance verbessert? Hier ist die Wissenschaft und wie Sie beide Sportarten in Balance trainieren.",
+              "channel": "Email"
+            },
+            {
+              "title": "Komplettes Athleten-Setup: Multi-Sport-Bundle",
+              "description": "Quartal: Bundle-Angebot",
+              "content": "Ausrüstung für alle Ihre Sportarten? Hier ist Ihr personalisiertes Multi-Sport-Bundle mit 25% Rabatt auf komplettes Setup.",
+              "channel": "Email"
+            },
+            {
+              "title": "Saisonaler Sport-Übergangs-Kalender",
+              "description": "Saisonal: Kalender-Leitfaden",
+              "content": "Ihr personalisierter Ganzjahres-Sport-Kalender ist bereit! Sehen Sie, wann Sie zwischen [Sportarten] übergehen sollten und was Sie für jeden brauchen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Multi-Sport-Athleten-Status",
+              "description": "Nach 4+ Sport-Käufen: Elite-Status",
+              "content": "Sie sind jetzt ein Multi-Sport-Elite-Athlet! Schalten Sie sport-übergreifende Rabatte, bevorzugten Service und Cross-Sport-Empfehlungen frei.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Single-Sport-Athleten mit Potenzial für Sport-Erweiterung",
+          "scenario_objective": "Sport-Vielfalt anregen und Kategorie-Expansion fördern",
+          "main_messages_ideas": "Komplementäre Sport-Vorschläge, Off-Season-Alternativen, Verletzungsprävention durch Vielfalt, Cross-Training-Einführung",
+          "message_sequence": [
+            {
+              "title": "Athleten Wie Sie Probieren Auch [Alternativ-Sport]",
+              "description": "Nach 3 Monaten Single-Sport-Engagement",
+              "content": "Wussten Sie, dass 70% der [Ihr Sport]-Athleten auch [Komplementärer Sport] betreiben? Hier ist, warum es Ihre Performance verbessert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Off-Season Cross-Training",
+              "description": "Außerhalb der Saison-Übergang",
+              "content": "Halten Sie Fitness während der [Ihr Sport]-Off-Season! Hier sind Cross-Training-Optionen, die Ihre Muskeln frisch halten und Burnout verhindern.",
+              "channel": "Email"
+            },
+            {
+              "title": "Verletzungsprävention Durch Sport-Vielfalt",
+              "description": "Monat 4: Bildungs-Ansatz",
+              "content": "Sport-Spezifisches Training erhöht Verletzungsrisiko. Hier ist, wie das Hinzufügen von [Komplementärer Sport] Überlastungsverletzungen verhindert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Probieren Sie [Neuer Sport]: Starter-Paket",
+              "description": "Monat 6: Neue Kategorie-Einführung",
+              "content": "Bereit, etwas Neues zu probieren? Hier ist unser [Neuer Sport]-Starter-Paket, kuratiert für [Ihr Sport]-Athleten. 20% Rabatt auf Ihr erstes Setup.",
+              "channel": "Email"
+            },
+            {
+              "title": "Werden Sie Multi-Sport-Athlet",
+              "description": "Nach erstem Cross-Sport-Kauf",
+              "content": "Willkommen in der Multi-Sport-Community! Sie haben gerade Ihr athletisches Potenzial erweitert. Hier ist Ihr Cross-Training-Leitfaden.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Community- & Vereins-Engagement",
+      "target": "Sozial motivierte Athleten, Trainingsgruppen-Mitglieder und Community-Teilnehmer",
+      "objective": "40% der Kunden zu aktiven Community-Mitgliedern aufbauen, 25% Steigerung beim Social Sharing fördern und 30% des Umsatzes durch Community-Kanäle generieren",
+      "kpi": "Community-Teilnahmerate (Ziel: 40%), Social-Sharing-Steigerung (Ziel: +25%), Community-getriebener Umsatz (Ziel: 30%), Event-Teilnahme (Ziel: 35%)",
+      "description": "Programm, das athletische Communities durch lokale Events, Trainingsgruppen, Vereine, Challenges und Social-Features aufbaut und pflegt. Schafft emotionale Verbindung jenseits von Transaktionen, indem es Athlet-zu-Athlet-Beziehungen und gemeinsame Erlebnisse ermöglicht.",
+      "scenarios": [
+        {
+          "scenario_target": "Athleten, die nach Trainingspartnern oder Gruppen suchen",
+          "scenario_objective": "Athleten verbinden und lokale Communities aufbauen",
+          "main_messages_ideas": "Trainingspartner finden, Gruppen-Läufe/-Fahrten, Skill-basiertes Matching, lokale Vereine, Sicherheit in Zahlen",
+          "message_sequence": [
+            {
+              "title": "Finden Sie Ihren Trainings-Tribe",
+              "description": "Community-Onboarding",
+              "content": "Alleine trainieren? Schließen Sie sich [X] lokalen Athleten in unserer Community an. Finden Sie Trainingspartner, nehmen Sie an Gruppen-Workouts teil und machen Sie Fitness sozial.",
+              "channel": "Email"
+            },
+            {
+              "title": "Athleten In Ihrer Nähe",
+              "description": "Woche 1: Lokales Matching",
+              "content": "Wir haben [X] Athleten innerhalb von [Y] Kilometern gefunden, die auch [Sport] in Ihrem Tempo betreiben. Verbinden Sie sich jetzt, um Ihren Trainingspartner zu finden!",
+              "channel": "Email"
+            },
+            {
+              "title": "Diese Woche Gruppen-Workouts",
+              "description": "Wöchentlich: Lokale Events",
+              "content": "Schließen Sie sich uns diese Woche an: [Tag/Zeit/Ort] für Gruppen-[Workout]. Alle Geschwindigkeiten willkommen! RSVP, um Ihren Platz zu sichern.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Trainingspartner-Erfolg",
+              "description": "Wenn Matches gemacht: Social Proof",
+              "content": "[X]% der Athleten, die mit Partnern trainieren, sehen bessere Ergebnisse und Kontinuität. Hier ist, warum Community Sie schneller macht.",
+              "channel": "Email"
+            },
+            {
+              "title": "Starten Sie Ihre Eigene Gruppe",
+              "description": "Monat 2: Führungs-Möglichkeit",
+              "content": "Sehen Sie keine Gruppe in Ihrer Gegend? Starten Sie eine! Wir helfen Ihnen beim Organisieren, Bewerben und sogar beim Sponsern Ihrer Trainingsgruppe.",
+              "channel": "Email"
+            },
+            {
+              "title": "Monatliches Community-Treffen",
+              "description": "Monatlich: Community-Event",
+              "content": "Nehmen Sie an unserem monatlichen Community-Treffen teil: [Datum/Ort]. Trainieren Sie zusammen, teilen Sie Geschichten und verbinden Sie sich mit lokalen Athleten.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Challenge- und Wettbewerbs-Teilnehmer",
+          "scenario_objective": "Engagement durch freundlichen Wettbewerb fördern",
+          "main_messages_ideas": "Monatliche Challenges, Bestenlisten, virtuelle Wettbewerbe, Team-Challenges, Erfolgs-Badges",
+          "message_sequence": [
+            {
+              "title": "Treten Sie Der Challenge Dieses Monats Bei",
+              "description": "Monatlich: Challenge-Launch",
+              "content": "Neue Challenge: [Challenge-Name]! Absolvieren Sie [Ziel] diesen Monat, um exklusive Badges zu verdienen und Preise zu gewinnen. Treten Sie [X] Athleten im Wettbewerb bei!",
+              "channel": "Email"
+            },
+            {
+              "title": "Sie Sind In Den Top 25%!",
+              "description": "Mitten in Challenge: Bestenlisten-Update",
+              "content": "Sie rocken es! Sie sind in den Top 25% mit [X] absolviert. Weiter so, um die Top 10 zu knacken und [Preis] zu gewinnen!",
+              "channel": "Push"
+            },
+            {
+              "title": "Team-Challenge-Einladung",
+              "description": "Team-Event: Team-Aufbau",
+              "content": "Treten Sie einem Team für die Challenge dieses Monats bei! Treten Sie zusammen an, motivieren Sie sich gegenseitig und gewinnen Sie Team-Preise. Finden Sie Ihr Squad.",
+              "channel": "Email"
+            },
+            {
+              "title": "Endspurt: 3 Tage Übrig",
+              "description": "Challenge letzte Tage: Dringlichkeit",
+              "content": "3 Tage übrig in [Challenge]! Sie sind [X] von Ihrem Ziel entfernt. Starkes Finish und verdienen Sie Ihr Finisher-Badge!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Challenge Abgeschlossen!",
+              "description": "Nach Challenge: Feier",
+              "content": "Sie haben [Challenge] abgeschlossen! Hier ist Ihr Finisher-Badge, finale Bestenlisten-Position und Vorschau auf die nächste Challenge.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihre Challenge-Historie",
+              "description": "Quartal: Erfolgs-Zusammenfassung",
+              "content": "Sie haben [X] Challenges dieses Quartal abgeschlossen! Sehen Sie Ihre Badges, Erfolge und wie Sie in unserer Community ranken.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Vereins- und Team-Kapitäne oder Organisatoren",
+          "scenario_objective": "Team-/Vereins-Organisation unterstützen und Großbestellungen fördern",
+          "main_messages_ideas": "Team-Rabatte, individuelle Ausrüstung, Großbestellungen, Event-Organisations-Unterstützung, Sponsoring-Möglichkeiten",
+          "message_sequence": [
+            {
+              "title": "Team-Kapitäns-Vorteile",
+              "description": "Kapitäns-Onboarding",
+              "content": "Leiten Sie ein Team oder einen Verein? Schalten Sie Kapitäns-Vorteile frei: Team-Rabatte, Großbestellungen, individuelle Ausrüstungs-Optionen und Event-Support.",
+              "channel": "Email"
+            },
+            {
+              "title": "Individuelle Team-Ausrüstung",
+              "description": "Woche 2: Individualisierungs-Optionen",
+              "content": "Heben Sie Ihr Team hervor! Designen Sie individuelle Team-Ausrüstung mit Ihrem Vereinslogo und Farben. Mindestbestellung nur 10 Teile.",
+              "channel": "Email"
+            },
+            {
+              "title": "Team-Rabatt-Code",
+              "description": "Account-Setup: Team-Vorteile",
+              "content": "Ihr Team-Code ist bereit! Teilen Sie [CODE] mit Ihrem Team für 15% Rabatt auf alle Bestellungen. Sie verdienen Belohnungen für jede platzierte Bestellung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Großbestellungs-Special",
+              "description": "Saisonal: Team-Bestellung",
+              "content": "Saison beginnt? Koordinieren Sie Team-Großbestellungen und sparen Sie 20%+. Wir kümmern uns um Größen, Individualisierung und Gruppen-Lieferung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Event-Sponsoring-Programm",
+              "description": "Event-Support: Sponsoring",
+              "content": "Veranstalten Sie ein Team-Event? Wir sponsern lokale Rennen und Vereins-Events! Bewerben Sie sich für Ausrüstungs-Spenden, Strecken-Support und Promotion.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Team-Impact",
+              "description": "Quartal: Team-Bericht",
+              "content": "Ihr Team: [X] Mitglieder, [X]€ an Käufen, [X] Events abgeschlossen. Hier ist der Impact Ihres Teams und verdiente Kapitäns-Belohnungen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kapitäns-Wertschätzungs-Event",
+              "description": "Jährlich: Anerkennung",
+              "content": "Sie sind eingeladen zu unserem Kapitäns-Wertschätzungs-Event! Kostenlose Ausrüstung, früher Zugang zu neuen Produkten und Networking mit anderen Kapitänen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Social Sharer und Markenbotschafter",
+          "scenario_objective": "Nutzer-generierten Content und Markenbekanntheit verstärken",
+          "main_messages_ideas": "Foto-Wettbewerbe, Social-Features, Marken-Hashtag, Athleten-Spotlights, exklusive Creator-Vorteile",
+          "message_sequence": [
+            {
+              "title": "Zeigen Sie Uns Ihren [Sport]!",
+              "description": "Initiales Engagement: UGC-Einladung",
+              "content": "Teilen Sie Ihre Trainingsmomente! Markieren Sie #[Markenname] für eine Chance, auf unserer Seite gefeatured zu werden und monatliche Ausrüstungs-Preise zu gewinnen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Foto-Wettbewerb Diesen Monat",
+              "description": "Monatlich: Wettbewerbs-Launch",
+              "content": "Foto-Wettbewerb: [Thema]! Teilen Sie Ihr bestes [Thema]-Foto mit #[Wettbewerb] bis [Datum], um [Preis] zu gewinnen. Werden Sie kreativ!",
+              "channel": "Email"
+            },
+            {
+              "title": "Sie Wurden Gefeatured!",
+              "description": "Wenn gefeatured: Anerkennung",
+              "content": "Ihr Foto ist live auf unserem Instagram! Schauen Sie es sich an und teilen Sie es mit Ihrem Netzwerk. Hier ist ein Dankeschön-Geschenk: [Belohnung].",
+              "channel": "SMS"
+            },
+            {
+              "title": "Athleten-Spotlight-Möglichkeit",
+              "description": "Für engagierte Sharer: Gefeaturter Athlet",
+              "content": "Wir lieben Ihren Content! Möchten Sie in unserer Athleten-Spotlight-Serie gefeatured werden? Teilen Sie Ihre Geschichte und inspirieren Sie die Community.",
+              "channel": "Email"
+            },
+            {
+              "title": "Creator-Vorteile Freigeschaltet",
+              "description": "Hohes Engagement: Creator-Programm",
+              "content": "Sie erstellen erstaunlichen Content! Treten Sie unserem Creator-Programm bei für frühen Ausrüstungs-Zugang, exklusive Codes zum Teilen und monatliche Vorteile.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Social-Impact",
+              "description": "Quartal: Creator-Bericht",
+              "content": "Ihre Posts erreichten [X] Athleten dieses Quartal! Hier ist Ihr Impact und exklusive Creator-Belohnungen. Inspirieren Sie weiter!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "program_name": "Ausrüstungs-Upgrade & Ersatz-Zyklus",
       "target": "Kunden mit alternder Ausrüstung basierend auf Produkt-Lebenszyklus und Nutzungsmustern",
       "objective": "25% Upgrade-Konversionsrate erreichen, 80% Ersatz-Timing-Genauigkeit beibehalten und Trade-In-Teilnahme auf 15% steigern",
@@ -479,71 +992,6 @@
               "title": "Bundle & Sparen Bei Ihrer Auffrischung",
               "description": "Wenn mehrere Artikel fällig",
               "content": "Mehrere Artikel zum Ersatz fällig? Bündeln Sie sie zusammen und sparen Sie 25% bei Ihrer kompletten Ausrüstungs-Auffrischung.",
-              "channel": "Email"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Trainings-Content & Performance-Programme",
-      "target": "Engagierte Kunden, die mit Trainings-Inhalten interagieren oder Performance-Ziele haben",
-      "objective": "55% Trainings-Content-Engagement-Rate erreichen, 30% Steigerung bei Sport-Kategorie-Käufen fördern und Verweildauer um 40% steigern",
-      "kpi": "Trainings-Content-Engagement (Ziel: 55%), Sport-Kategorie-Kauf-Lift (Ziel: +30%), Verweildauer-Steigerung (Ziel: +40%), Content-Shares (Ziel: 12%)",
-      "description": "Content-reiches Programm, das die Marke als Performance-Partner positioniert. Bietet sport-spezifische Trainingspläne, Technik-Tutorials, Ernährungsführer und Ausrüstungs-Bildung, um Produktentdeckung und Markenbeziehung zu vertiefen.",
-      "scenarios": [
-        {
-          "scenario_target": "Zielorientierte Athleten mit Trainingszielen",
-          "scenario_objective": "Ziele mit Content und relevanter Ausrüstung unterstützen",
-          "main_messages_ideas": "Personalisierte Trainingspläne, wöchentliche Workouts, Fortschritts-Tracking, Ausrüstungsempfehlungen",
-          "message_sequence": [
-            {
-              "title": "Ihr Personalisierter Trainingsplan",
-              "description": "Nach Ziel-Identifikation",
-              "content": "Basierend auf Ihrem Ziel, [Ziel], hier ist Ihr personalisierter 8-Wochen-Trainingsplan. Jede Woche enthält Workouts, Ernährungstipps und Ausrüstungsempfehlungen.",
-              "channel": "Email"
-            },
-            {
-              "title": "Diese Woche Trainings-Fokus",
-              "description": "Wöchentlich: Trainings-Content",
-              "content": "Woche [X] Fokus: [Trainings-Thema]. Hier sind Ihre Workouts, ein Technik-Tutorial und das Ausrüstungs-Spotlight dieser Woche.",
-              "channel": "Email"
-            },
-            {
-              "title": "Fortschritts-Check-In",
-              "description": "Zweiwöchentlich: Fortschritts-Engagement",
-              "content": "Wie läuft Ihr Training? Loggen Sie Ihren Fortschritt und vergleichen Sie sich mit Athleten mit ähnlichen Zielen. Plus: Tipps, um Plateaus zu überwinden.",
-              "channel": "Email"
-            },
-            {
-              "title": "Ausrüstung Zur Unterstützung Ihres Fortschritts",
-              "description": "Bei Erreichen von Meilensteinen",
-              "content": "Sie machen tolle Fortschritte! Hier ist Ausrüstung, die Athleten auf Ihrem Level nutzen, um auf das nächste Level durchzubrechen.",
-              "channel": "Email"
-            }
-          ]
-        },
-        {
-          "scenario_target": "Sport-Enthusiasten, die lernen und sich verbessern möchten",
-          "scenario_objective": "Engagement durch edukative Inhalte aufbauen",
-          "main_messages_ideas": "Technik-Tutorials, Profi-Athleten-Tipps, Sport-Wissenschaft, Ausrüstungs-Bildung",
-          "message_sequence": [
-            {
-              "title": "Meistern Sie [Technik] Wie Ein Profi",
-              "description": "Wöchentlicher edukativer Content",
-              "content": "Diese Woche: Meistern Sie [Technik]. Schauen Sie unser Schritt-für-Schritt-Tutorial mit Profi-Athlet [Name] und kaufen Sie die empfohlene Ausrüstung.",
-              "channel": "Email"
-            },
-            {
-              "title": "Die Wissenschaft Von [Sport]",
-              "description": "Zweiwöchentlich: Sport-Wissenschaft-Content",
-              "content": "Warum ist [Wissenschaftliches Konzept] wichtig für [Sport]? Verstehen Sie die Wissenschaft und sehen Sie, wie die richtige Ausrüstung Ihre Performance maximiert.",
-              "channel": "Email"
-            },
-            {
-              "title": "Profi-Athleten-Ausrüstungs-Talk",
-              "description": "Monatlich: Athleten-Features",
-              "content": "Was ist in [Profi-Athlet]s Tasche? Sehen Sie ihr komplettes Ausrüstungs-Setup und erfahren Sie, warum sie jedes Teil wählen.",
               "channel": "Email"
             }
           ]

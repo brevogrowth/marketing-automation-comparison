@@ -1,13 +1,13 @@
 {
-  "introduction": "Dieser umfassende Marketing-Beziehungsplan ist für Fertigungsunternehmen konzipiert, um dauerhafte Partnerschaften mit B2B-Käufern, OEMs, Distributoren und Einkaufsteams aufzubauen. Von der ersten Anfrage bis zur langfristigen strategischen Partnerschaft optimieren diese Programme jeden Touchpoint im industriellen Kaufzyklus und gewährleisten gleichzeitig operative Exzellenz und Lieferketten-Zuverlässigkeit.",
+  "introduction": "Dieser umfassende Marketing-Beziehungsplan ist für Fertigungsunternehmen konzipiert, um dauerhafte Partnerschaften mit B2B-Käufern, OEMs, Distributoren und Einkaufsteams aufzubauen. Von der ersten Angebotsanfrage bis zur langfristigen strategischen Partnerschaft optimieren diese Programme jeden Touchpoint im industriellen Kaufzyklus und gewährleisten gleichzeitig operative Exzellenz und Lieferketten-Zuverlässigkeit.",
   "company_summary": {
     "name": "Fertigungsunternehmen",
     "website": "example-manufacturing.com",
     "activities": "B2B-Fertigung und Industrieprodukte, einschließlich Anlagen, Komponenten, Materialien, Maschinen oder spezialisierte Fertigungslösungen für industrielle und kommerzielle Anwendungen",
-    "target": "Einkaufsleiter, Ingenieurteams, Operations-Direktoren, Werksleiter und C-Level-Entscheider in Industrieunternehmen, OEMs und kommerziellen Unternehmen",
+    "target": "Einkaufsleiter, Ingenieurteams, Operations-Direktoren, Werksleiter und C-Level-Entscheider in Industrieorganisationen, OEMs und kommerziellen Unternehmen",
     "industry": "Manufacturing",
     "business_model": "B2B Fertigung",
-    "customer_lifecycle_key_steps": "Awareness > Messe/Digitale Entdeckung > Technische Bewertung > Anfrage > Qualifizierung > Erstbestellung > Produktionsintegration > Nachbestellzyklus > Strategische Partnerschaft > Erweiterung > Fürsprache"
+    "customer_lifecycle_key_steps": "Awareness > Messe/Digitale Entdeckung > Technische Bewertung > Angebotsanfrage > Qualifizierung > Erstbestellung > Produktionsintegration > Nachbestellzyklus > Strategische Partnerschaft > Expansion > Fürsprache"
   },
   "programs_list": [
     {
@@ -91,7 +91,7 @@
       "program_name": "Digitales Lead Nurturing & Qualifizierung",
       "target": "Website-Besucher, Content-Downloader und eingehende Anfragen",
       "objective": "Digitale Interessenten über technische Fähigkeiten informieren und zur Angebotsanfrage-Phase führen",
-      "kpi": "Lead-zu-SQL-Konversion (Ziel: 25%), Content-Engagement-Rate (Ziel: 40%), RFQ-Generierung (Ziel: 15%)",
+      "kpi": "Lead-zu-SQL-Konversion (Ziel: 25%), Content-Engagement-Rate (Ziel: 40%), Angebotsanfragen-Generierung (Ziel: 15%)",
       "description": "Bildungsorientiertes Nurturing, das technische Expertise, Produktionskapazitäten und Qualitätszertifizierungen demonstriert, um Interessenten durch den industriellen Kaufprozess zu führen.",
       "scenarios": [
         {
@@ -138,7 +138,7 @@
           ]
         },
         {
-          "scenario_target": "RFQ-Formulareingaben und Website-Kontaktanfragen",
+          "scenario_target": "Angebotsanfrage-Formulareingaben und Website-Kontaktanfragen",
           "scenario_objective": "Schnelle Reaktion und Vertriebsengagement für aktive Käufer",
           "main_messages_ideas": "Schnelle Reaktion, Vertriebsvorstellung, Technische Beratung, Angebotsvorbereitung",
           "message_sequence": [
@@ -667,6 +667,204 @@
               "title": "Auf dem Event - Lassen Sie uns verbinden",
               "description": "Während Event",
               "content": "Auf [Event] - Stand [#]. Kommen Sie vorbei und bringen Sie jeden mit, der uns treffen sollte. Kaffee geht auf uns!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Supply Chain Zusammenarbeit & Transparenz",
+      "target": "Schlüsselkunden, die tiefe Supply-Chain-Integration und Transparenz benötigen",
+      "objective": "Integrierter Supply-Chain-Partner werden mit 40% der strategischen Kunden, die Transparenz-Tools nutzen und 90% Prognosegenauigkeit",
+      "kpi": "Supply-Chain-Integrations-Adoption (Ziel: 40%), Prognosegenauigkeit (Ziel: 90%), Pünktliche Lieferverbesserung (Ziel: 15%), Bestandsoptimierung (Ziel: 20% Reduktion)",
+      "description": "Ein Programm, das transaktionale Beziehungen in integrierte Supply-Chain-Partnerschaften durch Bedarfsplanungs-Zusammenarbeit, Bestandstransparenz und Just-in-Time-Fähigkeiten transformiert.",
+      "scenarios": [
+        {
+          "scenario_target": "Strategische Kunden, die für Supply-Chain-Integration qualifiziert sind",
+          "scenario_objective": "Kunden in Supply-Chain-Kollaborations-Tools einbinden",
+          "main_messages_ideas": "Transparenz-Plattform, Bedarfsplanung, Bestandsoptimierung, JIT-Fähigkeiten, Integrations-Vorteile",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vorstellung Supply-Chain-Transparenz",
+              "description": "Programm-Einführung",
+              "content": "Als einer unserer geschätzten strategischen Partner bieten wir Ihnen Zugang zu unserer Supply-Chain-Transparenz-Plattform. Echtzeit-Bestandstransparenz, automatisierte Prognosen und Bedarfsplanungs-Tools - entwickelt zur Optimierung Ihrer Lieferkette und Eliminierung von Lieferengpässen."
+            },
+            {
+              "channel": "Email",
+              "title": "Vorteile der Supply-Chain-Integration",
+              "description": "Tag 7: Wertdemonstration",
+              "content": "Unternehmen, die unsere Supply-Chain-Integration nutzen, sehen: 20% Reduktion der Sicherheitsbestände, 15% Verbesserung der pünktlichen Lieferung und 90%+ Prognosegenauigkeit. Hier erfahren Sie, wie [Ähnlicher Kunde] seine Lieferkette mit unserer Plattform transformiert hat."
+            },
+            {
+              "channel": "Email",
+              "title": "Integrations-Demo: Supply-Chain-Plattform",
+              "description": "Tag 14: Demo-Einladung",
+              "content": "Sehen Sie unsere Supply-Chain-Plattform in Aktion. Wir demonstrieren Bedarfsplanung, Bestandstransparenz und automatisierte Nachbestellungs-Fähigkeiten, zugeschnitten auf Ihre Betriebsabläufe. Vereinbaren Sie eine personalisierte Demo mit unserem Supply-Chain-Team."
+            },
+            {
+              "channel": "SMS",
+              "title": "Supply-Chain-Demo geplant",
+              "description": "Demo-Bestätigung",
+              "content": "Bestätigt: Supply-Chain-Transparenz-Demo am [Datum/Uhrzeit]. Beitrittslink: [Link]. Wir behandeln Bedarfsplanung, Bestandsintegration und JIT-Fähigkeiten. Fragen? Schreiben Sie zurück!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden, die bereits Supply-Chain-Integration nutzen",
+          "scenario_objective": "Nutzung optimieren und Zusammenarbeit erweitern",
+          "main_messages_ideas": "Leistungseinblicke, Optimierungs-Tipps, Neue Funktionen, Prognose-Zusammenarbeit",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihr monatlicher Supply-Chain-Bericht",
+              "description": "Monatlich: Leistungseinblicke",
+              "content": "Ihre Supply-Chain-Leistung diesen Monat: Pünktliche Lieferung: [X]%, Prognosegenauigkeit: [Y]%, Bestandsumschlag: [Z]. Optimierungsbereiche: [spezifische Empfehlungen]. Ihr dedizierter Supply-Chain-Analyst steht zur Besprechung von Verbesserungen zur Verfügung."
+            },
+            {
+              "channel": "Email",
+              "title": "Vierteljährliche Bedarfsplanungs-Überprüfung",
+              "description": "Vierteljährlich: Prognose-Zusammenarbeit",
+              "content": "Zeit für unsere vierteljährliche Bedarfsplanungs-Überprüfung. Lassen Sie uns Prognosen für das kommende Quartal abstimmen und eventuelle Produktionsänderungen, Neuprodukteinführungen oder Nachfrageverschiebungen besprechen, die Ihre Lieferanforderungen beeinflussen könnten. Planen Sie Ihre Planungssitzung."
+            },
+            {
+              "channel": "Email",
+              "title": "Neue Plattform-Funktion: [Funktion]",
+              "description": "Funktions-Ankündigung",
+              "content": "Wir haben [neue Funktion] zu unserer Supply-Chain-Plattform hinzugefügt - [kurze Beschreibung und Nutzen]. Diese Verbesserung wird Ihnen helfen, [spezifischer Wert]. Melden Sie sich an, um zu erkunden, oder kontaktieren Sie Ihren Supply-Chain-Analyst für eine Einführung."
+            },
+            {
+              "channel": "SMS",
+              "title": "Supply-Alert: [Problem/Update]",
+              "description": "Echtzeit-Supply-Benachrichtigungen",
+              "content": "Supply-Update für [Produkt/SKU]: [Alert-Details - z.B. Kapazitätsänderung, Lieferzeit-Update, Bestandsstatus]. Details in Ihrem Supply-Chain-Dashboard ansehen oder uns kontaktieren."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden mit Supply-Chain-Herausforderungen",
+          "scenario_objective": "Proaktive Problemlösung und Unterstützung",
+          "main_messages_ideas": "Supply-Chain-Störungs-Support, Alternative Lösungen, Eiloptionen, Risikominderung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Supply-Chain-Störungs-Mitteilung & Reaktion",
+              "description": "Wenn Störung Kunden betrifft",
+              "content": "Wir sind uns [Störungsbeschreibung] bewusst, die Ihre Versorgung betrifft. Hier ist unser Reaktionsplan: [Minderungsschritte]. Aktueller Status: [Bestandsposition, alternative Optionen, erwartete Lösung]. Ihr Account-Team steht für alle Fragen bereit."
+            },
+            {
+              "channel": "SMS",
+              "title": "Dringend: Supply-Update",
+              "description": "Sofortige Benachrichtigung",
+              "content": "DRINGEND Supply-Update für [Produkt]: [Kurze Auswirkung]. Rufen Sie [Nummer] für sofortige Unterstützung an oder prüfen Sie Ihr Dashboard für Details und Alternativen."
+            },
+            {
+              "channel": "Email",
+              "title": "Supply-Chain-Wiederherstellungs-Update",
+              "description": "Lösungsfortschritt",
+              "content": "Update zu [Störung]: Wir haben [ergriffene Maßnahmen] und erwarten [Lösungszeitrahmen]. Ihre aktuellen Bestellungen: [Status]. Eiloptionen: [verfügbare Alternativen]. Vielen Dank für Ihre Geduld während dieser Situation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Nachhaltigkeit & Umwelt-Compliance",
+      "target": "Kunden mit Nachhaltigkeitsanforderungen, ESG-Reporting-Bedürfnissen und Umwelt-Compliance-Verpflichtungen",
+      "objective": "Bevorzugter Lieferant für nachhaltigkeitsfokussierte Kunden werden mit 50% Adoption von Nachhaltigkeits-Reporting-Tools",
+      "kpi": "Nachhaltigkeitsdokumentations-Lieferung (Ziel: 100%), Umwelt-Compliance-Zertifizierungsrate (Ziel: 95%), Nachhaltige Produktlinien-Adoption (Ziel: 35%), ESG-Reporting-Support-Zufriedenheit",
+      "description": "Ein umfassendes Nachhaltigkeitsprogramm, das Kundenumweltziele durch Produkt-Nachhaltigkeitsdaten, Compliance-Dokumentation, CO2-Fußabdruck-Reporting und nachhaltige Alternativen unterstützt.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden mit ESG-Reporting-Anforderungen",
+          "scenario_objective": "Nachhaltigkeitsdaten und Dokumentation für Reporting bereitstellen",
+          "main_messages_ideas": "Umweltdaten, CO2-Fußabdruck, Nachhaltigkeitsberichte, Compliance-Dokumentation, ESG-Support",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihr Lieferanten-Nachhaltigkeitsbericht",
+              "description": "Jährlich: Nachhaltigkeitsdokumentation",
+              "content": "Ihr jährlicher Nachhaltigkeitsbericht ist fertig. Enthält: CO2-Fußabdruck-Daten für gekaufte Produkte, Umweltzertifizierungen, Lieferketten-Nachhaltigkeitsmetriken und Dokumentation für Ihr ESG-Reporting. Laden Sie Ihren maßgeschneiderten Bericht herunter."
+            },
+            {
+              "channel": "Email",
+              "title": "Vierteljährliches Umweltdaten-Update",
+              "description": "Vierteljährlich: Laufende Daten",
+              "content": "Ihr vierteljährliches Umweltdaten-Paket: CO2-Emissionen im Zusammenhang mit Ihren Käufen, Recycling-Content-Prozentsätze und Umwelt-Compliance-Zertifikate. Alles formatiert für Ihre Nachhaltigkeits-Reporting-Bedürfnisse."
+            },
+            {
+              "channel": "Email",
+              "title": "Neu: CO2-Fußabdruck-Rechner",
+              "description": "Tool-Einführung",
+              "content": "Wir haben unseren CO2-Fußabdruck-Rechner gestartet - berechnen Sie sofort die Umweltauswirkungen jedes Produkts oder jeder Bestellung. Perfekt für ESG-Reporting, Lieferantenbewertungen und Nachhaltigkeitsplanung. Probieren Sie es jetzt in Ihrem Kundenportal."
+            },
+            {
+              "channel": "Email",
+              "title": "ESG-Audit-Support verfügbar",
+              "description": "Support-Angebot",
+              "content": "Durchlaufen Sie ein ESG-Audit oder eine Lieferantenbewertung? Wir können helfen. Unser Nachhaltigkeitsteam steht zur Verfügung, um Dokumentation bereitzustellen, Prüfer-Fragen zu beantworten und Ihre Compliance-Bemühungen zu unterstützen. Vereinbaren Sie einen Support-Call."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden, die an nachhaltigen Produktalternativen interessiert sind",
+          "scenario_objective": "Nachhaltige Produktoptionen fördern und schulen",
+          "main_messages_ideas": "Nachhaltige Alternativen, Recycling-Content-Produkte, Umweltzertifizierungen, Grüne Produktlinie, Impact-Reduktion",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nachhaltige Alternativen für Ihre Anwendungen",
+              "description": "Basierend auf Kaufhistorie",
+              "content": "Basierend auf Ihrer aktuellen Produktnutzung, hier sind nachhaltige Alternativen, die Ihre Umweltauswirkungen reduzieren könnten: [Produkt-für-Produkt-Vergleich mit Umweltvorteilen, Leistungsäquivalenz und eventuellen Kostenauswirkungen]."
+            },
+            {
+              "channel": "Email",
+              "title": "Neu: [Nachhaltige Produktlinie]",
+              "description": "Produkt-Launch",
+              "content": "Vorstellung unserer [Nachhaltigen Produktlinie]: [X]% Recycling-Content, [Y]% geringerer CO2-Fußabdruck, gleiche Leistungsspezifikationen. Perfekt für Unternehmen, die sich zu Umwelt-Leadership verpflichten. Fordern Sie Muster und Spezifikationen an."
+            },
+            {
+              "channel": "Email",
+              "title": "Nachhaltigkeits-Impact-Bericht: Ihre Entscheidungen zählen",
+              "description": "Impact-Demonstration",
+              "content": "Wenn Sie unsere nachhaltigen Produkte wählen, hier ist die Auswirkung: [X] kg CO2 gespart, [Y] kg Materialien von Deponien umgeleitet, [Z]% Wasserverbrauch reduziert. Ihre nachhaltigen Kaufentscheidungen machen einen echten Unterschied."
+            },
+            {
+              "channel": "SMS",
+              "title": "Nachhaltiges Produktmuster bereit",
+              "description": "Muster-Benachrichtigung",
+              "content": "Ihr nachhaltiges Produktmuster-Kit ist versandbereit! Enthält [Produkte] mit vollständigen Umweltzertifizierungen und Leistungsdaten. Versandadresse bestätigen: [Link]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden in regulierten Branchen mit Umwelt-Compliance-Anforderungen",
+          "scenario_objective": "Umweltregulatorische Compliance unterstützen",
+          "main_messages_ideas": "Regulatorische Compliance, Umweltzertifizierungen, RoHS/REACH-Compliance, Dokumentation für Audits, Regulatorische Updates",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Umwelt-Compliance-Dokumentationspaket",
+              "description": "Jährlich: Compliance-Bündel",
+              "content": "Ihr jährliches Umwelt-Compliance-Paket enthält: RoHS-Erklärungen, REACH-Compliance-Statements, Konfliktmineralien-Dokumentation und alle relevanten Umweltzertifizierungen. Alles, was Sie für regulatorische Audits und Kundenanforderungen benötigen."
+            },
+            {
+              "channel": "Email",
+              "title": "Regulatorisches Update: [Vorschrift]",
+              "description": "Wenn sich Vorschrift ändert",
+              "content": "Wichtiges Update: [Vorschrift] wurde aktualisiert/eingeführt und betrifft [Produktkategorien]. Hier ist, was es für Ihre Betriebsabläufe bedeutet, wie unsere Produkte compliant sind und welche Dokumentation wir bereitstellen. Unser Compliance-Team steht für Fragen zur Verfügung."
+            },
+            {
+              "channel": "Email",
+              "title": "Compliance-Zertifikat-Verlängerung",
+              "description": "Zertifikatsablauf-Mitteilung",
+              "content": "Ihr [Zertifizierungstyp]-Compliance-Zertifikat läuft am [Datum] ab. Erneuerte Zertifikate für alle Produkte in Ihrer Historie sind jetzt in Ihrem Kundenportal verfügbar. Laden Sie aktualisierte Dokumentation vor Ablauf herunter."
+            },
+            {
+              "channel": "Email",
+              "title": "Branchen-Compliance-Webinar",
+              "description": "Bildungs-Event",
+              "content": "Nehmen Sie an unserem Webinar teil: 'Umwelt-Compliance-Update für [Branche]'. Unsere Compliance-Experten behandeln aktuelle regulatorische Änderungen, kommende Anforderungen und Best Practices zur Erfüllung von Umweltverpflichtungen. Jetzt registrieren."
             }
           ]
         }

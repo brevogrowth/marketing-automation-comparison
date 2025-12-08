@@ -11,8 +11,8 @@
   },
   "programs_list": [
     {
-      "program_name": "Incorporación VIP & Bienvenida Concierge",
-      "target": "Primeros compradores de lujo y prospectos de alto potencial",
+      "program_name": "VIP Onboarding & Concierge Welcome",
+      "target": "First-time luxury purchasers and high-potential prospects",
       "objective": "Create an immediate sense of exclusivity and establish personal relationship, achieving 80% VIP service activation and 45% second purchase within 90 days with an AOV increase of 30%",
       "kpi": "VIP service activation rate (target: 80%), Second purchase within 90 days (target: 45%), AOV increase on second purchase (target: +30%), Personal advisor engagement (target: 65%)",
       "description": "A white-glove welcome experience that introduces clients to the world of the brand through personal attention, exclusive services, and thoughtful communication. Each new client is treated as the beginning of a relationship, not a transaction, with immediate access to personalized services and their dedicated style advisor.",
@@ -174,8 +174,8 @@
       ]
     },
     {
-      "program_name": "Concierge Personal & Servicio de Guante Blanco",
-      "target": "Clientes VIP y del Círculo Privilegiado que buscan la máxima comodidad y personalización",
+      "program_name": "Personal Concierge & White Glove Service",
+      "target": "VIP and Inner Circle clients seeking ultimate convenience and personalization",
       "objective": "Provide seamless luxury service achieving 90% service satisfaction, 55% concierge service utilization, and 40% increase in purchase frequency through frictionless experiences",
       "kpi": "Service satisfaction (target: 90%+), Concierge utilization rate (target: 55%), Purchase frequency increase (target: +40%), Service-driven revenue (target: 35% of VIP revenue)",
       "description": "An elite service tier offering personal shopping, home delivery with try-on, wardrobe consultation, travel coordination, and 24/7 advisor access. This program removes all friction from the luxury shopping experience, making it effortless for clients to engage with the brand.",
@@ -367,8 +367,8 @@
       ]
     },
     {
-      "program_name": "Historias de Patrimonio & Artesanía",
-      "target": "Todos los clientes, especialmente aquellos que valoran la artesanía y el legado de la marca",
+      "program_name": "Heritage & Craftsmanship Stories",
+      "target": "All clients, especially those who value artisanship and brand legacy",
       "objective": "Deepen emotional connection through storytelling, achieving 60% content engagement, 35% story-to-purchase correlation, and 45% increase in brand affinity",
       "kpi": "Content engagement rate (target: 60%), Story-driven purchase attribution (target: 35%), Brand affinity score (target: +45%), Content sharing rate (target: 25%)",
       "description": "An editorial program that shares the stories behind the craft: master artisans, historical techniques, material sourcing, design inspiration, and brand heritage. This program positions products as the result of human skill, passion, and legacy—not mere objects.",
@@ -542,8 +542,8 @@
       ]
     },
     {
-      "program_name": "Personalización de Productos a Medida",
-      "target": "Clientes que buscan personalización única y modificaciones a medida",
+      "program_name": "Personalized Product Customization",
+      "target": "Clients seeking unique personalization and bespoke modifications",
       "objective": "Drive customization adoption to 40% of eligible purchases, achieve 95% customization satisfaction, and increase AOV by 45% on personalized orders",
       "kpi": "Customization rate (target: 40%), Customization satisfaction (target: 95%+), AOV increase on custom orders (target: +45%), Repeat customization rate (target: 60%)",
       "description": "A comprehensive personalization program offering engraving, monogramming, material selection, color customization, sizing adjustments, and design modifications. This program allows clients to make pieces truly their own, increasing emotional connection and perceived value.",
@@ -717,8 +717,8 @@
       ]
     },
     {
-      "program_name": "Gestión de Relaciones con Clientes de Gran Patrimonio",
-      "target": "Clientes de patrimonio ultra alto con potencial de gasto superior a $100K anualmente",
+      "program_name": "High-Net-Worth Client Relationship Management",
+      "target": "Ultra-high-net-worth clients with spending potential above $100K annually",
       "objective": "Achieve 95% UHNW retention, 70% share of luxury wallet, $250K+ average annual client value, and 80% referral rate within UHNW tier",
       "kpi": "UHNW retention (target: 95%+), Wallet share (target: 70%), Annual client value (target: $250K+), UHNW referral rate (target: 80%)",
       "description": "The highest tier of relationship management, combining personal advisory, lifestyle coordination, collection management, and comprehensive luxury services. These relationships transcend retail to become trusted advisor partnerships.",
@@ -904,8 +904,8 @@
       ]
     },
     {
-      "program_name": "Recuperación de Consideraciones Abandonadas",
-      "target": "Clientes que expresaron interés pero no completaron la compra (en línea o en tienda)",
+      "program_name": "Abandoned Consideration Recovery",
+      "target": "Clients who expressed interest but didn't complete purchase (online or in-store)",
       "objective": "Recover 25% of high-value abandoned considerations through personal outreach while maintaining brand dignity",
       "kpi": "Consideration recovery rate (target: 25%), Time to recovery (target: <14 days), Recovery AOV vs standard (target: +15%), Brand perception (maintained)",
       "description": "Graceful follow-up for clients who showed interest in specific pieces without completing a purchase. Unlike traditional cart abandonment, luxury recovery is personal, unhurried, and focused on service rather than urgency. The goal is to assist, not pressure.",
@@ -1036,7 +1036,7 @@
       ]
     },
     {
-      "program_name": "Vistas Previas Privadas & Eventos Exclusivos",
+      "program_name": "Private Preview & Exclusive Events",
       "target": "VIP and Inner Circle clients based on interests and tier",
       "objective": "Achieve 65% event attendance, 45% post-event purchase rate, and 95% event satisfaction with NPS above 70",
       "kpi": "Event attendance rate (target: 65%), Post-event purchase rate (target: 45%), Event satisfaction (target: 95%+), Event NPS (target: 70+)",
@@ -1223,7 +1223,7 @@
       ]
     },
     {
-      "program_name": "Construcción de Colección & Evolución de Estilo",
+      "program_name": "Collection Building & Style Evolution",
       "target": "Established clients with multiple purchases showing collection-building behavior",
       "objective": "Increase multi-category ownership to 70%, drive collection completion with 40% cross-category conversion, and increase annual client spend by 25%",
       "kpi": "Multi-category ownership (target: 70%), Cross-category conversion (target: 40%), Annual spend increase (target: +25%), Collection completion rate (target: 30%)",
@@ -1392,7 +1392,7 @@
       ]
     },
     {
-      "program_name": "Reconocimiento de Hitos & Aniversarios",
+      "program_name": "Milestone & Anniversary Recognition",
       "target": "All clients based on relationship milestones and personal occasions",
       "objective": "Achieve 90% milestone recognition completion, 55% milestone offer redemption, and measurable relationship deepening",
       "kpi": "Milestone recognition rate (target: 90%), Milestone offer redemption (target: 55%), Anniversary purchase rate (target: 35%), Client sentiment improvement (target: +25%)",
@@ -1555,7 +1555,7 @@
       ]
     },
     {
-      "program_name": "Excelencia Post-Compra & Cuidado",
+      "program_name": "Post-Purchase Excellence & Care",
       "target": "Recent purchasers within 1-30 days of receiving their piece",
       "objective": "Ensure complete satisfaction with 95% positive feedback, establish care relationship, and drive referrals with 20% NPS improvement",
       "kpi": "Satisfaction feedback rate (target: 95%+ positive), Service utilization (target: 40%), Return rate (target: <2%), Referral mentions (target: +20%)",
@@ -1699,7 +1699,7 @@
       ]
     },
     {
-      "program_name": "Reconquista & Renovación de Relación",
+      "program_name": "Win-Back & Relationship Renewal",
       "target": "Lapsed clients with no engagement in 12-36 months",
       "objective": "Reactivate 20% of lapsed VIP clients and maintain brand relationship with dignified outreach",
       "kpi": "Lapsed VIP reactivation rate (target: 20%), Win-back campaign response (target: 35%), Reactivation-to-retention (target: 60%), Brand dignity maintained",
@@ -1807,7 +1807,7 @@
       ]
     },
     {
-      "program_name": "Reconocimiento Círculo Privilegiado & Embajadores",
+      "program_name": "Inner Circle & Ambassador Recognition",
       "target": "Top-tier clients and brand advocates",
       "objective": "Achieve 85% Inner Circle retention, 50% ambassador activation, and 30% of new VIP clients from ambassador referrals",
       "kpi": "Inner Circle retention (target: 85%), Ambassador activation rate (target: 50%), Ambassador referral contribution (target: 30%), Ambassador satisfaction (target: 95%)",
@@ -1945,7 +1945,7 @@
       ]
     },
     {
-      "program_name": "Momentos Estacionales & Culturales",
+      "program_name": "Seasonal & Cultural Moments",
       "target": "All clients based on cultural relevance and preferences",
       "objective": "Drive 40% seasonal campaign engagement, achieve 30% holiday gift conversion, and maintain year-round relationship touchpoints",
       "kpi": "Seasonal campaign engagement (target: 40%), Holiday gift conversion (target: 30%), Year-round engagement consistency (target: maintained), Cultural relevance score (target: 90%)",
@@ -2091,25 +2091,25 @@
       "setup_efficiency": "Dynamic content and merge tags create personalized communications at scale while maintaining exclusivity. VIP triggers ensure appropriate response timing."
     },
     {
-      "scenario_name": "Concierge Personal & Servicio de Guante Blanco",
+      "scenario_name": "Personal Concierge & White Glove Service",
       "why_brevo_is_better": "Brevo's multi-channel orchestration ensures seamless service across email, SMS, and WhatsApp, allowing advisors to reach clients on their preferred channel at optimal times. Automation handles logistics while preserving personal touch.",
       "omnichannel_channels": "Email for detailed service communications + SMS for time-sensitive coordination + WhatsApp for ongoing conversational service + On-site widgets for boutique visit booking",
       "setup_efficiency": "Service request workflows automate coordination while keeping advisors informed. CRM integration ensures complete client preference visibility for truly personalized service."
     },
     {
-      "scenario_name": "Historias de Patrimonio & Artesanía",
+      "scenario_name": "Heritage & Craftsmanship Stories",
       "why_brevo_is_better": "Brevo's email design capabilities allow luxury brands to create visually stunning storytelling campaigns that do justice to artisan craftsmanship. Rich media support and responsive design ensure stories look exceptional on every device.",
       "omnichannel_channels": "Email for visual storytelling with rich imagery + Push notifications for story release alerts + On-site widgets to surface relevant stories during browsing",
       "setup_efficiency": "Content calendar automation ensures consistent storytelling cadence. Engagement tracking identifies which stories resonate, informing future content strategy."
     },
     {
-      "scenario_name": "Personalización de Productos a Medida",
+      "scenario_name": "Personalized Product Customization",
       "why_brevo_is_better": "Brevo's workflow automation guides clients through customization journeys with appropriate communications at each stage: inquiry, design approval, creation updates, completion. Each touchpoint feels personal while being systematically managed.",
       "omnichannel_channels": "Email for design presentations and approvals + SMS for creation milestones + WhatsApp for design discussions + Push for completion notifications",
       "setup_efficiency": "Customization workflows automate the journey from inquiry to delivery, with automatic notifications at key milestones. Integration with production systems ensures accurate status updates."
     },
     {
-      "scenario_name": "Gestión de Relaciones con Clientes de Gran Patrimonio",
+      "scenario_name": "High-Net-Worth Client Relationship Management",
       "why_brevo_is_better": "Brevo's advanced segmentation and tier management enable different service levels for UHNW clients while maintaining privacy and discretion. Advisor alerts ensure human oversight of all automated touchpoints.",
       "omnichannel_channels": "Email for formal communications + SMS for immediate personal contact + WhatsApp for ongoing relationship management + Private advisor hotline integration",
       "setup_efficiency": "UHNW workflows trigger appropriate service levels automatically based on client tier. Advisor dashboards provide complete visibility while automation handles routine coordination."
@@ -2127,19 +2127,19 @@
       "setup_efficiency": "Pre-built event workflows handle logistics across invitation, reminder, day-of, and follow-up phases. Automated post-event sequences capture momentum while advisors focus on personal touches."
     },
     {
-      "scenario_name": "Construcción de Colección & Evolución de Estilo",
+      "scenario_name": "Collection Building & Style Evolution",
       "why_brevo_is_better": "Purchase history integration enables intelligent cross-category recommendations based on actual client collections. AI-powered product recommendations can suggest complementary pieces while respecting luxury positioning—recommendations as curation, not algorithms.",
       "omnichannel_channels": "Email for curated recommendations with rich imagery + SMS for new arrival alerts in relevant categories + On-site widgets showing coordinating pieces",
       "setup_efficiency": "Collection analysis workflows identify cross-category opportunities automatically. Advisors receive alerts to reach out personally with curated suggestions, combining automation efficiency with personal service."
     },
     {
-      "scenario_name": "Reconocimiento de Hitos & Aniversarios",
+      "scenario_name": "Milestone & Anniversary Recognition",
       "why_brevo_is_better": "Date-based automation ensures no milestone goes unrecognized, while personalization makes each touchpoint feel genuinely thoughtful. Integration with purchase history enables meaningful reflection on the relationship.",
       "omnichannel_channels": "Email for beautifully designed messages + Physical mail integration for tangible luxury touches + Personal advisor follow-up triggers",
       "setup_efficiency": "Set up milestone triggers once and let automation handle timing across your entire client base while maintaining personal touch through advisor notifications."
     },
     {
-      "scenario_name": "Reconocimiento Círculo Privilegiado & Embajadores",
+      "scenario_name": "Inner Circle & Ambassador Recognition",
       "why_brevo_is_better": "Tier management automation ensures clients are elevated to appropriate recognition levels as soon as they qualify, with personalized welcome sequences that make each elevation feel individually celebrated. Referral tracking rewards advocacy systematically.",
       "omnichannel_channels": "Email for formal recognition + SMS for immediate personal acknowledgment + Integration with CRM for advisor notification",
       "setup_efficiency": "Automated tier tracking and elevation triggers ensure no client's achievement goes unnoticed, while personal advisor alerts maintain the human relationship. Referral tracking automatically rewards ambassadors."

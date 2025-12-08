@@ -244,6 +244,10 @@ export default function Home() {
         }
 
         if (pollData.status === 'error') {
+          // Log debug info if available
+          if (pollData.debug) {
+            console.error('API Debug info:', JSON.stringify(pollData.debug, null, 2));
+          }
           throw new Error(pollData.error || 'Plan generation failed');
         }
 

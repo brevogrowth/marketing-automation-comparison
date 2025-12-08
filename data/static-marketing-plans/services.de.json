@@ -617,6 +617,224 @@
           ]
         }
       ]
+    },
+    {
+      "program_name": "Branchenspezifische Lösungen & Vertikale Expertise",
+      "target": "Interessenten und Kunden in wichtigen vertikalen Branchen, in denen die Firma tiefe Expertise hat",
+      "objective": "Als Branchenexperte in 3-5 Schlüsselvertikalen mit 40% höheren Konversionsraten für vertikal-ausgerichtete Interessenten positionieren",
+      "kpi": "Vertikale-spezifische Engagement-Rate (Ziel: 35%), Branchen-Content-Konsum (Ziel: 50%), Vertikale-Lead-Konversion (Ziel: 40% höher als allgemein), Branchen-Kunden-Akquisition",
+      "description": "Ein Programm, das tiefe vertikale Expertise durch branchenspezifischen Content, Case Studies, Benchmarks und Regulierungs-/Compliance-Insights präsentiert. Dies positioniert die Firma als Go-to-Experten für Kunden in spezifischen Branchen, die spezialisiertes Wissen schätzen.",
+      "scenarios": [
+        {
+          "scenario_target": "Gesundheitswesen-Interessenten und -Kunden",
+          "scenario_objective": "Gesundheitswesen-Expertise und regulatorisches Wissen demonstrieren",
+          "main_messages_ideas": "Gesundheitswesen-Regulierungen, HIPAA-Compliance, Branchen-Benchmarks, Gesundheitswesen-Case-Studies, Sektor-Trends",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Gesundheitswesen-Branchen-Update: [Thema]",
+              "description": "Monatlich: Branchenspezifischer Content",
+              "content": "Gesundheitsorganisationen stehen diesen Monat vor einzigartigen Herausforderungen: [Kürzliche regulatorische Änderungen, Branchentrends oder Herausforderungen]. Hier ist unsere Analyse dessen, was [Thema] für Gesundheitsdienstleister, Zahler und Life-Science-Unternehmen bedeutet - und wie zukunftsorientierte Organisationen reagieren."
+            },
+            {
+              "channel": "Email",
+              "title": "Gesundheitswesen-Case-Study: [Kundentyp]",
+              "description": "Quartalsweise: Erfolgsgeschichte",
+              "content": "Sehen Sie, wie wir [Gesundheitswesen-Kundentyp] geholfen haben, [spezifische Herausforderung] zu navigieren. Das Ergebnis: [Quantifizierte Outcomes]. Laden Sie die vollständige Case Study herunter, um zu sehen, wie dieser Ansatz für Ihre Organisation funktionieren könnte."
+            },
+            {
+              "channel": "Email",
+              "title": "Gesundheitswesen-Benchmark-Report [Jahr]",
+              "description": "Jährlich: Forschungsreport",
+              "content": "Unser jährlicher Gesundheitswesen-Branchen-Benchmark-Report ist da! Vergleichen Sie Ihre Organisation mit 200+ Gesundheitsdienstleistern über [Schlüssel-Metriken]. Laden Sie Ihre Kopie herunter und sehen Sie, wo Sie stehen - plus umsetzbare Empfehlungen von unseren Gesundheitswesen-Practice-Leadern."
+            },
+            {
+              "channel": "SMS",
+              "title": "Gesundheitswesen-Webinar morgen",
+              "description": "Event-Erinnerung",
+              "content": "Erinnerung: Gesundheitswesen-Compliance-Webinar morgen um [Uhrzeit]. Unsere Gesundheitswesen-Practice-Experten werden [Thema] behandeln. Ein Muss für Gesundheits-Leader. Teilnehmen: [Link]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Finanzdienstleistungs-Interessenten und -Kunden",
+          "scenario_objective": "Finanzdienstleistungs-Expertise und Compliance-Wissen präsentieren",
+          "main_messages_ideas": "Regulatorische Compliance, Risikomanagement, Fintech-Trends, Finanzdienstleistungs-Case-Studies, Branchen-Benchmarks",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Finanzdienstleistungs-Regulierungs-Update",
+              "description": "Monatlich: Compliance-Updates",
+              "content": "Wichtige regulatorische Entwicklungen, die Finanzdienstleistungen diesen Monat betreffen: [Updates von BaFin, EZB, staatlichen Regulierern usw.]. Unser Finanzdienstleistungs-Team erklärt, was diese Änderungen für Banken, Asset-Manager, Versicherungen und Fintech-Firmen bedeuten."
+            },
+            {
+              "channel": "Email",
+              "title": "Finanzdienstleistungs-Trends [Jahr]",
+              "description": "Quartalsweise: Branchen-Analyse",
+              "content": "Was prägt Finanzdienstleistungen in [Quartal]? Von [Trend 1] bis [Trend 2], unsere Finanzdienstleistungs-Practice-Leader teilen Insights darüber, wohin sich die Branche bewegt - und wie führende Institutionen sich vorbereiten."
+            },
+            {
+              "channel": "Email",
+              "title": "Fintech-Partnerschafts-Möglichkeit",
+              "description": "Wenn relevant: Branchen-Event",
+              "content": "Wir veranstalten einen exklusiven Roundtable für Finanzdienstleistungs-Führungskräfte zu [Thema]. Begrenzt auf 15 Teilnehmer für bedeutungsvolle Diskussion. Möchten Sie sich [Peer-Unternehmen] anschließen, um [Thema] zu erkunden? Reservieren Sie Ihren Platz."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Technologie-Interessenten und -Kunden",
+          "scenario_objective": "Technologiesektor-Verständnis und Wachstums-Expertise demonstrieren",
+          "main_messages_ideas": "Tech-Wachstumsstrategien, SaaS-Metriken, Skalierungs-Herausforderungen, Tech-M&A, Branchen-Trends",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tech-Unternehmen-Wachstums-Insights",
+              "description": "Monatlich: Technologie-Sektor-Content",
+              "content": "Was machen die am schnellsten wachsenden Tech-Unternehmen anders? Unsere Analyse von [Trend/Thema] zeigt Strategien, die Leader von Nachzüglern unterscheiden. Insights anwendbar, ob Sie Series A sind oder sich auf IPO vorbereiten."
+            },
+            {
+              "channel": "Email",
+              "title": "SaaS-Metriken-Benchmark-Report",
+              "description": "Quartalsweise: Benchmarking-Daten",
+              "content": "Wie schneiden Ihre SaaS-Metriken ab? Unser neuester Benchmark-Report analysiert [# Unternehmen] über Schlüssel-Metriken: CAC, LTV, Churn, Expansion-Revenue und mehr. Sehen Sie, wo Sie im Vergleich stehen und wo Sie Verbesserungsanstrengungen fokussieren sollten."
+            },
+            {
+              "channel": "Email",
+              "title": "Tech-CFO-Roundtable",
+              "description": "Quartalsweise: Peer-Networking",
+              "content": "Schließen Sie sich 12 Tech-CFOs an für eine private Diskussion über [Thema - z.B. Navigation von Marktunsicherheit, IPO-Bereitschaft, M&A-Strategie]. Moderiert von unseren Technologie-Practice-Partnern. Diese Sessions produzieren durchweg wertvolle Peer-Insights."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Fertigungs-Interessenten und -Kunden",
+          "scenario_objective": "Fertigungs-Expertise und operationales Wissen präsentieren",
+          "main_messages_ideas": "Supply Chain, Industrie 4.0, Operative Exzellenz, Fertigungs-Case-Studies, Sektor-Trends",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Fertigungs-Branchen-Ausblick",
+              "description": "Monatlich: Branchen-Content",
+              "content": "Fertigungs-Leader stehen vor [aktuellen Herausforderungen/Trends]. Unsere neueste Analyse deckt Supply-Chain-Entwicklungen, Industrie-4.0-Adoption und operative Strategien ab, die führende Hersteller implementieren."
+            },
+            {
+              "channel": "Email",
+              "title": "Fertigungs-Exzellenz-Case-Study",
+              "description": "Quartalsweise: Erfolgsgeschichte",
+              "content": "Sehen Sie, wie [Fertigungs-Kunde] [spezifisches Outcome - Kostenreduktion, Effizienzgewinn usw.] erreichte. Diese Case Study führt durch den Ansatz, überwundene Herausforderungen und erzielte Ergebnisse."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Angebots- & RFP-Management",
+      "target": "Aktive Opportunities in der Vertriebspipeline, insbesondere formelle RFP-Antworten und kompetitive Angebotssituationen",
+      "objective": "Angebots-Win-Rate um 25% erhöhen und Vertriebszyklus-Länge um 20% durch strategische Angebots-Kommunikation reduzieren",
+      "kpi": "Angebots-Win-Rate (Ziel: 35%), Angebots-Antwortrate (Ziel: 80%), Zeit bis Angebotseinreichung, Follow-up-Effektivität, Kompetitive Win-Rate",
+      "description": "Ein Programm zur Unterstützung des Angebots- und RFP-Prozesses mit strategischer Kommunikation, die Wertversprechen verstärkt, Bedenken adressiert und Engagement während oft langwieriger Evaluationsperioden aufrechterhält.",
+      "scenarios": [
+        {
+          "scenario_target": "Interessenten in aktiver RFP-Evaluation",
+          "scenario_objective": "Engagement aufrechterhalten und Wert während Evaluationsperiode verstärken",
+          "main_messages_ideas": "Angebots-Follow-up, Wert-Verstärkung, Fragen-Antizipation, Referenz-Verfügbarkeit, Evaluations-Unterstützung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Angebotserhalt-Bestätigung",
+              "description": "Sofort nach Einreichung: Bestätigung",
+              "content": "Vielen Dank für die Gelegenheit, unser Angebot für [Projekt/Engagement] zu präsentieren. Wir haben unsere Antwort eingereicht, die [Schlüssel-Anforderungen] adressiert. Wir sind begeistert über die Möglichkeit, gemeinsam an [spezifischem Outcome] zu arbeiten. Bitte zögern Sie nicht, sich bei Fragen zu melden."
+            },
+            {
+              "channel": "Email",
+              "title": "Unterstützende Materialien: [Relevantes Thema]",
+              "description": "Woche 1: Mehrwert",
+              "content": "Während Sie Angebote evaluieren, dachte ich, Sie finden dies relevant: [Case Study, Benchmark oder Insight direkt bezogen auf ihr Projekt/Herausforderung]. Es bietet zusätzlichen Kontext zu [Ansatz/Methodik], die wir in unserem Angebot skizziert haben."
+            },
+            {
+              "channel": "Email",
+              "title": "Referenz-Verfügbarkeit",
+              "description": "Woche 2: Social Proof",
+              "content": "Als Teil Ihres Evaluationsprozesses verbinden wir Sie gerne mit Referenzen von ähnlichen Engagements. [Kunde 1] stand vor ähnlichen Herausforderungen wie Ihren, und [Kunde 2] kann zu unserer [spezifischen Fähigkeit] sprechen. Lassen Sie mich wissen, ob diese Gespräche hilfreich wären."
+            },
+            {
+              "channel": "SMS",
+              "title": "Fragen zum Angebot?",
+              "description": "Woche 2: Persönlicher Check-in",
+              "content": "Hallo [Name], hoffe die Evaluation läuft gut. Freue mich auf einen kurzen Call, falls Fragen zu unserem Angebot aufgetaucht sind. Hier um zu helfen! - [Ihr Name]"
+            },
+            {
+              "channel": "Email",
+              "title": "Evaluations-Unterstützung",
+              "description": "Woche 3: Proaktive Unterstützung",
+              "content": "Wir wissen, dass Evaluationsprozesse zusätzliche Fragen aufwerfen können. Falls hilfreich, stehen wir für eine Folgediskussion zur Verfügung, um: zusätzliche Fragen zu beantworten, weitere Details zu einem Abschnitt zu geben, oder unseren Ansatz zu klären. Was wäre am nützlichsten?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Interessenten mit ausstehenden Angebotsentscheidungen",
+          "scenario_objective": "Während Entscheidungsfindung präsent bleiben ohne aufdringlich zu sein",
+          "main_messages_ideas": "Sanfte Touchpoints, Relevanter Content, Verfügbarkeits-Signale, Timeline-Check-in",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Dachte, Sie finden das relevant",
+              "description": "Fortlaufend: Mehrwert-Content",
+              "content": "Während Ihre Evaluation fortgesetzt wird, bin ich auf [Artikel/Forschung/Case Study] gestoßen, die direkt relevant für [ihre Herausforderung] ist. Dachte, es könnte nützlich sein, unabhängig davon, in welche Richtung Sie gehen. Keine Antwort nötig - wollte nur teilen."
+            },
+            {
+              "channel": "Email",
+              "title": "Timeline-Check-in",
+              "description": "Basierend auf erwarteter Timeline: Sanftes Follow-up",
+              "content": "Ich wollte mich melden, da wir uns der Timeline nähern, die Sie für eine Entscheidung zu [Projekt] erwähnt haben. Wir bleiben begeistert über die Opportunity und sind bereit, schnell voranzuschreiten, sobald Sie bereit sind. Gibt es etwas, was wir zur Unterstützung Ihres Entscheidungsprozesses liefern können?"
+            },
+            {
+              "channel": "Email",
+              "title": "Team verfügbar für Diskussion",
+              "description": "Falls Timeline sich verlängert: Re-Engagement",
+              "content": "Wir wissen, dass Timelines sich verschieben können, und Auswahlentscheidungen oft länger dauern als erwartet. Unser Team steht für zusätzliche Diskussionen zur Verfügung, die hilfreich wären. Wir sind verpflichtet, diese Entscheidung für Ihr Team so einfach wie möglich zu machen."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Post-Angebots-Entscheidung (gewonnen)",
+          "scenario_objective": "Reibungslosen Übergang von Vertrieb zu Lieferung",
+          "main_messages_ideas": "Danke, Kickoff-Vorbereitung, Team-Vorstellung, Erwartungs-Setting",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Danke für Ihr Vertrauen",
+              "description": "Bei Entscheidung: Dankbarkeit und nächste Schritte",
+              "content": "Vielen Dank, dass Sie [Firmenname] für [Projekt] ausgewählt haben. Wir fühlen uns durch Ihr Vertrauen geehrt und verpflichtet, Ihre Erwartungen zu übertreffen. Was als Nächstes passiert: [Vertragsprozess, Team-Vorstellung, Kickoff-Planung]. Wir werden uns innerhalb von [Zeitrahmen] melden, um zu beginnen."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihr Engagement-Team",
+              "description": "Vor Kickoff: Team-Vorstellung",
+              "content": "Ich freue mich, das Team vorzustellen, das Ihr [Projekt] leiten wird: [Team-Mitglieder mit kurzen Bios]. Jeder bringt [relevante Expertise] mit. Wir werden ein Kickoff-Meeting planen, um uns auf Ziele und Ansatz abzustimmen. In der Zwischenzeit zögern Sie bitte nicht, sich an einen von uns zu wenden."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Post-Angebots-Entscheidung (verloren)",
+          "scenario_objective": "Beziehung aufrechterhalten und aus Verlust lernen",
+          "main_messages_ideas": "Elegante Akzeptanz, Feedback-Anfrage, Zukünftige Beziehung, In Kontakt bleiben",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Danke für die Opportunity",
+              "description": "Bei Verlust-Benachrichtigung: Elegante Antwort",
+              "content": "Vielen Dank, dass Sie uns über Ihre Entscheidung informiert haben, und für die Gelegenheit, unser Angebot zu präsentieren. Wir wünschen Ihnen Erfolg mit [Projekt]. Falls Sie offen dafür sind, würden wir Feedback zu unserem Angebot schätzen - es hilft uns zu verbessern. In jedem Fall hoffen wir, dass sich unsere Wege wieder kreuzen."
+            },
+            {
+              "channel": "Email",
+              "title": "In Verbindung bleiben",
+              "description": "Monat 1: Beziehungspflege",
+              "content": "Wir arbeiten vielleicht nicht zusammen an [Projekt], aber wir würden gerne in Verbindung bleiben. Ich füge Sie unserer Branchen-Insights-Distribution hinzu - relevanter Content ohne Verkaufspitch. Melden Sie sich jederzeit."
+            }
+          ]
+        }
+      ]
     }
   ],
   "how_brevo_helps_you": [

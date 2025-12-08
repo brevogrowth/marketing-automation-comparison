@@ -50,12 +50,18 @@
               "title": "Hot Deal Alert",
               "description": "Day 10: Relevant deal",
               "content": "Deal alert in [their category]! [Product] is [X%] off - one of our top picks and rarely on sale. This matches your Tech Profile perfectly.",
-              "channel": "Email"
+              "channel": "SMS"
             },
             {
               "title": "First Purchase Offer",
               "description": "Day 14: Conversion incentive",
               "content": "Ready to upgrade your tech? Here's 10% off your first order + free expedited shipping. Your personalized picks are waiting!",
+              "channel": "Email"
+            },
+            {
+              "title": "Community Invite",
+              "description": "Day 18: Engagement",
+              "content": "Join the [Brand] Tech Community! Get insider tips, early product previews, and connect with fellow tech enthusiasts. Your Tech Profile unlocks exclusive access.",
               "channel": "Email"
             }
           ]
@@ -82,6 +88,24 @@
               "description": "Day 12: When price drops",
               "content": "Good news! [Product you viewed] just dropped to [price]. This is the lowest we've seen it - grab it before it goes back up.",
               "channel": "SMS"
+            },
+            {
+              "title": "Customer Reviews Spotlight",
+              "description": "Day 15: Social proof",
+              "content": "See what customers are saying about [product you viewed]: 4.8 stars, 2,000+ reviews. Real experiences from people like you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Video Review",
+              "description": "Day 19: Rich content",
+              "content": "Watch our experts unbox and review [product you viewed]. See it in action and decide if it's right for you. 5-minute honest review.",
+              "channel": "Email"
+            },
+            {
+              "title": "Final Nudge",
+              "description": "Day 25: Last attempt",
+              "content": "Still interested in [product]? We've saved it on your wishlist. Get 12% off if you buy this week. Need help deciding? Chat with our experts anytime.",
+              "channel": "Email"
             }
           ]
         },
@@ -101,6 +125,67 @@
               "description": "Day 8: Category spotlight",
               "content": "The best [category] of 2024: Our experts tested them all so you don't have to. See the winners at every price point.",
               "channel": "Email"
+            },
+            {
+              "title": "Tech Trends",
+              "description": "Day 14: Industry insights",
+              "content": "What's trending in tech right now: From AI gadgets to sustainable electronics. Stay ahead of the curve with our trend report.",
+              "channel": "Email"
+            },
+            {
+              "title": "Quiz Nudge",
+              "description": "Day 20: Profile completion",
+              "content": "Want personalized recommendations? Take our 2-minute Tech Profile quiz and we'll show you exactly what matches your needs and budget.",
+              "channel": "SMS"
+            },
+            {
+              "title": "New Arrivals Alert",
+              "description": "Day 28: Product awareness",
+              "content": "Just landed: The newest tech we're excited about. From game-changing innovations to practical upgrades - see what's new this month.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Mobile app users who haven't made first purchase",
+          "scenario_objective": "Drive app-exclusive first purchase",
+          "main_messages_ideas": "App-exclusive deals, Mobile shopping benefits, Push notification setup",
+          "message_sequence": [
+            {
+              "title": "Welcome to Our App!",
+              "description": "Upon app download: App orientation",
+              "content": "Thanks for downloading our app! Here's what you get: Exclusive app-only deals, AR product previews, one-tap reordering, and instant notifications on price drops.",
+              "channel": "Push"
+            },
+            {
+              "title": "App-Only Deal",
+              "description": "Day 2: App incentive",
+              "content": "App exclusive: Extra 15% off your first order when you buy through the app. Plus free shipping. Download-to-doorstep in 48 hours!",
+              "channel": "Push"
+            },
+            {
+              "title": "AR Try Before You Buy",
+              "description": "Day 5: Feature showcase",
+              "content": "Did you know? Use AR to see how that TV fits on your wall or how that speaker looks on your shelf. Try it with any product - tap the AR button.",
+              "channel": "Push"
+            },
+            {
+              "title": "Enable Notifications",
+              "description": "Day 8: Permission request",
+              "content": "Never miss a deal! Enable push notifications for instant alerts on price drops, back-in-stock items, and flash sales in your favorite categories.",
+              "channel": "Email"
+            },
+            {
+              "title": "Barcode Scanner Feature",
+              "description": "Day 12: Advanced feature",
+              "content": "In a store? Scan any product barcode with our app to compare prices, read reviews, and order for home delivery. Shop smarter with [Brand].",
+              "channel": "Push"
+            },
+            {
+              "title": "First Purchase Bonus",
+              "description": "Day 20: Final conversion push",
+              "content": "Ready to make your first purchase? Use code APP20 for 20% off + bonus reward points. Shop the app now!",
+              "channel": "Push"
             }
           ]
         }
@@ -149,6 +234,12 @@
               "channel": "Email"
             },
             {
+              "title": "Expert Consultation",
+              "description": "60 hours: High-touch support",
+              "content": "Still deciding? Book a free 15-minute consultation with our product experts. We'll answer all your questions and help you make the right choice.",
+              "channel": "WhatsApp"
+            },
+            {
               "title": "Final Push",
               "description": "72 hours: Incentive",
               "content": "Last chance: Complete your order now and we'll include free accessories worth $X. Offer expires tonight. Your [product] is waiting!",
@@ -178,6 +269,18 @@
               "description": "48 hours: Incentive",
               "content": "Welcome offer: 12% off your first order + free expedited shipping. Your [product] could be here by [date]. Complete your order!",
               "channel": "Email"
+            },
+            {
+              "title": "Trust Signals",
+              "description": "60 hours: Credibility",
+              "content": "Join 2M+ happy customers! See why we have 4.7 stars and an A+ BBB rating. Plus: 30-day returns, 2-year warranty, lifetime support.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Risk-Free Trial",
+              "description": "70 hours: Remove objections",
+              "content": "Try it risk-free: 30-day return window, no restocking fees. If you don't love [product], send it back. No questions asked.",
+              "channel": "Email"
             }
           ]
         },
@@ -203,13 +306,62 @@
               "description": "When relevant: Urgency",
               "content": "Low stock alert: [Product you viewed] is selling fast. Only [X] left at this price. Don't miss out!",
               "channel": "SMS"
+            },
+            {
+              "title": "Expert Q&A",
+              "description": "72 hours: Support offer",
+              "content": "Need help choosing? Our product experts answer your top questions about [category]. See the Q&A or ask your own.",
+              "channel": "Email"
+            },
+            {
+              "title": "Customer Choice Winner",
+              "description": "96 hours: Social proof",
+              "content": "[Product you viewed] won our Customer Choice Award with 95% satisfaction. See why customers chose it over the competition.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cart abandoners with accessories only",
+          "scenario_objective": "Recover low-value carts with bundle offers",
+          "main_messages_ideas": "Bundle savings, Free shipping threshold, Quick checkout",
+          "message_sequence": [
+            {
+              "title": "Your Accessories Await",
+              "description": "3 hours: Gentle reminder",
+              "content": "Your cart: [accessories]. Quick checkout takes just 2 minutes. Your items ship today if you order within the next 4 hours!",
+              "channel": "Email"
+            },
+            {
+              "title": "Bundle & Save",
+              "description": "24 hours: Upsell",
+              "content": "Add [complementary accessory] to your cart and save 20% on everything. Complete your setup for less!",
+              "channel": "Email"
+            },
+            {
+              "title": "Free Shipping",
+              "description": "36 hours: Incentive",
+              "content": "You're [X] away from free shipping! Add [suggested item] to hit the threshold and save on delivery.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Quick Checkout",
+              "description": "48 hours: Friction reduction",
+              "content": "Complete your order in one tap! Your payment and shipping info are saved. Click here to finish checkout instantly.",
+              "channel": "Email"
+            },
+            {
+              "title": "Last Call",
+              "description": "60 hours: Final attempt",
+              "content": "Your accessories cart expires in 12 hours. Complete now to lock in prices and availability. One-click checkout ready!",
+              "channel": "SMS"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Product Onboarding & Setup Success",
+      "program_name": "Tech Setup & Onboarding Support",
       "target": "All customers after purchase",
       "objective": "Ensure successful product setup, maximize satisfaction, reduce returns to <8%, and drive accessory attach rate",
       "kpi": "Setup completion rate (target: 90%), Return rate (target: <8%), Support ticket volume (reduce by 40%), Accessory attach rate (target: 25%)",
@@ -261,6 +413,12 @@
               "description": "Day 14: Check-in",
               "content": "You've had your [product] for 2 weeks! How's everything working? Any questions? Our tech experts are here 7 days a week. Or leave a review and help others decide!",
               "channel": "Email"
+            },
+            {
+              "title": "Advanced Features Tutorial",
+              "description": "Day 21: Deep dive",
+              "content": "Ready for advanced mode? Unlock the full potential of your [product]: custom shortcuts, automation, pro camera settings. Video tutorials inside.",
+              "channel": "Email"
             }
           ]
         },
@@ -291,6 +449,24 @@
               "title": "Maintenance Tips",
               "description": "Day 14: Care guide",
               "content": "Keep your [computer] running fast for years. Here are our expert maintenance tips: what to do weekly, monthly, and yearly to maximize performance and lifespan.",
+              "channel": "Email"
+            },
+            {
+              "title": "Backup Solution",
+              "description": "Day 21: Data protection",
+              "content": "Protect your files! Set up automatic backups with our recommended solutions - cloud, external drives, and hybrid approaches. Never lose important data.",
+              "channel": "Email"
+            },
+            {
+              "title": "Performance Check",
+              "description": "Day 30: Satisfaction check",
+              "content": "Your [computer] running smoothly? Here's a quick health check guide to ensure optimal performance. Plus, tips to speed things up if needed.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ergonomics Guide",
+              "description": "Day 45: Health focus",
+              "content": "Work comfortably: Ergonomic setup guide for your [computer] workspace. Proper posture, screen height, and accessories to reduce strain.",
               "channel": "Email"
             }
           ]
@@ -323,6 +499,18 @@
               "description": "Day 10: Ecosystem cross-sell",
               "content": "Your [device] works even better with friends! Discover compatible devices that create a seamless smart home experience. Start your connected home.",
               "channel": "Email"
+            },
+            {
+              "title": "Scene Creation",
+              "description": "Day 15: Advanced automation",
+              "content": "Create custom scenes: 'Movie Night,' 'Good Morning,' 'Away Mode.' Control multiple devices with one command or tap.",
+              "channel": "Email"
+            },
+            {
+              "title": "Troubleshooting Tips",
+              "description": "Day 21: Support content",
+              "content": "Common smart home issues - solved! Quick fixes for connectivity, voice control, and automation problems. Bookmark this for future reference.",
+              "channel": "Email"
             }
           ]
         },
@@ -354,13 +542,194 @@
               "description": "Day 10: Cross-sell",
               "content": "Love your [audio product]? Complete your audio ecosystem. From additional speakers to compatible accessories - build your perfect sound system.",
               "channel": "Email"
+            },
+            {
+              "title": "Music Service Integration",
+              "description": "Day 14: Service connections",
+              "content": "Connect your favorite music services: Spotify, Apple Music, Tidal. Get one-tap access to all your playlists from your [audio device].",
+              "channel": "Email"
+            },
+            {
+              "title": "Care & Maintenance",
+              "description": "Day 21: Product care",
+              "content": "Keep your [audio product] in perfect condition: cleaning tips, storage best practices, and how to maintain battery life for years.",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Ecosystem Expansion & Accessory Cross-Sell",
+      "program_name": "Product Registration & Warranty Management",
+      "target": "All customers after purchase who haven't registered products",
+      "objective": "Achieve 60% product registration rate and maximize warranty coverage adoption",
+      "kpi": "Product registration rate (target: 60%), Extended warranty attach rate (target: 25%), Warranty claim satisfaction, Registration completion time",
+      "description": "Strategic program to encourage product registration, educate on warranty benefits, and upsell extended protection while the value is clear.",
+      "scenarios": [
+        {
+          "scenario_target": "High-value electronics purchasers ($500+)",
+          "scenario_objective": "Drive product registration and extended warranty",
+          "main_messages_ideas": "Registration benefits, Quick registration process, Warranty coverage details, Extended protection offer",
+          "message_sequence": [
+            {
+              "title": "Register Your Product",
+              "description": "Day 3: Registration prompt",
+              "content": "Protect your investment! Register your [product] to activate your warranty, get priority support, and receive product-specific tips and updates. Takes 2 minutes.",
+              "channel": "Email"
+            },
+            {
+              "title": "Warranty Activated",
+              "description": "Upon registration: Confirmation",
+              "content": "Your [product] is now registered! Your 1-year warranty is active. Here's what's covered and how to get help if you need it.",
+              "channel": "Email"
+            },
+            {
+              "title": "What Your Warranty Covers",
+              "description": "Day 5: Education",
+              "content": "Know your coverage: Your [product] warranty includes repairs, replacements, and tech support. Here's the complete breakdown and how to file a claim.",
+              "channel": "Email"
+            },
+            {
+              "title": "Extend Your Protection",
+              "description": "Day 10: Extended warranty pitch",
+              "content": "Your [product] cost $[X]. Average repairs cost $[Y]. Extend your warranty to 3 years for just $[Z] - that's protection for [X]% of your purchase price.",
+              "channel": "Email"
+            },
+            {
+              "title": "Registration Reminder",
+              "description": "Day 15 (non-registrants): Follow-up",
+              "content": "Don't lose your warranty! Register your [product] now - you have 30 days from purchase. Missing the deadline means losing free repair coverage.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Real Claim Stories",
+              "description": "Day 20: Social proof",
+              "content": "Why registration matters: Real customers share how warranty coverage saved them hundreds on repairs. Don't skip this important step!",
+              "channel": "Email"
+            },
+            {
+              "title": "Last Chance Extended Warranty",
+              "description": "Day 28: Final offer",
+              "content": "Your 30-day window closes soon! Add extended protection now or you'll lose the option. 3 years of coverage - decide today.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Mid-range product purchasers ($200-500)",
+          "scenario_objective": "Drive registration without aggressive warranty upsell",
+          "main_messages_ideas": "Registration benefits, Support access, Product updates, Optional protection",
+          "message_sequence": [
+            {
+              "title": "Quick Registration",
+              "description": "Day 4: Simple registration prompt",
+              "content": "Activate your [product] warranty in 60 seconds! Register now for priority support, product updates, and exclusive offers.",
+              "channel": "Email"
+            },
+            {
+              "title": "You're Protected",
+              "description": "Upon registration: Confirmation",
+              "content": "Registration complete! Your [product] warranty is now active. Need help? You have priority access to our support team.",
+              "channel": "Email"
+            },
+            {
+              "title": "Support Access",
+              "description": "Day 8: Benefit reminder",
+              "content": "Registered owner benefits: Faster support, longer return windows, and personalized product tips. Check your registered products dashboard.",
+              "channel": "Email"
+            },
+            {
+              "title": "Protection Options",
+              "description": "Day 14: Soft warranty pitch",
+              "content": "Want extra peace of mind? Extend your [product] protection to 2 years for [X]. Covers accidents too - just in case.",
+              "channel": "Email"
+            },
+            {
+              "title": "Registration Expiring",
+              "description": "Day 25 (non-registrants): Urgency",
+              "content": "Only 5 days left! Register your [product] to keep your warranty valid. Don't lose your free protection coverage.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers with multiple unregistered products",
+          "scenario_objective": "Batch registration and account setup",
+          "main_messages_ideas": "Account dashboard, Bulk registration, Product portfolio management",
+          "message_sequence": [
+            {
+              "title": "Manage All Your Products",
+              "description": "After 2nd purchase: Account setup",
+              "content": "You have [X] products from us! Create your product dashboard to register everything, track warranties, and manage your tech in one place.",
+              "channel": "Email"
+            },
+            {
+              "title": "Quick Bulk Registration",
+              "description": "Day 2: Simplified process",
+              "content": "Register all your products at once! Just scan the serial numbers or upload your receipts. All warranties activated in minutes.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Tech Portfolio",
+              "description": "Upon setup: Dashboard overview",
+              "content": "Welcome to your tech command center! See all your products, warranty status, support history, and recommended accessories in one dashboard.",
+              "channel": "Email"
+            },
+            {
+              "title": "Portfolio Protection Plan",
+              "description": "Day 7: Bundle warranty offer",
+              "content": "Protect your entire tech collection! Multi-product warranty plans save you [X]% vs individual coverage. Cover everything you own.",
+              "channel": "Email"
+            },
+            {
+              "title": "Warranty Expiration Alert",
+              "description": "Ongoing: Proactive monitoring",
+              "content": "Heads up: Your [product] warranty expires in 30 days. Here are your renewal options to maintain protection coverage.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Premium product purchasers with manufacturer warranty",
+          "scenario_objective": "Explain premium warranty benefits and additional coverage",
+          "main_messages_ideas": "Premium coverage details, Concierge support, Extended protection value",
+          "message_sequence": [
+            {
+              "title": "Your Premium Warranty",
+              "description": "Day 2: Premium welcome",
+              "content": "Your [premium product] includes premium warranty coverage: 2-year protection, accident coverage, priority service, and white-glove support. Here's everything included.",
+              "channel": "Email"
+            },
+            {
+              "title": "Concierge Support Access",
+              "description": "Day 4: VIP support intro",
+              "content": "Premium perk: You have direct access to our expert concierge team. Same-day response, setup assistance, and troubleshooting. Here's your direct line.",
+              "channel": "Email"
+            },
+            {
+              "title": "Register for Premium Benefits",
+              "description": "Day 6: Registration required",
+              "content": "Activate your premium warranty now! Registration required to access concierge support and extended coverage. Don't miss out - register today.",
+              "channel": "Email"
+            },
+            {
+              "title": "Additional Protection Options",
+              "description": "Day 15: Comprehensive coverage",
+              "content": "Already have 2-year coverage? Extend to 4 years with theft protection, loss coverage, and damage protection. Total peace of mind for your premium device.",
+              "channel": "Email"
+            },
+            {
+              "title": "Premium Care Package",
+              "description": "Day 20: Service bundle",
+              "content": "Premium Care: Add annual maintenance, priority repairs, loaner devices, and data recovery service. VIP treatment for your premium tech.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Accessory & Peripheral Cross-Sell",
       "target": "Customers who purchased primary devices",
       "objective": "Expand customer purchases across product ecosystem with 35% of customers buying compatible accessories/products within 60 days",
       "kpi": "Accessory attach rate (target: 35%), Cross-category purchase rate (target: 20%), Average order value growth, Time between purchases",
@@ -394,6 +763,18 @@
               "description": "Day 50: Charging solutions",
               "content": "Never run out of battery: Portable chargers, wireless charging pads, and car chargers for your [phone]. Stay powered everywhere.",
               "channel": "Email"
+            },
+            {
+              "title": "Photography Accessories",
+              "description": "Day 60: Camera enhancement",
+              "content": "Take better photos: Lens attachments, tripods, and lighting accessories for your [phone]. Pro-quality photos from your pocket.",
+              "channel": "Email"
+            },
+            {
+              "title": "Mounting & Car Solutions",
+              "description": "Day 75: Lifestyle accessories",
+              "content": "Use your [phone] everywhere: Car mounts, bike mounts, waterproof cases. Built for your active lifestyle.",
+              "channel": "Email"
             }
           ]
         },
@@ -424,6 +805,18 @@
               "title": "Gaming Chair & Desk",
               "description": "Day 50: Furniture cross-sell",
               "content": "Game in comfort: Ergonomic gaming chairs and desks that complete your setup. Your back will thank you during those long sessions.",
+              "channel": "Email"
+            },
+            {
+              "title": "Storage Expansion",
+              "description": "Day 60: Technical upgrade",
+              "content": "Running out of space? Expand your [console] storage with these compatible drives. Never delete games again.",
+              "channel": "Email"
+            },
+            {
+              "title": "Streaming Setup",
+              "description": "Day 75: Content creation",
+              "content": "Start streaming: Capture cards, webcams, microphones, and lighting for broadcasting your gameplay. Become a content creator.",
               "channel": "Email"
             }
           ]
@@ -456,13 +849,62 @@
               "description": "Day 60: Advanced devices",
               "content": "You're building something special! Complete your smart home with thermostats, blinds, locks, and more. Everything connected, everything voice-controlled.",
               "channel": "Email"
+            },
+            {
+              "title": "Smart Kitchen",
+              "description": "Day 75: Kitchen ecosystem",
+              "content": "Voice-controlled cooking: Smart plugs, displays, and appliances for your kitchen. Recipe mode, timer management, all hands-free.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Laptop purchasers",
+          "scenario_objective": "Complete workspace ecosystem",
+          "main_messages_ideas": "Monitor setup, Peripherals, Storage solutions, Productivity accessories",
+          "message_sequence": [
+            {
+              "title": "Display Upgrade",
+              "description": "Day 10: Monitor cross-sell",
+              "content": "Double your screen space! Monitors that pair perfectly with your [laptop]. From portable displays to ultrawide setups.",
+              "channel": "Email"
+            },
+            {
+              "title": "Keyboard & Mouse",
+              "description": "Day 20: Peripheral upgrade",
+              "content": "Work comfortably: Ergonomic keyboards and precision mice designed for long hours. Your wrists will thank you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Docking Station",
+              "description": "Day 35: Connectivity solution",
+              "content": "One cable to connect everything: Docking stations that turn your [laptop] into a full desktop setup. Connect all peripherals instantly.",
+              "channel": "Email"
+            },
+            {
+              "title": "Backup & Storage",
+              "description": "Day 50: Data protection",
+              "content": "Protect your files: External SSDs, backup drives, and cloud solutions for your [laptop]. Never lose important work.",
+              "channel": "Email"
+            },
+            {
+              "title": "Laptop Accessories",
+              "description": "Day 65: Lifestyle accessories",
+              "content": "Take your [laptop] anywhere: Protective sleeves, laptop stands, portable chargers, and travel accessories.",
+              "channel": "Email"
+            },
+            {
+              "title": "Webcam & Audio Upgrade",
+              "description": "Day 80: Video conferencing",
+              "content": "Look and sound professional: HD webcams, USB microphones, and lighting for better video calls. Upgrade your WFH setup.",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Upgrade Cycle Marketing",
+      "program_name": "Trade-In & Upgrade Programs",
       "target": "Customers whose products are approaching typical upgrade timing",
       "objective": "Drive upgrade purchases at optimal timing with 25% upgrade conversion rate and high trade-in participation",
       "kpi": "Upgrade conversion rate (target: 25%), Trade-in participation (target: 60%), Average upgrade value, Customer retention through upgrade",
@@ -508,6 +950,12 @@
               "description": "24 months: Urgency",
               "content": "Your trade-in value drops next month! Upgrade now and get maximum value for your [current phone]. This is your best opportunity.",
               "channel": "SMS"
+            },
+            {
+              "title": "Early Upgrade Program",
+              "description": "Alternative: Subscription model",
+              "content": "Always have the latest: Join our upgrade program and get a new phone every 12 months for one monthly payment. No trade-in hassle.",
+              "channel": "Email"
             }
           ]
         },
@@ -539,6 +987,18 @@
               "description": "4 years: Trade-in offer",
               "content": "Your old [computer] still has value! Trade it in for up to $[value] toward a new machine - or we'll recycle it responsibly. Either way, you win.",
               "channel": "Email"
+            },
+            {
+              "title": "Business Tax Deduction",
+              "description": "4 years: Financial angle",
+              "content": "Tax season reminder: Upgrading your work computer? This could be a deductible business expense. Consult your tax advisor and upgrade smart.",
+              "channel": "Email"
+            },
+            {
+              "title": "Migration Service",
+              "description": "Upon upgrade interest: Support offer",
+              "content": "We'll move everything for you: Free migration service transfers all your files, apps, and settings to your new computer. Zero downtime.",
+              "channel": "Email"
             }
           ]
         },
@@ -563,6 +1023,212 @@
               "title": "Upgrade Your Wrist",
               "description": "3 years: Upgrade offer",
               "content": "Time for a new watch! Trade in your current one for up to $[value] and step up to the latest features. Your health journey continues.",
+              "channel": "Email"
+            },
+            {
+              "title": "Style Upgrade",
+              "description": "3 years: Design focus",
+              "content": "New designs, new materials, new colors: The latest smartwatches are slimmer, lighter, and more stylish. See the design evolution.",
+              "channel": "Email"
+            },
+            {
+              "title": "Family Setup",
+              "description": "Alternative angle: Ecosystem",
+              "content": "Pass down your watch: Give your current smartwatch to family and upgrade to the latest. Set up family sharing and keep everyone connected.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Tablet owners at 3-4 years",
+          "scenario_objective": "Drive tablet upgrade with capability comparison",
+          "main_messages_ideas": "Performance leap, New use cases, Accessory ecosystem, Trade-in value",
+          "message_sequence": [
+            {
+              "title": "Tablets Have Evolved",
+              "description": "3 years: Technology progress",
+              "content": "Today's tablets are laptop replacements. See how the latest models compare to your [tablet] - from processing power to versatility.",
+              "channel": "Email"
+            },
+            {
+              "title": "New Capabilities",
+              "description": "3.5 years: Use case expansion",
+              "content": "Do more with a tablet: Pro apps, desktop-class browsing, external monitor support. New tablets blur the line with laptops.",
+              "channel": "Email"
+            },
+            {
+              "title": "Accessory Ecosystem",
+              "description": "3.75 years: Complete solution",
+              "content": "Turn your tablet into a powerhouse: Keyboards, styluses, and stands that transform how you work. See complete tablet systems.",
+              "channel": "Email"
+            },
+            {
+              "title": "Trade-In Value",
+              "description": "4 years: Upgrade offer",
+              "content": "Your [tablet] is worth $[value] toward the latest model. Upgrade to more power, better display, longer battery - for less than you think.",
+              "channel": "Email"
+            },
+            {
+              "title": "Educational Discount",
+              "description": "Segment: Students/educators",
+              "content": "Student/educator pricing: Save [X]% on tablet upgrades plus free accessories. Show your ID and upgrade for less.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Tech Support & Troubleshooting",
+      "target": "All customers, especially those showing signs of product issues",
+      "objective": "Reduce returns by 30%, increase satisfaction, and convert support interactions into upsell opportunities",
+      "kpi": "Support ticket resolution rate (target: 90%), First-contact resolution (target: 70%), Customer satisfaction post-support (target: 4.5/5), Support-to-sale conversion",
+      "description": "Proactive and reactive support program that solves problems quickly, educates customers, and identifies upsell opportunities during support interactions.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers who visit support pages without submitting tickets",
+          "scenario_objective": "Proactive support outreach",
+          "main_messages_ideas": "Common issue solutions, Video tutorials, Live chat offer, Community resources",
+          "message_sequence": [
+            {
+              "title": "Need Help?",
+              "description": "After support page visit: Proactive outreach",
+              "content": "We noticed you were looking for help with [topic]. Here are the most common solutions that resolve this issue in minutes. Still stuck? We're here!",
+              "channel": "Email"
+            },
+            {
+              "title": "Video Tutorial",
+              "description": "2 hours later: Rich support content",
+              "content": "Watch how to fix [issue]: Our 3-minute video tutorial walks through the solution step-by-step. Fixes the problem 90% of the time!",
+              "channel": "Email"
+            },
+            {
+              "title": "Live Chat Available",
+              "description": "24 hours: Direct support offer",
+              "content": "Still having trouble? Our tech experts are online now. Get instant help via chat - average wait time under 2 minutes.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Community Forum",
+              "description": "2 days: Peer support",
+              "content": "Check the community: Other users have solved similar issues with [product]. Browse solutions or ask your own question.",
+              "channel": "Email"
+            },
+            {
+              "title": "Diagnostic Tool",
+              "description": "3 days: Self-service",
+              "content": "Try our diagnostic tool: Answer a few questions and we'll identify the problem and walk you through the fix. Works for most common issues.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers who submitted support tickets",
+          "scenario_objective": "Ensure resolution and gather feedback",
+          "main_messages_ideas": "Ticket confirmation, Resolution updates, Follow-up check, Satisfaction survey",
+          "message_sequence": [
+            {
+              "title": "We're On It",
+              "description": "Immediate: Ticket confirmation",
+              "content": "Support ticket received! We're looking into your [issue] now. Expected response time: [X hours]. Track your ticket status here: [link]",
+              "channel": "Email"
+            },
+            {
+              "title": "Progress Update",
+              "description": "24 hours: Status update",
+              "content": "Update on your support case: We've identified the issue and are working on the solution. You'll hear from us within [timeframe].",
+              "channel": "SMS"
+            },
+            {
+              "title": "Resolution Delivered",
+              "description": "Upon resolution: Solution provided",
+              "content": "Good news! We've resolved your [issue]. Here's the solution and steps to prevent it from happening again. Did this fix your problem?",
+              "channel": "Email"
+            },
+            {
+              "title": "Follow-Up Check",
+              "description": "3 days post-resolution: Satisfaction check",
+              "content": "Quick check-in: Is your [product] working perfectly now? Any other questions? We're here if you need anything else.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Satisfaction Survey",
+              "description": "1 week post-resolution: Feedback collection",
+              "content": "How did we do? Rate your support experience and help us improve. Takes 30 seconds - your feedback matters!",
+              "channel": "Email"
+            },
+            {
+              "title": "Prevention Tips",
+              "description": "2 weeks: Education",
+              "content": "Prevent future issues: Based on your recent support case, here are tips to keep your [product] running smoothly. Bookmark this!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers with recurring issues",
+          "scenario_objective": "Identify upgrade opportunities and retain at-risk customers",
+          "main_messages_ideas": "Product upgrade offer, Extended warranty, Priority support upgrade, Replacement options",
+          "message_sequence": [
+            {
+              "title": "We've Noticed",
+              "description": "After 2nd ticket: Acknowledge frustration",
+              "content": "We see you've had multiple issues with your [product]. We're sorry - you deserve better! Let's find a permanent solution together.",
+              "channel": "Email"
+            },
+            {
+              "title": "Priority Support",
+              "description": "Immediate: VIP treatment",
+              "content": "You're now upgraded to priority support. Direct line to our senior tech team: [contact]. We'll get this resolved once and for all.",
+              "channel": "Email"
+            },
+            {
+              "title": "Replacement Option",
+              "description": "After 3rd issue: Retention offer",
+              "content": "Let's make this right: We'd like to offer you a replacement [product] or upgrade to a newer model at [discount]%. Your satisfaction matters to us.",
+              "channel": "Email"
+            },
+            {
+              "title": "Product Upgrade Path",
+              "description": "Alternative: Upsell opportunity",
+              "content": "Frustrated with [current product]? Upgrade to [better model] with enhanced features and reliability. We'll give you [X]% trade-in value on your current device.",
+              "channel": "Email"
+            },
+            {
+              "title": "Extended Support Package",
+              "description": "Ongoing: Premium support offer",
+              "content": "Get unlimited support: Add our Premium Care package for priority service, advanced troubleshooting, and proactive monitoring. Never struggle alone again.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers researching product compatibility",
+          "scenario_objective": "Answer compatibility questions and cross-sell",
+          "main_messages_ideas": "Compatibility confirmation, Recommended combinations, Setup guides",
+          "message_sequence": [
+            {
+              "title": "Compatibility Confirmed",
+              "description": "After compatibility search: Immediate answer",
+              "content": "Yes, [product A] works with [product B]! Here's what you need to know about connecting them and what features you'll get.",
+              "channel": "Email"
+            },
+            {
+              "title": "Recommended Pairing",
+              "description": "Day 1: Cross-sell opportunity",
+              "content": "Perfect pairing: [Product A] + [Product B] is one of our most popular combinations. Here's why customers love this setup.",
+              "channel": "Email"
+            },
+            {
+              "title": "Setup Guide",
+              "description": "Upon purchase: Success enablement",
+              "content": "Setting up [Product A] with [Product B]: Follow our quick start guide for seamless integration. Works in under 5 minutes!",
+              "channel": "Email"
+            },
+            {
+              "title": "Bundle Offer",
+              "description": "Day 3: Bundle incentive",
+              "content": "Buy together, save more: Get [Product A] + [Product B] as a bundle and save [X]%. Already optimized to work perfectly together.",
               "channel": "Email"
             }
           ]
@@ -610,6 +1276,18 @@
               "description": "Day before shipping: Excitement",
               "content": "Your [product] ships tomorrow! Get ready - here's a sneak peek at the unboxing experience and quick start tips.",
               "channel": "SMS"
+            },
+            {
+              "title": "Delivered!",
+              "description": "Delivery day: Welcome",
+              "content": "Your [new product] has arrived! You're one of the first to experience it. Share your unboxing with #[hashtag] and tag us!",
+              "channel": "Push"
+            },
+            {
+              "title": "Early Adopter Accessories",
+              "description": "Day 3: Cross-sell",
+              "content": "Maximize your [new product]: These accessories are designed specifically for it. Early adopter bundle - save [X]% on the complete set.",
+              "channel": "Email"
             }
           ]
         },
@@ -635,6 +1313,18 @@
               "description": "Day 7: Social proof",
               "content": "Early reviews are calling [new product] '[quote]'. See what experts and customers are saying - and why it's exceeding expectations.",
               "channel": "Email"
+            },
+            {
+              "title": "Stock Alert",
+              "description": "When low: Urgency",
+              "content": "Popular alert: [New product] is selling faster than expected. Order now to secure yours - next shipment not until [date].",
+              "channel": "SMS"
+            },
+            {
+              "title": "Video Review",
+              "description": "Day 14: Rich content",
+              "content": "Watch [new product] in action: Our comprehensive video review shows you everything you need to know. See it before you buy it.",
+              "channel": "Email"
             }
           ]
         },
@@ -653,6 +1343,61 @@
               "title": "Upgrade Comparison",
               "description": "Day 3: Side by side",
               "content": "Your [old product] vs the new [product]: See exactly what's improved and whether the upgrade makes sense for you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Trade-In Bonus",
+              "description": "Day 5: Financial incentive",
+              "content": "Launch week special: 25% trade-in bonus on top of your [old product]'s value. This is the best time to upgrade - offer ends [date].",
+              "channel": "Email"
+            },
+            {
+              "title": "Migration Included",
+              "description": "Day 7: Remove friction",
+              "content": "Upgrade hassle-free: Free data migration from your old [product] to the new one. All your settings, files, apps - transferred automatically.",
+              "channel": "Email"
+            },
+            {
+              "title": "Last Chance Bonus",
+              "description": "Day 13: Final urgency",
+              "content": "Launch week ends tomorrow! Last chance for enhanced trade-in value and bonus accessories. Upgrade your [old product] now.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Waitlist members",
+          "scenario_objective": "Convert waitlist to immediate purchase",
+          "main_messages_ideas": "Now available, Reserved access, Limited time priority",
+          "message_sequence": [
+            {
+              "title": "You're on the List",
+              "description": "Upon waitlist signup: Confirmation",
+              "content": "You're on the [new product] waitlist! You'll get priority access when it launches. Plus, exclusive waitlist perks we'll reveal soon.",
+              "channel": "Email"
+            },
+            {
+              "title": "Waitlist Update",
+              "description": "5 days before launch: Build excitement",
+              "content": "Waitlist exclusive: First look at [new product] specs and pricing. You get 48-hour early access starting [date]. Mark your calendar!",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Turn!",
+              "description": "Launch -48 hours: Early access",
+              "content": "Your waitlist access is now active! Order [new product] before the public launch + get exclusive waitlist bonus worth $[X]. Shop now!",
+              "channel": "Email"
+            },
+            {
+              "title": "Waitlist Access Ending",
+              "description": "Launch -4 hours: Urgency",
+              "content": "Your exclusive access ends in 4 hours! After that, [new product] opens to everyone. Secure yours now with waitlist bonus.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Order Confirmed",
+              "description": "Post-purchase: Affirmation",
+              "content": "Smart move! You secured [new product] during waitlist access. Your exclusive bonus is included. Ships [date].",
               "channel": "Email"
             }
           ]
@@ -690,10 +1435,22 @@
               "channel": "SMS"
             },
             {
+              "title": "What's Covered",
+              "description": "Day 18: Education",
+              "content": "Complete protection includes: Screen repairs, battery replacement, water damage, theft coverage, and next-day replacement. All for less than one repair.",
+              "channel": "Email"
+            },
+            {
               "title": "Last Chance: Free Month",
               "description": "Day 25: Urgency + incentive",
               "content": "5 days left to add protection to your [phone]. Sign up now and get your first month FREE. After [date], you won't be able to add coverage.",
               "channel": "Email"
+            },
+            {
+              "title": "Final Day",
+              "description": "Day 30: Last chance",
+              "content": "TODAY is your last day to add protection to your [phone]. After tonight, this option expires permanently. Protect your $[X] investment now.",
+              "channel": "SMS"
             }
           ]
         },
@@ -721,10 +1478,84 @@
               "channel": "Email"
             },
             {
+              "title": "Claim Examples",
+              "description": "Day 24: Concrete scenarios",
+              "content": "Real claims we've covered: Liquid spills on keyboard ($450 repair), broken screen ($380), failed hard drive ($275). All covered with extended warranty.",
+              "channel": "Email"
+            },
+            {
               "title": "Final Reminder",
               "description": "Day 28: Last chance",
               "content": "Last chance to protect your [laptop]. Enrollment closes in 48 hours. Add coverage now: [link]",
               "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Gaming console purchasers",
+          "scenario_objective": "Add accident protection and extended warranty",
+          "main_messages_ideas": "Gaming wear and tear, Controller coverage, Comprehensive protection",
+          "message_sequence": [
+            {
+              "title": "Game On - Worry Free",
+              "description": "Day 4: Protection introduction",
+              "content": "Your [console] takes a beating during intense gaming sessions. Protect against controller damage, disc drive issues, and hardware failures.",
+              "channel": "Email"
+            },
+            {
+              "title": "What Gamers Claim Most",
+              "description": "Day 12: Relevant scenarios",
+              "content": "Top gaming claims: Controller stick drift, overheating, HDMI port damage, disc drive failures. All covered with our gaming protection plan.",
+              "channel": "Email"
+            },
+            {
+              "title": "Multi-Device Coverage",
+              "description": "Day 20: Bundle offer",
+              "content": "Protect your entire gaming setup: Console + controllers + headset under one plan. Save [X]% vs individual coverage.",
+              "channel": "Email"
+            },
+            {
+              "title": "Enrollment Ending",
+              "description": "Day 28: Urgency",
+              "content": "2 days left to add protection to your [console]. After that, you're on your own for repairs. Protect your gaming investment now.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "TV purchasers without extended warranty",
+          "scenario_objective": "Add extended warranty with burn-in and panel coverage",
+          "main_messages_ideas": "Panel replacement costs, Extended coverage benefits, In-home service",
+          "message_sequence": [
+            {
+              "title": "Protect Your Display",
+              "description": "Day 5: Value protection",
+              "content": "Your [TV] represents a significant investment. Panel replacement can cost $[X] - more than warranty coverage. Protect your viewing experience.",
+              "channel": "Email"
+            },
+            {
+              "title": "Complete TV Coverage",
+              "description": "Day 12: Coverage details",
+              "content": "What's covered: Panel issues, burn-in, power surge damage, pixel problems, and more. Plus: In-home service - we come to you.",
+              "channel": "Email"
+            },
+            {
+              "title": "In-Home Service",
+              "description": "Day 18: Convenience factor",
+              "content": "Never uninstall your TV: Our extended warranty includes in-home service. If something breaks, we fix it in your living room - or replace it.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wall Mount Coverage",
+              "description": "Day 22: Additional benefit",
+              "content": "Wall mounted your TV? Extended warranty covers remounting if we need to replace your TV. Full service, zero hassle.",
+              "channel": "Email"
+            },
+            {
+              "title": "Coverage Ends Soon",
+              "description": "Day 27: Final notice",
+              "content": "3 days left to add extended warranty to your [TV]. After [date], this option expires. Protect your $[X] investment now.",
+              "channel": "Email"
             }
           ]
         }
@@ -765,6 +1596,18 @@
               "description": "Monthly: Engagement",
               "content": "VIP Update: You have [X] points to redeem. Here's what they can get you - from accessories to exclusive discounts. Use them before they expire!",
               "channel": "Email"
+            },
+            {
+              "title": "VIP Exclusive Event",
+              "description": "Quarterly: Special access",
+              "content": "VIP-only event: Join our virtual tech showcase on [date]. See upcoming products, ask questions directly to product managers, and get exclusive deals.",
+              "channel": "Email"
+            },
+            {
+              "title": "Anniversary Gift",
+              "description": "VIP anniversary: Celebration",
+              "content": "1 year as VIP! Here's a special gift: [reward]. Thank you for being one of our most valued tech enthusiasts.",
+              "channel": "Email"
             }
           ]
         },
@@ -789,6 +1632,86 @@
               "title": "Last Chance",
               "description": "7 days before: Urgency",
               "content": "7 days to keep VIP status! Make any purchase to lock in your benefits for another year. Don't lose free shipping and early access!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Special Qualification Offer",
+              "description": "72 hours before: Final opportunity",
+              "content": "Special offer to maintain VIP: Spend $[X] and we'll add bonus points to guarantee your status. Plus, get [reward]. Last chance!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "New loyalty program members",
+          "scenario_objective": "Educate on program and drive first point redemption",
+          "main_messages_ideas": "Welcome to rewards, How to earn, Redemption options, First purchase bonus",
+          "message_sequence": [
+            {
+              "title": "Welcome to Tech Rewards",
+              "description": "Upon enrollment: Program introduction",
+              "content": "You're in! Earn points on every purchase, get exclusive deals, and unlock VIP benefits. Here's how our rewards program works.",
+              "channel": "Email"
+            },
+            {
+              "title": "Earn Your First Points",
+              "description": "Day 2: Quick wins",
+              "content": "Quick ways to earn points: Complete your profile (+100), download our app (+50), make a purchase (5% back), write a review (+25). Start earning now!",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Points Balance",
+              "description": "After first points: Milestone",
+              "content": "You have [X] points! Here's what you can redeem: $[Y] off accessories, free shipping, exclusive discounts. Start using your points.",
+              "channel": "Email"
+            },
+            {
+              "title": "Path to VIP",
+              "description": "Day 14: Aspiration",
+              "content": "You're [X]% of the way to VIP status! Here's what you'll unlock: 5% back, free shipping, early access, and more. Keep going!",
+              "channel": "Email"
+            },
+            {
+              "title": "First Redemption Bonus",
+              "description": "Day 21: Redemption incentive",
+              "content": "Redeem your first reward this week and get 50 bonus points! See what your points can get you - from discounts to exclusive products.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Members with expiring points",
+          "scenario_objective": "Drive point redemption before expiration",
+          "main_messages_ideas": "Expiration warning, Redemption options, Use it or lose it",
+          "message_sequence": [
+            {
+              "title": "Points Expiring Soon",
+              "description": "90 days before: Early warning",
+              "content": "[X] points expiring in 3 months! Don't let them go to waste. Here's what you can redeem them for right now.",
+              "channel": "Email"
+            },
+            {
+              "title": "Redemption Ideas",
+              "description": "60 days before: Inspiration",
+              "content": "Turn your points into tech: Free accessories, discounts on upgrades, or exclusive products. Browse the rewards catalog now.",
+              "channel": "Email"
+            },
+            {
+              "title": "Last Month",
+              "description": "30 days before: Urgency building",
+              "content": "1 month until [X] points expire! Use them now or lose them forever. Quick redemption: apply to any purchase at checkout.",
+              "channel": "Email"
+            },
+            {
+              "title": "Final Week",
+              "description": "7 days before: Final warning",
+              "content": "URGENT: [X] points expire in 7 days! Redeem now - even for partial payment. Don't let your rewards go to waste!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Last Day",
+              "description": "24 hours before: Last chance",
+              "content": "FINAL NOTICE: [X] points expire TONIGHT! Use them in the next 24 hours or lose them forever. Redeem now: [link]",
               "channel": "SMS"
             }
           ]
@@ -824,6 +1747,18 @@
               "description": "Day 400: Incentive",
               "content": "We miss you! Here's 15% off your next purchase - whether you're upgrading, adding to your setup, or trying something new.",
               "channel": "Email"
+            },
+            {
+              "title": "What's New in [Category]",
+              "description": "Day 420: Product awareness",
+              "content": "You used to love [category]. Check out the latest innovations: [new products]. Technology has come a long way since your last visit.",
+              "channel": "Email"
+            },
+            {
+              "title": "We'd Love Your Feedback",
+              "description": "Day 450: Engagement attempt",
+              "content": "Quick question: Why did you stop shopping with us? Your honest feedback helps us improve. Complete our 2-minute survey and get [reward].",
+              "channel": "Email"
             }
           ]
         },
@@ -848,6 +1783,80 @@
               "title": "Update Preferences",
               "description": "Day 580: List hygiene",
               "content": "Want different content from us? Update your preferences: A) Tech deals only, B) New product alerts, C) Unsubscribe. We'll respect your choice.",
+              "channel": "Email"
+            },
+            {
+              "title": "Last Email",
+              "description": "Day 600: Final attempt",
+              "content": "This is our last email. If you want to stay connected, click here. Otherwise, we'll remove you from our list. Thank you for being a customer!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "High-value customers now inactive",
+          "scenario_objective": "Premium win-back with VIP treatment",
+          "main_messages_ideas": "VIP recognition, Personal outreach, Premium incentives, Account manager",
+          "message_sequence": [
+            {
+              "title": "We Value You",
+              "description": "Day 365: Personal touch",
+              "content": "As one of our top customers, we've noticed you haven't been around. Is there anything we can do better? Your feedback matters to us.",
+              "channel": "Email"
+            },
+            {
+              "title": "VIP Welcome Back",
+              "description": "Day 380: Status restoration",
+              "content": "Your VIP status is still active! Here's what you're missing: Early access to launches, exclusive deals, concierge support. Come back and use your benefits.",
+              "channel": "Email"
+            },
+            {
+              "title": "Personal Account Manager",
+              "description": "Day 400: Premium service",
+              "content": "We'd like to assign you a dedicated account manager. Personal service, priority support, and exclusive access. Let us win back your business.",
+              "channel": "Email"
+            },
+            {
+              "title": "Exclusive Win-Back Offer",
+              "description": "Day 420: Premium incentive",
+              "content": "Just for you: 25% off your next purchase + free premium accessories + extended warranty. This offer was created specifically for valued customers like you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Direct Outreach",
+              "description": "Day 450: Personal call",
+              "content": "Our team would love to speak with you personally. Book a 15-minute call to discuss how we can serve you better - plus get [reward] for your time.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers who abandoned mid-purchase journey",
+          "scenario_objective": "Understand barriers and remove friction",
+          "main_messages_ideas": "Purchase intent recognition, Barrier removal, Simplified return",
+          "message_sequence": [
+            {
+              "title": "We Remember",
+              "description": "Day 365: Purchase intent",
+              "content": "You were close to buying [product] last year. It's still here - now with better features and a better price. Want to take another look?",
+              "channel": "Email"
+            },
+            {
+              "title": "What Stopped You?",
+              "description": "Day 380: Feedback request",
+              "content": "Quick survey: What almost made you buy but stopped you? Price? Features? Something else? Help us improve and get [reward].",
+              "channel": "Email"
+            },
+            {
+              "title": "Barrier Removed",
+              "description": "Day 400: Objection handling",
+              "content": "Based on common feedback: We now offer better financing, extended returns, and price matching. The reasons you didn't buy - we've fixed them.",
+              "channel": "Email"
+            },
+            {
+              "title": "Try Risk-Free",
+              "description": "Day 420: Remove all risk",
+              "content": "No risk trial: Buy [product], try it for 60 days, return free if you don't love it. No questions asked. This is our commitment to you.",
               "channel": "Email"
             }
           ]
@@ -883,6 +1892,18 @@
               "description": "Day 35: UGC request",
               "content": "We'd love to see your setup! Share a photo with #[Brand]Tech for a chance to be featured and win a $100 gift card.",
               "channel": "Email"
+            },
+            {
+              "title": "Review Reminder",
+              "description": "Day 45: Follow-up for non-reviewers",
+              "content": "Quick reminder: Would you recommend [product] to a friend? Leave a quick review (30 seconds) and earn bonus points. Your feedback helps others!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Referral Success",
+              "description": "When friend purchases: Reward notification",
+              "content": "Great news! Your friend just made their first purchase using your referral. You've earned $25 in rewards. Keep sharing!",
+              "channel": "Email"
             }
           ]
         },
@@ -901,6 +1922,86 @@
               "title": "Ambassador Welcome",
               "description": "Upon signup: Onboarding",
               "content": "Welcome to the [Brand] Ambassador family! Here's your toolkit: unique referral code, product samples, and direct line to our team.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your First Commission",
+              "description": "After first referral sale: Milestone",
+              "content": "You earned your first commission! $[X] has been added to your account. Here's how to maximize your earnings as an ambassador.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ambassador Resources",
+              "description": "Ongoing: Support",
+              "content": "New ambassador resources: High-res product photos, review videos, and talking points for [new product]. Share with your audience!",
+              "channel": "Email"
+            },
+            {
+              "title": "Ambassador Spotlight",
+              "description": "Monthly: Recognition",
+              "content": "Ambassador spotlight: [Name] shared [product] with their network and earned $[X] this month. See top performers and tips to boost your commissions.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Recent reviewers with positive feedback",
+          "scenario_objective": "Amplify positive reviews and generate more content",
+          "main_messages_ideas": "Review appreciation, Video review request, Social amplification",
+          "message_sequence": [
+            {
+              "title": "Thank You!",
+              "description": "Upon review submission: Appreciation",
+              "content": "Thank you for your review! Your points have been added. Want to go further? Create a video review for 5x the points!",
+              "channel": "Email"
+            },
+            {
+              "title": "Video Review Invite",
+              "description": "3 days after text review: Upgrade opportunity",
+              "content": "Your review was helpful! Want to create a video version? Just 30-60 seconds showing [product] in action. Earn [X] points + featured status.",
+              "channel": "Email"
+            },
+            {
+              "title": "Featured Review",
+              "description": "If selected: Recognition",
+              "content": "Your review has been featured on our site! Thousands will see your recommendation. Thank you for being part of our community.",
+              "channel": "Email"
+            },
+            {
+              "title": "Share Your Review",
+              "description": "Day 7: Social amplification",
+              "content": "Share your review on social media and tag us! We'll reshare it with our community plus you'll earn bonus points. Spread the word!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers with referrals in progress",
+          "scenario_objective": "Maximize referral conversion",
+          "main_messages_ideas": "Referral status, Conversion tips, Incentive reminders",
+          "message_sequence": [
+            {
+              "title": "Your Referrals",
+              "description": "Weekly: Status update",
+              "content": "Referral update: [X] friends have clicked your link! Here's how to help them make their first purchase and unlock your rewards.",
+              "channel": "Email"
+            },
+            {
+              "title": "Boost Your Referrals",
+              "description": "Ongoing: Tips",
+              "content": "Maximize your referrals: Personal messages work best! Try: 'Just got [product] and love it! Use my link for $25 off: [link]'",
+              "channel": "Email"
+            },
+            {
+              "title": "Limited Time Bonus",
+              "description": "Campaign periods: Urgency",
+              "content": "This week only: Double referral rewards! Earn $50 for each friend who makes their first purchase. Share your link now!",
+              "channel": "Email"
+            },
+            {
+              "title": "Referral Milestone",
+              "description": "After 5 referrals: Achievement",
+              "content": "You've referred 5 friends! Here's a special thank you: [bonus reward]. Keep sharing - the more you refer, the more you earn!",
               "channel": "Email"
             }
           ]
@@ -944,9 +2045,21 @@
               "channel": "SMS"
             },
             {
+              "title": "Doorbuster Alert",
+              "description": "Peak hours: High-value deals",
+              "content": "Doorbuster NOW: [Premium product] at lowest price ever. Limited quantity - first come, first served. Shop now!",
+              "channel": "Push"
+            },
+            {
               "title": "Final Hours",
               "description": "End of sale: Urgency",
               "content": "Last chance! [Sale Event] ends tonight at midnight. Don't miss out - your cart items may not be on sale again.",
+              "channel": "Email"
+            },
+            {
+              "title": "Extended for You",
+              "description": "Post-sale: Cart recovery",
+              "content": "Special extension: [Sale Event] prices extended 24 hours just for you. Complete your cart now and save!",
               "channel": "Email"
             }
           ]
@@ -967,6 +2080,267 @@
               "description": "Weekly: Curated deals",
               "content": "This week's best deals in [their categories]: Hand-picked by our team. New deals every week - here's what's worth grabbing.",
               "channel": "Email"
+            },
+            {
+              "title": "Lightning Deal Preview",
+              "description": "1 hour before: Early alert",
+              "content": "Heads up: [Product you viewed] goes on Lightning Deal in 1 hour. Set your alarm - these sell out in minutes!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Back in Stock Deal",
+              "description": "When available: Opportunity alert",
+              "content": "It's back! [Product from your wishlist] is back in stock AND on sale. Get it now before it sells out again.",
+              "channel": "Push"
+            },
+            {
+              "title": "Bundle Deal",
+              "description": "During sales: Bundle opportunity",
+              "content": "Bundle & save more: [Product A] + [Product B] = [X]% off. These work perfectly together - get both during the sale.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "VIP customers during sales",
+          "scenario_objective": "Maximize VIP sales with exclusive benefits",
+          "main_messages_ideas": "Extra VIP discount, Best deal guarantee, Exclusive products",
+          "message_sequence": [
+            {
+              "title": "VIP Sale Access",
+              "description": "48 hours before: Early access",
+              "content": "VIP perk activated! Shop [Sale Event] deals 48 hours early. Plus: Take an extra 10% off sale prices. VIP-only access starts now!",
+              "channel": "Email"
+            },
+            {
+              "title": "VIP-Only Deals",
+              "description": "During sale: Exclusive offers",
+              "content": "VIP exclusive: These deals are for you only. Premium products at deeper discounts - not available to the public.",
+              "channel": "Email"
+            },
+            {
+              "title": "Concierge Shopping",
+              "description": "During sale: Personal service",
+              "content": "VIP Concierge: Can't find what you want? Text our VIP team and they'll help you find the best deals for your needs. Personal shopping service.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Extended Sale",
+              "description": "Post-sale: VIP extension",
+              "content": "VIP-only extension: Sale prices extended 48 hours just for VIPs. Keep shopping at sale prices while everyone else pays full price.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers with abandoned sale carts",
+          "scenario_objective": "Recover sale cart abandonment",
+          "main_messages_ideas": "Cart preservation, Deal expiration warning, Final discount",
+          "message_sequence": [
+            {
+              "title": "Your Sale Cart",
+              "description": "2 hours: Cart reminder",
+              "content": "Your [Sale Event] cart is saved! Total savings: $[X]. Complete your order before deals expire at midnight.",
+              "channel": "Email"
+            },
+            {
+              "title": "Deals Ending Soon",
+              "description": "4 hours before end: Urgency",
+              "content": "WARNING: Items in your cart go back to regular price in 4 hours. Save $[X] - checkout now!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Extra Savings",
+              "description": "2 hours before end: Final push",
+              "content": "Complete your sale cart now and get free upgraded shipping! Your $[X] in savings expires in 2 hours. Checkout now!",
+              "channel": "Push"
+            },
+            {
+              "title": "Deals Expired - Special Extension",
+              "description": "Post-sale: Recovery",
+              "content": "We saved your sale cart! Exclusive 24-hour extension: Complete your order and get sale prices even though the event ended. Just for you.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Seasonal & Gift Programs",
+      "target": "All customers during holiday and gifting seasons",
+      "objective": "Maximize seasonal revenue through gift guides, registries, and timely promotions",
+      "kpi": "Holiday season revenue (target: 40% of annual), Gift wrap attach rate (target: 30%), Gift recipient conversion (target: 20%), Return rate (target: <5%)",
+      "description": "Seasonal campaigns tailored to gifting occasions, featuring gift guides, registries, guaranteed delivery dates, and recipient conversion strategies.",
+      "scenarios": [
+        {
+          "scenario_target": "All customers during holiday season (Nov-Dec)",
+          "scenario_objective": "Drive gift purchases with timely urgency",
+          "main_messages_ideas": "Gift guides, Delivery deadlines, Gift wrapping, Last-minute options",
+          "message_sequence": [
+            {
+              "title": "Holiday Gift Guide",
+              "description": "Early November: Gift inspiration",
+              "content": "The Ultimate Tech Gift Guide: Gifts for everyone on your list - from gadget lovers to tech beginners. Shop early for best selection!",
+              "channel": "Email"
+            },
+            {
+              "title": "Guaranteed Delivery Dates",
+              "description": "Mid-November: Planning",
+              "content": "Don't miss the holidays! Order by these dates for guaranteed delivery: Dec 15 (standard), Dec 20 (expedited), Dec 23 (express). Plan ahead!",
+              "channel": "Email"
+            },
+            {
+              "title": "Price Match Through Holidays",
+              "description": "Black Friday period: Confidence building",
+              "content": "Shop with confidence: Our holiday price match guarantee. If prices drop before Dec 25, we'll refund the difference. Buy now, no regrets!",
+              "channel": "Email"
+            },
+            {
+              "title": "Free Gift Wrapping",
+              "description": "December: Value add",
+              "content": "Make it special: Free gift wrapping on all orders this week. Professional wrapping, personal messages included. Ready-to-give tech gifts!",
+              "channel": "Email"
+            },
+            {
+              "title": "Delivery Deadline Alert",
+              "description": "Dec 18: Urgency",
+              "content": "Last call for standard shipping! Order in the next 48 hours for delivery before Dec 25. After that, expedited shipping only.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Last-Minute Gift Ideas",
+              "description": "Dec 21: Digital solutions",
+              "content": "Running out of time? Digital gift cards deliver instantly via email. Let them choose their perfect tech gift. Send in minutes!",
+              "channel": "Email"
+            },
+            {
+              "title": "Express Shipping Cutoff",
+              "description": "Dec 23: Final alert",
+              "content": "FINAL DAY for Christmas delivery! Order by 2pm today with express shipping. After this, gift cards only. Shop now!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Gift Card Instant Delivery",
+              "description": "Dec 24: Last resort",
+              "content": "Last-minute gift solution: Digital gift cards delivered instantly. Choose amount, add personal message, send now. Perfect for tech lovers!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Gift recipients (identified by gift messages/shipping)",
+          "scenario_objective": "Convert gift recipients to direct customers",
+          "main_messages_ideas": "Welcome gift recipient, Create account offer, Accessories for their gift, Next purchase discount",
+          "message_sequence": [
+            {
+              "title": "Welcome Gift Recipient!",
+              "description": "7 days after delivery: Gentle introduction",
+              "content": "Congratulations on your new [product]! We hope you love it. Here's your quick setup guide plus tips to get the most from your gift.",
+              "channel": "Email"
+            },
+            {
+              "title": "Perfect Accessories",
+              "description": "14 days: Relevant cross-sell",
+              "content": "Maximize your [gifted product]: These accessories pair perfectly with your new device. From cases to cables - complete your setup.",
+              "channel": "Email"
+            },
+            {
+              "title": "Create Your Account",
+              "description": "21 days: Account creation",
+              "content": "Enjoying your gift? Create your free account to register your product, get warranty coverage, and unlock exclusive deals. Takes 2 minutes!",
+              "channel": "Email"
+            },
+            {
+              "title": "First Purchase Offer",
+              "description": "30 days: Conversion incentive",
+              "content": "Welcome offer for you: 15% off your first personal purchase + free shipping. Thanks for being introduced to [Brand]!",
+              "channel": "Email"
+            },
+            {
+              "title": "Gift Giver Appreciation",
+              "description": "45 days: Referral opportunity",
+              "content": "Love what you received? Send a thank-you gift back! Give [gift giver] $25 off their next order. Show your appreciation with tech!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers creating gift registries/wishlists",
+          "scenario_objective": "Maximize registry completion and purchases",
+          "main_messages_ideas": "Registry tools, Share prompts, Purchase notifications, Completion incentives",
+          "message_sequence": [
+            {
+              "title": "Registry Created!",
+              "description": "Upon creation: Setup guidance",
+              "content": "Your gift registry is ready! Here's how to share it with friends and family. Plus: Get 10% off anything left on your registry after your event.",
+              "channel": "Email"
+            },
+            {
+              "title": "Share Your Registry",
+              "description": "Day 2: Sharing encouragement",
+              "content": "Don't be shy! Share your registry with your network. Easy sharing via email, social, or custom link. The more you share, the more gifts you get!",
+              "channel": "Email"
+            },
+            {
+              "title": "Registry Purchase Alert",
+              "description": "When item purchased: Excitement",
+              "content": "Someone just purchased [item] from your registry! Surprise maintained - we won't tell you who. Track your registry completion here.",
+              "channel": "Email"
+            },
+            {
+              "title": "Add More Items",
+              "description": "Weekly: Registry optimization",
+              "content": "Registry tip: Include items at multiple price points so everyone can participate. Here are popular registry additions in your categories.",
+              "channel": "Email"
+            },
+            {
+              "title": "Completion Discount",
+              "description": "Post-event: Incentive",
+              "content": "Complete your setup: Get 10% off anything remaining on your registry. Plus, free shipping on registry completion orders!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Students during back-to-school season (Jul-Sep)",
+          "scenario_objective": "Drive student/education purchases",
+          "main_messages_ideas": "Student discounts, Dorm essentials, Study tech, Parent communications",
+          "message_sequence": [
+            {
+              "title": "Student Discount Verified",
+              "description": "Upon verification: Welcome",
+              "content": "Student discount activated! Save 10-15% on tech for school. From laptops to tablets to accessories - we've got your back.",
+              "channel": "Email"
+            },
+            {
+              "title": "Back-to-School Essentials",
+              "description": "July: Early planning",
+              "content": "Prepare for success: The ultimate back-to-school tech checklist. Everything you need for your dorm, classes, and studying.",
+              "channel": "Email"
+            },
+            {
+              "title": "Dorm Room Tech",
+              "description": "Early August: Dorm focus",
+              "content": "Dorm essentials: Compact tech that fits small spaces. Smart speakers, mini fridges, portable chargers, and space-saving solutions.",
+              "channel": "Email"
+            },
+            {
+              "title": "Parent Bundle Deals",
+              "description": "Mid-August: Family purchases",
+              "content": "Parents: Send your student off with everything they need. Bundle laptop + accessories + essentials and save 20%. Complete tech package.",
+              "channel": "Email"
+            },
+            {
+              "title": "Last-Minute Study Tech",
+              "description": "Late August: Urgency",
+              "content": "School starts soon! Last-minute study tech: Noise-canceling headphones, tablet for notes, portable chargers. Shop now with fast shipping!",
+              "channel": "Email"
+            },
+            {
+              "title": "Student Success Package",
+              "description": "September: Semester start",
+              "content": "Start strong: Productivity apps, study accessories, and tech tips for academic success. Plus: Mid-semester sale preview just for students.",
+              "channel": "Email"
             }
           ]
         }
@@ -977,33 +2351,63 @@
     {
       "scenario_name": "Welcome & Tech Profile",
       "why_brevo_is_better": "Brevo's advanced survey integration captures tech preferences and current ecosystem information, immediately routing customers into personalized journeys. Dynamic content shows different products based on their tech profile across all communications.",
-      "omnichannel_channels": "Email for detailed product content + SMS for flash deals and stock alerts + Push for price drops",
+      "omnichannel_channels": "Email for detailed product content + SMS for flash deals and stock alerts + Push for price drops + WhatsApp for customer support",
       "setup_efficiency": "Pre-built electronics templates with product category logic help you launch quickly. Integration with your product feed enables real-time inventory and pricing updates."
     },
     {
-      "scenario_name": "Product Onboarding & Setup",
-      "why_brevo_is_better": "Product-based automation ensures every customer receives tailored onboarding content based on their specific purchase. Video integration, PDF guides, and dynamic content create comprehensive support sequences.",
-      "omnichannel_channels": "Email for detailed setup guides + SMS for quick tips + Push for feature discovery",
+      "scenario_name": "Product Registration & Warranty",
+      "why_brevo_is_better": "Purchase-triggered workflows automatically prompt registration at optimal times. Integration with warranty systems enables personalized coverage recommendations based on product value and customer profile.",
+      "omnichannel_channels": "Email for detailed warranty information + SMS for registration reminders + On-site widgets for registration prompts",
+      "setup_efficiency": "Automated triggers based on purchase date and product category. Pre-built warranty education sequences reduce support burden while increasing attach rates."
+    },
+    {
+      "scenario_name": "Tech Setup & Onboarding",
+      "why_brevo_is_better": "Product-based automation ensures every customer receives tailored onboarding content based on their specific purchase. Video integration, PDF guides, and dynamic content create comprehensive support sequences that reduce returns and support tickets.",
+      "omnichannel_channels": "Email for detailed setup guides + SMS for quick tips + Push for feature discovery + WhatsApp for setup support",
       "setup_efficiency": "Content templates by product category make it easy to maintain quality across your entire catalog. Integration with support systems reduces ticket volume automatically."
     },
     {
-      "scenario_name": "Upgrade Cycle Marketing",
-      "why_brevo_is_better": "Purchase-date triggers enable perfectly timed upgrade communications based on product lifecycle. Integration with trade-in systems provides real-time value estimates for personalization.",
-      "omnichannel_channels": "Email for detailed comparisons + SMS for trade-in value alerts + Push for limited time offers",
-      "setup_efficiency": "Set up once and automation handles timing. Triggers fire automatically based on purchase date, product category, and customer engagement."
+      "scenario_name": "Trade-In & Upgrade Programs",
+      "why_brevo_is_better": "Purchase-date triggers enable perfectly timed upgrade communications based on product lifecycle. Integration with trade-in systems provides real-time value estimates for personalization. Automated comparison content shows exactly what customers gain with upgrades.",
+      "omnichannel_channels": "Email for detailed comparisons + SMS for trade-in value alerts + Push for limited time offers + WhatsApp for upgrade consultations",
+      "setup_efficiency": "Set up once and automation handles timing. Triggers fire automatically based on purchase date, product category, and customer engagement. Trade-in API integration personalizes offers."
+    },
+    {
+      "scenario_name": "Tech Support & Troubleshooting",
+      "why_brevo_is_better": "Behavioral triggers detect support page visits and proactively offer help before customers get frustrated. Integration with help desk systems creates closed-loop support communication. Support interactions trigger personalized upsell sequences when appropriate.",
+      "omnichannel_channels": "Email for detailed solutions + SMS for ticket updates + Push for resolution notifications + WhatsApp for live support",
+      "setup_efficiency": "Pre-built support templates for common issues reduce response time. Integration with knowledge base automatically surfaces relevant articles. Support-to-sale workflows convert help interactions into revenue."
     },
     {
       "scenario_name": "New Product Launch",
-      "why_brevo_is_better": "Segment-based automation ensures VIPs get early access while general subscribers receive appropriate messaging. Pre-order tracking and launch day coordination are built into workflows.",
-      "omnichannel_channels": "Email for launch announcements + SMS for availability alerts + Push for pre-order updates",
-      "setup_efficiency": "Launch templates with built-in countdown timers and inventory integration. Automatic segment creation based on category interest and purchase history."
+      "why_brevo_is_better": "Segment-based automation ensures VIPs get early access while general subscribers receive appropriate messaging. Pre-order tracking and launch day coordination are built into workflows. Waitlist management automates the entire pre-launch funnel.",
+      "omnichannel_channels": "Email for launch announcements + SMS for availability alerts + Push for pre-order updates + On-site widgets for waitlist signups",
+      "setup_efficiency": "Launch templates with built-in countdown timers and inventory integration. Automatic segment creation based on category interest and purchase history. One campaign serves all customer segments with appropriate timing."
+    },
+    {
+      "scenario_name": "Loyalty & Tech Rewards",
+      "why_brevo_is_better": "Real-time points balance integration personalizes every communication. Tier advancement triggers celebrate milestones and activate new benefits. Expiration warnings ensure maximum point redemption. Behavioral tracking identifies VIP candidates automatically.",
+      "omnichannel_channels": "Email for points updates + SMS for tier achievements + Push for point expiration alerts + On-site widgets for redemption prompts",
+      "setup_efficiency": "Loyalty platform integration synchronizes points and tier status. Pre-built milestone campaigns celebrate achievements. Automated expiration sequences maximize engagement and prevent point waste."
     },
     {
       "scenario_name": "Deal & Flash Sale Events",
-      "why_brevo_is_better": "Real-time price drop triggers and inventory integration enable personalized deal alerts. Dynamic content shows relevant deals based on browsing history and tech profile.",
-      "omnichannel_channels": "Email for deal digests + SMS for flash deals + Push for price drops on wishlist items",
-      "setup_efficiency": "Sale event templates with countdown timers, inventory warnings, and personalized picks. Integration with e-commerce platform for real-time deal data."
+      "why_brevo_is_better": "Real-time price drop triggers and inventory integration enable personalized deal alerts. Dynamic content shows relevant deals based on browsing history and tech profile. VIP segmentation provides early access automatically. Cart preservation during sales recovers more revenue.",
+      "omnichannel_channels": "Email for deal digests + SMS for flash deals + Push for price drops on wishlist items + On-site widgets for countdown timers",
+      "setup_efficiency": "Sale event templates with countdown timers, inventory warnings, and personalized picks. Integration with e-commerce platform for real-time deal data. Automated VIP early access sequences."
+    },
+    {
+      "scenario_name": "Accessory Cross-Sell",
+      "why_brevo_is_better": "Purchase history analysis automatically identifies compatible accessories and optimal timing for cross-sell. Ecosystem mapping shows customers their next logical purchase. Bundling logic increases average order value through smart recommendations.",
+      "omnichannel_channels": "Email for product showcases + SMS for limited-time accessory deals + Push for compatibility notifications + On-site widgets for bundle offers",
+      "setup_efficiency": "Product relationship mapping powers automated recommendations. Time-based triggers ensure accessories are offered at peak interest moments. Integration with product catalog ensures accurate compatibility."
+    },
+    {
+      "scenario_name": "Seasonal & Gift Programs",
+      "why_brevo_is_better": "Gift detection automatically identifies recipients and triggers conversion sequences. Registry integration manages the complete gifting lifecycle. Seasonal calendars automate holiday campaigns with guaranteed delivery date logic. Gift wrap upsells at checkout increase average order value.",
+      "omnichannel_channels": "Email for gift guides + SMS for delivery updates + Push for last-minute gift reminders + On-site widgets for gift options",
+      "setup_efficiency": "Pre-built holiday campaigns launch with date automation. Gift recipient detection and conversion workflows run automatically. Registry management tools handle sharing and completion incentives."
     }
   ],
-  "conclusion": "Electronics retailers that implement these relationship marketing programs can expect significantly higher customer lifetime value through strategic upgrade cycles, reduced returns through comprehensive onboarding, and stronger accessory attach rates through ecosystem marketing. The key to success in tech retail is treating customers as tech enthusiasts who value expertise and support - not just transaction targets. By combining personalized recommendations, perfectly-timed upgrade marketing, and exceptional post-purchase support, you build the kind of trust that makes customers return for every tech need. In a market where products are often commoditized, the customer relationship becomes your competitive advantage."
+  "conclusion": "Electronics retailers that implement these comprehensive relationship marketing programs can expect significantly higher customer lifetime value through strategic upgrade cycles, reduced returns through exceptional onboarding support, stronger accessory attach rates through ecosystem marketing, and improved customer retention through loyalty and win-back programs. The key to success in tech retail is treating customers as tech enthusiasts who value expertise and support - not just transaction targets. By combining personalized recommendations, perfectly-timed upgrade marketing, comprehensive technical support, strategic warranty management, and exceptional post-purchase experiences, you build the kind of trust that makes customers return for every tech need. In a market where products are often commoditized and competition is fierce, the customer relationship becomes your ultimate competitive advantage. Electronics purchases are emotional - customers invest significant money in devices they'll use daily. Honor that relationship with marketing that educates, supports, and anticipates needs throughout the entire ownership lifecycle."
 }

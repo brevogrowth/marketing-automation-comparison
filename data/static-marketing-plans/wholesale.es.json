@@ -171,6 +171,175 @@
       ]
     },
     {
+      "program_name": "Precios por Volumen y Programas de Descuento por Niveles",
+      "target": "Todos los retailers activos con potencial de crecimiento",
+      "objective": "Incentivar mayores volúmenes de pedido a través de beneficios transparentes por nivel",
+      "kpi": "Valor promedio de pedido (objetivo: +25%), Avance de nivel por volumen (objetivo: 30%), Tasa de pedido en volumen (objetivo: 40%)",
+      "description": "Comunicación clara sobre niveles de precios por volumen e incentivos que motivan a retailers a aumentar tamaños de pedido y comprometerse a compras mayores.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers acercándose a umbrales de nivel por volumen",
+          "scenario_objective": "Motivar avance de nivel con cálculo claro de ahorros",
+          "main_messages_ideas": "Proximidad a umbral, Oportunidad de ahorro, Beneficios de nivel, Camino fácil de upgrade",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "¡Estás Cerca de Precios de [Siguiente Nivel]!",
+              "description": "Cuando se acerca umbral",
+              "content": "¡Buenas noticias! Estás a solo $[cantidad] de precios de [Siguiente Nivel]. Beneficios de upgrade: [X]% de descuento adicional, [beneficio 2], [beneficio 3]. Tu ahorro anual potencial: $[cálculo]. Agrega [productos sugeridos] a este pedido para alcanzar el nivel."
+            },
+            {
+              "channel": "Portal",
+              "title": "Upgrade de Nivel Disponible",
+              "description": "Alerta de umbral en carrito",
+              "content": "¡Estás a $[X] de precios de [Siguiente Nivel] en este pedido! Agrega [cantidad] más para desbloquear [Y]% de descuento. Artículos sugeridos para alcanzar umbral: [lista de productos]. ¿Actualizar ahora?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerta de Upgrade de Nivel",
+              "description": "Notificación en tiempo real",
+              "content": "¡Tu pedido está cerca de precios de [Siguiente Nivel]! Agrega $[X] para ahorrar [Y]% en todo este pedido. Sugerencias rápidas: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Calculadora de Descuento por Volumen",
+              "description": "Día 3: Herramienta de planificación",
+              "content": "Ve exactamente cuánto podrías ahorrar con precios por volumen. Nuestra calculadora muestra ahorros en cada nivel basándose en tus pedidos típicos. La mayoría de retailers con tu volumen ahorran $[cantidad] anualmente optimizando tamaño de pedido."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Planifiquemos Tu Upgrade de Nivel",
+              "description": "Día 5: Asistencia personal",
+              "content": "¡Hola [Nombre]! Noté que estás cerca de mejor precio. ¿Quieres ayuda planificando un pedido que te lleve a [Siguiente Nivel]? Puedo recomendar productos que tienen sentido para tu tienda y alcanzan ese umbral. ¿Interesado?"
+            },
+            {
+              "channel": "Email",
+              "title": "¡Hito de Nivel Alcanzado!",
+              "description": "Al subir de nivel",
+              "content": "¡Felicitaciones! Has alcanzado precios de [Nuevo Nivel]. Tu nueva tasa de descuento está activa ahora: [porcentaje] en todos los pedidos. Además, has desbloqueado: [beneficios adicionales]. Así es como maximizar tu nuevo nivel."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers regulares de pedidos pequeños con oportunidad de consolidación",
+          "scenario_objective": "Fomentar consolidación de pedidos para eficiencia mutua",
+          "main_messages_ideas": "Análisis de frecuencia de pedido, Beneficios de consolidación, Costos de envío reducidos, Mejor precio",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Oportunidad de Consolidación de Pedidos",
+              "description": "Análisis trimestral",
+              "content": "Notamos que pides frecuentemente en cantidades menores. Al consolidar a [frecuencia recomendada], podrías: ahorrar [X]% en precios por volumen, reducir costos de envío en [Y] y ahorrar tiempo. Aquí hay un plan de consolidación personalizado para tu negocio."
+            },
+            {
+              "channel": "Email",
+              "title": "Tu Análisis de Ahorros",
+              "description": "Día 7: Desglose detallado",
+              "content": "Si hubieras consolidado los [X] pedidos del trimestre pasado en [Y] pedidos más grandes, habrías ahorrado: $[cantidad] en descuentos por volumen + $[cantidad] en envío = $[total] ahorrado. ¿Quieres ayuda planificando pedidos más eficientes?"
+            },
+            {
+              "channel": "Portal",
+              "title": "Herramienta de Planificación de Pedidos Disponible",
+              "description": "Anuncio de herramienta",
+              "content": "Nueva función: Herramienta de planificación de pedidos te ayuda a optimizar timing y cantidades para máximo ahorro. Ingresa tus necesidades mensuales típicas y te mostraremos el calendario óptimo de pedidos y estrategia de nivel por volumen."
+            },
+            {
+              "channel": "SMS",
+              "title": "¿Consulta de Consolidación?",
+              "description": "Día 14: Oferta personal",
+              "content": "Pregunta rápida - ¿quieres hablar sobre consolidar pedidos para mejor precio? Llamada de 10 minutos podría ahorrarte $[cantidad]/trimestre. Responde SÍ para programar."
+            },
+            {
+              "channel": "Email",
+              "title": "Historia de Éxito: Consolidación de Pedidos",
+              "description": "Día 21: Prueba social",
+              "content": "[Retailer Similar] consolidó de pedidos semanales a quincenales hace 6 meses. Resultados: 18% de ahorro en costos, menos tiempo en pedidos, mejor gestión de flujo de caja. Así es como lo hicieron y cómo tú también puedes."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers estacionales antes de períodos pico",
+          "scenario_objective": "Impulsar compromisos en volumen pre-temporada con términos especiales",
+          "main_messages_ideas": "Precios pre-temporada, Beneficios de compromiso en volumen, Asignación asegurada, Términos de pago",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Precios en Volumen Pre-Temporada Disponibles",
+              "description": "8 semanas antes de temporada",
+              "content": "Asegura inventario de [Temporada] ahora a tarifas en volumen pre-temporada: [X]% de descuento sobre precios estándar en pedidos de [cantidad mínima]. Además asignación garantizada en artículos de alta demanda y términos de pago extendidos. Calcula tus ahorros."
+            },
+            {
+              "channel": "Email",
+              "title": "Beneficios de Pedido en Volumen: Desglose Completo",
+              "description": "Día 5: Propuesta de valor detallada",
+              "content": "Por qué comprometerte temprano con pedidos en volumen: 1) Menor precio de la temporada 2) Stock garantizado en bestsellers 3) Términos de pago extendidos (net 60 vs. net 30) 4) Envío prioritario durante pico 5) Costos totales de envío reducidos. Calculadora de ROI incluida."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Ayuda con Planificación Pre-Temporada",
+              "description": "Día 10: Asistencia personal",
+              "content": "¡Hola [Nombre]! ¿Trabajando en tu pedido de [Temporada]? Puedo ayudarte a planificar cantidades en volumen basándome en tu rendimiento pasado y asegurar mejor precio. ¿Cuándo es buen momento para discutir tus necesidades?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Precios en Volumen Terminan Pronto",
+              "description": "1 semana antes de fecha límite",
+              "content": "Recordatorio: Precios en volumen pre-temporada terminan el [fecha]. Asegura [X]% de ahorro en inventario de [Temporada] ahora: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Última Llamada: Pedidos en Volumen Pre-Temporada",
+              "description": "3 días antes de fecha límite",
+              "content": "Última oportunidad para precios en volumen pre-temporada en inventario de [Temporada]. Después del [fecha], aplican precios estándar y artículos populares pueden estar limitados. Pide ahora para asegurar mejores tarifas y stock garantizado."
+            },
+            {
+              "channel": "Portal",
+              "title": "Pedido en Volumen Confirmado - Términos Especiales Activos",
+              "description": "Al comprometer volumen",
+              "content": "¡Tu pedido en volumen de [Temporada] está confirmado! Términos especiales activos: [nivel de precios], términos de pago net 60, asignación garantizada, envío prioritario. Resumen de pedido y cronograma de entrega adjuntos."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cuentas de alto potencial que no optimizan precios por volumen",
+          "scenario_objective": "Educar sobre oportunidades de volumen con análisis personalizado",
+          "main_messages_ideas": "Ahorros perdidos, Potencial de nivel, Programa de volumen personalizado, Revisión de cuenta",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Estás Dejando Dinero en la Mesa",
+              "description": "Análisis trimestral de oportunidad",
+              "content": "Basándonos en tu historial de pedidos, estás comprando en [nivel actual] pero tu volumen califica para [nivel superior]. Al optimizar timing de pedidos, podrías acceder a [mejor precio] y ahorrar aproximadamente $[cantidad] anualmente. Revisemos tu cuenta."
+            },
+            {
+              "channel": "Email",
+              "title": "Estrategia de Volumen Personalizada",
+              "description": "Día 7: Plan personalizado",
+              "content": "Hemos creado una estrategia de volumen personalizada para tu cuenta: frecuencia de pedido recomendada, cantidades óptimas por pedido, camino de avance de nivel y ahorro anual proyectado de $[cantidad]. Revisa e implementa."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "¿Llamada de Optimización de Cuenta?",
+              "description": "Día 10: Oferta high-touch",
+              "content": "Hola [Nombre], he identificado $[cantidad] en ahorro anual potencial para tu cuenta a través de optimización de volumen. ¿Quieres programar 15 minutos para revisar las oportunidades? Podría ser muy valioso."
+            },
+            {
+              "channel": "Email",
+              "title": "Propuesta de Programa de Volumen Personalizado",
+              "description": "Día 14: Oferta especial",
+              "content": "Basándonos en tu trayectoria de crecimiento y volumen de pedido, nos gustaría ofrecer un programa de volumen personalizado: nivel de precios exclusivo, términos personalizados, soporte dedicado y revisiones de negocio trimestrales. Esto es lo que proponemos."
+            },
+            {
+              "channel": "Email",
+              "title": "Éxito: Tu Nuevo Acuerdo de Volumen",
+              "description": "Al activar programa personalizado",
+              "content": "¡Tu programa de volumen personalizado está activo ahora! Nuevos beneficios: [estructura de precios], [términos de pago], [nivel de soporte], [otros beneficios]. Tu ahorro anual estimado: $[cantidad]. Maximicemos esta asociación."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "program_name": "Automatización de Reposición y Gestión de Inventario",
       "target": "Retailers activos con patrones de pedido establecidos",
       "objective": "Asegurar reposiciones oportunas, prevenir desabastecimientos y optimizar niveles de inventario",
@@ -224,6 +393,169 @@
               "title": "Nuevas Opciones a Considerar",
               "description": "Día 14: Soluciones alternativas",
               "content": "Las cosas cambian - quizás tus bestsellers han cambiado. Aquí hay productos en tendencia en tu categoría con los que otros retailers están teniendo éxito. ¿Vale la pena probar un nuevo surtido?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Gestión de Líneas de Crédito y Términos de Pago",
+      "target": "Todas las cuentas mayoristas con términos de pago",
+      "objective": "Optimizar la gestión del flujo de caja mientras se mantiene el cumplimiento de pagos",
+      "kpi": "Tasa de utilización de crédito (objetivo: 75%), Cumplimiento de pagos (objetivo: 95%), Aceptación de aumento de límite de crédito (objetivo: 40%)",
+      "description": "Comunicación proactiva de gestión de crédito que ayuda a retailers a comprender términos, optimizar flujo de caja y calificar para condiciones de pago mejoradas.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers con buen historial de pagos elegibles para aumentos de crédito",
+          "scenario_objective": "Ofrecer aumentos de límite de crédito para facilitar el crecimiento",
+          "main_messages_ideas": "Oferta de aumento de crédito, Apreciación de pagos, Habilitación de crecimiento, Mejora de términos",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Aumento de Límite de Crédito Disponible",
+              "description": "Revisión trimestral de crédito",
+              "content": "Basándonos en tu excelente historial de pagos, nos gustaría aumentar tu límite de crédito de $[actual] a $[nuevo]. Esto te da más flexibilidad para pedidos mayores y crecimiento. Acepta tu aumento aquí - no se requiere acción si prefieres mantener el límite actual."
+            },
+            {
+              "channel": "Portal",
+              "title": "Oferta de Aumento de Crédito",
+              "description": "Notificación de login",
+              "content": "¡Buenas noticias! Calificas para un aumento de límite de crédito a $[cantidad] basado en tu sólido desempeño de pago. Beneficios: pedidos mayores, mejor flexibilidad de flujo de caja y capacidad de inventario estacional. Acepta o rechaza."
+            },
+            {
+              "channel": "SMS",
+              "title": "Aumento de Límite de Crédito Aprobado",
+              "description": "Notificación rápida",
+              "content": "¡Felicitaciones! Tu límite de crédito ha sido aumentado a $[cantidad] efectivo inmediatamente. Realiza pedidos mayores con confianza: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Términos de Pago Extendidos Ahora Disponibles",
+              "description": "Oferta de upgrade de términos",
+              "content": "Tu desempeño de pago consistente te califica para términos extendidos: Net 60 (anteriormente Net 30). Esto mejora tu flujo de caja y te da más tiempo para vender el inventario antes del pago. Términos activos en tu próximo pedido."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "¿Discusión sobre Crédito?",
+              "description": "Toque personal para cuenta de alto valor",
+              "content": "¡Hola [Nombre]! Quería discutir tus términos de crédito personalmente. Basándonos en tu crecimiento e historial de pagos, podemos ofrecer mejores términos o límites más altos. ¿Tienes 10 minutos esta semana para discutir cómo podemos apoyar tu crecimiento?"
+            },
+            {
+              "channel": "Email",
+              "title": "Resumen de Tus Nuevos Términos de Crédito",
+              "description": "Confirmación",
+              "content": "Tus términos de crédito actualizados están ahora activos: Límite de Crédito: $[cantidad], Términos de Pago: [net días], Descuento por Pago Anticipado: [%] si se paga dentro de [días]. Así es como maximizar tus términos mejorados."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers acercándose al límite de crédito",
+          "scenario_objective": "Gestionar límites proactivamente y ofrecer soluciones",
+          "main_messages_ideas": "Notificación de límite, Opciones de pago, Camino de aumento de límite, Gestión de flujo de caja",
+          "message_sequence": [
+            {
+              "channel": "Portal",
+              "title": "Alerta de Utilización de Crédito",
+              "description": "Al 75% de utilización",
+              "content": "Estás usando el 75% de tu límite de crédito de $[límite]. Saldo actual: $[cantidad]. Opciones: 1) Realizar pago para liberar crédito 2) Solicitar aumento de límite 3) Contactarnos sobre arreglos de pago."
+            },
+            {
+              "channel": "Email",
+              "title": "Acercándose a Tu Límite de Crédito",
+              "description": "Al 80% de utilización",
+              "content": "Tu utilización de crédito está al 80% ($[usado] de $[límite]). Para asegurar pedidos sin interrupciones: 1) Pagar saldo pendiente de $[cantidad] vencido el [fecha] 2) Solicitar aumento de crédito si tu negocio ha crecido 3) Programar discusión de plan de pago. ¿Cómo podemos ayudar?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerta de Límite de Crédito",
+              "description": "Al 90% de utilización",
+              "content": "Alerta de límite de crédito: Estás en $[usado]/$[límite] (90%). El pago vencido el [fecha] liberará crédito. Paga en línea: [URL] o llama para discutir opciones."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Discusión sobre Límite de Crédito",
+              "description": "Alcance personal en el límite",
+              "content": "Hola [Nombre], noté que estás cerca de tu límite de crédito. Si tu negocio ha crecido, probablemente podemos aumentar tu límite. ¿Quieres discutirlo? O si necesitas unos días extra en el pago, avísame y lo resolveremos."
+            },
+            {
+              "channel": "Email",
+              "title": "Vía Rápida para Aumento de Límite de Crédito",
+              "description": "Oferta de solución",
+              "content": "¿Necesitas más capacidad de crédito? Basándonos en tu historial de pedidos y récord de pagos, puedes calificar para un aumento inmediato. Solicitud rápida (5 minutos) para revisión: proporciona cifras de ventas recientes y responderemos en 24 horas."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cuentas con fechas de vencimiento de pago próximas",
+          "scenario_objective": "Asegurar pago oportuno y ofrecer opciones convenientes",
+          "main_messages_ideas": "Recordatorio de pago, Opciones de pago fáciles, Incentivo de pago anticipado, Comunicación de período de gracia",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Pago Próximo a Vencer: [Factura]",
+              "description": "7 días antes de fecha de vencimiento",
+              "content": "Recordatorio amigable: La factura #[número] por $[cantidad] vence el [fecha]. Paga en línea en 2 minutos, configura pago automático para conveniencia, o contáctanos sobre arreglos de pago si es necesario. Descuento por pago anticipado: [X]% si pagas antes del [fecha temprana]."
+            },
+            {
+              "channel": "Portal",
+              "title": "Pago Próximo: [Factura]",
+              "description": "Notificación en panel",
+              "content": "Pago vence el [fecha]: Factura #[número] - $[cantidad]. Acciones rápidas: Pagar ahora | Configurar pago automático | Ver factura | Contactar soporte. Descuento por pago anticipado disponible."
+            },
+            {
+              "channel": "SMS",
+              "title": "Pago Vence el [Fecha]",
+              "description": "3 días antes de fecha de vencimiento",
+              "content": "Recordatorio: Pago de $[cantidad] vence el [fecha] para factura #[número]. Paga ahora: [URL] o responde si necesitas discutir el timing."
+            },
+            {
+              "channel": "Email",
+              "title": "Pago Vence Hoy: Opciones de Pago Fáciles",
+              "description": "Fecha de vencimiento",
+              "content": "La factura #[número] por $[cantidad] vence hoy. Opciones de pago rápido: 1) Pagar en línea instantáneamente 2) Llamar para procesar pago 3) Configurar pago automático para futuras facturas. ¿Necesitas unos días extra? Contáctanos inmediatamente."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Seguimiento de Pago",
+              "description": "1 día después de vencimiento",
+              "content": "Hola [Nombre], el pago de la factura #[número] ($[cantidad]) venció ayer. ¿Todo bien? Si necesitas discutir timing de pago o arreglos, avísame y resolveremos algo."
+            },
+            {
+              "channel": "Email",
+              "title": "Vencido: Resolvamos Esto",
+              "description": "5 días después de vencimiento",
+              "content": "La factura #[número] por $[cantidad] está ahora 5 días vencida. Queremos ayudar a resolver esto: arreglos de pago disponibles, opciones de plan de pago, o extender términos si es un problema temporal. Por favor contáctanos hoy para evitar restricciones de cuenta."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cuentas con excelente historial de pagos",
+          "scenario_objective": "Reconocer y recompensar el desempeño de pagos",
+          "main_messages_ideas": "Apreciación de pagos, Estatus de cliente preferido, Beneficios exclusivos, Asociación continua",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Gracias por Tu Excelente Desempeño de Pagos",
+              "description": "Reconocimiento anual",
+              "content": "Queremos reconocer tu sobresaliente desempeño de pagos este año: 100% de pagos a tiempo, [X] años de asociación y $[volumen] en negocio. Como agradecimiento, estamos ofreciendo: [beneficio especial, descuento o términos]. Eres un socio valioso."
+            },
+            {
+              "channel": "Email",
+              "title": "Beneficios de Cliente Preferido Desbloqueados",
+              "description": "Upgrade de estatus",
+              "content": "Basándonos en tu excelente historial de pagos y volumen de pedidos, has ganado el estatus de Cliente Preferido! Nuevos beneficios: servicio al cliente prioritario, opciones de pago flexibles, acceso temprano a nuevos productos y promociones exclusivas. Bienvenido a Preferido."
+            },
+            {
+              "channel": "Portal",
+              "title": "Panel de Cliente Preferido",
+              "description": "Activación de estatus",
+              "content": "¡Bienvenido al estatus de Cliente Preferido! Tus nuevos beneficios: [beneficio 1], [beneficio 2], [beneficio 3]. Accede a ofertas exclusivas, términos de pago flexibles y soporte prioritario aquí."
+            },
+            {
+              "channel": "Email",
+              "title": "Programa de Recompensas por Pago Anticipado",
+              "description": "Intro al programa de incentivos",
+              "content": "Nuevo para clientes preferidos: ¡Gana recompensas por pago anticipado! Paga facturas 10 días antes y gana [X]% de crédito hacia pedidos futuros. Simple, automático y se acumula rápido. Detalles e inscripción aquí."
             }
           ]
         }
@@ -301,6 +633,246 @@
               "title": "Cómo [Tipo de Retailer] Expandió Exitosamente",
               "description": "Prueba social",
               "content": "[Retailer Similar] agregó [categoría] hace seis meses - aquí está su historia y resultados. ¿Podría funcionar para ti también? Discutamos qué surtido encajaría con tu base de clientes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Soporte y Capacitación de Retailers/Revendedores",
+      "target": "Todos los retailers buscando mejorar rendimiento de ventas",
+      "objective": "Empoderar a retailers con conocimiento y habilidades para vender más efectivamente",
+      "kpi": "Tasa de completación de capacitación (objetivo: 40%), Mejora de ventas post-capacitación (objetivo: +15%), Tasa de engagement (objetivo: 50%)",
+      "description": "Contenido educativo y programas de capacitación que ayudan a retailers a vender productos más efectivamente y crecer sus negocios.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers nuevos en categorías de producto o necesitando conocimiento de producto",
+          "scenario_objective": "Construir conocimiento de producto y confianza de venta",
+          "main_messages_ideas": "Capacitación de producto, Tips de venta, Manejo de FAQs, Educación de características",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Domina [Categoría de Producto]: Capacitación Gratis",
+              "description": "Trigger de pedido de nueva categoría",
+              "content": "¡Felicitaciones por agregar [Categoría] a tu surtido! Aquí hay capacitación gratuita de producto para ayudarte a ti y tu equipo a vender con confianza: características clave, FAQs de clientes y técnicas de venta probadas. Completa en 20 minutos."
+            },
+            {
+              "channel": "Email",
+              "title": "Tips de Venta de [Producto] de Top Performers",
+              "description": "Educación continua",
+              "content": "¿Cómo venden [Producto] los mejores retailers? Tips reales de retailers reales: conversaciones con clientes que cierran, objeciones comunes y cómo manejarlas, y oportunidades de upsell."
+            },
+            {
+              "channel": "Email",
+              "title": "Webinar de Capacitación en Vivo: [Tema]",
+              "description": "Oportunidad mensual",
+              "content": "Únete a nuestra sesión de capacitación en vivo sobre [Tema]: Q&A interactivo con nuestros expertos de producto y retailers exitosos. Aprende técnicas que puedes usar inmediatamente. Regístrate para [fecha/hora]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Todos los retailers para educación de crecimiento de negocio",
+          "scenario_objective": "Proporcionar soporte más amplio de negocio retail",
+          "main_messages_ideas": "Mejores prácticas de retail, Tips de merchandising, Crecimiento de negocio, Tendencias de la industria",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tips de Éxito Retail: [Tema]",
+              "description": "Contenido mensual",
+              "content": "Tip de retail de este mes: [Tema accionable como gestión de inventario, servicio al cliente, merchandising visual]. Lectura rápida con aplicación inmediata para tu tienda."
+            },
+            {
+              "channel": "Email",
+              "title": "Tendencias de la Industria: Qué Viene en [Categoría]",
+              "description": "Reporte trimestral de tendencias",
+              "content": "Mantente adelante con nuestro reporte trimestral de tendencias: cambios de consumidores, productos emergentes y tendencias de merchandising. Posiciona tu tienda para lo que viene en [Categoría]."
+            },
+            {
+              "channel": "Email",
+              "title": "Biblioteca de Recursos para Retailers Actualizada",
+              "description": "Disponibilidad de recursos",
+              "content": "Nuevos recursos en tu portal de retailer: [recursos específicos agregados]. Accede a guías, plantillas y herramientas para crecer tu negocio. Todo gratis para socios mayoristas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programas de Drop-Ship y Fulfillment",
+      "target": "Retailers usando o interesados en drop-shipping",
+      "objective": "Habilitar operaciones de drop-ship eficientes con procesos claros y soporte",
+      "kpi": "Tasa de adopción de drop-ship (objetivo: 25%), Precisión de pedido drop-ship (objetivo: 98%), Volumen de pedido drop-ship (objetivo: 30% de cuentas elegibles)",
+      "description": "Comunicación integral del programa de drop-ship que educa a retailers sobre beneficios, procesos y mejores prácticas para fulfillment directo al consumidor.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers elegibles pero que no usan servicios de drop-ship",
+          "scenario_objective": "Impulsar adopción del programa de drop-ship",
+          "main_messages_ideas": "Beneficios de drop-ship, Vista general del proceso, Historias de éxito, Configuración fácil",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Expande Sin Inventario: Programa de Drop-Ship",
+              "description": "Introducción del programa",
+              "content": "¿Sabías que ofrecemos drop-shipping? Vende nuestro catálogo completo sin llevar inventario - enviamos directamente a tus clientes. Beneficios: ofertas expandidas, sin inversión en inventario, sin complicaciones de envío, y tú mantienes el margen. Aprende cómo funciona."
+            },
+            {
+              "channel": "Portal",
+              "title": "Programa de Drop-Ship Disponible",
+              "description": "Anuncio en panel",
+              "content": "¡Programa de Drop-Ship ahora disponible para tu cuenta! Vende sin almacenar: nosotros cumplimos pedidos directamente a tus clientes. Ve productos elegibles, estructura de márgenes y proceso de configuración."
+            },
+            {
+              "channel": "Email",
+              "title": "Cómo Funciona el Drop-Shipping: Guía Completa",
+              "description": "Día 7: Educación",
+              "content": "Drop-shipping simplificado: 1) Tú vendes a precio de retail 2) Envías pedido a nosotros a precio mayorista 3) Nosotros enviamos a tu cliente con tu marca 4) Tú mantienes el margen. Sin riesgo de inventario, catálogo expandido, clientes más felices. Guía paso a paso incluida."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "¿Preguntas sobre Drop-Ship?",
+              "description": "Día 10: Oferta personal",
+              "content": "¡Hola [Nombre]! ¿Curioso sobre drop-shipping? Puedo guiarte sobre cómo funciona y ayudarte a configurarte. La mayoría de retailers tienen su primer pedido drop-ship realizado en días. ¿Quieres una vista general rápida?"
+            },
+            {
+              "channel": "Email",
+              "title": "Historia de Éxito: [Retailer] y Drop-Shipping",
+              "description": "Día 14: Prueba social",
+              "content": "[Retailer Similar] agregó drop-shipping hace 6 meses. Resultados: catálogo efectivo 40% más grande, $[X] en margen adicional con cero inversión en inventario, y mayor satisfacción del cliente. Así es como lo hicieron y qué aprendieron."
+            },
+            {
+              "channel": "SMS",
+              "title": "Prueba Drop-Ship Sin Riesgo",
+              "description": "Día 21: Oferta de prueba",
+              "content": "¡Prueba drop-shipping sin riesgo! Primeros 3 pedidos: sin tarifas de drop-ship, envío garantizado en 2 días y soporte completo. Ve si funciona para tu negocio: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Configuración de Drop-Ship: Llamada de 15 Minutos",
+              "description": "Día 28: Activación fácil",
+              "content": "¿Listo para agregar drop-shipping? La configuración toma 15 minutos: habilitar acceso drop-ship, revisar productos elegibles, entender el proceso, realizar pedido de prueba. Programa llamada de configuración o sigue guía de autoservicio para activar."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers activos de drop-ship",
+          "scenario_objective": "Optimizar operaciones de drop-ship y aumentar uso",
+          "main_messages_ideas": "Optimización de procesos, Nuevos productos elegibles, Métricas de rendimiento, Mejores prácticas",
+          "message_sequence": [
+            {
+              "channel": "Portal",
+              "title": "Panel de Rendimiento de Drop-Ship",
+              "description": "Analytics disponibles",
+              "content": "Rastrea tu rendimiento de drop-ship: pedidos cumplidos, tiempo promedio de entrega, satisfacción del cliente, contribución de margen y productos en tendencia. Optimiza tu estrategia de drop-ship con datos."
+            },
+            {
+              "channel": "Email",
+              "title": "Nuevos Productos Agregados al Programa de Drop-Ship",
+              "description": "Expansión mensual de productos",
+              "content": "Nuevos productos disponibles para drop-ship: [lista de productos]. Expande tus ofertas sin nueva inversión en inventario. Estos artículos están en tendencia y disponibles para cumplimiento drop-ship inmediato."
+            },
+            {
+              "channel": "Email",
+              "title": "Mejores Prácticas de Drop-Ship",
+              "description": "Educación trimestral",
+              "content": "Maximiza el éxito de drop-ship: establecer expectativas del cliente, comunicar plazos de entrega, manejar consultas de clientes y elegir mejores productos para drop-ship. Además, errores comunes a evitar."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerta de Procesamiento de Pedido Drop-Ship",
+              "description": "Notificación en tiempo real",
+              "content": "Pedido drop-ship [#] recibido y en procesamiento. Entrega estimada a tu cliente: [fecha]. Rastrea estado: [URL]"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Soporte de Drop-Ship",
+              "description": "Asistencia según necesidad",
+              "content": "Hola [Nombre], vi que tienes una pregunta sobre pedido drop-ship [#]. Aquí está el estado: [actualización]. ¿Necesitas ayuda con algo más relacionado a este pedido?"
+            },
+            {
+              "channel": "Email",
+              "title": "Tus Métricas de Éxito de Drop-Ship",
+              "description": "Revisión trimestral de rendimiento",
+              "content": "Resultados de tu programa drop-ship este trimestre: [X] pedidos cumplidos, [tiempo promedio de entrega], [puntuación de satisfacción del cliente] y $[contribución de margen]. Estás en el top [%] de retailers drop-ship. Así es como hacerlo aún mejor."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers con preguntas o problemas de drop-ship",
+          "scenario_objective": "Proporcionar soporte excelente y resolver problemas rápidamente",
+          "main_messages_ideas": "Resolución de problemas, Clarificación de procesos, Prevención de problemas, Mejora continua",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Problema de Pedido Drop-Ship: [Pedido #]",
+              "description": "Notificación de problema",
+              "content": "Hemos identificado un problema con pedido drop-ship [#]: [descripción]. Acción tomada: [pasos de resolución]. Estado: [estado actual]. Resolución esperada: [plazo]. Te mantendremos actualizado e informaremos a tu cliente si es apropiado."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Actualización de Problema de Pedido",
+              "description": "Comunicación en tiempo real",
+              "content": "Actualización sobre pedido drop-ship [#]: [cambio de estado]. Tu cliente ha sido notificado. ¿Algo más que necesites de nosotros en este pedido?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerta de Retraso de Drop-Ship",
+              "description": "Notificación proactiva",
+              "content": "Pedido drop-ship [#] retrasado por [plazo] debido a [razón]. Nueva entrega esperada: [fecha]. Comunicación sugerida al cliente: [URL con plantilla de mensaje]"
+            },
+            {
+              "channel": "Email",
+              "title": "Problema Resuelto: Pedido [#]",
+              "description": "Confirmación de resolución",
+              "content": "El problema del pedido drop-ship [#] ha sido resuelto. Resultado: [descripción]. Tu cliente fue notificado. Hemos acreditado [cantidad/beneficio] a tu cuenta por la inconveniencia. Avísanos si necesitas algo más."
+            },
+            {
+              "channel": "Email",
+              "title": "FAQ de Drop-Ship: Preguntas Comunes",
+              "description": "Educación preventiva",
+              "content": "Respuestas a preguntas comunes de drop-ship: plazos de entrega, números de rastreo, devoluciones de clientes, envíos dañados y modificaciones de pedido. Guarda este recurso como referencia rápida."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers de e-commerce con oportunidades de integración",
+          "scenario_objective": "Habilitar drop-ship automatizado a través de integración de sistema",
+          "main_messages_ideas": "Integración API, Fulfillment automatizado, Inventario en tiempo real, Ganancias de eficiencia",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Automatiza Drop-Ship con Integración",
+              "description": "Oportunidad de integración",
+              "content": "Lleva drop-shipping al siguiente nivel: integra tu plataforma de e-commerce con nuestro sistema. Beneficios: colocación automática de pedidos, sincronización de inventario en tiempo real, actualizaciones automáticas de rastreo y cero trabajo manual. Funciona con: [plataformas]."
+            },
+            {
+              "channel": "Portal",
+              "title": "Integración API Disponible",
+              "description": "Recurso técnico",
+              "content": "Integración API para automatización de drop-ship: documentación, guías de integración para plataformas populares, soporte de desarrollador y sandbox de pruebas. Automatiza tu flujo de trabajo de drop-ship."
+            },
+            {
+              "channel": "Email",
+              "title": "Historia de Éxito de Integración",
+              "description": "Día 7: Prueba social",
+              "content": "[Retailer] integró su tienda Shopify con nuestro sistema drop-ship. Resultados: 95% de ahorro de tiempo en procesamiento de pedidos, cero errores de entrada de pedidos, actualizaciones automáticas de inventario y 3x volumen de drop-ship. Aquí está su historia de implementación."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Soporte de Integración Disponible",
+              "description": "Día 14: Asistencia técnica",
+              "content": "¡Hola [Nombre]! ¿Interesado en integración de drop-ship? Nuestro equipo de integración puede ayudarte a configurarte. Usualmente toma 2-3 días y ahorra horas por semana. ¿Quieres discutir tu configuración?"
+            },
+            {
+              "channel": "Email",
+              "title": "Configuración de Integración: Paso a Paso",
+              "description": "Guía de implementación",
+              "content": "Guía completa de integración: requisitos, configuración paso a paso para [tu plataforma], procedimientos de prueba y checklist de go-live. Soporte técnico disponible durante todo el proceso de configuración."
+            },
+            {
+              "channel": "Email",
+              "title": "¡Tu Integración Está Activa!",
+              "description": "Confirmación de activación",
+              "content": "¡Felicitaciones! Tu integración drop-ship está activa y procesando pedidos automáticamente. Monitorea el rendimiento en tu panel y comunícate con cualquier pregunta. Bienvenido al fulfillment drop-ship automatizado."
             }
           ]
         }
@@ -496,65 +1068,6 @@
               "title": "Tu Paquete Anual de Apreciación de Socio",
               "description": "Reconocimiento anual",
               "content": "Gracias por un año increíble de asociación. Como nuestra forma de agradecimiento, aquí está tu paquete de apreciación de [Nivel Superior]: [regalo, crédito u oferta exclusiva]. Estamos agradecidos por tu negocio y esperamos otro año exitoso."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Capacitación y Educación de Retailers",
-      "target": "Todos los retailers buscando mejorar rendimiento de ventas",
-      "objective": "Empoderar a retailers con conocimiento y habilidades para vender más efectivamente",
-      "kpi": "Tasa de completación de capacitación (objetivo: 40%), Mejora de ventas post-capacitación (objetivo: +15%), Tasa de engagement (objetivo: 50%)",
-      "description": "Contenido educativo y programas de capacitación que ayudan a retailers a vender productos más efectivamente y crecer sus negocios.",
-      "scenarios": [
-        {
-          "scenario_target": "Retailers nuevos en categorías de producto o necesitando conocimiento de producto",
-          "scenario_objective": "Construir conocimiento de producto y confianza de venta",
-          "main_messages_ideas": "Capacitación de producto, Tips de venta, Manejo de FAQs, Educación de características",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Domina [Categoría de Producto]: Capacitación Gratis",
-              "description": "Trigger de pedido de nueva categoría",
-              "content": "¡Felicitaciones por agregar [Categoría] a tu surtido! Aquí hay capacitación gratuita de producto para ayudarte a ti y tu equipo a vender con confianza: características clave, FAQs de clientes y técnicas de venta probadas. Completa en 20 minutos."
-            },
-            {
-              "channel": "Email",
-              "title": "Tips de Venta de [Producto] de Top Performers",
-              "description": "Educación continua",
-              "content": "¿Cómo venden [Producto] los mejores retailers? Tips reales de retailers reales: conversaciones con clientes que cierran, objeciones comunes y cómo manejarlas, y oportunidades de upsell."
-            },
-            {
-              "channel": "Email",
-              "title": "Webinar de Capacitación en Vivo: [Tema]",
-              "description": "Oportunidad mensual",
-              "content": "Únete a nuestra sesión de capacitación en vivo sobre [Tema]: Q&A interactivo con nuestros expertos de producto y retailers exitosos. Aprende técnicas que puedes usar inmediatamente. Regístrate para [fecha/hora]."
-            }
-          ]
-        },
-        {
-          "scenario_target": "Todos los retailers para educación de crecimiento de negocio",
-          "scenario_objective": "Proporcionar soporte más amplio de negocio retail",
-          "main_messages_ideas": "Mejores prácticas de retail, Tips de merchandising, Crecimiento de negocio, Tendencias de la industria",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Tips de Éxito Retail: [Tema]",
-              "description": "Contenido mensual",
-              "content": "Tip de retail de este mes: [Tema accionable como gestión de inventario, servicio al cliente, merchandising visual]. Lectura rápida con aplicación inmediata para tu tienda."
-            },
-            {
-              "channel": "Email",
-              "title": "Tendencias de la Industria: Qué Viene en [Categoría]",
-              "description": "Reporte trimestral de tendencias",
-              "content": "Mantente adelante con nuestro reporte trimestral de tendencias: cambios de consumidores, productos emergentes y tendencias de merchandising. Posiciona tu tienda para lo que viene en [Categoría]."
-            },
-            {
-              "channel": "Email",
-              "title": "Biblioteca de Recursos para Retailers Actualizada",
-              "description": "Disponibilidad de recursos",
-              "content": "Nuevos recursos en tu portal de retailer: [recursos específicos agregados]. Accede a guías, plantillas y herramientas para crecer tu negocio. Todo gratis para socios mayoristas."
             }
           ]
         }

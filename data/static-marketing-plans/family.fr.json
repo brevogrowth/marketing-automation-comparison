@@ -908,6 +908,148 @@
           ]
         }
       ]
+    },
+    {
+      "program_name": "Hub Communauté Parents & Éducation",
+      "target": "Tous les parents et aidants recherchant des conseils parentaux, des ressources éducatives et une connexion communautaire",
+      "objective": "Construire la marque comme ressource parentale de confiance avec 40% de taux d'engagement communauté et 25% de conversion achat générée par le contenu",
+      "kpi": "Taux engagement contenu (cible : 40%), Participation forum communauté (cible : 20%), Complétion contenu éducatif (cible : 35%), Conversion contenu-vers-achat (cible : 25%)",
+      "description": "Un programme complet d'éducation parentale et de communauté qui positionne la marque comme un partenaire parental de confiance. Ce programme fournit des conseils de développement précieux, connecte les parents avec des communautés de pairs, et offre du contenu soutenu par des experts qui mène naturellement à des recommandations produits.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux parents recherchant des conseils de développement",
+          "scenario_objective": "Fournir une éducation parentale précieuse et construire la confiance",
+          "main_messages_ideas": "Conseils de développement hebdomadaires, Conseils d'experts, Astuces parentales, Accompagnement par étape, Recommandations produits",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Guide de Développement [Âge]",
+              "timing": "Déclenché par âge",
+              "description": "Déclenché par âge : Conseils de développement hebdomadaires",
+              "content": "À quoi s'attendre à [âge] : Votre enfant est probablement [jalons de développement]. Voici comment soutenir sa croissance avec des activités, produits et conseils de nos conseillers pédiatriques. Focus de cette semaine : [compétence/jalon spécifique]."
+            },
+            {
+              "channel": "Push",
+              "title": "Nouveau Conseil Parental",
+              "timing": "Hebdomadaire",
+              "description": "Hebdomadaire : Notification conseil rapide",
+              "content": "👶 Le conseil parental de cette semaine pour l'âge de [Prénom Enfant] : [Conseil actionnable rapide]. En savoir plus dans notre Hub Parents !"
+            },
+            {
+              "channel": "Email",
+              "title": "Vidéo Expert : [Sujet]",
+              "timing": "Bi-hebdomadaire",
+              "description": "Bi-hebdomadaire : Contenu expert",
+              "content": "L'insight expert de cette semaine du Dr [Nom] : [Sujet pertinent pour l'âge de l'enfant]. Regardez la vidéo de 5 minutes et découvrez des conseils pratiques que vous pouvez utiliser aujourd'hui. En plus : Produits qui soutiennent cette étape de développement."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Sondage Rapide : Défi Parental",
+              "timing": "Mensuel",
+              "description": "Mensuel : Engagement",
+              "content": "Question rapide ! Quel est votre plus grand défi parental en ce moment ? Répondez : 1️⃣ Sommeil 2️⃣ Alimentation 3️⃣ Comportement 4️⃣ Apprentissage - Nous vous enverrons des conseils ciblés !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Parents intéressés par des sujets parentaux spécifiques",
+          "scenario_objective": "Délivrer du contenu approfondi sur les sujets d'intérêt",
+          "main_messages_ideas": "Série thématique, Webinaires experts, Guides téléchargeables, Discussions communautaires",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Série Approfondie [Sujet]",
+              "timing": "Après expression intérêt sujet",
+              "description": "Après intérêt sujet exprimé : Inscription série",
+              "content": "Bienvenue dans notre série [Sujet] ! Au cours des 4 prochaines semaines, vous recevrez des conseils d'experts sur [sujet]. Cette semaine : [Première leçon]. Inclut des conseils pratiques, des recommandations produits et un accès à notre discussion communautaire."
+            },
+            {
+              "channel": "Email",
+              "title": "Webinaire Gratuit : [Sujet] avec Expert",
+              "timing": "Basé sur le sujet",
+              "description": "Basé sur le sujet : Invitation webinaire",
+              "content": "Rejoignez notre webinaire en direct gratuit : '[Titre Sujet]' avec [Nom Expert], [qualifications]. Posez vos questions en direct et obtenez des stratégies actionnables. Inscrivez-vous maintenant - places limitées !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Rappel Webinaire",
+              "timing": "1 heure avant",
+              "description": "1 heure avant : Rappel participation",
+              "content": "⏰ Rappel : Le webinaire [Sujet] commence dans 1 heure ! Rejoignez ici : [lien]. Vous ne pouvez pas ? Nous enverrons l'enregistrement."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Guide Ressources [Sujet]",
+              "timing": "Après webinaire",
+              "description": "Après webinaire : Ressource téléchargeable",
+              "content": "Merci d'avoir rejoint notre webinaire [Sujet] ! Voici votre guide téléchargeable avec tous les points clés, les produits recommandés et des ressources bonus. Rejoignez notre forum communautaire pour continuer la conversation !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Parents recherchant une connexion communautaire",
+          "scenario_objective": "Favoriser les connexions parent-à-parent et la communauté de marque",
+          "main_messages_ideas": "Invitation communauté, Groupes de parents locaux, Success stories, Soutien entre pairs",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Rejoignez Notre Communauté de Parents",
+              "timing": "Après engagement",
+              "description": "Après engagement : Invitation communauté",
+              "content": "Vous n'êtes pas seul dans ce parcours parental ! Rejoignez des milliers de parents dans notre forum communautaire. Obtenez des conseils, partagez des expériences et connectez-vous avec des parents à la même étape. En plus : Remises exclusives réservées à la communauté !"
+            },
+            {
+              "channel": "Email",
+              "title": "Cette Semaine dans la Communauté",
+              "timing": "Hebdomadaire",
+              "description": "Hebdomadaire : Digest communauté",
+              "content": "Sujets brûlants dans notre communauté de parents cette semaine : [Sujet 1] - 127 parents en discussion, [Sujet 2] - Q&A expert aujourd'hui, [Sujet 3] - Produit favori de la communauté révélé. Rejoignez la conversation !"
+            },
+            {
+              "channel": "Push",
+              "title": "Parents Comme Vous Discutent...",
+              "timing": "Quand discussion pertinente",
+              "description": "Quand discussion pertinente : Prompt engagement",
+              "content": "🗣️ Sujet brûlant dans la Communauté Parents : '[Sujet discussion]'. 52 parents d'[enfants d'âge similaire] partagent leurs expériences. Rejoignez !"
+            },
+            {
+              "channel": "Email",
+              "title": "Rencontre de Parents Locaux",
+              "timing": "Géographique",
+              "description": "Géographique : Événement local",
+              "content": "Les parents [Marque] de [Ville] se rencontrent ! Rejoignez-nous à [Lieu] le [Date] pour un rassemblement décontracté de parents. Rencontrez d'autres familles, laissez les enfants jouer, et profitez de conversations entre adultes. RSVP gratuit !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Parents complétant du contenu éducatif",
+          "scenario_objective": "Convertir les parents engagés avec des recommandations produits pertinentes",
+          "main_messages_ideas": "Recommandations produits du contenu, Sélections approuvées par experts, Favoris communauté, Jouets éducatifs",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Produits Qui Soutiennent [Sujet]",
+              "timing": "Après complétion contenu",
+              "description": "Après complétion contenu : Recommandations pertinentes",
+              "content": "Basé sur votre intérêt pour [Sujet], voici nos produits recommandés par nos experts qui soutiennent ce domaine de développement. Chacun a été revu par notre conseil consultatif et aimé par les parents de notre communauté."
+            },
+            {
+              "channel": "Email",
+              "title": "Favoris de la Communauté pour [Âge/Sujet]",
+              "timing": "Preuve sociale",
+              "description": "Preuve sociale : Top sélections",
+              "content": "Les parents de notre communauté ont parlé ! Voici les produits les mieux notés pour [tranche d'âge/sujet] basés sur de vrais avis et recommandations de parents. Découvrez pourquoi ce sont les favoris de la communauté."
+            },
+            {
+              "channel": "SMS",
+              "title": "Bonus Contenu",
+              "timing": "Après complétion série",
+              "description": "Après avoir complété la série : Récompense",
+              "content": "🎓 Vous avez complété notre série [Sujet] ! Voici -15% sur les produits qui soutiennent [domaine connexe]. Merci d'être un parent engagé ! Code : APPRENDRE15"
+            }
+          ]
+        }
+      ]
     }
   ],
   "how_brevo_helps_you": [

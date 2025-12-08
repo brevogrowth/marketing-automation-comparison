@@ -190,6 +190,106 @@
       ]
     },
     {
+      "program_name": "Tarification Volume & Programmes Remises Paliers",
+      "target": "Tous les détaillants actifs avec potentiel de croissance",
+      "objective": "Incentiver les volumes de commande plus importants grâce à des avantages de paliers transparents",
+      "kpi": "Valeur moyenne commande (cible: +25%), Avancement paliers volume (cible: 30%), Taux commandes en gros (cible: 40%)",
+      "description": "Communication claire sur les paliers de tarification volume et les incentives qui motivent les détaillants à augmenter les tailles de commandes et s'engager sur des achats plus importants.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants approchant les seuils de paliers de volume",
+          "scenario_objective": "Motiver l'avancement de palier avec calcul d'économies clair",
+          "main_messages_ideas": "Proximité seuil, Opportunité d'économies, Avantages palier, Parcours upgrade facile",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Êtes Proche du Tarif [Palier Suivant] !",
+              "timing": "Quand approche du seuil",
+              "description": "Quand approche du seuil",
+              "content": "Bonne nouvelle ! Il ne vous manque que [montant]€ pour accéder au tarif [Palier Suivant]. Avantages upgrade : [X]% de remise supplémentaire, [avantage 2], [avantage 3]. Vos économies annuelles potentielles : [montant]€. Ajoutez [produits suggérés] à cette commande pour atteindre le palier."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerte Upgrade Palier",
+              "timing": "Quand très proche du seuil",
+              "description": "Quand très proche du seuil",
+              "content": "Il ne vous reste que [X]€ pour atteindre le palier [Palier Suivant] ! Les avantages incluent [avantage principal]. Qualifiez-vous avant le [date] pour upgrade immédiate."
+            },
+            {
+              "channel": "Email",
+              "title": "Calculateur Remises Volume",
+              "timing": "J+3",
+              "description": "J3 : Outil de planification",
+              "content": "Voyez exactement combien vous pourriez économiser avec la tarification volume. Notre calculateur montre les économies à chaque palier basé sur vos commandes habituelles. La plupart des détaillants à votre volume économisent [montant]€ annuellement en optimisant la taille de commande."
+            },
+            {
+              "channel": "Email",
+              "title": "Palier Franchi Atteint !",
+              "timing": "À l'avancement de palier",
+              "description": "À l'avancement de palier",
+              "content": "Félicitations ! Vous avez atteint le tarif [Nouveau Palier]. Votre nouveau taux de remise est actif maintenant : [pourcentage] sur toutes les commandes. De plus, vous avez débloqué : [avantages supplémentaires]. Voici comment maximiser votre nouveau palier."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants passant régulièrement de petites commandes avec opportunité de consolidation",
+          "scenario_objective": "Encourager la consolidation des commandes pour une efficacité mutuelle",
+          "main_messages_ideas": "Analyse fréquence commandes, Avantages consolidation, Coûts livraison réduits, Meilleur tarif",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Opportunité Consolidation Commandes",
+              "timing": "Analyse trimestrielle",
+              "description": "Analyse trimestrielle",
+              "content": "Nous avons remarqué que vous commandez fréquemment en petites quantités. En consolidant vers [fréquence recommandée], vous pourriez : économiser [X]% sur la tarification volume, réduire les coûts de livraison de [Y], et gagner du temps. Voici un plan de consolidation personnalisé pour votre business."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Analyse d'Économies",
+              "timing": "J+7",
+              "description": "J7 : Détail complet",
+              "content": "Si vous aviez consolidé les [X] commandes du trimestre dernier en [Y] commandes plus importantes, vous auriez économisé : [montant]€ en remises volume + [montant]€ en livraison = [total]€ économisés. Besoin d'aide pour planifier des commandes plus efficaces ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Success Story : Consolidation Commandes",
+              "timing": "J+21",
+              "description": "J21 : Preuve sociale",
+              "content": "[Détaillant Similaire] a consolidé de commandes hebdomadaires à bi-hebdomadaires il y a 6 mois. Résultats : 18% d'économies de coûts, moins de temps passé à commander, meilleure gestion trésorerie. Voici comment ils l'ont fait et comment vous pouvez faire de même."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants saisonniers avant les périodes de pic",
+          "scenario_objective": "Générer des engagements en gros pré-saison avec conditions spéciales",
+          "main_messages_ideas": "Tarification pré-saison, Avantages engagement volume, Allocation sécurisée, Conditions paiement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tarification Volume Pré-Saison Disponible",
+              "timing": "8 semaines avant saison",
+              "description": "8 semaines avant saison",
+              "content": "Bloquez votre stock [Saison] maintenant aux tarifs volume pré-saison : [X]% de réduction sur le tarif standard pour les commandes de [quantité minimum]. Plus allocation garantie sur les articles forte demande et conditions de paiement étendues. Calculez vos économies."
+            },
+            {
+              "channel": "Email",
+              "title": "Avantages Commandes Volume : Détail Complet",
+              "timing": "J+5",
+              "description": "J5 : Proposition de valeur détaillée",
+              "content": "Pourquoi s'engager tôt avec des commandes volume : 1) Tarif le plus bas de la saison 2) Stock garanti sur les bestsellers 3) Conditions paiement étendues (net 60 vs net 30) 4) Expédition prioritaire pendant le pic 5) Coûts totaux de livraison réduits. Calculateur ROI inclus."
+            },
+            {
+              "channel": "SMS",
+              "title": "Tarif Volume Se Termine Bientôt",
+              "timing": "1 semaine avant date limite",
+              "description": "1 semaine avant date limite",
+              "content": "Rappel : Tarification volume pré-saison se termine le [date]. Verrouillez [X]% d'économies sur le stock [Saison] maintenant : [URL]"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "program_name": "Automatisation Récommande & Gestion des Stocks",
       "target": "Détaillants actifs avec patterns de commande établis",
       "objective": "Assurer des récommandes opportunes, prévenir les ruptures de stock et optimiser les niveaux d'inventaire",
@@ -249,6 +349,299 @@
               "timing": "J+14",
               "description": "J14 : Solutions alternatives",
               "content": "Les choses changent - peut-être que vos bestsellers ont évolué. Voici les produits tendance dans votre catégorie avec lesquels d'autres détaillants réussissent. Ça vaut la peine d'essayer un nouvel assortiment ?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Gestion Ligne de Crédit & Conditions de Paiement",
+      "target": "Tous les comptes grossiste avec conditions de paiement",
+      "objective": "Optimiser la gestion trésorerie tout en maintenant la conformité de paiement",
+      "kpi": "Taux utilisation crédit (cible: 75%), Conformité paiement (cible: 95%), Acceptation augmentation limite crédit (cible: 40%)",
+      "description": "Communication proactive de gestion de crédit qui aide les détaillants à comprendre les conditions, optimiser la trésorerie et se qualifier pour des conditions de paiement améliorées.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants avec bon historique de paiement éligibles aux augmentations de crédit",
+          "scenario_objective": "Offrir des augmentations de limite de crédit pour faciliter la croissance",
+          "main_messages_ideas": "Offre augmentation crédit, Reconnaissance paiement, Facilitation croissance, Amélioration conditions",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Augmentation Limite de Crédit Disponible",
+              "timing": "Revue crédit trimestrielle",
+              "description": "Revue crédit trimestrielle",
+              "content": "En raison de votre excellent historique de paiement, nous souhaitons augmenter votre limite de crédit de [montant actuel]€ à [nouveau montant]€. Cela vous donne plus de flexibilité pour des commandes plus importantes et votre croissance. Acceptez votre augmentation ici - aucune action requise si vous préférez maintenir la limite actuelle."
+            },
+            {
+              "channel": "SMS",
+              "title": "Augmentation Limite Crédit Approuvée",
+              "timing": "Notification rapide",
+              "description": "Notification rapide",
+              "content": "Félicitations ! Votre limite de crédit a été augmentée à [montant]€ en vigueur immédiatement. Passez des commandes plus importantes en toute confiance : [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Conditions Paiement Étendues Maintenant Disponibles",
+              "timing": "Offre upgrade conditions",
+              "description": "Offre upgrade conditions",
+              "content": "Votre performance de paiement constante vous qualifie pour des conditions étendues : Net 60 (précédemment Net 30). Cela améliore votre trésorerie et vous donne plus de temps pour vendre le stock avant paiement. Conditions actives sur votre prochaine commande."
+            },
+            {
+              "channel": "Email",
+              "title": "Résumé de Vos Nouvelles Conditions de Crédit",
+              "timing": "Confirmation",
+              "description": "Confirmation",
+              "content": "Vos conditions de crédit mises à jour sont maintenant actives : Limite de Crédit : [montant]€, Conditions de Paiement : [net jours], Remise Paiement Anticipé : [%] si payé sous [jours]. Voici comment maximiser vos conditions améliorées."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants approchant la limite de crédit",
+          "scenario_objective": "Gérer les limites de manière proactive et offrir des solutions",
+          "main_messages_ideas": "Notification limite, Options paiement, Parcours augmentation limite, Gestion trésorerie",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Approche de Votre Limite de Crédit",
+              "timing": "À 80% d'utilisation",
+              "description": "À 80% d'utilisation",
+              "content": "Votre utilisation de crédit est à 80% ([montant utilisé]€ sur [limite]€). Pour garantir une commande ininterrompue : 1) Payez le solde impayé de [montant]€ dû le [date] 2) Demandez une augmentation de crédit si votre business a grandi 3) Planifiez une discussion sur plan de paiement. Comment pouvons-nous aider ?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerte Limite Crédit",
+              "timing": "À 90% d'utilisation",
+              "description": "À 90% d'utilisation",
+              "content": "Alerte limite crédit : Vous êtes à [utilisé]€/[limite]€ (90%). Le paiement dû le [date] libérera du crédit. Payez en ligne : [URL] ou appelez pour discuter des options."
+            },
+            {
+              "channel": "Email",
+              "title": "Augmentation Limite Crédit Fast-Track",
+              "timing": "Offre solution",
+              "description": "Offre solution",
+              "content": "Besoin de plus de capacité de crédit ? En fonction de votre historique de commandes et dossier de paiement, vous pourriez être qualifié pour une augmentation immédiate. Demande rapide (5 minutes) pour examen : fournissez les chiffres de ventes récents et nous répondrons sous 24 heures."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Comptes avec dates d'échéance de paiement à venir",
+          "scenario_objective": "Assurer un paiement dans les délais et offrir des options pratiques",
+          "main_messages_ideas": "Rappel paiement, Options paiement faciles, Incentive paiement anticipé, Communication délai de grâce",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Paiement Bientôt Dû : [Facture]",
+              "timing": "7 jours avant date d'échéance",
+              "description": "7 jours avant date d'échéance",
+              "content": "Rappel amical : La facture n°[numéro] de [montant]€ est due le [date]. Payez en ligne en 2 minutes, configurez le paiement automatique pour plus de commodité, ou contactez-nous pour des arrangements de paiement si nécessaire. Remise paiement anticipé : [X]% si payé avant le [date anticipée]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Paiement Dû [Date]",
+              "timing": "3 jours avant date d'échéance",
+              "description": "3 jours avant date d'échéance",
+              "content": "Rappel : Paiement de [montant]€ dû le [date] pour la facture n°[numéro]. Payez maintenant : [URL] ou répondez si vous devez discuter du timing."
+            },
+            {
+              "channel": "Email",
+              "title": "Paiement Dû Aujourd'hui : Options Faciles",
+              "timing": "Date d'échéance",
+              "description": "Date d'échéance",
+              "content": "La facture n°[numéro] de [montant]€ est due aujourd'hui. Options de paiement rapides : 1) Payez en ligne instantanément 2) Appelez pour traiter le paiement 3) Configurez le paiement automatique pour les futures factures. Besoin de quelques jours supplémentaires ? Contactez-nous immédiatement."
+            },
+            {
+              "channel": "Email",
+              "title": "Impayé : Résolvons Cela",
+              "timing": "5 jours après échéance",
+              "description": "5 jours après échéance",
+              "content": "La facture n°[numéro] de [montant]€ est maintenant en retard de 5 jours. Nous voulons aider à résoudre ceci : arrangements de paiement disponibles, options de plan de paiement, ou extension des conditions si problème temporaire. Veuillez nous contacter aujourd'hui pour éviter les restrictions de compte."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Comptes avec excellent historique de paiement",
+          "scenario_objective": "Reconnaître et récompenser la performance de paiement",
+          "main_messages_ideas": "Reconnaissance paiement, Statut client privilégié, Avantages exclusifs, Partenariat continu",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci pour Votre Excellente Performance de Paiement",
+              "timing": "Reconnaissance annuelle",
+              "description": "Reconnaissance annuelle",
+              "content": "Nous souhaitons reconnaître votre performance de paiement remarquable cette année : 100% de paiements à temps, [X] années de partenariat, et [volume]€ de business. En remerciement, nous offrons : [avantage spécial, remise, ou conditions]. Vous êtes un partenaire précieux."
+            },
+            {
+              "channel": "Email",
+              "title": "Avantages Client Privilégié Débloqués",
+              "timing": "Upgrade statut",
+              "description": "Upgrade statut",
+              "content": "En fonction de votre excellent historique de paiement et volume de commandes, vous avez gagné le statut Client Privilégié ! Nouveaux avantages : service client prioritaire, options de paiement flexibles, accès anticipé aux nouveaux produits, et promotions exclusives. Bienvenue chez les Privilégiés."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Formation & Éducation Détaillant",
+      "target": "Tous les détaillants cherchant à améliorer leur performance de vente",
+      "objective": "Autonomiser les détaillants avec connaissances et compétences pour vendre plus efficacement",
+      "kpi": "Taux de complétion formation (cible: 40%), Amélioration ventes post-formation (cible: +15%), Taux d'engagement (cible: 50%)",
+      "description": "Contenus éducatifs et programmes de formation qui aident les détaillants à vendre les produits plus efficacement et développer leur business.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants nouveaux dans les catégories produits ou ayant besoin de connaissance produit",
+          "scenario_objective": "Construire la connaissance produit et confiance de vente",
+          "main_messages_ideas": "Formation produit, Conseils vente, Gestion FAQ, Éducation fonctionnalités",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Maîtrisez [Catégorie Produit] : Formation Gratuite",
+              "timing": "Déclencheur nouvelle catégorie commandée",
+              "description": "Déclencheur nouvelle catégorie commandée",
+              "content": "Félicitations pour l'ajout de [Catégorie] à votre assortiment ! Voici une formation produit gratuite pour vous aider vous et votre équipe à vendre en confiance : fonctionnalités clés, FAQ clients et techniques de vente éprouvées. Complétez en 20 minutes."
+            },
+            {
+              "channel": "Email",
+              "title": "Conseils Vente [Produit] des Top Performers",
+              "timing": "Éducation continue",
+              "description": "Éducation continue",
+              "content": "Comment les meilleurs détaillants vendent [Produit] ? Vrais conseils de vrais détaillants : conversations clients qui convertissent, objections courantes et comment les traiter, et opportunités d'upsell."
+            },
+            {
+              "channel": "Email",
+              "title": "Webinaire Formation Live : [Sujet]",
+              "timing": "Opportunité mensuelle",
+              "description": "Opportunité mensuelle",
+              "content": "Rejoignez notre session de formation live sur [Sujet] : Q&A interactive avec nos experts produits et détaillants à succès. Apprenez des techniques utilisables immédiatement. Inscrivez-vous pour le [date/heure]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Tous les détaillants pour éducation croissance business",
+          "scenario_objective": "Fournir un support business retail plus large",
+          "main_messages_ideas": "Meilleures pratiques retail, Conseils merchandising, Croissance business, Tendances industrie",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Conseils Succès Retail : [Sujet]",
+              "timing": "Contenu mensuel",
+              "description": "Contenu mensuel",
+              "content": "Le conseil retail du mois : [Sujet actionnable comme gestion inventaire, service client, merchandising visuel]. Lecture rapide avec application immédiate pour votre magasin."
+            },
+            {
+              "channel": "Email",
+              "title": "Tendances Industrie : Ce Qui Arrive en [Catégorie]",
+              "timing": "Rapport tendances trimestriel",
+              "description": "Rapport tendances trimestriel",
+              "content": "Gardez une longueur d'avance avec notre rapport tendances trimestriel : évolutions consommateurs, produits émergents et tendances merchandising. Positionnez votre magasin pour ce qui arrive en [Catégorie]."
+            },
+            {
+              "channel": "Email",
+              "title": "Bibliothèque Ressources Détaillants Mise à Jour",
+              "timing": "Disponibilité ressource",
+              "description": "Disponibilité ressource",
+              "content": "Nouvelles ressources dans votre portail détaillant : [ressources spécifiques ajoutées]. Accédez à des guides, templates et outils pour développer votre business. Tout gratuit pour les partenaires grossiste."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programmes Drop-Shipping & Fulfillment",
+      "target": "Détaillants utilisant ou intéressés par le drop-shipping",
+      "objective": "Permettre des opérations drop-ship efficaces avec des processus clairs et du support",
+      "kpi": "Taux adoption drop-ship (cible: 25%), Précision commandes drop-ship (cible: 98%), Volume commandes drop-ship (cible: 30% des comptes éligibles)",
+      "description": "Communication complète du programme drop-ship qui éduque les détaillants sur les avantages, processus et meilleures pratiques pour le fulfillment direct au consommateur.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants éligibles mais n'utilisant pas les services drop-ship",
+          "scenario_objective": "Stimuler l'adoption du programme drop-ship",
+          "main_messages_ideas": "Avantages drop-ship, Aperçu processus, Success stories, Configuration facile",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Développez Sans Stock : Programme Drop-Ship",
+              "timing": "Introduction programme",
+              "description": "Introduction programme",
+              "content": "Saviez-vous que nous offrons le drop-shipping ? Vendez notre catalogue complet sans porter de stock - nous expédions directement à vos clients. Avantages : offre élargie, pas d'investissement stock, pas de tracas expédition, et vous gardez la marge. Découvrez comment ça fonctionne."
+            },
+            {
+              "channel": "Email",
+              "title": "Comment Fonctionne le Drop-Shipping : Guide Complet",
+              "timing": "J+7",
+              "description": "J7 : Éducation",
+              "content": "Drop-shipping simplifié : 1) Vous vendez au prix retail 2) Vous soumettez la commande chez nous au prix grossiste 3) Nous expédions à votre client avec votre branding 4) Vous gardez la marge. Pas de risque stock, catalogue élargi, clients plus satisfaits. Guide pas-à-pas inclus."
+            },
+            {
+              "channel": "Email",
+              "title": "Success Story : [Détaillant] & Drop-Shipping",
+              "timing": "J+14",
+              "description": "J14 : Preuve sociale",
+              "content": "[Détaillant Similaire] a ajouté le drop-shipping il y a 6 mois. Résultats : catalogue effectif 40% plus large, [montant]€ de marge supplémentaire sans investissement stock, et satisfaction client améliorée. Voici comment ils l'ont fait et ce qu'ils ont appris."
+            },
+            {
+              "channel": "SMS",
+              "title": "Essayez Drop-Ship Sans Risque",
+              "timing": "J+21",
+              "description": "J21 : Offre d'essai",
+              "content": "Essayez le drop-shipping sans risque ! 3 premières commandes : pas de frais drop-ship, expédition 2 jours garantie, et support complet. Voyez si ça marche pour votre business : [URL]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants drop-ship actifs",
+          "scenario_objective": "Optimiser les opérations drop-ship et augmenter l'utilisation",
+          "main_messages_ideas": "Optimisation processus, Nouveaux produits éligibles, Métriques performance, Meilleures pratiques",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nouveaux Produits Ajoutés au Programme Drop-Ship",
+              "timing": "Expansion produits mensuelle",
+              "description": "Expansion produits mensuelle",
+              "content": "Nouveaux produits disponibles en drop-ship : [liste produits]. Élargissez votre offre sans nouvel investissement stock. Ces articles sont tendance et disponibles pour fulfillment drop-ship immédiat."
+            },
+            {
+              "channel": "Email",
+              "title": "Meilleures Pratiques Drop-Ship",
+              "timing": "Éducation trimestrielle",
+              "description": "Éducation trimestrielle",
+              "content": "Maximisez le succès drop-ship : définir les attentes clients, communiquer les délais de livraison, gérer les demandes clients, et choisir les meilleurs produits pour le drop-ship. Plus, erreurs courantes à éviter."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerte Traitement Commande Drop-Ship",
+              "timing": "Notification temps réel",
+              "description": "Notification temps réel",
+              "content": "Commande drop-ship [#] reçue et en traitement. Livraison estimée à votre client : [date]. Suivez le statut : [URL]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants avec questions ou problèmes drop-ship",
+          "scenario_objective": "Fournir un excellent support et résoudre les problèmes rapidement",
+          "main_messages_ideas": "Résolution problèmes, Clarification processus, Prévention problèmes, Amélioration continue",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Problème Commande Drop-Ship : [N° Commande]",
+              "timing": "Notification problème",
+              "description": "Notification problème",
+              "content": "Nous avons identifié un problème avec la commande drop-ship [#] : [description]. Action prise : [étapes résolution]. Statut : [statut actuel]. Résolution attendue : [délai]. Nous vous tiendrons informé et informerons votre client si approprié."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerte Retard Drop-Ship",
+              "timing": "Notification proactive",
+              "description": "Notification proactive",
+              "content": "Commande drop-ship [#] retardée de [délai] en raison de [raison]. Nouvelle livraison attendue : [date]. Communication client suggérée : [URL avec modèle message]"
+            },
+            {
+              "channel": "Email",
+              "title": "FAQ Drop-Ship : Questions Courantes",
+              "timing": "Éducation préventive",
+              "description": "Éducation préventive",
+              "content": "Réponses aux questions drop-ship courantes : délais de livraison, numéros de suivi, retours clients, expéditions endommagées, et modifications de commande. Marquez cette ressource pour référence rapide."
             }
           ]
         }
@@ -406,7 +799,7 @@
               "title": "Votre Succès [Saison] : Faisons Encore Mieux",
               "timing": "Basé sur performance année précédente",
               "description": "Basé sur performance année précédente",
-              "content": "La dernière [Saison], vous avez vendu [montant] d'inventaire saisonnier avec [sell-through]%. Cette année, nous aimerions vous aider à faire encore mieux : allocation réservée sur les bestsellers, prix early-bird amélioré et support dédié."
+              "content": "La dernière [Saison], vous avez vendu [montant]€ d'inventaire saisonnier avec [sell-through]%. Cette année, nous aimerions vous aider à faire encore mieux : allocation réservée sur les bestsellers, prix early-bird amélioré et support dédié."
             },
             {
               "channel": "Email",
@@ -508,14 +901,14 @@
               "title": "Vous Êtes Proche du Statut [Niveau Suivant] !",
               "timing": "Quand approche du seuil",
               "description": "Quand approche du seuil de niveau",
-              "content": "Bonne nouvelle - vous êtes à [X]% du statut [Niveau Suivant] ! Les détaillants [Niveau Suivant] bénéficient de : [avantages spécifiques - prix, conditions, support]. Commandez encore [montant] avant le [date] pour débloquer ces avantages."
+              "content": "Bonne nouvelle - vous êtes à [X]% du statut [Niveau Suivant] ! Les détaillants [Niveau Suivant] bénéficient de : [avantages spécifiques - prix, conditions, support]. Commandez encore [montant]€ avant le [date] pour débloquer ces avantages."
             },
             {
               "channel": "SMS",
               "title": "Alerte Avancement Niveau",
               "timing": "Quand très proche du seuil",
               "description": "Quand très proche du seuil",
-              "content": "Vous êtes à [X] du niveau [Niveau Suivant] ! Avantages incluent [avantage principal]. Qualifiez-vous avant le [date] pour upgrade immédiate."
+              "content": "Vous êtes à [X]€ du niveau [Niveau Suivant] ! Avantages incluent [avantage principal]. Qualifiez-vous avant le [date] pour upgrade immédiate."
             },
             {
               "channel": "Email",
@@ -551,71 +944,6 @@
               "timing": "Reconnaissance annuelle",
               "description": "Reconnaissance annuelle",
               "content": "Merci pour une année incroyable de partenariat. Pour vous remercier, voici votre pack appréciation [Top Niveau] : [cadeau, crédit ou offre exclusive]. Nous sommes reconnaissants pour votre business et avons hâte d'une autre année de succès."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Formation & Éducation Détaillant",
-      "target": "Tous les détaillants cherchant à améliorer leur performance de vente",
-      "objective": "Autonomiser les détaillants avec connaissances et compétences pour vendre plus efficacement",
-      "kpi": "Taux de complétion formation (cible: 40%), Amélioration ventes post-formation (cible: +15%), Taux d'engagement (cible: 50%)",
-      "description": "Contenus éducatifs et programmes de formation qui aident les détaillants à vendre les produits plus efficacement et développer leur business.",
-      "scenarios": [
-        {
-          "scenario_target": "Détaillants nouveaux dans les catégories produits ou ayant besoin de connaissance produit",
-          "scenario_objective": "Construire la connaissance produit et confiance de vente",
-          "main_messages_ideas": "Formation produit, Conseils vente, Gestion FAQ, Éducation fonctionnalités",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Maîtrisez [Catégorie Produit] : Formation Gratuite",
-              "timing": "Déclencheur nouvelle catégorie commandée",
-              "description": "Déclencheur nouvelle catégorie commandée",
-              "content": "Félicitations pour l'ajout de [Catégorie] à votre assortiment ! Voici une formation produit gratuite pour vous aider vous et votre équipe à vendre en confiance : fonctionnalités clés, FAQ clients et techniques de vente éprouvées. Complétez en 20 minutes."
-            },
-            {
-              "channel": "Email",
-              "title": "Conseils Vente [Produit] des Top Performers",
-              "timing": "Éducation continue",
-              "description": "Éducation continue",
-              "content": "Comment les meilleurs détaillants vendent [Produit] ? Vrais conseils de vrais détaillants : conversations clients qui convertissent, objections courantes et comment les traiter, et opportunités d'upsell."
-            },
-            {
-              "channel": "Email",
-              "title": "Webinaire Formation Live : [Sujet]",
-              "timing": "Opportunité mensuelle",
-              "description": "Opportunité mensuelle",
-              "content": "Rejoignez notre session de formation live sur [Sujet] : Q&A interactive avec nos experts produits et détaillants à succès. Apprenez des techniques utilisables immédiatement. Inscrivez-vous pour le [date/heure]."
-            }
-          ]
-        },
-        {
-          "scenario_target": "Tous les détaillants pour éducation croissance business",
-          "scenario_objective": "Fournir un support business retail plus large",
-          "main_messages_ideas": "Meilleures pratiques retail, Conseils merchandising, Croissance business, Tendances industrie",
-          "message_sequence": [
-            {
-              "channel": "Email",
-              "title": "Conseils Succès Retail : [Sujet]",
-              "timing": "Contenu mensuel",
-              "description": "Contenu mensuel",
-              "content": "Le conseil retail du mois : [Sujet actionnable comme gestion inventaire, service client, merchandising visuel]. Lecture rapide avec application immédiate pour votre magasin."
-            },
-            {
-              "channel": "Email",
-              "title": "Tendances Industrie : Ce Qui Arrive en [Catégorie]",
-              "timing": "Rapport tendances trimestriel",
-              "description": "Rapport tendances trimestriel",
-              "content": "Gardez une longueur d'avance avec notre rapport tendances trimestriel : évolutions consommateurs, produits émergents et tendances merchandising. Positionnez votre magasin pour ce qui arrive en [Catégorie]."
-            },
-            {
-              "channel": "Email",
-              "title": "Bibliothèque Ressources Détaillants Mise à Jour",
-              "timing": "Disponibilité ressource",
-              "description": "Disponibilité ressource",
-              "content": "Nouvelles ressources dans votre portail détaillant : [ressources spécifiques ajoutées]. Accédez à des guides, templates et outils pour développer votre business. Tout gratuit pour les partenaires grossiste."
             }
           ]
         }
@@ -764,6 +1092,18 @@
       "why_brevo_is_better": "L'intégration avec votre système de gestion des commandes permet des rappels de récommande intelligents basés sur les patterns d'achat réels de chaque détaillant, anticipant les besoins avant les ruptures de stock.",
       "omnichannel_channels": "Email pour les informations de récommande détaillées et catalogues + SMS pour les alertes stock urgentes et rappels de dates limites",
       "setup_efficiency": "L'intégration de l'historique commandes permet un timing de récommande entièrement automatisé et personnalisé calibré sur la vélocité de vente de chaque détaillant."
+    },
+    {
+      "scenario_name": "Gestion Ligne de Crédit & Conditions de Paiement",
+      "why_brevo_is_better": "Le suivi automatisé des limites de crédit et échéances de paiement garantit une communication proactive qui prévient les problèmes tout en maintenant d'excellentes relations détaillants avec des rappels opportuns et professionnels.",
+      "omnichannel_channels": "Email pour les notifications détaillées de paiement et options + SMS pour les rappels urgents + Portail pour la gestion en libre-service",
+      "setup_efficiency": "L'intégration avec les systèmes comptables permet un déclenchement automatique de communications de crédit et paiement sans saisie manuelle ni surveillance de dates d'échéance."
+    },
+    {
+      "scenario_name": "Programmes Drop-Shipping & Fulfillment",
+      "why_brevo_is_better": "Les notifications automatiques de statut commande et communications proactives de problèmes maintiennent les détaillants informés sur les expéditions drop-ship, construisant confiance et réduisant les demandes de support.",
+      "omnichannel_channels": "Email pour les confirmations et détails commande + SMS pour les alertes temps réel et mises à jour suivi + Portail pour le suivi libre-service",
+      "setup_efficiency": "L'intégration avec les systèmes de fulfillment déclenche automatiquement les communications appropriées à chaque étape de la commande drop-ship sans mise à jour manuelle."
     },
     {
       "scenario_name": "Préparation Saisonnière & Pré-Réservation",

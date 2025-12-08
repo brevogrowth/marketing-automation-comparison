@@ -1,678 +1,2064 @@
 {
-  "introduction": "Dieser umfassende Marketing-Beziehungsplan ist für Großhändler konzipiert, um stärkere Partnerschaften mit Einzelhändlern, Einkaufsverbänden und Wiederverkäufern aufzubauen. Von der Neukundenakquise bis zur Stufenerhöhung optimieren diese Programme den gesamten Händler-Lifecycle, um konsistente Bestellungen, Sortimentserweiterung und gegenseitiges Wachstum im Distributionskanal zu fördern.",
+  "introduction": "Dieser umfassende Marketing-Beziehungsplan ist für Großhändler konzipiert, um stärkere Partnerschaften mit Einzelhändlern, Einkaufsgemeinschaften und Wiederverkäufern aufzubauen. Von der Neukundenakquise bis zum Tier-Aufstieg optimieren diese Programme den gesamten Händler-Lebenszyklus, um konsistente Bestellungen, Sortimentserweiterungen und gemeinsames Wachstum über den Vertriebskanal zu fördern.",
   "company_summary": {
-    "name": "Großhandels- & Distributionsunternehmen",
-    "website": "example-wholesale.com",
-    "activities": "B2B-Großhandelsdistribution einschließlich Produktbeschaffung, Bestandsmanagement, Logistik und Händlerunterstützung über diverse Produktkategorien hinweg",
-    "target": "Einzelhandelsgeschäftsinhaber, Einkaufsleiter, Einkaufsverbandsmitglieder, Category Manager und Multi-Standort-Einzelhandelsbetreiber, die eine zuverlässige Produktversorgung benötigen",
+    "name": "Großhandels- & Vertriebsunternehmen",
+    "website": "beispiel-grosshandel.de",
+    "activities": "B2B-Großhandelsvertrieb einschließlich Produktbeschaffung, Bestandsverwaltung, Logistik und Händlerunterstützung über diverse Produktkategorien",
+    "target": "Einzelhändler, Einkaufsleiter, Mitglieder von Einkaufsgemeinschaften, Category Manager und Multi-Standort-Einzelhändler, die zuverlässige Produktversorgung benötigen",
     "industry": "Wholesale",
-    "business_model": "B2B Großhandelsdistribution",
-    "customer_lifecycle_key_steps": "Lead-Generierung > Kreditprüfung > Account-Einrichtung > Erstbestellung > Bestellzyklus-Etablierung > Sortimentserweiterung > Stufenaufstieg > Strategische Partnerschaft > Fürsprache"
+    "business_model": "B2B Großhandelsvertrieb",
+    "customer_lifecycle_key_steps": "Lead-Generierung > Kreditprüfung > Kontoeinrichtung > Erstbestellung > Etablierung Bestellzyklus > Sortimentserweiterung > Tier-Aufstieg > Strategische Partnerschaft > Advocacy"
   },
   "programs_list": [
     {
-      "program_name": "Händler-Lead-Nurturing & Account-Akquise",
-      "target": "Potenzielle Einzelhändler und neue Geschäftsanfragen",
-      "objective": "Interessenten durch effektive Qualifizierung und Wertdemonstration in genehmigte Großhandels-Accounts konvertieren",
-      "kpi": "Lead-zu-Account-Konversion (Ziel: 25%), Antrags-Abschlussrate (Ziel: 60%), Zeit bis Erstbestellung (Ziel: <14 Tage)",
-      "description": "Strategisches Engagement, das den Wert einer Großhandelspartnerschaft demonstriert, den Antragsprozess vereinfacht und die Neukundenaktivierung beschleunigt.",
+      "program_name": "Händler-Lead-Nurturing & Kontoakquise",
+      "target": "Prospective Händler and new business inquiries",
+      "objective": "Convert Interessenten into approved Großhandel Konten through effective qualification and value demonstration",
+      "kpi": "Lead to Konto conversion (target: 25%), Application completion rate (target: 60%), Time to first Bestellung (target: <14 days)",
+      "description": "Strategic engagement to demonstrate Großhandel partnership value, simplify the application process, and accelerate new Konto activation.",
       "scenarios": [
         {
-          "scenario_target": "Messeleads und Website-Anfragen von potenziellen Einzelhändlern",
-          "scenario_objective": "Interesse in Großhandels-Account-Anträge konvertieren",
-          "main_messages_ideas": "Partnerschaftsvorteile, Katalogvorschau, Antragsprozess, Mengenvorteile",
+          "scenario_target": "Trade show Leads and website inquiries from potential Händler",
+          "scenario_objective": "Convert interest into Großhandel Konto applications",
+          "main_messages_ideas": "Partnership benefits, Katalog preview, Application process, Volumen advantages",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Willkommen bei [Firma] Großhandel",
-              "description": "Sofort: Nach Anfrage",
-              "content": "Danke für Ihr Interesse an einer Partnerschaft mit uns! Hier ein Überblick, was die Großhandelspartnerschaft beinhaltet: wettbewerbsfähige Preise, zuverlässige Versorgung, Merchandising-Unterstützung und flexible Bestellmöglichkeiten. Beantragen Sie in 5 Minuten, um loszulegen."
+              "title": "Willkommen to [Company] Großhandel",
+              "description": "Immediate: Post-inquiry",
+              "content": "Thanks for your interest in partnering with us! Here's a preview of what Großhandel partnership includes: competitive Preisgestaltung, reliable supply, merchandising Support, and flexible ordering. Apply in 5 minutes to get started."
             },
             {
               "channel": "Email",
-              "title": "Großhandelskatalog-Vorschau",
-              "description": "Tag 2: Wertdemonstration",
-              "content": "Vorschau unseres Großhandelskatalogs: Bestseller, exklusive Linien und margensteigernde Produkte. Sehen Sie die Einzelhandelspreise und Ihren Großhandelsrabatt. Bereit, Ihre tatsächlichen Margen zu sehen? Vervollständigen Sie Ihren Antrag, um volle Preise freizuschalten."
+              "title": "Großhandel Katalog Preview",
+              "description": "Day 2: Value demonstration",
+              "content": "Preview our Großhandel Katalog: bestsellers, exclusive lines, and margin-boosting Produkte. See the retail Preisgestaltung and your Großhandel Rabatt. Ready to see your actual margins? Complete your application to unlock full Preisgestaltung."
             },
             {
               "channel": "SMS",
-              "title": "Kurzer Antrags-Check",
-              "description": "Tag 4: Persönlicher Touch",
-              "content": "Hallo [Name], sah, dass Sie sich die Großhandelspartnerschaft anschauen. Fragen zum Antrag oder zu den Konditionen? Antworten Sie hier oder rufen Sie [Nummer] an - helfe gerne."
+              "title": "Quick Application Check",
+              "description": "Day 4: Personal touch",
+              "content": "Hi [Name], saw you were checking out Großhandel partnership. Questions about the application or terms? Reply here or call [number] - happy to Hilfe."
             },
             {
               "channel": "Email",
-              "title": "Was unsere Händler sagen",
-              "description": "Tag 7: Social Proof",
-              "content": "Hören Sie von Händlern wie Ihnen: [Testimonials über Partnerschaftsvorteile, Service und Wachstum]. Schließen Sie sich [X] Händlern an, die uns als ihren Großhandelspartner vertrauen."
+              "title": "What Our Händler Say",
+              "description": "Day 7: Social proof",
+              "content": "Hear from Händler like you: [Testimonials about partnership benefits, service, and growth]. Join [X] Händler who trust us as their Großhandel partner."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Personal Willkommen from Your Territory Rep",
+              "description": "Day 9: Direct connection",
+              "content": "Hi [Name], I'm [Rep] and I cover your area. Excited to potentially work together! I can answer any questions about the application, Kredit terms, or our Produkt lines. What questions can I Hilfe with?"
             },
             {
               "channel": "Email",
-              "title": "Antragsunterstützung verfügbar",
-              "description": "Tag 10: Hindernisse entfernen",
-              "content": "Brauchen Sie Hilfe bei Ihrem Antrag? Unser Account-Team kann Sie in einem 10-minütigen Anruf durch den Prozess führen. Wir erledigen den Papierkram, damit Sie schneller bestellen können. Vereinbaren Sie einen Anruf oder antworten Sie mit Fragen."
+              "title": "Application Unterstützung Available",
+              "description": "Day 10: Remove friction",
+              "content": "Need Hilfe with your application? Our Konto team can walk you through the process in a 10-minute call. We'll handle the paperwork so you can start ordering faster. Schedule a call or reply with questions."
             },
             {
               "channel": "Email",
-              "title": "Neuhändler-Starterprogramm",
-              "description": "Tag 14: Sonderangebot",
-              "content": "Neupartner-Special: Beantragen Sie diese Woche und erhalten Sie [Startervorteil - reduzierte Mindestmengen, kostenloser Versand bei Erstbestellung oder Einführungsrabatt]. Zeitlich begrenztes Angebot für qualifizierte Händler."
+              "title": "New Händler Starter Programm",
+              "description": "Day 14: Special offer",
+              "content": "New partner special: Apply this week and receive [starter benefit - reduced minimums, free shipping on first order, or introductory discount]. Limited time offer for qualified Händler."
+            },
+            {
+              "channel": "SMS",
+              "title": "Last Chance: Starter Offer Expires Soon",
+              "description": "Day 16: Urgency",
+              "content": "Your new partner starter offer expires in 48 hours. Complete your application to lock in these benefits: [URL]"
             }
           ]
         },
         {
-          "scenario_target": "Abgebrochene Großhandels-Account-Anträge",
-          "scenario_objective": "Re-engagieren und Account-Einrichtung abschließen",
-          "main_messages_ideas": "Antragswiederherstellung, Hilfsangebot, Vereinfachter Prozess, Dringlichkeit",
+          "scenario_target": "Abandoned Großhandel Konto applications",
+          "scenario_objective": "Re-engage and complete Konto setup",
+          "main_messages_ideas": "Application recovery, Unterstützung offer, Simplified process, Urgency",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Ihr Antrag ist fast vollständig",
-              "description": "Tag 1 nach Abbruch",
-              "content": "Sie sind fast da! Ihr Großhandelsantrag ist zu 80% vollständig. Beenden Sie in 2 Minuten, um Großhandelspreise freizuschalten und mit dem Bestellen zu beginnen. Fragen, die Sie aufhalten? Wir sind hier um zu helfen."
+              "title": "Your Application Is Almost Complete",
+              "description": "Day 1 after abandonment",
+              "content": "You're almost there! Your Großhandel application is 80% complete. Finish in 2 minutes to unlock Großhandel Preisgestaltung and start ordering. Questions holding you up? We're here to Hilfe."
             },
             {
               "channel": "SMS",
-              "title": "Brauchen Sie Hilfe beim Antrag?",
-              "description": "Tag 3",
-              "content": "Sah, dass Sie einen Großhandelsantrag gestartet haben. Auf ein Hindernis gestoßen? Antworten Sie mit Fragen oder rufen Sie [Nummer] an - wir können oft am selben Tag genehmigen."
+              "title": "Need Hilfe With Application?",
+              "description": "Day 3",
+              "content": "Noticed you started a Großhandel application. Hit a snag? Reply with questions or call [number] - we can often approve same-day."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Application Support Available",
+              "description": "Day 5: Conversational Hilfe",
+              "content": "Hi [Name]! Saw you started an application but didn't finish. Common questions: What's needed? Tax ID, business license, and 2 references. Takes 3 minutes. Need Hilfe with any part?"
             },
             {
               "channel": "Email",
-              "title": "Lassen Sie uns Ihre Einrichtung gemeinsam abschließen",
-              "description": "Tag 7",
-              "content": "Immer noch an Großhandelspartnerschaft interessiert? Lassen Sie uns Ihren Antrag gemeinsam abschließen. Vereinbaren Sie einen kurzen Anruf und unser Team führt Sie durch - die meisten Anträge werden innerhalb von 24 Stunden genehmigt."
+              "title": "Let's Complete Your Setup Together",
+              "description": "Day 7",
+              "content": "Still interested in Großhandel partnership? Let's finish your application together. Schedule a quick call and our team will guide you through - most applications are approved within 24 hours."
+            },
+            {
+              "channel": "Email",
+              "title": "We've Saved Your Application",
+              "description": "Day 14: Final touchpoint",
+              "content": "Your partially completed application is saved and ready whenever you are. One click to resume where you left off. The Großhandel opportunity is waiting - let's get you set up."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Referrals from existing Händler or buying groups",
+          "scenario_objective": "Fast-track referred Interessenten with social proof",
+          "main_messages_ideas": "Empfehlung acknowledgment, Fast-track process, Referrer connection, Exclusive benefits",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen - [Referrer Name] Recommended Us",
+              "description": "Immediate: Empfehlung entry",
+              "content": "[Referrer Name] thought we'd be a great fit for your business! They've been a valued partner for [duration]. As a referred Interessent, you get expedited application review and first Bestellung benefits. Here's what makes us special..."
+            },
+            {
+              "channel": "SMS",
+              "title": "Fast-Track Application Ready",
+              "description": "Day 1: Quick action",
+              "content": "Hi [Name]! [Referrer] sent you our way. Your fast-track application is ready - takes 3 minutes and we'll review within 24 hours: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Why [Referrer] Chose Us",
+              "description": "Day 3: Social proof",
+              "content": "Want to know why [Referrer] recommended us? Here's their story and results: [specific testimonial or case study]. They've grown [metric] since partnering with us. Ready to see similar results?"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Questions About Partnership?",
+              "description": "Day 5: Personal connection",
+              "content": "Hi [Name], it's [Rep] - I work with [Referrer] too. Happy to answer any questions about how we work together. What's most important for your business? Preisgestaltung? Lieferung? Produkt selection?"
+            },
+            {
+              "channel": "Email",
+              "title": "Empfehlung Bonus: Special Terms",
+              "description": "Day 7: Exclusive incentive",
+              "content": "Because [Referrer] referred you, you qualify for special partnership terms: [specific benefits - pricing tier, reduced minimums, extended payment terms]. Apply by [date] to lock in these exclusive conditions."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Buying group members during recruitment Kampagnen",
+          "scenario_objective": "Leverage group affiliation to accelerate conversion",
+          "main_messages_ideas": "Group benefits, Collective Preisgestaltung, Member Support, Fast approval",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Buying Group] Partnership Willkommen",
+              "description": "Immediate: Group member inquiry",
+              "content": "Willkommen [Buying Group] member! Your membership unlocks exclusive Großhandel benefits: group Preisgestaltung Tiers, coordinated promotions, rebate Programme, and priority Support. Here's how to activate your Konto..."
+            },
+            {
+              "channel": "Email",
+              "title": "Your [Buying Group] Exclusive Benefits",
+              "description": "Day 2: Value demonstration",
+              "content": "As a [Buying Group] member, you receive: [X]% better Preisgestaltung than standard Konten, quarterly rebates averaging [amount], co-op marketing funds, and access to member-only Produkt lines. See full benefit breakdown."
+            },
+            {
+              "channel": "SMS",
+              "title": "Group Application - Expedited",
+              "description": "Day 4: Fast track",
+              "content": "[Buying Group] members get 24-hour approval. Complete your application today, start ordering tomorrow: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Meet Your Group Konto Manager",
+              "description": "Day 5: Personal connection",
+              "content": "Hi [Name], I'm [Rep] and I Support all [Buying Group] members in your region. I'll Hilfe you maximize your membership benefits, coordinate group promotions, and ensure you get the most from this partnership. Let's connect!"
+            },
+            {
+              "channel": "Email",
+              "title": "Current [Buying Group] Promotions",
+              "description": "Day 7: Immediate value",
+              "content": "Active now for [Buying Group] members: [current group promotions and exclusive offers]. These are only available to active Konten - apply now to participate in this quarter's Programme."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Group Member Support",
+              "description": "Day 10: Ongoing Unterstützung",
+              "content": "Quick question about [Buying Group] benefits or application? I'm here to Hilfe! What's your biggest question about getting started with us?"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Neuhändler-Onboarding & Erstbestellungs-Erfolg",
-      "target": "Neu genehmigte Großhandels-Accounts",
-      "objective": "Starke Bestellgewohnheiten etablieren und Erstbestellungszufriedenheit sicherstellen",
-      "kpi": "Erstbestellung innerhalb von 7 Tagen (Ziel: 70%), Onboarding-Zufriedenheit (Ziel: 90%), Wiederholungsbestellung innerhalb von 30 Tagen (Ziel: 60%)",
-      "description": "Umfassendes Onboarding, das neuen Händlern hilft, Bestellprozesse zu navigieren, Produkte zu entdecken und erfolgreiche Verkaufsmuster zu etablieren.",
+      "program_name": "Neuhändler-Onboarding & Erstbestellungserfolg",
+      "target": "Newly approved Großhandel Konten",
+      "objective": "Establish strong ordering habits and ensure first Bestellung satisfaction",
+      "kpi": "First Bestellung within 7 days (target: 70%), Onboarding satisfaction (target: 90%), Repeat Bestellung within 30 days (target: 60%)",
+      "description": "Comprehensive onboarding that helps new Händler navigate ordering processes, discover Produkte, and establish successful selling patterns.",
       "scenarios": [
         {
-          "scenario_target": "Neu genehmigte Einzelhandels-Accounts, die auf Erstbestellung warten",
-          "scenario_objective": "Schnelle Erstbestellung vorantreiben und Bestellbeziehung etablieren",
-          "main_messages_ideas": "Willkommen, Account-Einrichtung, Bestellanleitung, Bestseller-Empfehlungen, Erstbestellungs-Support",
+          "scenario_target": "Newly approved retail Konten awaiting first Bestellung",
+          "scenario_objective": "Drive rapid first Bestellung and establish ordering relationship",
+          "main_messages_ideas": "Willkommen, Konto setup, Ordering guide, Bestseller recommendations, First Bestellung Support",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Willkommen in der [Firma]-Familie!",
-              "description": "Tag der Genehmigung",
-              "content": "Gratulation! Ihr Großhandels-Account ist genehmigt und aktiv. Hier ist alles, was Sie brauchen: Ihr Account-Login, Großhandelspreis-Katalog und Ihr dedizierter Account-Manager-Kontakt. Bereit, Ihre erste Bestellung aufzugeben? Unser Bestseller-Starterpaket ist ein guter Anfang."
+              "title": "Willkommen to the [Company] Family!",
+              "description": "Approval day",
+              "content": "Herzlichen Glückwunsch! Your Großhandel Konto is approved and active. Here's everything you need: your Konto login, Großhandel Preisgestaltung Katalog, and your dedicated Konto manager contact. Ready to place your first Bestellung? Our bestseller starter pack is a great place to begin."
             },
             {
               "channel": "SMS",
-              "title": "Account aktiv!",
-              "description": "Gleicher Tag",
-              "content": "Tolle Nachrichten - Ihr [Firma] Großhandels-Account ist live! Login: [URL]. Erstbestellungs-Tipp: Schauen Sie sich unser Bestseller-Bundle für eine kuratierte Starter-Auswahl an."
+              "title": "Konto Active!",
+              "description": "Same day",
+              "content": "Great news - your [Company] Großhandel Konto is live! Login: [URL]. First Bestellung tip: Check out our bestseller bundle for a curated starter selection."
+            },
+            {
+              "channel": "Portal",
+              "title": "Willkommen Dashboard: Your First Steps",
+              "description": "Login trigger",
+              "content": "Willkommen to your Großhandel portal! Complete these first steps: 1) Explore our Katalog 2) Review your Preisgestaltung Tier 3) Set up Zahlung method 4) Place your first Bestellung. Need Hilfe? Live chat is available now."
             },
             {
               "channel": "Email",
-              "title": "Ihre Bestellanleitung & Plattform-Tutorial",
-              "description": "Tag 2: Prozess-Education",
-              "content": "Alles, was Sie über Bestellungen wissen müssen: Mindestbestellmengen, Lieferpläne, Zahlungsbedingungen und Rückgaberichtlinien. Plus, eine kurze Videotour durch unsere Bestellplattform, um Sie in Minuten zum Bestellen zu bringen."
+              "title": "Your Ordering Guide & Platform Tutorial",
+              "description": "Day 2: Process education",
+              "content": "Everything you need to know about ordering: minimum Bestellungen, Versand schedules, Zahlung terms, and return policies. Plus, a quick video tour of our ordering platform to get you placing Bestellungen in minutes."
             },
             {
               "channel": "Email",
-              "title": "Top-Seller für Ihren Geschäftstyp",
-              "description": "Tag 3: Personalisierte Empfehlungen",
-              "content": "Basierend auf Händlern wie Ihnen, hier sind unsere Top-Performer in Ihrer Kategorie. Diese Produkte haben die besten Abverkaufsraten und Margen. Perfekt für Ihre Erstbestellung oder zur Sortimentserweiterung."
+              "title": "Top Sellers for Your Store Type",
+              "description": "Day 3: Personalized recommendations",
+              "content": "Based on Händler like you, here are our top performers in your Kategorie. These Produkte have the best sell-through rates and margins. Perfect for your first Bestellung or to expand your Sortiment."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Your Konto Manager Check-In",
+              "description": "Day 5: Personal connection",
+              "content": "Hi [Name], it's [Rep]. Just checking in - how's the onboarding going? Any questions about Produkte, ordering, or getting set up? I'm here to make this easy for you."
             },
             {
               "channel": "Email",
-              "title": "Noch nicht bestellt? Lassen Sie uns helfen",
-              "description": "Tag 7: Wenn keine Erstbestellung",
-              "content": "Wir haben bemerkt, dass Sie noch keine Erstbestellung aufgegeben haben. Brauchen Sie Hilfe bei der Produktauswahl? Unser Account-Team kann ein Starter-Sortiment basierend auf Ihrem Geschäftstyp und Kundenstamm empfehlen. Vereinbaren Sie eine kurze Beratung."
+              "title": "Haven't Ordered Yet? Let Us Hilfe",
+              "description": "Day 7: If no first Bestellung",
+              "content": "We noticed you haven't placed your first Bestellung yet. Need Hilfe selecting Produkte? Our Konto team can recommend a starter Sortiment based on your store type and Kunde base. Schedule a quick consultation."
             },
             {
               "channel": "Email",
-              "title": "Erstbestellung versendet - Was kommt als Nächstes",
-              "description": "Bei Erstbestellungsversand",
-              "content": "Ihre erste Bestellung ist auf dem Weg! Tracking: [Link]. Hier ist, was Sie erwarten können: Lieferzeitplan, Auspack-Tipps und Merchandising-Vorschläge. Fragen zu den Produkten? Ihr Account-Manager ist bereit zu helfen."
-            },
-            {
-              "channel": "Email",
-              "title": "Erstbestellungs-Feedback & Nachbestellerinnerung",
-              "description": "7 Tage nach Erstlieferung",
-              "content": "Wie verkauft sich Ihre erste Bestellung? Wir würden gerne Ihr Feedback hören. Basierend auf Ihrer Bestellung, hier sind ergänzende Produkte, die gut zusammen verkauft werden. Bereit, Ihre Bestseller nachzubestellen? Ihre Favoriten sind für einfache Nachbestellung gespeichert."
+              "title": "First Bestellung Shipped - What's Next",
+              "description": "On first Bestellung shipment",
+              "content": "Your first Bestellung is on its way! Tracking: [link]. Here's what to expect: Lieferung timeline, unpacking tips, and merchandising suggestions. Questions about the Produkte? Your Konto manager is ready to Hilfe."
             }
           ]
         },
         {
-          "scenario_target": "Neue Einkaufsverbandsmitglieder, die über Gruppenzugehörigkeit beitreten",
-          "scenario_objective": "Mit gruppenspezifischen Vorteilen und Programmen onboarden",
-          "main_messages_ideas": "Gruppen-Willkommen, Exklusive Vorteile, Gruppenpreise, Koordinierte Programme",
+          "scenario_target": "New Konten that placed first Bestellung - building momentum",
+          "scenario_objective": "Ensure satisfaction and drive second Bestellung",
+          "main_messages_ideas": "Lieferung confirmation, Produkt feedback, Nachbestellung recommendations, Merchandising tips",
+          "message_sequence": [
+            {
+              "channel": "SMS",
+              "title": "Lieferung Confirmed",
+              "description": "On Lieferung",
+              "content": "Your first Bestellung was delivered! Everything arrive in good condition? Reply if any issues - we'll make it right immediately."
+            },
+            {
+              "channel": "Email",
+              "title": "First Bestellung Feedback & Nachbestellung Reminder",
+              "description": "7 days after first Lieferung",
+              "content": "How's your first Bestellung selling? We'd love your feedback. Based on your Bestellung, here are complementary Produkte that sell well together. Ready to Nachbestellung your bestsellers? Your favorites are saved for easy Nachbestellung."
+            },
+            {
+              "channel": "Portal",
+              "title": "Nachbestellung Your Bestsellers",
+              "description": "14 days after first Bestellung",
+              "content": "Quick Nachbestellung available: Your first Bestellung is saved and ready to Nachbestellung with one click. Need to adjust quantities or add Produkte? Easy to customize before checkout."
+            },
+            {
+              "channel": "Email",
+              "title": "Merchandising Tips for Maximum Sales",
+              "description": "10 days after Lieferung",
+              "content": "Get the most from your first Bestellung: proven merchandising techniques, display suggestions, and cross-selling strategies from successful Händler. Small changes that drive big results."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "How's It Going?",
+              "description": "15 days after Lieferung",
+              "content": "Quick check-in - how are those Produkte moving? Any surprises (good or bad)? Would love to hear how it's going and Hilfe optimize your next Bestellung."
+            },
+            {
+              "channel": "Email",
+              "title": "Ready for Bestellung #2?",
+              "description": "21 days after first Bestellung",
+              "content": "Time to think about your second Bestellung! Based on your first Bestellung and typical sell-through, here's what we recommend reordering now plus complementary Produkte to try. Build your Bestellung here."
+            }
+          ]
+        },
+        {
+          "scenario_target": "New buying group members joining through group affiliation",
+          "scenario_objective": "Onboard with group-specific benefits and Programme",
+          "main_messages_ideas": "Group Willkommen, Exclusive benefits, Group Preisgestaltung, Coordinated Programme",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Willkommen [Einkaufsverbands]-Mitglied!",
-              "description": "Tag der Genehmigung",
-              "content": "Willkommen bei [Firma] als [Einkaufsverbands]-Mitglied! Sie haben Zugang zu exklusiven Gruppenpreisen, koordinierten Promotions und Nur-Mitglieder-Programmen. So maximieren Sie Ihre Mitgliedschaftsvorteile."
+              "title": "Willkommen [Buying Group] Member!",
+              "description": "Approval day",
+              "content": "Willkommen to [Company] as a [Buying Group] member! You have access to exclusive group Preisgestaltung, coordinated promotions, and member-only Programme. Here's how to maximize your membership benefits."
             },
             {
               "channel": "Email",
-              "title": "[Einkaufsverbands] Exklusive Preise & Programme",
-              "description": "Tag 3: Gruppenvorteile",
-              "content": "Ihre [Einkaufsverbands]-Mitgliedschaft schaltet frei: [spezifische Preisstufen], Quartals-Rückvergütungen, koordinierte Marketing-Programme und Nur-Mitglieder-Neuproduktvorschauen. Melden Sie sich an, um Ihre exklusiven Preise zu sehen."
+              "title": "[Buying Group] Exclusive Preisgestaltung & Programs",
+              "description": "Day 3: Group benefits",
+              "content": "Your [Buying Group] membership unlocks: [specific pricing tiers], quarterly rebates, coordinated marketing Programme, and member-only new Produkt previews. Log in to see your exclusive Preisgestaltung."
+            },
+            {
+              "channel": "Portal",
+              "title": "[Buying Group] Member Dashboard",
+              "description": "First login",
+              "content": "Willkommen [Buying Group] member! Your member dashboard shows: current rebate status, active group promotions, member-only Produkte, and co-op marketing funds available. Explore your exclusive benefits."
             },
             {
               "channel": "Email",
-              "title": "Verbinden Sie sich mit anderen [Einkaufsverbands]-Mitgliedern",
-              "description": "Tag 7: Community-Building",
-              "content": "Treten Sie der [Einkaufsverbands]-Händler-Community bei: Best-Practice-Austausch, Erfolgsgeschichten und koordinierte Promotions. Sehen Sie, wie andere Mitglieder ihr Geschäft mit unserer Partnerschaft ausbauen."
+              "title": "Connect With Fellow [Buying Group] Members",
+              "description": "Day 7: Community building",
+              "content": "Join the [Buying Group] Händler community: best practices sharing, success stories, and coordinated promotions. See how other members are growing their businesses with our partnership."
+            },
+            {
+              "channel": "SMS",
+              "title": "Group Aktion Alert",
+              "description": "When group Aktion launches",
+              "content": "[Buying Group] exclusive: New Aktion just launched - [brief description]. Check your portal for details and Bestellung by [date]: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Your Quarterly [Buying Group] Rebate",
+              "description": "Quarterly rebate distribution",
+              "content": "Your Q[X] [Buying Group] rebate is ready: $[amount] based on your purchases. See full breakdown and how to maximize next quarter's rebate. Plus, upcoming group Programme for next quarter."
+            }
+          ]
+        },
+        {
+          "scenario_target": "New multi-location Händler with complex needs",
+          "scenario_objective": "Provide enterprise-level onboarding and centralized ordering Support",
+          "main_messages_ideas": "Multi-location setup, Centralized ordering, Location-specific Lieferung, Consolidated billing",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen - Multi-Location Konto Setup",
+              "description": "Approval day",
+              "content": "Willkommen! Your multi-location Konto is approved. Your dedicated enterprise Konto manager will Hilfe set up: centralized ordering, location-specific Versand, consolidated billing, and individual location reporting. Let's schedule your setup call."
+            },
+            {
+              "channel": "Email",
+              "title": "Enterprise Konto Configuration",
+              "description": "Day 3: Technical setup",
+              "content": "Your enterprise portal is ready! Configure each location, set ordering permissions, establish location-specific catalogs, and review consolidated reporting. Tutorial and setup Unterstützung available."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Enterprise Support Line",
+              "description": "Day 5: Direct connection",
+              "content": "Hi [Name], I'm [Rep] - your dedicated enterprise Konto manager. Direct line to me for any multi-location questions, setup Hilfe, or special requests. How can I Hilfe get you fully set up?"
+            },
+            {
+              "channel": "Portal",
+              "title": "Multi-Location Dashboard Active",
+              "description": "First login",
+              "content": "Your enterprise dashboard is live! View all locations, compare performance, manage centralized ordering, and access consolidated reporting. Each location manager can access their specific portal too."
+            },
+            {
+              "channel": "Email",
+              "title": "Enterprise Best Practices",
+              "description": "Day 10: Optimization tips",
+              "content": "Multi-location success strategies: centralized vs. distributed ordering, Inventar sharing between locations, standardized assortments vs. location customization, and performance tracking. Let's optimize your setup."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Nachbestellautomatisierung & Bestandsmanagement",
-      "target": "Aktive Händler mit etablierten Bestellmustern",
-      "objective": "Rechtzeitige Nachbestellungen sicherstellen, Lieferengpässe verhindern und Lagerbestände optimieren",
-      "kpi": "Nachbestellrate (Ziel: 75%), Lieferengpass-Prävention (Ziel: 90%), Durchschnittliche Bestellfrequenz (Ziel: +20%)",
-      "description": "Proaktive Bestandsmanagement-Kommunikation, die Händlerbedürfnisse basierend auf Verkaufsmustern und saisonalen Trends antizipiert.",
+      "program_name": "Volumenpreise & Tier-Rabatt-Programme",
+      "target": "All active Händler with growth potential",
+      "objective": "Incentivize larger Bestellung volumes through transparent Tier benefits",
+      "kpi": "Average Bestellung value (target: +25%), Volumen Tier advancement (target: 30%), Bulk Bestellung rate (target: 40%)",
+      "description": "Clear communication about Volumen Preisgestaltung Tiers and incentives that motivate Händler to increase Bestellung sizes and commit to larger purchases.",
       "scenarios": [
         {
-          "scenario_target": "Händler, die sich basierend auf Bestellhistorie dem Nachbestellpunkt nähern",
-          "scenario_objective": "Rechtzeitige Nachbestellungen vor Lieferengpässen vorantreiben",
-          "main_messages_ideas": "Nachbestellerinnerung, Schnellnachbestellung, Mengenrabatte, Lager-Alerts",
+          "scenario_target": "Händler approaching Volumen Tier thresholds",
+          "scenario_objective": "Motivate Tier advancement with clear savings calculation",
+          "main_messages_ideas": "Threshold proximity, Savings opportunity, Tier benefits, Easy upgrade path",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Zeit, Ihre Bestseller nachzubestellen",
-              "description": "Basierend auf typischem Nachbestellzyklus",
-              "content": "Basierend auf Ihrem Verkaufsmuster werden Sie wahrscheinlich bei [Produkten] knapp. Jetzt nachbestellen, um Lieferengpässe zu vermeiden - Ihre vorherige Bestellung ist für einfache Nachbestellung vorgeladen. Aktuelle Lieferzeit: [X Tage]."
+              "title": "You're Close to [Next Tier] Preisgestaltung!",
+              "description": "When approaching threshold",
+              "content": "Great news! You're only $[amount] away from [Next Tier] Preisgestaltung. Upgrade benefits: [X]% additional Rabatt, [benefit 2], [benefit 3]. Your potential annual savings: $[calculation]. Add [suggested products] to this Bestellung to reach the Tier."
+            },
+            {
+              "channel": "Portal",
+              "title": "Tier Upgrade Available",
+              "description": "Cart threshold alert",
+              "content": "You're $[X] away from [Next Tier] Preisgestaltung on this Bestellung! Add [amount] more to unlock [Y]% Rabatt. Suggested items to reach threshold: [product list]. Upgrade now?"
             },
             {
               "channel": "SMS",
-              "title": "Nachbestellungs-Alert",
-              "description": "Wenn sich Lieferengpass-Fenster nähert",
-              "content": "Nachbestellungs-Alert: [Produkt]-Nachbestellung empfohlen innerhalb von 5 Tagen basierend auf Ihrer Verkaufsrate. Schnellnachbestellung: [URL]"
+              "title": "Tier Upgrade Alert",
+              "description": "Real-time notification",
+              "content": "Your Bestellung is close to [Next Tier] Preisgestaltung! Add $[X] to save [Y]% on this entire Bestellung. Quick suggestions: [URL]"
             },
             {
               "channel": "Email",
-              "title": "One-Click-Nachbestellung bereit",
-              "description": "Follow-up wenn keine Aktion",
-              "content": "Ihre Nachbestellung ist fertig - gleiche Produkte, gleiche Mengen. Ein Klick zur Bestätigung. Müssen Sie anpassen? Einfach vor Checkout zu ändern. Mengenrabatt gilt für diese Bestellgröße."
+              "title": "Volumen Rabatt Calculator",
+              "description": "Day 3: Planning tool",
+              "content": "See exactly how much you could save with Volumen Preisgestaltung. Our calculator shows savings at each Tier based on your typical Bestellungen. Most Händler at your Volumen save $[amount] annually by optimizing Bestellung size."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Let's Plan Your Tier Upgrade",
+              "description": "Day 5: Personal Unterstützung",
+              "content": "Hi [Name]! Noticed you're close to better Preisgestaltung. Want Hilfe planning an Bestellung that gets you to [Next Tier]? I can recommend Produkte that make sense for your store and hit that threshold. Interested?"
+            },
+            {
+              "channel": "Email",
+              "title": "Tier Milestone Achieved!",
+              "description": "On Tier upgrade",
+              "content": "Herzlichen Glückwunsch! You've reached [New Tier] Preisgestaltung. Your new Rabatt rate is active now: [percentage] on all Bestellungen. Plus, you've unlocked: [additional benefits]. Here's how to maximize your new Tier."
             }
           ]
         },
         {
-          "scenario_target": "Händler mit sinkender Bestellfrequenz",
-          "scenario_objective": "Re-engagieren und Bestellhindernisse verstehen",
-          "main_messages_ideas": "Check-in, Hilfsangebot, Alternative Produkte, Anreiz",
+          "scenario_target": "Regular small-Bestellung Händler with consolidation opportunity",
+          "scenario_objective": "Encourage Bestellung consolidation for mutual efficiency",
+          "main_messages_ideas": "Bestellung frequency analysis, Consolidation benefits, Reduced Versand costs, Better Preisgestaltung",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Wir vermissen Ihre Bestellungen",
-              "description": "Wenn Bestellfrequenz um 30%+ sinkt",
-              "content": "Wir haben bemerkt, dass Ihre Bestellungen zurückgegangen sind. Alles in Ordnung? Wenn sich Ihre Bedürfnisse geändert haben, würden wir gerne helfen, bessere Produkte oder Bestelllösungen zu finden. Was können wir tun, um Ihr Geschäft zu unterstützen?"
-            },
-            {
-              "channel": "SMS",
-              "title": "Kurzer Check-in",
-              "description": "Tag 7: Persönliche Ansprache",
-              "content": "Hallo [Name], hier ist [Rep] von [Firma]. Ist schon eine Weile her - wie läuft der Verkauf? Kann ich irgendwie helfen?"
+              "title": "Bestellung Consolidation Opportunity",
+              "description": "Quarterly analysis",
+              "content": "We noticed you Bestellung frequently in smaller quantities. By consolidating to [recommended frequency], you could: save [X]% on Volumen Preisgestaltung, reduce Versand costs by [Y], and save time. Here's a personalized consolidation plan for your business."
             },
             {
               "channel": "Email",
-              "title": "Neue Optionen zum Betrachten",
-              "description": "Tag 14: Alternative Lösungen",
-              "content": "Dinge ändern sich - vielleicht haben sich Ihre Bestseller verschoben. Hier sind trendige Produkte in Ihrer Kategorie, mit denen andere Händler Erfolg haben. Wert, ein neues Sortiment auszuprobieren?"
+              "title": "Your Savings Analysis",
+              "description": "Day 7: Detailed breakdown",
+              "content": "If you had consolidated last quarter's [X] Bestellungen into [Y] larger Bestellungen, you would have saved: $[amount] in Volumen Rabatte + $[amount] in Versand = $[total] saved. Want Hilfe planning more efficient ordering?"
+            },
+            {
+              "channel": "Portal",
+              "title": "Bestellung Planning Tool Available",
+              "description": "Tool announcement",
+              "content": "New feature: Bestellung planning tool helps you optimize timing and quantities for maximum savings. Input your typical monthly needs, and we'll show optimal ordering schedule and Volumen Tier strategy."
+            },
+            {
+              "channel": "SMS",
+              "title": "Consolidation Consult?",
+              "description": "Day 14: Personal offer",
+              "content": "Quick question - want to talk about consolidating Bestellungen for better Preisgestaltung? 10-minute call could save you $[amount]/quarter. Reply YES to schedule."
+            },
+            {
+              "channel": "Email",
+              "title": "Success Story: Bestellung Consolidation",
+              "description": "Day 21: Social proof",
+              "content": "[Similar Retailer] consolidated from weekly to bi-weekly Bestellungen 6 months ago. Results: 18% cost savings, less time on ordering, better cash flow management. Here's how they did it and how you can too."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Saisonal Händler before peak periods",
+          "scenario_objective": "Drive pre-Saison bulk commitments with special terms",
+          "main_messages_ideas": "Pre-Saison Preisgestaltung, Bulk commitment benefits, Secured allocation, Zahlung terms",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Pre-Saison Bulk Preisgestaltung Available",
+              "description": "8 weeks before Saison",
+              "content": "Lock in [Season] Inventar now at pre-Saison bulk rates: [X]% off standard Preisgestaltung on Bestellungen of [minimum quantity]. Plus guaranteed allocation on high-demand items and extended Zahlung terms. Calculate your savings."
+            },
+            {
+              "channel": "Email",
+              "title": "Bulk Bestellung Benefits: Full Breakdown",
+              "description": "Day 5: Detailed value prop",
+              "content": "Why commit early with bulk Bestellungen: 1) Lowest Preisgestaltung of the Saison 2) Guaranteed Bestand on bestsellers 3) Extended Zahlung terms (net 60 vs. net 30) 4) Priority Versand during peak 5) Reduced total Versand costs. ROI calculator included."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Pre-Saison Planning Hilfe",
+              "description": "Day 10: Personal Unterstützung",
+              "content": "Hi [Name]! Working on your [Season] Bestellung? I can Hilfe you plan bulk quantities based on your past performance and secure best Preisgestaltung. When's a good time to discuss your needs?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Bulk Preisgestaltung Ends Soon",
+              "description": "1 week before deadline",
+              "content": "Reminder: Pre-Saison bulk Preisgestaltung ends [date]. Lock in [X]% savings on [Season] Inventar now: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Final Call: Pre-Saison Bulk Bestellungen",
+              "description": "3 days before deadline",
+              "content": "Last chance for pre-Saison bulk Preisgestaltung on [Season] Inventar. After [date], standard Preisgestaltung applies and popular items may be limited. Bestellung now to secure best rates and guaranteed Bestand."
+            },
+            {
+              "channel": "Portal",
+              "title": "Bulk Bestellung Confirmed - Special Terms Active",
+              "description": "On bulk commitment",
+              "content": "Your [Season] bulk Bestellung is confirmed! Special terms active: [pricing tier], net 60 Zahlung terms, guaranteed allocation, priority Versand. Bestellung summary and Lieferung schedule attached."
+            }
+          ]
+        },
+        {
+          "scenario_target": "High-potential Konten not optimizing Volumen Preisgestaltung",
+          "objective": "Educate on volume opportunities with personalized analysis",
+          "main_messages_ideas": "Missed savings, Tier potential, Custom Volumen Programm, Konto review",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "You're Leaving Money on the Table",
+              "description": "Quarterly opportunity analysis",
+              "content": "Based on your Bestellung history, you're purchasing at [current tier] but your Volumen qualifies for [higher tier]. By optimizing Bestellung timing, you could access [better pricing] and save approximately $[amount] annually. Let's review your Konto."
+            },
+            {
+              "channel": "Email",
+              "title": "Personalized Volumen Strategy",
+              "description": "Day 7: Custom plan",
+              "content": "We've created a personalized Volumen strategy for your Konto: recommended Bestellung frequency, optimal quantities per Bestellung, Tier advancement path, and projected annual savings of $[amount]. Review and implement."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Konto Optimization Call?",
+              "description": "Day 10: High-touch offer",
+              "content": "Hi [Name], I've identified $[amount] in potential annual savings for your Konto through Volumen optimization. Want to schedule 15 minutes to walk through the opportunities? Could be very valuable."
+            },
+            {
+              "channel": "Email",
+              "title": "Custom Volumen Programm Proposal",
+              "description": "Day 14: Special offer",
+              "content": "Based on your growth trajectory and Bestellung Volumen, we'd like to offer a custom Volumen Programm: exclusive Preisgestaltung Tier, personalized terms, dedicated Support, and quarterly business reviews. Here's what we're proposing."
+            },
+            {
+              "channel": "Email",
+              "title": "Success: Your New Volumen Agreement",
+              "description": "On custom Programm activation",
+              "content": "Your custom Volumen Programm is now active! New benefits: [pricing structure], [payment terms], [support level], [other benefits]. Your estimated annual savings: $[amount]. Let's maximize this partnership."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Neuprodukteinführung & Sortimentserweiterung",
-      "target": "Alle aktiven Händler segmentiert nach Relevanz",
-      "objective": "Adoption neuer Produkte vorantreiben und Händler-Sortimente erweitern",
-      "kpi": "Neuprodukts-Adoptionsrate (Ziel: 30%), Sortimentserweiterung (Ziel: +2 Kategorien), Probebestellungs-Konversion (Ziel: 40%)",
-      "description": "Strategische Neuprodukt-Kommunikation, die neue Angebote mit Händlerprofilen und Kundenstämmen abgleicht.",
+      "program_name": "Inventar & Nachbestell-Benachrichtigungen",
+      "target": "Active Händler with established ordering patterns",
+      "objective": "Prevent stockouts and optimize Inventar levels through proactive alerts",
+      "kpi": "Stockout prevention rate (target: 90%), Alert response rate (target: 65%), Nachbestellung cycle consistency (target: 80%)",
+      "description": "Smart Inventar monitoring and proactive Nachschub alerts that Hilfe Händler maintain optimal Bestand levels and never miss sales due to stockouts.",
       "scenarios": [
         {
-          "scenario_target": "Händler mit relevanter Kategorie-Passung für neue Produkte",
-          "scenario_objective": "Erstbestellungen für neue Produkte generieren",
-          "main_messages_ideas": "Neuheiten-Vorschau, Produktdetails, Probenangebot, Erfolgsgeschichten",
+          "scenario_target": "Händler approaching Nachbestellung point based on Bestellung history",
+          "scenario_objective": "Drive timely reorders before stockouts",
+          "main_messages_ideas": "Nachbestellung reminder, Quick Nachbestellung, Volumen savings, Bestand alerts",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Exklusive Vorschau: [Neue Produktlinie]",
-              "description": "2 Wochen vor Launch",
-              "content": "Erhalten Sie ersten Zugang zu [Neue Produktlinie] vor der allgemeinen Verfügbarkeit. Basierend auf Ihrem Kundenstamm sollte das ein starker Performer sein. Jetzt vorbestellen für erste Lieferung und beste Auswahl."
+              "title": "Time to Nachbestellung Your Bestsellers",
+              "description": "Based on typical Nachbestellung cycle",
+              "content": "Based on your sales pattern, you're likely running low on [Products]. Nachbestellung now to avoid stockouts - your previous Bestellung is pre-loaded for easy Nachbestellung. Current Lead time: [X days]."
             },
             {
-              "channel": "Email",
-              "title": "[Neues Produkt] Launch: Alle Details",
-              "description": "Launch-Tag",
-              "content": "[Neue Produktlinie] ist da! Vollständige Produktspezifikationen, Großhandelspreise, empfohlene Einzelhandelspreise und Margenanalyse. Einschließlich POS-Materialien und Verkaufstipps, um Produkt schnell zu bewegen."
+              "channel": "Portal",
+              "title": "Nachschub Recommendation",
+              "description": "Login notification",
+              "content": "Intelligent Nachschub alert: Based on your Bestellung history and typical sales velocity, these Produkte should be reordered now: [product list with quantities]. One-click Nachbestellung or customize."
             },
             {
               "channel": "SMS",
-              "title": "Neuprodukts-Alert",
-              "description": "Launch-Tag - schnelle Benachrichtigung",
-              "content": "Gerade gelauncht: [Neues Produkt] ist jetzt bestellbar. Starke Margen und bei Konsumenten im Trend. Details: [URL]"
+              "title": "Nachschub Alert",
+              "description": "If approaching Stockout window",
+              "content": "Nachbestellung alert: [Product] Nachschub recommended within 5 days based on your sales rate. Quick Nachbestellung: [URL]"
             },
             {
               "channel": "Email",
-              "title": "Einführungs-Probeangebot",
-              "description": "Woche 1: Probenanreiz",
-              "content": "Testen Sie [Neues Produkt] risikofrei: Sondereinführungspreise plus volle Rückgabeoption, wenn es nicht performt. Zeitlich begrenzt für Erstbestellungen. Margen starten bei [X]%."
+              "title": "One-Click Nachbestellung Ready",
+              "description": "Follow-up if no action",
+              "content": "Your Nachbestellung is ready to go - same Produkte, same quantities. One click to confirm. Need adjustments? Easy to modify before checkout. Volumen Rabatt applies to this Bestellung size."
             },
             {
-              "channel": "Email",
-              "title": "Wie Händler [Neues Produkt] verkaufen",
-              "description": "Woche 4: Social Proof",
-              "content": "Erste Ergebnisse sind da: Händler berichten [Ergebnis] mit [Neuem Produkt]. So merchandisen sie es, Preisstrategien die funktionieren, und Verkaufstechniken. Bereit, es auszuprobieren?"
+              "channel": "WhatsApp",
+              "title": "Nachbestellung Check-In",
+              "description": "Day 5: Personal follow-up",
+              "content": "Hi [Name], checking on your Nachschub - need Hilfe with your Bestellung? Any issues with Inventar levels or Produkte not moving as expected? Here to Hilfe optimize."
             },
             {
-              "channel": "Email",
-              "title": "Letzte Chance: Einführungspreise enden",
-              "description": "Woche 6: Dringlichkeit",
-              "content": "Einführungspreise für [Neues Produkt] enden [Datum]. Sichern Sie sich Launch-Preise bevor Standard-Großhandelspreise gelten. Händler, die es probiert haben, bestellen nach - schließen Sie sich ihnen an."
+              "channel": "SMS",
+              "title": "Urgent: Stockout Risk",
+              "description": "Critical Inventar level",
+              "content": "URGENT: [Product] likely out of Bestand within 48 hours based on your typical sales. Bestellung now for [delivery timeframe] Lieferung: [URL]"
             }
           ]
         },
         {
-          "scenario_target": "Händler, die in begrenzten Kategorien bestellen (Sortimentserweiterungs-Potenzial)",
-          "scenario_objective": "Kategorie-Mix des Händlers mit ergänzenden Produkten erweitern",
-          "main_messages_ideas": "Kategorie-Empfehlung, Cross-Sell, Bundle-Angebot, Erfolgsbeispiel",
+          "scenario_target": "Händler with saisonal Produkte approaching Saison",
+          "scenario_objective": "Ensure adequate saisonal Inventar ahead of peak demand",
+          "main_messages_ideas": "Saisonal Nachschub, Demand forecast, Pre-Saison Inventar, Timing optimization",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Vervollständigen Sie Ihr Sortiment: [Kategorie]",
-              "description": "Quartalsweise Sortimentsprüfung",
-              "content": "Sie machen das großartig mit [aktueller Kategorie]. Händler wie Sie führen auch [ergänzende Kategorie] - es ist ein natürlicher Add-on-Kauf für Ihre Kunden. Hier ist unsere Bestseller-Auswahl in dieser Kategorie."
+              "title": "[Season] Nachschub Timing Alert",
+              "description": "4 weeks before Saison",
+              "content": "Based on last year's [Season] sales, you should Bestellung [products] now to be stocked by peak demand. Recommended quantities based on your prior year performance: [breakdown]. Bestellung by [date] for optimal timing."
+            },
+            {
+              "channel": "Portal",
+              "title": "Saisonal Inventar Forecast",
+              "description": "Dashboard alert",
+              "content": "Your personalized [Season] forecast is ready. Based on last year's sales: recommended Produkte, optimal quantities, suggested Bestellung timing, and projected demand curve. Review and Bestellung."
             },
             {
               "channel": "Email",
-              "title": "Kategorie-Erweiterungspaket",
-              "description": "Follow-up-Angebot",
-              "content": "Testen Sie [neue Kategorie] mit unserem Starterpaket: kuratierte Auswahl an Bestsellern mit reduzierter Mindestmenge und Einführungspreisen. Perfekt, um Kundenreaktion ohne große Verpflichtung zu testen."
+              "title": "Saisonal Bestsellers: Bestand Up Now",
+              "description": "Day 7: Produkt focus",
+              "content": "These [Season] items sell out fast. Based on network-wide demand and your history, prioritize stocking: [products ranked by priority]. Current Bestand levels and suggested Bestellung quantities included."
+            },
+            {
+              "channel": "SMS",
+              "title": "Saison Starts in 2 Weeks",
+              "description": "Critical timing reminder",
+              "content": "[Season] starts in 2 weeks! Last chance for Lieferung before peak. Bestellung today for [delivery date]: [URL]"
             },
             {
               "channel": "Email",
-              "title": "Wie [Händlertyp] erfolgreich erweitert hat",
-              "description": "Social Proof",
-              "content": "[Ähnlicher Händler] hat vor sechs Monaten [Kategorie] hinzugefügt - hier ist ihre Geschichte und Ergebnisse. Könnte auch für Sie funktionieren? Lassen Sie uns besprechen, welches Sortiment zu Ihrem Kundenstamm passen würde."
+              "title": "Late-Saison Nachschub Strategy",
+              "description": "Mid-Saison",
+              "content": "Mid-[Season] Inventar check: What's selling through fast? What needs refreshing? Here are trending items and Nachschub recommendations to finish the Saison strong. Plus clearance planning for Saison end."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler with declining Bestellung frequency",
+          "scenario_objective": "Re-engage and understand ordering obstacles",
+          "main_messages_ideas": "Check-in, Unterstützung offer, Alternative Produkte, Incentive",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "We've Missed Your Bestellungen",
+              "description": "When Bestellung frequency drops 30%+",
+              "content": "We noticed your Bestellungen have slowed down. Everything okay? If your needs have changed, we'd love to Hilfe find better Produkte or ordering solutions. What can we do to Support your business?"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Quick Check-In",
+              "description": "Day 7: Personal outreach",
+              "content": "Hi [Name], it's [Rep] from [Company]. Noticed it's been a while - how are sales going? Inventar piling up or need Hilfe with different Produkte? Let's chat."
+            },
+            {
+              "channel": "SMS",
+              "title": "Everything Okay?",
+              "description": "Day 10: Brief touchpoint",
+              "content": "Haven't seen an Bestellung in [X weeks] - just checking everything's alright? Any way we can Hilfe or make ordering easier for you?"
+            },
+            {
+              "channel": "Email",
+              "title": "New Options to Consider",
+              "description": "Day 14: Alternative solutions",
+              "content": "Things change - maybe your bestsellers have shifted. Here are trending Produkte in your Kategorie that other Händler are having success with. Worth trying a new Sortiment?"
+            },
+            {
+              "channel": "Email",
+              "title": "Come Back Offer: Special Incentive",
+              "description": "Day 21: Rückgewinnung incentive",
+              "content": "We'd love to see you back! Special offer on your next Bestellung: [discount or benefit] plus free consultation on optimizing your Produkt mix. No obligation - just want to Hilfe get you back on track."
+            }
+          ]
+        },
+        {
+          "scenario_target": "New Produkt categories that need regular restocking",
+          "scenario_objective": "Establish Nachbestellung patterns for newly adopted categories",
+          "main_messages_ideas": "Kategorie guidance, Nachbestellung education, Success metrics, Optimization tips",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Your [Category] Nachbestellung Guide",
+              "description": "30 days after Kategorie adoption",
+              "content": "You've been carrying [Category] for a month now. Here's what to expect for reordering: typical Nachbestellung frequency, Inventar level guidance, and saisonal considerations. Set up Nachschub alerts?"
+            },
+            {
+              "channel": "Portal",
+              "title": "Kategorie Performance Dashboard",
+              "description": "Available in portal",
+              "content": "Track your [Category] performance: sell-through rate, Inventar levels, Nachbestellung recommendations, and comparison to similar Händler. Optimize your Kategorie management here."
+            },
+            {
+              "channel": "Email",
+              "title": "Time to Nachbestellung [Category]",
+              "description": "First Nachbestellung trigger",
+              "content": "Based on your initial Bestellung and typical sell-through, it's time to Nachbestellung [Category] Produkte. Here's what we recommend: [products and quantities]. Adjust based on your actual sales and Nachbestellung."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "How's [Category] Performing?",
+              "description": "45 days after adoption",
+              "content": "Quick check - how is [Category] doing for you? Selling well? Need different Produkte or quantities? Happy to Hilfe optimize your Sortiment for better results."
+            },
+            {
+              "channel": "Email",
+              "title": "Optimizing Your [Category] Inventar",
+              "description": "60 days: Optimization advice",
+              "content": "After 60 days, here's what we've learned about your [Category] business: [performance insights]. Recommendations for improvement: [specific suggestions]. Let's optimize your Nachbestellung strategy."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Saisonvorbereitung & Vorbestellung",
-      "target": "Alle Händler vor Hochsaisons und Feiertagen",
-      "objective": "Saisonale Bestandsvorbereitung maximieren und Vorsaison-Bestellungen erfassen",
-      "kpi": "Vorsaison-Bestellvolumen (Ziel: 40% des Saisonbestands), Saisonaler Abverkauf (Ziel: 85%), Frühbestellungs-Teilnahme (Ziel: 60%)",
-      "description": "Vorausschauende saisonale Kommunikation, die Händlern hilft, sich mit richtigen Lagerbeständen und Merchandising-Unterstützung auf Spitzennachfrage vorzubereiten.",
+      "program_name": "Kreditlinie & Zahlungsbedingungen-Management",
+      "target": "All Großhandel Konten with Zahlung terms",
+      "objective": "Optimize cash flow management while maintaining Zahlung compliance",
+      "kpi": "Kredit utilization rate (target: 75%), Zahlung compliance (target: 95%), Kredit limit increase acceptance (target: 40%)",
+      "description": "Proactive Kredit management communication that helps Händler understand terms, optimize cash flow, and qualify for improved Zahlung conditions.",
       "scenarios": [
         {
-          "scenario_target": "Alle aktiven Händler vor großen Verkaufssaisons",
-          "scenario_objective": "Frühe saisonale Bestellungen mit Planungsunterstützung vorantreiben",
-          "main_messages_ideas": "Saisonvorschau, Frühbucher-Preise, Bestandsplanung, Merchandising-Unterstützung",
+          "scenario_target": "Händler with good Zahlung history eligible for Kredit increases",
+          "scenario_objective": "Offer Kredit limit increases to facilitate growth",
+          "main_messages_ideas": "Kredit increase offer, Zahlung appreciation, Growth enablement, Terms improvement",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "[Saison]-Kollektion Vorschau: Vorausplanen",
-              "description": "12 Wochen vor Saison",
-              "content": "Erste Einblicke in unsere [Saison]-Kollektion: neue Produkte, wiederkehrende Bestseller und trendorientierte Artikel. Frühe Vorschau hilft Ihnen, Ihr Sortiment vor dem Ansturm zu planen. Vollständiger Katalog angehängt."
+              "title": "Kredit Limit Increase Available",
+              "description": "Quarterly Kredit review",
+              "content": "Based on your excellent Zahlung history, we'd like to increase your Kredit limit from $[current] to $[new]. This gives you more flexibility for larger Bestellungen and growth. Accept your increase here - no action required if you prefer to maintain current limit."
             },
             {
-              "channel": "Email",
-              "title": "Frühbucher [Saison]-Preise jetzt verfügbar",
-              "description": "10 Wochen vor Saison",
-              "content": "Sichern Sie sich [Saison]-Bestand zu Frühbucherpreisen: [X]% Rabatt auf Standard-Großhandel bei Bestellungen bis [Datum]. Garantierte Lagerzuteilung und Prioritätsversand für frühe Bestellungen."
-            },
-            {
-              "channel": "Email",
-              "title": "[Saison]-Bestandsplanungsleitfaden",
-              "description": "8 Wochen vor Saison",
-              "content": "Basierend auf Ihren vergangenen [Saison]-Verkäufen, hier ist unsere empfohlene Bestellung: Mengen nach Produkt, optimaler Bestellzeitpunkt und prognostizierte Nachfrage. Passen Sie an oder akzeptieren Sie unsere Empfehlungen."
+              "channel": "Portal",
+              "title": "Kredit Increase Offer",
+              "description": "Login notification",
+              "content": "Good news! You qualify for a Kredit limit increase to $[amount] based on strong Zahlung performance. Benefits: larger Bestellungen, better cash flow flexibility, and saisonal Inventar capacity. Accept or decline."
             },
             {
               "channel": "SMS",
-              "title": "Frühbucher-Frist naht",
-              "description": "1 Woche vor Frühbucherfrist",
-              "content": "[Saison]-Frühbucherpreise enden [Datum]. Verpassen Sie nicht [X]% Ersparnis und garantierten Lagerbestand. Jetzt bestellen: [URL]"
+              "title": "Kredit Limit Increase Approved",
+              "description": "Quick notification",
+              "content": "Herzlichen Glückwunsch! Your Kredit limit has been increased to $[amount] effective immediately. Place larger Bestellungen with confidence: [URL]"
             },
             {
               "channel": "Email",
-              "title": "[Saison]-Merchandising-Kit bereit",
-              "description": "4 Wochen vor Saison",
-              "content": "Ihr [Saison]-Merchandising-Kit ist bereit: POS-Materialien, Display-Empfehlungen, Social-Media-Assets und Werbevorschläge. Kostenlos herunterladen mit Ihrer [Saison]-Bestellung."
+              "title": "Extended Zahlung Terms Now Available",
+              "description": "Terms upgrade offer",
+              "content": "Your consistent Zahlung performance qualifies you for extended terms: Net 60 (previously Net 30). This improves your cash flow and gives more time to sell through Inventar before Zahlung. Terms active on your next Bestellung."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Kredit Discussion?",
+              "description": "High-value Konto personal touch",
+              "content": "Hi [Name]! Wanted to discuss your Kredit terms personally. Based on your growth and Zahlung history, we can offer better terms or higher limits. Have 10 minutes this week to discuss how we can Support your growth?"
             },
             {
               "channel": "Email",
-              "title": "Finale [Saison]-Bevorratung: Dem Ansturm voraus",
-              "description": "2 Wochen vor Saison",
-              "content": "Letzte Chance für [Saison]-Bestellungen mit garantierter Vorsaison-Lieferung. Lagerbestände bei Bestsellern sind begrenzt - jetzt bestellen, um sicherzustellen, dass Sie bereit sind, wenn Kunden zu kaufen beginnen."
+              "title": "Your New Kredit Terms Summary",
+              "description": "Confirmation",
+              "content": "Your updated Kredit terms are now active: Kredit Limit: $[amount], Zahlung Terms: [net days], Early Zahlung Rabatt: [%] if paid within [days]. Here's how to maximize your improved terms."
             }
           ]
         },
         {
-          "scenario_target": "Händler mit starker früherer Saisonleistung",
-          "scenario_objective": "Saisonales Engagement von bewährten Performern erhöhen",
-          "main_messages_ideas": "Vergangene Leistung, Wachstumsmöglichkeit, Exklusive Zuteilung, Premium-Platzierung",
+          "scenario_target": "Händler approaching Kredit limit",
+          "scenario_objective": "Manage limits proactively and offer solutions",
+          "main_messages_ideas": "Limit notification, Zahlung options, Limit increase path, Cash flow management",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Ihr [Saison]-Erfolg: Lassen Sie es noch besser machen",
-              "description": "Basierend auf Vorjahresleistung",
-              "content": "Letzte [Saison] haben Sie [Betrag] an saisonalem Inventar mit [Abverkauf]% verkauft. Dieses Jahr möchten wir Ihnen helfen, es noch besser zu machen: reservierte Zuteilung bei Bestsellern, verbesserte Frühbucherpreise und dedizierter Support."
+              "channel": "Portal",
+              "title": "Kredit Utilization Alert",
+              "description": "At 75% utilization",
+              "content": "You're using 75% of your $[limit] Kredit limit. Current balance: $[amount]. Options: 1) Make Zahlung to free up Kredit 2) Request limit increase 3) Contact us about Zahlung arrangements."
             },
             {
               "channel": "Email",
-              "title": "Reservierte Bestseller-Zuteilung",
-              "description": "Für Top-Performer",
-              "content": "Als Top-[Saison]-Performer haben wir Zuteilung unserer heißesten Artikel für Sie reserviert. Diese werden ausverkauft sein - beanspruchen Sie Ihre Zuteilung bis [Datum], um Lagerbestand zu garantieren."
+              "title": "Approaching Your Kredit Limit",
+              "description": "At 80% utilization",
+              "content": "Your Kredit utilization is at 80% ($[used] of $[limit]). To ensure uninterrupted ordering: 1) Pay outstanding balance of $[amount] due [date] 2) Request Kredit increase if your business has grown 3) Schedule Zahlung plan discussion. How can we Hilfe?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Kredit Limit Alert",
+              "description": "At 90% utilization",
+              "content": "Kredit limit alert: You're at $[used]/$[limit] (90%). Zahlung due [date] will free up Kredit. Pay online: [URL] or call to discuss options."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Kredit Limit Discussion",
+              "description": "Personal outreach at limit",
+              "content": "Hi [Name], noticed you're near your Kredit limit. If your business has grown, we can likely increase your limit. Want to discuss? Or if you need a few extra days on Zahlung, let me know and we'll work it out."
+            },
+            {
+              "channel": "Email",
+              "title": "Kredit Limit Increase Fast-Track",
+              "description": "Solution offer",
+              "content": "Need more Kredit capacity? Based on your Bestellung history and Zahlung record, you may qualify for an immediate increase. Quick application (5 minutes) for review: provide recent sales figures and we'll respond within 24 hours."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Konten with upcoming Zahlung due dates",
+          "scenario_objective": "Ensure timely Zahlung and offer convenient options",
+          "main_messages_ideas": "Zahlung reminder, Easy Zahlung options, Early Zahlung incentive, Grace period communication",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Zahlung Due Soon: [Invoice]",
+              "description": "7 days before due date",
+              "content": "Friendly reminder: Rechnung #[number] for $[amount] is due [date]. Pay online in 2 minutes, set up auto-pay for convenience, or contact us about Zahlung arrangements if needed. Early Zahlung Rabatt: [X]% if paid by [early date]."
+            },
+            {
+              "channel": "Portal",
+              "title": "Upcoming Zahlung: [Invoice]",
+              "description": "Dashboard notification",
+              "content": "Zahlung due [date]: Rechnung #[number] - $[amount]. Quick actions: Pay now | Set up auto-pay | View Rechnung | Contact Support. Early Zahlung Rabatt available."
+            },
+            {
+              "channel": "SMS",
+              "title": "Zahlung Due [Date]",
+              "description": "3 days before due date",
+              "content": "Reminder: $[amount] Zahlung due [date] for Rechnung #[number]. Pay now: [URL] or reply if you need to discuss timing."
+            },
+            {
+              "channel": "Email",
+              "title": "Zahlung Due Today: Easy Zahlung Options",
+              "description": "Due date",
+              "content": "Rechnung #[number] for $[amount] is due today. Quick Zahlung options: 1) Pay online instantly 2) Call to process Zahlung 3) Set up auto-pay for future invoices. Need a few extra days? Contact us immediately."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Zahlung Follow-Up",
+              "description": "1 day past due",
+              "content": "Hi [Name], Zahlung for Rechnung #[number] ($[amount]) was due yesterday. Everything okay? If you need to discuss Zahlung timing or arrangements, let me know and we'll work something out."
+            },
+            {
+              "channel": "Email",
+              "title": "Past Due: Let's Resolve This",
+              "description": "5 days past due",
+              "content": "Rechnung #[number] for $[amount] is now 5 days past due. We want to Hilfe resolve this: Zahlung arrangements available, Zahlung plan options, or extend terms if temporary issue. Please contact us today to avoid Konto restrictions."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Konten with excellent Zahlung history",
+          "scenario_objective": "Recognize and reward Zahlung performance",
+          "main_messages_ideas": "Zahlung appreciation, Preferred Kunde status, Exclusive benefits, Continued partnership",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Thank You for Excellent Zahlung Performance",
+              "description": "Annual recognition",
+              "content": "We want to recognize your outstanding Zahlung performance this year: 100% on-time Zahlungen, [X] years of partnership, and $[volume] in business. As a thank you, we're offering: [special benefit, discount, or terms]. You're a valued partner."
+            },
+            {
+              "channel": "Email",
+              "title": "Preferred Kunde Benefits Unlocked",
+              "description": "Status upgrade",
+              "content": "Based on your excellent Zahlung history and Bestellung Volumen, you've earned Preferred Kunde status! New benefits: priority Kunde service, flexible Zahlung options, early access to new Produkte, and exclusive promotions. Willkommen to Preferred."
+            },
+            {
+              "channel": "Portal",
+              "title": "Preferred Kunde Dashboard",
+              "description": "Status activation",
+              "content": "Willkommen to Preferred Kunde status! Your new benefits: [benefit 1], [benefit 2], [benefit 3]. Access exclusive offers, flexible Zahlung terms, and priority Support here."
+            },
+            {
+              "channel": "Email",
+              "title": "Early Zahlung Belohnungen Programm",
+              "description": "Incentive Programm intro",
+              "content": "New for preferred Kunden: Earn Belohnungen for early Zahlung! Pay invoices 10 days early and earn [X]% Kredit toward future Bestellungen. Simple, automatic, and adds up fast. Details and enrollment here."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Werbekampagnen & Verkaufsunterstützung",
-      "target": "Aktive Händler, die Verkäufe steigern möchten",
-      "objective": "Werbeunterstützung bieten, die Händlern hilft, Lagerbestand abzuverkaufen",
-      "kpi": "Promotion-Teilnahmerate (Ziel: 50%), Promotionaler Abverkauf (Ziel: 80%), Händler-Promotions-ROI (Ziel: 3x)",
-      "description": "Koordinierte Werbeunterstützung, die Händlern die Tools und Anreize für erfolgreiche Verkaufsaktionen gibt.",
+      "program_name": "Händler-/Wiederverkäufer-Support & Schulung",
+      "target": "All Händler seeking to improve sales performance",
+      "objective": "Empower Händler with knowledge and skills to sell more effectively",
+      "kpi": "Schulung completion rate (target: 40%), Sales improvement post-Schulung (target: +15%), Engagement rate (target: 50%)",
+      "description": "Educational content and Schulung Programme that Hilfe Händler sell Produkte more effectively and grow their businesses.",
       "scenarios": [
         {
-          "scenario_target": "Alle Händler während koordinierter Werbeperioden",
-          "scenario_objective": "Werbeteilnahme und Abverkauf vorantreiben",
-          "main_messages_ideas": "Werbepreise, Marketingmaterialien, Verbraucherangebot, Teilnahmevorteile",
+          "scenario_target": "Händler new to Produkt categories or needing Produkt knowledge",
+          "scenario_objective": "Build Produkt knowledge and selling confidence",
+          "main_messages_ideas": "Produkt Schulung, Selling tips, FAQ handling, Feature education",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "[Promotion-Name] Kampagne: Ihr Teilnahmeleitfaden",
-              "description": "2 Wochen vor Promotion",
-              "content": "Nehmen Sie an unserer [Promotion-Name]-Kampagne teil, die vom [Daten] läuft. Teilnehmende Händler erhalten: Sonder-Großhandelspreise zur Finanzierung von Promotions, einsatzbereite Marketingmaterialien und koordinierte Verbraucherwerbung, die Traffic in Ihr Geschäft bringt."
+              "title": "Master [Product Category]: Free Schulung",
+              "description": "New Kategorie Bestellung trigger",
+              "content": "Herzlichen Glückwunsch on adding [Category] to your Sortiment! Here's free Produkt Schulung to Hilfe you and your team sell confidently: key features, Kunde FAQs, and proven selling techniques. Complete in 20 minutes."
+            },
+            {
+              "channel": "Portal",
+              "title": "Schulung Center: [Category]",
+              "description": "Available resources",
+              "content": "Access your [Category] Schulung materials: Produkt videos, selling guides, FAQ sheets, and interactive modules. Complete Schulung to earn certification and exclusive benefits."
             },
             {
               "channel": "Email",
-              "title": "Ihr [Promotion]-Marketing-Kit",
-              "description": "1 Woche vorher",
-              "content": "Ihr Werbe-Toolkit ist bereit: Beschilderung, Social-Media-Posts, Email-Templates und Werbemittel. Alles anpassbar mit Ihren Geschäftsinfos. Herunterladen und einsetzen - alles was Sie brauchen um zu werben."
+              "title": "[Product] Selling Tips From Top Performers",
+              "description": "Ongoing education",
+              "content": "How do top Händler sell [Product]? Real tips from real Händler: Kunde conversations that close, common objections and how to handle them, and upsell opportunities."
             },
             {
               "channel": "SMS",
-              "title": "Promotion startet [Tag]",
-              "description": "Tag vor Promotion",
-              "content": "[Promotion-Name] startet morgen! Stellen Sie sicher, dass Sie bei Werbeartikeln bevorratet sind. Last-Minute-Bestellung? Wir können beschleunigen. Materialien bereit: [URL]"
+              "title": "Live Schulung Today",
+              "description": "Event reminder",
+              "content": "Reminder: Live [Category] Schulung starts in 2 hours. Join link: [URL]. Can't make it? Recording will be available in your Schulung portal."
             },
             {
               "channel": "Email",
-              "title": "[Promotion] Läuft: Tipps für Erfolg",
-              "description": "Mitte Promotion",
-              "content": "Promotions-Update: Hier ist, was Top-Performer-Händler tun, um Ergebnisse zu maximieren. Mid-Promotion-Tipps, Bestandscheck und Nachbestelloptionen für schnell gehende Artikel."
+              "title": "Live Schulung Webinar: [Topic]",
+              "description": "Monthly opportunity",
+              "content": "Join our live Schulung session on [Topic]: interactive Q&A with our Produkt experts and successful Händler. Learn techniques you can use immediately. Register for [date/time]."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Schulung Questions?",
+              "description": "Post-Schulung Support",
+              "content": "Hi [Name]! Saw you completed [Category] Schulung - nice work! Any questions about what you learned or need Hilfe applying it in your store? Here to Hilfe you succeed."
             },
             {
               "channel": "Email",
-              "title": "[Promotion] Ergebnisse & Learnings",
-              "description": "Nach Promotion",
-              "content": "Wie hat [Promotion] bei Ihnen funktioniert? Hier sind netzwerkweite Ergebnisse und Erfolgsgeschichten. Ihr Feedback hilft uns, bessere Programme zu gestalten - kurze Umfrage innen."
+              "title": "Advanced [Category] Schulung Available",
+              "description": "Progression opportunity",
+              "content": "Ready for advanced [Category] Schulung? Build on your foundation with: advanced selling techniques, complex Kunde situations, merchandising optimization, and Aktions- strategies. Enroll now."
             }
           ]
         },
         {
-          "scenario_target": "Händler mit Überbestand, die Abverkaufsunterstützung brauchen",
-          "scenario_objective": "Händlern helfen, langsames Inventar zu bewegen",
-          "main_messages_ideas": "Räumungsunterstützung, Werbeideen, Bündelungsvorschläge, Rückgabeoptionen",
+          "scenario_target": "All Händler for business growth education",
+          "scenario_objective": "Provide broader retail business Support",
+          "main_messages_ideas": "Retail best practices, Merchandising tips, Business growth, Industry trends",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Brauchen Sie Hilfe beim Inventarabbau?",
-              "description": "Basierend auf Bestellmustern, die langsame Umschläge anzeigen",
-              "content": "Wir haben bemerkt, dass sich einiges Ihres Inventars möglicherweise langsamer dreht als erwartet. Hier sind bewährte Strategien: Bündelungsideen, Preisvorschläge und Display-Auffrischungstipps. Brauchen Sie Tausch-/Rückgabeoptionen? Lassen Sie uns besprechen."
+              "title": "Retail Success Tips: [Topic]",
+              "description": "Monthly content",
+              "content": "This month's retail tip: [Actionable topic like inventory management, customer service, visual merchandising]. Quick read with immediate application for your store."
             },
             {
               "channel": "Email",
-              "title": "Saisonende-Räumungsunterstützung",
-              "description": "Saisonende",
-              "content": "Saison endet? Hier ist unser Saisonende-Räumungs-Leitfaden: empfohlene Reduzierungen, Beschilderungsvorlagen und Social-Promotion-Ideen. Saisonales Inventar durchbewegen, um Platz für das Nächste zu schaffen."
+              "title": "Industry Trends: What's Coming in [Category]",
+              "description": "Quarterly trend report",
+              "content": "Stay ahead with our quarterly trend report: consumer shifts, emerging Produkte, and merchandising trends. Position your store for what's next in [Category]."
+            },
+            {
+              "channel": "Portal",
+              "title": "Händler Resource Library Updated",
+              "description": "Resource availability",
+              "content": "New resources in your Händler portal: [specific resources added]. Access guides, templates, and tools to grow your business. All free for Großhandel partners."
+            },
+            {
+              "channel": "Email",
+              "title": "Merchandising Masterclass: Visual Impact",
+              "description": "Educational series",
+              "content": "Merchandising Masterclass Part 1: Visual merchandising that drives sales. Window displays, in-store layouts, Produkt grouping, and saisonal refresh strategies. Includes photos and templates."
+            },
+            {
+              "channel": "Email",
+              "title": "Händler Success Webinar Series",
+              "description": "Ongoing education Programm",
+              "content": "Join our monthly Händler Success Webinar Series. This month: [Topic]. Previous recordings available: Inventar management, staff Schulung, Kunde retention, and marketing on a budget."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Business Question?",
+              "description": "Open-door Support",
+              "content": "Hi [Name]! Just a reminder - if you ever have retail business questions (not just about our Produkte), feel free to reach out. Happy to share ideas or connect you with other successful Händler. Here to Hilfe you grow."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler attending virtual or in-person Schulung events",
+          "scenario_objective": "Maximize event participation and follow-through",
+          "main_messages_ideas": "Event registration, Pre-event prep, Event reminders, Post-event resources",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Exclusive Schulung Event: [Event Name]",
+              "description": "Event announcement",
+              "content": "You're invited to [Event Name]: [description]. Date: [date], Format: [in-person/virtual], Topics: [list]. Limited availability for [in-person] / Open registration for [virtual]. Register by [date]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Schulung Event Tomorrow",
+              "description": "Day before event",
+              "content": "Reminder: [Event Name] tomorrow at [time]. Join link/Location: [URL/address]. See you there!"
+            },
+            {
+              "channel": "Email",
+              "title": "Pre-Event: What to Expect",
+              "description": "2 days before",
+              "content": "Getting ready for [Event Name]: agenda, speaker bios, pre-work materials, and what to bring. Prepare your questions - we'll have dedicated Q&A time. Looking forward to seeing you!"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "At [Event]?",
+              "description": "During event check-in",
+              "content": "At [Event Name]? Come say hi! I'm [location] and would love to meet you in person. Any questions during the event, just message me."
+            },
+            {
+              "channel": "Email",
+              "title": "Thank You + Event Resources",
+              "description": "Post-event day 1",
+              "content": "Vielen Dank for attending [Event Name]! Here are your resources: presentation slides, workbooks, reference materials, and recording link. Plus exclusive post-event offer: [special benefit for attendees]."
+            },
+            {
+              "channel": "Portal",
+              "title": "Event Materials Available",
+              "description": "Post-event resource hub",
+              "content": "All materials from [Event Name] are now in your portal: recordings, presentations, resources, and next steps. Plus, connect with fellow attendees in the community forum."
+            },
+            {
+              "channel": "Email",
+              "title": "Implementing What You Learned",
+              "description": "1 week post-event",
+              "content": "One week since [Event Name] - how's implementation going? Here are action items to prioritize, quick wins to implement first, and resources for ongoing Support. Questions? Reply here or schedule follow-up."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Underperforming Händler who could benefit from Schulung",
+          "scenario_objective": "Proactively offer Support to improve results",
+          "main_messages_ideas": "Performance analysis, Personalized Schulung, Success coaching, Turnaround Support",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Let's Improve Your Results Together",
+              "description": "Performance-triggered outreach",
+              "content": "We've noticed [category/product] isn't performing as expected in your store. We want to Hilfe! Free consultation available: review what's working elsewhere, identify opportunities, and create action plan for improvement."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Performance Check-In",
+              "description": "Day 5: Personal connection",
+              "content": "Hi [Name], wanted to check in about your [category] sales. Not seeing the results you expected? I can share what top performers are doing differently and Hilfe you optimize. No judgment - just want to Hilfe you succeed."
+            },
+            {
+              "channel": "Email",
+              "title": "Customized Schulung Plan for Your Store",
+              "description": "Day 10: Specific solution",
+              "content": "Based on your situation, we've created a customized Schulung plan: [specific modules], one-on-one coaching sessions, and performance tracking. Goal: improve [metric] by [target] in [timeframe]. Let's do this together."
+            },
+            {
+              "channel": "Email",
+              "title": "Success Coaching Programm Invitation",
+              "description": "High-touch offer",
+              "content": "We'd like to invite you to our Success Coaching Programm: 90-day intensive Support with dedicated coach, weekly check-ins, customized Schulung, and proven turnaround strategies. No cost - we succeed when you succeed."
+            },
+            {
+              "channel": "Portal",
+              "title": "Your Performance Dashboard",
+              "description": "Tracking tool",
+              "content": "Track your improvement journey: current metrics, goals, progress tracking, and recommended actions. Updated weekly to keep you on track toward your targets."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Händler-Stufen- & Belohnungsprogramm",
-      "target": "Alle Händler basierend auf Leistung und Potenzial",
-      "objective": "Wachstum incentivieren und Loyalität durch Stufenaufstieg belohnen",
-      "kpi": "Stufenaufstiegsrate (Ziel: 20% jährlich), Stufenerhalt (Ziel: 90%), Programm-Engagement (Ziel: 70%)",
-      "description": "Strukturiertes Loyalitäts- und Belohnungsprogramm, das Händlerleistung anerkennt und weiteres Wachstum incentiviert.",
+      "program_name": "Dropship & Fulfillment-Programme",
+      "target": "Händler using or interested in drop-Versand",
+      "objective": "Enable efficient drop-ship operations with clear processes and Support",
+      "kpi": "Dropship adoption rate (target: 25%), Dropship Bestellung accuracy (target: 98%), Dropship Bestellung Volumen (target: 30% of eligible Konten)",
+      "description": "Comprehensive drop-ship Programm communication that educates Händler on benefits, processes, and best practices for direct-to-consumer Fulfillment.",
       "scenarios": [
         {
-          "scenario_target": "Händler, die sich Stufenschwellen nähern oder für Aufstieg berechtigt sind",
-          "scenario_objective": "Stufenaufstieg durch klaren Pfad und Anreize motivieren",
-          "main_messages_ideas": "Stufenstatus, Aufstiegsvorteile, Fortschrittsverfolgung, Erfolgsanerkennung",
+          "scenario_target": "Händler eligible for but not using drop-ship services",
+          "scenario_objective": "Drive drop-ship Programm adoption",
+          "main_messages_ideas": "Dropship benefits, Process overview, Success stories, Easy setup",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Sie sind nah am [Nächste Stufe]-Status!",
-              "description": "Wenn Stufenschwelle sich nähert",
-              "content": "Tolle Neuigkeiten - Sie sind [X]% auf dem Weg zum [Nächste Stufe]-Status! [Nächste Stufe]-Händler genießen: [spezifische Vorteile - Preise, Konditionen, Support]. Bestellen Sie [Betrag] mehr bis [Datum], um diese Vorteile freizuschalten."
+              "title": "Expand Without Inventar: Drop-Ship Programm",
+              "description": "Programm introduction",
+              "content": "Did you know we offer drop-Versand? Sell our full Katalog without carrying Inventar - we ship directly to your Kunden. Benefits: expanded offerings, no Inventar investment, no Versand hassle, and you keep the margin. Learn how it works."
+            },
+            {
+              "channel": "Portal",
+              "title": "Drop-Ship Programm Available",
+              "description": "Dashboard announcement",
+              "content": "Drop-Ship Programm now available for your Konto! Sell without stocking: we fulfill Bestellungen directly to your Kunden. See eligible Produkte, margin structure, and setup process."
+            },
+            {
+              "channel": "Email",
+              "title": "How Drop-Versand Works: Complete Guide",
+              "description": "Day 7: Education",
+              "content": "Drop-Versand simplified: 1) You sell at retail Preis 2) You submit Bestellung to us at Großhandel 3) We ship to your Kunde with your branding 4) You keep the margin. No Inventar risk, expanded Katalog, happier Kunden. Step-by-step guide included."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Drop-Ship Questions?",
+              "description": "Day 10: Personal offer",
+              "content": "Hi [Name]! Curious about drop-Versand? I can walk you through how it works and Hilfe you get set up. Most Händler have their first drop-ship Bestellung placed within days. Want a quick overview?"
+            },
+            {
+              "channel": "Email",
+              "title": "Success Story: [Retailer] & Drop-Versand",
+              "description": "Day 14: Social proof",
+              "content": "[Similar Retailer] added drop-Versand 6 months ago. Results: 40% larger effective Katalog, $[X] in additional margin with zero Inventar investment, and higher Kunde satisfaction. Here's how they did it and what they learned."
             },
             {
               "channel": "SMS",
-              "title": "Stufenaufstiegs-Alert",
-              "description": "Wenn sehr nah an Schwelle",
-              "content": "Sie sind [X] von [Nächste Stufe] entfernt! Vorteile umfassen [Top-Vorteil]. Qualifizieren Sie sich bis [Datum] für sofortiges Upgrade."
+              "title": "Try Drop-Ship Risk-Free",
+              "description": "Day 21: Trial offer",
+              "content": "Try drop-Versand risk-free! First 3 Bestellungen: no drop-ship fees, guaranteed 2-day Versand, and full Support. See if it works for your business: [URL]"
             },
             {
               "channel": "Email",
-              "title": "Gratulation - Willkommen bei [Neue Stufe]!",
-              "description": "Bei Stufenaufstieg",
-              "content": "Sie haben sich den [Neue Stufe]-Status verdient! Danke für Ihre Partnerschaft. Ihre neuen Vorteile sind jetzt aktiv: [vollständige Vorteilsliste]. So maximieren Sie Ihren verbesserten Status."
-            },
-            {
-              "channel": "Email",
-              "title": "Ihre [Stufe]-exklusiven Vorteile dieses Quartal",
-              "description": "Quartalsweise Stufenerinnerung",
-              "content": "Als [Stufe]-Partner sind hier Ihre exklusiven Vorteile dieses Quartal: [spezifische Angebote, Events oder Möglichkeiten]. Stellen Sie sicher, dass Sie alles nutzen, was Ihr Status beinhaltet."
+              "title": "Drop-Ship Setup: 15-Minute Call",
+              "description": "Day 28: Easy activation",
+              "content": "Ready to add drop-Versand? Setup takes 15 minutes: enable drop-ship access, review eligible Produkte, understand the process, place test Bestellung. Schedule setup call or follow self-service guide to activate."
             }
           ]
         },
         {
-          "scenario_target": "Top-Tier-Händler für VIP-Behandlung",
-          "scenario_objective": "Premium-Erlebnis bieten und Top-Performer anerkennen",
-          "main_messages_ideas": "VIP-Anerkennung, Exklusiver Zugang, Partner-Wertschätzung, Strategische Abstimmung",
+          "scenario_target": "Active drop-ship Händler",
+          "scenario_objective": "Optimize drop-ship operations and increase usage",
+          "main_messages_ideas": "Process optimization, New eligible Produkte, Performance metrics, Best practices",
           "message_sequence": [
             {
-              "channel": "Email",
-              "title": "Exklusive [Top-Tier]-Einladung",
-              "description": "VIP-Gelegenheit",
-              "content": "Als einer unserer [Top-Tier]-Partner sind Sie eingeladen zu [exklusivem Event/Gelegenheit]: früher Zugang zu neuen Linien, Advisory-Board-Teilnahme oder Premium-Zuteilung bei limitierten Artikeln. Antworten Sie, um Ihr Interesse zu bestätigen."
+              "channel": "Portal",
+              "title": "Drop-Ship Performance Dashboard",
+              "description": "Available analytics",
+              "content": "Track your drop-ship performance: Bestellungen fulfilled, average Lieferung time, Kunde satisfaction, margin contribution, and trending Produkte. Optimize your drop-ship strategy with data."
             },
             {
               "channel": "Email",
-              "title": "Ihr jährliches Partner-Wertschätzungspaket",
-              "description": "Jährliche Anerkennung",
-              "content": "Danke für ein unglaubliches Jahr der Partnerschaft. Als unser Dankeschön hier ist Ihr [Top-Tier]-Wertschätzungspaket: [Geschenk, Guthaben oder exklusives Angebot]. Wir sind dankbar für Ihr Geschäft und freuen uns auf ein weiteres erfolgreiches Jahr."
+              "title": "New Produkte Added to Drop-Ship Programm",
+              "description": "Monthly Produkt expansion",
+              "content": "New Produkte available for drop-ship: [product list]. Expand your offerings without new Inventar investment. These items are trending and available for immediate drop-ship Fulfillment."
+            },
+            {
+              "channel": "Email",
+              "title": "Drop-Ship Best Practices",
+              "description": "Quarterly education",
+              "content": "Maximize drop-ship success: setting Kunde expectations, communicating Lieferung timeframes, handling Kunde inquiries, and choosing best Produkte for drop-ship. Plus, common mistakes to avoid."
+            },
+            {
+              "channel": "SMS",
+              "title": "Drop-Ship Bestellung Processing Alert",
+              "description": "Real-time notification",
+              "content": "Dropship Bestellung [#] received and processing. Estimated Lieferung to your Kunde: [date]. Track status: [URL]"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Drop-Ship Support",
+              "description": "As-needed Unterstützung",
+              "content": "Hi [Name], saw you have a question about drop-ship Bestellung [#]. Here's the status: [update]. Need Hilfe with anything else related to this Bestellung?"
+            },
+            {
+              "channel": "Email",
+              "title": "Your Drop-Ship Success Metrics",
+              "description": "Quarterly performance review",
+              "content": "Your drop-ship Programm results this quarter: [X] Bestellungen fulfilled, [average delivery time], [customer satisfaction score], and $[margin contribution]. You're performing in the top [%] of drop-ship Händler. Here's how to do even better."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler with drop-ship questions or issues",
+          "scenario_objective": "Provide excellent Support and resolve problems quickly",
+          "main_messages_ideas": "Issue resolution, Process clarification, Problem prevention, Continuous improvement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Drop-Ship Bestellung Issue: [Order #]",
+              "description": "Issue notification",
+              "content": "We've identified an issue with drop-ship Bestellung [#]: [description]. Action taken: [resolution steps]. Status: [current status]. Expected resolution: [timeframe]. We'll keep you updated and inform your Kunde if appropriate."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Bestellung Issue Update",
+              "description": "Real-time communication",
+              "content": "Update on drop-ship Bestellung [#]: [status change]. Your Kunde has been notified. Anything else you need from us on this Bestellung?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Drop-Ship Delay Alert",
+              "description": "Proactive notification",
+              "content": "Dropship Bestellung [#] delayed by [timeframe] due to [reason]. New expected Lieferung: [date]. Suggested Kunde communication: [URL with message template]"
+            },
+            {
+              "channel": "Email",
+              "title": "Issue Resolved: Bestellung [#]",
+              "description": "Resolution confirmation",
+              "content": "Dropship Bestellung [#] issue has been resolved. Outcome: [description]. Your Kunde was notified. We've credited [amount/benefit] to your Konto for the inconvenience. Let us know if you need anything else."
+            },
+            {
+              "channel": "Email",
+              "title": "Drop-Ship FAQ: Common Questions",
+              "description": "Preventive education",
+              "content": "Answers to common drop-ship questions: Lieferung timeframes, tracking numbers, Kunde returns, damaged shipments, and Bestellung modifications. Bookmark this resource for quick reference."
+            }
+          ]
+        },
+        {
+          "scenario_target": "E-commerce Händler with integration opportunities",
+          "scenario_objective": "Enable automated drop-ship through system integration",
+          "main_messages_ideas": "API integration, Automated Fulfillment, Real-time Inventar, Efficiency gains",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Automate Drop-Ship with Integration",
+              "description": "Integration opportunity",
+              "content": "Take drop-Versand to the next level: integrate your e-commerce platform with our system. Benefits: automatic Bestellung placement, real-time Inventar sync, automatic tracking updates, and zero manual work. Works with: [platforms]."
+            },
+            {
+              "channel": "Portal",
+              "title": "API Integration Available",
+              "description": "Technical resource",
+              "content": "API integration for drop-ship automation: documentation, integration guides for popular platforms, developer Support, and testing sandbox. Automate your drop-ship workflow."
+            },
+            {
+              "channel": "Email",
+              "title": "Integration Success Story",
+              "description": "Day 7: Social proof",
+              "content": "[Retailer] integrated their Shopify store with our drop-ship system. Results: 95% time savings on Bestellung processing, zero Bestellung entry errors, automatic Inventar updates, and 3x drop-ship Volumen. Here's their implementation story."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Integration Support Available",
+              "description": "Day 14: Technical Unterstützung",
+              "content": "Hi [Name]! Interested in drop-ship integration? Our integration team can Hilfe you get set up. Usually takes 2-3 days and saves hours per week. Want to discuss your setup?"
+            },
+            {
+              "channel": "Email",
+              "title": "Integration Setup: Step-by-Step",
+              "description": "Implementation guide",
+              "content": "Complete integration guide: requirements, step-by-step setup for [your platform], testing procedures, and go-live checklist. Technical Support available throughout setup process."
+            },
+            {
+              "channel": "Email",
+              "title": "Your Integration Is Live!",
+              "description": "Activation confirmation",
+              "content": "Herzlichen Glückwunsch! Your drop-ship integration is live and processing Bestellungen automatically. Monitor performance in your dashboard, and reach out with any questions. Willkommen to automated drop-ship Fulfillment."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Schulung & Händler-Education",
-      "target": "Alle Händler, die ihre Verkaufsleistung verbessern möchten",
-      "objective": "Händler mit Wissen und Fähigkeiten befähigen, effektiver zu verkaufen",
-      "kpi": "Schulungsabschlussrate (Ziel: 40%), Verkaufsverbesserung nach Schulung (Ziel: +15%), Engagement-Rate (Ziel: 50%)",
-      "description": "Educational Content und Schulungsprogramme, die Händlern helfen, Produkte effektiver zu verkaufen und ihr Geschäft zu wachsen.",
+      "program_name": "Neuprodukt-Einführung & Sortimentserweiterung",
+      "target": "All active Händler segmented by relevance",
+      "objective": "Drive adoption of new Produkte and expand Händler assortments",
+      "kpi": "New Produkt adoption rate (target: 30%), Sortiment expansion (target: +2 categories), Trial Bestellung conversion (target: 40%)",
+      "description": "Strategic new Produkt communication that matches new offerings to Händler profiles and Kunde bases.",
       "scenarios": [
         {
-          "scenario_target": "Händler neu in Produktkategorien oder mit Bedarf an Produktwissen",
-          "scenario_objective": "Produktwissen und Verkaufsvertrauen aufbauen",
-          "main_messages_ideas": "Produktschulung, Verkaufstipps, FAQ-Handling, Feature-Education",
+          "scenario_target": "Händler with relevant Kategorie fit for new Produkte",
+          "scenario_objective": "Generate first Bestellungen for new Produkte",
+          "main_messages_ideas": "New arrival preview, Produkt details, Trial offer, Success stories",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "[Produktkategorie] meistern: Kostenlose Schulung",
-              "description": "Neue Kategorie-Bestell-Trigger",
-              "content": "Gratulation zur Aufnahme von [Kategorie] in Ihr Sortiment! Hier ist kostenlose Produktschulung, um Ihnen und Ihrem Team zu helfen, selbstbewusst zu verkaufen: Schlüsselfeatures, Kunden-FAQs und bewährte Verkaufstechniken. In 20 Minuten abschließbar."
+              "title": "Exclusive Preview: [New Product Line]",
+              "description": "2 weeks before launch",
+              "content": "Get first access to [New Product Line] before general availability. Based on your Kunde base, this should be a strong performer. Pre-Bestellung now for first shipment and best selection."
+            },
+            {
+              "channel": "Portal",
+              "title": "New Produkt Pre-Bestellung Available",
+              "description": "Pre-launch notification",
+              "content": "Pre-Bestellung [New Product Line] now: full Produkt details, Preisgestaltung, launch date, and why we think it's right for your Kunden. Early Bestellungen get priority allocation."
             },
             {
               "channel": "Email",
-              "title": "[Produkt]-Verkaufstipps von Top-Performern",
-              "description": "Fortlaufende Education",
-              "content": "Wie verkaufen Top-Händler [Produkt]? Echte Tipps von echten Händlern: Kundengespräche die abschließen, häufige Einwände und wie man sie handhabt, und Upsell-Möglichkeiten."
+              "title": "[New Product] Launch: Full Details",
+              "description": "Launch day",
+              "content": "[New Product Line] is here! Full Produkt specs, Großhandel Preisgestaltung, suggested retail Preisgestaltung, and margin analysis. Includes POS materials and selling tips to Hilfe you move Produkt fast."
+            },
+            {
+              "channel": "SMS",
+              "title": "New Produkt Alert",
+              "description": "Launch day - quick notification",
+              "content": "Just launched: [New Product] is now available to Bestellung. Strong margins and trending with consumers. Details: [URL]"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Thoughts on [New Product]?",
+              "description": "Day 3: Personal check-in",
+              "content": "Hi [Name]! Have you seen the new [Product Line]? Based on your store, I think [specific products] would be perfect. Want me to recommend a starter Bestellung? No pressure - just think it could do well for you."
             },
             {
               "channel": "Email",
-              "title": "Live-Schulungs-Webinar: [Thema]",
-              "description": "Monatliche Gelegenheit",
-              "content": "Nehmen Sie an unserer Live-Schulungssession zu [Thema] teil: interaktive Q&A mit unseren Produktexperten und erfolgreichen Händlern. Lernen Sie Techniken, die Sie sofort anwenden können. Registrieren Sie sich für [Datum/Uhrzeit]."
+              "title": "Introductory Trial Offer",
+              "description": "Week 1: Trial incentive",
+              "content": "Try [New Product] risk-free: special introductory Preisgestaltung plus full return option if it doesn't perform. Limited time for first-time Bestellungen. Margins start at [X]%."
+            },
+            {
+              "channel": "Email",
+              "title": "How Händler Are Selling [New Product]",
+              "description": "Week 4: Social proof",
+              "content": "Early results are in: Händler report [result] with [New Product]. Here's how they're merchandising it, Preisgestaltung strategies that work, and selling techniques. Ready to give it a try?"
+            },
+            {
+              "channel": "Email",
+              "title": "Last Chance: Introductory Preisgestaltung Ends",
+              "description": "Week 6: Urgency",
+              "content": "Introductory Preisgestaltung on [New Product] ends [date]. Lock in launch Preisgestaltung before standard Großhandel rates apply. Händler who've tried it are reordering - join them."
             }
           ]
         },
         {
-          "scenario_target": "Alle Händler für Geschäftswachstums-Education",
-          "scenario_objective": "Breitere Einzelhandels-Geschäftsunterstützung bieten",
-          "main_messages_ideas": "Einzelhandels-Best-Practices, Merchandising-Tipps, Geschäftswachstum, Branchentrends",
+          "scenario_target": "Händler ordering in limited categories (Sortiment expansion opportunity)",
+          "scenario_objective": "Expand Händler's Kategorie mix with complementary Produkte",
+          "main_messages_ideas": "Kategorie recommendation, Cross-sell, Bundle offer, Success example",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Einzelhandelserfolgs-Tipps: [Thema]",
-              "description": "Monatlicher Content",
-              "content": "Einzelhandelstipp dieses Monats: [Umsetzbares Thema wie Bestandsmanagement, Kundenservice, visuelle Präsentation]. Kurze Lektüre mit sofortiger Anwendung für Ihr Geschäft."
+              "title": "Complete Your Sortiment: [Category]",
+              "description": "Quarterly Sortiment review",
+              "content": "You're doing great with [current category]. Händler like you also carry [complementary category] - it's a natural add-on purchase for your Kunden. Here's our bestseller selection in that Kategorie."
+            },
+            {
+              "channel": "Portal",
+              "title": "Sortiment Gap Analysis",
+              "description": "Available insight",
+              "content": "Based on your current Sortiment and Kunde profile, here are recommended categories to add: [list with rationale]. See top Produkte, expected performance, and easy starter bundles."
             },
             {
               "channel": "Email",
-              "title": "Branchentrends: Was in [Kategorie] kommt",
-              "description": "Quartalsweiser Trendbericht",
-              "content": "Bleiben Sie voraus mit unserem Quartals-Trendbericht: Verbraucherverschiebungen, aufkommende Produkte und Merchandising-Trends. Positionieren Sie Ihr Geschäft für das Nächste in [Kategorie]."
+              "title": "Kategorie Expansion Bundle",
+              "description": "Follow-up offer",
+              "content": "Try [new category] with our starter bundle: curated selection of bestsellers with reduced minimum and introductory Preisgestaltung. Perfect way to test Kunde response without major commitment."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Kategorie Expansion Discussion?",
+              "description": "Day 14: Personal consultation",
+              "content": "Hi [Name]! Been thinking about your Sortiment - have you considered adding [category]? Really natural fit with what you're currently carrying. Want to discuss which Produkte might work for your Kunden?"
             },
             {
               "channel": "Email",
-              "title": "Händler-Ressourcenbibliothek aktualisiert",
-              "description": "Ressourcenverfügbarkeit",
-              "content": "Neue Ressourcen in Ihrem Händlerportal: [spezifische hinzugefügte Ressourcen]. Zugang zu Leitfäden, Templates und Tools für Ihr Geschäftswachstum. Alle kostenlos für Großhandelspartner."
+              "title": "How [Retailer Type] Expanded Successfully",
+              "description": "Social proof",
+              "content": "[Similar Retailer] added [category] six months ago - here's their story and results. Could work for you too? Let's discuss what Sortiment would fit your Kunde base."
+            },
+            {
+              "channel": "Email",
+              "title": "Your Custom Kategorie Starter Plan",
+              "description": "Personalized recommendation",
+              "content": "We've created a custom starter plan for adding [category] to your store: recommended Produkte, Bestellung quantities, merchandising placement, and Preisgestaltung strategy. Risk-free trial with return option."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Early adopters who trialed new Produkte",
+          "scenario_objective": "Convert trial to regular reordering",
+          "main_messages_ideas": "Performance check-in, Nachbestellung encouragement, Optimization tips, Expanded Sortiment",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "How's [New Product] Performing?",
+              "description": "30 days after trial Bestellung",
+              "content": "You tried [New Product] a month ago - how's it selling? We'd love your feedback. If it's moving well, ready for a Nachbestellung? If not, let's discuss what might work better."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Produkt Performance Check",
+              "description": "Day 35: Personal follow-up",
+              "content": "Quick check-in on [New Product] - has it been selling? Getting good Kunde feedback? If you need merchandising or selling tips, happy to share what's working for others."
+            },
+            {
+              "channel": "Email",
+              "title": "Ready to Nachbestellung [New Product]?",
+              "description": "Day 45: Nachbestellung prompt",
+              "content": "Based on your trial Bestellung quantity and typical sell-through, you're probably ready to Nachbestellung [New Product]. Here's your suggested Nachbestellung with one-click confirmation. Plus, complementary Produkte that pair well."
+            },
+            {
+              "channel": "Portal",
+              "title": "Nachbestellung Recommendation: [New Product]",
+              "description": "Intelligent prompt",
+              "content": "Nachbestellung recommended for [New Product] based on your trial Bestellung timing. Suggested quantities, complementary additions to try, and one-click Nachbestellung available."
+            },
+            {
+              "channel": "Email",
+              "title": "Expand Your [Product Line] Sortiment",
+              "description": "Day 60: Sortiment expansion",
+              "content": "Since [New Product] is working for you, here are complementary items from the same line: [products]. Give your Kunden more options and increase your Kategorie sales. Add to your next Bestellung?"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Win-Back & Inaktive-Account-Reaktivierung",
-      "target": "Inaktive Accounts und abgewanderte Händler",
-      "objective": "Inaktive Accounts re-engagieren und abgewanderte Händler zurückgewinnen",
-      "kpi": "Reaktivierungsrate (Ziel: 20%), Win-Back-Konversion (Ziel: 12%), Wiedergewonnener Umsatz (Ziel: 25% des verlorenen Werts)",
-      "description": "Strategisches Re-Engagement für Händler, die aufgehört haben zu bestellen, mit maßgeschneiderten Ansätzen basierend auf wahrscheinlichen Inaktivitätsgründen.",
+      "program_name": "Saisonvorbereitung & Vor-Buchung",
+      "target": "All Händler ahead of peak seasons and holidays",
+      "objective": "Maximize saisonal Inventar preparation and capture pre-Saison Bestellungen",
+      "kpi": "Pre-Saison Bestellung Volumen (target: 40% of saisonal Inventar), Saisonal sell-through (target: 85%), Early Bestellung participation (target: 60%)",
+      "description": "Advance saisonal communication that helps Händler prepare for peak demand with proper Inventar levels and merchandising Support.",
       "scenarios": [
         {
-          "scenario_target": "Händler ohne Bestellungen seit 60+ Tagen (unerwartete Inaktivität)",
-          "scenario_objective": "Grund verstehen und mit relevantem Angebot re-engagieren",
-          "main_messages_ideas": "Check-in, Aktualisierte Angebote, Re-Engagement-Anreiz, Feedback-Anfrage",
+          "scenario_target": "All active Händler before major selling seasons",
+          "scenario_objective": "Drive early saisonal Bestellungen with planning Support",
+          "main_messages_ideas": "Saison preview, Early bird Preisgestaltung, Inventar planning, Merchandising Support",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Wir vermissen Ihre Bestellungen",
-              "description": "60-Tage-Inaktivitäts-Trigger",
-              "content": "Es ist eine Weile seit Ihrer letzten Bestellung - wir hoffen, alles ist okay! Haben sich Ihre Bedürfnisse geändert? Gibt es etwas, das wir besser machen könnten? Wir schätzen Ihre Partnerschaft und möchten sicherstellen, dass wir Ihnen gut dienen."
+              "title": "[Season] Collection Preview: Plan Ahead",
+              "description": "12 weeks before Saison",
+              "content": "First look at our [Season] collection: new Produkte, returning bestsellers, and trend-forward items. Early preview helps you plan your Sortiment before the rush. Full Katalog attached."
+            },
+            {
+              "channel": "Portal",
+              "title": "[Season] Planning Center Live",
+              "description": "Preview launch",
+              "content": "[Season] Planning Center is now available: full Katalog, planning tools, early-bird Preisgestaltung, and personalized recommendations based on your past performance. Start planning your best Saison yet."
+            },
+            {
+              "channel": "Email",
+              "title": "Early Bird [Season] Preisgestaltung Now Available",
+              "description": "10 weeks before Saison",
+              "content": "Lock in [Season] Inventar at early-bird Preisgestaltung: [X]% off standard Großhandel on Bestellungen placed by [date]. Guaranteed Bestand allocation and priority Versand for early Bestellungen."
+            },
+            {
+              "channel": "Email",
+              "title": "[Season] Inventar Planning Guide",
+              "description": "8 weeks before Saison",
+              "content": "Based on your past [Season] sales, here's our recommended Bestellung: quantities by Produkt, optimal Bestellung timing, and projected demand. Customize or accept our recommendations."
             },
             {
               "channel": "SMS",
-              "title": "Kurzer Check-in",
-              "description": "Tag 7: Persönlicher Touch",
-              "content": "Hallo [Name], hier ist [Rep] von [Firma]. Schon eine Weile nichts gehört - alles okay? Lassen Sie mich wissen, wenn Sie etwas brauchen."
+              "title": "Early Bird Deadline Approaching",
+              "description": "1 week before early deadline",
+              "content": "[Season] early-bird Preisgestaltung ends [date]. Don't miss out on [X]% savings and guaranteed Bestand. Bestellung now: [URL]"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "[Season] Planning Hilfe?",
+              "description": "Ongoing Support",
+              "content": "Hi [Name]! Working on your [Season] Bestellung? Happy to Hilfe you plan quantities, choose Produkte, or answer questions about the collection. Want to discuss your saisonal strategy?"
             },
             {
               "channel": "Email",
-              "title": "Was seit Ihrer letzten Bestellung neu ist",
-              "description": "Tag 14: Wert-Update",
-              "content": "Viel ist seit Ihrer letzten Bestellung passiert: neue Produkte, verbesserte Konditionen und erweiterte Services. Hier ein schnelles Update über Neuigkeiten - vielleicht einen weiteren Blick wert?"
+              "title": "[Season] Merchandising Kit Ready",
+              "description": "4 weeks before Saison",
+              "content": "Your [Season] merchandising kit is ready: POS materials, display recommendations, social media assets, and Aktions- suggestions. Download free with your [Season] Bestellung."
             },
             {
               "channel": "Email",
-              "title": "Willkommen-zurück-Angebot",
-              "description": "Tag 30: Re-Engagement-Anreiz",
-              "content": "Wir würden Sie gerne zurückhaben! Hier ein Willkommen-zurück-Angebot: [Rabatt, kostenloser Versand oder reduzierte Mindestmengen] auf Ihre nächste Bestellung. Keine Bedingungen - nur ein Danke dafür, dass Sie uns eine weitere Chance geben."
-            },
-            {
-              "channel": "Email",
-              "title": "Helfen Sie uns zu verbessern",
-              "description": "Tag 45: Feedback-Anfrage",
-              "content": "Selbst wenn Sie weitergezogen sind, würden wir Ihr Feedback schätzen. Was hätten wir besser machen können? Ihre ehrliche Meinung hilft uns, uns für alle Händler zu verbessern. Kurze Umfrage oder einfach mit Gedanken antworten."
+              "title": "Final [Season] Stocking: Beat the Rush",
+              "description": "2 weeks before Saison",
+              "content": "Last chance for [Season] Bestellungen with guaranteed pre-Saison Lieferung. Bestand levels are limited on bestsellers - Bestellung now to ensure you're ready when Kunden start shopping."
             }
           ]
         },
         {
-          "scenario_target": "Geschlossene oder saisonale Accounts, die zurückkommen könnten",
-          "scenario_objective": "Beziehung für mögliche Rückkehr pflegen",
-          "main_messages_ideas": "Eleganter Abschied, Tür offen, Saisonales Re-Engagement, Einfache Rückkehr",
+          "scenario_target": "Händler with strong prior saisonal performance",
+          "scenario_objective": "Increase saisonal commitment from proven performers",
+          "main_messages_ideas": "Past performance, Growth opportunity, Exclusive allocation, Premium placement",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Danke für unsere Partnerschaft",
-              "description": "Bei bestätigter Account-Pause/Schließung",
-              "content": "Wir verstehen, dass Sie Ihren Account pausieren oder schließen. Danke für das Geschäft, das wir gemeinsam gemacht haben. Ihre Account-Informationen bleiben erhalten - wenn sich Dinge ändern, sind wir da und die Reaktivierung ist einfach."
+              "title": "Your [Season] Success: Let's Do Even Better",
+              "description": "Based on prior year performance",
+              "content": "Last [Season], you sold [amount] of saisonal Inventar with [sell-through]%. This year, we'd like to Hilfe you do even better: reserved allocation on bestsellers, enhanced early-bird Preisgestaltung, and dedicated Support."
+            },
+            {
+              "channel": "Portal",
+              "title": "VIP [Season] Reserved Allocation",
+              "description": "Top performer benefit",
+              "content": "As a top [Season] performer, you have reserved allocation on high-demand items. Claim your allocation by [date] to guarantee Bestand on these fast-selling Produkte."
             },
             {
               "channel": "Email",
-              "title": "Denken Sie über Wiedereröffnung nach?",
-              "description": "6-Monats-Check-in für saisonale/geschlossene Accounts",
-              "content": "Vor sechs Monaten haben Sie Ihren Account pausiert. Wenn Sie über Wiedereröffnung nachdenken, haben wir es einfach gemacht: Ihre Historie und Präferenzen sind gespeichert, und Ihre vorherige Preisstufe bleibt erhalten. Bereit, wieder loszulegen?"
+              "title": "Reserved Bestseller Allocation",
+              "description": "For top performers",
+              "content": "As a top [Season] performer, we've reserved allocation of our hottest items for you. These will sell out - claim your allocation by [date] to guarantee Bestand."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "VIP [Season] Planning",
+              "description": "High-touch Support",
+              "content": "Hi [Name]! As one of our top [Season] Händler, want to schedule time to plan your Bestellung together? I can share early trend data and Hilfe you optimize your Sortiment for maximum results."
+            },
+            {
+              "channel": "Email",
+              "title": "Exclusive: New [Season] Items Pre-Release",
+              "description": "VIP early access",
+              "content": "Exclusive for top performers: pre-release access to [new seasonal items] before general availability. Bestellung now for exclusive early allocation and be first to market."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler who under-ordered last Saison",
+          "scenario_objective": "Prevent repeat stockouts with better planning",
+          "main_messages_ideas": "Last year's learnings, Missed opportunity recovery, Better forecasting, Growth Support",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Don't Miss [Season] Opportunity This Year",
+              "description": "Learning from past",
+              "content": "Last [Season], demand exceeded your Inventar - you could have sold more! This year, let's plan better. Based on your sell-through rate, here's what we recommend ordering to meet demand and avoid stockouts."
+            },
+            {
+              "channel": "Email",
+              "title": "Your Optimized [Season] Plan",
+              "description": "Personalized recommendation",
+              "content": "Based on last year's performance, we've created an optimized plan: [X]% increase in Inventar, focus on your bestsellers, adequate depth on fast-movers. Projected incremental profit: $[amount]."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Let's Plan Better This Year",
+              "description": "Personal Support",
+              "content": "Hi [Name]! Remember running out of [products] last [Season]? Let's make sure you're fully stocked this year. Want Hilfe planning quantities to meet all the demand?"
+            },
+            {
+              "channel": "Email",
+              "title": "Safety Bestand Recommendation",
+              "description": "Risk mitigation",
+              "content": "To prevent stockouts during peak [Season] demand: recommended safety Bestand levels, Nachbestellung triggers during Saison, and backup allocation reserved for in-Saison refills. Let's ensure you don't run out this year."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Empfehlungs- & Netzwerk-Wachstum",
-      "target": "Zufriedene Händler mit Branchenkontakten",
-      "objective": "Neue Händler-Leads durch Empfehlungen von bestehenden Partnern generieren",
-      "kpi": "Empfehlungsrate (Ziel: 15% der aktiven Accounts), Empfehlungs-Konversion (Ziel: 35%), Akquisekosten via Empfehlung (Ziel: 50% anderer Kanäle)",
-      "description": "Starke Händlerbeziehungen nutzen, um qualifizierte Empfehlungen von zufriedenen Partnern zu generieren.",
+      "program_name": "Aktionskampagnen & Verkaufsunterstützung",
+      "target": "Active Händler looking to boost sales",
+      "objective": "Provide Aktions- Support that helps Händler sell through Inventar",
+      "kpi": "Aktion participation rate (target: 50%), Promotional sell-through (target: 80%), Händler Aktions- ROI (target: 3x)",
+      "description": "Coordinated Aktions- Support that gives Händler the tools and incentives to run successful sales events.",
       "scenarios": [
         {
-          "scenario_target": "Hochzufriedenheits-Händler mit starker Partnerschaftshistorie",
-          "scenario_objective": "Als Empfehlungsquellen aktivieren",
-          "main_messages_ideas": "Wertschätzung, Empfehlungsprogramm, Gegenseitiger Nutzen, Einfacher Prozess",
+          "scenario_target": "All Händler during coordinated Aktions- periods",
+          "scenario_objective": "Drive Aktions- participation and sell-through",
+          "main_messages_ideas": "Promotional Preisgestaltung, Marketing materials, Consumer offer, Participation benefits",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Kennen Sie andere Händler, die profitieren würden?",
-              "description": "Nach positivem Zufriedenheitsindikator",
-              "content": "Wir freuen uns so, dass die Partnerschaft gut für Sie funktioniert! Viele unserer besten Händler kamen durch Empfehlungen von Partnern wie Ihnen. Kennen Sie jemanden, der von Großhandelspartnerschaft profitieren würde? Wir würden uns über eine Vorstellung freuen."
+              "title": "[Promotion Name] Kampagne: Your Participation Guide",
+              "description": "2 weeks before Aktion",
+              "content": "Join our [Promotion Name] Kampagne running [dates]. Participating Händler receive: special Großhandel Preisgestaltung to fund promotions, ready-to-use marketing materials, and coordinated consumer advertising driving traffic to your store."
+            },
+            {
+              "channel": "Portal",
+              "title": "[Promotion] Marketing Kit Available",
+              "description": "Resource hub",
+              "content": "Your [Promotion Name] marketing toolkit: signage files, social media posts, email templates, web banners, and advertising assets. All customizable with your store info. Download and deploy now."
             },
             {
               "channel": "Email",
-              "title": "Partner-Empfehlungsbelohnungen",
-              "description": "Tag 14: Programmdetails",
-              "content": "Unser Händler-Empfehlungsprogramm: Empfehlen Sie einen qualifizierten Händler und Sie profitieren beide. Sie erhalten [Empfehlungsbelohnung], sie erhalten [Neupartner-Vorteil]. Einfacher Prozess: teilen Sie einfach deren Kontakt oder machen Sie eine Email-Vorstellung."
+              "title": "Your [Promotion] Marketing Kit",
+              "description": "1 week before",
+              "content": "Your Aktions- toolkit is ready: signage, social media posts, email templates, and advertising assets. All customizable with your store info. Download and deploy - everything you need to promote."
+            },
+            {
+              "channel": "SMS",
+              "title": "Aktion Starts [Day]",
+              "description": "Day before Aktion",
+              "content": "[Promotion Name] starts tomorrow! Make sure you're stocked on Aktions- items. Last-minute Bestellung? We can expedite. Materials ready: [URL]"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Ready for [Promotion]?",
+              "description": "Day before check-in",
+              "content": "Hi [Name]! [Promotion Name] launches tomorrow - all set? Bestand levels good? Marketing materials deployed? Here if you need any last-minute Support. Let's have a great Aktion!"
             },
             {
               "channel": "Email",
-              "title": "Einfache Empfehlung: Das weiterleiten",
-              "description": "Tag 30: Einfache Aktion",
-              "content": "Einfachster Weg zur Empfehlung: leiten Sie diese Email an einen Händler-Kollegen weiter, der profitieren könnte. Oder antworten Sie einfach mit Namen und Kontakt - wir melden uns professionell und erwähnen Ihre Empfehlung."
+              "title": "[Promotion] In-Flight: Tips for Success",
+              "description": "Mid-Aktion",
+              "content": "Aktion update: here's what top-performing Händler are doing to maximize results. Mid-Aktion tips, Inventar check, and Nachbestellung option for fast-moving items."
+            },
+            {
+              "channel": "Portal",
+              "title": "[Promotion] Real-Time Results",
+              "description": "During Aktion tracking",
+              "content": "Track your [Promotion Name] performance in real-time: sales lift, sell-through rate, comparison to network average, and trending Produkte. Monitor and optimize as Aktion runs."
+            },
+            {
+              "channel": "Email",
+              "title": "[Promotion] Results & Learnings",
+              "description": "Post-Aktion",
+              "content": "How did [Promotion] work for you? Here are network-wide results and success stories. Your feedback helps us design better Programme - quick survey inside."
             }
           ]
         },
         {
-          "scenario_target": "Händler, die Messen oder Branchen-Events besuchen",
-          "scenario_objective": "Event-Networking für Vorstellungen nutzen",
-          "main_messages_ideas": "Event-Koordination, Vorstellungserleichterung, Networking",
+          "scenario_target": "Händler with excess Inventar needing sell-through Support",
+          "scenario_objective": "Hilfe Händler move slow Inventar",
+          "main_messages_ideas": "Clearance Support, Promotional ideas, Bundling suggestions, Return options",
           "message_sequence": [
             {
               "channel": "Email",
-              "title": "Wir sehen uns auf [Event] - Lassen Sie uns verbinden",
-              "description": "Pre-Event-Ansprache",
-              "content": "Wir werden beide auf [Event] sein! Kommen Sie an Stand [#] vorbei - bringen Sie Kollegen mit, die an Großhandelspartnerschaft interessiert sein könnten. Gerne machen wir Vorstellungen und besprechen, wie wir auch deren Geschäft helfen können."
+              "title": "Need Hilfe Moving Inventar?",
+              "description": "Based on Bestellung patterns indicating slow turns",
+              "content": "We noticed some of your Inventar might be turning slower than expected. Here are proven strategies: bundling ideas, Aktions- Preisgestaltung suggestions, and display refresh tips. Need swap/return options? Let's discuss."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Inventar Support Available",
+              "description": "Personal Unterstützung",
+              "content": "Hi [Name], noticed [products] might be moving slower than expected. Want Hilfe with Aktions- ideas or merchandising strategies to move through that Inventar? Or we can discuss return/exchange options if needed."
+            },
+            {
+              "channel": "Email",
+              "title": "End-of-Saison Clearance Support",
+              "description": "Saison end",
+              "content": "Saison ending? Here's our end-of-Saison clearance playbook: recommended markdowns, signage templates, and social Aktion ideas. Move through saisonal Inventar to make room for what's next."
+            },
+            {
+              "channel": "Portal",
+              "title": "Clearance Planning Tool",
+              "description": "Available resource",
+              "content": "Use our clearance planning tool: input current Inventar, get markdown recommendations, see sell-through projections, and access Aktions- materials. Optimize your clearance strategy."
+            },
+            {
+              "channel": "Email",
+              "title": "Bundle & Multi-Buy Aktion Ideas",
+              "description": "Tactical suggestions",
+              "content": "Move Inventar faster with bundles and multi-buy offers: proven combinations that work, Preisgestaltung strategies, signage templates, and social media Aktion examples. Turn slow Inventar into profitable bundles."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler during key shopping periods (Black Friday, Back-to-School, etc.)",
+          "scenario_objective": "Maximize peak period performance",
+          "main_messages_ideas": "Peak period preparation, Bestand adequacy, Promotional strategy, Extended Support",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Peak Period] Preparation Checklist",
+              "description": "3 weeks before",
+              "content": "Get ready for [Peak Period]: Inventar checklist, staffing tips, marketing activation, Aktions- strategies, and day-of execution guide. Make this your best [Peak Period] yet."
+            },
+            {
+              "channel": "Email",
+              "title": "Final [Peak Period] Bestand Check",
+              "description": "1 week before",
+              "content": "Final Bestand check for [Peak Period]: top items to have in depth, last-minute Bestellung options with expedited Versand, and contingency planning for unexpected demand spikes."
             },
             {
               "channel": "SMS",
-              "title": "Auf [Event] - Kaffee?",
-              "description": "Während Event",
-              "content": "Auf [Event]? Kommen Sie an Stand [#] vorbei - Kaffee geht auf uns. Bringen Sie jeden mit, der von uns wissen sollte!"
+              "title": "[Peak Period] Support Active",
+              "description": "Day of event",
+              "content": "Happy [Peak Period]! Extended Support hours today - call/text with any needs. Emergency Bestand? We're ready. Let's make it a great day!"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "How's [Peak Period] Going?",
+              "description": "Mid-event check",
+              "content": "How's [Peak Period] going?! Selling through well? Need emergency Nachschub on anything? We have extended hours and expedited Versand available today."
+            },
+            {
+              "channel": "Email",
+              "title": "[Peak Period] Recap & Next Steps",
+              "description": "Post-event day 1",
+              "content": "How did [Peak Period] go? Quick Nachschub for items that sold through, plus planning for [next event]. Share your results and learnings - let's apply them to future peak periods."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Händler-Tier & Belohnungsprogramm",
+      "target": "All Händler based on performance and potential",
+      "objective": "Incentivize growth and reward Loyalität through Tier advancement",
+      "kpi": "Tier advancement rate (target: 20% annually), Tier retention (target: 90%), Programm engagement (target: 70%)",
+      "description": "Structured Loyalität and Belohnungen Programm that recognizes Händler performance and incentivizes continued growth.",
+      "scenarios": [
+        {
+          "scenario_target": "Händler approaching Tier thresholds or eligible for advancement",
+          "scenario_objective": "Motivate Tier advancement through clear path and incentives",
+          "main_messages_ideas": "Tier status, Advancement benefits, Progress tracking, Achievement recognition",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "You're Close to [Next Tier] Status!",
+              "description": "When approaching Tier threshold",
+              "content": "Great news - you're [X]% of the way to [Next Tier] status! [Next Tier] Händler enjoy: [specific benefits - pricing, terms, support]. Bestellung [amount] more by [date] to unlock these benefits."
+            },
+            {
+              "channel": "Portal",
+              "title": "Tier Progress Dashboard",
+              "description": "Available tracking",
+              "content": "Track your Tier advancement progress: current status, next Tier requirements, progress percentage, projected achievement date, and full benefit comparison. See what you're working toward."
+            },
+            {
+              "channel": "SMS",
+              "title": "Tier Advancement Alert",
+              "description": "When very close to threshold",
+              "content": "You're [X] away from [Next Tier]! Benefits include [top benefit]. Qualify by [date] for immediate upgrade."
+            },
+            {
+              "channel": "Email",
+              "title": "Herzlichen Glückwunsch - Willkommen to [New Tier]!",
+              "description": "On Tier advancement",
+              "content": "You've earned [New Tier] status! Vielen Dank for your partnership. Your new benefits are active now: [full benefit list]. Here's how to maximize your upgraded status."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Tier Advancement Celebration",
+              "description": "Personal recognition",
+              "content": "Herzlichen Glückwunsch on reaching [New Tier], [Name]! Really exciting to see your growth. Your new benefits are active - let me know if you have questions about how to use them. Well deserved!"
+            },
+            {
+              "channel": "Email",
+              "title": "Your [Tier] Exclusive Benefits This Quarter",
+              "description": "Quarterly Tier reminder",
+              "content": "As a [Tier] partner, here are your exclusive benefits this quarter: [specific offers, events, or opportunities]. Make sure you're taking advantage of everything your status includes."
+            },
+            {
+              "channel": "Portal",
+              "title": "[Tier] Exclusive Offers",
+              "description": "Benefit access hub",
+              "content": "Your [Tier] exclusive benefits: current offers, upcoming opportunities, benefit usage tracking, and Tier retention requirements. Maximize your Tier status here."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Top-Tier Händler for VIP treatment",
+          "scenario_objective": "Provide premium experience and recognize top performers",
+          "main_messages_ideas": "VIP recognition, Exclusive access, Partner appreciation, Strategic alignment",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Exclusive [Top Tier] Invitation",
+              "description": "VIP opportunity",
+              "content": "As one of our [Top Tier] partners, you're invited to [exclusive event/opportunity]: early access to new lines, advisory board participation, or premium allocation on limited items. Reply to confirm your interest."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "VIP Event Invitation",
+              "description": "Personal invitation",
+              "content": "Hi [Name]! As a [Top Tier] partner, wanted to personally invite you to [exclusive opportunity]. Would love to have you participate - are you interested? Can share more details if so."
+            },
+            {
+              "channel": "Email",
+              "title": "Your Annual Partner Appreciation Package",
+              "description": "Annual recognition",
+              "content": "Vielen Dank for an incredible year of partnership. As our way of saying Vielen Dank, here's your [Top Tier] appreciation package: [gift, credit, or exclusive offer]. We're grateful for your business and look forward to another successful year."
+            },
+            {
+              "channel": "Email",
+              "title": "[Top Tier] Advisory Board Invitation",
+              "description": "Strategic engagement",
+              "content": "We'd like to invite you to join our [Top Tier] Advisory Board: quarterly meetings to share feedback, preview new initiatives, and shape our future direction. Your voice matters - be part of our strategic planning."
+            },
+            {
+              "channel": "Portal",
+              "title": "[Top Tier] VIP Portal Access",
+              "description": "Exclusive hub",
+              "content": "Willkommen to your [Top Tier] VIP Portal: exclusive Produkt previews, first allocation rights, personalized analytics, dedicated Support access, and member-only opportunities. Your VIP benefits in one place."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler at risk of Tier downgrade",
+          "scenario_objective": "Motivate retention of Tier status",
+          "main_messages_ideas": "Retention alert, Path to maintain status, Benefit reminder, Support offer",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Tier] Status: Retention Update",
+              "description": "Quarterly retention check",
+              "content": "Your [Tier] status review: current performance vs. requirements, gap to maintain status, and timeframe to qualify for renewal. We want to Hilfe you maintain your benefits - here's what's needed."
+            },
+            {
+              "channel": "Portal",
+              "title": "Tier Retention Alert",
+              "description": "Dashboard warning",
+              "content": "Alert: [Tier] status at risk. Current performance: [metrics]. Required for retention: [thresholds]. Gap: [specific needs]. Time remaining: [period]. Retain your benefits with action plan."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Tier Status Check-In",
+              "description": "Personal outreach",
+              "content": "Hi [Name], wanted to check in about your [Tier] status. You're close to the retention threshold - want to discuss how to maintain your benefits? Happy to Hilfe create a plan to keep your status."
+            },
+            {
+              "channel": "Email",
+              "title": "Retain Your [Tier] Benefits",
+              "description": "Action plan",
+              "content": "Don't lose your [Tier] benefits! Here's your personalized retention plan: [specific actions], timeline, and expected results. Your benefits are worth [value] - let's make sure you keep them."
+            },
+            {
+              "channel": "Email",
+              "title": "[Tier] Status Retained!",
+              "description": "Success confirmation",
+              "content": "Great news - you've retained your [Tier] status for another year! Your benefits continue: [benefit summary]. Vielen Dank for your continued partnership. Here's to another successful year together."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Rückgewinnung & Reaktivierung inaktiver Konten",
+      "target": "Inactive Konten and lapsed Händler",
+      "objective": "Re-engage dormant Konten and recover churned Händler",
+      "kpi": "Reaktivierung rate (target: 20%), Rückgewinnung conversion (target: 12%), Recovered revenue (target: 25% of churned value)",
+      "description": "Strategic re-engagement for Händler who have stopped ordering, with tailored approaches based on likely reasons for inactivity.",
+      "scenarios": [
+        {
+          "scenario_target": "Händler with no Bestellungen in 60+ days (unexpected dormancy)",
+          "scenario_objective": "Understand reason and re-engage with relevant offer",
+          "main_messages_ideas": "Check-in, Updated offerings, Re-engagement incentive, Feedback request",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "We've Missed Your Bestellungen",
+              "description": "60-day inactivity trigger",
+              "content": "It's been a while since your last Bestellung - we hope everything's okay! Have your needs changed? Is there something we could be doing better? We value your partnership and want to make sure we're serving you well."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Quick Check-In",
+              "description": "Day 7: Personal touch",
+              "content": "Hi [Name], it's [Rep] from [Company]. Haven't heard from you in a bit - everything okay? Let me know if there's anything you need or if your business needs have changed."
+            },
+            {
+              "channel": "SMS",
+              "title": "Just Checking In",
+              "description": "Day 10: Brief touchpoint",
+              "content": "Hi [Name], noticed we haven't connected in a while. Everything going okay? Reply if there's anything we can Hilfe with."
+            },
+            {
+              "channel": "Email",
+              "title": "What's New Since Your Last Bestellung",
+              "description": "Day 14: Value update",
+              "content": "A lot has happened since your last Bestellung: new Produkte, improved terms, and expanded services. Here's a quick update on what's new - might be worth another look?"
+            },
+            {
+              "channel": "Email",
+              "title": "Willkommen Back Offer",
+              "description": "Day 30: Re-engagement incentive",
+              "content": "We'd love to have you back! Here's a Willkommen back offer: [discount, free shipping, or reduced minimums] on your next Bestellung. No strings attached - just a thank you for giving us another try."
+            },
+            {
+              "channel": "Portal",
+              "title": "Your Konto: Easy Reaktivierung",
+              "description": "Reaktivierung prompt",
+              "content": "Your Konto is ready and waiting. Previous Bestellungen saved for easy Nachbestellung, current Katalog available, and Willkommen-back offer active. One click to pick up where you left off."
+            },
+            {
+              "channel": "Email",
+              "title": "Hilfe Us Improve",
+              "description": "Day 45: Feedback request",
+              "content": "Even if you've moved on, we'd value your feedback. What could we have done better? Your honest input helps us improve for all our Händler. Quick survey or just reply with thoughts."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Closed or saisonal Konten that may return",
+          "scenario_objective": "Maintain relationship for potential return",
+          "main_messages_ideas": "Graceful departure, Door open, Saisonal re-engagement, Easy return",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Thank You for Our Partnership",
+              "description": "On confirmed Konto pause/close",
+              "content": "We understand you're pausing or closing your Konto. Vielen Dank for the business we've done together. Your Konto information will be preserved - if things change, we're here and Reaktivierung is easy."
+            },
+            {
+              "channel": "Email",
+              "title": "Thinking of Reopening?",
+              "description": "6-month check-in for saisonal/closed Konten",
+              "content": "Six months ago you paused your Konto. If you're considering reopening, we've made it easy: your history and preferences are saved, and your previous Preisgestaltung Tier is preserved. Ready to get started again?"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Checking In",
+              "description": "Personal check-in",
+              "content": "Hi [Name]! It's been a while. If you're ever thinking about reopening or your situation changes, just let me know. Your Konto is ready whenever you are. Hope business is going well!"
+            },
+            {
+              "channel": "Email",
+              "title": "Saisonal Reminder: [Season] Coming",
+              "description": "Saisonal trigger for closed Konten",
+              "content": "[Season] is approaching - if this was a strong period for you historically, maybe it's time to reopen? Your Konto Reaktivierung takes 5 minutes and your previous terms are available. Quick call to discuss?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Competitors' Kunden (when identifiable)",
+          "scenario_objective": "Win business from competitive Konten",
+          "main_messages_ideas": "Competitive differentiation, Switch incentive, Risk-free trial, Comparison benefits",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Compare and Save: Switch to [Company]",
+              "description": "Competitive outreach",
+              "content": "Curious how we compare to your current supplier? Many Händler who switched tell us they save [X]% on average, get better service, and access exclusive Produkte. Risk-free trial - see for yourself."
+            },
+            {
+              "channel": "Email",
+              "title": "Why Händler Are Switching",
+              "description": "Value proposition",
+              "content": "Händler are switching to [Company] for: [benefit 1], [benefit 2], [benefit 3]. Here's what makes us different and why it might be worth a trial Bestellung. Compare Preisgestaltung and see the difference."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Quick Comparison?",
+              "description": "Personal approach",
+              "content": "Hi [Name], I'd love to show you how we compare to [competitor if known]. No pressure - just a quick comparison of Preisgestaltung, service, and benefits. 10-minute call? Or I can send info to review."
+            },
+            {
+              "channel": "Email",
+              "title": "Risk-Free Supplier Trial",
+              "description": "Trial offer",
+              "content": "Try [Company] risk-free: place one trial Bestellung with special introductory terms, no commitment to switch. Compare quality, Preisgestaltung, service, and Support. If we don't exceed your expectations, no hard feelings."
+            },
+            {
+              "channel": "Email",
+              "title": "Switching Made Easy",
+              "description": "Friction reduction",
+              "content": "Thinking about switching suppliers? We make it easy: Konto setup in 24 hours, we'll match or beat your current Preisgestaltung, transition Support included, and no penalty for trying. Here's how smooth switching can be."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Previously active Konten that had issues/complaints",
+          "scenario_objective": "Recover relationships damaged by service issues",
+          "main_messages_ideas": "Acknowledgment, Improvements made, Sincere apology, Compensation offer",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "We Want to Make Things Right",
+              "description": "Issue-based outreach",
+              "content": "We know you had issues with [specific problem] and we take full responsibility. Since then, we've made significant improvements: [specific changes]. We'd love the chance to prove we've gotten better. Can we earn back your trust?"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Personal Apology",
+              "description": "Direct personal touch",
+              "content": "Hi [Name], it's [Rep]. I wanted to personally apologize for the issues you experienced with [problem]. I understand why you stopped ordering. We've made real changes and I'd love to discuss them with you. Would you be open to a conversation?"
+            },
+            {
+              "channel": "Email",
+              "title": "Here's What We've Fixed",
+              "description": "Improvement demonstration",
+              "content": "Since your issues with [problem], here's what we've changed: [specific improvements with proof points]. We're not the same company you left - we've learned and improved. Give us another chance to show you?"
+            },
+            {
+              "channel": "Email",
+              "title": "Special Terms: Our Apology",
+              "description": "Compensation offer",
+              "content": "As an apology for past issues, we'd like to offer special terms on your return: [generous offer - significant discount, extended terms, or other meaningful compensation]. No obligation - just our way of saying we're sorry and want you back."
+            },
+            {
+              "channel": "Email",
+              "title": "Guaranteed Service Standards",
+              "description": "Commitment and accountability",
+              "content": "If you give us another chance, here are our guaranteed service standards: [specific commitments]. If we don't meet these standards, [penalty or compensation]. We're putting our money where our mouth is because we're confident in our improvements."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Empfehlungs- & Netzwerkwachstum",
+      "target": "Satisfied Händler with industry connections",
+      "objective": "Generate new Händler Leads through Empfehlungen from existing partners",
+      "kpi": "Empfehlung rate (target: 15% of active Konten), Empfehlung conversion (target: 35%), Cost per acquisition via Empfehlung (target: 50% of other channels)",
+      "description": "Leverage strong Händler relationships to generate qualified Empfehlungen from satisfied partners.",
+      "scenarios": [
+        {
+          "scenario_target": "High-satisfaction Händler with strong partnership history",
+          "scenario_objective": "Activate as Empfehlung sources",
+          "main_messages_ideas": "Appreciation, Empfehlung Programm, Mutual benefit, Easy process",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Know Other Händler Who'd Benefit?",
+              "description": "Post high satisfaction indicator",
+              "content": "We're so glad the partnership is working well for you! Many of our best Händler have come through recommendations from partners like you. Know someone who'd benefit from Großhandel partnership? We'd love an introduction."
+            },
+            {
+              "channel": "Portal",
+              "title": "Empfehlung Programm Dashboard",
+              "description": "Programm hub",
+              "content": "Refer Händler and earn Belohnungen: track Empfehlungen, see status, claim Belohnungen, and access easy Empfehlung tools. Your Empfehlungen Hilfe us grow and we thank you for every successful introduction."
+            },
+            {
+              "channel": "Email",
+              "title": "Partner Empfehlung Belohnungen",
+              "description": "Day 14: Programm details",
+              "content": "Our Händler Empfehlung Programm: Refer a qualified Händler and you both benefit. You receive [referrer reward], they receive [new partner benefit]. Simple process: just share their contact or make an email introduction."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Quick Empfehlung Question",
+              "description": "Personal ask",
+              "content": "Hi [Name]! Since the partnership is going so well, wanted to ask - do you know other Händler who might benefit from working with us? Happy to reach out professionally if you make an intro. You'd both get Belohnungen if it works out."
+            },
+            {
+              "channel": "Email",
+              "title": "Easy Empfehlung: Forward This",
+              "description": "Day 30: Simple action",
+              "content": "Easiest way to refer: forward this email to a Händler colleague who might benefit. Or just reply with their name and contact - we'll reach out professionally and mention your recommendation."
+            },
+            {
+              "channel": "SMS",
+              "title": "Empfehlung Reward Earned!",
+              "description": "Success notification",
+              "content": "Great news! Your Empfehlung [Name] just activated their Konto. Your reward: [benefit] - now available in your Konto. Vielen Dank for the introduction!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler attending trade shows or industry events",
+          "scenario_objective": "Leverage event networking for introductions",
+          "main_messages_ideas": "Event coordination, Introduction facilitation, Networking",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "See You at [Event] - Let's Connect",
+              "description": "Pre-event outreach",
+              "content": "We'll both be at [Event]! Stop by booth [#] - bring colleagues who might be interested in Großhandel partnership. Happy to make introductions and discuss how we can Hilfe their businesses too."
+            },
+            {
+              "channel": "SMS",
+              "title": "At [Event] - Coffee?",
+              "description": "During event",
+              "content": "At [Event]? Stop by booth [#] - coffee's on us. Bring anyone who should know about us!"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Event Intro Hilfe",
+              "description": "Real-time coordination",
+              "content": "Meeting Händler at [Event] who might benefit from partnership? Text me their name and I'll come introduce myself. Or just bring them by booth [#] and mention you're a partner."
+            },
+            {
+              "channel": "Email",
+              "title": "Thank You for [Event] Introductions",
+              "description": "Post-event follow-up",
+              "content": "Vielen Dank for the introductions at [Event]! We're following up with [names] and will keep you updated. Your Empfehlung Belohnungen will be credited when they activate. Appreciate you thinking of us!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Buying group members with individual Händler connections",
+          "scenario_objective": "Encourage group member recruitment",
+          "main_messages_ideas": "Group growth, Member benefits, Recruitment incentives, Network strengthening",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Grow [Buying Group] Together",
+              "description": "Group member Empfehlung",
+              "content": "As a [Buying Group] member, you can Hilfe strengthen the group: refer other Händler to join [Buying Group] and become Großhandel partners. Benefits for everyone: larger group = better Preisgestaltung, stronger buying power, and enhanced Programme."
+            },
+            {
+              "channel": "Email",
+              "title": "Member Recruitment Belohnungen",
+              "description": "Special incentive",
+              "content": "[Buying Group] member recruitment Programm: refer Händler to join the group and you receive [recruitment reward]. They get access to group benefits, and we all benefit from a stronger buying group."
+            },
+            {
+              "channel": "Portal",
+              "title": "Group Member Empfehlung Tools",
+              "description": "Resource hub",
+              "content": "Recruit [Buying Group] members: overview presentation, benefit summary, application link, and recruitment tracking. Hilfe grow the group and earn Belohnungen for successful Empfehlungen."
+            },
+            {
+              "channel": "Email",
+              "title": "[Buying Group] Getting Stronger",
+              "description": "Group growth update",
+              "content": "[Buying Group] growth update: [X] new members this quarter, improved Preisgestaltung Tiers unlocked, and enhanced Programme launching. Your Empfehlungen make the group stronger - know anyone else who should join?"
             }
           ]
         }
@@ -681,35 +2067,65 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Neuhändler-Onboarding & Erstbestellungs-Erfolg",
-      "why_brevo_is_better": "Brevos B2B-Automatisierung ermöglicht strukturierte Onboarding-Sequenzen, die sicherstellen, dass jeder neue Händler konsistente, hilfreiche Kommunikation erhält, die Erstbestellungen innerhalb von Tagen, nicht Wochen, vorantreibt.",
-      "omnichannel_channels": "Email für detaillierte Anleitungen und Kataloge + SMS für schnelle Benachrichtigungen und dringende Alerts + Portal-Integration für Self-Service",
-      "setup_efficiency": "Vorgefertigte Großhandels-Onboarding-Templates helfen Ihnen, professionelle Sequenzen in Minuten zu erstellen, mit automatischer Personalisierung basierend auf Händlerprofil."
+      "scenario_name": "New Retailer Onboarding & First Order Success",
+      "why_brevo_is_better": "Brevo's B2B automation enables structured onboarding sequences that ensure every new retailer receives consistent, helpful communication that drives first orders within days, not weeks.",
+      "omnichannel_channels": "Email for detailed guides and catalogs + SMS for quick notifications and urgent alerts + WhatsApp for personal account manager communication + Portal notifications for self-service",
+      "setup_efficiency": "Pre-built wholesale onboarding templates help you create professional sequences in minutes, with automatic personalization based on retailer profile and account type."
     },
     {
-      "scenario_name": "Nachbestellautomatisierung & Bestandsmanagement",
-      "why_brevo_is_better": "Integration mit Ihrem Auftragsmanagementsystem ermöglicht intelligente Nachbestellerinnerungen basierend auf den tatsächlichen Kaufmustern jedes Händlers, die Bedürfnisse vorhersagen, bevor Lieferengpässe auftreten.",
-      "omnichannel_channels": "Email für detaillierte Nachbestellinformationen und Kataloge + SMS für zeitkritische Lager-Alerts und Frist-Erinnerungen",
-      "setup_efficiency": "Bestellhistorien-Integration ermöglicht vollautomatisierte, personalisierte Nachbestellungs-Timing kalibriert auf die Verkaufsgeschwindigkeit jedes Händlers."
+      "scenario_name": "Volume Pricing & Tiered Discount Programs",
+      "why_brevo_is_better": "Automated tier tracking and proximity alerts motivate retailers to increase order sizes at exactly the right moment, with personalized savings calculations that make the value crystal clear.",
+      "omnichannel_channels": "Email for detailed tier comparisons and savings analysis + Portal real-time notifications during order placement + SMS for threshold proximity alerts",
+      "setup_efficiency": "Integration with your order system enables automatic tier calculation, threshold monitoring, and triggered communication without manual tracking or delayed notifications."
     },
     {
-      "scenario_name": "Saisonvorbereitung & Vorbestellung",
-      "why_brevo_is_better": "Kalenderbasierte Automatisierung und erweiterte Segmentierung stellen rechtzeitige saisonale Kommunikation sicher, die Händlern hilft, sich mit personalisierten Empfehlungen basierend auf vergangener Leistung auf Spitzennachfrage vorzubereiten.",
-      "omnichannel_channels": "Email für saisonale Kataloge und Planungsleitfäden + SMS für Frist-Erinnerungen und Lager-Alerts",
-      "setup_efficiency": "Jährliche Saisonkampagnen können templatebasiert und geplant werden, um automatisch zu wiederholen, mit leistungsbasierter Personalisierung, die sich jedes Jahr verbessert."
+      "scenario_name": "Inventory & Restock Alerts",
+      "why_brevo_is_better": "Integration with your order management system enables smart reorder reminders based on each retailer's actual purchase patterns, predicting needs before stockouts occur and reducing manual follow-up by 80%.",
+      "omnichannel_channels": "Email for detailed reorder information and catalogs + SMS for time-sensitive stock alerts + WhatsApp for personal check-ins + Portal dashboard for inventory visibility",
+      "setup_efficiency": "Order history integration enables fully automated, personalized reorder timing calibrated to each retailer's sales velocity, with no manual monitoring required."
     },
     {
-      "scenario_name": "Händler-Stufen- & Belohnungsprogramm",
-      "why_brevo_is_better": "Automatisierte Stufenverfolgung und Meilenstein-Kommunikation hält Händler motiviert mit klarer Fortschrittssichtbarkeit und sofortiger Anerkennung, wenn Schwellen erreicht werden.",
-      "omnichannel_channels": "Email für Stufen-Updates und Vorteils-Kommunikation + SMS für Erfolgsbenachrichtigungen + Personalisierte Angebote basierend auf Stufenstatus",
-      "setup_efficiency": "Integration mit Bestelldaten ermöglicht automatische Stufenberechnung und getriggerte Kommunikation ohne manuelle Verfolgung oder verzögerte Updates."
+      "scenario_name": "Credit Line & Payment Terms Management",
+      "why_brevo_is_better": "Automated credit monitoring and payment reminders ensure timely communication about limits, due dates, and opportunities, while maintaining positive relationships through appropriate channel selection and tone.",
+      "omnichannel_channels": "Email for formal credit communications and payment reminders + Portal for real-time credit utilization visibility + SMS for urgent payment alerts + WhatsApp for personal discussions about terms",
+      "setup_efficiency": "Integration with accounting systems enables automatic payment reminders, credit utilization alerts, and tier-based credit increase offers without manual tracking of payment history."
     },
     {
-      "scenario_name": "Win-Back & Inaktive-Account-Reaktivierung",
-      "why_brevo_is_better": "Automatisierte Inaktivitätserkennung triggert rechtzeitiges Re-Engagement, bevor Accounts kalt werden, mit Segmentierung, die Win-Back-Ansätze auf wahrscheinliche Inaktivitätsgründe abstimmt.",
-      "omnichannel_channels": "Email für Re-Engagement-Angebote und Updates + SMS für persönliche Check-ins + Koordinierte Multi-Touch-Sequenzen",
-      "setup_efficiency": "Inaktivitäts-Trigger identifizieren automatisch gefährdete Accounts und initiieren Win-Back-Sequenzen ohne manuelle Überwachung der Account-Aktivität."
+      "scenario_name": "Retailer/Reseller Support & Training",
+      "why_brevo_is_better": "Automated training enrollment based on product orders, completion tracking, and progressive educational sequences ensure every retailer receives relevant knowledge at the right time in their journey.",
+      "omnichannel_channels": "Email for training materials and webinar invitations + Portal for resource library and certification tracking + SMS for event reminders + WhatsApp for training support questions",
+      "setup_efficiency": "Trigger-based training delivery automatically sends relevant education when retailers adopt new categories, with progress tracking and certification management built in."
+    },
+    {
+      "scenario_name": "Drop-Ship & Fulfillment Programs",
+      "why_brevo_is_better": "Automated drop-ship order notifications, real-time status updates, and exception alerts keep retailers informed about every order without manual communication, building confidence in the drop-ship process.",
+      "omnichannel_channels": "Email for drop-ship program education and order confirmations + SMS for real-time delivery updates + WhatsApp for order issue resolution + Portal for order tracking and performance metrics",
+      "setup_efficiency": "Integration with fulfillment systems enables automatic order receipt confirmation, shipment notifications, delivery updates, and exception alerts without manual status communication."
+    },
+    {
+      "scenario_name": "Seasonal Preparation & Pre-Booking",
+      "why_brevo_is_better": "Calendar-based automation and advanced segmentation ensure timely seasonal communication that helps retailers prepare for peak demand with personalized recommendations based on past performance and predictive analytics.",
+      "omnichannel_channels": "Email for seasonal catalogs and planning guides + Portal for planning tools and early-bird offers + SMS for deadline reminders + WhatsApp for VIP personalized season planning",
+      "setup_efficiency": "Annual seasonal campaigns can be templated and scheduled to repeat automatically, with performance-based personalization improving each year through learning from prior season results."
+    },
+    {
+      "scenario_name": "Retailer Tier & Rewards Program",
+      "why_brevo_is_better": "Automated tier tracking and milestone communication keeps retailers motivated with clear progress visibility and instant recognition when thresholds are reached, driving 20% higher tier advancement rates.",
+      "omnichannel_channels": "Email for tier updates and benefit communication + Portal for progress tracking and benefit access + SMS for achievement notifications + WhatsApp for VIP status recognition",
+      "setup_efficiency": "Integration with order data enables automatic tier calculation, progress tracking, and triggered communication for advancement, retention alerts, and exclusive offers without manual tier management."
+    },
+    {
+      "scenario_name": "Win-Back & Dormant Account Reactivation",
+      "why_brevo_is_better": "Automated inactivity detection triggers timely re-engagement before accounts go cold, with segmentation that tailors win-back approaches to likely reasons for dormancy based on order history and behavior patterns.",
+      "omnichannel_channels": "Email for re-engagement offers and updates + WhatsApp for personal check-ins + SMS for brief touchpoints + Portal for easy reactivation access",
+      "setup_efficiency": "Inactivity triggers automatically identify at-risk accounts and initiate win-back sequences without manual monitoring of account activity, recovering 20% of dormant accounts."
+    },
+    {
+      "scenario_name": "Referral & Network Growth",
+      "why_brevo_is_better": "Automated referral tracking, reward fulfillment, and multi-touch referral encouragement campaigns turn satisfied retailers into a consistent lead generation channel with 35% conversion rates.",
+      "omnichannel_channels": "Email for referral program communication and reward notifications + Portal for referral tracking and management + SMS for referral success alerts + WhatsApp for personal referral requests",
+      "setup_efficiency": "Satisfaction-triggered referral requests automatically identify your happiest retailers and prompt them to refer at optimal moments, with automatic reward tracking and fulfillment eliminating manual program management."
     }
   ],
-  "conclusion": "Großhändler, die diese umfassenden Relationship-Marketing-Programme implementieren, können verbesserte Händlerakquise durch systematisches Lead-Nurturing, konsistentere Bestellungen durch proaktives Bestandsmanagement, erweiterte Sortimente durch gezielten Cross-Sell und stärkere Partnerschaften durch stufenbasierte Anerkennung und Schulungsunterstützung erwarten. Das Großhandelsgeschäft belohnt Konsistenz, Zuverlässigkeit und gegenseitige Wachstumsorientierung - dieser Plan liefert alle drei durch systematisches, automatisiertes Engagement über den gesamten Händler-Lifecycle."
+  "conclusion": "Wholesale distributors that implement these comprehensive relationship marketing programs can expect improved retailer acquisition through systematic lead nurturing, more consistent ordering through proactive inventory management, expanded assortments through targeted cross-sell, and stronger partnerships through tier-based recognition and training support. The wholesale business rewards consistency, reliability, and mutual growth orientation - this plan delivers all three through systematic, automated engagement across the entire retailer lifecycle from application through strategic partnership."
 }

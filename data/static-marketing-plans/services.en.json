@@ -617,6 +617,224 @@
           ]
         }
       ]
+    },
+    {
+      "program_name": "Industry-Specific Solutions & Vertical Expertise",
+      "target": "Prospects and clients in key vertical industries where the firm has deep expertise",
+      "objective": "Position as industry expert in 3-5 key verticals with 40% higher conversion rates for vertical-targeted prospects",
+      "kpi": "Vertical-specific engagement rate (target: 35%), Industry content consumption (target: 50%), Vertical lead conversion (target: 40% higher than general), Industry client acquisition",
+      "description": "A program that showcases deep vertical expertise through industry-specific content, case studies, benchmarks, and regulatory/compliance insights. This positions the firm as the go-to expert for clients in specific industries who value specialized knowledge.",
+      "scenarios": [
+        {
+          "scenario_target": "Healthcare industry prospects and clients",
+          "scenario_objective": "Demonstrate healthcare expertise and regulatory knowledge",
+          "main_messages_ideas": "Healthcare regulations, HIPAA compliance, Industry benchmarks, Healthcare case studies, Sector trends",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Healthcare Industry Update: [Topic]",
+              "description": "Monthly: Industry-specific content",
+              "content": "Healthcare organizations face unique challenges this month: [Recent regulatory changes, industry trends, or challenges]. Here's our analysis of what [Topic] means for healthcare providers, payers, and life sciences companies - and how forward-thinking organizations are responding."
+            },
+            {
+              "channel": "Email",
+              "title": "Healthcare Case Study: [Client Type]",
+              "description": "Quarterly: Success story",
+              "content": "See how we helped [Healthcare Client Type] navigate [specific challenge]. The result: [Quantified outcomes]. Download the full case study to see how this approach could work for your organization."
+            },
+            {
+              "channel": "Email",
+              "title": "Healthcare Benchmark Report [Year]",
+              "description": "Annual: Research report",
+              "content": "Our annual Healthcare Industry Benchmark Report is here! Compare your organization against 200+ healthcare providers across [key metrics]. Download your copy and see where you stand - plus actionable recommendations from our healthcare practice leaders."
+            },
+            {
+              "channel": "SMS",
+              "title": "Healthcare Webinar Tomorrow",
+              "description": "Event reminder",
+              "content": "Reminder: Healthcare compliance webinar tomorrow at [time]. Our healthcare practice experts will cover [topic]. Can't miss for healthcare leaders. Join: [link]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Financial services industry prospects and clients",
+          "scenario_objective": "Showcase financial services expertise and compliance knowledge",
+          "main_messages_ideas": "Regulatory compliance, Risk management, Fintech trends, Financial services case studies, Industry benchmarks",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Financial Services Regulatory Update",
+              "description": "Monthly: Compliance updates",
+              "content": "Key regulatory developments affecting financial services this month: [Updates from SEC, FINRA, state regulators, etc.]. Our financial services team breaks down what these changes mean for banks, asset managers, insurance companies, and fintech firms."
+            },
+            {
+              "channel": "Email",
+              "title": "Financial Services Trends [Year]",
+              "description": "Quarterly: Industry analysis",
+              "content": "What's shaping financial services in [Quarter]? From [trend 1] to [trend 2], our financial services practice leaders share insights on where the industry is heading - and how leading institutions are preparing."
+            },
+            {
+              "channel": "Email",
+              "title": "Fintech Partnership Opportunity",
+              "description": "When relevant: Industry event",
+              "content": "We're hosting an exclusive roundtable for financial services executives on [Topic]. Limited to 15 participants for meaningful discussion. Would you like to join [peer companies] in exploring [Topic]? Request your seat."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Technology industry prospects and clients",
+          "scenario_objective": "Demonstrate technology sector understanding and growth expertise",
+          "main_messages_ideas": "Tech growth strategies, SaaS metrics, Scaling challenges, Tech M&A, Industry trends",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tech Company Growth Insights",
+              "description": "Monthly: Technology sector content",
+              "content": "What are the fastest-growing tech companies doing differently? Our analysis of [trend/topic] reveals strategies that separate leaders from laggards. Insights applicable whether you're Series A or preparing for IPO."
+            },
+            {
+              "channel": "Email",
+              "title": "SaaS Metrics Benchmark Report",
+              "description": "Quarterly: Benchmarking data",
+              "content": "How do your SaaS metrics stack up? Our latest benchmark report analyzes [# companies] across key metrics: CAC, LTV, churn, expansion revenue, and more. See where you compare and where to focus improvement efforts."
+            },
+            {
+              "channel": "Email",
+              "title": "Tech CFO Roundtable",
+              "description": "Quarterly: Peer networking",
+              "content": "Join 12 tech CFOs for a private discussion on [Topic - e.g., navigating market uncertainty, IPO readiness, M&A strategy]. Facilitated by our technology practice partners. These sessions consistently produce valuable peer insights."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Manufacturing industry prospects and clients",
+          "scenario_objective": "Showcase manufacturing expertise and operational knowledge",
+          "main_messages_ideas": "Supply chain, Industry 4.0, Operational excellence, Manufacturing case studies, Sector trends",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Manufacturing Industry Outlook",
+              "description": "Monthly: Industry content",
+              "content": "Manufacturing leaders are facing [current challenges/trends]. Our latest analysis covers supply chain developments, Industry 4.0 adoption, and operational strategies that leading manufacturers are implementing."
+            },
+            {
+              "channel": "Email",
+              "title": "Manufacturing Excellence Case Study",
+              "description": "Quarterly: Success story",
+              "content": "See how [Manufacturing Client] achieved [specific outcome - cost reduction, efficiency gain, etc.]. This case study walks through the approach, challenges overcome, and results achieved."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Proposal & RFP Management",
+      "target": "Active opportunities in the sales pipeline, particularly formal RFP responses and competitive proposal situations",
+      "objective": "Increase proposal win rate by 25% and reduce sales cycle length by 20% through strategic proposal communication",
+      "kpi": "Proposal win rate (target: 35%), Proposal response rate (target: 80%), Time to proposal submission, Follow-up effectiveness, Competitive win rate",
+      "description": "A program designed to support the proposal and RFP process with strategic communication that reinforces value propositions, addresses concerns, and maintains engagement throughout often lengthy evaluation periods.",
+      "scenarios": [
+        {
+          "scenario_target": "Prospects in active RFP evaluation",
+          "scenario_objective": "Maintain engagement and reinforce value during evaluation period",
+          "main_messages_ideas": "Proposal follow-up, Value reinforcement, Question anticipation, Reference availability, Evaluation support",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Proposal Received Confirmation",
+              "description": "Immediate upon submission: Confirmation",
+              "content": "Thank you for the opportunity to present our proposal for [Project/Engagement]. We've submitted our response addressing [key requirements]. We're excited about the possibility of working together on [specific outcome]. Please don't hesitate to reach out with any questions."
+            },
+            {
+              "channel": "Email",
+              "title": "Supporting Materials: [Relevant Topic]",
+              "description": "Week 1: Value add",
+              "content": "As you evaluate proposals, I thought you might find this relevant: [Case study, benchmark, or insight directly related to their project/challenge]. It provides additional context on [approach/methodology] we outlined in our proposal."
+            },
+            {
+              "channel": "Email",
+              "title": "Reference Availability",
+              "description": "Week 2: Social proof",
+              "content": "As part of your evaluation process, we'd be happy to connect you with references from similar engagements. [Client 1] faced challenges similar to yours, and [Client 2] can speak to our [specific capability]. Let me know if these conversations would be helpful."
+            },
+            {
+              "channel": "SMS",
+              "title": "Questions on Proposal?",
+              "description": "Week 2: Personal check-in",
+              "content": "Hi [Name], hope the evaluation is going well. Happy to jump on a quick call if any questions have come up about our proposal. Here to help! - [Your Name]"
+            },
+            {
+              "channel": "Email",
+              "title": "Evaluation Support",
+              "description": "Week 3: Proactive support",
+              "content": "We know evaluation processes can surface additional questions. If it would be helpful, we're available for a follow-up discussion to: address any new questions, provide additional detail on any section, or clarify our approach. What would be most useful?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Prospects with proposal decisions pending",
+          "scenario_objective": "Stay top-of-mind during decision-making without being pushy",
+          "main_messages_ideas": "Soft touchpoints, Relevant content, Availability signals, Timeline check-in",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Thought You'd Find This Relevant",
+              "description": "Ongoing: Value-add content",
+              "content": "While your evaluation continues, I came across [article/research/case study] that's directly relevant to [their challenge]. Thought it might be useful regardless of which direction you go. No response needed - just wanted to share."
+            },
+            {
+              "channel": "Email",
+              "title": "Timeline Check-In",
+              "description": "Based on expected timeline: Gentle follow-up",
+              "content": "I wanted to check in as we approach the timeline you mentioned for a decision on [Project]. We remain enthusiastic about the opportunity and are ready to move quickly once you're ready. Is there anything else we can provide to support your decision process?"
+            },
+            {
+              "channel": "Email",
+              "title": "Team Available for Discussion",
+              "description": "If timeline extends: Reengagement",
+              "content": "We know timelines can shift, and selection decisions often take longer than anticipated. Our team remains available for any additional discussions that would be helpful. We're committed to making this decision as easy as possible for your team."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Post-proposal decision (won)",
+          "scenario_objective": "Smooth transition from sales to delivery",
+          "main_messages_ideas": "Thank you, Kickoff preparation, Team introduction, Expectation setting",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Thank You for Your Trust",
+              "description": "Upon decision: Gratitude and next steps",
+              "content": "Thank you for selecting [Firm Name] for [Project]. We're honored by your trust and committed to exceeding your expectations. Here's what happens next: [Contracting process, team introduction, kickoff scheduling]. We'll be in touch within [timeframe] to begin."
+            },
+            {
+              "channel": "Email",
+              "title": "Your Engagement Team",
+              "description": "Before kickoff: Team introduction",
+              "content": "I'm excited to introduce the team who will be leading your [Project]: [Team members with brief bios]. Each brings [relevant expertise]. We'll be scheduling a kickoff meeting to align on objectives and approach. In the meantime, please don't hesitate to reach out to any of us."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Post-proposal decision (lost)",
+          "scenario_objective": "Maintain relationship and learn from loss",
+          "main_messages_ideas": "Gracious acceptance, Feedback request, Future relationship, Stay in touch",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Thank You for the Opportunity",
+              "description": "Upon loss notification: Gracious response",
+              "content": "Thank you for letting us know about your decision, and for the opportunity to present our proposal. We wish you success with [Project]. If you're open to it, we'd value any feedback on our proposal - it helps us improve. Either way, we hope our paths cross again."
+            },
+            {
+              "channel": "Email",
+              "title": "Staying Connected",
+              "description": "Month 1: Relationship maintenance",
+              "content": "We may not be working together on [Project], but we'd still love to stay connected. I'm adding you to our industry insights distribution - relevant content without the sales pitch. Feel free to reach out anytime."
+            }
+          ]
+        }
+      ]
     }
   ],
   "how_brevo_helps_you": [

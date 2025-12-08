@@ -230,6 +230,392 @@
       ]
     },
     {
+      "program_name": "Rezept-Inspiration & Mahlzeitenplanung",
+      "target": "Engagierte Kunden, die mit Rezept-Inhalten interagieren oder Mahlzeitenplanungs-Produkte kaufen",
+      "objective": "Rezept-Engagement auf 50% Klickrate erhöhen, Kochbox-Adoption auf 8% steigern und AOV um 25% durch rezeptbasierte Bundles erhöhen",
+      "kpi": "Rezept-E-Mail-Klickrate (Ziel: 50%), Kochbox/Bundle-Adoption (Ziel: 8%), Rezept-getriebene AOV-Steigerung (Ziel: +25%), Rezept-Speicherungen/Teilungen (Ziel: 15%)",
+      "description": "Content-reiches Programm, das die Marke als kulinarische Inspirationsquelle positioniert. Bietet wöchentliche Rezepte, saisonale Speisepläne, Technik-Tutorials und einkaufbare Zutatenlisten, um Produktentdeckung und Mehrfach-Artikel-Käufe zu fördern.",
+      "scenarios": [
+        {
+          "scenario_target": "Aktive Rezept-Engagierer",
+          "scenario_objective": "Content-Engagement vertiefen und einkaufbare Rezepte fördern",
+          "main_messages_ideas": "Wöchentliches Rezept, Mahlzeitenplanungs-Tools, Technik-Tutorials, Chef-Partnerschaften",
+          "message_sequence": [
+            {
+              "title": "Diese Woche Muss-Kochen-Rezept",
+              "description": "Wöchentliche Content-E-Mail",
+              "content": "Diese Woche: [Rezeptname] mit [Haupt-Zutat]. Holen Sie sich das Rezept mit einer Ein-Klick-einkaufbaren Zutatenliste.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Wöchentlicher Speiseplan",
+              "description": "Sonntag: Wöchentlicher Planungs-Helfer",
+              "content": "Planen Sie Ihre Woche! Hier sind 5 Rezepte mit einer kombinierten Einkaufsliste – alles, was Sie brauchen, in einem Warenkorb.",
+              "channel": "Email"
+            },
+            {
+              "title": "Meistern Sie [Technik] mit [Chef]",
+              "description": "Zweiwöchentlicher Tutorial-Content",
+              "content": "Lernen Sie [Technik] wie ein Profi! Schauen Sie unser Schritt-für-Schritt-Tutorial und kaufen Sie die Zutaten, um zuhause zu üben.",
+              "channel": "Email"
+            },
+            {
+              "title": "Rezept Gespeichert: Holen Sie Die Zutaten",
+              "description": "Ausgelöst durch Rezept-Speicherung/Lesezeichen",
+              "content": "Sie haben [Rezeptname] gespeichert! Bereit, es zu kochen? Alle Zutaten sind mit Ein-Klick-Bestellung verfügbar.",
+              "channel": "SMS"
+            },
+            {
+              "title": "30-Minuten Wochentags-Serie",
+              "description": "Wochenmitte-Inspiration",
+              "content": "Keine Zeit zum Kochen? Unsere 30-Minuten-Wochentags-Serie bietet schnelle, köstliche Rezepte mit minimalem Aufräumen. Diese Woche: [Rezepte].",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Was Hat Saison: [Monat] Rezepte",
+              "description": "Monatlicher saisonaler Content",
+              "content": "Nutzen Sie die saisonalen Zutaten des [Monat] optimal mit diesen 8 Rezepten, die Spitzenaromen und frische Produkte präsentieren.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kochbox- und Bundle-Käufer",
+          "scenario_objective": "Wiederholte Kochbox-Käufe und Abo fördern",
+          "main_messages_ideas": "Neue Kochbox-Ankündigungen, Ernährungs-spezifische Boxen, Abo-Vorteile, Chef-Kollaborationen",
+          "message_sequence": [
+            {
+              "title": "Neue Kochbox-Veröffentlichung",
+              "description": "Wöchentlich: Neue Box-Ankündigung",
+              "content": "Diese Woche Kochbox: [Gericht-Name] für 4 Personen, in 30 Minuten fertig. Alle Zutaten vorportioniert mit Schritt-für-Schritt-Anleitung.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Ernährungs]-Kochbox-Kollektion",
+              "description": "Basierend auf Geschmacksprofil-Präferenzen",
+              "content": "Entdecken Sie unsere [Vegetarisch/Keto/Glutenfrei]-Kochbox-Kollektion – lecker, praktisch und auf Ihre Ernährung abgestimmt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wöchentliches Kochbox-Abo",
+              "description": "Nach dem 2. Box-Kauf",
+              "content": "Lieben Sie die Bequemlichkeit? Abonnieren Sie wöchentliche Kochboxen und sparen Sie 20%. Jede Woche überspringen, jederzeit kündigen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Chef-Kollaboration: Limitierte Edition Kit",
+              "description": "Spezielle Partnerschafts-Ankündigung",
+              "content": "Chef [Name] hat ein exklusives Kochbox-Set für uns kreiert! Nur 500 diese Woche verfügbar. Bestellen Sie jetzt, bevor sie weg sind.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Kochbox-Trick: Zeit Sparen",
+              "description": "Nutzungsoptimierung",
+              "content": "Profi-Tipp: Bereiten Sie mehrere Kits am Sonntag vor und halbieren Sie Ihre Wochentags-Kochzeit. So machen es Kochbox-Veteranen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kochbox-Jubiläum",
+              "description": "Nach 3 Monaten Kochbox-Käufen",
+              "content": "Sie haben 12 Kochboxen mit uns gemacht! Hier ist ein kostenloses Dessert-Kit zum Feiern, plus früher Zugang zum Menü nächsten Monat.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Ernährungs-spezifische Mahlzeitenplaner (Keto, Vegan, Glutenfrei)",
+          "scenario_objective": "Spezialisierte Inhalte bieten und Kategorie-Loyalität aufbauen",
+          "main_messages_ideas": "Ernährungs-spezifische Rezepte, Nährwertinformationen, Meal-Prep-Guides, Substitutions-Tipps",
+          "message_sequence": [
+            {
+              "title": "[Ernährungs]-Mahlzeitenplan: Diese Woche",
+              "description": "Wöchentlicher ernährungs-spezifischer Plan",
+              "content": "Ihr wöchentlicher [Keto/Vegan/GF]-Mahlzeitenplan ist da! 7 Rezepte mit vollständigen Nährwertinformationen und konsolidierter Einkaufsliste.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Ernährungs]-Produkt-Spotlight",
+              "description": "Kategorie-Aufklärung",
+              "content": "Neu in unserer [Ernährungs]-Kollektion: [Produkt]. Deshalb ist es ein Game-Changer für [Ernährungs]-Kochen, plus 3 Rezeptideen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Meal-Prep-Sonntag: [Ernährungs]-Edition",
+              "description": "Batch-Cooking-Guide",
+              "content": "Bereiten Sie eine ganze Woche [Ernährungs]-Mahlzeiten in 2 Stunden vor! Unser Meal-Prep-Guide enthält Einkaufsliste, Zeitplan und Aufbewahrungstipps.",
+              "channel": "Email"
+            },
+            {
+              "title": "Smarte Substitutionen für [Ernährungs]",
+              "description": "Bildungs-Content",
+              "content": "Meistern Sie [Ernährungs]-Kochen mit unserem Substitutions-Guide. Verwandeln Sie jedes Rezept mit diesen Austauschen in [Ernährungs]-freundlich.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Ernährungs]-Community-Spotlight",
+              "description": "Nutzergenerierter Content",
+              "content": "Sehen Sie, was die [Ernährungs]-Community kocht! Ausgewählte Rezepte von Kunden wie Ihnen, plus ihre Geheimtipps und Tricks.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Ernährungs]-Challenge: Machen Sie Mit!",
+              "description": "Engagement-Programm",
+              "content": "Machen Sie bei unserer 30-Tage [Ernährungs]-Challenge mit! Tägliche Rezepte, Community-Support, Experten-Tipps und die Chance, 500€ in Produkten zu gewinnen.",
+              "channel": "Push Notification"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kochfertigkeiten-Entwickler",
+          "scenario_objective": "Durch progressive Fertigkeitsentwicklung bilden und Vertrauen aufbauen",
+          "main_messages_ideas": "Technik-Serien, Fertigkeits-Progression, Video-Tutorials, Chef-Q&A",
+          "message_sequence": [
+            {
+              "title": "Koch-Grundlagen: [Technik] 101",
+              "description": "Einsteiger-Technik-Tutorial",
+              "content": "Meistern Sie die Grundlagen! Diese Woche: [Messertechniken/Anbraten/Rösten]. Schauen Sie unser Video-Tutorial und üben Sie mit diesen 3 Anfänger-Rezepten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Level Up: Fortgeschrittene [Technik]",
+              "description": "Fertigkeits-Progression",
+              "content": "Bereit für das nächste Level? Bauen Sie auf [Basis-Technik] mit diesen fortgeschrittenen Methoden auf, die Ihr Kochen transformieren werden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Chef-Q&A: Ihre Fragen Beantwortet",
+              "description": "Community-Engagement",
+              "content": "Diese Woche beantwortet unser Chef-Q&A Ihre Fragen zu [Thema]. Plus, reichen Sie neue Fragen für die nächste Woche ein!",
+              "channel": "Email"
+            },
+            {
+              "title": "Küchengeräte-Guide",
+              "description": "Werkzeug-Bildung",
+              "content": "Die richtigen Werkzeuge machen den Unterschied. Unser Guide zu essenzieller [Kategorie]-Ausrüstung, von Budget bis Profi-Level.",
+              "channel": "Email"
+            },
+            {
+              "title": "Fehlerbehebung Häufiger Fehler",
+              "description": "Problemlösungs-Content",
+              "content": "Das kennen wir alle! So beheben (oder vermeiden) Sie die 10 häufigsten [Technik]-Fehler, die selbst erfahrene Köche machen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Fertigkeits-Badge Verdient!",
+              "description": "Gamification-Meilenstein",
+              "content": "Herzlichen Glückwunsch! Sie haben 5 [Technik]-Rezepte abgeschlossen und Ihr [Fertigkeit]-Badge verdient. Teilen Sie Ihre Leistung und schalten Sie erweiterte Inhalte frei!",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Nehmen Sie An Unserem Live-Kochkurs Teil",
+              "description": "Event-Einladung",
+              "content": "Sie sind eingeladen! Nehmen Sie an Chef [Name]'s Live-[Technik]-Kurs an diesem [Tag] teil. Kochen Sie in Echtzeit mit und stellen Sie Fragen. Jetzt registrieren!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Diätpräferenzen & Allergiemanagement",
+      "target": "Kunden mit Ernährungseinschränkungen, Allergien oder spezifischen Ernährungsbedürfnissen",
+      "objective": "70% Ernährungsprofil-Abschlussrate erreichen, 90% Produkt-Kompatibilitäts-Vertrauenswert und 30% höhere Kauffrequenz bei ernährungs-spezifischen Käufern",
+      "kpi": "Ernährungsprofil-Abschluss (Ziel: 70%), Produktfilter-Nutzung (Ziel: 85%), Ernährungs-sichere-Produkt-Adoption (Ziel: 60%), Support-Ticket-Reduktion (Ziel: -40%)",
+      "description": "Umfassendes System zur Verwaltung von Ernährungseinschränkungen und Allergien, von detaillierter Präferenzerfassung bis zu Produktfilterung, sicheren Substitutionen und personalisierten Empfehlungen, die sicherstellen, dass jeder Kauf den Gesundheits- und Lifestyle-Anforderungen entspricht.",
+      "scenarios": [
+        {
+          "scenario_target": "Allergie-bewusste Käufer",
+          "scenario_objective": "Vertrauen durch Sicherheit und Transparenz aufbauen",
+          "main_messages_ideas": "Allergenfreie Garantie, detaillierte Kennzeichnung, sichere Produktlisten, Substitutions-Guides",
+          "message_sequence": [
+            {
+              "title": "Ihr Allergie-Sicheres Profil",
+              "description": "Nach Allergieprofil-Vervollständigung",
+              "content": "Ihr Profil ist eingerichtet! Wir haben alle Produkte, die [Allergene] enthalten, herausgefiltert. Stöbern Sie mit Vertrauen – jede Empfehlung ist sicher für Sie.",
+              "channel": "Email"
+            },
+            {
+              "title": "Zertifizierte Allergiefreie Kollektion",
+              "description": "Produkt-Kuratierung",
+              "content": "Wir präsentieren unsere zertifizierte [Allergen]-freie Kollektion: 100+ Produkte getestet und als sicher verifiziert. Kaufen Sie ohne Sorgen!",
+              "channel": "Email"
+            },
+            {
+              "title": "Neue Sichere Produkte Für Sie",
+              "description": "Wöchentliche Updates",
+              "content": "Diese Woche wurden 5 neue [Allergen]-freie Produkte hinzugefügt! Alle basierend auf Ihrem Allergieprofil als sicher verifiziert. Entdecken Sie die Neuheiten.",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Sicherer Substitutions-Guide",
+              "description": "Bildungs-Content",
+              "content": "Lieben Sie ein Rezept, müssen aber [Allergen] vermeiden? Unser Substitutions-Guide zeigt sichere Austausche, die Geschmack und Textur bewahren.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kreuzkontaminations-Prävention",
+              "description": "Sicherheits-Bildung",
+              "content": "Wichtige Informationen über unsere Beschaffung und Handhabung: Wie wir [Allergen]-Kreuzkontamination vom Lieferanten bis zu Ihrer Tür verhindern.",
+              "channel": "Email"
+            },
+            {
+              "title": "Allergie-Warnung: Produkt-Update",
+              "description": "Transparenz-Benachrichtigung",
+              "content": "Achtung: [Produkt]-Formulierung hat sich geändert. Es enthält jetzt [Allergen]. Wir haben es aus Ihren Empfehlungen entfernt. Sehen Sie sichere Alternativen.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Allergie-Sichere Mahlzeitenpläne",
+              "description": "Kuratierte Mahlzeitenplanung",
+              "content": "Ihr wöchentlicher Mahlzeitenplan mit null [Allergen]-Exposition: 7 Rezepte, Einkaufsliste und Vorbereitungs-Guide. Kochen Sie sicher und köstlich!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Ernährungs-spezifische Lifestyle-Anhänger (Keto, Paleo, Vegan, etc.)",
+          "scenario_objective": "Lifestyle-Einhaltung mit kuratierten Produkten und Bildung unterstützen",
+          "main_messages_ideas": "Ernährungs-Kompatibilität, Makro-Tracking, Lifestyle-Tipps, Community-Support",
+          "message_sequence": [
+            {
+              "title": "Ihr [Ernährungs]-Dashboard Ist Bereit",
+              "description": "Nach Ernährungsprofil-Einrichtung",
+              "content": "Willkommen beim [Keto/Paleo/Vegan]-Leben! Ihr personalisiertes Dashboard zeigt konforme Produkte, makro-freundliche Rezepte und Fortschritts-Tracking.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Ernährungs]-Basics, Die Sie Vermissen",
+              "description": "Kategorie-Vervollständigung",
+              "content": "Leveln Sie Ihre [Ernährungs]-Vorratskammer auf! Hier sind Basis-Produkte, die 90% der [Ernährungs]-Anhänger auf Vorrat haben. Was fehlt bei Ihnen?",
+              "channel": "Email"
+            },
+            {
+              "title": "Makro-Freundliche Rezepte",
+              "description": "Ernährungs-Fokus",
+              "content": "Erreichen Sie Ihre Makros köstlich! Diese Woche [Ernährungs]-Rezepte mit vollständigen Nährwertangaben: [X]g Protein, [Y]g Fett, [Z]g Netto-Kohlenhydrate pro Portion.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Ernährungs]-Erfolgsgeschichte",
+              "description": "Social Proof und Motivation",
+              "content": "Inspirierend! Wie Sarah [Ernährungs] 6 Monate lang mit unseren Produkten beibehalten hat. Lesen Sie ihre Geschichte und Tipps, um auf Kurs zu bleiben.",
+              "channel": "Email"
+            },
+            {
+              "title": "Versteckte Nicht-[Ernährungs]-Zutaten",
+              "description": "Bildung und Bewusstsein",
+              "content": "Wussten Sie, dass diese Zutaten [Ernährungs] brechen? Unser Guide zum Erkennen versteckter nicht-konformer Zutaten auf Etiketten.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Ernährungs]-Community-Challenge",
+              "description": "Engagement-Programm",
+              "content": "Machen Sie mit 500+ [Ernährungs]-Anhängern bei unserer 30-Tage-Challenge mit! Täglicher Support, Rezepte, Preise und Experten-Coaching. Starten Sie heute!",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Ihr [Ernährungs]-Fortschrittsbericht",
+              "description": "Monatliche Zusammenfassung",
+              "content": "Monat 3 auf [Ernährungs]: [X] konforme Mahlzeiten gemacht, [Y] Rezepte ausprobiert, [Z] Makro-Ziele erreicht. Weiter so! Das kommt als Nächstes.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Gesundheitsziel-orientierte Käufer (Natriumarm, Zuckerarm, Proteinreich)",
+          "scenario_objective": "Gesundheitsziele mit gezielten Produkten und Ernährungs-Bildung unterstützen",
+          "main_messages_ideas": "Ernährungs-Filterung, Gesundheitsziel-Produkte, Etiketten-Lesen, Fortschritts-Tracking",
+          "message_sequence": [
+            {
+              "title": "Ihr [Gesundheitsziel]-Filter Ist Aktiv",
+              "description": "Nach Gesundheitsziel-Einrichtung",
+              "content": "Einkaufen für [Natriumarm/Zuckerarm/Proteinreich] wurde gerade einfacher! Jedes Produkt zeigt jetzt [Metrik]-Gehalt im Voraus.",
+              "channel": "Email"
+            },
+            {
+              "title": "Beste [Gesundheitsziel]-Produkte",
+              "description": "Kuratierte Empfehlungen",
+              "content": "Unsere Top 20 [Gesundheitsziel]-Produkte, die nicht auf Geschmack verzichten: Vom Frühstück über Snacks bis zu Abendessen-Basics.",
+              "channel": "Email"
+            },
+            {
+              "title": "Etiketten Lesen Für [Gesundheitsziel]",
+              "description": "Bildungs-Content",
+              "content": "Werden Sie ein Etiketten-Lese-Profi! Erkennen Sie verstecktes [Natrium/Zucker/etc.] und verstehen Sie Portionsgrößen mit unserem Quick-Guide.",
+              "channel": "Email"
+            },
+            {
+              "title": "Mahlzeitenplan: [Gesundheitsziel]-Fokus",
+              "description": "Wöchentliche Planungs-Unterstützung",
+              "content": "Diese Woche [Gesundheitsziel]-Mahlzeitenplan: 7 Tage unter [Ziel] pro Tag mit vollständiger Nährwert-Aufschlüsselung und Einkaufsliste.",
+              "channel": "Email"
+            },
+            {
+              "title": "Produkt-Alarm: [Gesundheitsziel]-Option",
+              "description": "Neue Produkt-Benachrichtigung",
+              "content": "Neue Ankunft perfekt für [Gesundheitsziel]: [Produkt] mit nur [X] [Metrik] pro Portion! Sehen Sie Nährwertangaben und Rezepte.",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Fortschritts-Meilenstein Erreicht!",
+              "description": "Ziel-Feier",
+              "content": "Herzlichen Glückwunsch! Sie haben 30 Tage lang konsistent [Gesundheitsziel]-Produkte gewählt. Hier ist eine Belohnung und neue Rezepte zum Weitermachen!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Familien mit mehreren Ernährungsbedürfnissen",
+          "scenario_objective": "Einkaufen und Mahlzeitenplanung für Multi-Ernährungs-Haushalte vereinfachen",
+          "main_messages_ideas": "Familien-Profile, Multi-Ernährungs-Mahlzeitenpläne, gemeinsam-sichere Produkte, kinderfreundliche Optionen",
+          "message_sequence": [
+            {
+              "title": "Familien-Ernährungs-Dashboard",
+              "description": "Nach Familienprofil-Einrichtung",
+              "content": "Verwalten Sie [X] verschiedene Ernährungen? Ihr Familien-Dashboard zeigt Produkte, die für alle sicher sind, plus individuell-spezifische Optionen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sicher Für Alle: Familien-Favoriten",
+              "description": "Kreuz-kompatible Produkte",
+              "content": "Diese 25 Produkte erfüllen ALLE Ernährungsbedürfnisse Ihrer Familie: [Ernährung 1], [Ernährung 2] und [Allergie]. Alle können zusammen genießen!",
+              "channel": "Email"
+            },
+            {
+              "title": "Eine Mahlzeit, Mehrere Ernährungen",
+              "description": "Inklusive Mahlzeitenplanung",
+              "content": "Einmal kochen, alle zufriedenstellen! Rezepte, die [Ernährungen] mit einfachen Modifikationen aufnehmen. Diese Woche: [Rezepte].",
+              "channel": "Email"
+            },
+            {
+              "title": "Kinderfreundliche [Ernährungs]-Optionen",
+              "description": "Kind-spezifische Empfehlungen",
+              "content": "Machen Sie [Ernährungs]-Essen spaßig für Kinder! Produkte und Rezepte, die Ihre Kinder tatsächlich genießen werden, alle erfüllen [Ernährungs]-Anforderungen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Familien-Meal-Prep-Guide",
+              "description": "Effizienz für vielbeschäftigte Familien",
+              "content": "Versorgen Sie Ihre Multi-Ernährungs-Familie die ganze Woche mit 3 Stunden Vorbereitung! Unser Guide enthält Einkaufsliste, Batch-Kochen und Aufbewahrungstipps.",
+              "channel": "Email"
+            },
+            {
+              "title": "Lunchbox-Ideen: Alle Ernährungen Abgedeckt",
+              "description": "Schulessen-Unterstützung",
+              "content": "Schulessen-Ideen, die [Ernährungen] erfüllen und nussfrei, aufregend und nahrhaft sind. Kinder lieben diese, Eltern genehmigen!",
+              "channel": "Email"
+            },
+            {
+              "title": "Familien-Ernährungs-Erfolgsgeschichten",
+              "description": "Community-Support",
+              "content": "Sie sind nicht allein! Wie 3 Familien erfolgreich mehrere Ernährungsbedürfnisse zu Hause managen. Lesen Sie ihre Strategien und Lieblingsprodukte.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "program_name": "Nachbestellung & Abo-Konversion",
       "target": "Kunden, die Verbrauchsprodukte gekauft haben (Kaffee, Tee, Öle, Gewürze, Vorratskammer-Basics)",
       "objective": "20% Abo-Konversionsrate erreichen und 85% Nachbestellungs-Timing-Genauigkeit beibehalten mit AOV-Steigerung von 15% für Abonnenten",
@@ -320,6 +706,410 @@
       ]
     },
     {
+      "program_name": "Lokale & Saisonale Produkte",
+      "target": "Kunden, die an frischen, lokalen, saisonalen und nachhaltigen Lebensmittelprodukten interessiert sind",
+      "objective": "40% saisonale Produktadoptionsrate erreichen, 25% Steigerung der Bestellfrequenz während Hochsaisons und 60% Kundenbindung für saisonale Programme",
+      "kpi": "Saisonale Produkt-Adoption (Ziel: 40%), Hochsaison-Bestellfrequenz-Steigerung (Ziel: +25%), Saisonales-Programm-Retention (Ziel: 60%), Lokale-Produzenten-Bewusstsein (Ziel: 70%)",
+      "description": "Feiert saisonales Essen und lokale Beschaffung, indem hervorgehoben wird, was jetzt frisch ist, Kunden mit lokalen Produzenten verbunden werden und Begeisterung für saisonal begrenzt verfügbare Artikel geschaffen wird. Erzeugt Dringlichkeit durch Saisonalität und baut Markenwerte rund um Nachhaltigkeit und Gemeinschaft auf.",
+      "scenarios": [
+        {
+          "scenario_target": "Saisonales-Essen-Enthusiasten",
+          "scenario_objective": "Saisonale Produktentdeckung und Käufe fördern",
+          "main_messages_ideas": "Was hat Saison, Spitzen-Geschmacks-Timing, begrenzte Verfügbarkeit, saisonale Rezepte",
+          "message_sequence": [
+            {
+              "title": "[Saison]-Ernte Ist Da!",
+              "description": "Saison-Übergangs-Ankündigung",
+              "content": "[Saison] ist angekommen! Entdecken Sie, was jetzt Spitzengeschmack hat: [Saisonale Produkte]. Nur für begrenzte Zeit verfügbar.",
+              "channel": "Email"
+            },
+            {
+              "title": "Hochsaison: Jetzt Bestellen",
+              "description": "Mittlere Saison-Dringlichkeit",
+              "content": "[Produkt] ist JETZT in Hochsaison! Bestellen Sie diese Woche für den absolut besten Geschmack und Qualität des Jahres.",
+              "channel": "SMS"
+            },
+            {
+              "title": "[Saison]-Rezept-Kollektion",
+              "description": "Saisonaler Rezept-Content",
+              "content": "Nutzen Sie [Saison] optimal! 15 Rezepte, die Hochsaison-Zutaten feiern, von [Saison]-Salaten bis zu herzhaften [Saison]-Gerichten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzter Aufruf: [Saison] Endet",
+              "description": "Saison-Ende-Dringlichkeit",
+              "content": "Letzte 2 Wochen für frische [Saisonale Produkte]! Decken Sie sich jetzt ein, bevor [Saison] endet und diese Favoriten bis nächstes Jahr verschwinden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Saisonaler-Essen-Guide",
+              "description": "Bildungs-Content",
+              "content": "Warum saisonal essen? Besserer Geschmack, Ernährung, Nachhaltigkeit und Wert. Hier ist Ihr Guide zum saisonalen Essen das ganze Jahr über.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Nächste-Saison]-Vorschau",
+              "description": "Vorfreude aufbauen",
+              "content": "Sneak Peek! [Nächste-Saison] kommt in 3 Wochen. Hier ist, worauf Sie sich freuen können, und wie Sie Ihre Vorratskammer für den Übergang vorbereiten.",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Konservieren Sie Die Saison",
+              "description": "Erweiterungs-Content",
+              "content": "Verlängern Sie die Aromen der [Saison]! Lernen Sie, [Saisonale Produkte] zu konservieren, einzufrieren und einzulegen, um das ganze Jahr über Hochsaison zu genießen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Lokale und nachhaltige Käufer",
+          "objective": "Verbindung zu lokalen Produzenten und nachhaltigen Praktiken aufbauen",
+          "main_messages_ideas": "Lokale Produzenten treffen, Farm-Geschichten, Nachhaltigkeits-Impact, Gemeinschafts-Unterstützung",
+          "message_sequence": [
+            {
+              "title": "Treffen Sie Ihren Lokalen Produzenten: [Name]",
+              "description": "Produzenten-Spotlight",
+              "content": "Diese Woche: Treffen Sie [Produzenten-Name], den Familienbetrieb hinter Ihren [Produkten]. Hören Sie ihre Geschichte und sehen Sie ihre nachhaltigen Praktiken.",
+              "channel": "Email"
+            },
+            {
+              "title": "Lokal Einkaufen: Innerhalb 50 Kilometern",
+              "description": "Geografische Filterung",
+              "content": "Diese [X] Produkte kommen von Farmen innerhalb von 50 Kilometern von Ihnen! Unterstützen Sie lokale Produzenten und erhalten Sie die frischesten Zutaten möglich.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Nachhaltigkeits-Impact",
+              "description": "Impact-Reporting",
+              "content": "Dieses Jahr haben Sie [X] lokale Farmen unterstützt, [Y] Kilometer Transport reduziert und [Z] kg Lebensmittelverschwendung von Deponien ferngehalten. Danke!",
+              "channel": "Email"
+            },
+            {
+              "title": "Farm-Besuchs-Einladung",
+              "description": "Erlebnis-Event",
+              "content": "Sie sind eingeladen! Besuchen Sie [Lokale Farm] nächsten Samstag mit uns für eine Tour, Verkostung und exklusives Farm-Shopping. Jetzt anmelden!",
+              "channel": "Email"
+            },
+            {
+              "title": "Lokale-Produzenten-Spotlight-Sale",
+              "description": "Werbekampagne",
+              "content": "Diese Woche: 20% Rabatt auf alle Produkte von [Lokalem Produzent]. Hören Sie ihre Geschichte und schmecken Sie den Unterschied, den lokal macht!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Lokale-Unterstützungs-Garantie",
+              "description": "Markenwerte-Kommunikation",
+              "content": "[X]% unserer Produkte kommen aus einem Umkreis von 100 Kilometern. So sind wir das ganze Jahr über verpflichtet, lokale Lebensmittelsysteme zu unterstützen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Saisonale-Lokale-Box",
+              "description": "Kuratiertes Angebot",
+              "content": "Probieren Sie unsere Saisonale-Lokale-Box! Kuratierte Auswahl von Hochsaison-Produkten aus nahegelegenen Farmen. Inhalt ändert sich monatlich – bestellen Sie Ihre!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "CSA- und Farm-Box-Abonnenten",
+          "scenario_objective": "CSA-Nutzung unterstützen und Verschwendung durch Rezepte und Tipps reduzieren",
+          "main_messages_ideas": "CSA-Box-Rezepte, Unbekannte-Zutaten-Guides, Lagerungstipps, Zero-Waste-Kochen",
+          "message_sequence": [
+            {
+              "title": "Ihre [CSA/Box]-Rezepte Diese Woche",
+              "description": "Wöchentliche Box-Unterstützung",
+              "content": "Box erhalten? Hier sind 5 Rezepte mit der Ernte dieser Woche: [Box-Inhalt]. Nutzen Sie jede Zutat ohne Verschwendung!",
+              "channel": "Email"
+            },
+            {
+              "title": "Was Ist [Ungewöhnliche Zutat]?",
+              "description": "Zutaten-Bildung",
+              "content": "[Ungewöhnlicher Artikel] in Ihrer Box? Hier ist, was es ist, wie man es vorbereitet und 3 köstliche Arten, es zu kochen. Sie werden diese Entdeckung lieben!",
+              "channel": "Email"
+            },
+            {
+              "title": "Lagerungstipps Für Maximale Frische",
+              "description": "Verschwendungs-Reduktion",
+              "content": "Halten Sie Ihre Box frisch! Lagerungstipps für jeden Artikel: Was in den Kühlschrank kommt, was draußen bleibt und wie man die Haltbarkeit verlängert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Zero-Waste-Challenge",
+              "description": "Engagement-Programm",
+              "content": "Machen Sie bei unserer Zero-Waste-Challenge mit! Nutzen Sie jeden Artikel in Ihrer Box mit unserem kompletten Rezeptplan. Teilen Sie Ihren Erfolg für eine Gewinnchance!",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Ergänzen Sie Ihre Box",
+              "description": "Cross-Sell-Möglichkeit",
+              "content": "Vervollständigen Sie Ihre Mahlzeiten! Hier sind Vorratskammer-Basics und Proteine, die perfekt zum Inhalt Ihrer Box dieser Woche passen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Box-Abonnenten-Community",
+              "description": "Community-Aufbau",
+              "content": "Treten Sie 2.000+ Box-Abonnenten bei, die Rezepte teilen, Austausch-Tipps geben und Lösungen für jede Zutat finden. Sehen Sie die Community-Favoriten dieser Woche!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Bauernmarkt-Käufer",
+          "objective": "Online- und Bauernmarkt-Einkaufserlebnisse verbinden",
+          "main_messages_ideas": "Markt-Zeitplan, Verkäufer-Verbindungen, Online-Markt-Alternativen, saisonale Überschneidung",
+          "message_sequence": [
+            {
+              "title": "Finden Sie Ihren Lokalen Bauernmarkt",
+              "description": "Markt-Verzeichnis",
+              "content": "Lieben Sie Bauernmärkte? Wir auch! Finden Sie Märkte in Ihrer Nähe, sehen Sie, mit welchen Verkäufern wir zusammenarbeiten, und kaufen Sie ihre Produkte jederzeit online.",
+              "channel": "Email"
+            },
+            {
+              "title": "Dieses Wochenende Auf Dem Markt",
+              "description": "Wöchentliche Markt-Vorschau",
+              "content": "Gehen Sie dieses Wochenende zum Bauernmarkt? Hier ist, was Saison hat und welche Verkäufer jetzt die beste Auswahl haben.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Können Nicht Zum Markt? Online Einkaufen",
+              "description": "Online-Alternative",
+              "content": "Bauernmarkt verpasst? Kaufen Sie die gleichen Verkäufer online! Diese [X] Produzenten verkaufen auf [Markt] und liefern über uns.",
+              "channel": "Email"
+            },
+            {
+              "title": "Treffen Sie Unsere Bauernmarkt-Partner",
+              "description": "Verkäufer-Spotlight",
+              "content": "Sie kennen vielleicht [Verkäufer] vom [Markt]! Jetzt kaufen Sie ihre vollständige Auswahl online mit Heimlieferung. Hier ist ihre Geschichte und Bestseller.",
+              "channel": "Email"
+            },
+            {
+              "title": "Markttag-Erinnerung",
+              "description": "Standort-basierte Benachrichtigung",
+              "content": "In der Nähe von [Markt-Standort]? Der Bauernmarkt ist HEUTE offen! Schauen Sie vorbei, um [Verkäufer] zu begrüßen und zu entdecken, was diese Woche frisch ist.",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Winter-Markt-Alternativen",
+              "description": "Außer-Saison-Lösung",
+              "content": "Bauernmarkt im Winter geschlossen? Unterstützen Sie weiterhin lokale Produzenten! Kaufen Sie ihre Produkte die ganze Saison online mit wöchentlicher Lieferung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Markt + Liefer-Bundle",
+              "description": "Hybrid-Lösung",
+              "content": "Das Beste aus beiden Welten! Kaufen Sie auf dem Bauernmarkt frische Auswahl, dann bestellen Sie Vorratskammer-Basics und Spezialitäten bei uns. Kostenlose Lieferung an Markttagen!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Kochkurse & Kulinarische Bildung",
+      "target": "Kunden, die an Fertigkeitsentwicklung, kulinarischem Lernen und praktischen Lebensmittel-Erfahrungen interessiert sind",
+      "objective": "15% Kurs-Anmelderate erreichen, 85% Abschlussrate für eingeschriebene Studenten, 40% Produkt-Kaufrate während/nach Kursen und 60% wiederholte Kurs-Anmeldung",
+      "kpi": "Kurs-Anmelderate (Ziel: 15%), Kurs-Abschlussrate (Ziel: 85%), Kurs-getriebene Produkt-Käufe (Ziel: 40%), Wiederholte Anmeldung (Ziel: 60%)",
+      "description": "Umfassendes kulinarisches Bildungsprogramm, das virtuelle und persönliche Kochkurse, Fertigkeiten-Workshops, Chef-Kollaborationen und Technik-Vertiefungen bietet. Fördert Produktentdeckung durch praktisches Lernen und baut Markenautorität als kulinarisches Bildungsziel auf.",
+      "scenarios": [
+        {
+          "scenario_target": "Kochkurs-Anfänger",
+          "scenario_objective": "Erste Kurs-Anmeldung fördern und Vertrauen aufbauen",
+          "main_messages_ideas": "Intro-Kurs-Einladung, anfängerfreundliche Betonung, Zutaten-Kits, Vertrauensaufbau",
+          "message_sequence": [
+            {
+              "title": "Nehmen Sie An Unserem Kostenlosen Intro-Kochkurs Teil",
+              "description": "Erste Kurs-Einladung",
+              "content": "Noch nie einen Kochkurs besucht? Starten Sie hier! Unser kostenloser 45-minütiger Intro-Kurs behandelt Messertechniken, Basis-Techniken und ein einfaches Rezept. Jetzt registrieren!",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Kurs Beginnt Morgen!",
+              "description": "Tag vorher: Vorbereitungs-Erinnerung",
+              "content": "Aufgeregt für den morgigen Kurs? Hier ist Ihre Zutatenliste, Vorbereitungs-Checkliste und Zoom-Link. Bis morgen in der Küche!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Kurs-Zutaten-Kit Verfügbar",
+              "description": "Produkt-Bundle-Angebot",
+              "content": "Möchten Sie alles geliefert? Bestellen Sie unser [Kursname]-Zutaten-Kit mit allen vorportioniert und bereit. Versand rechtzeitig zum Kurs!",
+              "channel": "Email"
+            },
+            {
+              "title": "Geschafft! Kurs-Zusammenfassung",
+              "description": "Nach-Kurs-Follow-up",
+              "content": "Tolle Arbeit heute im Kurs! Hier ist Ihre Rezeptkarte, Video-Aufzeichnung und 3 Variationen zum Ausprobieren. Teilen Sie Ihre Kreation mit #[Markenname]!",
+              "channel": "Email"
+            },
+            {
+              "title": "Bauen Sie Auf Ihren Neuen Fertigkeiten Auf",
+              "description": "Tag 3: Nächste Kurs-Empfehlung",
+              "content": "Bereit für mehr? Basierend auf [Absolvierter Kurs] empfehlen wir diese 3 Kurse zum Weiterbau Ihrer Fertigkeiten. Frühbucher-Preise diese Woche!",
+              "channel": "Email"
+            },
+            {
+              "title": "Anfänger-Serie: 30% Sparen",
+              "description": "Serien-Upsell",
+              "content": "Nehmen Sie an allen 4 Anfänger-Kursen teil und sparen Sie 30%! Meistern Sie grundlegende Techniken und bauen Sie Vertrauen in der Küche auf. In die Serie einschreiben!",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihre Koch-Reise",
+              "description": "Fortschritts-Tracking",
+              "content": "Sie haben 3 Kurse abgeschlossen! Gemeisterte Fertigkeiten: [Techniken]. Bereit aufzuleveln? Fortgeschrittenen-Kurse starten nächsten Monat – Frühanmeldung offen!",
+              "channel": "Push Notification"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Fortgeschrittene Koch-Enthusiasten",
+          "scenario_objective": "Mit Experten-Level-Content und Chef-Kollaborationen engagieren",
+          "main_messages_ideas": "Fortgeschrittene Techniken, Chef-Partnerschaften, Masterclasses, Zertifizierungsprogramme",
+          "message_sequence": [
+            {
+              "title": "Masterclass mit [Promi-Chef]",
+              "description": "Premium-Kurs-Ankündigung",
+              "content": "Exklusiv! Lernen Sie [Fortgeschrittene Technik] von Michelin-Stern-Chef [Name]. Begrenzt auf 50 Studenten. Früher Zugang für Sie – jetzt registrieren!",
+              "channel": "Email"
+            },
+            {
+              "title": "Fortgeschrittene-Technik-Serie",
+              "description": "Fertigkeits-Spezialisierung",
+              "content": "Meistern Sie [Technik]: 4-Wochen-Intensivserie zu professionellen Methoden, Ausrüstung und Rezepten. Abschlusszertifikat inklusive!",
+              "channel": "Email"
+            },
+            {
+              "title": "Profi-Chef-Q&A-Session",
+              "description": "Experten-Zugang",
+              "content": "Treten Sie Chef [Name] bei für Live-Q&A! Stellen Sie Ihre fortgeschrittenen Koch-Fragen und erhalten Sie Experten-Antworten. Fragen im Voraus einreichen oder live stellen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Hinter Der Restaurant-Küche",
+              "description": "Professioneller Einblick",
+              "content": "Gehen Sie hinter die Kulissen! Virtuelle Tour der [Restaurant]-Küche mit Chef [Name], der Profi-Techniken und Restaurant-Geheimnisse offenbart.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kulinarisches-Zertifizierungs-Programm",
+              "description": "Umfassendes Programm",
+              "content": "Werden Sie zertifiziert! Unser 12-Wochen-Kulinarische-Grundlagen-Zertifizierung deckt Techniken, Theorie und Küchen-Stile ab. Einschreibung öffnet Montag!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Exklusiv: Kleingruppen-Persönlicher-Kurs",
+              "description": "Premium-Erlebnis",
+              "content": "BEGRENZT auf 12 Studenten: Persönlicher Kurs am [Ort] mit Chef [Name]. Praktisches Lernen, 4-Gänge-Menü, Wein-Pairing. Reservieren Sie Ihren Platz!",
+              "channel": "Email"
+            },
+            {
+              "title": "Master-Serien-Absolventen-Vorteile",
+              "description": "Abschluss-Belohnungen",
+              "content": "Herzlichen Glückwunsch zum Abschluss von [Serie]! Ihre Absolventen-Vorteile: Lebenslanger Rezept-Zugang, Alumni-Community, 20% Rabatt auf zukünftige Kurse und dieses Geschenk!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Küchen-spezifische Lerner (Italienisch, Asiatisch, Französisch, etc.)",
+          "scenario_objective": "Tief in spezifische Küchen mit kulturellem Kontext eintauchen",
+          "main_messages_ideas": "Küchen-Serien, kulturelle Bildung, regionale Spezialitäten, authentische Techniken",
+          "message_sequence": [
+            {
+              "title": "Reise Durch [Küche]",
+              "description": "Küchen-Serien-Einführung",
+              "content": "Erkunden Sie [Italienische/Asiatische/Französische] Küche! 6-Wochen-Serie zu regionalen Spezialitäten, Techniken und authentischen Rezepten aus [Regionen].",
+              "channel": "Email"
+            },
+            {
+              "title": "[Küche]-Essentials: Woche 1",
+              "description": "Wöchentlicher Kurs in Serie",
+              "content": "Diese Woche: [Grundlegende Technik/Gericht]. Lernen Sie die Grundlage des [Küche]-Kochens mit [Chef]. Kurs morgen um [Uhrzeit]!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Kultureller Kontext: [Küche]-Geschichte",
+              "description": "Bildungs-Content",
+              "content": "Vor dem nächsten Kurs, lernen Sie die Geschichte! Entdecken Sie, wie [Kulturelle/Historische Ereignisse] [Küche] formten und warum diese Techniken wichtig sind.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Küche]-Vorratskammer-Essentials",
+              "description": "Produkt-Bildung und Verkauf",
+              "content": "Statten Sie Ihre [Küche]-Vorratskammer aus! Diese 15 Zutaten sind essentiell für authentisches [Küche]-Kochen. Holen Sie sich die komplette Kollektion!",
+              "channel": "Email"
+            },
+            {
+              "title": "Regional-Vertiefung: [Region]",
+              "description": "Spezialisierter Content",
+              "content": "[Küche] ist nicht eine Sache! Diese Woche: Vertiefung in [Regional]-Küche mit ihren einzigartigen Zutaten, Techniken und Signatur-Gerichten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Gast-Chef: Aus [Land]",
+              "description": "Authentische Expertise",
+              "content": "Spezial-Gast! Chef [Name] aus [Ort] schließt sich uns an, um authentisches [Gericht] mit traditionellen Familien-Methoden zu lehren. Verpassen Sie diese seltene Gelegenheit nicht!",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "[Küche]-Serie Komplett!",
+              "description": "Serien-Abschluss",
+              "content": "Sie haben [Küche]-Grundlagen gemeistert! Hier ist Ihr Zertifikat, komplette Rezept-Kollektion und 25% Rabatt auf unsere [Küche]-Produkt-Kollektion.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Eltern, die Kindern Kochen beibringen",
+          "scenario_objective": "Familien-Koch-Bildung und kinderfreundliches Lernen unterstützen",
+          "main_messages_ideas": "Kinderfreundliche Kurse, Familien-Kochen, altersgerechte Fertigkeiten, spaßige Rezepte",
+          "message_sequence": [
+            {
+              "title": "Kinder In Der Küche: Alter [X-Y]",
+              "description": "Altersgerechtes Kurs-Angebot",
+              "content": "Bringen Sie Ihrem [Alter]-Jährigen Kochen bei! Unser altersgerechter Kurs behandelt Sicherheit, Basis-Fertigkeiten und spaßige Rezepte, die Kinder tatsächlich machen wollen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Familien-Kochkurs",
+              "description": "Eltern-Kind-Kurs",
+              "content": "Kochen Sie zusammen! Eltern-Kind-Kurs diesen Samstag: Machen Sie [Gericht] zusammen während Sie Teamwork und Küchen-Fertigkeiten lernen. Spaß für 6-12 Jahre!",
+              "channel": "Email"
+            },
+            {
+              "title": "Kindersichere Techniken",
+              "description": "Sicherheits-Bildung",
+              "content": "Kostenloser Guide: Messertechniken sicher beibringen, altersgerechte Aufgaben und Aufsichts-Tipps zum Kochen mit Kindern jeden Alters.",
+              "channel": "Email"
+            },
+            {
+              "title": "Nach-Schule-Koch-Club",
+              "description": "Laufendes Programm",
+              "content": "Treten Sie unserem wöchentlichen Nach-Schule-Koch-Club bei! Kinder lernen neue Rezepte, finden Freunde und bauen Vertrauen auf. Erster Kurs kostenlos – probieren Sie es aus!",
+              "channel": "Email"
+            },
+            {
+              "title": "Kinderfreundliches Rezept: Diese Woche",
+              "description": "Wöchentlicher Rezept-Content",
+              "content": "Diese Woche kinderfreundliches Rezept: [Gericht]. Von Familien 5-Sterne bewertet! Enthält Kind-Aufgaben, Erwachsenen-Aufgaben und Koch-Tipps für reibungslose Teamarbeit.",
+              "channel": "Push Notification"
+            },
+            {
+              "title": "Kochen Baut Lebens-Fertigkeiten",
+              "description": "Wert-Bildung",
+              "content": "Warum Kochen wichtig ist: Wie Küchen-Fertigkeiten Vertrauen, Mathematik, Lesen, Verantwortung und gesunde Essgewohnheiten bei Kindern aufbauen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kinder-Koch-Camp: Sommer",
+              "description": "Saisonales Programm",
+              "content": "Sommer-Koch-Camp-Anmeldung offen! Wochenlange virtuelle Camps nach Altersgruppe: Basis-Fertigkeiten, internationale Küchen und Backen. Anmelden!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "program_name": "Saisonale & Feiertags-Kampagnen",
       "target": "Alle aktiven Kunden und Abonnenten",
       "objective": "35% Umsatzsteigerung während saisonaler Spitzen mit 25% Geschenkbestellungsrate und 15% Neukundengewinnung durch Geschenke",
@@ -396,71 +1186,6 @@
               "title": "Saison-Ende-Sale",
               "description": "Saison-Übergang",
               "content": "Letzte Chance für [Saison]-Favoriten! Bis zu 30% Rabatt auf ausgewählte saisonale Artikel, solange der Vorrat reicht.",
-              "channel": "Email"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Mahlzeitenplanung & Rezept-Entdeckung",
-      "target": "Engagierte Kunden, die mit Rezept-Inhalten interagieren oder Mahlzeitenplanungs-Produkte kaufen",
-      "objective": "Rezept-Engagement auf 50% Klickrate erhöhen, Kochbox-Adoption auf 8% steigern und AOV um 25% durch rezeptbasierte Bundles erhöhen",
-      "kpi": "Rezept-E-Mail-Klickrate (Ziel: 50%), Kochbox/Bundle-Adoption (Ziel: 8%), Rezept-getriebene AOV-Steigerung (Ziel: +25%), Rezept-Speicherungen/Teilungen (Ziel: 15%)",
-      "description": "Content-reiches Programm, das die Marke als kulinarische Inspirationsquelle positioniert. Bietet wöchentliche Rezepte, saisonale Speisepläne, Technik-Tutorials und einkaufbare Zutatenlisten, um Produktentdeckung und Mehrfach-Artikel-Käufe zu fördern.",
-      "scenarios": [
-        {
-          "scenario_target": "Aktive Rezept-Engagierer",
-          "scenario_objective": "Content-Engagement vertiefen und einkaufbare Rezepte fördern",
-          "main_messages_ideas": "Wöchentliches Rezept, Mahlzeitenplanungs-Tools, Technik-Tutorials, Chef-Partnerschaften",
-          "message_sequence": [
-            {
-              "title": "Diese Woche Muss-Kochen-Rezept",
-              "description": "Wöchentliche Content-E-Mail",
-              "content": "Diese Woche: [Rezeptname] mit [Haupt-Zutat]. Holen Sie sich das Rezept mit einer Ein-Klick-einkaufbaren Zutatenliste.",
-              "channel": "Email"
-            },
-            {
-              "title": "Ihr Wöchentlicher Speiseplan",
-              "description": "Sonntag: Wöchentlicher Planungs-Helfer",
-              "content": "Planen Sie Ihre Woche! Hier sind 5 Rezepte mit einer kombinierten Einkaufsliste – alles, was Sie brauchen, in einem Warenkorb.",
-              "channel": "Email"
-            },
-            {
-              "title": "Meistern Sie [Technik] mit [Chef]",
-              "description": "Zweiwöchentlicher Tutorial-Content",
-              "content": "Lernen Sie [Technik] wie ein Profi! Schauen Sie unser Schritt-für-Schritt-Tutorial und kaufen Sie die Zutaten, um zuhause zu üben.",
-              "channel": "Email"
-            },
-            {
-              "title": "Rezept Gespeichert: Holen Sie Die Zutaten",
-              "description": "Ausgelöst durch Rezept-Speicherung/Lesezeichen",
-              "content": "Sie haben [Rezeptname] gespeichert! Bereit, es zu kochen? Alle Zutaten sind mit Ein-Klick-Bestellung verfügbar.",
-              "channel": "SMS"
-            }
-          ]
-        },
-        {
-          "scenario_target": "Kochbox- und Bundle-Käufer",
-          "scenario_objective": "Wiederholte Kochbox-Käufe und Abo fördern",
-          "main_messages_ideas": "Neue Kochbox-Ankündigungen, Ernährungs-spezifische Boxen, Abo-Vorteile, Chef-Kollaborationen",
-          "message_sequence": [
-            {
-              "title": "Neue Kochbox-Veröffentlichung",
-              "description": "Wöchentlich: Neue Box-Ankündigung",
-              "content": "Diese Woche Kochbox: [Gericht-Name] für 4 Personen, in 30 Minuten fertig. Alle Zutaten vorportioniert mit Schritt-für-Schritt-Anleitung.",
-              "channel": "Email"
-            },
-            {
-              "title": "[Ernährungs]-Kochbox-Kollektion",
-              "description": "Basierend auf Geschmacksprofil-Präferenzen",
-              "content": "Entdecken Sie unsere [Vegetarisch/Keto/Glutenfrei]-Kochbox-Kollektion – lecker, praktisch und auf Ihre Ernährung abgestimmt.",
-              "channel": "Email"
-            },
-            {
-              "title": "Wöchentliches Kochbox-Abo",
-              "description": "Nach dem 2. Box-Kauf",
-              "content": "Lieben Sie die Bequemlichkeit? Abonnieren Sie wöchentliche Kochboxen und sparen Sie 20%. Jede Woche überspringen, jederzeit kündigen.",
               "channel": "Email"
             }
           ]

@@ -816,6 +816,133 @@
           ]
         }
       ]
+    },
+    {
+      "program_name": "Eltern-Community & Bildungs-Hub",
+      "target": "Alle Eltern und Betreuungspersonen, die Erziehungsberatung, Bildungsressourcen und Community-Verbindung suchen",
+      "objective": "Marke als vertrauenswürdige Elternressource mit 40% Community-Engagement-Rate und 25% inhaltsgetriebener Kauf-Konversion aufbauen",
+      "kpi": "Content-Engagement-Rate (Ziel: 40%), Community-Forum-Teilnahme (Ziel: 20%), Bildungs-Content-Abschluss (Ziel: 35%), Content-zu-Kauf-Konversion (Ziel: 25%)",
+      "description": "Ein umfassendes Elternbildungs- und Community-Programm, das die Marke als vertrauenswürdigen Erziehungspartner positioniert. Dieses Programm bietet wertvolle Entwicklungsberatung, verbindet Eltern mit Peer-Communities und bietet expertengestützte Inhalte, die natürlich zu Produktempfehlungen führen.",
+      "scenarios": [
+        {
+          "scenario_target": "Neue Eltern, die Entwicklungsberatung suchen",
+          "scenario_objective": "Wertvolle Elternbildung bieten und Vertrauen aufbauen",
+          "main_messages_ideas": "Wöchentliche Entwicklungstipps, Expertenrat, Erziehungs-Hacks, Phasenbasierte Beratung, Produktempfehlungen",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihr [Alter] Entwicklungsratgeber",
+              "description": "Altersgetriggert: Wöchentliche Entwicklungstipps",
+              "content": "Was im Alter [Alter] zu erwarten ist: Ihr Kind durchläuft wahrscheinlich [Entwicklungsmeilensteine]. Hier ist, wie Sie ihr Wachstum mit Aktivitäten, Produkten und Tipps von unseren pädiatrischen Beratern unterstützen können. Fokus dieser Woche: [spezifische Fähigkeit/Meilenstein]."
+            },
+            {
+              "channel": "Push",
+              "title": "Neuer Erziehungs-Tipp",
+              "description": "Wöchentlich: Schnelltipp-Benachrichtigung",
+              "content": "👶 Erziehungs-Tipp dieser Woche für [Kindername]s Alter: [Schneller umsetzbarer Tipp]. Mehr lesen in unserem Eltern-Hub!"
+            },
+            {
+              "channel": "Email",
+              "title": "Experten-Video: [Thema]",
+              "description": "Zweiwöchentlich: Experten-Content",
+              "content": "Diese Woche Experten-Einblick von Dr. [Name]: [Thema relevant für Kindesalter]. Sehen Sie das 5-Minuten-Video und entdecken Sie praktische Tipps, die Sie heute nutzen können. Plus: Produkte, die diese Entwicklungsphase unterstützen."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Schnellumfrage: Erziehungs-Herausforderung",
+              "description": "Monatlich: Engagement",
+              "content": "Schnelle Frage! Was ist Ihre größte Erziehungs-Herausforderung gerade? Antworten: 1️⃣ Schlaf 2️⃣ Ernährung 3️⃣ Verhalten 4️⃣ Lernen - Wir senden Ihnen gezielte Tipps!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Eltern, die an spezifischen Erziehungsthemen interessiert sind",
+          "scenario_objective": "Tiefgehende Inhalte zu Interessensthemen liefern",
+          "main_messages_ideas": "Themen-Serien, Experten-Webinare, Herunterladbare Ratgeber, Community-Diskussionen",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihre [Thema] Tiefgehend-Serie",
+              "description": "Nach Themensinteresse ausgedrückt: Serien-Anmeldung",
+              "content": "Willkommen bei unserer [Thema]-Serie! In den nächsten 4 Wochen erhalten Sie Expertenberatung zu [Thema]. Diese Woche: [Erste Lektion]. Enthält praktische Tipps, Produktempfehlungen und Zugang zu unserer Community-Diskussion."
+            },
+            {
+              "channel": "Email",
+              "title": "Kostenloses Webinar: [Thema] mit Experte",
+              "description": "Themenbasiert: Webinar-Einladung",
+              "content": "Nehmen Sie an unserem kostenlosen Live-Webinar teil: '[Thema-Titel]' mit [Expertenname], [Qualifikationen]. Stellen Sie Ihre Fragen live und erhalten Sie umsetzbare Strategien. Jetzt registrieren - begrenzte Plätze verfügbar!"
+            },
+            {
+              "channel": "SMS",
+              "title": "Webinar-Erinnerung",
+              "description": "1 Stunde vorher: Teilnahme-Erinnerung",
+              "content": "⏰ Erinnerung: [Thema]-Webinar beginnt in 1 Stunde! Hier teilnehmen: [Link]. Können Sie nicht? Wir senden die Aufzeichnung."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihr [Thema] Ressourcen-Ratgeber",
+              "description": "Nach Webinar: Herunterladbare Ressource",
+              "content": "Danke für die Teilnahme an unserem [Thema]-Webinar! Hier ist Ihr herunterladbarer Ratgeber mit allen wichtigen Erkenntnissen, empfohlenen Produkten und Bonusressourcen. Treten Sie unserem Community-Forum bei, um die Konversation fortzusetzen!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Eltern, die Community-Verbindung suchen",
+          "scenario_objective": "Eltern-zu-Eltern-Verbindungen und Marken-Community fördern",
+          "main_messages_ideas": "Community-Einladung, Lokale Elterngruppen, Erfolgsgeschichten, Peer-Unterstützung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Treten Sie unserer Eltern-Community bei",
+              "description": "Nach Engagement: Community-Einladung",
+              "content": "Sie sind nicht allein auf dieser Elternreise! Treten Sie Tausenden von Eltern in unserem Community-Forum bei. Holen Sie sich Rat, teilen Sie Erfahrungen und verbinden Sie sich mit Eltern in der gleichen Phase. Plus: Exklusive Community-only-Rabatte!"
+            },
+            {
+              "channel": "Email",
+              "title": "Diese Woche in der Community",
+              "description": "Wöchentlich: Community-Digest",
+              "content": "Heiße Themen in unserer Eltern-Community diese Woche: [Thema 1] - 127 Eltern diskutieren, [Thema 2] - Experten-Q&A heute, [Thema 3] - Community-Lieblingsprodukt enthüllt. Nehmen Sie an der Konversation teil!"
+            },
+            {
+              "channel": "Push",
+              "title": "Eltern wie Sie diskutieren...",
+              "description": "Bei relevanter Diskussion: Engagement-Aufforderung",
+              "content": "🗣️ Heißes Thema in Eltern-Community: '[Diskussionsthema]'. 52 Eltern von [altersähnlichen Kindern] teilen ihre Erfahrungen. Mitmachen!"
+            },
+            {
+              "channel": "Email",
+              "title": "Lokales Eltern-Treffen",
+              "description": "Geografisch: Lokale Veranstaltung",
+              "content": "[Marke]-Eltern in [Stadt] treffen sich! Schließen Sie sich uns am [Datum] am [Ort] für ein lockeres Eltern-Treffen an. Treffen Sie andere Familien, lassen Sie die Kinder spielen und genießen Sie etwas Erwachsenen-Konversation. Kostenlos RSVP!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Eltern, die Bildungsinhalte abschließen",
+          "scenario_objective": "Engagierte Eltern mit relevanten Produktempfehlungen konvertieren",
+          "main_messages_ideas": "Produktempfehlungen aus Inhalten, Expertengenehmigte Auswahlen, Community-Favoriten, Bildungsspielzeug",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Produkte, die [Thema] unterstützen",
+              "description": "Nach Content-Abschluss: Relevante Empfehlungen",
+              "content": "Basierend auf Ihrem Interesse an [Thema] finden Sie hier unsere expertenempfohlenen Produkte, die diesen Entwicklungsbereich unterstützen. Jedes wurde von unserem Beirat überprüft und von Eltern in unserer Community geliebt."
+            },
+            {
+              "channel": "Email",
+              "title": "Community-Favoriten für [Alter/Thema]",
+              "description": "Sozialer Beweis: Top-Auswahlen",
+              "content": "Eltern in unserer Community haben gesprochen! Hier sind die Top-bewerteten Produkte für [Altersbereich/Thema] basierend auf echten Elternbewertungen und -empfehlungen. Sehen Sie, warum diese Community-Favoriten sind."
+            },
+            {
+              "channel": "SMS",
+              "title": "Content-Bonus",
+              "description": "Nach Abschluss der Serie: Belohnung",
+              "content": "🎓 Sie haben unsere [Thema]-Serie abgeschlossen! Hier sind 15% Rabatt auf Produkte, die [verwandten Bereich] unterstützen. Danke, dass Sie engagierte Eltern sind! Code: LERNEN15"
+            }
+          ]
+        }
+      ]
     }
   ],
   "how_brevo_helps_you": [

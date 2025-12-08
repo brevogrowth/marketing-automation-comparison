@@ -816,6 +816,133 @@
           ]
         }
       ]
+    },
+    {
+      "program_name": "Parent Community & Education Hub",
+      "target": "All parents and caregivers seeking parenting guidance, educational resources, and community connection",
+      "objective": "Build brand as trusted parenting resource with 40% community engagement rate and 25% content-driven purchase conversion",
+      "kpi": "Content engagement rate (target: 40%), Community forum participation (target: 20%), Educational content completion (target: 35%), Content-to-purchase conversion (target: 25%)",
+      "description": "A comprehensive parent education and community program that positions the brand as a trusted parenting partner. This program provides valuable developmental guidance, connects parents with peer communities, and offers expert-backed content that naturally leads to product recommendations.",
+      "scenarios": [
+        {
+          "scenario_target": "New parents seeking developmental guidance",
+          "scenario_objective": "Provide valuable parenting education and build trust",
+          "main_messages_ideas": "Weekly developmental tips, Expert advice, Parenting hacks, Stage-based guidance, Product recommendations",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Your [Age] Developmental Guide",
+              "description": "Age-triggered: Weekly development tips",
+              "content": "What to expect at [age]: Your child is likely [developmental milestones]. Here's how to support their growth with activities, products, and tips from our pediatric advisors. This week's focus: [specific skill/milestone]."
+            },
+            {
+              "channel": "Push",
+              "title": "New Parenting Tip",
+              "description": "Weekly: Quick tip notification",
+              "content": "👶 This week's parenting tip for [Child Name]'s age: [Quick actionable tip]. Read more in our Parent Hub!"
+            },
+            {
+              "channel": "Email",
+              "title": "Expert Video: [Topic]",
+              "description": "Bi-weekly: Expert content",
+              "content": "This week's expert insight from Dr. [Name]: [Topic relevant to child's age]. Watch the 5-minute video and discover practical tips you can use today. Plus: Products that support this developmental stage."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Quick Poll: Parenting Challenge",
+              "description": "Monthly: Engagement",
+              "content": "Quick question! What's your biggest parenting challenge right now? Reply: 1️⃣ Sleep 2️⃣ Feeding 3️⃣ Behavior 4️⃣ Learning - We'll send you targeted tips!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Parents interested in specific parenting topics",
+          "scenario_objective": "Deliver deep-dive content on topics of interest",
+          "main_messages_ideas": "Topic series, Expert webinars, Downloadable guides, Community discussions",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Your [Topic] Deep Dive Series",
+              "description": "After topic interest expressed: Series enrollment",
+              "content": "Welcome to our [Topic] series! Over the next 4 weeks, you'll receive expert guidance on [topic]. This week: [First lesson]. Includes practical tips, product recommendations, and access to our community discussion."
+            },
+            {
+              "channel": "Email",
+              "title": "Free Webinar: [Topic] with Expert",
+              "description": "Topic-based: Webinar invitation",
+              "content": "Join our free live webinar: '[Topic Title]' with [Expert Name], [credentials]. Ask your questions live and get actionable strategies. Register now - limited spots available!"
+            },
+            {
+              "channel": "SMS",
+              "title": "Webinar Reminder",
+              "description": "1 hour before: Attendance reminder",
+              "content": "⏰ Reminder: [Topic] webinar starts in 1 hour! Join here: [link]. Can't make it? We'll send the recording."
+            },
+            {
+              "channel": "Email",
+              "title": "Your [Topic] Resource Guide",
+              "description": "After webinar: Downloadable resource",
+              "content": "Thanks for joining our [Topic] webinar! Here's your downloadable guide with all the key takeaways, recommended products, and bonus resources. Join our community forum to continue the conversation!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Parents seeking community connection",
+          "scenario_objective": "Foster parent-to-parent connections and brand community",
+          "main_messages_ideas": "Community invitation, Local parent groups, Success stories, Peer support",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Join Our Parent Community",
+              "description": "After engagement: Community invitation",
+              "content": "You're not alone on this parenting journey! Join thousands of parents in our community forum. Get advice, share experiences, and connect with parents at the same stage. Plus: Exclusive community-only discounts!"
+            },
+            {
+              "channel": "Email",
+              "title": "This Week in the Community",
+              "description": "Weekly: Community digest",
+              "content": "Hot topics in our parent community this week: [Topic 1] - 127 parents discussing, [Topic 2] - Expert Q&A today, [Topic 3] - Community favorite product revealed. Join the conversation!"
+            },
+            {
+              "channel": "Push",
+              "title": "Parents Like You Are Discussing...",
+              "description": "When relevant discussion: Engagement prompt",
+              "content": "🗣️ Hot topic in Parent Community: '[Discussion topic]'. 52 parents of [age-similar kids] are sharing their experiences. Join in!"
+            },
+            {
+              "channel": "Email",
+              "title": "Local Parent Meetup",
+              "description": "Geographic: Local event",
+              "content": "[Brand] parents in [City] are meeting up! Join us at [Location] on [Date] for a casual parent gathering. Meet other families, let the kids play, and enjoy some grown-up conversation. RSVP free!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Parents completing educational content",
+          "scenario_objective": "Convert engaged parents with relevant product recommendations",
+          "main_messages_ideas": "Product recommendations from content, Expert-approved picks, Community favorites, Educational toys",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Products That Support [Topic]",
+              "description": "After content completion: Relevant recommendations",
+              "content": "Based on your interest in [Topic], here are our expert-recommended products that support this area of development. Each has been reviewed by our advisory board and loved by parents in our community."
+            },
+            {
+              "channel": "Email",
+              "title": "Community Favorites for [Age/Topic]",
+              "description": "Social proof: Top picks",
+              "content": "Parents in our community have spoken! Here are the top-rated products for [age range/topic] based on real parent reviews and recommendations. See why these are community favorites."
+            },
+            {
+              "channel": "SMS",
+              "title": "Content Bonus",
+              "description": "After completing series: Reward",
+              "content": "🎓 You completed our [Topic] series! Here's 15% off products that support [related area]. Thanks for being an engaged parent! Code: LEARN15"
+            }
+          ]
+        }
+      ]
     }
   ],
   "how_brevo_helps_you": [

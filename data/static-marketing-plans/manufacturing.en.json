@@ -671,6 +671,204 @@
           ]
         }
       ]
+    },
+    {
+      "program_name": "Supply Chain Collaboration & Visibility",
+      "target": "Key accounts requiring deep supply chain integration and visibility",
+      "objective": "Become integrated supply chain partner with 40% of strategic accounts using visibility tools and 90% forecast accuracy",
+      "kpi": "Supply chain integration adoption (target: 40%), Forecast accuracy (target: 90%), On-time delivery improvement (target: 15%), Inventory optimization (target: 20% reduction)",
+      "description": "A program that transforms transactional relationships into integrated supply chain partnerships through demand planning collaboration, inventory visibility, and just-in-time capabilities.",
+      "scenarios": [
+        {
+          "scenario_target": "Strategic accounts eligible for supply chain integration",
+          "scenario_objective": "Onboard customers to supply chain collaboration tools",
+          "main_messages_ideas": "Visibility platform, Demand planning, Inventory optimization, JIT capabilities, Integration benefits",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Introducing Supply Chain Visibility",
+              "description": "Program introduction",
+              "content": "As one of our valued strategic partners, we're offering you access to our Supply Chain Visibility platform. Real-time inventory visibility, automated forecasting, and demand planning tools - designed to optimize your supply chain and eliminate stockouts."
+            },
+            {
+              "channel": "Email",
+              "title": "Benefits of Supply Chain Integration",
+              "description": "Day 7: Value demonstration",
+              "content": "Companies using our supply chain integration see: 20% reduction in safety stock, 15% improvement in on-time delivery, and 90%+ forecast accuracy. Here's how [Similar Customer] transformed their supply chain with our platform."
+            },
+            {
+              "channel": "Email",
+              "title": "Integration Demo: Supply Chain Platform",
+              "description": "Day 14: Demo invitation",
+              "content": "See our supply chain platform in action. We'll demonstrate demand planning, inventory visibility, and automated reorder capabilities tailored to your operations. Schedule a personalized demo with our supply chain team."
+            },
+            {
+              "channel": "SMS",
+              "title": "Supply Chain Demo Scheduled",
+              "description": "Demo confirmation",
+              "content": "Confirmed: Supply chain visibility demo on [date/time]. Join link: [link]. We'll cover demand planning, inventory integration, and JIT capabilities. Questions? Text back!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers already using supply chain integration",
+          "scenario_objective": "Optimize usage and expand collaboration",
+          "main_messages_ideas": "Performance insights, Optimization tips, New features, Forecast collaboration",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Your Monthly Supply Chain Report",
+              "description": "Monthly: Performance insights",
+              "content": "Your supply chain performance this month: On-time delivery: [X]%, Forecast accuracy: [Y]%, Inventory turns: [Z]. Areas for optimization: [specific recommendations]. Your dedicated supply chain analyst is available to discuss improvements."
+            },
+            {
+              "channel": "Email",
+              "title": "Quarterly Demand Planning Review",
+              "description": "Quarterly: Forecast collaboration",
+              "content": "Time for our quarterly demand planning review. Let's align forecasts for the coming quarter and discuss any production changes, new product launches, or demand shifts that might affect your supply requirements. Schedule your planning session."
+            },
+            {
+              "channel": "Email",
+              "title": "New Platform Feature: [Feature]",
+              "description": "Feature announcement",
+              "content": "We've added [new feature] to our supply chain platform - [brief description and benefit]. This enhancement will help you [specific value]. Log in to explore, or contact your supply chain analyst for a walkthrough."
+            },
+            {
+              "channel": "SMS",
+              "title": "Supply Alert: [Issue/Update]",
+              "description": "Real-time supply notifications",
+              "content": "Supply update for [Product/SKU]: [Alert details - e.g., capacity change, lead time update, inventory status]. View details in your supply chain dashboard or contact us."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers experiencing supply chain challenges",
+          "scenario_objective": "Proactive problem-solving and support",
+          "main_messages_ideas": "Supply chain disruption support, Alternative solutions, Expedite options, Risk mitigation",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Supply Chain Disruption Notice & Response",
+              "description": "When disruption affects customer",
+              "content": "We're aware of [disruption description] affecting your supply. Here's our response plan: [mitigation steps]. Current status: [inventory position, alternative options, expected resolution]. Your account team is standing by for any questions."
+            },
+            {
+              "channel": "SMS",
+              "title": "Urgent: Supply Update",
+              "description": "Immediate notification",
+              "content": "URGENT supply update for [Product]: [Brief impact]. Call [number] for immediate assistance or check your dashboard for details and alternatives."
+            },
+            {
+              "channel": "Email",
+              "title": "Supply Chain Recovery Update",
+              "description": "Resolution progress",
+              "content": "Update on [disruption]: We've [actions taken] and expect [resolution timeline]. Your current orders: [status]. Expedite options: [available alternatives]. Thank you for your patience during this situation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Sustainability & Environmental Compliance",
+      "target": "Customers with sustainability requirements, ESG reporting needs, and environmental compliance obligations",
+      "objective": "Become preferred supplier for sustainability-focused customers with 50% adoption of sustainability reporting tools",
+      "kpi": "Sustainability documentation delivery (target: 100%), Environmental compliance certification rate (target: 95%), Sustainable product line adoption (target: 35%), ESG reporting support satisfaction",
+      "description": "A comprehensive sustainability program that supports customers' environmental goals through product sustainability data, compliance documentation, carbon footprint reporting, and sustainable alternatives.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers with ESG reporting requirements",
+          "scenario_objective": "Provide sustainability data and documentation for reporting",
+          "main_messages_ideas": "Environmental data, Carbon footprint, Sustainability reports, Compliance documentation, ESG support",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Your Supplier Sustainability Report",
+              "description": "Annual: Sustainability documentation",
+              "content": "Your annual sustainability report is ready. Includes: carbon footprint data for products purchased, environmental certifications, supply chain sustainability metrics, and documentation for your ESG reporting. Download your customized report."
+            },
+            {
+              "channel": "Email",
+              "title": "Quarterly Environmental Data Update",
+              "description": "Quarterly: Ongoing data",
+              "content": "Your quarterly environmental data package: CO2 emissions associated with your purchases, recycled content percentages, and environmental compliance certificates. All formatted for your sustainability reporting needs."
+            },
+            {
+              "channel": "Email",
+              "title": "New: Carbon Footprint Calculator",
+              "description": "Tool introduction",
+              "content": "We've launched our Carbon Footprint Calculator - instantly calculate the environmental impact of any product or order. Perfect for ESG reporting, supplier assessments, and sustainability planning. Try it now in your customer portal."
+            },
+            {
+              "channel": "Email",
+              "title": "ESG Audit Support Available",
+              "description": "Support offer",
+              "content": "Going through an ESG audit or supplier assessment? We can help. Our sustainability team is available to provide documentation, answer assessor questions, and support your compliance efforts. Schedule a support call."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers interested in sustainable product alternatives",
+          "scenario_objective": "Promote and educate on sustainable product options",
+          "main_messages_ideas": "Sustainable alternatives, Recycled content products, Environmental certifications, Green product line, Impact reduction",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Sustainable Alternatives for Your Applications",
+              "description": "Based on purchase history",
+              "content": "Based on your current product usage, here are sustainable alternatives that could reduce your environmental impact: [Product-by-product comparison showing environmental benefits, performance equivalence, and any cost implications]."
+            },
+            {
+              "channel": "Email",
+              "title": "New: [Sustainable Product Line]",
+              "description": "Product launch",
+              "content": "Introducing our [Sustainable Product Line]: [X]% recycled content, [Y]% lower carbon footprint, same performance specifications. Perfect for companies committed to environmental leadership. Request samples and specifications."
+            },
+            {
+              "channel": "Email",
+              "title": "Sustainability Impact Report: Your Choices Matter",
+              "description": "Impact demonstration",
+              "content": "When you choose our sustainable products, here's the impact: [X] kg CO2 saved, [Y] kg materials diverted from landfill, [Z]% water usage reduced. Your sustainable purchasing decisions are making a real difference."
+            },
+            {
+              "channel": "SMS",
+              "title": "Sustainable Product Sample Ready",
+              "description": "Sample notification",
+              "content": "Your sustainable product sample kit is ready to ship! Includes [products] with full environmental certifications and performance data. Confirm shipping address: [link]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers in regulated industries with environmental compliance requirements",
+          "scenario_objective": "Support environmental regulatory compliance",
+          "main_messages_ideas": "Regulatory compliance, Environmental certifications, RoHS/REACH compliance, Documentation for audits, Regulatory updates",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Environmental Compliance Documentation Package",
+              "description": "Annual: Compliance bundle",
+              "content": "Your annual environmental compliance package includes: RoHS declarations, REACH compliance statements, conflict minerals documentation, and all relevant environmental certifications. Everything you need for regulatory audits and customer requirements."
+            },
+            {
+              "channel": "Email",
+              "title": "Regulatory Update: [Regulation]",
+              "description": "When regulation changes",
+              "content": "Important update: [Regulation] has been updated/introduced affecting [product categories]. Here's what it means for your operations, how our products comply, and documentation we're providing. Our compliance team is available for questions."
+            },
+            {
+              "channel": "Email",
+              "title": "Compliance Certificate Renewal",
+              "description": "Certificate expiration notice",
+              "content": "Your [certification type] compliance certificate expires on [date]. Renewed certificates for all products in your history are now available in your customer portal. Download updated documentation before expiration."
+            },
+            {
+              "channel": "Email",
+              "title": "Industry Compliance Webinar",
+              "description": "Educational event",
+              "content": "Join our webinar: 'Environmental Compliance Update for [Industry]'. Our compliance experts will cover recent regulatory changes, upcoming requirements, and best practices for meeting environmental obligations. Register now."
+            }
+          ]
+        }
+      ]
     }
   ],
   "how_brevo_helps_you": [
