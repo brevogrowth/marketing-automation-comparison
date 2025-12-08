@@ -28,8 +28,8 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
-  /* Global timeout for tests - 5 minutes for AI analysis */
-  timeout: 300000,
+  /* Global timeout for tests - 10 minutes for AI analysis */
+  timeout: 600000,
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */

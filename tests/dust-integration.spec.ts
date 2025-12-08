@@ -14,7 +14,7 @@ import { test, expect } from '@playwright/test';
 test.skip(!!process.env.CI, 'AI tests skipped in CI - requires AI Gateway credentials');
 
 test('should generate personalized marketing plan and redirect to shareable URL @ai', async ({ page }) => {
-    test.setTimeout(300000); // 5 minutes timeout for AI analysis
+    test.setTimeout(600000); // 10 minutes timeout for AI analysis (can take up to 5-6 minutes)
 
     // 1. Navigate to main page and set localStorage to bypass lead capture
     await page.goto('/');
@@ -43,24 +43,22 @@ test('should generate personalized marketing plan and redirect to shareable URL 
     await generateButton.click();
 
     // 6. Verify loading state appears - LoadingBanner shows "Generating plan for {domain}"
-    // Use text-based selector since class names may be generated
     const loadingText = page.getByText(/Generating.*plan.*for|Generating.*brevo|You can continue browsing/i).first();
     await expect(loadingText).toBeVisible({ timeout: 15000 });
     console.log('Loading state detected');
 
-    // 7. Wait for plan to be generated (up to 4 minutes)
-    // The result will show company summary section
-    await expect(page.getByText(/Company Summary|Résumé|Zusammenfassung|Resumen/i)).toBeVisible({ timeout: 240000 });
-    console.log('Company Summary visible - plan generated');
-
-    // 8. Verify URL was redirected to /{domain} shareable URL
-    await page.waitForURL(/\/brevo\.com/, { timeout: 10000 });
+    // 7. Wait for redirect to shareable URL (happens when AI completes)
+    // This is the key indicator that generation succeeded
+    await page.waitForURL(/\/brevo\.com/, { timeout: 540000 }); // 9 minutes for AI generation
     const currentUrl = page.url();
     expect(currentUrl).toMatch(/\/brevo\.com/);
     console.log('Redirected to shareable URL:', currentUrl);
 
-    // 9. Verify plan content is displayed
-    // Look for marketing programs section - use .first() to avoid strict mode violation
+    // 8. Verify plan content is displayed - Company Summary indicates personalized plan
+    await expect(page.getByText(/Company Summary|Résumé|Zusammenfassung|Resumen/i)).toBeVisible({ timeout: 30000 });
+    console.log('Company Summary visible - personalized plan loaded');
+
+    // 9. Verify marketing programs section is visible
     await expect(page.getByText(/Relationship Programs Overview/i).first()).toBeVisible();
 
     // 10. Verify Brevo CTA section appears
