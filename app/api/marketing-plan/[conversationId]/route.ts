@@ -90,11 +90,21 @@ export async function GET(
             );
           }
         } catch (parseError) {
-          // Log error type only, not content which may be sensitive
-          console.error('[Poll] Parse error:', parseError instanceof Error ? parseError.name : 'Unknown');
+          // Log detailed error for debugging
+          console.error('[Poll] Parse error:', parseError instanceof Error ? parseError.message : 'Unknown');
+          console.error('[Poll] Data structure:', JSON.stringify({
+            hasResult: !!data.result,
+            resultType: typeof data.result,
+            resultKeys: data.result && typeof data.result === 'object' ? Object.keys(data.result) : [],
+            metadata: data.metadata,
+          }));
           return NextResponse.json({
             status: 'error',
             error: 'Failed to parse AI response',
+            debug: {
+              errorMessage: parseError instanceof Error ? parseError.message : 'Unknown error',
+              dataKeys: data.result && typeof data.result === 'object' ? Object.keys(data.result) : [],
+            }
           });
         }
 
