@@ -1,0 +1,1009 @@
+{
+  "introduction": "Dieser umfassende Marketing-Beziehungsplan wurde für Elektronik- und Konsumententechnologie-Händler entwickelt, die durch Produktexpertise, außergewöhnlichen Support und strategische Upgrade-Zyklen langfristige Kundenbeziehungen aufbauen wollen. Der Elektronikmarkt ist hochkompetitiv mit geringen Margen, was Customer Lifetime Value und Ökosystem-Bindung zu kritischen Erfolgsfaktoren macht. Dieser Plan adressiert die einzigartigen Herausforderungen des Tech-Einzelhandels: sich schnell entwickelnde Produkte, komplexe Kaufentscheidungen, hohe Kundensupport-Anforderungen und vorhersehbare Upgrade-Zyklen. Durch die Kombination von personalisiertem Tech-Profiling, smartem Onboarding, Ökosystem-Erweiterung und perfekt getimtem Upgrade-Marketing verwandelt dieser Plan einmalige Käufer in loyale Tech-Kunden, die Ihrer Marke für alle Technologiebedürfnisse vertrauen.",
+  "company_summary": {
+    "name": "Elektronik- & Technologiemarke",
+    "website": "example-electronics.com",
+    "activities": "Konsumentenelektronik-Einzelhandel einschließlich Smartphones, Computer, Tablets, Audio-Equipment, Wearables, Smart-Home-Geräte, Gaming und Zubehör mit Experten-Support-Services",
+    "target": "Technikaffine Konsumenten im Alter von 18-55 Jahren, die an der neuesten Technologie, Gadgets und smarten Lösungen interessiert sind und Expertise und zuverlässigen Support schätzen",
+    "industry": "Electronics",
+    "business_model": "B2C Retail / D2C",
+    "customer_lifecycle_key_steps": "Entdeckung > Tech-Profil > Recherche/Vergleich > Erstkauf > Setup/Onboarding > Ökosystem-Erweiterung > Upgrade-Zyklus > Advocacy"
+  },
+  "programs_list": [
+    {
+      "program_name": "Willkommen & Tech-Profil",
+      "target": "Neue Abonnenten und erstmalige Website-Besucher",
+      "objective": "Kunden-Tech-Präferenzen und aktuelles Ökosystem verstehen und zum Erstkauf innerhalb von 30 Tagen mit gezielten Empfehlungen konvertieren",
+      "kpi": "Tech-Profil-Abschlussrate (Ziel: 45%), Erstkauf-Konversion (Ziel: 15%), Kategorie-Klickrate, Zeit bis Erstkauf (Ziel: <21 Tage)",
+      "description": "Eine personalisierte Willkommensreise, die Kunden-Tech-Interessen, aktuelles Geräte-Ökosystem und Kaufabsicht identifiziert, um hochrelevante Produktempfehlungen und Inhalte zu liefern.",
+      "scenarios": [
+        {
+          "scenario_target": "Neue E-Mail-Abonnenten von Pop-up oder Newsletter-Anmeldung",
+          "scenario_objective": "Tech-Profil aufbauen und Marke als Tech-Experten etablieren",
+          "main_messages_ideas": "Willkommen + Tech-Quiz, Personalisierte Empfehlungen, Experten-Kaufratgeber, Deal-Alerts-Setup, Erstkauf-Incentive",
+          "message_sequence": [
+            {
+              "title": "Willkommen + Tech-Profil-Quiz",
+              "description": "Sofort: Willkommen mit Tech-Interessen-Umfrage",
+              "content": "Willkommen bei [Marke]! Wir sind technikbesessen - und wir wollen dir helfen, genau das zu finden, was du brauchst. Mach unser 2-minütiges Tech-Profil-Quiz für personalisierte Empfehlungen, exklusive Deals in deinen Lieblingskategorien und Early Access zu Neuheiten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Quiz-Erinnerung",
+              "description": "Tag 2: Für Nicht-Abschließer",
+              "content": "Kurze Frage: Stehst du mehr auf Smartphones, Gaming, Smart Home oder Audio? Vervollständige dein Tech-Profil für personalisierte Picks und exklusive Deals.",
+              "channel": "Email"
+            },
+            {
+              "title": "Deine personalisierten Tech-Picks",
+              "description": "Nach Quiz: Angepasste Empfehlungen",
+              "content": "Basierend auf deinem Profil: Du stehst auf [Kategorien]. Hier sind unsere Top-Picks für dich gerade - von Bestsellern bis zu Geheimtipps, die unsere Experten lieben. Plus, wir haben Deal-Alerts für diese Kategorien eingerichtet.",
+              "channel": "Email"
+            },
+            {
+              "title": "Experten-Kaufratgeber",
+              "description": "Tag 5: Edukativer Content",
+              "content": "Der ultimative Guide zu [ihrer Hauptinteresse-Kategorie]: Worauf achten, was vermeiden und unsere Experten-Empfehlungen für jede Preisklasse. Kaufe mit Zuversicht.",
+              "channel": "Email"
+            },
+            {
+              "title": "Hot Deal Alert",
+              "description": "Tag 10: Relevanter Deal",
+              "content": "Deal-Alert in [ihrer Kategorie]! [Produkt] ist [X%] reduziert - einer unserer Top-Picks und selten im Angebot. Das passt perfekt zu deinem Tech-Profil.",
+              "channel": "Email"
+            },
+            {
+              "title": "Erstkauf-Angebot",
+              "description": "Tag 14: Konversions-Incentive",
+              "content": "Bereit, deine Tech aufzurüsten? Hier sind 10% Rabatt auf deine erste Bestellung + kostenloser Express-Versand. Deine personalisierten Picks warten!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Quiz-Abschließer, die gestöbert aber nicht gekauft haben",
+          "scenario_objective": "Engagierte Browser mit Vergleichshilfe konvertieren",
+          "main_messages_ideas": "Produktvergleich, Experten-Empfehlung, Preisfall-Alert, Verlängertes Angebot",
+          "message_sequence": [
+            {
+              "title": "Kannst dich nicht entscheiden?",
+              "description": "Tag 3 nach Browse: Vergleichshilfe",
+              "content": "Wir haben gesehen, dass du [Produkte] verglichen hast. Hier ist unser Experten-Breakdown: Funktionsvergleich, echte Nutzerbewertungen und welches für verschiedene Bedürfnisse richtig ist.",
+              "channel": "Email"
+            },
+            {
+              "title": "Unser Experten-Pick",
+              "description": "Tag 7: Empfehlung",
+              "content": "Basierend auf dem, was du dir angeschaut hast, empfehlen unsere Tech-Experten [spezifisches Produkt]. Hier ist, warum es das beste Preis-Leistungs-Verhältnis für die meisten bietet.",
+              "channel": "Email"
+            },
+            {
+              "title": "Preis-Alert",
+              "description": "Tag 12: Wenn Preis fällt",
+              "content": "Gute Nachrichten! [Produkt, das du angesehen hast] ist gerade auf [Preis] gefallen. Das ist der niedrigste Stand, den wir gesehen haben - greif zu, bevor es wieder steigt.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nicht-Quiz-Teilnehmer, die mehrere Kategorien durchstöbern",
+          "scenario_objective": "Unentschlossene Browser mit Kategorie-Expertise leiten",
+          "main_messages_ideas": "Kategorie-Highlights, Best-of-Listen, Deal-Zusammenfassung",
+          "message_sequence": [
+            {
+              "title": "Dein wöchentlicher Tech-Digest",
+              "description": "Tag 4: Kuratierter Content",
+              "content": "Diese Woche in Tech: Top-Deals über Kategorien, wissenswerte Neuheiten und Experten-Picks. Für jeden Tech-Enthusiasten was dabei.",
+              "channel": "Email"
+            },
+            {
+              "title": "Best-Of-Liste",
+              "description": "Tag 8: Kategorie-Spotlight",
+              "content": "Die besten [Kategorie] 2024: Unsere Experten haben alle getestet, damit du es nicht musst. Sieh die Gewinner in jeder Preisklasse.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Warenkorbabbruch & Browse-Recovery",
+      "target": "Besucher, die Produkte in den Warenkorb gelegt oder ausgiebig recherchiert haben",
+      "objective": "Abgebrochene Warenkörbe innerhalb von 72 Stunden mit einer Recovery-Rate von 18%+ wiederherstellen und High-Intent-Browser erfassen",
+      "kpi": "Warenkorb-Recovery-Rate (Ziel: 18%), Browse-Recovery-Konversion (Ziel: 6%), Zeit bis Recovery (Ziel: <24 Stunden), Durchschnittlicher wiedergewonnener Bestellwert",
+      "description": "Multi-Channel-Recovery-Sequenz, die gängige Elektronik-Kaufhemmnisse (Preis, Specs, Kompatibilität) adressiert und gleichzeitig angemessene Dringlichkeit erzeugt.",
+      "scenarios": [
+        {
+          "scenario_target": "Warenkorb-Abbrecher mit hochwertigen Artikeln (300€+)",
+          "scenario_objective": "Hochwertige Warenkörbe mit Vertrauen und Flexibilität wiederherstellen",
+          "main_messages_ideas": "Warenkorb gespeichert, Spec-Fragen beantwortet, Preisgarantie, Zahlungsoptionen, Letztes Incentive",
+          "message_sequence": [
+            {
+              "title": "Dein Tech-Warenkorb ist gespeichert",
+              "description": "1 Stunde nach Abbruch: Sanfte Erinnerung",
+              "content": "Tolle Wahl! Dein [Produkt] ist gespeichert und wartet. Noch am Recherchieren? Wir verstehen - Tech-Käufe verdienen sorgfältige Überlegung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kurze Erinnerung",
+              "description": "4 Stunden: SMS-Anstoß",
+              "content": "Dein Warenkorb ist gespeichert! [Produkt] ist auf Lager und versandbereit: [Link]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Fragen? Wir sind da",
+              "description": "24 Stunden: Support-Angebot",
+              "content": "Hast du Fragen zu [Produkt]? Unsere Tech-Experten helfen dir gerne. Chatte mit uns, ruf an oder schau dir unsere detaillierten Reviews und Vergleiche an. Wir wollen, dass du dich bei deinem Kauf sicher fühlst.",
+              "channel": "Email"
+            },
+            {
+              "title": "Zahlungsflexibilität",
+              "description": "36 Stunden: Finanzierungsoption",
+              "content": "Mach es dir einfacher: Zahle [Produkt] über die Zeit mit 0% Zinsen für 12 Monate. Dein Gesamtbetrag: X€ oder nur X€/Monat. Keine versteckten Gebühren, keine Überraschungen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bestpreis-Garantie",
+              "description": "48 Stunden: Vertrauensaufbau",
+              "content": "Shoppe mit Zuversicht: Wenn du [Produkt] innerhalb von 30 Tagen nach Kauf günstiger findest, erstatten wir die Differenz. Plus, kostenlose Rückgabe, falls du es dir anders überlegst.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzter Push",
+              "description": "72 Stunden: Incentive",
+              "content": "Letzte Chance: Schließe deine Bestellung jetzt ab und wir legen kostenloses Zubehör im Wert von X€ drauf. Angebot endet heute Nacht. Dein [Produkt] wartet!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Erstmalige Warenkorb-Abbrecher",
+          "scenario_objective": "Bedenken neuer Kunden mit Vertrauenssignalen adressieren",
+          "main_messages_ideas": "Willkommensnachricht, Warum wir, Kundenbewertungen, Erstkauf-Vorteile",
+          "message_sequence": [
+            {
+              "title": "Tolle Wahl!",
+              "description": "2 Stunden: Positive Verstärkung",
+              "content": "Du hast ausgezeichneten Geschmack! [Produkt] ist einer unserer bestbewerteten Artikel. Hier ist, was Kunden darüber sagen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Warum bei uns kaufen",
+              "description": "24 Stunden: Vertrauensaufbau",
+              "content": "Neu bei [Marke]? Das zeichnet uns aus: Experten-Tech-Support, unkomplizierte Rückgabe, Bestpreis-Garantie und kostenlose erweiterte Garantie auf ausgewählte Artikel. Shoppe mit Zuversicht.",
+              "channel": "Email"
+            },
+            {
+              "title": "Neukunden-Willkommen",
+              "description": "48 Stunden: Incentive",
+              "content": "Willkommensangebot: 12% Rabatt auf deine erste Bestellung + kostenloser Express-Versand. Dein [Produkt] könnte bis [Datum] da sein. Schließe deine Bestellung ab!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Browse-Abbrecher, die bestimmte Produkttypen recherchieren",
+          "scenario_objective": "Bei Recherche und Vergleich helfen",
+          "main_messages_ideas": "Vergleichs-Guide, Alternative Optionen, Experten-Rat, Bestand-Alert",
+          "message_sequence": [
+            {
+              "title": "Noch am Recherchieren?",
+              "description": "24 Stunden: Vergleichshilfe",
+              "content": "Wir haben gesehen, dass du dir [Kategorie] anschaust. Hier ist unser Vergleichs-Guide: die Top-Optionen Seite an Seite, mit Vor- und Nachteilen und unserem Experten-Urteil.",
+              "channel": "Email"
+            },
+            {
+              "title": "Alternativen zu beachten",
+              "description": "48 Stunden: Optionen",
+              "content": "Schaust du dir [Produkt] an? Hier sind 3 Alternativen, die es wert sind - von budgetfreundlich bis Premium. Finde deinen perfekten Match.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bestand-Alert",
+              "description": "Bei Relevanz: Dringlichkeit",
+              "content": "Niedriger Bestand Alert: [Produkt, das du angesehen hast] verkauft sich schnell. Nur noch [X] zu diesem Preis. Nicht verpassen!",
+              "channel": "SMS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Produkt-Onboarding & Setup-Erfolg",
+      "target": "Alle Kunden nach dem Kauf",
+      "objective": "Erfolgreiches Produkt-Setup sicherstellen, Zufriedenheit maximieren, Retouren auf <8% reduzieren und Zubehör-Attach-Rate steigern",
+      "kpi": "Setup-Abschlussrate (Ziel: 90%), Retourenquote (Ziel: <8%), Support-Ticket-Volumen (40% reduzieren), Zubehör-Attach-Rate (Ziel: 25%)",
+      "description": "Umfassende Nach-Kauf-Support-Sequenz, die Kunden durch das Setup führt, fortgeschrittene Funktionen lehrt und sicherstellt, dass sie maximalen Nutzen aus ihrem Kauf ziehen.",
+      "scenarios": [
+        {
+          "scenario_target": "Smartphone/Tablet-Käufer",
+          "scenario_objective": "Durch Setup und Feature-Entdeckung leiten",
+          "main_messages_ideas": "Schnellstart, Datentransfer-Hilfe, Feature-Highlights, Essentielles Zubehör, Profi-Tipps",
+          "message_sequence": [
+            {
+              "title": "Deine Bestellung ist versendet!",
+              "description": "Versand: Vorbereitung",
+              "content": "Dein [Produkt] ist unterwegs! Ankunft [Datum]. Bevor es ankommt, so bereitest du dich vor: altes Gerät sichern, Konten bereithalten und bereit sein für einfaches Setup.",
+              "channel": "Email"
+            },
+            {
+              "title": "Schnellstart-Guide",
+              "description": "Liefertag: Setup-Hilfe",
+              "content": "Dein [Produkt] ist angekommen! Lass uns dich in Minuten einrichten. Schau unser Schnellstart-Video oder folge unserem Schritt-für-Schritt-Guide. Brauchst du Hilfe beim Datentransfer? Wir haben alles abgedeckt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Datentransfer leicht gemacht",
+              "description": "Tag 1: Häufiger Schmerzpunkt",
+              "content": "Wechselst du von deinem alten Gerät? Hier ist der einfachste Weg, alles zu übertragen - Fotos, Kontakte, Apps und Einstellungen. Dauert etwa 15 Minuten.",
+              "channel": "Email"
+            },
+            {
+              "title": "5 Features, die du lieben wirst",
+              "description": "Tag 3: Feature-Entdeckung",
+              "content": "Lernst du dein [Produkt] kennen? Hier sind 5 Features, die die meisten nicht sofort entdecken - aber absolut lieben, sobald sie es tun. #3 ist ein Game-Changer!",
+              "channel": "Email"
+            },
+            {
+              "title": "Profi-Tipp",
+              "description": "Tag 5: Schneller Tipp",
+              "content": "Profi-Tipp für dein [Produkt]: [spezifisches verstecktes Feature]. Probier es jetzt aus!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Essentielles Zubehör",
+              "description": "Tag 7: Cross-Sell",
+              "content": "Maximiere dein [Produkt]-Erlebnis mit diesem Must-Have-Zubehör. Hüllen, Ladegeräte und Extras, die unsere Kunden lieben. Bundle und spare 15%.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wie läuft's?",
+              "description": "Tag 14: Check-in",
+              "content": "Du hast dein [Produkt] jetzt 2 Wochen! Wie läuft alles? Irgendwelche Fragen? Unsere Tech-Experten sind 7 Tage die Woche erreichbar. Oder hinterlasse eine Bewertung und hilf anderen!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Laptop/Computer-Käufer",
+          "scenario_objective": "Optimales Setup und Performance sicherstellen",
+          "main_messages_ideas": "Setup-Optimierung, Software-Empfehlungen, Peripherie-Kompatibilität, Wartungstipps",
+          "message_sequence": [
+            {
+              "title": "Optimiere dein Setup",
+              "description": "Liefertag: Setup-Guide",
+              "content": "Dein neuer [Computer] ist da! Folge unserem Optimierungs-Guide, um ihn für Spitzenleistung einzurichten. Wir führen dich durch die wesentlichen Einstellungen, Updates und Konfigurationen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Essentielle Software",
+              "description": "Tag 2: Software-Empfehlungen",
+              "content": "Hol mehr aus deinem [Computer]: Unsere empfohlene Software für Produktivität, Sicherheit und Kreativität. Die meisten sind kostenlos oder inkludiert - hier ist, was du zuerst installieren solltest.",
+              "channel": "Email"
+            },
+            {
+              "title": "Workspace-Setup",
+              "description": "Tag 5: Peripherie-Cross-Sell",
+              "content": "Vervollständige deinen Workspace: Monitore, Tastaturen, Mäuse und Docking-Stations, die perfekt mit deinem [Computer] funktionieren. Erstelle dein ideales Setup.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wartungstipps",
+              "description": "Tag 14: Pflege-Guide",
+              "content": "Halte deinen [Computer] jahrelang schnell. Hier sind unsere Experten-Wartungstipps: was wöchentlich, monatlich und jährlich zu tun ist, um Performance und Lebensdauer zu maximieren.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Smart-Home-Geräte-Käufer",
+          "scenario_objective": "Erfolgreiches Setup und Ökosystem-Erweiterung sicherstellen",
+          "main_messages_ideas": "Installations-Hilfe, Sprachassistent-Setup, Automatisierungs-Ideen, Ökosystem-Erweiterung",
+          "message_sequence": [
+            {
+              "title": "Lass uns verbinden",
+              "description": "Liefertag: Setup-Guide",
+              "content": "Dein [Smart-Gerät] ist da! Folge unserem Schnell-Setup-Guide, um es zu verbinden und mit deinem bestehenden Smart Home zu integrieren. Dauert normalerweise etwa 10 Minuten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sprachsteuerung-Setup",
+              "description": "Tag 2: Sprachassistent-Integration",
+              "content": "Mach es freihändig! So verbindest du dein [Gerät] mit Alexa, Google Home oder Siri. Sprachsteuerung macht alles einfacher.",
+              "channel": "Email"
+            },
+            {
+              "title": "Automatisierungs-Ideen",
+              "description": "Tag 5: Erweiterte Funktionen",
+              "content": "10 Smart-Home-Automatisierungen, die dein Leben einfacher machen. Von Morgenroutinen bis zu Sicherheits-Setups - hier ist, was du mit deinem [Gerät] tun kannst.",
+              "channel": "Email"
+            },
+            {
+              "title": "Erweitere dein Smart Home",
+              "description": "Tag 10: Ökosystem-Cross-Sell",
+              "content": "Dein [Gerät] funktioniert noch besser mit Freunden! Entdecke kompatible Geräte, die ein nahtloses Smart-Home-Erlebnis schaffen. Starte dein vernetztes Zuhause.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Audio/Kopfhörer-Käufer",
+          "scenario_objective": "Sound-Erlebnis optimieren und Ökosystem fördern",
+          "main_messages_ideas": "Sound-Optimierung, App-Setup, Pairing-Guide, Musikdienst-Empfehlungen",
+          "message_sequence": [
+            {
+              "title": "Optimiere deinen Sound",
+              "description": "Liefertag: Sound-Setup",
+              "content": "Dein [Audio-Produkt] ist da! So holst du den besten Sound: App-Download, EQ-Einstellungen und Personalisierungs-Tipps. Deine Ohren werden es dir danken.",
+              "channel": "Email"
+            },
+            {
+              "title": "Multi-Geräte-Pairing",
+              "description": "Tag 3: Erweitertes Setup",
+              "content": "Wusstest du? Deine [Kopfhörer/Lautsprecher] können sich mit mehreren Geräten gleichzeitig verbinden. So wechselst du nahtlos zwischen Handy, Laptop und Tablet.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sound-Einstellungen",
+              "description": "Tag 5: Anpassung",
+              "content": "Personalisiere deinen Sound: Jazz, Rock, Podcast, Film-Modus - so erstellst du das perfekte Sound-Profil für alles, was du hörst.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Vervollständige dein Audio-Setup",
+              "description": "Tag 10: Cross-Sell",
+              "content": "Liebst du dein [Audio-Produkt]? Vervollständige dein Audio-Ökosystem. Von zusätzlichen Lautsprechern bis zu kompatiblem Zubehör - baue dein perfektes Sound-System.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Ökosystem-Erweiterung & Zubehör-Cross-Sell",
+      "target": "Kunden, die Hauptgeräte gekauft haben",
+      "objective": "Kundenkäufe über das Produkt-Ökosystem erweitern mit 35% der Kunden, die kompatibles Zubehör/Produkte innerhalb von 60 Tagen kaufen",
+      "kpi": "Zubehör-Attach-Rate (Ziel: 35%), Cross-Kategorie-Kaufrate (Ziel: 20%), Durchschnittlicher Bestellwert-Wachstum, Zeit zwischen Käufen",
+      "description": "Strategische Cross-Sell-Journey, die Kunden zu ergänzenden Produkten basierend auf ihrem Hauptgerät und Nutzungsverhalten führt.",
+      "scenarios": [
+        {
+          "scenario_target": "iPhone/Android-Käufer",
+          "scenario_objective": "Zubehör- und Wearable-Käufe fördern",
+          "main_messages_ideas": "Essentielles Zubehör, Wearable-Pairing, Audio-Ökosystem, Schutzprodukte",
+          "message_sequence": [
+            {
+              "title": "Must-Have-Zubehör",
+              "description": "Tag 7: Essentieller Cross-Sell",
+              "content": "Maximiere dein [Handy]-Erlebnis: Das essentielle Zubehör, das jeder Besitzer braucht. Hüllen, Ladegeräte und Displayschutz, die wir tatsächlich empfehlen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Besser zusammen",
+              "description": "Tag 21: Wearable-Pitch",
+              "content": "Dein [Handy] + [Smartwatch] = das perfekte Paar. Sieh, warum eine Smartwatch transformiert, wie du dein Handy nutzt. Fitness tracken, Benachrichtigungen erhalten und mehr.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wireless Audio",
+              "description": "Tag 35: Audio-Cross-Sell",
+              "content": "Kapp das Kabel: Kabellose Earbuds, die perfekt mit deinem [Handy] paaren. Vergleiche unsere Top-Picks und finde deinen perfekten Match.",
+              "channel": "Email"
+            },
+            {
+              "title": "Power Up",
+              "description": "Tag 50: Ladelösungen",
+              "content": "Nie wieder leerer Akku: Powerbanks, Wireless-Charging-Pads und Auto-Ladegeräte für dein [Handy]. Bleib überall mit Power versorgt.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Gaming-Konsolen-Käufer",
+          "scenario_objective": "Spiele-, Zubehör- und Abo-Verkäufe fördern",
+          "main_messages_ideas": "Must-Play-Games, Controller-Upgrades, Gaming-Zubehör, Online-Abo",
+          "message_sequence": [
+            {
+              "title": "Must-Play-Games",
+              "description": "Tag 7: Spiele-Empfehlungen",
+              "content": "Deine [Konsole] braucht diese Spiele! Die Must-Play-Titel für [Konsole] - von Blockbustern bis Geheimtipps. Plus, sieh was demnächst kommt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Level Up dein Setup",
+              "description": "Tag 21: Zubehör",
+              "content": "Bring dein Gaming aufs nächste Level: Pro-Controller, Gaming-Headsets und Zubehör, auf das ernsthafte Gamer schwören.",
+              "channel": "Email"
+            },
+            {
+              "title": "Online-Multiplayer",
+              "description": "Tag 35: Abo-Pitch",
+              "content": "Bereit für Online-Play? [Abo-Service] schaltet Multiplayer, kostenlose monatliche Spiele und exklusive Deals frei. Hier ist, was du bekommst.",
+              "channel": "Email"
+            },
+            {
+              "title": "Gaming-Stuhl & Schreibtisch",
+              "description": "Tag 50: Möbel-Cross-Sell",
+              "content": "Spiele bequem: Ergonomische Gaming-Stühle und Schreibtische, die dein Setup vervollständigen. Dein Rücken wird es dir während langer Sessions danken.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Smart-Speaker-Käufer",
+          "scenario_objective": "Volles Smart-Home-Ökosystem aufbauen",
+          "main_messages_ideas": "Smart Lighting, Smart Security, Multi-Room-Audio, Sprachassistent-Erweiterung",
+          "message_sequence": [
+            {
+              "title": "Erhelle dein Leben",
+              "description": "Tag 14: Smart Lighting",
+              "content": "Dein [Lautsprecher] kann deine Lichter steuern! Smart-Lampen und -Schalter, die mit deiner Stimme funktionieren. Setze die Stimmung, spare Energie, automatisiere alles.",
+              "channel": "Email"
+            },
+            {
+              "title": "Smart Security",
+              "description": "Tag 28: Sicherheitsprodukte",
+              "content": "Halte dein Zuhause sicher mit Smart Security, die mit deinem [Lautsprecher] funktioniert. Video-Türklingeln, Kameras und Sensoren - alles sprachgesteuert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Musik überall",
+              "description": "Tag 42: Multi-Room-Audio",
+              "content": "Warum bei einem Raum stoppen? Füge Lautsprecher in deinem ganzen Zuhause hinzu für nahtloses Multi-Room-Audio. Musik folgt dir von Raum zu Raum.",
+              "channel": "Email"
+            },
+            {
+              "title": "Volle Home-Automation",
+              "description": "Tag 60: Fortgeschrittene Geräte",
+              "content": "Du baust etwas Besonderes! Vervollständige dein Smart Home mit Thermostaten, Jalousien, Schlössern und mehr. Alles verbunden, alles sprachgesteuert.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Upgrade-Zyklus-Marketing",
+      "target": "Kunden, deren Produkte sich dem typischen Upgrade-Timing nähern",
+      "objective": "Upgrade-Käufe zum optimalen Zeitpunkt mit 25% Upgrade-Konversionsrate und hoher Trade-In-Teilnahme fördern",
+      "kpi": "Upgrade-Konversionsrate (Ziel: 25%), Trade-In-Teilnahme (Ziel: 60%), Durchschnittlicher Upgrade-Wert, Kundenbindung durch Upgrade",
+      "description": "Perfekt getimte Kommunikationen basierend auf Produktlebenszyklus, die Upgrades ermutigen und gleichzeitig Trade-In-Wert für Kunden maximieren.",
+      "scenarios": [
+        {
+          "scenario_target": "Smartphone-Besitzer bei 18-24 Monaten",
+          "scenario_objective": "Smartphone-Upgrade mit Trade-In-Incentive fördern",
+          "main_messages_ideas": "Neue Features-Vergleich, Trade-In-Wert, Upgrade-Vorteile, Limitiertes Angebot, Nahtloser Übergang",
+          "message_sequence": [
+            {
+              "title": "Was gibt's Neues bei Smartphones",
+              "description": "18 Monate: Feature-Awareness",
+              "content": "Dein [aktuelles Handy] hat dir gut gedient! Hier ist, was sich in der Smartphone-Welt verändert hat: bessere Kameras, längere Akkulaufzeit, neue Features, die du lieben wirst.",
+              "channel": "Email"
+            },
+            {
+              "title": "Dein Trade-In-Wert",
+              "description": "20 Monate: Trade-In-Angebot",
+              "content": "Dein [aktuelles Handy] ist bis zu [Wert]€ wert für ein neues Gerät! Trade-In-Wert sinkt über die Zeit - sichere dir jetzt deinen Wert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Seite-an-Seite-Vergleich",
+              "description": "21 Monate: Spezifischer Vergleich",
+              "content": "Dein [aktuelles Handy] vs [neues Modell]: Sieh genau, was du bei einem Upgrade gewinnst. Kamera, Geschwindigkeit, Akku, Features - der vollständige Breakdown.",
+              "channel": "Email"
+            },
+            {
+              "title": "Upgrade-Special",
+              "description": "22 Monate: Incentive",
+              "content": "Jetzt upgraden und erhalten: Erhöhter Trade-In-Wert + kostenloses Zubehör im Wert von [X]€ + 0% Finanzierung. Dein Upgrade, dein Weg.",
+              "channel": "Email"
+            },
+            {
+              "title": "Datentransfer inklusive",
+              "description": "23 Monate: Reibung entfernen",
+              "content": "Besorgt wegen des Wechsels? Wir übernehmen den Datentransfer für dich. Fotos, Kontakte, Apps - alles zieht nahtlos um. Upgrade sorgenfrei.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzter Upgrade-Push",
+              "description": "24 Monate: Dringlichkeit",
+              "content": "Dein Trade-In-Wert sinkt nächsten Monat! Upgrade jetzt und erhalte maximalen Wert für dein [aktuelles Handy]. Das ist deine beste Gelegenheit.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Laptop/Computer-Besitzer bei 3-4 Jahren",
+          "scenario_objective": "Computer-Upgrade mit Performance-Vergleich fördern",
+          "main_messages_ideas": "Performance-Vergleich, Neue Technologie-Vorteile, Produktivitäts-Gewinne, Trade-In/Recycling",
+          "message_sequence": [
+            {
+              "title": "3 Jahre Tech-Fortschritt",
+              "description": "3 Jahre: Technologie-Update",
+              "content": "Dein [Computer] war ein Arbeitstier! Aber die Technologie ist weit gekommen. Hier ist, was du verpasst: schnellere Prozessoren, bessere Displays, längere Akkulaufzeit.",
+              "channel": "Email"
+            },
+            {
+              "title": "Performance-Vergleich",
+              "description": "3,5 Jahre: Spezifische Vorteile",
+              "content": "Wie heutige Laptops sich zu deinem [aktuellen Modell] verhalten: 2x schneller, 3x Akkulaufzeit, halb so schwer. Sieh den Unterschied bei realen Aufgaben.",
+              "channel": "Email"
+            },
+            {
+              "title": "Produktivitäts-Upgrade",
+              "description": "3,75 Jahre: Value Proposition",
+              "content": "Zeit ist Geld: Ein neuer Computer könnte dir [X Stunden] pro Woche sparen. Berechne deine Produktivitäts-Gewinne und sieh den ROI eines Upgrades.",
+              "channel": "Email"
+            },
+            {
+              "title": "Trade-In & Recycling",
+              "description": "4 Jahre: Trade-In-Angebot",
+              "content": "Dein alter [Computer] hat noch Wert! Gib ihn in Zahlung für bis zu [Wert]€ auf ein neues Gerät - oder wir recyceln ihn verantwortungsvoll. So oder so gewinnst du.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Smartwatch-Besitzer bei 2-3 Jahren",
+          "scenario_objective": "Smartwatch-Upgrade mit Gesundheits-Feature-Fokus fördern",
+          "main_messages_ideas": "Neue Gesundheits-Features, Akku-Verbesserungen, Design-Updates, Trade-In-Wert",
+          "message_sequence": [
+            {
+              "title": "Neue Gesundheits-Features",
+              "description": "2 Jahre: Feature-Awareness",
+              "content": "Deine Gesundheit verdient die neueste Technik. Sieh die neuen Gesundheits- und Fitness-Features in den neuesten Smartwatches - von erweitertem Schlaf-Tracking bis zu neuen Sensoren.",
+              "channel": "Email"
+            },
+            {
+              "title": "Akkulaufzeit verbessert",
+              "description": "2,5 Jahre: Schlüsselvorteil",
+              "content": "Erinnerst du dich ans tägliche Laden? Neue Smartwatches halten [X Tage] mit einer Ladung. Das ist ein Game-Changer für deine Routine.",
+              "channel": "Email"
+            },
+            {
+              "title": "Upgrade dein Handgelenk",
+              "description": "3 Jahre: Upgrade-Angebot",
+              "content": "Zeit für eine neue Uhr! Gib deine aktuelle in Zahlung für bis zu [Wert]€ und steige auf zu den neuesten Features. Deine Gesundheitsreise geht weiter.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Neuprodukt-Launch",
+      "target": "Alle Kunden, die an bestimmten Produktkategorien basierend auf Kaufhistorie und Profil interessiert sind",
+      "objective": "Pre-Orders und Launch-Wochen-Umsatz mit 40% der Verkäufe von Bestandskunden maximieren",
+      "kpi": "Pre-Order-Rate (Ziel: 15% der Kategorie-Kunden), Launch-Wochen-Umsatz, Wartelisten-Konversionsrate (Ziel: 50%), E-Mail-Engagement während Launch",
+      "description": "Multi-Wellen-Kampagne, um Vorfreude aufzubauen, Pre-Orders zu fördern und Verkäufe bei Neuprodukt-Launches zu maximieren.",
+      "scenarios": [
+        {
+          "scenario_target": "Kategorie-Enthusiasten - VIP-Early-Access",
+          "scenario_objective": "VIP-Pre-Orders mit exklusiven Vorteilen fördern",
+          "main_messages_ideas": "Exklusive Vorschau, Pre-Order-Vorteile, Behind the Scenes, Early Access",
+          "message_sequence": [
+            {
+              "title": "Etwas Großes kommt",
+              "description": "14 Tage vorher: Teaser",
+              "content": "Als [Kategorie]-Enthusiast bekommst du den ersten Blick. Etwas Großes kommt zu [Kategorie] am [Datum]. Bleib dran - das willst du nicht verpassen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Exklusiver First Look",
+              "description": "7 Tage vorher: Sneak Peek",
+              "content": "VIP Sneak Peek: Hier ist dein exklusiver First Look auf [neues Produkt]. Alles, was wir vor der offiziellen Ankündigung verraten können - und warum wir begeistert sind.",
+              "channel": "Email"
+            },
+            {
+              "title": "Pre-Order VIP-Zugang",
+              "description": "Ankündigungstag: Early Access",
+              "content": "Es ist offiziell! [Neues Produkt] ist da. Als VIP bekommst du First Access zur Pre-Order + exklusives Geschenk im Wert von [X]€ bei deiner Bestellung. Jetzt vorbestellen!",
+              "channel": "Email"
+            },
+            {
+              "title": "Pre-Order-Bestätigung",
+              "description": "Nach Pre-Order: Updates",
+              "content": "Deine Pre-Order ist bestätigt! Du bekommst das neue [Produkt] vor allen anderen. Hier ist dein erwartetes Lieferdatum und was als nächstes passiert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Versand morgen!",
+              "description": "Tag vor Versand: Aufregung",
+              "content": "Dein [Produkt] wird morgen versendet! Mach dich bereit - hier ist ein Sneak Peek auf das Unboxing-Erlebnis und Schnellstart-Tipps.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Allgemeines Kategorie-Interesse",
+          "scenario_objective": "Awareness und Launch-Tag-Verkäufe fördern",
+          "main_messages_ideas": "Launch-Ankündigung, Schlüsselfeatures, Verfügbarkeits-Alert, Reviews",
+          "message_sequence": [
+            {
+              "title": "Es ist da!",
+              "description": "Launch-Tag: Ankündigung",
+              "content": "Wir präsentieren [neues Produkt]! Das Warten ist vorbei. Sieh, warum dies der [Produkttyp] ist, auf den wir gewartet haben. Shoppe jetzt, solange Vorrat reicht.",
+              "channel": "Email"
+            },
+            {
+              "title": "Schlüsselfeatures",
+              "description": "Tag 2: Deep Dive",
+              "content": "Warum [neues Produkt] besonders ist: Ein genauerer Blick auf die Features, die es herausstechen lassen. Plus, sieh wie es sich zum Vorgänger verhält.",
+              "channel": "Email"
+            },
+            {
+              "title": "Erste Reviews sind da",
+              "description": "Tag 7: Social Proof",
+              "content": "Frühe Reviews nennen [neues Produkt] '[Zitat]'. Sieh, was Experten und Kunden sagen - und warum es die Erwartungen übertrifft.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Potenzielle Upgrader von vorheriger Generation",
+          "scenario_objective": "Upgrade vom älteren Modell fördern",
+          "main_messages_ideas": "Upgrade-Vergleich, Trade-In-Special, Feature-Verbesserungen",
+          "message_sequence": [
+            {
+              "title": "Zeit fürs Upgrade?",
+              "description": "Launch-Tag: Personalisierter Pitch",
+              "content": "Besitzt du das vorherige [Produkt]? Hier ist, warum sich dieses Upgrade lohnt: [Schlüsselverbesserungen]. Plus, erhalte erhöhten Trade-In-Wert während der Launch-Woche.",
+              "channel": "Email"
+            },
+            {
+              "title": "Upgrade-Vergleich",
+              "description": "Tag 3: Seite an Seite",
+              "content": "Dein [altes Produkt] vs das neue [Produkt]: Sieh genau, was verbessert wurde und ob das Upgrade für dich Sinn macht.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Erweiterte Garantie & Schutzpläne",
+      "target": "Aktuelle Käufer hochwertiger Elektronik ohne Schutz",
+      "objective": "30% Attach-Rate bei erweiterten Garantien und Schutzplänen innerhalb des 30-Tage-Fensters erreichen",
+      "kpi": "Garantie-Attach-Rate (Ziel: 30%), Schutzplan-Umsatz, Durchschnittlicher Schutzplan-Wert, Nach-Garantie-Verlängerungsrate",
+      "description": "Gezielte Kampagne zum Verkauf von erweiterten Garantien und Schutzplänen während des Entscheidungsfensters, mit Edukation und echten Geschichten.",
+      "scenarios": [
+        {
+          "scenario_target": "Smartphone-Käufer ohne Schutz",
+          "scenario_objective": "Zu Display-Schutzplan konvertieren",
+          "main_messages_ideas": "Schutzwert, Echte Schadensmeldungen, Unfallstatistiken, Limitierter Zeitpreis",
+          "message_sequence": [
+            {
+              "title": "Schütze deine Investition",
+              "description": "Tag 2: Erster Pitch",
+              "content": "Dein neues [Handy] hat [X]€ gekostet. Unfälle passieren - 35% der Handybesitzer brechen ihr Display innerhalb von 2 Jahren. Schütze deine Investition ab nur [X€/Monat].",
+              "channel": "Email"
+            },
+            {
+              "title": "Echte Geschichten",
+              "description": "Tag 7: Social Proof",
+              "content": "Wenn Schutz sich auszahlt: Echte Kunden teilen ihre Geschichten. Von gebrochenen Displays bis Wasserschäden - sieh, wie Schutz ihnen Hunderte gespart hat.",
+              "channel": "Email"
+            },
+            {
+              "title": "Schneller Schutz-Check",
+              "description": "Tag 14: Erinnerung",
+              "content": "Noch geschützt? Nur zur Info: Dein [Handy] hat noch keinen Schutz. Füge ihn jetzt hinzu - dauert 2 Minuten, Seelenfrieden für Jahre.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Letzte Chance: Gratis-Monat",
+              "description": "Tag 25: Dringlichkeit + Incentive",
+              "content": "Noch 5 Tage, um Schutz zu deinem [Handy] hinzuzufügen. Melde dich jetzt an und erhalte den ersten Monat GRATIS. Nach [Datum] kannst du keinen Schutz mehr hinzufügen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Laptop-Käufer ohne erweiterte Garantie",
+          "scenario_objective": "Zum Kauf einer erweiterten Garantie konvertieren",
+          "main_messages_ideas": "Reparaturkosten, Erweiterte Support-Vorteile, Umfassende Abdeckung",
+          "message_sequence": [
+            {
+              "title": "Was wenn etwas kaputt geht?",
+              "description": "Tag 3: Problem-Awareness",
+              "content": "Die durchschnittliche Laptop-Reparatur kostet 300-500€. Erweiterte Garantie deckt Reparaturen, Unfälle und sogar Akku-Austausch - für einen Bruchteil davon.",
+              "channel": "Email"
+            },
+            {
+              "title": "Mehr als nur Reparaturen",
+              "description": "Tag 10: Volle Vorteile",
+              "content": "Erweiterte Garantie ist nicht nur Reparaturen: Prioritäts-Support, unkomplizierte Schadensmeldungen, Unfallschäden und sogar Diebstahlschutz. Sieh, was enthalten ist.",
+              "channel": "Email"
+            },
+            {
+              "title": "3 Jahre Seelenfrieden",
+              "description": "Tag 20: Value Proposition",
+              "content": "Laptops halten typischerweise 3-5 Jahre. Erweitere deine Abdeckung entsprechend - 3 Jahre Schutz für nur [X]€ gesamt. Es lohnt sich.",
+              "channel": "Email"
+            },
+            {
+              "title": "Finale Erinnerung",
+              "description": "Tag 28: Letzte Chance",
+              "content": "Letzte Chance, deinen [Laptop] zu schützen. Anmeldung endet in 48 Stunden. Füge jetzt Schutz hinzu: [Link]",
+              "channel": "SMS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Loyalitäts- & Tech-Rewards",
+      "target": "Wiederholungskäufer und Marken-Enthusiasten",
+      "objective": "Customer Lifetime Value um 40% durch Loyalitätsprogramm-Engagement und Rewards-Einlösung erhöhen",
+      "kpi": "Punkte-Sammelrate, Rewards-Einlöserate (Ziel: 70%), Wiederkaufrate unter Mitgliedern (Ziel: 50%), VIP-Stufen-Aufstieg",
+      "description": "Gestuftes Loyalitätsprogramm mit Tech-spezifischen Belohnungen, Early-Access-Vorteilen und Experten-Support, das deine besten Kunden anerkennt und belohnt.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden, die VIP-Status-Schwelle erreichen",
+          "scenario_objective": "VIP-Vorteile feiern und aktivieren",
+          "main_messages_ideas": "VIP-Willkommen, Exklusive Vorteile, Experten-Zugang, Early Access",
+          "message_sequence": [
+            {
+              "title": "Du bist VIP!",
+              "description": "Bei Erreichen der Schwelle: Große Begrüßung",
+              "content": "Willkommen bei [Marke] VIP! Du hast freigeschaltet: 5% zurück auf alle Käufe, kostenloser Express-Versand, Early Access zu Launches, dedizierter Tech-Support und verlängerte Rückgabefristen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Dein VIP-Tech-Concierge",
+              "description": "Tag 3: Premium-Support-Intro",
+              "content": "Als VIP hast du jetzt Zugang zu unserem Tech-Concierge-Team. Produktfragen, Setup-Hilfe, Fehlerbehebung - sie sind deine dedizierten Experten. So erreichst du sie.",
+              "channel": "Email"
+            },
+            {
+              "title": "VIP Early Access",
+              "description": "Tag 7: Vorteil-Highlight",
+              "content": "VIP-Vorteil-Erinnerung: Du bekommst Early Access zu allen Neuprodukt-Launches - normalerweise 24-48 Stunden vor der Öffentlichkeit. Halte Ausschau in deinem Posteingang!",
+              "channel": "Email"
+            },
+            {
+              "title": "Dein Punktestand",
+              "description": "Monatlich: Engagement",
+              "content": "VIP-Update: Du hast [X] Punkte zum Einlösen. Hier ist, was du dafür bekommst - von Zubehör bis exklusiven Rabatten. Nutze sie, bevor sie verfallen!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Mitglieder mit Risiko des Stufen-Abstiegs",
+          "scenario_objective": "Aktivität ermutigen, um Status zu halten",
+          "main_messages_ideas": "Status-Warnung, Einfache Wege zum Erhalt, Spezielles Angebot",
+          "message_sequence": [
+            {
+              "title": "Behalte deinen VIP-Status",
+              "description": "60 Tage vor Jahresende: Warnung",
+              "content": "Du bist [X Punkte] davon entfernt, VIP-Status für ein weiteres Jahr zu behalten. Verlier deine Vorteile nicht! Hier sind einfache Wege, deinen Status zu halten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Doppelte-Punkte-Woche",
+              "description": "30 Tage vorher: Incentive",
+              "content": "VIP-Status-Boost: Verdiene diese Woche doppelte Punkte! Die perfekte Zeit, um das Produkt zu holen, das du im Auge hattest, und deinen Status zu sichern.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzte Chance",
+              "description": "7 Tage vorher: Dringlichkeit",
+              "content": "7 Tage, um VIP-Status zu behalten! Tätige irgendeinen Kauf, um deine Vorteile für ein weiteres Jahr zu sichern. Verlier nicht kostenlosen Versand und Early Access!",
+              "channel": "SMS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Reaktivierung",
+      "target": "Kunden, die seit 12+ Monaten nicht gekauft haben",
+      "objective": "15% der inaktiven Kunden mit personalisierten Angeboten basierend auf Kaufhistorie reaktivieren",
+      "kpi": "Reaktivierungsrate (Ziel: 15%), Win-Back-Umsatz, Kategorie-Engagement, Feedback-Sammelrate",
+      "description": "Strategische Re-Engagement-Sequenz basierend auf Kunden-Tech-Präferenzen und Kaufhistorie, mit relevanten Updates und Incentives.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden inaktiv 12-18 Monate",
+          "scenario_objective": "Sanftes Re-Engagement mit Tech-Updates",
+          "main_messages_ideas": "Was es Neues gibt, Kategorie-Updates, Punkte-Erinnerung, Rückkehrer-Angebot",
+          "message_sequence": [
+            {
+              "title": "Tech hat sich entwickelt",
+              "description": "Tag 365: Was es Neues gibt",
+              "content": "Eine Menge hat sich in Tech verändert, seit wir dich zuletzt gesehen haben! Hier ist, was es Neues in [ihrer Kategorie-Interesse] gibt: bessere Features, bessere Preise, bessere Optionen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Deine Punkte warten",
+              "description": "Tag 380: Punkte-Erinnerung",
+              "content": "Wusstest du? Du hast noch [X] Punkte bei uns. Sie verfallen in 90 Tagen - nutze sie, bevor sie weg sind!",
+              "channel": "Email"
+            },
+            {
+              "title": "Willkommen-Zurück-Angebot",
+              "description": "Tag 400: Incentive",
+              "content": "Wir vermissen dich! Hier sind 15% Rabatt auf deinen nächsten Einkauf - ob du upgradest, dein Setup erweiterst oder etwas Neues ausprobierst.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden inaktiv 18+ Monate",
+          "scenario_objective": "Starkes Re-Engagement oder eleganter Abgang",
+          "main_messages_ideas": "Bestes Angebot, Tech-Refresh, Präferenz-Update",
+          "message_sequence": [
+            {
+              "title": "Immer noch an Tech interessiert?",
+              "description": "Tag 540: Re-Engagement",
+              "content": "Wir haben dich eine Weile nicht gesehen! Wenn du immer noch Tech-affin bist, hier ist, was du verpasst hast - plus unser bestes Angebot, um dich zurück zu begrüßen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bestes Angebot",
+              "description": "Tag 560: Starkes Incentive",
+              "content": "Unser bester Deal für Rückkehrer: 20% Rabatt auf alles + kostenlose 2-Jahre-Garantie auf Elektronik. Nur für begrenzte Zeit.",
+              "channel": "Email"
+            },
+            {
+              "title": "Präferenzen aktualisieren",
+              "description": "Tag 580: List Hygiene",
+              "content": "Willst du anderen Content von uns? Aktualisiere deine Präferenzen: A) Nur Tech-Deals, B) Neuprodukt-Alerts, C) Abmelden. Wir respektieren deine Wahl.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Empfehlungs- & Bewertungsprogramm",
+      "target": "Zufriedene Kunden nach Kauf und Onboarding",
+      "objective": "15% der Neukunden durch Empfehlungen und 25% Bewertungsrate erreichen",
+      "kpi": "Empfehlungsrate (Ziel: 10% der Kunden), Bewertungs-Abgaberate (Ziel: 25%), Empfehlungs-Konversion, UGC-Generierung",
+      "description": "Advocacy-Programm, das zufriedene Kunden durch strategische Empfehlungs-Incentives und Bewertungsanfragen zu Markenbotschaftern macht.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden nach positivem Check-in (2 Wochen)",
+          "scenario_objective": "Zufriedene Kunden zu Advocates konvertieren",
+          "main_messages_ideas": "Bewertungsanfrage, Empfehlungs-Einladung, Social Sharing",
+          "message_sequence": [
+            {
+              "title": "Teile deine Erfahrung",
+              "description": "Tag 21: Bewertungsanfrage",
+              "content": "Gefällt dir dein [Produkt]? Hilf anderen, selbstbewusste Entscheidungen zu treffen! Hinterlasse eine Bewertung und verdiene [X] Reward-Punkte. Deine Meinung zählt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kennst du einen Tech-Lover?",
+              "description": "Tag 28: Empfehlungs-Einladung",
+              "content": "Liebst du dein [Produkt]? Teile die Liebe! Gib Freunden 25€ Rabatt auf ihre erste Bestellung und du bekommst 25€ zurück. Einfaches Teilen - sende einfach deinen Link.",
+              "channel": "Email"
+            },
+            {
+              "title": "Zeig dein Setup",
+              "description": "Tag 35: UGC-Anfrage",
+              "content": "Wir würden gerne dein Setup sehen! Teile ein Foto mit #[Marke]Tech für die Chance, gefeatured zu werden und eine 100€-Geschenkkarte zu gewinnen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Hochwertige Wiederholungskäufer",
+          "scenario_objective": "Als Markenbotschafter aktivieren",
+          "main_messages_ideas": "Ambassador-Einladung, Affiliate-Programm, Community-Zugang",
+          "message_sequence": [
+            {
+              "title": "Werde Ambassador",
+              "description": "Basierend auf Kaufhistorie: Einladung",
+              "content": "Du bist ein Tech-Power-User und wir haben es bemerkt! Tritt unserem Ambassador-Programm bei: verdiene Provisionen, bekomme Early Access zu Produkten und teile deine Leidenschaft.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ambassador-Willkommen",
+              "description": "Bei Anmeldung: Onboarding",
+              "content": "Willkommen in der [Marke] Ambassador-Familie! Hier ist dein Toolkit: einzigartiger Empfehlungs-Code, Produktproben und direkter Draht zu unserem Team.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Deal- & Flash-Sale-Events",
+      "target": "Alle Kunden segmentiert nach Präferenzen und Kaufhistorie",
+      "objective": "Umsatz während Sale-Events maximieren bei gleichzeitiger Kundenbeziehungsqualität",
+      "kpi": "Sale-Event-Umsatz (Ziel: 30% Steigerung), E-Mail-Engagement während Events, Konversionsrate während Sales, Durchschnittlicher Bestellwert während Sales",
+      "description": "Strategische Sale- und Deal-Event-Kommunikationen, die Dringlichkeit erzeugen ohne Markenwert zu erodieren, mit relevanten Angeboten für die richtigen Kunden.",
+      "scenarios": [
+        {
+          "scenario_target": "Alle Kunden während großer Sales (Black Friday, Prime Day-Äquivalente)",
+          "scenario_objective": "Sale-Event-Umsatz maximieren",
+          "main_messages_ideas": "VIP Early Access, Deal-Enthüllungen, Kategorie-spezifische Picks, Letzte Chance",
+          "message_sequence": [
+            {
+              "title": "VIP Early Access",
+              "description": "24 Stunden vorher: Exklusiver Zugang",
+              "content": "Dein exklusiver Zugang startet JETZT! Shoppe [Sale-Event] Deals 24 Stunden früher. Beste Preise des Jahres in deinen Lieblingskategorien.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sale ist live!",
+              "description": "Sale-Start: Haupt-Ankündigung",
+              "content": "[Sale-Event] ist DA! Bis zu 50% Rabatt auf Elektronik, Zubehör und Smart Home. Deine personalisierten Picks basierend auf deiner Wunschliste und Interessen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Deals nur für dich",
+              "description": "Tag 2: Personalisierte Picks",
+              "content": "Basierend auf deinen Interessen: Die [Sale-Event] Deals, die du nicht verpassen willst. [Kategorie]-Favoriten bis zu [X]% reduziert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Flash-Deal-Alert",
+              "description": "Während Sale: Begrenzte Zeit",
+              "content": "FLASH DEAL: [Produkt, das du angesehen hast] ist [X]% reduziert nur für die nächsten 6 Stunden! Jetzt zugreifen: [Link]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Letzte Stunden",
+              "description": "Ende des Sales: Dringlichkeit",
+              "content": "Letzte Chance! [Sale-Event] endet heute Nacht um Mitternacht. Nicht verpassen - deine Warenkorb-Artikel sind vielleicht nie wieder im Sale.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden mit spezifischen Kategorie-Interessen",
+          "scenario_objective": "Kategorie-spezifische Deal-Alerts",
+          "main_messages_ideas": "Preisfall-Alerts, Kategorie-Deals, Bestand-Warnungen",
+          "message_sequence": [
+            {
+              "title": "Preisfall-Alert",
+              "description": "Bei Preisfall: Sofort",
+              "content": "Alert: [Produkt in ihrer Interesse-Kategorie] ist gerade auf [Preis] gefallen - der niedrigste Stand, den wir gesehen haben. Das passt zu deinem Tech-Profil!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Wöchentlicher Deal-Digest",
+              "description": "Wöchentlich: Kuratierte Deals",
+              "content": "Die besten Deals dieser Woche in [ihren Kategorien]: Handverlesen von unserem Team. Neue Deals jede Woche - hier ist, was es wert ist zuzugreifen.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Willkommen & Tech-Profil",
+      "why_brevo_is_better": "Brevos fortschrittliche Umfrage-Integration erfasst Tech-Präferenzen und aktuelle Ökosystem-Informationen und leitet Kunden sofort in personalisierte Journeys. Dynamische Inhalte zeigen verschiedene Produkte basierend auf dem Tech-Profil in allen Kommunikationen.",
+      "omnichannel_channels": "E-Mail für detaillierte Produkt-Inhalte + SMS für Flash-Deals und Bestand-Alerts + Push für Preisfälle",
+      "setup_efficiency": "Vorgefertigte Elektronik-Templates mit Produktkategorie-Logik helfen dir, schnell zu starten. Integration mit deinem Produkt-Feed ermöglicht Echtzeit-Bestand- und Preis-Updates."
+    },
+    {
+      "scenario_name": "Produkt-Onboarding & Setup",
+      "why_brevo_is_better": "Produktbasierte Automation stellt sicher, dass jeder Kunde maßgeschneiderte Onboarding-Inhalte basierend auf seinem spezifischen Kauf erhält. Video-Integration, PDF-Guides und dynamische Inhalte erstellen umfassende Support-Sequenzen.",
+      "omnichannel_channels": "E-Mail für detaillierte Setup-Guides + SMS für Quick-Tipps + Push für Feature-Entdeckung",
+      "setup_efficiency": "Content-Templates nach Produktkategorie machen es einfach, Qualität über deinen gesamten Katalog zu erhalten. Integration mit Support-Systemen reduziert Ticket-Volumen automatisch."
+    },
+    {
+      "scenario_name": "Upgrade-Zyklus-Marketing",
+      "why_brevo_is_better": "Kaufdatum-Trigger ermöglichen perfekt getimte Upgrade-Kommunikationen basierend auf Produktlebenszyklus. Integration mit Trade-In-Systemen liefert Echtzeit-Wertschätzungen für Personalisierung.",
+      "omnichannel_channels": "E-Mail für detaillierte Vergleiche + SMS für Trade-In-Wert-Alerts + Push für limitierte Angebote",
+      "setup_efficiency": "Einmal einrichten und Automation handhabt das Timing. Trigger feuern automatisch basierend auf Kaufdatum, Produktkategorie und Kunden-Engagement."
+    },
+    {
+      "scenario_name": "Neuprodukt-Launch",
+      "why_brevo_is_better": "Segment-basierte Automation stellt sicher, dass VIPs Early Access bekommen, während allgemeine Abonnenten passende Nachrichten erhalten. Pre-Order-Tracking und Launch-Tag-Koordination sind in Workflows eingebaut.",
+      "omnichannel_channels": "E-Mail für Launch-Ankündigungen + SMS für Verfügbarkeits-Alerts + Push für Pre-Order-Updates",
+      "setup_efficiency": "Launch-Templates mit eingebauten Countdown-Timern und Bestand-Integration. Automatische Segment-Erstellung basierend auf Kategorie-Interesse und Kaufhistorie."
+    },
+    {
+      "scenario_name": "Deal- & Flash-Sale-Events",
+      "why_brevo_is_better": "Echtzeit-Preisfall-Trigger und Bestand-Integration ermöglichen personalisierte Deal-Alerts. Dynamische Inhalte zeigen relevante Deals basierend auf Browsing-Historie und Tech-Profil.",
+      "omnichannel_channels": "E-Mail für Deal-Digests + SMS für Flash-Deals + Push für Preisfälle bei Wunschliste-Artikeln",
+      "setup_efficiency": "Sale-Event-Templates mit Countdown-Timern, Bestand-Warnungen und personalisierten Picks. Integration mit E-Commerce-Plattform für Echtzeit-Deal-Daten."
+    }
+  ],
+  "conclusion": "Elektronik-Händler, die diese Beziehungsmarketing-Programme implementieren, können mit deutlich höherem Customer Lifetime Value durch strategische Upgrade-Zyklen rechnen, reduzierten Retouren durch umfassendes Onboarding und stärkeren Zubehör-Attach-Raten durch Ökosystem-Marketing. Der Schlüssel zum Erfolg im Tech-Einzelhandel ist, Kunden als Tech-Enthusiasten zu behandeln, die Expertise und Support schätzen - nicht nur als Transaktionsziele. Durch die Kombination von personalisierten Empfehlungen, perfekt getimtem Upgrade-Marketing und außergewöhnlichem Nach-Kauf-Support bauen Sie das Vertrauen auf, das Kunden für jeden Tech-Bedarf zurückkommen lässt. In einem Markt, in dem Produkte oft austauschbar sind, wird die Kundenbeziehung zu Ihrem Wettbewerbsvorteil."
+}

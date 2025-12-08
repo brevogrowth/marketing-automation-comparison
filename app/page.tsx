@@ -142,16 +142,6 @@ export default function Home() {
     return true;
   };
 
-  // Generate static plan (no email required)
-  const handleGenerateStaticPlan = () => {
-    loadStaticPlan(industry);
-
-    // Scroll to plan
-    setTimeout(() => {
-      planRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-  };
-
   // Generate personalized plan (requires email)
   const handleGeneratePersonalizedPlan = () => {
     if (!validateDomain(domain)) {
@@ -331,7 +321,6 @@ export default function Home() {
               setIndustry={handleIndustryChange}
               domain={domain}
               setDomain={setDomain}
-              onGenerateStaticPlan={handleGenerateStaticPlan}
               onGeneratePersonalizedPlan={handleGeneratePersonalizedPlan}
               isLoading={isLoading}
               isUnlocked={isUnlocked}

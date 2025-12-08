@@ -1,0 +1,854 @@
+{
+  "introduction": "Dieser umfassende Marketing-Beziehungsplan wurde speziell für Lebensmittel- und Feinkosthändler entwickelt, die leidenschaftliche Kundengemeinschaften durch personalisierte Geschmacksentdeckung, intelligente Abo-Modelle, rezeptbasiertes Engagement und saisonales Storytelling aufbauen möchten. In der Lebensmittelbranche liegt der Erfolg im Verständnis der kulinarischen Reise jedes Kunden – von der Entdeckung neuer Geschmacksrichtungen bis zum Meistern von Rezepten, von der bequemen Nachbestellung bis zum Feiern besonderer Anlässe mit Premium-Zutaten. Dieser Plan adressiert den gesamten Kundenlebenszyklus von der ersten Entdeckung bis zur Markenbotschaft und nutzt die emotionale Verbindung, die Menschen mit Essen haben, um dauerhafte Beziehungen zu schaffen.",
+  "company_summary": {
+    "name": "Lebensmittel- & Feinkostmarke",
+    "website": "beispiel-feinkost.de",
+    "activities": "Spezialitäten-Lebensmittel- und Feinkosthandel, einschließlich handwerklicher Produkte, Craft-Getränke, Kochboxen, Gourmet-Zutaten, Vorratskammer-Basics, Frischeprodukt-Abonnements und Küchenzubehör",
+    "target": "Genussbegeisterte und Hobbyköche im Alter von 25-55 Jahren, die Qualitätszutaten, einzigartige Aromen, kulinarische Inspiration und bequemen Zugang zu Spezialitäten suchen",
+    "industry": "Lebensmittel",
+    "business_model": "B2C Einzelhandel",
+    "customer_lifecycle_key_steps": "Entdeckung > Geschmacksprofil > Erstkauf > Rezept-Engagement > Nachbestellung > Abonnement > VIP-Feinschmecker-Status > Markenbotschafter"
+  },
+  "programs_list": [
+    {
+      "program_name": "Willkommen & Geschmacksprofil-Entdeckung",
+      "target": "Neue Abonnenten und Erstbesucher der Website",
+      "objective": "Personalisierte Geschmacksprofile aufbauen, um Ernährungspräferenzen, Geschmacksfavoriten und Kochstil zu verstehen, mit 45% Quiz-Abschluss und 22% Erstkauf-Konversion innerhalb von 14 Tagen bei einem durchschnittlichen Bestellwert über 50€",
+      "kpi": "Geschmacks-Quiz-Abschlussrate (Ziel: 45%), Erstkauf-Konversion (Ziel: 22%), Durchschnittlicher Erstbestellwert (Ziel: 50€+), E-Mail-Engagement-Rate (Ziel: 35%)",
+      "description": "Eine umfassende Willkommensreise, die die einzigartigen Essens-Vorlieben jedes Kunden entdeckt – von Geschmacksprofilen und Ernährungseinschränkungen bis zum Kochkönnen und Mahlzeitenplanungsgewohnheiten. Nutzt progressives Profiling, um reichhaltige Kundendaten zu sammeln, die personalisierte Empfehlungen über alle zukünftigen Interaktionen hinweg ermöglichen.",
+      "scenarios": [
+        {
+          "scenario_target": "Neue E-Mail-Abonnenten aus Pop-up, Footer oder Rezept-Download",
+          "scenario_objective": "Zu Geschmacksprofil-Abschluss und Erstkauf konvertieren",
+          "main_messages_ideas": "Herzliche Begrüßung, Geschmacks-Quiz-Einladung, personalisierte Auswahl, Rezept-Inspiration, Erstkauf-Anreiz",
+          "message_sequence": [
+            {
+              "title": "Willkommen zur Geschmacksentdeckung",
+              "description": "Sofortige Begrüßung mit Markengeschichte und Quiz-Einladung",
+              "content": "Willkommen bei [Marke]! Wir glauben, dass jeder Zugang zu großartigen Zutaten verdient. Machen Sie unser 2-minütiges Geschmacksprofil-Quiz, um Produkte zu entdecken, die zu Ihrem Gaumen passen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kurze Geschmacks-Quiz-Erinnerung",
+              "description": "Tag 1: SMS-Erinnerung für Nicht-Abschließer",
+              "content": "Immer noch hungrig nach tollen Empfehlungen? Vervollständigen Sie Ihr Geschmacksprofil in 2 Minuten und entsperren Sie personalisierte Auswahl: [Link]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Ihr Personalisiertes Küchen-Starter-Kit",
+              "description": "Tag 2: Kuratierte Empfehlungen basierend auf Quiz-Ergebnissen oder Browsing-Verhalten",
+              "content": "Basierend auf Ihrem Geschmacksprofil sind hier 12 Produkte, die wir denken, dass Sie lieben werden. Von [Geschmacks]-Liebhabern bis [Ernährungspräferenz]-Entdeckern – wir haben Ihre Vorratskammer abgedeckt.",
+              "channel": "Email"
+            },
+            {
+              "title": "3 Rezepte, die Sie Lieben Werden",
+              "description": "Tag 4: Rezept-Inhalte passend zu ihrem Profil",
+              "content": "Bereit zum Kochen? Hier sind 3 von Köchen kuratierte Rezepte, perfekt für Ihr Geschmacksprofil, mit Zutaten, die Sie mit einem Klick bestellen können.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihre Erste Bestellung Wartet",
+              "description": "Tag 7: Erstkauf-Anreiz",
+              "content": "Starten Sie Ihre Geschmacksreise mit 15% Rabatt auf Ihre erste Bestellung + kostenloser Versand ab 35€. Ihre personalisierten Produkte warten!",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzte Chance: Willkommensangebot Läuft Aus",
+              "description": "Tag 12: Dringlichkeitsnachricht für Nicht-Konvertierer",
+              "content": "Ihr 15% Willkommensangebot läuft in 48 Stunden ab! Verpassen Sie nicht Ihre Chance, [Empfohlene Produkte] zu einem besonderen Preis zu probieren.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Browse-Abbrecher, die Produkte angesehen haben, ohne sich anzumelden",
+          "scenario_objective": "E-Mail erfassen und Profil aufbauen",
+          "main_messages_ideas": "Produkt-basierter Einstieg, Kategorie-Erkundung, exklusiver Zugang",
+          "message_sequence": [
+            {
+              "title": "Das [Produkt], Das Sie Erkundet Haben",
+              "description": "Ausgelöst durch Browse-Abbruch mit E-Mail-Erfassung",
+              "content": "Denken Sie noch über [Angesehenes Produkt] nach? Hier ist alles, was Sie wissen müssen, warum Feinschmecker nicht genug davon bekommen können.",
+              "channel": "Email"
+            },
+            {
+              "title": "Mehr Aus Dieser Kollektion",
+              "description": "Tag 2: Kategorie-Erweiterung",
+              "content": "Hat Ihnen die [Kategorie] gefallen? Entdecken Sie unsere vollständige Kollektion handwerklicher [Produkte] aus der ganzen Welt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Insider-Zugang Freischalten",
+              "description": "Tag 5: Profil-Vervollständigungs-Anreiz",
+              "content": "Vervollständigen Sie Ihr Geschmacksprofil für frühen Zugang zu limitierten Editionen, saisonalen Produkten und exklusiven Mitgliederpreisen.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Warenkorbabbruch & Browse-Recovery",
+      "target": "Besucher, die Artikel zum Warenkorb hinzugefügt oder ausgiebig ohne Kauf gestöbert haben",
+      "objective": "18% der abgebrochenen Warenkörbe innerhalb von 48 Stunden und 8% der Browse-Abbrecher innerhalb von 7 Tagen zurückgewinnen",
+      "kpi": "Warenkorb-Recovery-Rate (Ziel: 18%), Browse-Recovery-Rate (Ziel: 8%), Zeit bis Recovery (Ziel: <48h für Warenkorb), Recovery-AOV vs Standard (Ziel: +10%)",
+      "description": "Multi-Channel-Recovery-Sequenzen, die häufige Bedenken beim Lebensmitteleinkauf ansprechen – Frische-Sorgen, Versandfragen, Portionsgrößen und Rezept-Unsicherheit. Nutzt produktspezifische Nachrichten und Dringlichkeit bei verderblichen Waren.",
+      "scenarios": [
+        {
+          "scenario_target": "Warenkorb-Abbrecher mit Artikeln ab 25€",
+          "scenario_objective": "Warenkorb innerhalb von 24 Stunden zurückgewinnen",
+          "main_messages_ideas": "Produkt-Erinnerung, Frische-Garantie, Rezept-Inspiration, Versand-Anreiz, Knappheit bei limitierten Artikeln",
+          "message_sequence": [
+            {
+              "title": "Ihr Warenkorb Wird Hungrig",
+              "description": "1 Stunde nach Abbruch",
+              "content": "Sie haben köstliche Artikel zurückgelassen! Ihre [Produkte] sind gespeichert und bereit zur Kasse. Fragen zu Frische oder Versand? Wir helfen gerne.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kurze Erinnerung: Warenkorb Gespeichert",
+              "description": "4 Stunden: SMS für bekannte Mobile-Nutzer",
+              "content": "Ihre [Produktanzahl] Gourmet-Artikel warten! Schließen Sie Ihre Bestellung ab, bevor [Verderblicher Artikel] ausverkauft ist: [Link]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Hier Ist Was Sie Kochen Können",
+              "description": "Tag 1: Rezept-Inspiration mit Warenkorb-Artikeln",
+              "content": "Mit den Artikeln in Ihrem Warenkorb könnten Sie [Rezept 1], [Rezept 2] oder [Rezept 3] zubereiten. Lassen Sie sich inspirieren und vollenden Sie Ihr kulinarisches Abenteuer.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kostenloser Versand Freigeschaltet",
+              "description": "Tag 2: Anreiz für Warenkörbe ab 45€",
+              "content": "Gute Nachrichten! Wir haben kostenlosen Versand für Ihre Bestellung freigeschaltet. Schließen Sie die Bestellung in den nächsten 24 Stunden ab, um dieses Angebot zu nutzen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Artikel Verkaufen Sich Schnell",
+              "description": "Tag 3: Knappheits-Nachricht für limitierte Artikel",
+              "content": "[Limitiertes Produkt] in Ihrem Warenkorb wird knapp! Nur noch [X] auf Lager. Sichern Sie sich Ihres, bevor es weg ist.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Browse-Abbrecher, die 3+ Produkte angesehen haben, ohne sie in den Warenkorb zu legen",
+          "scenario_objective": "Rückkehr und Produktentdeckung fördern",
+          "main_messages_ideas": "Kategorie-Highlights, ähnliche Produkte, Rezept-Inhalte, Probier-Möglichkeit",
+          "message_sequence": [
+            {
+              "title": "Noch [Kategorie] Erkunden?",
+              "description": "Tag 1: Kategorie-fokussiertes Follow-up",
+              "content": "Wir haben gesehen, dass Sie unsere [Kategorie]-Kollektion durchstöbert haben. Hier sind unsere Top-Picks, die von Kunden mit ähnlichen Geschmacksprofilen geliebt werden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Probieren Vor Dem Kaufen",
+              "description": "Tag 3: Probier-Set oder kleinere Größen-Option",
+              "content": "Nicht sicher, welches Sie wählen sollen? Unser [Kategorie]-Probierpaket lässt Sie 5 Favoriten testen, bevor Sie sich für volle Größen entscheiden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Kundenfavoriten, Die Sie Verpasst Haben",
+              "description": "Tag 5: Social Proof und Empfehlungen",
+              "content": "Diese [Kategorie]-Produkte haben über 500 5-Sterne-Bewertungen von Feinschmeckern wie Ihnen. Sehen Sie, was Sie verpasst haben.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Nach-Kauf-Erlebnis & Rezept-Aktivierung",
+      "target": "Kürzliche Käufer innerhalb von 1-14 Tagen nach Lieferung",
+      "objective": "Produktzufriedenheit maximieren, Rezept-Engagement mit 40% Öffnungsrate fördern und Bewertungsabgabe auf 12% erhöhen",
+      "kpi": "Rezept-E-Mail-Engagement (Ziel: 40% Öffnung), Bewertungsabgabe-Rate (Ziel: 12%), Zweiter Kauf innerhalb 30 Tagen (Ziel: 25%), Support-Ticket-Rate (Ziel: <3%)",
+      "description": "Umfassende Nach-Kauf-Reise, die sicherstellt, dass Kunden wissen, wie sie ihre Produkte lagern, verwenden und genießen können. Bietet Rezept-Inspiration, Nutzungstipps und bittet um Feedback, um Zufriedenheit und Wiederholungskäufe zu fördern.",
+      "scenarios": [
+        {
+          "scenario_target": "Erstkäufer, die ihre Bestellung erhalten",
+          "scenario_objective": "Produkterfolg sicherstellen und zweiten Kauf fördern",
+          "main_messages_ideas": "Lieferbestätigung, Lagerungstipps, Rezept-Inspiration, Feedback-Anfrage, Cross-Sell",
+          "message_sequence": [
+            {
+              "title": "Ihre Bestellung Ist Unterwegs",
+              "description": "Versandbestätigung mit Vorfreude-Aufbau",
+              "content": "Ihre Gourmet-Bestellung ist unterwegs! Während Sie warten, hier wie Sie Ihre [Produkte] bei Ankunft für maximale Frische lagern.",
+              "channel": "Email"
+            },
+            {
+              "title": "Lieferbenachrichtigung",
+              "description": "Lieferbestätigung",
+              "content": "Ihre [Marke]-Bestellung ist angekommen! Prüfen Sie die Lieferhinweise für temperaturempfindliche Artikel. Guten Appetit!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Ihr Erster Rezeptführer",
+              "description": "Tag 2 nach Lieferung: Produktspezifische Rezepte",
+              "content": "Bereit zum Kochen? Hier sind 5 Rezepte mit Ihren neuen [Produkten], von schnellen Wochentags-Abendessen bis zu beeindruckenden Wochenend-Mahlzeiten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wie Schmeckt Alles?",
+              "description": "Tag 5: Zufriedenheits-Check und Bewertungsanfrage",
+              "content": "Wir würden gerne von Ihren Erfahrungen mit [Produkten] hören. Teilen Sie Ihre Gedanken und helfen Sie anderen Feinschmeckern, ihren nächsten Favoriten zu entdecken.",
+              "channel": "Email"
+            },
+            {
+              "title": "Vervollständigen Sie Ihre Vorratskammer",
+              "description": "Tag 10: Cross-Sell ergänzender Produkte",
+              "content": "Genießen Sie Ihre [Gekauften Produkte]? Hier sind perfekte Kombinationen, die andere Kunden gerne damit kombinieren.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Stammkäufer, die ihr Produktsortiment erweitern",
+          "scenario_objective": "Engagement vertiefen und Experimentierfreude fördern",
+          "main_messages_ideas": "Fortgeschrittene Rezepte, Kochtechniken, Produkt-Vertiefungen, Community-Features",
+          "message_sequence": [
+            {
+              "title": "Heben Sie Ihr [Produkt]-Können auf das Nächste Level",
+              "description": "Tag 3: Fortgeschrittene Nutzungstipps für Stammkunden",
+              "content": "Sie haben die Grundlagen mit [Produkt] gemeistert. Hier sind Profi-Techniken, um Ihre Gerichte auf das nächste Level zu bringen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Hinter Dem Produkt",
+              "description": "Tag 7: Produzenten-Geschichte und Herkunft",
+              "content": "Lernen Sie den Handwerker hinter Ihrem [Produkt] kennen: [Produzenten-Geschichte]. Erfahren Sie mehr über das Handwerk und die Tradition in jedem Bissen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Werden Sie Teil Der Konversation",
+              "description": "Tag 12: Community-Einladung",
+              "content": "Teilen Sie Ihre Kreationen! Markieren Sie uns mit #[Markenname] oder treten Sie unserer Community von Feinschmeckern bei, die Rezepte und Tipps teilen.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Nachbestellung & Abo-Konversion",
+      "target": "Kunden, die Verbrauchsprodukte gekauft haben (Kaffee, Tee, Öle, Gewürze, Vorratskammer-Basics)",
+      "objective": "20% Abo-Konversionsrate erreichen und 85% Nachbestellungs-Timing-Genauigkeit beibehalten mit AOV-Steigerung von 15% für Abonnenten",
+      "kpi": "Abo-Konversionsrate (Ziel: 20%), Nachbestellungs-Timing-Genauigkeit (Ziel: 85%), Abonnenten-Retention nach 6 Monaten (Ziel: 70%), Abonnenten-AOV vs Einmalkäufer (Ziel: +15%)",
+      "description": "Intelligentes Nachbestellungssystem basierend auf Produktverbrauchsmustern, das Einmalkäufer zu Abonnenten konvertiert. Timing variiert nach Produkttyp – Kaffee (3-4 Wochen), Olivenöl (6-8 Wochen), Gewürze (3-4 Monate) – um Kunden zu erreichen, bevor sie leer werden.",
+      "scenarios": [
+        {
+          "scenario_target": "Kaffee- und Teekäufer (hohe Frequenz)",
+          "scenario_objective": "Zu Abonnement innerhalb von 3 Käufen konvertieren",
+          "main_messages_ideas": "Nachschub-Erinnerung, einfache Nachbestellung, Abo-Ersparnis, exklusive Röstungen",
+          "message_sequence": [
+            {
+              "title": "Geht Ihnen [Kaffee/Tee] Aus?",
+              "description": "Tag 21: Basierend auf typischem Verbrauch",
+              "content": "Basierend auf Ihrem Bestelldatum könnte Ihnen [Produkt] bald ausgehen. Bestellen Sie jetzt nach, damit Sie es vor dem Leerwerden erhalten!",
+              "channel": "Email"
+            },
+            {
+              "title": "Schnelle Nachbestellung",
+              "description": "Tag 24: SMS für Mobile-First-Kunden",
+              "content": "Brauchen Sie mehr [Produkt]? Tippen Sie, um Ihren Favoriten mit einem Klick nachzubestellen: [Link]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Nie Wieder Leer: Abonnieren & 15% Sparen",
+              "description": "Nach dem 2. Kauf: Abo-Pitch",
+              "content": "Sie haben [Produkt] zweimal nachbestellt. Sparen Sie für immer 15% mit einem Abo – plus kostenloser Versand und früher Zugang zu neuen Röstungen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Abonnenten-Exklusiv: Limitierte Edition",
+              "description": "FOMO für Abonnement",
+              "content": "Die monatlich exklusive [Produkt]-Edition für Abonnenten ist da. Abonnieren Sie jetzt, um nie eine limitierte Veröffentlichung zu verpassen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Vorratskammer-Käufer (Öle, Essige, Getreide)",
+          "scenario_objective": "Nachbestellungs-Kadenz und Abonnement etablieren",
+          "main_messages_ideas": "Vorratskammer-Check-in, Bundle-Ersparnis, flexible Planung",
+          "message_sequence": [
+            {
+              "title": "Vorratskammer-Check-In",
+              "description": "Woche 6-8: Basierend auf typischem Verbrauch",
+              "content": "Wie hält sich Ihr [Produkt]? Die meisten Kunden stocken um diese Zeit nach. Bestellen Sie heute für Wochenend-Lieferung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Stellen Sie Ihr Vorratskammer-Bundle Zusammen",
+              "description": "Woche 8: Bundle-Upsell",
+              "content": "Auffüllen und sparen! Erstellen Sie ein individuelles Vorratskammer-Bundle mit Ihren Basics und sparen Sie 20% bei Bestellungen über 70€.",
+              "channel": "Email"
+            },
+            {
+              "title": "Flexible Abonnements",
+              "description": "Woche 10: Abo mit Flexibilitäts-Betonung",
+              "content": "Einrichten und vergessen – oder jederzeit anpassen. Unsere flexiblen Abos lassen Sie mit einem Klick überspringen, tauschen oder umplanen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Bestehende Abonnenten vor Verlängerung",
+          "scenario_objective": "Abwanderung verhindern und Zusatz-Produkte fördern",
+          "main_messages_ideas": "Verlängerungs-Erinnerung, Abo-Anpassung, Zusatz-Vorschläge, Treue-Belohnungen",
+          "message_sequence": [
+            {
+              "title": "Ihre Nächste Lieferung Kommt",
+              "description": "5 Tage vor Verlängerung",
+              "content": "Ihr [Produkt]-Abo wird in 5 Tagen versendet. Möchten Sie die Menge anpassen, Artikel hinzufügen oder Ihr Lieferdatum ändern?",
+              "channel": "Email"
+            },
+            {
+              "title": "Etwas Neues Hinzufügen?",
+              "description": "3 Tage vorher: Cross-Sell-Möglichkeit",
+              "content": "Abonnenten lieben [Neues Produkt]. Fügen Sie es Ihrer nächsten Lieferung hinzu und sparen Sie 10% als Abonnenten-Vorteil.",
+              "channel": "Email"
+            },
+            {
+              "title": "Abo Versendet + Punkte Gesammelt",
+              "description": "Versandbestätigung mit Treue-Update",
+              "content": "Ihr Abo ist unterwegs! Sie haben diesen Monat [X] Treuepunkte gesammelt – nur noch [Y] bis zu Ihrer nächsten Belohnung.",
+              "channel": "SMS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Saisonale & Feiertags-Kampagnen",
+      "target": "Alle aktiven Kunden und Abonnenten",
+      "objective": "35% Umsatzsteigerung während saisonaler Spitzen mit 25% Geschenkbestellungsrate und 15% Neukundengewinnung durch Geschenke",
+      "kpi": "Saisonale Umsatzsteigerung (Ziel: 35%), Geschenkbestellungsrate (Ziel: 25%), Geschenk-zu-Neukunde-Konversion (Ziel: 15%), Vorbestellungsrate (Ziel: 12%)",
+      "description": "Strategische Kampagnen rund um kulinarische Feiertage und Jahreszeiten – vom Sommer-Grillen über Erntedank-Festmahle bis zu Weihnachtsgeschenken und Valentinstags-Leckereien. Beinhaltet frühen Zugang, Geschenk-Guides und limitierte Editionen.",
+      "scenarios": [
+        {
+          "scenario_target": "Feiertags-Geschenkgeber (Weihnachten, Ostern, Valentinstag)",
+          "scenario_objective": "Geschenkbestellungen und frühzeitige Käufe maximieren",
+          "main_messages_ideas": "Geschenk-Guides nach Empfänger, Frühbucher-Rabatte, Geschenkverpackung, Firmengeschenke",
+          "message_sequence": [
+            {
+              "title": "[Feiertag] Geschenk-Guide Vorschau",
+              "description": "6 Wochen vor Feiertag",
+              "content": "Der ultimative [Feiertag]-Geschenk-Guide für Feinschmecker ist da! Vom Hobbykoch bis zum Abenteuer-Esser – finden Sie das perfekte Geschenk.",
+              "channel": "Email"
+            },
+            {
+              "title": "Frühbucher-Specials",
+              "description": "4 Wochen vorher",
+              "content": "Früh bestellen und sparen! Erhalten Sie 15% Rabatt auf [Feiertag]-Geschenke bis [Datum] + garantierte Lieferung mit kostenloser Geschenkverpackung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Geschenke Unter 50€",
+              "description": "3 Wochen: Budgetfreundliche Optionen",
+              "content": "Beeindruckende Geschenke für jedes Budget: Unsere besten Geschenkideen unter 50€, 30€ und 20€ – alle wunderschön verpackt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Firmengeschenke Leicht Gemacht",
+              "description": "3 Wochen: B2B-Ansatz",
+              "content": "Brauchen Sie Geschenke für Kunden oder Teammitglieder? Unser Firmengeschenk-Programm macht Großbestellungen einfach mit individuellen Nachrichten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzte Versandtermine",
+              "description": "2 Wochen: Deadline-Erinnerung",
+              "content": "Verpassen Sie nicht die Deadline! Bestellen Sie bis [Datum] für Standardversand, [Datum] für Express. [Feiertag]-Lieferung garantiert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzte Stunden Für [Feiertag]-Lieferung",
+              "description": "Versand-Cutoff-Tag",
+              "content": "Heute ist der LETZTE Tag für [Feiertag]-Lieferung! Bestellen Sie bis [Uhrzeit], um rechtzeitige Ankunft zu garantieren. Brauchen Sie einen Backup? E-Geschenkkarten werden sofort geliefert.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Saisonale Koch-Enthusiasten (Grillen, Herbst-Ernte, Winter-Comfort)",
+          "scenario_objective": "Saisonale Produktkäufe fördern",
+          "main_messages_ideas": "Saisonale Kollektionen, Rezepte der Saison, limitierte Editionen, Koch-Events",
+          "message_sequence": [
+            {
+              "title": "[Saison]-Kollektion Ist Da",
+              "description": "Saison-Start-Ankündigung",
+              "content": "[Saison] ist offiziell da! Entdecken Sie unsere kuratierte Kollektion saisonaler Favoriten, von [Produkt 1] bis [Produkt 2].",
+              "channel": "Email"
+            },
+            {
+              "title": "[Saison]-Rezept-Roundup",
+              "description": "Woche 2: Content-getriebenes Engagement",
+              "content": "Nutzen Sie [Saison] optimal mit diesen 10 Rezepten mit saisonalen Zutaten in Bestform und gemütlichen Wohlfühlgerichten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Limitierte Edition Alarm",
+              "description": "Mitte Saison: Knappheits-Produkt",
+              "content": "Gerade erschienen: Unser limitiertes [Saisonales Produkt]. Nur [X] verfügbar – wenn sie weg sind, sind sie bis nächstes Jahr weg.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Saison-Ende-Sale",
+              "description": "Saison-Übergang",
+              "content": "Letzte Chance für [Saison]-Favoriten! Bis zu 30% Rabatt auf ausgewählte saisonale Artikel, solange der Vorrat reicht.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Mahlzeitenplanung & Rezept-Entdeckung",
+      "target": "Engagierte Kunden, die mit Rezept-Inhalten interagieren oder Mahlzeitenplanungs-Produkte kaufen",
+      "objective": "Rezept-Engagement auf 50% Klickrate erhöhen, Kochbox-Adoption auf 8% steigern und AOV um 25% durch rezeptbasierte Bundles erhöhen",
+      "kpi": "Rezept-E-Mail-Klickrate (Ziel: 50%), Kochbox/Bundle-Adoption (Ziel: 8%), Rezept-getriebene AOV-Steigerung (Ziel: +25%), Rezept-Speicherungen/Teilungen (Ziel: 15%)",
+      "description": "Content-reiches Programm, das die Marke als kulinarische Inspirationsquelle positioniert. Bietet wöchentliche Rezepte, saisonale Speisepläne, Technik-Tutorials und einkaufbare Zutatenlisten, um Produktentdeckung und Mehrfach-Artikel-Käufe zu fördern.",
+      "scenarios": [
+        {
+          "scenario_target": "Aktive Rezept-Engagierer",
+          "scenario_objective": "Content-Engagement vertiefen und einkaufbare Rezepte fördern",
+          "main_messages_ideas": "Wöchentliches Rezept, Mahlzeitenplanungs-Tools, Technik-Tutorials, Chef-Partnerschaften",
+          "message_sequence": [
+            {
+              "title": "Diese Woche Muss-Kochen-Rezept",
+              "description": "Wöchentliche Content-E-Mail",
+              "content": "Diese Woche: [Rezeptname] mit [Haupt-Zutat]. Holen Sie sich das Rezept mit einer Ein-Klick-einkaufbaren Zutatenliste.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Wöchentlicher Speiseplan",
+              "description": "Sonntag: Wöchentlicher Planungs-Helfer",
+              "content": "Planen Sie Ihre Woche! Hier sind 5 Rezepte mit einer kombinierten Einkaufsliste – alles, was Sie brauchen, in einem Warenkorb.",
+              "channel": "Email"
+            },
+            {
+              "title": "Meistern Sie [Technik] mit [Chef]",
+              "description": "Zweiwöchentlicher Tutorial-Content",
+              "content": "Lernen Sie [Technik] wie ein Profi! Schauen Sie unser Schritt-für-Schritt-Tutorial und kaufen Sie die Zutaten, um zuhause zu üben.",
+              "channel": "Email"
+            },
+            {
+              "title": "Rezept Gespeichert: Holen Sie Die Zutaten",
+              "description": "Ausgelöst durch Rezept-Speicherung/Lesezeichen",
+              "content": "Sie haben [Rezeptname] gespeichert! Bereit, es zu kochen? Alle Zutaten sind mit Ein-Klick-Bestellung verfügbar.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kochbox- und Bundle-Käufer",
+          "scenario_objective": "Wiederholte Kochbox-Käufe und Abo fördern",
+          "main_messages_ideas": "Neue Kochbox-Ankündigungen, Ernährungs-spezifische Boxen, Abo-Vorteile, Chef-Kollaborationen",
+          "message_sequence": [
+            {
+              "title": "Neue Kochbox-Veröffentlichung",
+              "description": "Wöchentlich: Neue Box-Ankündigung",
+              "content": "Diese Woche Kochbox: [Gericht-Name] für 4 Personen, in 30 Minuten fertig. Alle Zutaten vorportioniert mit Schritt-für-Schritt-Anleitung.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Ernährungs]-Kochbox-Kollektion",
+              "description": "Basierend auf Geschmacksprofil-Präferenzen",
+              "content": "Entdecken Sie unsere [Vegetarisch/Keto/Glutenfrei]-Kochbox-Kollektion – lecker, praktisch und auf Ihre Ernährung abgestimmt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wöchentliches Kochbox-Abo",
+              "description": "Nach dem 2. Box-Kauf",
+              "content": "Lieben Sie die Bequemlichkeit? Abonnieren Sie wöchentliche Kochboxen und sparen Sie 20%. Jede Woche überspringen, jederzeit kündigen.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Treue- & VIP-Feinschmecker-Programm",
+      "target": "Stammkunden mit 2+ Käufen und Treue-Programm-Mitglieder",
+      "objective": "50% Treue-Programm-Anmeldung, 80% Mitglieder-Retention und 45% höherer LTV für VIP-Mitglieder erreichen",
+      "kpi": "Treue-Anmelderate (Ziel: 50%), Mitglieder-Retention-Rate (Ziel: 80%), VIP-LTV vs Normal (Ziel: +45%), Punkte-Einlöserate (Ziel: 65%)",
+      "description": "Gestaffeltes Treueprogramm rund um die Feinschmecker-Community – vom Entdecker über Kenner bis zum Kulinarischen Meister. Mitglieder sammeln Punkte bei Käufen, Rezept-Engagement und Bewertungen, mit Belohnungen wie exklusiven Produkten, frühem Zugang, Kochkursen und Produzenten-Erlebnissen.",
+      "scenarios": [
+        {
+          "scenario_target": "Neue Treueprogramm-Mitglieder (Entdecker-Stufe)",
+          "scenario_objective": "Engagement und Aufstieg zu höheren Stufen fördern",
+          "main_messages_ideas": "Willkommen zum Programm, Sammel-Möglichkeiten, erste Einlösung, Stufen-Aufstieg",
+          "message_sequence": [
+            {
+              "title": "Willkommen Bei [Programmname]!",
+              "description": "Anmelde-Bestätigung",
+              "content": "Sie sind offiziell ein [Marke] Entdecker! Hier erfahren Sie, wie Sie Punkte bei Käufen, Bewertungen und Rezept-Engagement sammeln – plus Ihre ersten 100 Bonuspunkte.",
+              "channel": "Email"
+            },
+            {
+              "title": "Schnelle Punkte: Bewertung Abgeben",
+              "description": "Tag 7: Einfache Sammel-Möglichkeit",
+              "content": "Verdienen Sie 50 Punkte in 2 Minuten! Teilen Sie Ihre Gedanken zu [Letzter Kauf] und helfen Sie anderen Feinschmeckern, etwas Neues zu entdecken.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sie Sind [X] Punkte Von Ihrer Ersten Belohnung Entfernt",
+              "description": "Fortschritts-Update",
+              "content": "Fast geschafft! Ihnen fehlen nur noch [X] Punkte zum Einlösen von [Belohnung]. Bestellen Sie diese Woche, um sie freizuschalten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Aufstieg Zum Kenner",
+              "description": "Wenn Stufen-Schwelle erreicht wird",
+              "content": "Sie sind [X] vom Kenner-Status entfernt! Schalten Sie kostenlosen Versand, exklusive Produkte und Doppelpunkte-Tage frei.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "VIP-Mitglieder (Kenner und Kulinarischer Meister-Stufen)",
+          "scenario_objective": "Retention und Exklusivitäts-Vorteile maximieren",
+          "main_messages_ideas": "Exklusiver Zugang, VIP-Events, Produzenten-Erlebnisse, personalisierter Service",
+          "message_sequence": [
+            {
+              "title": "VIP Früher Zugang: [Produkt]",
+              "description": "48-Stunden exklusiver Zugang zu neuen/limitierten Produkten",
+              "content": "Als [Stufe]-Mitglied erhalten Sie 48 Stunden frühen Zugang zu [Neues Produkt]. Bestellen Sie jetzt vor dem öffentlichen Launch.",
+              "channel": "Email"
+            },
+            {
+              "title": "VIP Exklusiv: Limitierte Edition",
+              "description": "Nur-VIP-Produktangebot",
+              "content": "Exklusiv für unsere Kulinarischen Meister-Mitglieder gemacht: [Limitiertes Produkt]. Nur 200 verfügbar, nicht öffentlich verkauft.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sie Sind Eingeladen: Virtuelle Verkostung mit [Chef]",
+              "description": "VIP-Event-Einladung",
+              "content": "Nehmen Sie an einer exklusiven virtuellen Verkostung mit [Chef/Produzent] teil. Probieren Sie seltene Produkte und lernen Sie direkt von der Quelle.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihre Monatliche VIP-Zusammenfassung",
+              "description": "Monatliches VIP-Status-Update",
+              "content": "Diesen Monat: [X] Punkte gesammelt, [X] eingelöst, [X] bis zur nächsten Belohnung. Ihre VIP-Vorteile: [Aktive Vorteile]. Danke, dass Sie ein [Marke] [Stufe] sind!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Reaktivierung",
+      "target": "Inaktive Kunden ohne Kauf seit 60-180 Tagen",
+      "objective": "15% der inaktiven Kunden reaktivieren und 10% der abgewanderten Abonnenten zurückgewinnen",
+      "kpi": "Inaktive-Kunden-Reaktivierungsrate (Ziel: 15%), Abgewanderte-Abonnenten-Recovery (Ziel: 10%), Win-Back-Kampagnen-ROI (Ziel: 4:1), Reaktivierung-zu-Retention (Ziel: 50%)",
+      "description": "Strategische Reaktivierungs-Sequenzen für verschiedene Inaktivitäts-Zeiträume und Kundensegmente. Adressiert häufige Gründe für Inaktivität – Budget, Wettbewerb, Lebensänderungen – mit personalisierten Angeboten und Produkt-Updates.",
+      "scenarios": [
+        {
+          "scenario_target": "60-90 Tage inaktive Kunden (Frühwarnung)",
+          "scenario_objective": "Reaktivieren bevor vollständige Inaktivität",
+          "main_messages_ideas": "Wir vermissen Sie, was ist neu, personalisierte Empfehlungen, sanfter Anreiz",
+          "message_sequence": [
+            {
+              "title": "Wir Haben Sie Vermisst!",
+              "description": "Tag 60: Sanfte Reaktivierung",
+              "content": "Es ist eine Weile her seit Ihrem letzten Besuch. Hier ist, was sich geändert hat, während Sie weg waren – inklusive 5 Produkte, von denen wir denken, dass Sie sie lieben werden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wir Denken Noch An Sie",
+              "description": "Tag 75: Basierend auf vergangenen Käufen",
+              "content": "Erinnern Sie sich, wie sehr Sie [Vergangener Kauf] geliebt haben? Es ist immer noch da, zusammen mit einigen Neuheiten in derselben Kategorie.",
+              "channel": "Email"
+            },
+            {
+              "title": "Eine Kleine Aufmerksamkeit Für Sie",
+              "description": "Tag 90: Erster Anreiz",
+              "content": "Hier sind 10% Rabatt auf Ihre nächste Bestellung – einfach so. Plus kostenloser Versand ab 30€. Gültig für die nächsten 2 Wochen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "120-180 Tage inaktive Kunden (tiefe Inaktivität)",
+          "scenario_objective": "Aggressive Rückgewinnung mit starkem Anreiz",
+          "main_messages_ideas": "Bedeutendes Angebot, verpasste neue Produkte, Feedback-Anfrage, letzter Versuch",
+          "message_sequence": [
+            {
+              "title": "Wir Wollen Sie Zurück: 25% Rabatt",
+              "description": "Tag 120: Starker Anreiz",
+              "content": "Es ist zu lange her! Hier sind 25% Rabatt auf Ihre gesamte Bestellung – kein Mindestbestellwert. Plus sehen Sie alles, was Sie in den letzten [X] Monaten verpasst haben.",
+              "channel": "Email"
+            },
+            {
+              "title": "Können Wir Sie Zurückgewinnen?",
+              "description": "Tag 150: Feedback-orientiert",
+              "content": "Wir würden gerne wissen, was Sie zurückbringen würde. Nehmen Sie an dieser 1-minütigen Umfrage teil und erhalten Sie ein 10€-Guthaben, unabhängig von Ihrer Antwort.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letztes Exklusives Angebot",
+              "description": "Tag 175: Letzter Versuch vor Unterdrückung",
+              "content": "Letzte Chance: 30% Rabatt + kostenloser Versand + ein kostenloses Überraschungs-Sample. Wenn Sie nicht mehr interessiert sind, lassen Sie es uns wissen und wir reduzieren die E-Mails.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abgewanderte Abonnenten (innerhalb der letzten 90 Tage gekündigt)",
+          "scenario_objective": "Kündigungsgrund verstehen und zurückgewinnen",
+          "main_messages_ideas": "Kündigungs-Feedback, verbesserte Angebote, spezielles Reaktivierungs-Angebot, Flexibilitäts-Highlight",
+          "message_sequence": [
+            {
+              "title": "Es Tut Uns Leid, Sie Gehen Zu Sehen",
+              "description": "Tag 3 nach Kündigung",
+              "content": "Wir haben gesehen, dass Sie Ihr Abo gekündigt haben. Wir würden gerne verstehen warum – Ihr Feedback hilft uns, für alle besser zu werden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Es Hat Sich Einiges Geändert",
+              "description": "Tag 30: Verbesserungen seit Weggang",
+              "content": "Seit Sie gegangen sind, haben wir [Neue Funktion/Produkt] hinzugefügt. Möchten Sie uns noch eine Chance geben? Kommen Sie zurück mit 20% Rabatt auf Ihre ersten 3 Monate.",
+              "channel": "Email"
+            },
+            {
+              "title": "Flexibler Als Je Zuvor",
+              "description": "Tag 60: Flexibilitäts-Bedenken ansprechen",
+              "content": "Brauchen Sie mehr Kontrolle? Unsere Abos lassen Sie jetzt Monate überspringen, Produkte tauschen und die Frequenz jederzeit anpassen. Kommen Sie ohne Verpflichtung zurück.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Empfehlungs- & Advocacy-Programm",
+      "target": "Zufriedene Kunden mit hohen NPS-Werten, kürzlich positiven Bewertungen oder starkem Engagement",
+      "objective": "20% der Neukunden durch Empfehlungen generieren mit 25% höherem LTV für geworbene Kunden und 15% Empfehlungs-Teilnahmerate",
+      "kpi": "Neukunden-Empfehlungsrate (Ziel: 20%), Geworbener-Kunde-LTV vs Organisch (Ziel: +25%), Empfehlungs-Teilnahmerate (Ziel: 15%), Durchschnittliche Empfehlungen pro Botschafter (Ziel: 3,5)",
+      "description": "Beidseitiges Empfehlungsprogramm mit bedeutenden Belohnungen für Werber und Geworbene. Zielt auf zufriedene Kunden in Momenten höchster Zufriedenheit ab und macht das Teilen über mehrere Kanäle einfach.",
+      "scenarios": [
+        {
+          "scenario_target": "Nach-Kauf-Momente hoher Zufriedenheit",
+          "scenario_objective": "Empfehlungen in Momenten höchster Zufriedenheit erfassen",
+          "main_messages_ideas": "Liebe teilen, doppelte Belohnungen, einfache Sharing-Tools, Erfolgs-Tracking",
+          "message_sequence": [
+            {
+              "title": "Hat Es Ihnen Gefallen? Teilen Sie Die Liebe!",
+              "description": "Tag 3 nach 5-Sterne-Bewertung oder positivem Feedback",
+              "content": "Danke für das tolle Feedback! Teilen Sie [Marke] mit Freunden: Geben Sie 15€, Erhalten Sie 15€ bei ihrem ersten Kauf.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Empfehlungslink Ist Bereit",
+              "description": "Tag 5: Einfache Sharing-Tools",
+              "content": "Teilen Sie Ihren einzigartigen Link per SMS, E-Mail oder Social Media. Verfolgen Sie Ihre Empfehlungen und Belohnungen in Ihrem Konto-Dashboard.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Freund Hat Gerade Bestellt!",
+              "description": "Ausgelöst durch Empfehlungs-Konversion",
+              "content": "Tolle Neuigkeiten! [Name des Freundes] hat gerade ihre erste Bestellung mit Ihrer Empfehlung aufgegeben. 15€ Guthaben wurden Ihrem Konto gutgeschrieben!",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Treue Kunden und Mehrfach-Empfehler",
+          "scenario_objective": "Advocacy-Programm mit erweiterten Belohnungen aufbauen",
+          "main_messages_ideas": "VIP-Empfehlungs-Status, erweiterte Belohnungen, Botschafter-Programm, Social-Anerkennung",
+          "message_sequence": [
+            {
+              "title": "Sie Sind Ein [Marke] Botschafter!",
+              "description": "Nach 3+ erfolgreichen Empfehlungen",
+              "content": "Sie haben 3 Freunde geworben! Willkommen in unserem Botschafter-Programm mit erweiterten Belohnungen: 20€ pro Empfehlung + exklusive Botschafter-Vorteile.",
+              "channel": "Email"
+            },
+            {
+              "title": "Botschafter Exklusiv: Doppelte Belohnungen",
+              "description": "Monatliche Botschafter-Promotion",
+              "content": "Nur diesen Monat: Botschafter verdienen DOPPELTE Belohnungen (40€ pro Empfehlung). Teilen Sie jetzt und maximieren Sie Ihre Belohnungen!",
+              "channel": "Email"
+            },
+            {
+              "title": "Ihr Empfehlungs-Impact",
+              "description": "Quartals-Zusammenfassung",
+              "content": "Dieses Quartal: [X] Freunde beigetreten, [X]€ an Belohnungen verdient, [X] Bestellungen von Ihren Empfehlungen. Danke fürs Weitererzählen!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Geburtstag & Besondere Anlässe",
+      "target": "Alle Kunden mit hinterlegtem Geburtsdatum, plus identifizierbare besondere Anlässe",
+      "objective": "45% Geburtstags-Angebot-Einlösung und 30% anlassbezogene Kaufrate mit 20% höherem AOV bei Geburtstags-Bestellungen erreichen",
+      "kpi": "Geburtstags-Angebot-Einlösung (Ziel: 45%), Anlass-Kaufrate (Ziel: 30%), Geburtstags-AOV vs Normal (Ziel: +20%), Geburtstags-Datenerfassung (Ziel: 60%)",
+      "description": "Feier-fokussiertes Programm, das Geburtstage und besondere Anlässe (Jahrestage, Ernährungs-Meilensteine, Koch-Erfolge) mit personalisierten Angeboten und perfekten Produktempfehlungen zum Feiern anerkennt.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden vor Geburtstag",
+          "scenario_objective": "Geburtstags-Feier-Kauf fördern",
+          "main_messages_ideas": "Frühe Geburtstags-Aufmerksamkeit, Feier-Auswahl, genussvolle Produkte, Geburtstags-Wochen-Specials",
+          "message_sequence": [
+            {
+              "title": "Ihr Geburtstagsmonat Ist Da!",
+              "description": "Erster Tag des Geburtstagsmonats",
+              "content": "Happy Geburtstagsmonat! Hier sind exklusive 20% Rabatt, um sich etwas Besonderes zu gönnen. Plus haben wir genussvolle Produkte nur zum Feiern ausgewählt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Geburtstags-Wochen-Leckereien",
+              "description": "1 Woche vor Geburtstag",
+              "content": "Geburtstags-Countdown! Ihre 20% Rabatt warten. Hier sind dekadente Leckereien und feierwürdige Produkte, um Ihren Tag besonders zu machen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Happy Birthday Von [Marke]!",
+              "description": "Am Geburtstag",
+              "content": "Happy Birthday! Vergessen Sie nicht, Ihren Sonder-Rabatt diese Woche zu nutzen. Sie verdienen etwas Köstliches!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Letzte Chance: Geburtstags-Angebot Läuft Aus",
+              "description": "3 Tage nach Geburtstag",
+              "content": "Ihr Geburtstags-Angebot läuft in 3 Tagen ab! Gönnen Sie sich [Empfohlene Produkte], bevor Ihr Rabatt verschwindet.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden-Jahrestage und Meilensteine",
+          "scenario_objective": "Kunden-Meilensteine anerkennen und belohnen",
+          "main_messages_ideas": "Kunden-Jahrestag, Kauf-Meilensteine, Ernährungs-Reise-Feier",
+          "message_sequence": [
+            {
+              "title": "Happy [Marke]-Jahrestag!",
+              "description": "1-Jahres-Kunden-Jahrestag",
+              "content": "Es ist 1 Jahr seit Ihrer ersten Bestellung! Danke, dass Sie Teil unserer Feinschmecker-Gemeinschaft sind. Hier ist ein besonderes Geschenk zum Feiern.",
+              "channel": "Email"
+            },
+            {
+              "title": "Meilenstein Erreicht: [X] Bestellungen!",
+              "description": "Kauf-Anzahl-Meilensteine (10, 25, 50)",
+              "content": "Sie haben [X] Bestellungen bei uns gemacht! Das sind [Y] inspirierte Rezepte, [Z] geteilte Mahlzeiten. Hier ist eine besondere Dankeschön-Belohnung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Feiern Sie Ihre [Ernährungs]-Reise",
+              "description": "Ernährungs-Jahrestag (z.B. 6 Monate Keto-Käufe)",
+              "content": "6 Monate [Ernährungs]-Essen! Sie haben konsequent [Ernährungs]-Produkte gewählt. Hier sind Neuheiten, um Ihre Reise köstlich zu halten.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Produkt-Launch & Limitierte Editionen",
+      "target": "Engagierte Kunden, Abonnenten und VIP-Mitglieder basierend auf Geschmacksprofil-Übereinstimmung",
+      "objective": "35% Early-Access-Konversionsrate erreichen, limitierte Editionen innerhalb von 72 Stunden ausverkaufen und 50% des Launch-Umsatzes von treuen Kunden generieren",
+      "kpi": "Early-Access-Konversionsrate (Ziel: 35%), Limitierte-Edition-Ausverkaufs-Zeit (Ziel: <72h), Launch-Umsatz von Treuen Kunden (Ziel: 50%), Vorbestellungsrate (Ziel: 20%)",
+      "description": "Strategische Neuprodukt-Launch-Sequenzen mit gestaffeltem frühem Zugang (VIP zuerst, dann Abonnenten, dann Allgemeinheit). Schafft Begeisterung für saisonale Neuheiten, Produzenten-Kollaborationen und limitierte Produkte, während treue Kunden belohnt werden.",
+      "scenarios": [
+        {
+          "scenario_target": "Geschmacksprofil-passende Kunden für neue Produktlaunches",
+          "scenario_objective": "Launch-Verkäufe mit personalisierter Relevanz fördern",
+          "main_messages_ideas": "Exklusive Vorschau, warum Sie es lieben werden, Gründer-Geschichte, früher Zugang",
+          "message_sequence": [
+            {
+              "title": "Sneak Peek: [Neues Produkt] Kommt",
+              "description": "1 Woche vor Launch: Vorschau",
+              "content": "Etwas Köstliches kommt! Basierend auf Ihrer Liebe zu [Ähnlichen Produkten] denken wir, dass Sie [Neues Produkt] lieben werden. Launch am [Datum].",
+              "channel": "Email"
+            },
+            {
+              "title": "Die Geschichte Hinter [Neues Produkt]",
+              "description": "3 Tage vorher: Gründer/Produzenten-Geschichte",
+              "content": "Lernen Sie [Produzent] hinter unserer neuesten Ankunft kennen: [Neues Produkt]. Entdecken Sie das Handwerk, die Tradition und die Leidenschaft in jedem Bissen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Early Access: [Neues Produkt] Ist Live",
+              "description": "Launch-Tag: VIP/Abonnenten-Früher Zugang",
+              "content": "Sie sind dabei! [Neues Produkt] ist JETZT für [VIP/Abonnenten] verfügbar. Kaufen Sie früh vor dem öffentlichen Launch in 48 Stunden.",
+              "channel": "Email"
+            },
+            {
+              "title": "[Neues Produkt] Jetzt Verfügbar",
+              "description": "Öffentlicher Launch",
+              "content": "[Neues Produkt] ist offiziell da! Limitierte Mengen verfügbar – bestellen Sie jetzt, um zu den Ersten zu gehören, die es probieren.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Limitierte-Edition- und Saisonale-Release-Enthusiasten",
+          "scenario_objective": "Dringlichkeit schaffen und Verkäufe limitierter Editionen maximieren",
+          "main_messages_ideas": "Knappheits-Messaging, Vorbestellungs-Möglichkeit, Nachschub-Alerts, FOMO",
+          "message_sequence": [
+            {
+              "title": "Limitierte-Edition-Alert",
+              "description": "Ankündigung mit Knappheit",
+              "content": "Nur 500 verfügbar: [Limitiertes Produkt] von [Produzent]. Wenn es weg ist, ist es bis nächste [Saison/Jahr] weg.",
+              "channel": "Email"
+            },
+            {
+              "title": "Jetzt Vorbestellen: [Limitiertes Produkt]",
+              "description": "Vorbestellungs-Eröffnung",
+              "content": "Sichern Sie sich Ihres jetzt! Vorbestellen Sie [Limitiertes Produkt], um Lieferung zu garantieren. Versand am [Datum].",
+              "channel": "SMS"
+            },
+            {
+              "title": "Schnell Ausverkauft: [X] Übrig",
+              "description": "Knappheits-Update",
+              "content": "[Limitiertes Produkt] ist zu 70% ausverkauft! Nur noch [X] übrig. Verpassen Sie nicht Ihre Chance.",
+              "channel": "Email"
+            },
+            {
+              "title": "Auf Die Warteliste Setzen",
+              "description": "Nach Ausverkauf",
+              "content": "[Limitiertes Produkt] ausverkauft! Tragen Sie sich in die Warteliste ein, um benachrichtigt zu werden, wenn wir mehr bekommen, oder wenn es nächste [Saison] zurückkommt.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Willkommen & Geschmacksprofil-Entdeckung",
+      "why_brevo_is_better": "Brevos fortschrittlicher Formular-Builder und progressives Profiling erfassen Geschmackspräferenzen, die direkt in Automatisierungs-Workflows einfließen und personalisierte Produktempfehlungen vom ersten Tag an ermöglichen. Dynamische Content-Blöcke zeigen unterschiedliche Produkte basierend auf Ernährungspräferenzen, Geschmacksfavoriten und Kochstil.",
+      "omnichannel_channels": "E-Mail für reichhaltige visuelle Inhalte und Rezept-Inspiration + SMS für zeitkritische Willkommensangebote + WhatsApp für interaktive Quiz-Vervollständigung",
+      "setup_efficiency": "Vorgefertigte Lebensmittelbranche-Willkommens-Templates mit Geschmacksprofil-Logik, Ernährungspräferenz-Verzweigung und automatisierten Produktempfehlungs-Blöcken machen Sie in Tagen statt Wochen personalisiert."
+    },
+    {
+      "scenario_name": "Nachbestellung & Abonnement",
+      "why_brevo_is_better": "Produktbasierte Verbrauchs-Trigger ermöglichen präzises Nachbestellungs-Timing nach Kategorie (Kaffee bei 3 Wochen, Öle bei 6 Wochen, Gewürze bei 3 Monaten). E-Commerce-Integrationen verfolgen Kaufdaten und Produktmengen, um perfekt getimte Erinnerungen und Abo-Angebote zu automatisieren.",
+      "omnichannel_channels": "E-Mail für detaillierte Abo-Vorteile und Bundle-Angebote + SMS für schnelle Ein-Klick-Nachbestellungs-Links + Push-Benachrichtigungen für dringende Niedrig-Vorrat-Alerts",
+      "setup_efficiency": "Setzen Sie Verbrauchsfenster nach Produktkategorie einmal und lassen Sie Brevos Automatisierung alle Timing, Segmentierung und Eskalation basierend auf Kundenverhalten erledigen."
+    },
+    {
+      "scenario_name": "Saisonale & Feiertags-Kampagnen",
+      "why_brevo_is_better": "Vorgefertigte saisonale Kampagnen-Templates mit Geschenk-Guide-Layouts, Countdown-Timern und Versand-Deadline-Alerts. Dynamischer Content passt sich automatisch an Kunden-Zeitzonen und Versand-Cutoff-Daten an.",
+      "omnichannel_channels": "E-Mail für reichhaltige Geschenk-Guides und saisonale Kollektionen + SMS für Versand-Deadlines und Flash-Sales + WhatsApp für Bestell-Status und Liefer-Updates",
+      "setup_efficiency": "Saisonale Kampagnen-Templates mit vorkonfigurierten Timings, Segmenten und Content-Blöcken lassen Sie Feiertags-Kampagnen in Stunden starten. Jahr-für-Jahr-Performance-Tracking optimiert zukünftige Saisons."
+    },
+    {
+      "scenario_name": "Rezept- & Content-Engagement",
+      "why_brevo_is_better": "Dynamische Content-Blöcke personalisieren Rezept-Empfehlungen basierend auf der Kaufhistorie, dem Geschmacksprofil und den Ernährungspräferenzen jedes Kunden. Einkaufbare Rezept-E-Mails mit Ein-Klick-Zutatenlisten treiben Konversion direkt aus Content.",
+      "omnichannel_channels": "E-Mail für visuelle Rezepte und Speisepläne + Blog/Website-Integration für Rezept-Entdeckung + Social Sharing für Community-Aufbau + SMS für Rezept-des-Tages-Quick-Links",
+      "setup_efficiency": "Content-Templates organisiert nach Produktkategorie, Ernährungspräferenz und Kochkönnen machen es einfach, Rezepte zu Kundenprofilen zuzuordnen. Automatisierte Content-Kalender reduzieren manuelle Kuratierung."
+    },
+    {
+      "scenario_name": "Treue- & VIP-Programm",
+      "why_brevo_is_better": "Brevos Treue-Integration verfolgt Punkte über Käufe, Bewertungen und Rezept-Engagement mit automatisiertem Stufen-Aufstieg und Belohnungs-Benachrichtigungen. VIP-Segmente ermöglichen exklusiven Produktzugang und Event-Einladungen.",
+      "omnichannel_channels": "E-Mail für Stufen-Updates und Belohnungs-Kataloge + SMS für Punktestand und Einlösungs-Alerts + Push-Benachrichtigungen für VIP-Frühen Zugang + WhatsApp für exklusive Event-Einladungen",
+      "setup_efficiency": "Vorkonfigurierte Treue-Trigger, Stufen-Schwellen und Belohnungs-Kataloge bringen Ihr Programm schnell live. Automatisiertes Reporting zeigt ROI nach Stufe und identifiziert gefährdete VIPs."
+    }
+  ],
+  "conclusion": "Lebensmittel- und Feinkosthändler, die diese umfassenden Beziehungsmarketing-Programme implementieren, können signifikante Verbesserungen über alle Schlüsselmetriken erwarten: Abo-Konversionsraten über 20%, Customer Lifetime Value-Steigerungen von 45%+ für VIP-Mitglieder und 35% Umsatzsteigerungen während saisonaler Spitzen. Die Kombination aus personalisierter Geschmacks-Entdeckung, intelligenter Nachbestellungs-Automatisierung, content-getriebenem Engagement und gestaffelten Treue-Belohnungen schafft einen nachhaltigen Wettbewerbsvorteil. Indem Sie Kunden dort abholen, wo sie sich in ihrer kulinarischen Reise befinden – von der ersten Entdeckung bis zur Markenbotschaft – bauen Sie nicht nur Kunden auf, sondern eine Gemeinschaft leidenschaftlicher Feinschmecker, die Ihre Marke immer wieder wählen."
+}

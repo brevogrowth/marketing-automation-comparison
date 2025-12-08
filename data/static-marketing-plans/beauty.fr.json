@@ -1,76 +1,340 @@
 {
-  "introduction": "Ce plan marketing relationnel est conçu pour les marques de beauté et cosmétiques souhaitant construire des communautés de clients fidèles grâce à des routines de soins et beauté personnalisées.",
+  "introduction": "Ce plan marketing relationnel complet est conçu spécifiquement pour les marques de beauté et cosmétiques souhaitant construire des communautés de clients fidèles grâce à des routines de soins personnalisées, des conseils d'experts et une approche omnicanale engageante. L'industrie de la beauté se distingue par des cycles de réapprovisionnement prévisibles, une forte composante émotionnelle dans l'achat, et des opportunités exceptionnelles de personnalisation basées sur le profil peau/beauté de chaque cliente. Ce plan couvre l'intégralité du parcours client, de la découverte de routine initiale jusqu'à l'ambassadorat de marque, en passant par l'éducation produit, les abonnements et les moments clés du calendrier beauté.",
   "company_summary": {
     "name": "Marque de Beauté",
     "website": "exemple-beaute.com",
-    "activities": "Commerce de beauté et cosmétiques, incluant soins de la peau, maquillage et produits d'hygiène",
+    "activities": "Commerce de beauté et cosmétiques, incluant soins de la peau, maquillage, soins capillaires et produits d'hygiène",
     "target": "Passionnés de beauté âgés de 18 à 55 ans, recherchant des produits de soins et maquillage de qualité pour leurs routines personnelles",
     "industry": "Beauty",
-    "business_model": "B2C Retail"
+    "business_model": "B2C Retail",
+    "customer_lifecycle_key_steps": "1) Découverte via contenus beauté et quiz peau, 2) Premier achat avec kit découverte, 3) Éducation routine et superposition produits, 4) Réapprovisionnement régulier ou abonnement, 5) Expansion vers nouvelles catégories (skincare→makeup→haircare), 6) Fidélisation VIP et échantillonnage exclusif, 7) Ambassadorat et partage de routines"
   },
   "programs_list": [
     {
-      "program_name": "Parcours Bienvenue & Profil Peau",
+      "program_name": "Parcours Bienvenue & Découverte Profil Beauté",
       "target": "Nouveaux abonnés et premiers visiteurs",
       "objective": "Construire des profils beauté personnalisés et convertir au premier achat sous 21 jours",
-      "kpi": "Taux de complétion du profil, Conversion premier achat, Engagement quiz peau",
-      "description": "Une séquence de bienvenue personnalisée qui collecte les informations sur le type de peau et fournit des recommandations produits sur mesure.",
+      "kpi": "Taux de complétion du quiz: >60%, Conversion premier achat: >25%, Engagement quiz: >45%",
+      "description": "Une séquence de bienvenue personnalisée qui collecte les informations sur le type de peau, les préoccupations beauté et les préférences pour fournir des recommandations produits sur mesure dès le premier contact.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux abonnés email",
+          "scenario_target": "Nouveaux abonnés email n'ayant pas complété le quiz",
           "scenario_objective": "Collecter les données du profil peau et personnaliser les recommandations",
-          "main_messages_ideas": "Bienvenue + quiz peau, Routine personnalisée, Éducation produit, Offre premier achat",
+          "main_messages_ideas": "Bienvenue chaleureuse, Quiz peau interactif, Routine personnalisée, Éducation ingrédients, Offre premier achat",
           "message_sequence": [
             {
-              "title": "Bienvenue + Quiz Peau",
-              "description": "Bienvenue immédiate avec invitation au quiz type de peau",
-              "content": "Bienvenue chez [Marque] ! Faites notre quiz peau de 2 min pour votre routine personnalisée"
+              "channel": "Email",
+              "title": "Bienvenue + Invitation Quiz Peau",
+              "timing": "Immédiat",
+              "description": "Bienvenue chaleureuse avec invitation au quiz type de peau pour personnalisation",
+              "content": "Bienvenue dans notre communauté beauté ! Faites notre quiz peau de 2 minutes et découvrez votre routine idéale. 🌸 En bonus : -10% sur votre première commande."
             },
             {
+              "channel": "SMS",
+              "title": "Rappel Quiz Peau",
+              "timing": "J+1",
+              "description": "Rappel amical pour compléter le quiz si non fait",
+              "content": "[Marque] Votre routine personnalisée vous attend ! Quiz de 2 min → découvrez vos produits idéaux : [lien]"
+            },
+            {
+              "channel": "Email",
               "title": "Votre Routine Personnalisée",
-              "description": "Jour 2 : Basé sur les résultats du quiz",
-              "content": "Votre routine skincare sur mesure est prête"
+              "timing": "J+2 (post-quiz)",
+              "description": "Présentation de la routine basée sur les résultats du quiz",
+              "content": "Votre diagnostic peau est prêt ! Découvrez votre routine skincare sur mesure : nettoyage, soin et protection adaptés à votre type [type de peau]. Commencez par notre kit découverte."
             },
             {
-              "title": "Éducation Ingrédients",
-              "description": "Jour 5 : Éduquer sur les ingrédients clés pour leur type de peau",
-              "content": "Pourquoi [ingrédient] est parfait pour votre peau"
+              "channel": "Email",
+              "title": "Éducation Ingrédients Clés",
+              "timing": "J+5",
+              "description": "Éduquer sur les ingrédients recommandés pour leur type de peau",
+              "content": "Pourquoi [ingrédient] est parfait pour votre peau [type]. Découvrez la science derrière nos recommandations et comment ces actifs transforment votre routine."
             },
             {
-              "title": "Offre Premier Achat",
-              "description": "Jour 10 : Offre kit découverte personnalisé",
-              "content": "Commencez votre routine avec -15% sur votre première commande"
+              "channel": "WhatsApp",
+              "title": "Conseil Personnalisé Expert",
+              "timing": "J+7",
+              "description": "Message personnalisé avec conseil d'expert basé sur le profil",
+              "content": "Bonjour [Prénom] ! 💫 Notre conseil expert pour les peaux [type] : [conseil]. Besoin d'aide pour choisir ? Répondez à ce message !"
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Kit Découverte Premier Achat",
+              "timing": "J+10",
+              "description": "Offre personnalisée avec kit découverte adapté au profil",
+              "content": "Votre kit découverte [type de peau] vous attend ! 4 produits essentiels + pochette beauté offerte. -15% avec le code BIENVENUE15. Valable 7 jours."
+            },
+            {
+              "channel": "SMS",
+              "title": "Rappel Offre Expiration",
+              "timing": "J+16",
+              "description": "Rappel d'urgence pour l'offre de bienvenue",
+              "content": "[Marque] Plus que 24h pour votre offre -15% ! Votre kit découverte vous attend : [lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nouveaux abonnés ayant complété le quiz mais pas acheté",
+          "scenario_objective": "Convertir les profils complets en premiers acheteurs",
+          "main_messages_ideas": "Rappel routine, Témoignages similaires, Échantillons gratuits, Offre progressive",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Routine Vous Attend",
+              "timing": "J+3 post-quiz",
+              "description": "Rappel de la routine personnalisée avec visuels attrayants",
+              "content": "Votre routine beauté personnalisée est prête ! Peau [type] : voici les 3 étapes essentielles pour révéler votre éclat naturel."
+            },
+            {
+              "channel": "Email",
+              "title": "Témoignages Peaux Similaires",
+              "timing": "J+7",
+              "description": "Social proof avec avis de clientes au profil similaire",
+              "content": "Des peaux comme la vôtre adorent ces produits ! Découvrez les avis de clientes [type de peau] et leurs résultats en 4 semaines."
+            },
+            {
+              "channel": "Email",
+              "title": "Échantillons Gratuits Offerts",
+              "timing": "J+12",
+              "description": "Proposition d'échantillons gratuits pour essayer",
+              "content": "Testez avant d'adopter ! Recevez 3 échantillons de votre routine personnalisée gratuits (frais de port offerts dès 15€ d'achat)."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Rappels de Réapprovisionnement",
-      "target": "Clients ayant acheté des produits consommables",
-      "objective": "Générer des achats répétés avant que les produits ne soient épuisés",
-      "kpi": "Taux de réapprovisionnement, Temps entre achats, Conversion abonnement",
-      "description": "Rappels automatisés basés sur l'utilisation moyenne des produits pour garantir que les clients ne manquent jamais de leurs favoris.",
+      "program_name": "Récupération Panier Abandonné & Navigation",
+      "target": "Visiteurs ayant ajouté au panier ou consulté des produits sans acheter",
+      "objective": "Récupérer les ventes perdues avec un taux de conversion de 15-20%",
+      "kpi": "Taux de récupération panier: >15%, Récupération navigation: >8%, Revenu récupéré mensuel",
+      "description": "Séquences automatisées multicanal pour reconvertir les paniers abandonnés et les visiteurs engagés en acheteurs, avec personnalisation selon les produits consultés et le profil beauté.",
       "scenarios": [
         {
-          "scenario_target": "Clients ayant acheté des produits de 30 jours",
-          "scenario_objective": "Rappeler avant épuisement du produit et proposer l'abonnement",
-          "main_messages_ideas": "Rappel stock faible, Récommande facile, Offre abonnement, Économies en lot",
+          "scenario_target": "Abandon de panier skincare (valeur > 40€)",
+          "scenario_objective": "Récupérer l'achat avec rappel personnalisé et rassurance",
+          "main_messages_ideas": "Rappel panier, Bénéfices produits, Avis clients, Offre incentive",
           "message_sequence": [
             {
-              "title": "Rappel Stock Faible",
-              "description": "Jour 25 : Basé sur l'utilisation moyenne",
-              "content": "C'est le moment de réapprovisionner ? Votre [produit] est probablement bientôt vide"
+              "channel": "Email",
+              "title": "Votre Routine Vous Attend",
+              "timing": "H+1",
+              "description": "Rappel visuel du panier avec mise en avant des bénéfices",
+              "content": "Votre sélection skincare vous attend ! [Produits] - Ne laissez pas votre peau attendre. Finalisez votre routine et commencez votre transformation."
             },
             {
-              "title": "Récommande Facile",
-              "description": "Jour 28 : Option de récommande en un clic",
-              "content": "Recommandez vos favoris en un clic"
+              "channel": "SMS",
+              "title": "Rappel Rapide Panier",
+              "timing": "H+4",
+              "description": "Message court avec lien direct vers panier",
+              "content": "[Marque] Votre routine skincare vous attend 🧴 Stock limité ! Finalisez : [lien panier]"
             },
             {
-              "title": "Offre Abonnement",
-              "description": "Jour 30 : Présentation de l'abonnement avec remise",
-              "content": "Ne soyez plus jamais à court - Abonnez-vous et économisez 15%"
+              "channel": "Email",
+              "title": "Ce Que Disent Nos Clientes",
+              "timing": "J+1",
+              "description": "Social proof avec avis sur les produits du panier",
+              "content": "Avant de décider... Découvrez pourquoi [produit] a conquis +10 000 clientes. ⭐⭐⭐⭐⭐ 'Mon produit miracle' - Marie, peau sensible"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Besoin de Conseils ?",
+              "timing": "J+2",
+              "description": "Proposition d'aide personnalisée via WhatsApp",
+              "content": "Bonjour [Prénom] ! 💄 Des questions sur [produit] ? Notre experte beauté peut vous conseiller. Répondez ici !"
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Récupération avec Cadeau",
+              "timing": "J+3",
+              "description": "Incentive final avec cadeau beauté",
+              "content": "Dernière chance ! Finalisez votre panier dans les 24h et recevez notre kit voyage offert (valeur 25€). Code : BEAUTE24"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Navigation intensive sans achat (3+ produits vus)",
+          "scenario_objective": "Convertir l'intérêt de navigation en premier achat",
+          "main_messages_ideas": "Récap navigation, Comparatif produits, Conseil expert, Offre découverte",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vos Coups de Cœur",
+              "timing": "J+1",
+              "description": "Récapitulatif des produits consultés avec recommandations",
+              "content": "Vous avez l'œil ! Voici les produits qui ont attiré votre attention, plus nos recommandations complémentaires pour une routine parfaite."
+            },
+            {
+              "channel": "Email",
+              "title": "Guide Comparatif Personnalisé",
+              "timing": "J+3",
+              "description": "Aide à la décision entre produits similaires consultés",
+              "content": "Hésitation entre [produit A] et [produit B] ? Notre guide vous aide à choisir selon votre type de peau et vos objectifs."
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Découverte Navigation",
+              "timing": "J+5",
+              "description": "Incitation avec offre sur les produits consultés",
+              "content": "-10% sur votre sélection ! Les produits qui vous ont plu sont en promotion exclusive pour vous. Offre valable 48h."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expérience Post-Achat & Construction de Routine",
+      "target": "Nouveaux acheteurs et clients récents",
+      "objective": "Maximiser la satisfaction produit et construire l'habitude de routine beauté",
+      "kpi": "NPS post-achat: >50, Taux d'utilisation produit: >80%, Taux de retour: <5%, Avis collectés: >25%",
+      "description": "Parcours d'accompagnement post-achat qui guide les clientes dans l'utilisation optimale de leurs produits, construit des habitudes de routine durables et collecte des avis authentiques.",
+      "scenarios": [
+        {
+          "scenario_target": "Premier achat skincare",
+          "scenario_objective": "Assurer une utilisation correcte et maximiser les résultats",
+          "main_messages_ideas": "Confirmation commande, Guide application, Construction routine, Calendrier résultats, Demande avis",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Commande Confirmée + Guide Démarrage",
+              "timing": "Immédiat",
+              "description": "Confirmation avec guide de préparation à la réception",
+              "content": "Merci [Prénom] ! 🎉 Votre commande est confirmée. En attendant vos produits, découvrez comment préparer votre peau pour votre nouvelle routine."
+            },
+            {
+              "channel": "SMS",
+              "title": "Notification Livraison",
+              "timing": "Jour livraison",
+              "description": "Alerte livraison avec lien vers tutoriel",
+              "content": "[Marque] Votre colis est arrivé ! 📦 Tutoriel vidéo pour bien démarrer : [lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Guide Application Détaillé",
+              "timing": "J+1 post-livraison",
+              "description": "Tutoriel complet d'utilisation des produits reçus",
+              "content": "Comment utiliser vos nouveaux produits ? Guide étape par étape pour [produit]. Quantité, gestes, timing : tous nos secrets pour des résultats optimaux."
+            },
+            {
+              "channel": "Email",
+              "title": "Routine Matin vs Soir",
+              "timing": "J+4",
+              "description": "Intégration des produits dans la routine complète",
+              "content": "Matin ou soir ? L'ordre parfait pour votre routine. Découvrez où placer [produit] et comment le combiner avec vos autres soins."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Check-in Première Semaine",
+              "timing": "J+7",
+              "description": "Point de contact pour répondre aux questions",
+              "content": "Coucou [Prénom] ! 🌟 Comment se passe votre nouvelle routine ? Des questions ? On est là pour vous ! Répondez ici."
+            },
+            {
+              "channel": "Email",
+              "title": "Calendrier des Résultats",
+              "timing": "J+14",
+              "description": "Gestion des attentes sur les résultats à venir",
+              "content": "À quoi s'attendre semaine après semaine ? Le calendrier de transformation de votre peau avec [produit]. Patience = résultats durables !"
+            },
+            {
+              "channel": "Email",
+              "title": "Demande d'Avis + Selfie",
+              "timing": "J+28",
+              "description": "Collecte d'avis après période d'utilisation suffisante",
+              "content": "Un mois avec [produit] ! 📸 Partagez votre avis et votre selfie avant/après. 10% sur votre prochaine commande pour chaque avis publié."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Premier achat maquillage",
+          "scenario_objective": "Enseigner les techniques d'application et inspirer de nouveaux looks",
+          "main_messages_ideas": "Confirmation, Tutoriel application, Looks inspirants, Produits complémentaires",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Nouveau Look Vous Attend",
+              "timing": "Immédiat",
+              "description": "Confirmation avec aperçu des tutoriels disponibles",
+              "content": "Votre [produit] est en route ! 💄 Préparez-vous avec nos tutoriels : de naturel à glamour, on vous montre tout."
+            },
+            {
+              "channel": "Email",
+              "title": "Tutoriel Application Pro",
+              "timing": "J+2 post-livraison",
+              "description": "Guide vidéo d'application professionnelle",
+              "content": "Maîtrisez [produit] comme une pro ! Tutoriel vidéo avec nos maquilleuses : techniques, outils et astuces de pros."
+            },
+            {
+              "channel": "Email",
+              "title": "3 Looks avec Votre Produit",
+              "timing": "J+7",
+              "description": "Inspiration looks variés avec le même produit",
+              "content": "1 produit, 3 looks ! Du bureau au dîner : découvrez comment transformer [produit] en allié de chaque moment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Réapprovisionnement & Abonnement",
+      "target": "Clients ayant acheté des produits consommables",
+      "objective": "Générer des achats répétés automatiques et convertir vers l'abonnement",
+      "kpi": "Taux de réapprovisionnement: >35%, Conversion abonnement: >15%, Récurrence moyenne: <45 jours",
+      "description": "Système intelligent de rappels de réapprovisionnement basé sur les cycles d'utilisation des produits beauté, avec incitation progressive vers l'abonnement pour une routine sans interruption.",
+      "scenarios": [
+        {
+          "scenario_target": "Achat de produit skincare 30 jours",
+          "scenario_objective": "Rappeler avant épuisement et proposer l'abonnement",
+          "main_messages_ideas": "Rappel préventif, Récommande facile, Avantages abonnement, Lot économique",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Stock Arrive à Fin",
+              "timing": "J+23",
+              "description": "Rappel préventif avec estimation du niveau de produit",
+              "content": "Bientôt vide ? Votre [produit] arrive probablement à la moitié. C'est le moment idéal pour réapprovisionner et ne pas casser votre routine !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Récommandez en 1 Clic",
+              "timing": "J+26",
+              "description": "Option de récommande rapide par SMS",
+              "content": "[Marque] Votre [produit] bientôt fini ? Récommandez en 1 clic 👆 [lien] Ne cassez pas votre routine !"
+            },
+            {
+              "channel": "Email",
+              "title": "Passez à l'Abonnement",
+              "timing": "J+28",
+              "description": "Présentation de l'abonnement avec tous ses avantages",
+              "content": "Ne soyez plus jamais à court ! Abonnez-vous et économisez 15% sur [produit]. Livraison automatique, modification à tout moment, annulation libre. Votre routine, simplifiée."
+            },
+            {
+              "channel": "Email",
+              "title": "Lot Économique 3 Mois",
+              "timing": "J+30",
+              "description": "Alternative au réachat unitaire avec économie",
+              "content": "Stock 3 mois = -20% ! Achetez votre réserve de [produit] et économisez. Plus de rupture, plus d'économies."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Client récurrent (3+ achats même produit)",
+          "scenario_objective": "Convertir la fidélité produit en abonnement",
+          "main_messages_ideas": "Reconnaissance fidélité, Offre VIP abonnement, Cadeau conversion",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Produit Signature",
+              "timing": "Après 3ème achat",
+              "description": "Reconnaissance du produit favori et proposition spéciale",
+              "content": "[Produit] est devenu votre incontournable ! En tant que fidèle, recevez -20% sur votre abonnement (au lieu de -15% standard)."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Offre VIP Abonnement",
+              "timing": "J+3",
+              "description": "Proposition personnalisée via WhatsApp",
+              "content": "Bonjour [Prénom] ! 🌟 Offre VIP : abonnement [produit] à -20% + un mini sérum offert. Intéressée ? Répondez OUI !"
             }
           ]
         }
@@ -78,97 +342,496 @@
     },
     {
       "program_name": "Lancement Produit & Échantillonnage",
-      "target": "Clients actifs et passionnés de beauté",
+      "target": "Clients actifs, VIP et passionnés de beauté",
       "objective": "Générer du buzz et des essais pour les lancements de nouveaux produits",
-      "kpi": "Taux de demande d'échantillons, Conversion échantillon vers achat, Ventes semaine de lancement",
-      "description": "Campagne multi-touch combinant aperçus exclusifs, opportunités d'échantillonnage et promotions de lancement.",
+      "kpi": "Taux de demande d'échantillons: >40%, Conversion échantillon→achat: >30%, Ventes semaine de lancement: objectif +50%",
+      "description": "Campagnes de lancement orchestrées combinant teasing exclusif, opportunités d'échantillonnage VIP, accès anticipé et promotions de lancement pour maximiser l'impact des nouveautés.",
       "scenarios": [
         {
-          "scenario_target": "Clients VIP et abonnés très engagés",
-          "scenario_objective": "Accès anticipé et opportunité d'échantillonnage",
-          "main_messages_ideas": "Aperçu exclusif, Offre échantillon, Shopping accès anticipé, Incentive avis",
+          "scenario_target": "Clients VIP et très engagés",
+          "scenario_objective": "Accès anticipé exclusif et échantillonnage privilégié",
+          "main_messages_ideas": "Teasing exclusif, Échantillon VIP, Accès anticipé, Incentive premier avis",
           "message_sequence": [
             {
-              "title": "Aperçu VIP",
-              "description": "14 jours avant le lancement",
-              "content": "Vous êtes les premiers à découvrir notre dernière innovation"
+              "channel": "Email",
+              "title": "Aperçu VIP Exclusif",
+              "timing": "J-14 avant lancement",
+              "description": "Teasing avec informations exclusives pour VIP",
+              "content": "Avant tout le monde... 🤫 Vous êtes VIP, vous découvrez en premier notre prochaine innovation [catégorie]. Rendez-vous le [date] !"
             },
             {
-              "title": "Offre Échantillon Gratuit",
-              "description": "7 jours avant le lancement",
-              "content": "Soyez parmi les premiers à essayer [produit] - demandez votre échantillon gratuit"
+              "channel": "WhatsApp",
+              "title": "Échantillon Gratuit VIP",
+              "timing": "J-10",
+              "description": "Proposition d'échantillon exclusif",
+              "content": "Psst [Prénom] ! 💝 En tant que VIP, testez [produit] avant tout le monde. Échantillon gratuit → répondez votre adresse !"
             },
             {
-              "title": "Accès Anticipé",
-              "description": "1 jour avant le lancement public",
-              "content": "Shoppez avant tout le monde + cadeau avec achat"
+              "channel": "Email",
+              "title": "Découvrez [Produit] en Détail",
+              "timing": "J-7",
+              "description": "Présentation complète du nouveau produit",
+              "content": "Voici [produit] ! Formule, ingrédients stars, bénéfices : tout ce que vous devez savoir sur notre dernière innovation."
+            },
+            {
+              "channel": "SMS",
+              "title": "Accès Anticipé 24h",
+              "timing": "J-1",
+              "description": "Notification d'ouverture des ventes VIP",
+              "content": "[Marque] VIP : [produit] disponible MAINTENANT pour vous ! 24h d'avance + cadeau avec achat 🎁 [lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Incentive Premier Avis",
+              "timing": "J+14 post-achat",
+              "description": "Encourager les premiers avis avec récompense",
+              "content": "Vous faites partie des premiers ! Partagez votre avis sur [produit] et recevez 500 points fidélité bonus. Votre opinion compte !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients actifs non-VIP",
+          "scenario_objective": "Créer l'engouement et convertir au lancement",
+          "main_messages_ideas": "Annonce lancement, Présentation bénéfices, Offre lancement, Dernière chance",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nouveauté : [Produit] Est Là !",
+              "timing": "Jour du lancement",
+              "description": "Annonce officielle avec présentation complète",
+              "content": "Il est arrivé ! 🎉 Découvrez [produit], notre dernière innovation pour [bénéfice]. Offre lancement : -10% cette semaine uniquement."
+            },
+            {
+              "channel": "Email",
+              "title": "Pourquoi [Produit] Est Unique",
+              "timing": "J+3",
+              "description": "Focus sur les différenciateurs et premiers retours",
+              "content": "Ce qui rend [produit] différent : [ingrédient] breveté, résultats visibles en [durée]. Les premières clientes sont conquises !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Dernière Chance Offre Lancement",
+              "timing": "J+6",
+              "description": "Rappel fin de l'offre de lancement",
+              "content": "[Marque] Dernières 24h ! -10% sur [produit] se termine demain. Ne ratez pas cette nouveauté : [lien]"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Éducation Routine Beauté",
-      "target": "Tous les clients selon leurs achats de produits",
-      "objective": "Augmenter la satisfaction produit et l'utilisation, réduire les retours",
-      "kpi": "Taux d'utilisation produit, Satisfaction client, Réduction du taux de retour",
-      "description": "Série de contenus éducatifs enseignant aux clients comment tirer le meilleur de leurs achats.",
+      "program_name": "Programme Fidélité & VIP",
+      "target": "Tous les clients avec programme à niveaux",
+      "objective": "Augmenter la LTV et l'engagement via récompenses beauté exclusives",
+      "kpi": "Taux d'inscription fidélité: >70%, Taux de redemption points: >60%, Progression niveau: >25%/an, LTV VIP vs standard: x2.5",
+      "description": "Programme de fidélité à niveaux offrant des récompenses beauté exclusives, accès privilégié aux nouveautés, événements VIP et expériences personnalisées pour les meilleures clientes.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux acheteurs de produits skincare",
-          "scenario_objective": "Assurer une utilisation correcte du produit et construire l'habitude de routine",
-          "main_messages_ideas": "Comment utiliser, Routine matin vs soir, Conseils de superposition, Attentes avant/après",
+          "scenario_target": "Clientes atteignant le statut Gold",
+          "scenario_objective": "Célébrer la progression et présenter les nouveaux avantages",
+          "main_messages_ideas": "Félicitations niveau, Nouveaux avantages, Cadeau célébration, Invitation événement",
           "message_sequence": [
             {
-              "title": "Comment Utiliser",
-              "description": "Jour 1 post-achat : Guide d'application",
-              "content": "Obtenez les meilleurs résultats de votre nouveau [produit]"
+              "channel": "Email",
+              "title": "Bienvenue au Niveau Gold ! 🏆",
+              "timing": "Immédiat",
+              "description": "Célébration du nouveau statut avec présentation avantages",
+              "content": "Félicitations [Prénom] ! Vous êtes maintenant Gold ! 🏆 Découvrez vos nouveaux privilèges : x2 points, livraison express offerte, accès ventes privées, cadeau anniversaire premium..."
             },
             {
-              "title": "Construction de Routine",
-              "description": "Jour 7 : Intégration routine complète",
-              "content": "Où [produit] s'intègre dans votre routine AM/PM"
+              "channel": "WhatsApp",
+              "title": "Cadeau Gold Personnel",
+              "timing": "J+1",
+              "description": "Envoi du cadeau de bienvenue au niveau",
+              "content": "Coucou [Prénom] ! 🎁 Pour célébrer votre statut Gold, choisissez votre cadeau parmi ces 3 options : [lien]. Valide 30 jours !"
             },
             {
-              "title": "Calendrier des Résultats",
-              "description": "Jour 14 : Définir les attentes",
-              "content": "À quoi s'attendre : Le calendrier de transformation de votre peau"
+              "channel": "Email",
+              "title": "Invitation Masterclass VIP",
+              "timing": "J+7",
+              "description": "Invitation à un événement exclusif Gold",
+              "content": "Réservé aux Gold : Masterclass Skincare avec notre experte. Apprenez les techniques pro, posez vos questions en direct. Places limitées !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes proches du niveau supérieur",
+          "scenario_objective": "Encourager les achats pour atteindre le palier",
+          "main_messages_ideas": "Statut progression, Avantages prochain niveau, Offre accélérateur",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Plus Que [X] Points !",
+              "timing": "À 80% du palier",
+              "description": "Notification de proximité du niveau supérieur",
+              "content": "Vous y êtes presque ! Plus que [X] points pour devenir [niveau suivant]. Vos futurs avantages : [liste]. Un achat et vous y êtes !"
             },
             {
-              "title": "Point de Contact",
-              "description": "Jour 30 : Enquête de satisfaction",
-              "content": "Comment va votre peau ? Nous aimerions avoir votre avis"
+              "channel": "SMS",
+              "title": "Points x2 Ce Weekend",
+              "timing": "Weekend suivant",
+              "description": "Offre accélérateur de points",
+              "content": "[Marque] Ce weekend = points x2 ! 🚀 L'occasion parfaite d'atteindre le niveau [suivant]. Shoppez : [lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Points non utilisés depuis 6 mois",
+          "scenario_objective": "Réactiver l'utilisation des points avant expiration",
+          "main_messages_ideas": "Rappel solde, Suggestions redemption, Alerte expiration",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vos [X] Points Vous Attendent",
+              "timing": "6 mois sans redemption",
+              "description": "Rappel du solde avec suggestions d'utilisation",
+              "content": "Vous avez [X] points ! 💰 C'est [X€] de réduction qui vous attendent. Nos suggestions : [produits selon profil]."
+            },
+            {
+              "channel": "Email",
+              "title": "Attention : Points Bientôt Expirés",
+              "timing": "1 mois avant expiration",
+              "description": "Alerte expiration avec urgence",
+              "content": "Vos points expirent le [date] ! Utilisez vos [X] points avant qu'ils ne disparaissent. Convertissez-les maintenant !"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Programme Fidélité & Parrainage",
-      "target": "Clients récurrents et ambassadeurs de marque",
-      "objective": "Augmenter la valeur vie client et générer de l'acquisition par parrainage",
-      "kpi": "Taux de parrainage, Utilisation des points, Progression niveau VIP",
-      "description": "Programme de fidélité à niveaux avec récompenses beauté, accès exclusif et incentives de parrainage.",
+      "program_name": "Reconquête & Réengagement",
+      "target": "Clients inactifs depuis 90-365 jours",
+      "objective": "Réactiver 20% des clients dormants et comprendre les raisons de départ",
+      "kpi": "Taux de réactivation: >20%, Taux de réponse feedback: >15%, Revenu clients réactivés",
+      "description": "Programme structuré de reconquête des clients inactifs avec approche progressive, offres personnalisées et collecte de feedback pour améliorer l'expérience globale.",
       "scenarios": [
         {
-          "scenario_target": "Clients atteignant le statut VIP",
-          "scenario_objective": "Célébrer le jalon et encourager les parrainages",
-          "main_messages_ideas": "Célébration VIP, Avantages exclusifs, Bonus parrainage, Accès anticipé",
+          "scenario_target": "Inactifs 90-180 jours (risque moyen)",
+          "scenario_objective": "Réengager avant la perte définitive",
+          "main_messages_ideas": "Nous vous manquez, Nouveautés depuis, Offre retour, Feedback demande",
           "message_sequence": [
             {
-              "title": "Bienvenue VIP",
-              "description": "À l'atteinte du seuil VIP",
-              "content": "Vous êtes VIP ! Voici vos avantages exclusifs"
+              "channel": "Email",
+              "title": "Vous Nous Manquez",
+              "timing": "J+90 sans achat",
+              "description": "Message émotionnel de reconnexion",
+              "content": "Coucou [Prénom] ! Votre routine beauté vous attend... Ça fait un moment ! Découvrez ce qui a changé chez nous et nos nouveautés qui pourraient vous plaire."
             },
             {
-              "title": "Lancement Parrainage",
-              "description": "1 semaine après le statut VIP",
-              "content": "Partagez l'amour - Offrez 15€, Recevez 15€"
+              "channel": "Email",
+              "title": "Ce Que Vous Avez Manqué",
+              "timing": "J+100",
+              "description": "Récap des nouveautés et best-sellers",
+              "content": "Pendant votre absence : 5 nouveaux produits stars, 3 formules améliorées, et toujours vos favoris ! Redécouvrez notre univers."
             },
             {
-              "title": "Aperçu Exclusif",
-              "description": "Mensuel : Aperçus produits VIP uniquement",
-              "content": "Premier Regard VIP : Découvrez ce qui arrive"
+              "channel": "SMS",
+              "title": "Offre Retour -20%",
+              "timing": "J+110",
+              "description": "Incentive de retour significatif",
+              "content": "[Marque] [Prénom], -20% pour votre retour ! 💝 Code RETOUR20, valable 7 jours : [lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Avis Compte",
+              "timing": "J+120",
+              "description": "Demande de feedback sur les raisons de l'inactivité",
+              "content": "Qu'est-ce qui vous a manqué ? Partagez votre avis en 2 minutes. Votre feedback nous aide à nous améliorer + recevez un cadeau surprise."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Inactifs 180-365 jours (risque élevé)",
+          "scenario_objective": "Dernière tentative de reconquête avec offre maximale",
+          "main_messages_ideas": "Dernière chance, Offre exceptionnelle, Produit signature rappel",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "On Aimerait Vous Revoir",
+              "timing": "J+180",
+              "description": "Message sincère avec offre importante",
+              "content": "[Prénom], ça fait longtemps ! On aimerait vraiment vous revoir. Voici -25% sur tout le site + un cadeau surprise dans votre colis. Offre exclusive pour vous."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Produit Favori Vous Attend",
+              "timing": "J+200",
+              "description": "Rappel du produit signature avec offre",
+              "content": "Vous vous souvenez de [produit] ? Il est toujours là, encore meilleur ! -30% sur votre favori pour le retrouver."
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Chance",
+              "timing": "J+350",
+              "description": "Message final avant suppression de la communication",
+              "content": "C'est notre dernier message... Voulez-vous rester avec nous ? Si oui, profitez de -30% maintenant. Sinon, on vous souhaite le meilleur ! 💕"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Parrainage & Ambassadorat",
+      "target": "Clients satisfaits et ambassadrices potentielles",
+      "objective": "Transformer les clientes satisfaites en ambassadrices actives de la marque",
+      "kpi": "Taux de parrainage: >15%, Conversion parrainés: >40%, Coût acquisition parrainage: -50% vs paid",
+      "description": "Programme de parrainage généreux et programme ambassadeur pour transformer les meilleures clientes en porte-paroles authentiques de la marque, avec récompenses beauté exclusives.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes ayant laissé un avis 5 étoiles",
+          "scenario_objective": "Convertir la satisfaction en parrainage",
+          "main_messages_ideas": "Merci pour l'avis, Invitation parrainage, Récompenses généreuses, Succès partage",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci pour Votre Avis 5⭐",
+              "timing": "Immédiat après avis",
+              "description": "Remerciement et proposition de parrainage",
+              "content": "Merci pour votre super avis ! 💕 Vos amies méritent de connaître nos produits. Parrainez et recevez toutes les deux -20% !"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Lien de Parrainage Personnel",
+              "timing": "J+3",
+              "description": "Envoi du lien de parrainage personnalisé",
+              "content": "Voici votre lien de parrainage personnel 🔗 [lien]. Partagez-le et gagnez -20% pour chaque amie qui commande !"
+            },
+            {
+              "channel": "Email",
+              "title": "Vos Parrainages en Cours",
+              "timing": "Mensuel si parrainages actifs",
+              "description": "Récap des parrainages et gains cumulés",
+              "content": "Bravo [Prénom] ! 🎉 Ce mois-ci : [X] amies parrainées, [X€] de récompenses gagnées. Continuez à partager !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes très actives sur réseaux sociaux",
+          "scenario_objective": "Recruter comme ambassadrices officielles",
+          "main_messages_ideas": "Invitation programme ambassadeur, Avantages exclusifs, Kit créateur, Communauté",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Devenez Ambassadrice [Marque]",
+              "timing": "Après identification profil créateur",
+              "description": "Invitation au programme ambassadeur",
+              "content": "On vous a remarquée ! 🌟 Votre passion beauté nous inspire. Rejoignez notre programme ambassadeur : produits offerts, commissions, événements exclusifs..."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Bienvenue dans le Programme",
+              "timing": "Post-inscription",
+              "description": "Accueil personnalisé et prochaines étapes",
+              "content": "Bienvenue dans la team ambassadrices ! 💄 Votre kit de bienvenue arrive. Votre conseillère dédiée : [nom]. Questions ? Écrivez-nous ici !"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Kit Ambassadrice",
+              "timing": "J+7",
+              "description": "Envoi du kit créateur et brief",
+              "content": "Votre kit ambassadrice est prêt ! 📦 Produits, codes promo personnalisés, guidelines créa... Tout pour créer du contenu qui convertit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Anniversaire & Occasions Spéciales",
+      "target": "Tous les clients ayant partagé leur date de naissance",
+      "objective": "Créer des moments de connexion émotionnelle et booster les ventes périodiques",
+      "kpi": "Taux de redemption offre anniversaire: >50%, Panier moyen anniversaire: +40%, Collecte dates naissance: >60%",
+      "description": "Célébration des moments personnels des clientes avec des offres et attentions personnalisées qui renforcent le lien émotionnel avec la marque.",
+      "scenarios": [
+        {
+          "scenario_target": "Anniversaire client",
+          "scenario_objective": "Célébrer avec une offre généreuse et mémorable",
+          "main_messages_ideas": "Joyeux anniversaire, Cadeau exclusif, Mois de célébration",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Joyeux Anniversaire [Prénom] ! 🎂",
+              "timing": "Jour J",
+              "description": "Message d'anniversaire avec cadeau beauté",
+              "content": "Joyeux anniversaire [Prénom] ! 🎂💕 Pour célébrer, voici un cadeau rien que pour vous : -25% sur tout + un mini [best-seller] offert. Valable tout le mois !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Cadeau Anniversaire",
+              "timing": "Jour J matin",
+              "description": "Notification cadeau par SMS",
+              "content": "[Marque] 🎂 Joyeux anniversaire [Prénom] ! Votre cadeau : -25% + surprise. Code ANNIV[NOM] valable 30 jours 💝"
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Semaine pour Votre Cadeau",
+              "timing": "J+23",
+              "description": "Rappel avant expiration de l'offre anniversaire",
+              "content": "Plus qu'une semaine pour utiliser votre cadeau d'anniversaire ! -25% + mini offert. Ne laissez pas passer cette occasion de vous faire plaisir."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Anniversaire inscription",
+          "scenario_objective": "Célébrer la relation et remercier la fidélité",
+          "main_messages_ideas": "Anniversaire avec nous, Rétrospective, Offre remerciement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "1 An Ensemble ! 🎉",
+              "timing": "Jour anniversaire inscription",
+              "description": "Célébration de l'anniversaire de la relation",
+              "content": "Ça fait déjà 1 an ! 🎉 Merci de faire partie de notre communauté. Pour fêter ça : votre rétrospective beauté + -15% sur votre prochain achat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Moments Saisonniers & Campagnes",
+      "target": "Base clients segmentée par préférences et historique",
+      "objective": "Capitaliser sur les temps forts du calendrier beauté pour booster les ventes",
+      "kpi": "Croissance CA vs période normale: +100%, Taux d'engagement campagne: >35%, Part des ventes saisonnières: 40%",
+      "description": "Campagnes marketing orchestrées autour des temps forts beauté : changements de saison, fêtes, événements mode et moments culturels pour maximiser la pertinence et les ventes.",
+      "scenarios": [
+        {
+          "scenario_target": "Campagne changement de saison (Automne)",
+          "scenario_objective": "Promouvoir la transition de routine saisonnière",
+          "main_messages_ideas": "Nouvelle saison nouvelle routine, Diagnostic peau automne, Produits essentiels, Offre bundle saisonnier",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Peau Change de Saison",
+              "timing": "Début septembre",
+              "description": "Introduction au changement de routine saisonnière",
+              "content": "L'automne arrive, votre peau le sent ! 🍂 Découvrez comment adapter votre routine : hydratation renforcée, protection contre le froid, teint lumineux malgré la grisaille."
+            },
+            {
+              "channel": "Email",
+              "title": "Diagnostic Peau Automne",
+              "timing": "J+3",
+              "description": "Quiz de mise à jour du profil saisonnier",
+              "content": "Votre peau a changé ? Faites notre diagnostic automne en 1 minute et découvrez votre nouvelle routine adaptée à la saison."
+            },
+            {
+              "channel": "Email",
+              "title": "Kit Essentiel Automne -20%",
+              "timing": "J+7",
+              "description": "Offre bundle produits de saison",
+              "content": "Le kit automne est là ! 🍁 Sérum hydratant + crème riche + baume à lèvres. Ensemble à -20%. Votre peau vous remerciera."
+            },
+            {
+              "channel": "SMS",
+              "title": "Fin Offre Automne",
+              "timing": "J+12",
+              "description": "Rappel fin de la promotion saisonnière",
+              "content": "[Marque] Dernier jour : kit automne -20% ! 🍂 Préparez votre peau pour la saison : [lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Campagne Fêtes (Noël)",
+          "scenario_objective": "Maximiser les ventes cadeaux et auto-cadeaux",
+          "main_messages_ideas": "Guide cadeaux, Coffrets exclusifs, Offres anticipées, Dernière minute",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Guide Cadeaux Beauté 2024",
+              "timing": "Mi-novembre",
+              "description": "Lancement de la campagne cadeaux avec guide",
+              "content": "Le guide cadeaux beauté est arrivé ! 🎁 Par budget, par type de peau, par passion : trouvez le cadeau parfait pour chacun(e). Et pourquoi pas un auto-cadeau ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Coffrets Exclusifs Édition Limitée",
+              "timing": "Fin novembre",
+              "description": "Présentation des coffrets exclusifs fêtes",
+              "content": "Édition limitée ! ✨ Nos coffrets de fêtes sont arrivés. Best-sellers en exclusivité, emballage cadeau offert. Stock très limité !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Vente Flash -30%",
+              "timing": "Black Friday",
+              "description": "Offre Black Friday exclusive",
+              "content": "[Marque] 🖤 BLACK FRIDAY : -30% sur TOUT ! 48h seulement. Code BF30 : [lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Livraison Garantie Noël",
+              "timing": "Mi-décembre",
+              "description": "Urgence livraison avant les fêtes",
+              "content": "Livraison garantie avant Noël ! 🎄 Commandez avant le [date] pour recevoir à temps. Nos coups de cœur de dernière minute..."
+            },
+            {
+              "channel": "Email",
+              "title": "E-Carte Cadeau Dernière Minute",
+              "timing": "23 décembre",
+              "description": "Solution de dernière minute",
+              "content": "Cadeau de dernière minute ? La e-carte cadeau est instantanée ! 🎁 De 25€ à 150€, personnalisée et reçue en 1 minute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expansion Cross-Catégorie",
+      "target": "Clients mono-catégorie (skincare only, makeup only, etc.)",
+      "objective": "Étendre le panier vers de nouvelles catégories beauté",
+      "kpi": "Taux de cross-sell catégorie: >25%, Nombre de catégories par client: 1.5→2.5, Panier moyen multi-catégorie: +60%",
+      "description": "Programme d'expansion progressive vers de nouvelles catégories beauté, avec éducation personnalisée et offres découverte pour transformer les clientes mono-catégorie en adeptes multi-catégories.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes skincare uniquement",
+          "scenario_objective": "Introduire le maquillage comme complément naturel",
+          "main_messages_ideas": "Skincare + makeup = combo parfait, Teint parfait, Offre découverte makeup",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Et Si On Parlait Maquillage ?",
+              "timing": "Après 3 achats skincare",
+              "description": "Introduction douce au maquillage",
+              "content": "Votre peau est rayonnante grâce à votre routine ! 🌟 Et si on sublimait ça avec un maquillage qui respecte votre peau ? Découvrez notre gamme clean beauty."
+            },
+            {
+              "channel": "Email",
+              "title": "Le Duo Parfait : Soin + Teint",
+              "timing": "J+7",
+              "description": "Focus sur le lien skincare-makeup",
+              "content": "Une belle peau = un beau teint ! Découvrez comment votre routine skincare prépare le terrain parfait pour notre fond de teint soin."
+            },
+            {
+              "channel": "Email",
+              "title": "Kit Découverte Makeup -30%",
+              "timing": "J+14",
+              "description": "Offre découverte pour première incursion makeup",
+              "content": "Prête à essayer ? Kit découverte makeup à -30% : fond de teint mini + mascara + baume teinté. Parfait pour commencer en douceur."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes makeup uniquement",
+          "scenario_objective": "Éduquer sur l'importance du skincare",
+          "main_messages_ideas": "Base parfaite = skincare, Diagnostic peau, Routine simple démarrage",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Le Secret d'un Makeup Parfait",
+              "timing": "Après 3 achats makeup",
+              "description": "Éducation sur le lien skin-makeup",
+              "content": "Vous savez ce qui fait la différence pour un makeup impeccable ? La peau en dessous ! 🌟 Découvrez comment une routine skincare simple change tout."
+            },
+            {
+              "channel": "Email",
+              "title": "Diagnostic Peau Gratuit",
+              "timing": "J+5",
+              "description": "Invitation au quiz skincare",
+              "content": "Quel est votre type de peau ? Faites notre diagnostic en 2 minutes et découvrez une routine simple en 3 étapes pour sublimer vos makeup."
+            },
+            {
+              "channel": "Email",
+              "title": "Kit Skincare Essentiel -30%",
+              "timing": "J+10",
+              "description": "Offre d'entrée en skincare",
+              "content": "Prête à révéler votre peau ? Kit essentiel skincare à -30% : nettoyant + sérum + hydratant. 3 étapes, 5 minutes matin et soir."
             }
           ]
         }
@@ -177,23 +840,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Parcours Bienvenue & Profil Peau",
-      "why_brevo_is_better": "Le créateur de formulaires et l'intégration d'automatisation de Brevo vous permettent de collecter les données du profil peau et de déclencher immédiatement des parcours personnalisés basés sur les réponses des clients.",
-      "omnichannel_channels": "Email pour le contenu éducatif riche + SMS pour les offres urgentes + WhatsApp pour les conseils skincare personnalisés",
-      "setup_efficiency": "Les workflows quiz-to-automation sont faciles à configurer avec des templates pré-construits, et les blocs de contenu dynamique personnalisent selon le type de peau."
+      "scenario_name": "Parcours Bienvenue & Découverte Profil Beauté",
+      "why_brevo_is_better": "Brevo combine formulaires intelligents et automatisation pour collecter les données du profil beauté et déclencher instantanément des parcours personnalisés. Les blocs de contenu dynamique adaptent chaque message selon le type de peau, les préoccupations et les préférences collectées.",
+      "omnichannel_channels": "Email pour le contenu éducatif riche + SMS pour les rappels quiz urgents + WhatsApp pour les conseils personnalisés de notre experte beauté",
+      "setup_efficiency": "Templates quiz beauté pré-construits, intégration CRM native pour enrichir les profils, et workflows automatiques qui segmentent et personnalisent sans intervention manuelle."
     },
     {
-      "scenario_name": "Rappels de Réapprovisionnement",
-      "why_brevo_is_better": "Les déclencheurs d'automatisation basés sur les produits vous permettent de configurer des rappels de réapprovisionnement intelligents selon la catégorie de produit et les cycles d'utilisation typiques.",
-      "omnichannel_channels": "Email pour les infos produit détaillées + SMS pour les rappels de récommande rapides",
-      "setup_efficiency": "Configurez une fois et oubliez - Brevo calcule automatiquement le timing optimal de rappel basé sur la date d'achat et le type de produit."
+      "scenario_name": "Réapprovisionnement & Abonnement",
+      "why_brevo_is_better": "Les déclencheurs produit de Brevo calculent automatiquement les cycles de réapprovisionnement selon la catégorie (30 jours pour un sérum, 60 jours pour une crème...). L'intégration e-commerce native suit les achats et anticipe les besoins.",
+      "omnichannel_channels": "Email pour les rappels détaillés avec visuels produit + SMS pour les notifications urgentes en 1 clic + WhatsApp pour les propositions d'abonnement conversationnelles",
+      "setup_efficiency": "Configuration unique par catégorie de produit, puis automatisation complète. Brevo gère le timing optimal, les relances et la conversion vers l'abonnement sans action manuelle."
     },
     {
-      "scenario_name": "Éducation Routine Beauté",
-      "why_brevo_is_better": "L'automatisation post-achat garantit que chaque client reçoit une éducation pertinente, réduisant les tickets support et augmentant la satisfaction produit.",
-      "omnichannel_channels": "Email pour les tutoriels détaillés + Liens vidéo pour les guides d'application + SMS pour les conseils rapides",
-      "setup_efficiency": "Le contenu peut être segmenté par catégorie de produit et envoyé automatiquement selon les déclencheurs d'achat."
+      "scenario_name": "Programme Fidélité & VIP",
+      "why_brevo_is_better": "Brevo permet de créer des programmes à niveaux avec points, statuts et récompenses. Le scoring comportemental identifie automatiquement les VIP potentielles et personnalise leur expérience avec des avantages exclusifs.",
+      "omnichannel_channels": "Email pour les communications fidélité riches + SMS pour les alertes points/niveaux + WhatsApp pour les invitations événements VIP exclusifs + Push pour les offres flash",
+      "setup_efficiency": "Système de points automatique synchronisé avec l'e-commerce, emails de progression de niveau pré-configurés, et segmentation VIP dynamique basée sur le comportement d'achat."
+    },
+    {
+      "scenario_name": "Anniversaire & Occasions Spéciales",
+      "why_brevo_is_better": "Brevo automatise les célébrations personnelles avec des déclencheurs de date. L'intégration CRM permet de collecter et d'exploiter les dates importantes pour créer des moments de connexion émotionnelle uniques.",
+      "omnichannel_channels": "Email pour les messages d'anniversaire riches et visuels + SMS pour le message personnel du jour J + WhatsApp pour un message chaleureux et conversationnel",
+      "setup_efficiency": "Un workflow anniversaire configuré une fois s'exécute automatiquement pour chaque cliente. Les codes promo uniques sont générés automatiquement et la redemption est trackée nativement."
+    },
+    {
+      "scenario_name": "Expansion Cross-Catégorie",
+      "why_brevo_is_better": "La segmentation avancée de Brevo identifie les clientes mono-catégorie et leur historique. Les algorithmes de recommandation suggèrent les catégories complémentaires les plus pertinentes selon le profil et le comportement.",
+      "omnichannel_channels": "Email pour l'éducation catégorie avec contenu riche + SMS pour les offres découverte urgentes + In-app pour les suggestions contextuelles lors de la navigation",
+      "setup_efficiency": "Segments dynamiques par catégorie d'achat, workflows cross-sell automatiques déclenchés par les comportements, et recommandations produits personnalisées basées sur l'historique."
     }
   ],
-  "conclusion": "Les marques de beauté qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à des taux d'adoption produit plus élevés, une fréquence de réachat accrue et une fidélité client plus forte grâce à l'éducation et la personnalisation."
+  "conclusion": "Les marques de beauté qui implémentent ce plan marketing relationnel complet peuvent s'attendre à des résultats significatifs : augmentation de la fréquence de réachat grâce aux rappels intelligents de réapprovisionnement, croissance de la LTV via l'expansion cross-catégorie et les abonnements, fidélisation renforcée par les programmes VIP et les célébrations personnelles. La clé du succès réside dans la personnalisation basée sur le profil beauté de chaque cliente et l'orchestration fluide des canaux email, SMS, WhatsApp et push pour accompagner chaque moment du parcours beauté."
 }

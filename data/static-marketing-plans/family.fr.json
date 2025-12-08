@@ -1,174 +1,909 @@
 {
-  "introduction": "Ce plan marketing relationnel est conçu pour les retailers famille servant les parents et aidants avec des produits pour enfants, jouets et essentiels famille.",
+  "introduction": "Ce plan marketing relationnel complet est conçu pour les retailers famille servant les parents, aidants et donateurs avec des produits enfants, jouets, équipement bébé, vêtements enfants, produits éducatifs et essentiels famille. Le plan adresse les dynamiques uniques du retail famille où les décisions d'achat sont influencées par les étapes de développement, les fratries, les considérations de sécurité, et la connexion émotionnelle que les parents ont avec le fait de donner le meilleur à leurs enfants. Le succès dans le retail famille nécessite de comprendre que la valeur vie client s'étend sur des années de développement de l'enfant, se multiplie souvent avec les frères et sœurs, et s'étend par le bouche-à-oreille dans les réseaux de parents.",
   "company_summary": {
     "name": "Marque Famille & Enfants",
     "website": "exemple-famille.com",
-    "activities": "Commerce de produits famille et enfants, incluant jouets, équipement bébé, vêtements enfants, produits éducatifs et essentiels famille",
-    "target": "Parents et aidants d'enfants de 0 à 12 ans, recherchant des produits de qualité, sûrs et adaptés à l'âge pour leurs familles",
+    "activities": "Commerce de produits famille et enfants, incluant jouets, équipement bébé, vêtements enfants, produits éducatifs, articles de puériculture, équipement de jeux extérieur et essentiels famille",
+    "target": "Parents et aidants d'enfants de 0 à 12 ans, futurs parents, grands-parents offrant des cadeaux, et foyers axés famille recherchant des produits de qualité, sûrs et adaptés à l'âge",
     "industry": "Family",
-    "business_model": "B2C Retail"
+    "target_audience": "Principal : Parents et aidants principaux (80%), Secondaire : Grands-parents et donateurs (15%), Tertiaire : Professionnels de la petite enfance et éducateurs (5%)",
+    "nb_employees": "50-200",
+    "business_model": "B2C Retail",
+    "customer_lifecycle_key_steps": "Découverte > Création Profil Famille > Premier Achat > Engagement par Étape d'Âge > Achats Jalons > Expansion Multi-Enfants > Inscription Fidélité > Parrainage & Recommandation"
   },
   "programs_list": [
     {
-      "program_name": "Bienvenue & Profil Famille",
-      "target": "Nouveaux abonnés et jeunes parents",
-      "objective": "Comprendre la composition familiale et l'âge des enfants pour des recommandations ciblées",
-      "kpi": "Complétion du profil famille, Conversion premier achat, Engagement adapté à l'âge",
-      "description": "Un parcours de bienvenue personnalisé qui collecte les informations familiales pour des recommandations produits adaptées à l'âge.",
+      "program_name": "Bienvenue & Découverte Profil Famille",
+      "target": "Nouveaux abonnés, premiers visiteurs et futurs parents",
+      "objective": "Construire des profils famille complets pour permettre des recommandations personnalisées adaptées à l'âge, atteindre 50% de taux de complétion de profil, et convertir 25% des nouveaux abonnés en premier achat sous 14 jours",
+      "kpi": "Taux complétion profil famille (cible : 50%), Enfants ajoutés par famille (cible : 1,4), Conversion premier achat (cible : 25%), Délai premier achat (cible : <14 jours), Taux engagement quiz (cible : 60%)",
+      "description": "Un parcours de bienvenue personnalisé qui collecte attentivement la composition familiale, les âges des enfants, les intérêts de développement et les préférences d'achat pour délivrer des recommandations produits hyper-pertinentes. Le programme reconnaît que les parents apprécient la personnalisation qui leur fait gagner du temps et veulent se sentir compris dans leur parcours parental unique.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux abonnés email",
-          "scenario_objective": "Construire un profil famille et générer le premier achat",
-          "main_messages_ideas": "Bienvenue + quiz famille, Sélections adaptées à l'âge, Conseils parentalité, Offre premier achat",
+          "scenario_target": "Nouveaux abonnés email sans historique d'achat",
+          "scenario_objective": "Construire un profil famille complet et convertir en premier achat sous 14 jours",
+          "main_messages_ideas": "Bienvenue chaleureuse avec valeur immédiate, Quiz famille interactif, Premières recommandations personnalisées, Contenu étape parentale, Incitation premier achat",
           "message_sequence": [
             {
-              "title": "Bienvenue + Quiz Famille",
-              "description": "Bienvenue immédiate avec quiz profil famille",
-              "content": "Bienvenue ! Parlez-nous de votre famille pour des recommandations personnalisées"
+              "channel": "Email",
+              "title": "Bienvenue dans la Famille [Marque] !",
+              "timing": "Immédiat",
+              "description": "Bienvenue immédiate avec invitation au quiz famille",
+              "content": "Bonjour et bienvenue ! Nous sommes ravis de vous accueillir. Chaque famille est unique, et nous voulons nous assurer que vous voyez les produits parfaits pour la vôtre. Répondez à notre Quiz Famille rapide de 2 minutes et débloquez des recommandations personnalisées pour chacun de vos enfants. En plus, recevez un cadeau de bienvenue spécial juste pour l'avoir complété !"
             },
             {
-              "title": "Vos Sélections Personnalisées",
-              "description": "Jour 2 : Basé sur l'âge des enfants",
-              "content": "Parfait pour votre enfant de [Âge] ans : Nos meilleures sélections"
+              "channel": "Email",
+              "title": "Vos Sélections Personnalisées Famille Sont Prêtes",
+              "timing": "J+2",
+              "description": "Jour 2 : Recommandations basées sur le profil ou rappel quiz",
+              "content": "[Si quiz complété] : Basé sur votre profil famille, voici des recommandations triées sur le volet pour [Prénom Enfant], âge [X]. Des jouets de développement aux essentiels quotidiens, ces sélections sont choisies spécialement pour votre [tout-petit/enfant d'âge préscolaire/grand enfant]. [Si quiz non complété] : Nous avons remarqué que vous n'avez pas encore complété votre Quiz Famille ! Il ne prend que 2 minutes et débloque des recommandations personnalisées pour chaque enfant de votre famille."
             },
             {
-              "title": "Contenu Parentalité",
-              "description": "Jour 5 : Conseils utiles pour leur étape",
-              "content": "Conseils d'experts pour parents d'un enfant de [Âge] ans"
+              "channel": "SMS",
+              "title": "Rappel Rapide Profil",
+              "timing": "J+3",
+              "description": "Jour 3 : SMS pour non-compléteurs du quiz",
+              "content": "Bonjour [Prénom] ! Complétez votre Quiz Famille en 2 min et débloquez des sélections personnalisées pour vos enfants + une offre de bienvenue spéciale. [Lien]"
             },
             {
-              "title": "Offre Premier Achat",
-              "description": "Jour 10 : Remise bienvenue famille",
-              "content": "Bienvenue dans la famille : -15% sur votre première commande"
+              "channel": "Email",
+              "title": "Guide Étape Parentale : [Tranche d'Âge]",
+              "timing": "J+5",
+              "description": "Jour 5 : Contenu et conseils spécifiques à l'étape",
+              "content": "Être parent d'un [tout-petit/enfant d'âge préscolaire/enfant d'âge scolaire] vient avec ses propres joies et défis. Voici nos conseils préférés de parents et d'experts, plus des produits qui rendent cette étape plus facile et plus amusante. [Contenu adapté à l'âge de l'enfant depuis le profil]"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Cadeau de Bienvenue Famille : -15%",
+              "timing": "J+8",
+              "description": "Jour 8 : Incitation premier achat avec recommandations",
+              "content": "Bienvenue dans la famille [Marque] ! Voici -15% sur votre première commande en guise de remerciement. Nous avons curé une sélection spéciale basée sur votre profil famille - des incontournables pour [Prénom Enfant] aux articles que les autres parents d'enfants de [âge] ans adorent le plus."
+            },
+            {
+              "channel": "SMS",
+              "title": "Rappel Offre Bienvenue",
+              "timing": "J+12",
+              "description": "Jour 12 : Urgence pour l'offre de bienvenue",
+              "content": "Votre cadeau de bienvenue famille de -15% expire dans 48 heures ! Découvrez les sélections personnalisées pour votre [tout-petit/enfants] : [Lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Futurs parents (grossesse détectée via quiz ou comportement)",
+          "scenario_objective": "Construire une relation pré-naissance et préparer les achats puériculture/nouveau-né",
+          "main_messages_ideas": "Félicitations grossesse, Accompagnement par trimestre, Planification liste de naissance/chambre, Préparation nouveaux parents, Essentiels arrivée bébé",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Félicitations pour Votre Famille Qui S'Agrandit !",
+              "timing": "Immédiat",
+              "description": "Félicitations immédiates et introduction liste de naissance",
+              "content": "Quelle nouvelle excitante ! Félicitations pour votre grossesse. Que ce soit votre premier bébé ou que vous agrandissiez votre famille, nous sommes là pour vous aider à vous préparer en toute confiance. Commencez votre liste de naissance aujourd'hui et laissez-nous vous guider à travers tout ce dont vous aurez besoin, trimestre par trimestre."
+            },
+            {
+              "channel": "Email",
+              "title": "Checklist Essentiels [Trimestre]",
+              "timing": "Adapté au trimestre",
+              "description": "Accompagnement spécifique au trimestre",
+              "content": "Vous êtes dans votre [deuxième/troisième] trimestre - voici ce que les autres parents auraient aimé savoir pour se préparer. Des incontournables de la chambre aux essentiels du sac de maternité, nous avons créé votre checklist complète basée sur votre date prévue d'accouchement."
+            },
+            {
+              "channel": "Email",
+              "title": "Aménagement Chambre Bébé Simplifié",
+              "timing": "2 mois avant DPA",
+              "description": "2 mois avant la date prévue : Focus chambre",
+              "content": "Avec [X] semaines jusqu'à votre date prévue, c'est le moment parfait pour finaliser votre chambre bébé. Voici nos collections chambre les plus appréciées, les essentiels sécurité et les conseils d'experts pour créer un espace calme et sûr pour votre bébé."
+            },
+            {
+              "channel": "SMS",
+              "title": "Rappel Complétion Liste de Naissance",
+              "timing": "6 semaines avant DPA",
+              "description": "6 semaines avant la date prévue",
+              "content": "Bébé arrive bientôt ! Complétez votre liste de naissance maintenant et profitez de -10% sur les articles restants. Nous vous aiderons à tout avoir à temps. [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Compte à Rebours Final : Sac Maternité & Préparation Première Semaine",
+              "timing": "3-4 semaines avant DPA",
+              "description": "3-4 semaines avant la date prévue",
+              "content": "Le grand jour approche ! Assurez-vous d'être prêts avec notre checklist sac de maternité et essentiels première semaine à la maison. En plus, profitez de conseils de soins nouveau-né gratuits par des experts pédiatriques."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Jalons & Transition d'Âge",
-      "target": "Parents selon les jalons d'âge de l'enfant",
-      "objective": "Générer des achats aux moments clés du développement",
-      "kpi": "CA campagnes jalons, Achats transition d'âge, Rétention long terme",
-      "description": "Campagnes automatisées déclenchées quand les enfants atteignent des âges clés et jalons de développement.",
+      "program_name": "Récupération Panier Abandonné & Navigation",
+      "target": "Visiteurs ayant montré une intention d'achat mais n'ayant pas complété",
+      "objective": "Récupérer 18% des paniers abandonnés et 10% des abandons de navigation avec des messages de réassurance sécurité et qualité",
+      "kpi": "Taux récupération panier (cible : 18%), Taux récupération navigation (cible : 10%), Délai récupération (cible : <24 heures), Panier moyen récupéré vs. original (cible : +5%)",
+      "description": "Un programme de récupération attentionné qui comprend que les parents font souvent des recherches approfondies avant d'acheter pour leurs enfants. Le programme met l'accent sur les certifications sécurité, l'assurance qualité et la preuve sociale d'autres parents plutôt que sur des remises agressives.",
       "scenarios": [
         {
-          "scenario_target": "Parents d'enfants approchant des âges clés (ex: 1, 3, 5 ans, entrée à l'école)",
-          "scenario_objective": "Capter les achats jalons et célébrations",
-          "main_messages_ideas": "Anniversaire qui approche, Réalisations jalons, Besoins prochaine étape, Essentiels célébration",
+          "scenario_target": "Abandonneurs de panier avec articles pour des enfants identifiés",
+          "scenario_objective": "Récupérer le panier avec réassurance sécurité et urgence personnalisée",
+          "main_messages_ideas": "Focus sécurité et qualité, Articles parfaits pour l'âge de leur enfant, Avis d'autres parents, Alerte stock bas, Rappel doux avec offre d'assistance",
           "message_sequence": [
             {
-              "title": "Compte à Rebours Anniversaire",
-              "description": "4 semaines avant l'anniversaire de l'enfant",
-              "content": "[Prénom de l'enfant] va avoir [Âge] ans ! Idées cadeaux qu'il/elle va adorer"
+              "channel": "Email",
+              "title": "Vous Réfléchissez Encore à Ces Articles pour [Prénom Enfant] ?",
+              "timing": "H+1",
+              "description": "1 heure : Rappel panier personnalisé",
+              "content": "Nous avons remarqué que vous regardiez de super articles pour [Prénom Enfant]. Voici ce qui est encore dans votre panier, avec pourquoi les autres parents d'enfants de [âge] ans adorent ces sélections. Tous nos produits respectent les normes de sécurité les plus strictes - car la sécurité de votre enfant est notre priorité absolue."
             },
             {
-              "title": "Guide Transition d'Âge",
-              "description": "Le jour de l'anniversaire",
-              "content": "Ce dont les enfants de [Âge] ans ont besoin : Votre guide essentiel"
+              "channel": "SMS",
+              "title": "Panier Sauvegardé - Alerte Stock Bas",
+              "timing": "H+6",
+              "description": "6 heures : Urgence basée sur le stock",
+              "content": "Info ! Le [Produit] dans votre panier est populaire et bientôt épuisé. Complétez votre commande pour [Prénom Enfant] tant qu'il est disponible : [Lien]"
             },
             {
-              "title": "Spécial Célébration",
-              "description": "Semaine d'anniversaire",
-              "content": "Joyeux anniversaire [Prénom de l'enfant] ! Célébrez avec -20%"
+              "channel": "Email",
+              "title": "Ce Que Disent les Parents Comme Vous",
+              "timing": "H+24",
+              "description": "24 heures : Preuve sociale et avis",
+              "content": "Encore en train de décider ? Voici ce que disent les autres parents d'enfants de [âge] ans sur les articles dans votre panier. De plus, notre politique de retour facile 30 jours signifie que vous pouvez acheter en toute confiance - si ce n'est pas parfait pour votre famille, nous facilitons les retours."
+            },
+            {
+              "channel": "Email",
+              "title": "Besoin d'Aide pour Choisir ? Nous Sommes Là",
+              "timing": "H+48",
+              "description": "48 heures : Offre d'assistance",
+              "content": "Acheter pour les enfants peut être écrasant avec tant de choix ! Nos experts produits famille sont là pour vous aider à trouver exactement ce qui convient à [Prénom Enfant]. Répondez à cet email ou chattez avec nous - nous adorons aider les familles à trouver les articles parfaits."
+            },
+            {
+              "channel": "SMS",
+              "title": "Rappel Final Panier + Offre",
+              "timing": "H+72",
+              "description": "72 heures : Dernière chance avec petite incitation",
+              "content": "Votre panier expire bientôt ! Complétez votre commande pour [Prénom Enfant] aujourd'hui et obtenez la livraison gratuite : [Lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Visiteurs de catégorie sans création de panier",
+          "scenario_objective": "Convertir l'intérêt de navigation en considération d'achat",
+          "main_messages_ideas": "Expertise catégorie, Meilleures ventes par âge, Contenu guide d'achat, Aide à la comparaison, Recommandations communauté",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Trouver le [Catégorie] Parfait pour Votre Enfant de [Âge] Ans",
+              "timing": "H+4",
+              "description": "4 heures : Orientation catégorie",
+              "content": "Nous avons remarqué que vous exploriez notre collection [jouets/vêtements/équipement]. Choisir le bon [catégorie] pour un enfant de [âge] ans peut être délicat ! Voici notre guide rapide de ce qui fonctionne le mieux pour cette étape de développement, plus nos sélections les mieux notées par des parents comme vous."
+            },
+            {
+              "channel": "Email",
+              "title": "Les Plus Aimés par les Parents d'Enfants de [Âge] Ans",
+              "timing": "J+2",
+              "description": "Jour 2 : Meilleures ventes avec avis",
+              "content": "Vous vous demandez ce que choisissent les autres parents ? Voici les articles [catégorie] les plus populaires pour les enfants de [âge] ans ce mois-ci, avec de vrais avis et photos de parents. Parfois, les meilleures recommandations viennent de familles qui sont passées par là !"
+            },
+            {
+              "channel": "Push",
+              "title": "Alerte Bestseller Catégorie",
+              "timing": "J+3",
+              "description": "Jour 3 : Notification push pour utilisateurs app",
+              "content": "[Catégorie] les mieux notés pour les [âge] ans - découvrez ce qu'achètent les parents"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Campagne Rentrée Scolaire",
-      "target": "Parents d'enfants en âge scolaire",
-      "objective": "Maximiser les achats de la rentrée scolaire",
-      "kpi": "CA campagne rentrée, Complétion de checklist, Panier moyen",
-      "description": "Campagne complète de rentrée scolaire avec checklists et fournitures adaptées à l'âge.",
+      "program_name": "Expérience Post-Achat & Activation Jalons",
+      "target": "Acheteurs récents dans toutes les catégories de produits",
+      "objective": "Assurer le succès et la satisfaction produit, collecter des avis (cible : 25% taux d'avis), et activer les achats du prochain jalon de développement",
+      "kpi": "Taux soumission avis (cible : 25%), Score satisfaction produit (cible : 4,5+), Taux avis photo/vidéo (cible : 8%), Taux réachat sous 60 jours (cible : 35%), Réduction tickets support (cible : -20%)",
+      "description": "Un programme post-achat complet qui aide les parents à tirer le meilleur parti de leurs achats, assure la sécurité de l'enfant et le succès du produit, et crée de l'enthousiasme pour les prochains jalons de développement. Le programme reconnaît que des parents heureux deviennent des ambassadeurs et que les produits enfants ont des considérations uniques d'installation et de sécurité.",
       "scenarios": [
         {
-          "scenario_target": "Parents d'enfants entrant à l'école ou dans une nouvelle classe",
-          "scenario_objective": "Générer des achats complets de rentrée",
-          "main_messages_ideas": "Checklist rentrée, Besoins par niveau, Offres early bird, Essentiels dernière minute",
+          "scenario_target": "Acheteurs de jouets et produits de développement",
+          "scenario_objective": "Assurer le succès du jeu et collecter des avis authentiques",
+          "main_messages_ideas": "Conseils de jeu adaptés à l'âge, Bénéfices développementaux, Rappels sécurité, Demande d'avis photo, Aperçu prochain jalon",
           "message_sequence": [
             {
-              "title": "Preview Rentrée",
-              "description": "6 semaines avant la rentrée",
-              "content": "La préparation de rentrée commence maintenant : Votre checklist [Niveau]"
+              "channel": "Email",
+              "title": "Tirer le Meilleur Parti de [Nom Produit]",
+              "timing": "J+1",
+              "description": "Jour 1 : Conseils d'utilisation et sécurité",
+              "content": "Excellent choix pour [Prénom Enfant] ! Voici comment aider votre enfant de [âge] ans à tirer le meilleur bénéfice développemental de [Produit]. En plus, des conseils de sécurité importants et des idées de jeu adaptées à l'âge qui le/la garderont engagé(e) et en apprentissage."
             },
             {
-              "title": "Offres Early Bird",
-              "description": "4 semaines avant la rentrée",
-              "content": "Achetez tôt, économisez gros : Essentiels rentrée en promotion"
+              "channel": "SMS",
+              "title": "Installation Rapide Complète ?",
+              "timing": "J+2",
+              "description": "Jour 2 : Check-in",
+              "content": "Comment [Prénom Enfant] apprécie-t-il/elle son nouveau [Produit] ? Besoin d'aide pour l'installation ? Répondez OUI pour des conseils ou AIDE pour contacter notre équipe !"
             },
             {
-              "title": "Checklist Finale",
-              "description": "2 semaines avant la rentrée",
-              "content": "N'oubliez pas ! Derniers articles sur votre checklist [Niveau]"
+              "channel": "Email",
+              "title": "Qu'en Pense [Prénom Enfant] ?",
+              "timing": "J+7",
+              "description": "Jour 7 : Demande d'avis avec incitation photo",
+              "content": "Nous adorerions savoir ce que [Prénom Enfant] pense de son [Produit] ! Partagez un avis (bonus pour les photos ou vidéos de lui/elle en train de l'apprécier !) et gagnez 5€ sur votre prochaine commande. Votre avis aide d'autres parents à faire d'excellents choix pour leurs enfants."
             },
             {
-              "title": "Dernière Chance",
-              "description": "1 semaine avant la rentrée",
-              "content": "L'école c'est bientôt ! Commandez maintenant pour une livraison à temps"
+              "channel": "Email",
+              "title": "Bientôt : Ce Que les [Âge+1] Ans Adorent",
+              "timing": "J+14",
+              "description": "Jour 14 : Aperçu prochain jalon",
+              "content": "Les enfants grandissent si vite ! Avant que vous ne le sachiez, [Prénom Enfant] sera prêt(e) pour de nouvelles aventures. Voici un aperçu de ce que les parents d'enfants de [âge+1] ans disent que leurs enfants adorent - super idées pour les prochains anniversaires ou juste parce que !"
+            },
+            {
+              "channel": "Push",
+              "title": "Récompense Avis Prête",
+              "timing": "J+10",
+              "description": "Jour 10 : Rappel avis",
+              "content": "Partagez votre avis sur [Produit] et gagnez 5€ de réduction ! L'avis de [Prénom Enfant] compte"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Acheteurs d'équipement bébé et équipement de sécurité",
+          "scenario_objective": "Assurer l'installation correcte et la conformité sécurité continue",
+          "main_messages_ideas": "Vérification installation sécurité, Conseils d'installation, Enregistrement sécurité, Mises à jour produit, Timing de transition",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Important : Installer Votre [Produit] en Sécurité",
+              "timing": "Immédiat",
+              "description": "Immédiat : Guide d'installation sécurité d'abord",
+              "content": "Votre [siège auto/poussette/lit bébé/etc.] est en route ! Une installation correcte est essentielle pour la sécurité de votre bébé. Voici notre guide visuel pour une installation correcte, plus une checklist pour vérifier que tout est sécurisé. Nos experts sécurité certifiés sont disponibles pour vous aider - répondez simplement à cet email."
+            },
+            {
+              "channel": "SMS",
+              "title": "Inscrivez-vous pour les Alertes Sécurité",
+              "timing": "J+2",
+              "description": "Jour 2 : Enregistrement sécurité",
+              "content": "Important : Enregistrez votre [Produit] pour les alertes sécurité et rappels. Prend 1 minute et protège votre bébé : [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Check-In Installation Sécurité",
+              "timing": "J+5",
+              "description": "Jour 5 : Vérification installation",
+              "content": "Comment s'est passée l'installation de [Produit] ? De nombreux parents ont des questions sur l'installation correcte. Voici les erreurs d'installation les plus courantes à éviter, et notre équipe sécurité est disponible pour une vérification d'installation virtuelle gratuite si vous voulez avoir l'esprit tranquille."
+            },
+            {
+              "channel": "Email",
+              "title": "Quand Faire la Transition : Votre Guide [Produit]",
+              "timing": "Selon l'âge de l'enfant",
+              "description": "Basé sur l'âge de l'enfant : Timing de transition",
+              "content": "Comme [Prénom Enfant] grandit, vous vous demandez peut-être quand passer de [produit actuel] à l'étape suivante. Voici ce que recommandent les experts sécurité basé sur l'âge et le poids de votre enfant, plus des options de mise à niveau fluides quand vous êtes prêts."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Saisons & Fêtes Famille",
-      "target": "Tous les clients famille",
-      "objective": "Générer des achats saisonniers et célébrations familiales",
-      "kpi": "CA campagnes fêtes, Achats cadeaux, Engagement événements famille",
-      "description": "Campagnes axées famille autour des fêtes, saisons et occasions spéciales.",
+      "program_name": "Célébrations Anniversaires & Jalons",
+      "target": "Parents avec dates de naissance des enfants enregistrées",
+      "objective": "Capturer 60% des achats de cadeaux d'anniversaire pour les enfants enregistrés et créer une connexion émotionnelle de marque pendant les célébrations familiales",
+      "kpi": "CA campagne anniversaire (cible : 60% taux de capture), Rédemption offre anniversaire (cible : 45%), Création liste de souhaits (cible : 25%), Taux achat jalon (cible : 40%)",
+      "description": "Un programme d'anniversaire émotionnellement résonnant qui célèbre le jour spécial de chaque enfant et les jalons de développement clés. Le programme comprend que les anniversaires sont des moments d'achat significatifs et que les parents apprécient des conseils cadeaux attentionnés et adaptés à l'âge pendant ces célébrations.",
       "scenarios": [
         {
-          "scenario_target": "Parents selon l'âge des enfants",
-          "scenario_objective": "Maximiser les achats de fêtes et saisonniers",
-          "main_messages_ideas": "Guide cadeaux fêtes, Activités de saison, Traditions familiales, Essentiels célébration",
+          "scenario_target": "Enfants avec anniversaires à venir (date de naissance enregistrée)",
+          "scenario_objective": "Capturer les achats de cadeaux d'anniversaire et créer une expérience de célébration",
+          "main_messages_ideas": "Planification anticipée et liste de souhaits, Guide cadeaux par âge, Célébration semaine anniversaire, Cadeau de la marque, Remerciement post-anniversaire",
           "message_sequence": [
             {
-              "title": "Guide Cadeaux Fête",
-              "description": "6 semaines avant une fête majeure",
-              "content": "Idées cadeaux [Fête] pour tous les âges"
+              "channel": "Email",
+              "title": "L'Anniversaire de [Prénom Enfant] Approche ! Commencez à Planifier",
+              "timing": "6 semaines avant",
+              "description": "6 semaines avant : Planification anticipée",
+              "content": "[Prénom Enfant] va avoir [Âge] ans bientôt - comme c'est excitant ! Que vous planifiez une fête ou cherchiez les cadeaux parfaits, nous sommes là pour aider à rendre cet anniversaire inoubliable. Créez une liste de souhaits anniversaire à partager avec la famille et les amis, et découvrez ce que les [âge] ans adorent en ce moment."
             },
             {
-              "title": "Sélections par Âge",
-              "description": "4 semaines avant la fête",
-              "content": "Cadeaux [Fête] parfaits pour votre enfant de [Âge] ans"
+              "channel": "Email",
+              "title": "Guide Cadeaux : Ce Que les [Âge] Ans Veulent Vraiment",
+              "timing": "4 semaines avant",
+              "description": "4 semaines avant : Guide cadeaux",
+              "content": "Pas sûr de quoi offrir à un nouveau [âge] ans ? Voici les cadeaux les plus souhaités et les mieux notés pour cet âge, des incontournables éducatifs au pur amusement. En plus, nous avons inclus des idées cadeaux pour tous les budgets !"
             },
             {
-              "title": "Cadeaux Dernière Minute",
-              "description": "Date limite livraison",
-              "content": "Dernier appel pour livraison [Fête] - Commandez maintenant !"
+              "channel": "SMS",
+              "title": "Compte à Rebours Anniversaire !",
+              "timing": "2 semaines avant",
+              "description": "2 semaines avant : Rappel SMS",
+              "content": "L'anniversaire de [Prénom Enfant] est dans 2 semaines ! Découvrez sa liste de souhaits ou trouvez des cadeaux parfaits pour les [âge] ans. N'oubliez pas - nous offrons l'emballage cadeau gratuit ! [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Joyeux Anniversaire [Prénom Enfant] ! Un Cadeau de Notre Part",
+              "timing": "Jour de l'anniversaire",
+              "description": "Anniversaire : Email de célébration spéciale",
+              "content": "Joyeux Anniversaire [Prénom Enfant] ! Nous sommes honorés de faire partie des célébrations de votre famille. Voici un cadeau d'anniversaire spécial de notre part : -20% sur votre prochain achat, plus le double de points fidélité cette semaine. Que cette année soit remplie de joie, de découvertes et d'aventures !"
+            },
+            {
+              "channel": "Push",
+              "title": "Cadeau Anniversaire Prêt !",
+              "timing": "Jour de l'anniversaire",
+              "description": "Anniversaire : Notification push",
+              "content": "Joyeux Anniversaire [Prénom Enfant] ! Votre cadeau de -20% vous attend"
+            },
+            {
+              "channel": "Email",
+              "title": "Comment S'est Passé le Grand Jour ?",
+              "timing": "1 semaine après",
+              "description": "1 semaine après : Post-anniversaire",
+              "content": "Nous espérons que [Prénom Enfant] a passé un super [Ordinal] anniversaire ! Nous adorerions voir des photos de célébration si vous souhaitez les partager. Et maintenant qu'il/elle a officiellement [âge] ans, voici ce que les parents disent que leurs enfants de [âge] ans apprécient le plus - parfait pour dépenser l'argent d'anniversaire !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Enfants atteignant des jalons de développement (premiers pas, entrée à l'école, etc.)",
+          "scenario_objective": "Célébrer les jalons et capturer les achats associés",
+          "main_messages_ideas": "Célébration jalon, Produits appropriés pour l'étape, Capture de souvenirs, Connexion communauté parents",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Alerte Grand Jalon : [Nom Jalon] !",
+              "timing": "Déclenché par jalon",
+              "description": "Email déclenché par jalon",
+              "content": "[Prénom Enfant] [marche/entre à l'école/perd ses dents/apprend à lire] ? Ces moments passent si vite ! Célébrez ce jalon avec des articles conçus pour cette étape excitante. Les autres parents d'enfants au même [jalon] recommandent le plus ces produits."
+            },
+            {
+              "channel": "Email",
+              "title": "Checklist Essentiels [Jalon]",
+              "timing": "3 jours après déclencheur",
+              "description": "3 jours après le déclencheur jalon",
+              "content": "Maintenant que [Prénom Enfant] [atteint le jalon], vous pourriez avoir besoin de nouveau matériel ! Voici ce que les parents auraient aimé savoir quand leurs enfants ont atteint cette étape, plus notre checklist essentiels curée pour le succès [jalon]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Offre Célébration Jalon",
+              "timing": "1 semaine après",
+              "description": "1 semaine après : Incitation",
+              "content": "Félicitations pour le grand jalon de [Prénom Enfant] ! Célébrez avec -15% sur [catégorie appropriée au jalon]. Utilisez le code JALON15 : [Lien]"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Fidélité & Avantages Famille",
-      "target": "Clients famille récurrents",
-      "objective": "Augmenter la valeur vie famille et l'engagement multi-enfants",
-      "kpi": "Inscription fidélité famille, Ajouts fratrie, Taux de parrainage",
-      "description": "Programme de fidélité axé famille avec récompenses spécifiques par enfant et avantages fratrie.",
+      "program_name": "Rentrée Scolaire & Saison Académique",
+      "target": "Parents d'enfants en âge scolaire (Maternelle à CM2)",
+      "objective": "Capturer les achats complets de rentrée avec 45% des familles complétant les checklists par niveau et atteindre +30% de panier moyen vs. achats réguliers",
+      "kpi": "CA campagne rentrée (cible : +40% vs. mois moyen), Taux complétion checklist (cible : 45%), Augmentation panier moyen (cible : +30%), Engagement spécifique niveau (cible : 60%)",
+      "description": "Une campagne rentrée complète qui aide les parents débordés à se préparer pour la nouvelle année scolaire avec des checklists par niveau, les listes de fournitures des enseignants et des rappels opportuns. Le programme reconnaît que la rentrée est l'une des saisons d'achat les plus stressantes pour les parents et vise à simplifier l'expérience.",
       "scenarios": [
         {
-          "scenario_target": "Clients famille actifs",
-          "scenario_objective": "Approfondir la relation familiale et encourager les parrainages",
-          "main_messages_ideas": "Récompenses famille, Avantages fratrie, Communauté parents, Parrainages famille",
+          "scenario_target": "Parents avec enfants entrant dans un nouveau niveau",
+          "scenario_objective": "Générer des achats rentrée complets via des checklists utiles",
+          "main_messages_ideas": "Planification spécifique niveau, Économies early bird, Progrès checklist, Intégration liste enseignant, Essentiels dernière minute",
           "message_sequence": [
             {
-              "title": "Bienvenue Fidélité Famille",
-              "description": "Après un achat qualifiant",
-              "content": "Bienvenue au programme Récompenses Famille [Marque] ! Voici ce que vous avez débloqué"
+              "channel": "Email",
+              "title": "La Rentrée en [Niveau] de [Prénom Enfant] Arrive !",
+              "timing": "8 semaines avant",
+              "description": "8 semaines avant : Lancement rentrée",
+              "content": "Vous y croyez que [Prénom Enfant] entre en [Niveau] ? Nous avons créé une checklist rentrée [Niveau] complète basée sur les recommandations des enseignants. Commencez à acheter tôt pour la meilleure sélection et les meilleurs prix - nous vous aiderons à cocher chaque article !"
             },
             {
-              "title": "Ajouter un Frère/Sœur",
-              "description": "Encourager l'expansion du profil",
-              "content": "Famille qui s'agrandit ? Ajoutez les frères et sœurs pour des sélections personnalisées pour tous"
+              "channel": "Email",
+              "title": "Soldes Early Bird Rentrée : Jusqu'à -30%",
+              "timing": "6 semaines avant",
+              "description": "6 semaines avant : Offres early bird",
+              "content": "Les parents malins achètent tôt pour la rentrée ! Profitez de jusqu'à -30% sur les fournitures adaptées au [Niveau], cartables, équipement déjeuner et vêtements. Évitez la cohue et cochez les articles de votre checklist pendant que le stock est au mieux."
             },
             {
-              "title": "Parrainage Famille",
-              "description": "Présentation du programme de parrainage",
-              "content": "Partagez l'amour : Offrez 20€, Recevez 20€ pour chaque famille que vous parrainez"
+              "channel": "SMS",
+              "title": "Progrès Checklist Rentrée",
+              "timing": "4 semaines avant",
+              "description": "4 semaines avant : Rappel checklist",
+              "content": "La checklist rentrée de [Prénom Enfant] est complète à 40% ! Achetez les articles restants et obtenez la livraison gratuite dès 50€. L'école commence dans 4 semaines ! [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Fonction Liste Fournitures Enseignant",
+              "timing": "3 semaines avant",
+              "description": "3 semaines avant : Intégration liste enseignant",
+              "content": "L'école de [Prénom Enfant] a envoyé une liste de fournitures ? Téléchargez-la ou entrez le nom de l'école et nous ferons correspondre automatiquement les articles à votre liste. Achat en un clic pour tout ce que demande l'enseignant - on vous facilite la tâche !"
+            },
+            {
+              "channel": "Push",
+              "title": "Vente Flash Rentrée",
+              "timing": "2 semaines avant",
+              "description": "2 semaines avant : Alerte vente flash",
+              "content": "Vente flash rentrée 48h ! -20% supplémentaires sur les articles restants de la checklist"
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Semaine : N'Oubliez Pas Ceux-Là",
+              "timing": "1 semaine avant",
+              "description": "1 semaine avant : Dernière chance",
+              "content": "L'école commence dans 1 semaine ! Voici ce qui reste sur la checklist de [Prénom Enfant], plus les articles souvent oubliés que les autres parents de [Niveau] attrapent à la dernière minute. Commandez avant le [date] pour une livraison garantie avant le premier jour."
+            },
+            {
+              "channel": "SMS",
+              "title": "Dernière Chance Livraison Rentrée",
+              "timing": "Date limite livraison",
+              "description": "Date limite livraison : Urgent",
+              "content": "Demain est le dernier jour pour livraison garantie rentrée ! Complétez les fournitures de [Prénom Enfant] : [Lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Parents première rentrée scolaire (Maternelle/CP)",
+          "scenario_objective": "Guider les parents nerveux de première rentrée à travers une préparation complète",
+          "main_messages_ideas": "Préparation premier jour, Soutien émotionnel, Essentiels complets, Conseils séparation, Capture souvenirs",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Guide Premier Jour d'École de [Prénom Enfant]",
+              "timing": "6 semaines avant",
+              "description": "6 semaines avant : Accompagnement première rentrée",
+              "content": "Le premier jour de [Maternelle/CP] est un grand jalon pour toute la famille ! Nous avons aidé des milliers de parents à se préparer, et nous sommes là pour vous. Voici notre guide complet de préparation premier jour, des fournitures pratiques à la préparation émotionnelle pour vous et [Prénom Enfant]."
+            },
+            {
+              "channel": "Email",
+              "title": "Pack Essentiels Premier Jour",
+              "timing": "4 semaines avant",
+              "description": "4 semaines avant : Pack curé",
+              "content": "Éliminez les devinettes de la préparation premier jour avec notre Pack Premier Jour [Maternelle/CP]. Nous avons curé tout ce dont les nouveaux écoliers ont besoin, du cartable de la bonne taille aux objets de réconfort qui aident avec la séparation. En plus, des conseils de parents vétérans !"
+            },
+            {
+              "channel": "Email",
+              "title": "Immortalisez le Moment : Idées Photos Premier Jour",
+              "timing": "1 semaine avant",
+              "description": "1 semaine avant : Capture souvenirs",
+              "content": "Le premier jour d'école mérite d'être immortalisé ! Voici des idées créatives de photos premier jour et notre carte d'interview premier jour imprimable pour capturer les pensées de [Prénom Enfant]. En plus, inspiration tenue premier jour pour des souvenirs parfaits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Célébrations Saisonnières & Fêtes Famille",
+      "target": "Tous les clients famille avec profils enfants",
+      "objective": "Capturer les achats de cadeaux de fêtes sur toutes les occasions majeures avec 50% des familles créant des listes de souhaits fêtes",
+      "kpi": "CA campagne fêtes (cible : +60% vs. mois moyen), Taux création liste de souhaits (cible : 50%), Engagement guide cadeaux (cible : 40%), Taux achat anticipé (cible : 35%)",
+      "description": "Un programme marketing saisonnier complet couvrant toutes les fêtes et célébrations familiales majeures avec des guides cadeaux adaptés à l'âge, des fonctionnalités de liste de souhaits et des rappels de livraison opportuns. Le programme aide les parents à naviguer les achats de fêtes tout en respectant les diverses traditions de célébration.",
+      "scenarios": [
+        {
+          "scenario_target": "Acheteurs fêtes d'hiver (Noël, fêtes de fin d'année générales)",
+          "scenario_objective": "Maximiser les achats de cadeaux de fêtes avec orientation adaptée à l'âge",
+          "main_messages_ideas": "Création liste de souhaits fêtes, Guide cadeaux par âge, Incitations achat anticipé, Cadeau pour chaque budget, Dates limites livraison, Solutions dernière minute",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Créez la Liste de Souhaits Fêtes de [Prénom Enfant]",
+              "timing": "8 semaines avant",
+              "description": "8 semaines avant : Lancement liste de souhaits",
+              "content": "La saison des fêtes approche ! Aidez [Prénom Enfant] à créer sa liste de souhaits fêtes et partagez-la facilement avec les grands-parents et la famille. Nous vous enverrons des alertes quand les articles de la liste seront en soldes ou en rupture de stock."
+            },
+            {
+              "channel": "Email",
+              "title": "Guide Cadeaux Fêtes : Meilleurs pour les [Âge] Ans",
+              "timing": "6 semaines avant",
+              "description": "6 semaines avant : Guide par âge",
+              "content": "Trouver les cadeaux de fêtes parfaits pour votre [tout-petit/enfant d'âge préscolaire/enfant d'âge scolaire] ? Nos experts ont curé les cadeaux les plus souhaités et les mieux notés pour les [âge] ans - plus des sélections pour tous les budgets de 10€ à 100€+."
+            },
+            {
+              "channel": "SMS",
+              "title": "Soldes Early Bird Fêtes",
+              "timing": "5 semaines avant",
+              "description": "5 semaines avant : Offre early bird",
+              "content": "Soldes early bird fêtes ! -25% sur les cadeaux les mieux notés pour enfants. Découvrez la liste de souhaits de [Prénom Enfant] ou le guide cadeaux avant épuisement : [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Guide Cadeaux Grands-Parents",
+              "timing": "4 semaines avant",
+              "description": "4 semaines avant : Assistance donateurs",
+              "content": "Partagez ces idées cadeaux avec les grands-parents et la famille ! Nous avons facilité la tâche à tous pour trouver des cadeaux parfaits pour [Prénom Enfant]. Transférez ce guide ou partagez directement le lien de sa liste de souhaits."
+            },
+            {
+              "channel": "Push",
+              "title": "Vente Flash Fêtes",
+              "timing": "3 semaines avant",
+              "description": "3 semaines avant : Vente flash",
+              "content": "24 heures seulement ! -30% supplémentaires sur jouets et cadeaux fêtes"
+            },
+            {
+              "channel": "Email",
+              "title": "Dates Limites Livraison Fêtes",
+              "timing": "2 semaines avant",
+              "description": "2 semaines avant : Rappel livraison",
+              "content": "Dates limites livraison fêtes importantes ! Commandez avant le [date] pour la livraison standard, [date] pour l'express. Voici ce qui reste sur la liste de souhaits de [Prénom Enfant] et nos cadeaux dernière minute recommandés qui sont sûrs de ravir."
+            },
+            {
+              "channel": "SMS",
+              "title": "Dernier Jour Livraison",
+              "timing": "Date limite livraison",
+              "description": "Date limite livraison : Urgent",
+              "content": "Aujourd'hui c'est le dernier jour pour livraison fêtes garantie ! Finalisez vos cadeaux maintenant : [Lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Acheteurs célébrations printemps/été (Pâques, vacances d'été)",
+          "scenario_objective": "Générer les achats d'activités saisonnières et jeux extérieur",
+          "main_messages_ideas": "Préparation célébrations printemps, Essentiels jeux extérieur, Planification activités été, Besoins colonies/vacances",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Célébrations de Printemps pour les [Âge] Ans",
+              "timing": "4 semaines avant Pâques",
+              "description": "4 semaines avant Pâques : Préparation printemps",
+              "content": "Le printemps arrive bientôt ! Des garnitures de chasse aux œufs aux essentiels jeux extérieur, nous avons rassemblé tout pour rendre le printemps spécial pour [Prénom Enfant]. Découvrez nos idées d'activités adaptées à l'âge et favoris saisonniers."
+            },
+            {
+              "channel": "Email",
+              "title": "Guide Amusement Été : Édition [Âge]",
+              "timing": "6 semaines avant l'été",
+              "description": "6 semaines avant l'été : Préparation été",
+              "content": "L'été arrive ! Aidez [Prénom Enfant] à en profiter au maximum avec notre guide d'activités été adapté aux [âge] ans. Des jeux de jardin aux essentiels colonie en passant par les indispensables vacances - nous avons couvert votre été."
+            },
+            {
+              "channel": "Email",
+              "title": "Liste Valise Colonie & Vacances",
+              "timing": "4 semaines avant l'été",
+              "description": "4 semaines avant l'été : Préparation colonie/vacances",
+              "content": "Vous envoyez [Prénom Enfant] en colonie ou planifiez des vacances famille ? Voici votre checklist valise complète pour les [âge] ans, plus les essentiels pour différents types de colonies et besoins de voyage."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerte Soldes Été",
+              "timing": "Début de l'été",
+              "description": "Début de l'été : Soldes",
+              "content": "Soldes d'été ! Jusqu'à -40% sur jouets extérieur, équipement piscine et essentiels colonie. Achetez pour [Prénom Enfant] : [Lien]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Fratrie & Expansion Multi-Enfants",
+      "target": "Familles avec un enfant enregistré montrant des indicateurs de nouveau bébé ou enfants supplémentaires",
+      "objective": "Capturer les achats de préparation deuxième enfant et maximiser la valeur des foyers multi-enfants avec 70% de taux d'expansion de profil",
+      "kpi": "Taux ajout profil deuxième enfant (cible : 70%), Insights vêtements transmis vs. nouveaux achats, Rédemption remise multi-enfants (cible : 40%), Engagement recommandations croisées enfants (cible : 35%)",
+      "description": "Un programme conçu pour les familles qui s'agrandissent qui reconnaît les dynamiques uniques de la préparation pour les enfants suivants tout en gérant les besoins des enfants existants. Le programme offre des remises spécifiques fratrie, des conseils sur les articles à transmettre, et des recommandations coordonnées pour tous les enfants du foyer.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients montrant des signaux de grossesse (navigation maternité, vues catégorie nouveau-né)",
+          "scenario_objective": "Capturer la préparation parent deuxième fois et l'expansion de profil",
+          "main_messages_ideas": "Félicitations deuxième bébé, Ce qui est différent cette fois, Préparation fratrie, Conseils gestion multi-enfants",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Agrandissez Votre Famille ? Nous Sommes Là pour Vous Aider à Nouveau !",
+              "timing": "Déclencheur : Signaux grossesse détectés",
+              "description": "Déclencheur : Signaux grossesse détectés",
+              "content": "Vous attendez un autre petit bout ? Félicitations ! Se préparer pour bébé #2 (ou 3, ou 4 !) est différent de la première fois. Vous en savez plus maintenant, mais vous avez aussi [enfant existant] à considérer. Laissez-nous vous aider à rendre cette transition fluide pour toute la famille."
+            },
+            {
+              "channel": "Email",
+              "title": "Deuxième Bébé : Ce qu'il Faut Garder, Ce qu'il Faut Acheter Neuf",
+              "timing": "3 jours après déclencheur",
+              "description": "3 jours après le déclencheur : Conseils pratiques",
+              "content": "Vous vous demandez ce que vous pouvez réutiliser et ce dont vous avez besoin en neuf ? Voici notre guide expert sur la sécurité des articles transmis (indice : les sièges auto ont des dates d'expiration !) et ce que les parents deuxième fois disent qu'ils auraient aimé acheter neuf. En plus, des remises exclusives multi-enfants juste pour les familles qui s'agrandissent."
+            },
+            {
+              "channel": "Email",
+              "title": "Préparer [Prénom Grand Frère/Sœur] pour Bébé",
+              "timing": "1 semaine après déclencheur",
+              "description": "1 semaine après le déclencheur : Préparation fratrie",
+              "content": "Une des plus grandes transitions est d'aider [enfant existant] à s'adapter à devenir grand [frère/sœur] ! Voici des livres, jouets et conseils qui aident à préparer les aînés à l'arrivée du bébé, plus des façons de les faire se sentir spéciaux pendant ce changement."
+            },
+            {
+              "channel": "SMS",
+              "title": "Remise Multi-Enfants Débloquée",
+              "timing": "2 semaines après déclencheur",
+              "description": "2 semaines après le déclencheur : Incitation",
+              "content": "Avantages famille qui s'agrandit ! Vous avez débloqué notre Remise Multi-Enfants : -15% sur votre commande essentiels nouveau-né. Utilisez le code FRATRIE15 : [Lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Foyers multi-enfants existants",
+          "scenario_objective": "Maximiser la valeur via des recommandations multi-enfants coordonnées",
+          "main_messages_ideas": "Options assortiment fratrie, Solutions multi-enfants, Activités coordonnées par âge, Valeur taille famille",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Sélections Parfaites pour Toute la Tribu",
+              "timing": "Mensuel",
+              "description": "Mensuel : Recommandations multi-enfants",
+              "content": "Vous achetez pour plusieurs enfants ? Nous avons assorti des recommandations pour [Enfant 1] et [Enfant 2] - incluant des activités qu'ils peuvent apprécier ensemble ! En plus, des ensembles fratrie et des solutions taille famille qui facilitent la vie des foyers multi-enfants."
+            },
+            {
+              "channel": "Email",
+              "title": "Activités Écart d'Âge : [X] et [Y] Ans Ensemble",
+              "timing": "Trimestriel",
+              "description": "Trimestriel : Solutions écart d'âge",
+              "content": "Trouver des activités pour un enfant de [âge] et un de [âge] ans peut être délicat ! Voici des jeux, jouets et expériences qui comblent l'écart d'âge et aident les frères et sœurs à jouer ensemble joyeusement. Testés et aimés par des familles comme la vôtre."
+            },
+            {
+              "channel": "Push",
+              "title": "Offre Multi-Enfants",
+              "timing": "Périodique",
+              "description": "Périodique : Offre pack",
+              "content": "Achetez 2+ de n'importe quel article, obtenez -20% ! Parfait pour la fratrie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Fidélité & Programme Récompenses Famille",
+      "target": "Clients ayant fait 2+ achats ou dépensé 150€+",
+      "objective": "Inscrire 40% des clients qualifiés au programme de fidélité et augmenter la fréquence d'achat de 35% parmi les membres",
+      "kpi": "Taux inscription fidélité (cible : 40%), Fréquence achat membres (cible : +35%), Panier moyen membres (cible : +20%), Taux rédemption points (cible : 65%), Rétention membres à 12 mois (cible : 75%)",
+      "description": "Un programme de fidélité centré famille qui récompense les parents pour leur relation continue avec la marque tout en créant des expériences spéciales pour les enfants. Le programme propose des récompenses axées enfants, des bonus anniversaire et des avantages membres exclusifs qui font que les familles se sentent vraiment valorisées.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients qualifiés pas encore inscrits à la fidélité",
+          "scenario_objective": "Conduire l'inscription au programme de fidélité avec des avantages immédiats et axés famille",
+          "main_messages_ideas": "Invitation inscription, Avantages immédiats, Récompenses axées enfants, Aperçu avantages famille",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Rejoignez les Récompenses Famille [Marque] - Vous l'Avez Mérité !",
+              "timing": "Déclencheur qualification",
+              "description": "Déclencheur qualification : Invitation inscription",
+              "content": "Merci de faire partie de notre famille ! Vous êtes qualifié pour les Récompenses Famille [Marque] - notre façon de remercier les parents comme vous. Inscrivez-vous aujourd'hui et débloquez instantanément : -10% sur votre prochaine commande, livraison gratuite toujours, ventes exclusives membres, et surprises anniversaire spéciales pour chacun de vos enfants."
+            },
+            {
+              "channel": "SMS",
+              "title": "Invitation Fidélité - Récompense Instantanée",
+              "timing": "J+3",
+              "description": "Jour 3 : Suivi SMS",
+              "content": "Vous êtes invité aux Récompenses Famille [Marque] ! Inscrivez-vous maintenant et obtenez 500 points bonus (5€ de réduction) instantanément. Plus la livraison gratuite sur chaque commande : [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Découvrez Ce Que Disent les Membres",
+              "timing": "J+7",
+              "description": "Jour 7 : Preuve sociale",
+              "content": "Vous hésitez encore sur les Récompenses Famille ? Voici ce que disent les familles membres sur les avantages. De l'accès anticipé exclusif aux ventes aux surprises d'anniversaire spéciales pour les enfants, découvrez pourquoi des milliers de familles ont rejoint."
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Chance : Points Bonus Expirent",
+              "timing": "J+14",
+              "description": "Jour 14 : Urgence",
+              "content": "Vos 500 points bonus de bienvenue expirent cette semaine ! Inscrivez-vous aux Récompenses Famille avant le [date] pour réclamer votre récompense instantanée de 5€ plus des avantages famille continus."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Membres fidélité actifs",
+          "scenario_objective": "Maintenir l'engagement et conduire la participation au programme",
+          "main_messages_ideas": "Solde points et opportunités de gain, Statut palier, Offres exclusives membres, Récompenses anniversaire, Expiration points",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Mise à Jour Récompenses Famille",
+              "timing": "Mensuel",
+              "description": "Mensuel : Résumé compte",
+              "content": "Bonjour [Prénom] ! Voici votre résumé Récompenses Famille : Vous avez [X] points (valeur [Y]€) prêts à utiliser. Vous êtes à [Z] points du statut [Palier Suivant] et ses avantages améliorés. Ce mois-ci, gagnez 3x les points sur [catégorie] !"
+            },
+            {
+              "channel": "Email",
+              "title": "Accès Anticipé Exclusif Membres",
+              "timing": "Avant les soldes",
+              "description": "Avant les soldes : Accès VIP",
+              "content": "En tant que membre Récompenses Famille, vous avez le premier accès à notre plus grande vente de la saison - 48 heures avant tout le monde ! Achetez maintenant pendant que le stock est au plus frais et obtenez -5% supplémentaires avec votre statut membre."
+            },
+            {
+              "channel": "Push",
+              "title": "Points Doublés Aujourd'hui",
+              "timing": "Périodique",
+              "description": "Périodique : Boost engagement",
+              "content": "Membres : Gagnez le double de points sur tous les achats aujourd'hui seulement !"
+            },
+            {
+              "channel": "Email",
+              "title": "Points Expirant Bientôt",
+              "timing": "45 jours avant expiration",
+              "description": "45 jours avant expiration : Rappel",
+              "content": "Attention ! Vous avez [X] points expirant le [date]. C'est [Y]€ de récompenses - ne les laissez pas se perdre ! Voici de super façons de les utiliser, ou faites-en don à notre partenaire caritatif enfance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Reconquête & Réengagement Famille",
+      "target": "Familles n'ayant pas acheté depuis 90+ jours malgré des enfants en âge actif",
+      "objective": "Réactiver 20% des familles inactives sous 30 jours du début de campagne",
+      "kpi": "Taux conversion reconquête (cible : 20%), Panier moyen réactivation (cible : égal à moyenne pré-inactivité), Réengagement maintenu à 60 jours (cible : 50%), Insights raison d'inactivité",
+      "description": "Un programme de réengagement attentionné qui reconnaît que la vie de famille est occupée et fournit des raisons convaincantes de revenir. Le programme utilise les mises à jour d'âge des enfants pour démontrer la pertinence continue et adresse les raisons potentielles d'inactivité tout en évitant les remises désespérées.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients inactifs à 90-120 jours avec enfants toujours dans la tranche d'âge cible",
+          "scenario_objective": "Réengager avec une pertinence mise à jour selon l'âge de l'enfant",
+          "main_messages_ideas": "Vous nous manquez, L'enfant a grandi, Nouveaux produits pertinents, Incitation retour, Demande feedback",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Waouh, [Prénom Enfant] Doit Avoir Tellement Grandi !",
+              "timing": "J+90",
+              "description": "90 jours : Reconnexion basée sur l'âge",
+              "content": "Votre famille nous manque ! [Prénom Enfant] doit tellement changer - il/elle a maintenant [âge actuel] d'après nos dossiers. Beaucoup de choses ont aussi changé dans notre boutique ! Voici ce qui est nouveau et tendance pour les [âge] ans que nous pensons que [Prénom Enfant] adorerait."
+            },
+            {
+              "channel": "Email",
+              "title": "Quelque Chose a Changé ? Nous Aimerions Savoir",
+              "timing": "J+105",
+              "description": "105 jours : Demande feedback",
+              "content": "Nous avons remarqué que ça fait un moment depuis votre dernière visite. Avons-nous raté quelque chose ? Votre feedback nous aide à mieux servir les familles. Prenez 2 minutes pour nous dire ce que vous avez en tête, et nous vous enverrons -15% en remerciement."
+            },
+            {
+              "channel": "SMS",
+              "title": "Votre Famille Nous Manque !",
+              "timing": "J+115",
+              "description": "115 jours : Reconnexion SMS",
+              "content": "Ça fait un moment ! Découvrez les nouveautés pour les [âge] ans + obtenez -20% sur votre visite retour. [Prénom Enfant] mérite quelque chose de spécial : [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Une Offre Spéciale Juste pour [Prénom Enfant]",
+              "timing": "J+130",
+              "description": "130 jours : Incitation significative",
+              "content": "Nous valorisons vraiment votre famille comme partie de la nôtre. Voici quelque chose de spécial : -25% sur votre prochaine commande, livraison gratuite, et le double de points fidélité pour vous souhaiter la bienvenue. Nous avons gardé les meilleures recommandations pour [Prénom Enfant] - venez voir ce que nous avons trouvé !"
+            },
+            {
+              "channel": "Push",
+              "title": "Offre Retour",
+              "timing": "J+130",
+              "description": "130 jours : Notification push",
+              "content": "Vous nous manquez ! -25% sur votre retour + nouvelles sélections pour [Prénom Enfant]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients dont les enfants peuvent avoir dépassé la tranche d'âge principale",
+          "scenario_objective": "Transition vers donateur ou confirmer la pertinence continue",
+          "main_messages_ideas": "Check étape familiale, Option donateur, Mise à jour profil, Expansion catégorie",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Famille a Changé ? Faisons le Point !",
+              "timing": "Quand l'enfant approche la limite d'âge",
+              "description": "Quand l'enfant approche la limite d'âge : Check étape",
+              "content": "D'après nos dossiers, [Prénom Enfant] approche [âge] ans - le temps file vraiment ! Apprécie-t-il/elle encore les [produits catégorie] ? Ou peut-être avez-vous maintenant des neveux, nièces ou petits-enfants à qui offrir ? Mettez à jour votre profil et nous nous assurerons que vous voyez les produits les plus pertinents."
+            },
+            {
+              "channel": "Email",
+              "title": "Des Cadeaux Parfaits pour les Enfants de Votre Entourage",
+              "timing": "Si intérêt donateur indiqué",
+              "description": "Si intérêt donateur indiqué : Focus cadeaux",
+              "content": "Même si [Prénom Enfant] grandit, vous connaissez probablement plein de petits ! En tant que donateur, vous pouvez toujours profiter des avantages membres et des recommandations expertes pour les cadeaux d'anniversaire, les baby showers et les fêtes. Nous vous aiderons à être le/la tata/tonton/grand-parent préféré(e) !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Parrainage & Recommandation Parents",
+      "target": "Clients satisfaits ayant fait plusieurs achats et engagés positivement",
+      "objective": "Générer 25% des nouveaux clients via parrainages parents et construire un réseau de recommandation organique",
+      "kpi": "Participation programme parrainage (cible : 30%), Taux conversion parrainage (cible : 40%), VVC client parrainé (cible : +25% vs. non-parrainé), Actions recommandation (avis, social, UGC) par client (cible : 2,5)",
+      "description": "Un programme de bouche-à-oreille qui exploite les réseaux solides que les parents ont avec d'autres familles. Le programme facilite le partage de recommandations avec d'autres parents pour les clients satisfaits tout en récompensant les deux parties de manière significative.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients haute satisfaction après interactions positives",
+          "scenario_objective": "Activer le partage de parrainage aux moments de satisfaction maximale",
+          "main_messages_ideas": "Partagez avec des amis parents, Double récompense, Outils de partage faciles, Suivi d'impact",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Aimez Acheter Chez Nous ? Partagez avec des Amis Parents !",
+              "timing": "Déclencheur post-avis positif",
+              "description": "Déclencheur post-avis positif : Invitation parrainage",
+              "content": "Merci pour votre super avis ! Nous savons que les parents font plus confiance aux recommandations d'autres parents que tout autre chose. Connaissez-vous une famille qui nous aimerait aussi ? Partagez votre lien de parrainage personnel et vous obtiendrez tous les deux 25€ de réduction sur votre prochaine commande !"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Impact Parrainage",
+              "timing": "Premier parrainage réussi",
+              "description": "Premier parrainage réussi : Célébration",
+              "content": "Vous l'avez fait ! Grâce à votre recommandation, [Prénom Ami] vient de rejoindre notre famille. Vous avez gagné 25€ de réduction et vous avez aidé un autre parent à nous découvrir. Continuez à partager - il n'y a pas de limite au nombre d'amis que vous pouvez parrainer !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Boost Bonus Parrainage",
+              "timing": "Périodique",
+              "description": "Périodique : Incitation parrainage",
+              "content": "Cette semaine seulement : Parrainez un ami et vous obtenez TOUS LES DEUX 35€ (au lieu de 25€) ! Partagez votre lien : [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Devenez Parent Influenceur",
+              "timing": "Après 3+ parrainages",
+              "description": "Après 3+ parrainages : Invitation ambassadeur",
+              "content": "Vous êtes incroyable ! Vous avez aidé [X] familles à nous découvrir. Nous aimerions que vous deveniez Ambassadeur Parent [Marque] officiel avec des avantages exclusifs : tests de produits en avant-première, remises exclusives à partager, et reconnaissance spéciale. Intéressé(e) ?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Tous les clients satisfaits pour recommandation générale",
+          "scenario_objective": "Construire du contenu UGC et preuve sociale",
+          "main_messages_ideas": "Partage de photos, Fonctionnalités réseaux sociaux, Connexion communauté parents, Témoignages utilisateurs",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Partagez [Prénom Enfant] Profitant de [Produit] !",
+              "timing": "Post-achat",
+              "description": "Post-achat : Demande UGC",
+              "content": "Nous adorerions voir [Prénom Enfant] profiter de son [Produit] ! Partagez une photo ou vidéo sur les réseaux avec #[HashtagMarque] pour une chance d'être mis en avant sur notre page. Le plus beau ? Vous inspirerez d'autres parents cherchant de super produits pour leurs enfants."
+            },
+            {
+              "channel": "Email",
+              "title": "Famille à l'Honneur",
+              "timing": "Quand mis en avant",
+              "description": "Quand mis en avant : Reconnaissance",
+              "content": "Vous êtes célèbres ! Votre photo de [Prénom Enfant] avec [Produit] est mise en avant sur nos réseaux sociaux et notre site web. Merci de partager la joie de votre famille avec notre communauté. En remerciement, voici -20% sur votre prochaine commande !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Alertes Sécurité & Mises à Jour Produits",
+      "target": "Tous les clients ayant acheté des produits concernés",
+      "objective": "Assurer 100% de livraison des communications critiques sécurité et maintenir la confiance via des mises à jour produits transparentes",
+      "kpi": "Taux ouverture alertes sécurité (cible : 85%), Taux complétion action requise (cible : 70%), Score maintien de confiance, Satisfaction communication proactive",
+      "description": "Un programme de communication critique qui priorise la sécurité des enfants avant tout. Ce programme gère les rappels produits, les mises à jour sécurité et les rappels de maintenance proactifs avec clarté et urgence tout en évitant l'alarme inutile.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients ayant acheté des produits rappelés ou mis à jour",
+          "scenario_objective": "Assurer la sensibilisation immédiate et l'action sur les problèmes de sécurité",
+          "main_messages_ideas": "Alerte sécurité claire, Étapes d'action, Processus de remède facile, Réassurance",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "IMPORTANT : Avis de Sécurité pour Votre [Produit]",
+              "timing": "Immédiat",
+              "description": "Immédiat : Alerte sécurité",
+              "content": "Nous vous contactons concernant un avis de sécurité important pour [Produit] acheté le [date]. [Explication claire du problème]. Voici ce que vous devez faire : [Étapes spécifiques]. La sécurité de votre enfant est notre priorité absolue, et nous sommes là pour vous accompagner dans ce processus."
+            },
+            {
+              "channel": "SMS",
+              "title": "Urgent : Avis de Sécurité",
+              "timing": "Immédiat",
+              "description": "Immédiat : SMS de secours",
+              "content": "IMPORTANT : Avis de sécurité pour votre achat [Produit]. Veuillez vérifier votre email immédiatement ou appeler [numéro] pour les détails. La sécurité de votre enfant compte."
+            },
+            {
+              "channel": "Email",
+              "title": "Rappel Action Sécurité",
+              "timing": "J+3",
+              "description": "Jour 3 : Suivi si pas d'action",
+              "content": "Nous voulons nous assurer que vous avez reçu notre avis de sécurité concernant [Produit]. Nous n'avons pas encore enregistré votre réponse. Veuillez [action requise] ou contactez-nous si vous avez besoin d'aide. Nous sommes disponibles 24h/24 pour les questions de sécurité."
+            },
+            {
+              "channel": "Email",
+              "title": "Merci d'Avoir Agi",
+              "timing": "Après complétion action",
+              "description": "Après action complétée : Confirmation",
+              "content": "Merci d'avoir complété l'action de sécurité pour votre [Produit]. La sécurité de votre enfant est notre priorité absolue, et nous apprécions votre réponse rapide. Si vous avez des questions ou préoccupations, n'hésitez pas à nous contacter."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients avec produits nécessitant maintenance ou mises à jour",
+          "scenario_objective": "Communication proactive d'entretien produit",
+          "main_messages_ideas": "Rappel maintenance, Mises à jour logiciel/pièces, Timing de remplacement, Conseils d'entretien",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "C'est l'Heure d'un Check-Up [Produit]",
+              "timing": "Basé sur date d'achat",
+              "description": "Basé sur la date d'achat : Rappel maintenance",
+              "content": "Vous avez votre [Produit] depuis [X mois] maintenant - c'est l'heure d'un petit check-up ! Voici notre checklist de maintenance pour assurer la sécurité et la performance continues, plus les signes indiquant qu'il est peut-être temps de passer à la version supérieure."
+            },
+            {
+              "channel": "Email",
+              "title": "Recommandation de Mise à Niveau pour [Produit]",
+              "timing": "Basé sur âge enfant/âge produit",
+              "description": "Basé sur l'âge de l'enfant/du produit : Suggestion mise à niveau",
+              "content": "Basé sur l'âge/poids actuel de [Prénom Enfant] et la date d'achat de votre [Produit], vous approchez peut-être du point de transition recommandé. Voici comment savoir quand c'est le moment, et des options de mise à niveau fluides adaptées à l'étape actuelle de votre enfant."
             }
           ]
         }
@@ -177,23 +912,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Bienvenue & Profil Famille",
-      "why_brevo_is_better": "La collecte de profil et la segmentation dynamique de Brevo permettent une personnalisation consciente de la famille qui évolue à mesure que les enfants grandissent.",
-      "omnichannel_channels": "Email pour le contenu riche et les conseils + SMS pour les deals flash et alertes stock",
-      "setup_efficiency": "Templates pré-construits pour l'industrie famille avec logique basée sur l'âge pour personnaliser les recommandations à grande échelle."
+      "scenario_name": "Profil Famille & Personnalisation par Âge",
+      "why_brevo_is_better": "La gestion avancée des contacts de Brevo permet des profils multi-enfants avec suivi individuel de l'âge, permettant des mises à jour de segment automatiques à mesure que les enfants grandissent. Les blocs de contenu dynamique personnalisent chaque email à l'étape de développement actuelle de chaque enfant sans intervention manuelle.",
+      "omnichannel_channels": "Email pour contenu riche personnalisé avec blocs dynamiques spécifiques enfant + SMS pour alertes et offres urgentes + Push pour engagement aux moments clés + WhatsApp pour support conversationnel et mises à jour commandes",
+      "setup_efficiency": "Templates pré-construits industrie famille avec formules de calcul d'âge et logique multi-enfants réduisent le temps de configuration de 70% tout en assurant une personnalisation qui s'adapte automatiquement."
     },
     {
-      "scenario_name": "Jalons & Transition d'Âge",
-      "why_brevo_is_better": "Les déclencheurs d'automatisation basés sur les dates lancent les campagnes au moment précisément opportun, captant automatiquement les achats jalons.",
-      "omnichannel_channels": "Email pour les célébrations jalons + SMS pour les offres anniversaire + Push pour les deals limités dans le temps",
-      "setup_efficiency": "Configurez les déclencheurs jalons basés sur les dates de naissance et laissez l'automatisation gérer le reste."
+      "scenario_name": "Automatisation Jalons & Anniversaires",
+      "why_brevo_is_better": "Les déclencheurs d'automatisation basés sur les dates célèbrent l'anniversaire de chaque enfant et les jalons de développement avec un timing parfait. Le système gère automatiquement des scénarios complexes comme plusieurs enfants avec des anniversaires différents et des dates de jalons variées.",
+      "omnichannel_channels": "Email pour célébrations anniversaire et guides cadeaux + SMS pour vœux et offres du jour J + Push pour rappels cadeaux dernière minute + WhatsApp pour messages d'anniversaire personnalisés",
+      "setup_efficiency": "Configurez les déclencheurs jalons une fois basés sur les dates de naissance et laissez l'automatisation gérer le reste. Les templates parcours anniversaire pré-construits peuvent être personnalisés et activés en quelques heures."
     },
     {
-      "scenario_name": "Campagne Rentrée Scolaire",
-      "why_brevo_is_better": "La segmentation par niveau et le suivi de checklist garantissent que chaque famille reçoit des recommandations pertinentes pour les besoins spécifiques de leurs enfants.",
-      "omnichannel_channels": "Email pour les guides complets + SMS pour les alertes deals + Push pour les rappels date limite",
-      "setup_efficiency": "Les campagnes rentrée annuelles peuvent être templatisées et programmées pour se répéter avec des mises à jour de segment automatiques."
+      "scenario_name": "Gestion Campagne Rentrée Scolaire",
+      "why_brevo_is_better": "La segmentation par niveau, le suivi de progression checklist et la gestion des dates limites assurent que chaque famille reçoit des communications rentrée parfaitement timées. L'intégration avec les bases de données de listes de fournitures scolaires ajoute une couche supplémentaire de commodité.",
+      "omnichannel_channels": "Email pour checklists et guides complets + SMS pour rappels dates limites et ventes flash + Push pour alertes stock + WhatsApp pour mises à jour progression checklist",
+      "setup_efficiency": "Le template campagnes rentrée annuelles permet de copier et personnaliser chaque année. Les mises à jour de segment automatiques assurent que les enfants passent aux niveaux appropriés."
+    },
+    {
+      "scenario_name": "Optimisation Foyer Multi-Enfants",
+      "why_brevo_is_better": "L'analytique au niveau foyer combinée aux profils enfants individuels permet une personnalisation à la fois familiale et spécifique à chaque enfant. Le système comprend les dynamiques fratrie et peut recommander des activités partagées et opportunités de packs.",
+      "omnichannel_channels": "Email pour recommandations coordonnées famille + SMS pour alertes packs fratrie + Push pour offres multi-enfants",
+      "setup_efficiency": "Le regroupement foyer et les règles de remise multi-enfants peuvent être configurés une fois et s'appliquent automatiquement à toutes les familles qualifiées."
+    },
+    {
+      "scenario_name": "Priorité Communication Sécurité",
+      "why_brevo_is_better": "La priorité email transactionnel de Brevo assure que les messages critiques sécurité contournent les limites promotionnelles et atteignent les familles immédiatement. Le suivi historique d'achats permet un ciblage précis des clients concernés pour les rappels et mises à jour.",
+      "omnichannel_channels": "Email pour informations sécurité détaillées + SMS pour alertes urgentes nécessitant attention immédiate + Push pour rappels d'action + Intégration téléphone pour suivi critique",
+      "setup_efficiency": "Les templates d'alertes sécurité et les workflows d'identification clients concernés peuvent être déclenchés en quelques minutes d'une annonce de rappel."
     }
   ],
-  "conclusion": "Les retailers axés famille qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à des relations clients durables qui grandissent avec les familles, une valeur vie plus élevée grâce au marketing des jalons, et des parrainages accrus de la part de parents satisfaits."
+  "conclusion": "Les retailers axés famille qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à construire des relations clients long terme qui grandissent avec les familles pendant des années. En combinant une personnalisation intelligente par âge avec une communication sécurité d'abord et une célébration des jalons, les marques créent des connexions émotionnelles avec les parents tout en maximisant la valeur vie substantielle des relations clients multi-années et multi-enfants. Les programmes mettent l'accent sur la confiance, la commodité et la valeur authentique - les trois piliers que les parents occupés priorisent quand ils choisissent où acheter pour leurs enfants."
 }

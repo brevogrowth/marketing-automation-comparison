@@ -1,184 +1,678 @@
 {
-  "introduction": "This marketing relationship plan is designed for wholesale and distribution businesses looking to strengthen retailer relationships and drive consistent ordering through strategic communication.",
+  "introduction": "This comprehensive marketing relationship plan is designed for wholesale distributors to build stronger partnerships with retailers, buying groups, and resellers. From new account acquisition to tier advancement, these programs optimize the entire retailer lifecycle to drive consistent ordering, assortment expansion, and mutual growth through the distribution channel.",
   "company_summary": {
     "name": "Wholesale & Distribution Company",
     "website": "example-wholesale.com",
-    "activities": "B2B wholesale distribution, including product sourcing, inventory management, and retailer supply",
-    "target": "Retail buyers, purchasing managers, and business owners who need reliable product supply for their stores",
+    "activities": "B2B wholesale distribution including product sourcing, inventory management, logistics, and retailer support across diverse product categories",
+    "target": "Retail store owners, purchasing managers, buying group members, category managers, and multi-location retail operators who need reliable product supply",
     "industry": "Wholesale",
-    "business_model": "B2B Wholesale"
+    "business_model": "B2B Wholesale Distribution",
+    "customer_lifecycle_key_steps": "Lead Generation > Credit Approval > Account Setup > First Order > Order Cycle Establishment > Assortment Expansion > Tier Advancement > Strategic Partnership > Advocacy"
   },
   "programs_list": [
     {
-      "program_name": "Retailer Onboarding",
-      "target": "New wholesale customers",
-      "objective": "Establish ordering habits and build strong retailer relationships from day one",
-      "kpi": "Time to first reorder, Onboarding satisfaction, Account activation rate",
-      "description": "Comprehensive onboarding to help new retailers set up accounts and understand ordering processes.",
+      "program_name": "Retailer Lead Nurturing & Account Acquisition",
+      "target": "Prospective retailers and new business inquiries",
+      "objective": "Convert prospects into approved wholesale accounts through effective qualification and value demonstration",
+      "kpi": "Lead to account conversion (target: 25%), Application completion rate (target: 60%), Time to first order (target: <14 days)",
+      "description": "Strategic engagement to demonstrate wholesale partnership value, simplify the application process, and accelerate new account activation.",
       "scenarios": [
         {
-          "scenario_target": "New retail accounts",
-          "scenario_objective": "Establish smooth ordering relationship",
-          "main_messages_ideas": "Account setup, Catalog overview, Ordering process, First order support",
+          "scenario_target": "Trade show leads and website inquiries from potential retailers",
+          "scenario_objective": "Convert interest into wholesale account applications",
+          "main_messages_ideas": "Partnership benefits, Catalog preview, Application process, Volume advantages",
           "message_sequence": [
             {
-              "title": "Welcome to Partnership",
-              "description": "Day 1: Account confirmation",
-              "content": "Welcome! Your wholesale account is active - Here's how to get started"
+              "channel": "Email",
+              "title": "Welcome to [Company] Wholesale",
+              "description": "Immediate: Post-inquiry",
+              "content": "Thanks for your interest in partnering with us! Here's a preview of what wholesale partnership includes: competitive pricing, reliable supply, merchandising support, and flexible ordering. Apply in 5 minutes to get started."
             },
             {
-              "title": "Catalog Highlights",
-              "description": "Day 2: Product overview",
-              "content": "Our bestsellers: Products your customers will love"
+              "channel": "Email",
+              "title": "Wholesale Catalog Preview",
+              "description": "Day 2: Value demonstration",
+              "content": "Preview our wholesale catalog: bestsellers, exclusive lines, and margin-boosting products. See the retail pricing and your wholesale discount. Ready to see your actual margins? Complete your application to unlock full pricing."
             },
             {
-              "title": "Ordering Made Easy",
-              "description": "Day 5: Process guide",
-              "content": "Your ordering guide: Minimums, shipping, and payment terms"
+              "channel": "SMS",
+              "title": "Quick Application Check",
+              "description": "Day 4: Personal touch",
+              "content": "Hi [Name], saw you were checking out wholesale partnership. Questions about the application or terms? Reply here or call [number] - happy to help."
             },
             {
-              "title": "First Order Check-in",
-              "description": "After first order",
-              "content": "How was your first order experience? We're here to help"
+              "channel": "Email",
+              "title": "What Our Retailers Say",
+              "description": "Day 7: Social proof",
+              "content": "Hear from retailers like you: [Testimonials about partnership benefits, service, and growth]. Join [X] retailers who trust us as their wholesale partner."
+            },
+            {
+              "channel": "Email",
+              "title": "Application Assistance Available",
+              "description": "Day 10: Remove friction",
+              "content": "Need help with your application? Our account team can walk you through the process in a 10-minute call. We'll handle the paperwork so you can start ordering faster. Schedule a call or reply with questions."
+            },
+            {
+              "channel": "Email",
+              "title": "New Retailer Starter Program",
+              "description": "Day 14: Special offer",
+              "content": "New partner special: Apply this week and receive [starter benefit - reduced minimums, free shipping on first order, or introductory discount]. Limited time offer for qualified retailers."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abandoned wholesale account applications",
+          "scenario_objective": "Re-engage and complete account setup",
+          "main_messages_ideas": "Application recovery, Assistance offer, Simplified process, Urgency",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Your Application Is Almost Complete",
+              "description": "Day 1 after abandonment",
+              "content": "You're almost there! Your wholesale application is 80% complete. Finish in 2 minutes to unlock wholesale pricing and start ordering. Questions holding you up? We're here to help."
+            },
+            {
+              "channel": "SMS",
+              "title": "Need Help With Application?",
+              "description": "Day 3",
+              "content": "Noticed you started a wholesale application. Hit a snag? Reply with questions or call [number] - we can often approve same-day."
+            },
+            {
+              "channel": "Email",
+              "title": "Let's Complete Your Setup Together",
+              "description": "Day 7",
+              "content": "Still interested in wholesale partnership? Let's finish your application together. Schedule a quick call and our team will guide you through - most applications are approved within 24 hours."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Reorder Automation",
-      "target": "Active retailers with regular ordering patterns",
-      "objective": "Ensure consistent reordering and prevent stockouts",
-      "kpi": "Reorder frequency, Average order value, Account retention",
-      "description": "Proactive reorder reminders based on purchasing patterns and inventory cycles.",
+      "program_name": "New Retailer Onboarding & First Order Success",
+      "target": "Newly approved wholesale accounts",
+      "objective": "Establish strong ordering habits and ensure first order satisfaction",
+      "kpi": "First order within 7 days (target: 70%), Onboarding satisfaction (target: 90%), Repeat order within 30 days (target: 60%)",
+      "description": "Comprehensive onboarding that helps new retailers navigate ordering processes, discover products, and establish successful selling patterns.",
       "scenarios": [
         {
-          "scenario_target": "Retailers based on order history",
-          "scenario_objective": "Drive timely reorders",
-          "main_messages_ideas": "Reorder reminder, Best seller restock, Season prep, Volume savings",
+          "scenario_target": "Newly approved retail accounts awaiting first order",
+          "scenario_objective": "Drive rapid first order and establish ordering relationship",
+          "main_messages_ideas": "Welcome, Account setup, Ordering guide, Bestseller recommendations, First order support",
           "message_sequence": [
             {
-              "title": "Time to Reorder",
-              "description": "Based on typical order cycle",
-              "content": "Based on your sales pattern, it's time to restock [Products]"
+              "channel": "Email",
+              "title": "Welcome to the [Company] Family!",
+              "description": "Approval day",
+              "content": "Congratulations! Your wholesale account is approved and active. Here's everything you need: your account login, wholesale pricing catalog, and your dedicated account manager contact. Ready to place your first order? Our bestseller starter pack is a great place to begin."
             },
             {
-              "title": "Bestseller Alert",
-              "description": "For fast-moving items",
-              "content": "[Product] is flying off shelves - Restock before you run out"
+              "channel": "SMS",
+              "title": "Account Active!",
+              "description": "Same day",
+              "content": "Great news - your [Company] wholesale account is live! Login: [URL]. First order tip: Check out our bestseller bundle for a curated starter selection."
             },
             {
-              "title": "Volume Savings",
-              "description": "Encourage larger orders",
-              "content": "Order more, save more: Volume pricing available this month"
+              "channel": "Email",
+              "title": "Your Ordering Guide & Platform Tutorial",
+              "description": "Day 2: Process education",
+              "content": "Everything you need to know about ordering: minimum orders, shipping schedules, payment terms, and return policies. Plus, a quick video tour of our ordering platform to get you placing orders in minutes."
+            },
+            {
+              "channel": "Email",
+              "title": "Top Sellers for Your Store Type",
+              "description": "Day 3: Personalized recommendations",
+              "content": "Based on retailers like you, here are our top performers in your category. These products have the best sell-through rates and margins. Perfect for your first order or to expand your assortment."
+            },
+            {
+              "channel": "Email",
+              "title": "Haven't Ordered Yet? Let Us Help",
+              "description": "Day 7: If no first order",
+              "content": "We noticed you haven't placed your first order yet. Need help selecting products? Our account team can recommend a starter assortment based on your store type and customer base. Schedule a quick consultation."
+            },
+            {
+              "channel": "Email",
+              "title": "First Order Shipped - What's Next",
+              "description": "On first order shipment",
+              "content": "Your first order is on its way! Tracking: [link]. Here's what to expect: delivery timeline, unpacking tips, and merchandising suggestions. Questions about the products? Your account manager is ready to help."
+            },
+            {
+              "channel": "Email",
+              "title": "First Order Feedback & Reorder Reminder",
+              "description": "7 days after first delivery",
+              "content": "How's your first order selling? We'd love your feedback. Based on your order, here are complementary products that sell well together. Ready to reorder your bestsellers? Your favorites are saved for easy reorder."
+            }
+          ]
+        },
+        {
+          "scenario_target": "New buying group members joining through group affiliation",
+          "scenario_objective": "Onboard with group-specific benefits and programs",
+          "main_messages_ideas": "Group welcome, Exclusive benefits, Group pricing, Coordinated programs",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Welcome [Buying Group] Member!",
+              "description": "Approval day",
+              "content": "Welcome to [Company] as a [Buying Group] member! You have access to exclusive group pricing, coordinated promotions, and member-only programs. Here's how to maximize your membership benefits."
+            },
+            {
+              "channel": "Email",
+              "title": "[Buying Group] Exclusive Pricing & Programs",
+              "description": "Day 3: Group benefits",
+              "content": "Your [Buying Group] membership unlocks: [specific pricing tiers], quarterly rebates, coordinated marketing programs, and member-only new product previews. Log in to see your exclusive pricing."
+            },
+            {
+              "channel": "Email",
+              "title": "Connect With Fellow [Buying Group] Members",
+              "description": "Day 7: Community building",
+              "content": "Join the [Buying Group] retailer community: best practices sharing, success stories, and coordinated promotions. See how other members are growing their businesses with our partnership."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "New Product Introduction",
-      "target": "All active retailers",
+      "program_name": "Reorder Automation & Inventory Management",
+      "target": "Active retailers with established ordering patterns",
+      "objective": "Ensure timely reorders, prevent stockouts, and optimize inventory levels",
+      "kpi": "Reorder rate (target: 75%), Stockout prevention (target: 90%), Average order frequency (target: +20%)",
+      "description": "Proactive inventory management communication that anticipates retailer needs based on sales patterns and seasonal trends.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers approaching reorder point based on order history",
+          "scenario_objective": "Drive timely reorders before stockouts",
+          "main_messages_ideas": "Reorder reminder, Quick reorder, Volume savings, Stock alerts",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Time to Reorder Your Bestsellers",
+              "description": "Based on typical reorder cycle",
+              "content": "Based on your sales pattern, you're likely running low on [Products]. Reorder now to avoid stockouts - your previous order is pre-loaded for easy reorder. Current lead time: [X days]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Restock Alert",
+              "description": "If approaching stockout window",
+              "content": "Reorder alert: [Product] restock recommended within 5 days based on your sales rate. Quick reorder: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "One-Click Reorder Ready",
+              "description": "Follow-up if no action",
+              "content": "Your reorder is ready to go - same products, same quantities. One click to confirm. Need adjustments? Easy to modify before checkout. Volume discount applies to this order size."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers with declining order frequency",
+          "scenario_objective": "Re-engage and understand ordering obstacles",
+          "main_messages_ideas": "Check-in, Assistance offer, Alternative products, Incentive",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "We've Missed Your Orders",
+              "description": "When order frequency drops 30%+",
+              "content": "We noticed your orders have slowed down. Everything okay? If your needs have changed, we'd love to help find better products or ordering solutions. What can we do to support your business?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Quick Check-In",
+              "description": "Day 7: Personal outreach",
+              "content": "Hi [Name], it's [Rep] from [Company]. Noticed it's been a while - how are sales going? Anything we can help with?"
+            },
+            {
+              "channel": "Email",
+              "title": "New Options to Consider",
+              "description": "Day 14: Alternative solutions",
+              "content": "Things change - maybe your bestsellers have shifted. Here are trending products in your category that other retailers are having success with. Worth trying a new assortment?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "New Product Introduction & Assortment Expansion",
+      "target": "All active retailers segmented by relevance",
       "objective": "Drive adoption of new products and expand retailer assortments",
-      "kpi": "New product adoption rate, Assortment expansion, Trial order conversion",
-      "description": "Strategic communication to introduce new products and encourage trials.",
+      "kpi": "New product adoption rate (target: 30%), Assortment expansion (target: +2 categories), Trial order conversion (target: 40%)",
+      "description": "Strategic new product communication that matches new offerings to retailer profiles and customer bases.",
       "scenarios": [
         {
-          "scenario_target": "Retailers by category fit",
-          "scenario_objective": "Generate new product orders",
-          "main_messages_ideas": "New arrival preview, Trial offer, Success stories, Intro pricing",
+          "scenario_target": "Retailers with relevant category fit for new products",
+          "scenario_objective": "Generate first orders for new products",
+          "main_messages_ideas": "New arrival preview, Product details, Trial offer, Success stories",
           "message_sequence": [
             {
-              "title": "New Arrival Preview",
-              "description": "2 weeks before availability",
-              "content": "Coming soon: [New Product] - Pre-order for first availability"
+              "channel": "Email",
+              "title": "Exclusive Preview: [New Product Line]",
+              "description": "2 weeks before launch",
+              "content": "Get first access to [New Product Line] before general availability. Based on your customer base, this should be a strong performer. Pre-order now for first shipment and best selection."
             },
             {
-              "title": "Product Details",
-              "description": "At launch",
-              "content": "[New Product] is here: Specs, pricing, and POS materials"
+              "channel": "Email",
+              "title": "[New Product] Launch: Full Details",
+              "description": "Launch day",
+              "content": "[New Product Line] is here! Full product specs, wholesale pricing, suggested retail pricing, and margin analysis. Includes POS materials and selling tips to help you move product fast."
             },
             {
-              "title": "Intro Offer",
-              "description": "First month",
-              "content": "Introductory pricing: Try [New Product] with special first-order discount"
+              "channel": "SMS",
+              "title": "New Product Alert",
+              "description": "Launch day - quick notification",
+              "content": "Just launched: [New Product] is now available to order. Strong margins and trending with consumers. Details: [URL]"
             },
             {
-              "title": "Success Stories",
-              "description": "Month 2",
-              "content": "How retailers are selling [New Product] - Tips and results"
+              "channel": "Email",
+              "title": "Introductory Trial Offer",
+              "description": "Week 1: Trial incentive",
+              "content": "Try [New Product] risk-free: special introductory pricing plus full return option if it doesn't perform. Limited time for first-time orders. Margins start at [X]%."
+            },
+            {
+              "channel": "Email",
+              "title": "How Retailers Are Selling [New Product]",
+              "description": "Week 4: Social proof",
+              "content": "Early results are in: retailers report [result] with [New Product]. Here's how they're merchandising it, pricing strategies that work, and selling techniques. Ready to give it a try?"
+            },
+            {
+              "channel": "Email",
+              "title": "Last Chance: Introductory Pricing Ends",
+              "description": "Week 6: Urgency",
+              "content": "Introductory pricing on [New Product] ends [date]. Lock in launch pricing before standard wholesale rates apply. Retailers who've tried it are reordering - join them."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers ordering in limited categories (assortment expansion opportunity)",
+          "scenario_objective": "Expand retailer's category mix with complementary products",
+          "main_messages_ideas": "Category recommendation, Cross-sell, Bundle offer, Success example",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Complete Your Assortment: [Category]",
+              "description": "Quarterly assortment review",
+              "content": "You're doing great with [current category]. Retailers like you also carry [complementary category] - it's a natural add-on purchase for your customers. Here's our bestseller selection in that category."
+            },
+            {
+              "channel": "Email",
+              "title": "Category Expansion Bundle",
+              "description": "Follow-up offer",
+              "content": "Try [new category] with our starter bundle: curated selection of bestsellers with reduced minimum and introductory pricing. Perfect way to test customer response without major commitment."
+            },
+            {
+              "channel": "Email",
+              "title": "How [Retailer Type] Expanded Successfully",
+              "description": "Social proof",
+              "content": "[Similar Retailer] added [category] six months ago - here's their story and results. Could work for you too? Let's discuss what assortment would fit your customer base."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Seasonal Preparation",
-      "target": "All retailers ahead of peak seasons",
-      "objective": "Maximize seasonal inventory preparation and sales",
-      "kpi": "Pre-season order volume, Seasonal revenue, Stock availability",
-      "description": "Advance communication to help retailers prepare for seasonal demand.",
+      "program_name": "Seasonal Preparation & Pre-Booking",
+      "target": "All retailers ahead of peak seasons and holidays",
+      "objective": "Maximize seasonal inventory preparation and capture pre-season orders",
+      "kpi": "Pre-season order volume (target: 40% of seasonal inventory), Seasonal sell-through (target: 85%), Early order participation (target: 60%)",
+      "description": "Advance seasonal communication that helps retailers prepare for peak demand with proper inventory levels and merchandising support.",
       "scenarios": [
         {
-          "scenario_target": "All active retailers",
-          "scenario_objective": "Drive pre-season ordering",
-          "main_messages_ideas": "Season preview, Early bird deals, Inventory planning, Deadline reminders",
+          "scenario_target": "All active retailers before major selling seasons",
+          "scenario_objective": "Drive early seasonal orders with planning support",
+          "main_messages_ideas": "Season preview, Early bird pricing, Inventory planning, Merchandising support",
           "message_sequence": [
             {
-              "title": "Season Preview",
+              "channel": "Email",
+              "title": "[Season] Collection Preview: Plan Ahead",
+              "description": "12 weeks before season",
+              "content": "First look at our [Season] collection: new products, returning bestsellers, and trend-forward items. Early preview helps you plan your assortment before the rush. Full catalog attached."
+            },
+            {
+              "channel": "Email",
+              "title": "Early Bird [Season] Pricing Now Available",
+              "description": "10 weeks before season",
+              "content": "Lock in [Season] inventory at early-bird pricing: [X]% off standard wholesale on orders placed by [date]. Guaranteed stock allocation and priority shipping for early orders."
+            },
+            {
+              "channel": "Email",
+              "title": "[Season] Inventory Planning Guide",
               "description": "8 weeks before season",
-              "content": "[Season] is coming: Preview our seasonal collection"
+              "content": "Based on your past [Season] sales, here's our recommended order: quantities by product, optimal order timing, and projected demand. Customize or accept our recommendations."
             },
             {
-              "title": "Early Order Incentive",
-              "description": "6 weeks before season",
-              "content": "Order early for [Season]: Best pricing + guaranteed stock"
+              "channel": "SMS",
+              "title": "Early Bird Deadline Approaching",
+              "description": "1 week before early deadline",
+              "content": "[Season] early-bird pricing ends [date]. Don't miss out on [X]% savings and guaranteed stock. Order now: [URL]"
             },
             {
-              "title": "Planning Support",
+              "channel": "Email",
+              "title": "[Season] Merchandising Kit Ready",
               "description": "4 weeks before season",
-              "content": "[Season] planning: Recommended quantities based on your sales"
+              "content": "Your [Season] merchandising kit is ready: POS materials, display recommendations, social media assets, and promotional suggestions. Download free with your [Season] order."
             },
             {
-              "title": "Final Ordering",
+              "channel": "Email",
+              "title": "Final [Season] Stocking: Beat the Rush",
               "description": "2 weeks before season",
-              "content": "Last call for [Season] orders: Ensure you're stocked"
+              "content": "Last chance for [Season] orders with guaranteed pre-season delivery. Stock levels are limited on bestsellers - order now to ensure you're ready when customers start shopping."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers with strong prior seasonal performance",
+          "scenario_objective": "Increase seasonal commitment from proven performers",
+          "main_messages_ideas": "Past performance, Growth opportunity, Exclusive allocation, Premium placement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Your [Season] Success: Let's Do Even Better",
+              "description": "Based on prior year performance",
+              "content": "Last [Season], you sold [amount] of seasonal inventory with [sell-through]%. This year, we'd like to help you do even better: reserved allocation on bestsellers, enhanced early-bird pricing, and dedicated support."
+            },
+            {
+              "channel": "Email",
+              "title": "Reserved Bestseller Allocation",
+              "description": "For top performers",
+              "content": "As a top [Season] performer, we've reserved allocation of our hottest items for you. These will sell out - claim your allocation by [date] to guarantee stock."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Retailer Growth Program",
-      "target": "High-potential and growing retailers",
-      "objective": "Help retailers grow their businesses and increase their purchases",
-      "kpi": "Account growth rate, Category expansion, Partner satisfaction",
-      "description": "Value-added support to help retailers succeed and grow with you.",
+      "program_name": "Promotional Campaigns & Selling Support",
+      "target": "Active retailers looking to boost sales",
+      "objective": "Provide promotional support that helps retailers sell through inventory",
+      "kpi": "Promotion participation rate (target: 50%), Promotional sell-through (target: 80%), Retailer promotional ROI (target: 3x)",
+      "description": "Coordinated promotional support that gives retailers the tools and incentives to run successful sales events.",
       "scenarios": [
         {
-          "scenario_target": "Growing retailers by order trend",
-          "scenario_objective": "Accelerate retailer success",
-          "main_messages_ideas": "Growth tips, Merchandising support, Marketing materials, Training resources",
+          "scenario_target": "All retailers during coordinated promotional periods",
+          "scenario_objective": "Drive promotional participation and sell-through",
+          "main_messages_ideas": "Promotional pricing, Marketing materials, Consumer offer, Participation benefits",
           "message_sequence": [
             {
-              "title": "Retail Success Tips",
+              "channel": "Email",
+              "title": "[Promotion Name] Campaign: Your Participation Guide",
+              "description": "2 weeks before promotion",
+              "content": "Join our [Promotion Name] campaign running [dates]. Participating retailers receive: special wholesale pricing to fund promotions, ready-to-use marketing materials, and coordinated consumer advertising driving traffic to your store."
+            },
+            {
+              "channel": "Email",
+              "title": "Your [Promotion] Marketing Kit",
+              "description": "1 week before",
+              "content": "Your promotional toolkit is ready: signage, social media posts, email templates, and advertising assets. All customizable with your store info. Download and deploy - everything you need to promote."
+            },
+            {
+              "channel": "SMS",
+              "title": "Promotion Starts [Day]",
+              "description": "Day before promotion",
+              "content": "[Promotion Name] starts tomorrow! Make sure you're stocked on promotional items. Last-minute order? We can expedite. Materials ready: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "[Promotion] In-Flight: Tips for Success",
+              "description": "Mid-promotion",
+              "content": "Promotion update: here's what top-performing retailers are doing to maximize results. Mid-promotion tips, inventory check, and reorder option for fast-moving items."
+            },
+            {
+              "channel": "Email",
+              "title": "[Promotion] Results & Learnings",
+              "description": "Post-promotion",
+              "content": "How did [Promotion] work for you? Here are network-wide results and success stories. Your feedback helps us design better programs - quick survey inside."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers with excess inventory needing sell-through support",
+          "scenario_objective": "Help retailers move slow inventory",
+          "main_messages_ideas": "Clearance support, Promotional ideas, Bundling suggestions, Return options",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Need Help Moving Inventory?",
+              "description": "Based on order patterns indicating slow turns",
+              "content": "We noticed some of your inventory might be turning slower than expected. Here are proven strategies: bundling ideas, promotional pricing suggestions, and display refresh tips. Need swap/return options? Let's discuss."
+            },
+            {
+              "channel": "Email",
+              "title": "End-of-Season Clearance Support",
+              "description": "Season end",
+              "content": "Season ending? Here's our end-of-season clearance playbook: recommended markdowns, signage templates, and social promotion ideas. Move through seasonal inventory to make room for what's next."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Retailer Tier & Rewards Program",
+      "target": "All retailers based on performance and potential",
+      "objective": "Incentivize growth and reward loyalty through tier advancement",
+      "kpi": "Tier advancement rate (target: 20% annually), Tier retention (target: 90%), Program engagement (target: 70%)",
+      "description": "Structured loyalty and rewards program that recognizes retailer performance and incentivizes continued growth.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers approaching tier thresholds or eligible for advancement",
+          "scenario_objective": "Motivate tier advancement through clear path and incentives",
+          "main_messages_ideas": "Tier status, Advancement benefits, Progress tracking, Achievement recognition",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "You're Close to [Next Tier] Status!",
+              "description": "When approaching tier threshold",
+              "content": "Great news - you're [X]% of the way to [Next Tier] status! [Next Tier] retailers enjoy: [specific benefits - pricing, terms, support]. Order [amount] more by [date] to unlock these benefits."
+            },
+            {
+              "channel": "SMS",
+              "title": "Tier Advancement Alert",
+              "description": "When very close to threshold",
+              "content": "You're [X] away from [Next Tier]! Benefits include [top benefit]. Qualify by [date] for immediate upgrade."
+            },
+            {
+              "channel": "Email",
+              "title": "Congratulations - Welcome to [New Tier]!",
+              "description": "On tier advancement",
+              "content": "You've earned [New Tier] status! Thank you for your partnership. Your new benefits are active now: [full benefit list]. Here's how to maximize your upgraded status."
+            },
+            {
+              "channel": "Email",
+              "title": "Your [Tier] Exclusive Benefits This Quarter",
+              "description": "Quarterly tier reminder",
+              "content": "As a [Tier] partner, here are your exclusive benefits this quarter: [specific offers, events, or opportunities]. Make sure you're taking advantage of everything your status includes."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Top-tier retailers for VIP treatment",
+          "scenario_objective": "Provide premium experience and recognize top performers",
+          "main_messages_ideas": "VIP recognition, Exclusive access, Partner appreciation, Strategic alignment",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Exclusive [Top Tier] Invitation",
+              "description": "VIP opportunity",
+              "content": "As one of our [Top Tier] partners, you're invited to [exclusive event/opportunity]: early access to new lines, advisory board participation, or premium allocation on limited items. Reply to confirm your interest."
+            },
+            {
+              "channel": "Email",
+              "title": "Your Annual Partner Appreciation Package",
+              "description": "Annual recognition",
+              "content": "Thank you for an incredible year of partnership. As our way of saying thanks, here's your [Top Tier] appreciation package: [gift, credit, or exclusive offer]. We're grateful for your business and look forward to another successful year."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Training & Retailer Education",
+      "target": "All retailers seeking to improve sales performance",
+      "objective": "Empower retailers with knowledge and skills to sell more effectively",
+      "kpi": "Training completion rate (target: 40%), Sales improvement post-training (target: +15%), Engagement rate (target: 50%)",
+      "description": "Educational content and training programs that help retailers sell products more effectively and grow their businesses.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers new to product categories or needing product knowledge",
+          "scenario_objective": "Build product knowledge and selling confidence",
+          "main_messages_ideas": "Product training, Selling tips, FAQ handling, Feature education",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Master [Product Category]: Free Training",
+              "description": "New category order trigger",
+              "content": "Congratulations on adding [Category] to your assortment! Here's free product training to help you and your team sell confidently: key features, customer FAQs, and proven selling techniques. Complete in 20 minutes."
+            },
+            {
+              "channel": "Email",
+              "title": "[Product] Selling Tips From Top Performers",
+              "description": "Ongoing education",
+              "content": "How do top retailers sell [Product]? Real tips from real retailers: customer conversations that close, common objections and how to handle them, and upsell opportunities."
+            },
+            {
+              "channel": "Email",
+              "title": "Live Training Webinar: [Topic]",
+              "description": "Monthly opportunity",
+              "content": "Join our live training session on [Topic]: interactive Q&A with our product experts and successful retailers. Learn techniques you can use immediately. Register for [date/time]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "All retailers for business growth education",
+          "scenario_objective": "Provide broader retail business support",
+          "main_messages_ideas": "Retail best practices, Merchandising tips, Business growth, Industry trends",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Retail Success Tips: [Topic]",
               "description": "Monthly content",
-              "content": "This month's retail tip: How to increase [Category] sales"
+              "content": "This month's retail tip: [Actionable topic like inventory management, customer service, visual merchandising]. Quick read with immediate application for your store."
             },
             {
-              "title": "Merchandising Support",
-              "description": "POS and display offers",
-              "content": "Free merchandising kit: Display materials for [Products]"
+              "channel": "Email",
+              "title": "Industry Trends: What's Coming in [Category]",
+              "description": "Quarterly trend report",
+              "content": "Stay ahead with our quarterly trend report: consumer shifts, emerging products, and merchandising trends. Position your store for what's next in [Category]."
             },
             {
-              "title": "Marketing Materials",
-              "description": "Promotional support",
-              "content": "Your marketing kit: Ready-to-use materials for your store"
+              "channel": "Email",
+              "title": "Retailer Resource Library Updated",
+              "description": "Resource availability",
+              "content": "New resources in your retailer portal: [specific resources added]. Access guides, templates, and tools to grow your business. All free for wholesale partners."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Dormant Account Reactivation",
+      "target": "Inactive accounts and lapsed retailers",
+      "objective": "Re-engage dormant accounts and recover churned retailers",
+      "kpi": "Reactivation rate (target: 20%), Win-back conversion (target: 12%), Recovered revenue (target: 25% of churned value)",
+      "description": "Strategic re-engagement for retailers who have stopped ordering, with tailored approaches based on likely reasons for inactivity.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers with no orders in 60+ days (unexpected dormancy)",
+          "scenario_objective": "Understand reason and re-engage with relevant offer",
+          "main_messages_ideas": "Check-in, Updated offerings, Re-engagement incentive, Feedback request",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "We've Missed Your Orders",
+              "description": "60-day inactivity trigger",
+              "content": "It's been a while since your last order - we hope everything's okay! Have your needs changed? Is there something we could be doing better? We value your partnership and want to make sure we're serving you well."
             },
             {
-              "title": "Partner Tier Upgrade",
-              "description": "When thresholds reached",
-              "content": "Congratulations! You've unlocked [Tier] partner benefits"
+              "channel": "SMS",
+              "title": "Quick Check-In",
+              "description": "Day 7: Personal touch",
+              "content": "Hi [Name], it's [Rep] from [Company]. Haven't heard from you in a bit - everything okay? Let me know if there's anything you need."
+            },
+            {
+              "channel": "Email",
+              "title": "What's New Since Your Last Order",
+              "description": "Day 14: Value update",
+              "content": "A lot has happened since your last order: new products, improved terms, and expanded services. Here's a quick update on what's new - might be worth another look?"
+            },
+            {
+              "channel": "Email",
+              "title": "Welcome Back Offer",
+              "description": "Day 30: Re-engagement incentive",
+              "content": "We'd love to have you back! Here's a welcome back offer: [discount, free shipping, or reduced minimums] on your next order. No strings attached - just a thank you for giving us another try."
+            },
+            {
+              "channel": "Email",
+              "title": "Help Us Improve",
+              "description": "Day 45: Feedback request",
+              "content": "Even if you've moved on, we'd value your feedback. What could we have done better? Your honest input helps us improve for all our retailers. Quick survey or just reply with thoughts."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Closed or seasonal accounts that may return",
+          "scenario_objective": "Maintain relationship for potential return",
+          "main_messages_ideas": "Graceful departure, Door open, Seasonal re-engagement, Easy return",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Thank You for Our Partnership",
+              "description": "On confirmed account pause/close",
+              "content": "We understand you're pausing or closing your account. Thank you for the business we've done together. Your account information will be preserved - if things change, we're here and reactivation is easy."
+            },
+            {
+              "channel": "Email",
+              "title": "Thinking of Reopening?",
+              "description": "6-month check-in for seasonal/closed accounts",
+              "content": "Six months ago you paused your account. If you're considering reopening, we've made it easy: your history and preferences are saved, and your previous pricing tier is preserved. Ready to get started again?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Referral & Network Growth",
+      "target": "Satisfied retailers with industry connections",
+      "objective": "Generate new retailer leads through referrals from existing partners",
+      "kpi": "Referral rate (target: 15% of active accounts), Referral conversion (target: 35%), Cost per acquisition via referral (target: 50% of other channels)",
+      "description": "Leverage strong retailer relationships to generate qualified referrals from satisfied partners.",
+      "scenarios": [
+        {
+          "scenario_target": "High-satisfaction retailers with strong partnership history",
+          "scenario_objective": "Activate as referral sources",
+          "main_messages_ideas": "Appreciation, Referral program, Mutual benefit, Easy process",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Know Other Retailers Who'd Benefit?",
+              "description": "Post high satisfaction indicator",
+              "content": "We're so glad the partnership is working well for you! Many of our best retailers have come through recommendations from partners like you. Know someone who'd benefit from wholesale partnership? We'd love an introduction."
+            },
+            {
+              "channel": "Email",
+              "title": "Partner Referral Rewards",
+              "description": "Day 14: Program details",
+              "content": "Our Retailer Referral Program: Refer a qualified retailer and you both benefit. You receive [referrer reward], they receive [new partner benefit]. Simple process: just share their contact or make an email introduction."
+            },
+            {
+              "channel": "Email",
+              "title": "Easy Referral: Forward This",
+              "description": "Day 30: Simple action",
+              "content": "Easiest way to refer: forward this email to a retailer colleague who might benefit. Or just reply with their name and contact - we'll reach out professionally and mention your recommendation."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers attending trade shows or industry events",
+          "scenario_objective": "Leverage event networking for introductions",
+          "main_messages_ideas": "Event coordination, Introduction facilitation, Networking",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "See You at [Event] - Let's Connect",
+              "description": "Pre-event outreach",
+              "content": "We'll both be at [Event]! Stop by booth [#] - bring colleagues who might be interested in wholesale partnership. Happy to make introductions and discuss how we can help their businesses too."
+            },
+            {
+              "channel": "SMS",
+              "title": "At [Event] - Coffee?",
+              "description": "During event",
+              "content": "At [Event]? Stop by booth [#] - coffee's on us. Bring anyone who should know about us!"
             }
           ]
         }
@@ -187,23 +681,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Retailer Onboarding",
-      "why_brevo_is_better": "Brevo's B2B automation enables structured onboarding sequences that ensure every new retailer receives consistent, helpful communication.",
-      "omnichannel_channels": "Email for detailed guides + SMS for quick tips and order confirmations",
-      "setup_efficiency": "Pre-built wholesale templates help you create professional onboarding in minutes."
+      "scenario_name": "New Retailer Onboarding & First Order Success",
+      "why_brevo_is_better": "Brevo's B2B automation enables structured onboarding sequences that ensure every new retailer receives consistent, helpful communication that drives first orders within days, not weeks.",
+      "omnichannel_channels": "Email for detailed guides and catalogs + SMS for quick notifications and urgent alerts + Portal integration for self-service",
+      "setup_efficiency": "Pre-built wholesale onboarding templates help you create professional sequences in minutes, with automatic personalization based on retailer profile."
     },
     {
-      "scenario_name": "Reorder Automation",
-      "why_brevo_is_better": "Integration with your order management system enables smart reorder reminders based on each retailer's actual purchase patterns.",
-      "omnichannel_channels": "Email for catalog and pricing + SMS for urgent stock alerts",
-      "setup_efficiency": "Order history triggers enable fully automated, personalized reorder timing."
+      "scenario_name": "Reorder Automation & Inventory Management",
+      "why_brevo_is_better": "Integration with your order management system enables smart reorder reminders based on each retailer's actual purchase patterns, predicting needs before stockouts occur.",
+      "omnichannel_channels": "Email for detailed reorder information and catalogs + SMS for time-sensitive stock alerts and deadline reminders",
+      "setup_efficiency": "Order history integration enables fully automated, personalized reorder timing calibrated to each retailer's sales velocity."
     },
     {
-      "scenario_name": "Seasonal Preparation",
-      "why_brevo_is_better": "Calendar-based automation and segmentation ensure timely seasonal communication that helps retailers prepare for peak demand.",
-      "omnichannel_channels": "Email for seasonal catalogs + SMS for deadline reminders",
-      "setup_efficiency": "Annual seasonal campaigns can be templated and scheduled to repeat automatically."
+      "scenario_name": "Seasonal Preparation & Pre-Booking",
+      "why_brevo_is_better": "Calendar-based automation and advanced segmentation ensure timely seasonal communication that helps retailers prepare for peak demand with personalized recommendations based on past performance.",
+      "omnichannel_channels": "Email for seasonal catalogs and planning guides + SMS for deadline reminders and stock alerts",
+      "setup_efficiency": "Annual seasonal campaigns can be templated and scheduled to repeat automatically, with performance-based personalization improving each year."
+    },
+    {
+      "scenario_name": "Retailer Tier & Rewards Program",
+      "why_brevo_is_better": "Automated tier tracking and milestone communication keeps retailers motivated with clear progress visibility and instant recognition when thresholds are reached.",
+      "omnichannel_channels": "Email for tier updates and benefit communication + SMS for achievement notifications + Personalized offers based on tier status",
+      "setup_efficiency": "Integration with order data enables automatic tier calculation and triggered communication without manual tracking or delayed updates."
+    },
+    {
+      "scenario_name": "Win-Back & Dormant Account Reactivation",
+      "why_brevo_is_better": "Automated inactivity detection triggers timely re-engagement before accounts go cold, with segmentation that tailors win-back approaches to likely reasons for dormancy.",
+      "omnichannel_channels": "Email for re-engagement offers and updates + SMS for personal check-ins + Coordinated multi-touch sequences",
+      "setup_efficiency": "Inactivity triggers automatically identify at-risk accounts and initiate win-back sequences without manual monitoring of account activity."
     }
   ],
-  "conclusion": "Wholesale and distribution businesses that implement these relationship marketing programs can expect improved retailer retention, more consistent ordering patterns, and stronger partnerships that drive mutual growth."
+  "conclusion": "Wholesale distributors that implement these comprehensive relationship marketing programs can expect improved retailer acquisition through systematic lead nurturing, more consistent ordering through proactive inventory management, expanded assortments through targeted cross-sell, and stronger partnerships through tier-based recognition and training support. The wholesale business rewards consistency, reliability, and mutual growth orientation - this plan delivers all three through systematic, automated engagement across the entire retailer lifecycle."
 }

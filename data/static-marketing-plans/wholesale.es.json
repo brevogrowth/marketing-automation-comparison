@@ -1,0 +1,715 @@
+{
+  "introduction": "Este completo plan de marketing relacional está diseñado para distribuidores mayoristas que buscan construir asociaciones más fuertes con retailers, grupos de compra y revendedores. Desde la adquisición de nuevas cuentas hasta el avance de nivel, estos programas optimizan todo el ciclo de vida del retailer para impulsar pedidos consistentes, expansión de surtido y crecimiento mutuo a través del canal de distribución.",
+  "company_summary": {
+    "name": "Empresa de Mayoristas y Distribución",
+    "website": "ejemplo-mayorista.com",
+    "activities": "Distribución mayorista B2B incluyendo sourcing de productos, gestión de inventario, logística y soporte a retailers en diversas categorías de producto",
+    "target": "Propietarios de tiendas minoristas, gerentes de compras, miembros de grupos de compra, gerentes de categoría y operadores de retail multi-ubicación que necesitan suministro de productos confiable",
+    "industry": "Mayoristas",
+    "business_model": "Distribución Mayorista B2B",
+    "customer_lifecycle_key_steps": "Generación de Leads > Aprobación de Crédito > Configuración de Cuenta > Primer Pedido > Establecimiento de Ciclo de Pedido > Expansión de Surtido > Avance de Nivel > Asociación Estratégica > Advocacy"
+  },
+  "programs_list": [
+    {
+      "program_name": "Nurturing de Leads de Retailers y Adquisición de Cuentas",
+      "target": "Retailers prospectivos y nuevas consultas de negocio",
+      "objective": "Convertir prospectos en cuentas mayoristas aprobadas a través de cualificación efectiva y demostración de valor",
+      "kpi": "Conversión de lead a cuenta (objetivo: 25%), Tasa de completación de solicitud (objetivo: 60%), Tiempo hasta primer pedido (objetivo: <14 días)",
+      "description": "Engagement estratégico para demostrar el valor de la asociación mayorista, simplificar el proceso de solicitud y acelerar la activación de nuevas cuentas.",
+      "scenarios": [
+        {
+          "scenario_target": "Leads de ferias comerciales y consultas web de retailers potenciales",
+          "scenario_objective": "Convertir interés en solicitudes de cuenta mayorista",
+          "main_messages_ideas": "Beneficios de asociación, Vista previa de catálogo, Proceso de solicitud, Ventajas de volumen",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bienvenido a [Empresa] Mayorista",
+              "description": "Inmediato: Post-consulta",
+              "content": "¡Gracias por tu interés en asociarte con nosotros! Aquí hay una vista previa de lo que incluye la asociación mayorista: precios competitivos, suministro confiable, soporte de merchandising y pedidos flexibles. Aplica en 5 minutos para comenzar."
+            },
+            {
+              "channel": "Email",
+              "title": "Vista Previa del Catálogo Mayorista",
+              "description": "Día 2: Demostración de valor",
+              "content": "Vista previa de nuestro catálogo mayorista: bestsellers, líneas exclusivas y productos que mejoran márgenes. Ve los precios al público y tu descuento mayorista. ¿Listo para ver tus márgenes reales? Completa tu solicitud para desbloquear precios completos."
+            },
+            {
+              "channel": "SMS",
+              "title": "Verificación Rápida de Solicitud",
+              "description": "Día 4: Toque personal",
+              "content": "Hola [Nombre], vi que estabas revisando la asociación mayorista. ¿Preguntas sobre la solicitud o términos? Responde aquí o llama al [número] - encantado de ayudar."
+            },
+            {
+              "channel": "Email",
+              "title": "Lo Que Dicen Nuestros Retailers",
+              "description": "Día 7: Prueba social",
+              "content": "Escucha a retailers como tú: [Testimonios sobre beneficios de asociación, servicio y crecimiento]. Únete a [X] retailers que confían en nosotros como su socio mayorista."
+            },
+            {
+              "channel": "Email",
+              "title": "Asistencia con Solicitud Disponible",
+              "description": "Día 10: Eliminar fricción",
+              "content": "¿Necesitas ayuda con tu solicitud? Nuestro equipo de cuentas puede guiarte a través del proceso en una llamada de 10 minutos. Nosotros manejamos el papeleo para que puedas empezar a pedir más rápido. Programa una llamada o responde con preguntas."
+            },
+            {
+              "channel": "Email",
+              "title": "Programa de Inicio para Nuevos Retailers",
+              "description": "Día 14: Oferta especial",
+              "content": "Especial para nuevos socios: Aplica esta semana y recibe [beneficio de inicio - mínimos reducidos, envío gratis en primer pedido o descuento introductorio]. Oferta por tiempo limitado para retailers cualificados."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Solicitudes de cuenta mayorista abandonadas",
+          "scenario_objective": "Re-involucrar y completar configuración de cuenta",
+          "main_messages_ideas": "Recuperación de solicitud, Oferta de asistencia, Proceso simplificado, Urgencia",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tu Solicitud Está Casi Completa",
+              "description": "Día 1 después de abandono",
+              "content": "¡Ya casi está! Tu solicitud mayorista está 80% completa. Termina en 2 minutos para desbloquear precios mayoristas y empezar a pedir. ¿Preguntas que te detienen? Estamos aquí para ayudar."
+            },
+            {
+              "channel": "SMS",
+              "title": "¿Necesitas Ayuda con la Solicitud?",
+              "description": "Día 3",
+              "content": "Noté que empezaste una solicitud mayorista. ¿Algún problema? Responde con preguntas o llama al [número] - a menudo podemos aprobar el mismo día."
+            },
+            {
+              "channel": "Email",
+              "title": "Completemos Tu Configuración Juntos",
+              "description": "Día 7",
+              "content": "¿Aún interesado en la asociación mayorista? Terminemos tu solicitud juntos. Programa una llamada rápida y nuestro equipo te guiará - la mayoría de solicitudes se aprueban en 24 horas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Onboarding de Nuevo Retailer y Éxito del Primer Pedido",
+      "target": "Cuentas mayoristas recién aprobadas",
+      "objective": "Establecer hábitos de pedido sólidos y asegurar satisfacción del primer pedido",
+      "kpi": "Primer pedido en 7 días (objetivo: 70%), Satisfacción de onboarding (objetivo: 90%), Pedido repetido en 30 días (objetivo: 60%)",
+      "description": "Onboarding completo que ayuda a nuevos retailers a navegar procesos de pedido, descubrir productos y establecer patrones de venta exitosos.",
+      "scenarios": [
+        {
+          "scenario_target": "Cuentas retail recién aprobadas esperando primer pedido",
+          "scenario_objective": "Impulsar primer pedido rápido y establecer relación de pedidos",
+          "main_messages_ideas": "Bienvenida, Configuración de cuenta, Guía de pedidos, Recomendaciones de bestsellers, Soporte de primer pedido",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "¡Bienvenido a la Familia [Empresa]!",
+              "description": "Día de aprobación",
+              "content": "¡Felicitaciones! Tu cuenta mayorista está aprobada y activa. Aquí tienes todo lo que necesitas: tu login de cuenta, catálogo de precios mayoristas y el contacto de tu gerente de cuenta dedicado. ¿Listo para hacer tu primer pedido? Nuestro paquete inicial de bestsellers es un gran comienzo."
+            },
+            {
+              "channel": "SMS",
+              "title": "¡Cuenta Activa!",
+              "description": "Mismo día",
+              "content": "¡Buenas noticias - tu cuenta mayorista de [Empresa] está activa! Login: [URL]. Consejo para primer pedido: Revisa nuestro bundle de bestsellers para una selección inicial curada."
+            },
+            {
+              "channel": "Email",
+              "title": "Tu Guía de Pedidos y Tutorial de Plataforma",
+              "description": "Día 2: Educación de procesos",
+              "content": "Todo lo que necesitas saber sobre pedidos: mínimos de pedido, calendarios de envío, términos de pago y políticas de devolución. Además, un video tour rápido de nuestra plataforma de pedidos para que hagas pedidos en minutos."
+            },
+            {
+              "channel": "Email",
+              "title": "Top Sellers para Tu Tipo de Tienda",
+              "description": "Día 3: Recomendaciones personalizadas",
+              "content": "Basándonos en retailers como tú, aquí están nuestros mejores performers en tu categoría. Estos productos tienen las mejores tasas de rotación y márgenes. Perfectos para tu primer pedido o para expandir tu surtido."
+            },
+            {
+              "channel": "Email",
+              "title": "¿Aún No Has Pedido? Déjanos Ayudarte",
+              "description": "Día 7: Si no hay primer pedido",
+              "content": "Notamos que aún no has hecho tu primer pedido. ¿Necesitas ayuda seleccionando productos? Nuestro equipo de cuentas puede recomendar un surtido inicial basado en tu tipo de tienda y base de clientes. Programa una consulta rápida."
+            },
+            {
+              "channel": "Email",
+              "title": "Primer Pedido Enviado - Qué Sigue",
+              "description": "Al enviar primer pedido",
+              "content": "¡Tu primer pedido está en camino! Tracking: [enlace]. Esto es lo que puedes esperar: cronograma de entrega, consejos de desempaque y sugerencias de merchandising. ¿Preguntas sobre los productos? Tu gerente de cuenta está listo para ayudar."
+            },
+            {
+              "channel": "Email",
+              "title": "Feedback del Primer Pedido y Recordatorio de Reposición",
+              "description": "7 días después de primera entrega",
+              "content": "¿Cómo se está vendiendo tu primer pedido? Nos encantaría tu feedback. Basándonos en tu pedido, aquí hay productos complementarios que se venden bien juntos. ¿Listo para reponer tus bestsellers? Tus favoritos están guardados para reposición fácil."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nuevos miembros de grupos de compra que se unen a través de afiliación grupal",
+          "scenario_objective": "Onboarding con beneficios y programas específicos del grupo",
+          "main_messages_ideas": "Bienvenida grupal, Beneficios exclusivos, Precios de grupo, Programas coordinados",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "¡Bienvenido Miembro de [Grupo de Compra]!",
+              "description": "Día de aprobación",
+              "content": "¡Bienvenido a [Empresa] como miembro de [Grupo de Compra]! Tienes acceso a precios exclusivos de grupo, promociones coordinadas y programas solo para miembros. Así es como maximizar los beneficios de tu membresía."
+            },
+            {
+              "channel": "Email",
+              "title": "Precios y Programas Exclusivos de [Grupo de Compra]",
+              "description": "Día 3: Beneficios de grupo",
+              "content": "Tu membresía de [Grupo de Compra] desbloquea: [niveles de precios específicos], reembolsos trimestrales, programas de marketing coordinados y previews exclusivos de nuevos productos para miembros. Inicia sesión para ver tus precios exclusivos."
+            },
+            {
+              "channel": "Email",
+              "title": "Conecta con Otros Miembros de [Grupo de Compra]",
+              "description": "Día 7: Construcción de comunidad",
+              "content": "Únete a la comunidad de retailers de [Grupo de Compra]: compartir mejores prácticas, historias de éxito y promociones coordinadas. Ve cómo otros miembros están creciendo sus negocios con nuestra asociación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Automatización de Reposición y Gestión de Inventario",
+      "target": "Retailers activos con patrones de pedido establecidos",
+      "objective": "Asegurar reposiciones oportunas, prevenir desabastecimientos y optimizar niveles de inventario",
+      "kpi": "Tasa de reposición (objetivo: 75%), Prevención de desabastecimiento (objetivo: 90%), Frecuencia promedio de pedido (objetivo: +20%)",
+      "description": "Comunicación proactiva de gestión de inventario que anticipa las necesidades del retailer basándose en patrones de ventas y tendencias estacionales.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers acercándose al punto de reposición basado en historial de pedidos",
+          "scenario_objective": "Impulsar reposiciones oportunas antes de desabastecimientos",
+          "main_messages_ideas": "Recordatorio de reposición, Reposición rápida, Ahorros por volumen, Alertas de stock",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Es Hora de Reponer Tus Bestsellers",
+              "description": "Basado en ciclo típico de reposición",
+              "content": "Basándonos en tu patrón de ventas, probablemente te estás quedando sin [Productos]. Repón ahora para evitar desabastecimientos - tu pedido anterior está pre-cargado para reposición fácil. Tiempo de entrega actual: [X días]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerta de Reposición",
+              "description": "Si se acerca ventana de desabastecimiento",
+              "content": "Alerta de reposición: Se recomienda reponer [Producto] dentro de 5 días basándose en tu tasa de ventas. Reposición rápida: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Reposición de Un Clic Lista",
+              "description": "Seguimiento si no hay acción",
+              "content": "Tu reposición está lista - mismos productos, mismas cantidades. Un clic para confirmar. ¿Necesitas ajustes? Fácil de modificar antes del checkout. Descuento por volumen aplica a este tamaño de pedido."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers con frecuencia de pedido decreciente",
+          "scenario_objective": "Re-involucrar y entender obstáculos de pedido",
+          "main_messages_ideas": "Check-in, Oferta de asistencia, Productos alternativos, Incentivo",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Hemos Extrañado Tus Pedidos",
+              "description": "Cuando la frecuencia de pedido cae 30%+",
+              "content": "Notamos que tus pedidos han disminuido. ¿Todo bien? Si tus necesidades han cambiado, nos encantaría ayudar a encontrar mejores productos o soluciones de pedido. ¿Qué podemos hacer para apoyar tu negocio?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Check-In Rápido",
+              "description": "Día 7: Alcance personal",
+              "content": "Hola [Nombre], soy [Rep] de [Empresa]. Noté que ha pasado un tiempo - ¿cómo van las ventas? ¿En qué podemos ayudar?"
+            },
+            {
+              "channel": "Email",
+              "title": "Nuevas Opciones a Considerar",
+              "description": "Día 14: Soluciones alternativas",
+              "content": "Las cosas cambian - quizás tus bestsellers han cambiado. Aquí hay productos en tendencia en tu categoría con los que otros retailers están teniendo éxito. ¿Vale la pena probar un nuevo surtido?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Introducción de Nuevos Productos y Expansión de Surtido",
+      "target": "Todos los retailers activos segmentados por relevancia",
+      "objective": "Impulsar adopción de nuevos productos y expandir surtidos de retailers",
+      "kpi": "Tasa de adopción de nuevo producto (objetivo: 30%), Expansión de surtido (objetivo: +2 categorías), Conversión de pedido de prueba (objetivo: 40%)",
+      "description": "Comunicación estratégica de nuevos productos que empareja nuevas ofertas con perfiles de retailers y bases de clientes.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers con encaje de categoría relevante para nuevos productos",
+          "scenario_objective": "Generar primeros pedidos para nuevos productos",
+          "main_messages_ideas": "Vista previa de nueva llegada, Detalles del producto, Oferta de prueba, Historias de éxito",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vista Previa Exclusiva: [Nueva Línea de Producto]",
+              "description": "2 semanas antes del lanzamiento",
+              "content": "Obtén primer acceso a [Nueva Línea de Producto] antes de la disponibilidad general. Basándonos en tu base de clientes, esto debería tener un fuerte rendimiento. Pre-ordena ahora para primer envío y mejor selección."
+            },
+            {
+              "channel": "Email",
+              "title": "Lanzamiento de [Nuevo Producto]: Detalles Completos",
+              "description": "Día de lanzamiento",
+              "content": "¡[Nueva Línea de Producto] está aquí! Especificaciones completas del producto, precios mayoristas, precios sugeridos al público y análisis de márgenes. Incluye materiales POS y consejos de venta para ayudarte a mover producto rápido."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerta de Nuevo Producto",
+              "description": "Día de lanzamiento - notificación rápida",
+              "content": "Recién lanzado: [Nuevo Producto] ya está disponible para pedir. Fuertes márgenes y en tendencia con consumidores. Detalles: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Oferta de Prueba Introductoria",
+              "description": "Semana 1: Incentivo de prueba",
+              "content": "Prueba [Nuevo Producto] sin riesgo: precios introductorios especiales más opción de devolución completa si no funciona. Tiempo limitado para primeros pedidos. Márgenes empiezan en [X]%."
+            },
+            {
+              "channel": "Email",
+              "title": "Cómo los Retailers Están Vendiendo [Nuevo Producto]",
+              "description": "Semana 4: Prueba social",
+              "content": "Los primeros resultados están: retailers reportan [resultado] con [Nuevo Producto]. Así es como lo están exhibiendo, estrategias de precios que funcionan y técnicas de venta. ¿Listo para intentarlo?"
+            },
+            {
+              "channel": "Email",
+              "title": "Última Oportunidad: Precios Introductorios Terminan",
+              "description": "Semana 6: Urgencia",
+              "content": "Los precios introductorios de [Nuevo Producto] terminan el [fecha]. Asegura precios de lanzamiento antes de que apliquen las tarifas mayoristas estándar. Los retailers que lo han probado están reponiendo - únete a ellos."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers pidiendo en categorías limitadas (oportunidad de expansión de surtido)",
+          "scenario_objective": "Expandir el mix de categorías del retailer con productos complementarios",
+          "main_messages_ideas": "Recomendación de categoría, Cross-sell, Oferta de bundle, Ejemplo de éxito",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Completa Tu Surtido: [Categoría]",
+              "description": "Revisión trimestral de surtido",
+              "content": "Te está yendo genial con [categoría actual]. Retailers como tú también llevan [categoría complementaria] - es una compra natural adicional para tus clientes. Aquí está nuestra selección de bestsellers en esa categoría."
+            },
+            {
+              "channel": "Email",
+              "title": "Bundle de Expansión de Categoría",
+              "description": "Oferta de seguimiento",
+              "content": "Prueba [nueva categoría] con nuestro bundle inicial: selección curada de bestsellers con mínimo reducido y precios introductorios. Forma perfecta de probar respuesta de clientes sin mayor compromiso."
+            },
+            {
+              "channel": "Email",
+              "title": "Cómo [Tipo de Retailer] Expandió Exitosamente",
+              "description": "Prueba social",
+              "content": "[Retailer Similar] agregó [categoría] hace seis meses - aquí está su historia y resultados. ¿Podría funcionar para ti también? Discutamos qué surtido encajaría con tu base de clientes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Preparación Estacional y Pre-Reserva",
+      "target": "Todos los retailers antes de temporadas pico y fiestas",
+      "objective": "Maximizar preparación de inventario estacional y capturar pedidos pre-temporada",
+      "kpi": "Volumen de pedido pre-temporada (objetivo: 40% del inventario estacional), Sell-through estacional (objetivo: 85%), Participación en pedido anticipado (objetivo: 60%)",
+      "description": "Comunicación estacional anticipada que ayuda a retailers a prepararse para demanda pico con niveles de inventario apropiados y soporte de merchandising.",
+      "scenarios": [
+        {
+          "scenario_target": "Todos los retailers activos antes de principales temporadas de venta",
+          "scenario_objective": "Impulsar pedidos estacionales tempranos con soporte de planificación",
+          "main_messages_ideas": "Vista previa de temporada, Precios early bird, Planificación de inventario, Soporte de merchandising",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vista Previa Colección [Temporada]: Planifica Adelante",
+              "description": "12 semanas antes de temporada",
+              "content": "Primera mirada a nuestra colección de [Temporada]: nuevos productos, bestsellers que regresan y artículos con tendencia. La vista previa anticipada te ayuda a planificar tu surtido antes del rush. Catálogo completo adjunto."
+            },
+            {
+              "channel": "Email",
+              "title": "Precios Early Bird de [Temporada] Ya Disponibles",
+              "description": "10 semanas antes de temporada",
+              "content": "Asegura inventario de [Temporada] con precios early-bird: [X]% de descuento sobre precio mayorista estándar en pedidos realizados antes del [fecha]. Asignación de stock garantizada y envío prioritario para pedidos anticipados."
+            },
+            {
+              "channel": "Email",
+              "title": "Guía de Planificación de Inventario [Temporada]",
+              "description": "8 semanas antes de temporada",
+              "content": "Basándonos en tus ventas pasadas de [Temporada], aquí está nuestro pedido recomendado: cantidades por producto, momento óptimo de pedido y demanda proyectada. Personaliza o acepta nuestras recomendaciones."
+            },
+            {
+              "channel": "SMS",
+              "title": "Se Acerca Fecha Límite Early Bird",
+              "description": "1 semana antes de fecha límite early",
+              "content": "Precios early-bird de [Temporada] terminan el [fecha]. No pierdas [X]% de ahorro y stock garantizado. Pide ahora: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Kit de Merchandising [Temporada] Listo",
+              "description": "4 semanas antes de temporada",
+              "content": "Tu kit de merchandising de [Temporada] está listo: materiales POS, recomendaciones de display, activos de redes sociales y sugerencias promocionales. Descarga gratis con tu pedido de [Temporada]."
+            },
+            {
+              "channel": "Email",
+              "title": "Stock Final [Temporada]: Gana al Rush",
+              "description": "2 semanas antes de temporada",
+              "content": "Última oportunidad para pedidos de [Temporada] con entrega garantizada pre-temporada. Los niveles de stock están limitados en bestsellers - pide ahora para asegurar que estés listo cuando los clientes empiecen a comprar."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers con fuerte rendimiento estacional previo",
+          "scenario_objective": "Aumentar compromiso estacional de performers probados",
+          "main_messages_ideas": "Rendimiento pasado, Oportunidad de crecimiento, Asignación exclusiva, Ubicación premium",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tu Éxito de [Temporada]: Hagámoslo Aún Mejor",
+              "description": "Basado en rendimiento del año anterior",
+              "content": "La [Temporada] pasada, vendiste [cantidad] de inventario estacional con [sell-through]%. Este año, queremos ayudarte a hacerlo aún mejor: asignación reservada en bestsellers, precios early-bird mejorados y soporte dedicado."
+            },
+            {
+              "channel": "Email",
+              "title": "Asignación Reservada de Bestsellers",
+              "description": "Para top performers",
+              "content": "Como top performer de [Temporada], hemos reservado asignación de nuestros artículos más calientes para ti. Estos se agotarán - reclama tu asignación antes del [fecha] para garantizar stock."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Campañas Promocionales y Soporte de Ventas",
+      "target": "Retailers activos buscando impulsar ventas",
+      "objective": "Proporcionar soporte promocional que ayude a retailers a vender inventario",
+      "kpi": "Tasa de participación en promoción (objetivo: 50%), Sell-through promocional (objetivo: 80%), ROI promocional del retailer (objetivo: 3x)",
+      "description": "Soporte promocional coordinado que da a retailers las herramientas e incentivos para ejecutar eventos de venta exitosos.",
+      "scenarios": [
+        {
+          "scenario_target": "Todos los retailers durante períodos promocionales coordinados",
+          "scenario_objective": "Impulsar participación promocional y sell-through",
+          "main_messages_ideas": "Precios promocionales, Materiales de marketing, Oferta al consumidor, Beneficios de participación",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Campaña [Nombre de Promoción]: Tu Guía de Participación",
+              "description": "2 semanas antes de promoción",
+              "content": "Únete a nuestra campaña [Nombre de Promoción] del [fechas]. Los retailers participantes reciben: precios mayoristas especiales para financiar promociones, materiales de marketing listos para usar y publicidad coordinada al consumidor llevando tráfico a tu tienda."
+            },
+            {
+              "channel": "Email",
+              "title": "Tu Kit de Marketing [Promoción]",
+              "description": "1 semana antes",
+              "content": "Tu toolkit promocional está listo: señalética, posts de redes sociales, plantillas de email y activos de publicidad. Todo personalizable con la info de tu tienda. Descarga y despliega - todo lo que necesitas para promocionar."
+            },
+            {
+              "channel": "SMS",
+              "title": "La Promoción Comienza [Día]",
+              "description": "Día antes de promoción",
+              "content": "¡[Nombre de Promoción] empieza mañana! Asegúrate de tener stock de artículos promocionales. ¿Pedido de último minuto? Podemos expeditar. Materiales listos: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "[Promoción] En Marcha: Tips para el Éxito",
+              "description": "Mitad de promoción",
+              "content": "Actualización de promoción: esto es lo que los retailers top están haciendo para maximizar resultados. Tips de mitad de promoción, verificación de inventario y opción de reposición para artículos que se mueven rápido."
+            },
+            {
+              "channel": "Email",
+              "title": "Resultados y Aprendizajes de [Promoción]",
+              "description": "Post-promoción",
+              "content": "¿Cómo funcionó [Promoción] para ti? Aquí están los resultados de toda la red e historias de éxito. Tu feedback nos ayuda a diseñar mejores programas - encuesta rápida incluida."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers con exceso de inventario necesitando soporte de sell-through",
+          "scenario_objective": "Ayudar a retailers a mover inventario lento",
+          "main_messages_ideas": "Soporte de liquidación, Ideas promocionales, Sugerencias de bundling, Opciones de devolución",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "¿Necesitas Ayuda Moviendo Inventario?",
+              "description": "Basado en patrones de pedido indicando rotación lenta",
+              "content": "Notamos que parte de tu inventario podría estar rotando más lento de lo esperado. Aquí hay estrategias probadas: ideas de bundling, sugerencias de precios promocionales y tips de refresh de display. ¿Necesitas opciones de intercambio/devolución? Discutamos."
+            },
+            {
+              "channel": "Email",
+              "title": "Soporte de Liquidación de Fin de Temporada",
+              "description": "Fin de temporada",
+              "content": "¿Termina la temporada? Aquí está nuestro playbook de liquidación de fin de temporada: rebajas recomendadas, plantillas de señalética e ideas de promoción social. Liquida inventario estacional para hacer espacio para lo que viene."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programa de Niveles y Recompensas de Retailers",
+      "target": "Todos los retailers basado en rendimiento y potencial",
+      "objective": "Incentivar crecimiento y recompensar lealtad a través de avance de nivel",
+      "kpi": "Tasa de avance de nivel (objetivo: 20% anual), Retención de nivel (objetivo: 90%), Engagement con programa (objetivo: 70%)",
+      "description": "Programa estructurado de lealtad y recompensas que reconoce el rendimiento del retailer e incentiva el crecimiento continuo.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers acercándose a umbrales de nivel o elegibles para avance",
+          "scenario_objective": "Motivar avance de nivel a través de camino claro e incentivos",
+          "main_messages_ideas": "Estado de nivel, Beneficios de avance, Seguimiento de progreso, Reconocimiento de logro",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "¡Estás Cerca del Estatus [Siguiente Nivel]!",
+              "description": "Cuando se acerca umbral de nivel",
+              "content": "¡Buenas noticias - estás al [X]% del camino hacia el estatus [Siguiente Nivel]! Los retailers de [Siguiente Nivel] disfrutan: [beneficios específicos - precios, términos, soporte]. Pide [cantidad] más antes del [fecha] para desbloquear estos beneficios."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerta de Avance de Nivel",
+              "description": "Cuando muy cerca del umbral",
+              "content": "¡Estás a [X] de [Siguiente Nivel]! Los beneficios incluyen [beneficio principal]. Califica antes del [fecha] para upgrade inmediato."
+            },
+            {
+              "channel": "Email",
+              "title": "¡Felicitaciones - Bienvenido a [Nuevo Nivel]!",
+              "description": "Al avanzar de nivel",
+              "content": "¡Has ganado el estatus de [Nuevo Nivel]! Gracias por tu asociación. Tus nuevos beneficios están activos ahora: [lista completa de beneficios]. Así es como maximizar tu estatus mejorado."
+            },
+            {
+              "channel": "Email",
+              "title": "Tus Beneficios Exclusivos de [Nivel] Este Trimestre",
+              "description": "Recordatorio trimestral de nivel",
+              "content": "Como socio [Nivel], aquí están tus beneficios exclusivos este trimestre: [ofertas específicas, eventos u oportunidades]. Asegúrate de aprovechar todo lo que incluye tu estatus."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers de nivel superior para trato VIP",
+          "scenario_objective": "Proporcionar experiencia premium y reconocer top performers",
+          "main_messages_ideas": "Reconocimiento VIP, Acceso exclusivo, Apreciación de socio, Alineación estratégica",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Invitación Exclusiva [Nivel Superior]",
+              "description": "Oportunidad VIP",
+              "content": "Como uno de nuestros socios de [Nivel Superior], estás invitado a [evento/oportunidad exclusiva]: acceso anticipado a nuevas líneas, participación en consejo asesor o asignación premium en artículos limitados. Responde para confirmar tu interés."
+            },
+            {
+              "channel": "Email",
+              "title": "Tu Paquete Anual de Apreciación de Socio",
+              "description": "Reconocimiento anual",
+              "content": "Gracias por un año increíble de asociación. Como nuestra forma de agradecimiento, aquí está tu paquete de apreciación de [Nivel Superior]: [regalo, crédito u oferta exclusiva]. Estamos agradecidos por tu negocio y esperamos otro año exitoso."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Capacitación y Educación de Retailers",
+      "target": "Todos los retailers buscando mejorar rendimiento de ventas",
+      "objective": "Empoderar a retailers con conocimiento y habilidades para vender más efectivamente",
+      "kpi": "Tasa de completación de capacitación (objetivo: 40%), Mejora de ventas post-capacitación (objetivo: +15%), Tasa de engagement (objetivo: 50%)",
+      "description": "Contenido educativo y programas de capacitación que ayudan a retailers a vender productos más efectivamente y crecer sus negocios.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers nuevos en categorías de producto o necesitando conocimiento de producto",
+          "scenario_objective": "Construir conocimiento de producto y confianza de venta",
+          "main_messages_ideas": "Capacitación de producto, Tips de venta, Manejo de FAQs, Educación de características",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Domina [Categoría de Producto]: Capacitación Gratis",
+              "description": "Trigger de pedido de nueva categoría",
+              "content": "¡Felicitaciones por agregar [Categoría] a tu surtido! Aquí hay capacitación gratuita de producto para ayudarte a ti y tu equipo a vender con confianza: características clave, FAQs de clientes y técnicas de venta probadas. Completa en 20 minutos."
+            },
+            {
+              "channel": "Email",
+              "title": "Tips de Venta de [Producto] de Top Performers",
+              "description": "Educación continua",
+              "content": "¿Cómo venden [Producto] los mejores retailers? Tips reales de retailers reales: conversaciones con clientes que cierran, objeciones comunes y cómo manejarlas, y oportunidades de upsell."
+            },
+            {
+              "channel": "Email",
+              "title": "Webinar de Capacitación en Vivo: [Tema]",
+              "description": "Oportunidad mensual",
+              "content": "Únete a nuestra sesión de capacitación en vivo sobre [Tema]: Q&A interactivo con nuestros expertos de producto y retailers exitosos. Aprende técnicas que puedes usar inmediatamente. Regístrate para [fecha/hora]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Todos los retailers para educación de crecimiento de negocio",
+          "scenario_objective": "Proporcionar soporte más amplio de negocio retail",
+          "main_messages_ideas": "Mejores prácticas de retail, Tips de merchandising, Crecimiento de negocio, Tendencias de la industria",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tips de Éxito Retail: [Tema]",
+              "description": "Contenido mensual",
+              "content": "Tip de retail de este mes: [Tema accionable como gestión de inventario, servicio al cliente, merchandising visual]. Lectura rápida con aplicación inmediata para tu tienda."
+            },
+            {
+              "channel": "Email",
+              "title": "Tendencias de la Industria: Qué Viene en [Categoría]",
+              "description": "Reporte trimestral de tendencias",
+              "content": "Mantente adelante con nuestro reporte trimestral de tendencias: cambios de consumidores, productos emergentes y tendencias de merchandising. Posiciona tu tienda para lo que viene en [Categoría]."
+            },
+            {
+              "channel": "Email",
+              "title": "Biblioteca de Recursos para Retailers Actualizada",
+              "description": "Disponibilidad de recursos",
+              "content": "Nuevos recursos en tu portal de retailer: [recursos específicos agregados]. Accede a guías, plantillas y herramientas para crecer tu negocio. Todo gratis para socios mayoristas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back y Reactivación de Cuentas Inactivas",
+      "target": "Cuentas inactivas y retailers perdidos",
+      "objective": "Re-involucrar cuentas inactivas y recuperar retailers perdidos",
+      "kpi": "Tasa de reactivación (objetivo: 20%), Conversión de win-back (objetivo: 12%), Ingresos recuperados (objetivo: 25% del valor perdido)",
+      "description": "Re-engagement estratégico para retailers que han dejado de pedir, con enfoques personalizados basados en razones probables de inactividad.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers sin pedidos en 60+ días (inactividad inesperada)",
+          "scenario_objective": "Entender razón y re-involucrar con oferta relevante",
+          "main_messages_ideas": "Check-in, Ofertas actualizadas, Incentivo de re-engagement, Solicitud de feedback",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Hemos Extrañado Tus Pedidos",
+              "description": "Trigger de 60 días de inactividad",
+              "content": "Ha pasado un tiempo desde tu último pedido - ¡esperamos que todo esté bien! ¿Han cambiado tus necesidades? ¿Hay algo que podríamos estar haciendo mejor? Valoramos tu asociación y queremos asegurar que te estamos sirviendo bien."
+            },
+            {
+              "channel": "SMS",
+              "title": "Check-In Rápido",
+              "description": "Día 7: Toque personal",
+              "content": "Hola [Nombre], soy [Rep] de [Empresa]. No hemos sabido de ti en un tiempo - ¿todo bien? Avísame si necesitas algo."
+            },
+            {
+              "channel": "Email",
+              "title": "Qué Hay de Nuevo Desde Tu Último Pedido",
+              "description": "Día 14: Actualización de valor",
+              "content": "Mucho ha pasado desde tu último pedido: nuevos productos, términos mejorados y servicios expandidos. Aquí hay una actualización rápida de lo nuevo - ¿podría valer otra mirada?"
+            },
+            {
+              "channel": "Email",
+              "title": "Oferta de Bienvenida de Vuelta",
+              "description": "Día 30: Incentivo de re-engagement",
+              "content": "¡Nos encantaría tenerte de vuelta! Aquí hay una oferta de bienvenida: [descuento, envío gratis o mínimos reducidos] en tu próximo pedido. Sin compromisos - solo un agradecimiento por darnos otra oportunidad."
+            },
+            {
+              "channel": "Email",
+              "title": "Ayúdanos a Mejorar",
+              "description": "Día 45: Solicitud de feedback",
+              "content": "Aunque hayas seguido adelante, valoraríamos tu feedback. ¿Qué podríamos haber hecho mejor? Tu input honesto nos ayuda a mejorar para todos nuestros retailers. Encuesta rápida o simplemente responde con tus pensamientos."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cuentas cerradas o estacionales que pueden regresar",
+          "scenario_objective": "Mantener relación para potencial retorno",
+          "main_messages_ideas": "Despedida elegante, Puerta abierta, Re-engagement estacional, Retorno fácil",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Gracias por Nuestra Asociación",
+              "description": "Al confirmar pausa/cierre de cuenta",
+              "content": "Entendemos que estás pausando o cerrando tu cuenta. Gracias por el negocio que hemos hecho juntos. La información de tu cuenta será preservada - si las cosas cambian, estamos aquí y la reactivación es fácil."
+            },
+            {
+              "channel": "Email",
+              "title": "¿Pensando en Reabrir?",
+              "description": "Check-in de 6 meses para cuentas estacionales/cerradas",
+              "content": "Hace seis meses pausaste tu cuenta. Si estás considerando reabrir, lo hemos hecho fácil: tu historial y preferencias están guardados, y tu nivel de precios anterior está preservado. ¿Listo para empezar de nuevo?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programa de Referencias y Crecimiento de Red",
+      "target": "Retailers satisfechos con conexiones en la industria",
+      "objective": "Generar nuevos leads de retailers a través de referencias de socios existentes",
+      "kpi": "Tasa de referencias (objetivo: 15% de cuentas activas), Conversión de referencias (objetivo: 35%), Costo por adquisición vía referencia (objetivo: 50% de otros canales)",
+      "description": "Aprovechar relaciones sólidas con retailers para generar referencias cualificadas de socios satisfechos.",
+      "scenarios": [
+        {
+          "scenario_target": "Retailers de alta satisfacción con fuerte historial de asociación",
+          "scenario_objective": "Activar como fuentes de referencias",
+          "main_messages_ideas": "Apreciación, Programa de referencias, Beneficio mutuo, Proceso fácil",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "¿Conoces Otros Retailers Que Se Beneficiarían?",
+              "description": "Post indicador de alta satisfacción",
+              "content": "¡Nos alegra que la asociación esté funcionando bien para ti! Muchos de nuestros mejores retailers han llegado a través de recomendaciones de socios como tú. ¿Conoces a alguien que se beneficiaría de la asociación mayorista? Nos encantaría una presentación."
+            },
+            {
+              "channel": "Email",
+              "title": "Recompensas de Referencias de Socios",
+              "description": "Día 14: Detalles del programa",
+              "content": "Nuestro Programa de Referencias de Retailers: Refiere a un retailer cualificado y ambos se benefician. Tú recibes [recompensa de referidor], ellos reciben [beneficio de nuevo socio]. Proceso simple: solo comparte su contacto o haz una presentación por email."
+            },
+            {
+              "channel": "Email",
+              "title": "Referencia Fácil: Reenvía Esto",
+              "description": "Día 30: Acción simple",
+              "content": "Forma más fácil de referir: reenvía este email a un colega retailer que podría beneficiarse. O simplemente responde con su nombre y contacto - nos comunicaremos profesionalmente y mencionaremos tu recomendación."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Retailers asistiendo a ferias comerciales o eventos de la industria",
+          "scenario_objective": "Aprovechar networking del evento para presentaciones",
+          "main_messages_ideas": "Coordinación de evento, Facilitación de presentación, Networking",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nos Vemos en [Evento] - Conectemos",
+              "description": "Alcance pre-evento",
+              "content": "¡Ambos estaremos en [Evento]! Pasa por el stand [#] - trae colegas que podrían estar interesados en la asociación mayorista. Encantados de hacer presentaciones y discutir cómo podemos ayudar a sus negocios también."
+            },
+            {
+              "channel": "SMS",
+              "title": "En [Evento] - ¿Un Café?",
+              "description": "Durante el evento",
+              "content": "¿En [Evento]? Pasa por el stand [#] - ¡el café va por nuestra cuenta! Trae a quien debería conocernos."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Onboarding de Nuevo Retailer y Éxito del Primer Pedido",
+      "why_brevo_is_better": "La automatización B2B de Brevo permite secuencias de onboarding estructuradas que aseguran que cada nuevo retailer reciba comunicación consistente y útil que impulse primeros pedidos en días, no semanas.",
+      "omnichannel_channels": "Email para guías detalladas y catálogos + SMS para notificaciones rápidas y alertas urgentes + Integración con portal para self-service",
+      "setup_efficiency": "Plantillas pre-construidas de onboarding mayorista te ayudan a crear secuencias profesionales en minutos, con personalización automática basada en perfil del retailer."
+    },
+    {
+      "scenario_name": "Automatización de Reposición y Gestión de Inventario",
+      "why_brevo_is_better": "Integración con tu sistema de gestión de pedidos permite recordatorios de reposición inteligentes basados en los patrones de compra reales de cada retailer, prediciendo necesidades antes de que ocurran desabastecimientos.",
+      "omnichannel_channels": "Email para información detallada de reposición y catálogos + SMS para alertas de stock urgentes y recordatorios de fecha límite",
+      "setup_efficiency": "Integración de historial de pedidos permite timing de reposición completamente automatizado y personalizado, calibrado a la velocidad de ventas de cada retailer."
+    },
+    {
+      "scenario_name": "Preparación Estacional y Pre-Reserva",
+      "why_brevo_is_better": "Automatización basada en calendario y segmentación avanzada aseguran comunicación estacional oportuna que ayuda a retailers a prepararse para demanda pico con recomendaciones personalizadas basadas en rendimiento pasado.",
+      "omnichannel_channels": "Email para catálogos estacionales y guías de planificación + SMS para recordatorios de fecha límite y alertas de stock",
+      "setup_efficiency": "Campañas estacionales anuales pueden ser plantilladas y programadas para repetirse automáticamente, con personalización basada en rendimiento mejorando cada año."
+    },
+    {
+      "scenario_name": "Programa de Niveles y Recompensas de Retailers",
+      "why_brevo_is_better": "Seguimiento automatizado de niveles y comunicación de hitos mantiene a retailers motivados con visibilidad clara de progreso y reconocimiento instantáneo cuando se alcanzan umbrales.",
+      "omnichannel_channels": "Email para actualizaciones de nivel y comunicación de beneficios + SMS para notificaciones de logros + Ofertas personalizadas basadas en estatus de nivel",
+      "setup_efficiency": "Integración con datos de pedidos permite cálculo automático de nivel y comunicación activada sin seguimiento manual o actualizaciones retrasadas."
+    },
+    {
+      "scenario_name": "Win-Back y Reactivación de Cuentas Inactivas",
+      "why_brevo_is_better": "Detección automatizada de inactividad activa re-engagement oportuno antes de que las cuentas se enfríen, con segmentación que personaliza enfoques de win-back según razones probables de inactividad.",
+      "omnichannel_channels": "Email para ofertas de re-engagement y actualizaciones + SMS para check-ins personales + Secuencias multi-touch coordinadas",
+      "setup_efficiency": "Triggers de inactividad identifican automáticamente cuentas en riesgo e inician secuencias de win-back sin monitoreo manual de actividad de cuenta."
+    }
+  ],
+  "conclusion": "Los distribuidores mayoristas que implementen estos programas completos de marketing relacional pueden esperar mejor adquisición de retailers a través de nurturing sistemático de leads, pedidos más consistentes a través de gestión proactiva de inventario, surtidos expandidos a través de cross-sell dirigido, y asociaciones más fuertes a través de reconocimiento basado en niveles y soporte de capacitación. El negocio mayorista recompensa la consistencia, confiabilidad y orientación al crecimiento mutuo - este plan entrega los tres a través de engagement sistemático y automatizado a través de todo el ciclo de vida del retailer."
+}

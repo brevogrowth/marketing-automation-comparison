@@ -1,143 +1,433 @@
 {
-  "introduction": "Ce plan marketing relationnel est conçu pour les retailers d'ameublement et décoration souhaitant construire des relations clients durables grâce à l'inspiration design personnalisée et l'engagement tout au long du cycle de vie.",
+  "introduction": "Ce plan marketing relationnel complet est conçu spécifiquement pour les retailers d'ameublement et décoration souhaitant construire des relations clients durables grâce à l'inspiration design personnalisée et un engagement tout au long du cycle de vie du logement. L'industrie du mobilier et de la décoration se caractérise par des cycles d'achat plus longs, des paniers moyens élevés, et des moments de vie déclencheurs (déménagement, rénovation, événements familiaux). Ce plan couvre l'intégralité du parcours client, de la découverte de style jusqu'à l'ambassadorat, en passant par l'accompagnement post-achat, l'expansion pièce par pièce et les programmes professionnels pour décorateurs.",
   "company_summary": {
     "name": "Marque Maison & Mobilier",
     "website": "exemple-maison.com",
-    "activities": "Commerce d'ameublement et décoration, incluant mobilier, accessoires maison et produits de design intérieur",
+    "activities": "Commerce d'ameublement et décoration, incluant mobilier, accessoires maison, textile, luminaires et produits de design intérieur",
     "target": "Propriétaires et locataires âgés de 25 à 55 ans souhaitant meubler, décorer ou rénover leurs espaces de vie",
     "industry": "Home",
-    "business_model": "B2C Retail"
+    "business_model": "B2C Retail",
+    "customer_lifecycle_key_steps": "1) Découverte via inspiration et quiz style, 2) Premier achat avec pièce maîtresse, 3) Accompagnement livraison et montage, 4) Expansion vers accessoires et déco, 5) Projet pièce par pièce dans la maison, 6) Événements de vie (déménagement, rénovation), 7) Fidélisation et programme pro/décorateur"
   },
   "programs_list": [
     {
-      "program_name": "Bienvenue & Découverte de Style",
+      "program_name": "Parcours Bienvenue & Découverte de Style",
       "target": "Nouveaux abonnés et premiers visiteurs",
       "objective": "Comprendre les préférences de style des clients et convertir au premier achat sous 45 jours",
-      "kpi": "Taux de complétion du quiz style, Conversion premier achat, Panier moyen",
-      "description": "Un parcours de bienvenue personnalisé qui aide les clients à découvrir leur style intérieur et les guide vers leur premier achat.",
+      "kpi": "Taux de complétion quiz style: >55%, Conversion premier achat: >15%, Panier moyen premier achat: >150€",
+      "description": "Un parcours de bienvenue personnalisé qui aide les clients à découvrir leur style intérieur (scandinave, industriel, bohème, classique...) et les guide vers leur premier achat avec des inspirations sur mesure.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux abonnés email",
+          "scenario_target": "Nouveaux abonnés email n'ayant pas complété le quiz",
           "scenario_objective": "Construire un profil de style et générer le premier achat",
-          "main_messages_ideas": "Bienvenue + quiz style, Inspiration pièces, Showcase bestsellers, Incentive premier achat",
+          "main_messages_ideas": "Bienvenue chaleureuse, Quiz style intérieur, Inspiration personnalisée, Showcase bestsellers, Incentive premier achat",
           "message_sequence": [
             {
-              "title": "Bienvenue + Quiz Style",
-              "description": "Bienvenue immédiate avec quiz style intérieur",
-              "content": "Bienvenue ! Découvrez votre style intérieur en 2 minutes"
+              "channel": "Email",
+              "title": "Bienvenue + Quiz Style Intérieur",
+              "timing": "Immédiat",
+              "description": "Bienvenue avec invitation au quiz de découverte de style",
+              "content": "Bienvenue chez [Marque] ! 🏠 Découvrez votre style intérieur en 2 minutes. Scandinave, industriel, bohème... Quel est le vôtre ? En bonus : -10% sur votre première commande."
             },
             {
-              "title": "Vos Résultats Style",
-              "description": "Jour 2 : Recommandations de style personnalisées",
-              "content": "Vous êtes [Type de Style] ! Voici comment l'adopter chez vous"
+              "channel": "SMS",
+              "title": "Rappel Quiz Style",
+              "timing": "J+2",
+              "description": "Rappel amical pour compléter le quiz",
+              "content": "[Marque] Quel est votre style déco ? Quiz 2 min → inspirations personnalisées + -10% offert : [lien]"
             },
             {
-              "title": "Inspiration Pièces",
-              "description": "Jour 7 : Looks de pièces curatés pour leur style",
-              "content": "Adoptez le look : Idées salon style [Style]"
+              "channel": "Email",
+              "title": "Votre Style : [Résultat]",
+              "timing": "Immédiat post-quiz",
+              "description": "Révélation du style avec inspirations et recommandations",
+              "content": "Vous êtes style [Scandinave/Industriel/etc.] ! ✨ Découvrez les pièces phares qui correspondent à votre univers et nos inspirations pour chaque pièce de votre intérieur."
             },
             {
-              "title": "Offre Premier Achat",
-              "description": "Jour 14 : Incentive pour commencer à shopper",
-              "content": "Commencez votre transformation intérieure avec -10%"
+              "channel": "Email",
+              "title": "Inspirations Salon Style [X]",
+              "timing": "J+5",
+              "description": "Inspiration pièce avec produits correspondants",
+              "content": "Adoptez le look salon [style] ! 🛋️ Nos inspirations, les pièces clés et comment les associer. Du canapé aux accessoires."
+            },
+            {
+              "channel": "Email",
+              "title": "Nos Best-Sellers pour Votre Style",
+              "timing": "J+10",
+              "description": "Sélection des best-sellers correspondant au profil",
+              "content": "Les favoris de nos clients style [X]. Ces pièces ont fait leurs preuves : qualité, design et satisfaction garantis."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Conseil Déco Personnalisé",
+              "timing": "J+14",
+              "description": "Proposition d'aide personnalisée par un conseiller",
+              "content": "Bonjour [Prénom] ! 🏡 Besoin de conseils pour votre projet déco style [X] ? Notre équipe est là pour vous aider. Répondez avec vos questions !"
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Premier Achat -15%",
+              "timing": "J+21",
+              "description": "Incentive pour déclencher le premier achat",
+              "content": "Commencez votre transformation intérieure ! 🏠 -15% sur votre première commande + livraison offerte dès 200€. Code BIENVENUE15. Valable 14 jours."
+            },
+            {
+              "channel": "SMS",
+              "title": "Rappel Offre Expiration",
+              "timing": "J+33",
+              "description": "Rappel d'urgence avant expiration de l'offre",
+              "content": "[Marque] Plus que 48h ! -15% sur votre 1er achat expire bientôt. Découvrez notre sélection style [X] : [lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Visiteurs ayant complété le quiz mais pas acheté",
+          "scenario_objective": "Convertir l'engagement en premier achat",
+          "main_messages_ideas": "Rappel profil, Inspiration détaillée, Social proof, Offre progressive",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Intérieur Style [X] Vous Attend",
+              "timing": "J+3 post-quiz",
+              "description": "Rappel du profil avec visuels inspirants",
+              "content": "Votre diagnostic style [X] est toujours là ! Voici 3 looks de salon complets pour vous inspirer et passer à l'action."
+            },
+            {
+              "channel": "Email",
+              "title": "Ils Ont Adopté le Style [X]",
+              "timing": "J+10",
+              "description": "Social proof avec photos clients et avis",
+              "content": "Découvrez comment nos clients ont transformé leur intérieur en style [X]. Avant/après, témoignages et leurs pièces préférées."
+            },
+            {
+              "channel": "Email",
+              "title": "Kit Démarrage Style [X] -20%",
+              "timing": "J+18",
+              "description": "Offre bundle pour faciliter le premier pas",
+              "content": "Prêt à démarrer ? Kit déco style [X] à -20% : coussin + plaid + 2 accessoires assortis. Parfait pour commencer votre transformation."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Parcours Pièce par Pièce",
+      "program_name": "Récupération Panier Abandonné & Navigation",
+      "target": "Visiteurs ayant ajouté au panier ou consulté des produits sans acheter",
+      "objective": "Récupérer les ventes perdues avec un taux de conversion de 12-18%",
+      "kpi": "Taux de récupération panier: >12%, Récupération navigation: >6%, Revenu récupéré mensuel",
+      "description": "Séquences automatisées multicanal pour reconvertir les paniers abandonnés et les visiteurs engagés, avec personnalisation selon les produits consultés et une approche adaptée aux cycles de décision plus longs du mobilier.",
+      "scenarios": [
+        {
+          "scenario_target": "Abandon de panier mobilier (valeur > 300€)",
+          "scenario_objective": "Récupérer l'achat avec rassurance et service",
+          "main_messages_ideas": "Rappel panier, Rassurance qualité, Options paiement, Service conseil",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Sélection Vous Attend",
+              "timing": "H+2",
+              "description": "Rappel visuel du panier avec détails produits",
+              "content": "Votre [produit] est toujours disponible ! 🛋️ Découvrez les détails : dimensions, matériaux, délais de livraison. Des questions ? On est là."
+            },
+            {
+              "channel": "SMS",
+              "title": "Stock Limité",
+              "timing": "H+6",
+              "description": "Alerte stock pour créer l'urgence",
+              "content": "[Marque] Votre [produit] est très demandé ! Stock limité. Finalisez votre commande : [lien panier]"
+            },
+            {
+              "channel": "Email",
+              "title": "Nos Garanties Qualité",
+              "timing": "J+1",
+              "description": "Rassurance sur la qualité et les services",
+              "content": "Pourquoi choisir [Marque] ? Garantie 5 ans, retours gratuits 60 jours, livraison soignée. Votre [produit] est conçu pour durer."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Besoin de Conseils ?",
+              "timing": "J+2",
+              "description": "Proposition d'aide personnalisée",
+              "content": "Bonjour [Prénom] ! 🏠 Des questions sur [produit] ? Dimensions, couleurs, livraison... Notre équipe peut vous aider. Répondez ici !"
+            },
+            {
+              "channel": "Email",
+              "title": "Options Paiement Flexibles",
+              "timing": "J+3",
+              "description": "Présentation des facilités de paiement",
+              "content": "Financez votre intérieur en toute sérénité. Paiement en 3x ou 4x sans frais disponible. Votre [produit] à partir de [X€]/mois."
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Récupération -10%",
+              "timing": "J+5",
+              "description": "Incentive final pour convertir",
+              "content": "Dernière chance ! -10% sur votre panier pendant 24h. Code FONCEZ. Plus la livraison offerte. Ne laissez pas passer votre [produit]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Navigation intensive sans achat (5+ produits consultés)",
+          "scenario_objective": "Convertir la recherche en achat avec aide à la décision",
+          "main_messages_ideas": "Récap favoris, Aide au choix, Conseil expert, Offre découverte",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vos Coups de Cœur",
+              "timing": "J+1",
+              "description": "Récapitulatif des produits consultés",
+              "content": "Vous avez repéré de belles pièces ! Voici votre sélection et nos suggestions pour les associer harmonieusement."
+            },
+            {
+              "channel": "Email",
+              "title": "Guide : Comment Choisir Son [Canapé/Table/etc.]",
+              "timing": "J+3",
+              "description": "Contenu éducatif pour aider la décision",
+              "content": "Le guide ultime pour choisir votre [catégorie]. Dimensions, matières, styles : tout ce qu'il faut savoir avant d'acheter."
+            },
+            {
+              "channel": "Email",
+              "title": "Consultation Déco Gratuite",
+              "timing": "J+7",
+              "description": "Proposition de service conseil",
+              "content": "Indécis ? Réservez une consultation déco gratuite de 15 min avec nos experts. On vous aide à créer l'intérieur de vos rêves."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expérience Post-Achat & Montage",
+      "target": "Acheteurs récents de mobilier",
+      "objective": "Assurer une livraison et un montage réussis, maximiser la satisfaction",
+      "kpi": "NPS post-livraison: >45, Taux de retour: <8%, Réduction tickets support: -40%, Avis collectés: >30%",
+      "description": "Série de communications proactives pour accompagner le client de la commande à l'installation, assurer une expérience fluide et collecter des avis authentiques.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients ayant commandé du mobilier avec livraison",
+          "scenario_objective": "Préparer la livraison et assurer une installation réussie",
+          "main_messages_ideas": "Confirmation commande, Préparation livraison, Guide montage, Conseils entretien, Demande avis",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Commande Confirmée + Préparation",
+              "timing": "Immédiat",
+              "description": "Confirmation avec guide de préparation",
+              "content": "Merci [Prénom] ! 🎉 Votre [produit] est confirmé. Délai estimé : [X] jours. En attendant, découvrez comment préparer l'espace et mesurer l'accès."
+            },
+            {
+              "channel": "Email",
+              "title": "Suivi Expédition",
+              "timing": "Expédition",
+              "description": "Notification d'expédition avec tracking",
+              "content": "Votre [produit] est en route ! 📦 Suivez sa livraison en temps réel. Date estimée : [date]. Numéro de suivi : [tracking]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Livraison Demain",
+              "timing": "J-1 livraison",
+              "description": "Rappel préparation dernière minute",
+              "content": "[Marque] Votre [produit] arrive demain entre [créneau] ! 🏠 Préparez l'accès et l'espace. Questions ? Répondez à ce SMS."
+            },
+            {
+              "channel": "Email",
+              "title": "Guide de Montage + Vidéos",
+              "timing": "Jour livraison",
+              "description": "Instructions de montage détaillées",
+              "content": "Votre [produit] est arrivé ! 🛠️ Voici le guide de montage étape par étape + tutoriels vidéo. Besoin d'aide ? Notre équipe est disponible."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Check-in Post-Livraison",
+              "timing": "J+2 post-livraison",
+              "description": "Point de contact pour questions montage",
+              "content": "Coucou [Prénom] ! 🏡 Comment s'est passée la livraison de votre [produit] ? Le montage s'est bien passé ? On est là si besoin !"
+            },
+            {
+              "channel": "Email",
+              "title": "Conseils d'Entretien",
+              "timing": "J+7",
+              "description": "Guide d'entretien selon le matériau",
+              "content": "Gardez votre [produit] comme neuf ! Guide d'entretien [bois/tissu/cuir/métal] : nettoyage, protection, petites réparations."
+            },
+            {
+              "channel": "Email",
+              "title": "Partagez Votre Avis + Photo",
+              "timing": "J+21",
+              "description": "Demande d'avis avec incentive photo",
+              "content": "Comment va votre [produit] ? 📸 Partagez votre avis et une photo de votre intérieur. -15% sur votre prochaine commande pour chaque avis publié !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients ayant eu un problème livraison/montage",
+          "scenario_objective": "Résoudre rapidement et transformer l'expérience",
+          "main_messages_ideas": "Excuses sincères, Résolution rapide, Geste commercial, Suivi satisfaction",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nous Sommes Désolés",
+              "timing": "Immédiat post-signalement",
+              "description": "Excuses et prise en charge du problème",
+              "content": "Nous sommes sincèrement désolés pour ce désagrément. Votre satisfaction est notre priorité. Voici ce que nous mettons en place pour résoudre la situation..."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Suivi Résolution",
+              "timing": "J+1",
+              "description": "Point sur l'avancement de la résolution",
+              "content": "Bonjour [Prénom], voici l'avancement de votre dossier : [statut]. On revient vers vous dès que c'est réglé. Merci de votre patience !"
+            },
+            {
+              "channel": "Email",
+              "title": "Problème Résolu + Geste",
+              "timing": "Post-résolution",
+              "description": "Confirmation résolution avec geste commercial",
+              "content": "Votre problème est résolu ! Pour vous remercier de votre patience, voici -20% sur votre prochaine commande. Code PARDON20."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expansion Pièce par Pièce",
       "target": "Clients ayant effectué leur premier achat de mobilier",
-      "objective": "Étendre les achats clients à d'autres pièces",
-      "kpi": "Taux d'achat cross-catégorie, Articles par commande, Valeur vie client",
-      "description": "Parcours d'upsell stratégique qui guide les clients à meubler leur maison entière, pièce par pièce.",
+      "objective": "Étendre les achats clients à d'autres pièces de la maison",
+      "kpi": "Taux de cross-sell pièce: >25%, Nombre de pièces par client: 1.5→2.8, LTV augmentation: +80%",
+      "description": "Parcours d'upsell stratégique qui guide les clients à meubler leur maison entière, pièce par pièce, en maintenant la cohérence de style et en capitalisant sur chaque nouveau projet.",
       "scenarios": [
         {
           "scenario_target": "Acheteurs de mobilier salon",
-          "scenario_objective": "Inspirer des achats pour des pièces complémentaires",
-          "main_messages_ideas": "Complétez le look, Inspiration pièce suivante, Collections assorties, Offres bundle",
+          "scenario_objective": "Inspirer des achats pour la salle à manger et chambre",
+          "main_messages_ideas": "Complétez le look, Accessoires coordonnés, Pièce suivante, Collection cohérente",
           "message_sequence": [
             {
-              "title": "Complétez le Look",
-              "description": "Jour 14 post-achat : Articles complémentaires",
-              "content": "Complétez votre salon avec ces ajouts parfaits"
+              "channel": "Email",
+              "title": "Complétez Votre Salon",
+              "timing": "J+14 post-livraison",
+              "description": "Suggestions d'accessoires complémentaires",
+              "content": "Votre [canapé/meuble] est magnifique ! ✨ Complétez le look avec nos suggestions : table basse assortie, luminaires, coussins et décoration murale."
             },
             {
-              "title": "Inspiration Salle à Manger",
-              "description": "Jour 30 : Suggestion pièce suivante",
-              "content": "Prêt pour votre prochain projet ? Idées salle à manger assorties à votre style"
+              "channel": "Email",
+              "title": "Et Si On Parlait Salle à Manger ?",
+              "timing": "J+45",
+              "description": "Inspiration pour la pièce suivante",
+              "content": "Prêt pour votre prochain projet ? 🍽️ Découvrez nos inspirations salle à manger style [X] qui s'accordent parfaitement avec votre salon."
             },
             {
-              "title": "Collection Maison Entière",
-              "description": "Jour 60 : Showcase collection",
-              "content": "Voyez comment votre style se décline dans chaque pièce"
+              "channel": "Email",
+              "title": "Votre Style Dans Chaque Pièce",
+              "timing": "J+90",
+              "description": "Vision cohérente de toute la maison",
+              "content": "Imaginez votre maison entière en style [X]. Du salon à la chambre, de la cuisine au bureau : découvrez notre vision complète pour votre intérieur."
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Multi-Pièces -15%",
+              "timing": "J+120",
+              "description": "Incentive pour projet d'envergure",
+              "content": "Projet maison complète ? -15% sur votre commande dès 2 pièces meublées. L'occasion de créer un intérieur cohérent et harmonieux."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Acheteurs de mobilier chambre",
+          "scenario_objective": "Étendre vers dressing, bureau ou chambre enfant",
+          "main_messages_ideas": "Dressing assorti, Espace bureau, Chambre enfant, Collection nuit",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "L'Univers Chambre Complet",
+              "timing": "J+14 post-livraison",
+              "description": "Accessoires et rangements pour la chambre",
+              "content": "Votre chambre prend forme ! 🛏️ Découvrez les indispensables pour compléter : tables de chevet, luminaires, linge de lit et rangements."
+            },
+            {
+              "channel": "Email",
+              "title": "Créez Votre Dressing",
+              "timing": "J+60",
+              "description": "Inspiration dressing/rangement",
+              "content": "Un dressing à la hauteur de votre chambre. Découvrez nos solutions de rangement style [X] : penderies, commodes, accessoires."
+            },
+            {
+              "channel": "Email",
+              "title": "Espace Bureau Inspirant",
+              "timing": "J+90",
+              "description": "Proposition espace travail maison",
+              "content": "Travaillez depuis chez vous avec style ! 💻 Nos inspirations bureau qui s'intègrent parfaitement à votre intérieur [style]."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Campagnes Refresh Saisonnières",
+      "program_name": "Refresh Saisonnier & Tendances",
       "target": "Tous les clients actifs",
-      "objective": "Générer des achats saisonniers pour mises à jour et accessoires maison",
-      "kpi": "CA campagnes saisonnières, Croissance catégorie accessoires, Engagement email",
-      "description": "Campagnes saisonnières qui inspirent les clients à rafraîchir leurs espaces avec de nouveaux accessoires et déco.",
+      "objective": "Générer des achats récurrents pour mises à jour et accessoires maison",
+      "kpi": "CA campagnes saisonnières: +120% vs normal, Taux d'engagement: >35%, Catégorie accessoires: +60%",
+      "description": "Campagnes saisonnières qui inspirent les clients à rafraîchir leurs espaces avec de nouveaux accessoires, textiles et déco selon les tendances et les saisons.",
       "scenarios": [
         {
-          "scenario_target": "Acheteurs de mobilier précédents",
-          "scenario_objective": "Encourager les achats d'accessoires saisonniers",
-          "main_messages_ideas": "Tendances saisonnières, Idées refresh facile, Éditions limitées, Couleur de la saison",
+          "scenario_target": "Clients actifs - Campagne Automne/Hiver",
+          "scenario_objective": "Encourager les achats d'accessoires cosy et chaleureux",
+          "main_messages_ideas": "Tendances saison, Cocooning, Textiles chauds, Éditions limitées",
           "message_sequence": [
             {
-              "title": "Alerte Tendances Saison",
-              "description": "Début de saison",
-              "content": "Tendances [Saison] : Rafraîchissez votre espace avec ces looks"
+              "channel": "Email",
+              "title": "Tendances Automne : Le Cocooning",
+              "timing": "Mi-septembre",
+              "description": "Lancement de la campagne saisonnière",
+              "content": "L'automne arrive, passez en mode cocooning ! 🍂 Découvrez les tendances : matières chaudes, couleurs terreuses, ambiance feutrée. Inspirations et sélection."
             },
             {
-              "title": "Mises à Jour Faciles",
-              "description": "Semaine 2 : Rafraîchissements à faible engagement",
-              "content": "5 façons de mettre à jour votre maison pour moins de 100€"
+              "channel": "Email",
+              "title": "5 Mises à Jour Faciles",
+              "timing": "J+5",
+              "description": "Idées accessibles pour rafraîchir l'intérieur",
+              "content": "Transformez votre intérieur sans tout changer ! 5 idées déco automne à moins de 50€ : coussins, plaids, bougies, plantes..."
             },
             {
-              "title": "Alerte Édition Limitée",
-              "description": "Mi-saison : Messaging de rareté",
-              "content": "Vient de sortir : Collection [Saison] en édition limitée"
+              "channel": "Email",
+              "title": "Collection Automne Édition Limitée",
+              "timing": "J+10",
+              "description": "Mise en avant des nouveautés exclusives",
+              "content": "Vient de sortir ! 🍁 Notre collection automne en édition limitée. Des pièces uniques pour une ambiance chaleureuse. Stock très limité."
+            },
+            {
+              "channel": "SMS",
+              "title": "Offre Flash Textile",
+              "timing": "J+14",
+              "description": "Promotion textile saison",
+              "content": "[Marque] 🔥 48h seulement : -25% sur tous les textiles ! Plaids, coussins, rideaux... Créez votre cocon : [lien]"
             }
           ]
-        }
-      ]
-    },
-    {
-      "program_name": "Service Post-Achat & Montage",
-      "target": "Acheteurs récents de mobilier",
-      "objective": "Assurer une livraison et un montage réussis, réduire les retours",
-      "kpi": "Réduction taux de retour, Satisfaction client, Réduction tickets support",
-      "description": "Série de communications proactives pour assurer une livraison fluide, un montage réussi et la satisfaction produit.",
-      "scenarios": [
+        },
         {
-          "scenario_target": "Clients en attente de livraison de mobilier",
-          "scenario_objective": "Préparer la livraison et assurer une installation réussie",
-          "main_messages_ideas": "Préparation livraison, Conseils montage, Instructions d'entretien, Check-in satisfaction",
+          "scenario_target": "Clients actifs - Campagne Printemps/Été",
+          "scenario_objective": "Promouvoir la déco extérieure et le renouveau intérieur",
+          "main_messages_ideas": "Outdoor, Légèreté, Couleurs vives, Rangement printemps",
           "message_sequence": [
             {
-              "title": "Préparation Livraison",
-              "description": "3 jours avant la livraison",
-              "content": "Votre commande arrive bientôt ! Voici comment vous préparer"
+              "channel": "Email",
+              "title": "Préparez Votre Extérieur",
+              "timing": "Mi-mars",
+              "description": "Lancement collection outdoor",
+              "content": "Le printemps arrive ! 🌸 Préparez votre terrasse et jardin. Mobilier outdoor, accessoires, luminaires : tout pour profiter dehors."
             },
             {
-              "title": "Guide de Montage",
-              "description": "Jour de livraison",
-              "content": "Conseils de montage + guides vidéo pour votre nouveau mobilier"
+              "channel": "Email",
+              "title": "Faites le Grand Ménage",
+              "timing": "J+7",
+              "description": "Solutions rangement et organisation",
+              "content": "Nouveau départ ! Solutions rangement pour désencombrer et réorganiser. Boîtes, étagères, astuces : simplifiez votre intérieur."
             },
             {
-              "title": "Conseils d'Entretien",
-              "description": "Jour 7 post-livraison",
-              "content": "Gardez votre mobilier comme neuf avec ces conseils d'entretien"
-            },
-            {
-              "title": "Check Satisfaction",
-              "description": "Jour 14 : Demande de feedback",
-              "content": "Comment va votre nouveau [produit] ? Nous aimerions votre avis"
+              "channel": "Email",
+              "title": "Ambiance Été : Couleurs & Légèreté",
+              "timing": "Mi-mai",
+              "description": "Refresh déco estivale",
+              "content": "Envie de fraîcheur ? ☀️ Textiles légers, couleurs vives, matières naturelles. Donnez un coup de jeune à votre intérieur pour l'été."
             }
           ]
         }
@@ -147,28 +437,373 @@
       "program_name": "Déménagement & Événements de Vie",
       "target": "Clients signalant des changements de vie majeurs",
       "objective": "Capter les moments d'achat à forte valeur lors des transitions de vie",
-      "kpi": "Taux de captation événements de vie, Panier moyen, Achats multi-catégories",
-      "description": "Campagnes déclenchées pour les clients qui déménagent, rénovent ou vivent des événements de vie majeurs.",
+      "kpi": "Captation événements vie: >40%, Panier moyen événement: x3 vs normal, Conversion multi-pièces: >60%",
+      "description": "Programmes déclenchés pour les clients qui déménagent, rénovent, se mettent en couple ou accueillent un enfant - des moments où les besoins en mobilier explosent.",
       "scenarios": [
         {
           "scenario_target": "Clients ayant indiqué un déménagement",
           "scenario_objective": "Devenir leur destination mobilier privilégiée pour le nouvel espace",
-          "main_messages_ideas": "Checklist déménagement, Planification pièces, Essentiels nouveau logement, Offre de bienvenue",
+          "main_messages_ideas": "Checklist déménagement, Planification pièces, Bundle nouveau logement, Accompagnement projet",
           "message_sequence": [
             {
-              "title": "Checklist Déménagement",
-              "description": "À l'indication de déménagement",
-              "content": "Vous déménagez bientôt ? Votre checklist mobilier complète"
+              "channel": "Email",
+              "title": "Félicitations pour Votre Nouveau Chez-Vous !",
+              "timing": "Immédiat post-indication",
+              "description": "Message de félicitations avec ressources",
+              "content": "Un nouveau chapitre commence ! 🏠 Découvrez notre checklist mobilier complète et nos conseils pour meubler votre nouveau logement pièce par pièce."
             },
             {
-              "title": "Planificateur de Pièce",
-              "description": "Semaine 1 : Outils de planification",
-              "content": "Planifiez votre nouvel espace avec notre outil gratuit de planification de pièce"
+              "channel": "Email",
+              "title": "Planificateur de Pièce Gratuit",
+              "timing": "J+3",
+              "description": "Outil de planification offert",
+              "content": "Planifiez votre nouvel espace avec notre outil gratuit ! 📐 Entrez vos dimensions, testez les agencements, visualisez le résultat avant d'acheter."
             },
             {
-              "title": "Bundle Nouveau Logement",
-              "description": "Semaine 2 : Offre bundle",
-              "content": "Spécial nouveau logement : Économisez 20% en meublant plusieurs pièces"
+              "channel": "WhatsApp",
+              "title": "Conseil Déco Déménagement",
+              "timing": "J+5",
+              "description": "Proposition d'accompagnement personnalisé",
+              "content": "Bonjour [Prénom] ! 🎉 Félicitations pour votre déménagement ! Notre équipe peut vous accompagner dans votre projet. Consultation gratuite ? Répondez OUI !"
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Nouveau Logement -20%",
+              "timing": "J+7",
+              "description": "Offre spéciale déménagement",
+              "content": "Spécial nouveau logement ! -20% sur votre commande dès 500€ + livraison offerte. L'occasion parfaite de meubler plusieurs pièces. Code NOUVEAUCHEZ."
+            },
+            {
+              "channel": "Email",
+              "title": "Essentiels Premier Emménagement",
+              "timing": "J+14",
+              "description": "Sélection des indispensables",
+              "content": "Par où commencer ? Les essentiels pour chaque pièce : salon, chambre, cuisine. Notre sélection pour un emménagement réussi, à tous les budgets."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients indiquant un projet bébé/enfant",
+          "scenario_objective": "Accompagner l'aménagement de l'espace enfant",
+          "main_messages_ideas": "Chambre bébé, Évolution enfant, Sécurité, Mobilier évolutif",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Félicitations Futurs Parents !",
+              "timing": "Immédiat post-indication",
+              "description": "Message de félicitations avec inspirations",
+              "content": "Quelle belle nouvelle ! 👶 Découvrez nos inspirations chambre bébé : douce, sécurisée et qui évoluera avec votre enfant."
+            },
+            {
+              "channel": "Email",
+              "title": "Guide Chambre Bébé Complète",
+              "timing": "J+7",
+              "description": "Guide d'aménagement avec checklist",
+              "content": "Tout pour la chambre de bébé ! Guide complet : lit, rangement, décoration, sécurité. Checklist pour ne rien oublier."
+            },
+            {
+              "channel": "Email",
+              "title": "Mobilier Évolutif : L'Investissement Malin",
+              "timing": "J+14",
+              "description": "Focus sur le mobilier qui grandit avec l'enfant",
+              "content": "Investissez malin ! Notre mobilier évolutif accompagne votre enfant de 0 à 12 ans. Un achat, des années d'utilisation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programme Fidélité & Avantages Maison",
+      "target": "Tous les clients avec programme à niveaux",
+      "objective": "Augmenter la LTV et l'engagement via récompenses exclusives",
+      "kpi": "Inscription fidélité: >60%, Taux de redemption: >50%, LTV membres vs non-membres: x2.2",
+      "description": "Programme de fidélité adapté aux achats peu fréquents mais de valeur, avec accumulation de points généreuse et avantages exclusifs pour les meilleurs clients.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveau client - Inscription au programme",
+          "scenario_objective": "Convertir en membre fidélité actif",
+          "main_messages_ideas": "Bienvenue programme, Avantages expliqués, Points bonus démarrage, Premier redemption",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bienvenue au Club [Marque] !",
+              "timing": "Immédiat post-inscription",
+              "description": "Présentation complète du programme",
+              "content": "Bienvenue au Club [Marque] ! 🏠 Vos avantages : 5% en points sur chaque achat, livraison offerte dès 100€, accès ventes privées, points anniversaire..."
+            },
+            {
+              "channel": "Email",
+              "title": "500 Points Offerts pour Démarrer",
+              "timing": "J+3",
+              "description": "Bonus de bienvenue pour premier achat",
+              "content": "Cadeau de bienvenue ! 🎁 500 points crédités sur votre compte (=25€). Utilisez-les sur votre prochaine commande ou cumulez pour un gros projet."
+            },
+            {
+              "channel": "Email",
+              "title": "Comment Gagner Plus de Points",
+              "timing": "J+10",
+              "description": "Guide pour maximiser les points",
+              "content": "Boostez vos points ! Achats, avis, parrainage, anniversaire... Toutes les façons de gagner et atteindre le niveau Gold plus vite."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Membre atteignant le statut Gold",
+          "scenario_objective": "Célébrer et présenter les avantages premium",
+          "main_messages_ideas": "Félicitations Gold, Nouveaux avantages, Service VIP, Invitation événement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Êtes Gold ! 🏆",
+              "timing": "Immédiat",
+              "description": "Célébration du nouveau statut",
+              "content": "Félicitations [Prénom] ! Vous êtes maintenant Gold ! 🏆 Vos nouveaux privilèges : 7% en points, livraison express offerte, accès anticipé collections, conseiller dédié..."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Votre Conseiller Dédié",
+              "timing": "J+1",
+              "description": "Présentation du service premium",
+              "content": "Bonjour [Prénom] ! 🌟 Je suis [Nom], votre conseiller déco dédié. En tant que membre Gold, je suis là pour vous accompagner dans tous vos projets. Une question ? Écrivez-moi !"
+            },
+            {
+              "channel": "Email",
+              "title": "Invitation Vente Privée VIP",
+              "timing": "J+7",
+              "description": "Événement exclusif réservé aux Gold",
+              "content": "Exclusif Gold : Vente privée -30% avant tout le monde ! Accès dès demain, 24h d'avance. Les meilleures pièces pour vous."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Reconquête & Réengagement",
+      "target": "Clients inactifs depuis 12-36 mois",
+      "objective": "Réactiver 15% des clients dormants avec offre pertinente",
+      "kpi": "Taux de réactivation: >15%, Taux de réponse feedback: >10%, Panier moyen réactivation",
+      "description": "Programme de reconquête adapté aux cycles longs du mobilier, avec approche émotionnelle et offres généreuses pour renouer le contact.",
+      "scenarios": [
+        {
+          "scenario_target": "Inactifs 12-24 mois (risque moyen)",
+          "scenario_objective": "Réengager avec nouveautés et inspiration",
+          "main_messages_ideas": "Nouvelles collections, Évolution marque, Offre retour, Inspiration refresh",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ça Fait un Moment !",
+              "timing": "12 mois sans achat",
+              "description": "Message de reconnexion avec nouvelles collections",
+              "content": "Coucou [Prénom] ! Ça fait un moment qu'on ne s'est pas vus. 🏠 Découvrez ce qui a changé : nouvelles collections, nouveaux styles, nouvelles inspirations pour votre intérieur."
+            },
+            {
+              "channel": "Email",
+              "title": "Temps pour un Refresh ?",
+              "timing": "J+14",
+              "description": "Proposition de rafraîchissement intérieur",
+              "content": "Votre intérieur a peut-être évolué depuis. 🌿 Envie de changement ? Nos idées pour rafraîchir votre espace sans tout bouleverser."
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Retour -20%",
+              "timing": "J+30",
+              "description": "Incentive significatif pour réactiver",
+              "content": "On aimerait vous revoir ! -20% sur votre prochaine commande + livraison offerte. Code RETOUR20. Valable 30 jours."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Inactifs 24-36 mois (risque élevé)",
+          "scenario_objective": "Dernière tentative avec offre maximale",
+          "main_messages_ideas": "Dernière chance, Offre exceptionnelle, Feedback demande",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "On Vous a Perdu ?",
+              "timing": "24 mois sans achat",
+              "description": "Message sincère avec offre importante",
+              "content": "[Prénom], on vous a perdus ? On espère que non ! Pour vous retrouver : -25% sur tout + livraison offerte. Qu'est-ce qui vous ferait revenir ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Avis Nous Intéresse",
+              "timing": "J+14",
+              "description": "Demande de feedback sur l'inactivité",
+              "content": "Dites-nous tout. Pourquoi êtes-vous parti(e) ? Votre feedback nous aide à nous améliorer. En remerciement : -30% sur votre prochaine commande."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Parrainage & Bouche-à-Oreille",
+      "target": "Clients satisfaits et ambassadeurs naturels",
+      "objective": "Transformer les clients satisfaits en prescripteurs actifs",
+      "kpi": "Taux de parrainage: >12%, Conversion parrainés: >35%, Coût acquisition parrainage: -60% vs paid",
+      "description": "Programme de parrainage généreux adapté aux achats de valeur, avec récompenses significatives pour le parrain et le filleul.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients post-livraison satisfaits (avis positif)",
+          "scenario_objective": "Convertir la satisfaction en recommandations",
+          "main_messages_ideas": "Merci pour l'avis, Invitation parrainage, Récompenses généreuses, Suivi parrainages",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci pour Votre Avis 5⭐ !",
+              "timing": "Immédiat après avis positif",
+              "description": "Remerciement et invitation à parrainer",
+              "content": "Merci [Prénom] ! 💕 Votre avis compte énormément. Vos proches méritent aussi un bel intérieur. Parrainez-les : 50€ pour eux, 50€ pour vous !"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Lien de Parrainage",
+              "timing": "J+2",
+              "description": "Envoi du lien personnalisé",
+              "content": "Voici votre lien de parrainage personnel 🔗 [lien]. Partagez-le : 50€ offerts à chaque ami qui commande, 50€ pour vous !"
+            },
+            {
+              "channel": "Email",
+              "title": "Vos Parrainages : [X] Amis",
+              "timing": "Mensuel si parrainages actifs",
+              "description": "Récap des parrainages et récompenses",
+              "content": "Bravo [Prénom] ! 🎉 [X] amis parrainés ce mois-ci, [X€] de récompenses gagnées. Votre solde actuel : [X€]. Continuez à partager !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients ayant partagé des photos d'intérieur",
+          "scenario_objective": "Recruter comme ambassadeurs photo",
+          "main_messages_ideas": "Photo magnifique, Programme ambassadeur, Récompenses contenu, Communauté",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Intérieur Est Magnifique !",
+              "timing": "Après partage photo",
+              "description": "Compliment et invitation ambassadeur",
+              "content": "Votre intérieur est une vraie inspiration ! 📸 Devenez ambassadeur [Marque] : partagez vos photos, gagnez des réductions exclusives et rejoignez notre communauté déco."
+            },
+            {
+              "channel": "Email",
+              "title": "Programme Ambassadeur Déco",
+              "timing": "J+5",
+              "description": "Présentation détaillée du programme",
+              "content": "Rejoignez nos ambassadeurs ! 🏠 Vos avantages : produits à -30%, avant-premières exclusives, événements VIP, mise en avant sur nos réseaux..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programme Trade & Décorateurs",
+      "target": "Professionnels de la décoration et architectes d'intérieur",
+      "objective": "Développer un canal B2B complémentaire avec les professionnels",
+      "kpi": "Inscription pros: croissance +50%/an, CA pro: 15% du total, Récurrence commandes pro: >4/an",
+      "description": "Programme dédié aux professionnels de la décoration offrant des avantages exclusifs, des tarifs préférentiels et un accompagnement projet pour leurs clients.",
+      "scenarios": [
+        {
+          "scenario_target": "Décorateurs/architectes intérieur en prospection",
+          "scenario_objective": "Recruter dans le programme Trade",
+          "main_messages_ideas": "Avantages pro, Tarifs préférentiels, Service dédié, Catalogue pro",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Programme Pro [Marque]",
+              "timing": "Post-inscription intérêt pro",
+              "description": "Présentation du programme professionnel",
+              "content": "Bienvenue dans le programme Pro [Marque] ! 🏢 Vos avantages : -25% permanent, livraison prioritaire, échantillons gratuits, catalogue pro dédié, conseiller attitré."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Kit Pro de Bienvenue",
+              "timing": "J+3",
+              "description": "Envoi des ressources professionnelles",
+              "content": "Votre kit pro est prêt ! 📋 Catalogue PDF, fiches techniques, photos HD, tarifs pro. Tout ce qu'il faut pour présenter nos collections à vos clients."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Votre Contact Pro Dédié",
+              "timing": "J+5",
+              "description": "Mise en relation avec le contact dédié",
+              "content": "Bonjour ! Je suis [Nom], votre contact dédié chez [Marque]. Un projet en cours ? Des questions sur nos collections ? Je suis là pour vous accompagner !"
+            },
+            {
+              "channel": "Email",
+              "title": "Nouvelles Collections Pro",
+              "timing": "Mensuel",
+              "description": "Nouveautés et inspiration pour projets clients",
+              "content": "Nouveautés du mois ! Découvrez nos dernières collections, les tendances et nos suggestions pour vos projets en cours. Devis express disponible."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Pros actifs avec commandes régulières",
+          "scenario_objective": "Fidéliser et augmenter le volume",
+          "main_messages_ideas": "Merci fidélité, Avantages exclusifs, Événements pro, Partenariat approfondi",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci pour Votre Fidélité Pro",
+              "timing": "Après 5 commandes",
+              "description": "Reconnaissance et upgrade avantages",
+              "content": "Merci pour votre confiance ! 🌟 En tant que partenaire fidèle, découvrez vos nouveaux avantages : -30%, visite showroom privée, formation tendances..."
+            },
+            {
+              "channel": "Email",
+              "title": "Invitation Événement Pro",
+              "timing": "Événement",
+              "description": "Invitation à événement exclusif",
+              "content": "Réservé aux pros ! 🎟️ Soirée découverte nouvelle collection. Networking, tendances, avant-premières. [Date] à [Lieu]. Places limitées."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Anniversaire & Moments Personnels",
+      "target": "Tous les clients ayant partagé leur date de naissance",
+      "objective": "Créer des moments de connexion émotionnelle et récompenser la fidélité",
+      "kpi": "Redemption offre anniversaire: >45%, Panier moyen anniversaire: +35%, Collecte dates: >50%",
+      "description": "Célébration des anniversaires et moments personnels pour renforcer le lien émotionnel et générer des ventes additionnelles.",
+      "scenarios": [
+        {
+          "scenario_target": "Anniversaire client",
+          "scenario_objective": "Célébrer avec une offre mémorable",
+          "main_messages_ideas": "Joyeux anniversaire, Cadeau exclusif, Offre généreuse",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Joyeux Anniversaire [Prénom] ! 🎂",
+              "timing": "Jour J",
+              "description": "Message d'anniversaire avec offre",
+              "content": "Joyeux anniversaire [Prénom] ! 🎂🏠 Pour célébrer, voici -20% sur tout le site + livraison offerte. Offrez-vous quelque chose de beau ! Valable tout le mois."
+            },
+            {
+              "channel": "SMS",
+              "title": "Cadeau Anniversaire",
+              "timing": "Jour J matin",
+              "description": "Notification anniversaire par SMS",
+              "content": "[Marque] 🎂 Joyeux anniversaire [Prénom] ! Votre cadeau : -20% + livraison offerte. Code ANNIV[PRENOM]. Valable 30 jours 🎁"
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Semaine Offre Anniversaire",
+              "timing": "J+23",
+              "description": "Rappel avant expiration",
+              "content": "Plus qu'une semaine pour utiliser votre cadeau d'anniversaire ! -20% + livraison offerte. Faites-vous plaisir avant le [date]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Anniversaire premier achat",
+          "scenario_objective": "Célébrer la relation et encourager le prochain projet",
+          "main_messages_ideas": "1 an ensemble, Rétrospective, Prochain projet",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "1 An Avec [Produit] !",
+              "timing": "Anniversaire achat",
+              "description": "Célébration de l'anniversaire du premier achat",
+              "content": "Ça fait déjà 1 an que [produit] fait partie de votre intérieur ! 🏠 Comment va-t-il ? C'est peut-être le moment de penser au prochain projet ? -15% pour fêter ça."
             }
           ]
         }
@@ -177,23 +812,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Bienvenue & Découverte de Style",
-      "why_brevo_is_better": "L'intégration quiz et le contenu dynamique de Brevo vous permettent de créer des profils de style personnalisés qui génèrent des recommandations ciblées tout au long du parcours client.",
-      "omnichannel_channels": "Email pour l'inspiration visuelle riche + SMS pour les alertes ventes flash",
-      "setup_efficiency": "Les templates pré-construits maison et mobilier vous permettent de démarrer rapidement, avec personnalisation par glisser-déposer pour l'esthétique de votre marque."
+      "scenario_name": "Parcours Bienvenue & Découverte de Style",
+      "why_brevo_is_better": "Brevo combine formulaires quiz et automatisation pour créer des profils de style personnalisés qui génèrent des recommandations ciblées tout au long du parcours client. Les blocs de contenu dynamique adaptent chaque email au style identifié.",
+      "omnichannel_channels": "Email pour l'inspiration visuelle riche + SMS pour les alertes ventes flash + WhatsApp pour le conseil personnalisé avec un expert déco",
+      "setup_efficiency": "Templates pré-construits pour le secteur maison/mobilier avec personnalisation par glisser-déposer. Quiz style intégré avec scoring automatique et segmentation instantanée."
     },
     {
-      "scenario_name": "Parcours Pièce par Pièce",
-      "why_brevo_is_better": "Le suivi de l'historique d'achat permet des recommandations de cross-sell intelligentes basées sur ce que les clients ont déjà acheté et leurs préférences de style.",
-      "omnichannel_channels": "Email pour l'inspiration détaillée de pièces + SMS pour les alertes stock limité",
-      "setup_efficiency": "Les déclencheurs automatisés basés sur la catégorie d'achat assurent le bon suivi au bon moment."
+      "scenario_name": "Expansion Pièce par Pièce",
+      "why_brevo_is_better": "Le tracking de l'historique d'achat par catégorie permet des recommandations de cross-sell intelligentes. Brevo identifie automatiquement les pièces non encore meublées et suggère les produits cohérents avec le style du client.",
+      "omnichannel_channels": "Email pour l'inspiration détaillée par pièce + SMS pour les alertes stock limité + WhatsApp pour les consultations déco personnalisées",
+      "setup_efficiency": "Workflows automatisés par catégorie de pièce avec timing adapté aux cycles d'achat longs du mobilier. Recommandations produits dynamiques basées sur le style et l'historique."
     },
     {
-      "scenario_name": "Service Post-Achat & Montage",
-      "why_brevo_is_better": "Les emails transactionnels et déclenchés par la livraison garantissent que les clients reçoivent un support proactif, réduisant les retours et les tickets support.",
-      "omnichannel_channels": "Email pour les guides détaillés + SMS pour les mises à jour de livraison et conseils rapides",
-      "setup_efficiency": "L'intégration avec les transporteurs permet des déclencheurs automatiques basés sur la livraison."
+      "scenario_name": "Déménagement & Événements de Vie",
+      "why_brevo_is_better": "Brevo capture les signaux d'événements de vie (formulaires, comportement) et déclenche des parcours personnalisés à forte valeur. L'intégration CRM centralise les informations projet pour un accompagnement optimal.",
+      "omnichannel_channels": "Email pour les guides et checklists complets + SMS pour les rappels projet + WhatsApp pour l'accompagnement conseiller dédié",
+      "setup_efficiency": "Formulaires d'événements de vie pré-configurés, workflows déclenchés automatiquement, et segmentation dynamique par type de projet (déménagement, rénovation, bébé...)."
+    },
+    {
+      "scenario_name": "Programme Trade & Décorateurs",
+      "why_brevo_is_better": "Brevo permet de gérer un segment B2B distinct avec tarification personnalisée, catalogue dédié et workflows spécifiques. Le CRM intégré suit chaque projet pro et son avancement.",
+      "omnichannel_channels": "Email pour les catalogues et nouveautés + WhatsApp Business pour le contact direct avec le conseiller dédié + SMS pour les alertes délais de livraison",
+      "setup_efficiency": "Segmentation automatique pros vs particuliers, grilles tarifaires différenciées, et reporting séparé pour analyser la performance du canal B2B."
+    },
+    {
+      "scenario_name": "Expérience Post-Achat & Montage",
+      "why_brevo_is_better": "L'intégration transporteurs et e-commerce permet des déclencheurs automatiques basés sur le statut de livraison. Brevo envoie proactivement les informations de montage et d'entretien, réduisant tickets support et retours.",
+      "omnichannel_channels": "Email pour les guides détaillés et vidéos tutoriels + SMS pour les notifications livraison temps réel + WhatsApp pour le support montage conversationnel",
+      "setup_efficiency": "Intégration native avec les principaux transporteurs pour tracking automatique. Bibliothèque de guides d'entretien par type de matériau envoyés automatiquement selon le produit acheté."
     }
   ],
-  "conclusion": "Les retailers de maison et mobilier qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à une valeur vie client accrue grâce à l'expansion pièce par pièce, des taux de satisfaction plus élevés et un comportement de réachat plus fort grâce aux refresh saisonniers et au marketing événements de vie."
+  "conclusion": "Les retailers de maison et mobilier qui implémentent ce plan marketing relationnel complet peuvent s'attendre à une augmentation significative de la valeur vie client grâce à l'expansion pièce par pièce, une réduction des coûts support grâce à l'accompagnement post-achat proactif, et une captation maximale des moments de vie à forte valeur. La clé du succès réside dans la personnalisation basée sur le style intérieur de chaque client, l'accompagnement projet de bout en bout, et l'orchestration fluide des canaux pour créer une expérience d'achat mémorable qui génère des recommandations naturelles."
 }

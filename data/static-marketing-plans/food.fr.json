@@ -1,76 +1,368 @@
 {
-  "introduction": "Ce plan marketing relationnel est conçu pour les retailers alimentaires et gastronomiques souhaitant construire des communautés de clients fidèles grâce à la découverte gustative, les modèles d'abonnement et l'engagement saisonnier.",
+  "introduction": "Ce plan marketing relationnel complet est conçu pour les détaillants alimentaires et gastronomiques souhaitant construire des communautés de clients passionnés grâce à la découverte gustative personnalisée, des modèles d'abonnement intelligents, l'engagement via les recettes et la narration saisonnière. Dans l'industrie alimentaire, le succès repose sur la compréhension du parcours culinaire de chaque client—de la découverte de nouvelles saveurs à la maîtrise des recettes, du réapprovisionnement pratique à la célébration d'occasions spéciales avec des ingrédients premium. Ce plan couvre l'ensemble du cycle de vie client, de la première découverte jusqu'à l'ambassadorat de marque, en exploitant la connexion émotionnelle que les gens entretiennent avec la nourriture pour créer des relations durables.",
   "company_summary": {
-    "name": "Marque Alimentation & Gastronomie",
-    "website": "exemple-gastronomie.com",
-    "activities": "Commerce de produits alimentaires de spécialité et gastronomiques, incluant produits artisanaux, boissons, kits repas et ingrédients gourmet",
-    "target": "Passionnés de gastronomie et cuisiniers amateurs âgés de 25 à 55 ans recherchant des ingrédients de qualité, des saveurs uniques et de l'inspiration culinaire",
+    "name": "Marque Alimentaire & Gastronomie",
+    "website": "example-food.com",
+    "activities": "Vente au détail de produits alimentaires de spécialité et gastronomiques, incluant aliments artisanaux, boissons craft, kits repas, ingrédients gourmet, produits d'épicerie, abonnements produits frais et accessoires culinaires",
+    "target": "Passionnés de cuisine et cuisiniers amateurs de 25 à 55 ans recherchant des ingrédients de qualité, des saveurs uniques, l'inspiration culinaire et un accès pratique aux produits de spécialité",
     "industry": "Food",
-    "business_model": "B2C Retail"
+    "business_model": "B2C Retail",
+    "customer_lifecycle_key_steps": "Découverte > Profil Gustatif > Premier Achat > Engagement Recettes > Réapprovisionnement > Abonnement > Statut VIP Foodie > Ambassadeur de Marque"
   },
   "programs_list": [
     {
-      "program_name": "Bienvenue & Profil Gustatif",
-      "target": "Nouveaux abonnés et premiers visiteurs",
-      "objective": "Comprendre les préférences gustatives et convertir au premier achat sous 14 jours",
-      "kpi": "Complétion du profil gustatif, Conversion premier achat, Panier moyen première commande",
-      "description": "Un parcours de bienvenue personnalisé qui découvre les préférences gustatives des clients et recommande les produits parfaits.",
+      "program_name": "Bienvenue & Découverte du Profil Gustatif",
+      "target": "Nouveaux abonnés et premiers visiteurs du site",
+      "objective": "Construire des profils gustatifs personnalisés pour comprendre les préférences alimentaires, les saveurs favorites et le style de cuisine, avec 45% de complétion du quiz et 22% de conversion au premier achat sous 14 jours avec un panier moyen supérieur à 55€",
+      "kpi": "Taux de complétion du quiz gustatif (cible: 45%), Conversion premier achat (cible: 22%), Panier moyen premier achat (cible: 55€+), Taux d'engagement email (cible: 35%)",
+      "description": "Un parcours de bienvenue complet qui découvre les préférences alimentaires uniques de chaque client—des profils de saveurs et restrictions alimentaires au niveau de compétence culinaire et habitudes de planification des repas. Utilise le profilage progressif pour construire des données client riches qui alimentent les recommandations personnalisées dans toutes les interactions futures.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux abonnés email",
-          "scenario_objective": "Construire un profil de préférences gustatives et générer le premier achat",
-          "main_messages_ideas": "Bienvenue + quiz goût, Sélection personnalisée, Inspiration recettes, Incentive première commande",
+          "scenario_target": "Nouveaux abonnés email via pop-up, footer ou téléchargement de recette",
+          "scenario_objective": "Convertir vers la complétion du profil gustatif et premier achat",
+          "main_messages_ideas": "Bienvenue chaleureuse, invitation quiz gustatif, sélections personnalisées, inspiration recettes, incentive premier achat",
           "message_sequence": [
             {
-              "title": "Bienvenue + Quiz Goût",
-              "description": "Bienvenue immédiate avec quiz préférences gustatives",
-              "content": "Bienvenue ! Dites-nous vos saveurs préférées pour des recommandations personnalisées"
+              "channel": "Email",
+              "title": "Bienvenue dans l'Univers des Saveurs",
+              "timing": "Immédiat",
+              "description": "Bienvenue immédiate avec histoire de la marque et invitation quiz",
+              "content": "Bienvenue chez [Marque] ! Nous croyons que chacun mérite des ingrédients d'exception. Répondez à notre Quiz Gustatif de 2 minutes pour découvrir des produits adaptés à votre palais."
             },
             {
-              "title": "Vos Sélections Parfaites",
-              "description": "Jour 2 : Basé sur les résultats du quiz",
-              "content": "Selon votre profil gustatif : Des produits que vous allez adorer"
+              "channel": "SMS",
+              "title": "Rappel Quiz Rapide",
+              "timing": "J+1",
+              "description": "Rappel SMS pour non-compléteurs",
+              "content": "Toujours à la recherche de bonnes recommandations ? Complétez votre profil gustatif en 2 minutes et débloquez vos sélections personnalisées : [Lien]"
             },
             {
-              "title": "Inspiration Recettes",
-              "description": "Jour 5 : Recettes mettant en vedette les produits recommandés",
-              "content": "3 recettes à essayer avec vos nouveaux ingrédients favoris"
+              "channel": "Email",
+              "title": "Votre Kit de Démarrage Cuisine Personnalisé",
+              "timing": "J+2",
+              "description": "Recommandations basées sur résultats quiz ou comportement de navigation",
+              "content": "Basé sur votre profil gustatif, voici 12 produits que nous pensons que vous allez adorer. Des amateurs de [Saveur] aux explorateurs de [Préférence Alimentaire]—nous avons tout pour garnir votre garde-manger."
             },
             {
-              "title": "Offre Première Commande",
-              "description": "Jour 10 : Incentive avec livraison gratuite",
-              "content": "Livraison gratuite sur votre première commande - explorez vos favoris"
+              "channel": "WhatsApp",
+              "title": "Une Question sur Vos Recommandations ?",
+              "timing": "J+3",
+              "description": "Support personnalisé pour accompagner la découverte",
+              "content": "Bonjour ! J'ai vu que vous aviez découvert vos recommandations personnalisées. Une question sur un produit ou besoin d'un conseil culinaire ? Je suis là pour vous aider ! 🍴"
+            },
+            {
+              "channel": "Email",
+              "title": "3 Recettes Que Vous Allez Adorer",
+              "timing": "J+4",
+              "description": "Contenu recettes correspondant à leur profil",
+              "content": "Prêt à cuisiner ? Voici 3 recettes concoctées par nos chefs, parfaites pour votre profil gustatif, avec des ingrédients que vous pouvez commander en un clic."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Première Commande Vous Attend",
+              "timing": "J+7",
+              "description": "Incentive premier achat",
+              "content": "Commencez votre voyage gustatif avec 15% de réduction sur votre première commande + livraison gratuite dès 40€. Vos produits personnalisés vous attendent !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Dernière Chance : Offre de Bienvenue Expirant",
+              "timing": "J+12",
+              "description": "Message d'urgence pour non-convertis",
+              "content": "Votre offre de bienvenue de 15% expire dans 48h ! Ne manquez pas votre chance d'essayer [Produits Recommandés] à prix spécial."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abandonneurs de navigation ayant consulté des produits sans s'inscrire",
+          "scenario_objective": "Capturer l'email et construire le profil",
+          "main_messages_ideas": "Entrée basée sur le produit, exploration de catégorie, accès exclusif",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Le [Produit] Que Vous Exploriez",
+              "timing": "Déclenché par abandon de navigation avec capture email",
+              "description": "Suivi basé sur l'abandon de navigation",
+              "content": "Vous pensez encore au [Produit Consulté] ? Voici tout ce que vous devez savoir sur pourquoi les amateurs de cuisine ne peuvent plus s'en passer."
+            },
+            {
+              "channel": "Email",
+              "title": "Plus de Cette Collection",
+              "timing": "J+2",
+              "description": "Expansion de catégorie",
+              "content": "Vous avez aimé la catégorie [Catégorie] ? Explorez notre collection complète de [Produits] artisanaux du monde entier."
+            },
+            {
+              "channel": "Email",
+              "title": "Débloquez l'Accès Privilégié",
+              "timing": "J+5",
+              "description": "Incentive de complétion de profil",
+              "content": "Complétez votre profil gustatif pour un accès anticipé aux éditions limitées, produits saisonniers et prix réservés aux membres."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Réapprovisionnement & Abonnement",
-      "target": "Clients ayant acheté des produits de consommation courante",
-      "objective": "Convertir les acheteurs ponctuels en abonnés et générer des achats répétés",
-      "kpi": "Taux de conversion abonnement, Timing réapprovisionnement, Valeur vie client",
-      "description": "Rappels automatisés et offres d'abonnement basés sur les patterns de consommation typiques.",
+      "program_name": "Récupération Panier Abandonné & Navigation",
+      "target": "Visiteurs ayant ajouté des articles au panier ou navigué intensivement sans acheter",
+      "objective": "Récupérer 18% des paniers abandonnés sous 48h et 8% des abandons de navigation sous 7 jours",
+      "kpi": "Taux de récupération panier (cible: 18%), Taux de récupération navigation (cible: 8%), Délai de récupération (cible: <48h pour panier), Panier récupéré vs standard (cible: +10%)",
+      "description": "Séquences de récupération multicanal qui répondent aux hésitations courantes lors des achats alimentaires—questions de fraîcheur, livraison, portions et incertitude sur les recettes. Utilise un messaging spécifique aux produits et l'urgence quand approprié pour les périssables.",
       "scenarios": [
         {
-          "scenario_target": "Acheteurs de café/thé",
-          "scenario_objective": "Convertir à l'abonnement avant épuisement du stock",
-          "main_messages_ideas": "Rappel stock faible, Récommande facile, Avantages abonnement, Remise fidélité",
+          "scenario_target": "Abandonneurs de panier avec articles totalisant 30€+",
+          "scenario_objective": "Récupérer le panier sous 24 heures",
+          "main_messages_ideas": "Rappel produit, garantie fraîcheur, inspiration recettes, incentive livraison, rareté pour articles limités",
           "message_sequence": [
             {
-              "title": "Bientôt à Court ?",
-              "description": "Basé sur la consommation moyenne (ex: 3 semaines pour le café)",
-              "content": "C'est le moment de réapprovisionner votre [Produit] ? Recommandez en un clic"
+              "channel": "Email",
+              "title": "Votre Panier a Faim",
+              "timing": "1 heure après abandon",
+              "description": "Premier rappel panier abandonné",
+              "content": "Vous avez laissé de délicieux articles derrière vous ! Vos [Produits] sont sauvegardés et prêts pour le checkout. Des questions sur la fraîcheur ou la livraison ? Nous sommes là pour vous."
             },
             {
-              "title": "Abonnez-vous & Économisez",
-              "description": "Après le deuxième achat ponctuel",
-              "content": "Ne soyez plus jamais à court - Abonnez-vous et économisez 15%"
+              "channel": "SMS",
+              "title": "Rappel Rapide : Panier Sauvegardé",
+              "timing": "4 heures",
+              "description": "SMS pour utilisateurs mobile connus",
+              "content": "Vos [Nombre de Produits] articles gourmet vous attendent ! Finalisez avant que [Article Périssable] soit épuisé : [Lien]"
             },
             {
-              "title": "Avantages Abonnés",
-              "description": "Mettre en avant les avantages supplémentaires",
-              "content": "Les abonnés ont un accès anticipé aux nouveaux produits + remises exclusives"
+              "channel": "Email",
+              "title": "Voici Ce Que Vous Pourriez Préparer",
+              "timing": "J+1",
+              "description": "Inspiration recettes avec articles du panier",
+              "content": "Avec les articles de votre panier, vous pourriez préparer [Recette 1], [Recette 2] ou [Recette 3]. Inspirez-vous et complétez votre aventure culinaire."
+            },
+            {
+              "channel": "Email",
+              "title": "Livraison Gratuite Débloquée",
+              "timing": "J+2",
+              "description": "Incentive pour paniers 50€+",
+              "content": "Bonne nouvelle ! Nous avons débloqué la livraison gratuite sur votre commande. Finalisez dans les 24 prochaines heures pour profiter de cette offre."
+            },
+            {
+              "channel": "SMS",
+              "title": "Articles Bientôt Épuisés",
+              "timing": "J+3",
+              "description": "Message de rareté pour articles limités",
+              "content": "[Produit Limité] dans votre panier est presque épuisé ! Plus que [X] en stock. Sécurisez le vôtre avant qu'il ne soit parti."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abandonneurs de navigation ayant vu 3+ produits sans ajouter au panier",
+          "scenario_objective": "Générer une visite de retour et découverte de produit",
+          "main_messages_ideas": "Highlights de catégorie, produits similaires, contenu recettes, opportunité d'échantillonnage",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Toujours en Exploration [Catégorie] ?",
+              "timing": "J+1",
+              "description": "Suivi centré sur la catégorie",
+              "content": "Nous avons remarqué que vous naviguiez dans notre collection [Catégorie]. Voici nos coups de cœur plébiscités par les clients aux profils gustatifs similaires."
+            },
+            {
+              "channel": "Email",
+              "title": "Essayez Avant de Vous Engager",
+              "timing": "J+3",
+              "description": "Option d'échantillonnage ou petite taille",
+              "content": "Pas sûr de votre choix ? Notre coffret découverte [Catégorie] vous permet d'essayer 5 favoris avant de vous engager sur les formats complets."
+            },
+            {
+              "channel": "Email",
+              "title": "Favoris Clients Que Vous Avez Peut-être Manqués",
+              "timing": "J+5",
+              "description": "Preuve sociale et recommandations",
+              "content": "Ces produits [Catégorie] ont plus de 500 avis 5 étoiles de la part d'amateurs de cuisine comme vous. Découvrez ce que vous avez manqué."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expérience Post-Achat & Activation Recettes",
+      "target": "Acheteurs récents dans les 1 à 14 jours suivant la livraison",
+      "objective": "Maximiser la satisfaction produit, générer l'engagement recettes avec 40% de taux d'ouverture et augmenter les avis à 12%",
+      "kpi": "Engagement email recettes (cible: 40% ouverture), Taux de soumission d'avis (cible: 12%), Deuxième achat sous 30 jours (cible: 25%), Taux de tickets support (cible: <3%)",
+      "description": "Parcours post-achat complet qui assure que les clients savent comment stocker, utiliser et apprécier leurs produits. Fournit inspiration recettes, conseils d'utilisation et sollicite des retours pour générer satisfaction et achats répétés.",
+      "scenarios": [
+        {
+          "scenario_target": "Primo-acheteurs recevant leur commande",
+          "scenario_objective": "Assurer le succès produit et générer le deuxième achat",
+          "main_messages_ideas": "Confirmation livraison, conseils stockage, inspiration recettes, demande d'avis, cross-sell",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Commande Est en Route",
+              "timing": "Confirmation d'expédition",
+              "description": "Confirmation d'expédition avec création d'anticipation",
+              "content": "Votre commande gourmet est en route ! En attendant, voici comment stocker vos [Produits] pour une fraîcheur maximale à leur arrivée."
+            },
+            {
+              "channel": "SMS",
+              "title": "Notification de Livraison",
+              "timing": "Livraison",
+              "description": "Confirmation de livraison",
+              "content": "Votre commande [Marque] est arrivée ! Vérifiez les instructions de livraison pour les articles sensibles à la température. Bon appétit !"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Premier Guide de Recettes",
+              "timing": "J+2 post-livraison",
+              "description": "Recettes spécifiques aux produits",
+              "content": "Prêt à cuisiner ? Voici 5 recettes mettant en vedette vos nouveaux [Produits], des dîners rapides en semaine aux repas impressionnants du weekend."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Besoin d'Aide avec Vos Produits ?",
+              "timing": "J+3 post-livraison",
+              "description": "Support proactif et conseils d'utilisation",
+              "content": "Bonjour ! Vos produits sont-ils bien arrivés ? Une question sur la conservation ou la préparation ? N'hésitez pas à me demander, je suis là pour vous aider ! 👨‍🍳"
+            },
+            {
+              "channel": "Email",
+              "title": "Comment Trouvez-vous Tout Ça ?",
+              "timing": "J+5",
+              "description": "Vérification satisfaction et demande d'avis",
+              "content": "Nous adorerions connaître votre expérience avec [Produits]. Partagez vos impressions et aidez d'autres amateurs de cuisine à découvrir leur prochain coup de cœur."
+            },
+            {
+              "channel": "Email",
+              "title": "Complétez Votre Garde-Manger",
+              "timing": "J+10",
+              "description": "Cross-sell produits complémentaires",
+              "content": "Vous appréciez vos [Produits Achetés] ? Voici les accords parfaits que d'autres clients adorent combiner avec eux."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Acheteurs réguliers élargissant leur gamme de produits",
+          "scenario_objective": "Approfondir l'engagement et encourager l'expérimentation",
+          "main_messages_ideas": "Recettes avancées, techniques de cuisine, approfondissements produits, fonctionnalités communauté",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Passez au Niveau Supérieur avec [Produit]",
+              "timing": "J+3",
+              "description": "Conseils d'utilisation avancée pour clients fidèles",
+              "content": "Vous avez maîtrisé les bases avec [Produit]. Voici des techniques de chef pour sublimer vos plats."
+            },
+            {
+              "channel": "Email",
+              "title": "Dans les Coulisses du Produit",
+              "timing": "J+7",
+              "description": "Histoire du producteur et sourcing",
+              "content": "Rencontrez l'artisan derrière votre [Produit] : [Histoire du Producteur]. Découvrez le savoir-faire et la tradition dans chaque bouchée."
+            },
+            {
+              "channel": "Email",
+              "title": "Rejoignez la Conversation",
+              "timing": "J+12",
+              "description": "Invitation communauté",
+              "content": "Partagez vos créations ! Taguez-nous avec #[NomMarque] ou rejoignez notre communauté d'amateurs de cuisine partageant recettes et astuces."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Réapprovisionnement & Conversion Abonnement",
+      "target": "Clients ayant acheté des produits consommables (café, thé, huiles, épices, produits d'épicerie)",
+      "objective": "Atteindre 20% de taux de conversion abonnement et maintenir 85% de précision sur le timing de réapprovisionnement avec une augmentation de 15% du panier moyen pour les abonnés",
+      "kpi": "Taux de conversion abonnement (cible: 20%), Précision timing réapprovisionnement (cible: 85%), Rétention abonné à 6 mois (cible: 70%), Panier abonné vs ponctuel (cible: +15%)",
+      "description": "Système de réapprovisionnement intelligent basé sur les patterns de consommation par produit qui convertit les acheteurs ponctuels en abonnés. Le timing varie par type de produit—café (3-4 semaines), huile d'olive (6-8 semaines), épices (3-4 mois)—pour atteindre les clients avant qu'ils ne soient à court.",
+      "scenarios": [
+        {
+          "scenario_target": "Acheteurs de café et thé (haute fréquence)",
+          "scenario_objective": "Convertir en abonnement sous 3 achats",
+          "main_messages_ideas": "Rappel stock bas, récommande facile, économies abonnement, torréfactions exclusives",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bientôt à Court de [Café/Thé] ?",
+              "timing": "J+21",
+              "description": "Basé sur consommation typique",
+              "content": "Selon votre date de commande, vous êtes peut-être à court de [Produit]. Recommandez maintenant pour une livraison avant de manquer !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Recommande Rapide",
+              "timing": "J+24",
+              "description": "SMS pour clients mobile-first",
+              "content": "Besoin de plus de [Produit] ? Tapez pour recommander votre favori en un clic : [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Ne Jamais Être à Court : Abonnez-vous & Économisez 15%",
+              "timing": "Après 2e achat",
+              "description": "Pitch abonnement",
+              "content": "Vous avez recommandé [Produit] deux fois. Économisez 15% pour toujours avec un abonnement—plus la livraison gratuite et l'accès anticipé aux nouvelles torréfactions."
+            },
+            {
+              "channel": "Email",
+              "title": "Exclusivité Abonnés : Édition Limitée",
+              "timing": "FOMO abonnement",
+              "description": "Création d'urgence pour abonnement",
+              "content": "Le [Produit] exclusif abonnés de ce mois vient de sortir. Abonnez-vous maintenant pour ne jamais manquer une édition limitée."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Acheteurs d'épicerie de base (huiles, vinaigres, céréales)",
+          "scenario_objective": "Établir un rythme de réapprovisionnement et abonnement",
+          "main_messages_ideas": "Check-in garde-manger, économies sur bundles, planification flexible",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Check-in Garde-Manger",
+              "timing": "Semaine 6-8",
+              "description": "Basé sur utilisation typique",
+              "content": "Comment se porte votre [Produit] ? La plupart des clients réapprovisionnent vers maintenant. Commandez aujourd'hui pour livraison ce weekend."
+            },
+            {
+              "channel": "Email",
+              "title": "Composez Votre Bundle Garde-Manger",
+              "timing": "Semaine 8",
+              "description": "Upsell bundle",
+              "content": "Faites le plein et économisez ! Créez un bundle garde-manger personnalisé avec vos essentiels et économisez 20% sur les commandes de plus de 75€."
+            },
+            {
+              "channel": "Email",
+              "title": "Abonnements Flexibles",
+              "timing": "Semaine 10",
+              "description": "Abonnement avec accent sur la flexibilité",
+              "content": "Configurez et oubliez—ou ajustez à tout moment. Nos abonnements flexibles vous permettent de reporter, échanger ou reprogrammer en un clic."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abonnés existants approchant du renouvellement",
+          "scenario_objective": "Prévenir le churn et encourager les ajouts",
+          "main_messages_ideas": "Rappel renouvellement, personnalisation abonnement, suggestions d'ajout, récompenses fidélité",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Prochaine Livraison Arrive",
+              "timing": "5 jours avant renouvellement",
+              "description": "Rappel avant renouvellement",
+              "content": "Votre abonnement [Produit] part dans 5 jours. Besoin d'ajuster la quantité, ajouter des articles ou changer votre date de livraison ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Ajouter Quelque Chose de Nouveau ?",
+              "timing": "3 jours avant",
+              "description": "Opportunité de cross-sell",
+              "content": "Les abonnés adorent [Nouveau Produit]. Ajoutez-le à votre prochaine livraison et économisez 10% en tant qu'avantage abonné."
+            },
+            {
+              "channel": "SMS",
+              "title": "Abonnement Expédié + Points Gagnés",
+              "timing": "Confirmation d'envoi",
+              "description": "Confirmation expédition avec mise à jour fidélité",
+              "content": "Votre abonnement est en route ! Vous avez gagné [X] points fidélité ce mois—plus que [Y] avant votre prochaine récompense."
             }
           ]
         }
@@ -78,102 +370,552 @@
     },
     {
       "program_name": "Campagnes Saisonnières & Fêtes",
-      "target": "Tous les clients actifs",
-      "objective": "Générer des achats saisonniers et des commandes cadeaux",
-      "kpi": "CA campagnes saisonnières, Taux de commandes cadeaux, Parrainages nouveaux clients",
-      "description": "Campagnes thématiques autour des fêtes, saisons et occasions gastronomiques.",
+      "target": "Tous les clients actifs et abonnés",
+      "objective": "Générer 35% d'augmentation de CA pendant les pics saisonniers avec 25% de taux de commandes cadeaux et 15% d'acquisition de nouveaux clients via les cadeaux",
+      "kpi": "Augmentation CA saisonnier (cible: 35%), Taux de commandes cadeaux (cible: 25%), Conversion cadeau vers nouveau client (cible: 15%), Taux de pré-commande (cible: 12%)",
+      "description": "Campagnes stratégiques autour des fêtes et saisons centrées sur l'alimentation—des grillades d'été aux festins de fin d'année, des cadeaux de Noël aux douceurs de la Saint-Valentin. Inclut accès anticipé, guides cadeaux et produits en édition limitée.",
       "scenarios": [
         {
-          "scenario_target": "Tous les abonnés engagés",
-          "scenario_objective": "Maximiser les achats pour les occasions saisonnières",
-          "main_messages_ideas": "Nouveautés saisonnières, Éditions limitées, Guides cadeaux, Offres early bird",
+          "scenario_target": "Acheteurs de cadeaux pour les fêtes (Noël, Saint-Valentin, Pâques)",
+          "scenario_objective": "Maximiser les commandes cadeaux et les achats anticipés",
+          "main_messages_ideas": "Guides cadeaux par destinataire, économies early bird, emballage cadeau, cadeaux d'entreprise",
           "message_sequence": [
             {
-              "title": "Aperçu de Saison",
-              "description": "4 semaines avant une fête majeure",
-              "content": "[Fête] arrive ! Découvrez notre collection saisonnière en avant-première"
+              "channel": "Email",
+              "title": "Aperçu du Guide Cadeaux [Fête]",
+              "timing": "6 semaines avant la fête",
+              "description": "Lancement du guide cadeaux",
+              "content": "Le guide cadeaux [Fête] ultime pour les amateurs de gastronomie est là ! Du chef amateur à l'explorateur de saveurs—trouvez le cadeau parfait."
             },
             {
-              "title": "Guide Cadeaux",
-              "description": "3 semaines avant",
-              "content": "Le guide cadeaux [Fête] ultime pour les passionnés de gastronomie"
+              "channel": "Email",
+              "title": "Offres Early Bird",
+              "timing": "4 semaines avant",
+              "description": "Incentive achat anticipé",
+              "content": "Commandez tôt et économisez ! Obtenez 15% sur les cadeaux [Fête] jusqu'au [Date] + livraison garantie avec emballage cadeau gratuit."
             },
             {
-              "title": "Offre Early Bird",
-              "description": "2 semaines avant",
-              "content": "Commandez tôt pour livraison [Fête] + emballage cadeau offert"
+              "channel": "Email",
+              "title": "Cadeaux à Moins de 50€",
+              "timing": "3 semaines",
+              "description": "Options budget-friendly",
+              "content": "Des cadeaux impressionnants pour tous les budgets : Nos articles les plus cadeaux à moins de 50€, 30€ et 20€—tous magnifiquement emballés."
             },
             {
-              "title": "Dernière Chance",
-              "description": "Rappel date limite commande",
-              "content": "Dernière chance de commander pour livraison [Fête] !"
+              "channel": "Email",
+              "title": "Cadeaux d'Entreprise Simplifiés",
+              "timing": "3 semaines",
+              "description": "Angle B2B",
+              "content": "Besoin de cadeaux pour clients ou équipe ? Notre programme cadeaux entreprise simplifie les commandes en volume avec messages personnalisés."
+            },
+            {
+              "channel": "Email",
+              "title": "Dernières Dates d'Expédition",
+              "timing": "2 semaines",
+              "description": "Rappel des délais",
+              "content": "Ne ratez pas le délai ! Commandez avant le [Date] pour livraison standard, [Date] pour express. Livraison [Fête] garantie."
+            },
+            {
+              "channel": "SMS",
+              "title": "Dernières Heures pour Livraison [Fête]",
+              "timing": "Jour limite d'expédition",
+              "description": "Urgence dernier jour",
+              "content": "C'est le DERNIER jour pour livraison [Fête] ! Commandez avant [Heure] pour garantir l'arrivée. Besoin d'un plan B ? Les cartes cadeaux sont livrées instantanément."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Passionnés de cuisine saisonnière (Grillades, Récolte d'automne, Confort d'hiver)",
+          "scenario_objective": "Générer les achats de produits saisonniers",
+          "main_messages_ideas": "Collections saisonnières, recettes de saison, éditions limitées, événements cuisine",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "La Collection [Saison] Est Là",
+              "timing": "Lancement de saison",
+              "description": "Annonce du lancement saisonnier",
+              "content": "[Saison] est officiellement là ! Explorez notre collection de favoris saisonniers, de [Produit 1] à [Produit 2]."
+            },
+            {
+              "channel": "Email",
+              "title": "Récap Recettes [Saison]",
+              "timing": "Semaine 2",
+              "description": "Engagement via contenu",
+              "content": "Profitez au maximum de [Saison] avec ces 10 recettes mettant en vedette des ingrédients de saison et des plats réconfortants."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerte Édition Limitée",
+              "timing": "Mi-saison",
+              "description": "Produit en quantité limitée",
+              "content": "Vient de sortir : Notre [Produit Saisonnier] en édition limitée. Seulement [X] disponibles—une fois épuisés, retour l'année prochaine."
+            },
+            {
+              "channel": "Email",
+              "title": "Soldes Fin de Saison",
+              "timing": "Transition de saison",
+              "description": "Liquidation saisonnière",
+              "content": "Dernière chance pour les favoris [Saison] ! Jusqu'à 30% sur une sélection d'articles saisonniers dans la limite des stocks."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Engagement Recettes & Contenu",
-      "target": "Tous les clients selon leur historique d'achat",
-      "objective": "Augmenter l'utilisation des produits et la découverte via le contenu",
-      "kpi": "Taux d'engagement email, Visites pages recettes, Achats cross-catégorie",
-      "description": "Contenu régulier présentant des recettes et idées d'utilisation basées sur les achats clients.",
+      "program_name": "Planification Repas & Découverte de Recettes",
+      "target": "Clients engagés qui interagissent avec le contenu recettes ou achètent des produits de planification de repas",
+      "objective": "Augmenter l'engagement recettes à 50% de taux de clic, générer 8% d'adoption des kits repas et augmenter le panier moyen de 25% via les bundles recettes",
+      "kpi": "Taux de clic email recettes (cible: 50%), Adoption kits repas/bundles (cible: 8%), Augmentation panier via recettes (cible: +25%), Sauvegardes/partages recettes (cible: 15%)",
+      "description": "Programme riche en contenu qui positionne la marque comme source d'inspiration culinaire. Fournit recettes hebdomadaires, plans de repas saisonniers, tutoriels techniques et listes d'ingrédients achetables pour favoriser la découverte de produits et les achats multi-articles.",
       "scenarios": [
         {
-          "scenario_target": "Acheteurs récents par catégorie de produit",
-          "scenario_objective": "Inspirer l'utilisation et l'exploration cross-catégorie",
-          "main_messages_ideas": "Recette de la semaine, Comment utiliser, Suggestions d'accords, Conseils de chef",
+          "scenario_target": "Engagés actifs sur les recettes",
+          "scenario_objective": "Approfondir l'engagement contenu et générer des recettes achetables",
+          "main_messages_ideas": "Recette hebdomadaire, outils de planification repas, tutoriels techniques, partenariats chefs",
           "message_sequence": [
             {
-              "title": "Recette pour Votre Achat",
-              "description": "Jour 3 post-achat",
-              "content": "3 façons délicieuses d'utiliser votre nouveau [Produit]"
+              "channel": "Email",
+              "title": "La Recette Incontournable de la Semaine",
+              "timing": "Hebdomadaire",
+              "description": "Email de contenu hebdomadaire",
+              "content": "Cette semaine : [Nom de la Recette] avec [Ingrédient Clé]. Obtenez la recette avec une liste d'ingrédients achetable en un clic."
             },
             {
-              "title": "Recette Hebdomadaire",
-              "description": "Contenu hebdomadaire basé sur les préférences",
-              "content": "La recette de la semaine : [Plat] mettant en vedette [Produits]"
+              "channel": "Email",
+              "title": "Votre Plan de Repas Hebdomadaire",
+              "timing": "Dimanche",
+              "description": "Aide à la planification hebdomadaire",
+              "content": "Planifiez votre semaine ! Voici 5 recettes avec une liste de courses combinée—tout ce dont vous avez besoin en un panier."
             },
             {
-              "title": "Accords Parfaits",
-              "description": "Recommandations cross-sell",
-              "content": "Des produits qui s'accordent parfaitement avec votre [Achat Récent]"
+              "channel": "Email",
+              "title": "Maîtrisez [Technique] avec [Chef]",
+              "timing": "Bimensuel",
+              "description": "Contenu tutoriel",
+              "content": "Apprenez à [Technique] comme un pro ! Regardez notre tutoriel pas à pas et achetez les ingrédients pour pratiquer à la maison."
+            },
+            {
+              "channel": "SMS",
+              "title": "Recette Sauvegardée : Obtenez les Ingrédients",
+              "timing": "Déclenché par sauvegarde/favori recette",
+              "description": "Action sur recette sauvegardée",
+              "content": "Vous avez sauvegardé [Nom de la Recette] ! Prêt à la préparer ? Tous les ingrédients sont disponibles en commande one-click."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Acheteurs de kits repas et bundles",
+          "scenario_objective": "Encourager les achats répétés de kits et l'abonnement",
+          "main_messages_ideas": "Annonces nouveaux kits, kits par régime, avantages abonnement, collaborations chefs",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nouveau Kit Repas Disponible",
+              "timing": "Hebdomadaire",
+              "description": "Annonce nouveau kit",
+              "content": "Kit repas de la semaine : [Nom du Plat] pour 4 personnes, prêt en 30 minutes. Tous les ingrédients pré-portionnés avec instructions pas à pas."
+            },
+            {
+              "channel": "Email",
+              "title": "Collection Kits Repas [Régime]",
+              "timing": "Basé sur préférences du profil gustatif",
+              "description": "Kits par régime alimentaire",
+              "content": "Explorez notre collection de kits repas [Végétarien/Keto/Sans Gluten]—délicieux, pratiques et adaptés à votre alimentation."
+            },
+            {
+              "channel": "Email",
+              "title": "Abonnement Kits Repas Hebdomadaire",
+              "timing": "Après 2e achat de kit",
+              "description": "Conversion abonnement",
+              "content": "Vous aimez la praticité ? Abonnez-vous aux kits repas hebdomadaires et économisez 20%. Passez n'importe quelle semaine, annulez quand vous voulez."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Programme Fidélité & VIP",
-      "target": "Clients récurrents et ambassadeurs de marque",
-      "objective": "Augmenter la rétention client et le bouche-à-oreille",
-      "kpi": "Inscription programme fidélité, Utilisation des points, Taux de parrainage",
-      "description": "Programme de fidélité à niveaux avec récompenses gourmandes, accès exclusif et avantages parrainage.",
+      "program_name": "Programme Fidélité & VIP Foodie",
+      "target": "Clients réguliers avec 2+ achats et membres du programme fidélité",
+      "objective": "Atteindre 50% d'inscription au programme fidélité, 80% de rétention membre et 45% de LTV supérieure pour les membres VIP",
+      "kpi": "Taux d'inscription fidélité (cible: 50%), Taux de rétention membre (cible: 80%), LTV VIP vs régulier (cible: +45%), Taux de redemption points (cible: 65%)",
+      "description": "Programme fidélité à paliers construit autour de la communauté foodie—d'Explorateur à Connaisseur à Maître Culinaire. Les membres gagnent des points sur achats, engagement recettes et avis, avec des récompenses incluant produits exclusifs, accès anticipé, cours de cuisine et expériences producteurs.",
       "scenarios": [
         {
-          "scenario_target": "Clients atteignant des jalons fidélité",
-          "scenario_objective": "Célébrer et encourager l'engagement continu",
-          "main_messages_ideas": "Bienvenue VIP, Accès exclusif, Récompenses anniversaire, Bonus parrainage",
+          "scenario_target": "Nouveaux membres du programme fidélité (palier Explorateur)",
+          "scenario_objective": "Générer l'engagement et la progression vers les paliers supérieurs",
+          "main_messages_ideas": "Bienvenue au programme, opportunités de gains, première redemption, progression paliers",
           "message_sequence": [
             {
-              "title": "Bienvenue VIP",
-              "description": "À l'atteinte du seuil VIP",
-              "content": "Vous êtes maintenant VIP ! Voici ce que vous avez débloqué"
+              "channel": "Email",
+              "title": "Bienvenue dans [Nom du Programme] !",
+              "timing": "Confirmation d'inscription",
+              "description": "Confirmation d'inscription",
+              "content": "Vous êtes officiellement un Explorateur [Marque] ! Voici comment gagner des points sur vos achats, avis et engagement recettes—plus vos 100 premiers points bonus."
             },
             {
-              "title": "Accès Exclusif",
-              "description": "Email mensuel VIP uniquement",
-              "content": "Première Dégustation VIP : Nouveaux produits avant tout le monde"
+              "channel": "Email",
+              "title": "Points Rapides : Laissez un Avis",
+              "timing": "J+7",
+              "description": "Opportunité de gain facile",
+              "content": "Gagnez 50 points en 2 minutes ! Partagez votre avis sur [Achat Récent] et aidez d'autres amateurs de cuisine à découvrir quelque chose de nouveau."
             },
             {
-              "title": "Gourmandise d'Anniversaire",
-              "description": "Le jour de l'anniversaire du client",
-              "content": "Joyeux anniversaire ! Profitez d'un [Produit] gratuit offert par nous"
+              "channel": "Email",
+              "title": "Vous Êtes à [X] Points de Votre Première Récompense",
+              "timing": "Mise à jour progression",
+              "description": "Encouragement à la progression",
+              "content": "Si proche ! Vous êtes à seulement [X] points de débloquer [Récompense]. Faites un achat cette semaine pour la débloquer."
             },
             {
-              "title": "Partagez l'Amour",
-              "description": "Post-achievement VIP",
-              "content": "Offrez 15€, Recevez 15€ - Partagez vos trouvailles favorites avec vos amis"
+              "channel": "Email",
+              "title": "Passez au Niveau Connaisseur",
+              "timing": "Proche du seuil de palier",
+              "description": "Incitation à la progression",
+              "content": "Vous êtes à [X] du statut Connaisseur ! Débloquez la livraison gratuite, les produits exclusifs et les jours points doublés."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Membres VIP (paliers Connaisseur et Maître Culinaire)",
+          "scenario_objective": "Maximiser la rétention et les avantages exclusifs",
+          "main_messages_ideas": "Accès exclusif, événements VIP, expériences producteurs, service personnalisé",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Accès Anticipé VIP : [Produit]",
+              "timing": "48h d'accès exclusif aux produits nouveaux/limités",
+              "description": "Early access produits",
+              "content": "En tant que membre [Palier], vous bénéficiez de 48h d'accès anticipé à [Nouveau Produit]. Commandez maintenant avant le lancement public."
+            },
+            {
+              "channel": "Email",
+              "title": "Exclusivité VIP : Édition Limitée",
+              "timing": "Offre produit VIP uniquement",
+              "description": "Produit réservé VIP",
+              "content": "Créé exclusivement pour nos membres Maître Culinaire : [Produit Limité]. Seulement 200 disponibles, non vendu au public."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Invitation Dégustation Virtuelle avec [Chef]",
+              "timing": "Invitation événement VIP",
+              "description": "Événement exclusif VIP",
+              "content": "Vous êtes invité(e) ! Rejoignez-nous pour une dégustation virtuelle exclusive avec [Chef/Producteur]. Dégustez des produits rares et apprenez directement de la source. 🍷"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Résumé VIP Mensuel",
+              "timing": "Mensuel",
+              "description": "Mise à jour statut VIP mensuelle",
+              "content": "Ce mois : [X] points gagnés, [X] utilisés, [X] avant prochaine récompense. Vos avantages VIP : [Avantages Actifs]. Merci d'être un [Marque] [Palier] !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Reconquête & Réengagement",
+      "target": "Clients inactifs sans achat depuis 60-180 jours",
+      "objective": "Réactiver 15% des clients inactifs et récupérer 10% des abonnés churned",
+      "kpi": "Taux de réactivation clients inactifs (cible: 15%), Récupération abonnés churned (cible: 10%), ROI campagne reconquête (cible: 4:1), Rétention post-réactivation (cible: 50%)",
+      "description": "Séquences de réengagement stratégiques pour différentes périodes d'inactivité et segments clients. Adresse les raisons courantes d'abandon—budget, concurrence, changements de vie—avec des offres personnalisées et mises à jour produits.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients inactifs 60-90 jours (alerte précoce)",
+          "scenario_objective": "Réengager avant l'inactivité complète",
+          "main_messages_ideas": "Vous nous manquez, quoi de neuf, recommandations personnalisées, incentive léger",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Nous Avez Manqué !",
+              "timing": "J+60",
+              "description": "Réengagement soft",
+              "content": "Cela fait un moment depuis votre dernière visite. Voici ce qui est nouveau depuis votre absence—dont 5 produits que nous pensons que vous allez adorer."
+            },
+            {
+              "channel": "Email",
+              "title": "On Pense Toujours à Vous",
+              "timing": "J+75",
+              "description": "Basé sur achats passés",
+              "content": "Vous vous souvenez combien vous avez aimé [Achat Passé] ? Il est toujours là, ainsi que de nouvelles arrivées dans la même catégorie."
+            },
+            {
+              "channel": "Email",
+              "title": "Un Petit Quelque Chose pour Vous",
+              "timing": "J+90",
+              "description": "Premier incentive",
+              "content": "Voici 10% sur votre prochaine commande—juste comme ça. Plus la livraison gratuite sur les commandes de plus de 35€. Valable 2 semaines."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients inactifs 120-180 jours (inactivité prolongée)",
+          "scenario_objective": "Reconquête agressive avec incentive fort",
+          "main_messages_ideas": "Offre significative, nouveaux produits manqués, demande de feedback, tentative finale",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "On Vous Veut de Retour : 25% de Réduction",
+              "timing": "J+120",
+              "description": "Incentive fort",
+              "content": "Ça fait trop longtemps ! Voici 25% sur toute votre commande—sans minimum. Plus découvrez tout ce que vous avez manqué ces [X] derniers mois."
+            },
+            {
+              "channel": "Email",
+              "title": "Pouvons-Nous Vous Reconquérir ?",
+              "timing": "J+150",
+              "description": "Orienté feedback",
+              "content": "Nous aimerions savoir ce qui vous ferait revenir. Répondez à cette enquête d'1 minute et recevez 10€ de crédit quelle que soit votre réponse."
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Exclusive Finale",
+              "timing": "J+175",
+              "description": "Dernière tentative avant suppression",
+              "content": "Dernière chance : 30% + livraison gratuite + un échantillon gratuit de notre choix. Si vous n'êtes plus intéressé, dites-le nous et nous réduirons les emails."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abonnés churned (annulés dans les 90 derniers jours)",
+          "scenario_objective": "Comprendre la raison du churn et récupérer",
+          "main_messages_ideas": "Feedback annulation, offres améliorées, offre de réactivation spéciale, mise en avant flexibilité",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nous Sommes Désolés de Vous Voir Partir",
+              "timing": "J+3 post-annulation",
+              "description": "Demande de feedback post-annulation",
+              "content": "Nous avons remarqué que vous avez annulé votre abonnement. Nous aimerions comprendre pourquoi—vos retours nous aident à nous améliorer pour tous."
+            },
+            {
+              "channel": "Email",
+              "title": "Les Choses Ont Changé",
+              "timing": "J+30",
+              "description": "Améliorations depuis le départ",
+              "content": "Depuis votre départ, nous avons ajouté [Nouvelle Fonctionnalité/Produit]. Envie de réessayer ? Réabonnez-vous avec 20% sur vos 3 premiers mois."
+            },
+            {
+              "channel": "Email",
+              "title": "Plus Flexible Que Jamais",
+              "timing": "J+60",
+              "description": "Adresser les préoccupations de flexibilité",
+              "content": "Besoin de plus de contrôle ? Nos abonnements vous permettent maintenant de sauter des mois, changer de produits et ajuster la fréquence à tout moment. Réabonnez-vous sans engagement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programme Parrainage & Ambassadeurs",
+      "target": "Clients satisfaits avec scores NPS élevés, avis positifs récents ou fort engagement",
+      "objective": "Générer 20% des nouveaux clients via parrainage avec 25% de LTV supérieure pour les clients parrainés et 15% de taux de participation au parrainage",
+      "kpi": "Taux de nouveaux clients via parrainage (cible: 20%), LTV client parrainé vs organique (cible: +25%), Taux de participation parrainage (cible: 15%), Parrainages moyens par ambassadeur (cible: 3,5)",
+      "description": "Programme de parrainage bilatéral avec des récompenses significatives pour le parrain et le filleul. Cible les clients satisfaits aux moments de satisfaction maximale et facilite le partage via plusieurs canaux.",
+      "scenarios": [
+        {
+          "scenario_target": "Moments post-achat de haute satisfaction",
+          "scenario_objective": "Capturer les parrainages aux pics de satisfaction",
+          "main_messages_ideas": "Partagez l'amour, offre récompense double, outils de partage faciles, suivi du succès",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Avez Aimé ? Partagez l'Amour !",
+              "timing": "J+3 après avis 5 étoiles ou feedback positif",
+              "description": "Capitaliser sur la satisfaction",
+              "content": "Merci pour ce super retour ! Partagez [Marque] avec vos amis : Donnez 15€, Recevez 15€ quand ils font leur premier achat."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Lien de Parrainage Est Prêt",
+              "timing": "J+5",
+              "description": "Outils de partage faciles",
+              "content": "Partagez votre lien unique par SMS, email ou sur les réseaux. Suivez vos parrainages et récompenses dans votre espace client."
+            },
+            {
+              "channel": "SMS",
+              "title": "Votre Ami Vient de Commander !",
+              "timing": "Déclenché par conversion parrainage",
+              "description": "Notification de conversion",
+              "content": "Super nouvelle ! [Prénom de l'Ami] vient de faire son premier achat avec votre parrainage. 15€ de crédit ont été ajoutés à votre compte !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients fidèles et parrains récurrents",
+          "scenario_objective": "Construire un programme ambassadeurs avec récompenses améliorées",
+          "main_messages_ideas": "Statut parrainage VIP, récompenses améliorées, programme ambassadeurs, reconnaissance sociale",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Êtes un Ambassadeur [Marque] !",
+              "timing": "Après 3+ parrainages réussis",
+              "description": "Bienvenue programme ambassadeurs",
+              "content": "Vous avez parrainé 3 amis ! Bienvenue dans notre programme Ambassadeurs avec récompenses améliorées : 20€ par parrainage + avantages exclusifs Ambassadeurs."
+            },
+            {
+              "channel": "Email",
+              "title": "Exclusivité Ambassadeurs : Récompenses Doublées",
+              "timing": "Promotion ambassadeurs mensuelle",
+              "description": "Boost temporaire récompenses",
+              "content": "Ce mois seulement : Les Ambassadeurs gagnent des récompenses DOUBLÉES (40€ par parrainage). Partagez maintenant et maximisez vos gains !"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Impact Parrainage",
+              "timing": "Récap trimestriel",
+              "description": "Résumé trimestriel",
+              "content": "Ce trimestre : [X] amis ont rejoint, [X]€ de récompenses gagnées, [X] commandes passées par vos filleuls. Merci de faire passer le mot !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Anniversaires & Occasions Spéciales",
+      "target": "Tous les clients avec date d'anniversaire enregistrée, plus occasions spéciales identifiables",
+      "objective": "Atteindre 45% de taux de redemption offre anniversaire et 30% de taux d'achat lié aux occasions avec 20% de panier supérieur sur les commandes anniversaire",
+      "kpi": "Redemption offre anniversaire (cible: 45%), Taux d'achat occasion (cible: 30%), Panier anniversaire vs régulier (cible: +20%), Capture données anniversaire (cible: 60%)",
+      "description": "Programme axé sur la célébration qui reconnaît les anniversaires et occasions spéciales (anniversaires client, jalons alimentaires, réussites culinaires) avec des offres personnalisées et recommandations de produits parfaits pour célébrer.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients approchant leur anniversaire",
+          "scenario_objective": "Générer un achat de célébration anniversaire",
+          "main_messages_ideas": "Gâterie d'anniversaire anticipée, sélections festives, produits gourmands, offres semaine anniversaire",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Mois d'Anniversaire Est Arrivé !",
+              "timing": "Premier jour du mois d'anniversaire",
+              "description": "Lancement du mois anniversaire",
+              "content": "Joyeux mois d'anniversaire ! Voici 20% de réduction exclusifs pour vous faire plaisir. Plus, nous avons sélectionné des produits gourmands juste pour célébrer."
+            },
+            {
+              "channel": "Email",
+              "title": "Gourmandises de Semaine d'Anniversaire",
+              "timing": "1 semaine avant l'anniversaire",
+              "description": "Compte à rebours anniversaire",
+              "content": "Compte à rebours anniversaire ! Vos 20% vous attendent. Voici des douceurs décadentes et des produits dignes de célébration pour rendre votre journée spéciale."
+            },
+            {
+              "channel": "SMS",
+              "title": "Joyeux Anniversaire de [Marque] !",
+              "timing": "Jour de l'anniversaire",
+              "description": "Message du jour J",
+              "content": "Joyeux Anniversaire ! N'oubliez pas d'utiliser votre remise spéciale cette semaine. Vous méritez quelque chose de délicieux !"
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Chance : Offre Anniversaire Expirante",
+              "timing": "3 jours après l'anniversaire",
+              "description": "Rappel expiration",
+              "content": "Votre offre anniversaire expire dans 3 jours ! Faites-vous plaisir avec [Produits Recommandés] avant que votre réduction ne disparaisse."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Anniversaires client et jalons",
+          "scenario_objective": "Reconnaître et récompenser les jalons client",
+          "main_messages_ideas": "Anniversaire client, jalons d'achat, célébration parcours alimentaire",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Joyeux Anniversaire [Marque] !",
+              "timing": "1 an anniversaire client",
+              "description": "Célébration première année",
+              "content": "Cela fait 1 an depuis votre première commande ! Merci de faire partie de notre communauté d'amateurs de cuisine. Voici un cadeau spécial pour célébrer."
+            },
+            {
+              "channel": "Email",
+              "title": "Jalon Débloqué : [X] Commandes !",
+              "timing": "Jalons de nombre d'achats (10, 25, 50)",
+              "description": "Célébration jalon",
+              "content": "Vous avez passé [X] commandes chez nous ! C'est [Y] recettes inspirées, [Z] repas partagés. Voici une récompense spéciale de remerciement."
+            },
+            {
+              "channel": "Email",
+              "title": "Célébration de Votre Parcours [Régime]",
+              "timing": "Anniversaire régime (ex: 6 mois d'achats keto)",
+              "description": "Célébration parcours alimentaire",
+              "content": "6 mois d'alimentation [Régime] ! Vous avez régulièrement choisi des produits [Régime]. Voici les nouvelles arrivées pour continuer votre parcours délicieusement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Lancements Produits & Éditions Limitées",
+      "target": "Clients engagés, abonnés et membres VIP selon correspondance profil gustatif",
+      "objective": "Atteindre 35% de taux de conversion early access, écouler les éditions limitées sous 72h et générer 50% du CA lancement des clients fidèles",
+      "kpi": "Taux de conversion early access (cible: 35%), Temps d'écoulement éditions limitées (cible: <72h), CA lancement des fidèles (cible: 50%), Taux de pré-commande (cible: 20%)",
+      "description": "Séquences de lancement stratégiques avec early access par paliers (VIP d'abord, puis abonnés, puis grand public). Crée l'excitation autour des arrivages saisonniers, collaborations producteurs et produits en édition limitée tout en récompensant les clients fidèles.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients matchés par profil gustatif pour nouveaux lancements",
+          "scenario_objective": "Générer les ventes de lancement avec pertinence personnalisée",
+          "main_messages_ideas": "Aperçu exclusif, pourquoi vous allez adorer, histoire du fondateur, early access",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Aperçu : [Nouveau Produit] Arrive",
+              "timing": "1 semaine avant lancement",
+              "description": "Preview pré-lancement",
+              "content": "Quelque chose de délicieux arrive ! Vu votre amour pour les [Produits Similaires], nous pensons que vous allez adorer [Nouveau Produit]. Lancement le [Date]."
+            },
+            {
+              "channel": "Email",
+              "title": "L'Histoire Derrière [Nouveau Produit]",
+              "timing": "3 jours avant",
+              "description": "Histoire fondateur/producteur",
+              "content": "Rencontrez [Producteur] derrière notre nouvelle arrivée : [Nouveau Produit]. Découvrez le savoir-faire, la tradition et la passion dans chaque bouchée."
+            },
+            {
+              "channel": "Email",
+              "title": "Early Access : [Nouveau Produit] Est En Ligne",
+              "timing": "Jour de lancement",
+              "description": "Early access VIP/abonnés",
+              "content": "Vous y êtes ! [Nouveau Produit] est disponible MAINTENANT pour les [VIP/Abonnés]. Achetez en avance du lancement public dans 48 heures."
+            },
+            {
+              "channel": "SMS",
+              "title": "[Nouveau Produit] Maintenant Disponible",
+              "timing": "Lancement public",
+              "description": "Annonce lancement public",
+              "content": "[Nouveau Produit] est officiellement là ! Quantités limitées—commandez maintenant pour être parmi les premiers à le goûter."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Passionnés d'éditions limitées et sorties saisonnières",
+          "scenario_objective": "Créer l'urgence et maximiser les ventes d'éditions limitées",
+          "main_messages_ideas": "Messaging de rareté, opportunité de pré-commande, alertes réassort, FOMO",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Alerte Édition Limitée",
+              "timing": "Annonce avec rareté",
+              "description": "Lancement avec quantité limitée",
+              "content": "Seulement 500 disponibles : [Produit Limité] de [Producteur]. Une fois épuisé, c'est fini jusqu'à [Saison/Année] prochaine."
+            },
+            {
+              "channel": "SMS",
+              "title": "Pré-commandez Maintenant : [Produit Limité]",
+              "timing": "Ouverture pré-commande",
+              "description": "Lancement pré-commande",
+              "content": "Sécurisez le vôtre maintenant ! Pré-commandez [Produit Limité] pour garantir la livraison. Expédition le [Date]."
+            },
+            {
+              "channel": "Email",
+              "title": "S'écoule Vite : [X] Restants",
+              "timing": "Mise à jour rareté",
+              "description": "Update stock limité",
+              "content": "[Produit Limité] est à 70% épuisé ! Plus que [X] restants. Ne manquez pas votre chance."
+            },
+            {
+              "channel": "Email",
+              "title": "Rejoignez la Liste d'Attente",
+              "timing": "Après épuisement",
+              "description": "Gestion post-rupture",
+              "content": "[Produit Limité] épuisé ! Rejoignez la liste d'attente pour être notifié si nous en obtenons plus, ou quand il revient [Saison] prochaine."
             }
           ]
         }
@@ -182,23 +924,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Bienvenue & Profil Gustatif",
-      "why_brevo_is_better": "Le créateur de formulaires de Brevo capture les préférences gustatives qui alimentent directement l'automatisation, permettant des recommandations produits personnalisées dès le premier jour.",
-      "omnichannel_channels": "Email pour le contenu recettes riche + SMS pour les ventes flash et alertes stock",
-      "setup_efficiency": "Templates pré-construits pour l'industrie alimentaire avec logique de profil gustatif pour personnaliser à grande échelle."
+      "scenario_name": "Bienvenue & Découverte du Profil Gustatif",
+      "why_brevo_is_better": "Le constructeur de formulaires avancé et le profilage progressif de Brevo capturent les préférences gustatives qui alimentent directement les workflows d'automatisation, permettant des recommandations produits personnalisées dès le premier jour. Les blocs de contenu dynamique affichent différents produits selon les préférences alimentaires, les saveurs favorites et le style de cuisine.",
+      "omnichannel_channels": "Email pour contenu visuel riche et inspiration recettes + SMS pour offres de bienvenue sensibles au temps + WhatsApp pour complétion interactive du quiz + Push pour rappels de profil",
+      "setup_efficiency": "Templates bienvenue pré-construits pour l'industrie alimentaire avec logique de profil gustatif, branchement par préférences alimentaires et blocs de recommandations produits automatisés vous personnalisent en jours, pas en semaines."
     },
     {
       "scenario_name": "Réapprovisionnement & Abonnement",
-      "why_brevo_is_better": "Les déclencheurs de consommation basés sur les produits permettent des rappels de réapprovisionnement intelligents, tandis que la gestion des abonnements s'intègre parfaitement avec votre plateforme e-commerce.",
-      "omnichannel_channels": "Email pour les infos produit détaillées + SMS pour les rappels de récommande rapides",
-      "setup_efficiency": "Définissez les fenêtres de consommation par catégorie de produit et laissez l'automatisation gérer le timing."
+      "why_brevo_is_better": "Les déclencheurs de consommation par produit permettent un timing de réapprovisionnement précis par catégorie (café à 3 semaines, huiles à 6 semaines, épices à 3 mois). Les intégrations e-commerce suivent les dates d'achat et quantités de produits pour automatiser des rappels parfaitement timés et des offres d'abonnement.",
+      "omnichannel_channels": "Email pour détails des avantages abonnement et offres bundles + SMS pour liens récommande one-click rapides + Push pour alertes urgentes stock bas + WhatsApp pour gestion personnalisée d'abonnement",
+      "setup_efficiency": "Configurez les fenêtres de consommation par catégorie de produit une fois et laissez l'automatisation Brevo gérer tout le timing, la segmentation et l'escalade basés sur le comportement client."
     },
     {
-      "scenario_name": "Engagement Recettes & Contenu",
-      "why_brevo_is_better": "Les blocs de contenu dynamique vous permettent de personnaliser les recommandations de recettes selon l'historique d'achat et le profil gustatif de chaque client.",
-      "omnichannel_channels": "Email pour les recettes visuelles + Intégration blog/site web + Partage social",
-      "setup_efficiency": "Templates de contenu organisés par catégorie de produit pour faciliter l'association recettes/achats."
+      "scenario_name": "Campagnes Saisonnières & Fêtes",
+      "why_brevo_is_better": "Templates de campagnes saisonnières pré-construits avec layouts guides cadeaux, compteurs à rebours et alertes délais d'expédition. Le contenu dynamique s'ajuste automatiquement selon les fuseaux horaires clients et dates limites d'expédition.",
+      "omnichannel_channels": "Email pour guides cadeaux riches et collections saisonnières + SMS pour délais d'expédition et ventes flash + WhatsApp pour statut commande et mises à jour livraison + Push pour alertes dernière minute",
+      "setup_efficiency": "Les templates de campagnes saisonnières avec timing, segments et blocs de contenu pré-configurés vous permettent de lancer des campagnes fêtes en heures. Le suivi de performance année après année optimise les saisons futures."
+    },
+    {
+      "scenario_name": "Recettes & Engagement Contenu",
+      "why_brevo_is_better": "Les blocs de contenu dynamique personnalisent les recommandations de recettes basées sur l'historique d'achat de chaque client, son profil gustatif et ses préférences alimentaires. Les emails recettes achetables avec listes d'ingrédients one-click génèrent la conversion directement depuis le contenu.",
+      "omnichannel_channels": "Email pour recettes visuelles et plans de repas + Intégration Blog/site pour découverte de recettes + Partage social pour construction de communauté + SMS pour liens rapides recette-du-jour + Push pour nouveaux contenus",
+      "setup_efficiency": "Templates de contenu organisés par catégorie de produit, préférence alimentaire et niveau de compétence cuisine facilitent le matching des recettes aux profils clients. Les calendriers de contenu automatisés réduisent la curation manuelle."
+    },
+    {
+      "scenario_name": "Programme Fidélité & VIP",
+      "why_brevo_is_better": "L'intégration fidélité de Brevo suit les points à travers achats, avis et engagement recettes avec progression de paliers automatisée et notifications de récompenses. Les segments VIP permettent l'accès exclusif aux produits et invitations événements.",
+      "omnichannel_channels": "Email pour mises à jour de palier et catalogues récompenses + SMS pour solde de points et alertes redemption + Push pour early access VIP + WhatsApp pour invitations événements exclusifs",
+      "setup_efficiency": "Déclencheurs fidélité, seuils de paliers et catalogues de récompenses pré-configurés mettent votre programme en ligne rapidement. Le reporting automatisé montre le ROI par palier et identifie les VIP à risque."
     }
   ],
-  "conclusion": "Les retailers alimentaires et gastronomiques qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à des taux de conversion abonnement plus élevés, une valeur vie client accrue grâce à l'automatisation du réapprovisionnement, et une fidélité à la marque plus forte grâce au contenu personnalisé et à la découverte gustative."
+  "conclusion": "Les détaillants alimentaires et gastronomiques qui implémentent ces programmes de marketing relationnel complets peuvent s'attendre à des améliorations significatives sur tous les indicateurs clés : taux de conversion abonnement supérieurs à 20%, augmentations de lifetime value de 45%+ pour les membres VIP, et hausses de CA de 35% pendant les pics saisonniers. La combinaison de découverte gustative personnalisée, automatisation de réapprovisionnement intelligente, engagement via le contenu et récompenses fidélité par paliers crée un avantage concurrentiel durable. En accompagnant les clients là où ils en sont dans leur parcours culinaire—de la première découverte à l'ambassadorat de marque—vous construisez non seulement des clients, mais une communauté d'amateurs de cuisine passionnés qui choisissent votre marque encore et encore."
 }

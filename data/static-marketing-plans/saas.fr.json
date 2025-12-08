@@ -1,201 +1,781 @@
 {
-  "introduction": "Ce plan marketing relationnel est conçu pour les entreprises SaaS souhaitant optimiser le cycle de vie client, de l'essai à l'expansion, grâce à une communication et un engagement stratégiques.",
+  "introduction": "Ce plan marketing relationnel complet est conçu pour les entreprises SaaS utilisant des stratégies de Product-Led Growth (PLG) combinées à des approches d'accompagnement commercial. Le plan adresse les dynamiques uniques du B2B software où le succès client impacte directement le chiffre d'affaires via les renouvellements d'abonnement, l'expansion et l'advocacy. Le succès en SaaS nécessite de comprendre que le parcours client s'étend bien au-delà de la vente initiale - de l'activation d'essai jusqu'à l'adoption continue, l'expansion, et finalement devenir un champion de votre produit. Ce plan met l'accent sur les déclencheurs comportementaux, la segmentation basée sur l'usage et la communication axée valeur sur l'ensemble du cycle de vie client.",
   "company_summary": {
     "name": "Entreprise SaaS",
     "website": "exemple-saas.com",
-    "activities": "Fournisseur de Software as a Service offrant des solutions business cloud, outils de productivité ou applications spécialisées",
-    "target": "Décideurs B2B et utilisateurs finaux dans les PME et grandes entreprises recherchant des solutions logicielles efficaces et évolutives",
+    "activities": "Fournisseur de Software as a Service offrant des solutions business cloud, outils de productivité, plateformes de collaboration ou applications verticales spécialisées",
+    "target": "Décideurs B2B (niveau VP/Directeur), utilisateurs finaux, administrateurs IT et équipes achats dans les PME et grandes entreprises recherchant des solutions logicielles efficaces et évolutives",
     "industry": "SaaS",
-    "business_model": "B2B Abonnement"
+    "target_audience": "Principal : Utilisateurs business et team leads qui expérimentent la valeur au quotidien (70%), Secondaire : Décideurs et détenteurs du budget (20%), Tertiaire : Parties prenantes IT/Sécurité/Achats (10%)",
+    "nb_employees": "50-500",
+    "business_model": "B2B Abonnement (Mensuel/Annuel)",
+    "customer_lifecycle_key_steps": "Découverte > Inscription > Activation > Première Valeur > Adoption Fonctionnalités > Expansion Équipe > Upgrade Plan > Renouvellement > Advocacy"
   },
   "programs_list": [
     {
-      "program_name": "Conversion Essai vers Payant",
-      "target": "Utilisateurs en essai gratuit",
-      "objective": "Convertir les utilisateurs d'essai en clients payants avant expiration",
-      "kpi": "Taux de conversion essai vers payant, Temps jusqu'à première valeur, Adoption fonctionnalités pendant l'essai",
-      "description": "Séquence d'onboarding stratégique pour démontrer la valeur et générer la conversion pendant la période d'essai.",
+      "program_name": "Activation Essai & Conversion",
+      "target": "Inscriptions essai gratuit et utilisateurs freemium",
+      "objective": "Atteindre 35% de conversion essai vers payant en guidant les utilisateurs vers les jalons d'activation et en démontrant la valeur centrale pendant la période d'essai",
+      "kpi": "Taux conversion essai vers payant (cible : 35%), Temps jusqu'à première valeur (cible : <24 heures), Complétion jalons activation (cible : 60%), Demandes prolongation essai (cible : <15%)",
+      "description": "Une séquence d'onboarding pilotée par le comportement qui guide les utilisateurs d'essai à travers les jalons d'activation clés tout en démontrant une valeur indéniable. Le programme adapte les messages selon la progression et le niveau d'engagement de l'utilisateur, assurant qu'aucun utilisateur d'essai ne passe entre les mailles du filet.",
       "scenarios": [
         {
-          "scenario_target": "Nouvelles inscriptions essai",
-          "scenario_objective": "Atteindre les jalons d'activation clés et générer la conversion",
-          "main_messages_ideas": "Guide de démarrage rapide, Tutoriel fonctionnalités clés, Success stories, Offre de conversion",
+          "scenario_target": "Nouvelles inscriptions essai à haute intention (inscription depuis page prix, démo ou recommandation)",
+          "scenario_objective": "Accélérer le temps jusqu'à la valeur et convertir pendant la période d'essai",
+          "main_messages_ideas": "Démarrage rapide personnalisé selon le cas d'usage, Activation fonctionnalité centrale, Démonstration de valeur, Preuve sociale d'entreprises similaires, Urgence fin d'essai",
           "message_sequence": [
             {
-              "title": "Bienvenue + Démarrage Rapide",
-              "description": "Immédiatement après inscription",
-              "content": "Bienvenue sur [Produit] ! Voici comment démarrer en 5 minutes"
+              "channel": "Email",
+              "title": "Bienvenue ! Atteignons Votre Première Réussite",
+              "timing": "Immédiat",
+              "description": "Immédiat : Démarrage rapide basé sur le cas d'usage",
+              "content": "Bienvenue sur [Produit] ! D'après votre inscription, il semble que vous cherchiez à [résoudre le problème X / atteindre l'objectif Y]. Voici le chemin le plus rapide vers votre première réussite : Complétez ces 3 étapes de configuration et la plupart des clients voient la valeur initiale sous 24 heures. C'est parti !"
             },
             {
-              "title": "Mise en Avant Fonctionnalité Clé",
-              "description": "Jour 2 : Proposition de valeur principale",
-              "content": "Avez-vous essayé [Fonctionnalité Clé] ? Voici comment elle vous fait gagner [X heures/euros]"
+              "channel": "Email",
+              "title": "Votre Checklist Configuration [Produit]",
+              "timing": "J+1",
+              "description": "Jour 1 : Si configuration incomplète",
+              "content": "Vous êtes à 2 étapes d'être entièrement configuré ! Complétez ces tâches rapides pour débloquer le plein potentiel de [Produit] : [Checklist personnalisée selon ce qui n'est pas fait]. Besoin d'aide ? Nos guides de configuration vous accompagnent sur chaque étape en moins de 5 minutes."
             },
             {
-              "title": "Success Story",
-              "description": "Jour 5 : Preuve sociale",
-              "content": "Comment [Entreprise] a atteint [Résultat] avec [Produit]"
+              "channel": "In-App",
+              "title": "Prompt Jalon Activation",
+              "timing": "À la connexion",
+              "description": "À la connexion si action clé non complétée",
+              "content": "Vous n'avez pas encore [action d'activation clé]. Complétez-la maintenant pour commencer à [voir de la valeur/gagner du temps/atteindre votre objectif]."
             },
             {
-              "title": "Rappel Fin d'Essai",
-              "description": "3 jours avant la fin de l'essai",
-              "content": "Votre essai se termine dans 3 jours - Ne perdez pas votre progression"
+              "channel": "Email",
+              "title": "[Entreprise Similaire] Atteint [Résultat] avec [Produit]",
+              "timing": "J+3",
+              "description": "Jour 3 : Preuve sociale + mise en avant fonctionnalité",
+              "content": "Des entreprises comme la vôtre voient des résultats impressionnants avec [Produit]. [Entreprise Similaire] a atteint [résultat spécifique] en seulement [délai]. La clé ? Ils se sont concentrés sur [fonctionnalité]. Voici comment vous pouvez faire pareil."
             },
             {
-              "title": "Offre de Conversion Finale",
-              "description": "Dernier jour d'essai",
-              "content": "Dernière chance : Upgradez maintenant et obtenez [Offre]"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Onboarding Client",
-      "target": "Nouveaux clients payants",
-      "objective": "Stimuler l'adoption produit et le temps jusqu'à la valeur dans les 30 premiers jours",
-      "kpi": "Taux de complétion onboarding, Adoption fonctionnalités, Temps jusqu'à la valeur",
-      "description": "Séquence d'onboarding complète garantissant que les clients atteignent leur premier succès rapidement.",
-      "scenarios": [
-        {
-          "scenario_target": "Nouveaux clients par type de plan",
-          "scenario_objective": "Compléter les jalons d'onboarding clés",
-          "main_messages_ideas": "Guidance configuration, Aide intégration, Best practices, Check-in succès",
-          "message_sequence": [
-            {
-              "title": "Bienvenue + Configuration",
-              "description": "Jour 1 : Guide de configuration compte",
-              "content": "Bienvenue à bord ! Configurons votre [Produit] pour le succès"
+              "channel": "SMS",
+              "title": "Question Rapide de [Produit]",
+              "timing": "J+5",
+              "description": "Jour 5 : Si faible engagement",
+              "content": "Bonjour [Prénom], j'ai remarqué que vous vous êtes inscrit sur [Produit] mais n'avez pas encore [action clé]. Qu'est-ce qui vous retient ? Répondez avec vos questions - je suis là pour aider ! - [Nom CSM]"
             },
             {
-              "title": "Configuration Clé",
-              "description": "Jour 3 : Paramètres essentiels",
-              "content": "5 paramètres à configurer pour une valeur maximale"
+              "channel": "Email",
+              "title": "Vos Résultats d'Essai Jusqu'ici",
+              "timing": "J+7",
+              "description": "Jour 7 (mi-essai) : Résumé de progression",
+              "content": "Voici ce que vous avez accompli avec [Produit] jusqu'ici : [Stats d'usage, temps économisé, actions complétées]. Vous êtes en bonne voie pour [bénéfice projeté]. Pour obtenir encore plus de valeur avant la fin de votre essai, essayez [prochaine fonctionnalité recommandée]."
             },
             {
-              "title": "Guide d'Intégration",
-              "description": "Jour 7 : Connectez vos outils",
-              "content": "Connectez [Produit] avec vos outils favoris"
+              "channel": "Email",
+              "title": "Votre Essai Se Termine dans 5 Jours",
+              "timing": "J-5 avant fin",
+              "description": "5 jours avant fin d'essai : Prompt conversion",
+              "content": "Votre essai [Produit] se termine dans 5 jours, mais la valeur que vous avez créée n'a pas à disparaître. Vous avez [résumé accomplissements]. Passez au payant maintenant pour garder vos [données/workflows/intégrations] et continuer à progresser. Les plans démarrent à [X]€/mois."
             },
             {
-              "title": "Best Practices",
-              "description": "Jour 14 : Conseils utilisateur avancé",
-              "content": "Comment les power users tirent le meilleur de [Produit]"
+              "channel": "Email",
+              "title": "Dernier Jour : Ne Perdez Pas Votre Progression",
+              "timing": "Dernier jour",
+              "description": "Jour final : Urgence avec résumé de valeur",
+              "content": "Votre essai se termine aujourd'hui à minuit. Tout ce que vous avez construit - [éléments spécifiques] - sera verrouillé demain sauf si vous passez au payant. Choisissez votre plan maintenant et reprenez exactement où vous en étiez. [Options d'upgrade]"
             },
             {
-              "title": "Check-in Succès",
-              "description": "Jour 30 : Check satisfaction",
-              "content": "Comment ça se passe ? Assurons-nous que vous obtenez de la valeur"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Adoption Fonctionnalités & Engagement",
-      "target": "Clients actifs selon leurs patterns d'utilisation",
-      "objective": "Augmenter l'adoption des fonctionnalités et la sticky-ness produit",
-      "kpi": "Taux d'adoption fonctionnalités, Ratio DAU/MAU, Fréquence des sessions",
-      "description": "Campagnes déclenchées par l'utilisation pour encourager l'adoption des fonctionnalités sous-utilisées.",
-      "scenarios": [
-        {
-          "scenario_target": "Clients n'utilisant pas les fonctionnalités clés",
-          "scenario_objective": "Stimuler l'adoption des fonctionnalités à haute valeur",
-          "main_messages_ideas": "Spotlight fonctionnalité, Exemples de cas d'usage, Contenu tutoriel, Métriques de succès",
-          "message_sequence": [
-            {
-              "title": "Introduction Fonctionnalité",
-              "description": "Basé sur déclencheur de non-utilisation",
-              "content": "Le saviez-vous ? [Fonctionnalité] peut vous aider à [Bénéfice]"
-            },
-            {
-              "title": "Guide Pratique",
-              "description": "Jour 3 après l'intro",
-              "content": "Guide rapide : Démarrer avec [Fonctionnalité]"
-            },
-            {
-              "title": "Témoignage Client",
-              "description": "Jour 7 : Exemple concret",
-              "content": "Voyez comment [Client] utilise [Fonctionnalité] pour [Résultat]"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Expansion & Upsell",
-      "target": "Clients à forte utilisation approchant les limites du plan",
-      "objective": "Générer des upgrades de plan et expansion de sièges",
-      "kpi": "Revenus d'expansion, Taux d'upgrade, Rétention nette des revenus",
-      "description": "Communication stratégique aux comptes en croissance concernant les opportunités d'upgrade.",
-      "scenarios": [
-        {
-          "scenario_target": "Clients à 80%+ des limites du plan",
-          "scenario_objective": "Upgrade proactif avant d'atteindre les limites",
-          "main_messages_ideas": "Utilisation approchant la limite, Avantages upgrade, Calculateur ROI, Expansion équipe",
-          "message_sequence": [
-            {
-              "title": "Alerte Utilisation",
-              "description": "À 80% de la limite",
-              "content": "Vous approchez votre [Limite] - Voici vos options"
-            },
-            {
-              "title": "Avantages Upgrade",
-              "description": "À 90% de la limite",
-              "content": "Débloquez plus avec [Plan Supérieur] : Ce que vous obtiendrez"
-            },
-            {
-              "title": "Cas ROI",
-              "description": "Si limites atteintes régulièrement",
-              "content": "Le ROI de l'upgrade : Ce que voient les clients comme vous"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "program_name": "Prévention Churn & Win-Back",
-      "target": "Clients à risque et clients perdus",
-      "objective": "Prévenir le churn et récupérer les clients perdus",
-      "kpi": "Réduction du taux de churn, Taux de win-back, Revenus de réactivation",
-      "description": "Intervention proactive pour les comptes à risque et campagnes de win-back pour les clients perdus.",
-      "scenarios": [
-        {
-          "scenario_target": "Clients avec utilisation en déclin",
-          "scenario_objective": "Réengager avant annulation",
-          "main_messages_ideas": "Outreach check-in, Rappel de valeur, Offre support, Enquête de départ",
-          "message_sequence": [
-            {
-              "title": "Check-In",
-              "description": "Quand l'utilisation baisse significativement",
-              "content": "Nous avons remarqué que vous ne vous êtes pas connecté récemment - Tout va bien ?"
-            },
-            {
-              "title": "Rappel de Valeur",
-              "description": "Si pas de réponse",
-              "content": "Voici ce que vous manquez : [Mises à jour clés et valeur]"
-            },
-            {
-              "title": "Offre Support",
-              "description": "Si toujours en déclin",
-              "content": "Remettons-vous sur les rails : Consultation gratuite disponible"
+              "channel": "SMS",
+              "title": "Essai Se Termine Ce Soir",
+              "timing": "Dernier jour",
+              "description": "Jour final : Rappel SMS",
+              "content": "L'essai [Produit] se termine ce soir ! Ne perdez pas votre [progression/données]. Passez au payant en 2 clics : [Lien]"
             }
           ]
         },
         {
-          "scenario_target": "Clients récemment perdus",
-          "scenario_objective": "Win-back sous 90 jours",
-          "main_messages_ideas": "Tu nous manques, Quoi de neuf, Offre de retour, Demande de feedback",
+          "scenario_target": "Utilisateurs d'essai non activés (pas d'action clé dans les 3 premiers jours)",
+          "scenario_objective": "Réengager et guider vers le jalon d'activation",
+          "main_messages_ideas": "Identification des obstacles, Démarrage simplifié, Offre démo/aide, Points d'entrée alternatifs",
           "message_sequence": [
             {
-              "title": "Tu Nous Manques",
-              "description": "30 jours après le churn",
-              "content": "Vous nous manquez ! Voici les nouveautés chez [Produit]"
+              "channel": "Email",
+              "title": "Besoin d'Aide pour Démarrer ?",
+              "timing": "J+3",
+              "description": "Jour 3 : Si pas d'activation",
+              "content": "Nous avons remarqué que vous n'avez pas encore [action d'activation clé], et nous voulons nous assurer que rien ne vous bloque. Les obstacles les plus courants qu'on nous rapporte : [liste d'obstacles]. Quoi qu'il en soit, nous pouvons vous aider. Répondez à cet email ou réservez un appel de configuration gratuit de 15 minutes."
             },
             {
-              "title": "Offre de Retour",
-              "description": "60 jours après le churn",
-              "content": "Revenez sur [Produit] : [Offre spéciale] rien que pour vous"
+              "channel": "Email",
+              "title": "Essayez Ce Démarrage Rapide en 5 Minutes",
+              "timing": "J+5",
+              "description": "Jour 5 : Onboarding simplifié",
+              "content": "Peut-être que notre configuration standard vous a semblé accablante. Voici le chemin le plus simple vers la valeur : Faites UNE seule chose - [action unique la plus impactante]. Ça prend 5 minutes et vous verrez immédiatement pourquoi les clients adorent [Produit]. Essayez !"
+            },
+            {
+              "channel": "In-App",
+              "title": "Démo Live Disponible",
+              "timing": "À chaque connexion",
+              "description": "À chaque connexion : Offre d'aide",
+              "content": "Vous voulez une présentation personnalisée ? Notre équipe est disponible pour une démo live gratuite. Réservez votre créneau."
+            },
+            {
+              "channel": "Email",
+              "title": "Avant la Fin de Votre Essai : Parlons",
+              "timing": "J+10",
+              "description": "Jour 10 : Si toujours pas activé",
+              "content": "Votre essai se termine bientôt et nous n'avons pas eu l'occasion de vous montrer ce que [Produit] peut vraiment faire. Pouvons-nous planifier un appel rapide ? Parfois une conversation de 10 minutes révèle le cas d'usage parfait. Ou dites-nous ce que vous espériez accomplir - nous avons peut-être un chemin plus rapide."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Onboarding & Adoption Nouveau Client",
+      "target": "Clients payants récemment convertis dans leurs 90 premiers jours",
+      "objective": "Atteindre 70% de taux de complétion d'onboarding et conduire les clients à l'adoption complète des fonctionnalités sous 90 jours",
+      "kpi": "Taux complétion onboarding (cible : 70%), Temps jusqu'à valeur complète (cible : <30 jours), Largeur adoption fonctionnalités (cible : 5+ fonctionnalités utilisées), Taux rétention 90 jours (cible : 95%)",
+      "description": "Un programme d'onboarding complet qui transforme les nouveaux clients en power users grâce à un accompagnement basé sur le rôle, des célébrations de jalons et un support proactif. Le programme reconnaît que différents rôles utilisateurs nécessitent différents parcours d'onboarding.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveaux clients - Admin/Propriétaire principal du compte",
+          "scenario_objective": "Compléter la configuration administrative et permettre le succès de l'équipe",
+          "main_messages_ideas": "Configuration compte, Invitation équipe, Configuration sécurité/conformité, Activation intégrations, Best practices admin",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bienvenue sur [Produit] - Votre Guide de Configuration Admin",
+              "timing": "Immédiat",
+              "description": "Immédiat : Bienvenue orientée admin",
+              "content": "Félicitations d'avoir choisi [Produit] ! En tant qu'admin du compte, vous détenez les clés du succès de votre équipe. Voici votre checklist prioritaire pour la première semaine : 1) Configurez les paramètres de votre workspace, 2) Définissez les rôles et permissions utilisateurs, 3) Invitez votre équipe, 4) Connectez vos intégrations. Chaque étape a un guide rapide - rendons votre équipe productive rapidement !"
+            },
+            {
+              "channel": "Email",
+              "title": "Invitez Votre Équipe - Voici la Meilleure Approche",
+              "timing": "J+2",
+              "description": "Jour 2 : Guidance déploiement équipe",
+              "content": "Prêt à embarquer votre équipe ? Voici le playbook que les admins performants utilisent : [Best practices pour le déploiement équipe]. Nous avons préparé des templates d'invitation personnalisables et un planning de formation équipe qui fonctionne. Astuce : Commencez par votre membre d'équipe le plus enthousiaste comme champion !"
+            },
+            {
+              "channel": "Email",
+              "title": "Connectez Vos Outils : Guide d'Intégration",
+              "timing": "J+4",
+              "description": "Jour 4 : Focus intégrations",
+              "content": "[Produit] devient encore plus puissant une fois connecté à vos outils existants. D'après ce que nous savons de votre stack technique, voici les intégrations que nous recommandons de commencer : [Intégrations pertinentes]. Chacune prend moins de 10 minutes à configurer."
+            },
+            {
+              "channel": "In-App",
+              "title": "Suggestion d'Intégration",
+              "timing": "Selon patterns d'usage",
+              "description": "Basé sur les patterns d'usage",
+              "content": "Saviez-vous que [Produit] s'intègre avec [Outil qu'ils utilisent probablement] ? Connectez maintenant pour synchroniser les données automatiquement."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Premier Mois : Rapport de Succès Admin",
+              "timing": "J+30",
+              "description": "Jour 30 : Progression et recommandations",
+              "content": "Un mois passé ! Voici comment se porte votre équipe : [Stats d'usage, métriques d'adoption, utilisateurs actifs]. Vous êtes dans le top [X%] des nouveaux comptes ! Voici ce que font les équipes performantes ensuite : [Recommandations spécifiques]. Plus des conseils de notre équipe Customer Success."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nouveaux clients - Utilisateurs finaux (invités par l'admin)",
+          "scenario_objective": "Conduire l'adoption individuelle et l'habitude d'usage quotidien",
+          "main_messages_ideas": "Démarrage rapide personnel, Workflows spécifiques au rôle, Conseils productivité, Découverte fonctionnalités, Encouragement à l'usage",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Nom Admin] Vous a Invité sur [Produit]",
+              "timing": "Immédiat",
+              "description": "Immédiat : Invitation utilisateur",
+              "content": "[Nom Admin] vous a invité à rejoindre le workspace [Entreprise] sur [Produit] ! Voici ce que [Produit] va vous aider à faire : [3 bénéfices clés pertinents pour leur rôle]. Commencez maintenant - il ne faut que 2 minutes pour configurer votre compte."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Démarrage Rapide Personnel [Produit]",
+              "timing": "J+1",
+              "description": "Jour 1 : Après activation du compte",
+              "content": "Bienvenue sur [Produit] ! Votre équipe l'utilise déjà pour [objectif équipe]. Voici comment vous y mettre : Complétez cette configuration de 5 minutes et vous serez productif aujourd'hui. Nous avons aussi créé des raccourcis pour vos tâches les plus courantes."
+            },
+            {
+              "channel": "In-App",
+              "title": "Guidance Première Tâche",
+              "timing": "Première connexion",
+              "description": "À la première connexion : Tutoriel interactif",
+              "content": "Complétons votre première [type de tâche] ensemble ! Suivez ces 3 étapes..."
+            },
+            {
+              "channel": "Email",
+              "title": "Conseils Productivité pour Votre Rôle",
+              "timing": "J+7",
+              "description": "Jour 7 : Conseils spécifiques au rôle",
+              "content": "D'après comment les personnes avec des rôles similaires utilisent [Produit], voici les meilleurs raccourcis productivité : [Conseils et workflows spécifiques au rôle]. Maîtrisez-les et vous économiserez [X] heures par semaine."
+            },
+            {
+              "channel": "Push",
+              "title": "Nouvelle Fonctionnalité pour Vous",
+              "timing": "J+14",
+              "description": "Jour 14 : Découverte fonctionnalité",
+              "content": "Essayez [Nom Fonctionnalité] - les utilisateurs comme vous économisent 30 min/semaine avec cette fonctionnalité"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Adoption Fonctionnalités & Engagement Produit",
+      "target": "Clients actifs selon les lacunes d'usage de fonctionnalités",
+      "objective": "Augmenter la largeur d'adoption des fonctionnalités de 40% et améliorer la sticky-ness produit via la formation d'habitudes quotidiennes",
+      "kpi": "Taux adoption fonctionnalités (cible : +40%), Ratio DAU/MAU (cible : >40%), Fonctionnalités utilisées par utilisateur (cible : 8+), Fréquence sessions (cible : 4+ par semaine)",
+      "description": "Un programme déclenché par le comportement qui identifie les lacunes d'usage de fonctionnalités et délivre une éducation contextuelle pour stimuler l'adoption. Le programme comprend que les fonctionnalités non utilisées représentent une valeur non réalisée et un risque de churn accru.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients n'utilisant pas les fonctionnalités à haute valeur qui correspondent à leur cas d'usage",
+          "scenario_objective": "Stimuler l'adoption des fonctionnalités sous-utilisées avec une proposition de valeur claire",
+          "main_messages_ideas": "Proposition de valeur fonctionnalité, Tutoriel étape par étape, Exemple cas d'usage client, Démonstration ROI, Célébration adoption",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Passez à Côté de [Fonctionnalité]",
+              "timing": "Déclencheur : Non-usage 30+ jours",
+              "description": "Déclenché quand fonctionnalité clé non utilisée depuis 30+ jours",
+              "content": "Nous avons remarqué que vous n'avez pas encore essayé [Fonctionnalité], et c'est l'un de nos outils les plus impactants pour les équipes comme la vôtre. Voici ce que vous manquez : [Bénéfices spécifiques avec métriques]. Les entreprises utilisant [Fonctionnalité] voient [X% d'amélioration] sur [métrique]. Prêt à essayer ?"
+            },
+            {
+              "channel": "In-App",
+              "title": "Spotlight Fonctionnalité",
+              "timing": "Prochaine connexion après email",
+              "description": "Prochaine connexion après email : Prompt contextuel",
+              "content": "Essayez [Fonctionnalité] aujourd'hui - elle vous aide à [bénéfice spécifique]. Commencez avec ce guide rapide."
+            },
+            {
+              "channel": "Email",
+              "title": "[Fonctionnalité] en Action : Comment [Entreprise] l'Utilise",
+              "timing": "J+5 après email initial",
+              "description": "5 jours après l'email initial",
+              "content": "Toujours curieux de [Fonctionnalité] ? Voici un exemple concret : [Entreprise Similaire] utilise [Fonctionnalité] pour [workflow spécifique]. Résultat : [Résultat quantifié]. Nous avons inclus une vidéo walkthrough montrant exactement comment ils l'ont configuré."
+            },
+            {
+              "channel": "Email",
+              "title": "Félicitations ! Vous Avez Débloqué [Fonctionnalité]",
+              "timing": "Quand fonctionnalité utilisée",
+              "description": "Quand fonctionnalité utilisée pour la première fois : Célébration + profondeur",
+              "content": "Vous l'avez fait ! Vous avez commencé à utiliser [Fonctionnalité]. Super premier pas ! Maintenant voici comment obtenir encore plus de valeur : [Conseils avancés et usage niveau supérieur]. Vous êtes en route pour devenir un power user."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Utilisateurs avec engagement en déclin (baisse d'usage >30% semaine après semaine)",
+          "scenario_objective": "Réengager avant que le désengagement ne devienne permanent",
+          "main_messages_ideas": "Check-in, Nouvelles fonctionnalités, Rappel conseils, Offre d'aide, Success stories",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Nous Avez Manqué sur [Produit]",
+              "timing": "Après 7 jours d'usage réduit",
+              "description": "Après 7 jours d'usage réduit",
+              "content": "Nous avons remarqué que vous avez été moins actif sur [Produit] dernièrement. Est-ce que tout fonctionne comme prévu ? Pendant votre absence, nous avons livré [nouvelles fonctionnalités/améliorations]. Voici ce que vous avez peut-être manqué et comment ça peut aider avec [leur cas d'usage]."
+            },
+            {
+              "channel": "In-App",
+              "title": "Bon Retour ! Voici les Nouveautés",
+              "timing": "À la connexion de retour",
+              "description": "À la connexion de retour",
+              "content": "Bon retour ! Voici les nouveautés depuis votre dernière visite : [Résumé mises à jour]"
+            },
+            {
+              "channel": "Email",
+              "title": "Conseils Rapides pour Reprendre le Rythme",
+              "timing": "J+10",
+              "description": "Jour 10 : Si engagement toujours bas",
+              "content": "Parfois nous avons tous besoin d'un rafraîchissement ! Voici des conseils rapides pour redynamiser votre usage de [Produit] : [3 conseils actionnables]. Ou si quelque chose ne fonctionne pas pour vous, nous sommes là pour trouver une meilleure approche."
+            },
+            {
+              "channel": "SMS",
+              "title": "Check-In Personnel",
+              "timing": "J+14",
+              "description": "Jour 14 : Pour comptes à haute valeur",
+              "content": "Bonjour [Prénom], j'ai remarqué que l'usage de [Produit] a baissé. Un sujet qu'on peut vous aider ? Je serais ravi de faire un point rapide. - [Nom CSM]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expansion Compte & Upsell",
+      "target": "Clients à fort usage et comptes approchant ou dépassant les limites de plan",
+      "objective": "Atteindre 120% de rétention nette des revenus via une expansion proactive et des conversations d'upgrade basées sur la valeur",
+      "kpi": "Revenus expansion (cible : 120% NRR), Taux d'upgrade (cible : 25%), Taux expansion sièges (cible : 30%), Délai du signal à l'expansion (cible : <30 jours)",
+      "description": "Un programme axé croissance qui identifie les opportunités d'expansion via les signaux d'usage et délivre des messages d'upgrade parfaitement timés. Le programme met l'accent sur la réalisation de valeur plutôt que les tactiques de pression.",
+      "scenarios": [
+        {
+          "scenario_target": "Comptes à 80%+ des limites du plan (sièges, stockage, fonctionnalités)",
+          "scenario_objective": "Upgrade proactif avant que les limites ne deviennent des bloqueurs",
+          "main_messages_ideas": "Usage approchant la limite, Bénéfices upgrade, Analyse ROI, Chemin d'upgrade fluide, Urgence suppression limite",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Super Progression ! Vous Approchez Votre Limite de Plan",
+              "timing": "À 80% d'une limite",
+              "description": "À 80% de n'importe quelle limite",
+              "content": "Votre équipe décolle vraiment avec [Produit] ! Vous utilisez maintenant [X%] de vos [sièges/stockage/appels API]. C'est une super nouvelle - ça signifie que vous obtenez une vraie valeur. Avant d'atteindre votre limite, voici vos options : [Options d'upgrade avec bénéfices clairs]. La plupart des clients dans votre situation choisissent [plan recommandé]."
+            },
+            {
+              "channel": "In-App",
+              "title": "Alerte Usage",
+              "timing": "À 90% de la limite",
+              "description": "À 90% de la limite : Notification proéminente",
+              "content": "Vous êtes à 90% de votre [limite]. Passez au plan supérieur maintenant pour éviter l'interruption de service."
+            },
+            {
+              "channel": "Email",
+              "title": "Le ROI de l'Upgrade : Une Analyse Rapide",
+              "timing": "À 95% de la limite",
+              "description": "À 95% de la limite",
+              "content": "Vous êtes presque à votre limite, alors parlons valeur. D'après votre usage, passer au [Plan Supérieur] vous permettrait de : [Calculs ROI spécifiques]. L'investissement : [X]€/mois de plus. Le retour : [Bénéfices quantifiés]. La plupart des équipes voient le ROI sous [délai]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Limite de Plan Atteinte",
+              "timing": "Quand limite atteinte",
+              "description": "Quand limite atteinte",
+              "content": "[Urgent] Votre limite de plan [Produit] a été atteinte. Passez au plan supérieur maintenant pour continuer sans interruption : [Lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Comptes montrant des signaux de croissance (nouveaux membres équipe, nouveaux cas d'usage)",
+          "scenario_objective": "Capitaliser sur les moments de croissance avec des offres d'expansion pertinentes",
+          "main_messages_ideas": "Reconnaissance équipe qui grandit, Bénéfices plan équipe, Expansion département, Preview fonctionnalités entreprise",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Équipe Grandit - Évoluons Ensemble",
+              "timing": "Quand plusieurs utilisateurs ajoutés rapidement",
+              "description": "Quand plusieurs utilisateurs ajoutés sur une courte période",
+              "content": "Félicitations pour la croissance de votre équipe ! Nous avons remarqué de nouveaux membres rejoignant votre workspace [Produit]. En vous développant, vous pourriez bénéficier de nos fonctionnalités [Équipe/Business] : [Bénéfices upgrade pertinents]. Nous offrons aussi des remises volume qui pourraient vous faire économiser [X%]."
+            },
+            {
+              "channel": "Email",
+              "title": "Prêt pour le Prochain Département ?",
+              "timing": "Quand expansion nouveaux cas d'usage détectée",
+              "description": "Quand expansion dans de nouveaux cas d'usage détectée",
+              "content": "Nous avons remarqué que votre équipe utilise [Produit] pour [nouveau cas d'usage]. C'est exactement comment les autres entreprises en croissance étendent leur adoption de [Produit] ! Voulez-vous voir comment [Exemple Entreprise] a déployé [Produit] à l'échelle de l'entreprise ? Nous avons un playbook et un support dédié pour les déploiements inter-départements."
+            },
+            {
+              "channel": "In-App",
+              "title": "Preview Fonctionnalités Entreprise",
+              "timing": "Pour comptes qualifiés",
+              "description": "Pour comptes qualifiés",
+              "content": "À mesure que votre équipe grandit, explorez nos fonctionnalités entreprise : SSO, permissions avancées, support dédié. Découvrir maintenant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Santé Client & Prévention Churn",
+      "target": "Comptes à risque basés sur la baisse du score de santé",
+      "objective": "Réduire le churn brut à <5% via une intervention proactive et des efforts de récupération dédiés",
+      "kpi": "Taux churn brut (cible : <5%), Taux de sauvegarde comptes à risque (cible : 60%), Amélioration score de santé (cible : +20 points), Délai d'intervention (cible : <48 heures)",
+      "description": "Un programme proactif qui surveille les signaux de santé client et déclenche une intervention avant que les comptes n'atteignent le point d'annulation. Le programme combine l'outreach automatisé avec une escalade humaine pour les comptes à haute valeur.",
+      "scenarios": [
+        {
+          "scenario_target": "Comptes avec score de santé en déclin (baisse d'usage, tickets support, problèmes de facturation)",
+          "scenario_objective": "Intervenir tôt et adresser les problèmes avant la décision d'annulation",
+          "main_messages_ideas": "Check-in proactif, Reconnaissance des problèmes, Offre de solution, Support escaladé, Implication executive",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Un Point Rapide : Comment Pouvons-Nous Vous Aider ?",
+              "timing": "Quand score santé passe sous le seuil",
+              "description": "Quand score de santé passe sous le seuil",
+              "content": "Bonjour [Prénom], je voulais vous contacter personnellement. Nous avons remarqué quelques changements dans la façon dont votre équipe utilise [Produit], et je veux m'assurer que tout fonctionne bien pour vous. Y a-t-il quelque chose qui empêche votre équipe d'obtenir pleine valeur ? Je suis là pour aider à résoudre tout défi."
+            },
+            {
+              "channel": "Email",
+              "title": "On Vous a Entendu - Voici Comment On Vous Aide",
+              "timing": "Si tickets support indiquent des problèmes",
+              "description": "Si tickets support indiquent des problèmes",
+              "content": "J'ai vu vos tickets support récents concernant [catégorie de problème]. Je veux que vous sachiez que nous prenons ça au sérieux. Voici ce que nous faisons : [Actions/corrections spécifiques]. Je vous assigne aussi un contact support dédié pour assurer une résolution plus rapide à l'avenir."
+            },
+            {
+              "channel": "SMS",
+              "title": "Contact Personnel",
+              "timing": "Pour comptes à risque haute valeur",
+              "description": "Pour comptes à haute valeur à risque",
+              "content": "Bonjour [Prénom], c'est [Nom CSM] de [Produit]. J'aimerais 15 min pour discuter de comment on peut mieux vous accompagner. Disponible pour parler ? [Lien calendrier]"
+            },
+            {
+              "channel": "Email",
+              "title": "Trouvons la Bonne Solution pour Vous",
+              "timing": "Si déclin continue malgré outreach",
+              "description": "Si déclin continue malgré l'outreach",
+              "content": "Je sais que les choses n'ont pas été parfaites avec [Produit] dernièrement, et je m'engage à arranger ça. Pouvons-nous planifier un appel cette semaine ? J'ai quelques idées, incluant : [Solutions potentielles comme ajustements de plan, consultations fonctionnalités, sessions de formation]. Votre succès nous tient à cœur."
+            },
+            {
+              "channel": "Email",
+              "title": "Un Message de Notre [CEO/VP Customer Success]",
+              "timing": "Pour comptes entreprise à risque",
+              "description": "Pour comptes entreprise à risque : Escalade executive",
+              "content": "Bonjour [Prénom], je suis [Executive], et je voulais vous contacter personnellement. Je comprends que vous avez rencontré des difficultés avec [Produit], et ce n'est pas acceptable. J'aimerais comprendre votre situation directement et m'assurer que nous trouvons une solution. Pouvons-nous planifier 20 minutes cette semaine ?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Comptes montrant des signaux d'annulation (visite page annulation, demandes de downgrade)",
+          "scenario_objective": "Intervention de dernière chance pour sauver le compte",
+          "main_messages_ideas": "Alternative à l'annulation, Option pause, Plan réduit, Collecte feedback, Message porte ouverte",
+          "message_sequence": [
+            {
+              "channel": "In-App",
+              "title": "Avant de Partir...",
+              "timing": "Visite page annulation",
+              "description": "À la visite de la page d'annulation",
+              "content": "Nous avons remarqué que vous envisagez d'annuler. Avant de le faire, souhaiteriez-vous : Parler à quelqu'un de vos défis, Mettre votre compte en pause temporairement, ou Passer à un plan plus petit ? On détesterait vous voir partir."
+            },
+            {
+              "channel": "Email",
+              "title": "Pouvons-Nous Parler Avant Que Vous N'Annuliez ?",
+              "timing": "Après visite page annulation sans action",
+              "description": "Après visite page annulation mais pas d'action",
+              "content": "J'ai vu que vous avez visité notre page d'annulation, et je voulais vous contacter personnellement. Quelle que soit la raison de cette décision, j'aimerais avoir la chance d'en discuter. Parfois une conversation rapide révèle des solutions auxquelles on n'avait pas pensé. Nous accorderiez-vous 10 minutes ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Alternatives à l'Annulation",
+              "timing": "Après outreach initial si pas de réponse",
+              "description": "Après outreach initial si pas de réponse",
+              "content": "Si le coût ou la valeur est la préoccupation, nous avons des options : [Option pause compte], [Option plan réduit], [Option support étendu]. Nous sommes flexibles parce que nous préférons trouver une solution que vous perdre. Qu'est-ce qui vous aiderait le plus ?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Réactivation",
+      "target": "Clients perdus dans les 12 derniers mois",
+      "objective": "Réactiver 15% des comptes perdus sous 180 jours après le départ",
+      "kpi": "Taux win-back (cible : 15%), Revenus réactivation, Délai de réactivation (cible : <90 jours), Rétention client réactivé à 6 mois (cible : 80%)",
+      "description": "Un programme stratégique pour réengager les anciens clients avec des raisons convaincantes de revenir. Le programme adapte les messages selon la raison du churn et met en avant les améliorations faites depuis leur départ.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients partis pour des fonctionnalités manquantes ou problèmes d'adéquation produit",
+          "scenario_objective": "Reconquérir avec des mises à jour fonctionnalités/produit qui adressent leurs préoccupations",
+          "main_messages_ideas": "On a changé, Annonce nouvelle fonctionnalité, Demande client implémentée, Essai gratuit pour voir les changements",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "On a Construit Ce Que Vous Aviez Demandé",
+              "timing": "Quand fonctionnalité demandée livrée",
+              "description": "Quand la fonctionnalité demandée est livrée",
+              "content": "Bonjour [Prénom], vous avez quitté [Produit] parce que [fonctionnalité/capacité] n'était pas disponible. J'ai une bonne nouvelle : Nous venons de livrer [nouvelle fonctionnalité] qui répond directement à votre besoin. Aimeriez-vous la voir en action ? J'adorerais vous montrer comment ça fonctionne."
+            },
+            {
+              "channel": "Email",
+              "title": "[Produit] a Changé - Voici les Nouveautés",
+              "timing": "J+90 après churn",
+              "description": "90 jours après le churn : Résumé mises à jour majeures",
+              "content": "Beaucoup de choses ont changé chez [Produit] depuis votre départ. Ces 90 derniers jours, nous avons livré : [Améliorations clés pertinentes pour leur cas d'usage]. Les entreprises revenues après avoir essayé des alternatives nous disent [citation/témoignage]. Prêt pour un nouveau regard ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Essai Gratuit : Découvrez le Nouveau [Produit]",
+              "timing": "Si pas de réponse à mise à jour fonctionnalité",
+              "description": "Si pas de réponse à mise à jour fonctionnalité",
+              "content": "Les actes valent mieux que les mots. Voici un essai gratuit de 30 jours pour expérimenter le nouveau [Produit]. Vos anciennes données sont toujours là, et vous pouvez reprendre où vous en étiez. Sans engagement - voyez simplement si on a mérité de reconquérir votre confiance."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients partis pour des préoccupations de prix/budget",
+          "scenario_objective": "Reconquérir avec des options de tarification pertinentes ou promotions",
+          "main_messages_ideas": "Nouvelles options tarification/plan, Alternative budget-friendly, Promotion saisonnière, Démonstration ROI",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nouvelles Options de Tarification chez [Produit]",
+              "timing": "Quand nouvelle tarification lancée ou anniversaire renouvellement",
+              "description": "Quand nouvelle tarification lancée ou à l'anniversaire du renouvellement",
+              "content": "Bonjour [Prénom], vous aviez mentionné que le budget était une préoccupation quand vous avez quitté [Produit]. Je voulais vous informer de nos nouvelles options de tarification : [Détails nouveau plan ou tarification]. Nous offrons aussi [remise annuelle/tarification startup/remise association] qui pourrait mieux convenir à votre situation."
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Spéciale pour Vous Accueillir de Nouveau",
+              "timing": "Moment stratégique (Q1, anniversaire renouvellement)",
+              "description": "À un moment stratégique (Q1, anniversaire renouvellement)",
+              "content": "Nous adorerions vous retrouver sur [Produit]. Pour les clients de retour, nous offrons [X% de remise/X mois gratuits/tarif spécial]. Ce n'est pas une promotion permanente - juste notre façon de dire que nous valorisons votre business et voulons une autre chance de prouver notre valeur."
+            },
+            {
+              "channel": "Email",
+              "title": "Le Vrai Coût de Ne Pas Avoir [Produit]",
+              "timing": "J+60 après tentative win-back initiale",
+              "description": "60 jours après tentative win-back initiale",
+              "content": "Depuis que vous avez quitté [Produit], comment votre équipe gère-t-elle [problème que Produit résout] ? Nos clients nous disent qu'ils économisent [X heures/euros] par mois - ce qui couvre largement le coût de l'abonnement. Voulez-vous qu'on fasse un calcul ROI rapide pour votre équipe ?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Renouvellement & Rétention",
+      "target": "Clients approchant le renouvellement de contrat (60-90 jours avant)",
+      "objective": "Atteindre 95% de taux de renouvellement brut et 85% de complétion de renouvellement à temps",
+      "kpi": "Taux renouvellement brut (cible : 95%), Taux renouvellement à temps (cible : 85%), Taux expansion au renouvellement (cible : 30%), Taux renouvellement tardif (cible : <10%)",
+      "description": "Un programme de renouvellement proactif qui commence la démonstration de valeur tôt et assure des renouvellements de contrat fluides. Le programme identifie les opportunités d'expansion tout en supprimant les frictions du processus de renouvellement.",
+      "scenarios": [
+        {
+          "scenario_target": "Comptes sains approchant le renouvellement (60-90 jours avant)",
+          "scenario_objective": "Sécuriser le renouvellement anticipé avec opportunité d'expansion",
+          "main_messages_ideas": "Résumé de valeur, Incitation renouvellement anticipé, Recommandation expansion, Option multi-années",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Année avec [Produit] : Rapport d'Impact",
+              "timing": "J-90 avant renouvellement",
+              "description": "90 jours avant renouvellement",
+              "content": "Comme votre renouvellement approche, nous voulions partager ce que vous avez accompli avec [Produit] cette année : [Stats d'usage, métriques ROI, temps économisé, objectifs atteints]. Vous êtes dans le top [X%] des comptes ! Voici à une autre année de succès ensemble."
+            },
+            {
+              "channel": "Email",
+              "title": "Renouvelez Tôt, Obtenez Plus",
+              "timing": "J-75 avant renouvellement",
+              "description": "75 jours avant renouvellement",
+              "content": "Votre renouvellement arrive le [date]. Renouvelez avant le [date anticipée] et nous inclurons : [Bénéfice renouvellement anticipé - mois supplémentaires, tarif bloqué, fonctionnalités bonus]. De plus, basé sur votre croissance, vous pourriez bénéficier d'un upgrade vers [plan supérieur]. Voulez-vous discuter de vos options ?"
+            },
+            {
+              "channel": "In-App",
+              "title": "Rappel Renouvellement",
+              "timing": "J-60 avant renouvellement",
+              "description": "60 jours avant renouvellement",
+              "content": "Votre abonnement [Produit] se renouvelle le [date]. Consultez et renouvelez maintenant pour assurer un service ininterrompu."
+            },
+            {
+              "channel": "Email",
+              "title": "Planifions l'Année Prochaine",
+              "timing": "J-45 avant renouvellement",
+              "description": "45 jours avant renouvellement : Discussion expansion",
+              "content": "Pendant que nous préparons votre renouvellement, je voulais discuter de vos plans pour l'année prochaine. D'après votre usage, vous pourriez bénéficier de : [Recommandations spécifiques]. Auriez-vous 20 minutes pour parler de comment on peut vous préparer pour encore plus de succès ?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Rappel Renouvellement",
+              "timing": "J-30 avant renouvellement",
+              "description": "30 jours avant renouvellement",
+              "content": "Rappel : Votre abonnement [Produit] se renouvelle le [date]. Complétez votre renouvellement pour maintenir l'accès : [Lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Comptes à risque approchant le renouvellement",
+          "scenario_objective": "Adresser les préoccupations et sécuriser le renouvellement malgré les défis",
+          "main_messages_ideas": "Résolution proactive des problèmes, Réunion revue d'usage, Offre renouvellement ajustée, Contact executive",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Assurons-nous Que Vous Obtenez Pleine Valeur",
+              "timing": "J-90 pour comptes à risque",
+              "description": "90 jours avant renouvellement pour comptes à risque",
+              "content": "Votre renouvellement approche, et je voulais me connecter avant. Je veux m'assurer que [Produit] délivre la valeur que vous attendiez. Pouvons-nous planifier une revue d'usage ? J'ai quelques idées pour améliorer vos résultats avant le moment du renouvellement."
+            },
+            {
+              "channel": "Email",
+              "title": "Une Option de Renouvellement Personnalisée pour Vous",
+              "timing": "J-60 si préoccupations",
+              "description": "60 jours avant renouvellement si préoccupations existent",
+              "content": "J'ai réfléchi à votre situation, et j'ai une proposition : [Option personnalisée - tarification ajustée, modification de plan, support étendu]. Je crois que ça correspond mieux à où vous en êtes aujourd'hui, et on peut grandir ensemble à partir de là. Qu'en pensez-vous ?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Un Point Rapide sur le Renouvellement ?",
+              "timing": "J-45 si pas de réponse",
+              "description": "45 jours avant si pas de réponse",
+              "content": "Bonjour [Prénom], je veux m'assurer que votre renouvellement se passe bien. 10 min pour en parler cette semaine ? [Lien calendrier] - [Nom CSM]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Advocacy Client & Parrainage",
+      "target": "Clients haute satisfaction (promoteurs NPS, fort usage, résultats réussis)",
+      "objective": "Générer 30% des nouveaux leads qualifiés via parrainages et advocacy clients",
+      "kpi": "Participation programme parrainage (cible : 25%), Conversion parrainage vers client (cible : 35%), Avis G2/Capterra (cible : 50+ par trimestre), Participation case study (cible : 10%)",
+      "description": "Un programme qui transforme les clients satisfaits en ambassadeurs actifs via des programmes de parrainage, demandes d'avis et développement de case studies. Le programme reconnaît que l'advocacy client est la forme de marketing la plus crédible.",
+      "scenarios": [
+        {
+          "scenario_target": "Promoteurs NPS (score 9-10) et clients à fort engagement",
+          "scenario_objective": "Activer comme sources de parrainage et contributeurs d'avis",
+          "main_messages_ideas": "Introduction programme parrainage, Demande d'avis, Notification succès parrainage, Invitation ambassadeur",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci ! Envie de Partager ?",
+              "timing": "Après soumission NPS 9-10",
+              "description": "Après soumission NPS 9-10",
+              "content": "Merci pour cet incroyable feedback ! Nous sommes ravis que [Produit] fonctionne bien pour vous. Si vous connaissez d'autres personnes qui pourraient bénéficier de notre solution, notre programme de parrainage vous donne à vous et votre filleul [récompense]. Partagez simplement votre lien unique : [Lien parrainage]"
+            },
+            {
+              "channel": "Email",
+              "title": "Partageriez-vous Votre Expérience sur [G2/Capterra] ?",
+              "timing": "J+7 après NPS positif",
+              "description": "7 jours après NPS positif",
+              "content": "Votre feedback signifie énormément pour nous, et il aiderait aussi d'autres à prendre de meilleures décisions. Prendriez-vous 5 minutes pour partager votre expérience sur [G2/Capterra] ? Les avis authentiques d'utilisateurs comme vous aident d'autres équipes à trouver la bonne solution."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Filleul [Prénom] Vient de S'Inscrire !",
+              "timing": "Quand parrainage converti",
+              "description": "Quand parrainage converti",
+              "content": "Super nouvelle ! [Prénom Filleul] vient de devenir client [Produit] grâce à votre recommandation. Vous avez gagné [récompense]. Merci de partager la bonne parole ! Envie de continuer les parrainages ? Partagez votre lien à nouveau : [Lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Rejoignez Notre Conseil Consultatif Client",
+              "timing": "Pour top ambassadeurs",
+              "description": "Pour top ambassadeurs : Invitation exclusive",
+              "content": "Vous avez été un incroyable ambassadeur pour [Produit], et nous aimerions vous inviter à quelque chose de spécial : notre Conseil Consultatif Client. En tant que membre, vous obtiendrez : [Bénéfices - accès anticipé, contribution produit directe, événements exclusifs]. Intéressé ?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients avec des success stories notables",
+          "scenario_objective": "Développer des case studies et références publiques",
+          "main_messages_ideas": "Reconnaissance du succès, Invitation case study, Parcours de participation facile, Reconnaissance et récompense",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vos Résultats avec [Produit] Sont Impressionnants !",
+              "timing": "Quand métriques notables atteintes",
+              "description": "Quand métriques notables atteintes",
+              "content": "J'ai regardé les résultats de votre équipe avec [Produit], et ils sont remarquables : [Accomplissements spécifiques]. Seriez-vous ouvert à partager votre histoire ? Nous adorerions vous mettre en avant comme case study. C'est une super visibilité pour votre équipe, et nous rendons le processus super facile."
+            },
+            {
+              "channel": "Email",
+              "title": "Case Study : Ce Que Ça Implique",
+              "timing": "Si intérêt montré",
+              "description": "Si intérêt montré",
+              "content": "Merci de considérer un case study ! Voici ce que ça implique : Une interview de 30 minutes (nous faisons toute la rédaction), votre approbation sur la version finale, et une composante photo/vidéo optionnelle. En retour : [Bénéfices visibilité, goodies, opportunités co-marketing]. Comment se présente la semaine prochaine pour l'interview ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Case Study Est en Ligne !",
+              "timing": "Quand publié",
+              "description": "Quand publié",
+              "content": "C'est en ligne ! Votre case study est maintenant sur notre site web et partagé sur tous nos canaux. Voici le lien à partager avec votre réseau : [Lien]. Merci d'être un partenaire si incroyable. En remerciement, nous vous avons envoyé [cadeau/récompense] !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Éducation Produit & Thought Leadership",
+      "target": "Tous les clients selon leur étape de cycle de vie et patterns d'usage",
+      "objective": "Augmenter la maîtrise produit et positionner la marque comme thought leader de l'industrie pour stimuler l'engagement",
+      "kpi": "Taux participation webinars (cible : 15%), Engagement ressources (cible : 40%), Complétion certification (cible : 20%), Participation communauté (cible : 25%)",
+      "description": "Un programme éducatif qui délivre de la valeur continue via des conseils produit, best practices et thought leadership industrie. Le programme construit une maîtrise produit plus profonde tout en positionnant la marque comme ressource experte.",
+      "scenarios": [
+        {
+          "scenario_target": "Tous les clients - éducation basée sur l'usage",
+          "scenario_objective": "Stimuler l'apprentissage continu et l'adoption des fonctionnalités avancées",
+          "main_messages_ideas": "Conseils hebdomadaires, Guides best practices, Deep dives cas d'usage, Certification power user, Highlights communauté",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Conseils [Produit] : Votre Boost Productivité de la Semaine",
+              "timing": "Hebdomadaire",
+              "description": "Hebdomadaire : Newsletter conseils",
+              "content": "Le conseil de cette semaine : [Conseil spécifique basé sur leurs patterns d'usage]. Saviez-vous que vous pouvez [raccourci/fonctionnalité] ? Les utilisateurs qui font ça économisent en moyenne [X] par semaine. Essayez aujourd'hui !"
+            },
+            {
+              "channel": "Email",
+              "title": "Best Practices : Guide [Sujet Pertinent]",
+              "timing": "Mensuel",
+              "description": "Mensuel : Best practices pertinentes",
+              "content": "Nous avons compilé les best practices de nos clients les plus performants sur [sujet pertinent à leur cas d'usage]. À l'intérieur : [Points clés à retenir]. Téléchargez le guide complet et voyez où vous en êtes."
+            },
+            {
+              "channel": "Email",
+              "title": "Workshop Live : [Fonctionnalité/Cas d'Usage] Avancé",
+              "timing": "Bi-mensuel",
+              "description": "Bi-mensuel : Invitation webinar",
+              "content": "Rejoignez-nous pour un workshop live sur [sujet avancé]. Apprenez de nos experts produit et power users qui ont maîtrisé [fonctionnalité/workflow]. Plus Q&A live pour répondre à vos questions spécifiques. Réservez votre place !"
+            },
+            {
+              "channel": "Email",
+              "title": "Devenez Expert Certifié [Produit]",
+              "timing": "Pour utilisateurs engagés",
+              "description": "Pour utilisateurs engagés : Programme certification",
+              "content": "Prêt à devenir expert [Produit] ? Notre programme de certification valide vos compétences et débloque des avantages exclusifs : [Badge, credential LinkedIn, accès communauté experts, accès anticipé fonctionnalités]. Commencez votre parcours certification aujourd'hui !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Tous les clients - thought leadership industrie",
+          "scenario_objective": "Construire l'autorité de marque et approfondir l'engagement via du contenu de valeur",
+          "main_messages_ideas": "Tendances industrie, Rapports benchmark, Interviews experts, Événements communauté",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Rapport Tendances [Industrie] : Édition 2025",
+              "timing": "Trimestriel",
+              "description": "Trimestriel : Insights industrie",
+              "content": "Notre rapport annuel tendances [Industrie] est là ! Basé sur les données de [X] entreprises et [Y] utilisateurs, découvrez : [Découvertes clés]. Où se situe votre équipe ? Téléchargez le rapport complet et benchmarkez-vous."
+            },
+            {
+              "channel": "Email",
+              "title": "Interview Expert : [Leader Industrie] sur [Sujet]",
+              "timing": "Mensuel",
+              "description": "Mensuel : Contenu thought leadership",
+              "content": "Nous avons rencontré [Nom Expert] de [Entreprise] pour discuter de [sujet pertinent]. Insight clé : [Citation]. Regardez l'interview complète pour des stratégies actionnables à implémenter dès aujourd'hui."
+            },
+            {
+              "channel": "Push",
+              "title": "Événement Live Demain",
+              "timing": "Rappel événement",
+              "description": "Rappel événement",
+              "content": "Ne manquez pas notre session live sur [Sujet] demain à [heure]. Réservez votre place !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Engagement Executive & Parties Prenantes",
+      "target": "Acheteurs économiques et décideurs dans les comptes clients",
+      "objective": "Construire des relations executives qui renforcent la valeur et soutiennent les décisions de renouvellement/expansion",
+      "kpi": "Taux engagement executive (cible : 40%), Participation QBR (cible : 60%), Identification sponsor executive (cible : 80%), Profondeur multi-threading (cible : 3+ contacts par compte)",
+      "description": "Un programme focalisé sur la construction de relations avec les acheteurs économiques et parties prenantes clés qui influencent les décisions de renouvellement et expansion. Le programme assure que les décideurs voient la valeur stratégique au-delà de l'usage quotidien.",
+      "scenarios": [
+        {
+          "scenario_target": "Sponsors executives et acheteurs économiques dans les comptes mid-market/entreprise",
+          "scenario_objective": "Construire une relation directe et démontrer la valeur stratégique",
+          "main_messages_ideas": "Résumé valeur executive, Invitation QBR, Networking entre pairs, Preview roadmap stratégique",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Rapport ROI [Produit] de Votre Équipe",
+              "timing": "Trimestriel",
+              "description": "Trimestriel : Résumé executive",
+              "content": "Bonjour [Nom Executive], en tant que [Titre] chez [Entreprise], je voulais partager un résumé de la valeur que votre équipe obtient de [Produit]. Ce trimestre : [Métriques ROI, temps économisé, objectifs atteints]. [Nom Team Lead] et son équipe font un excellent travail. Voici quelques domaines où nous voyons des opportunités pour encore plus d'impact."
+            },
+            {
+              "channel": "Email",
+              "title": "Invitation : Revue Business Trimestrielle",
+              "timing": "Trimestriel",
+              "description": "Trimestriel : Invitation QBR",
+              "content": "Je vous invite à notre revue business trimestrielle pour le compte [Entreprise] sur [Produit]. Nous couvrirons : Les résultats de votre équipe et benchmarks, l'alignement roadmap avec vos priorités, et les opportunités pour le prochain trimestre. Est-ce que [heure proposée] vous convient ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Exclusif : Table Ronde Entre Pairs Executives",
+              "timing": "Bi-annuel",
+              "description": "Bi-annuel : Networking executive",
+              "content": "Vous êtes invité à une table ronde exclusive avec d'autres leaders [rôle] d'entreprises comme [entreprises pairs]. Sujet : [Sujet pertinent niveau executive]. Cet événement intime est limité à 15 leaders et inclut un dîner. Vous joindrez-vous à nous ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Un Aperçu de Ce Qui Arrive",
+              "timing": "Annuel",
+              "description": "Annuel : Preview roadmap pour parties prenantes clés",
+              "content": "En tant que partenaire valorisé, je voulais vous donner un aperçu anticipé de notre roadmap produit. Thèmes clés pour l'année : [Priorités stratégiques]. J'aimerais votre feedback - qu'est-ce qui compte le plus pour [Entreprise] ? Planifions un moment pour discuter de comment notre roadmap s'aligne avec vos priorités."
             }
           ]
         }
@@ -204,23 +784,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Conversion Essai vers Payant",
-      "why_brevo_is_better": "L'automatisation basée sur les événements de Brevo vous permet de déclencher des messages selon les actions (ou inactions) des utilisateurs, assurant des nudges de conversion parfaitement synchronisés.",
-      "omnichannel_channels": "Email pour le contenu éducatif + Messages in-app pour les prompts contextuels + SMS pour les rappels urgents d'essai",
-      "setup_efficiency": "Templates SaaS pré-construits avec logique spécifique à l'essai pour démarrer rapidement."
+      "scenario_name": "Activation Essai & Conversion",
+      "why_brevo_is_better": "L'automatisation basée sur les événements de Brevo se connecte à vos analytics produit pour déclencher des messages basés sur le comportement utilisateur en temps réel. Quand un utilisateur complète (ou échoue à compléter) des jalons d'activation, des workflows automatisés délivrent des nudges parfaitement timés qui améliorent dramatiquement les taux de conversion d'essai.",
+      "omnichannel_channels": "Email pour contenu éducatif et mise en avant fonctionnalités + Messages in-app pour prompts d'activation contextuels + SMS pour rappels d'essai urgents et contact humain + Push pour réengagement et alertes deadline",
+      "setup_efficiency": "Workflows essai SaaS pré-construits avec déclencheurs comportementaux réduisent le temps d'implémentation de 60%. L'intégration API avec les plateformes analytics produit courantes (Segment, Mixpanel, Amplitude) permet un déploiement rapide."
     },
     {
       "scenario_name": "Adoption Fonctionnalités & Engagement",
-      "why_brevo_is_better": "L'intégration avec votre analytics produit permet des déclencheurs comportementaux qui atteignent les utilisateurs avec une éducation fonctionnalité pertinente au bon moment.",
-      "omnichannel_channels": "Email pour les tutoriels fonctionnalités + In-app pour les conseils contextuels + Push pour les rappels d'engagement",
-      "setup_efficiency": "L'intégration API avec votre produit permet des déclencheurs comportementaux en temps réel."
+      "why_brevo_is_better": "L'intégration avec votre base de données produit permet des déclencheurs basés sur le comportement qui atteignent les utilisateurs avec une éducation fonctionnalité pertinente précisément quand ils sont prêts. Le système identifie les lacunes d'usage des fonctionnalités et délivre des campagnes d'adoption personnalisées automatiquement.",
+      "omnichannel_channels": "Email pour tutoriels fonctionnalités et success stories + In-app pour conseils fonctionnalités contextuels et walkthroughs + Push pour rappels d'engagement et annonces nouvelles fonctionnalités + SMS pour contact personnel vers utilisateurs à haute valeur",
+      "setup_efficiency": "Templates adoption fonctionnalités avec déclencheurs comportementaux pré-construits peuvent être personnalisés pour vos fonctionnalités spécifiques en quelques heures. Les blocs de contenu dynamique assurent la pertinence sans créer des dizaines de campagnes séparées."
     },
     {
-      "scenario_name": "Prévention Churn & Win-Back",
-      "why_brevo_is_better": "Les déclencheurs de déclin d'utilisation permettent une intervention proactive avant que les clients ne partent, tandis que les campagnes de win-back segmentées ciblent efficacement les clients perdus.",
-      "omnichannel_channels": "Email pour le contenu de réengagement + Déclencheurs d'outreach personnel pour les comptes à haute valeur + SMS pour les offres de rétention urgentes",
-      "setup_efficiency": "L'intégration de prédiction de churn permet l'identification automatisée des clients à risque."
+      "scenario_name": "Santé Client & Prévention Churn",
+      "why_brevo_is_better": "Les déclencheurs de déclin d'usage et l'intégration du score de santé permettent une intervention proactive des jours ou semaines avant que les clients n'envisagent d'annuler. Le système route les comptes à risque haute valeur vers les CSMs tout en automatisant l'outreach pour les comptes plus petits.",
+      "omnichannel_channels": "Email pour check-ins proactifs et rappels de valeur + SMS pour contact personnel CSM + In-app pour prompts d'intervention et offres d'aide + Création de tâches pour suivi CSM sur les comptes critiques",
+      "setup_efficiency": "L'intégration du score de santé avec les plateformes CS courantes (Gainsight, ChurnZero, Totango) permet l'identification automatisée des risques et les workflows d'intervention avec une configuration minimale."
+    },
+    {
+      "scenario_name": "Expansion Compte & Upsell",
+      "why_brevo_is_better": "L'intégration de tracking d'usage identifie les signaux d'expansion (approche des limites, nouveaux cas d'usage, croissance équipe) et délivre des messages d'upgrade opportuns. Le système différencie entre les mouvements product-led et sales-assisted selon la taille du compte.",
+      "omnichannel_channels": "Email pour éducation upgrade et messaging ROI + In-app pour alertes usage et prompts upgrade + SMS pour avertissements limites urgents + Alertes vente pour opportunités d'expansion haute valeur",
+      "setup_efficiency": "Workflows d'expansion pré-construits avec déclencheurs basés sur les limites et contenu tarification dynamique peuvent être activés en quelques jours d'implémentation."
+    },
+    {
+      "scenario_name": "Advocacy Client & Parrainage",
+      "why_brevo_is_better": "L'intégration des réponses NPS déclenche les demandes d'advocacy aux moments de satisfaction maximale. Le système suit l'attribution des parrainages et automatise la distribution des récompenses tout en identifiant les top ambassadeurs pour un engagement plus profond.",
+      "omnichannel_channels": "Email pour promotion programme parrainage et notifications de succès + In-app pour partage et tracking fluides + Push pour alertes conversion parrainage + SMS pour remerciements personnels et invitations ambassadeur",
+      "setup_efficiency": "Templates programme parrainage avec tracking, attribution et automatisation des récompenses peuvent être lancés en une semaine. L'intégration avec les plateformes d'avis simplifie les demandes d'avis publics."
     }
   ],
-  "conclusion": "Les entreprises SaaS qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à des taux de conversion d'essai plus élevés, une rétention nette des revenus améliorée grâce à l'expansion proactive, et un churn réduit grâce à l'intervention précoce et aux campagnes de win-back stratégiques."
+  "conclusion": "Les entreprises SaaS qui implémentent ces programmes de marketing relationnel peuvent s'attendre à des taux de conversion essai vers payant significativement plus élevés, une rétention nette des revenus améliorée via une expansion proactive et la prévention du churn, et un moteur de croissance durable alimenté par l'advocacy client. Les programmes reconnaissent que dans les business d'abonnement, la vente initiale n'est que le début - le vrai succès vient de la délivrance continue de valeur, de la gestion proactive de la relation, et de la transformation des clients en champions. En combinant l'automatisation comportementale avec le contact humain aux moments critiques, ces programmes scalent efficacement tout en maintenant la connexion personnelle qui stimule le succès client long terme."
 }

@@ -1,184 +1,751 @@
 {
-  "introduction": "Ce plan marketing relationnel est conçu pour les entreprises de commerce de gros et distribution souhaitant renforcer leurs relations avec les détaillants et générer des commandes régulières grâce à une communication stratégique.",
+  "introduction": "Ce plan marketing relationnel complet est conçu pour les grossistes et distributeurs souhaitant construire des partenariats plus solides avec les détaillants, groupements d'achats et revendeurs. De l'acquisition de nouveaux comptes à l'avancement de niveau, ces programmes optimisent l'ensemble du cycle de vie détaillant pour générer des commandes régulières, l'expansion des assortiments et une croissance mutuelle à travers le canal de distribution.",
   "company_summary": {
     "name": "Entreprise de Commerce de Gros & Distribution",
     "website": "exemple-grossiste.com",
-    "activities": "Distribution B2B en gros, incluant sourcing produits, gestion des stocks et approvisionnement des détaillants",
-    "target": "Acheteurs retail, responsables achats et propriétaires d'entreprise ayant besoin d'un approvisionnement produit fiable pour leurs magasins",
+    "activities": "Distribution B2B en gros incluant sourcing produits, gestion des stocks, logistique et support détaillants à travers diverses catégories de produits",
+    "target": "Propriétaires de magasins retail, responsables achats, membres de groupements d'achats, category managers et opérateurs multi-sites ayant besoin d'un approvisionnement produit fiable",
     "industry": "Wholesale",
-    "business_model": "B2B Wholesale"
+    "business_model": "Distribution B2B en Gros",
+    "customer_lifecycle_key_steps": "Génération de Leads > Approbation Crédit > Configuration Compte > Première Commande > Établissement Cycle Commande > Expansion Assortiment > Avancement Niveau > Partenariat Stratégique > Advocacy"
   },
   "programs_list": [
     {
-      "program_name": "Onboarding Détaillant",
-      "target": "Nouveaux clients grossiste",
-      "objective": "Établir les habitudes de commande et construire des relations détaillants solides dès le premier jour",
-      "kpi": "Temps jusqu'à la première récommande, Satisfaction onboarding, Taux d'activation compte",
-      "description": "Onboarding complet pour aider les nouveaux détaillants à configurer leurs comptes et comprendre les processus de commande.",
+      "program_name": "Nurturing Leads Détaillants & Acquisition Comptes",
+      "target": "Détaillants prospects et nouvelles demandes commerciales",
+      "objective": "Convertir les prospects en comptes grossiste approuvés grâce à une qualification efficace et démonstration de valeur",
+      "kpi": "Conversion lead vers compte (cible: 25%), Taux de complétion demande (cible: 60%), Délai jusqu'à première commande (cible: <14 jours)",
+      "description": "Engagement stratégique pour démontrer la valeur du partenariat grossiste, simplifier le processus de candidature et accélérer l'activation des nouveaux comptes.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux comptes retail",
-          "scenario_objective": "Établir une relation de commande fluide",
-          "main_messages_ideas": "Configuration compte, Aperçu catalogue, Processus de commande, Support première commande",
+          "scenario_target": "Leads salon professionnel et demandes site web de détaillants potentiels",
+          "scenario_objective": "Convertir l'intérêt en demandes d'ouverture de compte grossiste",
+          "main_messages_ideas": "Avantages partenariat, Aperçu catalogue, Processus candidature, Avantages volume",
           "message_sequence": [
             {
-              "title": "Bienvenue au Partenariat",
-              "description": "Jour 1 : Confirmation du compte",
-              "content": "Bienvenue ! Votre compte grossiste est actif - Voici comment démarrer"
+              "channel": "Email",
+              "title": "Bienvenue chez [Entreprise] Grossiste",
+              "timing": "Immédiat après demande",
+              "description": "Immédiat : Post-demande",
+              "content": "Merci pour votre intérêt à devenir partenaire ! Voici un aperçu de ce que le partenariat grossiste inclut : prix compétitifs, approvisionnement fiable, support merchandising et commandes flexibles. Postulez en 5 minutes pour démarrer."
             },
             {
-              "title": "Points Forts du Catalogue",
-              "description": "Jour 2 : Aperçu produits",
-              "content": "Nos bestsellers : Des produits que vos clients vont adorer"
+              "channel": "Email",
+              "title": "Aperçu Catalogue Grossiste",
+              "timing": "J+2",
+              "description": "J2 : Démonstration de valeur",
+              "content": "Découvrez notre catalogue grossiste : bestsellers, lignes exclusives et produits à fortes marges. Consultez les prix de vente conseillés et votre remise grossiste. Prêt à voir vos marges réelles ? Complétez votre demande pour débloquer tous les prix."
             },
             {
-              "title": "Commander Facilement",
-              "description": "Jour 5 : Guide du processus",
-              "content": "Votre guide de commande : Minimums, livraison et conditions de paiement"
+              "channel": "SMS",
+              "title": "Point Candidature Rapide",
+              "timing": "J+4",
+              "description": "J4 : Contact personnel",
+              "content": "Bonjour [Prénom], j'ai vu que vous regardiez le partenariat grossiste. Des questions sur la candidature ou les conditions ? Répondez ici ou appelez le [numéro] - je suis là pour vous aider."
             },
             {
-              "title": "Check-in Première Commande",
-              "description": "Après la première commande",
-              "content": "Comment s'est passée votre première commande ? Nous sommes là pour vous aider"
+              "channel": "Email",
+              "title": "Ce Que Disent Nos Détaillants",
+              "timing": "J+7",
+              "description": "J7 : Preuve sociale",
+              "content": "Écoutez des détaillants comme vous : [Témoignages sur les avantages du partenariat, le service et la croissance]. Rejoignez [X] détaillants qui nous font confiance comme partenaire grossiste."
+            },
+            {
+              "channel": "Email",
+              "title": "Assistance Candidature Disponible",
+              "timing": "J+10",
+              "description": "J10 : Lever les freins",
+              "content": "Besoin d'aide pour votre candidature ? Notre équipe peut vous accompagner en 10 minutes par téléphone. Nous gérons les formalités pour que vous puissiez commencer à commander plus vite. Planifiez un appel ou répondez avec vos questions."
+            },
+            {
+              "channel": "Email",
+              "title": "Programme Démarrage Nouveau Détaillant",
+              "timing": "J+14",
+              "description": "J14 : Offre spéciale",
+              "content": "Offre nouveau partenaire : Postulez cette semaine et recevez [avantage démarrage - minimums réduits, livraison gratuite première commande, ou remise d'introduction]. Offre limitée pour les détaillants qualifiés."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Candidatures compte grossiste abandonnées",
+          "scenario_objective": "Réengager et compléter la configuration du compte",
+          "main_messages_ideas": "Récupération candidature, Offre d'assistance, Processus simplifié, Urgence",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Candidature Est Presque Complète",
+              "timing": "J+1 après abandon",
+              "description": "J1 après abandon",
+              "content": "Vous y êtes presque ! Votre demande grossiste est complète à 80%. Finissez en 2 minutes pour débloquer les prix grossiste et commencer à commander. Des questions qui vous bloquent ? Nous sommes là pour aider."
+            },
+            {
+              "channel": "SMS",
+              "title": "Besoin d'Aide pour la Candidature ?",
+              "timing": "J+3",
+              "description": "J3",
+              "content": "J'ai remarqué que vous avez commencé une candidature grossiste. Un blocage ? Répondez avec vos questions ou appelez le [numéro] - nous pouvons souvent approuver le jour même."
+            },
+            {
+              "channel": "Email",
+              "title": "Complétons Votre Configuration Ensemble",
+              "timing": "J+7",
+              "description": "J7",
+              "content": "Toujours intéressé par le partenariat grossiste ? Terminons votre candidature ensemble. Planifiez un appel rapide et notre équipe vous guidera - la plupart des candidatures sont approuvées sous 24 heures."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Automatisation des Récommandes",
-      "target": "Détaillants actifs avec patterns de commande réguliers",
-      "objective": "Assurer des récommandes régulières et prévenir les ruptures de stock",
-      "kpi": "Fréquence de récommande, Panier moyen, Rétention compte",
-      "description": "Rappels de récommande proactifs basés sur les patterns d'achat et cycles d'inventaire.",
+      "program_name": "Onboarding Nouveau Détaillant & Succès Première Commande",
+      "target": "Comptes grossiste nouvellement approuvés",
+      "objective": "Établir de bonnes habitudes de commande et assurer la satisfaction de la première commande",
+      "kpi": "Première commande sous 7 jours (cible: 70%), Satisfaction onboarding (cible: 90%), Récommande sous 30 jours (cible: 60%)",
+      "description": "Onboarding complet qui aide les nouveaux détaillants à naviguer dans les processus de commande, découvrir les produits et établir des patterns de vente réussis.",
       "scenarios": [
         {
-          "scenario_target": "Détaillants selon l'historique de commande",
-          "scenario_objective": "Générer des récommandes opportunes",
-          "main_messages_ideas": "Rappel récommande, Réapprovisionnement bestseller, Préparation saison, Économies volume",
+          "scenario_target": "Comptes retail nouvellement approuvés en attente de première commande",
+          "scenario_objective": "Générer une première commande rapide et établir la relation de commande",
+          "main_messages_ideas": "Bienvenue, Configuration compte, Guide commande, Recommandations bestsellers, Support première commande",
           "message_sequence": [
             {
-              "title": "C'est le Moment de Recommander",
-              "description": "Basé sur le cycle de commande typique",
-              "content": "Selon votre pattern de ventes, c'est le moment de réapprovisionner [Produits]"
+              "channel": "Email",
+              "title": "Bienvenue dans la Famille [Entreprise] !",
+              "timing": "Jour d'approbation",
+              "description": "Jour d'approbation",
+              "content": "Félicitations ! Votre compte grossiste est approuvé et actif. Voici tout ce dont vous avez besoin : vos identifiants compte, le catalogue prix grossiste, et le contact de votre responsable de compte dédié. Prêt à passer votre première commande ? Notre pack bestsellers est idéal pour commencer."
             },
             {
-              "title": "Alerte Bestseller",
-              "description": "Pour les articles à forte rotation",
-              "content": "[Produit] se vend très bien - Réapprovisionnez avant la rupture"
+              "channel": "SMS",
+              "title": "Compte Actif !",
+              "timing": "Même jour",
+              "description": "Même jour",
+              "content": "Bonne nouvelle - votre compte grossiste [Entreprise] est actif ! Connexion : [URL]. Conseil première commande : Découvrez notre bundle bestsellers pour une sélection de démarrage triée sur le volet."
             },
             {
-              "title": "Économies Volume",
-              "description": "Encourager les commandes plus importantes",
-              "content": "Commandez plus, économisez plus : Tarifs volume disponibles ce mois-ci"
+              "channel": "Email",
+              "title": "Votre Guide Commande & Tutoriel Plateforme",
+              "timing": "J+2",
+              "description": "J2 : Éducation processus",
+              "content": "Tout ce que vous devez savoir sur les commandes : minimums, calendrier livraisons, conditions de paiement et politique de retours. Plus une visite vidéo rapide de notre plateforme de commande pour passer commande en quelques minutes."
+            },
+            {
+              "channel": "Email",
+              "title": "Top Ventes pour Votre Type de Magasin",
+              "timing": "J+3",
+              "description": "J3 : Recommandations personnalisées",
+              "content": "Basé sur des détaillants comme vous, voici nos meilleurs performers dans votre catégorie. Ces produits ont les meilleurs taux de sell-through et marges. Parfait pour votre première commande ou pour élargir votre assortiment."
+            },
+            {
+              "channel": "Email",
+              "title": "Pas Encore Commandé ? Nous Sommes Là",
+              "timing": "J+7 si pas de première commande",
+              "description": "J7 : Si pas de première commande",
+              "content": "Nous avons remarqué que vous n'avez pas encore passé votre première commande. Besoin d'aide pour sélectionner les produits ? Notre équipe peut recommander un assortiment de démarrage adapté à votre type de magasin et clientèle. Planifiez une consultation rapide."
+            },
+            {
+              "channel": "Email",
+              "title": "Première Commande Expédiée - Et Maintenant",
+              "timing": "À l'expédition première commande",
+              "description": "À l'expédition première commande",
+              "content": "Votre première commande est en route ! Suivi : [lien]. Voici ce qui vous attend : délai de livraison, conseils de déballage et suggestions de merchandising. Des questions sur les produits ? Votre responsable de compte est prêt à vous aider."
+            },
+            {
+              "channel": "Email",
+              "title": "Feedback Première Commande & Rappel Récommande",
+              "timing": "7 jours après première livraison",
+              "description": "7 jours après première livraison",
+              "content": "Comment se vend votre première commande ? Nous adorerions avoir votre feedback. Basé sur votre commande, voici des produits complémentaires qui se vendent bien ensemble. Prêt à recommander vos bestsellers ? Vos favoris sont sauvegardés pour une récommande facile."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nouveaux membres groupement d'achats rejoignant via affiliation groupe",
+          "scenario_objective": "Onboarder avec les avantages et programmes spécifiques au groupe",
+          "main_messages_ideas": "Bienvenue groupe, Avantages exclusifs, Tarifs groupe, Programmes coordonnés",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bienvenue Membre [Groupement d'Achats] !",
+              "timing": "Jour d'approbation",
+              "description": "Jour d'approbation",
+              "content": "Bienvenue chez [Entreprise] en tant que membre [Groupement d'Achats] ! Vous avez accès aux tarifs groupe exclusifs, promotions coordonnées et programmes réservés aux membres. Voici comment maximiser vos avantages adhérent."
+            },
+            {
+              "channel": "Email",
+              "title": "Tarifs & Programmes Exclusifs [Groupement d'Achats]",
+              "timing": "J+3",
+              "description": "J3 : Avantages groupe",
+              "content": "Votre adhésion [Groupement d'Achats] débloque : [niveaux tarifaires spécifiques], ristournes trimestrielles, programmes marketing coordonnés et avant-premières nouveaux produits réservées aux membres. Connectez-vous pour voir vos prix exclusifs."
+            },
+            {
+              "channel": "Email",
+              "title": "Connectez-vous avec les Membres [Groupement d'Achats]",
+              "timing": "J+7",
+              "description": "J7 : Construction communautaire",
+              "content": "Rejoignez la communauté détaillants [Groupement d'Achats] : partage de bonnes pratiques, success stories et promotions coordonnées. Découvrez comment d'autres membres développent leur business grâce à notre partenariat."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Introduction Nouveaux Produits",
-      "target": "Tous les détaillants actifs",
-      "objective": "Stimuler l'adoption de nouveaux produits et élargir les assortiments détaillants",
-      "kpi": "Taux d'adoption nouveaux produits, Expansion assortiment, Conversion commande d'essai",
-      "description": "Communication stratégique pour introduire de nouveaux produits et encourager les essais.",
+      "program_name": "Automatisation Récommande & Gestion des Stocks",
+      "target": "Détaillants actifs avec patterns de commande établis",
+      "objective": "Assurer des récommandes opportunes, prévenir les ruptures de stock et optimiser les niveaux d'inventaire",
+      "kpi": "Taux de récommande (cible: 75%), Prévention ruptures (cible: 90%), Fréquence commande moyenne (cible: +20%)",
+      "description": "Communication proactive de gestion des stocks qui anticipe les besoins des détaillants basée sur les patterns de vente et tendances saisonnières.",
       "scenarios": [
         {
-          "scenario_target": "Détaillants par adéquation catégorie",
-          "scenario_objective": "Générer des commandes de nouveaux produits",
-          "main_messages_ideas": "Aperçu nouvelle arrivée, Offre d'essai, Success stories, Prix de lancement",
+          "scenario_target": "Détaillants approchant le point de récommande basé sur l'historique",
+          "scenario_objective": "Générer des récommandes opportunes avant les ruptures",
+          "main_messages_ideas": "Rappel récommande, Récommande rapide, Économies volume, Alertes stock",
           "message_sequence": [
             {
-              "title": "Aperçu Nouvelle Arrivée",
-              "description": "2 semaines avant disponibilité",
-              "content": "Bientôt disponible : [Nouveau Produit] - Précommandez pour première disponibilité"
+              "channel": "Email",
+              "title": "C'est le Moment de Recommander Vos Bestsellers",
+              "timing": "Basé sur cycle de récommande typique",
+              "description": "Basé sur cycle de récommande typique",
+              "content": "Selon votre pattern de ventes, vous êtes probablement bientôt à court de [Produits]. Recommandez maintenant pour éviter les ruptures - votre commande précédente est pré-chargée pour une récommande facile. Délai actuel : [X jours]."
             },
             {
-              "title": "Détails Produit",
-              "description": "Au lancement",
-              "content": "[Nouveau Produit] est arrivé : Specs, prix et matériels PLV"
+              "channel": "SMS",
+              "title": "Alerte Réapprovisionnement",
+              "timing": "Si approche fenêtre rupture",
+              "description": "Si approche fenêtre rupture",
+              "content": "Alerte récommande : Réapprovisionnement [Produit] recommandé sous 5 jours selon votre taux de vente. Récommande rapide : [URL]"
             },
             {
-              "title": "Offre de Lancement",
-              "description": "Premier mois",
-              "content": "Prix de lancement : Essayez [Nouveau Produit] avec remise spéciale première commande"
+              "channel": "Email",
+              "title": "Récommande en Un Clic Prête",
+              "timing": "Relance si pas d'action",
+              "description": "Relance si pas d'action",
+              "content": "Votre récommande est prête - mêmes produits, mêmes quantités. Un clic pour confirmer. Besoin d'ajustements ? Facile à modifier avant validation. La remise volume s'applique à cette taille de commande."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants avec fréquence de commande en baisse",
+          "scenario_objective": "Réengager et comprendre les obstacles à la commande",
+          "main_messages_ideas": "Prise de contact, Offre d'assistance, Produits alternatifs, Incentive",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vos Commandes Nous Manquent",
+              "timing": "Quand fréquence baisse de +30%",
+              "description": "Quand fréquence baisse de 30%+",
+              "content": "Nous avons remarqué que vos commandes ont ralenti. Tout va bien ? Si vos besoins ont changé, nous serions ravis de vous aider à trouver de meilleurs produits ou solutions de commande. Que pouvons-nous faire pour soutenir votre business ?"
             },
             {
-              "title": "Success Stories",
-              "description": "Mois 2",
-              "content": "Comment les détaillants vendent [Nouveau Produit] - Conseils et résultats"
+              "channel": "SMS",
+              "title": "Prise de Contact Rapide",
+              "timing": "J+7",
+              "description": "J7 : Contact personnel",
+              "content": "Bonjour [Prénom], c'est [Rep] de [Entreprise]. Ça fait un moment - comment vont les ventes ? Quelque chose dont vous avez besoin ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Nouvelles Options à Considérer",
+              "timing": "J+14",
+              "description": "J14 : Solutions alternatives",
+              "content": "Les choses changent - peut-être que vos bestsellers ont évolué. Voici les produits tendance dans votre catégorie avec lesquels d'autres détaillants réussissent. Ça vaut la peine d'essayer un nouvel assortiment ?"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Préparation Saisonnière",
-      "target": "Tous les détaillants avant les pics saisonniers",
-      "objective": "Maximiser la préparation des stocks saisonniers et les ventes",
-      "kpi": "Volume commandes pré-saison, CA saisonnier, Disponibilité stock",
-      "description": "Communication anticipée pour aider les détaillants à se préparer à la demande saisonnière.",
+      "program_name": "Introduction Nouveaux Produits & Expansion Assortiment",
+      "target": "Tous les détaillants actifs segmentés par pertinence",
+      "objective": "Stimuler l'adoption des nouveaux produits et élargir les assortiments détaillants",
+      "kpi": "Taux d'adoption nouveaux produits (cible: 30%), Expansion assortiment (cible: +2 catégories), Conversion commande d'essai (cible: 40%)",
+      "description": "Communication stratégique nouveaux produits qui fait correspondre les nouvelles offres aux profils et clientèles des détaillants.",
       "scenarios": [
         {
-          "scenario_target": "Tous les détaillants actifs",
-          "scenario_objective": "Générer des commandes pré-saison",
-          "main_messages_ideas": "Aperçu saison, Offres early bird, Planification stocks, Rappels dates limites",
+          "scenario_target": "Détaillants avec adéquation catégorie pertinente pour nouveaux produits",
+          "scenario_objective": "Générer des premières commandes pour les nouveaux produits",
+          "main_messages_ideas": "Aperçu nouvelle arrivée, Détails produit, Offre d'essai, Success stories",
           "message_sequence": [
             {
-              "title": "Aperçu Saison",
-              "description": "8 semaines avant la saison",
-              "content": "[Saison] arrive : Découvrez notre collection saisonnière en avant-première"
+              "channel": "Email",
+              "title": "Aperçu Exclusif : [Nouvelle Ligne Produit]",
+              "timing": "2 semaines avant lancement",
+              "description": "2 semaines avant lancement",
+              "content": "Accédez en premier à [Nouvelle Ligne Produit] avant la disponibilité générale. Selon votre clientèle, ce devrait être un fort performer. Précommandez maintenant pour le premier envoi et la meilleure sélection."
             },
             {
-              "title": "Incentive Commande Anticipée",
-              "description": "6 semaines avant la saison",
-              "content": "Commandez tôt pour [Saison] : Meilleurs prix + stock garanti"
+              "channel": "Email",
+              "title": "Lancement [Nouveau Produit] : Détails Complets",
+              "timing": "Jour du lancement",
+              "description": "Jour du lancement",
+              "content": "[Nouvelle Ligne Produit] est là ! Specs complètes, prix grossiste, prix de vente suggérés et analyse des marges. Inclut les matériaux PLV et conseils de vente pour aider à faire tourner le produit rapidement."
             },
             {
-              "title": "Support Planification",
-              "description": "4 semaines avant la saison",
-              "content": "Planification [Saison] : Quantités recommandées selon vos ventes"
+              "channel": "SMS",
+              "title": "Alerte Nouveau Produit",
+              "timing": "Jour du lancement",
+              "description": "Jour du lancement - notification rapide",
+              "content": "Vient de sortir : [Nouveau Produit] est maintenant disponible à la commande. Fortes marges et tendance chez les consommateurs. Détails : [URL]"
             },
             {
-              "title": "Commande Finale",
-              "description": "2 semaines avant la saison",
-              "content": "Dernier appel pour les commandes [Saison] : Assurez votre stock"
+              "channel": "Email",
+              "title": "Offre d'Essai Introduction",
+              "timing": "Semaine 1",
+              "description": "Semaine 1 : Incentive essai",
+              "content": "Essayez [Nouveau Produit] sans risque : prix d'introduction spécial plus option de retour complet s'il ne performe pas. Temps limité pour les premières commandes. Marges à partir de [X]%."
+            },
+            {
+              "channel": "Email",
+              "title": "Comment les Détaillants Vendent [Nouveau Produit]",
+              "timing": "Semaine 4",
+              "description": "Semaine 4 : Preuve sociale",
+              "content": "Les premiers résultats sont là : les détaillants rapportent [résultat] avec [Nouveau Produit]. Voici comment ils le merchandisent, les stratégies de prix qui fonctionnent, et les techniques de vente. Prêt à essayer ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Chance : Prix Introduction Se Termine",
+              "timing": "Semaine 6",
+              "description": "Semaine 6 : Urgence",
+              "content": "Le prix d'introduction sur [Nouveau Produit] se termine le [date]. Verrouillez le prix de lancement avant que les tarifs grossiste standards s'appliquent. Les détaillants qui ont essayé recommandent - rejoignez-les."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants commandant dans peu de catégories (opportunité expansion assortiment)",
+          "scenario_objective": "Élargir le mix catégories du détaillant avec des produits complémentaires",
+          "main_messages_ideas": "Recommandation catégorie, Cross-sell, Offre bundle, Exemple de succès",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Complétez Votre Assortiment : [Catégorie]",
+              "timing": "Revue d'assortiment trimestrielle",
+              "description": "Revue d'assortiment trimestrielle",
+              "content": "Vous faites très bien avec [catégorie actuelle]. Les détaillants comme vous portent aussi [catégorie complémentaire] - c'est un achat complémentaire naturel pour vos clients. Voici notre sélection de bestsellers dans cette catégorie."
+            },
+            {
+              "channel": "Email",
+              "title": "Bundle Expansion Catégorie",
+              "timing": "Offre de suivi",
+              "description": "Offre de suivi",
+              "content": "Essayez [nouvelle catégorie] avec notre bundle de démarrage : sélection triée de bestsellers avec minimum réduit et prix d'introduction. Parfait pour tester la réponse client sans engagement majeur."
+            },
+            {
+              "channel": "Email",
+              "title": "Comment [Type Détaillant] S'est Développé avec Succès",
+              "timing": "Preuve sociale",
+              "description": "Preuve sociale",
+              "content": "[Détaillant Similaire] a ajouté [catégorie] il y a six mois - voici leur histoire et résultats. Ça pourrait marcher pour vous aussi ? Discutons de quel assortiment conviendrait à votre clientèle."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Programme Croissance Détaillant",
-      "target": "Détaillants à haut potentiel et en croissance",
-      "objective": "Aider les détaillants à développer leur business et augmenter leurs achats",
-      "kpi": "Taux de croissance compte, Expansion catégorie, Satisfaction partenaire",
-      "description": "Support à valeur ajoutée pour aider les détaillants à réussir et grandir avec vous.",
+      "program_name": "Préparation Saisonnière & Pré-Réservation",
+      "target": "Tous les détaillants avant les pics saisonniers et fêtes",
+      "objective": "Maximiser la préparation des stocks saisonniers et capturer les commandes pré-saison",
+      "kpi": "Volume commandes pré-saison (cible: 40% du stock saisonnier), Sell-through saisonnier (cible: 85%), Participation commandes anticipées (cible: 60%)",
+      "description": "Communication saisonnière anticipée qui aide les détaillants à se préparer aux pics de demande avec des niveaux de stock appropriés et support merchandising.",
       "scenarios": [
         {
-          "scenario_target": "Détaillants en croissance selon tendance commandes",
-          "scenario_objective": "Accélérer le succès des détaillants",
-          "main_messages_ideas": "Conseils croissance, Support merchandising, Matériaux marketing, Ressources formation",
+          "scenario_target": "Tous les détaillants actifs avant les grandes saisons de vente",
+          "scenario_objective": "Générer des commandes saisonnières anticipées avec support de planification",
+          "main_messages_ideas": "Aperçu saison, Prix early bird, Planification inventaire, Support merchandising",
           "message_sequence": [
             {
-              "title": "Conseils Succès Retail",
+              "channel": "Email",
+              "title": "Aperçu Collection [Saison] : Anticipez",
+              "timing": "12 semaines avant saison",
+              "description": "12 semaines avant saison",
+              "content": "Premier regard sur notre collection [Saison] : nouveaux produits, bestsellers de retour et articles tendance. L'aperçu anticipé vous aide à planifier votre assortiment avant la ruée. Catalogue complet en pièce jointe."
+            },
+            {
+              "channel": "Email",
+              "title": "Prix Early Bird [Saison] Maintenant Disponibles",
+              "timing": "10 semaines avant saison",
+              "description": "10 semaines avant saison",
+              "content": "Verrouillez votre inventaire [Saison] au prix early bird : [X]% de réduction sur le tarif grossiste standard pour les commandes passées avant le [date]. Allocation stock garantie et expédition prioritaire pour les commandes anticipées."
+            },
+            {
+              "channel": "Email",
+              "title": "Guide Planification Inventaire [Saison]",
+              "timing": "8 semaines avant saison",
+              "description": "8 semaines avant saison",
+              "content": "Basé sur vos ventes [Saison] passées, voici notre commande recommandée : quantités par produit, timing de commande optimal et demande projetée. Personnalisez ou acceptez nos recommandations."
+            },
+            {
+              "channel": "SMS",
+              "title": "Date Limite Early Bird Approche",
+              "timing": "1 semaine avant date limite",
+              "description": "1 semaine avant date limite early bird",
+              "content": "Le prix early bird [Saison] se termine le [date]. Ne manquez pas [X]% d'économies et le stock garanti. Commandez maintenant : [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Kit Merchandising [Saison] Prêt",
+              "timing": "4 semaines avant saison",
+              "description": "4 semaines avant saison",
+              "content": "Votre kit merchandising [Saison] est prêt : matériaux PLV, recommandations de présentation, assets réseaux sociaux et suggestions promotionnelles. Téléchargement gratuit avec votre commande [Saison]."
+            },
+            {
+              "channel": "Email",
+              "title": "Dernier Stock [Saison] : Devancez la Ruée",
+              "timing": "2 semaines avant saison",
+              "description": "2 semaines avant saison",
+              "content": "Dernière chance pour les commandes [Saison] avec livraison garantie avant la saison. Les niveaux de stock sont limités sur les bestsellers - commandez maintenant pour être prêt quand les clients commencent leurs achats."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants avec forte performance saisonnière passée",
+          "scenario_objective": "Augmenter l'engagement saisonnier des performers prouvés",
+          "main_messages_ideas": "Performance passée, Opportunité de croissance, Allocation exclusive, Placement premium",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Succès [Saison] : Faisons Encore Mieux",
+              "timing": "Basé sur performance année précédente",
+              "description": "Basé sur performance année précédente",
+              "content": "La dernière [Saison], vous avez vendu [montant] d'inventaire saisonnier avec [sell-through]%. Cette année, nous aimerions vous aider à faire encore mieux : allocation réservée sur les bestsellers, prix early-bird amélioré et support dédié."
+            },
+            {
+              "channel": "Email",
+              "title": "Allocation Bestsellers Réservée",
+              "timing": "Pour les top performers",
+              "description": "Pour les top performers",
+              "content": "En tant que top performer [Saison], nous avons réservé une allocation de nos articles les plus demandés pour vous. Ils seront en rupture - réclamez votre allocation avant le [date] pour garantir le stock."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Campagnes Promotionnelles & Support Vente",
+      "target": "Détaillants actifs cherchant à booster leurs ventes",
+      "objective": "Fournir un support promotionnel qui aide les détaillants à écouler leur inventaire",
+      "kpi": "Taux de participation promotions (cible: 50%), Sell-through promotionnel (cible: 80%), ROI promotionnel détaillant (cible: 3x)",
+      "description": "Support promotionnel coordonné qui donne aux détaillants les outils et incentives pour organiser des événements de vente réussis.",
+      "scenarios": [
+        {
+          "scenario_target": "Tous les détaillants pendant les périodes promotionnelles coordonnées",
+          "scenario_objective": "Stimuler la participation aux promotions et le sell-through",
+          "main_messages_ideas": "Prix promotionnel, Matériaux marketing, Offre consommateur, Avantages participation",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Campagne [Nom Promotion] : Votre Guide de Participation",
+              "timing": "2 semaines avant promotion",
+              "description": "2 semaines avant promotion",
+              "content": "Rejoignez notre campagne [Nom Promotion] du [dates]. Les détaillants participants reçoivent : prix grossiste spécial pour financer les promotions, matériaux marketing prêts à l'emploi, et publicité consommateur coordonnée générant du trafic vers votre magasin."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Kit Marketing [Promotion]",
+              "timing": "1 semaine avant",
+              "description": "1 semaine avant",
+              "content": "Votre boîte à outils promotionnelle est prête : signalétique, posts réseaux sociaux, templates email et assets publicitaires. Tout personnalisable avec vos infos magasin. Téléchargez et déployez - tout ce dont vous avez besoin pour promouvoir."
+            },
+            {
+              "channel": "SMS",
+              "title": "La Promotion Commence [Jour]",
+              "timing": "Veille de la promotion",
+              "description": "Veille de la promotion",
+              "content": "[Nom Promotion] commence demain ! Assurez-vous d'être bien stocké sur les articles promotionnels. Commande de dernière minute ? Nous pouvons accélérer. Matériaux prêts : [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "[Promotion] en Cours : Conseils pour Réussir",
+              "timing": "Mi-promotion",
+              "description": "Mi-promotion",
+              "content": "Mise à jour promotion : voici ce que font les détaillants les plus performants pour maximiser les résultats. Conseils mi-promotion, vérification inventaire, et option de récommande pour les articles qui tournent vite."
+            },
+            {
+              "channel": "Email",
+              "title": "Résultats & Enseignements [Promotion]",
+              "timing": "Post-promotion",
+              "description": "Post-promotion",
+              "content": "Comment [Promotion] a fonctionné pour vous ? Voici les résultats réseau et les success stories. Votre feedback nous aide à concevoir de meilleurs programmes - enquête rapide à l'intérieur."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants avec excès d'inventaire ayant besoin de support sell-through",
+          "scenario_objective": "Aider les détaillants à écouler les stocks lents",
+          "main_messages_ideas": "Support déstockage, Idées promo, Suggestions bundling, Options retour",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Besoin d'Aide pour Écouler votre Stock ?",
+              "timing": "Basé sur patterns commande indiquant rotations lentes",
+              "description": "Basé sur patterns commande indiquant rotations lentes",
+              "content": "Nous avons remarqué que certains de vos stocks tournent peut-être moins vite que prévu. Voici des stratégies éprouvées : idées de bundling, suggestions de prix promo et conseils de rafraîchissement displays. Besoin d'options échange/retour ? Discutons-en."
+            },
+            {
+              "channel": "Email",
+              "title": "Support Déstockage Fin de Saison",
+              "timing": "Fin de saison",
+              "description": "Fin de saison",
+              "content": "La saison se termine ? Voici notre playbook déstockage fin de saison : démarques recommandées, templates signalétique et idées promo social. Écoulez le stock saisonnier pour faire place à ce qui arrive."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programme Niveaux & Récompenses Détaillant",
+      "target": "Tous les détaillants basés sur performance et potentiel",
+      "objective": "Incentiver la croissance et récompenser la fidélité par l'avancement de niveau",
+      "kpi": "Taux d'avancement niveau (cible: 20% annuel), Rétention niveau (cible: 90%), Engagement programme (cible: 70%)",
+      "description": "Programme de fidélité et récompenses structuré qui reconnaît la performance des détaillants et incentive la croissance continue.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants approchant les seuils de niveau ou éligibles à l'avancement",
+          "scenario_objective": "Motiver l'avancement de niveau via un parcours clair et des incentives",
+          "main_messages_ideas": "Statut niveau, Avantages avancement, Suivi progression, Reconnaissance accomplissement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Êtes Proche du Statut [Niveau Suivant] !",
+              "timing": "Quand approche du seuil",
+              "description": "Quand approche du seuil de niveau",
+              "content": "Bonne nouvelle - vous êtes à [X]% du statut [Niveau Suivant] ! Les détaillants [Niveau Suivant] bénéficient de : [avantages spécifiques - prix, conditions, support]. Commandez encore [montant] avant le [date] pour débloquer ces avantages."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerte Avancement Niveau",
+              "timing": "Quand très proche du seuil",
+              "description": "Quand très proche du seuil",
+              "content": "Vous êtes à [X] du niveau [Niveau Suivant] ! Avantages incluent [avantage principal]. Qualifiez-vous avant le [date] pour upgrade immédiate."
+            },
+            {
+              "channel": "Email",
+              "title": "Félicitations - Bienvenue au Niveau [Nouveau Niveau] !",
+              "timing": "À l'avancement de niveau",
+              "description": "À l'avancement de niveau",
+              "content": "Vous avez atteint le statut [Nouveau Niveau] ! Merci pour votre partenariat. Vos nouveaux avantages sont actifs maintenant : [liste complète des avantages]. Voici comment maximiser votre statut amélioré."
+            },
+            {
+              "channel": "Email",
+              "title": "Vos Avantages Exclusifs [Niveau] Ce Trimestre",
+              "timing": "Rappel trimestriel niveau",
+              "description": "Rappel trimestriel niveau",
+              "content": "En tant que partenaire [Niveau], voici vos avantages exclusifs ce trimestre : [offres spécifiques, événements ou opportunités]. Assurez-vous de profiter de tout ce que votre statut inclut."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants top niveau pour traitement VIP",
+          "scenario_objective": "Fournir une expérience premium et reconnaître les top performers",
+          "main_messages_ideas": "Reconnaissance VIP, Accès exclusif, Appréciation partenaire, Alignement stratégique",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Invitation Exclusive [Top Niveau]",
+              "timing": "Opportunité VIP",
+              "description": "Opportunité VIP",
+              "content": "En tant que partenaire [Top Niveau], vous êtes invité à [événement/opportunité exclusive] : accès anticipé aux nouvelles lignes, participation au conseil consultatif, ou allocation premium sur les articles limités. Répondez pour confirmer votre intérêt."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Pack Appréciation Partenaire Annuel",
+              "timing": "Reconnaissance annuelle",
+              "description": "Reconnaissance annuelle",
+              "content": "Merci pour une année incroyable de partenariat. Pour vous remercier, voici votre pack appréciation [Top Niveau] : [cadeau, crédit ou offre exclusive]. Nous sommes reconnaissants pour votre business et avons hâte d'une autre année de succès."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Formation & Éducation Détaillant",
+      "target": "Tous les détaillants cherchant à améliorer leur performance de vente",
+      "objective": "Autonomiser les détaillants avec connaissances et compétences pour vendre plus efficacement",
+      "kpi": "Taux de complétion formation (cible: 40%), Amélioration ventes post-formation (cible: +15%), Taux d'engagement (cible: 50%)",
+      "description": "Contenus éducatifs et programmes de formation qui aident les détaillants à vendre les produits plus efficacement et développer leur business.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants nouveaux dans les catégories produits ou ayant besoin de connaissance produit",
+          "scenario_objective": "Construire la connaissance produit et confiance de vente",
+          "main_messages_ideas": "Formation produit, Conseils vente, Gestion FAQ, Éducation fonctionnalités",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Maîtrisez [Catégorie Produit] : Formation Gratuite",
+              "timing": "Déclencheur nouvelle catégorie commandée",
+              "description": "Déclencheur nouvelle catégorie commandée",
+              "content": "Félicitations pour l'ajout de [Catégorie] à votre assortiment ! Voici une formation produit gratuite pour vous aider vous et votre équipe à vendre en confiance : fonctionnalités clés, FAQ clients et techniques de vente éprouvées. Complétez en 20 minutes."
+            },
+            {
+              "channel": "Email",
+              "title": "Conseils Vente [Produit] des Top Performers",
+              "timing": "Éducation continue",
+              "description": "Éducation continue",
+              "content": "Comment les meilleurs détaillants vendent [Produit] ? Vrais conseils de vrais détaillants : conversations clients qui convertissent, objections courantes et comment les traiter, et opportunités d'upsell."
+            },
+            {
+              "channel": "Email",
+              "title": "Webinaire Formation Live : [Sujet]",
+              "timing": "Opportunité mensuelle",
+              "description": "Opportunité mensuelle",
+              "content": "Rejoignez notre session de formation live sur [Sujet] : Q&A interactive avec nos experts produits et détaillants à succès. Apprenez des techniques utilisables immédiatement. Inscrivez-vous pour le [date/heure]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Tous les détaillants pour éducation croissance business",
+          "scenario_objective": "Fournir un support business retail plus large",
+          "main_messages_ideas": "Meilleures pratiques retail, Conseils merchandising, Croissance business, Tendances industrie",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Conseils Succès Retail : [Sujet]",
+              "timing": "Contenu mensuel",
               "description": "Contenu mensuel",
-              "content": "Le conseil retail du mois : Comment augmenter les ventes [Catégorie]"
+              "content": "Le conseil retail du mois : [Sujet actionnable comme gestion inventaire, service client, merchandising visuel]. Lecture rapide avec application immédiate pour votre magasin."
             },
             {
-              "title": "Support Merchandising",
-              "description": "Offres PLV et display",
-              "content": "Kit merchandising gratuit : Matériaux de présentation pour [Produits]"
+              "channel": "Email",
+              "title": "Tendances Industrie : Ce Qui Arrive en [Catégorie]",
+              "timing": "Rapport tendances trimestriel",
+              "description": "Rapport tendances trimestriel",
+              "content": "Gardez une longueur d'avance avec notre rapport tendances trimestriel : évolutions consommateurs, produits émergents et tendances merchandising. Positionnez votre magasin pour ce qui arrive en [Catégorie]."
             },
             {
-              "title": "Matériaux Marketing",
-              "description": "Support promotionnel",
-              "content": "Votre kit marketing : Matériaux prêts à l'emploi pour votre magasin"
+              "channel": "Email",
+              "title": "Bibliothèque Ressources Détaillants Mise à Jour",
+              "timing": "Disponibilité ressource",
+              "description": "Disponibilité ressource",
+              "content": "Nouvelles ressources dans votre portail détaillant : [ressources spécifiques ajoutées]. Accédez à des guides, templates et outils pour développer votre business. Tout gratuit pour les partenaires grossiste."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Réactivation Comptes Dormants",
+      "target": "Comptes inactifs et détaillants perdus",
+      "objective": "Réengager les comptes dormants et récupérer les détaillants churned",
+      "kpi": "Taux de réactivation (cible: 20%), Conversion win-back (cible: 12%), Revenue récupéré (cible: 25% de la valeur churned)",
+      "description": "Réengagement stratégique pour les détaillants qui ont arrêté de commander, avec des approches adaptées selon les raisons probables d'inactivité.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants sans commande depuis 60+ jours (dormance inattendue)",
+          "scenario_objective": "Comprendre la raison et réengager avec une offre pertinente",
+          "main_messages_ideas": "Prise de contact, Nouvelles offres, Incentive réengagement, Demande feedback",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vos Commandes Nous Manquent",
+              "timing": "Déclencheur inactivité 60 jours",
+              "description": "Déclencheur inactivité 60 jours",
+              "content": "Ça fait un moment depuis votre dernière commande - nous espérons que tout va bien ! Vos besoins ont-ils changé ? Y a-t-il quelque chose que nous pourrions faire mieux ? Nous apprécions votre partenariat et voulons nous assurer de bien vous servir."
             },
             {
-              "title": "Upgrade Niveau Partenaire",
-              "description": "Quand les seuils sont atteints",
-              "content": "Félicitations ! Vous avez débloqué les avantages partenaire [Niveau]"
+              "channel": "SMS",
+              "title": "Prise de Contact Rapide",
+              "timing": "J+7",
+              "description": "J7 : Contact personnel",
+              "content": "Bonjour [Prénom], c'est [Rep] de [Entreprise]. Pas de nouvelles depuis un moment - tout va bien ? Dites-moi si vous avez besoin de quelque chose."
+            },
+            {
+              "channel": "Email",
+              "title": "Ce Qui a Changé Depuis Votre Dernière Commande",
+              "timing": "J+14",
+              "description": "J14 : Mise à jour valeur",
+              "content": "Beaucoup de choses ont changé depuis votre dernière commande : nouveaux produits, conditions améliorées et services élargis. Voici un aperçu rapide des nouveautés - ça vaut peut-être un nouveau regard ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Offre de Retour",
+              "timing": "J+30",
+              "description": "J30 : Incentive réengagement",
+              "content": "Nous aimerions vous avoir de retour ! Voici une offre de retour : [remise, livraison gratuite, ou minimums réduits] sur votre prochaine commande. Sans conditions - juste un merci pour nous redonner une chance."
+            },
+            {
+              "channel": "Email",
+              "title": "Aidez-Nous à Nous Améliorer",
+              "timing": "J+45",
+              "description": "J45 : Demande feedback",
+              "content": "Même si vous êtes passé à autre chose, nous apprécierions votre feedback. Qu'aurions-nous pu faire mieux ? Votre avis honnête nous aide à nous améliorer pour tous nos détaillants. Enquête rapide ou répondez simplement avec vos idées."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Comptes fermés ou saisonniers susceptibles de revenir",
+          "scenario_objective": "Maintenir la relation pour un retour potentiel",
+          "main_messages_ideas": "Départ en douceur, Porte ouverte, Réengagement saisonnier, Retour facile",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci pour Notre Partenariat",
+              "timing": "Sur pause/fermeture de compte confirmée",
+              "description": "Sur pause/fermeture de compte confirmée",
+              "content": "Nous comprenons que vous mettez en pause ou fermez votre compte. Merci pour le business que nous avons fait ensemble. Les informations de votre compte seront préservées - si les choses changent, nous sommes là et la réactivation est facile."
+            },
+            {
+              "channel": "Email",
+              "title": "Vous Pensez à Rouvrir ?",
+              "timing": "Prise de contact 6 mois pour comptes saisonniers/fermés",
+              "description": "Prise de contact 6 mois pour comptes saisonniers/fermés",
+              "content": "Il y a six mois vous avez mis en pause votre compte. Si vous envisagez de rouvrir, nous avons facilité les choses : votre historique et préférences sont sauvegardés, et votre niveau tarifaire précédent est préservé. Prêt à recommencer ?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programme Parrainage & Croissance Réseau",
+      "target": "Détaillants satisfaits avec des connexions dans l'industrie",
+      "objective": "Générer de nouveaux leads détaillants via les recommandations des partenaires existants",
+      "kpi": "Taux de parrainage (cible: 15% des comptes actifs), Conversion parrainage (cible: 35%), Coût acquisition via parrainage (cible: 50% des autres canaux)",
+      "description": "Exploiter les fortes relations détaillants pour générer des recommandations qualifiées de partenaires satisfaits.",
+      "scenarios": [
+        {
+          "scenario_target": "Détaillants très satisfaits avec un solide historique de partenariat",
+          "scenario_objective": "Activer comme sources de parrainage",
+          "main_messages_ideas": "Appréciation, Programme parrainage, Bénéfice mutuel, Processus facile",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Connaissez-vous d'Autres Détaillants qui Bénéficieraient ?",
+              "timing": "Après indicateur haute satisfaction",
+              "description": "Après indicateur haute satisfaction",
+              "content": "Nous sommes ravis que le partenariat fonctionne bien pour vous ! Beaucoup de nos meilleurs détaillants sont venus par recommandation de partenaires comme vous. Connaissez-vous quelqu'un qui bénéficierait d'un partenariat grossiste ? Nous adorerions une mise en relation."
+            },
+            {
+              "channel": "Email",
+              "title": "Récompenses Parrainage Partenaire",
+              "timing": "J+14",
+              "description": "J14 : Détails programme",
+              "content": "Notre Programme Parrainage Détaillant : Recommandez un détaillant qualifié et vous en bénéficiez tous les deux. Vous recevez [récompense parrain], ils reçoivent [avantage nouveau partenaire]. Processus simple : partagez juste leur contact ou faites une intro email."
+            },
+            {
+              "channel": "Email",
+              "title": "Parrainage Facile : Transférez Ceci",
+              "timing": "J+30",
+              "description": "J30 : Action simple",
+              "content": "La façon la plus simple de parrainer : transférez cet email à un collègue détaillant qui pourrait en bénéficier. Ou répondez simplement avec son nom et contact - nous les contacterons professionnellement en mentionnant votre recommandation."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Détaillants participant aux salons ou événements industrie",
+          "scenario_objective": "Exploiter le networking événementiel pour des mises en relation",
+          "main_messages_ideas": "Coordination événement, Facilitation mise en relation, Networking",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "On Se Voit à [Événement] - Retrouvons-Nous",
+              "timing": "Contact pré-événement",
+              "description": "Contact pré-événement",
+              "content": "Nous serons tous les deux à [Événement] ! Passez au stand [#] - amenez des collègues qui pourraient être intéressés par un partenariat grossiste. Ravis de faire les présentations et discuter comment nous pouvons aider leur business aussi."
+            },
+            {
+              "channel": "SMS",
+              "title": "À [Événement] - Un Café ?",
+              "timing": "Pendant l'événement",
+              "description": "Pendant l'événement",
+              "content": "À [Événement] ? Passez au stand [#] - le café est offert. Amenez toute personne qui devrait nous connaître !"
             }
           ]
         }
@@ -187,23 +754,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Onboarding Détaillant",
-      "why_brevo_is_better": "L'automatisation B2B de Brevo permet des séquences d'onboarding structurées qui garantissent que chaque nouveau détaillant reçoit une communication cohérente et utile.",
-      "omnichannel_channels": "Email pour les guides détaillés + SMS pour les conseils rapides et confirmations de commande",
-      "setup_efficiency": "Les templates grossiste pré-construits vous aident à créer un onboarding professionnel en minutes."
+      "scenario_name": "Onboarding Nouveau Détaillant & Succès Première Commande",
+      "why_brevo_is_better": "L'automatisation B2B de Brevo permet des séquences d'onboarding structurées qui garantissent que chaque nouveau détaillant reçoit une communication cohérente et utile qui génère des premières commandes en jours, pas en semaines.",
+      "omnichannel_channels": "Email pour les guides détaillés et catalogues + SMS pour les notifications rapides et alertes urgentes + Intégration portail pour le libre-service",
+      "setup_efficiency": "Les templates d'onboarding grossiste pré-construits vous aident à créer des séquences professionnelles en minutes, avec personnalisation automatique basée sur le profil du détaillant."
     },
     {
-      "scenario_name": "Automatisation des Récommandes",
-      "why_brevo_is_better": "L'intégration avec votre système de gestion des commandes permet des rappels de récommande intelligents basés sur les patterns d'achat réels de chaque détaillant.",
-      "omnichannel_channels": "Email pour le catalogue et les prix + SMS pour les alertes stock urgentes",
-      "setup_efficiency": "Les déclencheurs d'historique de commande permettent un timing de récommande entièrement automatisé et personnalisé."
+      "scenario_name": "Automatisation Récommande & Gestion des Stocks",
+      "why_brevo_is_better": "L'intégration avec votre système de gestion des commandes permet des rappels de récommande intelligents basés sur les patterns d'achat réels de chaque détaillant, anticipant les besoins avant les ruptures de stock.",
+      "omnichannel_channels": "Email pour les informations de récommande détaillées et catalogues + SMS pour les alertes stock urgentes et rappels de dates limites",
+      "setup_efficiency": "L'intégration de l'historique commandes permet un timing de récommande entièrement automatisé et personnalisé calibré sur la vélocité de vente de chaque détaillant."
     },
     {
-      "scenario_name": "Préparation Saisonnière",
-      "why_brevo_is_better": "L'automatisation basée sur le calendrier et la segmentation garantissent une communication saisonnière opportune qui aide les détaillants à se préparer pour les pics de demande.",
-      "omnichannel_channels": "Email pour les catalogues saisonniers + SMS pour les rappels de dates limites",
-      "setup_efficiency": "Les campagnes saisonnières annuelles peuvent être templatisées et programmées pour se répéter automatiquement."
+      "scenario_name": "Préparation Saisonnière & Pré-Réservation",
+      "why_brevo_is_better": "L'automatisation basée sur le calendrier et la segmentation avancée garantissent une communication saisonnière opportune qui aide les détaillants à se préparer aux pics de demande avec des recommandations personnalisées basées sur la performance passée.",
+      "omnichannel_channels": "Email pour les catalogues saisonniers et guides de planification + SMS pour les rappels de dates limites et alertes stock",
+      "setup_efficiency": "Les campagnes saisonnières annuelles peuvent être templatisées et programmées pour se répéter automatiquement, avec personnalisation basée sur la performance s'améliorant chaque année."
+    },
+    {
+      "scenario_name": "Programme Niveaux & Récompenses Détaillant",
+      "why_brevo_is_better": "Le suivi de niveau automatisé et la communication de jalons gardent les détaillants motivés avec une visibilité claire sur leur progression et reconnaissance instantanée quand les seuils sont atteints.",
+      "omnichannel_channels": "Email pour les mises à jour de niveau et communication des avantages + SMS pour les notifications d'accomplissement + Offres personnalisées basées sur le statut niveau",
+      "setup_efficiency": "L'intégration avec les données de commande permet un calcul de niveau automatique et une communication déclenchée sans suivi manuel ni mises à jour différées."
+    },
+    {
+      "scenario_name": "Win-Back & Réactivation Comptes Dormants",
+      "why_brevo_is_better": "La détection automatique d'inactivité déclenche un réengagement opportun avant que les comptes ne deviennent froids, avec segmentation qui adapte les approches de win-back aux raisons probables de dormance.",
+      "omnichannel_channels": "Email pour les offres de réengagement et mises à jour + SMS pour les contacts personnels + Séquences multi-touch coordonnées",
+      "setup_efficiency": "Les déclencheurs d'inactivité identifient automatiquement les comptes à risque et initient les séquences de win-back sans surveillance manuelle de l'activité des comptes."
     }
   ],
-  "conclusion": "Les entreprises de commerce de gros et distribution qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à une meilleure rétention des détaillants, des patterns de commande plus réguliers, et des partenariats plus forts qui génèrent une croissance mutuelle."
+  "conclusion": "Les grossistes et distributeurs qui mettent en œuvre ces programmes complets de marketing relationnel peuvent s'attendre à une meilleure acquisition de détaillants grâce à un nurturing de leads systématique, des commandes plus régulières grâce à une gestion proactive des stocks, des assortiments élargis grâce à un cross-sell ciblé, et des partenariats renforcés grâce à la reconnaissance par niveaux et au support de formation. Le business de gros récompense la constance, la fiabilité et l'orientation vers une croissance mutuelle - ce plan délivre ces trois éléments à travers un engagement systématique et automatisé sur l'ensemble du cycle de vie du détaillant."
 }

@@ -1,0 +1,915 @@
+{
+  "introduction": "Este plan integral de marketing relacional está diseñado para retailers de hogar y muebles que buscan construir relaciones duraderas con sus clientes a través de inspiración personalizada de diseño de interiores y engagement de ciclo de vida. Las compras de hogar son decisiones muy meditadas con ciclos de compra largos, haciendo el marketing relacional esencial para permanecer en la mente del consumidor. Este plan aborda los desafíos únicos del retail de muebles: valores promedio de pedido altos, fases de investigación extendidas, comportamiento de compra habitación por habitación, y la conexión emocional que los clientes tienen con sus espacios de vida. Al combinar perfilado de estilo, triggers de eventos de vida, y nurturing estratégico, este plan convierte a compradores de muebles ocasionales en clientes de por vida que amueblan su hogar completo con tu marca.",
+  "company_summary": {
+    "name": "Marca de Hogar y Muebles",
+    "website": "ejemplo-hogar.com",
+    "activities": "Retail de muebles y decoración del hogar, incluyendo mobiliario, accesorios para el hogar, iluminación, textiles y servicios de diseño de interiores para espacios de vida modernos",
+    "target": "Propietarios, inquilinos y entusiastas del diseño de interiores de 25 a 55 años que buscan amueblar, decorar o mejorar sus espacios de vida con piezas de calidad que reflejen su estilo personal",
+    "industry": "Hogar",
+    "business_model": "B2C Retail / D2C",
+    "customer_lifecycle_key_steps": "Descubrimiento > Quiz de Estilo > Navegación/Investigación > Primera Compra de Habitación > Entrega y Montaje > Expansión a Otras Habitaciones > Renovación Estacional > Embajador"
+  },
+  "programs_list": [
+    {
+      "program_name": "Bienvenida y Descubrimiento de Estilo",
+      "target": "Nuevos suscriptores y visitantes primerizos del sitio web",
+      "objective": "Entender las preferencias de estilo del cliente, proyectos de habitación, y convertir a primera compra en 60 días con AOV superior a 500€",
+      "kpi": "Tasa de completación del quiz de estilo (objetivo: 35%), Conversión de primera compra (objetivo: 12%), Tiempo hasta primera compra (objetivo: <45 días), Valor promedio del primer pedido (objetivo: 600€+)",
+      "description": "Un journey de bienvenida personalizado que ayuda a los clientes a descubrir su estilo de diseño de interiores a través de un quiz atractivo, construye confianza a través de experiencia en diseño, y les guía con confianza hacia su primera compra.",
+      "scenarios": [
+        {
+          "scenario_target": "Nuevos suscriptores de email desde pop-up o formulario de newsletter",
+          "scenario_objective": "Construir perfil de estilo y establecer la marca como autoridad en diseño",
+          "main_messages_ideas": "Bienvenida + quiz de estilo, Inspiración de habitación personalizada, Consejos de diseño, Prueba social, Incentivo de primera compra",
+          "message_sequence": [
+            {
+              "title": "Bienvenida + Invitación al Quiz de Estilo",
+              "description": "Inmediato: Bienvenida con CTA del quiz de estilo",
+              "content": "¡Bienvenido/a a [Marca]! Tu hogar de ensueño comienza con entender TU estilo. Haz nuestro Quiz de Estilo de 3 minutos y descubre tu estética de interiores perfecta - además obtén recomendaciones personalizadas y acceso exclusivo a nuestras guías de diseño.",
+              "channel": "Email"
+            },
+            {
+              "title": "Recordatorio del Quiz",
+              "description": "Día 3: Para no completadores",
+              "content": "¡Tu estilo de hogar personalizado te espera! Completa tu quiz de estilo para desbloquear tu perfil de diseño gratuito y recomendaciones curadas.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tu Perfil de Estilo",
+              "description": "Inmediatamente después del quiz: Resultados + recomendaciones",
+              "content": "¡Eres [Tipo de Estilo]! Este estilo combina [características]. Aquí está tu moodboard personalizado y nuestras mejores selecciones para traer esta estética a tu hogar. Guarda tu perfil de estilo para consultarlo cuando quieras.",
+              "channel": "Email"
+            },
+            {
+              "title": "Consejo de Diseño",
+              "description": "Día 5: Contenido de valor añadido",
+              "content": "Consejo pro para [su estilo]: La clave para lograr este look es [consejo específico]. Aquí te mostramos cómo equilibrar piezas statement con acentos sutiles.",
+              "channel": "Email"
+            },
+            {
+              "title": "Galería de Inspiración de Habitaciones",
+              "description": "Día 10: Inspiración visual",
+              "content": "¡Inspírate! Mira cómo clientes reales decoraron sus hogares en la estética [su estilo]. Desde salones hasta dormitorios, esto es lo que es posible.",
+              "channel": "Email"
+            },
+            {
+              "title": "Oferta de Primera Compra",
+              "description": "Día 14: Incentivo de conversión",
+              "content": "¿Listo/a para comenzar la transformación de tu hogar? Disfruta de un 10% de descuento en tu primer pedido + consulta de diseño gratuita para pedidos superiores a 500€. Tu estilo, a tu manera.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Completadores del quiz que no han comprado en 30 días",
+          "scenario_objective": "Re-enganchar con urgencia y valor adicional",
+          "main_messages_ideas": "Recordatorio de estilo, Nuevas llegadas en su estilo, Oferta extendida, Herramienta de planificador de habitación",
+          "message_sequence": [
+            {
+              "title": "Tu Estilo Te Espera",
+              "description": "Día 30: Re-engagement",
+              "content": "¿Recuerdas tu perfil [Estilo]? Hemos añadido nuevas piezas que combinan perfectamente con tu estética. Echa otro vistazo a tus selecciones personalizadas.",
+              "channel": "Email"
+            },
+            {
+              "title": "Herramienta Planificador de Habitación",
+              "description": "Día 35: Valor añadido",
+              "content": "¿Planificando un cambio de habitación? Usa nuestro planificador de habitación gratuito para visualizar las piezas en tu espacio antes de comprar. Pruébalo con tus preferencias de estilo guardadas.",
+              "channel": "Email"
+            },
+            {
+              "title": "Oferta de Bienvenida Extendida",
+              "description": "Día 40: Urgencia",
+              "content": "¡Estamos extendiendo tu oferta de bienvenida! 15% de descuento en tu primer pedido (aumentado del 10%) - pero solo durante los próximos 7 días. Comienza tu transformación ahora.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "No completadores del quiz navegando categorías específicas",
+          "scenario_objective": "Guiar a navegadores indecisos con experiencia de categoría",
+          "main_messages_ideas": "Guía de categoría, Bestsellers, Guía de compra, Ayuda de comparación",
+          "message_sequence": [
+            {
+              "title": "Seguimiento de Navegación",
+              "description": "24 horas después de navegar: Experiencia de categoría",
+              "content": "¿Mirando [categoría]? Aquí está nuestra guía completa para elegir el [tipo de producto] perfecto - incluyendo qué medir, materiales a considerar y consejos de estilo.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bestsellers en Categoría",
+              "description": "Día 4: Prueba social",
+              "content": "Nuestras piezas de [categoría] mejor valoradas este mes. Descubre por qué los clientes están amando estos bestsellers y lee sus reseñas.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Recuperación de Carrito Abandonado y Navegación",
+      "target": "Visitantes que añadieron muebles al carrito o navegaron extensamente sin comprar",
+      "objective": "Recuperar carritos abandonados en 7 días con una tasa de recuperación del 15%+ (mayor para muebles debido al período de consideración)",
+      "kpi": "Tasa de recuperación de carrito (objetivo: 15%), Conversión de abandono de navegación (objetivo: 5%), Valor promedio de pedido recuperado, Tiempo hasta recuperación",
+      "description": "Secuencia de recuperación multi-touch que respeta el ciclo de consideración más largo para muebles mientras proporciona valor, aborda preocupaciones y crea urgencia apropiada.",
+      "scenarios": [
+        {
+          "scenario_target": "Abandonadores de carrito con artículos de alto valor (500€+)",
+          "scenario_objective": "Recuperar carritos de alto valor con soporte y tranquilidad",
+          "main_messages_ideas": "Artículos guardados, Oferta de consulta de diseño, Mensaje de calidad/garantía, Opciones de pago, Incentivo final",
+          "message_sequence": [
+            {
+              "title": "Tus Selecciones Están Guardadas",
+              "description": "4 horas después del abandono: Recordatorio suave",
+              "content": "¡Hemos guardado tus selecciones! Tómate tu tiempo - las grandes decisiones de muebles merecen consideración cuidadosa. Tu carrito está esperando cuando estés listo/a.",
+              "channel": "Email"
+            },
+            {
+              "title": "¿Preguntas? Estamos Aquí",
+              "description": "24 horas: Oferta de soporte",
+              "content": "¿Pensando en tus selecciones? Nuestros consultores de diseño están aquí para ayudar con cualquier pregunta sobre dimensiones, materiales o estilismo. Reserva una llamada gratuita de 15 minutos o chatea con nosotros.",
+              "channel": "Email"
+            },
+            {
+              "title": "Calidad en la que Puedes Confiar",
+              "description": "48 horas: Abordar preocupaciones de calidad",
+              "content": "Invertir en muebles es una gran decisión. Esto es lo que obtienes con [Marca]: [detalles de garantía], [certificaciones de calidad], y nuestra garantía de satisfacción de 30 días. Además, mira reseñas de clientes con piezas similares.",
+              "channel": "Email"
+            },
+            {
+              "title": "Opciones de Pago",
+              "description": "72 horas: Flexibilidad financiera",
+              "content": "Facilitamos que consigas los muebles que amas: Opciones de pago flexibles de [socio de financiación]. Divide el coste en 12 meses con 0% TAE. Total de tu carrito: X€ o X€/mes.",
+              "channel": "Email"
+            },
+            {
+              "title": "Por Tiempo Limitado: Entrega Gratis",
+              "description": "Día 5: Incentivo",
+              "content": "¡Cubrimos la entrega! Completa tu pedido en las próximas 48 horas y disfruta de entrega premium gratuita (un valor de X€). Tu [nombres de productos] están esperando.",
+              "channel": "Email"
+            },
+            {
+              "title": "Recordatorio Final",
+              "description": "Día 7: Última oportunidad",
+              "content": "Última oportunidad para entrega gratis en tus artículos guardados. Después de mañana, se aplican tarifas de entrega estándar. Completa tu pedido: [enlace]",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abandonadores de carrito primerizos",
+          "scenario_objective": "Abordar preocupaciones de nuevos clientes y construir confianza",
+          "main_messages_ideas": "Mensaje de bienvenida, Señales de confianza, Historias de clientes, Beneficios de primer pedido",
+          "message_sequence": [
+            {
+              "title": "¡Gran Elección!",
+              "description": "6 horas: Refuerzo positivo",
+              "content": "¡Tienes muy buen gusto! El [producto] que seleccionaste es una de nuestras piezas más queridas. Aquí te contamos por qué los clientes están encantados con ella.",
+              "channel": "Email"
+            },
+            {
+              "title": "Por Qué Comprar Con Nosotros",
+              "description": "48 horas: Construcción de confianza",
+              "content": "¿Nuevo/a en [Marca]? Esto es lo que nos diferencia: [X años] de artesanía de calidad, [Y clientes satisfechos], consultas de diseño gratuitas, y entrega premium que lo monta todo para ti.",
+              "channel": "Email"
+            },
+            {
+              "title": "Historias de Clientes Reales",
+              "description": "Día 4: Prueba social",
+              "content": "Mira cómo [nombre del cliente] transformó su espacio con piezas como las tuyas. Hogares reales, reseñas reales, resultados reales.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bienvenida para Nuevos Clientes",
+              "description": "Día 6: Oferta especial",
+              "content": "Para clientes primerizos: 12% de descuento en tu pedido + consulta de diseño gratuita. Estamos seguros de que amarás tus nuevas piezas.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abandonadores de navegación que vieron múltiples artículos de la misma categoría",
+          "scenario_objective": "Ayudar con la toma de decisiones entre opciones",
+          "main_messages_ideas": "Guía de comparación, Selecciones de expertos, Matching de estilo, Alertas de vuelta en stock",
+          "message_sequence": [
+            {
+              "title": "¿Comparando Opciones?",
+              "description": "24 horas: Soporte de decisión",
+              "content": "Notamos que estabas explorando nuestra [categoría]. ¿No puedes decidirte? Aquí hay una comparación rápida de las piezas que viste - materiales, dimensiones y en qué habitaciones funcionan mejor.",
+              "channel": "Email"
+            },
+            {
+              "title": "Selección del Experto",
+              "description": "Día 3: Recomendación",
+              "content": "La selección de nuestro equipo de diseño para ti: Basándonos en lo que navegaste, [producto específico] podría ser el ajuste perfecto. Aquí te contamos por qué es nuestra principal recomendación.",
+              "channel": "Email"
+            },
+            {
+              "title": "¿Quieres Verlo en Persona?",
+              "description": "Día 5: Invitación a showroom",
+              "content": "A veces necesitas ver los muebles en persona. Visita nuestro [showroom más cercano] para experimentar tus favoritos de primera mano. Reserva una cita para atención personalizada.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Experiencia Post-Compra y Cuidado",
+      "target": "Todos los clientes después de la compra",
+      "objective": "Asegurar entrega y montaje exitosos, reducir devoluciones a <5%, y lograr NPS de 50+",
+      "kpi": "Tasa de satisfacción de entrega (objetivo: 95%), Tasa de devoluciones (objetivo: <5%), NPS (objetivo: 50+), Volumen de tickets de soporte (reducir en 30%)",
+      "description": "Comunicación post-compra integral que prepara a los clientes para la entrega, les guía a través del montaje, y asegura la satisfacción a largo plazo con el producto.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes esperando entrega de muebles grandes",
+          "scenario_objective": "Preparar para la entrega y asegurar montaje exitoso",
+          "main_messages_ideas": "Preparación para entrega, Preparación del espacio, Recursos de montaje, Guía de cuidado, Check de satisfacción",
+          "message_sequence": [
+            {
+              "title": "¡Pedido Confirmado!",
+              "description": "Inmediato: Confirmación con cronograma",
+              "content": "¡Buenas noticias! Tu [producto] está en camino. Aquí está exactamente qué esperar: cronograma de producción, ventana de entrega, y cómo seguir tu pedido en cada paso.",
+              "channel": "Email"
+            },
+            {
+              "title": "Preparándose para la Entrega",
+              "description": "5 días antes de la entrega: Preparación del espacio",
+              "content": "¡Tu entrega se acerca! Cómo prepararse: despeja el camino, mide las puertas ([dimensiones necesarias]), y retira objetos frágiles. Nuestro equipo se encargará del resto.",
+              "channel": "Email"
+            },
+            {
+              "title": "Recordatorio de Entrega",
+              "description": "1 día antes: Preparación final",
+              "content": "Tus muebles llegan mañana entre [ventana horaria]. Nuestro equipo llamará 30 minutos antes de llegar. ¿Alguna pregunta? Responde a este email o llámanos.",
+              "channel": "SMS"
+            },
+            {
+              "title": "¡Bienvenido a Casa!",
+              "description": "Día de entrega: Guía de montaje",
+              "content": "¡Tu [producto] ha llegado! Aquí tienes todo lo que necesitas: guía de montaje en video, instrucciones de cuidado, y consejos de estilismo para que luzca increíble en tu espacio.",
+              "channel": "Email"
+            },
+            {
+              "title": "Consejo Rápido de Cuidado",
+              "description": "Día 3: Cuidado del producto",
+              "content": "Consejo rápido para tu nuevo [producto]: [consejo de cuidado específico]. Seguir esta simple rutina lo mantendrá hermoso durante años.",
+              "channel": "SMS"
+            },
+            {
+              "title": "¿Te Estás Adaptando?",
+              "description": "Día 7: Check-in",
+              "content": "¿Cómo encaja tu nuevo [producto] en tu espacio? ¡Nos encantaría verlo! Comparte una foto para tener la oportunidad de ser destacado/a, o cuéntanos si algo no está perfecto.",
+              "channel": "Email"
+            },
+            {
+              "title": "Solicitud de Reseña",
+              "description": "Día 14: Feedback",
+              "content": "Ya tienes tu [producto] desde hace dos semanas. Nos encantaría tu reseña honesta - ayuda a otros clientes a tomar decisiones con confianza. Deja una reseña y gana [puntos de fidelización].",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes que compraron decoración/accesorios",
+          "scenario_objective": "Inspirar estilismo y fomentar exploración cross-categoría",
+          "main_messages_ideas": "Ideas de estilismo, Completar la habitación, Piezas complementarias",
+          "message_sequence": [
+            {
+              "title": "Estilízalo Bien",
+              "description": "Día de entrega: Consejos de estilismo",
+              "content": "¡Tus [accesorios] están listos para brillar! Aquí hay 5 formas de estilizarlos para máximo impacto. Consejo pro: [consejo específico para sus artículos].",
+              "channel": "Email"
+            },
+            {
+              "title": "Completa el Look",
+              "description": "Día 7: Venta cruzada",
+              "content": "Tus [artículos] lucirían aún mejor con estas piezas complementarias. Mira cómo otros clientes estilizaron combinaciones similares.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes que compraron artículos que requieren montaje",
+          "scenario_objective": "Asegurar montaje exitoso y reducir tickets de soporte",
+          "main_messages_ideas": "Soporte de montaje, Guías en video, Disponibilidad de ayuda",
+          "message_sequence": [
+            {
+              "title": "Montaje Fácil",
+              "description": "Día de entrega: Soporte de montaje",
+              "content": "¿Listo/a para montar? Aquí tienes todo lo que necesitas: guía de video paso a paso, instrucciones PDF, y lista de herramientas necesarias. Tiempo promedio de montaje: [X] minutos.",
+              "channel": "Email"
+            },
+            {
+              "title": "¿Necesitas Ayuda?",
+              "description": "Día 2: Check-in de soporte",
+              "content": "¿Cómo va el montaje? Si estás atascado/a o necesitas ayuda, nuestro equipo de soporte está listo para asistir por videollamada. O reserva nuestro servicio de montaje profesional por X€.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expansión Habitación por Habitación",
+      "target": "Clientes que hicieron su primera compra de muebles",
+      "objective": "Expandir las compras de los clientes a habitaciones adicionales con el 40% de compradores primerizos comprando una segunda habitación en 12 meses",
+      "kpi": "Tasa de compra de segunda habitación (objetivo: 40%), Tasa de compra cross-categoría (objetivo: 35%), Tiempo entre compras de habitación (objetivo: <6 meses), Crecimiento del valor de vida del cliente",
+      "description": "Journey de upsell estratégico que guía a los clientes a amueblar su hogar completo, habitación por habitación, basándose en su compra inicial y preferencias de estilo.",
+      "scenarios": [
+        {
+          "scenario_target": "Compradores de muebles de salón",
+          "scenario_objective": "Inspirar expansión al comedor o dormitorio",
+          "main_messages_ideas": "Completar la habitación, Inspiración para siguiente habitación, Consejos de diseño cohesivo, Ahorros multi-habitación",
+          "message_sequence": [
+            {
+              "title": "Completa Tu Salón",
+              "description": "Día 21: Adiciones a la misma habitación",
+              "content": "¡Tu salón está tomando forma! Aquí hay piezas que complementan perfectamente tu [compra] - desde sillones auxiliares hasta mesas de café que combinan con tu estilo.",
+              "channel": "Email"
+            },
+            {
+              "title": "Consejos de Diseño Cohesivo",
+              "description": "Día 35: Educación de diseño",
+              "content": "¿El secreto de un hogar cohesivo? Repetir elementos entre habitaciones. Aquí te mostramos cómo extender tu estética [estilo] del salón al comedor y más allá.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tu Siguiente Habitación",
+              "description": "Día 50: Inspiración cross-habitación",
+              "content": "¿Listo/a para tu siguiente proyecto? Basándonos en tu estilo de salón, así podría lucir tu comedor. Misma estética, diseñado para complementar lo que ya tienes.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ahorros Multi-Habitación",
+              "description": "Día 60: Incentivo",
+              "content": "¿Amueblando múltiples habitaciones? Ahorra 15% cuando compres de 2+ categorías de habitación en el mismo pedido. Tu salón está hecho - ¿qué sigue?",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Compradores de muebles de dormitorio",
+          "scenario_objective": "Expandir a habitación de invitados, habitación infantil u oficina en casa",
+          "main_messages_ideas": "Completar el dormitorio, Inspiración para habitación de invitados, Ideas de oficina en casa",
+          "message_sequence": [
+            {
+              "title": "Esenciales de Dormitorio",
+              "description": "Día 21: Completar la habitación",
+              "content": "¡Haz de tu dormitorio un refugio! Esta ropa de cama, iluminación y piezas de almacenamiento complementan tu [cama/muebles] maravillosamente.",
+              "channel": "Email"
+            },
+            {
+              "title": "¿Habitación de Invitados Lista?",
+              "description": "Día 45: Inspiración de nueva habitación",
+              "content": "Tu dormitorio luce increíble - ¿y los invitados? Crea una habitación de invitados acogedora con estas piezas versátiles que combinan con el estilo de tu hogar.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ideas de Oficina en Casa",
+              "description": "Día 60: Ángulo de trabajo desde casa",
+              "content": "¿Trabajas desde casa? Un espacio de trabajo bien diseñado aumenta la productividad. Aquí hay soluciones de oficina en casa que se integran perfectamente con tu estética [estilo].",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Compradores de muebles de comedor",
+          "scenario_objective": "Expandir a espacios exteriores o de entretenimiento",
+          "main_messages_ideas": "Accesorios de comedor, Comedor exterior, Configuración de bar/entretenimiento",
+          "message_sequence": [
+            {
+              "title": "Pon la Mesa",
+              "description": "Día 21: Accesorios de comedor",
+              "content": "Tus muebles de comedor están listos - ¡ahora vistamos la mesa! Vajilla, mantelería y centros de mesa que elevan cada comida.",
+              "channel": "Email"
+            },
+            {
+              "title": "Llévalo al Exterior",
+              "description": "Día 45: Expansión exterior",
+              "content": "¿Te encanta recibir? ¡Extiende tu espacio de comedor al exterior! Nuestras colecciones de comedor exterior traen el mismo estilo a tu terraza o jardín.",
+              "channel": "Email"
+            },
+            {
+              "title": "Crea un Área de Bar",
+              "description": "Día 60: Mejora de entretenimiento",
+              "content": "El movimiento definitivo de anfitrión: un área de bar dedicada. Desde carritos de bar hasta taburetes, aquí tienes todo lo que necesitas para convertirte en el destino de entretenimiento favorito.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Renovación Estacional y Tendencias",
+      "target": "Todos los clientes activos basándose en historial de compras y preferencias de estilo",
+      "objective": "Impulsar compras de accesorios estacionales con el 25% de los clientes haciendo una compra de renovación estacional anualmente",
+      "kpi": "Ingresos de campaña estacional (objetivo: 20% de aumento), Crecimiento de categoría de accesorios (objetivo: 15%), Valor promedio de pedido estacional, Tasa de engagement de email",
+      "description": "Campañas estacionales estratégicas que inspiran a los clientes a renovar sus espacios con nuevos accesorios, decoración y piezas de tendencia durante todo el año.",
+      "scenarios": [
+        {
+          "scenario_target": "Compradores anteriores de muebles durante transición estacional",
+          "scenario_objective": "Fomentar compras de accesorios estacionales",
+          "main_messages_ideas": "Tendencias estacionales, Ideas de renovación fácil, Ediciones limitadas, Selecciones específicas de estilo",
+          "message_sequence": [
+            {
+              "title": "Informe de Tendencias Estacionales",
+              "description": "Inicio de temporada: Visión general de tendencias",
+              "content": "¡[Temporada] está aquí y también las nuevas tendencias! Esto es lo que nuestro equipo de diseño está amando esta temporada - y cómo incorporar estos looks a tu hogar, a tu manera.",
+              "channel": "Email"
+            },
+            {
+              "title": "Renueva Sin Grandes Cambios",
+              "description": "Semana 2: Actualizaciones fáciles",
+              "content": "¡Renueva tu espacio sin comprar muebles nuevos! 10 cambios de accesorios por menos de 100€ que hacen un gran impacto. Perfectos para tu hogar [estilo].",
+              "channel": "Email"
+            },
+            {
+              "title": "Nuevas Llegadas",
+              "description": "Semana 3: Nueva colección",
+              "content": "Acaba de llegar: ¡Nuestra colección de [Temporada]! Sé el/la primero/a en comprar las novedades antes de que se agoten. Aquí están nuestras mejores selecciones para tu estilo.",
+              "channel": "Email"
+            },
+            {
+              "title": "Alerta de Edición Limitada",
+              "description": "Semana 4: Escasez",
+              "content": "Edición Limitada de [Temporada]: Estas piezas exclusivas no se repondrán. Compra ahora para asegurar tus favoritas - solo [X] disponibles.",
+              "channel": "Email"
+            },
+            {
+              "title": "Última Oportunidad Estacional",
+              "description": "Fin de temporada: Liquidación",
+              "content": "¡Rebajas de fin de [temporada]! Hasta 40% de descuento en piezas estacionales. Última oportunidad de conseguir estos looks antes de que llegue la nueva colección.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes con perfil de estilo específico",
+          "scenario_objective": "Recomendaciones estacionales personalizadas",
+          "main_messages_ideas": "Tendencias específicas de estilo, Selecciones curadas, Actualizaciones de moodboard",
+          "message_sequence": [
+            {
+              "title": "Tu Estilo Esta Temporada",
+              "description": "Inicio de temporada: Personalizado",
+              "content": "Tendencias de [Temporada] para amantes del estilo [su estilo]: Aquí te mostramos cómo actualizar tu espacio manteniéndote fiel a tu estética. Tu edición estacional personalizada te espera.",
+              "channel": "Email"
+            },
+            {
+              "title": "Moodboard Actualizado",
+              "description": "Semana 2: Inspiración visual",
+              "content": "¡Tu moodboard [estilo] ha sido actualizado para [temporada]! Mira cómo incorporar nuevos colores, texturas y piezas mientras mantienes tu look característico.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes de alto valor durante temporada navideña",
+          "scenario_objective": "Maximizar compras de temporada festiva",
+          "main_messages_ideas": "Entretenimiento festivo, Guía de regalos, Acceso anticipado VIP, Inspiración de decoración",
+          "message_sequence": [
+            {
+              "title": "La Preparación Navideña Empieza Ahora",
+              "description": "Principios de noviembre: Planificación",
+              "content": "¿Listo/a para recibir? Prepara tu hogar para los invitados con estos esenciales festivos. Desde asientos extra hasta vajilla festiva, te tenemos cubierto/a.",
+              "channel": "Email"
+            },
+            {
+              "title": "Guía de Regalos para el Hogar",
+              "description": "Mediados de noviembre: Regalos",
+              "content": "Los mejores regalos son los que la gente realmente usa. Nuestra guía de regalos para el hogar: piezas pensadas para cada presupuesto que te harán el/la regalo-dador/a favorito/a.",
+              "channel": "Email"
+            },
+            {
+              "title": "Vista Previa VIP Black Friday",
+              "description": "Antes del Black Friday: Exclusivo",
+              "content": "Acceso anticipado VIP: Compra las ofertas del Black Friday 24 horas antes. Hasta 40% de descuento en muebles + 50% en decoración. Tu acceso exclusivo comienza ahora.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Mudanza y Eventos de Vida",
+      "target": "Clientes señalando cambios importantes de vida (mudanza, renovación, nuevo bebé, etc.)",
+      "objective": "Capturar momentos de compra de alto valor con tasa de conversión del 60% entre clientes con eventos de vida identificados",
+      "kpi": "Tasa de identificación de eventos de vida, Tasa de conversión de eventos de vida (objetivo: 60%), Valor promedio de pedido durante eventos de vida (objetivo: 2x normal), Compras multi-categoría",
+      "description": "Campañas basadas en triggers para clientes experimentando transiciones importantes de vida - los momentos en que más necesitan muebles.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes que indicaron que se están mudando",
+          "scenario_objective": "Convertirse en su destino principal de muebles para el nuevo hogar",
+          "main_messages_ideas": "Checklist de mudanza, Herramientas de planificación de habitación, Packs de nuevo hogar, Coordinación de entrega",
+          "message_sequence": [
+            {
+              "title": "¡Felicidades por la Mudanza!",
+              "description": "Al indicar mudanza: Bienvenida",
+              "content": "¡Noticias emocionantes - felicidades por tu mudanza! Estamos aquí para ayudarte a crear el espacio de tus sueños. Aquí está tu checklist completo de muebles para mudanza.",
+              "channel": "Email"
+            },
+            {
+              "title": "Planifica Tu Nuevo Espacio",
+              "description": "Semana 1: Herramientas de planificación",
+              "content": "¿Tienes el plano de tu nuevo hogar? Usa nuestro planificador de habitación gratuito para visualizar los muebles antes de comprar. Sube tus medidas y empieza a diseñar tu nuevo hogar.",
+              "channel": "Email"
+            },
+            {
+              "title": "Entrega el Día de Mudanza",
+              "description": "Semana 2: Logística",
+              "content": "¡Podemos coordinar la entrega con tu mudanza! Haz tu pedido ahora y programa la entrega para tu día de mudanza. Despierta en tu nuevo hogar con los muebles ya allí.",
+              "channel": "Email"
+            },
+            {
+              "title": "Pack de Nuevo Hogar",
+              "description": "Semana 3: Oferta de pack",
+              "content": "¿Amueblando un nuevo hogar? Ahorra 20% cuando compres múltiples habitaciones. Nuestros diseñadores pueden ayudarte a crear un look cohesivo en todo tu nuevo espacio.",
+              "channel": "Email"
+            },
+            {
+              "title": "Consulta de Diseño Gratuita",
+              "description": "Semana 4: Oferta de servicio",
+              "content": "¿Mucho espacio para amueblar? ¡Obtén ayuda experta! Reserva una consulta de diseño virtual gratuita. Nuestros diseñadores crearán un plan personalizado para tu nuevo hogar.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes esperando o con nuevo bebé",
+          "scenario_objective": "Capturar necesidades de muebles de habitación infantil y familiar",
+          "main_messages_ideas": "Planificación de habitación infantil, Productos certificados en seguridad, Muebles que crecen con el niño, Actualizaciones de sala familiar",
+          "message_sequence": [
+            {
+              "title": "¡Felicidades!",
+              "description": "Al indicar: Celebración",
+              "content": "¡Felicidades por las emocionantes noticias! Crear una habitación infantil es una de las partes más especiales de prepararse para una nueva llegada. Estamos aquí para ayudarte a diseñar un espacio seguro y hermoso.",
+              "channel": "Email"
+            },
+            {
+              "title": "Guía de Planificación de Habitación Infantil",
+              "description": "Semana 1: Educación",
+              "content": "Tu guía completa de planificación de habitación infantil: checklist de esenciales, consideraciones de seguridad y consejos de diseño. Además, todos nuestros muebles de habitación infantil cumplen las más altas certificaciones de seguridad.",
+              "channel": "Email"
+            },
+            {
+              "title": "Colecciones de Habitación Infantil",
+              "description": "Semana 2: Muestra de productos",
+              "content": "Nuestra colección de habitación infantil: muebles que crecen con tu hijo/a. Cunas convertibles, cómodas y almacenamiento diseñados para seguridad, estilo y longevidad.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sala Familiar Lista",
+              "description": "Semana 4: Venta cruzada",
+              "content": "Consejo de seguridad infantil: También es un buen momento para actualizar tu sala familiar con telas duraderas y fáciles de limpiar. Aquí están nuestras piezas más family-friendly.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes renovando su hogar",
+          "scenario_objective": "Posicionarse como socio de muebles para proyectos de renovación",
+          "main_messages_ideas": "Planificación de cronograma de renovación, Guía específica por habitación, Partnerships con diseñadores, Ahorros de proyecto",
+          "message_sequence": [
+            {
+              "title": "Socio de Renovación",
+              "description": "Al indicar: Posicionamiento",
+              "content": "¿Renovando? ¡Tiempos emocionantes por delante! Déjanos ser tu socio de muebles durante todo el proyecto. Aquí te mostramos cómo sincronizar tus compras de muebles con tu cronograma de renovación.",
+              "channel": "Email"
+            },
+            {
+              "title": "Trabaja Con Tu Contratista",
+              "description": "Semana 1: Planificación",
+              "content": "Coordinando muebles con renovaciones: Qué pedir cuándo, cómo planificar alrededor de la construcción, y acertar con las dimensiones a la primera.",
+              "channel": "Email"
+            },
+            {
+              "title": "Colaboración con Diseñadores",
+              "description": "Semana 2: Oferta de servicio",
+              "content": "¿Trabajas con un diseñador de interiores? ¡Colaboramos con profesionales! Tu diseñador puede acceder a precios de profesional y a nuestro equipo de diseño para proyectos colaborativos.",
+              "channel": "Email"
+            },
+            {
+              "title": "Descuento de Proyecto",
+              "description": "Semana 3: Incentivo",
+              "content": "Para proyectos de renovación superiores a 5.000€: Desbloquea precios de proyecto con 25% de descuento más entrega premium gratuita. Habla con nuestro equipo profesional.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programa de Fidelización y VIP",
+      "target": "Clientes recurrentes y compradores de alto valor",
+      "objective": "Aumentar el valor de vida del cliente en un 60% y lograr una tasa de retención del 70% entre miembros VIP",
+      "kpi": "Tasa de retención VIP (objetivo: 70%), LTV promedio de cliente VIP (objetivo: 3.000€+), Tasa de compra recurrente (objetivo: 45%), Tasa de referidos de VIPs",
+      "description": "Programa de fidelización escalonado con recompensas específicas para hogar, servicios de diseño exclusivos y experiencias VIP que reconocen y recompensan a tus mejores clientes.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes alcanzando el umbral de estatus VIP",
+          "scenario_objective": "Celebrar el hito y desbloquear beneficios exclusivos",
+          "main_messages_ideas": "Bienvenida VIP, Beneficios exclusivos, Servicios de diseño, Entrega prioritaria",
+          "message_sequence": [
+            {
+              "title": "¡Bienvenido/a a VIP!",
+              "description": "Al alcanzar el umbral: Gran bienvenida",
+              "content": "¡Ahora eres VIP de [Marca]! Esto es lo que has desbloqueado: 15% de descuento siempre, entrega gratis para siempre, servicio al cliente prioritario, y acceso a colecciones exclusivas solo para VIP.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tus Beneficios VIP",
+              "description": "Día 3: Profundización en beneficios",
+              "content": "Como VIP, ahora tienes acceso a consultas de diseño gratuitas, acceso anticipado a nuevas colecciones, e invitaciones a eventos exclusivos VIP. Reserva tu primera consulta hoy.",
+              "channel": "Email"
+            },
+            {
+              "title": "Conserje VIP",
+              "description": "Día 7: Introducción de servicio",
+              "content": "¡Conoce a tu conserje VIP! [Nombre] es tu punto de contacto dedicado para todas las necesidades de muebles - desde buscar piezas específicas hasta coordinar entregas complejas. Guarda este número.",
+              "channel": "Email"
+            },
+            {
+              "title": "Vista Previa Solo VIP",
+              "description": "Mensual: Contenido exclusivo",
+              "content": "Primera Vista VIP: Antes de que llegue a la web, mira nuestra colección más reciente. Compra exclusivamente durante 48 horas antes que nadie.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Miembros VIP en riesgo de abandono (sin compra en 12 meses)",
+          "scenario_objective": "Re-enganchar y retener clientes VIP",
+          "main_messages_ideas": "Te echamos de menos, Recordatorio de estatus, Oferta especial, Nuevas colecciones",
+          "message_sequence": [
+            {
+              "title": "Te Echamos de Menos",
+              "description": "Día 365: Re-engagement",
+              "content": "¡Ha pasado un tiempo desde que te vimos! Tu estatus VIP asegura que todavía tienes 15% de descuento, entrega gratis y acceso a consultas de diseño. ¿Listo/a para empezar un nuevo proyecto?",
+              "channel": "Email"
+            },
+            {
+              "title": "Check de Estatus VIP",
+              "description": "Día 380: Recordatorio de estatus",
+              "content": "¡Tus beneficios VIP siguen esperando! Ya sea una renovación de habitación o una nueva pieza, nos encantaría ayudarte a crear algo hermoso.",
+              "channel": "Email"
+            },
+            {
+              "title": "Oferta Exclusiva VIP",
+              "description": "Día 395: Incentivo fuerte",
+              "content": "Algo especial para nuestros VIPs: 25% de descuento en tu próxima compra (¡eso es 10% más de lo habitual!) + tarjeta regalo de 100€ para tu próxima visita. Porque los VIPs se merecen más.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes leales a largo plazo (5+ años)",
+          "scenario_objective": "Reconocer y celebrar aniversario del cliente",
+          "main_messages_ideas": "Celebración de aniversario, Recompensa exclusiva, Agradecimiento personal",
+          "message_sequence": [
+            {
+              "title": "¡Feliz Aniversario!",
+              "description": "En aniversario: Celebración",
+              "content": "¡[X] años con [Marca]! Gracias por dejarnos ser parte de la historia de tu hogar. Para celebrar, aquí tienes un regalo exclusivo: [recompensa especial] solo para ti.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tu Viaje del Hogar",
+              "description": "Día 2: Resumen",
+              "content": "Durante [X] años, has transformado tu hogar con [Y] piezas nuestras. Gracias por confiar en nosotros con tu espacio. ¡Por muchos más años de vida hermosa!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Recuperación y Re-Engagement",
+      "target": "Clientes que no han comprado en más de 18 meses",
+      "objective": "Reactivar el 12% de los clientes inactivos (ciclo más largo para muebles)",
+      "kpi": "Tasa de reactivación (objetivo: 12%), Ingresos de recuperación, Tasa de recolección de feedback, Mejora de higiene de lista",
+      "description": "Secuencia estratégica de re-engagement diseñada para el ciclo de compra más largo de muebles, reconociendo que los clientes pueden no necesitar muebles frecuentemente mientras proporciona valor e incentivos.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes inactivos 18-24 meses",
+          "scenario_objective": "Re-engagement suave con nuevas colecciones e inspiración",
+          "main_messages_ideas": "Qué hay de nuevo, Evolución de estilo, Ideas de renovación de habitación",
+          "message_sequence": [
+            {
+              "title": "Mucho Ha Cambiado",
+              "description": "Día 540: Qué hay de nuevo",
+              "content": "¡Ha pasado un tiempo! Hemos introducido nuevas colecciones, ampliado nuestras ofertas de estilo y lanzado nuevos servicios desde tu última visita. Esto es lo nuevo en [Marca].",
+              "channel": "Email"
+            },
+            {
+              "title": "Ideas de Renovación",
+              "description": "Día 560: Inspiración",
+              "content": "¿No estás listo/a para muebles nuevos? Aquí hay formas fáciles de renovar tus piezas existentes - desde nuevos accesorios hasta consejos de estilismo que hacen que tu [compra anterior] se sienta nueva.",
+              "channel": "Email"
+            },
+            {
+              "title": "Oferta Especial de Retorno",
+              "description": "Día 580: Incentivo",
+              "content": "¡Nos encantaría darte la bienvenida de vuelta! Aquí tienes 15% de descuento en tu próxima compra - ya sea una pieza importante o una pequeña actualización. Tu estilo siempre es bienvenido aquí.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes inactivos 24+ meses",
+          "scenario_objective": "Re-engagement fuerte o salida elegante",
+          "main_messages_ideas": "Grandes cambios, Mejor oferta, Actualización de preferencias",
+          "message_sequence": [
+            {
+              "title": "Todavía Pensando en Ti",
+              "description": "Día 730: Check-in",
+              "content": "No hemos sabido de ti en un tiempo, pero seguimos aquí cuando estés listo/a para tu próximo proyecto de hogar. Mientras tanto, esto es lo que ha estado pasando en [Marca].",
+              "channel": "Email"
+            },
+            {
+              "title": "Mejor Oferta",
+              "description": "Día 750: Incentivo fuerte",
+              "content": "Nuestra mejor oferta para ti: 20% de descuento en cualquier compra + entrega premium gratis (un valor de X€). Ya sea que te estés mudando, renovando, o simplemente listo/a para una actualización - estamos aquí.",
+              "channel": "Email"
+            },
+            {
+              "title": "¿Seguimos en Contacto?",
+              "description": "Día 770: Gestión de preferencias",
+              "content": "Queremos respetar tu bandeja de entrada. ¿Te gustaría: A) Seguir recibiendo noticias sobre nuevas colecciones y rebajas, B) Solo recibir noticias de grandes rebajas, o C) Tomarte un descanso? Cuéntanos.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Referidos y Embajadores",
+      "target": "Clientes satisfechos que han recibido sus muebles",
+      "objective": "Impulsar el 25% de la adquisición de nuevos clientes a través de referidos con menor CAC",
+      "kpi": "Tasa de referidos (objetivo: 10% de clientes refieren), Tasa de conversión de referidos (objetivo: 30%), AOV de clientes referidos, Tasa de envío de UGC",
+      "description": "Programa de embajadores que convierte a clientes satisfechos en embajadores de marca a través de recompensas por referidos, campañas de UGC y construcción de comunidad alrededor del diseño del hogar.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes post-entrega check de satisfacción (alta satisfacción)",
+          "scenario_objective": "Convertir clientes satisfechos en referidores",
+          "main_messages_ideas": "Gracias + intro referidos, Compartir fácil, Recompensa por referidos",
+          "message_sequence": [
+            {
+              "title": "Gracias + Comparte el Amor",
+              "description": "Después de feedback positivo: Intro referidos",
+              "content": "¡Nos alegra tanto que ames tu nuevo [producto]! ¿Conoces a alguien a quien también le encantarían nuestros muebles? Dale 100€ de descuento en su primer pedido, y obtén 100€ para tu próxima compra.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tu Enlace de Referido",
+              "description": "Día 3: Hazlo fácil",
+              "content": "Aquí está tu enlace personal de referido - compártelo con amigos, familia, o cualquiera que admire tus nuevos muebles. Rastrea tus recompensas en tu cuenta en cualquier momento.",
+              "channel": "Email"
+            },
+            {
+              "title": "Recordatorio de Referidos",
+              "description": "Día 14: Recordatorio amable",
+              "content": "¿Has recibido cumplidos por tus nuevos muebles? ¡Es el momento perfecto para compartir tu enlace de referido! Tus amigos obtienen 100€ de descuento, tú obtienes 100€ de crédito.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes que compartieron fotos de sus muebles",
+          "scenario_objective": "Fomentar UGC y compartir en redes",
+          "main_messages_ideas": "Solicitud de destacar fotos, Galería de comunidad, Recompensa de agradecimiento",
+          "message_sequence": [
+            {
+              "title": "Muestra Tu Espacio",
+              "description": "Post-entrega: Solicitud de UGC",
+              "content": "¡Nos encantaría ver tu [producto] en su nuevo hogar! Comparte una foto con #[Marca]Home para tener la oportunidad de ser destacado/a y ganar una tarjeta regalo de 250€.",
+              "channel": "Email"
+            },
+            {
+              "title": "¡Estás Destacado/a!",
+              "description": "Cuando se selecciona: Reconocimiento",
+              "content": "¡Tu hogar es oficialmente digno de galería! Hemos destacado tu hermoso espacio en nuestra web. Gracias por compartir - aquí tienes 50€ para tu próxima compra.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Entusiastas del diseño de interiores y alto engagement",
+          "scenario_objective": "Construir comunidad de embajadores de diseño",
+          "main_messages_ideas": "Invitación a comunidad de diseño, Contenido exclusivo, Programa de influencers",
+          "message_sequence": [
+            {
+              "title": "Únete a Nuestra Comunidad de Diseño",
+              "description": "Basado en engagement: Invitación a comunidad",
+              "content": "¡Claramente tienes ojo para el diseño! Únete a nuestra exclusiva Comunidad de Diseño para acceso anticipado a colecciones, consejos de diseño de nuestros expertos, y conexión con otros entusiastas del hogar.",
+              "channel": "Email"
+            },
+            {
+              "title": "Programa de Embajadores de Diseño",
+              "description": "Para top engagers: Invitación a embajadores",
+              "content": "¡Tu amor por el diseño no ha pasado desapercibido! Aplica para ser Embajador/a de Diseño de [Marca] - gana comisiones, obtén productos para destacar, e inspira a otros con tu estilo.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programa Profesional y de Diseñadores",
+      "target": "Diseñadores de interiores, arquitectos y profesionales del sector",
+      "objective": "Construir flujo de ingresos B2B con más de 500 cuentas profesionales activas",
+      "kpi": "Registros de cuentas profesionales, Ingresos profesionales (objetivo: 20% del total), Pedidos profesionales recurrentes, Valor promedio de pedido profesional",
+      "description": "Programa dedicado para profesionales del sector con precios especiales, servicios y soporte diseñados para sus necesidades basadas en proyectos.",
+      "scenarios": [
+        {
+          "scenario_target": "Nuevos solicitantes del programa profesional",
+          "scenario_objective": "Incorporar y activar cuentas profesionales",
+          "main_messages_ideas": "Bienvenida al programa profesional, Visión general de beneficios, Soporte de primer pedido",
+          "message_sequence": [
+            {
+              "title": "Bienvenido/a al Programa Profesional",
+              "description": "Tras aprobación: Bienvenida",
+              "content": "¡Bienvenido/a al Programa Profesional de [Marca]! Ahora tienes acceso a: Precios profesionales (hasta 30% de descuento), gestor de cuenta dedicado, entrega premium prioritaria, y herramientas de soporte de proyectos.",
+              "channel": "Email"
+            },
+            {
+              "title": "Tu Portal Profesional",
+              "description": "Día 2: Introducción de herramientas",
+              "content": "¡Tu portal profesional está listo! Accede a imágenes de alta resolución, fichas técnicas, modelos 3D y herramientas de presentación para clientes. Todo lo que necesitas para especificar nuestros productos en tus proyectos.",
+              "channel": "Email"
+            },
+            {
+              "title": "Conoce a Tu Gestor de Cuenta",
+              "description": "Día 5: Construcción de relación",
+              "content": "¡[Nombre] es tu gestor de cuenta dedicado! Programa una llamada para discutir tus proyectos actuales y cómo podemos apoyar tu trabajo de diseño. Reserva tiempo aquí.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bonus de Primer Pedido",
+              "description": "Día 14: Incentivo de activación",
+              "content": "¿Listo/a para hacer tu primer pedido? Disfruta de un 10% extra de descuento en tu primer pedido profesional + entrega acelerada. ¡Empecemos esta colaboración con fuerza!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Profesionales activos del sector",
+          "scenario_objective": "Apoyar proyectos en curso e impulsar pedidos recurrentes",
+          "main_messages_ideas": "Nuevos productos para profesionales, Soporte de proyectos, Eventos exclusivos profesionales",
+          "message_sequence": [
+            {
+              "title": "Novedades Solo para Profesionales",
+              "description": "Mensual: Nuevos productos",
+              "content": "Novedades para tus proyectos: Estas piezas son perfectas para las tendencias de diseño actuales. Descarga fichas técnicas y añádelas a tu biblioteca profesional.",
+              "channel": "Email"
+            },
+            {
+              "title": "Check-In de Soporte de Proyecto",
+              "description": "Trimestral: Nurturing de relación",
+              "content": "¿Cómo van tus proyectos actuales? ¿Necesitas presupuestos, muestras o coordinación de entrega a múltiples direcciones? Tu gestor de cuenta está aquí para ayudar.",
+              "channel": "Email"
+            },
+            {
+              "title": "Invitación a Evento Profesional",
+              "description": "Según programación: Eventos exclusivos",
+              "content": "¡Estás invitado/a! Vista previa exclusiva profesional de nuestra colección de [Temporada]. Conoce a los diseñadores, obtén primer acceso a nuevas piezas y haz networking con otros profesionales.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Bienvenida y Descubrimiento de Estilo",
+      "why_brevo_is_better": "El avanzado constructor de quizzes de Brevo captura preferencias de estilo y planes de habitación, dirigiendo inmediatamente a los clientes a journeys personalizados basados en sus respuestas. Los bloques de contenido dinámico muestran diferentes recomendaciones de productos basadas en el perfil de estilo en todas las comunicaciones futuras.",
+      "omnichannel_channels": "Email para inspiración visual enriquecida + SMS para alertas de ventas flash + WhatsApp para actualizaciones de entrega",
+      "setup_efficiency": "Plantillas pre-construidas de hogar y muebles con integración de quiz te ponen en marcha en horas. Los perfiles de estilo persisten en todas las automatizaciones para personalización consistente."
+    },
+    {
+      "scenario_name": "Expansión Habitación por Habitación",
+      "why_brevo_is_better": "El seguimiento del historial de compras permite recomendaciones de venta cruzada inteligentes basadas en lo que los clientes ya han comprado, sus preferencias de estilo y categorías de productos complementarias. Las sugerencias de siguiente-mejor-producto impulsadas por IA maximizan el potencial de expansión.",
+      "omnichannel_channels": "Email para galerías de inspiración de habitación detalladas + SMS para alertas de stock limitado en artículos coincidentes",
+      "setup_efficiency": "Los triggers basados en categoría dirigen automáticamente a los clientes a journeys de expansión apropiados. La integración con tu catálogo de productos permite recomendaciones conscientes del inventario en tiempo real."
+    },
+    {
+      "scenario_name": "Mudanza y Eventos de Vida",
+      "why_brevo_is_better": "La captura de eventos de vida basada en formularios combinada con señales de comportamiento (navegando múltiples categorías de habitación, descargando planificadores de planta) identifica momentos de alta intención. Los journeys dedicados de eventos de vida están listos para desplegar para captura inmediata.",
+      "omnichannel_channels": "Email para guías de planificación y packs + SMS para coordinación de entrega + WhatsApp para reserva de consulta de diseño personal",
+      "setup_efficiency": "Flujos de trabajo de eventos de vida pre-construidos con secuencias de mensajes probadas. La integración con herramientas de programación permite reserva de consultas de diseño sin problemas."
+    },
+    {
+      "scenario_name": "Cuidado Post-Compra y Entrega",
+      "why_brevo_is_better": "La integración con proveedores de envío permite comunicaciones activadas por entrega. Las secuencias de cuidado automatizadas reducen tickets de soporte mientras construyen satisfacción a largo plazo con el producto y advocacy.",
+      "omnichannel_channels": "Email para guías detalladas y videos + SMS para actualizaciones de entrega en tiempo real + Push para check-ins de completación de montaje",
+      "setup_efficiency": "La integración con transportistas proporciona triggers de entrega en tiempo real. El contenido de video y PDF puede insertarse dinámicamente basándose en el producto comprado."
+    },
+    {
+      "scenario_name": "Programa Profesional y de Diseñadores",
+      "why_brevo_is_better": "Las capacidades B2B permiten flujos de trabajo separados para clientes profesionales con visualización de precios especializados, asignación de gestor de cuenta y comunicaciones basadas en proyectos. La integración CRM rastrea el pipeline de proyectos e ingresos profesionales.",
+      "omnichannel_channels": "Email para catálogos y especificaciones + WhatsApp para preguntas rápidas de proyecto con gestor de cuenta",
+      "setup_efficiency": "La integración del portal profesional sincroniza el estatus del cliente. Los segmentos profesionales dedicados reciben precios y comunicaciones apropiadas automáticamente."
+    }
+  ],
+  "conclusion": "Los retailers de hogar y muebles que implementan estos programas de marketing relacional pueden esperar un valor de vida del cliente dramáticamente incrementado a través de estrategias de expansión habitación por habitación, mayores tasas de satisfacción por comunicación proactiva de entrega, y más fuerte boca a boca de clientes que se sienten genuinamente apoyados durante todo su viaje de amueblamiento del hogar. La clave del éxito en el marketing de muebles radica en respetar el ciclo de consideración de compra más largo mientras se permanece en la mente del consumidor a través de inspiración de diseño y captura de eventos de vida. Al posicionarte como un socio de diseño de confianza en lugar de solo un retailer, te ganarás el derecho de amueblar hogares completos a lo largo de años de relación."
+}

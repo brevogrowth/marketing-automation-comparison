@@ -1,0 +1,709 @@
+{
+  "introduction": "Este completo plan de marketing relacional está diseñado para empresas de manufactura que buscan construir asociaciones duraderas con compradores B2B, OEMs, distribuidores y equipos de compras. Desde el RFQ inicial hasta la asociación estratégica a largo plazo, estos programas optimizan cada touchpoint en el ciclo de compra industrial mientras aseguran excelencia operativa y confiabilidad de la cadena de suministro.",
+  "company_summary": {
+    "name": "Empresa de Manufactura",
+    "website": "ejemplo-manufactura.com",
+    "activities": "Manufactura B2B y productos industriales, incluyendo equipos, componentes, materiales, maquinaria o soluciones de manufactura especializadas para aplicaciones industriales y comerciales",
+    "target": "Gerentes de compras, equipos de ingeniería, directores de operaciones, gerentes de planta y tomadores de decisiones C-level en organizaciones industriales, OEMs y empresas comerciales",
+    "industry": "Manufactura",
+    "business_model": "Manufactura B2B",
+    "customer_lifecycle_key_steps": "Conocimiento > Feria/Descubrimiento Digital > Evaluación Técnica > RFQ > Cualificación > Primer Pedido > Integración en Producción > Ciclo de Reposición > Asociación Estratégica > Expansión > Advocacy"
+  },
+  "programs_list": [
+    {
+      "program_name": "Captura de Leads en Ferias y Eventos",
+      "target": "Prospectos de eventos de la industria, ferias comerciales y conferencias",
+      "objective": "Convertir leads de eventos en oportunidades cualificadas a través de seguimiento rápido y relevante",
+      "kpi": "Conversión de lead de evento a MQL (objetivo: 30%), Tasa de reserva de reuniones (objetivo: 20%), ROI del evento (objetivo: 5x)",
+      "description": "Engagement rápido post-evento que capitaliza el impulso mientras los leads aún están calientes, con secuencias de seguimiento específicas por industria.",
+      "scenarios": [
+        {
+          "scenario_target": "Visitantes de feria con alto interés que solicitaron demos de producto o especificaciones",
+          "scenario_objective": "Convertir solicitudes de demo en consultas técnicas y RFQs",
+          "main_messages_ideas": "Seguimiento de demo, Profundización técnica, Hojas de especificaciones, Consulta de ingeniería",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Fue un Placer Conocerte en [Nombre del Evento]",
+              "description": "Mismo día o mañana siguiente al evento",
+              "content": "Fue un placer discutir tus requisitos de [aplicación específica] en [Evento]. Como prometido, aquí está la documentación técnica de [Línea de Producto] que solicitaste, incluyendo especificaciones, tolerancias y guías de aplicación."
+            },
+            {
+              "channel": "Email",
+              "title": "Profundización Técnica: Especificaciones de [Producto]",
+              "description": "Día 2: Contenido técnico detallado",
+              "content": "Siguiendo nuestra conversación, aquí hay una guía técnica completa que cubre propiedades del material, tolerancias de manufactura y especificaciones de integración para [Producto]. Incluye archivos CAD y planos de ingeniería para tu revisión."
+            },
+            {
+              "channel": "SMS",
+              "title": "Pregunta Rápida",
+              "description": "Día 3: Alcance personal",
+              "content": "Hola [Nombre], soy [Rep] de [Empresa]. ¿Tuviste oportunidad de revisar las especificaciones que envié? Encantado de hacer una llamada rápida para responder cualquier pregunta técnica."
+            },
+            {
+              "channel": "Email",
+              "title": "Caso de Estudio: [Aplicación Similar]",
+              "description": "Día 5: Prueba de capacidad",
+              "content": "Pensé que encontrarías esto relevante - así es como ayudamos a [Par de la Industria] a lograr [resultado específico] con una aplicación similar. Incluye cronograma de implementación y análisis de ROI."
+            },
+            {
+              "channel": "Email",
+              "title": "Invitación a Consulta de Ingeniería",
+              "description": "Día 10: Pasar a siguiente etapa",
+              "content": "Nuestro equipo de ingeniería tiene disponibilidad la próxima semana para una consulta técnica sobre tu [aplicación]. Esta sesión de 45 minutos cubre revisión de especificaciones, selección de materiales y evaluación preliminar de factibilidad - sin compromiso requerido."
+            },
+            {
+              "channel": "Email",
+              "title": "Especial de Feria: Muestras de Evaluación",
+              "description": "Día 14: Oferta por tiempo limitado",
+              "content": "Como seguimiento de [Evento], estamos ofreciendo muestras de evaluación gratuitas para proyectos cualificados. Envía tus requisitos antes del [fecha] para recibir muestras con certificados de prueba completos y documentación de materiales."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Visitantes de stand que navegaron pero no se involucraron profundamente (escaneos de badge sin conversación)",
+          "scenario_objective": "Re-involucrar e identificar áreas de interés potencial",
+          "main_messages_ideas": "Resumen del evento, Resumen de capacidades, Biblioteca de recursos, Identificación de interés",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Lo Destacado de [Nombre del Evento] y Recursos",
+              "description": "Día 1: Resumen amplio de capacidades",
+              "content": "Gracias por pasar por nuestro stand en [Evento]. Aquí hay un resumen de las soluciones que mostramos, incluyendo nuestras últimas innovaciones en [Categoría de Producto]. ¿No estás seguro de cuál aplica a ti? Nuestra herramienta de evaluación rápida ayuda a identificar la mejor opción."
+            },
+            {
+              "channel": "Email",
+              "title": "Biblioteca de Recursos de Excelencia en Manufactura",
+              "description": "Día 5: Contenido educativo",
+              "content": "Accede a nuestra biblioteca de recursos de excelencia en manufactura - guías técnicas, notas de aplicación y mejores prácticas de la industria. ¿Qué área es más relevante para tus proyectos actuales?"
+            },
+            {
+              "channel": "Email",
+              "title": "¿Qué Desafío de Manufactura Podemos Resolver?",
+              "description": "Día 12: Identificación de interés",
+              "content": "Resolvemos [3 desafíos clave]. ¿Cuál resuena más con tus prioridades actuales? Responde con un número y te enviaremos información específica: 1) [Desafío A], 2) [Desafío B], 3) [Desafío C]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Nurturing y Cualificación de Leads Digitales",
+      "target": "Visitantes web, descargadores de contenido y consultas entrantes",
+      "objective": "Educar a prospectos digitales sobre capacidades técnicas y avanzar hacia la etapa de RFQ",
+      "kpi": "Conversión de lead a SQL (objetivo: 25%), Tasa de engagement con contenido (objetivo: 40%), Generación de RFQ (objetivo: 15%)",
+      "description": "Nurturing educativo que demuestra expertise técnica, capacidades de producción y certificaciones de calidad para mover prospectos a través del proceso de compra industrial.",
+      "scenarios": [
+        {
+          "scenario_target": "Prospectos que descargaron contenido técnico (fichas técnicas, archivos CAD, especificaciones)",
+          "scenario_objective": "Profundizar el engagement técnico y cualificar requisitos del proyecto",
+          "main_messages_ideas": "Recursos técnicos, Ingeniería de aplicación, Showcase de capacidades, Cualificación de proyecto",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tu [Tipo de Documento] + Recursos Adicionales",
+              "description": "Inmediato: Post-descarga",
+              "content": "Aquí está tu [documento] junto con recursos técnicos relacionados: especificaciones de materiales, guías de tolerancias y mejores prácticas de aplicación. ¿Necesitas especificaciones personalizadas? Nuestro equipo de ingeniería puede ayudar."
+            },
+            {
+              "channel": "Email",
+              "title": "Guía de Aplicación de Ingeniería",
+              "description": "Día 3: Contenido educativo",
+              "content": "Cómo especificar [Categoría de Producto] para rendimiento óptimo: Esta guía cubre selección de materiales, tolerancias dimensionales, tratamientos de superficie y requisitos de prueba basados en tu entorno de aplicación."
+            },
+            {
+              "channel": "Email",
+              "title": "Resumen de Capacidades de Manufactura",
+              "description": "Día 7: Showcase de capacidades",
+              "content": "De prototipo a producción: Nuestras capacidades de manufactura incluyen [procesos], con certificaciones de calidad [ISO, AS9100, IATF16949, etc.]. Tour virtual de instalaciones disponible para ver nuestras operaciones de primera mano."
+            },
+            {
+              "channel": "Email",
+              "title": "Caso de Estudio: Aplicación [Industria]",
+              "description": "Día 12: Prueba de rendimiento",
+              "content": "Cómo [Empresa] logró [resultado] con nuestro [Producto]: Incluye desafíos de ingeniería resueltos, cronograma de producción y métricas de calidad alcanzadas. ¿Proyecto similar? Discutamos tus requisitos."
+            },
+            {
+              "channel": "SMS",
+              "title": "Pregunta Rápida sobre Especificaciones",
+              "description": "Día 15: Alcance directo",
+              "content": "Hola [Nombre], noté que descargaste nuestras especificaciones de [Producto]. ¿Trabajando en un proyecto específico? Nuestros ingenieros pueden proporcionar orientación rápida sobre factibilidad y tiempos de entrega."
+            },
+            {
+              "channel": "Email",
+              "title": "Cuestionario de Cualificación de Proyecto",
+              "description": "Día 18: Paso de cualificación",
+              "content": "¿Listo para avanzar? Completa nuestro breve cuestionario de proyecto y recibe una evaluación preliminar incluyendo tiempos de entrega estimados, rango de presupuesto y especificaciones recomendadas en 48 horas."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Envíos de formulario RFQ y solicitudes de contacto web",
+          "scenario_objective": "Respuesta rápida y engagement de ventas para compradores activos",
+          "main_messages_ideas": "Respuesta rápida, Introducción de ventas, Consulta técnica, Preparación de cotización",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Tu Consulta Ha Sido Recibida",
+              "description": "Inmediato: Auto-respuesta",
+              "content": "Gracias por tu consulta. Un miembro de nuestro equipo revisará tus requisitos y responderá en 4 horas hábiles. Para solicitudes urgentes, llama al [número] para hablar con un ingeniero directamente."
+            },
+            {
+              "channel": "SMS",
+              "title": "Confirmación de Consulta",
+              "description": "Inmediato: Confirmación SMS",
+              "content": "Tu consulta a [Empresa] ha sido recibida. Espera una respuesta detallada en 4 horas. ¿Preguntas? Responde a este mensaje o llama al [número]."
+            },
+            {
+              "channel": "Email",
+              "title": "Tu Contacto Dedicado: [Nombre del Rep]",
+              "description": "Dentro de 4 horas: Asignación de ventas",
+              "content": "Soy [Nombre del Rep], tu contacto dedicado para este proyecto. He revisado tu consulta y tengo algunas preguntas de clarificación antes de preparar tu cotización. ¿Podemos programar una llamada de 15 minutos esta semana?"
+            },
+            {
+              "channel": "Email",
+              "title": "Preparación de Cotización: Se Necesita Información Adicional",
+              "description": "Si falta información",
+              "content": "Para proporcionar una cotización precisa, necesitamos clarificación sobre: [preguntas específicas]. Por favor responde con esta información o programemos una llamada para discutir - puedo tener precios preliminares listos en 24 horas de recibir estos detalles."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Onboarding de Nuevo Cliente y Éxito del Primer Pedido",
+      "target": "Nuevos clientes B2B después de la colocación del primer pedido",
+      "objective": "Asegurar ejecución impecable del primer pedido y establecer procesos de pedidos a largo plazo",
+      "kpi": "Satisfacción del primer pedido (objetivo: 95%), Tasa de pedido repetido (objetivo: 70%), Completación de onboarding (objetivo: 85%)",
+      "description": "Onboarding estructurado que establece procesos de pedidos, expectativas de calidad y canales de soporte para construir la base de una asociación a largo plazo.",
+      "scenarios": [
+        {
+          "scenario_target": "Nuevos clientes de manufactura con primer pedido en producción",
+          "scenario_objective": "Asegurar primer pedido fluido y establecer base de asociación",
+          "main_messages_ideas": "Bienvenida, Configuración de procesos, Aseguramiento de calidad, Introducción de soporte, Seguimiento de primera entrega",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bienvenido a la Asociación con [Empresa]",
+              "description": "Día de confirmación de pedido",
+              "content": "¡Bienvenido a nuestra familia de clientes! Tu pedido [#] está confirmado y en producción. Aquí está tu guía completa de configuración de cuenta incluyendo: tus contactos dedicados, procesos de pedidos, acceso al portal de documentación de calidad y canales de soporte técnico."
+            },
+            {
+              "channel": "Email",
+              "title": "Tu Portal de Cuenta Está Listo",
+              "description": "Día 2: Configuración digital",
+              "content": "Tu portal de cliente ya está activo. Accede a seguimiento de pedidos, documentación (COCs, informes de prueba, MTRs), especificaciones técnicas y envía solicitudes de soporte 24/7. Aquí está tu login y guía de inicio rápido."
+            },
+            {
+              "channel": "Email",
+              "title": "Guía de Proceso de Pedidos y Tiempos de Entrega",
+              "description": "Día 4: Educación de procesos",
+              "content": "Todo lo que necesitas saber sobre pedidos: tiempos de entrega estándar, opciones de expedición, fechas límite de modificación de pedidos y niveles de descuento por volumen. Guarda esto para referencia futura - es tu manual de pedidos."
+            },
+            {
+              "channel": "SMS",
+              "title": "Primer Pedido Enviado",
+              "description": "Al envío",
+              "content": "¡Buenas noticias! Tu primer pedido [#] se envió hoy vía [transportista]. Tracking: [enlace]. Entrega esperada: [fecha]. ¿Preguntas? Responde a este mensaje."
+            },
+            {
+              "channel": "Email",
+              "title": "Paquete de Documentación de Calidad",
+              "description": "Con el envío",
+              "content": "Adjunto: Documentación de calidad completa para el pedido [#] incluyendo certificados de conformidad, informes de prueba de materiales y registros de inspección. Toda la documentación también está disponible en tu portal de cliente."
+            },
+            {
+              "channel": "Email",
+              "title": "Encuesta de Feedback del Primer Pedido",
+              "description": "3 días post-entrega",
+              "content": "¿Cómo fue tu experiencia con el primer pedido? Esta encuesta de 2 minutos nos ayuda a asegurar que estamos cumpliendo tus expectativas de calidad y servicio. Tu feedback da forma a nuestros esfuerzos de mejora continua."
+            },
+            {
+              "channel": "Email",
+              "title": "Soporte Técnico y Recursos de Ingeniería",
+              "description": "Día 14: Educación de soporte",
+              "content": "Obtén lo máximo de tu asociación: Así es como acceder a soporte técnico, solicitar consultas de ingeniería y aprovechar nuestra expertise en aplicaciones. Nuestro equipo de ingeniería está disponible para selección de materiales, optimización de diseño y resolución de problemas."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nuevos distribuidores o socios revendedores",
+          "scenario_objective": "Habilitar a partners de canal con capacitación y herramientas de ventas",
+          "main_messages_ideas": "Bienvenida de partner, Recursos de capacitación, Herramientas de ventas, Oportunidades de co-marketing",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bienvenido a Nuestra Red de Distribuidores",
+              "description": "Día de activación de asociación",
+              "content": "¡Bienvenido a la familia de distribuidores de [Empresa]! Tu portal de partner está listo con: catálogo de productos y precios, activos de marketing, módulos de capacitación técnica y herramientas de habilitación de ventas."
+            },
+            {
+              "channel": "Email",
+              "title": "Programa de Capacitación para Distribuidores",
+              "description": "Día 3: Invitación a capacitación",
+              "content": "Maximiza tu éxito con nuestro programa de capacitación para distribuidores. Regístrate para módulos de capacitación de producto online (2 horas en total) para obtener certificación y desbloquear niveles de margen mejorados."
+            },
+            {
+              "channel": "Email",
+              "title": "Herramientas de Ventas y Activos de Marketing",
+              "description": "Día 7: Habilitación de ventas",
+              "content": "Tu kit de herramientas de ventas está listo: presentaciones, fichas técnicas, guías de comparación y materiales de marketing co-brandeados. Descarga activos personalizables para apoyar tus esfuerzos de ventas."
+            },
+            {
+              "channel": "Email",
+              "title": "Invitación al Webinar Mensual para Distribuidores",
+              "description": "Día 14: Educación continua",
+              "content": "Únete a nuestro webinar mensual para distribuidores: actualizaciones de productos, tendencias de mercado e historias de éxito de los mejores performers. El tema de este mes: [Tema Relevante]. Regístrate ahora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Gestión de Reposición y Optimización de Inventario",
+      "target": "Clientes activos con necesidades recurrentes de producto",
+      "objective": "Asegurar reposiciones oportunas, prevenir desabastecimientos y optimizar la gestión de inventario",
+      "kpi": "Tasa de reposición (objetivo: 80%), Prevención de desabastecimiento (objetivo: 95%), Frecuencia promedio de pedido (objetivo: +15%)",
+      "description": "Comunicación proactiva de gestión de inventario que anticipa las necesidades del cliente basándose en patrones de pedido y calendarios de producción.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes acercándose al punto de reposición basado en patrones históricos",
+          "scenario_objective": "Facilitar reposiciones oportunas antes del riesgo de desabastecimiento",
+          "main_messages_ideas": "Recordatorio de reposición, Optimización de inventario, Planificación de volumen, Alertas de tiempo de entrega",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Recordatorio de Reposición: [Producto]",
+              "description": "Basado en patrón de consumo (ej. 2 semanas antes de reposición típica)",
+              "content": "Basándonos en tu patrón de pedidos, podrías estar acercándote al punto de reposición de [Producto]. Tiempo de entrega actual: [X semanas]. Repón ahora para asegurar suministro ininterrumpido. Las especificaciones y precios de tu último pedido están pre-cargados para reposición fácil."
+            },
+            {
+              "channel": "SMS",
+              "title": "Alerta de Reposición",
+              "description": "1 semana antes de desabastecimiento proyectado",
+              "content": "Recordatorio de reposición: Basándonos en tu uso, se recomienda reponer [Producto] dentro de 7 días para mantener suministro. Tiempo de entrega actual: [X semanas]. Enlace de reposición: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Reposición Rápida: Opción de Un Clic",
+              "description": "Seguimiento si no hay acción",
+              "content": "Tu reposición está lista para enviarse - mismas especificaciones, mismo precio. Haz clic para confirmar y lo tendremos en producción hoy. ¿Necesitas ajustar cantidad? Modifica fácilmente antes de confirmar."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes con patrones de compra trimestrales o anuales",
+          "scenario_objective": "Habilitar planificación anticipada y optimización de volumen",
+          "main_messages_ideas": "Planificación trimestral, Descuentos por volumen, Pedidos marco, Colaboración de pronóstico",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Planificación Q[X]: Revisemos Tus Requisitos",
+              "description": "6 semanas antes del trimestre",
+              "content": "¿Planificando para Q[X]? Revisemos tus requisitos proyectados para optimizar tiempos de entrega y precios. Comparte tu pronóstico y proporcionaremos opciones de descuento por volumen y asignación de capacidad garantizada."
+            },
+            {
+              "channel": "Email",
+              "title": "Beneficios de Pedido Marco",
+              "description": "Para clientes que califican",
+              "content": "Asegura precios y garantiza capacidad con un acuerdo de pedido marco. Los beneficios incluyen: [X]% descuento por volumen, programación de producción prioritaria y calendario de liberaciones flexible. Discutamos si esto encaja con tu estrategia de compras."
+            },
+            {
+              "channel": "Email",
+              "title": "Oportunidad de Acuerdo de Volumen Anual",
+              "description": "Planificación de fin de año",
+              "content": "Basándonos en tu volumen de [año], calificas para nuestro programa de acuerdo anual. Beneficios: precios garantizados, compromiso de capacidad y niveles de soporte mejorados. Programa una sesión de planificación para explorar las posibilidades."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Soporte Técnico e Ingeniería de Aplicación",
+      "target": "Clientes actuales que requieren asistencia técnica",
+      "objective": "Proporcionar soporte técnico proactivo y fortalecer relaciones de ingeniería",
+      "kpi": "Tiempo de resolución de problemas (objetivo: <24 horas), Satisfacción del cliente (objetivo: 90%), Tasa de engagement de ingeniería (objetivo: 40%)",
+      "description": "Comunicación técnica proactiva que posiciona a tu equipo como un socio resolutor de problemas, no solo un proveedor.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes que enviaron preguntas técnicas o solicitudes de soporte",
+          "scenario_objective": "Resolución rápida y excelencia en seguimiento",
+          "main_messages_ideas": "Reconocimiento, Actualización de resolución, Seguimiento, Confirmación de satisfacción",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Solicitud de Soporte Técnico Recibida",
+              "description": "Reconocimiento inmediato",
+              "content": "Tu consulta técnica ha sido recibida y asignada a [Nombre del Ingeniero]. Respuesta inicial esperada: dentro de 4 horas. Para problemas urgentes de producción, llama al [número] para asistencia inmediata."
+            },
+            {
+              "channel": "SMS",
+              "title": "Actualización de Ticket de Soporte",
+              "description": "Al cambio de estado",
+              "content": "Actualización de tu solicitud de soporte [#]: [Estado]. Nuestro ingeniero está trabajando en esto. ¿Necesitas discutir? Responde para programar una llamada."
+            },
+            {
+              "channel": "Email",
+              "title": "Resolución Técnica y Recomendaciones",
+              "description": "Al resolver",
+              "content": "Tu consulta técnica ha sido resuelta. Aquí está nuestro análisis, recomendaciones y medidas preventivas para el futuro. Por favor confirma que esto aborda tus necesidades - queremos asegurar resolución completa."
+            },
+            {
+              "channel": "Email",
+              "title": "Feedback de Experiencia de Soporte",
+              "description": "2 días post-resolución",
+              "content": "¿Cómo lo hicimos? Feedback rápido sobre tu experiencia de soporte nos ayuda a mantener la excelencia en ingeniería. ¿Se resolvió completamente tu problema? ¿Cómo podemos mejorar?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes activos sin engagement de ingeniería reciente",
+          "scenario_objective": "Check-in técnico proactivo y valor agregado",
+          "main_messages_ideas": "Revisión de aplicación, Oportunidad de optimización, Vista previa de nueva tecnología, Horarios de oficina de ingeniería",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Check-In de Ingeniería: Oportunidades de Optimización",
+              "description": "Alcance proactivo trimestral",
+              "content": "¿Cómo están funcionando nuestros productos en tu aplicación? Nuestro equipo de ingeniería está disponible para una revisión gratuita de aplicación para identificar optimizaciones potenciales - alternativas de materiales, mejoras de diseño o mejoras de proceso."
+            },
+            {
+              "channel": "Email",
+              "title": "Invitación a Horarios de Oficina de Ingeniería",
+              "description": "Oportunidad mensual",
+              "content": "Únete a nuestros Horarios de Oficina de Ingeniería mensuales - Q&A abierto con nuestro equipo de ingeniería de aplicaciones. Trae tus desafíos técnicos, preguntas de diseño o simplemente aprende de las discusiones entre pares. Este mes: [Tema]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Comunicación de Calidad y Cumplimiento",
+      "target": "Todos los clientes, especialmente aquellos en industrias reguladas",
+      "objective": "Comunicar proactivamente actualizaciones de calidad y mantener confianza en cumplimiento",
+      "kpi": "Completitud de documentación de calidad (objetivo: 100%), Tasa de aprobación de auditorías (objetivo: 98%), Puntuación de confianza del cliente (objetivo: 90%)",
+      "description": "Comunicación proactiva de calidad que refuerza la confianza en tus procesos de manufactura y estado de cumplimiento.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes en industrias reguladas (aeroespacial, médica, automotriz)",
+          "scenario_objective": "Mantener confianza en cumplimiento y preparación para auditorías",
+          "main_messages_ideas": "Actualizaciones de certificación, Resultados de auditoría, Documentación de cumplimiento, Cambios regulatorios",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Renovación de Certificación: [Certificación]",
+              "description": "Al renovar certificación",
+              "content": "Buenas noticias: Hemos renovado exitosamente nuestra certificación [ISO/AS9100/IATF16949]. Los certificados actualizados están disponibles en tu portal de cliente. Esto refuerza nuestro compromiso con los estándares de calidad de los que dependen tus operaciones."
+            },
+            {
+              "channel": "Email",
+              "title": "Informe de Resumen Anual de Calidad",
+              "description": "Revisión anual de calidad",
+              "content": "Tu resumen anual de calidad: Rendimiento de entrega a tiempo, métricas de calidad y logros de cero defectos para tus pedidos este año. Estamos orgullosos de nuestra asociación en mantener tus estándares de calidad."
+            },
+            {
+              "channel": "Email",
+              "title": "Actualización Regulatoria: Evaluación de Impacto",
+              "description": "Cuando cambian regulaciones",
+              "content": "Nuevas regulaciones de [industria] están entrando en vigor. Aquí está nuestra evaluación del impacto en los productos que nos compras, y los pasos que estamos tomando para asegurar cumplimiento continuo. ¿Preguntas? Nuestro equipo de calidad está disponible para discutir."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Todos los clientes que reciben envíos",
+          "scenario_objective": "Entrega proactiva de documentación y transparencia",
+          "main_messages_ideas": "Notificación de documentación, Acceso al portal, Disponibilidad de certificación, Trazabilidad",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Documentación de Calidad Lista: Pedido [#]",
+              "description": "Con el envío",
+              "content": "La documentación de calidad completa para el pedido [#] ya está disponible en tu portal: Certificados de Conformidad, Informes de Prueba de Materiales, Primera Pieza si aplica y registros de trazabilidad completos."
+            },
+            {
+              "channel": "Email",
+              "title": "¿Sabías? Funciones del Portal de Documentación",
+              "description": "Educación trimestral",
+              "content": "Obtén más de tu portal de documentación: Descarga documentación en masa, configura preferencias de entrega automática, accede a registros históricos y genera informes personalizados para tus auditorías."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Innovación de Producto y Anuncios de Nuevas Capacidades",
+      "target": "Todos los clientes y prospectos cualificados por categoría de producto",
+      "objective": "Impulsar conocimiento y adopción de nuevos productos y capacidades de manufactura",
+      "kpi": "Tasa de adopción de nuevo producto (objetivo: 20%), Ingresos de cross-sell (objetivo: 15% de nuevo negocio), Engagement con innovación (objetivo: 35%)",
+      "description": "Comunicación estratégica de nuevos productos, capacidades e innovaciones técnicas relevantes para las áreas de aplicación de cada cliente.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes en categorías de producto relevantes para nuevas ofertas",
+          "scenario_objective": "Impulsar conocimiento y prueba de nuevos productos",
+          "main_messages_ideas": "Lanzamiento de nuevo producto, Beneficios técnicos, Oferta de muestras, Programa de early adopter",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Presentamos [Nuevo Producto]: Resolviendo [Desafío]",
+              "description": "Anuncio de lanzamiento",
+              "content": "Nos emociona presentar [Nuevo Producto] - diseñado para abordar [desafío específico] en [aplicación]. Ventajas clave: [3 beneficios]. Basándonos en tus compras actuales, esto podría mejorar [aplicación específica]."
+            },
+            {
+              "channel": "Email",
+              "title": "Especificaciones Técnicas y Aplicaciones de [Nuevo Producto]",
+              "description": "Día 5: Profundización técnica",
+              "content": "Profundización técnica: especificaciones de [Nuevo Producto], datos de rendimiento y guías de aplicación. Incluye comparación con soluciones existentes y consideraciones de migración."
+            },
+            {
+              "channel": "Email",
+              "title": "Programa de Muestras de Evaluación: [Nuevo Producto]",
+              "description": "Día 10: Oferta de prueba",
+              "content": "Experimenta [Nuevo Producto] en tu aplicación: Muestras de evaluación gratuitas disponibles para proyectos cualificados. Incluye soporte técnico completo durante la evaluación. Envía tu solicitud de evaluación antes del [fecha]."
+            },
+            {
+              "channel": "Email",
+              "title": "Caso de Estudio de Early Adopter: [Éxito de Cliente]",
+              "description": "Día 21: Prueba social",
+              "content": "[Empresa] logró [resultado] con [Nuevo Producto] - aquí está su historia. Ve cómo las ventajas técnicas se tradujeron en mejoras de rendimiento en el mundo real en una aplicación similar."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Todos los clientes para anuncios de capacidades",
+          "scenario_objective": "Comunicar capacidades de manufactura expandidas",
+          "main_messages_ideas": "Anuncio de nueva capacidad, Expansión de capacidad, Inversión en tecnología, Actualización de instalaciones",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Expansión de Capacidades: [Nueva Capacidad]",
+              "description": "Momento del anuncio",
+              "content": "Hemos invertido en [nueva capacidad/equipo/instalación] para servirte mejor. Esto significa: tiempos de entrega más rápidos, capacidad expandida y nuevas posibilidades técnicas. Esto es lo que significa para tus proyectos."
+            },
+            {
+              "channel": "Email",
+              "title": "Tour Virtual de Instalaciones: Ve Nuestra Nueva [Capacidad]",
+              "description": "Engagement de seguimiento",
+              "content": "Haz un tour virtual de nuestras instalaciones expandidas y nueva [capacidad]. Ve la tecnología en acción y aprende cómo puede beneficiar tus futuros proyectos. Programa un tour virtual en vivo con nuestro equipo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Desarrollo de Cuentas Estratégicas",
+      "target": "Cuentas clave y clientes de alto potencial",
+      "objective": "Profundizar asociaciones estratégicas y expandir participación de cartera",
+      "kpi": "Tasa de crecimiento de cuenta (objetivo: 20% YoY), Participación de cartera (objetivo: +10%), Puntuación de profundidad de relación (objetivo: 4.5/5)",
+      "description": "Engagement de alto contacto para cuentas estratégicas enfocado en desarrollo de asociación, alineación de negocio y crecimiento mutuo.",
+      "scenarios": [
+        {
+          "scenario_target": "Cuentas de primer nivel por ingresos e importancia estratégica",
+          "scenario_objective": "Formalizar asociación estratégica y alinear en planes de crecimiento",
+          "main_messages_ideas": "Revisión de asociación, Planificación estratégica, Engagement ejecutivo, Soluciones personalizadas",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Invitación a Revisión Anual de Asociación",
+              "description": "Q1 planificación anual",
+              "content": "Como uno de nuestros valiosos socios estratégicos, nos gustaría programar nuestra revisión anual de negocio. Discutamos: tus prioridades de [año], nuestras capacidades expandidas y oportunidades para colaboración más profunda. Nuestro equipo ejecutivo participará."
+            },
+            {
+              "channel": "Email",
+              "title": "Resumen de Asociación: [Año] en Revisión",
+              "description": "Preparación pre-reunión",
+              "content": "Preparándonos para nuestra próxima revisión, aquí hay un resumen de nuestra asociación este año: valor total entregado, rendimiento de calidad, métricas de entrega a tiempo y engagements de soporte técnico. Estamos orgullosos de lo que hemos logrado juntos."
+            },
+            {
+              "channel": "Email",
+              "title": "Programa de Asociación Estratégica: Beneficios Exclusivos",
+              "description": "Seguimiento post-revisión",
+              "content": "Basándonos en nuestra revisión de negocio, me complace confirmar tu estatus de Socio Estratégico. Esto incluye: equipo de cuenta dedicado, asignación de capacidad prioritaria, colaboración de ingeniería en nuevos desarrollos y reuniones trimestrales de alineación de negocio."
+            },
+            {
+              "channel": "Email",
+              "title": "Conexión Ejecutiva: [Nombre del Ejecutivo]",
+              "description": "Patrocinio ejecutivo",
+              "content": "Para reforzar nuestro compromiso de asociación, me gustaría presentarte a [Nombre del Ejecutivo], tu patrocinador ejecutivo. [Ejecutivo] está comprometido a asegurar que nuestra asociación entregue el máximo valor y se unirá a nuestras revisiones trimestrales."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cuentas de alto potencial con oportunidad de crecimiento",
+          "scenario_objective": "Acelerar desarrollo de relación y participación de cartera",
+          "main_messages_ideas": "Oportunidad de crecimiento, Soluciones expandidas, Introducción de cross-sell, Elevación de asociación",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Expandiendo Nuestra Asociación: Nuevas Posibilidades",
+              "description": "Alcance de oportunidad de crecimiento",
+              "content": "Hemos estado satisfechos con nuestra colaboración en [productos actuales]. Quería compartir capacidades adicionales que podrían apoyar tus operaciones: [áreas de producto/servicio expandidas]. ¿Vale la pena explorar cómo podríamos hacer más juntos?"
+            },
+            {
+              "channel": "Email",
+              "title": "Soluciones Completas: Más Allá de [Producto Actual]",
+              "description": "Educación de cross-sell",
+              "content": "Más allá de [compras actuales], ofrecemos [productos/servicios complementarios]. Muchos clientes consolidan su aprovisionamiento de [categoría] con nosotros para compras simplificadas y beneficios de volumen. ¿Interesado en una revisión de capacidades?"
+            },
+            {
+              "channel": "Email",
+              "title": "Programa de Aceleración de Asociación",
+              "description": "Invitación a programa de crecimiento",
+              "content": "Basándonos en tu trayectoria de crecimiento, eres un gran candidato para nuestro Programa de Aceleración de Asociación - términos mejorados, soporte dedicado y alineación estratégica típicamente reservados para nuestras cuentas más grandes. Discutamos las posibilidades."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back y Reactivación de Cuentas Inactivas",
+      "target": "Antiguos clientes y cuentas inactivas",
+      "objective": "Re-involucrar cuentas inactivas y recuperar clientes perdidos",
+      "kpi": "Tasa de reactivación (objetivo: 15%), Conversión de win-back (objetivo: 10%), Ingresos recuperados (objetivo: 20% del valor perdido)",
+      "description": "Re-engagement estratégico para clientes que han dejado de pedir, con comprensión de las probables razones de partida y propuestas de valor específicas.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes sin pedidos en 6+ meses (inactividad inesperada)",
+          "scenario_objective": "Entender razón y re-involucrar con oferta relevante",
+          "main_messages_ideas": "Check-in, Capacidades actualizadas, Oferta de re-engagement, Solicitud de feedback",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Te Hemos Extrañado",
+              "description": "Trigger de 6 meses de inactividad",
+              "content": "Ha pasado un tiempo desde tu último pedido y queríamos hacer un check-in. ¿Han cambiado tus requisitos, o hay algo que podríamos haber hecho mejor? Valoramos tu feedback y queremos asegurar que estamos cumpliendo tus necesidades."
+            },
+            {
+              "channel": "Email",
+              "title": "Qué Hay de Nuevo Desde la Última Vez Que Trabajamos Juntos",
+              "description": "Día 14: Actualización de capacidades",
+              "content": "Desde tu último pedido, hemos expandido nuestras capacidades: [nuevas ofertas, certificaciones o mejoras]. Estos desarrollos podrían abordar desafíos que no eran solucionables antes. ¿Vale una nueva mirada?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Pregunta Rápida",
+              "description": "Día 21: Alcance directo",
+              "content": "Hola [Nombre], soy [Rep] de [Empresa]. Quería hacer un check-in personal - ¿hay algo en lo que podamos ayudar? Encantado de discutir requisitos actuales o responder cualquier pregunta."
+            },
+            {
+              "channel": "Email",
+              "title": "Oferta de Bienvenida de Vuelta: Pedido de Evaluación",
+              "description": "Día 30: Oferta de re-engagement",
+              "content": "Nos gustaría recuperar tu negocio. Aprovecha nuestra oferta de evaluación de Bienvenida de Vuelta: [descuento/prueba/términos especiales] en tu próximo pedido. Sin compromiso a largo plazo - solo una oportunidad de mostrarte lo que ha mejorado."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cuentas perdidas (cambio competitivo conocido o salida negativa)",
+          "scenario_objective": "Mantenimiento de relación a largo plazo y eventual recuperación",
+          "main_messages_ideas": "Reconocimiento elegante, Puerta abierta, Solo actualizaciones significativas, Camino de retorno fácil",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Gracias por Nuestra Asociación",
+              "description": "Al confirmar partida",
+              "content": "Entendemos que has elegido avanzar con otro proveedor. Apreciamos el negocio que hemos hecho juntos y te deseamos éxito continuo. Si tus necesidades cambian, estamos aquí."
+            },
+            {
+              "channel": "Email",
+              "title": "Actualización Significativa: [Cambio Mayor]",
+              "description": "Solo cuando hay noticias significativas (6+ meses)",
+              "content": "Queríamos compartir una actualización significativa que podría ser relevante: [capacidad mayor, certificación o cambio que aborda problemas conocidos]. Sin pitch de ventas - solo pensamos que querrías saber dados tus requisitos previos."
+            },
+            {
+              "channel": "Email",
+              "title": "Camino Fácil de Retorno: Re-Onboarding Simplificado",
+              "description": "12 meses: Re-engagement anual",
+              "content": "Mucho ha cambiado en un año. Si tu situación actual no está cumpliendo expectativas, regresar es fácil - tus especificaciones históricas y contactos están preservados. Encantado de tener una conversación sin obligación sobre tus desafíos actuales."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programa de Referencias y Red de la Industria",
+      "target": "Clientes satisfechos con conexiones en la industria",
+      "objective": "Generar referencias cualificadas de clientes advocates",
+      "kpi": "Tasa de referencias (objetivo: 15% de clientes), Conversión de referencias (objetivo: 40%), Participación en programa de referencias (objetivo: 25%)",
+      "description": "Aprovechar relaciones sólidas con clientes para generar presentaciones cualificadas dentro de sus redes profesionales.",
+      "scenarios": [
+        {
+          "scenario_target": "Clientes altamente satisfechos (alto NPS, relación sólida)",
+          "scenario_objective": "Activar como fuentes de referencias",
+          "main_messages_ideas": "Apreciación, Programa de referencias, Beneficio mutuo, Proceso de referencia fácil",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Gracias por Ser un Socio Valioso",
+              "description": "Post indicador de alta satisfacción",
+              "content": "Tu feedback significa mucho para nosotros - estamos orgullosos de haber ganado tu confianza. Muchos de nuestros mejores clientes han llegado a través de presentaciones de socios como tú. ¿Conoces a alguien que podría beneficiarse de nuestras capacidades?"
+            },
+            {
+              "channel": "Email",
+              "title": "Detalles del Programa de Referencias de Socios",
+              "description": "Día 14: Detalles del programa",
+              "content": "Nuestro Programa de Referencias de Socios: Cuando nos presentas a un par que se convierte en cliente, ambos se benefician - [incentivo de referencia] para ti y [beneficio de nuevo cliente] para ellos. Simplemente comparte su contacto o haz una presentación."
+            },
+            {
+              "channel": "Email",
+              "title": "Opción de Referencia Rápida: Comparte Lo Que Hacemos",
+              "description": "Día 30: Acción fácil",
+              "content": "Forma más fácil de referir: reenvía nuestro resumen de capacidades a alguien que podría beneficiarse. O simplemente comparte su nombre y nosotros haremos el resto con un enfoque respetuoso y profesional - siempre mencionando tu recomendación."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clientes asistiendo a eventos de la industria donde también estás presente",
+          "scenario_objective": "Aprovechar co-asistencia al evento para presentaciones",
+          "main_messages_ideas": "Coordinación de evento, Facilitación de presentación, Visibilidad compartida, Oportunidad de networking",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Nos Vemos en [Evento]: Coordinación de Reunión",
+              "description": "Alcance pre-evento",
+              "content": "Ambos estaremos en [Evento] - ¡gran oportunidad para conectar! Si te gustaría presentarnos a algunos pares en la feria, estaríamos agradecidos. Encantados de devolver el favor con cualquier presentación a nuestra red que pueda ayudarte."
+            },
+            {
+              "channel": "SMS",
+              "title": "En el Evento - Conectemos",
+              "description": "Durante el evento",
+              "content": "En [Evento] - stand [#]. Pasa y trae a quien creas que debería conocernos. ¡El café va por nuestra cuenta!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Captura de Leads en Ferias y Eventos",
+      "why_brevo_is_better": "Los triggers de automatización rápida de Brevo permiten seguimiento el mismo día mientras los leads están calientes, con scoring de leads que prioriza prospectos de alta intención basándose en nivel de engagement del evento e interacción posterior con contenido.",
+      "omnichannel_channels": "Email para entrega de contenido técnico + SMS para seguimiento personal inmediato + Integración con LinkedIn para networking profesional",
+      "setup_efficiency": "Secuencias pre-construidas de seguimiento de eventos con plantillas de contenido técnico te permiten responder en horas, no días, maximizando el ROI de la feria."
+    },
+    {
+      "scenario_name": "Gestión de Reposición y Optimización de Inventario",
+      "why_brevo_is_better": "La integración ERP permite automatización basada en ciclo de pedido que predice momento de reposición basándose en patrones históricos, previniendo proactivamente desabastecimientos antes de que los clientes siquiera se den cuenta de que necesitan pedir.",
+      "omnichannel_channels": "Email para información detallada de pedido y documentación + SMS para alertas urgentes + Integración con portal de cliente para reposición de un clic",
+      "setup_efficiency": "Integración de historial de pedidos permite recordatorios de reposición automatizados calibrados a los patrones de consumo específicos de cada cliente."
+    },
+    {
+      "scenario_name": "Soporte Técnico e Ingeniería de Aplicación",
+      "why_brevo_is_better": "El enrutamiento automatizado de tickets y monitoreo de SLA aseguran que ninguna consulta técnica se pierda, con triggers de escalamiento que mantienen compromisos de tiempo de respuesta críticos en manufactura.",
+      "omnichannel_channels": "Email para comunicaciones técnicas detalladas + SMS para alertas urgentes y actualizaciones de estado + Integración con portal para entrega de documentación",
+      "setup_efficiency": "Flujos de trabajo de soporte pre-construidos mantienen comunicación consistente durante toda la resolución del problema, desde reconocimiento hasta verificación de satisfacción de seguimiento."
+    },
+    {
+      "scenario_name": "Comunicación de Calidad y Cumplimiento",
+      "why_brevo_is_better": "La entrega automatizada de documentación asegura que los clientes reciban registros de calidad con cada envío, mientras los triggers de renovación de certificación comunican proactivamente el estado de cumplimiento a clientes regulados.",
+      "omnichannel_channels": "Email para documentación formal + Integración con portal para acceso self-service + Entrega automatizada de certificados e informes de prueba",
+      "setup_efficiency": "La integración con sistemas de calidad permite entrega automática de documentación, reduciendo esfuerzo manual mientras asegura 100% de cumplimiento."
+    },
+    {
+      "scenario_name": "Desarrollo de Cuentas Estratégicas",
+      "why_brevo_is_better": "La integración CRM permite triggers de revisión anual automatizados con resúmenes de asociación personalizados, mientras el scoring de cuentas identifica oportunidades de crecimiento entre clientes de alto potencial.",
+      "omnichannel_channels": "Email para comunicaciones de negocio formales + Integración de calendario para programación de reuniones + Plantillas de comunicación ejecutiva",
+      "setup_efficiency": "Triggers de planificación anual y seguimiento de hitos de relación aseguran que ninguna cuenta estratégica pierda su revisión de negocio u oportunidad de crecimiento."
+    }
+  ],
+  "conclusion": "Las empresas de manufactura que implementen estos programas completos de marketing relacional pueden esperar asociaciones de compradores más fuertes a través de comunicación proactiva, mejores tasas de reposición a través de soporte predictivo de inventario, relaciones técnicas más profundas a través de engagement de ingeniería, y crecimiento sostenible a través del desarrollo de cuentas estratégicas. El ciclo de ventas de manufactura B2B recompensa la consistencia, credibilidad técnica y profundidad de relación - este plan entrega los tres a través de engagement sistemático y automatizado."
+}

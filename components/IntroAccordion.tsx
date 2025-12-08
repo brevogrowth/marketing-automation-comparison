@@ -8,7 +8,7 @@ type AccordionSection = 'what' | 'how' | 'trust' | null;
 
 export const IntroAccordion: React.FC = () => {
   const { t } = useLanguage();
-  const [openSection, setOpenSection] = useState<AccordionSection>('what');
+  const [openSection, setOpenSection] = useState<AccordionSection>(null);
 
   const toggleSection = (section: AccordionSection) => {
     setOpenSection(openSection === section ? null : section);

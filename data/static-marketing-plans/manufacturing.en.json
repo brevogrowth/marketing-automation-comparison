@@ -1,174 +1,672 @@
 {
-  "introduction": "This marketing relationship plan is designed for manufacturing companies looking to strengthen relationships with B2B buyers, distributors, and partners through strategic communication and value-added engagement.",
+  "introduction": "This comprehensive marketing relationship plan is designed for manufacturing companies to build lasting partnerships with B2B buyers, OEMs, distributors, and procurement teams. From initial RFQ to long-term strategic partnership, these programs optimize every touchpoint in the industrial buying cycle while ensuring operational excellence and supply chain reliability.",
   "company_summary": {
     "name": "Manufacturing Company",
     "website": "example-manufacturing.com",
-    "activities": "B2B manufacturing and industrial products, including equipment, components, materials, or specialized manufacturing solutions",
-    "target": "Procurement managers, engineers, and business decision-makers in industrial and commercial organizations",
+    "activities": "B2B manufacturing and industrial products, including equipment, components, materials, machinery, or specialized manufacturing solutions for industrial and commercial applications",
+    "target": "Procurement managers, engineering teams, operations directors, plant managers, and C-level decision-makers in industrial organizations, OEMs, and commercial enterprises",
     "industry": "Manufacturing",
-    "business_model": "B2B Manufacturing"
+    "business_model": "B2B Manufacturing",
+    "customer_lifecycle_key_steps": "Awareness > Trade Show/Digital Discovery > Technical Evaluation > RFQ > Qualification > First Order > Production Integration > Reorder Cycle > Strategic Partnership > Expansion > Advocacy"
   },
   "programs_list": [
     {
-      "program_name": "Lead Nurturing & Qualification",
-      "target": "Prospects from trade shows, website, and marketing campaigns",
-      "objective": "Educate prospects on solutions and move toward RFQ stage",
-      "kpi": "Lead to opportunity conversion, Content engagement, RFQ generation",
-      "description": "Educational nurturing to demonstrate technical expertise and production capabilities.",
+      "program_name": "Trade Show & Event Lead Capture",
+      "target": "Prospects from industry events, trade shows, and conferences",
+      "objective": "Convert event leads into qualified opportunities through rapid, relevant follow-up",
+      "kpi": "Event lead to MQL conversion (target: 30%), Meeting booking rate (target: 20%), Event ROI (target: 5x)",
+      "description": "Rapid post-event engagement that capitalizes on momentum while leads are still warm, with industry-specific follow-up sequences.",
       "scenarios": [
         {
-          "scenario_target": "Trade show leads and website inquiries",
-          "scenario_objective": "Move prospects toward specification and RFQ",
-          "main_messages_ideas": "Technical resources, Capability showcase, Case studies, Consultation offer",
+          "scenario_target": "High-interest trade show visitors who requested product demos or specifications",
+          "scenario_objective": "Convert demo requests into technical consultations and RFQs",
+          "main_messages_ideas": "Demo follow-up, Technical deep-dive, Specification sheets, Engineering consultation",
           "message_sequence": [
             {
-              "title": "Thank You + Resources",
-              "description": "After initial contact",
-              "content": "Thanks for connecting! Here's an overview of our [Product/Capability]"
+              "channel": "Email",
+              "title": "Great Meeting You at [Event Name]",
+              "description": "Same day or next morning after event",
+              "content": "It was a pleasure discussing your [specific application] requirements at [Event]. As promised, here's the technical documentation for [Product Line] you requested, including specifications, tolerances, and application guidelines."
             },
             {
-              "title": "Technical Deep Dive",
-              "description": "Day 3: Detailed specifications",
-              "content": "Technical guide: [Product] specifications and applications"
+              "channel": "Email",
+              "title": "Technical Deep Dive: [Product] Specifications",
+              "description": "Day 2: Detailed technical content",
+              "content": "Following our conversation, here's a comprehensive technical guide covering material properties, manufacturing tolerances, and integration specifications for [Product]. This includes CAD files and engineering drawings for your review."
             },
             {
-              "title": "Case Study",
-              "description": "Day 7: Proof of capability",
-              "content": "How we solved [Industry Challenge] for [Client Type]"
+              "channel": "SMS",
+              "title": "Quick Question",
+              "description": "Day 3: Personal outreach",
+              "content": "Hi [Name], this is [Rep] from [Company]. Had a chance to review the specs I sent? Happy to jump on a quick call to answer any technical questions."
             },
             {
-              "title": "Engineering Consultation",
-              "description": "Day 14: Technical consultation offer",
-              "content": "Let's discuss your requirements: Schedule an engineering consultation"
+              "channel": "Email",
+              "title": "Case Study: [Similar Application]",
+              "description": "Day 5: Proof of capability",
+              "content": "Thought you'd find this relevant - here's how we helped [Industry Peer] achieve [specific result] with a similar application. Includes implementation timeline and ROI analysis."
+            },
+            {
+              "channel": "Email",
+              "title": "Engineering Consultation Invitation",
+              "description": "Day 10: Move to next stage",
+              "content": "Our engineering team has availability next week for a technical consultation on your [application]. This 45-minute session covers specification review, material selection, and preliminary feasibility assessment - no commitment required."
+            },
+            {
+              "channel": "Email",
+              "title": "Trade Show Special: Evaluation Samples",
+              "description": "Day 14: Limited-time offer",
+              "content": "As a follow-up to [Event], we're offering complimentary evaluation samples for qualified projects. Submit your requirements by [date] to receive samples with full test certificates and material documentation."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Booth visitors who browsed but didn't engage deeply (badge scans without conversation)",
+          "scenario_objective": "Re-engage and identify potential interest areas",
+          "main_messages_ideas": "Event recap, Capabilities overview, Resource library, Interest identification",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Event Name] Highlights & Resources",
+              "description": "Day 1: Broad capabilities overview",
+              "content": "Thanks for stopping by our booth at [Event]. Here's a recap of the solutions we showcased, including our latest innovations in [Product Category]. Not sure which applies to you? Our quick assessment tool helps identify the best fit."
+            },
+            {
+              "channel": "Email",
+              "title": "Manufacturing Excellence Resource Library",
+              "description": "Day 5: Educational content",
+              "content": "Access our manufacturing excellence resource library - technical guides, application notes, and industry best practices. Which area is most relevant to your current projects?"
+            },
+            {
+              "channel": "Email",
+              "title": "What Manufacturing Challenge Can We Solve?",
+              "description": "Day 12: Interest identification",
+              "content": "We solve [3 key challenges]. Which one resonates most with your current priorities? Reply with a number and we'll send targeted information: 1) [Challenge A], 2) [Challenge B], 3) [Challenge C]"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Customer Onboarding",
-      "target": "New B2B customers",
-      "objective": "Ensure smooth setup and first order success",
-      "kpi": "First order success rate, Onboarding satisfaction, Repeat order rate",
-      "description": "Structured onboarding to establish ordering processes and technical support channels.",
+      "program_name": "Digital Lead Nurturing & Qualification",
+      "target": "Website visitors, content downloaders, and inbound inquiries",
+      "objective": "Educate digital prospects on technical capabilities and progress toward RFQ stage",
+      "kpi": "Lead to SQL conversion (target: 25%), Content engagement rate (target: 40%), RFQ generation (target: 15%)",
+      "description": "Educational nurturing that demonstrates technical expertise, production capabilities, and quality certifications to move prospects through the industrial buying process.",
       "scenarios": [
         {
-          "scenario_target": "New manufacturing customers",
-          "scenario_objective": "Establish smooth ordering and support processes",
-          "main_messages_ideas": "Account setup, Ordering process, Technical support, Quality assurance",
+          "scenario_target": "Prospects who downloaded technical content (datasheets, CAD files, specifications)",
+          "scenario_objective": "Deepen technical engagement and qualify project requirements",
+          "main_messages_ideas": "Technical resources, Application engineering, Capability showcase, Project qualification",
           "message_sequence": [
             {
-              "title": "Welcome to Partnership",
-              "description": "Day 1: Account setup",
-              "content": "Welcome aboard! Here's your account information and key contacts"
+              "channel": "Email",
+              "title": "Your [Document Type] + Additional Resources",
+              "description": "Immediate: Post-download",
+              "content": "Here's your [document] along with related technical resources: material specifications, tolerance guides, and application best practices. Need custom specifications? Our engineering team can help."
             },
             {
-              "title": "Ordering Guide",
-              "description": "Day 3: How to order",
-              "content": "Your ordering guide: Processes, lead times, and specifications"
+              "channel": "Email",
+              "title": "Engineering Application Guide",
+              "description": "Day 3: Educational content",
+              "content": "How to specify [Product Category] for optimal performance: This guide covers material selection, dimensional tolerances, surface treatments, and testing requirements based on your application environment."
             },
             {
-              "title": "Technical Support",
-              "description": "Day 7: Support resources",
-              "content": "Your technical support resources: Engineering assistance available"
+              "channel": "Email",
+              "title": "Manufacturing Capabilities Overview",
+              "description": "Day 7: Capability showcase",
+              "content": "From prototype to production: Our manufacturing capabilities include [processes], with quality certifications [ISO, AS9100, IATF16949, etc.]. Virtual facility tour available to see our operations firsthand."
             },
             {
-              "title": "First Order Check-in",
-              "description": "After first delivery",
-              "content": "How was your first order? We're here to ensure quality"
+              "channel": "Email",
+              "title": "Case Study: [Industry] Application",
+              "description": "Day 12: Proof of performance",
+              "content": "How [Company] achieved [result] with our [Product]: Includes engineering challenges solved, production timeline, and quality metrics achieved. Similar project? Let's discuss your requirements."
+            },
+            {
+              "channel": "SMS",
+              "title": "Quick Specification Question",
+              "description": "Day 15: Direct outreach",
+              "content": "Hi [Name], noticed you downloaded our [Product] specs. Working on a specific project? Our engineers can provide quick guidance on feasibility and lead times."
+            },
+            {
+              "channel": "Email",
+              "title": "Project Qualification Questionnaire",
+              "description": "Day 18: Qualification step",
+              "content": "Ready to move forward? Complete our brief project questionnaire and receive a preliminary assessment including estimated lead times, budget range, and recommended specifications within 48 hours."
+            }
+          ]
+        },
+        {
+          "scenario_target": "RFQ form submissions and website contact requests",
+          "scenario_objective": "Rapid response and sales engagement for active buyers",
+          "main_messages_ideas": "Rapid response, Sales introduction, Technical consultation, Quote preparation",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Your Inquiry Has Been Received",
+              "description": "Immediate: Auto-response",
+              "content": "Thank you for your inquiry. A member of our team will review your requirements and respond within 4 business hours. For urgent requests, call [number] to speak with an engineer directly."
+            },
+            {
+              "channel": "SMS",
+              "title": "Inquiry Confirmation",
+              "description": "Immediate: SMS confirmation",
+              "content": "Your inquiry to [Company] has been received. Expect a detailed response within 4 hours. Questions? Reply to this message or call [number]."
+            },
+            {
+              "channel": "Email",
+              "title": "Your Dedicated Contact: [Rep Name]",
+              "description": "Within 4 hours: Sales assignment",
+              "content": "I'm [Rep Name], your dedicated contact for this project. I've reviewed your inquiry and have a few clarifying questions before preparing your quotation. Can we schedule a 15-minute call this week?"
+            },
+            {
+              "channel": "Email",
+              "title": "Quote Preparation: Additional Information Needed",
+              "description": "If information missing",
+              "content": "To provide an accurate quotation, we need clarification on: [specific questions]. Please reply with this information or let's schedule a call to discuss - I can have preliminary pricing ready within 24 hours of receiving these details."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Reorder & Inventory Management",
+      "program_name": "New Customer Onboarding & First Order Success",
+      "target": "New B2B customers after first order placement",
+      "objective": "Ensure flawless first order execution and establish long-term ordering processes",
+      "kpi": "First order satisfaction (target: 95%), Repeat order rate (target: 70%), Onboarding completion (target: 85%)",
+      "description": "Structured onboarding that establishes ordering processes, quality expectations, and support channels to build foundation for long-term partnership.",
+      "scenarios": [
+        {
+          "scenario_target": "New manufacturing customers with first order in production",
+          "scenario_objective": "Ensure smooth first order and establish partnership foundation",
+          "main_messages_ideas": "Welcome, Process setup, Quality assurance, Support introduction, First delivery follow-up",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Welcome to [Company] Partnership",
+              "description": "Order confirmation day",
+              "content": "Welcome to our customer family! Your order [#] is confirmed and in production. Here's your complete account setup guide including: your dedicated contacts, ordering processes, quality documentation portal access, and technical support channels."
+            },
+            {
+              "channel": "Email",
+              "title": "Your Account Portal Is Ready",
+              "description": "Day 2: Digital setup",
+              "content": "Your customer portal is now active. Access order tracking, documentation (COCs, test reports, MTRs), technical specifications, and submit support requests 24/7. Here's your login and quick-start guide."
+            },
+            {
+              "channel": "Email",
+              "title": "Ordering Process & Lead Time Guide",
+              "description": "Day 4: Process education",
+              "content": "Everything you need to know about ordering: standard lead times, expedite options, order modification cutoffs, and volume discount tiers. Save this for future reference - it's your ordering playbook."
+            },
+            {
+              "channel": "SMS",
+              "title": "First Order Shipped",
+              "description": "On shipment",
+              "content": "Great news! Your first order [#] shipped today via [carrier]. Tracking: [link]. Expected delivery: [date]. Questions? Reply to this message."
+            },
+            {
+              "channel": "Email",
+              "title": "Quality Documentation Package",
+              "description": "With shipment",
+              "content": "Attached: Complete quality documentation for order [#] including certificates of conformance, material test reports, and inspection records. All documentation is also available in your customer portal."
+            },
+            {
+              "channel": "Email",
+              "title": "First Order Feedback Survey",
+              "description": "3 days post-delivery",
+              "content": "How was your first order experience? This 2-minute survey helps us ensure we're meeting your quality and service expectations. Your feedback shapes our continuous improvement efforts."
+            },
+            {
+              "channel": "Email",
+              "title": "Technical Support & Engineering Resources",
+              "description": "Day 14: Support education",
+              "content": "Get the most from your partnership: Here's how to access technical support, request engineering consultations, and leverage our application expertise. Our engineering team is available for material selection, design optimization, and problem-solving."
+            }
+          ]
+        },
+        {
+          "scenario_target": "New distributor or reseller partners",
+          "scenario_objective": "Enable channel partners with training and sales tools",
+          "main_messages_ideas": "Partner welcome, Training resources, Sales tools, Co-marketing opportunities",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Welcome to Our Distributor Network",
+              "description": "Partnership activation day",
+              "content": "Welcome to the [Company] distributor family! Your partner portal is ready with: product catalog and pricing, marketing assets, technical training modules, and sales enablement tools."
+            },
+            {
+              "channel": "Email",
+              "title": "Distributor Training Program",
+              "description": "Day 3: Training invitation",
+              "content": "Maximize your success with our distributor training program. Register for online product training modules (2 hours total) to earn certification and unlock enhanced margin tiers."
+            },
+            {
+              "channel": "Email",
+              "title": "Sales Tools & Marketing Assets",
+              "description": "Day 7: Sales enablement",
+              "content": "Your sales toolkit is ready: presentations, datasheets, comparison guides, and co-branded marketing materials. Download customizable assets to support your sales efforts."
+            },
+            {
+              "channel": "Email",
+              "title": "Monthly Distributor Webinar Invitation",
+              "description": "Day 14: Ongoing education",
+              "content": "Join our monthly distributor webinar: product updates, market trends, and success stories from top performers. This month's topic: [Relevant Topic]. Register now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Reorder Management & Inventory Optimization",
       "target": "Active customers with recurring product needs",
-      "objective": "Ensure timely reorders and prevent stockouts",
-      "kpi": "Reorder rate, Average order frequency, Order value retention",
-      "description": "Proactive communication to support inventory management and repeat ordering.",
+      "objective": "Ensure timely reorders, prevent stockouts, and optimize inventory management",
+      "kpi": "Reorder rate (target: 80%), Stockout prevention (target: 95%), Average order frequency (target: +15%)",
+      "description": "Proactive inventory management communication that anticipates customer needs based on order patterns and production schedules.",
       "scenarios": [
         {
-          "scenario_target": "Customers with regular ordering patterns",
-          "scenario_objective": "Facilitate timely reorders",
-          "main_messages_ideas": "Reorder reminder, Inventory planning, Volume discounts, Lead time alerts",
+          "scenario_target": "Customers approaching reorder point based on historical patterns",
+          "scenario_objective": "Facilitate timely reorders before stockout risk",
+          "main_messages_ideas": "Reorder reminder, Inventory optimization, Volume planning, Lead time alerts",
           "message_sequence": [
             {
-              "title": "Reorder Reminder",
-              "description": "Based on typical order cycle",
-              "content": "Time to reorder? Based on your pattern, you may be running low"
+              "channel": "Email",
+              "title": "Reorder Reminder: [Product]",
+              "description": "Based on consumption pattern (e.g., 2 weeks before typical reorder)",
+              "content": "Based on your ordering pattern, you may be approaching reorder point for [Product]. Current lead time: [X weeks]. Reorder now to ensure uninterrupted supply. Your last order specifications and pricing are pre-loaded for easy reorder."
             },
             {
-              "title": "Inventory Planning",
-              "description": "Quarterly planning support",
-              "content": "Planning ahead? Let's discuss your Q[X] requirements"
+              "channel": "SMS",
+              "title": "Reorder Alert",
+              "description": "1 week before projected stockout",
+              "content": "Reorder reminder: Based on your usage, [Product] reorder recommended within 7 days to maintain supply. Current lead time: [X weeks]. Reorder link: [URL]"
             },
             {
-              "title": "Lead Time Alert",
-              "description": "When demand is high",
-              "content": "Lead time alert: Order now to ensure [Delivery Date]"
+              "channel": "Email",
+              "title": "Quick Reorder: One-Click Option",
+              "description": "Follow-up if no action",
+              "content": "Your reorder is ready to go - same specs, same pricing. Click to confirm and we'll have it in production today. Need to adjust quantity? Modify easily before confirming."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers with quarterly or annual purchasing patterns",
+          "scenario_objective": "Enable advance planning and volume optimization",
+          "main_messages_ideas": "Quarterly planning, Volume discounts, Blanket orders, Forecast collaboration",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Q[X] Planning: Let's Review Your Requirements",
+              "description": "6 weeks before quarter",
+              "content": "Planning for Q[X]? Let's review your projected requirements to optimize lead times and pricing. Share your forecast and we'll provide volume discount options and guaranteed capacity allocation."
+            },
+            {
+              "channel": "Email",
+              "title": "Blanket Order Benefits",
+              "description": "For qualifying customers",
+              "content": "Lock in pricing and guarantee capacity with a blanket order arrangement. Benefits include: [X]% volume discount, priority production scheduling, and flexible release scheduling. Let's discuss if this fits your procurement strategy."
+            },
+            {
+              "channel": "Email",
+              "title": "Annual Volume Agreement Opportunity",
+              "description": "Year-end planning",
+              "content": "Based on your [year] volume, you qualify for our annual agreement program. Benefits: guaranteed pricing, capacity commitment, and enhanced support levels. Schedule a planning session to explore the possibilities."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Product Updates & Innovation",
-      "target": "All customers and qualified prospects",
-      "objective": "Communicate new capabilities and product improvements",
-      "kpi": "Product adoption rate, Innovation engagement, Cross-sell revenue",
-      "description": "Regular updates on new products, improvements, and technical innovations.",
+      "program_name": "Technical Support & Application Engineering",
+      "target": "Current customers requiring technical assistance",
+      "objective": "Provide proactive technical support and strengthen engineering relationships",
+      "kpi": "Issue resolution time (target: <24 hours), Customer satisfaction (target: 90%), Engineering engagement rate (target: 40%)",
+      "description": "Proactive technical communication that positions your team as a problem-solving partner, not just a supplier.",
       "scenarios": [
         {
-          "scenario_target": "Customers by product category",
-          "scenario_objective": "Drive awareness and adoption of new offerings",
-          "main_messages_ideas": "New product launch, Improvement announcements, Technical innovations, Upgrade options",
+          "scenario_target": "Customers who submitted technical questions or support requests",
+          "scenario_objective": "Rapid resolution and follow-up excellence",
+          "main_messages_ideas": "Acknowledgment, Resolution update, Follow-up, Satisfaction confirmation",
           "message_sequence": [
             {
-              "title": "New Product Announcement",
-              "description": "At product launch",
-              "content": "Introducing [New Product]: Enhanced [Capability] for [Application]"
+              "channel": "Email",
+              "title": "Technical Support Request Received",
+              "description": "Immediate acknowledgment",
+              "content": "Your technical inquiry has been received and assigned to [Engineer Name]. Expected initial response: within 4 hours. For urgent production issues, call [number] for immediate assistance."
             },
             {
-              "title": "Technical Details",
-              "description": "Follow-up with specifications",
-              "content": "[New Product] specifications: What you need to know"
+              "channel": "SMS",
+              "title": "Support Ticket Update",
+              "description": "On status change",
+              "content": "Update on your support request [#]: [Status]. Our engineer is working on this. Need to discuss? Reply to schedule a call."
             },
             {
-              "title": "Trial/Sample Offer",
-              "description": "Encourage trial",
-              "content": "Experience [New Product]: Request samples for evaluation"
+              "channel": "Email",
+              "title": "Technical Resolution & Recommendations",
+              "description": "Upon resolution",
+              "content": "Your technical inquiry has been resolved. Here's our analysis, recommendations, and preventive measures for the future. Please confirm this addresses your needs - we want to ensure complete resolution."
+            },
+            {
+              "channel": "Email",
+              "title": "Support Experience Feedback",
+              "description": "2 days post-resolution",
+              "content": "How did we do? Quick feedback on your support experience helps us maintain engineering excellence. Was your issue fully resolved? How can we improve?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Active customers without recent engineering engagement",
+          "scenario_objective": "Proactive technical check-in and value-add",
+          "main_messages_ideas": "Application review, Optimization opportunity, New technology preview, Engineering office hours",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Engineering Check-In: Optimization Opportunities",
+              "description": "Quarterly proactive outreach",
+              "content": "How are our products performing in your application? Our engineering team is available for a complimentary application review to identify potential optimizations - material alternatives, design improvements, or process enhancements."
+            },
+            {
+              "channel": "Email",
+              "title": "Engineering Office Hours Invitation",
+              "description": "Monthly opportunity",
+              "content": "Join our monthly Engineering Office Hours - open Q&A with our applications engineering team. Bring your technical challenges, design questions, or just learn from peer discussions. This month: [Topic]."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Annual Business Review",
-      "target": "Key accounts and strategic customers",
-      "objective": "Strengthen relationships and identify growth opportunities",
-      "kpi": "Account retention, Share of wallet, Customer satisfaction",
-      "description": "Structured annual touchpoints to review partnership and plan future collaboration.",
+      "program_name": "Quality & Compliance Communication",
+      "target": "All customers, especially those in regulated industries",
+      "objective": "Proactively communicate quality updates and maintain compliance confidence",
+      "kpi": "Quality documentation completeness (target: 100%), Audit pass rate (target: 98%), Customer confidence score (target: 90%)",
+      "description": "Proactive quality communication that reinforces confidence in your manufacturing processes and compliance standing.",
       "scenarios": [
         {
-          "scenario_target": "Top accounts by revenue",
-          "scenario_objective": "Deepen partnership and expand business",
-          "main_messages_ideas": "Year in review, Performance summary, Future planning, Exclusive offers",
+          "scenario_target": "Customers in regulated industries (aerospace, medical, automotive)",
+          "scenario_objective": "Maintain compliance confidence and audit readiness",
+          "main_messages_ideas": "Certification updates, Audit results, Compliance documentation, Regulatory changes",
           "message_sequence": [
             {
-              "title": "Partnership Summary",
-              "description": "At year-end",
-              "content": "Your year in partnership: Value delivered and milestones achieved"
+              "channel": "Email",
+              "title": "Certification Renewal: [Certification]",
+              "description": "Upon certification renewal",
+              "content": "Good news: We've successfully renewed our [ISO/AS9100/IATF16949] certification. Updated certificates are available in your customer portal. This reinforces our commitment to the quality standards your operations depend on."
             },
             {
-              "title": "Planning Meeting Invite",
-              "description": "Q1 planning",
-              "content": "Let's plan [New Year]: Annual business review invitation"
+              "channel": "Email",
+              "title": "Annual Quality Summary Report",
+              "description": "Yearly quality review",
+              "content": "Your annual quality summary: On-time delivery performance, quality metrics, and zero defect achievements for your orders this year. We're proud of our partnership in maintaining your quality standards."
             },
             {
-              "title": "Strategic Partner Benefits",
-              "description": "Exclusive program",
-              "content": "Your strategic partner benefits: Exclusive programs available"
+              "channel": "Email",
+              "title": "Regulatory Update: Impact Assessment",
+              "description": "When regulations change",
+              "content": "New [industry] regulations are coming into effect. Here's our assessment of the impact on products you purchase from us, and the steps we're taking to ensure continued compliance. Questions? Our quality team is available to discuss."
+            }
+          ]
+        },
+        {
+          "scenario_target": "All customers receiving shipments",
+          "scenario_objective": "Proactive documentation delivery and transparency",
+          "main_messages_ideas": "Documentation notification, Portal access, Certification availability, Traceability",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Quality Documentation Ready: Order [#]",
+              "description": "With shipment",
+              "content": "Complete quality documentation for order [#] is now available in your portal: Certificates of Conformance, Material Test Reports, First Article if applicable, and full traceability records."
+            },
+            {
+              "channel": "Email",
+              "title": "Did You Know? Documentation Portal Features",
+              "description": "Quarterly education",
+              "content": "Get more from your documentation portal: Download documentation in bulk, set up automatic delivery preferences, access historical records, and generate custom reports for your audits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Product Innovation & New Capability Announcements",
+      "target": "All customers and qualified prospects by product category",
+      "objective": "Drive awareness and adoption of new products and manufacturing capabilities",
+      "kpi": "New product adoption rate (target: 20%), Cross-sell revenue (target: 15% of new business), Innovation engagement (target: 35%)",
+      "description": "Strategic communication of new products, capabilities, and technical innovations relevant to each customer's application areas.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers in relevant product categories for new offerings",
+          "scenario_objective": "Drive awareness and trial of new products",
+          "main_messages_ideas": "New product launch, Technical benefits, Sample offer, Early adopter program",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Introducing [New Product]: Solving [Challenge]",
+              "description": "Launch announcement",
+              "content": "We're excited to introduce [New Product] - engineered to address [specific challenge] in [application]. Key advantages: [3 benefits]. Based on your current purchases, this could enhance [specific application]."
+            },
+            {
+              "channel": "Email",
+              "title": "[New Product] Technical Specifications & Applications",
+              "description": "Day 5: Technical deep-dive",
+              "content": "Technical deep-dive: [New Product] specifications, performance data, and application guidelines. Includes comparison with existing solutions and migration considerations."
+            },
+            {
+              "channel": "Email",
+              "title": "Evaluation Sample Program: [New Product]",
+              "description": "Day 10: Trial offer",
+              "content": "Experience [New Product] in your application: Complimentary evaluation samples available for qualified projects. Includes full technical support during evaluation. Submit your evaluation request by [date]."
+            },
+            {
+              "channel": "Email",
+              "title": "Early Adopter Case Study: [Customer Success]",
+              "description": "Day 21: Social proof",
+              "content": "[Company] achieved [result] with [New Product] - here's their story. See how the technical advantages translated to real-world performance improvements in a similar application."
+            }
+          ]
+        },
+        {
+          "scenario_target": "All customers for capability announcements",
+          "scenario_objective": "Communicate expanded manufacturing capabilities",
+          "main_messages_ideas": "New capability announcement, Capacity expansion, Technology investment, Facility update",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Capability Expansion: [New Capability]",
+              "description": "Announcement timing",
+              "content": "We've invested in [new capability/equipment/facility] to better serve your needs. This means: faster lead times, expanded capacity, and new technical possibilities. Here's what this means for your projects."
+            },
+            {
+              "channel": "Email",
+              "title": "Virtual Facility Tour: See Our New [Capability]",
+              "description": "Follow-up engagement",
+              "content": "Take a virtual tour of our expanded facility and new [capability]. See the technology in action and learn how it can benefit your future projects. Schedule a live virtual tour with our team."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Strategic Account Development",
+      "target": "Key accounts and high-potential customers",
+      "objective": "Deepen strategic partnerships and expand share of wallet",
+      "kpi": "Account growth rate (target: 20% YoY), Share of wallet (target: +10%), Relationship depth score (target: 4.5/5)",
+      "description": "High-touch engagement for strategic accounts focused on partnership development, business alignment, and mutual growth.",
+      "scenarios": [
+        {
+          "scenario_target": "Top-tier accounts by revenue and strategic importance",
+          "scenario_objective": "Formalize strategic partnership and align on growth plans",
+          "main_messages_ideas": "Partnership review, Strategic planning, Executive engagement, Custom solutions",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Annual Partnership Review Invitation",
+              "description": "Q1 annual planning",
+              "content": "As one of our valued strategic partners, we'd like to schedule our annual business review. Let's discuss: your [year] priorities, our expanded capabilities, and opportunities for deeper collaboration. Our executive team will be participating."
+            },
+            {
+              "channel": "Email",
+              "title": "Partnership Summary: [Year] in Review",
+              "description": "Pre-meeting preparation",
+              "content": "Preparing for our upcoming review, here's a summary of our partnership this year: total value delivered, quality performance, on-time delivery metrics, and technical support engagements. We're proud of what we've accomplished together."
+            },
+            {
+              "channel": "Email",
+              "title": "Strategic Partnership Program: Exclusive Benefits",
+              "description": "Post-review follow-up",
+              "content": "Based on our business review, I'm pleased to confirm your Strategic Partner status. This includes: dedicated account team, priority capacity allocation, engineering collaboration on new developments, and quarterly business alignment meetings."
+            },
+            {
+              "channel": "Email",
+              "title": "Executive Connection: [Executive Name]",
+              "description": "Executive sponsorship",
+              "content": "To reinforce our partnership commitment, I'd like to introduce [Executive Name], your executive sponsor. [Executive] is committed to ensuring our partnership delivers maximum value and will be joining our quarterly reviews."
+            }
+          ]
+        },
+        {
+          "scenario_target": "High-potential accounts with growth opportunity",
+          "scenario_objective": "Accelerate relationship development and wallet share",
+          "main_messages_ideas": "Growth opportunity, Expanded solutions, Cross-sell introduction, Partnership elevation",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Expanding Our Partnership: New Possibilities",
+              "description": "Growth opportunity outreach",
+              "content": "We've been pleased with our collaboration on [current products]. I wanted to share additional capabilities that might support your operations: [expanded product/service areas]. Worth exploring how we could do more together?"
+            },
+            {
+              "channel": "Email",
+              "title": "Complete Solutions: Beyond [Current Product]",
+              "description": "Cross-sell education",
+              "content": "Beyond [current purchases], we offer [complementary products/services]. Many customers consolidate their [category] sourcing with us for simplified procurement and volume benefits. Interested in a capabilities review?"
+            },
+            {
+              "channel": "Email",
+              "title": "Partnership Acceleration Program",
+              "description": "Growth program invitation",
+              "content": "Based on your growth trajectory, you're a great candidate for our Partnership Acceleration Program - enhanced terms, dedicated support, and strategic alignment typically reserved for our largest accounts. Let's discuss the possibilities."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Inactive Account Reactivation",
+      "target": "Former customers and dormant accounts",
+      "objective": "Re-engage inactive accounts and recover churned customers",
+      "kpi": "Reactivation rate (target: 15%), Win-back conversion (target: 10%), Recovered revenue (target: 20% of churned value)",
+      "description": "Strategic re-engagement for customers who have stopped ordering, with understanding of likely departure reasons and targeted value propositions.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers with no orders in 6+ months (unexpected dormancy)",
+          "scenario_objective": "Understand reason and re-engage with relevant offer",
+          "main_messages_ideas": "Check-in, Updated capabilities, Re-engagement offer, Feedback request",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "We've Missed Working With You",
+              "description": "6-month inactivity trigger",
+              "content": "It's been a while since your last order and we wanted to check in. Have your requirements changed, or is there something we could have done better? We value your feedback and want to ensure we're meeting your needs."
+            },
+            {
+              "channel": "Email",
+              "title": "What's New Since We Last Worked Together",
+              "description": "Day 14: Capability update",
+              "content": "Since your last order, we've expanded our capabilities: [new offerings, certifications, or improvements]. These developments might address challenges that weren't solvable before. Worth a fresh look?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Quick Question",
+              "description": "Day 21: Direct outreach",
+              "content": "Hi [Name], this is [Rep] from [Company]. Wanted to personally check in - is there anything we can help with? Happy to discuss current requirements or answer any questions."
+            },
+            {
+              "channel": "Email",
+              "title": "Welcome Back Offer: Evaluation Order",
+              "description": "Day 30: Re-engagement offer",
+              "content": "We'd like to earn back your business. Take advantage of our Welcome Back evaluation offer: [discount/trial/special terms] on your next order. No long-term commitment - just a chance to show you what's improved."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Lost accounts (known competitive switch or negative exit)",
+          "scenario_objective": "Long-term relationship maintenance and eventual recovery",
+          "main_messages_ideas": "Graceful acknowledgment, Door open, Significant updates only, Easy return path",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Thank You for Our Partnership",
+              "description": "On confirmed departure",
+              "content": "We understand you've chosen to move forward with another supplier. We appreciate the business we've done together and wish you continued success. Should your needs change, we're here."
+            },
+            {
+              "channel": "Email",
+              "title": "Significant Update: [Major Change]",
+              "description": "Only when significant news (6+ months)",
+              "content": "We wanted to share a significant update that might be relevant: [major capability, certification, or change that addresses known issues]. No sales pitch - just thought you'd want to know given your previous requirements."
+            },
+            {
+              "channel": "Email",
+              "title": "Easy Path Back: Simplified Re-Onboarding",
+              "description": "12 months: Annual re-engagement",
+              "content": "A lot has changed in a year. If your current situation isn't meeting expectations, returning is easy - your historical specifications and contacts are preserved. Happy to have a no-obligation conversation about your current challenges."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Referral & Industry Network Program",
+      "target": "Satisfied customers with industry connections",
+      "objective": "Generate qualified referrals from advocate customers",
+      "kpi": "Referral rate (target: 15% of customers), Referral conversion (target: 40%), Referral program participation (target: 25%)",
+      "description": "Leverage strong customer relationships to generate qualified introductions within their professional networks.",
+      "scenarios": [
+        {
+          "scenario_target": "Highly satisfied customers (high NPS, strong relationship)",
+          "scenario_objective": "Activate as referral sources",
+          "main_messages_ideas": "Appreciation, Referral program, Mutual benefit, Easy referral process",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Thank You for Being a Valued Partner",
+              "description": "Post high-satisfaction indicator",
+              "content": "Your feedback means a lot to us - we're proud to have earned your confidence. Many of our best customers have come through introductions from partners like you. Know someone who could benefit from our capabilities?"
+            },
+            {
+              "channel": "Email",
+              "title": "Partner Referral Program Details",
+              "description": "Day 14: Program details",
+              "content": "Our Partner Referral Program: When you introduce us to a peer who becomes a customer, you both benefit - [referral incentive] for you and [new customer benefit] for them. Simply share their contact or make an introduction."
+            },
+            {
+              "channel": "Email",
+              "title": "Quick Referral Option: Share What We Do",
+              "description": "Day 30: Easy action",
+              "content": "Easiest way to refer: forward our capabilities overview to someone who might benefit. Or simply share their name and we'll do the rest with a respectful, professional approach - always mentioning your recommendation."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers attending industry events where you're also present",
+          "scenario_objective": "Leverage event co-attendance for introductions",
+          "main_messages_ideas": "Event coordination, Introduction facilitation, Shared visibility, Networking opportunity",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "See You at [Event]: Meeting Coordination",
+              "description": "Pre-event outreach",
+              "content": "We'll both be at [Event] - great opportunity to connect! If you'd like to introduce us to any peers at the show, we'd be grateful. Happy to return the favor with any introductions to our network that might help you."
+            },
+            {
+              "channel": "SMS",
+              "title": "At the Event - Let's Connect",
+              "description": "During event",
+              "content": "At [Event] - booth [#]. Stop by and bring anyone you think should meet us. Coffee's on us!"
             }
           ]
         }
@@ -177,23 +675,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Lead Nurturing & Qualification",
-      "why_brevo_is_better": "Brevo's lead scoring enables progressive qualification based on technical content engagement, helping sales focus on ready-to-buy prospects.",
-      "omnichannel_channels": "Email for technical content + LinkedIn for professional networking + SMS for trade show follow-up",
-      "setup_efficiency": "Pre-built B2B manufacturing templates with specification-focused content help you launch quickly."
+      "scenario_name": "Trade Show & Event Lead Capture",
+      "why_brevo_is_better": "Brevo's rapid automation triggers enable same-day follow-up while leads are warm, with lead scoring that prioritizes high-intent prospects based on event engagement level and subsequent content interaction.",
+      "omnichannel_channels": "Email for technical content delivery + SMS for immediate personal follow-up + LinkedIn integration for professional networking",
+      "setup_efficiency": "Pre-built event follow-up sequences with technical content templates get you responding within hours, not days, maximizing trade show ROI."
     },
     {
-      "scenario_name": "Reorder & Inventory Management",
-      "why_brevo_is_better": "Integration with your ERP enables order-cycle-based automation that anticipates customer needs before they reach out.",
-      "omnichannel_channels": "Email for detailed order information + SMS for urgent alerts",
-      "setup_efficiency": "Order history integration enables automated reorder timing based on each customer's patterns."
+      "scenario_name": "Reorder Management & Inventory Optimization",
+      "why_brevo_is_better": "ERP integration enables order-cycle-based automation that predicts reorder timing based on historical patterns, proactively preventing stockouts before customers even realize they need to order.",
+      "omnichannel_channels": "Email for detailed order information and documentation + SMS for time-sensitive alerts + Customer portal integration for one-click reorder",
+      "setup_efficiency": "Order history integration enables automated reorder reminders calibrated to each customer's specific consumption patterns."
     },
     {
-      "scenario_name": "Annual Business Review",
-      "why_brevo_is_better": "CRM integration enables automated annual review triggers with personalized partnership summaries for key accounts.",
-      "omnichannel_channels": "Email for formal communications + Calendar integration for meeting scheduling",
-      "setup_efficiency": "Annual triggers ensure no key account misses their business review."
+      "scenario_name": "Technical Support & Application Engineering",
+      "why_brevo_is_better": "Automated ticket routing and SLA monitoring ensure no technical inquiry falls through the cracks, with escalation triggers that maintain response time commitments critical in manufacturing.",
+      "omnichannel_channels": "Email for detailed technical communications + SMS for urgent alerts and status updates + Portal integration for documentation delivery",
+      "setup_efficiency": "Pre-built support workflows maintain consistent communication throughout issue resolution, from acknowledgment to follow-up satisfaction check."
+    },
+    {
+      "scenario_name": "Quality & Compliance Communication",
+      "why_brevo_is_better": "Automated documentation delivery ensures customers receive quality records with every shipment, while certification renewal triggers proactively communicate compliance status to regulated customers.",
+      "omnichannel_channels": "Email for formal documentation + Portal integration for self-service access + Automated delivery of certificates and test reports",
+      "setup_efficiency": "Integration with quality systems enables automatic documentation delivery, reducing manual effort while ensuring 100% compliance."
+    },
+    {
+      "scenario_name": "Strategic Account Development",
+      "why_brevo_is_better": "CRM integration enables automated annual review triggers with personalized partnership summaries, while account scoring identifies growth opportunities among high-potential customers.",
+      "omnichannel_channels": "Email for formal business communications + Calendar integration for meeting scheduling + Executive communication templates",
+      "setup_efficiency": "Annual planning triggers and relationship milestone tracking ensure no strategic account misses their business review or growth opportunity."
     }
   ],
-  "conclusion": "Manufacturing companies that implement these relationship marketing programs can expect stronger buyer relationships, improved reorder rates through proactive communication, and deeper strategic partnerships through systematic account engagement."
+  "conclusion": "Manufacturing companies that implement these comprehensive relationship marketing programs can expect stronger buyer partnerships through proactive communication, improved reorder rates through predictive inventory support, deeper technical relationships through engineering engagement, and sustainable growth through strategic account development. The B2B manufacturing sales cycle rewards consistency, technical credibility, and relationship depth - this plan delivers all three through systematic, automated engagement."
 }

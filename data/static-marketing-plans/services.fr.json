@@ -1,179 +1,683 @@
 {
-  "introduction": "Ce plan marketing relationnel est conçu pour les cabinets de services professionnels B2B souhaitant entretenir des relations clients long terme et générer des recommandations grâce au thought leadership et à un engagement personnalisé.",
+  "introduction": "Ce plan marketing relationnel complet est conçu pour les cabinets de services professionnels B2B - incluant conseil, advisory, juridique, comptabilité, agences marketing, services IT et services business spécialisés. Le plan aborde les dynamiques uniques des entreprises fondées sur la relation où la confiance, l'expertise et les connexions personnelles stimulent la croissance. Le succès dans les services professionnels nécessite de comprendre que les clients achètent des résultats et des relations, pas des heures ou des livrables. Ce plan met l'accent sur le thought leadership, l'engagement personnalisé et le nurturing relationnel systématique à travers les cycles de vie prospects et clients, reconnaissant que vos meilleurs futurs clients viennent souvent des recommandations de clients actuels satisfaits.",
   "company_summary": {
     "name": "Cabinet de Services Professionnels",
     "website": "exemple-services.com",
-    "activities": "Services professionnels B2B incluant conseil, advisory, juridique, comptabilité ou services business spécialisés",
-    "target": "Décideurs et dirigeants d'entreprise recherchant des services professionnels experts pour résoudre des défis complexes",
+    "activities": "Services professionnels B2B incluant conseil en management, services IT/technologie, agences marketing/création, services juridiques, conseil comptabilité/finance, conseil RH ou advisory business spécialisé",
+    "target": "Décideurs business (C-suite, VPs, Directeurs), responsables achats et responsables fonctionnels recherchant des services professionnels experts pour résoudre des défis complexes et générer des résultats business",
     "industry": "Services",
-    "business_model": "B2B Services"
+    "target_audience": "Principal : Dirigeants C-suite et leaders seniors (40%), Secondaire : Responsables départements fonctionnels (35%), Tertiaire : Leaders achats et opérations (25%)",
+    "nb_employees": "20-500",
+    "business_model": "Services B2B (Projet, Retainer et Hybride)",
+    "customer_lifecycle_key_steps": "Découverte > Engagement Contenu > MQL > Consultation > Proposition > Démarrage Mission > Projet Actif > Complétion > Rétention > Expansion > Advocacy"
   },
   "programs_list": [
     {
-      "program_name": "Nurturing & Qualification de Leads",
-      "target": "Leads marketing qualifiés et prospects",
-      "objective": "Éduquer les prospects et les amener vers le statut prêt pour les ventes",
-      "kpi": "Taux de conversion MQL vers SQL, Engagement contenu, Contribution au pipeline commercial",
-      "description": "Nurturing stratégique basé sur le contenu pour établir l'expertise et construire la confiance avec les clients potentiels.",
+      "program_name": "Nurturing de Leads & Qualification Commerciale",
+      "target": "Leads marketing qualifiés issus de téléchargements de contenu, événements et engagement site web",
+      "objective": "Convertir 25% des MQL en opportunités qualifiées ventes dans les 90 jours grâce au nurturing basé sur l'éducation",
+      "kpi": "Taux conversion MQL vers SQL (cible : 25%), Taux d'engagement contenu (cible : 40%), Contribution au pipeline commercial (cible : 60% des opportunités), Temps jusqu'à qualification (cible : <90 jours)",
+      "description": "Un programme de nurture sophistiqué qui construit la confiance à travers le thought leadership et la démonstration d'expertise tout en qualifiant progressivement les prospects pour l'engagement commercial. Le programme reconnaît que les achats de services B2B nécessitent une éducation et une construction de relation extensives avant que les prospects soient prêts à s'engager.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux leads issus de téléchargements de contenu",
-          "scenario_objective": "Éduquer et qualifier pour l'engagement commercial",
-          "main_messages_ideas": "Contenu connexe, Insights industrie, Études de cas, Offre de consultation",
+          "scenario_target": "Nouveaux leads issus de téléchargements de contenu premium (livres blancs, guides, rapports)",
+          "scenario_objective": "Éduquer sur les sujets pertinents et qualifier pour la conversation commerciale",
+          "main_messages_ideas": "Suivi contenu, Expertise connexe, Preuve sociale via études de cas, Offre consultation expert, Profilage progressif",
           "message_sequence": [
             {
-              "title": "Remerciement + Contenu Connexe",
-              "description": "Immédiatement après le téléchargement",
-              "content": "Merci d'avoir téléchargé [Contenu]. Voici plus d'insights sur [Sujet]"
+              "channel": "Email",
+              "title": "Votre [Titre Contenu] + Insights Approfondis",
+              "timing": "Immédiat",
+              "description": "Livraison contenu avec ressources connexes",
+              "content": "Merci d'avoir téléchargé [Titre Contenu] ! Nous espérons que vous le trouverez précieux. Compte tenu de votre intérêt pour [sujet], voici deux ressources complémentaires qui pourraient vous être utiles : [Article blog connexe] et [Étude de cas connexe]. Nous publions régulièrement des insights sur ce sujet - dites-nous si vous souhaitez rester informé."
             },
             {
-              "title": "Perspective Industrie",
-              "description": "Jour 3 : Thought leadership",
-              "content": "Notre point de vue : [Tendance ou défi de l'industrie]"
+              "channel": "Email",
+              "title": "Notre Perspective : [Tendance Industrie Connexe]",
+              "timing": "J+3",
+              "description": "Thought leadership",
+              "content": "[Nom Expert], notre [Titre], a récemment partagé ses réflexions sur [sujet tendance lié à leur téléchargement]. Insight clé : [Citation ou conclusion percutante]. Lisez l'article complet pour voir comment les organisations leaders répondent à cette tendance."
             },
             {
-              "title": "Success Story Client",
-              "description": "Jour 7 : Preuve sociale",
-              "content": "Comment nous avons aidé [Client] à atteindre [Résultat]"
+              "channel": "Email",
+              "title": "Comment [Entreprise Similaire] a Atteint [Résultat Spécifique]",
+              "timing": "J+7",
+              "description": "Preuve sociale avec étude de cas",
+              "content": "Quand [Entreprise Cliente] a fait face à [défi lié au contenu téléchargé], elle s'est tournée vers nous pour l'aider. Le résultat : [Résultat quantifié]. Lisez l'étude de cas complète pour voir notre approche et comment elle pourrait s'appliquer à votre situation."
             },
             {
-              "title": "Offre de Consultation",
-              "description": "Jour 14 : Offre de conversion",
-              "content": "Discutons de votre [Défi] : Planifiez une consultation gratuite"
+              "channel": "Email",
+              "title": "Question Rapide sur [Leur Défi]",
+              "timing": "J+12",
+              "description": "Profilage progressif + vérification engagement",
+              "content": "Je suis curieux - qu'est-ce qui a motivé votre intérêt pour [sujet du contenu] ? Nous travaillons avec de nombreux leaders [de leur industrie/fonction] sur [défis connexes]. Comprendre votre situation nous aiderait à partager des insights plus pertinents. L'un de ces sujets décrit-il votre focus actuel ? [2-3 options avec liens]"
+            },
+            {
+              "channel": "Email",
+              "title": "Consultation Expert de 15 Minutes",
+              "timing": "J+18",
+              "description": "Offre de conversion",
+              "content": "Parfois, il est utile de discuter de vos défis avec un expert. Notre [expert concerné] propose des consultations gratuites de 15 minutes pour les leaders confrontés à [domaine de défi]. Pas de pitch commercial, juste une perspective. Une conversation rapide serait-elle utile ?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Disponibilité Consultation",
+              "timing": "J+21 si fort engagement sans réservation",
+              "description": "Relance personnelle",
+              "content": "Bonjour [Prénom], j'ai vu que vous avez exploré notre contenu sur [sujet]. Notre expert [Prénom] a des créneaux cette semaine pour un échange rapide. 15 min utiles ? [Lien calendrier]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Participants aux événements (webinaires, conférences, workshops)",
+          "scenario_objective": "Convertir l'engagement événementiel en relation continue et opportunité commerciale",
+          "main_messages_ideas": "Suivi événement, Récap session, Ressources connexes, Offre connexion intervenant, Prochaine étape d'engagement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Nom Événement] Récap + Points Clés à Retenir",
+              "timing": "Dans les 24 heures",
+              "description": "Suivi événement",
+              "content": "Merci d'avoir participé à [Nom Événement] ! Voici un récap rapide des points clés de [Intervenant] : [3 enseignements]. Nous avons joint les slides de présentation et enregistré la session si vous souhaitez revisiter certaines sections."
+            },
+            {
+              "channel": "Email",
+              "title": "Pour Aller Plus Loin : Ressources sur [Sujet Événement]",
+              "timing": "J+3",
+              "description": "Valeur étendue",
+              "content": "Vous souhaitez approfondir [sujet événement] ? Voici des ressources supplémentaires créées par notre équipe : [Contenu pertinent]. De plus, [Nom Intervenant] a rédigé un article de suivi répondant aux questions les plus fréquentes de la session."
+            },
+            {
+              "channel": "Email",
+              "title": "Échangez avec [Nom Intervenant]",
+              "timing": "J+7",
+              "description": "Offre de connexion personnelle",
+              "content": "[Nom Intervenant] a apprécié présenter à [Événement] et est disponible pour de brèves conversations de suivi avec les participants. Si vous avez des questions spécifiques sur l'application de [sujet] à votre organisation, c'est une excellente opportunité d'accompagnement personnalisé."
+            },
+            {
+              "channel": "Email",
+              "title": "À Venir : [Événement Connexe]",
+              "timing": "J+14",
+              "description": "Prochaine opportunité d'engagement",
+              "content": "Compte tenu de votre intérêt pour [sujet événement], vous pourriez être intéressé par notre prochain [événement]. Cette session se concentrera sur [angle spécifique]. Réservez votre place - nos événements se remplissent généralement rapidement."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Onboarding & Engagement Client",
-      "target": "Nouveaux clients débutant une mission",
-      "objective": "Assurer un démarrage de mission fluide et construire une base relationnelle solide",
-      "kpi": "Scores satisfaction client, Complétion onboarding, Temps jusqu'à la valeur",
-      "description": "Communication d'onboarding structurée pour définir les attentes et établir les patterns de collaboration.",
+      "program_name": "Onboarding Nouveau Client & Lancement Mission",
+      "target": "Nouveaux clients signés débutant leur première mission",
+      "objective": "Atteindre 95% de satisfaction client dans les 30 premiers jours et établir les fondations d'une relation long terme",
+      "kpi": "Score satisfaction 30 premiers jours (cible : 95%+), Complétion jalons onboarding (cible : 100%), Temps de réponse client (cible : <24 heures), Indicateurs d'alerte précoce (cible : 0 signal rouge)",
+      "description": "Un programme d'onboarding structuré qui définit des attentes claires, présente l'équipe et établit les patterns de communication pour une mission réussie. Le programme reconnaît que les premières impressions dans les services professionnels donnent le ton pour l'ensemble de la relation.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux clients conseil/advisory",
-          "scenario_objective": "Préparer le succès de la mission",
-          "main_messages_ideas": "Bienvenue + intro équipe, Aperçu du processus, Jalons clés, Boucles de feedback",
+          "scenario_target": "Nouveaux clients démarrant des missions projet",
+          "scenario_objective": "Assurer un lancement de projet fluide et construire la confiance rapidement",
+          "main_messages_ideas": "Accueil chaleureux, Présentations équipe, Aperçu processus, Attentes jalons, Mécanismes feedback",
           "message_sequence": [
             {
-              "title": "Bienvenue dans l'Équipe",
-              "description": "Jour 1 : Kickoff de mission",
-              "content": "Bienvenue ! Rencontrez votre équipe et voici ce qui vous attend"
+              "channel": "Email",
+              "title": "Bienvenue chez [Nom Cabinet] - Votre Mission Commence !",
+              "timing": "J1",
+              "description": "Accueil formel",
+              "content": "Bienvenue chez [Nom Cabinet] ! Nous sommes honorés de nous associer à [Entreprise Cliente] pour [projet/mission]. Ce message présente votre équipe dédiée et décrit ce à quoi vous attendre dans les semaines à venir. Votre équipe : [Noms et rôles des membres]. Prochaine étape : Notre réunion de lancement le [date] où nous alignerons objectifs, calendrier et modalités de travail."
             },
             {
-              "title": "Aperçu du Processus",
-              "description": "Jour 3 : Comment nous travaillons",
-              "content": "Notre approche : Comment nous travaillerons ensemble pour réussir"
+              "channel": "Email",
+              "title": "Rencontrez Votre Équipe : [Bio Consultant Principal/Associé]",
+              "timing": "J+2",
+              "description": "Connexion personnelle",
+              "content": "Je souhaitais me présenter personnellement en tant que responsable de votre mission. [Brève bio personnelle et expérience pertinente]. Je suis engagé dans votre réussite sur ce projet et reste toujours disponible si vous avez des questions ou préoccupations. Mon numéro direct : [téléphone]. Au plaisir de ce partenariat !"
             },
             {
-              "title": "Check-in Premier Jalon",
-              "description": "Semaine 2 : Revue de progression",
-              "content": "Check-in semaine 2 : Comment allons-nous ?"
+              "channel": "Email",
+              "title": "Comment Nous Travaillons Ensemble : Notre Approche",
+              "timing": "J+5",
+              "description": "Aperçu du processus",
+              "content": "Pour assurer un alignement permanent, voici comment nous travaillons typiquement avec nos clients : [Cadence de communication], [Processus de revue des livrables], [Chemins d'escalade], [Jalons clés]. Nous avons constaté que cette approche maintient les projets sur la bonne voie tout en restant flexible à vos besoins. Des questions ou ajustements nécessaires ?"
             },
             {
-              "title": "Demande de Feedback",
-              "description": "Semaine 4 : Feedback précoce",
-              "content": "Votre avis compte : Comment se passe la mission ?"
+              "channel": "Email",
+              "title": "Mise à Jour Progression Semaine 2",
+              "timing": "J+14",
+              "description": "Premier point d'étape",
+              "content": "Nous sommes à deux semaines dans notre mission, et je souhaitais partager une mise à jour rapide : [Accomplissements à ce jour], [Prochaines étapes], [Observations précoces]. Comment vous sentez-vous concernant notre progression jusqu'ici ? J'aimerais connaître votre perspective."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Avis Compte : Demande Feedback 30 Jours",
+              "timing": "J+30",
+              "description": "Feedback formel",
+              "content": "Nous avons atteint le cap du premier mois de notre mission. Votre feedback est crucial pour nous assurer de livrer exactement ce dont vous avez besoin. Merci de prendre 3 minutes pour partager vos impressions : [Lien sondage feedback]. Je lirai vos réponses personnellement et adresserai immédiatement toute préoccupation."
+            },
+            {
+              "channel": "SMS",
+              "title": "Relance Feedback",
+              "timing": "J+32 si sondage non complété",
+              "description": "Rappel personnel",
+              "content": "Bonjour [Prénom], votre retour sur notre mission est très important pour nous. Juste 3 min : [Lien]. Merci ! - [Prénom Responsable]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nouveaux clients retainer/service continu",
+          "scenario_objective": "Établir les rythmes pour une relation long terme réussie",
+          "main_messages_ideas": "Vue d'ensemble retainer, Attentes niveau service, Cadence communication, Planification trimestrielle, Gouvernance relation",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Accord Retainer : Ce Qui Est Inclus",
+              "timing": "J1",
+              "description": "Vue d'ensemble retainer",
+              "content": "Bienvenue dans notre partenariat retainer ! Ce message résume ce qui est inclus dans votre accord : [Services couverts], [Heures/ressources disponibles], [Engagements temps de réponse], [Cadence reporting]. Nous voulons que vous tiriez pleine valeur de cette relation, alors n'hésitez pas à nous solliciter."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Équipe Dédiée & Comment Nous Joindre",
+              "timing": "J+3",
+              "description": "Accès et disponibilité",
+              "content": "Votre équipe dédiée est là pour vous accompagner : [Membres équipe avec spécialités et coordonnées]. Pour les urgences : [Processus contact urgent]. Pour les demandes quotidiennes : [Processus standard]. Notre objectif est de fonctionner comme une extension de votre équipe."
+            },
+            {
+              "channel": "Email",
+              "title": "Planifions Notre Premier Trimestre Ensemble",
+              "timing": "J+7",
+              "description": "Alignement stratégique",
+              "content": "Pour maximiser la valeur de notre partenariat, alignons-nous sur les priorités du prochain trimestre. Quelles sont les 3 principales initiatives ou défis où vous souhaiteriez notre soutien ? J'aimerais planifier une brève session pour nous assurer de nous concentrer sur vos besoins à plus fort impact."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Récapitulatif Retainer Mensuel",
+              "timing": "Fin Mois 1",
+              "description": "Rapport utilisation et valeur",
+              "content": "Voici votre premier récapitulatif retainer mensuel : [Heures/ressources utilisées], [Travaux réalisés], [Disponibilité restante], [Recommandations pour le mois prochain]. Consacrons-nous notre temps aux bonnes choses ? Connectons-nous si vous souhaitez ajuster notre focus."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Thought Leadership & Expertise",
-      "target": "Tous les contacts et clients",
-      "objective": "Établir et maintenir un positionnement d'expert grâce à un contenu de valeur",
-      "kpi": "Engagement contenu, Part de voix, Demandes entrantes",
-      "description": "Contenu de thought leadership régulier pour démontrer l'expertise et rester top of mind.",
+      "program_name": "Communication Mission Active & Succès",
+      "target": "Clients avec des missions actives en cours",
+      "objective": "Maintenir une haute satisfaction tout au long de la mission et identifier les opportunités d'expansion",
+      "kpi": "Score satisfaction continue (cible : 90%+), Taux atteinte jalons (cible : 95%), Taux identification expansion (cible : 40%), Temps escalade problème (cible : <4 heures)",
+      "description": "Un programme pour maintenir une communication forte et une haute satisfaction durant les missions actives. Le programme s'assure que rien ne passe entre les mailles tout en identifiant proactivement les opportunités d'ajouter de la valeur.",
       "scenarios": [
         {
-          "scenario_target": "Tous les abonnés par intérêt industrie",
-          "scenario_objective": "Construire un positionnement d'expert et générer de la demande",
-          "main_messages_ideas": "Analyse industrie, Rapports de tendances, Opinions d'experts, Insights de recherche",
+          "scenario_target": "Clients aux jalons clés du projet",
+          "scenario_objective": "Célébrer la progression et assurer l'alignement continu",
+          "main_messages_ideas": "Célébration jalon, Résultats à date, Aperçu phase suivante, Check-in feedback, Démonstration de valeur",
           "message_sequence": [
             {
-              "title": "Insights Mensuels",
-              "description": "Newsletter mensuelle",
-              "content": "Mise à jour industrie [Mois] : Tendances et insights"
+              "channel": "Email",
+              "title": "Jalon Atteint : [Nom du Jalon]",
+              "timing": "À chaque jalon majeur",
+              "description": "Notification accomplissement",
+              "content": "Excellente nouvelle - nous avons complété [Nom Jalon] ! Voici ce que cela signifie pour votre organisation : [Valeur délivrée]. Accomplissements clés : [Liste]. Pour la suite, notre prochain jalon est [Prochain Jalon], où nous nous concentrerons sur [Aperçu]. Merci pour votre partenariat pour en arriver là."
             },
             {
-              "title": "Rapport de Recherche",
-              "description": "Trimestriel : Recherche originale",
-              "content": "Nouvelle recherche : [Sujet] - Conclusions clés révélées"
+              "channel": "Email",
+              "title": "Prise de Pouls Rapide",
+              "timing": "Mensuel durant mission active",
+              "description": "Check-in satisfaction",
+              "content": "Juste un rapide check-in : Comment vous sentez-vous concernant la progression de notre mission ? [Option notation simple 1-5]. Si quelque chose nécessite attention, je préfère le savoir maintenant plutôt que plus tard. Votre satisfaction est ma priorité absolue."
             },
             {
-              "title": "Webinaire Expert",
-              "description": "Invitation événement",
-              "content": "Vous êtes invité : [Expert] sur [Sujet Tendance]"
+              "channel": "SMS",
+              "title": "Mise à Jour Jalon",
+              "timing": "Même jour que l'email jalon",
+              "description": "Notification mobile",
+              "content": "Je viens de vous envoyer une mise à jour sur la complétion de [Nom Jalon]. Ravi de la progression ! N'hésitez pas si vous avez des questions. - [Prénom Responsable]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients où des opportunités d'expansion sont identifiées",
+          "scenario_objective": "Introduire des services additionnels naturellement durant la mission",
+          "main_messages_ideas": "Identification opportunité connexe, Proposition valeur additionnelle, Conversation expansion naturelle, Introduction cross-service",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Quelque Chose Que Nous Avons Observé...",
+              "timing": "Quand opportunité expansion identifiée",
+              "description": "Introduction opportunité",
+              "content": "En travaillant sur [mission actuelle], nous avons remarqué [observation sur besoin/opportunité adjacent(e)]. Bien que ce soit hors de notre périmètre actuel, nous avons une expertise dans ce domaine et pensons que cela vaut la peine d'être mentionné. Souhaiteriez-vous explorer comment nous pourrions vous aider sur ce sujet ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Rencontrez l'Un de Nos Autres Experts",
+              "timing": "Si intérêt manifesté",
+              "description": "Introduction collègue",
+              "content": "J'aimerais vous présenter [Nom Collègue], qui dirige notre practice [domaine de service]. Il/Elle a aidé des organisations comme [clients similaires] avec [défi que vous avez observé]. Seriez-vous ouvert à une brève conversation pour explorer si cela vaut la peine d'être poursuivi ?"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Rétention & Expansion Client",
-      "target": "Clients actifs et récemment terminés",
-      "objective": "Approfondir les relations et étendre le périmètre des missions",
-      "kpi": "Taux de rétention client, Revenus d'expansion, Taux de missions répétées",
-      "description": "Points de contact stratégiques pour maintenir les relations et identifier les opportunités d'expansion.",
+      "program_name": "Thought Leadership & Positionnement Expertise",
+      "target": "Tous les contacts - prospects, clients et réseau",
+      "objective": "Établir le cabinet comme référence experte dans les domaines de practice clés et rester top-of-mind avec du contenu de valeur",
+      "kpi": "Taux engagement contenu (cible : 35%), Taux ouverture newsletter (cible : 40%), Attribution demandes entrantes (cible : 30% depuis contenu), Opportunités conférence/média",
+      "description": "Un programme thought leadership complet qui positionne le cabinet et ses experts comme autorités de l'industrie. Le programme délivre une valeur constante à travers insights, recherches et perspectives d'experts qui aident l'audience à réussir.",
       "scenarios": [
         {
-          "scenario_target": "Clients terminant des missions",
-          "scenario_objective": "Transition vers une relation continue et opportunités futures",
-          "main_messages_ideas": "Bilan de mission, Résumé de valeur, Opportunités futures, Demande de recommandation",
+          "scenario_target": "Tous les abonnés segmentés par industrie et domaine d'intérêt",
+          "scenario_objective": "Délivrer du thought leadership pertinent qui construit le positionnement expert",
+          "main_messages_ideas": "Insights industrie, Recherche originale, Perspectives experts, Analyse tendances, Guidance pratique",
           "message_sequence": [
             {
-              "title": "Résumé de Mission",
-              "description": "À la fin du projet",
-              "content": "Projet terminé : Voici ce que nous avons accompli ensemble"
+              "channel": "Email",
+              "title": "Insights [Mois] : [Sujet Principal]",
+              "timing": "Mensuel",
+              "description": "Newsletter",
+              "content": "Points forts de ce mois : [Article mis en avant sur sujet tendance], [Q&A expert ou interview], [Événements à venir], [Conseil ou outil rapide]. Nous avons sélectionné ces insights basés sur ce que nous observons avec nos clients et sur le marché. Quels sujets devrions-nous couvrir prochainement ?"
             },
             {
-              "title": "Restons Connectés",
-              "description": "1 semaine après complétion",
-              "content": "Merci de nous avoir fait confiance - Restez connecté pour les insights industrie"
+              "channel": "Email",
+              "title": "Nouvelle Recherche : [Titre Rapport]",
+              "timing": "Trimestriel",
+              "description": "Recherche originale",
+              "content": "Notre dernier rapport de recherche est disponible : [Titre Rapport]. Nous avons interrogé [X] leaders et analysé [sources données] pour découvrir [aperçu conclusions clés]. Une découverte surprenante : [Statistique ou insight teaser]. Téléchargez le rapport complet pour voir comment votre organisation se compare."
             },
             {
-              "title": "Check-in Trimestriel",
-              "description": "Continu : Point de contact trimestriel",
-              "content": "Prise de nouvelles : Comment ça va depuis notre mission ?"
+              "channel": "Email",
+              "title": "Le Point de Vue de [Nom Expert] sur [Sujet Chaud]",
+              "timing": "Bi-mensuel",
+              "description": "Commentaire expert",
+              "content": "[Nom Expert], notre [Titre], donne son avis sur [sujet chaud actuel]. Sa perspective : [Citation ou insight clé]. Cela génère beaucoup de discussions - nous aimerions entendre vos réflexions."
             },
             {
-              "title": "Introduction Nouveau Service",
-              "description": "Quand pertinent",
-              "content": "Nouvelles façons de vous aider : [Nouveau Service/Capacité]"
+              "channel": "Email",
+              "title": "Session Live : [Sujet] avec [Expert]",
+              "timing": "Mensuel",
+              "description": "Invitation webinaire/événement",
+              "content": "Rejoignez-nous pour [Type Événement] : [Sujet]. [Nom Expert] partagera des insights sur [angle spécifique] et répondra à vos questions en direct. Date : [Date]. Heure : [Heure]. Places limitées - réservez votre place."
+            },
+            {
+              "channel": "Push",
+              "title": "Webinaire Demain",
+              "timing": "Rappel événement J-1",
+              "description": "Notification rappel",
+              "content": "N'oubliez pas : [Titre Événement] demain à [heure]. Consultez vos emails pour les détails !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients actuels - thought leadership exclusif",
+          "scenario_objective": "Apporter de la valeur additionnelle et approfondir les relations via contenu exclusif",
+          "main_messages_ideas": "Insights exclusifs clients, Accès anticipé, Accès direct experts, Communauté clients",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Exclusivité Clients : [Contenu Premium]",
+              "timing": "Trimestriel",
+              "description": "Contenu réservé clients",
+              "content": "En tant que client privilégié, vous bénéficiez d'un accès anticipé à [contenu premium] avant sa publication publique. À l'intérieur : [Insights exclusifs]. Nous serions ravis de votre feedback - il contribue à façonner notre réflexion."
+            },
+            {
+              "channel": "Email",
+              "title": "Table Ronde Clients : [Sujet]",
+              "timing": "Trimestriel",
+              "description": "Networking clients",
+              "content": "Vous êtes invité à une discussion table ronde exclusive avec d'autres clients. Sujet : [Sujet pertinent]. C'est une opportunité de partager vos expériences et d'apprendre de pairs confrontés à des défis similaires. Limité à [X] participants pour une discussion intime."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Recommandation & Advocacy",
-      "target": "Clients satisfaits et ambassadeurs de marque",
-      "objective": "Générer des recommandations et témoignages de clients satisfaits",
-      "kpi": "Taux de recommandation, Collecte de témoignages, Engagement advocacy",
-      "description": "Approche systématique pour demander et récompenser les recommandations et témoignages clients.",
+      "program_name": "Complétion Mission & Transition",
+      "target": "Clients terminant des missions projet",
+      "objective": "Assurer une clôture de mission réussie et une transition fluide vers une relation continue",
+      "kpi": "Satisfaction fin de mission (cible : 95%+), Taux mission répétée (cible : 60%), Génération recommandation à complétion (cible : 25%), Opt-in communication post-mission (cible : 90%)",
+      "description": "Un programme structuré pour conclure gracieusement les missions tout en maintenant la relation pour les opportunités futures. Le programme reconnaît que la complétion de mission est un moment critique pour la génération de recommandations et la continuation de la relation.",
       "scenarios": [
         {
-          "scenario_target": "Clients très satisfaits (scores NPS élevés)",
-          "scenario_objective": "Convertir la satisfaction en advocacy active",
-          "main_messages_ideas": "Demande de témoignage, Programme de recommandation, Participation étude de cas, Opportunités de prise de parole",
+          "scenario_target": "Clients aux étapes finales d'une mission projet",
+          "scenario_objective": "Délivrer une excellente expérience de clôture et établir une relation post-mission",
+          "main_messages_ideas": "Résumé de valeur, Documentation résultats, Transfert de connaissances, Continuation relation, Opportunité recommandation",
           "message_sequence": [
             {
-              "title": "Remerciement + Témoignage",
-              "description": "Après un feedback positif",
-              "content": "Merci pour vos mots aimables - Accepteriez-vous de partager votre expérience ?"
+              "channel": "Email",
+              "title": "En Conclusion : Ce Que Nous Avons Accompli Ensemble",
+              "timing": "Dernière semaine du projet",
+              "description": "Résumé de valeur",
+              "content": "Alors que nous approchons de la conclusion de notre [Type Mission], je souhaitais résumer ce que nous avons accompli ensemble : [Livrables clés], [Résultats atteints], [Valeur délivrée]. Ce fut un privilège de travailler avec [Entreprise Cliente] sur cette initiative."
             },
             {
-              "title": "Introduction Recommandation",
-              "description": "Après une mission réussie",
-              "content": "Connaissez-vous quelqu'un qui pourrait bénéficier ? Nous serions ravis d'une mise en relation"
+              "channel": "Email",
+              "title": "Votre Rapport de Mission & Documentation",
+              "timing": "À la complétion",
+              "description": "Livrables finaux",
+              "content": "Vous trouverez en pièce jointe votre rapport de mission complet, incluant : [Synthèse exécutive], [Conclusions/livrables détaillés], [Recommandations pour les prochaines étapes], [Documentation support]. N'hésitez pas à nous contacter si vous avez des questions en examinant ces documents."
             },
             {
-              "title": "Invitation Étude de Cas",
-              "description": "Pour des résultats significatifs",
-              "content": "Racontons votre success story : Opportunité d'étude de cas"
+              "channel": "Email",
+              "title": "Votre Feedback Final : Aidez-Nous à Progresser",
+              "timing": "J+3 après complétion",
+              "description": "Sondage satisfaction",
+              "content": "Merci d'avoir fait confiance à [Nom Cabinet] pour [Mission]. Votre feedback est incroyablement important pour nous - il nous aide à nous améliorer et nous indique ce que nous faisons bien. Accepteriez-vous de prendre 5 minutes pour partager vos impressions ? [Lien sondage]"
+            },
+            {
+              "channel": "Email",
+              "title": "Restons Connectés : Et Après",
+              "timing": "1 semaine après complétion",
+              "description": "Transition relation",
+              "content": "Bien que notre mission formelle soit terminée, nous aimerions rester connectés. Vous continuerez à recevoir notre [type de contenu pertinent], et je prendrai des nouvelles périodiquement pour voir comment les choses évoluent. En attendant, n'hésitez pas à nous contacter si des questions surgissent concernant la mise en œuvre de nos recommandations."
+            },
+            {
+              "channel": "Email",
+              "title": "Connaissez-Vous Quelqu'un Qui Pourrait Bénéficier ?",
+              "timing": "2 semaines après complétion",
+              "description": "Demande recommandation",
+              "content": "Si vous avez été satisfait de notre partenariat, nous serions honorés que vous nous présentiez à des collègues qui pourraient bénéficier d'un travail similaire. Les recommandations sont la façon dont nous avons construit notre practice, et nous traiterions toute mise en relation avec le même soin que nous avons accordé à votre mission."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Rétention Client & Nurturing Relationnel",
+      "target": "Anciens clients et missions terminées",
+      "objective": "Maintenir 80% des anciens clients comme relations chaudes et générer 40% de business répété dans les 24 mois",
+      "kpi": "Taux mission répétée (cible : 40%), Taux de réponse client (cible : 60%), Années en relation, Croissance part de portefeuille",
+      "description": "Un programme systématique pour rester connecté avec les anciens clients afin de maintenir les relations et identifier les opportunités futures. Le programme reconnaît que les relations dormantes sont la source la plus rentable de nouveau business.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients avec missions terminées (pas de travaux actifs)",
+          "scenario_objective": "Maintenir la chaleur relationnelle et rester top-of-mind pour besoins futurs",
+          "main_messages_ideas": "Points de contact valeur-first, Mises à jour industrie, Appels de courtoisie, Reconnaissance jalons, Opportunités de réengagement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Check-In Trimestriel : Comment Allez-Vous ?",
+              "timing": "Tous les 90 jours",
+              "description": "Point de contact personnel",
+              "content": "Bonjour [Prénom], cela fait quelques mois depuis que nous avons terminé [Mission], et je voulais prendre de vos nouvelles. Comment avancent les choses avec [initiative connexe] ? J'ai aussi pensé que vous pourriez trouver ce récent [article/insight] pertinent par rapport à ce sur quoi vous travailliez. Pas d'agenda - juste pour garder le contact."
+            },
+            {
+              "channel": "Email",
+              "title": "J'ai Pensé Que Cela Vous Intéresserait",
+              "timing": "Continu",
+              "description": "Partage contenu pertinent",
+              "content": "Je suis tombé sur [contenu/actualité] et j'ai immédiatement pensé à vous compte tenu de votre travail sur [sujet mission passée]. J'ai pensé que cela vous intéresserait. J'espère que tout va bien !"
+            },
+            {
+              "channel": "Email",
+              "title": "Félicitations pour [Réalisation/Actualité] !",
+              "timing": "Déclenché par actualité/événements",
+              "description": "Reconnaissance",
+              "content": "J'ai vu l'annonce concernant [réalisation entreprise/promotion/jalon]. Félicitations ! C'est formidable de voir [Entreprise Cliente] prospérer. S'il y a quoi que ce soit sur quoi nous pouvons vous aider dans votre croissance continue, n'hésitez pas à nous contacter."
+            },
+            {
+              "channel": "Email",
+              "title": "[Anniversaire] Depuis Notre Partenariat",
+              "timing": "Annuel",
+              "description": "Anniversaire relation",
+              "content": "Cela fait [X ans] depuis notre première collaboration sur [mission originale]. Le temps passe vite ! J'espère que les [livrables/changements] que nous avons mis en place ensemble continuent à apporter de la valeur. Prenons un café un de ces jours - j'aimerais prendre de vos nouvelles et savoir sur quoi vous travaillez maintenant."
+            },
+            {
+              "channel": "SMS",
+              "title": "Un Café Bientôt ?",
+              "timing": "Bi-annuel",
+              "description": "Outreach personnel",
+              "content": "Bonjour [Prénom], ça fait un moment ! J'aimerais prendre un café ou passer un coup de fil pour prendre de vos nouvelles. Quelles sont vos disponibilités ? - [Prénom Responsable]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Anciens clients haute valeur montrant des signaux d'engagement",
+          "scenario_objective": "Réengager proactivement quand des signaux d'opportunité sont détectés",
+          "main_messages_ideas": "Outreach basé sur déclencheur, Offre expertise pertinente, Introduction nouvelle capacité, Conversation stratégique",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "J'ai Vu Cela et Pensé à [Entreprise Cliente]",
+              "timing": "Quand actualité/déclencheur détecté",
+              "description": "Outreach proactif",
+              "content": "J'ai remarqué [déclencheur : nouvelle levée de fonds, changement de direction, annonce stratégique, évolution réglementaire]. Félicitations/C'est significatif ! Compte tenu de notre travail passé ensemble sur [domaine connexe], je pensais que vous pourriez envisager [prochaine étape logique]. Nous avons aidé plusieurs clients à naviguer cela - une conversation rapide serait-elle utile ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Nouvelle Capacité : [Domaine de Service]",
+              "timing": "Quand nouveau service pertinent pour travail passé",
+              "description": "Introduction nouvelle offre",
+              "content": "Nous avons développé une nouvelle expertise en [domaine] que je pense pourrait être pertinente pour [Entreprise Cliente] basée sur ce que je sais de vos priorités. [Brève description capacité et valeur]. Seriez-vous intéressé à en savoir plus sur comment cela pourrait aider avec [leur défi probable] ?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expansion Compte & Cross-Selling",
+      "target": "Clients actifs et récents avec potentiel d'expansion",
+      "objective": "Croître le revenu compte de 30% année sur année via services additionnels et périmètre élargi",
+      "kpi": "Taux expansion compte (cible : 30%), Taux succès cross-sell (cible : 25%), Services par client (cible : 2.5+), Croissance valeur contrat",
+      "description": "Un programme stratégique pour identifier et poursuivre les opportunités d'expansion au sein des relations clients existantes. Le programme se concentre sur la vente basée sur la valeur et la résolution de défis clients additionnels plutôt que la poussée de services.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients utilisant une seule ligne de service avec potentiel pour services additionnels",
+          "scenario_objective": "Introduire des services complémentaires basés sur les besoins observés",
+          "main_messages_ideas": "Identification besoin adjacent, Introduction service complémentaire, Positionnement solution holistique, Valeur multi-services",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Comment [Nom Cabinet] Aide Au-Delà de [Service Actuel]",
+              "timing": "6 mois dans la relation",
+              "description": "Éducation services",
+              "content": "Vous nous connaissez peut-être principalement pour [service actuel], mais nous aidons aussi les clients avec [services adjacents]. Voici comment ces services complètent ce que nous faisons déjà ensemble et apportent une valeur additionnelle : [Brèves descriptions]. Intéressé à en savoir plus sur l'un de ces services ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Beaucoup de Clients Combinent [Services] - Voici Pourquoi",
+              "timing": "Après éducation services",
+              "description": "Preuve sociale",
+              "content": "Pattern intéressant : Beaucoup de nos clients qui ont démarré avec [Service A] ont fini par ajouter [Service B]. Pourquoi ? [Explication des synergies et valeur renforcée]. Souhaiteriez-vous voir comment un client a bénéficié de cette approche combinée ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Basé sur Notre Travail Ensemble : Une Suggestion",
+              "timing": "Quand besoin spécifique observé",
+              "description": "Recommandation ciblée",
+              "content": "Basé sur ce que nous avons appris de [Entreprise Cliente] à travers notre [mission actuelle], je pense qu'il y a une opportunité de [recommandation spécifique]. Notre équipe [autre service] a une expertise profonde dans ce domaine. Une brève conversation avec [Nom Collègue] serait-elle utile ?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients avec cycles de revue/planification annuels",
+          "scenario_objective": "Se positionner pour un périmètre élargi durant les périodes de planification",
+          "main_messages_ideas": "Revue stratégique, Planification année suivante, Discussion périmètre élargi, Alignement cycle budgétaire",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Planification [Année Prochaine] : Parlons Stratégie",
+              "timing": "90 jours avant cycle planification typique",
+              "description": "Initiation conversation stratégique",
+              "content": "Alors que nous approchons de [période de planification], j'aimerais planifier une conversation stratégique sur comment nous pouvons soutenir les priorités de [Entreprise Cliente] pour l'année à venir. Basé sur notre travail ensemble, j'ai quelques idées sur où nous pourrions ajouter de la valeur supplémentaire. Auriez-vous du temps pour une discussion de planification stratégique ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Proposition de Partenariat [Année]",
+              "timing": "Après conversation stratégique",
+              "description": "Proposition formelle",
+              "content": "Suite à notre discussion sur les priorités [Année Prochaine], j'ai préparé une proposition sur comment nous pouvons étendre notre partenariat : [Vue d'ensemble périmètre élargi]. Cela s'appuie sur notre travail réussi ensemble et adresse les défis additionnels que vous avez mentionnés. Dites-moi quand vous souhaiteriez en discuter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Génération Recommandations & Advocacy Client",
+      "target": "Clients satisfaits et contacts engagés pouvant fournir des recommandations",
+      "objective": "Générer 40% des nouvelles opportunités business via recommandations clients et advocacy",
+      "kpi": "Taux recommandation (cible : 30% des clients satisfaits), Conversion recommandation-en-client (cible : 50%), Taux collecte témoignages (cible : 40%), Participation études de cas (cible : 20%)",
+      "description": "Un programme systématique pour convertir les clients satisfaits en ambassadeurs actifs qui fournissent recommandations, témoignages et participation aux études de cas. Le programme reconnaît que les recommandations sont les leads de plus haute qualité dans les services professionnels.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients avec scores satisfaction élevés (NPS 9-10, fort engagement)",
+          "scenario_objective": "Convertir la satisfaction en recommandations et advocacy public",
+          "main_messages_ideas": "Demande recommandation, Invitation témoignage, Opportunité étude de cas, Reconnaissance publique, Bénéfices advocacy",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci - Votre Feedback Nous Touche Énormément",
+              "timing": "Après feedback positif/NPS",
+              "description": "Remerciement et demande",
+              "content": "Merci pour vos retours si positifs sur notre collaboration ! Cela signifie vraiment beaucoup pour notre équipe. Si vous connaissez des collègues ou pairs confrontés à des défis similaires, nous serions honorés d'une mise en relation. Nous avons construit notre practice grâce aux recommandations de clients comme vous, et nous traiterions toute connexion avec le même soin que nous avons accordé à votre mission."
+            },
+            {
+              "channel": "Email",
+              "title": "Accepteriez-Vous de Partager Votre Expérience ?",
+              "timing": "J+7 après feedback positif",
+              "description": "Demande témoignage",
+              "content": "Votre perspective a du poids auprès d'autres décideurs confrontés à des choix similaires. Seriez-vous disposé à partager un bref témoignage sur votre expérience de travail avec nous ? Cela peut être aussi simple que quelques phrases, et nous l'utiliserions (avec votre approbation) pour aider d'autres organisations à comprendre la valeur que nous apportons."
+            },
+            {
+              "channel": "Email",
+              "title": "Racontons Votre Success Story",
+              "timing": "Pour clients avec résultats notables",
+              "description": "Invitation étude de cas",
+              "content": "Les résultats que vous avez obtenus avec [Projet] sont remarquables, et nous aimerions aider à raconter cette histoire. Seriez-vous intéressé à être mis en avant dans une étude de cas ? C'est une excellente visibilité pour [Entreprise Cliente] et aide d'autres à apprendre de votre succès. Le processus est simple : une interview de 30 minutes, vous approuvez tout avant publication."
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Recommandation : [Nom Recommandé]",
+              "timing": "Après recommandation réussie",
+              "description": "Remerciement recommandation",
+              "content": "Merci de nous avoir présentés à [Nom Recommandé] ! Nous avons eu notre première conversation et [mise à jour positive]. Votre recommandation nous touche énormément. En remerciement, [geste de reconnaissance/appréciation]. N'hésitez pas à nous garder en tête pour d'autres mises en relation - les introductions de sources de confiance comme vous sont notre façon préférée de grandir."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients long terme et partenaires stratégiques",
+          "scenario_objective": "Formaliser la relation d'advocacy et créer un canal de recommandation continu",
+          "main_messages_ideas": "Invitation comité consultatif, Opportunités conférence, Co-marketing, Partenariat stratégique",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Invitation : Comité Consultatif Clients",
+              "timing": "Pour clients top",
+              "description": "Invitation advisory",
+              "content": "Compte tenu de notre partenariat solide et de votre perspective précieuse, j'aimerais vous inviter à rejoindre notre Comité Consultatif Clients. En tant que membre, vous auriez un accès anticipé à nos nouvelles réflexions, une influence directe sur l'évolution de nos services, et un networking exclusif avec des leaders pairs. L'engagement est minimal - deux réunions par an plus des opportunités de contribution ponctuelles."
+            },
+            {
+              "channel": "Email",
+              "title": "Opportunité de Prise de Parole : [Événement/Publication]",
+              "timing": "Quand opportunité pertinente",
+              "description": "Proposition intervention commune",
+              "content": "[Événement/Publication] nous a demandé de contribuer, et j'ai immédiatement pensé au travail que nous avons réalisé ensemble. Seriez-vous intéressé à co-présenter/être interviewé sur [sujet] ? C'est une excellente visibilité et un positionnement thought leadership pour nous deux."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Réactivation",
+      "target": "Clients dormants et opportunités perdues",
+      "objective": "Réactiver 20% des relations clients dormantes et 15% des opportunités perdues dans les 12 mois",
+      "kpi": "Taux réactivation client dormant (cible : 20%), Win-back opportunité perdue (cible : 15%), Taux de réponse réengagement (cible : 30%)",
+      "description": "Un programme stratégique pour renouer avec les clients devenus dormants et les opportunités précédemment perdues. Le programme se concentre sur la démonstration de valeur continue et la réponse aux préoccupations précédentes.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients sans engagement depuis 18+ mois",
+          "scenario_objective": "Rouvrir le dialogue et identifier de nouvelles opportunités",
+          "main_messages_ideas": "Outreach reconnexion, Quoi de neuf, Mise à jour industrie, Valeur non-commerciale, Opportunité nouveau départ",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Cela Fait un Moment - J'espère Que Vous Allez Bien",
+              "timing": "18 mois inactif",
+              "description": "Reconnexion chaleureuse",
+              "content": "Bonjour [Prénom], cela fait un moment depuis notre dernière collaboration sur [Mission Passée]. J'espère que les choses vont bien chez [Entreprise Cliente] ! Je voulais reprendre contact et partager quelques actualités : [Brèves mises à jour cabinet pertinentes pour eux]. J'aimerais savoir sur quoi vous travaillez ces temps-ci - peut-être pourrions-nous prendre un café ?"
+            },
+            {
+              "channel": "Email",
+              "title": "J'ai Pensé à Vous : [Développement Pertinent]",
+              "timing": "24 mois inactif",
+              "description": "Outreach valeur-first",
+              "content": "Je suis tombé sur [article/recherche/actualité] et j'ai pensé à notre travail passé ensemble sur [sujet]. Cela pourrait être pertinent si vous êtes encore focalisé sur [domaine]. Pas de pitch - juste pour garder le contact et espérant que c'est utile."
+            },
+            {
+              "channel": "Email",
+              "title": "Nous Avons Évolué : Nouvelles Capacités chez [Cabinet]",
+              "timing": "Si pas de réponse",
+              "description": "Quoi de neuf",
+              "content": "Beaucoup de choses ont changé chez [Nom Cabinet] depuis notre dernière collaboration. Nous avons ajouté de nouvelles capacités en [domaines pertinents] que je pense pourraient être précieuses pour [Entreprise Cliente]. Si vous êtes un jour confronté à des défis dans ces domaines, je serais ravi de renouer."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Propositions/opportunités perdues dans les 12 derniers mois",
+          "scenario_objective": "Maintenir la relation pour opportunités futures",
+          "main_messages_ideas": "Acceptation gracieuse perte, Messaging porte-ouverte, Livraison valeur continue, Opportunité future",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Merci pour l'Opportunité",
+              "timing": "Au moment de la perte",
+              "description": "Acceptation gracieuse",
+              "content": "Bien que nous soyons déçus de ne pas avoir été retenus pour [Opportunité], nous apprécions l'opportunité de concourir. Nous avons apprécié découvrir vos défis et espérons que [cabinet choisi] délivrera d'excellents résultats. Gardez-nous en tête pour vos besoins futurs - nous serions ravis d'une autre opportunité de travailler ensemble."
+            },
+            {
+              "channel": "Email",
+              "title": "Prise de Nouvelles : Comment Se Passe [Projet] ?",
+              "timing": "6 mois après perte",
+              "description": "Check-in courtois",
+              "content": "Bonjour [Prénom], je voulais prendre des nouvelles sur l'avancement de [projet pour lequel ils ont choisi un autre cabinet]. Nous sommes sincèrement curieux du résultat et espérons que c'est un succès. Si vous avez besoin d'une perspective fraîche ou d'un soutien additionnel, nous sommes là."
+            },
+            {
+              "channel": "Email",
+              "title": "[Contenu Pertinent] - J'ai Pensé Que Cela Vous Serait Utile",
+              "timing": "Continu",
+              "description": "Contenu valeur-first",
+              "content": "Même si nous n'avons pas eu l'occasion de travailler ensemble sur [opportunité passée], j'ai pensé à vous quand nous avons publié ceci : [Contenu pertinent]. J'espère que c'est utile, quel que soit avec qui vous travaillez !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Engagement Partenaires & Écosystème",
+      "target": "Partenaires stratégiques, sources de recommandation et participants écosystème",
+      "objective": "Générer 25% des opportunités via l'écosystème partenaires et maintenir des relations partenaires solides",
+      "kpi": "Opportunités sourcing partenaires (cible : 25%), Taux engagement partenaires (cible : 60%), Participation co-marketing, Taux gain opportunités conjointes",
+      "description": "Un programme pour cultiver les relations avec les partenaires stratégiques, les prestataires de services complémentaires et autres sources de recommandation qui peuvent contribuer au développement commercial. Le programme reconnaît que les relations écosystème nécessitent une cultivation continue.",
+      "scenarios": [
+        {
+          "scenario_target": "Partenaires stratégiques et relations d'alliance",
+          "scenario_objective": "Maintenir l'engagement partenaire et générer des opportunités mutuelles",
+          "main_messages_ideas": "Valeur partenariat, Opportunités conjointes, Co-marketing, Partage connaissances, Nurturing relationnel",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Mise à Jour Partenaire Trimestrielle : [Nom Cabinet]",
+              "timing": "Trimestriel",
+              "description": "Communication partenaire",
+              "content": "Voici les nouveautés chez [Nom Cabinet] qui pourraient être pertinentes pour notre partenariat : [Nouvelles capacités, gains récents, domaines de focus]. Nous avons aussi identifié quelques opportunités conjointes potentielles : [Brèves descriptions]. Planifions du temps pour discuter de nos collaborations."
+            },
+            {
+              "channel": "Email",
+              "title": "Opportunité Co-Marketing : [Initiative]",
+              "timing": "Quand opportunité pertinente",
+              "description": "Proposition collaboration",
+              "content": "Nous planifions [contenu/événement/initiative] et pensons que ce serait plus fort avec votre participation. [Cabinet Partenaire] serait-il intéressé à co-sponsoriser/contribuer ? Les bénéfices incluent : [Leads partagés, portée étendue, positionnement thought leadership]."
+            },
+            {
+              "channel": "Email",
+              "title": "Opportunité Conjointe Potentielle : [Client/Projet]",
+              "timing": "Quand opportunité conjointe identifiée",
+              "description": "Proposition approche commune",
+              "content": "J'ai rencontré une opportunité chez [Entreprise] qui je pense bénéficierait de notre expertise combinée : [Brève description]. Leurs besoins couvrent [notre expertise] et [votre expertise]. Seriez-vous intéressé à explorer une approche conjointe ?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Un Échange Partenaire Rapide ?",
+              "timing": "Bi-annuel",
+              "description": "Maintenance relation",
+              "content": "Bonjour [Prénom], ça fait trop longtemps ! J'aimerais faire le point sur notre partenariat et discuter de ce qui s'annonce. Libre pour un café ou un appel cette semaine ? - [Votre Prénom]"
             }
           ]
         }
@@ -183,22 +687,34 @@
   "how_brevo_helps_you": [
     {
       "scenario_name": "Nurturing & Qualification de Leads",
-      "why_brevo_is_better": "Le lead scoring et le profilage progressif de Brevo permettent des parcours de nurture sophistiqués qui s'adaptent selon l'engagement et le comportement des prospects.",
-      "omnichannel_channels": "Email pour le contenu thought leadership + Intégration LinkedIn pour le networking professionnel + SMS pour les rappels d'événements",
-      "setup_efficiency": "Templates B2B pré-construits avec logique de lead scoring pour qualifier automatiquement les prospects."
+      "why_brevo_is_better": "Le lead scoring et le profilage progressif de Brevo permettent des parcours de nurture sophistiqués qui s'adaptent selon l'engagement et le comportement des prospects. L'intégration CRM assure que les ventes voient le tableau complet quand les leads deviennent qualifiés.",
+      "omnichannel_channels": "Email pour contenu thought leadership et séquences de nurture + SMS pour rappels événements et outreach personnel + Intégration LinkedIn pour networking professionnel + Landing pages pour offres de contenu",
+      "setup_efficiency": "Templates B2B services pré-construits avec logique de lead scoring vous aident à qualifier automatiquement les prospects. Le contenu dynamique assure des messages spécifiques par industrie sans créer des dizaines de campagnes séparées."
     },
     {
-      "scenario_name": "Thought Leadership & Expertise",
-      "why_brevo_is_better": "La personnalisation du contenu basée sur les segments industrie et intérêt garantit que chaque contact reçoit du thought leadership pertinent.",
-      "omnichannel_channels": "Email pour le contenu long + Intégration sociale pour l'amplification + Intégration plateforme webinaire pour les événements",
-      "setup_efficiency": "Les blocs de contenu dynamique permettent à des campagnes uniques de délivrer du contenu personnalisé à différents segments."
+      "scenario_name": "Gestion Relation Client",
+      "why_brevo_is_better": "L'intégration CRM permet une communication consciente de la relation qui prend en compte l'historique d'engagement, l'étape du cycle de vie client et les interactions précédentes. Le système s'assure qu'aucun client ne passe entre les mailles avec une planification automatisée des points de contact.",
+      "omnichannel_channels": "Email pour communication continue et thought leadership + SMS pour outreach personnel partenaire + Création de tâches pour suivi équipe + Intégration calendrier pour planification réunions",
+      "setup_efficiency": "Les templates parcours client automatisés assurent une expérience cohérente de l'onboarding à la complétion. Les check-ins basés sur déclencheurs maintiennent les relations sans suivi manuel."
     },
     {
-      "scenario_name": "Rétention & Expansion Client",
-      "why_brevo_is_better": "L'intégration CRM permet une communication consciente de la relation qui considère l'historique d'engagement et l'étape du cycle de vie client.",
-      "omnichannel_channels": "Email pour la communication continue + Déclencheurs d'outreach personnel pour les comptes à haute valeur",
-      "setup_efficiency": "La planification automatisée des points de contact garantit qu'aucun client ne passe entre les mailles du filet."
+      "scenario_name": "Distribution Thought Leadership",
+      "why_brevo_is_better": "La personnalisation de contenu basée sur les segments industrie, fonction et intérêt assure que chaque contact reçoit du thought leadership pertinent. Les analytics montrent quel contenu résonne, informant la stratégie de contenu future.",
+      "omnichannel_channels": "Email pour contenu long-forme et newsletters + Intégration sociale pour amplification + Intégration plateforme webinaire pour événements + Landing pages pour contenu premium",
+      "setup_efficiency": "Les blocs de contenu dynamique permettent à des campagnes uniques de délivrer du contenu personnalisé à différents segments. La recommandation de contenu automatisée basée sur l'historique d'engagement augmente la pertinence."
+    },
+    {
+      "scenario_name": "Programmes Recommandation & Advocacy",
+      "why_brevo_is_better": "Les déclencheurs satisfaction (intégration NPS) permettent des demandes de recommandation parfaitement timées aux moments de satisfaction maximale. Le tracking assure l'attribution des recommandations et le suivi pour le référent et le référé.",
+      "omnichannel_channels": "Email pour demandes de recommandation et communications de remerciement + SMS pour reconnaissance personnelle + Création de tâches pour suivi partenaire",
+      "setup_efficiency": "Les workflows recommandation pré-construits avec tracking et attribution peuvent être activés rapidement. Les séquences de remerciement automatisées maintiennent les relations avec les référents."
+    },
+    {
+      "scenario_name": "Engagement Écosystème Partenaires",
+      "why_brevo_is_better": "Une gestion séparée des parcours partenaires garde les communications écosystème organisées tout en maintenant la touche personnelle. Les capacités co-marketing permettent des campagnes conjointes avec une attribution appropriée.",
+      "omnichannel_channels": "Email pour mises à jour partenaires et co-marketing + SMS pour maintenance relation + Landing pages partagées pour initiatives conjointes",
+      "setup_efficiency": "Les templates portail partenaire et les capacités contenu co-brandé permettent des programmes écosystème professionnels avec un setup minimal."
     }
   ],
-  "conclusion": "Les cabinets de services professionnels qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à des relations clients plus fortes, des taux de rétention plus élevés, et une croissance business accrue par recommandation grâce à un thought leadership et un engagement systématiques."
+  "conclusion": "Les cabinets de services professionnels qui mettent en œuvre ces programmes marketing relationnels peuvent s'attendre à des relations clients plus fortes, des taux de rétention et d'expansion plus élevés, et une croissance durable grâce au développement commercial par recommandation. Les programmes reconnaissent que dans les entreprises de services, les relations sont le produit - le succès vient d'une livraison de valeur constante, d'un partage d'expertise authentique et d'un nurturing relationnel systématique. En combinant thought leadership avec engagement personnalisé, ces programmes construisent la confiance et la crédibilité qui transforment les prospects en clients et les clients en ambassadeurs."
 }

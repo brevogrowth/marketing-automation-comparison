@@ -1,0 +1,929 @@
+{
+  "introduction": "Dieser umfassende Marketing-Beziehungsplan wurde für Beauty- und Kosmetikmarken entwickelt, die durch personalisierte Hautpflege- und Schönheitsroutinen tiefe, loyale Kundenbeziehungen aufbauen wollen. Beauty-Konsumenten sind hochengagiert und suchen fachkundige Beratung, personalisierte Empfehlungen und Community-Verbindung. Dieser Plan nutzt diese Verhaltensweisen, um bedeutungsvolle Touchpoints entlang der Customer Journey zu schaffen, von der Hautprofil-Entdeckung bis zur Marken-Advocacy, während der Customer Lifetime Value durch Abo-Modelle und Routinen-Aufbau maximiert wird.",
+  "company_summary": {
+    "name": "Beauty- & Kosmetikmarke",
+    "website": "example-beauty.com",
+    "activities": "Beauty- und Kosmetik-Einzelhandel einschließlich Hautpflege, Make-up, Haarpflege und Körperpflegeprodukte mit Fokus auf Clean Ingredients und nachhaltige Verpackung",
+    "target": "Beauty-Enthusiasten im Alter von 18-55 Jahren, die hochwertige Hautpflege- und Make-up-Produkte für ihre persönlichen Routinen suchen, mit wachsendem Interesse an Clean Beauty und personalisierten Lösungen",
+    "industry": "Beauty",
+    "business_model": "B2C Retail / D2C",
+    "customer_lifecycle_key_steps": "Entdeckung > Haut-Quiz > Erstkauf > Routinen-Aufbau > Nachbestellung > Abonnement > VIP-Status > Marken-Advocacy"
+  },
+  "programs_list": [
+    {
+      "program_name": "Willkommen & Hautprofil-Entdeckung",
+      "target": "Neue Abonnenten und erstmalige Website-Besucher",
+      "objective": "Personalisierte Beauty-Profile aufbauen, Vertrauen durch Expertise etablieren und Konversion zum Erstkauf innerhalb von 21 Tagen mit einem durchschnittlichen Bestellwert über 50€ erreichen",
+      "kpi": "Haut-Quiz-Abschlussrate (Ziel: 40%), Erstkauf-Konversion (Ziel: 20%), Zeit bis Erstkauf (Ziel: <14 Tage), Durchschnittlicher Erstbestellwert (Ziel: 55€+)",
+      "description": "Eine personalisierte Willkommenssequenz, die die Marke als Hautpflege-Experten positioniert, Hautprofil-Daten durch ein ansprechendes Quiz sammelt und maßgeschneiderte Produktempfehlungen basierend auf Hauttyp, Anliegen und Zielen bietet.",
+      "scenarios": [
+        {
+          "scenario_target": "Neue E-Mail-Abonnenten von Pop-up oder Footer-Anmeldung",
+          "scenario_objective": "Sofort mit Haut-Quiz engagieren und durch personalisierte Empfehlungen konvertieren",
+          "main_messages_ideas": "Markengeschichte + Haut-Quiz-Einladung, Quiz-Ergebnisse + personalisierte Routine, Inhaltsstoff-Edukation, Social Proof von ähnlichen Hauttypen, Erstkauf-Incentive",
+          "message_sequence": [
+            {
+              "title": "Willkommen + Haut-Quiz-Einladung",
+              "description": "Sofort: Willkommen mit überzeugendem Haut-Quiz-CTA",
+              "content": "Willkommen bei [Marke]! Wir glauben, dass schöne Haut damit beginnt, DEINE einzigartigen Bedürfnisse zu verstehen. Mach unser 2-minütiges Haut-Quiz, um deine personalisierte Routine zu entdecken. 85% der Kunden sagen, es hat ihre Hautpflege transformiert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Quiz-Erinnerung",
+              "description": "Tag 2: Sanfte Erinnerung für Nicht-Abschließer",
+              "content": "Deine personalisierte Hautpflege-Routine wartet! Schließe dein Haut-Quiz in nur 2 Minuten ab.",
+              "channel": "Email"
+            },
+            {
+              "title": "Deine personalisierte Routine",
+              "description": "Sofort nach Quiz: Personalisierte Ergebnisse",
+              "content": "Dein Hautprofil: [Hauttyp]. Basierend auf deinen Anliegen ([Anliegen]) ist hier deine perfekte AM & PM Routine. Beginne mit diesen 3 Hero-Produkten, die speziell für dich ausgewählt wurden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Inhaltsstoff-Deep-Dive",
+              "description": "Tag 4: Edukation über Schlüsselinhaltsstoffe für ihren Hauttyp",
+              "content": "Warum [Inhaltsstoff] ein Game-Changer für [ihr Hautanliegen] ist. Wissenschaftlich fundierte Vorteile und wie unsere Formel Ergebnisse liefert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Social Proof",
+              "description": "Tag 7: Testimonials von ähnlichen Hauttypen",
+              "content": "Sieh, wie Kunden mit [ähnlichem Hauttyp] ihre Haut transformiert haben. Echte Ergebnisse, echte Bewertungen von Menschen wie dir.",
+              "channel": "Email"
+            },
+            {
+              "title": "Erstkauf-Angebot",
+              "description": "Tag 10: Personalisiertes Starter-Kit mit Incentive",
+              "content": "Bereit, deine Hauttransformation zu starten? Erhalte 15% Rabatt auf dein personalisiertes Starter-Kit + kostenloser Versand. Deine Routine wartet!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Quiz-Abschließer, die nicht gekauft haben",
+          "scenario_objective": "Engagierte Interessenten mit Dringlichkeit und zusätzlichem Mehrwert konvertieren",
+          "main_messages_ideas": "Routinen-Erinnerung, Experten-Tipps, Limitiertes Angebot, Proben-Möglichkeit",
+          "message_sequence": [
+            {
+              "title": "Deine Routine wartet",
+              "description": "Tag 3 nach Quiz: Erinnerung mit Quick-Add-to-Cart",
+              "content": "Du hast dir Zeit genommen, deine perfekte Routine zu entdecken - jetzt mach sie zu deiner! Deine personalisierten Produkte sind nur einen Klick entfernt.",
+              "channel": "Email"
+            },
+            {
+              "title": "Experten-Tipp",
+              "description": "Tag 5: Mehrwert-Hautpflege-Ratschlag",
+              "content": "Profi-Tipp für [ihren Hauttyp]: Beginne mit einer einfachen 3-Schritte-Routine. Wir haben die Essentials für dich ausgewählt.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Dringlichkeits-Angebot",
+              "description": "Tag 8: Zeitlich begrenztes Incentive",
+              "content": "Dein 20% Willkommensangebot läuft in 48 Stunden ab! Starte deine Hauttransformation heute mit inkludierten Gratisproben.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nicht-Quiz-Teilnehmer, die Produkte durchstöbern",
+          "scenario_objective": "Unentschlossene Browser zum Quiz oder Bestsellern leiten",
+          "main_messages_ideas": "Quiz-Einladung, Bestseller-Empfehlungen, Anliegen-basierte Vorschläge",
+          "message_sequence": [
+            {
+              "title": "Browsing-Follow-up",
+              "description": "24 Stunden nach Browse: Quiz- oder Bestseller-Pfad",
+              "content": "Nicht sicher, wo du anfangen sollst? Mach entweder unser 2-Min Haut-Quiz für personalisierte Picks, oder shoppe unsere 5 Bestseller, die von Kunden aller Hauttypen geliebt werden.",
+              "channel": "Email"
+            },
+            {
+              "title": "Anliegen-basierter Guide",
+              "description": "Tag 4: Basierend auf durchstöberten Kategorien",
+              "content": "Suchst du nach [Anliegen]-Lösungen? Hier sind unsere Top-Picks, sortiert nach Hauttyp. Finde deinen Match.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Warenkorbabbruch & Browse-Recovery",
+      "target": "Besucher, die Produkte in den Warenkorb gelegt oder ohne Kauf gestöbert haben",
+      "objective": "Abgebrochene Warenkörbe innerhalb von 48 Stunden mit einer Recovery-Rate von 20%+ wiederherstellen und Browse-Intent erfassen",
+      "kpi": "Warenkorb-Recovery-Rate (Ziel: 20%), Browse-Abbruch-Konversion (Ziel: 8%), Zeit bis Recovery (Ziel: <24 Stunden), Wiedergewonnener Umsatz pro E-Mail",
+      "description": "Multi-Channel-Recovery-Sequenz, die sowohl Warenkorb-Abbrecher als auch engagierte Browser mit personalisierten Produkterinnerungen, Social Proof und strategischen Incentives anspricht.",
+      "scenarios": [
+        {
+          "scenario_target": "Warenkorb-Abbrecher mit Artikeln über 50€",
+          "scenario_objective": "Hochwertige Warenkörbe mit Dringlichkeit und Beruhigung wiederherstellen",
+          "main_messages_ideas": "Artikel warten, Produktvorteile, Social Proof, Limitierter Bestand-Dringlichkeit, Incentive",
+          "message_sequence": [
+            {
+              "title": "Dein Beauty-Bag wartet",
+              "description": "1 Stunde nach Abbruch: Sanfte Erinnerung",
+              "content": "Etwas Wunderschönes vergessen? Deine [Produktnamen] warten in deinem Warenkorb. Schließe deine Bestellung ab und starte dein Glow-Up!",
+              "channel": "Email"
+            },
+            {
+              "title": "Kurze Erinnerung",
+              "description": "4 Stunden: Kurzer SMS-Anstoß",
+              "content": "Dein Hautpflege-Warenkorb wartet! Schließe deine Bestellung ab: [Kurzlink]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Produkt-Highlights",
+              "description": "24 Stunden: Fokus auf Vorteile und Bewertungen",
+              "content": "Warum Kunden [Produkt] LIEBEN: [Sternebewertung] mit [X] Bewertungen. '[Kurzes Testimonial]'. Verpasse diese Ergebnisse nicht.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bestand-Alert",
+              "description": "36 Stunden: Dringlichkeit erzeugen",
+              "content": "[Produkt] verkauft sich schnell! Nur noch wenige auf Lager. Sichere dir deins, bevor es weg ist.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letztes Incentive",
+              "description": "48 Stunden: Letzte Chance mit Rabatt",
+              "content": "Wir haben deinen Warenkorb gespeichert! Schließe deinen Kauf in den nächsten 24 Stunden ab und genieße 10% Rabatt mit Code BEAUTY10.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Erstmalige Warenkorb-Abbrecher",
+          "scenario_objective": "Bedenken neuer Kunden mit Vertrauensaufbau adressieren",
+          "main_messages_ideas": "Risikofreies Testen, Rückgaberichtlinie, Kundensupport, Starter-Angebot",
+          "message_sequence": [
+            {
+              "title": "Erstes Mal? Wir verstehen das",
+              "description": "2 Stunden: Bedenken adressieren",
+              "content": "Eine neue Hautpflegemarke auszuprobieren kann sich wie ein Sprung ins Ungewisse anfühlen. Hier ist, warum 50.000+ Kunden [Marke] vertrauen: 30-Tage-Zufriedenheitsgarantie, dermatologisch getestete Formeln und echte Ergebnisse.",
+              "channel": "Email"
+            },
+            {
+              "title": "Fragen?",
+              "description": "24 Stunden: Support anbieten",
+              "content": "Nicht sicher, ob diese Produkte die richtigen für dich sind? Unsere Hautpflege-Experten helfen dir gerne! Chatte mit uns oder mach unser Haut-Quiz für personalisierte Beratung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Neukunden-Willkommen",
+              "description": "48 Stunden: Erstkäufer-Incentive",
+              "content": "Willkommensangebot: 15% Rabatt auf deine erste Bestellung + 3 Gratisproben, um deine Favoriten zu finden. Starte deine Hautpflege-Reise risikofrei!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Browse-Abbrecher, die mehrere Produkte angesehen haben",
+          "scenario_objective": "Interessierte Browser mit kuratierter Auswahl re-engagieren",
+          "main_messages_ideas": "Kuratierte Picks, Vergleichshilfe, Bestseller-Spotlight",
+          "message_sequence": [
+            {
+              "title": "Noch am Überlegen?",
+              "description": "24 Stunden: Kuratiert basierend auf angesehenen Produkten",
+              "content": "Du hattest einige tolle Produkte im Auge! Basierend auf deinem Browsing ist hier unser Experten-Edit - der perfekte Startpunkt für deine Routine.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bestseller-Alert",
+              "description": "48 Stunden: Social Proof Push",
+              "content": "[Produkt, das sie angesehen haben] hat gerade eine weitere 5-Sterne-Bewertung bekommen! Sieh, warum es ein Kult-Favorit für [Hautanliegen] geworden ist.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Nach-Kauf-Erlebnis & Routinen-Aufbau",
+      "target": "Alle Kunden nach dem Kauf",
+      "objective": "Produktzufriedenheit sicherstellen, richtige Anwendung lehren, Routinen-Gewohnheiten aufbauen und Retouren reduzieren bei einem NPS von 50+",
+      "kpi": "Produktzufriedenheits-Score (Ziel: 4,5+/5), Retourenquote (Ziel: <5%), NPS (Ziel: 50+), Bewertungs-Abgaberate (Ziel: 25%)",
+      "description": "Umfassende Nach-Kauf-Edukationssequenz, die richtige Produktanwendung lehrt, realistische Erwartungen setzt und dauerhafte Hautpflege-Gewohnheiten für maximale Ergebnisse aufbaut.",
+      "scenarios": [
+        {
+          "scenario_target": "Erstkäufer von Hautpflegeprodukten",
+          "scenario_objective": "Erfolgreiche Produktnutzung sicherstellen und Routinen-Gewohnheit aufbauen",
+          "main_messages_ideas": "Anwendungsanleitung, Morgen- vs. Abendroutine, Geduld-Messaging, Check-in, Bewertungsanfrage",
+          "message_sequence": [
+            {
+              "title": "Deine Bestellung ist unterwegs!",
+              "description": "Bestellbestätigung: Vorfreude aufbauen",
+              "content": "Deine Hautpflege-Reise beginnt! Hier ist genau, wann du deine Bestellung erwarten kannst und wie du dich auf deine neue Routine vorbereiten kannst. Mach dich bereit für strahlende Haut!",
+              "channel": "Email"
+            },
+            {
+              "title": "Wie du die besten Ergebnisse erzielst",
+              "description": "Liefertag: Anwendungs-Tutorial",
+              "content": "Deine Produkte sind angekommen! Schau dir unsere 2-minütige Anwendungsanleitung an, um sicherzustellen, dass du das Maximum aus jedem Tropfen herausholst.",
+              "channel": "Email"
+            },
+            {
+              "title": "Deine AM-Routine",
+              "description": "Tag 2: Morgenroutinen-Setup",
+              "content": "Guten Morgen! So integrierst du deine neuen Produkte in deine AM-Routine. Profi-Tipp: [spezifischer Anwendungsratschlag für ihre Produkte].",
+              "channel": "Email"
+            },
+            {
+              "title": "Schneller Tipp",
+              "description": "Tag 5: Hilfreiche Erinnerung",
+              "content": "Hautpflege-Tipp: Trage [Produkt] auf feuchte Haut auf für bessere Absorption! Wie läuft deine Routine?",
+              "channel": "SMS"
+            },
+            {
+              "title": "Geduld zahlt sich aus",
+              "description": "Tag 7: Erwartungen setzen",
+              "content": "Eine Woche geschafft! Denk daran: Die meiste Hautpflege zeigt Ergebnisse in 4-6 Wochen. Hier ist, welche Veränderungen du jetzt vs. nächsten Monat bemerken könntest. Bleib dran - deine Haut dankt es dir bereits!",
+              "channel": "Email"
+            },
+            {
+              "title": "2-Wochen-Check-In",
+              "description": "Tag 14: Fortschritts-Update",
+              "content": "Wie fühlt sich deine Haut an? Irgendwelche Fragen zu deiner Routine? Antworte auf diese E-Mail oder chatte mit unseren Hautpflege-Experten - wir sind hier, um dir beim Strahlen zu helfen!",
+              "channel": "Email"
+            },
+            {
+              "title": "Teile deine Erfahrung",
+              "description": "Tag 21: Bewertungsanfrage",
+              "content": "Du benutzt deine Produkte jetzt seit 3 Wochen! Wir würden gerne von deiner Erfahrung hören. Hinterlasse eine Bewertung und hilf anderen, ihre perfekte Routine zu finden.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Make-up-Käufer",
+          "scenario_objective": "Anwendungstechniken lehren und Farbton-Erkundung ermutigen",
+          "main_messages_ideas": "Anwendungs-Tutorial, Looks zum Ausprobieren, Farbton-Matching-Tipps, Ergänzungsprodukte",
+          "message_sequence": [
+            {
+              "title": "Meistere deinen Look",
+              "description": "Liefertag: Tutorial-Video",
+              "content": "Dein Make-up ist da! Schau zu, wie unsere Artists [Produkt] verwenden, um 3 verschiedene Looks zu kreieren - vom Alltags-Glow bis zum Night-Out-Glam.",
+              "channel": "Email"
+            },
+            {
+              "title": "Werde kreativ",
+              "description": "Tag 4: Inspirations-Galerie",
+              "content": "5 Wege, dein neues [Produkt] zu tragen. Welchen Look probierst du diese Woche aus? Tagge uns @brand für die Chance, gefeatured zu werden!",
+              "channel": "Email"
+            },
+            {
+              "title": "Profi-Tipp",
+              "description": "Tag 7: Experten-Ratschlag",
+              "content": "MUA-Geheimnis: Verwende [Produkt] als [alternative Verwendung] für einen subtilen Glow. Vertrau uns, das ist ein Game-Changer!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Vervollständige deine Kollektion",
+              "description": "Tag 14: Cross-Sell ergänzender Farbtöne",
+              "content": "Liebst du dein [Produkt]? Diese ergänzenden Farbtöne passen perfekt für endlose Look-Kombinationen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Bundle- oder Set-Käufer",
+          "scenario_objective": "Durch Multi-Produkt-Routine leiten",
+          "main_messages_ideas": "Unboxing-Guide, Schritt-für-Schritt-Routine, Wöchentlicher Routinen-Kalender, Ergebnis-Tracking",
+          "message_sequence": [
+            {
+              "title": "Deine komplette Routine ist da",
+              "description": "Liefertag: Unboxing-Guide",
+              "content": "Dein [Bundle-Name] ist angekommen! Öffne es und finde deinen kompletten Routinen-Guide darin. Hier ist die genaue Reihenfolge für die Verwendung jedes Produkts, AM & PM.",
+              "channel": "Email"
+            },
+            {
+              "title": "Dein wöchentlicher Routinen-Kalender",
+              "description": "Tag 3: Strukturierte Routine",
+              "content": "Lade deinen personalisierten wöchentlichen Hautpflege-Kalender herunter. Wir haben genau geplant, wann du jedes Produkt für optimale Ergebnisse verwendest.",
+              "channel": "Email"
+            },
+            {
+              "title": "Woche 2 Tipps",
+              "description": "Tag 10: Routinen-Verfeinerung",
+              "content": "Inzwischen gewöhnt sich deine Haut an deine neue Routine. Bemerkst du Veränderungen? Hier ist, was du in Woche 2-4 erwarten kannst und wie du deine Routine anpassen kannst.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Nachbestellung & Abonnement",
+      "target": "Kunden, die Verbrauchsprodukte gekauft haben",
+      "objective": "Wiederholungskäufe fördern, bevor Produkte ausgehen, und 30% der Wiederholungskäufer zu Abonnenten konvertieren",
+      "kpi": "Nachbestellungsrate (Ziel: 40%), Zeit zwischen Käufen (Ziel: optimaler 28-Tage-Zyklus), Abo-Konversion (Ziel: 30%), Churn-Prävention-Rate",
+      "description": "Intelligente Nachbestellungs-Erinnerungen basierend auf Produktverbrauchszyklen mit strategischem Abo-Upsell, um sicherzustellen, dass Kunden nie ohne ihre Favoriten sind.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden, die 30-Tage-Vorrat Hautpflege gekauft haben",
+          "scenario_objective": "Erinnerungen perfekt timen und zu Abo konvertieren",
+          "main_messages_ideas": "Verbrauchs-Check-in, Nachfüll-Erinnerung, Einfache Nachbestellung, Abo-Value-Proposition",
+          "message_sequence": [
+            {
+              "title": "Routinen-Check-In",
+              "description": "Tag 20: Verbrauchs-Check-in",
+              "content": "Wie funktioniert dein [Produkt] für dich? Du bist etwa zwei Drittel durch deinen Vorrat. Siehst du die erhofften Ergebnisse?",
+              "channel": "Email"
+            },
+            {
+              "title": "Nachfüll-Erinnerung",
+              "description": "Tag 25: Proaktive Erinnerung",
+              "content": "Wird es knapp? Dein [Produkt] hat wahrscheinlich nur noch ein paar Anwendungen. Bestell jetzt nach, um deine Routine nicht zu unterbrechen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Schnelle Nachbestellung",
+              "description": "Tag 28: SMS-Komfort",
+              "content": "Zeit, [Produkt] nachzubestellen! Ein-Klick-Nachbestellung hier: [Link]. Same-Day-Versand verfügbar!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Nie wieder ausgehen",
+              "description": "Tag 30: Abo-Pitch",
+              "content": "Liebst du deine Routine? Abonniere und spare 15% bei jeder Bestellung + kostenloser Versand + jederzeit pausieren/überspringen. Schließe dich 10.000+ Abonnenten an, die sich nie Sorgen machen, dass etwas ausgeht.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzte Chance",
+              "description": "Tag 35: Finale Erinnerung",
+              "content": "Deine Haut liebt Beständigkeit! Lass deine Routine nicht unterbrechen. Schnelle Nachbestellung: [Link]",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Make-up-Produkt-Käufer",
+          "scenario_objective": "Basierend auf typischer Nutzung erinnern und neue Farbtöne vorstellen",
+          "main_messages_ideas": "Nachfüll-Erinnerung, Neue Farbton-Einführung, Bundle-Angebot",
+          "message_sequence": [
+            {
+              "title": "Dein Favorit nachfüllen",
+              "description": "60 Tage nach Kauf: Make-up-Nachbestellung",
+              "content": "Bereit für ein frisches [Produkt]? Halte deinen Look makellos mit einem neuen. Plus, schau dir die neuen Farbtöne an, die wir hinzugefügt haben!",
+              "channel": "Email"
+            },
+            {
+              "title": "Probier etwas Neues",
+              "description": "Tag 65: Farbton-Erkundung",
+              "content": "Zeit zum Nachfüllen? Probier einen neuen Farbton! Kunden, die [ihren Farbton] lieben, mögen auch [ergänzenden Farbton]. Bundel beide und spare 10%.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Gefährdete Abonnenten mit Churn-Risiko",
+          "scenario_objective": "Re-engagieren und Abo-Kündigung verhindern",
+          "main_messages_ideas": "Check-in, Routinen-Anpassung, Pause-Option, Win-Back-Angebot",
+          "message_sequence": [
+            {
+              "title": "Alles in Ordnung?",
+              "description": "Nach übersprungener Lieferung: Check-in",
+              "content": "Wir haben bemerkt, dass du deine letzte Lieferung übersprungen hast. Ist alles okay mit deiner Routine? Wir helfen dir gerne, dein Abo an deine Bedürfnisse anzupassen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Flexible Optionen",
+              "description": "Tag 5: Alternativen anbieten",
+              "content": "Zu viel Produkt? Nicht ganz richtig? Lass uns anpassen! Ändere deine Lieferfrequenz, tausche Produkte oder pausiere jederzeit - dein Abo, deine Regeln.",
+              "channel": "Email"
+            },
+            {
+              "title": "Wir vermissen dich",
+              "description": "Nach Kündigung: Win-Back",
+              "content": "Komm zurück mit 20% Rabatt auf deine nächste Abo-Bestellung. Wir haben auch neue Produkte hinzugefügt, die dir basierend auf deinen bisherigen Favoriten gefallen könnten.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Neuprodukt-Launch & Sampling",
+      "target": "Aktive Kunden und engagierte Abonnenten",
+      "objective": "Buzz generieren, Trial durch Sampling fördern und 40% des Launch-Wochen-Umsatzes von bestehenden Kunden erreichen",
+      "kpi": "Proben-Anfrage-Rate (Ziel: 25%), Probe-zu-Kauf-Konversion (Ziel: 30%), Launch-Wochen-Umsatz von Bestandskunden (Ziel: 40%), Wartelisten-Anmeldungen",
+      "description": "Strategische Launch-Kampagne, die exklusive Vorschauen, gezieltes Sampling basierend auf Hautprofil und VIP-Early-Access kombiniert, um sowohl Begeisterung als auch Konversion zu maximieren.",
+      "scenarios": [
+        {
+          "scenario_target": "VIP-Kunden und Hoch-Engagement-Abonnenten",
+          "scenario_objective": "Early Access und Sampling-Möglichkeit mit Exklusivität",
+          "main_messages_ideas": "Exklusive Vorschau, Behind the Scenes, Early Access Shopping, Gründer-Story, Launch-Celebration",
+          "message_sequence": [
+            {
+              "title": "VIP First Look",
+              "description": "21 Tage vor Launch: Exklusive Vorschau",
+              "content": "Du erfährst es als Erste! Wir stellen vor: [neues Produkt] - unsere innovativste Formel überhaupt. Sieh, warum wir 2 Jahre damit verbracht haben, dies für Kunden wie dich zu perfektionieren.",
+              "channel": "Email"
+            },
+            {
+              "title": "Die Geschichte dahinter",
+              "description": "14 Tage vorher: Behind the Scenes",
+              "content": "Warum wir [Produkt] kreiert haben: Ein Brief von unserer Gründerin. Plus, sieh die klinischen Ergebnisse, die uns überzeugt haben, dass dies [Hautanliegen] transformieren wird.",
+              "channel": "Email"
+            },
+            {
+              "title": "Gratis-Proben-Angebot",
+              "description": "10 Tage vorher: Sampling-Möglichkeit",
+              "content": "VIP-Exklusiv: Sei unter den ersten 500, die [Produkt] ausprobieren. Fordere jetzt deine Gratisprobe an - als Dankeschön, dass du bei uns bist.",
+              "channel": "Email"
+            },
+            {
+              "title": "Probe versendet!",
+              "description": "7 Tage vorher: Proben-Bestätigung",
+              "content": "Deine exklusive Probe ist unterwegs! Probier sie, bevor alle anderen es können, und sag uns, was du denkst.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Early Access ist offen",
+              "description": "24 Stunden vor öffentlichem Launch: VIP-Shopping",
+              "content": "Dein exklusiver Zugang ist LIVE! Shoppe [Produkt] vor allen anderen + erhalte ein Gratisgeschenk beim Kauf. Danke, dass du VIP bist!",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzte VIP-Stunden",
+              "description": "Launch-Tag: Dringlichkeit",
+              "content": "Dein VIP-Early-Access endet um Mitternacht! Shoppe jetzt, bevor wir für alle öffnen. Gratisgeschenk-Angebot endet bald.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden mit passendem Hautanliegen",
+          "scenario_objective": "Gezielte Launch-Kommunikation basierend auf Hautprofil",
+          "main_messages_ideas": "Personalisierte Intro, Problem/Lösung-Messaging, Social Proof von ähnlichen Profilen",
+          "message_sequence": [
+            {
+              "title": "Für dich gemacht",
+              "description": "14 Tage vor Launch: Personalisierte Vorschau",
+              "content": "Neu für [ihr Hautanliegen]: Wir haben [Produkt] speziell für Kunden wie dich entwickelt. Hier ist die Wissenschaft dahinter, warum es funktioniert.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ergebnisse, die du lieben wirst",
+              "description": "7 Tage vorher: Testimonials",
+              "content": "Beta-Tester mit [ähnlichem Hautanliegen] sahen [spezifische Ergebnisse] in nur 4 Wochen. Sieh ihre Vorher-Nachher-Bilder und Bewertungen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Zu deiner Routine hinzufügen",
+              "description": "Launch-Tag: Integrations-Anleitung",
+              "content": "[Produkt] ist da! So fügst du es genau zu deiner aktuellen Routine für maximalen [Vorteil] hinzu. Shoppe jetzt mit Launch-Preisen.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Allgemeine Abonnenten-Liste",
+          "scenario_objective": "Awareness und Warteliste für breiteres Publikum aufbauen",
+          "main_messages_ideas": "Coming-Soon-Teaser, Wartelisten-Vorteile, Launch-Ankündigung",
+          "message_sequence": [
+            {
+              "title": "Etwas Neues kommt",
+              "description": "14 Tage vorher: Teaser",
+              "content": "Wir haben an etwas Besonderem gearbeitet... Tritt der Warteliste bei für exklusiven Early Access und eine Launch-Tag-Überraschung.",
+              "channel": "Email"
+            },
+            {
+              "title": "Es ist da!",
+              "description": "Launch-Tag: Ankündigung",
+              "content": "Wir stellen vor: [Produkt]! Unsere neueste Innovation für [Vorteil]. Shoppe jetzt und entdecke, warum unser Team nicht aufhören kann, darüber zu reden.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Loyalitäts- & VIP-Programm",
+      "target": "Wiederkaufende Kunden und Marken-Advocates",
+      "objective": "Customer Lifetime Value um 50% erhöhen, Stufen-Aufstieg fördern und 40% VIP-Kundenbindung erreichen",
+      "kpi": "Punkte-Einlöserate (Ziel: 70%), VIP-Stufen-Aufstieg (Ziel: 25% jährlich), VIP-Bindungsrate (Ziel: 85%), Wiederkaufrate unter Mitgliedern (Ziel: 60%)",
+      "description": "Gestuftes Loyalitätsprogramm mit Beauty-spezifischen Belohnungen, exklusiven Erlebnissen und personalisierten Vorteilen, die Kunden das Gefühl geben, wertgeschätzt und anerkannt zu werden.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden, die die VIP-Status-Schwelle erreichen",
+          "scenario_objective": "Meilenstein feiern und Programmwert verstärken",
+          "main_messages_ideas": "VIP-Willkommen, Exklusive Vorteile enthüllen, Personalisierte Benefits, Community-Einladung",
+          "message_sequence": [
+            {
+              "title": "Du bist VIP!",
+              "description": "Bei Erreichen der Schwelle: Große Begrüßung",
+              "content": "Herzlichen Glückwunsch! Du hast VIP-Status erreicht. Hier ist alles, was du freigeschaltet hast: 20% Rabatt immer, kostenloser Versand, Early Access, doppelte Geburtstagspunkte und exklusive Produkte nur für VIPs.",
+              "channel": "Email"
+            },
+            {
+              "title": "Deine VIP-Karte",
+              "description": "Tag 2: Digitale Vorteile",
+              "content": "Speichere deinen VIP-Status in deinem Wallet! Zeige ihn für exklusive Vorteile in unseren Stores. Dein persönlicher VIP-Code: [Code]",
+              "channel": "SMS"
+            },
+            {
+              "title": "VIP-Community-Willkommen",
+              "description": "Tag 5: Community-Einladung",
+              "content": "Tritt unserer privaten VIP-Facebook-Gruppe bei! Vernetze dich mit anderen Beauty-Liebhabern, erhalte exklusive Tipps von unseren Experten und sei die Erste, die neue Produkte testet.",
+              "channel": "Email"
+            },
+            {
+              "title": "Dein erster VIP-Vorteil",
+              "description": "Tag 10: Sofortiger Mehrwert",
+              "content": "Bereit, deine VIP-Vorteile zu nutzen? Hier sind 25% Rabatt auf deine nächste Bestellung (das sind 5% mehr als üblich!) als Dankeschön für das Erreichen von VIP. Nur diese Woche gültig!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Mitglieder mit Risiko des Stufen-Abstiegs",
+          "scenario_objective": "Aktivität ermutigen, um Status zu halten",
+          "main_messages_ideas": "Status-Erinnerung, Einfache Wege zum Status-Erhalt, Exklusives Angebot für Schwellen-Push",
+          "message_sequence": [
+            {
+              "title": "Behalte deinen VIP-Status",
+              "description": "60 Tage vor Jahresende: Status-Erinnerung",
+              "content": "Du bist [X Punkte] davon entfernt, VIP-Status für ein weiteres Jahr zu behalten. Verlier deine exklusiven Vorteile nicht! So erhältst du einfach deinen Status.",
+              "channel": "Email"
+            },
+            {
+              "title": "Punkte-Chance",
+              "description": "30 Tage vorher: Punkte-Multiplikator",
+              "content": "Doppelte Punkte diese Woche! Die perfekte Zeit, um Favoriten aufzustocken und deinen VIP-Status zu behalten. Shoppe jetzt, um doppelt so schnell zu sammeln.",
+              "channel": "Email"
+            },
+            {
+              "title": "Letzte Chance VIP",
+              "description": "7 Tage vorher: Dringlichkeit",
+              "content": "Nur noch [X Punkte] nötig, um VIP-Status zu behalten! Tätige einen Kauf bis [Datum], um deine Vorteile für ein weiteres Jahr zu sichern.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Langzeit-loyale Kunden (3+ Jahre)",
+          "scenario_objective": "Loyalitäts-Meilenstein anerkennen und belohnen",
+          "main_messages_ideas": "Jubiläums-Feier, Exklusive Belohnung, Personalisiertes Dankeschön",
+          "message_sequence": [
+            {
+              "title": "Happy Anniversary!",
+              "description": "Am Jubiläumstag: Feier",
+              "content": "[X] Jahre mit [Marke]! Danke, dass du Teil unserer Beauty-Familie bist. Um zu feiern, hier ein besonderes Geschenk: [exklusive Belohnung] nur für dich.",
+              "channel": "Email"
+            },
+            {
+              "title": "Deine Beauty-Reise",
+              "description": "Tag 2: Personalisierte Zusammenfassung",
+              "content": "Über [X] Jahre hast du [Y] Produkte ausprobiert, [Z] mit deinen Loyalitäts-Vorteilen gespart und [A] Freunden geholfen, uns zu entdecken. Auf viele weitere Jahre schöner Haut!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Reaktivierung",
+      "target": "Kunden, die seit 90+ Tagen nicht gekauft haben",
+      "objective": "15% der inaktiven Kunden reaktivieren und Gründe für Desengagement verstehen",
+      "kpi": "Reaktivierungsrate (Ziel: 15%), Win-Back-Umsatz, Feedback-Sammelrate (Ziel: 20%), Abmelderate (minimieren)",
+      "description": "Strategische Re-Engagement-Sequenz, die Abwesenheit anerkennt, überzeugende Gründe zur Rückkehr bietet und List Hygiene elegant handhabt.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden inaktiv 90-120 Tage",
+          "scenario_objective": "Sanftes Re-Engagement mit Neuprodukt-Highlights",
+          "main_messages_ideas": "Wir vermissen dich, Was es Neues gibt, Personalisierte Empfehlungen basierend auf früheren Käufen",
+          "message_sequence": [
+            {
+              "title": "Wir haben dich vermisst!",
+              "description": "Tag 90: Sanftes Re-Engagement",
+              "content": "Es ist eine Weile her! Wir haben dich vermisst. Hier ist, was es Neues gibt seit deinem letzten Besuch - einschließlich einiger Produkte, die perfekt für [ihren Hauttyp/ihre Anliegen] sind.",
+              "channel": "Email"
+            },
+            {
+              "title": "Routinen-Refresh",
+              "description": "Tag 100: Personalisierte Empfehlungen",
+              "content": "Bereit, deine Routine aufzufrischen? Basierend auf deinen bisherigen Favoriten sind hier unsere Experten-Picks für dein nächstes Hautpflege-Upgrade.",
+              "channel": "Email"
+            },
+            {
+              "title": "Spezielles Rückkehrer-Angebot",
+              "description": "Tag 110: Incentive",
+              "content": "Willkommen zurück! Hier sind 20% Rabatt auf deine Rückkehr-Bestellung. Wir würden dich gerne wieder in der [Marke]-Familie haben.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden inaktiv 120-180 Tage",
+          "scenario_objective": "Starkes Re-Engagement mit signifikantem Angebot",
+          "main_messages_ideas": "Check-in, Bestes Angebot, Letzte Chance vor Abschied",
+          "message_sequence": [
+            {
+              "title": "Immer noch an dich gedacht",
+              "description": "Tag 120: Check-in mit Angebot",
+              "content": "Wir haben dich eine Weile nicht gesehen und vermissen dich! Hier ist unser bestes Angebot: 25% Rabatt auf deine gesamte Bestellung + Gratisgeschenk. Nur diese Woche gültig.",
+              "channel": "Email"
+            },
+            {
+              "title": "Schneller Win-Back",
+              "description": "Tag 130: SMS-Angebot",
+              "content": "Komm zurück mit 25% Rabatt! Plus kostenloser Versand. Wir haben neue Produkte, die dir gefallen werden: [Link]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Wir hätten gerne dein Feedback",
+              "description": "Tag 150: Feedback-Anfrage",
+              "content": "Wir haben bemerkt, dass du kürzlich nicht bei uns geshoppt hast. Wir würden wirklich gerne wissen, warum. Nimm an unserer 2-Min-Umfrage teil und erhalte 10€ Rabatt auf deine nächste Bestellung.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden inaktiv 180+ Tage",
+          "scenario_objective": "Letzter Versuch und eleganter Abgang",
+          "main_messages_ideas": "Wir sind noch da, Bestes Angebot ever, Präferenz-Management",
+          "message_sequence": [
+            {
+              "title": "Ist das ein Abschied?",
+              "description": "Tag 180: Letzter Versuch",
+              "content": "Wir wollen deinen Posteingang nicht zuspammen, wenn du nicht mehr interessiert bist. Hier ist unser bestes Angebot ever - 30% Rabatt - als letzter Versuch, dich zurückzugewinnen. Oder aktualisiere deine E-Mail-Präferenzen unten.",
+              "channel": "Email"
+            },
+            {
+              "title": "In Kontakt bleiben?",
+              "description": "Tag 200: Präferenz-Management",
+              "content": "Wenn unsere E-Mails nicht mehr relevant sind, lass es uns wissen! Wähle, nur Sale-Updates, Neuheiten zu erhalten oder dich abzumelden. Wir respektieren deine Entscheidung.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Empfehlungs- & Advocacy-Programm",
+      "target": "Zufriedene Kunden und Marken-Enthusiasten",
+      "objective": "20% der Neukundenakquise durch Empfehlungen mit niedrigerem CAC als bezahlte Kanäle",
+      "kpi": "Empfehlungsrate (Ziel: 15% der Kunden empfehlen), Empfehlungs-Konversionsrate (Ziel: 25%), Empfehlungs-CAC (Ziel: 50% niedriger als paid), UGC-Einreichungsrate",
+      "description": "Umfassendes Advocacy-Programm, das zufriedene Kunden durch Empfehlungs-Incentives, UGC-Kampagnen und Community-Building zu Marken-Ambassadors macht.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden, die 5-Sterne-Bewertungen hinterlassen haben",
+          "scenario_objective": "Zufriedene Kunden in Empfehler konvertieren",
+          "main_messages_ideas": "Danke + Empfehlungs-Einladung, Einfache Sharing-Tools, Empfehlungs-Belohnungen",
+          "message_sequence": [
+            {
+              "title": "Danke + Teile die Liebe",
+              "description": "Sofort nach Bewertung: Empfehlungs-Einladung",
+              "content": "Danke für deine fantastische Bewertung! Deine Worte helfen anderen, Produkte zu entdecken, die sie lieben werden. Willst du die Liebe teilen? Gib deinen Freunden 15€ Rabatt und erhalte 15€ für dich selbst!",
+              "channel": "Email"
+            },
+            {
+              "title": "Dein Empfehlungs-Link",
+              "description": "Tag 3: Einfaches Teilen",
+              "content": "Teile deinen persönlichen Link und verdiene! Verfolge deine Empfehlungen und Belohnungen in deinem Konto. Bereits 3 Freunde haben [Influencer's] Link diese Woche genutzt!",
+              "channel": "Email"
+            },
+            {
+              "title": "Empfehlungs-Bonus",
+              "description": "Tag 10: Extra-Incentive",
+              "content": "Nur diese Woche: Verdiene DOPPELTE Empfehlungs-Belohnungen! 30€ Guthaben für jeden Freund, der shoppt. Jetzt teilen!",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "VIP-Kunden und Vielkäufer",
+          "scenario_objective": "Top-Kunden als Marken-Ambassadors aktivieren",
+          "main_messages_ideas": "Ambassador-Einladung, Exklusive Vorteile, Community-Benefits",
+          "message_sequence": [
+            {
+              "title": "Werde Ambassador",
+              "description": "Basierend auf Kaufhistorie: Einladung",
+              "content": "Du bist eine unserer Top-Kundinnen und wir würden gerne mit dir zusammenarbeiten! Tritt unserem Ambassador-Programm bei für exklusive Vorteile, Early Access und höhere Empfehlungs-Belohnungen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Ambassador-Willkommen",
+              "description": "Bei Anmeldung: Onboarding",
+              "content": "Willkommen in der [Marke] Ambassador-Familie! Hier ist dein Kit: personalisierter Empfehlungs-Link mit 25% Rabatt für Freunde, exklusiver Discount-Code und Early Access zu allem Neuen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Monatliches Ambassador-Update",
+              "description": "Monatlich: Performance + Vorteile",
+              "content": "Dein Ambassador-Impact diesen Monat: [X Empfehlungen], [Y verdient]. Plus, hier ist dein exklusiver First Look auf den Launch nächsten Monat!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Social Media engagierte Kunden",
+          "scenario_objective": "UGC und Social Sharing ermutigen",
+          "main_messages_ideas": "Foto-Wettbewerb, Gefeatured werden, Community-Galerie",
+          "message_sequence": [
+            {
+              "title": "Zeig uns deinen Glow",
+              "description": "Nach positiver Bewertung/Kauf: UGC-Anfrage",
+              "content": "Liebst du deine Ergebnisse? Wir würden sie gerne sehen! Teile deinen #[Marke]Glow auf Instagram für die Chance, gefeatured zu werden und monatlich eine 100€-Geschenkkarte zu gewinnen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Du wurdest gefeatured!",
+              "description": "Bei Auswahl: Anerkennung",
+              "content": "Dein Post wurde für unsere Community-Galerie ausgewählt! Danke, dass du deine wunderschöne Hautreise geteilt hast. Hier sind 25€ als Dankeschön.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Geburtstag & besondere Anlässe",
+      "target": "Alle Kunden mit Geburtstagsdaten",
+      "objective": "40% Einlöserate bei Geburtstags-Angeboten erreichen und emotionale Markenverbindung stärken",
+      "kpi": "Geburtstags-Angebot-Einlöserate (Ziel: 40%), Geburtstagmonats-Umsatzsteigerung (Ziel: 30%), Geburtstagsdaten-Sammelrate",
+      "description": "Personalisierte Feier-Kampagnen, die Kunden an ihrem Geburtstag und anderen bedeutungsvollen Anlässen das Gefühl geben, besonders zu sein.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden mit Geburtstag im aktuellen Monat",
+          "scenario_objective": "Geburtstagskauf mit personalisierter Feier fördern",
+          "main_messages_ideas": "Früher Geburtstagswunsch, Spezielles Angebot, Tag-der-Feier, Verlängerte Feier",
+          "message_sequence": [
+            {
+              "title": "Dein Geburtstagsmonat beginnt!",
+              "description": "Beginn des Geburtstagsmonats: Frühe Feier",
+              "content": "Dein Geburtstagsmonat ist da! Feiere den ganzen Monat mit deiner exklusiven Geburtstags-Belohnung: [Angebotsdetails]. Gönn dir etwas - du hast es verdient!",
+              "channel": "Email"
+            },
+            {
+              "title": "Alles Gute zum Geburtstag!",
+              "description": "Am Geburtstag: Feier",
+              "content": "Alles Gute zum Geburtstag! Dein besonderer Tag verdient etwas Besonderes. Hier ist [exklusives Geburtstagsgeschenk] nur für dich. Mach den Tag wunderschön!",
+              "channel": "Email"
+            },
+            {
+              "title": "Geburtstags-Überraschung",
+              "description": "Geburtstag: SMS-Freude",
+              "content": "Alles Gute! Als Extra-Überraschung haben wir ein Mystery-Geschenk zu deinem Konto hinzugefügt. Löse es mit deiner nächsten Bestellung ein!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Geburtstags-Angebot-Erinnerung",
+              "description": "Monatsende: Letzte Chance",
+              "content": "Dein Geburtstags-Angebot läuft bald ab! Verpasse nicht deinen speziellen [Rabatt/Geschenk]. Einlösen bis [Datum].",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden ohne Geburtstagsdaten",
+          "scenario_objective": "Geburtstagsinformation für zukünftige Kampagnen sammeln",
+          "main_messages_ideas": "Geburtstagsdaten-Anfrage mit Incentive",
+          "message_sequence": [
+            {
+              "title": "Wann hast du Geburtstag?",
+              "description": "Nach Kauf oder periodisch: Datensammlung",
+              "content": "Wir würden dich gerne feiern! Füge deinen Geburtstag zu deinem Profil hinzu und sichere dir jedes Jahr ein spezielles Geburtstagsgeschenk. Aktualisiere jetzt dein Profil.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden am Abo-Jubiläum",
+          "scenario_objective": "Loyalitäts-Meilenstein feiern",
+          "main_messages_ideas": "Jubiläums-Dankeschön, Spezielles Angebot, Loyalitäts-Anerkennung",
+          "message_sequence": [
+            {
+              "title": "Happy Hautpflege-Jubiläum!",
+              "description": "Am Abo-Jubiläum: Feier",
+              "content": "Es ist [X] Jahr(e) her, seit du deine Abo-Reise begonnen hast! Danke, dass du uns deine Hautpflege anvertraust. Hier ist ein spezielles Jubiläumsgeschenk nur für dich.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Saisonale & Kampagnen-Momente",
+      "target": "Alle Kunden segmentiert nach Präferenzen und Kaufhistorie",
+      "objective": "Umsatz während wichtiger Beauty-Momente und Feiertage maximieren bei gleichzeitiger Markenrelevanz",
+      "kpi": "Kampagnen-Umsatz (Ziel: 25% über Baseline), Engagement-Rate (Ziel: 30%+), Konversionsrate während Kampagnen (Ziel: 15%)",
+      "description": "Strategische saisonale Kampagnen abgestimmt auf Beauty-Momente, Feiertage und kulturelle Events, die das ganze Jahr über Engagement und Umsatz steigern.",
+      "scenarios": [
+        {
+          "scenario_target": "Alle Kunden während großer Sales (Black Friday, etc.)",
+          "scenario_objective": "Umsatz maximieren bei gleichzeitigem Marken-Prestige",
+          "main_messages_ideas": "VIP Early Access, Beste Deals enthüllen, Countdown-Dringlichkeit, Verlängertes Angebot",
+          "message_sequence": [
+            {
+              "title": "VIP Early Access",
+              "description": "24 Stunden vor Sale: Exklusiver Start",
+              "content": "Dein VIP Early Access startet JETZT! Shoppe unseren größten Sale des Jahres vor allen anderen. Bis zu 40% Rabatt auf alles.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sale ist live!",
+              "description": "Sale-Tag: Haupt-Ankündigung",
+              "content": "Unser größter Sale ist DA! Bis zu 40% Rabatt auf Bestseller, Bundles und Geschenksets. Perfekte Zeit zum Aufstocken oder Geschenke zu besorgen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Flash Alert",
+              "description": "Mitte Sale: SMS-Dringlichkeit",
+              "content": "FAST AUSVERKAUFT: Deine Favoriten gehen schnell weg! Jetzt shoppen, bevor sie weg sind: [Link]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Letzte Chance",
+              "description": "Letzte Stunden: Dringlichkeit",
+              "content": "Nur noch Stunden! Sale endet heute Nacht um Mitternacht. Verpasse nicht bis zu 40% Rabatt. Letzter Aufruf!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden während saisonaler Übergänge",
+          "scenario_objective": "Saisonale Routinen-Updates fördern",
+          "main_messages_ideas": "Saison-Vorbereitung, Routinen-Refresh, Produktwechsel für Wetterwandel",
+          "message_sequence": [
+            {
+              "title": "Saisonale Hautvorbereitung",
+              "description": "2 Wochen vor Saisonwechsel: Edukation",
+              "content": "[Saison] kommt! So aktualisierst du deine Routine für den Wetterwechsel. Die Bedürfnisse deiner Haut werden sich bald ändern.",
+              "channel": "Email"
+            },
+            {
+              "title": "Saisonale Picks",
+              "description": "1 Woche vorher: Produktempfehlungen",
+              "content": "Saisonale Must-Haves für [Saison]-Haut. Tausche diese Produkte, um deine Haut durch den Wetterwechsel im Gleichgewicht zu halten.",
+              "channel": "Email"
+            },
+            {
+              "title": "Saisonales Bundle",
+              "description": "Saisonstart: Bundle-Angebot",
+              "content": "Unser [Saison]-Essentials-Bundle: Alles, was deine Haut für die kommenden Monate braucht, mit 20% Ersparnis.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden während Beauty-spezifischer Momente",
+          "scenario_objective": "Beauty-Kalender-Momente nutzen (Valentinstag, Muttertag, etc.)",
+          "main_messages_ideas": "Geschenk-Guide, Self-Care-Messaging, Limited Editions",
+          "message_sequence": [
+            {
+              "title": "Geschenk-Guide",
+              "description": "2 Wochen vor Anlass: Geschenk-Inspiration",
+              "content": "[Anlass] Geschenk-Guide: Finde das perfekte Beauty-Geschenk für alle auf deiner Liste. Von Bestseller-Sets bis personalisierten Optionen.",
+              "channel": "Email"
+            },
+            {
+              "title": "Self-Care-Erinnerung",
+              "description": "1 Woche vorher: Selbstkauf-Perspektive",
+              "content": "Vergiss nicht DICH diesen [Anlass]. Gönn dir etwas Schönes. Self-Care ist Selbstliebe.",
+              "channel": "Email"
+            },
+            {
+              "title": "Last-Minute-Geschenke",
+              "description": "2 Tage vorher: Dringlichkeit",
+              "content": "Brauchst du noch ein Geschenk? Bestelle bis [Zeit] für garantierte [Anlass]-Lieferung. E-Geschenkarten für sofortiges Schenken verfügbar!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Willkommen & Hautprofil-Entdeckung",
+      "why_brevo_is_better": "Brevos fortschrittlicher Formular-Builder integriert sich nahtlos mit Automation, sodass Sie interaktive Haut-Quiz erstellen können, die sofort personalisierte Nurture-Journeys basierend auf Antworten auslösen. Dynamische Inhaltsblöcke in E-Mails können verschiedene Produktempfehlungen basierend auf gesammelten Hauttyp-Daten zeigen.",
+      "omnichannel_channels": "E-Mail für reichhaltige edukative Inhalte + SMS für zeitkritische Willkommensangebote + WhatsApp für interaktive Hautpflege-Beratung",
+      "setup_efficiency": "Quiz-zu-Automation-Workflows sind in Stunden mit vorgefertigten Beauty-Templates einsatzbereit. Conditional Logic leitet Kunden automatisch zur richtigen Journey, und A/B-Testing optimiert die Konversion bei jedem Schritt."
+    },
+    {
+      "scenario_name": "Warenkorbabbruch & Browse-Recovery",
+      "why_brevo_is_better": "Echtzeit-Warenkorb- und Browse-Abbruch-Trigger mit Sekundenbruchteilen Reaktionszeit stellen sicher, dass Sie Kunden erreichen, wenn die Kaufabsicht am höchsten ist. Brevos KI-gestützte Sendezeitoptimierung liefert Recovery-Nachrichten, wenn jeder Kunde am wahrscheinlichsten engagiert.",
+      "omnichannel_channels": "E-Mail für reichhaltige Produktpräsentationen + SMS für dringende Erinnerungen + Push-Benachrichtigungen für App-Nutzer",
+      "setup_efficiency": "Einmal einrichten mit smarten Defaults, dann optimiert Brevos Machine Learning kontinuierlich Timing, Messaging und Rabattangebote, um Recovery-Raten zu maximieren und Margen zu schützen."
+    },
+    {
+      "scenario_name": "Nachbestellung & Abonnement",
+      "why_brevo_is_better": "Produktbasierte Automation-Trigger berechnen optimales Nachbestellungs-Timing basierend auf Kategorie und Kaufhistorie. Integration mit Abo-Plattformen ermöglicht nahtloses Management wiederkehrender Umsätze, während Predictive Analytics Churn-Risiko erkennen, bevor es passiert.",
+      "omnichannel_channels": "E-Mail für detaillierte Nachbestellungs-Info + SMS für schnelle Nachbestell-Komfort + WhatsApp für Abo-Management",
+      "setup_efficiency": "Konfigurieren Sie Produktlebenszyklen einmal, und Brevo sendet automatisch perfekt getimte Erinnerungen. Abo-Management-Flows sind vorgefertigt und anpassbar."
+    },
+    {
+      "scenario_name": "Loyalitäts- & VIP-Programm",
+      "why_brevo_is_better": "Brevos Loyalitätsprogramm-Integration trackt Punkte, Stufen und Belohnungen in Echtzeit. Automatisierte Stufen-Aufstiegs-Feiern, Punkte-Ablauf-Warnungen und personalisierte Belohnungsempfehlungen fördern Engagement ohne manuellen Aufwand.",
+      "omnichannel_channels": "E-Mail für Stufen-Updates und exklusive Angebote + SMS für Punkte-Stand-Alerts + App-Push für Echtzeit-Belohnungs-Benachrichtigungen",
+      "setup_efficiency": "Verbinden Sie Ihre Loyalitätsplattform einmal, dann handhabt Brevo alle stufenbasierten Kommunikationen automatisch. Vorgefertigte Segmente für VIPs, gefährdete Mitglieder und neue Anmeldungen sind einsatzbereit."
+    },
+    {
+      "scenario_name": "Neuprodukt-Launch & Sampling",
+      "why_brevo_is_better": "Koordinierte Multi-Wave-Launch-Kampagnen können Wochen im Voraus geplant und automatisch ausgeführt werden. Segment-spezifisches Messaging stellt sicher, dass VIPs Early Access bekommen, während allgemeine Abonnenten passende Kommunikation erhalten. Proben-Anfrage-Formulare integrieren sich direkt mit Fulfillment.",
+      "omnichannel_channels": "E-Mail für reichhaltiges Launch-Storytelling + SMS für Early-Access-Alerts + Social Retargeting für Awareness",
+      "setup_efficiency": "Launch-Kalender-Templates ermöglichen die Planung ganzer Kampagnen auf einmal. Brevos Audience Builder erstellt perfekte Segmente basierend auf früherem Kaufverhalten und Engagement."
+    }
+  ],
+  "conclusion": "Beauty-Marken, die diese Beziehungsmarketing-Programme implementieren, können mit deutlich höherem Customer Lifetime Value rechnen, wobei Personalisierung 15-25% höhere durchschnittliche Bestellwerte und routinenbasierte Nachbestellung eine um 40-60% verbesserte Retention bringt. Die Kombination aus Hautprofil-Daten, intelligentem Nachbestellungs-Timing und Community-Building schafft ein differenziertes Erlebnis, das Einmalkäufer in lebenslange Marken-Advocates verwandelt. Erfolg im Beauty-Marketing kommt davon, Kunden als Individuen auf einzigartigen Hautpflege-Reisen zu behandeln, fachkundige Beratung zu bieten und emotionale Verbindungen aufzubauen, die weit über Transaktionen hinausgehen."
+}

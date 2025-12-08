@@ -1,0 +1,742 @@
+{
+  "introduction": "Dieser umfassende Marketing-Beziehungsplan wurde für Mode- und Bekleidungsmarken entwickelt, die durch personalisierte, kanalübergreifende Kommunikationsstrategien dauerhafte Kundenbeziehungen aufbauen möchten. Er deckt den gesamten Kundenlebenszyklus von der Akquisition bis zur Markenbotschafter-Phase ab, mit branchenspezifischen Programmen, die auf die Dynamik des Modeeinzelhandels zugeschnitten sind – einschließlich Saisonalität, Trendzyklen und stilorientiertem Kaufverhalten.",
+  "company_summary": {
+    "name": "Mode- & Bekleidungsmarke",
+    "website": "beispiel-mode.de",
+    "activities": "Mode- und Bekleidungseinzelhandel, einschließlich Kleidung, Accessoires, Schuhe und saisonale Kollektionen über Online- und stationäre Geschäfte",
+    "target": "Modebewusste Verbraucher im Alter von 18-45 Jahren, vorwiegend urbane Bewohner mit Interesse an Trends, persönlichem Stilausdruck und hochwertigen Kleidungsstücken",
+    "industry": "Mode & Bekleidung",
+    "business_model": "B2C Einzelhandel",
+    "customer_lifecycle_key_steps": "Entdeckung > Erstkauf > Stilprofil-Aufbau > Wiederkauf > Treueprogramm > Markenbotschafter"
+  },
+  "programs_list": [
+    {
+      "program_name": "Willkommen & Stil-Entdeckungsreise",
+      "target": "Neue Abonnenten und Erstbesucher",
+      "objective": "Neue Abonnenten innerhalb von 30 Tagen zu Erstkäufern konvertieren und gleichzeitig ein Stilprofil für Personalisierung aufbauen",
+      "kpi": "Erstkauf-Konversionsrate (Ziel: 15-20%), Zeit bis zum Erstkauf (Ziel: <14 Tage), Stil-Quiz-Abschlussrate",
+      "description": "Eine ausgefeilte Willkommenssequenz, die Ihre Markengeschichte vorstellt, Stilpräferenzen erfasst und personalisierte Anreize für den Erstkauf basierend auf Kundeninteressen bietet.",
+      "scenarios": [
+        {
+          "scenario_target": "Neue E-Mail-Abonnenten von Pop-up oder Footer-Anmeldung",
+          "scenario_objective": "Erstkauf durch progressive Engagement und Präferenzerfassung fördern",
+          "main_messages_ideas": "Markengeschichte & Werte, Stil-Quiz-Einladung, Personalisierte Produktempfehlungen, Erstkauf-Anreiz mit Dringlichkeit",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen + Markengeschichte",
+              "timing": "Sofort",
+              "description": "Sofort: Willkommen mit Markenwerten, Nachhaltigkeits-Commitment und 15% Rabatt auf erste Bestellung",
+              "content": "Willkommen bei [Marke]! Wir glauben, dass Mode [Wertversprechen] sein sollte. Hier sind 15% Rabatt für den Start Ihrer Stilreise mit uns."
+            },
+            {
+              "channel": "Email",
+              "title": "Stil-Quiz-Einladung",
+              "timing": "Tag 2",
+              "description": "Tag 2: Interaktives Stil-Quiz zur Präferenzerfassung",
+              "content": "Entdecken Sie Ihren persönlichen Stil! Machen Sie unser 2-Minuten-Quiz und erhalten Sie personalisierte Empfehlungen, die speziell für Sie kuratiert wurden."
+            },
+            {
+              "channel": "Email",
+              "title": "Personalisierte Auswahl basierend auf Quiz",
+              "timing": "Tag 4",
+              "description": "Tag 4: Kuratierte Auswahl basierend auf Quiz-Ergebnissen oder Browsing-Verhalten",
+              "content": "Basierend auf Ihren Stilpräferenzen sind hier Teile, die Sie lieben werden. Ihre 15% Rabatt warten!"
+            },
+            {
+              "channel": "Email",
+              "title": "Social Proof & Community",
+              "timing": "Tag 7",
+              "description": "Tag 7: UGC-Showcase und Kundenbewertungen",
+              "content": "Werden Sie Teil von über 50.000 Stil-Enthusiasten! Sehen Sie, wie unsere Community ihre liebsten [Marke]-Teile stylt."
+            },
+            {
+              "channel": "SMS",
+              "title": "Dringlichkeits-Erinnerung per SMS",
+              "timing": "Tag 10",
+              "description": "Tag 10: SMS-Erinnerung für Nicht-Konvertierer",
+              "content": "Ihre 15% Rabatt laufen in 4 Tagen ab! Verpassen Sie nicht die Chance, [Marke] zu entdecken. Jetzt shoppen: [Link]"
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Letztes Angebot mit Bonus",
+              "timing": "Tag 13",
+              "description": "Tag 13: Verbessertes Angebot für Nicht-Konvertierer (kostenloser Versand hinzugefügt)",
+              "content": "Letzte Chance! 15% Rabatt + GRATIS Versand endet morgen. Machen Sie heute Ihren ersten [Marke]-Kauf."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Neue Abonnenten von Social-Media-Anzeigen oder Influencer-Kampagnen",
+          "scenario_objective": "Kampagnen-Momentum mit gezielten Produktempfehlungen nutzen",
+          "main_messages_ideas": "Kampagnenspezifische Produkte, Influencer-Looks, Limited-Edition-Alerts",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen + Kampagnen-Hero-Produkte",
+              "timing": "Sofort",
+              "description": "Sofort: Die spezifischen Produkte oder Kollektion aus der angeklickten Anzeige featuren",
+              "content": "Hat Ihnen gefallen, was Sie gesehen haben? Hier gibt es mehr aus unserer [Kampagnenname]-Kollektion, plus 15% Rabatt auf Ihre erste Bestellung."
+            },
+            {
+              "channel": "Email",
+              "title": "Shop den Look",
+              "timing": "Tag 3",
+              "description": "Tag 3: Komplettes Outfit-Styling mit den Kampagnen-Artikeln",
+              "content": "Vervollständigen Sie Ihren Look! So stylen Sie die Teile, die Ihnen gefallen haben, plus ergänzende Artikel."
+            },
+            {
+              "channel": "Email",
+              "title": "Hinter der Kampagne",
+              "timing": "Tag 6",
+              "description": "Tag 6: Marken-Storytelling rund um die Kampagne",
+              "content": "Die Geschichte hinter [Kampagne]: Lernen Sie die Designer und die Inspiration hinter Ihren neuen Lieblingsstücken kennen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Warenkorbabbruch-Recovery",
+      "target": "Käufer, die Artikel in den Warenkorb gelegt, aber den Kauf nicht abgeschlossen haben",
+      "objective": "20-30% der abgebrochenen Warenkörbe durch zeitnahe, kanalübergreifende Erinnerungen zurückgewinnen",
+      "kpi": "Warenkorb-Recovery-Rate (Ziel: 25%), Zurückgewonnener Umsatz pro E-Mail, Zeit bis zur Recovery",
+      "description": "Intelligente Multi-Channel-Sequenz, um Kunden an Artikel im Warenkorb zu erinnern, Einwände zu adressieren und Anreize zum Kaufabschluss zu bieten.",
+      "scenarios": [
+        {
+          "scenario_target": "Hochwertige Warenkorbabbrecher (Warenkorbwert > durchschnittlicher Bestellwert)",
+          "scenario_objective": "Recovery mit Premium-Behandlung und schnellerer Ansprache priorisieren",
+          "main_messages_ideas": "Premium-Artikel-Erinnerung, Persönliches Styling-Angebot, Kostenloser Express-Versand, VIP-Behandlung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Schnelle Erinnerung",
+              "timing": "30 Minuten nach Abbruch",
+              "description": "30 Minuten nach Abbruch: Sanfte Erinnerung mit Produktbildern",
+              "content": "Ist Ihnen etwas aufgefallen? Ihre ausgewählten Teile warten in Ihrem Warenkorb. Schließen Sie Ihre Bestellung ab, bevor sie vergriffen sind!"
+            },
+            {
+              "channel": "SMS",
+              "title": "SMS-Anstoß",
+              "timing": "2 Stunden",
+              "description": "2 Stunden: Textnachricht mit direktem Warenkorb-Link",
+              "content": "Ihr [Marke]-Warenkorb wartet! [Produktname] + mehr. Bestellung abschließen: [Link]"
+            },
+            {
+              "channel": "Email",
+              "title": "Styling-Beratung + Kostenloser Versand",
+              "timing": "24 Stunden",
+              "description": "24 Stunden: Styling-Tipps und kostenloser Versand anbieten",
+              "content": "Noch am Überlegen? So stylen Sie Ihre Auswahl, plus GRATIS Express-Versand nur für Sie."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Finaler Rabatt",
+              "timing": "48 Stunden",
+              "description": "48 Stunden: Rabatt für Nicht-Konvertierer hinzufügen",
+              "content": "Wir möchten wirklich, dass Sie diese Stücke haben! Hier sind 10% Rabatt auf Ihren Warenkorb. Angebot läuft in 24 Stunden ab."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Erstmalige Warenkorbabbrecher (noch nie gekauft)",
+          "scenario_objective": "Bedenken neuer Kunden mit vertrauensbildenden Inhalten adressieren",
+          "main_messages_ideas": "Produktbewertungen, Größenberatung, Einfache Rückgabepolitik, Erstkäufer-Rabatt",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Sanfte Erinnerung + Bewertungen",
+              "timing": "1 Stunde",
+              "description": "1 Stunde: Erinnerung mit Kundenbewertungen und Ratings",
+              "content": "Ihr Warenkorb ist gespeichert! Sehen Sie, was andere Kunden über diese Teile sagen - 4,8/5 durchschnittliche Bewertung."
+            },
+            {
+              "channel": "Email",
+              "title": "Größen- & Passform-Hilfe",
+              "timing": "24 Stunden",
+              "description": "24 Stunden: Häufige Bedenken mit Größenguide adressieren",
+              "content": "Unsicher bei der Größe? Unser Passform-Guide macht es einfach. Plus, KOSTENLOSE Rücksendung innerhalb von 30 Tagen, wenn es nicht perfekt passt."
+            },
+            {
+              "channel": "Email",
+              "title": "Erstkauf-Anreiz",
+              "timing": "48 Stunden",
+              "description": "48 Stunden: Warenkorb-Recovery mit Willkommensangebot kombinieren",
+              "content": "Nervös vor dem Erstkauf? Hier sind 15% Rabatt für Ihre Entscheidung. Ihr Warenkorb + Ihr Rabatt = perfekte Kombination."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Browse-Abbrecher (Produkte angesehen, aber nicht in den Warenkorb gelegt)",
+          "scenario_objective": "Schaufensterbummler mit Produktinformationen wieder ansprechen",
+          "main_messages_ideas": "Produkteigenschaften, Styling-Inspiration, Preissenkungsbenachrichtigungen",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Browsing-Nachverfolgung",
+              "timing": "24 Stunden",
+              "description": "24 Stunden: An angesehene Artikel mit zusätzlichen Details erinnern",
+              "content": "Denken Sie noch über [Produkt] nach? Hier ist alles, was Sie über diesen Bestseller der Saison wissen müssen."
+            },
+            {
+              "channel": "Email",
+              "title": "Vervollständigen Sie den Look",
+              "timing": "72 Stunden",
+              "description": "72 Stunden: Outfit-Kombinationen zeigen",
+              "content": "3 Arten, die Artikel zu stylen, die Sie sich angesehen haben. Welcher Look passt am besten zu Ihnen?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Nach-Kauf-Erlebnis & Bewertungssammlung",
+      "target": "Kunden, die gerade einen Kauf getätigt haben",
+      "objective": "Zufriedenheit steigern, Retouren reduzieren, Bewertungen sammeln und zweiten Kauf fördern",
+      "kpi": "Bewertungs-Einreichungsrate (Ziel: 15%), Retouren-Reduzierung, Zweitkauf-Rate innerhalb von 60 Tagen",
+      "description": "Durchdachte Nach-Kauf-Sequenz, die die Kaufentscheidung bestätigt, Styling-Tipps bietet, wertvolles Feedback sammelt und den Grundstein für den nächsten Kauf legt.",
+      "scenarios": [
+        {
+          "scenario_target": "Erstkäufer",
+          "scenario_objective": "Zufriedenheit sicherstellen und zweiten Kauf fördern",
+          "main_messages_ideas": "Bestellfreude, Styling-Tipps, Community-Einladung, Bewertungsanfrage, Treueprogramm-Einführung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bestellbestätigung + Vorfreude",
+              "timing": "Sofort",
+              "description": "Sofort: Erweiterte Bestätigung mit Styling-Vorschau",
+              "content": "Tolle Wahl! Ihr [Produkt] ist unterwegs. So können Sie es stylen, wenn es ankommt."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Versand-Update + Pflegetipps",
+              "timing": "Bei Versand",
+              "description": "Bei Versand: Tracking mit Kleidungspflege-Informationen",
+              "content": "Ihre Bestellung ist unterwegs! Während Sie warten, erfahren Sie hier, wie Sie Ihre neuen Teile perfekt aussehen lassen."
+            },
+            {
+              "channel": "Email",
+              "title": "Wie sitzt es?",
+              "timing": "Tag 5 nach Lieferung",
+              "description": "Tag 5 nach Lieferung: Passform-Check und Styling-Tipps",
+              "content": "Wie passt alles? Schnelle Tipps zum Styling Ihres neuen [Produkts], plus einfache Rücksendung bei Bedarf."
+            },
+            {
+              "channel": "Email",
+              "title": "Bewertungsanfrage",
+              "timing": "Tag 10",
+              "description": "Tag 10: Bewertung mit Anreiz anfordern",
+              "content": "Lieben Sie Ihr [Produkt]? Teilen Sie Ihre Erfahrung und erhalten Sie 10% Rabatt auf Ihre nächste Bestellung!"
+            },
+            {
+              "channel": "Email",
+              "title": "Vervollständigen Sie Ihre Garderobe",
+              "timing": "Tag 21",
+              "description": "Tag 21: Cross-Selling ergänzender Artikel",
+              "content": "Teile, die perfekt zu Ihrem letzten Kauf passen. Ihr nächstes Lieblingsoutfit wartet."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Hochwertige Käufer (über durchschnittlichem Bestellwert)",
+          "scenario_objective": "VIP-Behandlung für Zufriedenheit und Bindung",
+          "main_messages_ideas": "Persönliches Dankeschön, Prioritäts-Support, Exklusive Vorschauen, VIP-Programm-Einladung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Persönliches Dankeschön",
+              "timing": "Gleicher Tag",
+              "description": "Gleicher Tag: Personalisiertes Dankeschön vom Gründer/Team",
+              "content": "Ein persönliches Dankeschön von unserem Team. Ihre Unterstützung bedeutet uns sehr viel. Hier ist direkter Zugang zu unserem VIP-Support-Team."
+            },
+            {
+              "channel": "Email",
+              "title": "Exklusiver Vorschau-Zugang",
+              "timing": "Tag 7",
+              "description": "Tag 7: Früher Zugang zu Neuheiten",
+              "content": "Als Dankeschön erhalten Sie einen exklusiven ersten Blick auf Teile, die nächste Woche ankommen. Shoppen Sie vor allen anderen."
+            },
+            {
+              "channel": "Email",
+              "title": "VIP-Programm-Einladung",
+              "timing": "Tag 14",
+              "description": "Tag 14: Treueprogramm-Einschreibung",
+              "content": "Sie haben VIP-Status freigeschaltet! Das bedeutet für Sie: früher Zugang, exklusive Rabatte und mehr."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Saisonale Kollektions-Lancierung",
+      "target": "Alle aktiven Kunden und engagierte Abonnenten",
+      "objective": "Launch-Woche-Umsatz maximieren und Buzz um neue saisonale Kollektionen erzeugen",
+      "kpi": "Launch-Woche-Umsatz (vs. durchschnittliche Woche), E-Mail-Engagement-Raten, Vorbestellungs-Konversion, Wartelisten-Anmeldungen",
+      "description": "Umfassende Multi-Channel-Kampagne zum Aufbau von Vorfreude und zur Umsatzsteigerung für neue saisonale Kollektionen mit gestaffeltem Zugang basierend auf Kundenwert.",
+      "scenarios": [
+        {
+          "scenario_target": "VIP-Kunden (Top 20% nach Kaufwert oder -häufigkeit)",
+          "scenario_objective": "Früher Zugang und exklusive Vorschau als Belohnung für Treue",
+          "main_messages_ideas": "Exklusive Vorschau, 48-Stunden-Vorabzugang, VIP-exklusive Teile, Persönliches Styling-Angebot",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "VIP-Sneak-Peek",
+              "timing": "10 Tage vor Launch",
+              "description": "10 Tage vor Launch: Behind-the-Scenes-Vorschau",
+              "content": "Sie sind die Ersten, die es sehen. Unsere neue [Saison]-Kollektion - designt für Trendsetter wie Sie."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Vorabzugang freigeschaltet",
+              "timing": "48 Stunden vor öffentlichem Launch",
+              "description": "48 Stunden vor öffentlichem Launch: Shopping-Zugang",
+              "content": "Jetzt shoppen, bevor alle anderen es können. Ihr VIP-Vorabzugang zur [Saison]-Kollektion ist live."
+            },
+            {
+              "channel": "Email",
+              "title": "VIP-Exklusive Teile",
+              "timing": "Launch-Tag",
+              "description": "Launch-Tag: Limitierte Teile nur für VIPs hervorheben",
+              "content": "Diese Teile sind exklusiv für unsere VIPs reserviert. Begrenzte Stückzahlen - shoppen Sie jetzt Ihre Exclusives."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Treueprogramm-Mitglieder (nicht VIP-Stufe)",
+          "scenario_objective": "24-Stunden-Vorabzugang für Engagement und Upgrades",
+          "main_messages_ideas": "Mitglieder-Vorabzugang, Punkte-Sammel-Möglichkeit, Upgrade auf VIP-Vorteile",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Mitglieder-Vorschau",
+              "timing": "3 Tage vor Launch",
+              "description": "3 Tage vor Launch: Kollektions-Vorschau",
+              "content": "Als [Programm]-Mitglied erhalten Sie den ersten Blick auf unsere [Saison]-Kollektion. Merken Sie sich Ihre Favoriten!"
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Vorabzugang Live",
+              "timing": "24 Stunden vor öffentlichem Launch",
+              "description": "24 Stunden vor öffentlichem Launch",
+              "content": "Ihr Vorabzugang ist live! Shoppen Sie die neue [Saison]-Kollektion + sammeln Sie heute doppelte Punkte."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Allgemeine Abonnenten-Liste",
+          "scenario_objective": "Vorfreude aufbauen und Launch-Tag-Traffic generieren",
+          "main_messages_ideas": "Teaser-Inhalte, Launch-Countdown, Neuheiten-Showcase, Launch-Tag-Event",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Teaser-Kampagne",
+              "timing": "5 Tage vor Launch",
+              "description": "5 Tage vor Launch: Geheimnisvolle Vorschau",
+              "content": "Etwas Aufregendes kommt. Seien Sie die Ersten, die es erfahren - melden Sie sich für Launch-Benachrichtigungen an."
+            },
+            {
+              "channel": "Email",
+              "title": "Kollektions-Enthüllung",
+              "timing": "2 Tage vor Launch",
+              "description": "2 Tage vor Launch: Vollständige Kollektions-Vorschau",
+              "content": "Wir präsentieren [Kollektionsname]. Merken Sie sich Ihre Favoriten - Shopping startet in 48 Stunden."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Launch-Tag-Ankündigung",
+              "timing": "Launch-Tag",
+              "description": "Launch-Tag: Kollektion ist live",
+              "content": "Es ist soweit! Shoppen Sie jetzt die neue [Saison]-Kollektion. Beste Größen verkaufen sich schnell."
+            },
+            {
+              "channel": "Email",
+              "title": "Bestseller-Zusammenfassung",
+              "timing": "3 Tage nach Launch",
+              "description": "3 Tage nach Launch: Beliebte Artikel hervorheben",
+              "content": "Die Teile, über die alle reden. Sehen Sie die Top 10 Bestseller aus unserer neuen Kollektion."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Treueprogramm & VIP-Engagement",
+      "target": "Wiederkehrende Kunden und Treueprogramm-Mitglieder",
+      "objective": "Customer Lifetime Value, Kaufhäufigkeit und Programm-Engagement steigern",
+      "kpi": "Treueprogramm-Einschreibungsrate, Punkte-Einlösungsrate, VIP-Stufen-Upgrades, CLV von Mitgliedern vs. Nicht-Mitgliedern",
+      "description": "Umfassende Treue-Engagement-Strategie, die Wiederholungskäufe belohnt, Meilensteine feiert und exklusive Erlebnisse für beste Kunden schafft.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden mit 2+ Käufen (noch nicht angemeldet)",
+          "scenario_objective": "Treueprogramm-Anmeldung fördern",
+          "main_messages_ideas": "Programm-Vorteile, Punkte auf vergangene Käufe, Einfache Anmeldung, Willkommensbonus",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Treueprogramm-Einführung",
+              "timing": "Nach zweitem Kauf",
+              "description": "Nach zweitem Kauf: Programm-Einladung",
+              "content": "Sie haben zweimal bei uns eingekauft - Zeit, zu verdienen! Treten Sie [Programmname] bei und sammeln Sie Punkte auf jeden Einkauf."
+            },
+            {
+              "channel": "Email",
+              "title": "Rückwirkende Punkte-Angebot",
+              "timing": "Tag 5",
+              "description": "Tag 5: Angebot, vergangene Kaufpunkte gutzuschreiben",
+              "content": "Melden Sie sich heute an und wir schreiben Ihnen [X] Punkte für Ihre letzten Käufe gut. Das sind €[X] für Ihre nächste Bestellung!"
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Letzte Anmelde-Aufforderung",
+              "timing": "Tag 14",
+              "description": "Tag 14: Letzte-Chance-Nachricht",
+              "content": "Ihre [X] Bonuspunkte verfallen in 7 Tagen. Treten Sie jetzt [Programmname] bei, um sie einzufordern."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Aktive Treuemitglieder",
+          "scenario_objective": "Engagement und Stufen-Aufstieg fördern",
+          "main_messages_ideas": "Punktestand-Updates, Stufen-Fortschritt, Exklusive Belohnungen, Geburtstags-Vergünstigungen",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Monatliches Punkte-Update",
+              "timing": "Monatlich",
+              "description": "Monatlich: Punktestand und Einlösungsoptionen",
+              "content": "Ihr [Programm]-Update: [X] Punkte bereit zum Einlösen. Hier ist, was Sie bekommen können!"
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Stufen-Fortschritts-Benachrichtigung",
+              "timing": "Wenn nahe an nächster Stufe",
+              "description": "Wenn nahe an nächster Stufe: Fortschrittsbenachrichtigung",
+              "content": "Sie sind [X] Punkte von [Nächste Stufe] entfernt! Kaufen Sie ein, um exklusive Vorteile freizuschalten."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Geburtstags-Feier",
+              "timing": "Am Geburtstag",
+              "description": "Am Geburtstag: Spezielle Belohnung",
+              "content": "Alles Gute zum Geburtstag! Hier sind [doppelte Punkte/20% Rabatt/Gratisgeschenk] als unser Geschenk an Sie. 7 Tage gültig."
+            },
+            {
+              "channel": "Email",
+              "title": "Jubiläums-Belohnung",
+              "timing": "1-Jahres-Mitgliedsjubiläum",
+              "description": "1-Jahres-Mitgliedsjubiläum",
+              "content": "Es ist unser Jubiläum! Danke für ein Jahr mit [Marke]. Hier ist eine exklusive Belohnung zum Feiern."
+            }
+          ]
+        },
+        {
+          "scenario_target": "VIP/Top-Tier-Mitglieder",
+          "scenario_objective": "Exklusive Erlebnisse zur Aufrechterhaltung des VIP-Status",
+          "main_messages_ideas": "Private Sales, Exklusive Events, Persönliches Styling, Erstzugang",
+          "message_sequence": [
+            {
+              "channel": "Email + SMS",
+              "title": "VIP-Privater Sale",
+              "timing": "Vierteljährlich",
+              "description": "Vierteljährlich: Exklusiver Sale-Zugang",
+              "content": "VIP-Privater Sale: 30% auf alles für 48 Stunden. Ihr exklusiver Zugangscode ist drin."
+            },
+            {
+              "channel": "Email",
+              "title": "Event-Einladung",
+              "timing": "Für lokale/virtuelle Events",
+              "description": "Für lokale/virtuelle Events: Exklusive Einladung",
+              "content": "Sie sind eingeladen: Nehmen Sie an unserem exklusiven [virtuellen/In-Store] Styling-Event teil. Begrenzte Plätze nur für VIPs."
+            },
+            {
+              "channel": "Email",
+              "title": "Persönliche Stylist-Kontaktaufnahme",
+              "timing": "Vierteljährlich",
+              "description": "Vierteljährlich: Personalisierte Stil-Empfehlungen",
+              "content": "Ihr persönliches Stil-Update von [Stylist Name]. Basierend auf Ihren Käufen, hier sind unsere Empfehlungen für die Saison."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Reaktivierung",
+      "target": "Kunden, die seit 60+ Tagen nicht gekauft haben",
+      "objective": "Abgewanderte Kunden reaktivieren, bevor sie vollständig churnen",
+      "kpi": "Reaktivierungsrate (Ziel: 10-15%), Win-Back-Umsatz, Reaktivierungs-E-Mail-Öffnungsrate",
+      "description": "Progressive Reaktivierungssequenz mit eskalierenden Angeboten, um inaktive Kunden zurückzugewinnen, mit unterschiedlichen Ansätzen basierend auf Kundenwert und Inaktivitätsdauer.",
+      "scenarios": [
+        {
+          "scenario_target": "Kürzlich abgewanderte Kunden (60-90 Tage inaktiv)",
+          "scenario_objective": "Sanfte Reaktivierung bevor sie die Marke vergessen",
+          "main_messages_ideas": "Was es Neues gibt, Neue Artikel passend zum bisherigen Stil, Freundlicher Check-in",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Wir haben Sie vermisst",
+              "timing": "Tag 60",
+              "description": "Tag 60: Freundlicher Check-in mit Neuheiten",
+              "content": "Es ist eine Weile her! Hier ist, was bei [Marke] neu ist - wir denken, basierend auf Ihrem Stil, werden Sie diese lieben."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihr Stil-Update",
+              "timing": "Tag 75",
+              "description": "Tag 75: Personalisierte Empfehlungen",
+              "content": "Erinnern Sie sich, als Sie [vergangener Kauf] gekauft haben? Hier sind neue Teile, die perfekt dazu passen."
+            },
+            {
+              "channel": "Email",
+              "title": "Kleiner Anreiz",
+              "timing": "Tag 85",
+              "description": "Tag 85: Willkommen-zurück-Angebot",
+              "content": "Hier sind 10% Rabatt, um Sie willkommen zu heißen. Sehen Sie, was diese Saison im Trend liegt."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Langfristig abgewanderte Kunden (90-180 Tage inaktiv)",
+          "scenario_objective": "Stärkere Reaktivierung mit überzeugenden Angeboten",
+          "main_messages_ideas": "Wir vermissen Sie, Große Änderungen, Starker Comeback-Anreiz",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Wir vermissen Sie",
+              "timing": "Tag 90",
+              "description": "Tag 90: Emotionale Reaktivierung",
+              "content": "Wir vermissen Sie! Bei [Marke] hat sich viel verändert seit Ihrem letzten Besuch. Schauen Sie vorbei und sehen Sie, was neu ist."
+            },
+            {
+              "channel": "Email",
+              "title": "Was sich geändert hat",
+              "timing": "Tag 105",
+              "description": "Tag 105: Neue Produkte/Features hervorheben",
+              "content": "Das haben Sie verpasst: [Neue Kollektion/Neue Kategorie/Neue Features]. Ihr nächster Favorit wartet."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Starkes Comeback-Angebot",
+              "timing": "Tag 120",
+              "description": "Tag 120: Signifikanter Rabatt",
+              "content": "Willkommen-zurück-Angebot: 20% Rabatt auf Ihre gesamte Bestellung. Wir wollen Sie wirklich zurück!"
+            },
+            {
+              "channel": "Email",
+              "title": "Letzter Versuch",
+              "timing": "Tag 150",
+              "description": "Tag 150: Letzte Chance vor Deaktivierung",
+              "content": "Ist das ein Abschied? Letzte Chance für 20% Rabatt. Wir würden Sie ungern gehen sehen."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Hochwertige abgewanderte Kunden (früher in Top 30%)",
+          "scenario_objective": "White-Glove-Recovery-Ansatz",
+          "main_messages_ideas": "Persönliche Kontaktaufnahme, Exklusives VIP-Recovery-Angebot, Feedback-Anfrage",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Persönlicher Check-In",
+              "timing": "Tag 60",
+              "description": "Tag 60: Persönliche Nachricht vom Team",
+              "content": "Hallo [Name], hier ist [Teammitglied] von [Marke]. Wir haben bemerkt, dass es eine Weile her ist und wollten persönlich nachfragen. Ist alles in Ordnung?"
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "VIP-Exklusives Rückkehr-Angebot",
+              "timing": "Tag 75",
+              "description": "Tag 75: Premium-Comeback-Paket",
+              "content": "Wir würden Sie gerne zurückbegrüßen: 25% Rabatt + kostenloser Express-Versand + persönliche Styling-Beratung. VIP-exklusiv."
+            },
+            {
+              "channel": "Email",
+              "title": "Feedback-Anfrage",
+              "timing": "Tag 90",
+              "description": "Tag 90: Erfahren, warum sie gegangen sind",
+              "content": "Wir schätzen Ihre Meinung. Würden Sie uns mitteilen, was Sie zurückbringen könnte? Ihr Feedback prägt unsere Zukunft."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Sale & Promotion-Events",
+      "target": "Alle Kunden segmentiert nach Engagement-Level",
+      "objective": "Sale-Umsatz maximieren und gleichzeitig Markenequity und Vollpreis-Verkäufe schützen",
+      "kpi": "Sale-Konversionsrate, Durchschnittliche Rabattrate, Neukundengewinnung während Sales, Lagerräumungsrate",
+      "description": "Strategischer Promotion-Kalender, der Dringlichkeit erzeugt ohne Kunden darauf zu trainieren, immer auf Sales zu warten, mit gestaffeltem Zugang basierend auf Kundenstatus.",
+      "scenarios": [
+        {
+          "scenario_target": "VIP-Vorabzugang zu Sales",
+          "scenario_objective": "Treue mit Erstzugang zur besten Auswahl belohnen",
+          "main_messages_ideas": "Privater Sale-Zugang, Beste Größen/Farben, VIP-exklusive Stunden",
+          "message_sequence": [
+            {
+              "channel": "Email + SMS",
+              "title": "VIP-Sale-Vorschau",
+              "timing": "24-48 Stunden vor öffentlichem Sale",
+              "description": "24-48 Stunden vor öffentlichem Sale: Exklusive Vorschau",
+              "content": "VIP-Vorabzugang: Sale startet jetzt - nur für Sie. Beste Auswahl, beste Größen, 48-Stunden-Vorsprung."
+            },
+            {
+              "channel": "Email",
+              "title": "Sale wird öffentlich",
+              "timing": "Wenn Sale für alle öffnet",
+              "description": "Wenn Sale für alle öffnet: Erinnerung, Bestseller zu shoppen",
+              "content": "Der Sale öffnet morgen für alle. Letzte Chance, Bestseller zu sichern, bevor sie ausverkauft sind."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Allgemeine Liste während öffentlicher Sales",
+          "scenario_objective": "Verkaufsvolumen mit Dringlichkeits-Messaging steigern",
+          "main_messages_ideas": "Sale-Ankündigung, Kategorie-Highlights, Letzte-Chance-Alerts",
+          "message_sequence": [
+            {
+              "channel": "Email + SMS",
+              "title": "Sale-Ankündigung",
+              "timing": "Sale-Start",
+              "description": "Sale-Start: Hauptankündigung",
+              "content": "Der [Sale-Name] ist DA! Bis zu 50% Rabatt auf alles. Shoppen Sie Ihre Favoriten, bevor sie weg sind."
+            },
+            {
+              "channel": "Email",
+              "title": "Kategorie-Spotlight",
+              "timing": "Tag 2",
+              "description": "Tag 2: Bestimmte Kategorien hervorheben",
+              "content": "Sale-Spotlight: [Kategorie] bis zu 40% reduziert. Die Top-Picks unserer Redaktion drin."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Endet bald",
+              "timing": "Letzte 48 Stunden",
+              "description": "Letzte 48 Stunden: Dringlichkeit",
+              "content": "Sale endet in 48 Stunden! Finale Reduzierungen gerade hinzugefügt. Jetzt shoppen, bevor es vorbei ist."
+            },
+            {
+              "channel": "SMS",
+              "title": "Finale Stunden",
+              "timing": "Letzte 6 Stunden",
+              "description": "Letzte 6 Stunden: Letzte Chance",
+              "content": "FINALE STUNDEN: Sale endet um Mitternacht. Das ist Ihre letzte Chance für bis zu 50% Rabatt."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Warenkorbabbrecher während Sales",
+          "scenario_objective": "Beschleunigte Recovery während zeitlich begrenzter Events",
+          "main_messages_ideas": "Sale-Preis-Erinnerung, Lager-Dringlichkeit, Sale-Ende-Warnung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Sale-Warenkorb-Erinnerung",
+              "timing": "1 Stunde nach Abbruch",
+              "description": "1 Stunde nach Abbruch: Dringlichkeits-Erinnerung",
+              "content": "Ihre Sale-Artikel warten! [Artikel] mit [X]% Rabatt halten nicht lange. Sale-Preise enden am [Datum]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Niedriger Lagerbestand-Alert",
+              "timing": "4 Stunden",
+              "description": "4 Stunden: Lagerbestandsbasierte Dringlichkeit",
+              "content": "Fast ausverkauft! [Produkt] in Ihrem Warenkorb ist fast vergriffen zum Sale-Preis. Nicht verpassen!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Empfehlungs- & Advocacy-Programm",
+      "target": "Zufriedene Kunden mit 2+ Käufen",
+      "objective": "Glückliche Kunden zu Markenbotschaftern machen, die Neukundenakquise vorantreiben",
+      "kpi": "Empfehlungsrate, Empfehlungs-Konversionsrate, Advocacy-Programm-Teilnahme, UGC-Einreichungen",
+      "description": "Vielseitiges Advocacy-Programm, das Empfehlungen, Social Sharing und nutzergenerierte Inhalte fördert, um organisches Wachstum zu treiben.",
+      "scenarios": [
+        {
+          "scenario_target": "Nach-Kauf-Empfehlungs-Anfrage",
+          "scenario_objective": "Empfehlungen im Moment höchster Zufriedenheit erfassen",
+          "main_messages_ideas": "Teilen Sie die Freude, Freundes-Rabatt, Empfehler-Belohnung, Beidseitiger Vorteil",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Empfehlungsprogramm-Einführung",
+              "timing": "Nach positiver Bewertung oder 2. Kauf",
+              "description": "Nach positiver Bewertung oder 2. Kauf",
+              "content": "Lieben Sie [Marke]? Teilen Sie die Freude! Geben Sie Freunden 15% Rabatt auf ihre erste Bestellung und erhalten Sie €15 für jeden Freund, der einkauft."
+            },
+            {
+              "channel": "Email",
+              "title": "Empfehlungs-Erinnerung",
+              "timing": "30 Tage nach Einführung",
+              "description": "30 Tage nach Einführung: Erinnerung",
+              "content": "Ihre Freunde verpassen etwas! Teilen Sie Ihren Empfehlungslink und Sie sparen beide. [X] Freunde haben Ihren Code bereits verwendet."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Empfehlungs-Erfolgs-Benachrichtigung",
+              "timing": "Wenn Freund kauft",
+              "description": "Wenn Freund kauft",
+              "content": "Geschafft! [Freund] hat gerade den ersten Einkauf getätigt. Ihre €15 Gutschrift wurde Ihrem Konto hinzugefügt."
+            }
+          ]
+        },
+        {
+          "scenario_target": "UGC und Social Advocacy",
+          "scenario_objective": "Erstellung von Social Content fördern",
+          "main_messages_ideas": "Foto-Einreichung, Hashtag-Kampagne, Featured-Kunden-Spotlight",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Zeigen Sie Ihren Stil",
+              "timing": "Nach Kauf",
+              "description": "Nach Kauf: UGC-Anfrage",
+              "content": "Zeigen Sie uns Ihren Stil! Teilen Sie ein Foto mit Ihren [Marke]-Teilen mit #[Hashtag] für die Chance, gefeatured zu werden."
+            },
+            {
+              "channel": "Email + SMS",
+              "title": "Sie werden gefeatured!",
+              "timing": "Wenn Kundeninhalt ausgewählt wird",
+              "description": "Wenn Kundeninhalt ausgewählt wird",
+              "content": "Sie sind ein [Marke]-Star! Ihr Foto wird auf unserer Website gefeatured. Hier sind 20% Rabatt als Dankeschön."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Willkommen & Stil-Entdeckungsreise",
+      "why_brevo_is_better": "Brevos Automation Builder ermöglicht die Erstellung ausgefeilter Willkommenssequenzen mit bedingter Logik basierend auf Quiz-Antworten und Browsing-Verhalten, sodass jeder neue Abonnent eine wirklich personalisierte Journey erhält, die sich in Echtzeit anpasst.",
+      "omnichannel_channels": "E-Mail für reichhaltige Inhalte + SMS für zeitkritische Angebots-Erinnerungen + WhatsApp für konversationelles Engagement",
+      "setup_efficiency": "Vorgefertigte Mode-Branchen-Templates mit Drag-and-Drop-Anpassung, plus KI-gestützte Versandzeit-Optimierung für jeden Abonnenten."
+    },
+    {
+      "scenario_name": "Warenkorbabbruch-Recovery",
+      "why_brevo_is_better": "Echtzeit-Warenkorb-Tracking mit dynamischen Produktblöcken, die automatisch mit exakten Warenkorb-Artikeln, Preisen und Bildern gefüllt werden. Intelligente Frequenzbegrenzung verhindert Über-Messaging bei maximaler Recovery.",
+      "omnichannel_channels": "E-Mail für detaillierte Produkt-Erinnerungen + SMS für dringende Lager-/Preis-Alerts + Push-Benachrichtigungen für App-Nutzer",
+      "setup_efficiency": "Automatisierte Trigger basierend auf Warenkorbwert, Kundensegment und Zeit seit Abbruch mit A/B-Tests zur Messaging-Optimierung."
+    },
+    {
+      "scenario_name": "Saisonale Kollektions-Lancierung",
+      "why_brevo_is_better": "Erweiterte Segmentierung ermöglicht mühelose Staffelung Ihrer Launch-Kommunikation, gibt VIPs frühen Zugang und baut gleichzeitig Vorfreude bei Ihrem breiteren Publikum mit perfekt getimten Sequenzen auf.",
+      "omnichannel_channels": "E-Mail für reichhaltige visuelle Lookbooks + SMS für Flash-Sale-Alerts + WhatsApp für exklusive VIP-Drops + Push für Echtzeit-Benachrichtigungen",
+      "setup_efficiency": "Kampagnen-Planung, A/B-Tests und Versandzeit-Optimierung helfen Ihnen, Peak-Engagement-Fenster zu treffen."
+    },
+    {
+      "scenario_name": "Treueprogramm & VIP-Engagement",
+      "why_brevo_is_better": "Native Treueprogramm-Integration verfolgt Punkte, Stufen und Einlösung. Automatisierte Meilenstein-Trigger feiern Kundenerfolge und fördern Engagement ohne manuellen Aufwand.",
+      "omnichannel_channels": "E-Mail für Programm-Updates + SMS für Punkte-Ablauf-Alerts + In-App-Nachrichten für Echtzeit-Belohnungs-Benachrichtigungen",
+      "setup_efficiency": "Vorkonfigurierte Treue-Automatisierungs-Workflows mit Geburtstags-, Jubiläums- und Stufenwechsel-Triggern, bereit zur Aktivierung."
+    },
+    {
+      "scenario_name": "Win-Back & Reaktivierung",
+      "why_brevo_is_better": "Prädiktives Engagement-Scoring identifiziert gefährdete Kunden, bevor sie churnen. Intelligente Unterdrückung verhindert verschwendete Sendungen an wirklich desengagierte Kontakte.",
+      "omnichannel_channels": "E-Mail für Reaktivierungs-Inhalte + SMS für hochwertige Kunden-Recovery + Direct-Mail-Integration für Last-Resort-Ansprache",
+      "setup_efficiency": "Automatisierte Win-Back-Sequenzen mit eskalierenden Angeboten und automatischem Listen-Hygiene-Management."
+    }
+  ],
+  "conclusion": "Durch die Implementierung dieser umfassenden Relationship-Marketing-Programme können Modemarken eine 15-25%ige Verbesserung des Customer Lifetime Value, 20-30% Reduzierung der Akquisitionskosten durch bessere Retention und Empfehlungen sowie eine deutlich stärkere Markenloyalität erwarten, die organisches Wachstum fördert. Der Schlüssel liegt in konsistenter, personalisierter Kommunikation über den gesamten Kundenlebenszyklus - vom ersten Kontakt bis zum loyalen Markenbotschafter. Beginnen Sie mit den wirkungsvollsten Programmen (Willkommens-Journey, Warenkorb-Recovery, Treueprogramm) und erweitern Sie, wenn Sie Ergebnisse sehen."
+}

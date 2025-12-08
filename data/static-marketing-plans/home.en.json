@@ -1,143 +1,490 @@
 {
-  "introduction": "This marketing relationship plan is designed for home and furniture retailers looking to build lasting customer relationships through personalized home design inspiration and lifecycle engagement.",
+  "introduction": "This comprehensive marketing relationship plan is designed for home and furniture retailers looking to build lasting customer relationships through personalized home design inspiration and lifecycle engagement. Home purchases are highly considered decisions with long buying cycles, making relationship marketing essential for staying top-of-mind. This plan addresses the unique challenges of furniture retail: high average order values, extended research phases, room-by-room purchasing behavior, and the emotional connection customers have with their living spaces. By combining style profiling, life event triggers, and strategic nurturing, this plan turns one-time furniture buyers into lifetime customers who furnish their entire homes with your brand.",
   "company_summary": {
     "name": "Home & Furniture Brand",
     "website": "example-home.com",
-    "activities": "Home furnishings and decor retail, including furniture, home accessories, and interior design products",
-    "target": "Homeowners and renters aged 25-55 looking to furnish, decorate, or upgrade their living spaces",
+    "activities": "Home furnishings and decor retail, including furniture, home accessories, lighting, textiles, and interior design services for modern living spaces",
+    "target": "Homeowners, renters, and interior design enthusiasts aged 25-55 looking to furnish, decorate, or upgrade their living spaces with quality pieces that reflect their personal style",
     "industry": "Home",
-    "business_model": "B2C Retail"
+    "business_model": "B2C Retail / D2C",
+    "customer_lifecycle_key_steps": "Discovery > Style Quiz > Browsing/Research > First Room Purchase > Delivery & Setup > Cross-Room Expansion > Seasonal Refresh > Advocacy"
   },
   "programs_list": [
     {
       "program_name": "Welcome & Style Discovery",
-      "target": "New subscribers and first-time visitors",
-      "objective": "Understand customer style preferences and convert to first purchase within 45 days",
-      "kpi": "Style quiz completion rate, First purchase conversion, Average order value",
-      "description": "A personalized welcome journey that helps customers discover their interior style and guides them to their first purchase.",
+      "target": "New subscribers and first-time website visitors",
+      "objective": "Understand customer style preferences, room projects, and convert to first purchase within 60 days with AOV above $500",
+      "kpi": "Style quiz completion rate (target: 35%), First purchase conversion (target: 12%), Time to first purchase (target: <45 days), Average first order value (target: $600+)",
+      "description": "A personalized welcome journey that helps customers discover their interior design style through an engaging quiz, builds trust through design expertise, and guides them confidently to their first purchase.",
       "scenarios": [
         {
-          "scenario_target": "New email subscribers",
-          "scenario_objective": "Build style profile and drive first purchase",
-          "main_messages_ideas": "Welcome + style quiz, Room inspiration, Bestsellers showcase, First purchase incentive",
+          "scenario_target": "New email subscribers from pop-up or newsletter signup",
+          "scenario_objective": "Build style profile and establish brand as design authority",
+          "main_messages_ideas": "Welcome + style quiz, Personalized room inspiration, Design tips, Social proof, First purchase incentive",
           "message_sequence": [
             {
-              "title": "Welcome + Style Quiz",
-              "description": "Immediate welcome with interior style quiz",
-              "content": "Welcome! Discover your interior style in 2 minutes"
+              "title": "Welcome + Style Quiz Invitation",
+              "description": "Immediate: Welcome with style quiz CTA",
+              "content": "Welcome to [Brand]! Your dream home starts with understanding YOUR style. Take our 3-minute Style Quiz and discover your perfect interior aesthetic - plus get personalized recommendations and exclusive access to our design guides.",
+              "channel": "Email"
             },
             {
-              "title": "Your Style Results",
-              "description": "Day 2: Personalized style recommendations",
-              "content": "You're a [Style Type]! Here's how to bring it home"
+              "title": "Quiz Reminder",
+              "description": "Day 3: For non-completers",
+              "content": "Your personalized home style awaits! Complete your style quiz to unlock your free design profile and curated recommendations.",
+              "channel": "Email"
             },
             {
-              "title": "Room Inspiration",
-              "description": "Day 7: Curated room looks for their style",
-              "content": "Get the look: [Style] living room ideas"
+              "title": "Your Style Profile",
+              "description": "Immediately after quiz: Results + recommendations",
+              "content": "You're [Style Type]! This style combines [characteristics]. Here's your personalized moodboard and our top picks to bring this aesthetic into your home. Save your style profile to revisit anytime.",
+              "channel": "Email"
+            },
+            {
+              "title": "Design Tip",
+              "description": "Day 5: Value-add content",
+              "content": "Pro tip for [their style]: The key to achieving this look is [specific advice]. Here's how to balance statement pieces with subtle accents.",
+              "channel": "Email"
+            },
+            {
+              "title": "Room Inspiration Gallery",
+              "description": "Day 10: Visual inspiration",
+              "content": "Get inspired! See how real customers styled their homes in [their style] aesthetic. From living rooms to bedrooms, here's what's possible.",
+              "channel": "Email"
             },
             {
               "title": "First Purchase Offer",
-              "description": "Day 14: Incentive to start shopping",
-              "content": "Start your home transformation with 10% off"
+              "description": "Day 14: Conversion incentive",
+              "content": "Ready to start your home transformation? Enjoy 10% off your first order + free design consultation for orders over $500. Your style, your way.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Quiz completers who haven't purchased in 30 days",
+          "scenario_objective": "Re-engage with urgency and additional value",
+          "main_messages_ideas": "Style reminder, New arrivals in their style, Extended offer, Room planner tool",
+          "message_sequence": [
+            {
+              "title": "Your Style Awaits",
+              "description": "Day 30: Re-engagement",
+              "content": "Remember your [Style] profile? We've added new pieces that match your aesthetic perfectly. Take another look at your personalized picks.",
+              "channel": "Email"
+            },
+            {
+              "title": "Room Planner Tool",
+              "description": "Day 35: Value-add",
+              "content": "Planning a room makeover? Use our free room planner to visualize pieces in your space before you buy. Try it with your saved style preferences.",
+              "channel": "Email"
+            },
+            {
+              "title": "Extended Welcome Offer",
+              "description": "Day 40: Urgency",
+              "content": "We're extending your welcome offer! 15% off your first order (increased from 10%) - but only for the next 7 days. Start your transformation now.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Non-quiz takers browsing specific categories",
+          "scenario_objective": "Guide undecided browsers with category expertise",
+          "main_messages_ideas": "Category guide, Bestsellers, Buying guide, Comparison help",
+          "message_sequence": [
+            {
+              "title": "Browsing Follow-Up",
+              "description": "24 hours after browse: Category expertise",
+              "content": "Looking at [category]? Here's our complete guide to choosing the perfect [product type] - including what to measure, materials to consider, and style tips.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bestsellers in Category",
+              "description": "Day 4: Social proof",
+              "content": "Our top-rated [category] pieces this month. See why customers are loving these bestsellers and read their reviews.",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Room-by-Room Journey",
+      "program_name": "Abandoned Cart & Browse Recovery",
+      "target": "Visitors who added furniture to cart or browsed extensively without purchasing",
+      "objective": "Recover abandoned carts within 7 days with a recovery rate of 15%+ (higher for furniture due to consideration period)",
+      "kpi": "Cart recovery rate (target: 15%), Browse abandonment conversion (target: 5%), Average recovered order value, Time to recovery",
+      "description": "Multi-touch recovery sequence that respects the longer consideration cycle for furniture while providing value, addressing concerns, and creating appropriate urgency.",
+      "scenarios": [
+        {
+          "scenario_target": "Cart abandoners with high-value items ($500+)",
+          "scenario_objective": "Recover high-value carts with support and reassurance",
+          "main_messages_ideas": "Items saved, Design consultation offer, Quality/guarantee messaging, Payment options, Final incentive",
+          "message_sequence": [
+            {
+              "title": "Your Selections Are Saved",
+              "description": "4 hours after abandonment: Soft reminder",
+              "content": "We've saved your selections! Take your time - big furniture decisions deserve careful consideration. Your cart is waiting whenever you're ready.",
+              "channel": "Email"
+            },
+            {
+              "title": "Questions? We're Here",
+              "description": "24 hours: Support offer",
+              "content": "Thinking about your selections? Our design consultants are here to help with any questions about dimensions, materials, or styling. Book a free 15-minute call or chat with us.",
+              "channel": "Email"
+            },
+            {
+              "title": "Quality You Can Trust",
+              "description": "48 hours: Address quality concerns",
+              "content": "Investing in furniture is a big decision. Here's what you get with [Brand]: [warranty details], [quality certifications], and our 30-day satisfaction guarantee. Plus, see reviews from customers with similar pieces.",
+              "channel": "Email"
+            },
+            {
+              "title": "Payment Options",
+              "description": "72 hours: Financial flexibility",
+              "content": "Making it easier to get the furniture you love: Flexible payment options from [financing partner]. Spread the cost over 12 months with 0% APR. Your cart total: $X or $X/month.",
+              "channel": "Email"
+            },
+            {
+              "title": "Limited Time: Free Delivery",
+              "description": "Day 5: Incentive",
+              "content": "We're covering delivery! Complete your order in the next 48 hours and enjoy free white-glove delivery (a $X value). Your [product names] are waiting.",
+              "channel": "Email"
+            },
+            {
+              "title": "Final Reminder",
+              "description": "Day 7: Last chance",
+              "content": "Last chance for free delivery on your saved items. After tomorrow, standard delivery rates apply. Complete your order: [link]",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "First-time cart abandoners",
+          "scenario_objective": "Address new customer concerns and build trust",
+          "main_messages_ideas": "Welcome message, Trust signals, Customer stories, First-order benefits",
+          "message_sequence": [
+            {
+              "title": "Great Choice!",
+              "description": "6 hours: Positive reinforcement",
+              "content": "You have great taste! The [product] you selected is one of our most loved pieces. Here's why customers are raving about it.",
+              "channel": "Email"
+            },
+            {
+              "title": "Why Shop With Us",
+              "description": "48 hours: Trust building",
+              "content": "New to [Brand]? Here's what sets us apart: [X years] of quality craftsmanship, [Y satisfied customers], free design consultations, and white-glove delivery that sets everything up for you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Real Customer Stories",
+              "description": "Day 4: Social proof",
+              "content": "See how [customer name] transformed their space with pieces just like yours. Real homes, real reviews, real results.",
+              "channel": "Email"
+            },
+            {
+              "title": "New Customer Welcome",
+              "description": "Day 6: Special offer",
+              "content": "For first-time customers: 12% off your order + free design consultation. We're confident you'll love your new pieces.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Browse abandoners who viewed multiple items in same category",
+          "scenario_objective": "Help with decision-making between options",
+          "main_messages_ideas": "Comparison guide, Expert picks, Style matching, Back in stock alerts",
+          "message_sequence": [
+            {
+              "title": "Comparing Options?",
+              "description": "24 hours: Decision support",
+              "content": "Noticed you were exploring our [category]. Can't decide? Here's a quick comparison of the pieces you viewed - materials, dimensions, and which rooms they work best in.",
+              "channel": "Email"
+            },
+            {
+              "title": "Expert Pick",
+              "description": "Day 3: Recommendation",
+              "content": "Our design team's pick for you: Based on what you browsed, [specific product] might be the perfect fit. Here's why it's our top recommendation.",
+              "channel": "Email"
+            },
+            {
+              "title": "Want to See It IRL?",
+              "description": "Day 5: Showroom invitation",
+              "content": "Sometimes you need to see furniture in person. Visit our [nearest showroom] to experience your favorites firsthand. Book an appointment for personalized attention.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Post-Purchase Experience & Care",
+      "target": "All customers after purchase",
+      "objective": "Ensure successful delivery and setup, reduce returns to <5%, and achieve NPS of 50+",
+      "kpi": "Delivery satisfaction rate (target: 95%), Return rate (target: <5%), NPS (target: 50+), Support ticket volume (reduce by 30%)",
+      "description": "Comprehensive post-purchase communication that prepares customers for delivery, guides them through setup, and ensures long-term product satisfaction.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers awaiting large furniture delivery",
+          "scenario_objective": "Prepare for delivery and ensure successful setup",
+          "main_messages_ideas": "Delivery prep, Space preparation, Assembly resources, Care guide, Satisfaction check",
+          "message_sequence": [
+            {
+              "title": "Order Confirmed!",
+              "description": "Immediate: Confirmation with timeline",
+              "content": "Great news! Your [product] is on its way. Here's exactly what to expect: production timeline, delivery window, and how to track your order every step of the way.",
+              "channel": "Email"
+            },
+            {
+              "title": "Preparing for Delivery",
+              "description": "5 days before delivery: Space prep",
+              "content": "Your delivery is coming up! Here's how to prepare: clear the pathway, measure doorways ([dimensions needed]), and remove any fragile items. Our team will handle the rest.",
+              "channel": "Email"
+            },
+            {
+              "title": "Delivery Reminder",
+              "description": "1 day before: Final prep",
+              "content": "Your furniture arrives tomorrow between [time window]. Our team will call 30 minutes before arrival. Any questions? Reply to this email or call us.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Welcome Home!",
+              "description": "Delivery day: Setup guide",
+              "content": "Your [product] has arrived! Here's everything you need: assembly video guide, care instructions, and styling tips to make it look amazing in your space.",
+              "channel": "Email"
+            },
+            {
+              "title": "Quick Care Tip",
+              "description": "Day 3: Product care",
+              "content": "Quick tip for your new [product]: [specific care advice]. Following this simple routine will keep it looking beautiful for years.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Settling In?",
+              "description": "Day 7: Check-in",
+              "content": "How's your new [product] fitting into your space? We'd love to see! Share a photo for a chance to be featured, or let us know if anything isn't perfect.",
+              "channel": "Email"
+            },
+            {
+              "title": "Review Request",
+              "description": "Day 14: Feedback",
+              "content": "You've had your [product] for two weeks now. We'd love your honest review - it helps other customers make confident decisions. Leave a review and earn [loyalty points].",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers who purchased decor/accessories",
+          "scenario_objective": "Inspire styling and encourage cross-category exploration",
+          "main_messages_ideas": "Styling ideas, Room completion, Complementary pieces",
+          "message_sequence": [
+            {
+              "title": "Style It Right",
+              "description": "Delivery day: Styling tips",
+              "content": "Your [accessories] are ready to shine! Here are 5 ways to style them for maximum impact. Pro tip: [specific advice for their items].",
+              "channel": "Email"
+            },
+            {
+              "title": "Complete the Look",
+              "description": "Day 7: Cross-sell",
+              "content": "Your [items] would look even better with these complementary pieces. See how other customers styled similar combinations.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers who purchased items requiring assembly",
+          "scenario_objective": "Ensure successful assembly and reduce support tickets",
+          "main_messages_ideas": "Assembly support, Video guides, Help availability",
+          "message_sequence": [
+            {
+              "title": "Assembly Made Easy",
+              "description": "Delivery day: Assembly support",
+              "content": "Ready to build? Here's everything you need: step-by-step video guide, PDF instructions, and a list of tools required. Average assembly time: [X] minutes.",
+              "channel": "Email"
+            },
+            {
+              "title": "Need Help?",
+              "description": "Day 2: Support check-in",
+              "content": "How's assembly going? If you're stuck or need a hand, our support team is ready to help via video call. Or book our professional assembly service for $X.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Room-by-Room Expansion",
       "target": "Customers who made their first furniture purchase",
-      "objective": "Expand customer purchases to additional rooms",
-      "kpi": "Cross-category purchase rate, Items per order, Customer lifetime value",
-      "description": "Strategic upsell journey that guides customers through furnishing their entire home, room by room.",
+      "objective": "Expand customer purchases to additional rooms with 40% of first-time buyers purchasing a second room within 12 months",
+      "kpi": "Second room purchase rate (target: 40%), Cross-category purchase rate (target: 35%), Time between room purchases (target: <6 months), Customer lifetime value growth",
+      "description": "Strategic upsell journey that guides customers through furnishing their entire home, room by room, based on their initial purchase and style preferences.",
       "scenarios": [
         {
           "scenario_target": "Living room furniture purchasers",
-          "scenario_objective": "Inspire purchases for complementary rooms",
-          "main_messages_ideas": "Complete the look, Next room inspiration, Matching collections, Bundle offers",
+          "scenario_objective": "Inspire expansion to dining room or bedroom",
+          "main_messages_ideas": "Complete the room, Next room inspiration, Cohesive design tips, Multi-room savings",
           "message_sequence": [
             {
-              "title": "Complete the Look",
-              "description": "Day 14 post-purchase: Complementary items",
-              "content": "Complete your living room with these perfect additions"
+              "title": "Complete Your Living Room",
+              "description": "Day 21: Same-room additions",
+              "content": "Your living room is coming together! Here are pieces that complement your [purchase] perfectly - from accent chairs to coffee tables that match your style.",
+              "channel": "Email"
             },
             {
-              "title": "Dining Room Inspiration",
-              "description": "Day 30: Next room suggestion",
-              "content": "Ready for your next project? Dining room ideas that match your style"
+              "title": "Cohesive Design Tips",
+              "description": "Day 35: Design education",
+              "content": "The secret to a cohesive home? Repeating elements across rooms. Here's how to extend your [style] aesthetic from the living room to dining and beyond.",
+              "channel": "Email"
             },
             {
-              "title": "Whole Home Collection",
-              "description": "Day 60: Collection showcase",
-              "content": "See how your style translates across every room"
+              "title": "Your Next Room",
+              "description": "Day 50: Cross-room inspiration",
+              "content": "Ready for your next project? Based on your living room style, here's how your dining room could look. Same aesthetic, designed to complement what you already own.",
+              "channel": "Email"
+            },
+            {
+              "title": "Multi-Room Savings",
+              "description": "Day 60: Incentive",
+              "content": "Furnishing multiple rooms? Save 15% when you purchase from 2+ room categories in the same order. Your living room is done - what's next?",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Bedroom furniture purchasers",
+          "scenario_objective": "Expand to guest room, kids room, or home office",
+          "main_messages_ideas": "Bedroom completion, Guest room inspiration, Home office ideas",
+          "message_sequence": [
+            {
+              "title": "Bedroom Essentials",
+              "description": "Day 21: Complete the room",
+              "content": "Make your bedroom a retreat! These bedding, lighting, and storage pieces complement your [bed/furniture] beautifully.",
+              "channel": "Email"
+            },
+            {
+              "title": "Guest Room Ready?",
+              "description": "Day 45: New room inspiration",
+              "content": "Your bedroom looks amazing - what about guests? Create a welcoming guest room with these versatile pieces that match your home's style.",
+              "channel": "Email"
+            },
+            {
+              "title": "Home Office Ideas",
+              "description": "Day 60: Work-from-home angle",
+              "content": "Working from home? A thoughtfully designed workspace boosts productivity. Here are home office solutions that blend seamlessly with your [style] aesthetic.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Dining room furniture purchasers",
+          "scenario_objective": "Expand to outdoor or entertaining spaces",
+          "main_messages_ideas": "Dining accessories, Outdoor dining, Bar/entertaining setup",
+          "message_sequence": [
+            {
+              "title": "Set the Table",
+              "description": "Day 21: Dining accessories",
+              "content": "Your dining room furniture is set - now let's dress the table! Tableware, linens, and centerpieces that elevate every meal.",
+              "channel": "Email"
+            },
+            {
+              "title": "Take It Outside",
+              "description": "Day 45: Outdoor expansion",
+              "content": "Love entertaining? Extend your dining space to the outdoors! Our outdoor dining collections bring the same style to your patio or deck.",
+              "channel": "Email"
+            },
+            {
+              "title": "Create a Bar Area",
+              "description": "Day 60: Entertaining upgrade",
+              "content": "The ultimate host move: a dedicated bar area. From bar carts to stools, here's everything you need to become the go-to entertaining destination.",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Seasonal Refresh Campaigns",
-      "target": "All active customers",
-      "objective": "Drive seasonal purchases for home updates and accessories",
-      "kpi": "Seasonal campaign revenue, Accessory category growth, Email engagement",
-      "description": "Seasonal campaigns that inspire customers to refresh their spaces with new accessories and decor.",
+      "program_name": "Seasonal Refresh & Trends",
+      "target": "All active customers based on purchase history and style preferences",
+      "objective": "Drive seasonal accessory purchases with 25% of customers making a seasonal refresh purchase annually",
+      "kpi": "Seasonal campaign revenue (target: 20% lift), Accessory category growth (target: 15%), Average seasonal order value, Email engagement rate",
+      "description": "Strategic seasonal campaigns that inspire customers to refresh their spaces with new accessories, decor, and on-trend pieces throughout the year.",
       "scenarios": [
         {
-          "scenario_target": "Previous furniture purchasers",
+          "scenario_target": "Previous furniture purchasers during seasonal transition",
           "scenario_objective": "Encourage seasonal accessory purchases",
-          "main_messages_ideas": "Seasonal trends, Easy refresh ideas, Limited editions, Color of the season",
+          "main_messages_ideas": "Seasonal trends, Easy refresh ideas, Limited editions, Style-specific picks",
           "message_sequence": [
             {
-              "title": "Seasonal Trend Alert",
-              "description": "Start of season",
-              "content": "[Season] trends: Refresh your space with these looks"
+              "title": "Seasonal Trend Report",
+              "description": "Start of season: Trend overview",
+              "content": "[Season] is here and so are new trends! Here's what our design team is loving this season - and how to incorporate these looks into your home, your way.",
+              "channel": "Email"
             },
             {
-              "title": "Easy Updates",
-              "description": "Week 2: Low-commitment refreshes",
-              "content": "5 ways to update your home for under $100"
+              "title": "Refresh Without the Overhaul",
+              "description": "Week 2: Easy updates",
+              "content": "Refresh your space without buying new furniture! 10 accessory swaps under $100 that make a big impact. Perfect for your [style] home.",
+              "channel": "Email"
+            },
+            {
+              "title": "New Arrivals",
+              "description": "Week 3: New collection",
+              "content": "Just dropped: Our [Season] collection! Be first to shop new arrivals before they sell out. Here are our top picks for your style.",
+              "channel": "Email"
             },
             {
               "title": "Limited Edition Alert",
-              "description": "Mid-season: Scarcity messaging",
-              "content": "Just dropped: Limited edition [Season] collection"
+              "description": "Week 4: Scarcity",
+              "content": "[Season] Limited Edition: These exclusive pieces won't be restocked. Shop now to secure your favorites - only [X] available.",
+              "channel": "Email"
+            },
+            {
+              "title": "Last Chance Seasonal",
+              "description": "End of season: Clearance",
+              "content": "End of [season] sale! Up to 40% off seasonal pieces. Last chance to grab these looks before the new collection arrives.",
+              "channel": "Email"
             }
           ]
-        }
-      ]
-    },
-    {
-      "program_name": "Post-Purchase Care & Assembly",
-      "target": "Recent furniture purchasers",
-      "objective": "Ensure successful delivery and assembly, reduce returns",
-      "kpi": "Return rate reduction, Customer satisfaction, Support ticket reduction",
-      "description": "Proactive communication series to ensure smooth delivery, assembly, and product satisfaction.",
-      "scenarios": [
+        },
         {
-          "scenario_target": "Customers awaiting furniture delivery",
-          "scenario_objective": "Prepare for delivery and ensure successful setup",
-          "main_messages_ideas": "Delivery prep, Assembly tips, Care instructions, Satisfaction check-in",
+          "scenario_target": "Customers with specific style profile",
+          "scenario_objective": "Personalized seasonal recommendations",
+          "main_messages_ideas": "Style-specific trends, Curated picks, Moodboard updates",
           "message_sequence": [
             {
-              "title": "Delivery Prep",
-              "description": "3 days before delivery",
-              "content": "Your order arrives soon! Here's how to prepare"
+              "title": "Your Style This Season",
+              "description": "Start of season: Personalized",
+              "content": "[Season] trends for [their style] lovers: Here's how to update your space while staying true to your aesthetic. Your personalized seasonal edit awaits.",
+              "channel": "Email"
             },
             {
-              "title": "Assembly Guide",
-              "description": "Delivery day",
-              "content": "Assembly tips + video guides for your new furniture"
+              "title": "Updated Moodboard",
+              "description": "Week 2: Visual inspiration",
+              "content": "Your [style] moodboard has been refreshed for [season]! See how to incorporate new colors, textures, and pieces while maintaining your signature look.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "High-value customers during holiday season",
+          "scenario_objective": "Maximize holiday season purchases",
+          "main_messages_ideas": "Holiday entertaining, Gift guide, VIP early access, Decoration inspiration",
+          "message_sequence": [
+            {
+              "title": "Holiday Prep Starts Now",
+              "description": "Early November: Planning",
+              "content": "Ready to host? Get your home guest-ready with these holiday essentials. From extra seating to festive tableware, we've got you covered.",
+              "channel": "Email"
             },
             {
-              "title": "Care Tips",
-              "description": "Day 7 post-delivery",
-              "content": "Keep your furniture looking new with these care tips"
+              "title": "Home Gift Guide",
+              "description": "Mid-November: Gifting",
+              "content": "The best gifts are ones people actually use. Our home gift guide: thoughtful pieces for every budget that'll make you the favorite gift-giver.",
+              "channel": "Email"
             },
             {
-              "title": "Satisfaction Check",
-              "description": "Day 14: Feedback request",
-              "content": "How's your new [product]? We'd love your feedback"
+              "title": "VIP Black Friday Preview",
+              "description": "Before Black Friday: Exclusive",
+              "content": "VIP early access: Shop Black Friday deals 24 hours early. Up to 40% off furniture + 50% off decor. Your exclusive access starts now.",
+              "channel": "Email"
             }
           ]
         }
@@ -145,30 +492,387 @@
     },
     {
       "program_name": "Moving & Life Events",
-      "target": "Customers signaling major life changes",
-      "objective": "Capture high-value purchasing moments during life transitions",
-      "kpi": "Life event capture rate, Average order value, Multi-category purchases",
-      "description": "Trigger-based campaigns for customers moving, renovating, or experiencing major life events.",
+      "target": "Customers signaling major life changes (moving, renovating, new baby, etc.)",
+      "objective": "Capture high-value purchasing moments with 60% conversion rate among identified life event customers",
+      "kpi": "Life event identification rate, Life event conversion rate (target: 60%), Average order value during life events (target: 2x normal), Multi-category purchases",
+      "description": "Trigger-based campaigns for customers experiencing major life transitions - the moments when they need furniture most.",
       "scenarios": [
         {
-          "scenario_target": "Customers who indicated moving",
-          "scenario_objective": "Become their go-to furniture destination for the new space",
-          "main_messages_ideas": "Moving checklist, Room planning, New home essentials, Welcome offer",
+          "scenario_target": "Customers who indicated they're moving",
+          "scenario_objective": "Become their primary furniture destination for new home",
+          "main_messages_ideas": "Moving checklist, Room planning tools, New home bundles, Delivery coordination",
           "message_sequence": [
             {
-              "title": "Moving Checklist",
-              "description": "Upon move indication",
-              "content": "Moving soon? Your complete furniture checklist"
+              "title": "Moving Congratulations!",
+              "description": "Upon move indication: Welcome",
+              "content": "Exciting news - congratulations on your move! We're here to help you create your dream space. Here's your complete moving furniture checklist to get started.",
+              "channel": "Email"
             },
             {
-              "title": "Room Planner",
+              "title": "Plan Your New Space",
               "description": "Week 1: Planning tools",
-              "content": "Plan your new space with our free room planner tool"
+              "content": "Got your new floor plan? Use our free room planner to visualize furniture before you buy. Upload your measurements and start designing your new home.",
+              "channel": "Email"
+            },
+            {
+              "title": "Moving Day Delivery",
+              "description": "Week 2: Logistics",
+              "content": "We can coordinate delivery with your move! Order now and schedule delivery for your move-in date. Wake up in your new home with furniture already there.",
+              "channel": "Email"
             },
             {
               "title": "New Home Bundle",
-              "description": "Week 2: Bundle offer",
-              "content": "New home special: Save 20% when you furnish multiple rooms"
+              "description": "Week 3: Bundle offer",
+              "content": "Furnishing a new home? Save 20% when you purchase multiple rooms. Our designers can help you create a cohesive look across your entire new space.",
+              "channel": "Email"
+            },
+            {
+              "title": "Free Design Consultation",
+              "description": "Week 4: Service offer",
+              "content": "Big space to furnish? Get expert help! Book a free virtual design consultation. Our designers will create a customized plan for your new home.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers expecting or with new baby",
+          "scenario_objective": "Capture nursery and family room furniture needs",
+          "main_messages_ideas": "Nursery planning, Safety-certified products, Growth-ready furniture, Family room updates",
+          "message_sequence": [
+            {
+              "title": "Congratulations!",
+              "description": "Upon indication: Celebration",
+              "content": "Congratulations on the exciting news! Creating a nursery is one of the most special parts of preparing for a new arrival. We're here to help you design a safe, beautiful space.",
+              "channel": "Email"
+            },
+            {
+              "title": "Nursery Planning Guide",
+              "description": "Week 1: Education",
+              "content": "Your complete nursery planning guide: essentials checklist, safety considerations, and design tips. Plus, all our nursery furniture meets the highest safety certifications.",
+              "channel": "Email"
+            },
+            {
+              "title": "Nursery Collections",
+              "description": "Week 2: Product showcase",
+              "content": "Our nursery collection: furniture that grows with your child. Convertible cribs, dressers, and storage designed for safety, style, and longevity.",
+              "channel": "Email"
+            },
+            {
+              "title": "Family Room Ready",
+              "description": "Week 4: Cross-sell",
+              "content": "Baby-proofing tip: Now's also a great time to update your family room with durable, easy-to-clean fabrics. Here are our most family-friendly pieces.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers renovating their home",
+          "scenario_objective": "Position as furniture partner for renovation projects",
+          "main_messages_ideas": "Renovation timeline planning, Room-specific guidance, Designer partnerships, Project savings",
+          "message_sequence": [
+            {
+              "title": "Renovation Partner",
+              "description": "Upon indication: Positioning",
+              "content": "Renovating? Exciting times ahead! Let us be your furniture partner throughout the project. Here's how to time your furniture purchases with your renovation timeline.",
+              "channel": "Email"
+            },
+            {
+              "title": "Work With Your Contractor",
+              "description": "Week 1: Planning",
+              "content": "Coordinating furniture with renovations: What to order when, how to plan around construction, and getting dimensions right the first time.",
+              "channel": "Email"
+            },
+            {
+              "title": "Designer Collaboration",
+              "description": "Week 2: Service offer",
+              "content": "Working with an interior designer? We partner with professionals! Your designer can access trade pricing and our design team for collaborative projects.",
+              "channel": "Email"
+            },
+            {
+              "title": "Project Discount",
+              "description": "Week 3: Incentive",
+              "content": "For renovation projects over $5,000: Unlock project pricing with 25% off plus complimentary white-glove delivery. Talk to our trade team.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Loyalty & VIP Program",
+      "target": "Repeat customers and high-value spenders",
+      "objective": "Increase customer lifetime value by 60% and achieve 70% retention rate among VIP members",
+      "kpi": "VIP retention rate (target: 70%), Average VIP customer LTV (target: $3,000+), Repeat purchase rate (target: 45%), Referral rate from VIPs",
+      "description": "Tiered loyalty program with home-specific rewards, exclusive design services, and VIP experiences that recognize and reward your best customers.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers reaching VIP status threshold",
+          "scenario_objective": "Celebrate milestone and unlock exclusive benefits",
+          "main_messages_ideas": "VIP welcome, Exclusive benefits, Design services, Priority delivery",
+          "message_sequence": [
+            {
+              "title": "Welcome to VIP!",
+              "description": "Upon reaching threshold: Grand welcome",
+              "content": "You're now a [Brand] VIP! Here's what you've unlocked: 15% off always, free delivery forever, priority customer service, and access to exclusive VIP-only collections.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your VIP Benefits",
+              "description": "Day 3: Benefits deep dive",
+              "content": "As a VIP, you now have access to complimentary design consultations, early access to new collections, and invitations to exclusive VIP events. Book your first consultation today.",
+              "channel": "Email"
+            },
+            {
+              "title": "VIP Concierge",
+              "description": "Day 7: Service introduction",
+              "content": "Meet your VIP concierge! [Name] is your dedicated point of contact for all furniture needs - from sourcing specific pieces to coordinating complex deliveries. Save this number.",
+              "channel": "Email"
+            },
+            {
+              "title": "VIP-Only Preview",
+              "description": "Monthly: Exclusive content",
+              "content": "VIP First Look: Before it hits the website, see our newest collection. Shop exclusively for 48 hours before anyone else.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "VIP members at risk of churning (no purchase in 12 months)",
+          "scenario_objective": "Re-engage and retain VIP customers",
+          "main_messages_ideas": "We miss you, Status reminder, Special offer, New collections",
+          "message_sequence": [
+            {
+              "title": "We Miss You",
+              "description": "Day 365: Re-engagement",
+              "content": "It's been a while since we've seen you! Your VIP status ensures you still have 15% off, free delivery, and design consultation access. Ready to start a new project?",
+              "channel": "Email"
+            },
+            {
+              "title": "VIP Status Check",
+              "description": "Day 380: Status reminder",
+              "content": "Your VIP benefits are still waiting! Whether it's a room refresh or a new piece, we'd love to help you create something beautiful.",
+              "channel": "Email"
+            },
+            {
+              "title": "VIP Exclusive Offer",
+              "description": "Day 395: Strong incentive",
+              "content": "Something special for our VIPs: 25% off your next purchase (that's 10% more than usual!) + $100 gift card for your next visit. Because VIPs deserve more.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Long-term loyal customers (5+ years)",
+          "scenario_objective": "Recognize and celebrate customer anniversary",
+          "main_messages_ideas": "Anniversary celebration, Exclusive reward, Personal thank you",
+          "message_sequence": [
+            {
+              "title": "Happy Anniversary!",
+              "description": "On anniversary: Celebration",
+              "content": "[X] years with [Brand]! Thank you for letting us be part of your home story. To celebrate, here's an exclusive gift: [special reward] just for you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Home Journey",
+              "description": "Day 2: Recap",
+              "content": "Over [X] years, you've transformed your home with [Y] pieces from us. Thank you for trusting us with your space. Here's to many more years of beautiful living!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Re-Engagement",
+      "target": "Customers who haven't purchased in 18+ months",
+      "objective": "Reactivate 12% of lapsed customers (longer cycle for furniture)",
+      "kpi": "Reactivation rate (target: 12%), Win-back revenue, Feedback collection rate, List hygiene improvement",
+      "description": "Strategic re-engagement sequence designed for the longer furniture purchase cycle, acknowledging that customers may not need furniture frequently while providing value and incentives.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers inactive 18-24 months",
+          "scenario_objective": "Soft re-engagement with new collections and inspiration",
+          "main_messages_ideas": "What's new, Style evolution, Room refresh ideas",
+          "message_sequence": [
+            {
+              "title": "A Lot Has Changed",
+              "description": "Day 540: What's new",
+              "content": "It's been a while! We've introduced new collections, expanded our style offerings, and launched new services since you last visited. Here's what's new at [Brand].",
+              "channel": "Email"
+            },
+            {
+              "title": "Refresh Ideas",
+              "description": "Day 560: Inspiration",
+              "content": "Not ready for new furniture? Here are easy ways to refresh your existing pieces - from new accessories to styling tips that make your [previous purchase] feel new again.",
+              "channel": "Email"
+            },
+            {
+              "title": "Special Return Offer",
+              "description": "Day 580: Incentive",
+              "content": "We'd love to welcome you back! Here's 15% off your next purchase - whether it's a major piece or a small update. Your style is always welcome here.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers inactive 24+ months",
+          "scenario_objective": "Strong re-engagement or graceful exit",
+          "main_messages_ideas": "Major changes, Best offer, Preference update",
+          "message_sequence": [
+            {
+              "title": "Still Thinking About You",
+              "description": "Day 730: Check-in",
+              "content": "We haven't heard from you in a while, but we're still here whenever you're ready for your next home project. In the meantime, here's what's been happening at [Brand].",
+              "channel": "Email"
+            },
+            {
+              "title": "Best Offer",
+              "description": "Day 750: Strong incentive",
+              "content": "Our best offer for you: 20% off any purchase + free white-glove delivery (a $X value). Whether you're moving, renovating, or just ready for an update - we're here.",
+              "channel": "Email"
+            },
+            {
+              "title": "Stay Connected?",
+              "description": "Day 770: Preference management",
+              "content": "We want to respect your inbox. Would you like to: A) Keep hearing from us about new collections and sales, B) Only hear about major sales, or C) Take a break? Let us know.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Referral & Advocacy",
+      "target": "Satisfied customers who have received their furniture",
+      "objective": "Drive 25% of new customer acquisition through referrals with lower CAC",
+      "kpi": "Referral rate (target: 10% of customers refer), Referral conversion rate (target: 30%), Referred customer AOV, UGC submission rate",
+      "description": "Advocacy program that turns satisfied customers into brand ambassadors through referral rewards, UGC campaigns, and community building around home design.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers post-delivery satisfaction check (high satisfaction)",
+          "scenario_objective": "Convert satisfied customers into referrers",
+          "main_messages_ideas": "Thank you + referral intro, Easy sharing, Referral reward",
+          "message_sequence": [
+            {
+              "title": "Thank You + Share the Love",
+              "description": "After positive feedback: Referral intro",
+              "content": "We're so glad you love your new [product]! Know someone who'd love our furniture too? Give them $100 off their first order, and you'll get $100 for your next purchase.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Referral Link",
+              "description": "Day 3: Make it easy",
+              "content": "Here's your personal referral link - share it with friends, family, or anyone admiring your new furniture. Track your rewards in your account anytime.",
+              "channel": "Email"
+            },
+            {
+              "title": "Referral Reminder",
+              "description": "Day 14: Gentle nudge",
+              "content": "Had any compliments on your new furniture? It's the perfect time to share your referral link! Your friends get $100 off, you get $100 credit.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Customers who shared photos of their furniture",
+          "scenario_objective": "Encourage UGC and social sharing",
+          "main_messages_ideas": "Photo feature request, Community gallery, Thank you reward",
+          "message_sequence": [
+            {
+              "title": "Show Off Your Space",
+              "description": "Post-delivery: UGC request",
+              "content": "We'd love to see your [product] in its new home! Share a photo with #[Brand]Home for a chance to be featured and win a $250 gift card.",
+              "channel": "Email"
+            },
+            {
+              "title": "You're Featured!",
+              "description": "When selected: Recognition",
+              "content": "Your home is officially gallery-worthy! We've featured your beautiful space on our website. Thank you for sharing - here's $50 for your next purchase.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Interior design enthusiasts and high engagers",
+          "scenario_objective": "Build community of design advocates",
+          "main_messages_ideas": "Design community invitation, Exclusive content, Influencer program",
+          "message_sequence": [
+            {
+              "title": "Join Our Design Community",
+              "description": "Based on engagement: Community invitation",
+              "content": "You clearly have an eye for design! Join our exclusive Design Community for early access to collections, design tips from our experts, and connection with fellow home enthusiasts.",
+              "channel": "Email"
+            },
+            {
+              "title": "Design Ambassador Program",
+              "description": "For top engagers: Ambassador invitation",
+              "content": "Your love for design hasn't gone unnoticed! Apply to be a [Brand] Design Ambassador - earn commissions, get products to feature, and inspire others with your style.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Trade & Designer Program",
+      "target": "Interior designers, architects, and trade professionals",
+      "objective": "Build B2B revenue stream with 500+ active trade accounts",
+      "kpi": "Trade account signups, Trade revenue (target: 20% of total), Repeat trade orders, Average trade order value",
+      "description": "Dedicated program for trade professionals with special pricing, services, and support designed for their project-based needs.",
+      "scenarios": [
+        {
+          "scenario_target": "New trade program applicants",
+          "scenario_objective": "Onboard and activate trade accounts",
+          "main_messages_ideas": "Welcome to trade, Benefits overview, First order support",
+          "message_sequence": [
+            {
+              "title": "Welcome to Trade",
+              "description": "Upon approval: Welcome",
+              "content": "Welcome to the [Brand] Trade Program! You now have access to: Trade pricing (up to 30% off), dedicated account manager, priority white-glove delivery, and project support tools.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Trade Portal",
+              "description": "Day 2: Tools introduction",
+              "content": "Your trade portal is ready! Access hi-res images, tearsheets, 3D models, and client presentation tools. Everything you need to specify our products for your projects.",
+              "channel": "Email"
+            },
+            {
+              "title": "Meet Your Account Manager",
+              "description": "Day 5: Relationship building",
+              "content": "[Name] is your dedicated account manager! Schedule a call to discuss your current projects and how we can support your design work. Book time here.",
+              "channel": "Email"
+            },
+            {
+              "title": "First Order Bonus",
+              "description": "Day 14: Activation incentive",
+              "content": "Ready to place your first order? Enjoy an extra 10% off your first trade order + expedited delivery. Let's start this partnership strong!",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Active trade professionals",
+          "scenario_objective": "Support ongoing projects and drive repeat orders",
+          "main_messages_ideas": "New products for trade, Project support, Exclusive trade events",
+          "message_sequence": [
+            {
+              "title": "Trade-Only New Arrivals",
+              "description": "Monthly: New products",
+              "content": "New arrivals for your projects: These pieces are perfect for current design trends. Download spec sheets and add to your trade library.",
+              "channel": "Email"
+            },
+            {
+              "title": "Project Support Check-In",
+              "description": "Quarterly: Relationship nurture",
+              "content": "How are your current projects going? Need quotes, samples, or delivery coordination for multiple addresses? Your account manager is here to help.",
+              "channel": "Email"
+            },
+            {
+              "title": "Trade Event Invitation",
+              "description": "As scheduled: Exclusive events",
+              "content": "You're invited! Exclusive trade preview of our [Season] collection. Meet the designers, get first access to new pieces, and network with fellow professionals.",
+              "channel": "Email"
             }
           ]
         }
@@ -178,22 +882,34 @@
   "how_brevo_helps_you": [
     {
       "scenario_name": "Welcome & Style Discovery",
-      "why_brevo_is_better": "Brevo's quiz integration and dynamic content allow you to create personalized style profiles that drive targeted recommendations throughout the customer journey.",
-      "omnichannel_channels": "Email for rich visual inspiration + SMS for flash sale alerts",
-      "setup_efficiency": "Pre-built home and furniture templates get you started quickly, with drag-and-drop customization for your brand aesthetic."
+      "why_brevo_is_better": "Brevo's advanced quiz builder captures style preferences and room plans, immediately routing customers into personalized journeys based on their responses. Dynamic content blocks show different product recommendations based on style profile throughout all future communications.",
+      "omnichannel_channels": "Email for rich visual inspiration + SMS for flash sale alerts + WhatsApp for delivery updates",
+      "setup_efficiency": "Pre-built home and furniture templates with quiz integration get you started in hours. Style profiles persist across all automations for consistent personalization."
     },
     {
-      "scenario_name": "Room-by-Room Journey",
-      "why_brevo_is_better": "Purchase history tracking enables intelligent cross-sell recommendations based on what customers have already bought and their style preferences.",
-      "omnichannel_channels": "Email for detailed room inspiration + SMS for limited stock alerts",
-      "setup_efficiency": "Automated triggers based on purchase category ensure the right follow-up at the right time."
+      "scenario_name": "Room-by-Room Expansion",
+      "why_brevo_is_better": "Purchase history tracking enables intelligent cross-sell recommendations based on what customers have already bought, their style preferences, and complementary product categories. AI-powered next-best-product suggestions maximize expansion potential.",
+      "omnichannel_channels": "Email for detailed room inspiration galleries + SMS for limited stock alerts on matching items",
+      "setup_efficiency": "Category-based triggers automatically route customers to appropriate expansion journeys. Integration with your product catalog enables real-time inventory-aware recommendations."
     },
     {
-      "scenario_name": "Post-Purchase Care & Assembly",
-      "why_brevo_is_better": "Transactional and delivery-triggered emails ensure customers receive proactive support, reducing returns and support tickets.",
-      "omnichannel_channels": "Email for detailed guides + SMS for delivery updates and quick tips",
-      "setup_efficiency": "Integration with shipping providers enables automatic delivery-based triggers."
+      "scenario_name": "Moving & Life Events",
+      "why_brevo_is_better": "Form-based life event capture combined with behavioral signals (browsing multiple room categories, downloading floor planners) identifies high-intent moments. Dedicated life-event journeys are ready to deploy for immediate capture.",
+      "omnichannel_channels": "Email for planning guides and bundles + SMS for delivery coordination + WhatsApp for personal design consultation booking",
+      "setup_efficiency": "Pre-built life event workflows with proven messaging sequences. Integration with scheduling tools enables seamless design consultation booking."
+    },
+    {
+      "scenario_name": "Post-Purchase Care & Delivery",
+      "why_brevo_is_better": "Integration with shipping providers enables delivery-triggered communications. Automated care sequences reduce support tickets while building long-term product satisfaction and advocacy.",
+      "omnichannel_channels": "Email for detailed guides and videos + SMS for real-time delivery updates + Push for assembly completion check-ins",
+      "setup_efficiency": "Carrier integration provides real-time delivery triggers. Video and PDF content can be dynamically inserted based on product purchased."
+    },
+    {
+      "scenario_name": "Trade & Designer Program",
+      "why_brevo_is_better": "B2B capabilities enable separate workflows for trade customers with specialized pricing display, account manager assignment, and project-based communications. CRM integration tracks project pipeline and trade revenue.",
+      "omnichannel_channels": "Email for catalogs and specs + WhatsApp for quick project questions with account manager",
+      "setup_efficiency": "Trade portal integration syncs customer status. Dedicated trade segments receive appropriate pricing and communications automatically."
     }
   ],
-  "conclusion": "Home and furniture retailers that implement these relationship marketing programs can expect increased customer lifetime value through room-by-room expansion, higher satisfaction rates, and stronger repeat purchase behavior driven by seasonal refreshes and life event marketing."
+  "conclusion": "Home and furniture retailers that implement these relationship marketing programs can expect dramatically increased customer lifetime value through room-by-room expansion strategies, higher satisfaction rates from proactive delivery communication, and stronger word-of-mouth from customers who feel genuinely supported throughout their home furnishing journey. The key to furniture marketing success lies in respecting the longer purchase consideration cycle while staying top-of-mind through design inspiration and life event capture. By positioning as a trusted design partner rather than just a retailer, you'll earn the right to furnish entire homes over years of relationship."
 }

@@ -41,7 +41,7 @@
     }
   },
   "sidebar": {
-    "industryPlanTitle": "Branchenplan",
+    "industryPlanTitle": "Plan nach Branche",
     "industryPlanDesc": "Erhalten Sie einen sofort einsetzbaren Marketingplan basierend auf Best Practices Ihrer Branche. Keine Anmeldung erforderlich.",
     "customPlanTitle": "Individueller Plan",
     "customPlanDesc": "Unsere KI analysiert Ihr Unternehmen und erstellt einen vollständig personalisierten Plan mit spezifischen Empfehlungen für Ihre Marke.",
@@ -750,7 +750,7 @@
     "employees": "Mitarbeiter",
     "businessModel": "Geschäftsmodell",
     "customerLifecycle": "Kundenlebenszyklus",
-    "marketingPrograms": "Marketing-Beziehungsprogramme",
+    "marketingPrograms": "Beziehungsprogramme Übersicht",
     "noProgramsAvailable": "Keine Marketing-Programme verfügbar",
     "programName": "Programmname",
     "target": "Zielgruppe",

@@ -1,81 +1,354 @@
 {
-  "introduction": "Ce plan marketing relationnel est conçu pour les retailers d'électronique et technologie grand public souhaitant construire des relations clients durables grâce à l'expertise produit, le support et les cycles de mise à niveau.",
+  "introduction": "Ce plan marketing relationnel complet est conçu spécifiquement pour les retailers d'électronique et technologie grand public souhaitant construire des relations clients durables grâce à l'expertise produit, le support technique et les cycles de mise à niveau optimisés. L'industrie de l'électronique se caractérise par des cycles de vie produit prévisibles, une forte composante technique nécessitant de l'accompagnement, et des opportunités d'expansion vers les écosystèmes et accessoires. Ce plan couvre l'intégralité du parcours client, de la découverte technologique jusqu'à la fidélisation, en passant par l'onboarding produit, les cycles d'upgrade et les plans de protection.",
   "company_summary": {
     "name": "Marque Électronique",
     "website": "exemple-electronique.com",
-    "activities": "Commerce d'électronique grand public, incluant smartphones, ordinateurs, équipements audio et appareils connectés",
+    "activities": "Commerce d'électronique grand public, incluant smartphones, ordinateurs, tablettes, équipements audio, objets connectés et accessoires tech",
     "target": "Consommateurs technophiles âgés de 18 à 55 ans intéressés par les dernières technologies, gadgets et solutions connectées",
     "industry": "Electronics",
-    "business_model": "B2C Retail"
+    "business_model": "B2C Retail",
+    "customer_lifecycle_key_steps": "1) Découverte via contenu tech et guides d'achat, 2) Premier achat avec conseil personnalisé, 3) Onboarding et configuration assistée, 4) Cross-sell accessoires et écosystème, 5) Upsell garantie et protection, 6) Cycle de mise à niveau (18-24 mois), 7) Fidélisation et programme tech rewards"
   },
   "programs_list": [
     {
-      "program_name": "Bienvenue & Profil Tech",
+      "program_name": "Parcours Bienvenue & Profil Tech",
       "target": "Nouveaux abonnés et premiers visiteurs",
       "objective": "Comprendre les préférences tech des clients et convertir au premier achat sous 30 jours",
-      "kpi": "Complétion du profil tech, Conversion premier achat, Engagement catégorie",
-      "description": "Un parcours de bienvenue personnalisé qui identifie les intérêts tech des clients et recommande des produits pertinents.",
+      "kpi": "Complétion profil tech: >50%, Conversion premier achat: >18%, Engagement newsletter: >35%",
+      "description": "Un parcours de bienvenue personnalisé qui identifie les intérêts technologiques des clients (mobile, audio, gaming, smart home...) et recommande des produits et contenus pertinents dès le premier contact.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux abonnés email",
+          "scenario_target": "Nouveaux abonnés email n'ayant pas défini leurs préférences",
           "scenario_objective": "Construire un profil de préférences tech et générer le premier achat",
-          "main_messages_ideas": "Bienvenue + sondage intérêts, Spotlight catégorie, Guides d'achat, Offre premier achat",
+          "main_messages_ideas": "Bienvenue tech, Sondage intérêts, Spotlight catégorie, Guides d'achat, Offre premier achat",
           "message_sequence": [
             {
+              "channel": "Email",
               "title": "Bienvenue + Sondage Tech",
-              "description": "Bienvenue immédiate avec quiz intérêts tech",
-              "content": "Bienvenue ! Dites-nous quelle tech vous passionne pour des recommandations personnalisées"
+              "timing": "Immédiat",
+              "description": "Bienvenue avec quiz rapide sur les intérêts technologiques",
+              "content": "Bienvenue chez [Marque] ! 📱 Dites-nous quelle tech vous passionne (mobile, audio, gaming, smart home...) et recevez des recommandations personnalisées + -10% sur votre première commande."
             },
             {
-              "title": "Vos Sélections Tech",
-              "description": "Jour 3 : Basé sur les résultats du sondage",
-              "content": "Selon vos intérêts : Top sélection en [Catégorie]"
+              "channel": "SMS",
+              "title": "Rappel Profil Tech",
+              "timing": "J+2",
+              "description": "Rappel pour compléter le profil",
+              "content": "[Marque] Quelles sont vos passions tech ? 30 sec pour personnaliser vos recommandations + -10% offert : [lien]"
             },
             {
-              "title": "Guide d'Achat",
-              "description": "Jour 7 : Contenu éducatif sur l'intérêt principal",
-              "content": "Le guide ultime pour choisir le bon [Type de Produit]"
+              "channel": "Email",
+              "title": "Votre Sélection Tech [Catégorie]",
+              "timing": "J+3 (post-sondage)",
+              "description": "Recommandations basées sur les intérêts identifiés",
+              "content": "Basé sur votre intérêt pour [catégorie] : notre top sélection ! 🎧 Les meilleurs produits, nos coups de cœur et les nouveautés à ne pas manquer."
             },
             {
-              "title": "Offre Premier Achat",
-              "description": "Jour 14 : Incentive pour acheter",
-              "content": "Prêt à upgrader ? Obtenez -10% sur votre première commande"
+              "channel": "Email",
+              "title": "Guide d'Achat [Catégorie]",
+              "timing": "J+7",
+              "description": "Contenu éducatif sur la catégorie principale",
+              "content": "Le guide ultime pour choisir votre [type de produit]. Critères essentiels, comparatifs, et nos recommandations par budget. Devenez expert !"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Conseil Expert Personnalisé",
+              "timing": "J+10",
+              "description": "Proposition de conseil par un expert",
+              "content": "Bonjour [Prénom] ! 💡 Une question sur [catégorie] ? Nos experts tech sont là pour vous conseiller. Répondez ici avec votre question !"
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Premier Achat -15%",
+              "timing": "J+14",
+              "description": "Incentive pour convertir au premier achat",
+              "content": "Prêt à upgrader votre tech ? 🚀 -15% sur votre première commande + livraison express offerte. Code TECH15. C'est le moment de craquer !"
+            },
+            {
+              "channel": "SMS",
+              "title": "Rappel Offre Expiration",
+              "timing": "J+20",
+              "description": "Rappel d'urgence avant expiration",
+              "content": "[Marque] Plus que 48h ! -15% sur votre 1ère commande tech expire bientôt. Code TECH15 : [lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Visiteurs ayant consulté une catégorie sans s'inscrire",
+          "scenario_objective": "Capturer l'email et convertir l'intérêt en achat",
+          "main_messages_ideas": "Contenu exclusif, Guide gratuit, Alertes stock, Offre ciblée",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Guide [Catégorie] Gratuit",
+              "timing": "Immédiat post-inscription",
+              "description": "Lead magnet basé sur la catégorie consultée",
+              "content": "Voici votre guide gratuit : Comment choisir le meilleur [produit]. 📚 Tous les critères, nos recommandations et les pièges à éviter."
+            },
+            {
+              "channel": "Email",
+              "title": "Comparatif Top [Catégorie]",
+              "timing": "J+5",
+              "description": "Comparatif des meilleurs produits de la catégorie",
+              "content": "Les 5 meilleurs [produits] de 2024 comparés. Performances, prix, avis clients : tout ce qu'il faut savoir pour faire le bon choix."
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Flash [Catégorie]",
+              "timing": "J+10",
+              "description": "Promotion ciblée sur la catégorie d'intérêt",
+              "content": "Pour les passionnés de [catégorie] : -20% pendant 48h sur notre sélection. C'est maintenant ou jamais !"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Onboarding & Configuration Produit",
-      "target": "Acheteurs récents de produits",
-      "objective": "Assurer une configuration produit réussie et maximiser la satisfaction client",
-      "kpi": "Taux de complétion configuration, Réduction taux de retour, Réduction tickets support",
-      "description": "Séquence de support post-achat automatisée pour aider les clients à tirer le meilleur de leurs nouveaux appareils.",
+      "program_name": "Récupération Panier Abandonné & Navigation",
+      "target": "Visiteurs ayant ajouté au panier ou consulté des produits sans acheter",
+      "objective": "Récupérer les ventes perdues avec un taux de conversion de 15-20%",
+      "kpi": "Taux de récupération panier: >15%, Récupération navigation: >8%, Revenu récupéré mensuel",
+      "description": "Séquences automatisées multicanal pour reconvertir les paniers abandonnés et les visiteurs engagés, avec personnalisation selon les produits tech consultés et une approche adaptée aux achats réfléchis de l'électronique.",
       "scenarios": [
         {
-          "scenario_target": "Nouveaux acheteurs smartphone/laptop",
-          "scenario_objective": "Guider à travers la configuration et l'utilisation initiale",
-          "main_messages_ideas": "Guide de démarrage rapide, Trucs et astuces, Recommandations accessoires, Mise en avant fonctionnalités",
+          "scenario_target": "Abandon de panier tech (valeur > 200€)",
+          "scenario_objective": "Récupérer l'achat avec rassurance technique et prix",
+          "main_messages_ideas": "Rappel panier, Specs et comparatif, Avis experts, Options paiement, Offre récupération",
           "message_sequence": [
             {
-              "title": "Guide de Démarrage Rapide",
-              "description": "Jour 1 post-livraison",
-              "content": "Configurons votre nouveau [Produit] en quelques minutes"
+              "channel": "Email",
+              "title": "Votre Sélection Tech Vous Attend",
+              "timing": "H+1",
+              "description": "Rappel visuel du panier avec specs clés",
+              "content": "Votre [produit] est toujours disponible ! 📱 Specs clés : [caractéristiques]. Stock limité - finalisez votre commande."
             },
             {
-              "title": "Astuces Pro",
-              "description": "Jour 3 : Fonctionnalités cachées et conseils",
-              "content": "5 fonctionnalités que vous ne connaissez peut-être pas sur votre [Produit]"
+              "channel": "SMS",
+              "title": "Stock Limité !",
+              "timing": "H+4",
+              "description": "Alerte stock pour créer l'urgence",
+              "content": "[Marque] ⚠️ Stock faible sur [produit] ! Plus que [X] unités. Finalisez vite : [lien panier]"
             },
             {
-              "title": "Complétez Votre Configuration",
-              "description": "Jour 7 : Recommandations d'accessoires",
-              "content": "Améliorez votre expérience avec ces accessoires compatibles"
+              "channel": "Email",
+              "title": "Pourquoi [Produit] Est le Bon Choix",
+              "timing": "J+1",
+              "description": "Arguments techniques et avis experts",
+              "content": "Hésitation ? Voici pourquoi [produit] est recommandé par nos experts. Tests, benchmarks, avis clients : toutes les preuves."
             },
             {
-              "title": "Point de Contact",
-              "description": "Jour 14 : Check satisfaction",
-              "content": "Comment va votre nouveau [Produit] ? Nous sommes là pour vous aider"
+              "channel": "WhatsApp",
+              "title": "Une Question Technique ?",
+              "timing": "J+2",
+              "description": "Proposition d'aide technique personnalisée",
+              "content": "Bonjour [Prénom] ! 🔧 Des questions sur [produit] ? Compatibilité, performances, alternatives... Nos experts peuvent vous aider. Répondez ici !"
+            },
+            {
+              "channel": "Email",
+              "title": "Paiement en 3x ou 4x Sans Frais",
+              "timing": "J+3",
+              "description": "Présentation des options de financement",
+              "content": "Votre [produit] à partir de [X€]/mois ! Paiement en 3x ou 4x sans frais disponible. Profitez de votre tech maintenant, payez plus tard."
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Récupération -10% + Cadeau",
+              "timing": "J+5",
+              "description": "Incentive final pour convertir",
+              "content": "Dernière chance ! -10% sur votre panier + accessoire offert (valeur 29€). Code TECHGO. Offre valable 24h uniquement."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Navigation intensive sans achat (5+ produits comparés)",
+          "scenario_objective": "Aider la décision et convertir",
+          "main_messages_ideas": "Récap comparaison, Aide au choix, Test expert, Offre découverte",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Comparatif Personnalisé",
+              "timing": "J+1",
+              "description": "Récap des produits consultés avec tableau comparatif",
+              "content": "Vous avez comparé plusieurs [catégorie]. Voici notre tableau comparatif pour vous aider : specs, prix, notes clients."
+            },
+            {
+              "channel": "Email",
+              "title": "Notre Recommandation Expert",
+              "timing": "J+3",
+              "description": "Conseil personnalisé basé sur le profil",
+              "content": "Après analyse de vos préférences, notre recommandation : [produit]. Voici pourquoi il correspond à votre usage."
+            },
+            {
+              "channel": "Email",
+              "title": "Test Gratuit en Magasin",
+              "timing": "J+7",
+              "description": "Invitation à tester en physique si disponible",
+              "content": "Besoin de toucher avant d'acheter ? Réservez une démo en magasin et testez [produits] avec un expert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Onboarding Produit & Configuration Assistée",
+      "target": "Acheteurs récents de produits tech",
+      "objective": "Assurer une configuration réussie, maximiser l'utilisation et réduire les retours",
+      "kpi": "Taux de complétion config: >85%, Taux de retour: <8%, NPS post-onboarding: >50, Réduction tickets support: -40%",
+      "description": "Séquence de support post-achat automatisée pour accompagner les clients dans la prise en main de leurs nouveaux appareils, avec guides personnalisés, tutoriels et check-ins proactifs.",
+      "scenarios": [
+        {
+          "scenario_target": "Acheteurs de smartphone/tablette",
+          "scenario_objective": "Guider la configuration initiale et découverte des fonctionnalités",
+          "main_messages_ideas": "Guide démarrage, Transfert données, Astuces pro, Apps essentielles, Check satisfaction",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Commande Confirmée + Préparation",
+              "timing": "Immédiat",
+              "description": "Confirmation avec guide de préparation",
+              "content": "Merci [Prénom] ! 🎉 Votre [produit] est confirmé. En attendant la livraison, préparez le transfert de vos données et sauvegardez votre ancien appareil."
+            },
+            {
+              "channel": "SMS",
+              "title": "Votre [Produit] Est Arrivé !",
+              "timing": "Jour livraison",
+              "description": "Notification avec lien vers guide",
+              "content": "[Marque] Votre [produit] est là ! 📱 Guide de démarrage rapide : [lien]. Configuration en 10 min chrono !"
+            },
+            {
+              "channel": "Email",
+              "title": "Guide de Configuration Étape par Étape",
+              "timing": "J+1 post-livraison",
+              "description": "Tutoriel complet de première configuration",
+              "content": "Configurons votre [produit] ensemble ! Guide pas à pas : compte, transfert de données, paramètres essentiels. En 15 minutes, vous êtes prêt."
+            },
+            {
+              "channel": "Email",
+              "title": "5 Fonctionnalités Cachées",
+              "timing": "J+4",
+              "description": "Astuces pour maximiser l'utilisation",
+              "content": "5 fonctionnalités que 90% des utilisateurs ne connaissent pas ! 🔥 Astuces pro pour tirer le maximum de votre [produit]."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Tout Se Passe Bien ?",
+              "timing": "J+7",
+              "description": "Check-in proactif pour questions",
+              "content": "Coucou [Prénom] ! 📱 Comment ça va avec votre nouveau [produit] ? Des questions sur la configuration ? On est là !"
+            },
+            {
+              "channel": "Email",
+              "title": "Apps et Services Recommandés",
+              "timing": "J+10",
+              "description": "Recommandations d'apps et services complémentaires",
+              "content": "Les 10 apps indispensables pour votre [produit]. Productivité, photo, santé... Notre sélection d'experts pour une expérience optimale."
+            },
+            {
+              "channel": "Email",
+              "title": "Partagez Votre Avis",
+              "timing": "J+21",
+              "description": "Demande d'avis après période d'utilisation",
+              "content": "3 semaines avec [produit] ! Comment le trouvez-vous ? Partagez votre avis et gagnez 100 points fidélité."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Acheteurs d'équipement audio/gaming",
+          "scenario_objective": "Optimiser la configuration pour une expérience maximale",
+          "main_messages_ideas": "Configuration optimale, Réglages pro, Accessoires compatibles, Communauté",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Guide d'Installation Pro",
+              "timing": "Jour livraison",
+              "description": "Guide pour installation et configuration optimale",
+              "content": "Votre [produit] est arrivé ! 🎧 Guide d'installation pour une expérience audio/gaming optimale : placement, réglages, calibration."
+            },
+            {
+              "channel": "Email",
+              "title": "Réglages d'Expert",
+              "timing": "J+3",
+              "description": "Paramètres avancés et personnalisation",
+              "content": "Passez au niveau supérieur ! Nos réglages d'experts pour [produit] : égaliseur, modes de jeu, profils personnalisés."
+            },
+            {
+              "channel": "Email",
+              "title": "Complétez Votre Setup",
+              "timing": "J+10",
+              "description": "Accessoires compatibles recommandés",
+              "content": "Upgradez votre setup ! Les accessoires compatibles avec [produit] pour une expérience encore meilleure."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Expansion Écosystème & Cross-Sell Accessoires",
+      "target": "Clients ayant acheté un produit principal",
+      "objective": "Étendre les achats vers l'écosystème et les accessoires complémentaires",
+      "kpi": "Taux de cross-sell: >30%, Panier moyen accessoires: >45€, Nombre produits par client: 1.8→2.8",
+      "description": "Programme d'expansion progressive vers les accessoires et l'écosystème de la marque, avec recommandations personnalisées basées sur le produit acheté et les usages identifiés.",
+      "scenarios": [
+        {
+          "scenario_target": "Acheteurs iPhone/smartphone premium",
+          "scenario_objective": "Cross-sell vers écouteurs, coques, chargeurs et watch",
+          "main_messages_ideas": "Accessoires essentiels, Protection, Écosystème complet, Bundle économique",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Les Essentiels pour Votre [Produit]",
+              "timing": "J+3 post-livraison",
+              "description": "Accessoires de base recommandés",
+              "content": "Protégez et optimisez votre [produit] ! 📱 Coques premium, films de protection, chargeurs rapides : les essentiels sélectionnés par nos experts."
+            },
+            {
+              "channel": "Email",
+              "title": "Le Compagnon Parfait : [Écouteurs]",
+              "timing": "J+14",
+              "description": "Cross-sell vers écouteurs/audio",
+              "content": "Votre [produit] mérite le meilleur son ! 🎧 Découvrez [écouteurs] : connexion parfaite, qualité audio exceptionnelle. -15% pour les propriétaires de [produit]."
+            },
+            {
+              "channel": "Email",
+              "title": "Complétez Votre Écosystème",
+              "timing": "J+30",
+              "description": "Présentation de l'écosystème complet",
+              "content": "L'expérience complète [marque] ! Watch, iPad, MacBook... Découvrez comment tout fonctionne ensemble parfaitement."
+            },
+            {
+              "channel": "SMS",
+              "title": "Offre Bundle Accessoires",
+              "timing": "J+45",
+              "description": "Promotion bundle accessoires",
+              "content": "[Marque] 🎁 Bundle accessoires [produit] : coque + chargeur + film à -30% ! Cette semaine seulement : [lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Acheteurs PC/laptop",
+          "scenario_objective": "Cross-sell vers périphériques et stockage",
+          "main_messages_ideas": "Productivité, Stockage, Bureau optimal, Gaming setup",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Boostez Votre Productivité",
+              "timing": "J+7 post-livraison",
+              "description": "Périphériques pour productivité",
+              "content": "Tirez le maximum de votre [PC] ! ⌨️ Claviers ergonomiques, souris précises, écrans externes : notre sélection productivité."
+            },
+            {
+              "channel": "Email",
+              "title": "Ne Perdez Jamais Vos Données",
+              "timing": "J+21",
+              "description": "Solutions de stockage et backup",
+              "content": "Protégez votre travail ! SSD externes, solutions cloud, NAS domestique. Nos recommandations stockage selon vos besoins."
+            },
+            {
+              "channel": "Email",
+              "title": "Le Bureau Parfait",
+              "timing": "J+45",
+              "description": "Setup complet optimisé",
+              "content": "Créez votre espace de travail idéal ! Du bureau au fauteuil, de l'éclairage au rangement : tout pour un setup optimal."
             }
           ]
         }
@@ -85,28 +358,76 @@
       "program_name": "Marketing Cycle de Mise à Niveau",
       "target": "Clients dont les produits ont 18-24 mois",
       "objective": "Générer des achats de mise à niveau au timing optimal",
-      "kpi": "Taux de conversion upgrade, Participation trade-in, Valeur moyenne upgrade",
-      "description": "Communications stratégiques calées sur le cycle de vie produit pour encourager les mises à niveau opportunes.",
+      "kpi": "Taux de conversion upgrade: >25%, Participation trade-in: >40%, Valeur moyenne upgrade: +20% vs achat initial",
+      "description": "Communications stratégiques calées sur le cycle de vie produit pour encourager les mises à niveau opportunes, avec mise en avant des évolutions technologiques et des offres de reprise avantageuses.",
       "scenarios": [
         {
           "scenario_target": "Propriétaires de smartphones (18+ mois)",
           "scenario_objective": "Encourager la mise à niveau avec valeur de reprise",
-          "main_messages_ideas": "Comparaison nouvelles fonctionnalités, Valeur de reprise, Bénéfices upgrade, Offre limitée",
+          "main_messages_ideas": "Nouvelles fonctionnalités, Comparaison générations, Trade-in valeur, Offre upgrade",
           "message_sequence": [
             {
-              "title": "Quoi de Neuf",
-              "description": "18 mois : Comparaison nouveau modèle",
-              "content": "Découvrez ce que vous manquez : [Nouveau Modèle] vs votre appareil actuel"
+              "channel": "Email",
+              "title": "Ce Qui A Changé en 18 Mois",
+              "timing": "18 mois post-achat",
+              "description": "Comparaison nouveautés vs appareil actuel",
+              "content": "18 mois d'évolution tech ! 📱 Découvrez ce que vous pourriez avoir : [nouvelles fonctionnalités]. Comparatif [votre modèle] vs [nouveau modèle]."
             },
             {
-              "title": "Valeur de Reprise",
-              "description": "20 mois : Offre de reprise personnalisée",
-              "content": "Votre [Appareil Actuel] vaut jusqu'à [Valeur]€ pour une mise à niveau"
+              "channel": "Email",
+              "title": "Votre [Appareil] Vaut Encore [X€]",
+              "timing": "20 mois",
+              "description": "Estimation de valeur de reprise",
+              "content": "Bonne nouvelle ! Votre [appareil actuel] vaut jusqu'à [X€] en reprise. C'est le meilleur moment pour upgrader avant que sa valeur ne baisse."
             },
             {
-              "title": "Offre Upgrade",
-              "description": "24 mois : Dernière poussée upgrade",
-              "content": "C'est le moment d'upgrader : Offre spéciale + reprise bonifiée ce mois-ci"
+              "channel": "SMS",
+              "title": "Valeur Reprise Boostée",
+              "timing": "22 mois",
+              "description": "Offre trade-in bonifiée",
+              "content": "[Marque] 📱 Valeur reprise BOOSTÉE ! Votre [appareil] = [X€] + 50€ bonus ce mois-ci. Estimez maintenant : [lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Offre Upgrade Spéciale",
+              "timing": "24 mois",
+              "description": "Dernière poussée avec offre complète",
+              "content": "C'est le moment ! 🚀 Upgrade vers [nouveau modèle] : reprise [X€] + 50€ bonus + accessoire offert. Offre valable jusqu'au [date]."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Conseil Upgrade Personnalisé",
+              "timing": "24 mois + 3j",
+              "description": "Proposition de conseil pour le choix",
+              "content": "Bonjour [Prénom] ! 📱 Prêt pour un nouvel appareil ? On peut vous conseiller le modèle idéal selon vos usages. Intéressé ? Répondez OUI !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Propriétaires de laptop/PC (24-36 mois)",
+          "scenario_objective": "Identifier le besoin d'upgrade et proposer des solutions",
+          "main_messages_ideas": "Performance en baisse ?, Nouvelles capacités, Trade-in ou upgrade composants",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre PC Ralentit ?",
+              "timing": "24 mois post-achat",
+              "description": "Diagnostic et solutions",
+              "content": "Après 2 ans, les performances peuvent diminuer. 💻 Voici les signes qu'il est temps d'upgrader ou d'optimiser votre [PC]."
+            },
+            {
+              "channel": "Email",
+              "title": "Upgrade ou Optimiser ?",
+              "timing": "30 mois",
+              "description": "Options upgrade vs optimisation",
+              "content": "2 options : upgrader vers un nouveau PC ou booster l'actuel ? 🔧 Mémoire, SSD, batterie... Nos solutions selon votre budget."
+            },
+            {
+              "channel": "Email",
+              "title": "La Nouvelle Génération Est Là",
+              "timing": "36 mois",
+              "description": "Présentation des nouveaux modèles",
+              "content": "3 ans de progrès tech ! Nouveaux processeurs, autonomie x2, écrans révolutionnaires. Découvrez ce que vous pourriez avoir."
             }
           ]
         }
@@ -114,66 +435,417 @@
     },
     {
       "program_name": "Lancement Nouveau Produit",
-      "target": "Tous les clients intéressés par des catégories de produits spécifiques",
+      "target": "Clients intéressés par des catégories de produits spécifiques",
       "objective": "Maximiser les précommandes et les ventes de la semaine de lancement",
-      "kpi": "Taux de précommande, CA semaine de lancement, Conversion liste d'attente",
-      "description": "Campagne multi-touch pour créer l'anticipation et générer des achats pour les lancements de nouveaux produits.",
+      "kpi": "Taux de précommande: >15% des cibles, CA semaine de lancement: objectif +100%, Conversion liste d'attente: >35%",
+      "description": "Campagne multi-touch pour créer l'anticipation et générer des achats pour les lancements de nouveaux produits, avec accès prioritaire pour les clients fidèles.",
       "scenarios": [
         {
-          "scenario_target": "Enthousiastes de catégorie (basé sur l'historique d'achat)",
+          "scenario_target": "Enthousiastes de catégorie + clients fidèles",
           "scenario_objective": "Générer des précommandes et une adoption précoce",
-          "main_messages_ideas": "Aperçu exclusif, Avantages précommande, Alerte jour de lancement, Accès avis anticipé",
+          "main_messages_ideas": "Teasing, Annonce exclusive, Avantages précommande, Alerte lancement, Reviews",
           "message_sequence": [
             {
-              "title": "Aperçu Exclusif",
-              "description": "7 jours avant l'annonce",
-              "content": "Quelque chose de grand arrive en [Catégorie]..."
+              "channel": "Email",
+              "title": "Quelque Chose de Grand Arrive...",
+              "timing": "J-14 avant annonce",
+              "description": "Teasing mystérieux pour créer l'attente",
+              "content": "Quelque chose de grand arrive en [catégorie]... 🤫 Inscrivez-vous pour être les premiers informés et bénéficier d'un accès prioritaire."
             },
             {
-              "title": "Lancement Précommande",
-              "description": "Jour de l'annonce",
-              "content": "C'est là ! Précommandez [Nouveau Produit] avec des avantages exclusifs"
+              "channel": "Email",
+              "title": "Découvrez [Nouveau Produit] !",
+              "timing": "Jour annonce",
+              "description": "Révélation complète avec specs et prix",
+              "content": "C'est officiel ! 🎉 Voici [nouveau produit] : [highlights]. Précommandez maintenant et recevez [cadeau exclusif]."
             },
             {
-              "title": "Rappel Précommande",
-              "description": "3 jours avant l'expédition",
-              "content": "Dernière chance pour les avantages précommande - Expédition dans 3 jours !"
+              "channel": "SMS",
+              "title": "Précommande Ouverte !",
+              "timing": "Jour annonce H+2",
+              "description": "Notification d'ouverture des précommandes",
+              "content": "[Marque] 🚀 [Nouveau produit] est là ! Précommandez maintenant + [cadeau]. Stock limité : [lien]"
             },
             {
-              "title": "Jour de Lancement",
+              "channel": "Email",
+              "title": "Pourquoi [Produit] Est Révolutionnaire",
+              "timing": "J+3",
+              "description": "Deep dive sur les innovations",
+              "content": "Ce qui rend [produit] unique. Tests, benchmarks, innovations : tout ce que vous devez savoir avant de précommander."
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Chance Précommande",
+              "timing": "J-2 avant expédition",
+              "description": "Rappel fin des avantages précommande",
+              "content": "Plus que 48h ! ⏰ Précommandez [produit] et recevez [cadeau]. Expédition dans 2 jours - ne ratez pas le premier batch !"
+            },
+            {
+              "channel": "Email",
+              "title": "C'est le Jour J !",
+              "timing": "Jour lancement",
               "description": "Disponibilité générale",
-              "content": "[Nouveau Produit] est maintenant disponible - Achetez maintenant"
+              "content": "[Produit] est disponible ! 🎊 Les premiers avis sont excellents. Commandez maintenant et recevez en [délai]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients n'ayant pas précommandé mais intéressés",
+          "scenario_objective": "Convertir après le lancement avec social proof",
+          "main_messages_ideas": "Premiers avis, Stock alert, Comparatif, Offre lancement étendue",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ce Que Disent les Premiers Utilisateurs",
+              "timing": "J+7 post-lancement",
+              "description": "Social proof avec premiers avis",
+              "content": "Les premiers avis sur [produit] sont là ! ⭐⭐⭐⭐⭐ Découvrez ce qu'en pensent nos clients et les médias tech."
+            },
+            {
+              "channel": "Email",
+              "title": "Stock Réapprovisionné",
+              "timing": "J+14",
+              "description": "Alerte réstock pour créer urgence",
+              "content": "Bonne nouvelle ! [Produit] est de nouveau en stock. 📦 Ne ratez pas cette fois - les unités partent vite."
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Garantie Étendue & Protection",
+      "program_name": "Garantie Étendue & Plans de Protection",
       "target": "Acheteurs récents d'électronique de haute valeur",
-      "objective": "Augmenter le taux d'attachement garantie étendue et plans de protection",
-      "kpi": "Taux d'attachement garantie, CA plans de protection, Renouvellements post-garantie",
-      "description": "Campagne ciblée pour vendre des garanties étendues et plans de protection pendant la fenêtre de décision.",
+      "objective": "Augmenter le taux d'attachement garantie étendue sous 30 jours",
+      "kpi": "Taux d'attachement garantie: >25%, CA plans de protection: +40%, Renouvellement post-garantie: >30%",
+      "description": "Campagne ciblée pour vendre des garanties étendues et plans de protection pendant la fenêtre de décision, avec des arguments de réassurance et des témoignages réels.",
       "scenarios": [
         {
-          "scenario_target": "Clients ayant acheté sans plan de protection",
-          "scenario_objective": "Convertir à l'achat de garantie étendue sous 30 jours",
-          "main_messages_ideas": "Avantages protection, Vraies histoires de réclamation, Tranquillité d'esprit, Offre limitée",
+          "scenario_target": "Clients ayant acheté sans plan de protection (>400€)",
+          "scenario_objective": "Convertir à l'achat de garantie étendue",
+          "main_messages_ideas": "Protection investissement, Témoignages réels, Avantages concrets, Urgence fenêtre",
           "message_sequence": [
             {
+              "channel": "Email",
               "title": "Protégez Votre Investissement",
-              "description": "Jour 3 post-achat",
-              "content": "Votre nouveau [Produit] mérite une protection complète"
+              "timing": "J+3 post-achat",
+              "description": "Introduction aux bénéfices de la protection",
+              "content": "Votre [produit] représente un investissement important. 🛡️ Protégez-le avec notre garantie étendue : casse accidentelle, panne, vol. À partir de [X€]/an."
             },
             {
-              "title": "Pourquoi la Protection Compte",
-              "description": "Jour 10 : Exemples concrets",
-              "content": "Voyez comment la protection [Produit] a sauvé ces clients"
+              "channel": "Email",
+              "title": "Ils Ont Été Contents de S'être Protégés",
+              "timing": "J+10",
+              "description": "Témoignages de clients ayant utilisé la garantie",
+              "content": "\"Mon écran cassé remplacé en 48h !\" Découvrez comment la protection [Marque] a sauvé ces clients. Témoignages réels et exemples de prises en charge."
             },
             {
-              "title": "Dernière Chance",
-              "description": "Jour 25 : Message d'urgence",
-              "content": "5 jours restants pour ajouter la protection à votre [Produit]"
+              "channel": "SMS",
+              "title": "Plus Que 15 Jours",
+              "timing": "J+15",
+              "description": "Rappel mi-fenêtre",
+              "content": "[Marque] 🛡️ Plus que 15 jours pour protéger votre [produit] ! Garantie étendue à partir de [X€]/an : [lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Ce Qui Est Couvert (et Ce Qui Ne l'Est Pas)",
+              "timing": "J+20",
+              "description": "Clarification des couvertures",
+              "content": "La garantie constructeur ne couvre PAS : casse accidentelle, dégât des eaux, vol. Notre protection étendue si. Comparez les couvertures."
+            },
+            {
+              "channel": "Email",
+              "title": "Dernière Chance : 5 Jours Restants",
+              "timing": "J+25",
+              "description": "Urgence fin de fenêtre d'éligibilité",
+              "content": "⚠️ Plus que 5 jours pour ajouter la protection à votre [produit]. Passé ce délai, l'option ne sera plus disponible. Protégez-vous maintenant !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Clients dont la garantie expire bientôt",
+          "scenario_objective": "Proposer le renouvellement de protection",
+          "main_messages_ideas": "Fin garantie, Risques sans protection, Offre renouvellement",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Garantie Expire Bientôt",
+              "timing": "60 jours avant expiration",
+              "description": "Alerte expiration garantie",
+              "content": "Attention ! La garantie de votre [produit] expire le [date]. 📅 Renouvelez maintenant pour rester protégé."
+            },
+            {
+              "channel": "Email",
+              "title": "Sans Protection, Vous Risquez...",
+              "timing": "30 jours avant",
+              "description": "Rappel des risques sans garantie",
+              "content": "Sans protection, une réparation [produit] peut coûter jusqu'à [X€]. 💸 Renouvelez votre garantie et dormez tranquille."
+            },
+            {
+              "channel": "SMS",
+              "title": "Dernière Semaine Renouvellement",
+              "timing": "7 jours avant",
+              "description": "Urgence dernière chance",
+              "content": "[Marque] ⏰ Dernière semaine ! Renouvelez la garantie de votre [produit] avant le [date]. -20% pour renouvellement : [lien]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Programme Fidélité & Tech Rewards",
+      "target": "Tous les clients avec programme à niveaux",
+      "objective": "Augmenter la LTV et l'engagement via récompenses tech",
+      "kpi": "Inscription fidélité: >65%, Taux de redemption: >55%, LTV membres vs non-membres: x2.3",
+      "description": "Programme de fidélité adapté au secteur tech offrant des points sur achats, accès prioritaire aux lancements, et avantages exclusifs pour les early adopters.",
+      "scenarios": [
+        {
+          "scenario_target": "Nouveau client - Inscription au programme",
+          "scenario_objective": "Convertir en membre fidélité actif",
+          "main_messages_ideas": "Bienvenue Tech Rewards, Avantages expliqués, Points bonus, Accès prioritaire",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Bienvenue au Tech Rewards !",
+              "timing": "Immédiat post-inscription",
+              "description": "Présentation complète du programme",
+              "content": "Bienvenue au Tech Rewards ! 🎮 Vos avantages : 5% en points sur chaque achat, accès prioritaire aux lancements, offres exclusives, support premium..."
+            },
+            {
+              "channel": "Email",
+              "title": "500 Points de Bienvenue",
+              "timing": "J+3",
+              "description": "Bonus de bienvenue pour premier achat",
+              "content": "Cadeau de bienvenue ! 🎁 500 points crédités (=25€). Utilisez-les sur votre prochain achat ou cumulez pour un gros produit."
+            },
+            {
+              "channel": "Email",
+              "title": "Comment Maximiser Vos Points",
+              "timing": "J+10",
+              "description": "Guide pour gagner plus de points",
+              "content": "Gagnez plus de points ! Achats, avis, parrainage, beta tests... Toutes les façons de booster votre solde Tech Rewards."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Membre atteignant le statut Gold/Platinum",
+          "scenario_objective": "Célébrer et activer les nouveaux avantages",
+          "main_messages_ideas": "Félicitations, Nouveaux avantages, Early access, Support VIP",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vous Êtes Gold ! 🏆",
+              "timing": "Immédiat",
+              "description": "Célébration du nouveau statut",
+              "content": "Félicitations [Prénom] ! Vous êtes maintenant Gold ! 🏆 Vos privilèges : 7% en points, early access lancements, support prioritaire 24/7, garantie étendue offerte..."
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Accès Early Access Activé",
+              "timing": "J+1",
+              "description": "Confirmation des avantages prioritaires",
+              "content": "Bonjour [Prénom] ! 🌟 En tant que Gold, vous avez maintenant accès aux ventes privées et lancements 24h avant tout le monde. Stay tuned !"
+            },
+            {
+              "channel": "Email",
+              "title": "Votre Ligne Support VIP",
+              "timing": "J+5",
+              "description": "Présentation du support premium",
+              "content": "En tant que Gold, bénéficiez du support VIP ! ☎️ Ligne dédiée, temps d'attente réduit, experts prioritaires. Vos contacts : [numéro/email]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Reconquête & Réengagement",
+      "target": "Clients inactifs depuis 12-24 mois",
+      "objective": "Réactiver 20% des clients dormants",
+      "kpi": "Taux de réactivation: >20%, Taux de réponse feedback: >12%, Panier moyen réactivation",
+      "description": "Programme de reconquête des clients inactifs avec mise en avant des évolutions produits, offres généreuses et collecte de feedback pour amélioration continue.",
+      "scenarios": [
+        {
+          "scenario_target": "Inactifs 12-18 mois (risque moyen)",
+          "scenario_objective": "Réengager avec nouveautés tech",
+          "main_messages_ideas": "Nouvelles technos, Évolutions depuis, Offre retour, Feedback",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "La Tech a Évolué !",
+              "timing": "12 mois sans achat",
+              "description": "Mise à jour sur les nouveautés depuis leur départ",
+              "content": "Ça fait un moment ! La tech a beaucoup évolué depuis votre dernier achat. 🚀 Découvrez les innovations qui pourraient vous intéresser."
+            },
+            {
+              "channel": "Email",
+              "title": "Ce Que Vous Avez Manqué",
+              "timing": "J+10",
+              "description": "Récap des nouveautés et best-sellers",
+              "content": "Pendant votre absence : [X] nouveaux produits révolutionnaires, [X] innovations majeures. Le récap de tout ce qui a changé."
+            },
+            {
+              "channel": "SMS",
+              "title": "Offre Retour -20%",
+              "timing": "J+20",
+              "description": "Incentive de retour",
+              "content": "[Marque] [Prénom], la tech vous manque ? 💻 -20% sur tout pour votre retour. Code TECHBACK : [lien]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Inactifs 18-24 mois (risque élevé)",
+          "scenario_objective": "Dernière tentative avec offre maximale",
+          "main_messages_ideas": "Dernière chance, Offre exceptionnelle, Feedback demande",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "On Aimerait Vous Revoir",
+              "timing": "18 mois sans achat",
+              "description": "Message sincère avec offre importante",
+              "content": "[Prénom], ça fait longtemps ! On aimerait vraiment vous revoir. Voici -25% sur tout + accessoire offert. Une dernière chance de reconnecter ?"
+            },
+            {
+              "channel": "Email",
+              "title": "Pourquoi Êtes-Vous Parti(e) ?",
+              "timing": "J+14",
+              "description": "Demande de feedback avec incentive",
+              "content": "Votre avis compte ! Pourquoi n'achetez-vous plus chez nous ? 2 minutes pour nous aider + -30% sur votre prochaine commande en remerciement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Parrainage & Reviews",
+      "target": "Clients satisfaits et early adopters",
+      "objective": "Transformer les clients satisfaits en ambassadeurs tech",
+      "kpi": "Taux de parrainage: >12%, Conversion parrainés: >35%, Reviews collectés: >35% des acheteurs",
+      "description": "Programme de parrainage et de collecte d'avis pour transformer les clients satisfaits en prescripteurs actifs, avec récompenses généreuses pour les deux parties.",
+      "scenarios": [
+        {
+          "scenario_target": "Clients post-achat satisfaits",
+          "scenario_objective": "Collecter des avis et encourager le parrainage",
+          "main_messages_ideas": "Demande avis, Merci + parrainage, Récompenses, Suivi parrainages",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Votre Avis Sur [Produit]",
+              "timing": "J+21 post-livraison",
+              "description": "Demande d'avis après période d'utilisation",
+              "content": "Comment trouvez-vous votre [produit] ? ⭐ Partagez votre avis et aidez d'autres passionnés de tech à faire le bon choix. 100 points offerts !"
+            },
+            {
+              "channel": "Email",
+              "title": "Merci pour Votre Avis ! 🎉",
+              "timing": "Immédiat post-avis",
+              "description": "Remerciement et proposition de parrainage",
+              "content": "Merci pour votre super avis ! Vos amis tech méritent de découvrir [Marque]. Parrainez-les : 30€ pour eux, 30€ pour vous !"
+            },
+            {
+              "channel": "WhatsApp",
+              "title": "Votre Lien de Parrainage",
+              "timing": "J+2 post-avis",
+              "description": "Envoi du lien personnalisé",
+              "content": "Voici votre lien de parrainage ! 🔗 [lien]. Partagez-le : 30€ offerts à chaque ami qui commande + 30€ pour vous !"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Early adopters et beta testers",
+          "scenario_objective": "Transformer en ambassadeurs officiels",
+          "main_messages_ideas": "Programme ambassadeur, Test exclusif, Communauté, Récompenses premium",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Devenez Tech Ambassador",
+              "timing": "Après 3+ achats ou early adopter identifié",
+              "description": "Invitation au programme ambassadeur",
+              "content": "Vous êtes un vrai passionné de tech ! 🚀 Rejoignez nos Tech Ambassadors : produits en test, événements exclusifs, early access permanent..."
+            },
+            {
+              "channel": "Email",
+              "title": "Bienvenue dans le Programme",
+              "timing": "Post-inscription ambassadeur",
+              "description": "Onboarding ambassadeur",
+              "content": "Bienvenue dans la team Tech Ambassadors ! 🎯 Voici vos avantages, votre kit de démarrage et vos premiers produits à tester."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Événements Commerciaux & Deals Flash",
+      "target": "Base clients segmentée par intérêts et historique",
+      "objective": "Maximiser les ventes sur les temps forts commerciaux",
+      "kpi": "CA Black Friday: +200% vs normal, Taux d'engagement deals: >40%, Conversion ventes flash: >25%",
+      "description": "Campagnes orchestrées pour les temps forts (Black Friday, soldes, French Days) et ventes flash exclusives, avec accès prioritaire pour les membres fidélité.",
+      "scenarios": [
+        {
+          "scenario_target": "Black Friday - Clients actifs",
+          "scenario_objective": "Maximiser le CA sur la période clé",
+          "main_messages_ideas": "Teasing deals, Accès anticipé, Offres vedettes, Dernière chance",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Black Friday : Préparez-Vous !",
+              "timing": "J-7",
+              "description": "Teasing avec aperçu des offres",
+              "content": "Black Friday arrive ! 🖤 Aperçu exclusif des offres à venir. Préparez votre wishlist et soyez prêt pour les meilleurs deals tech de l'année."
+            },
+            {
+              "channel": "Email",
+              "title": "Accès VIP Black Friday",
+              "timing": "J-1 (membres fidélité)",
+              "description": "Accès anticipé aux offres pour VIP",
+              "content": "🔓 Accès VIP Black Friday ! En tant que membre Tech Rewards, accédez aux offres 24h avant tout le monde. C'est parti !"
+            },
+            {
+              "channel": "SMS",
+              "title": "C'est Parti !",
+              "timing": "Jour J H0",
+              "description": "Lancement officiel",
+              "content": "[Marque] 🖤 BLACK FRIDAY : C'EST MAINTENANT ! Jusqu'à -50% sur [catégories]. Stock limité : [lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Offres Vedettes du Jour",
+              "timing": "Jour J",
+              "description": "Mise en avant des meilleures offres",
+              "content": "Les deals les plus fous du Black Friday ! 🔥 [Produit 1] à -40%, [Produit 2] à -35%... Quantités très limitées !"
+            },
+            {
+              "channel": "Email",
+              "title": "Dernières Heures !",
+              "timing": "Jour J fin de journée",
+              "description": "Urgence dernières heures",
+              "content": "⏰ Plus que quelques heures ! Les deals Black Friday s'arrêtent à minuit. Dernière chance de faire de bonnes affaires."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Ventes flash exclusives membres",
+          "scenario_objective": "Créer l'urgence et récompenser la fidélité",
+          "main_messages_ideas": "Exclusif membres, Temps limité, Stock limité, One-day deal",
+          "message_sequence": [
+            {
+              "channel": "Push",
+              "title": "🔥 FLASH SALE Now !",
+              "timing": "Immédiat",
+              "description": "Notification push vente flash",
+              "content": "VENTE FLASH ! [Produit] à -40% pendant 4h seulement. Réservé aux membres Tech Rewards."
+            },
+            {
+              "channel": "SMS",
+              "title": "Vente Flash [Produit]",
+              "timing": "Immédiat",
+              "description": "SMS urgence vente flash",
+              "content": "[Marque] ⚡ FLASH 4H ! [Produit] à -40% pour les membres. Courez : [lien]"
+            },
+            {
+              "channel": "Email",
+              "title": "Vente Flash : Plus Que 2h",
+              "timing": "H+2",
+              "description": "Rappel mi-vente flash",
+              "content": "Plus que 2h ! ⏰ [Produit] à -40% s'envole. Stock restant : [X] unités. C'est maintenant ou jamais !"
             }
           ]
         }
@@ -182,23 +854,35 @@
   ],
   "how_brevo_helps_you": [
     {
-      "scenario_name": "Bienvenue & Profil Tech",
-      "why_brevo_is_better": "L'intégration sondage et la segmentation dynamique de Brevo vous permettent de collecter les préférences tech et de personnaliser immédiatement le parcours client selon leurs intérêts.",
-      "omnichannel_channels": "Email pour le contenu produit détaillé + SMS pour les deals flash et alertes stock",
-      "setup_efficiency": "Templates pré-construits pour l'industrie électronique avec logique de catégorie produit pour un lancement rapide."
+      "scenario_name": "Parcours Bienvenue & Profil Tech",
+      "why_brevo_is_better": "Brevo combine sondages interactifs et segmentation dynamique pour collecter les préférences tech et personnaliser immédiatement le parcours client. Les blocs de contenu dynamique adaptent chaque email aux catégories d'intérêt identifiées.",
+      "omnichannel_channels": "Email pour le contenu produit détaillé et guides + SMS pour les deals flash et alertes stock + WhatsApp pour le conseil expert personnalisé",
+      "setup_efficiency": "Templates pré-construits pour l'industrie électronique avec logique de catégorie produit. Segmentation automatique par intérêt tech pour un ciblage précis dès le premier message."
     },
     {
       "scenario_name": "Marketing Cycle de Mise à Niveau",
-      "why_brevo_is_better": "Les déclencheurs d'automatisation basés sur les dates permettent des rappels de mise à niveau parfaitement synchronisés selon la date d'achat et le cycle de vie produit.",
-      "omnichannel_channels": "Email pour le contenu comparatif + SMS pour les alertes valeur de reprise + Push pour les offres limitées",
-      "setup_efficiency": "Configurez une fois et laissez l'automatisation gérer le timing - les déclencheurs s'activent automatiquement selon l'anniversaire d'achat."
+      "why_brevo_is_better": "Les déclencheurs d'automatisation basés sur les dates de Brevo permettent des rappels de mise à niveau parfaitement synchronisés. L'intégration e-commerce suit les produits achetés et leur date pour un timing optimal.",
+      "omnichannel_channels": "Email pour le contenu comparatif détaillé + SMS pour les alertes valeur de reprise urgentes + Push pour les offres limitées + WhatsApp pour le conseil upgrade personnalisé",
+      "setup_efficiency": "Configurez une fois par catégorie produit et laissez l'automatisation gérer le timing. Les workflows se déclenchent automatiquement selon l'anniversaire d'achat de chaque client."
     },
     {
-      "scenario_name": "Onboarding & Configuration Produit",
-      "why_brevo_is_better": "L'automatisation post-achat garantit que chaque client reçoit le bon contenu d'onboarding selon son achat de produit spécifique.",
-      "omnichannel_channels": "Email pour les guides de configuration détaillés + SMS pour les conseils rapides + Intégration vidéo pour les tutoriels",
-      "setup_efficiency": "Les templates de contenu par catégorie de produit facilitent le maintien de la qualité sur l'ensemble de votre catalogue."
+      "scenario_name": "Onboarding Produit & Configuration Assistée",
+      "why_brevo_is_better": "L'automatisation post-achat garantit que chaque client reçoit le bon contenu d'onboarding selon son produit spécifique. Les séquences réduisent les retours et les tickets support de manière mesurable.",
+      "omnichannel_channels": "Email pour les guides de configuration détaillés + SMS pour les tips rapides + WhatsApp pour le support interactif + Vidéo pour les tutoriels",
+      "setup_efficiency": "Bibliothèque de contenus d'onboarding par catégorie de produit. Un nouveau produit ajouté ? Créez sa séquence une fois, elle s'applique automatiquement à tous les acheteurs."
+    },
+    {
+      "scenario_name": "Garantie Étendue & Plans de Protection",
+      "why_brevo_is_better": "Brevo permet de cibler précisément les acheteurs sans protection dans la fenêtre d'éligibilité. Les workflows automatiques maximisent les conversions avec des rappels bien timés et des témoignages convaincants.",
+      "omnichannel_channels": "Email pour les arguments détaillés et témoignages + SMS pour les rappels d'urgence fin de fenêtre + Push pour les alertes expiration garantie",
+      "setup_efficiency": "Segments automatiques par statut de protection et date d'achat. Les rappels d'expiration de garantie sont envoyés automatiquement sans intervention manuelle."
+    },
+    {
+      "scenario_name": "Événements Commerciaux & Deals Flash",
+      "why_brevo_is_better": "Brevo orchestre des campagnes multi-touch avec timing précis pour les temps forts. La segmentation avancée permet de cibler les bons clients avec les bons deals selon leur historique et intérêts.",
+      "omnichannel_channels": "Email pour les campagnes de teasing et récap deals + SMS pour les alertes lancement + Push pour les notifications temps réel ventes flash + WhatsApp pour l'accès VIP",
+      "setup_efficiency": "Templates de campagne Black Friday/Soldes réutilisables. Segmentation automatique VIP pour accès prioritaire. Workflows de vente flash configurables en quelques clics."
     }
   ],
-  "conclusion": "Les retailers d'électronique qui mettent en œuvre ces programmes de marketing relationnel peuvent s'attendre à une valeur vie client plus élevée grâce à des cycles de mise à niveau bien synchronisés, des retours réduits grâce à un meilleur onboarding, et des taux d'attachement plus forts pour les services à haute marge comme les garanties étendues."
+  "conclusion": "Les retailers d'électronique qui implémentent ce plan marketing relationnel complet peuvent s'attendre à des résultats significatifs : valeur vie client plus élevée grâce aux cycles de mise à niveau bien orchestrés, taux de retour réduit grâce à l'onboarding proactif, revenus additionnels sur les garanties et accessoires. La clé du succès réside dans la personnalisation basée sur le profil tech de chaque client, l'accompagnement tout au long du cycle de vie produit, et l'orchestration fluide des canaux pour maximiser chaque point de contact."
 }

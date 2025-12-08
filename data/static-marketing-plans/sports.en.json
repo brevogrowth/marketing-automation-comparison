@@ -1,45 +1,229 @@
 {
-  "introduction": "This marketing relationship plan is designed for sports and outdoor retailers looking to build engaged communities of athletes and fitness enthusiasts through performance-focused communication.",
+  "introduction": "This comprehensive marketing relationship plan is designed for sports and outdoor retailers seeking to build passionate communities of athletes, fitness enthusiasts, and outdoor adventurers through performance-focused communication and personalized engagement. In the sports industry, success comes from understanding each customer's athletic journey—from discovering new activities to achieving personal bests, from seasonal gear preparation to celebrating race day victories. This plan addresses the full athlete lifecycle from first discovery through brand ambassador status, leveraging the emotional connection people have with their sports and fitness goals to create lasting relationships.",
   "company_summary": {
     "name": "Sports & Outdoor Brand",
     "website": "example-sports.com",
-    "activities": "Sports equipment, athletic apparel, and outdoor gear retail for various sports and fitness activities",
-    "target": "Athletes and fitness enthusiasts aged 18-50 pursuing active lifestyles, from casual fitness to competitive sports",
+    "activities": "Sports equipment, athletic apparel, footwear, outdoor gear, nutrition supplements, and fitness accessories for running, cycling, gym, team sports, outdoor adventure, and lifestyle fitness",
+    "target": "Athletes and fitness enthusiasts aged 18-50 pursuing active lifestyles, from casual fitness to competitive sports, outdoor adventurers, and weekend warriors",
     "industry": "Sports",
-    "business_model": "B2C Retail"
+    "business_model": "B2C Retail",
+    "customer_lifecycle_key_steps": "Discovery > Activity Profile > First Gear Purchase > Training Engagement > Gear Upgrade > Event Preparation > Athlete Status > Brand Ambassador"
   },
   "programs_list": [
     {
-      "program_name": "Welcome & Activity Profile",
-      "target": "New subscribers and first-time visitors",
-      "objective": "Understand customer sports interests and convert to first purchase within 21 days",
-      "kpi": "Activity profile completion, First purchase conversion, Category engagement",
-      "description": "A personalized welcome journey that identifies preferred sports and activities for targeted recommendations.",
+      "program_name": "Welcome & Activity Profile Discovery",
+      "target": "New subscribers and first-time website visitors",
+      "objective": "Build comprehensive activity profiles to understand sports preferences, fitness goals, and skill level, achieving 50% quiz completion and 25% first purchase conversion within 21 days with an average order value above $85",
+      "kpi": "Activity quiz completion rate (target: 50%), First purchase conversion (target: 25%), Average first order value (target: $85+), Email engagement rate (target: 38%)",
+      "description": "A comprehensive welcome journey that discovers each customer's athletic identity—from preferred sports and activities to fitness goals, training frequency, and skill level. Uses progressive profiling to build rich customer data that powers personalized gear recommendations, training content, and event suggestions across all future interactions.",
       "scenarios": [
         {
-          "scenario_target": "New email subscribers",
-          "scenario_objective": "Build activity profile and drive first purchase",
-          "main_messages_ideas": "Welcome + sports quiz, Gear recommendations, Training tips, First purchase offer",
+          "scenario_target": "New email subscribers from website, social media, or event registration",
+          "scenario_objective": "Convert to activity profile completion and first purchase",
+          "main_messages_ideas": "Warm welcome, activity quiz, personalized gear picks, training content, first order incentive",
           "message_sequence": [
             {
-              "title": "Welcome + Sports Quiz",
-              "description": "Immediate welcome with activity preference quiz",
-              "content": "Welcome to [Brand]! Tell us your sports for personalized gear picks"
+              "title": "Welcome to the Team",
+              "description": "Immediate welcome with brand story and quiz invitation",
+              "content": "Welcome to [Brand]! We're here to help you perform your best. Take our 2-minute Activity Profile Quiz to get personalized gear recommendations for your sport.",
+              "channel": "Email"
             },
             {
-              "title": "Your Gear Guide",
-              "description": "Day 3: Based on quiz results",
-              "content": "Top picks for your [Sport/Activity]"
+              "title": "Quick Profile Reminder",
+              "description": "Day 1: SMS reminder for non-completers",
+              "content": "Ready to gear up? Complete your activity profile in 2 minutes and unlock personalized picks for your sport: [Link]",
+              "channel": "SMS"
             },
             {
-              "title": "Training Content",
-              "description": "Day 7: Sport-specific training tips",
-              "content": "Level up your [Sport]: Pro tips and training advice"
+              "title": "Your Personalized Gear Guide",
+              "description": "Day 2: Curated recommendations based on quiz results",
+              "content": "Based on your activity profile, here's your personalized gear guide for [Sport/Activity]. From essentials to performance upgrades—we've got you covered.",
+              "channel": "Email"
             },
             {
-              "title": "First Purchase Offer",
-              "description": "Day 14: Incentive to buy",
-              "content": "Gear up with 15% off your first order"
+              "title": "Training Tips for [Sport]",
+              "description": "Day 5: Sport-specific content",
+              "content": "Level up your [Sport] with these pro tips. Plus, see the gear that elite athletes swear by for maximum performance.",
+              "channel": "Email"
+            },
+            {
+              "title": "Gear Up & Save",
+              "description": "Day 10: First purchase incentive",
+              "content": "Ready to perform? Get 15% off your first order + free shipping on orders over $75. Your personalized gear is waiting!",
+              "channel": "Email"
+            },
+            {
+              "title": "Last Chance: Welcome Offer Expiring",
+              "description": "Day 18: Urgency message for non-converters",
+              "content": "Your 15% welcome offer expires in 72 hours! Don't miss your chance to gear up for [Sport] at a special price.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Browse abandoners who viewed products without subscribing",
+          "scenario_objective": "Capture email and build profile",
+          "main_messages_ideas": "Product-based entry, sport exploration, exclusive access",
+          "message_sequence": [
+            {
+              "title": "The [Product] You Were Checking Out",
+              "description": "Triggered by browse abandonment with email capture",
+              "content": "Still thinking about [Browsed Product]? Here's everything you need to know about why athletes love it for [Sport].",
+              "channel": "Email"
+            },
+            {
+              "title": "More [Sport] Essentials",
+              "description": "Day 2: Category expansion",
+              "content": "Exploring [Sport]? Here's our complete collection of gear trusted by athletes at every level.",
+              "channel": "Email"
+            },
+            {
+              "title": "Join the Team",
+              "description": "Day 5: Profile completion incentive",
+              "content": "Complete your activity profile for early access to new releases, exclusive deals, and personalized training content.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Abandoned Cart & Browse Recovery",
+      "target": "Visitors who added items to cart or browsed extensively without purchasing",
+      "objective": "Recover 20% of abandoned carts within 48 hours and 10% of browse abandoners within 7 days",
+      "kpi": "Cart recovery rate (target: 20%), Browse recovery rate (target: 10%), Time to recovery (target: <48h for cart), Recovery AOV vs standard (target: +12%)",
+      "description": "Multi-channel recovery sequences that address common sports shopping hesitations—size/fit concerns, performance questions, and comparison shopping. Uses sport-specific messaging and urgency around training schedules and events.",
+      "scenarios": [
+        {
+          "scenario_target": "Cart abandoners with items totaling $50+",
+          "scenario_objective": "Recover cart within 24 hours",
+          "main_messages_ideas": "Product reminder, performance benefits, size guarantee, training motivation",
+          "message_sequence": [
+            {
+              "title": "Your Gear is Waiting",
+              "description": "1 hour after abandonment",
+              "content": "You left some gear behind! Your [Products] are saved and ready for checkout. Questions about size or fit? Our experts are here to help.",
+              "channel": "Email"
+            },
+            {
+              "title": "Quick Reminder",
+              "description": "4 hours: SMS for known mobile users",
+              "content": "Your [Product] is still in your cart! Complete your order before it sells out: [Link]",
+              "channel": "SMS"
+            },
+            {
+              "title": "Why Athletes Love This Gear",
+              "description": "Day 1: Social proof and performance focus",
+              "content": "[Products] in your cart have helped thousands of athletes improve their [Sport]. See what they're saying and why it's rated 4.8/5.",
+              "channel": "Email"
+            },
+            {
+              "title": "Free Shipping Unlocked",
+              "description": "Day 2: Incentive for $75+ carts",
+              "content": "Good news! We've unlocked free shipping on your order. Complete checkout in the next 24 hours to claim this offer.",
+              "channel": "Email"
+            },
+            {
+              "title": "Don't Miss Your Training",
+              "description": "Day 3: Urgency with training angle",
+              "content": "Still thinking about [Product]? Order now to get it before the weekend and not miss a training session.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Browse abandoners who viewed 3+ products without adding to cart",
+          "scenario_objective": "Drive return visit and product discovery",
+          "main_messages_ideas": "Sport highlights, comparison guides, fit finder, sampling opportunity",
+          "message_sequence": [
+            {
+              "title": "Still Exploring [Sport] Gear?",
+              "description": "Day 1: Sport-focused follow-up",
+              "content": "We noticed you were browsing [Sport] gear. Here's our buying guide to help you choose the right gear for your level and goals.",
+              "channel": "Email"
+            },
+            {
+              "title": "Find Your Perfect Fit",
+              "description": "Day 3: Fit finder tool",
+              "content": "Not sure about sizing? Our fit finder tool helps you get the perfect fit every time. Plus, free returns if it's not right.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bestsellers in [Sport]",
+              "description": "Day 5: Social proof and recommendations",
+              "content": "These [Sport] products have 1,000+ 5-star reviews from athletes like you. See what you've been missing.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Post-Purchase Experience & Training Activation",
+      "target": "Recent purchasers within 1-14 days of delivery",
+      "objective": "Maximize product satisfaction, drive training engagement with 45% open rate, and increase review submission to 15%",
+      "kpi": "Training content engagement (target: 45% open), Review submission rate (target: 15%), Second purchase within 45 days (target: 22%), Return rate (target: <8%)",
+      "description": "Comprehensive post-purchase journey that ensures customers get maximum value from their gear. Provides sport-specific training content, care instructions, and seeks feedback to drive satisfaction and repeat purchases.",
+      "scenarios": [
+        {
+          "scenario_target": "First-time buyers receiving their order",
+          "scenario_objective": "Ensure product success and drive second purchase",
+          "main_messages_ideas": "Delivery celebration, training activation, care tips, feedback request, cross-sell",
+          "message_sequence": [
+            {
+              "title": "Your Gear is On Its Way",
+              "description": "Shipping confirmation with anticipation builder",
+              "content": "Your [Products] are on their way! While you wait, here's how to break in your new gear and get the most out of your first session.",
+              "channel": "Email"
+            },
+            {
+              "title": "Delivery Notification",
+              "description": "Delivery confirmation",
+              "content": "Your [Brand] gear has arrived! Time to hit [Training]. Check out our quick-start guide to get the most from your new [Product].",
+              "channel": "SMS"
+            },
+            {
+              "title": "Your First Workout Guide",
+              "description": "Day 2 post-delivery: Sport-specific training",
+              "content": "Ready to train? Here's a [Sport]-specific workout designed to help you test your new gear and start seeing results.",
+              "channel": "Email"
+            },
+            {
+              "title": "How's Your New Gear?",
+              "description": "Day 7: Satisfaction check and review request",
+              "content": "You've had a week with your new [Products]. How's it performing? Share your experience and help fellow athletes choose their gear.",
+              "channel": "Email"
+            },
+            {
+              "title": "Complete Your Kit",
+              "description": "Day 12: Cross-sell complementary products",
+              "content": "Loving your [Purchased Products]? Here's what other [Sport] athletes pair with it for maximum performance.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Repeat purchasers expanding their gear collection",
+          "scenario_objective": "Deepen engagement and encourage sport exploration",
+          "main_messages_ideas": "Advanced training, gear deep-dives, community features, cross-sport exploration",
+          "message_sequence": [
+            {
+              "title": "Advanced Training with Your Gear",
+              "description": "Day 3: Performance optimization tips",
+              "content": "You've got the basics down. Here are advanced techniques to maximize your [Product] performance and take your [Sport] to the next level.",
+              "channel": "Email"
+            },
+            {
+              "title": "The Tech Behind Your Gear",
+              "description": "Day 7: Product deep-dive",
+              "content": "Discover the technology and innovation behind your [Product]. Learn how it's engineered for peak performance.",
+              "channel": "Email"
+            },
+            {
+              "title": "Join the Community",
+              "description": "Day 12: Community invitation",
+              "content": "Share your progress! Tag us with #[BrandName] or join our athlete community for training tips, challenges, and exclusive content.",
+              "channel": "Email"
             }
           ]
         }
@@ -47,35 +231,76 @@
     },
     {
       "program_name": "Seasonal Sport Preparation",
-      "target": "Customers based on their sport preferences",
-      "objective": "Drive seasonal gear purchases before each sport's peak season",
-      "kpi": "Pre-season conversion rate, Average order value, Early season revenue",
-      "description": "Timely campaigns to help athletes prepare for their upcoming sports seasons with the right gear.",
+      "target": "Customers based on their sport preferences and seasonal activities",
+      "objective": "Achieve 30% pre-season purchase rate, increase seasonal AOV by 25%, and capture 40% of seasonal gear budget",
+      "kpi": "Pre-season conversion rate (target: 30%), Seasonal AOV increase (target: +25%), Early season revenue share (target: 40%), Season-specific engagement (target: 35%)",
+      "description": "Strategic campaigns to help athletes prepare for their upcoming sports seasons with the right gear. Timing varies by sport—winter sports prep in fall, cycling season in spring, marathon training in summer—to catch customers before peak demand.",
       "scenarios": [
         {
-          "scenario_target": "Winter sports enthusiasts",
-          "scenario_objective": "Drive pre-season ski/snowboard gear purchases",
-          "main_messages_ideas": "Season prep checklist, New gear showcase, Early bird deals, Tune-up reminders",
+          "scenario_target": "Winter sports enthusiasts (ski, snowboard, nordic)",
+          "scenario_objective": "Drive pre-season gear purchases and tune-ups",
+          "main_messages_ideas": "Season prep checklist, new gear showcase, early bird deals, tune-up reminders",
           "message_sequence": [
             {
-              "title": "Season Prep",
-              "description": "8 weeks before season start",
-              "content": "Winter is coming! Get your ski gear ready"
+              "title": "Winter Season Prep Checklist",
+              "description": "10 weeks before season: Planning phase",
+              "content": "Winter is coming! Here's your complete season prep checklist—from gear inspection to waxing and binding checks. Plus, see what's new for [Season].",
+              "channel": "Email"
             },
             {
-              "title": "New Season Gear",
-              "description": "6 weeks before season",
-              "content": "New arrivals: [Season] collection is here"
+              "title": "New Season Collection",
+              "description": "8 weeks before: New arrivals",
+              "content": "The [Year] winter collection is here! From next-gen skis to heated gear, discover innovations that'll transform your season.",
+              "channel": "Email"
             },
             {
-              "title": "Early Bird Deals",
-              "description": "4 weeks before season",
-              "content": "Early bird special: 20% off winter gear this week only"
+              "title": "Early Bird Special",
+              "description": "6 weeks before: Pre-season savings",
+              "content": "Beat the rush! Get 20% off winter gear this week only. Early birds get the best selection and guaranteed delivery before first powder.",
+              "channel": "Email"
             },
             {
-              "title": "Last Chance",
-              "description": "2 weeks before season",
-              "content": "Season starts soon! Last chance for pre-season deals"
+              "title": "Tune-Up Reminder",
+              "description": "4 weeks before: Service reminder",
+              "content": "Don't forget to tune your gear! Book a tune-up now to avoid the pre-season rush. Sharp edges and fresh wax make all the difference.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Season Starts This Week",
+              "description": "1 week before opening: Last call",
+              "content": "Resorts open in days! Last chance for pre-season deals. Get everything you need for day one.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cycling and outdoor enthusiasts (spring/summer sports)",
+          "scenario_objective": "Drive seasonal gear purchases and upgrades",
+          "main_messages_ideas": "Spring refresh, bike tune-up, summer collection, event preparation",
+          "message_sequence": [
+            {
+              "title": "Spring Cycling Preview",
+              "description": "8 weeks before season: Planning phase",
+              "content": "Spring riding season is almost here! Time to dust off your bike and check your gear. Here's our pre-season checklist and newest arrivals.",
+              "channel": "Email"
+            },
+            {
+              "title": "New Arrivals for [Sport]",
+              "description": "6 weeks before: Collection launch",
+              "content": "Fresh gear for a fresh season! Explore our new [Sport] collection—from lightweight jerseys to performance upgrades.",
+              "channel": "Email"
+            },
+            {
+              "title": "Pre-Season Service Special",
+              "description": "4 weeks before: Tune-up promotion",
+              "content": "Get your bike race-ready! Book a tune-up this week and save 15%. Includes full inspection, adjustment, and cleaning.",
+              "channel": "Email"
+            },
+            {
+              "title": "Season Kickoff Sale",
+              "description": "2 weeks before: Launch sale",
+              "content": "The season is HERE! Celebrate with 20% off select cycling gear. Get out there and enjoy the ride.",
+              "channel": "SMS"
             }
           ]
         }
@@ -83,102 +308,568 @@
     },
     {
       "program_name": "Event & Race Marketing",
-      "target": "Competitive athletes and event participants",
-      "objective": "Drive purchases around major sporting events and races",
-      "kpi": "Event-related revenue, Race day kit purchases, Event registrations",
-      "description": "Targeted campaigns around major sporting events, marathons, and competitions.",
+      "target": "Competitive athletes, event participants, and goal-oriented fitness enthusiasts",
+      "objective": "Drive 40% of event registrants to purchase gear, achieve 35% race-day kit conversion, and capture 80% of training period engagement",
+      "kpi": "Event registrant purchase rate (target: 40%), Race-day kit conversion (target: 35%), Training period engagement (target: 80%), Post-event upsell rate (target: 20%)",
+      "description": "Targeted campaigns around major sporting events, marathons, triathlons, and competitions. Supports athletes from registration through training to race day and recovery, with personalized content and gear recommendations at each phase.",
       "scenarios": [
         {
-          "scenario_target": "Marathon runners and registered race participants",
-          "scenario_objective": "Maximize race-day gear and nutrition purchases",
-          "main_messages_ideas": "Race day essentials, Training countdown, Nutrition guide, Post-race recovery",
+          "scenario_target": "Marathon and distance running event participants",
+          "scenario_objective": "Maximize training and race-day gear purchases",
+          "main_messages_ideas": "Training plan, nutrition guide, race day essentials, post-race recovery",
           "message_sequence": [
             {
-              "title": "Training Gear",
-              "description": "12 weeks before event",
-              "content": "Training for [Event]? Here's your essential gear list"
+              "title": "Your [Event] Training Starts Now",
+              "description": "16 weeks before event: Training kickoff",
+              "content": "You're registered for [Event]! Here's your 16-week training roadmap and the gear that'll help you crush your goals.",
+              "channel": "Email"
             },
             {
-              "title": "Race Day Prep",
-              "description": "4 weeks before event",
-              "content": "4 weeks to go! Race day essentials checklist"
+              "title": "Training Milestone: Week 8",
+              "description": "8 weeks before: Mid-training check-in",
+              "content": "Halfway there! Here's how to optimize your training with the right nutrition, recovery, and gear upgrades.",
+              "channel": "Email"
             },
             {
-              "title": "Final Countdown",
-              "description": "1 week before event",
-              "content": "Race week! Last-minute gear and nutrition picks"
+              "title": "Race Day Essentials Checklist",
+              "description": "4 weeks before: Race prep",
+              "content": "4 weeks to [Event]! Here's your complete race day essentials checklist. Don't leave anything to chance.",
+              "channel": "Email"
             },
             {
-              "title": "Post-Race Recovery",
-              "description": "Day after event",
-              "content": "Congrats on [Event]! Recovery essentials for your next challenge"
+              "title": "Final Week: You've Got This",
+              "description": "1 week before: Taper week",
+              "content": "Race week is here! Final tips for peak performance, plus last-minute gear you might need.",
+              "channel": "Email"
+            },
+            {
+              "title": "Race Day: Good Luck!",
+              "description": "Day of event: Race day message",
+              "content": "It's [Event] day! You've trained hard, you're ready. Go crush it! We'll be cheering you on. Share your finish time with us!",
+              "channel": "SMS"
+            },
+            {
+              "title": "Congrats, Finisher!",
+              "description": "Day after event: Post-race",
+              "content": "You did it! Congratulations on completing [Event]! Here's your recovery toolkit and gear for your next challenge.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Triathlon and multi-sport event participants",
+          "scenario_objective": "Drive multi-discipline gear purchases",
+          "main_messages_ideas": "Tri-specific gear, transition optimization, sport-by-sport guides, race day logistics",
+          "message_sequence": [
+            {
+              "title": "Your Tri Training Plan",
+              "description": "12 weeks before: Training start",
+              "content": "Let's get you ready for [Event]! Here's your training plan with gear recommendations for swim, bike, and run.",
+              "channel": "Email"
+            },
+            {
+              "title": "Swim Gear Deep-Dive",
+              "description": "10 weeks: Discipline focus",
+              "content": "This month's focus: Swim. Here's how to choose the right wetsuit, goggles, and accessories for open water.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bike Optimization",
+              "description": "8 weeks: Discipline focus",
+              "content": "Time to dial in your bike leg. From aero upgrades to nutrition strategy—everything you need for your fastest bike split.",
+              "channel": "Email"
+            },
+            {
+              "title": "Run to the Finish",
+              "description": "6 weeks: Discipline focus",
+              "content": "The run is where races are won. Here's how to optimize your run gear and strategy for a strong finish.",
+              "channel": "Email"
+            },
+            {
+              "title": "Transition Mastery",
+              "description": "3 weeks: Race logistics",
+              "content": "Fast transitions can save you minutes! Here's your T1 and T2 optimization guide with essential gear.",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Gear Upgrade & Replacement",
-      "target": "Customers with aging equipment",
-      "objective": "Drive timely gear upgrades and replacements",
-      "kpi": "Upgrade conversion rate, Replacement timing, Trade-in participation",
-      "description": "Automated reminders based on typical gear lifespan and usage patterns.",
+      "program_name": "Gear Upgrade & Replacement Cycle",
+      "target": "Customers with aging equipment based on product lifecycle and usage patterns",
+      "objective": "Achieve 25% upgrade conversion rate, maintain 80% replacement timing accuracy, and increase trade-in participation to 15%",
+      "kpi": "Upgrade conversion rate (target: 25%), Replacement timing accuracy (target: 80%), Trade-in participation (target: 15%), Upgrade AOV vs original (target: +20%)",
+      "description": "Intelligent upgrade and replacement system based on product lifecycles—running shoes (300-500 miles/6-8 months), helmets (3-5 years or after impact), bikes (maintenance cycles). Proactive outreach before gear failure impacts performance or safety.",
       "scenarios": [
         {
-          "scenario_target": "Running shoe purchasers (6+ months ago)",
-          "scenario_objective": "Drive shoe replacement at optimal timing",
-          "main_messages_ideas": "Mileage check, New model features, Trade-in value, Upgrade benefits",
+          "scenario_target": "Running shoe purchasers (based on mileage/time)",
+          "scenario_objective": "Drive timely shoe replacement before performance decline",
+          "main_messages_ideas": "Mileage check, wear signs, new model features, trade-in value",
           "message_sequence": [
             {
-              "title": "Mileage Check",
-              "description": "6 months after purchase",
-              "content": "How are your shoes holding up? Signs it's time for new ones"
+              "title": "Mileage Check: How Are Your Shoes?",
+              "description": "5 months after purchase: Early check-in",
+              "content": "You've been training in your [Shoe Model] for about 5 months. Here's how to check if they still have miles left—and when to consider new ones.",
+              "channel": "Email"
             },
             {
-              "title": "New Model Alert",
-              "description": "When new version releases",
-              "content": "The new [Shoe Model] is here - see what's improved"
+              "title": "Signs It's Time for New Shoes",
+              "description": "6-7 months: Educational content",
+              "content": "Running in worn shoes increases injury risk. Here are the signs to look for and why fresh cushioning matters for your joints.",
+              "channel": "Email"
             },
             {
-              "title": "Upgrade Offer",
-              "description": "8 months after purchase",
-              "content": "Time for fresh kicks? Save 20% on your next pair"
+              "title": "The New [Shoe Model] Is Here",
+              "description": "When new model releases or 8 months",
+              "content": "Meet the new [Shoe Model]! See what's improved and why runners are calling it the best version yet.",
+              "channel": "Email"
+            },
+            {
+              "title": "Upgrade Offer: 20% Off Your Next Pair",
+              "description": "8 months: Upgrade incentive",
+              "content": "Time for fresh kicks? Get 20% off your next pair of running shoes. Plus, earn $15 when you recycle your old ones.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Cycling and helmet purchasers (safety equipment)",
+          "scenario_objective": "Drive timely safety gear replacement",
+          "main_messages_ideas": "Safety check, technology upgrades, recall awareness, replacement incentive",
+          "message_sequence": [
+            {
+              "title": "Annual Safety Gear Check",
+              "description": "12 months after purchase",
+              "content": "It's been a year since you got your [Helmet/Safety Gear]. Here's how to inspect it for wear and ensure it's still protecting you.",
+              "channel": "Email"
+            },
+            {
+              "title": "Helmet Technology Has Advanced",
+              "description": "2-3 years: Technology update",
+              "content": "Safety tech has come a long way since you bought your helmet. See the latest innovations in protection, ventilation, and comfort.",
+              "channel": "Email"
+            },
+            {
+              "title": "Time to Replace Your Helmet",
+              "description": "4-5 years or post-impact: Replacement reminder",
+              "content": "Helmets should be replaced every 5 years or after any impact. Your safety is worth it. Get 25% off a new helmet this month.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Multi-purchase customers with complete gear sets",
+          "scenario_objective": "Drive systematic gear refresh and upgrades",
+          "main_messages_ideas": "Gear audit, upgrade path, trade-in program, bundle savings",
+          "message_sequence": [
+            {
+              "title": "Your Gear Health Report",
+              "description": "Annual: Comprehensive gear review",
+              "content": "Here's your annual gear health report based on your purchases. See what's due for replacement and what upgrades could improve your performance.",
+              "channel": "Email"
+            },
+            {
+              "title": "Trade-In & Upgrade Program",
+              "description": "For high-value items",
+              "content": "Ready to upgrade? Trade in your current [Product] for credit toward the latest model. We'll recycle it responsibly.",
+              "channel": "Email"
+            },
+            {
+              "title": "Bundle & Save on Your Refresh",
+              "description": "When multiple items due",
+              "content": "Multiple items due for replacement? Bundle them together and save 25% on your complete gear refresh.",
+              "channel": "Email"
             }
           ]
         }
       ]
     },
     {
-      "program_name": "Community & Athlete Loyalty",
-      "target": "Active customers and brand advocates",
-      "objective": "Build brand community and increase customer lifetime value",
-      "kpi": "Community engagement, Repeat purchase rate, Referral conversions",
-      "description": "Loyalty program with athlete perks, exclusive access, and community features.",
+      "program_name": "Training Content & Performance Programs",
+      "target": "Engaged customers who interact with training content or have performance goals",
+      "objective": "Achieve 55% training content engagement rate, drive 30% increase in sport-category purchases, and increase time-on-site by 40%",
+      "kpi": "Training content engagement (target: 55%), Sport-category purchase lift (target: +30%), Time-on-site increase (target: +40%), Content shares (target: 12%)",
+      "description": "Content-rich program that positions the brand as a performance partner. Provides sport-specific training plans, technique tutorials, nutrition guides, and gear education to drive product discovery and deepen brand relationship.",
       "scenarios": [
         {
-          "scenario_target": "High-value repeat customers",
-          "scenario_objective": "Convert to brand ambassadors and community members",
-          "main_messages_ideas": "VIP athlete status, Exclusive drops, Community events, Referral rewards",
+          "scenario_target": "Goal-oriented athletes with training objectives",
+          "scenario_objective": "Support goals with content and relevant gear",
+          "main_messages_ideas": "Personalized training plans, weekly workouts, progress tracking, gear recommendations",
           "message_sequence": [
             {
-              "title": "Athlete Status",
-              "description": "Upon reaching VIP threshold",
-              "content": "You've earned Athlete Status! Welcome to the [Brand] team"
+              "title": "Your Personalized Training Plan",
+              "description": "After goal identification",
+              "content": "Based on your goal to [Goal], here's your personalized 8-week training plan. Each week includes workouts, nutrition tips, and gear recommendations.",
+              "channel": "Email"
             },
             {
-              "title": "Exclusive Access",
-              "description": "Monthly VIP email",
-              "content": "Athletes First: Early access to new releases"
+              "title": "This Week's Training Focus",
+              "description": "Weekly: Training content",
+              "content": "Week [X] Focus: [Training Theme]. Here are your workouts, a technique tutorial, and this week's gear spotlight.",
+              "channel": "Email"
             },
             {
-              "title": "Community Event",
-              "description": "Event invitations",
-              "content": "You're invited: [Brand] community run/ride/workout"
+              "title": "Progress Check-In",
+              "description": "Bi-weekly: Progress engagement",
+              "content": "How's your training going? Log your progress and see how you compare to athletes with similar goals. Plus, tips to overcome plateaus.",
+              "channel": "Email"
             },
             {
-              "title": "Referral Launch",
-              "description": "Introduce referral program",
-              "content": "Train together: Give $20, Get $20 for every friend who joins"
+              "title": "Gear to Support Your Progress",
+              "description": "When reaching milestones",
+              "content": "You're making great progress! Here's gear that athletes at your level use to break through to the next level.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Sport enthusiasts interested in learning and improving",
+          "scenario_objective": "Build engagement through educational content",
+          "main_messages_ideas": "Technique tutorials, pro athlete tips, sport science, equipment education",
+          "message_sequence": [
+            {
+              "title": "Master [Technique] Like a Pro",
+              "description": "Weekly educational content",
+              "content": "This week: Master [Technique]. Watch our step-by-step tutorial featuring pro athlete [Name] and shop the gear they recommend.",
+              "channel": "Email"
+            },
+            {
+              "title": "The Science of [Sport]",
+              "description": "Bi-weekly: Sport science content",
+              "content": "Why does [Scientific Concept] matter for [Sport]? Understand the science and see how the right gear maximizes your performance.",
+              "channel": "Email"
+            },
+            {
+              "title": "Pro Athlete Gear Talk",
+              "description": "Monthly: Athlete features",
+              "content": "What's in [Pro Athlete]'s bag? See their complete gear setup and learn why they choose each piece.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Loyalty & Athlete Rewards Program",
+      "target": "Repeat customers with 2+ purchases and loyalty program members",
+      "objective": "Achieve 55% loyalty enrollment, 82% member retention, and 50% higher LTV for top-tier members",
+      "kpi": "Loyalty enrollment rate (target: 55%), Member retention rate (target: 82%), Top-tier LTV vs regular (target: +50%), Points redemption rate (target: 70%)",
+      "description": "Tiered loyalty program built around athletic achievement—from Rookie to Pro to Elite Athlete. Members earn points on purchases, workouts logged, and event completions, with rewards including exclusive gear, pro athlete meet-ups, VIP event access, and sponsored race entries.",
+      "scenarios": [
+        {
+          "scenario_target": "New loyalty program members (Rookie tier)",
+          "scenario_objective": "Drive engagement and progression to higher tiers",
+          "main_messages_ideas": "Welcome to program, earning opportunities, first redemption, tier progression",
+          "message_sequence": [
+            {
+              "title": "Welcome to [Program Name], Rookie!",
+              "description": "Enrollment confirmation",
+              "content": "You're officially a [Brand] Rookie! Here's how to earn points on purchases, workouts, and events—plus your first 200 bonus points to start.",
+              "channel": "Email"
+            },
+            {
+              "title": "Quick Points: Log Your Workout",
+              "description": "Day 5: Easy earning opportunity",
+              "content": "Earn 50 points in seconds! Connect your fitness tracker or log a workout manually. Every mile counts toward rewards.",
+              "channel": "Email"
+            },
+            {
+              "title": "You're [X] Points from Pro Status",
+              "description": "Progress update",
+              "content": "You're crushing it! Just [X] points until Pro status. Unlock free shipping, exclusive gear drops, and double points days.",
+              "channel": "Email"
+            },
+            {
+              "title": "Level Up to Pro Athlete",
+              "description": "When approaching tier threshold",
+              "content": "Almost there! One more purchase puts you at Pro Athlete status with premium perks and exclusive access.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Top-tier members (Elite Athlete status)",
+          "scenario_objective": "Maximize retention and exclusivity benefits",
+          "main_messages_ideas": "Exclusive access, athlete experiences, sponsored entries, personalized service",
+          "message_sequence": [
+            {
+              "title": "Elite Early Access: [Product]",
+              "description": "72-hour exclusive access to new/limited products",
+              "content": "As an Elite Athlete, you get 72-hour early access to [New Product]. Shop now before the Pro tier gets access.",
+              "channel": "Email"
+            },
+            {
+              "title": "Elite Exclusive: Pro Athlete Experience",
+              "description": "VIP experience invitation",
+              "content": "You're invited to train with [Pro Athlete]! This exclusive Elite-only event includes a training session, Q&A, and gear signing.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sponsored Entry: [Event]",
+              "description": "Elite race entry benefit",
+              "content": "Your Elite status includes one sponsored race entry per year. Claim your free entry to [Event] and represent [Brand]!",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Elite Status Summary",
+              "description": "Quarterly Elite status update",
+              "content": "Elite Athlete Quarterly: [X] points earned, [X] workouts logged, [X] events completed. Your exclusive Elite perks for next quarter: [Benefits].",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Re-Engagement",
+      "target": "Lapsed customers with no purchase in 90-270 days",
+      "objective": "Reactivate 18% of lapsed customers and maintain sport-specific relevance in messaging",
+      "kpi": "Lapsed customer reactivation rate (target: 18%), Win-back campaign ROI (target: 5:1), Reactivation-to-retention (target: 55%), Sport-specific message engagement (target: 25%)",
+      "description": "Strategic re-engagement sequences for different lapse periods and customer segments. Uses sport-specific messaging, seasonal timing, and training/event calendars to find relevant re-engagement moments.",
+      "scenarios": [
+        {
+          "scenario_target": "90-150 day lapsed customers (sport-season based)",
+          "scenario_objective": "Re-engage with seasonal and sport relevance",
+          "main_messages_ideas": "Season-based, new products in their sport, training content, soft incentive",
+          "message_sequence": [
+            {
+              "title": "[Sport] Season is Coming",
+              "description": "Timed with sport season: Re-engagement",
+              "content": "[Sport] season is almost here! Here's what's new since your last visit—including gear that'll help you start strong.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your [Sport] Gear Refresh",
+              "description": "Day 110: Sport-specific recommendations",
+              "content": "Time for a gear refresh? Based on your past [Sport] purchases, here are upgrades that other athletes are loving.",
+              "channel": "Email"
+            },
+            {
+              "title": "Welcome Back: 15% Off",
+              "description": "Day 130: First incentive",
+              "content": "We miss you on the [trail/court/road]! Here's 15% off to help you gear up for the season ahead.",
+              "channel": "Email"
+            }
+          ]
+        },
+        {
+          "scenario_target": "180-270 day lapsed customers (deep lapse)",
+          "scenario_objective": "Aggressive win-back with strong incentive",
+          "main_messages_ideas": "Significant offer, innovation highlights, goal-setting, final attempt",
+          "message_sequence": [
+            {
+              "title": "We Want You Back: 25% Off",
+              "description": "Day 180: Strong incentive",
+              "content": "It's been a while! Here's 25% off your entire order—no minimum. Plus see the innovations you've missed in [Sport] gear.",
+              "channel": "Email"
+            },
+            {
+              "title": "Set a New Goal with Us",
+              "description": "Day 210: Goal-oriented approach",
+              "content": "Ready to set a new personal best? Tell us your next goal and we'll help you get there with personalized gear recommendations.",
+              "channel": "Email"
+            },
+            {
+              "title": "Final Offer: 30% Off Everything",
+              "description": "Day 250: Last attempt",
+              "content": "Last chance: 30% off + free shipping. If you're no longer active in [Sport], let us know—we'll update your preferences.",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Referral & Athlete Advocacy Program",
+      "target": "Satisfied athletes with high engagement, event completions, or strong community presence",
+      "objective": "Generate 22% of new customers from referrals with 30% higher LTV for referred customers and 18% referral participation rate",
+      "kpi": "New customer referral rate (target: 22%), Referred customer LTV vs organic (target: +30%), Referral participation rate (target: 18%), Average referrals per advocate (target: 4)",
+      "description": "Two-sided referral program targeting athletes at peak satisfaction moments—post-event, after goal achievement, when sharing workout milestones. Makes sharing easy through training apps, social media, and event communities.",
+      "scenarios": [
+        {
+          "scenario_target": "Post-event and achievement moments",
+          "scenario_objective": "Capture referrals at peak satisfaction",
+          "main_messages_ideas": "Share your success, team up savings, training partner bonus, social sharing",
+          "message_sequence": [
+            {
+              "title": "Congrats on [Event/Achievement]! Share the Win",
+              "description": "Day 1 after event completion or goal achievement",
+              "content": "Amazing job on [Event/Achievement]! Share [Brand] with your training partners: Give $25, Get $25 when they make their first purchase.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Referral Link is Ready",
+              "description": "Day 3: Easy sharing tools",
+              "content": "Share your unique link on Strava, social media, or directly with training buddies. Track your referrals and rewards in your account.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Training Partner Just Joined!",
+              "description": "Triggered by referral conversion",
+              "content": "Your referral just made their first purchase! $25 credit has been added to your account. Train together, save together!",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Active community members and team captains",
+          "scenario_objective": "Build team and club ambassador program",
+          "main_messages_ideas": "Team discounts, club ambassador status, bulk ordering, group gear",
+          "message_sequence": [
+            {
+              "title": "Become a Team Ambassador",
+              "description": "For customers who've referred 3+ athletes",
+              "content": "You've referred 3 athletes! Welcome to our Team Ambassador program. Unlock bulk ordering, team discounts, and custom gear options.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Club Discount Code",
+              "description": "Ambassador tool",
+              "content": "Share your custom Team Ambassador code with your club or training group. They save 15%, you earn $30 per order.",
+              "channel": "Email"
+            },
+            {
+              "title": "Your Ambassador Impact",
+              "description": "Quarterly summary",
+              "content": "This quarter: [X] athletes joined through you, [X] in rewards earned. You're helping build a community of better athletes!",
+              "channel": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Birthday & Athletic Milestones",
+      "target": "All customers with birthday data, plus tracked athletic milestones",
+      "objective": "Achieve 48% birthday offer redemption rate, 35% milestone celebration engagement, and 25% higher AOV on celebration orders",
+      "kpi": "Birthday offer redemption (target: 48%), Milestone engagement (target: 35%), Celebration AOV vs regular (target: +25%), Milestone data capture (target: 55%)",
+      "description": "Celebration-focused program that recognizes birthdays, athletic achievements (first 5K, marathon PR, 1000-mile club), and customer anniversaries with personalized offers and congratulatory messages.",
+      "scenarios": [
+        {
+          "scenario_target": "Customers approaching birthday",
+          "scenario_objective": "Drive birthday celebration purchase",
+          "main_messages_ideas": "Birthday reward, treat yourself, new gear for new year",
+          "message_sequence": [
+            {
+              "title": "Your Birthday Month: Gear Up!",
+              "description": "First day of birthday month",
+              "content": "Happy birthday month, athlete! Here's 25% off to treat yourself to new gear. Because you deserve to celebrate your way.",
+              "channel": "Email"
+            },
+            {
+              "title": "Birthday Week Picks",
+              "description": "1 week before birthday",
+              "content": "Birthday countdown! Your 25% off is waiting. Here are top picks based on your sport and style preferences.",
+              "channel": "Email"
+            },
+            {
+              "title": "Happy Birthday!",
+              "description": "Day of birthday",
+              "content": "Happy Birthday from all of us at [Brand]! Use your special discount this week—you've earned it!",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Athletes reaching performance milestones",
+          "scenario_objective": "Celebrate and reward athletic achievements",
+          "main_messages_ideas": "PR celebration, distance milestones, event completions, streak achievements",
+          "message_sequence": [
+            {
+              "title": "You Crushed Your PR!",
+              "description": "Triggered by tracked PR achievement",
+              "content": "NEW PR! Congratulations on your [Distance/Event] personal best! Here's a special reward to celebrate—20% off your next gear upgrade.",
+              "channel": "Email"
+            },
+            {
+              "title": "Welcome to the [1000-Mile] Club",
+              "description": "Distance milestones (connected trackers)",
+              "content": "You've logged [X] miles with [Brand] gear! You're officially in the [X]-Mile Club. Here's your exclusive member reward.",
+              "channel": "Email"
+            },
+            {
+              "title": "[X] Events Completed!",
+              "description": "Event count milestones",
+              "content": "[X] races. [X] finish lines. [X] memories. Congratulations on your [X]th event completion! Here's a finisher's reward.",
+              "channel": "Email"
+            },
+            {
+              "title": "[30] Day Streak Achieved!",
+              "description": "Workout streak milestones",
+              "content": "[30] days straight! Your dedication is inspiring. Keep the streak going with new gear—here's 15% off to fuel your momentum.",
+              "channel": "SMS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "New Product Launch & Limited Releases",
+      "target": "Engaged customers and loyalty members based on sport alignment",
+      "objective": "Achieve 38% early access conversion rate, sell out limited releases within 48 hours, and generate 55% of launch revenue from loyal customers",
+      "kpi": "Early access conversion rate (target: 38%), Limited release sell-through time (target: <48h), Launch revenue from loyal customers (target: 55%), Pre-order rate (target: 22%)",
+      "description": "Strategic new product launch sequences with tiered early access (Elite first, then Pro, then Rookie, then general). Creates excitement around athlete collaborations, limited-edition gear, and seasonal innovations while rewarding loyal athletes.",
+      "scenarios": [
+        {
+          "scenario_target": "Sport-matched customers for new product launches",
+          "scenario_objective": "Drive launch sales with performance relevance",
+          "main_messages_ideas": "Innovation preview, athlete endorsement, early access, performance benefits",
+          "message_sequence": [
+            {
+              "title": "Sneak Peek: [New Product] Is Coming",
+              "description": "1 week before launch: Preview",
+              "content": "Something big is coming for [Sport]. Based on your activity profile, we think [New Product] will transform your performance. Launching [Date].",
+              "channel": "Email"
+            },
+            {
+              "title": "[Pro Athlete] on [New Product]",
+              "description": "3 days before: Athlete endorsement",
+              "content": "See why [Pro Athlete] calls [New Product] a game-changer. Watch their exclusive review and learn what makes it different.",
+              "channel": "Email"
+            },
+            {
+              "title": "Early Access: [New Product] Is Live",
+              "description": "Launch day: Tiered early access",
+              "content": "You're in! [New Product] is available NOW for [Tier] members. Shop early before it opens to the next tier in 24 hours.",
+              "channel": "Email"
+            },
+            {
+              "title": "[New Product] Now Available",
+              "description": "Public launch",
+              "content": "[New Product] is officially here! Limited quantities available—order now to be among the first to perform with it.",
+              "channel": "SMS"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Limited edition and athlete collaboration enthusiasts",
+          "scenario_objective": "Create urgency and maximize limited release sales",
+          "main_messages_ideas": "Scarcity messaging, athlete signature series, pre-order opportunity, collectibility",
+          "message_sequence": [
+            {
+              "title": "Limited Edition Alert: [Athlete] Signature Series",
+              "description": "Announcement with scarcity",
+              "content": "Only 500 available: The [Athlete] Signature [Product]. Designed with [Athlete] and built for peak performance. When it's gone, it's gone.",
+              "channel": "Email"
+            },
+            {
+              "title": "Pre-Order Now",
+              "description": "Pre-order opening",
+              "content": "Secure yours now! Pre-order the [Athlete] Signature Series to guarantee delivery before they sell out.",
+              "channel": "SMS"
+            },
+            {
+              "title": "70% Sold: [X] Units Left",
+              "description": "Scarcity update",
+              "content": "The [Athlete] Signature [Product] is 70% sold! Only [X] remaining. Don't miss your chance to own a piece of athletic history.",
+              "channel": "Email"
+            },
+            {
+              "title": "Sold Out: Join Waitlist",
+              "description": "After sell-out",
+              "content": "[Product] sold out in [X] hours! Join the waitlist to be notified if we get more, or when the next drop launches.",
+              "channel": "Email"
             }
           ]
         }
@@ -188,22 +879,34 @@
   "how_brevo_helps_you": [
     {
       "scenario_name": "Welcome & Activity Profile",
-      "why_brevo_is_better": "Brevo's survey integration and dynamic segmentation allow you to build detailed activity profiles that power personalized product recommendations across the customer journey.",
-      "omnichannel_channels": "Email for detailed gear guides + SMS for flash sales and restock alerts",
-      "setup_efficiency": "Pre-built sports industry templates with activity-based segmentation get you started quickly."
+      "why_brevo_is_better": "Brevo's survey integration and dynamic segmentation build detailed activity profiles that power personalized product recommendations across the customer journey. Multi-sport customers can receive relevant content for each activity without overwhelming them.",
+      "omnichannel_channels": "Email for detailed gear guides and training content + SMS for flash sales and restock alerts + Push for limited release notifications",
+      "setup_efficiency": "Pre-built sports industry templates with activity-based segmentation and sport-specific branching logic get you personalized in days."
     },
     {
       "scenario_name": "Seasonal Sport Preparation",
-      "why_brevo_is_better": "Calendar-based automation triggers enable perfectly timed seasonal campaigns that reach athletes when they're ready to buy.",
-      "omnichannel_channels": "Email for seasonal lookbooks + SMS for limited-time deals + Push for early access",
-      "setup_efficiency": "Create seasonal campaigns once and schedule them to recur annually with automated triggers."
+      "why_brevo_is_better": "Calendar-based automation triggers enable perfectly timed seasonal campaigns that reach athletes when they're planning and shopping. Sport-specific segments ensure winter athletes don't get summer content.",
+      "omnichannel_channels": "Email for seasonal lookbooks and prep checklists + SMS for limited-time pre-season deals + Push for early access notifications",
+      "setup_efficiency": "Create seasonal campaigns once with recurring annual triggers. Brevo automatically adjusts timing based on customer time zones and sport preferences."
     },
     {
       "scenario_name": "Event & Race Marketing",
-      "why_brevo_is_better": "Event-based segmentation and countdown automation help you build race-day excitement and drive timely purchases.",
-      "omnichannel_channels": "Email for training content + SMS for race week reminders + Push for real-time alerts",
-      "setup_efficiency": "Integration with event registration platforms enables automatic trigger setup."
+      "why_brevo_is_better": "Event-based segmentation and countdown automation build race-day excitement with perfectly timed training content and gear recommendations. Integration with event registration platforms enables automatic trigger setup.",
+      "omnichannel_channels": "Email for training plans and nutrition guides + SMS for race week reminders and live tracking + Push for post-event congratulations",
+      "setup_efficiency": "Connect your event partner data and let Brevo automatically enroll participants in event-specific journeys with personalized countdown sequences."
+    },
+    {
+      "scenario_name": "Gear Upgrade & Replacement",
+      "why_brevo_is_better": "Product-based lifecycle triggers automate replacement reminders based on purchase date, product category, and typical usage patterns. Safety-critical items like helmets get priority reminders.",
+      "omnichannel_channels": "Email for detailed upgrade comparisons and tech updates + SMS for urgent safety reminders + Push for trade-in program alerts",
+      "setup_efficiency": "Set replacement windows by product category once and let Brevo handle all timing, segmentation, and escalation based on customer engagement."
+    },
+    {
+      "scenario_name": "Loyalty & Athlete Rewards",
+      "why_brevo_is_better": "Brevo's loyalty integration tracks points across purchases, workouts, and events with automated tier progression and reward notifications. Integration with fitness trackers enables workout-based earning.",
+      "omnichannel_channels": "Email for tier updates and reward catalogs + SMS for points balance and redemption alerts + Push for exclusive drop notifications + App for workout logging",
+      "setup_efficiency": "Pre-configured loyalty triggers, tier thresholds, and reward catalogs get your program live quickly. Automated reporting shows ROI by tier and sport category."
     }
   ],
-  "conclusion": "Sports and outdoor retailers that implement these relationship marketing programs can expect higher customer lifetime value through timely gear replacement, stronger community engagement, and increased seasonal sales through well-timed preparation campaigns."
+  "conclusion": "Sports and outdoor retailers that implement these comprehensive relationship marketing programs can expect significant improvements across all key metrics: referral rates above 22%, customer lifetime value increases of 50%+ for Elite members, and 40% of event registrants purchasing gear. The combination of sport-specific personalization, intelligent gear lifecycle management, event-driven marketing, and community-focused loyalty creates a sustainable competitive advantage. By meeting athletes where they are in their journey—from first discovery through elite ambassador status—you build not just customers, but a community of passionate athletes who choose your brand for every challenge."
 }

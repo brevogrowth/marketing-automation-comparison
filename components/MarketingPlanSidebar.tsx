@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useCallback, memo } from 'react';
-import { Building2, Rocket, Sparkles, Lock, FileText } from 'lucide-react';
+import { Building2, Sparkles, Lock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Industry } from '@/config/industries';
 
@@ -15,7 +15,6 @@ interface MarketingPlanSidebarProps {
   setDomain: (domain: string) => void;
 
   // Actions
-  onGenerateStaticPlan: () => void;
   onGeneratePersonalizedPlan: () => void;
 
   // State
@@ -31,7 +30,6 @@ const MarketingPlanSidebarComponent = ({
   setIndustry,
   domain,
   setDomain,
-  onGenerateStaticPlan,
   onGeneratePersonalizedPlan,
   isLoading,
   isUnlocked,
@@ -67,7 +65,7 @@ const MarketingPlanSidebarComponent = ({
         </p>
 
         {/* Industry Selector */}
-        <div className="mb-4">
+        <div>
           <select
             value={industry}
             onChange={handleIndustryChange}
@@ -92,19 +90,6 @@ const MarketingPlanSidebarComponent = ({
             </optgroup>
           </select>
         </div>
-
-        {/* CTA Button */}
-        <button
-          onClick={onGenerateStaticPlan}
-          disabled={isLoading}
-          className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-brevo-green text-white rounded-lg font-medium hover:bg-brevo-dark-green transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
-        >
-          <FileText className="h-4 w-4" />
-          {isLoading
-            ? (t.marketingPlan?.generating || 'Generating...')
-            : (t.marketingPlan?.viewTemplatePlan || 'View Template Plan')
-          }
-        </button>
       </div>
 
       {/* Divider */}

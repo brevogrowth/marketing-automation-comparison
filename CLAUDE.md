@@ -565,29 +565,28 @@ const handleGeneratePlan = () => {
 
 | Industry | EN | FR | DE | ES |
 |----------|:--:|:--:|:--:|:--:|
-| Fashion | ✅ | ✅ | ❌ | ❌ |
-| Beauty | ✅ | ✅ | ❌ | ❌ |
-| Home | ✅ | ✅ | ❌ | ❌ |
-| Electronics | ✅ | ✅ | ❌ | ❌ |
-| Food | ✅ | ✅ | ❌ | ❌ |
-| Sports | ✅ | ✅ | ❌ | ❌ |
-| Luxury | ✅ | ✅ | ❌ | ❌ |
-| Family | ✅ | ✅ | ❌ | ❌ |
-| SaaS | ✅ | ✅ | ❌ | ❌ |
-| Services | ✅ | ✅ | ❌ | ❌ |
-| Manufacturing | ✅ | ✅ | ❌ | ❌ |
-| Wholesale | ✅ | ✅ | ❌ | ❌ |
+| Fashion | ✅ | ✅ | ✅ | ✅ |
+| Beauty | ✅ | ✅ | ✅ | ✅ |
+| Home | ✅ | ✅ | ✅ | ✅ |
+| Electronics | ✅ | ✅ | ✅ | ✅ |
+| Food | ✅ | ✅ | ✅ | ✅ |
+| Sports | ✅ | ✅ | ✅ | ✅ |
+| Luxury | ✅ | ✅ | ✅ | ✅ |
+| Family | ✅ | ✅ | ✅ | ✅ |
+| SaaS | ✅ | ✅ | ✅ | ✅ |
+| Services | ✅ | ✅ | ✅ | ✅ |
+| Manufacturing | ✅ | ✅ | ✅ | ✅ |
+| Wholesale | ✅ | ✅ | ✅ | ✅ |
 
-**Note**: DE and ES users get English fallback for static plans.
+**Coverage**: All 12 industries available in all 4 languages (48 template files total).
 
 ---
 
 ## Known Limitations
 
-1. **Static plans only in EN + FR** - DE/ES users see English fallback
-2. **AI generation takes ~3 minutes** - Users see progress indicator
-3. **In-memory rate limiting** - Consider external store for production
-4. **Domain in URL** - May be visible in referrer logs
+1. **AI generation takes ~3 minutes** - Users see progress indicator
+2. **In-memory rate limiting** - Consider external store for production
+3. **Domain in URL** - May be visible in referrer logs
 
 ---
 

@@ -1,0 +1,740 @@
+{
+  "introduction": "Dieser umfassende Marketing-Beziehungsplan ist für SaaS-Unternehmen konzipiert, die Product-Led Growth (PLG) Strategien in Kombination mit vertriebsunterstützten Ansätzen nutzen. Der Plan adressiert die einzigartige Dynamik von B2B-Software, bei der der Kundenerfolg direkt den Umsatz durch Abonnementverlängerungen, Expansion und Fürsprache beeinflusst. Erfolg im SaaS-Bereich erfordert das Verständnis, dass die Kundenreise weit über den ersten Verkauf hinausgeht - von der Test-Aktivierung über die fortlaufende Adoption, Expansion und schließlich zum Champion für Ihr Produkt zu werden. Dieser Plan betont verhaltensbasierte Trigger, nutzungsbasierte Segmentierung und wertorientierte Kommunikation über den gesamten Kundenlebenszyklus.",
+  "company_summary": {
+    "name": "SaaS-Unternehmen",
+    "website": "beispiel-saas.de",
+    "activities": "Software as a Service Anbieter mit cloudbasierten Geschäftslösungen, Produktivitätstools, Kollaborationsplattformen oder spezialisierten Branchenanwendungen",
+    "target": "B2B-Entscheidungsträger (VP/Director-Level), Endnutzer, IT-Administratoren und Beschaffungsteams in KMU bis Enterprise-Unternehmen, die effiziente, skalierbare Softwarelösungen suchen",
+    "industry": "SaaS",
+    "target_audience": "Primär: Geschäftsanwender und Teamleiter, die täglichen Mehrwert erleben (70%), Sekundär: Entscheidungsträger und Budgetverantwortliche (20%), Tertiär: IT/Sicherheit/Beschaffungs-Stakeholder (10%)",
+    "nb_employees": "50-500",
+    "business_model": "B2B Abonnement (Monatlich/Jährlich)",
+    "customer_lifecycle_key_steps": "Awareness > Anmeldung > Aktivierung > Erster Mehrwert > Feature-Adoption > Team-Erweiterung > Plan-Upgrade > Verlängerung > Fürsprache"
+  },
+  "programs_list": [
+    {
+      "program_name": "Test-Aktivierung & Konversion",
+      "target": "Kostenlose Testanmeldungen und Freemium-Nutzer",
+      "objective": "35% Test-zu-Bezahlt-Konversion erreichen durch Führung der Nutzer zu Aktivierungs-Meilensteinen und Demonstration des Kernwerts innerhalb des Testzeitraums",
+      "kpi": "Test-zu-Bezahlt-Konversionsrate (Ziel: 35%), Zeit bis zum ersten Mehrwert (Ziel: <24 Stunden), Aktivierungs-Meilenstein-Abschluss (Ziel: 60%), Testverlängerungsanfragen (Ziel: <15%)",
+      "description": "Eine verhaltensgesteuerte Onboarding-Sequenz, die Testnutzer durch wichtige Aktivierungs-Meilensteine führt und dabei unbestreitbaren Wert demonstriert. Das Programm passt Nachrichten basierend auf Nutzerfortschritt und Engagement-Level an und stellt sicher, dass kein Testnutzer durch das Raster fällt.",
+      "scenarios": [
+        {
+          "scenario_target": "Neue Testanmeldungen mit hoher Kaufabsicht (Anmeldung über Preisseite, Demo oder Empfehlung)",
+          "scenario_objective": "Zeit-bis-Mehrwert beschleunigen und innerhalb des Testzeitraums konvertieren",
+          "main_messages_ideas": "Personalisierter Quick-Start basierend auf Anwendungsfall, Kernfunktions-Aktivierung, Wertdemonstration, Social Proof von ähnlichen Unternehmen, Testende-Dringlichkeit",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen! Lassen Sie uns zu Ihrem ersten Erfolg kommen",
+              "description": "Sofort: Anwendungsfall-basierter Quick-Start",
+              "content": "Willkommen bei [Produkt]! Basierend auf Ihrer Anmeldung sieht es so aus, als möchten Sie [Problem X lösen / Ziel Y erreichen]. Hier ist der schnellste Weg zu Ihrem ersten Erfolg: Schließen Sie diese 3 Setup-Schritte ab und die meisten Kunden sehen innerhalb von 24 Stunden den ersten Mehrwert. Los geht's!"
+            },
+            {
+              "channel": "Email",
+              "title": "Ihre [Produkt]-Setup-Checkliste",
+              "description": "Tag 1: Wenn Setup unvollständig",
+              "content": "Sie sind nur noch 2 Schritte vom vollständigen Setup entfernt! Erledigen Sie diese schnellen Aufgaben, um das volle Potenzial von [Produkt] freizuschalten: [Personalisierte Checkliste basierend auf fehlenden Schritten]. Brauchen Sie Hilfe? Unsere Setup-Anleitungen führen Sie in unter 5 Minuten durch jeden Schritt."
+            },
+            {
+              "channel": "In-App",
+              "title": "Aktivierungs-Meilenstein-Aufforderung",
+              "description": "Bei Login wenn Schlüsselaktion nicht abgeschlossen",
+              "content": "Sie haben [Schlüssel-Aktivierungsaktion] noch nicht durchgeführt. Schließen Sie dies jetzt ab, um [Mehrwert zu sehen/Zeit zu sparen/Ziel zu erreichen]."
+            },
+            {
+              "channel": "Email",
+              "title": "[Ähnliches Unternehmen] erreicht [Ergebnis] mit [Produkt]",
+              "description": "Tag 3: Social Proof + Feature-Highlight",
+              "content": "Unternehmen wie Ihres sehen beeindruckende Ergebnisse mit [Produkt]. [Ähnliches Unternehmen] erreichte [spezifisches Ergebnis] in nur [Zeitrahmen]. Der Schlüssel? Sie konzentrierten sich auf [Feature]. So können Sie das Gleiche tun."
+            },
+            {
+              "channel": "SMS",
+              "title": "Kurze Frage von [Produkt]",
+              "description": "Tag 5: Bei niedrigem Engagement",
+              "content": "Hallo [Name], mir ist aufgefallen, dass Sie sich für [Produkt] angemeldet haben, aber noch nicht [Schlüsselaktion] durchgeführt haben. Was hält Sie zurück? Antworten Sie mit Fragen - ich helfe gerne! - [CSM-Name]"
+            },
+            {
+              "channel": "Email",
+              "title": "Ihre bisherigen Testergebnisse",
+              "description": "Tag 7 (Mitte Test): Fortschrittszusammenfassung",
+              "content": "Hier ist, was Sie bisher mit [Produkt] erreicht haben: [Nutzungsstatistiken, eingesparte Zeit, abgeschlossene Aktionen]. Sie sind auf dem Weg zu [prognostizierter Nutzen]. Um vor Testende noch mehr Mehrwert zu erhalten, probieren Sie [nächstes empfohlenes Feature]."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihr Test endet in 5 Tagen",
+              "description": "5 Tage vor Testende: Konversionsaufforderung",
+              "content": "Ihr [Produkt]-Test endet in 5 Tagen, aber der Mehrwert, den Sie geschaffen haben, muss nicht enden. Sie haben [Erfolgsübersicht]. Upgraden Sie jetzt, um Ihre [Daten/Workflows/Integrationen] zu behalten und weiter zu wachsen. Pläne starten ab [X]€/Monat."
+            },
+            {
+              "channel": "Email",
+              "title": "Letzter Tag: Verlieren Sie nicht Ihren Fortschritt",
+              "description": "Letzter Tag: Dringlichkeit mit Wertzusammenfassung",
+              "content": "Ihr Test endet heute um Mitternacht. Alles, was Sie aufgebaut haben - [spezifische Elemente] - wird morgen gesperrt, wenn Sie nicht upgraden. Wählen Sie jetzt Ihren Plan und machen Sie genau da weiter, wo Sie aufgehört haben. [Upgrade-Optionen]"
+            },
+            {
+              "channel": "SMS",
+              "title": "Test endet heute Nacht",
+              "description": "Letzter Tag: SMS-Erinnerung",
+              "content": "[Produkt]-Test endet heute Nacht! Verlieren Sie nicht Ihren [Fortschritt/Daten]. Upgrade in 2 Klicks: [Link]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Testnutzer, die nicht aktiviert haben (keine Schlüsselaktion in den ersten 3 Tagen)",
+          "scenario_objective": "Reaktivieren und zum Aktivierungs-Meilenstein führen",
+          "main_messages_ideas": "Barrieren-Identifikation, Vereinfachter Einstieg, Demo/Hilfe-Angebot, Alternative Einstiegspunkte",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Brauchen Sie Hilfe beim Einstieg?",
+              "description": "Tag 3: Wenn keine Aktivierung",
+              "content": "Wir haben bemerkt, dass Sie [Schlüssel-Aktivierungsaktion] noch nicht durchgeführt haben, und wir möchten sicherstellen, dass Sie nichts blockiert. Die häufigsten Hindernisse, die wir hören: [Liste der Barrieren]. Was auch immer Sie zurückhält, wir können helfen. Antworten Sie auf diese E-Mail oder buchen Sie einen kostenlosen 15-minütigen Setup-Anruf."
+            },
+            {
+              "channel": "Email",
+              "title": "Probieren Sie diesen 5-Minuten-Quick-Start",
+              "description": "Tag 5: Vereinfachtes Onboarding",
+              "content": "Vielleicht fühlte sich unser Standard-Setup überwältigend an. Hier ist der einfachste Weg zum Mehrwert: Machen Sie nur EINE Sache - [wirkungsvollste Einzelaktion]. Es dauert 5 Minuten und Sie werden sofort sehen, warum Kunden [Produkt] lieben. Probieren Sie es aus!"
+            },
+            {
+              "channel": "In-App",
+              "title": "Live-Demo verfügbar",
+              "description": "Bei jedem Login: Hilfsangebot",
+              "content": "Möchten Sie eine persönliche Einführung? Unser Team steht für eine kostenlose Live-Demo bereit. Buchen Sie Ihren Termin."
+            },
+            {
+              "channel": "Email",
+              "title": "Bevor Ihr Test endet: Lassen Sie uns sprechen",
+              "description": "Tag 10: Wenn immer noch nicht aktiviert",
+              "content": "Ihr Test endet bald und wir hatten noch keine Gelegenheit, Ihnen zu zeigen, was [Produkt] wirklich kann. Können wir einen kurzen Anruf vereinbaren? Manchmal enthüllt ein 10-minütiges Gespräch den perfekten Anwendungsfall. Oder erzählen Sie uns, was Sie erreichen wollten - wir haben vielleicht einen schnelleren Weg."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Neukunden-Onboarding & Adoption",
+      "target": "Kürzlich konvertierte zahlende Kunden in ihren ersten 90 Tagen",
+      "objective": "70% Onboarding-Abschlussrate erreichen und Kunden zur vollständigen Feature-Adoption innerhalb von 90 Tagen führen",
+      "kpi": "Onboarding-Abschlussrate (Ziel: 70%), Zeit bis zum vollen Mehrwert (Ziel: <30 Tage), Feature-Adoptionsbreite (Ziel: 5+ Features genutzt), 90-Tage-Bindungsrate (Ziel: 95%)",
+      "description": "Ein umfassendes Onboarding-Programm, das neue Kunden durch rollenbasierte Anleitung, Meilenstein-Feiern und proaktiven Support zu Power-Usern transformiert. Das Programm erkennt an, dass verschiedene Benutzerrollen unterschiedliche Onboarding-Pfade erfordern.",
+      "scenarios": [
+        {
+          "scenario_target": "Neukunden - Admin/Primärer Kontoinhaber",
+          "scenario_objective": "Administratives Setup abschließen und Teamerfolg ermöglichen",
+          "main_messages_ideas": "Konto-Konfiguration, Team-Einladung, Sicherheit/Compliance-Setup, Integration-Aktivierung, Admin-Best-Practices",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen bei [Produkt] - Ihr Admin-Setup-Leitfaden",
+              "description": "Sofort: Admin-fokussierte Begrüßung",
+              "content": "Herzlichen Glückwunsch zur Wahl von [Produkt]! Als Konto-Admin halten Sie den Schlüssel zum Erfolg Ihres Teams. Hier ist Ihre Prioritätscheckliste für die erste Woche: 1) Workspace-Einstellungen konfigurieren, 2) Benutzerrollen und Berechtigungen einrichten, 3) Team einladen, 4) Integrationen verbinden. Jeder Schritt hat eine Kurzanleitung - machen wir Ihr Team schnell produktiv!"
+            },
+            {
+              "channel": "Email",
+              "title": "Laden Sie Ihr Team ein - Der beste Ansatz",
+              "description": "Tag 2: Team-Rollout-Anleitung",
+              "content": "Bereit, Ihr Team an Bord zu holen? Hier ist das Playbook, das erfolgreiche Admins nutzen: [Best Practices für Team-Rollout]. Wir haben anpassbare Einladungsvorlagen und einen Teamschulungsplan vorbereitet, der funktioniert. Profi-Tipp: Beginnen Sie mit Ihrem enthusiastischsten Teammitglied als Champion!"
+            },
+            {
+              "channel": "Email",
+              "title": "Verbinden Sie Ihre Tools: Integrationsanleitung",
+              "description": "Tag 4: Integrations-Fokus",
+              "content": "[Produkt] wird noch leistungsfähiger, wenn es mit Ihren bestehenden Tools verbunden ist. Basierend auf dem, was wir über Ihren Tech-Stack wissen, hier sind die Integrationen, mit denen wir empfehlen zu starten: [Relevante Integrationen]. Jede dauert weniger als 10 Minuten zur Einrichtung."
+            },
+            {
+              "channel": "In-App",
+              "title": "Integrationsvorschlag",
+              "description": "Basierend auf Nutzungsmustern",
+              "content": "Wussten Sie, dass [Produkt] sich mit [Tool, das sie wahrscheinlich nutzen] integriert? Jetzt verbinden, um Daten automatisch zu synchronisieren."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihr erster Monat: Admin-Erfolgsbericht",
+              "description": "Tag 30: Fortschritt und Empfehlungen",
+              "content": "Ein Monat geschafft! So geht es Ihrem Team: [Nutzungsstatistiken, Adoptionsmetriken, aktive Nutzer]. Sie gehören zu den Top [X]% der neuen Konten! Hier ist, was leistungsstarke Teams als Nächstes tun: [Spezifische Empfehlungen]. Dazu Tipps von unserem Customer Success Team."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Neukunden - Endnutzer (vom Admin eingeladen)",
+          "scenario_objective": "Individuelle Adoption und tägliche Nutzungsgewohnheit fördern",
+          "main_messages_ideas": "Persönlicher Quick-Start, Rollenspezifische Workflows, Produktivitätstipps, Feature-Entdeckung, Nutzungsermutigung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Admin-Name] hat Sie zu [Produkt] eingeladen",
+              "description": "Sofort: Nutzereinladung",
+              "content": "[Admin-Name] hat Sie eingeladen, dem [Unternehmen]-[Produkt]-Workspace beizutreten! Hier ist, was [Produkt] Ihnen helfen wird: [3 Schlüsselvorteile relevant für ihre Rolle]. Starten Sie jetzt - die Kontoeinrichtung dauert nur 2 Minuten."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihr persönlicher [Produkt]-Quick-Start",
+              "description": "Tag 1: Nach Kontoaktivierung",
+              "content": "Willkommen bei [Produkt]! Ihr Team nutzt es bereits für [Teamziel]. So steigen Sie ein: Schließen Sie dieses 5-Minuten-Setup ab und Sie sind heute produktiv. Wir haben auch Shortcuts für Ihre häufigsten Aufgaben erstellt."
+            },
+            {
+              "channel": "In-App",
+              "title": "Erste Aufgaben-Anleitung",
+              "description": "Beim ersten Login: Interaktives Tutorial",
+              "content": "Lassen Sie uns Ihre erste [Aufgabentyp] gemeinsam erledigen! Folgen Sie diesen 3 Schritten..."
+            },
+            {
+              "channel": "Email",
+              "title": "Produktivitätstipps für Ihre Rolle",
+              "description": "Tag 7: Rollenspezifische Tipps",
+              "content": "Basierend darauf, wie Personen in ähnlichen Rollen [Produkt] nutzen, hier sind die Top-Produktivitäts-Shortcuts: [Rollenspezifische Tipps und Workflows]. Meistern Sie diese und sparen Sie [X] Stunden pro Woche."
+            },
+            {
+              "channel": "Push",
+              "title": "Neues Feature für Sie",
+              "description": "Tag 14: Feature-Entdeckung",
+              "content": "Probieren Sie [Feature-Name] - Nutzer wie Sie sparen 30 Min/Woche mit diesem Feature"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Feature-Adoption & Produkt-Engagement",
+      "target": "Aktive Kunden basierend auf Feature-Nutzungslücken",
+      "objective": "Feature-Adoptionsbreite um 40% steigern und Produkt-Stickiness durch tägliche Gewohnheitsbildung verbessern",
+      "kpi": "Feature-Adoptionsrate (Ziel: +40%), DAU/MAU-Verhältnis (Ziel: >40%), Genutzte Features pro Nutzer (Ziel: 8+), Session-Frequenz (Ziel: 4+ pro Woche)",
+      "description": "Ein verhaltensgetriggertes Programm, das Feature-Nutzungslücken identifiziert und kontextuelle Schulungen zur Förderung der Adoption liefert. Das Programm versteht, dass ungenutzte Features unrealisierten Wert und erhöhtes Abwanderungsrisiko darstellen.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden, die hochwertige Features nicht nutzen, die zu ihrem Anwendungsfall passen",
+          "scenario_objective": "Adoption unterausgenutzter Features mit klarem Wertversprechen fördern",
+          "main_messages_ideas": "Feature-Wertversprechen, Schritt-für-Schritt-Tutorial, Kundenanwendungsfall-Beispiel, ROI-Demonstration, Adoptions-Feier",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Sie verpassen [Feature]",
+              "description": "Getriggert wenn Schlüssel-Feature 30+ Tage ungenutzt",
+              "content": "Wir haben bemerkt, dass Sie [Feature] noch nicht ausprobiert haben, und es ist eines unserer wirkungsvollsten Tools für Teams wie Ihres. Hier ist, was Sie verpassen: [Spezifische Vorteile mit Metriken]. Unternehmen, die [Feature] nutzen, sehen [X% Verbesserung] bei [Metrik]. Bereit, es auszuprobieren?"
+            },
+            {
+              "channel": "In-App",
+              "title": "Feature-Spotlight",
+              "description": "Nächstes Login nach E-Mail: Kontextueller Hinweis",
+              "content": "Probieren Sie heute [Feature] - es hilft Ihnen bei [spezifischem Vorteil]. Starten Sie mit dieser Kurzanleitung."
+            },
+            {
+              "channel": "Email",
+              "title": "[Feature] in Aktion: So nutzt [Unternehmen] es",
+              "description": "5 Tage nach erster E-Mail",
+              "content": "Immer noch neugierig auf [Feature]? Hier ist ein echtes Beispiel: [Ähnliches Unternehmen] nutzt [Feature] für [spezifischen Workflow]. Ergebnis: [Quantifiziertes Ergebnis]. Wir haben ein Video-Walkthrough beigefügt, das genau zeigt, wie sie es eingerichtet haben."
+            },
+            {
+              "channel": "Email",
+              "title": "Glückwunsch! Sie haben [Feature] freigeschaltet",
+              "description": "Bei erster Feature-Nutzung: Feier + Vertiefung",
+              "content": "Sie haben es geschafft! Sie haben begonnen, [Feature] zu nutzen. Toller erster Schritt! Jetzt erfahren Sie, wie Sie noch mehr Wert erhalten: [Fortgeschrittene Tipps und nächste Nutzungsstufe]. Sie sind auf dem Weg zum Power-User."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Nutzer mit sinkendem Engagement (Nutzungsrückgang >30% Woche für Woche)",
+          "scenario_objective": "Reaktivieren bevor Disengagement dauerhaft wird",
+          "main_messages_ideas": "Check-in, Neue Features, Tipps-Auffrischung, Hilfsangebot, Erfolgsgeschichten",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Wir haben Sie in [Produkt] vermisst",
+              "description": "Nach 7 Tagen reduzierter Nutzung",
+              "content": "Wir haben bemerkt, dass Sie in letzter Zeit weniger aktiv in [Produkt] waren. Funktioniert alles wie erwartet? Während Sie weg waren, haben wir [neue Features/Verbesserungen] veröffentlicht. Hier ist, was Sie verpasst haben könnten und wie es bei [ihrem Anwendungsfall] helfen kann."
+            },
+            {
+              "channel": "In-App",
+              "title": "Willkommen zurück! Sehen Sie, was neu ist",
+              "description": "Bei Rückkehr-Login",
+              "content": "Willkommen zurück! Hier ist, was seit Ihrem letzten Besuch neu ist: [Update-Zusammenfassung]"
+            },
+            {
+              "channel": "Email",
+              "title": "Schnelle Tipps, um wieder auf Kurs zu kommen",
+              "description": "Tag 10: Wenn weiterhin niedriges Engagement",
+              "content": "Manchmal brauchen wir alle eine Auffrischung! Hier sind schnelle Tipps, um Ihre [Produkt]-Nutzung wiederzubeleben: [3 umsetzbare Tipps]. Oder wenn etwas nicht für Sie funktioniert, helfen wir gerne bei einem besseren Ansatz."
+            },
+            {
+              "channel": "SMS",
+              "title": "Persönlicher Check-In",
+              "description": "Tag 14: Für hochwertige Konten",
+              "content": "Hallo [Name], mir ist aufgefallen, dass die [Produkt]-Nutzung zurückgegangen ist. Kann ich irgendwie helfen? Gerne kurzer Anruf. - [CSM-Name]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Konto-Expansion & Upsell",
+      "target": "Hochnutzungs-Kunden und Konten, die sich Plan-Limits nähern oder überschreiten",
+      "objective": "120% Netto-Umsatzbindung durch proaktive Expansion und wertbasierte Upgrade-Gespräche erreichen",
+      "kpi": "Expansionsumsatz (Ziel: 120% NRR), Upgrade-Rate (Ziel: 25%), Seat-Expansionsrate (Ziel: 30%), Zeit von Signal bis Expansion (Ziel: <30 Tage)",
+      "description": "Ein wachstumsorientiertes Programm, das Expansionsmöglichkeiten durch Nutzungssignale identifiziert und perfekt getimte Upgrade-Nachrichten liefert. Das Programm betont Wertrealisierung über Drucktaktiken.",
+      "scenarios": [
+        {
+          "scenario_target": "Konten bei 80%+ der Plan-Limits (Seats, Speicher, Features)",
+          "scenario_objective": "Proaktives Upgrade bevor Limits zu Blockern werden",
+          "main_messages_ideas": "Nutzung nähert sich Limit, Upgrade-Vorteile, ROI-Analyse, Nahtloser Upgrade-Pfad, Limit-Entfernungs-Dringlichkeit",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Toller Fortschritt! Sie nähern sich Ihrem Plan-Limit",
+              "description": "Bei 80% eines Limits",
+              "content": "Ihr Team hebt mit [Produkt] richtig ab! Sie nutzen jetzt [X%] Ihrer [Seats/Speicher/API-Aufrufe]. Das sind tolle Nachrichten - es bedeutet, Sie erhalten echten Mehrwert. Bevor Sie Ihr Limit erreichen, hier sind Ihre Optionen: [Upgrade-Optionen mit klaren Vorteilen]. Die meisten Kunden in Ihrer Situation wählen [empfohlener Plan]."
+            },
+            {
+              "channel": "In-App",
+              "title": "Nutzungswarnung",
+              "description": "Bei 90% des Limits: Prominente Benachrichtigung",
+              "content": "Sie sind bei 90% Ihres [Limit]. Upgraden Sie jetzt, um Serviceunterbrechung zu vermeiden."
+            },
+            {
+              "channel": "Email",
+              "title": "Der ROI des Upgrades: Eine kurze Analyse",
+              "description": "Bei 95% des Limits",
+              "content": "Sie sind fast am Limit, also sprechen wir über Wert. Basierend auf Ihrer Nutzung würde ein Upgrade auf [Nächster Plan]: [Spezifische ROI-Berechnungen]. Die Investition: [X]€/Monat mehr. Der Return: [Quantifizierte Vorteile]. Die meisten Teams sehen ROI innerhalb von [Zeitrahmen]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Plan-Limit erreicht",
+              "description": "Wenn Limit erreicht",
+              "content": "[Dringend] Ihr [Produkt]-Plan-Limit wurde erreicht. Upgraden Sie jetzt für unterbrechungsfreie Nutzung: [Link]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Konten mit Wachstumssignalen (neue Teammitglieder, neue Anwendungsfälle)",
+          "scenario_objective": "Wachstumsmomente mit relevanten Expansionsangeboten nutzen",
+          "main_messages_ideas": "Wachsendes Team anerkennen, Team-Plan-Vorteile, Abteilungserweiterung, Enterprise-Features-Vorschau",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihr Team wächst - Skalieren wir gemeinsam",
+              "description": "Wenn mehrere Nutzer in kurzer Zeit hinzugefügt",
+              "content": "Herzlichen Glückwunsch zum Wachstum Ihres Teams! Wir haben bemerkt, dass neue Mitglieder Ihrem [Produkt]-Workspace beitreten. Beim Skalieren könnten Sie von unseren [Team/Business]-Features profitieren: [Relevante Upgrade-Vorteile]. Wir bieten auch Mengenrabatte an, die Ihnen [X%] sparen könnten."
+            },
+            {
+              "channel": "Email",
+              "title": "Bereit für die nächste Abteilung?",
+              "description": "Wenn Expansion in neue Anwendungsfälle erkannt",
+              "content": "Wir haben bemerkt, dass Ihr Team [Produkt] für [neuen Anwendungsfall] nutzt. Genau so erweitern andere wachsende Unternehmen ihre [Produkt]-Adoption! Möchten Sie sehen, wie [Unternehmensbeispiel] [Produkt] unternehmensweit ausgerollt hat? Wir haben ein Playbook und dedizierten Support für abteilungsübergreifende Rollouts."
+            },
+            {
+              "channel": "In-App",
+              "title": "Enterprise-Features-Vorschau",
+              "description": "Für qualifizierte Konten",
+              "content": "Wenn Ihr Team wächst, erkunden Sie unsere Enterprise-Features: SSO, erweiterte Berechtigungen, dedizierter Support. Jetzt ansehen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Kundengesundheit & Abwanderungsprävention",
+      "target": "Gefährdete Konten basierend auf Health-Score-Rückgang",
+      "objective": "Brutto-Abwanderung auf <5% reduzieren durch proaktive Intervention und dedizierte Recovery-Bemühungen",
+      "kpi": "Brutto-Abwanderungsrate (Ziel: <5%), Gefährdete-Konten-Rettungsrate (Ziel: 60%), Health-Score-Verbesserung (Ziel: +20 Punkte), Zeit bis Intervention (Ziel: <48 Stunden)",
+      "description": "Ein proaktives Programm, das Kundengesundheitssignale überwacht und Intervention auslöst, bevor Konten den Punkt der Kündigung erreichen. Das Programm kombiniert automatisierte Kontaktaufnahme mit persönlicher Eskalation für hochwertige Konten.",
+      "scenarios": [
+        {
+          "scenario_target": "Konten mit sinkendem Health-Score (Nutzungsrückgang, Support-Tickets, Abrechnungsprobleme)",
+          "scenario_objective": "Frühzeitig intervenieren und Probleme vor Kündigungsentscheidung lösen",
+          "main_messages_ideas": "Proaktiver Check-in, Problembestätigung, Lösungsangebot, Eskalierter Support, Executive-Einschaltung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Check-In: Wie können wir helfen?",
+              "description": "Wenn Health-Score unter Schwellenwert fällt",
+              "content": "Hallo [Name], ich wollte mich persönlich melden. Wir haben einige Veränderungen bemerkt, wie Ihr Team [Produkt] nutzt, und ich möchte sicherstellen, dass alles gut für Sie funktioniert. Gibt es etwas, das Ihr Team davon abhält, den vollen Mehrwert zu erhalten? Ich bin hier, um bei allen Herausforderungen zu helfen."
+            },
+            {
+              "channel": "Email",
+              "title": "Wir haben Sie gehört - So helfen wir",
+              "description": "Wenn Support-Tickets auf Probleme hinweisen",
+              "content": "Ich habe Ihre letzten Support-Tickets zu [Problemkategorie] gesehen. Ich möchte, dass Sie wissen, dass wir das ernst nehmen. Hier ist, was wir tun: [Spezifische Aktionen/Fixes]. Ich weise Ihnen auch einen dedizierten Support-Kontakt zu, um zukünftig schnellere Lösung zu gewährleisten."
+            },
+            {
+              "channel": "SMS",
+              "title": "Persönliche Kontaktaufnahme",
+              "description": "Für hochwertige gefährdete Konten",
+              "content": "Hallo [Name], hier ist [CSM-Name] von [Produkt]. Ich würde gerne 15 Min besprechen, wie wir Sie besser unterstützen können. Zeit für ein Gespräch? [Kalenderlink]"
+            },
+            {
+              "channel": "Email",
+              "title": "Finden wir die richtige Lösung für Sie",
+              "description": "Wenn weiterer Rückgang trotz Kontaktaufnahme",
+              "content": "Ich weiß, dass es in letzter Zeit mit [Produkt] nicht perfekt war, und ich bin entschlossen, das richtigzustellen. Können wir diese Woche einen Anruf planen? Ich habe einige Ideen, darunter: [Mögliche Lösungen wie Plananpassungen, Feature-Beratungen, Schulungen]. Ihr Erfolg ist uns wichtig."
+            },
+            {
+              "channel": "Email",
+              "title": "Eine Nachricht von unserem [CEO/VP Customer Success]",
+              "description": "Für Enterprise-gefährdete Konten: Executive-Eskalation",
+              "content": "Hallo [Name], ich bin [Executive], und ich wollte mich persönlich melden. Ich verstehe, dass Sie Herausforderungen mit [Produkt] erfahren haben, und das ist nicht akzeptabel. Ich würde gerne Ihre Situation direkt verstehen und sicherstellen, dass wir eine Lösung finden. Können wir diese Woche 20 Minuten einplanen?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Konten mit Kündigungssignalen (Kündigungsseite besucht, Downgrade-Anfragen)",
+          "scenario_objective": "Last-Chance-Intervention um das Konto zu retten",
+          "main_messages_ideas": "Kündigungsalternative, Pause-Option, Reduzierter Plan, Feedback-Sammlung, Tür-offen-Botschaft",
+          "message_sequence": [
+            {
+              "channel": "In-App",
+              "title": "Bevor Sie gehen...",
+              "description": "Bei Besuch der Kündigungsseite",
+              "content": "Wir haben bemerkt, dass Sie eine Kündigung erwägen. Bevor Sie das tun, möchten Sie: Mit jemandem über Ihre Herausforderungen sprechen, Ihr Konto vorübergehend pausieren, oder zu einem kleineren Plan wechseln? Wir würden Sie ungern verlieren."
+            },
+            {
+              "channel": "Email",
+              "title": "Können wir sprechen, bevor Sie kündigen?",
+              "description": "Nach Kündigungsseiten-Besuch aber keine Aktion",
+              "content": "Ich habe gesehen, dass Sie unsere Kündigungsseite besucht haben, und wollte mich persönlich melden. Was auch immer diese Entscheidung treibt, ich würde gerne die Chance haben, darüber zu sprechen. Manchmal enthüllt ein kurzes Gespräch Lösungen, die wir nicht bedacht haben. Würden Sie uns 10 Minuten geben?"
+            },
+            {
+              "channel": "Email",
+              "title": "Alternativen zur Kündigung",
+              "description": "Nach erster Kontaktaufnahme wenn keine Antwort",
+              "content": "Wenn Kosten oder Wert das Thema sind, haben wir Optionen: [Konto-Pause-Option], [Reduzierte Plan-Option], [Erweiterte Support-Option]. Wir sind flexibel, weil wir lieber eine Lösung finden als Sie zu verlieren. Was würde am meisten helfen?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Reaktivierung",
+      "target": "Abgewanderte Kunden innerhalb der letzten 12 Monate",
+      "objective": "15% der abgewanderten Konten innerhalb von 180 Tagen nach Abgang reaktivieren",
+      "kpi": "Win-Back-Rate (Ziel: 15%), Reaktivierungsumsatz, Zeit bis Reaktivierung (Ziel: <90 Tage), Reaktivierter-Kunden-Bindung bei 6 Monaten (Ziel: 80%)",
+      "description": "Ein strategisches Programm zur Reaktivierung ehemaliger Kunden mit überzeugenden Gründen zur Rückkehr. Das Programm passt Nachrichten basierend auf Abwanderungsgrund an und hebt seit dem Abgang vorgenommene Verbesserungen hervor.",
+      "scenarios": [
+        {
+          "scenario_target": "Kunden, die wegen fehlender Features oder Produkt-Fit-Problemen abgewandert sind",
+          "scenario_objective": "Mit Feature/Produkt-Updates zurückgewinnen, die ihre Bedenken adressieren",
+          "main_messages_ideas": "Wir haben uns verändert, Neue Feature-Ankündigung, Kundenwunsch umgesetzt, Kostenloser Test um Änderungen zu sehen",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Wir haben gebaut, worum Sie gebeten haben",
+              "description": "Wenn angefragtes Feature veröffentlicht",
+              "content": "Hallo [Name], Sie haben [Produkt] verlassen, weil [Feature/Fähigkeit] nicht verfügbar war. Ich habe gute Nachrichten: Wir haben gerade [neues Feature] veröffentlicht, das Ihren Bedarf direkt adressiert. Möchten Sie es in Aktion sehen? Ich zeige Ihnen gerne, wie es funktioniert."
+            },
+            {
+              "channel": "Email",
+              "title": "[Produkt] hat sich verändert - Hier ist, was neu ist",
+              "description": "90 Tage nach Abwanderung: Große Updates-Zusammenfassung",
+              "content": "Viel hat sich bei [Produkt] verändert, seit Sie gegangen sind. In den letzten 90 Tagen haben wir veröffentlicht: [Schlüsselverbesserungen relevant für ihren Anwendungsfall]. Unternehmen, die zurückkamen, nachdem sie Alternativen ausprobiert haben, sagen uns [Zitat/Testimonial]. Bereit für einen frischen Blick?"
+            },
+            {
+              "channel": "Email",
+              "title": "Kostenloser Test: Sehen Sie das neue [Produkt]",
+              "description": "Wenn keine Antwort auf Feature-Update",
+              "content": "Taten sprechen lauter als Worte. Hier ist ein kostenloser 30-Tage-Test, um das neue [Produkt] zu erleben. Ihre alten Daten sind noch da, und Sie können genau da weitermachen, wo Sie aufgehört haben. Keine Verpflichtung - sehen Sie einfach, ob wir Ihr Geschäft zurückverdient haben."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden, die wegen Preis/Budget-Bedenken abgewandert sind",
+          "scenario_objective": "Mit relevanten Preisoptionen oder Aktionen zurückgewinnen",
+          "main_messages_ideas": "Neue Preis/Plan-Optionen, Budgetfreundliche Alternative, Saisonale Aktion, ROI-Demonstration",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Neue Preisoptionen bei [Produkt]",
+              "description": "Wenn neue Preise eingeführt oder am Verlängerungsjubiläum",
+              "content": "Hallo [Name], Sie haben erwähnt, dass das Budget ein Thema war, als Sie [Produkt] verlassen haben. Ich wollte Sie über unsere neuen Preisoptionen informieren: [Neue Plan- oder Preisdetails]. Wir bieten auch [Jahresrabatt/Startup-Preise/Nonprofit-Rabatt] an, die besser zu Ihrer Situation passen könnten."
+            },
+            {
+              "channel": "Email",
+              "title": "Besonderes Angebot zur Begrüßung zurück",
+              "description": "Zu strategischem Moment (Q1, Verlängerungsjubiläum)",
+              "content": "Wir würden Sie gerne bei [Produkt] zurückhaben. Für zurückkehrende Kunden bieten wir [X% Rabatt/X Monate kostenlos/Sonderkonditionen] an. Das ist keine dauerhafte Aktion - nur unsere Art zu sagen, dass wir Ihr Geschäft schätzen und eine weitere Chance wollen, unseren Wert zu beweisen."
+            },
+            {
+              "channel": "Email",
+              "title": "Die wahren Kosten, [Produkt] nicht zu haben",
+              "description": "60 Tage nach erstem Win-Back-Versuch",
+              "content": "Seit Sie [Produkt] verlassen haben, wie geht Ihr Team mit [Problem, das Produkt löst] um? Unsere Kunden sagen uns, dass sie [X Stunden/Euro] pro Monat sparen - was mehr als die Abonnementkosten deckt. Möchten Sie eine kurze ROI-Berechnung für Ihr Team durchführen?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Verlängerung & Bindung",
+      "target": "Kunden, deren Vertragsverlängerung bevorsteht (60-90 Tage voraus)",
+      "objective": "95% Brutto-Verlängerungsrate und 85% pünktliche Verlängerungsabschlussrate erreichen",
+      "kpi": "Brutto-Verlängerungsrate (Ziel: 95%), Pünktliche Verlängerungsrate (Ziel: 85%), Verlängerungs-Expansionsrate (Ziel: 30%), Verspätete Verlängerungsrate (Ziel: <10%)",
+      "description": "Ein proaktives Verlängerungsprogramm, das frühzeitig mit der Wertdemonstration beginnt und reibungslose Vertragsverlängerungen sicherstellt. Das Programm identifiziert Expansionsmöglichkeiten und entfernt Reibung aus dem Verlängerungsprozess.",
+      "scenarios": [
+        {
+          "scenario_target": "Gesunde Konten vor Verlängerung (60-90 Tage voraus)",
+          "scenario_objective": "Frühe Verlängerung mit Expansionsmöglichkeit sichern",
+          "main_messages_ideas": "Wertzusammenfassung, Frühverlängerungs-Anreiz, Expansionsempfehlung, Mehrjahres-Option",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihr Jahr mit [Produkt]: Wirkungsbericht",
+              "description": "90 Tage vor Verlängerung",
+              "content": "Da Ihre Verlängerung bevorsteht, wollten wir teilen, was Sie dieses Jahr mit [Produkt] erreicht haben: [Nutzungsstatistiken, ROI-Metriken, eingesparte Zeit, erreichte Ziele]. Sie gehören zu den Top [X%] der Konten! Auf ein weiteres erfolgreiches Jahr zusammen."
+            },
+            {
+              "channel": "Email",
+              "title": "Früh verlängern, mehr bekommen",
+              "description": "75 Tage vor Verlängerung",
+              "content": "Ihre Verlängerung steht am [Datum] an. Verlängern Sie vor dem [Frühdatum] und wir legen dazu: [Frühverlängerungsvorteile - Extra-Monate, fixierte Preise, Bonus-Features]. Außerdem könnten Sie basierend auf Ihrem Wachstum von einem Upgrade auf [nächsten Plan] profitieren. Möchten Sie Ihre Optionen besprechen?"
+            },
+            {
+              "channel": "In-App",
+              "title": "Verlängerungserinnerung",
+              "description": "60 Tage vor Verlängerung",
+              "content": "Ihr [Produkt]-Abonnement verlängert sich am [Datum]. Jetzt prüfen und verlängern für unterbrechungsfreien Service."
+            },
+            {
+              "channel": "Email",
+              "title": "Planen wir für nächstes Jahr",
+              "description": "45 Tage vor Verlängerung: Expansionsdiskussion",
+              "content": "Während wir Ihre Verlängerung vorbereiten, wollte ich Ihre Pläne für nächstes Jahr besprechen. Basierend auf Ihrer Nutzung könnten Sie profitieren von: [Spezifische Empfehlungen]. Hätten Sie 20 Minuten, um zu besprechen, wie wir Sie für noch mehr Erfolg aufstellen können?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Verlängerungserinnerung",
+              "description": "30 Tage vor Verlängerung",
+              "content": "Erinnerung: Ihr [Produkt]-Abonnement verlängert sich am [Datum]. Verlängerung abschließen um Zugang zu behalten: [Link]"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Gefährdete Konten vor Verlängerung",
+          "scenario_objective": "Bedenken addressieren und Verlängerung trotz Herausforderungen sichern",
+          "main_messages_ideas": "Proaktive Problemlösung, Nutzungsüberprüfungs-Meeting, Angepasstes Verlängerungsangebot, Executive-Kontaktaufnahme",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Stellen wir sicher, dass Sie den vollen Mehrwert erhalten",
+              "description": "90 Tage vor Verlängerung für gefährdete Konten",
+              "content": "Ihre Verlängerung nähert sich, und ich wollte mich vorher verbinden. Ich möchte sicherstellen, dass [Produkt] den erwarteten Mehrwert liefert. Können wir eine Nutzungsüberprüfung einplanen? Ich habe einige Ideen, wie Sie Ihre Ergebnisse vor der Verlängerung verbessern können."
+            },
+            {
+              "channel": "Email",
+              "title": "Eine maßgeschneiderte Verlängerungsoption für Sie",
+              "description": "60 Tage vor Verlängerung wenn Bedenken bestehen",
+              "content": "Ich habe über Ihre Situation nachgedacht und habe einen Vorschlag: [Maßgeschneiderte Option - angepasste Preise, Planmodifikation, erweiterter Support]. Ich glaube, das passt besser zu dem, wo Sie heute stehen, und wir können von hier aus gemeinsam wachsen. Was denken Sie?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Kurzes Gespräch zur Verlängerung?",
+              "description": "45 Tage vorher wenn keine Antwort",
+              "content": "Hallo [Name], möchte sicherstellen, dass Ihre Verlängerung reibungslos läuft. Haben Sie 10 Min diese Woche? [Kalenderlink] - [CSM-Name]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Kunden-Fürsprache & Empfehlung",
+      "target": "Hochzufriedene Kunden (NPS-Promoter, hohe Nutzung, erfolgreiche Ergebnisse)",
+      "objective": "30% der neuen qualifizierten Leads durch Kundenempfehlungen und Fürsprache generieren",
+      "kpi": "Empfehlungsprogramm-Teilnahme (Ziel: 25%), Empfehlungs-zu-Kunden-Konversion (Ziel: 35%), G2/Capterra-Bewertungen (Ziel: 50+ pro Quartal), Case-Study-Teilnahme (Ziel: 10%)",
+      "description": "Ein Programm, das zufriedene Kunden durch Empfehlungsprogramme, Bewertungsanfragen und Case-Study-Entwicklung in aktive Fürsprecher transformiert. Das Programm erkennt an, dass Kundenfürsprache die glaubwürdigste Form des Marketings ist.",
+      "scenarios": [
+        {
+          "scenario_target": "NPS-Promoter (9-10 Score) und hochengagierte Kunden",
+          "scenario_objective": "Als Empfehlungsquellen und Bewertungsbeitragende aktivieren",
+          "main_messages_ideas": "Empfehlungsprogramm-Einführung, Bewertungsanfrage, Empfehlungs-Erfolgsbenachrichtigung, Botschafter-Einladung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Danke! Möchten Sie die Begeisterung teilen?",
+              "description": "Nach NPS 9-10 Einreichung",
+              "content": "Danke für das fantastische Feedback! Wir freuen uns, dass [Produkt] gut für Sie funktioniert. Wenn Sie andere kennen, die profitieren könnten, gibt unser Empfehlungsprogramm sowohl Ihnen als auch Ihrer Empfehlung [Belohnung]. Teilen Sie einfach Ihren einzigartigen Link: [Empfehlungslink]"
+            },
+            {
+              "channel": "Email",
+              "title": "Würden Sie Ihre Erfahrung auf [G2/Capterra] teilen?",
+              "description": "7 Tage nach positivem NPS",
+              "content": "Ihr Feedback bedeutet uns die Welt, und es würde auch anderen helfen, bessere Entscheidungen zu treffen. Würden Sie sich 5 Minuten nehmen, um Ihre Erfahrung auf [G2/Capterra] zu teilen? Authentische Bewertungen von Nutzern wie Ihnen helfen anderen Teams, die richtige Lösung zu finden."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihre Empfehlung [Name] hat sich gerade angemeldet!",
+              "description": "Wenn Empfehlung konvertiert",
+              "content": "Tolle Nachrichten! [Empfehlungsname] ist dank Ihrer Empfehlung gerade [Produkt]-Kunde geworden. Sie haben [Belohnung] verdient. Danke für die Weiterempfehlung! Möchten Sie weitere Empfehlungen machen? Teilen Sie Ihren Link erneut: [Link]"
+            },
+            {
+              "channel": "Email",
+              "title": "Treten Sie unserem Kundenbeirat bei",
+              "description": "Für Top-Fürsprecher: Exklusive Einladung",
+              "content": "Sie waren ein unglaublicher Fürsprecher für [Produkt], und wir möchten Sie zu etwas Besonderem einladen: unserem Kundenbeirat. Als Mitglied erhalten Sie: [Vorteile - früher Zugang, direkter Produktinput, exklusive Events]. Interessiert?"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Kunden mit bemerkenswerten Erfolgsgeschichten",
+          "scenario_objective": "Case Studies und öffentliche Referenzen entwickeln",
+          "main_messages_ideas": "Erfolgsanerkennung, Case-Study-Einladung, Einfacher Teilnahmepfad, Anerkennung und Belohnung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihre Ergebnisse mit [Produkt] sind beeindruckend!",
+              "description": "Wenn bemerkenswerte Metriken erreicht",
+              "content": "Ich habe mir die Ergebnisse Ihres Teams mit [Produkt] angesehen, und sie sind bemerkenswert: [Spezifische Erfolge]. Wären Sie offen, Ihre Geschichte zu teilen? Wir würden Sie gerne als Case Study vorstellen. Es ist tolle Sichtbarkeit für Ihr Team, und wir machen den Prozess super einfach."
+            },
+            {
+              "channel": "Email",
+              "title": "Case Study: Was ist involviert",
+              "description": "Wenn Interesse gezeigt",
+              "content": "Danke, dass Sie eine Case Study in Betracht ziehen! Hier ist, was involviert ist: Ein 30-minütiges Interview (wir schreiben alles), Ihre Freigabe der Endversion und optionale Foto/Video-Komponente. Im Gegenzug: [Sichtbarkeitsvorteile, Merchandise, Co-Marketing-Möglichkeiten]. Wie sieht es nächste Woche für das Interview aus?"
+            },
+            {
+              "channel": "Email",
+              "title": "Ihre Case Study ist live!",
+              "description": "Wenn veröffentlicht",
+              "content": "Sie ist live! Ihre Case Study ist jetzt auf unserer Website und wird über unsere Kanäle geteilt. Hier ist der Link zum Teilen mit Ihrem Netzwerk: [Link]. Danke, dass Sie so ein unglaublicher Partner sind. Als Dankeschön haben wir [Geschenk/Belohnung] für Sie gesendet!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Produktschulung & Thought Leadership",
+      "target": "Alle Kunden basierend auf Lebenszyklusphase und Nutzungsmustern",
+      "objective": "Produktbeherrschung steigern und Marke als Branchenführer positionieren um Engagement zu fördern",
+      "kpi": "Webinar-Teilnahmerate (Ziel: 15%), Ressourcen-Engagement (Ziel: 40%), Zertifizierungsabschluss (Ziel: 20%), Community-Teilnahme (Ziel: 25%)",
+      "description": "Ein Bildungsprogramm, das kontinuierlichen Mehrwert durch Produkttipps, Best Practices und Branchen-Thought-Leadership liefert. Das Programm baut tiefere Produktbeherrschung auf und positioniert die Marke als Expertenressource.",
+      "scenarios": [
+        {
+          "scenario_target": "Alle Kunden - nutzungsbasierte Schulung",
+          "scenario_objective": "Kontinuierliches Lernen und fortgeschrittene Feature-Adoption fördern",
+          "main_messages_ideas": "Wöchentliche Tipps, Best-Practice-Leitfäden, Anwendungsfall-Vertiefungen, Power-User-Zertifizierung, Community-Highlights",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Produkt]-Tipps: Der Produktivitäts-Boost dieser Woche",
+              "description": "Wöchentlich: Tipps-Newsletter",
+              "content": "Der Tipp dieser Woche: [Spezifischer Tipp basierend auf ihren Nutzungsmustern]. Wussten Sie, dass Sie [Shortcut/Feature] können? Nutzer, die das tun, sparen durchschnittlich [X] pro Woche. Probieren Sie es heute!"
+            },
+            {
+              "channel": "Email",
+              "title": "Best Practices: [Relevantes Thema]-Leitfaden",
+              "description": "Monatlich: Relevante Best Practices",
+              "content": "Wir haben die Best Practices unserer erfolgreichsten Kunden zu [für ihren Anwendungsfall relevantem Thema] zusammengestellt. Enthalten: [Wichtige Erkenntnisse]. Laden Sie den vollständigen Leitfaden herunter und sehen Sie, wie Sie abschneiden."
+            },
+            {
+              "channel": "Email",
+              "title": "Live-Workshop: Fortgeschrittenes [Feature/Anwendungsfall]",
+              "description": "Zweiwöchentlich: Webinar-Einladung",
+              "content": "Nehmen Sie an unserem Live-Workshop zu [fortgeschrittenem Thema] teil. Lernen Sie von unseren Produktexperten und Power-Usern, die [Feature/Workflow] gemeistert haben. Plus Live-Q&A um Ihre spezifischen Fragen zu beantworten. Reservieren Sie Ihren Platz!"
+            },
+            {
+              "channel": "Email",
+              "title": "Werden Sie zertifizierter [Produkt]-Experte",
+              "description": "Für engagierte Nutzer: Zertifizierungsprogramm",
+              "content": "Bereit, [Produkt]-Experte zu werden? Unser Zertifizierungsprogramm validiert Ihre Fähigkeiten und schaltet exklusive Vorteile frei: [Badge, LinkedIn-Credential, Experten-Community-Zugang, früher Feature-Zugang]. Starten Sie Ihre Zertifizierungsreise heute!"
+            }
+          ]
+        },
+        {
+          "scenario_target": "Alle Kunden - Branchen-Thought-Leadership",
+          "scenario_objective": "Markenautorität aufbauen und Engagement durch wertvollen Content vertiefen",
+          "main_messages_ideas": "Branchentrends, Benchmark-Reports, Experteninterviews, Community-Events",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Branchen]-Trendbericht: 2025 Edition",
+              "description": "Quartalsweise: Brancheneinblicke",
+              "content": "Unser jährlicher [Branchen]-Trendbericht ist da! Basierend auf Daten von [X] Unternehmen und [Y] Nutzern, entdecken Sie: [Wichtige Erkenntnisse]. Wo steht Ihr Team? Laden Sie den vollständigen Bericht herunter und benchmarken Sie sich selbst."
+            },
+            {
+              "channel": "Email",
+              "title": "Experteninterview: [Branchenführer] über [Thema]",
+              "description": "Monatlich: Thought-Leadership-Content",
+              "content": "Wir haben uns mit [Expertenname] von [Unternehmen] zusammengesetzt, um [relevantes Thema] zu besprechen. Wichtige Erkenntnis: [Zitat]. Sehen Sie das vollständige Interview für umsetzbare Strategien, die Sie heute implementieren können."
+            },
+            {
+              "channel": "Push",
+              "title": "Live-Event morgen",
+              "description": "Event-Erinnerung",
+              "content": "Verpassen Sie nicht unsere Live-Session zu [Thema] morgen um [Uhrzeit]. Reservieren Sie Ihren Platz!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Executive & Stakeholder-Engagement",
+      "target": "Wirtschaftliche Käufer und Entscheidungsträger bei Kundenkonten",
+      "objective": "Executive-Beziehungen aufbauen, die Wert verstärken und Verlängerungs/Expansionsentscheidungen unterstützen",
+      "kpi": "Executive-Engagement-Rate (Ziel: 40%), QBR-Teilnahme (Ziel: 60%), Executive-Sponsor-Identifikation (Ziel: 80%), Multi-Threading-Tiefe (Ziel: 3+ Kontakte pro Konto)",
+      "description": "Ein Programm fokussiert auf den Aufbau von Beziehungen zu wirtschaftlichen Käufern und Schlüssel-Stakeholdern, die Verlängerungs- und Expansionsentscheidungen beeinflussen. Das Programm stellt sicher, dass Entscheidungsträger strategischen Wert über die tägliche Nutzung hinaus sehen.",
+      "scenarios": [
+        {
+          "scenario_target": "Executive-Sponsoren und wirtschaftliche Käufer bei Mittelstands/Enterprise-Konten",
+          "scenario_objective": "Direkte Beziehung aufbauen und strategischen Wert demonstrieren",
+          "main_messages_ideas": "Executive-Wertzusammenfassung, QBR-Einladung, Peer-Networking, Strategische Roadmap-Vorschau",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Der [Produkt]-ROI-Bericht Ihres Teams",
+              "description": "Quartalsweise: Executive-Zusammenfassung",
+              "content": "Hallo [Executive-Name], als [Titel] bei [Unternehmen] wollte ich eine Zusammenfassung des Mehrwerts teilen, den Ihr Team von [Produkt] erhält. Dieses Quartal: [ROI-Metriken, eingesparte Zeit, erreichte Ziele]. [Teamleiter] und sein Team machen großartige Arbeit. Hier sind einige Bereiche, in denen wir Möglichkeiten für noch mehr Wirkung sehen."
+            },
+            {
+              "channel": "Email",
+              "title": "Einladung: Quartals-Geschäftsüberprüfung",
+              "description": "Quartalsweise: QBR-Einladung",
+              "content": "Ich möchte Sie zu unserer Quartals-Geschäftsüberprüfung für das [Produkt]-Konto von [Unternehmen] einladen. Wir werden behandeln: Ergebnisse und Benchmarks Ihres Teams, Roadmap-Abstimmung mit Ihren Prioritäten und Möglichkeiten für das kommende Quartal. Würde [vorgeschlagene Zeit] für Sie passen?"
+            },
+            {
+              "channel": "Email",
+              "title": "Exklusiv: Executive-Peer-Roundtable",
+              "description": "Halbjährlich: Executive-Networking",
+              "content": "Sie sind zu einem exklusiven Roundtable mit [Rollen]-Führungskräften von Unternehmen wie [Peer-Unternehmen] eingeladen. Thema: [Relevantes Executive-Level-Thema]. Dieses intime Event ist auf 15 Führungskräfte begrenzt und beinhaltet ein Dinner. Sind Sie dabei?"
+            },
+            {
+              "channel": "Email",
+              "title": "Eine Vorschau auf das, was kommt",
+              "description": "Jährlich: Roadmap-Vorschau für Schlüssel-Stakeholder",
+              "content": "Als geschätzter Partner wollte ich Ihnen einen frühen Blick auf unsere Produkt-Roadmap geben. Schlüsselthemen für das Jahr: [Strategische Prioritäten]. Ich würde mich über Ihren Input freuen - was ist für [Unternehmen] am wichtigsten? Lassen Sie uns Zeit einplanen, um zu besprechen, wie unsere Roadmap mit Ihren Prioritäten übereinstimmt."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Test-Aktivierung & Konversion",
+      "why_brevo_is_better": "Brevos ereignisbasierte Automatisierung verbindet sich mit Ihrer Produktanalyse, um Nachrichten basierend auf Nutzerverhalten in Echtzeit auszulösen. Wenn ein Nutzer Aktivierungs-Meilensteine erreicht (oder nicht erreicht), liefern automatisierte Workflows perfekt getimte Impulse, die die Test-Konversionsraten dramatisch verbessern.",
+      "omnichannel_channels": "E-Mail für Bildungscontent und Feature-Highlights + In-App-Nachrichten für kontextuelle Aktivierungs-Aufforderungen + SMS für dringende Test-Erinnerungen und persönliche Kontaktaufnahme + Push für Reaktivierung und Deadline-Warnungen",
+      "setup_efficiency": "Vorgefertigte SaaS-Test-Workflows mit verhaltensbasierten Triggern reduzieren die Implementierungszeit um 60%. API-Integration mit gängigen Produktanalyse-Plattformen (Segment, Mixpanel, Amplitude) ermöglicht schnelle Bereitstellung."
+    },
+    {
+      "scenario_name": "Feature-Adoption & Engagement",
+      "why_brevo_is_better": "Integration mit Ihrer Produktdatenbank ermöglicht verhaltensbasierte Trigger, die Nutzer mit relevanter Feature-Schulung genau dann erreichen, wenn sie bereit sind. Das System identifiziert Feature-Nutzungslücken und liefert automatisch personalisierte Adoptionskampagnen.",
+      "omnichannel_channels": "E-Mail für Feature-Tutorials und Erfolgsgeschichten + In-App für kontextuelle Feature-Tipps und Walkthroughs + Push für Engagement-Erinnerungen und neue Feature-Ankündigungen + SMS für persönliche Kontaktaufnahme zu hochwertigen Nutzern",
+      "setup_efficiency": "Feature-Adoptionsvorlagen mit vorgefertigten verhaltensbasierten Triggern können innerhalb von Stunden an Ihre spezifischen Features angepasst werden. Dynamische Inhaltsblöcke gewährleisten Relevanz ohne Dutzende separater Kampagnen."
+    },
+    {
+      "scenario_name": "Kundengesundheit & Abwanderungsprävention",
+      "why_brevo_is_better": "Nutzungsrückgangs-Trigger und Health-Score-Integration ermöglichen proaktive Intervention Tage oder Wochen bevor Kunden eine Kündigung erwägen. Das System leitet hochwertige gefährdete Konten an CSMs weiter und automatisiert die Kontaktaufnahme für kleinere Konten.",
+      "omnichannel_channels": "E-Mail für proaktive Check-ins und Werterinnerungen + SMS für persönliche CSM-Kontaktaufnahme + In-App für Interventions-Aufforderungen und Hilfsangebote + Aufgabenerstellung für CSM-Follow-up bei kritischen Konten",
+      "setup_efficiency": "Health-Score-Integration mit gängigen CS-Plattformen (Gainsight, ChurnZero, Totango) ermöglicht automatisierte Risikoidentifikation und Interventions-Workflows mit minimalem Setup."
+    },
+    {
+      "scenario_name": "Konto-Expansion & Upsell",
+      "why_brevo_is_better": "Nutzungsverfolgungsintegration identifiziert Expansionssignale (Limit-Annäherung, neue Anwendungsfälle, Teamwachstum) und liefert zeitgerechte Upgrade-Nachrichten. Das System unterscheidet zwischen produkt-geführten und vertriebsunterstützten Ansätzen basierend auf Kontogröße.",
+      "omnichannel_channels": "E-Mail für Upgrade-Schulung und ROI-Nachrichten + In-App für Nutzungswarnungen und Upgrade-Aufforderungen + SMS für zeitkritische Limit-Warnungen + Vertriebsbenachrichtigungen für hochwertige Expansionsmöglichkeiten",
+      "setup_efficiency": "Vorgefertigte Expansions-Workflows mit limit-basierten Triggern und dynamischem Preiscontent können innerhalb von Tagen nach Implementierung aktiviert werden."
+    },
+    {
+      "scenario_name": "Kunden-Fürsprache & Empfehlung",
+      "why_brevo_is_better": "NPS-Antwort-Integration löst Fürsprache-Anfragen zu Höchstzufriedenheitsmomenten aus. Das System verfolgt Empfehlungszuordnung und automatisiert die Belohnungserfüllung und identifiziert Top-Fürsprecher für tieferes Engagement.",
+      "omnichannel_channels": "E-Mail für Empfehlungsprogramm-Promotion und Erfolgsbenachrichtigungen + In-App für nahtloses Teilen und Tracking + Push für Empfehlungs-Konversionsbenachrichtigungen + SMS für persönliches Dankeschön und Botschafter-Einladungen",
+      "setup_efficiency": "Empfehlungsprogramm-Vorlagen mit Tracking, Attribution und Belohnungsautomatisierung können innerhalb einer Woche gestartet werden. Integration mit Bewertungsplattformen vereinfacht öffentliche Bewertungsanfragen."
+    }
+  ],
+  "conclusion": "SaaS-Unternehmen, die diese Beziehungsmarketing-Programme implementieren, können deutlich höhere Test-zu-Bezahlt-Konversionsraten, verbesserte Netto-Umsatzbindung durch proaktive Expansion und Abwanderungsprävention und einen nachhaltigen Wachstumsmotor durch Kundenfürsprache erwarten. Die Programme erkennen an, dass im Abonnementgeschäft der Erstverkauf nur der Anfang ist - wahrer Erfolg kommt durch kontinuierliche Wertlieferung, proaktives Beziehungsmanagement und das Verwandeln von Kunden in Champions. Durch die Kombination von verhaltensbasierter Automatisierung mit persönlicher Betreuung an kritischen Momenten skalieren diese Programme effizient und erhalten gleichzeitig die persönliche Verbindung, die langfristigen Kundenerfolg fördert."
+}

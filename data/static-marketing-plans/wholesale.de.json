@@ -1,0 +1,715 @@
+{
+  "introduction": "Dieser umfassende Marketing-Beziehungsplan ist für Großhändler konzipiert, um stärkere Partnerschaften mit Einzelhändlern, Einkaufsverbänden und Wiederverkäufern aufzubauen. Von der Neukundenakquise bis zur Stufenerhöhung optimieren diese Programme den gesamten Händler-Lifecycle, um konsistente Bestellungen, Sortimentserweiterung und gegenseitiges Wachstum im Distributionskanal zu fördern.",
+  "company_summary": {
+    "name": "Großhandels- & Distributionsunternehmen",
+    "website": "example-wholesale.com",
+    "activities": "B2B-Großhandelsdistribution einschließlich Produktbeschaffung, Bestandsmanagement, Logistik und Händlerunterstützung über diverse Produktkategorien hinweg",
+    "target": "Einzelhandelsgeschäftsinhaber, Einkaufsleiter, Einkaufsverbandsmitglieder, Category Manager und Multi-Standort-Einzelhandelsbetreiber, die eine zuverlässige Produktversorgung benötigen",
+    "industry": "Wholesale",
+    "business_model": "B2B Großhandelsdistribution",
+    "customer_lifecycle_key_steps": "Lead-Generierung > Kreditprüfung > Account-Einrichtung > Erstbestellung > Bestellzyklus-Etablierung > Sortimentserweiterung > Stufenaufstieg > Strategische Partnerschaft > Fürsprache"
+  },
+  "programs_list": [
+    {
+      "program_name": "Händler-Lead-Nurturing & Account-Akquise",
+      "target": "Potenzielle Einzelhändler und neue Geschäftsanfragen",
+      "objective": "Interessenten durch effektive Qualifizierung und Wertdemonstration in genehmigte Großhandels-Accounts konvertieren",
+      "kpi": "Lead-zu-Account-Konversion (Ziel: 25%), Antrags-Abschlussrate (Ziel: 60%), Zeit bis Erstbestellung (Ziel: <14 Tage)",
+      "description": "Strategisches Engagement, das den Wert einer Großhandelspartnerschaft demonstriert, den Antragsprozess vereinfacht und die Neukundenaktivierung beschleunigt.",
+      "scenarios": [
+        {
+          "scenario_target": "Messeleads und Website-Anfragen von potenziellen Einzelhändlern",
+          "scenario_objective": "Interesse in Großhandels-Account-Anträge konvertieren",
+          "main_messages_ideas": "Partnerschaftsvorteile, Katalogvorschau, Antragsprozess, Mengenvorteile",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen bei [Firma] Großhandel",
+              "description": "Sofort: Nach Anfrage",
+              "content": "Danke für Ihr Interesse an einer Partnerschaft mit uns! Hier ein Überblick, was die Großhandelspartnerschaft beinhaltet: wettbewerbsfähige Preise, zuverlässige Versorgung, Merchandising-Unterstützung und flexible Bestellmöglichkeiten. Beantragen Sie in 5 Minuten, um loszulegen."
+            },
+            {
+              "channel": "Email",
+              "title": "Großhandelskatalog-Vorschau",
+              "description": "Tag 2: Wertdemonstration",
+              "content": "Vorschau unseres Großhandelskatalogs: Bestseller, exklusive Linien und margensteigernde Produkte. Sehen Sie die Einzelhandelspreise und Ihren Großhandelsrabatt. Bereit, Ihre tatsächlichen Margen zu sehen? Vervollständigen Sie Ihren Antrag, um volle Preise freizuschalten."
+            },
+            {
+              "channel": "SMS",
+              "title": "Kurzer Antrags-Check",
+              "description": "Tag 4: Persönlicher Touch",
+              "content": "Hallo [Name], sah, dass Sie sich die Großhandelspartnerschaft anschauen. Fragen zum Antrag oder zu den Konditionen? Antworten Sie hier oder rufen Sie [Nummer] an - helfe gerne."
+            },
+            {
+              "channel": "Email",
+              "title": "Was unsere Händler sagen",
+              "description": "Tag 7: Social Proof",
+              "content": "Hören Sie von Händlern wie Ihnen: [Testimonials über Partnerschaftsvorteile, Service und Wachstum]. Schließen Sie sich [X] Händlern an, die uns als ihren Großhandelspartner vertrauen."
+            },
+            {
+              "channel": "Email",
+              "title": "Antragsunterstützung verfügbar",
+              "description": "Tag 10: Hindernisse entfernen",
+              "content": "Brauchen Sie Hilfe bei Ihrem Antrag? Unser Account-Team kann Sie in einem 10-minütigen Anruf durch den Prozess führen. Wir erledigen den Papierkram, damit Sie schneller bestellen können. Vereinbaren Sie einen Anruf oder antworten Sie mit Fragen."
+            },
+            {
+              "channel": "Email",
+              "title": "Neuhändler-Starterprogramm",
+              "description": "Tag 14: Sonderangebot",
+              "content": "Neupartner-Special: Beantragen Sie diese Woche und erhalten Sie [Startervorteil - reduzierte Mindestmengen, kostenloser Versand bei Erstbestellung oder Einführungsrabatt]. Zeitlich begrenztes Angebot für qualifizierte Händler."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Abgebrochene Großhandels-Account-Anträge",
+          "scenario_objective": "Re-engagieren und Account-Einrichtung abschließen",
+          "main_messages_ideas": "Antragswiederherstellung, Hilfsangebot, Vereinfachter Prozess, Dringlichkeit",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihr Antrag ist fast vollständig",
+              "description": "Tag 1 nach Abbruch",
+              "content": "Sie sind fast da! Ihr Großhandelsantrag ist zu 80% vollständig. Beenden Sie in 2 Minuten, um Großhandelspreise freizuschalten und mit dem Bestellen zu beginnen. Fragen, die Sie aufhalten? Wir sind hier um zu helfen."
+            },
+            {
+              "channel": "SMS",
+              "title": "Brauchen Sie Hilfe beim Antrag?",
+              "description": "Tag 3",
+              "content": "Sah, dass Sie einen Großhandelsantrag gestartet haben. Auf ein Hindernis gestoßen? Antworten Sie mit Fragen oder rufen Sie [Nummer] an - wir können oft am selben Tag genehmigen."
+            },
+            {
+              "channel": "Email",
+              "title": "Lassen Sie uns Ihre Einrichtung gemeinsam abschließen",
+              "description": "Tag 7",
+              "content": "Immer noch an Großhandelspartnerschaft interessiert? Lassen Sie uns Ihren Antrag gemeinsam abschließen. Vereinbaren Sie einen kurzen Anruf und unser Team führt Sie durch - die meisten Anträge werden innerhalb von 24 Stunden genehmigt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Neuhändler-Onboarding & Erstbestellungs-Erfolg",
+      "target": "Neu genehmigte Großhandels-Accounts",
+      "objective": "Starke Bestellgewohnheiten etablieren und Erstbestellungszufriedenheit sicherstellen",
+      "kpi": "Erstbestellung innerhalb von 7 Tagen (Ziel: 70%), Onboarding-Zufriedenheit (Ziel: 90%), Wiederholungsbestellung innerhalb von 30 Tagen (Ziel: 60%)",
+      "description": "Umfassendes Onboarding, das neuen Händlern hilft, Bestellprozesse zu navigieren, Produkte zu entdecken und erfolgreiche Verkaufsmuster zu etablieren.",
+      "scenarios": [
+        {
+          "scenario_target": "Neu genehmigte Einzelhandels-Accounts, die auf Erstbestellung warten",
+          "scenario_objective": "Schnelle Erstbestellung vorantreiben und Bestellbeziehung etablieren",
+          "main_messages_ideas": "Willkommen, Account-Einrichtung, Bestellanleitung, Bestseller-Empfehlungen, Erstbestellungs-Support",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen in der [Firma]-Familie!",
+              "description": "Tag der Genehmigung",
+              "content": "Gratulation! Ihr Großhandels-Account ist genehmigt und aktiv. Hier ist alles, was Sie brauchen: Ihr Account-Login, Großhandelspreis-Katalog und Ihr dedizierter Account-Manager-Kontakt. Bereit, Ihre erste Bestellung aufzugeben? Unser Bestseller-Starterpaket ist ein guter Anfang."
+            },
+            {
+              "channel": "SMS",
+              "title": "Account aktiv!",
+              "description": "Gleicher Tag",
+              "content": "Tolle Nachrichten - Ihr [Firma] Großhandels-Account ist live! Login: [URL]. Erstbestellungs-Tipp: Schauen Sie sich unser Bestseller-Bundle für eine kuratierte Starter-Auswahl an."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihre Bestellanleitung & Plattform-Tutorial",
+              "description": "Tag 2: Prozess-Education",
+              "content": "Alles, was Sie über Bestellungen wissen müssen: Mindestbestellmengen, Lieferpläne, Zahlungsbedingungen und Rückgaberichtlinien. Plus, eine kurze Videotour durch unsere Bestellplattform, um Sie in Minuten zum Bestellen zu bringen."
+            },
+            {
+              "channel": "Email",
+              "title": "Top-Seller für Ihren Geschäftstyp",
+              "description": "Tag 3: Personalisierte Empfehlungen",
+              "content": "Basierend auf Händlern wie Ihnen, hier sind unsere Top-Performer in Ihrer Kategorie. Diese Produkte haben die besten Abverkaufsraten und Margen. Perfekt für Ihre Erstbestellung oder zur Sortimentserweiterung."
+            },
+            {
+              "channel": "Email",
+              "title": "Noch nicht bestellt? Lassen Sie uns helfen",
+              "description": "Tag 7: Wenn keine Erstbestellung",
+              "content": "Wir haben bemerkt, dass Sie noch keine Erstbestellung aufgegeben haben. Brauchen Sie Hilfe bei der Produktauswahl? Unser Account-Team kann ein Starter-Sortiment basierend auf Ihrem Geschäftstyp und Kundenstamm empfehlen. Vereinbaren Sie eine kurze Beratung."
+            },
+            {
+              "channel": "Email",
+              "title": "Erstbestellung versendet - Was kommt als Nächstes",
+              "description": "Bei Erstbestellungsversand",
+              "content": "Ihre erste Bestellung ist auf dem Weg! Tracking: [Link]. Hier ist, was Sie erwarten können: Lieferzeitplan, Auspack-Tipps und Merchandising-Vorschläge. Fragen zu den Produkten? Ihr Account-Manager ist bereit zu helfen."
+            },
+            {
+              "channel": "Email",
+              "title": "Erstbestellungs-Feedback & Nachbestellerinnerung",
+              "description": "7 Tage nach Erstlieferung",
+              "content": "Wie verkauft sich Ihre erste Bestellung? Wir würden gerne Ihr Feedback hören. Basierend auf Ihrer Bestellung, hier sind ergänzende Produkte, die gut zusammen verkauft werden. Bereit, Ihre Bestseller nachzubestellen? Ihre Favoriten sind für einfache Nachbestellung gespeichert."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Neue Einkaufsverbandsmitglieder, die über Gruppenzugehörigkeit beitreten",
+          "scenario_objective": "Mit gruppenspezifischen Vorteilen und Programmen onboarden",
+          "main_messages_ideas": "Gruppen-Willkommen, Exklusive Vorteile, Gruppenpreise, Koordinierte Programme",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Willkommen [Einkaufsverbands]-Mitglied!",
+              "description": "Tag der Genehmigung",
+              "content": "Willkommen bei [Firma] als [Einkaufsverbands]-Mitglied! Sie haben Zugang zu exklusiven Gruppenpreisen, koordinierten Promotions und Nur-Mitglieder-Programmen. So maximieren Sie Ihre Mitgliedschaftsvorteile."
+            },
+            {
+              "channel": "Email",
+              "title": "[Einkaufsverbands] Exklusive Preise & Programme",
+              "description": "Tag 3: Gruppenvorteile",
+              "content": "Ihre [Einkaufsverbands]-Mitgliedschaft schaltet frei: [spezifische Preisstufen], Quartals-Rückvergütungen, koordinierte Marketing-Programme und Nur-Mitglieder-Neuproduktvorschauen. Melden Sie sich an, um Ihre exklusiven Preise zu sehen."
+            },
+            {
+              "channel": "Email",
+              "title": "Verbinden Sie sich mit anderen [Einkaufsverbands]-Mitgliedern",
+              "description": "Tag 7: Community-Building",
+              "content": "Treten Sie der [Einkaufsverbands]-Händler-Community bei: Best-Practice-Austausch, Erfolgsgeschichten und koordinierte Promotions. Sehen Sie, wie andere Mitglieder ihr Geschäft mit unserer Partnerschaft ausbauen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Nachbestellautomatisierung & Bestandsmanagement",
+      "target": "Aktive Händler mit etablierten Bestellmustern",
+      "objective": "Rechtzeitige Nachbestellungen sicherstellen, Lieferengpässe verhindern und Lagerbestände optimieren",
+      "kpi": "Nachbestellrate (Ziel: 75%), Lieferengpass-Prävention (Ziel: 90%), Durchschnittliche Bestellfrequenz (Ziel: +20%)",
+      "description": "Proaktive Bestandsmanagement-Kommunikation, die Händlerbedürfnisse basierend auf Verkaufsmustern und saisonalen Trends antizipiert.",
+      "scenarios": [
+        {
+          "scenario_target": "Händler, die sich basierend auf Bestellhistorie dem Nachbestellpunkt nähern",
+          "scenario_objective": "Rechtzeitige Nachbestellungen vor Lieferengpässen vorantreiben",
+          "main_messages_ideas": "Nachbestellerinnerung, Schnellnachbestellung, Mengenrabatte, Lager-Alerts",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Zeit, Ihre Bestseller nachzubestellen",
+              "description": "Basierend auf typischem Nachbestellzyklus",
+              "content": "Basierend auf Ihrem Verkaufsmuster werden Sie wahrscheinlich bei [Produkten] knapp. Jetzt nachbestellen, um Lieferengpässe zu vermeiden - Ihre vorherige Bestellung ist für einfache Nachbestellung vorgeladen. Aktuelle Lieferzeit: [X Tage]."
+            },
+            {
+              "channel": "SMS",
+              "title": "Nachbestellungs-Alert",
+              "description": "Wenn sich Lieferengpass-Fenster nähert",
+              "content": "Nachbestellungs-Alert: [Produkt]-Nachbestellung empfohlen innerhalb von 5 Tagen basierend auf Ihrer Verkaufsrate. Schnellnachbestellung: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "One-Click-Nachbestellung bereit",
+              "description": "Follow-up wenn keine Aktion",
+              "content": "Ihre Nachbestellung ist fertig - gleiche Produkte, gleiche Mengen. Ein Klick zur Bestätigung. Müssen Sie anpassen? Einfach vor Checkout zu ändern. Mengenrabatt gilt für diese Bestellgröße."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler mit sinkender Bestellfrequenz",
+          "scenario_objective": "Re-engagieren und Bestellhindernisse verstehen",
+          "main_messages_ideas": "Check-in, Hilfsangebot, Alternative Produkte, Anreiz",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Wir vermissen Ihre Bestellungen",
+              "description": "Wenn Bestellfrequenz um 30%+ sinkt",
+              "content": "Wir haben bemerkt, dass Ihre Bestellungen zurückgegangen sind. Alles in Ordnung? Wenn sich Ihre Bedürfnisse geändert haben, würden wir gerne helfen, bessere Produkte oder Bestelllösungen zu finden. Was können wir tun, um Ihr Geschäft zu unterstützen?"
+            },
+            {
+              "channel": "SMS",
+              "title": "Kurzer Check-in",
+              "description": "Tag 7: Persönliche Ansprache",
+              "content": "Hallo [Name], hier ist [Rep] von [Firma]. Ist schon eine Weile her - wie läuft der Verkauf? Kann ich irgendwie helfen?"
+            },
+            {
+              "channel": "Email",
+              "title": "Neue Optionen zum Betrachten",
+              "description": "Tag 14: Alternative Lösungen",
+              "content": "Dinge ändern sich - vielleicht haben sich Ihre Bestseller verschoben. Hier sind trendige Produkte in Ihrer Kategorie, mit denen andere Händler Erfolg haben. Wert, ein neues Sortiment auszuprobieren?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Neuprodukteinführung & Sortimentserweiterung",
+      "target": "Alle aktiven Händler segmentiert nach Relevanz",
+      "objective": "Adoption neuer Produkte vorantreiben und Händler-Sortimente erweitern",
+      "kpi": "Neuprodukts-Adoptionsrate (Ziel: 30%), Sortimentserweiterung (Ziel: +2 Kategorien), Probebestellungs-Konversion (Ziel: 40%)",
+      "description": "Strategische Neuprodukt-Kommunikation, die neue Angebote mit Händlerprofilen und Kundenstämmen abgleicht.",
+      "scenarios": [
+        {
+          "scenario_target": "Händler mit relevanter Kategorie-Passung für neue Produkte",
+          "scenario_objective": "Erstbestellungen für neue Produkte generieren",
+          "main_messages_ideas": "Neuheiten-Vorschau, Produktdetails, Probenangebot, Erfolgsgeschichten",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Exklusive Vorschau: [Neue Produktlinie]",
+              "description": "2 Wochen vor Launch",
+              "content": "Erhalten Sie ersten Zugang zu [Neue Produktlinie] vor der allgemeinen Verfügbarkeit. Basierend auf Ihrem Kundenstamm sollte das ein starker Performer sein. Jetzt vorbestellen für erste Lieferung und beste Auswahl."
+            },
+            {
+              "channel": "Email",
+              "title": "[Neues Produkt] Launch: Alle Details",
+              "description": "Launch-Tag",
+              "content": "[Neue Produktlinie] ist da! Vollständige Produktspezifikationen, Großhandelspreise, empfohlene Einzelhandelspreise und Margenanalyse. Einschließlich POS-Materialien und Verkaufstipps, um Produkt schnell zu bewegen."
+            },
+            {
+              "channel": "SMS",
+              "title": "Neuprodukts-Alert",
+              "description": "Launch-Tag - schnelle Benachrichtigung",
+              "content": "Gerade gelauncht: [Neues Produkt] ist jetzt bestellbar. Starke Margen und bei Konsumenten im Trend. Details: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "Einführungs-Probeangebot",
+              "description": "Woche 1: Probenanreiz",
+              "content": "Testen Sie [Neues Produkt] risikofrei: Sondereinführungspreise plus volle Rückgabeoption, wenn es nicht performt. Zeitlich begrenzt für Erstbestellungen. Margen starten bei [X]%."
+            },
+            {
+              "channel": "Email",
+              "title": "Wie Händler [Neues Produkt] verkaufen",
+              "description": "Woche 4: Social Proof",
+              "content": "Erste Ergebnisse sind da: Händler berichten [Ergebnis] mit [Neuem Produkt]. So merchandisen sie es, Preisstrategien die funktionieren, und Verkaufstechniken. Bereit, es auszuprobieren?"
+            },
+            {
+              "channel": "Email",
+              "title": "Letzte Chance: Einführungspreise enden",
+              "description": "Woche 6: Dringlichkeit",
+              "content": "Einführungspreise für [Neues Produkt] enden [Datum]. Sichern Sie sich Launch-Preise bevor Standard-Großhandelspreise gelten. Händler, die es probiert haben, bestellen nach - schließen Sie sich ihnen an."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler, die in begrenzten Kategorien bestellen (Sortimentserweiterungs-Potenzial)",
+          "scenario_objective": "Kategorie-Mix des Händlers mit ergänzenden Produkten erweitern",
+          "main_messages_ideas": "Kategorie-Empfehlung, Cross-Sell, Bundle-Angebot, Erfolgsbeispiel",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Vervollständigen Sie Ihr Sortiment: [Kategorie]",
+              "description": "Quartalsweise Sortimentsprüfung",
+              "content": "Sie machen das großartig mit [aktueller Kategorie]. Händler wie Sie führen auch [ergänzende Kategorie] - es ist ein natürlicher Add-on-Kauf für Ihre Kunden. Hier ist unsere Bestseller-Auswahl in dieser Kategorie."
+            },
+            {
+              "channel": "Email",
+              "title": "Kategorie-Erweiterungspaket",
+              "description": "Follow-up-Angebot",
+              "content": "Testen Sie [neue Kategorie] mit unserem Starterpaket: kuratierte Auswahl an Bestsellern mit reduzierter Mindestmenge und Einführungspreisen. Perfekt, um Kundenreaktion ohne große Verpflichtung zu testen."
+            },
+            {
+              "channel": "Email",
+              "title": "Wie [Händlertyp] erfolgreich erweitert hat",
+              "description": "Social Proof",
+              "content": "[Ähnlicher Händler] hat vor sechs Monaten [Kategorie] hinzugefügt - hier ist ihre Geschichte und Ergebnisse. Könnte auch für Sie funktionieren? Lassen Sie uns besprechen, welches Sortiment zu Ihrem Kundenstamm passen würde."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Saisonvorbereitung & Vorbestellung",
+      "target": "Alle Händler vor Hochsaisons und Feiertagen",
+      "objective": "Saisonale Bestandsvorbereitung maximieren und Vorsaison-Bestellungen erfassen",
+      "kpi": "Vorsaison-Bestellvolumen (Ziel: 40% des Saisonbestands), Saisonaler Abverkauf (Ziel: 85%), Frühbestellungs-Teilnahme (Ziel: 60%)",
+      "description": "Vorausschauende saisonale Kommunikation, die Händlern hilft, sich mit richtigen Lagerbeständen und Merchandising-Unterstützung auf Spitzennachfrage vorzubereiten.",
+      "scenarios": [
+        {
+          "scenario_target": "Alle aktiven Händler vor großen Verkaufssaisons",
+          "scenario_objective": "Frühe saisonale Bestellungen mit Planungsunterstützung vorantreiben",
+          "main_messages_ideas": "Saisonvorschau, Frühbucher-Preise, Bestandsplanung, Merchandising-Unterstützung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Saison]-Kollektion Vorschau: Vorausplanen",
+              "description": "12 Wochen vor Saison",
+              "content": "Erste Einblicke in unsere [Saison]-Kollektion: neue Produkte, wiederkehrende Bestseller und trendorientierte Artikel. Frühe Vorschau hilft Ihnen, Ihr Sortiment vor dem Ansturm zu planen. Vollständiger Katalog angehängt."
+            },
+            {
+              "channel": "Email",
+              "title": "Frühbucher [Saison]-Preise jetzt verfügbar",
+              "description": "10 Wochen vor Saison",
+              "content": "Sichern Sie sich [Saison]-Bestand zu Frühbucherpreisen: [X]% Rabatt auf Standard-Großhandel bei Bestellungen bis [Datum]. Garantierte Lagerzuteilung und Prioritätsversand für frühe Bestellungen."
+            },
+            {
+              "channel": "Email",
+              "title": "[Saison]-Bestandsplanungsleitfaden",
+              "description": "8 Wochen vor Saison",
+              "content": "Basierend auf Ihren vergangenen [Saison]-Verkäufen, hier ist unsere empfohlene Bestellung: Mengen nach Produkt, optimaler Bestellzeitpunkt und prognostizierte Nachfrage. Passen Sie an oder akzeptieren Sie unsere Empfehlungen."
+            },
+            {
+              "channel": "SMS",
+              "title": "Frühbucher-Frist naht",
+              "description": "1 Woche vor Frühbucherfrist",
+              "content": "[Saison]-Frühbucherpreise enden [Datum]. Verpassen Sie nicht [X]% Ersparnis und garantierten Lagerbestand. Jetzt bestellen: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "[Saison]-Merchandising-Kit bereit",
+              "description": "4 Wochen vor Saison",
+              "content": "Ihr [Saison]-Merchandising-Kit ist bereit: POS-Materialien, Display-Empfehlungen, Social-Media-Assets und Werbevorschläge. Kostenlos herunterladen mit Ihrer [Saison]-Bestellung."
+            },
+            {
+              "channel": "Email",
+              "title": "Finale [Saison]-Bevorratung: Dem Ansturm voraus",
+              "description": "2 Wochen vor Saison",
+              "content": "Letzte Chance für [Saison]-Bestellungen mit garantierter Vorsaison-Lieferung. Lagerbestände bei Bestsellern sind begrenzt - jetzt bestellen, um sicherzustellen, dass Sie bereit sind, wenn Kunden zu kaufen beginnen."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler mit starker früherer Saisonleistung",
+          "scenario_objective": "Saisonales Engagement von bewährten Performern erhöhen",
+          "main_messages_ideas": "Vergangene Leistung, Wachstumsmöglichkeit, Exklusive Zuteilung, Premium-Platzierung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Ihr [Saison]-Erfolg: Lassen Sie es noch besser machen",
+              "description": "Basierend auf Vorjahresleistung",
+              "content": "Letzte [Saison] haben Sie [Betrag] an saisonalem Inventar mit [Abverkauf]% verkauft. Dieses Jahr möchten wir Ihnen helfen, es noch besser zu machen: reservierte Zuteilung bei Bestsellern, verbesserte Frühbucherpreise und dedizierter Support."
+            },
+            {
+              "channel": "Email",
+              "title": "Reservierte Bestseller-Zuteilung",
+              "description": "Für Top-Performer",
+              "content": "Als Top-[Saison]-Performer haben wir Zuteilung unserer heißesten Artikel für Sie reserviert. Diese werden ausverkauft sein - beanspruchen Sie Ihre Zuteilung bis [Datum], um Lagerbestand zu garantieren."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Werbekampagnen & Verkaufsunterstützung",
+      "target": "Aktive Händler, die Verkäufe steigern möchten",
+      "objective": "Werbeunterstützung bieten, die Händlern hilft, Lagerbestand abzuverkaufen",
+      "kpi": "Promotion-Teilnahmerate (Ziel: 50%), Promotionaler Abverkauf (Ziel: 80%), Händler-Promotions-ROI (Ziel: 3x)",
+      "description": "Koordinierte Werbeunterstützung, die Händlern die Tools und Anreize für erfolgreiche Verkaufsaktionen gibt.",
+      "scenarios": [
+        {
+          "scenario_target": "Alle Händler während koordinierter Werbeperioden",
+          "scenario_objective": "Werbeteilnahme und Abverkauf vorantreiben",
+          "main_messages_ideas": "Werbepreise, Marketingmaterialien, Verbraucherangebot, Teilnahmevorteile",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Promotion-Name] Kampagne: Ihr Teilnahmeleitfaden",
+              "description": "2 Wochen vor Promotion",
+              "content": "Nehmen Sie an unserer [Promotion-Name]-Kampagne teil, die vom [Daten] läuft. Teilnehmende Händler erhalten: Sonder-Großhandelspreise zur Finanzierung von Promotions, einsatzbereite Marketingmaterialien und koordinierte Verbraucherwerbung, die Traffic in Ihr Geschäft bringt."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihr [Promotion]-Marketing-Kit",
+              "description": "1 Woche vorher",
+              "content": "Ihr Werbe-Toolkit ist bereit: Beschilderung, Social-Media-Posts, Email-Templates und Werbemittel. Alles anpassbar mit Ihren Geschäftsinfos. Herunterladen und einsetzen - alles was Sie brauchen um zu werben."
+            },
+            {
+              "channel": "SMS",
+              "title": "Promotion startet [Tag]",
+              "description": "Tag vor Promotion",
+              "content": "[Promotion-Name] startet morgen! Stellen Sie sicher, dass Sie bei Werbeartikeln bevorratet sind. Last-Minute-Bestellung? Wir können beschleunigen. Materialien bereit: [URL]"
+            },
+            {
+              "channel": "Email",
+              "title": "[Promotion] Läuft: Tipps für Erfolg",
+              "description": "Mitte Promotion",
+              "content": "Promotions-Update: Hier ist, was Top-Performer-Händler tun, um Ergebnisse zu maximieren. Mid-Promotion-Tipps, Bestandscheck und Nachbestelloptionen für schnell gehende Artikel."
+            },
+            {
+              "channel": "Email",
+              "title": "[Promotion] Ergebnisse & Learnings",
+              "description": "Nach Promotion",
+              "content": "Wie hat [Promotion] bei Ihnen funktioniert? Hier sind netzwerkweite Ergebnisse und Erfolgsgeschichten. Ihr Feedback hilft uns, bessere Programme zu gestalten - kurze Umfrage innen."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler mit Überbestand, die Abverkaufsunterstützung brauchen",
+          "scenario_objective": "Händlern helfen, langsames Inventar zu bewegen",
+          "main_messages_ideas": "Räumungsunterstützung, Werbeideen, Bündelungsvorschläge, Rückgabeoptionen",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Brauchen Sie Hilfe beim Inventarabbau?",
+              "description": "Basierend auf Bestellmustern, die langsame Umschläge anzeigen",
+              "content": "Wir haben bemerkt, dass sich einiges Ihres Inventars möglicherweise langsamer dreht als erwartet. Hier sind bewährte Strategien: Bündelungsideen, Preisvorschläge und Display-Auffrischungstipps. Brauchen Sie Tausch-/Rückgabeoptionen? Lassen Sie uns besprechen."
+            },
+            {
+              "channel": "Email",
+              "title": "Saisonende-Räumungsunterstützung",
+              "description": "Saisonende",
+              "content": "Saison endet? Hier ist unser Saisonende-Räumungs-Leitfaden: empfohlene Reduzierungen, Beschilderungsvorlagen und Social-Promotion-Ideen. Saisonales Inventar durchbewegen, um Platz für das Nächste zu schaffen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Händler-Stufen- & Belohnungsprogramm",
+      "target": "Alle Händler basierend auf Leistung und Potenzial",
+      "objective": "Wachstum incentivieren und Loyalität durch Stufenaufstieg belohnen",
+      "kpi": "Stufenaufstiegsrate (Ziel: 20% jährlich), Stufenerhalt (Ziel: 90%), Programm-Engagement (Ziel: 70%)",
+      "description": "Strukturiertes Loyalitäts- und Belohnungsprogramm, das Händlerleistung anerkennt und weiteres Wachstum incentiviert.",
+      "scenarios": [
+        {
+          "scenario_target": "Händler, die sich Stufenschwellen nähern oder für Aufstieg berechtigt sind",
+          "scenario_objective": "Stufenaufstieg durch klaren Pfad und Anreize motivieren",
+          "main_messages_ideas": "Stufenstatus, Aufstiegsvorteile, Fortschrittsverfolgung, Erfolgsanerkennung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Sie sind nah am [Nächste Stufe]-Status!",
+              "description": "Wenn Stufenschwelle sich nähert",
+              "content": "Tolle Neuigkeiten - Sie sind [X]% auf dem Weg zum [Nächste Stufe]-Status! [Nächste Stufe]-Händler genießen: [spezifische Vorteile - Preise, Konditionen, Support]. Bestellen Sie [Betrag] mehr bis [Datum], um diese Vorteile freizuschalten."
+            },
+            {
+              "channel": "SMS",
+              "title": "Stufenaufstiegs-Alert",
+              "description": "Wenn sehr nah an Schwelle",
+              "content": "Sie sind [X] von [Nächste Stufe] entfernt! Vorteile umfassen [Top-Vorteil]. Qualifizieren Sie sich bis [Datum] für sofortiges Upgrade."
+            },
+            {
+              "channel": "Email",
+              "title": "Gratulation - Willkommen bei [Neue Stufe]!",
+              "description": "Bei Stufenaufstieg",
+              "content": "Sie haben sich den [Neue Stufe]-Status verdient! Danke für Ihre Partnerschaft. Ihre neuen Vorteile sind jetzt aktiv: [vollständige Vorteilsliste]. So maximieren Sie Ihren verbesserten Status."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihre [Stufe]-exklusiven Vorteile dieses Quartal",
+              "description": "Quartalsweise Stufenerinnerung",
+              "content": "Als [Stufe]-Partner sind hier Ihre exklusiven Vorteile dieses Quartal: [spezifische Angebote, Events oder Möglichkeiten]. Stellen Sie sicher, dass Sie alles nutzen, was Ihr Status beinhaltet."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Top-Tier-Händler für VIP-Behandlung",
+          "scenario_objective": "Premium-Erlebnis bieten und Top-Performer anerkennen",
+          "main_messages_ideas": "VIP-Anerkennung, Exklusiver Zugang, Partner-Wertschätzung, Strategische Abstimmung",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Exklusive [Top-Tier]-Einladung",
+              "description": "VIP-Gelegenheit",
+              "content": "Als einer unserer [Top-Tier]-Partner sind Sie eingeladen zu [exklusivem Event/Gelegenheit]: früher Zugang zu neuen Linien, Advisory-Board-Teilnahme oder Premium-Zuteilung bei limitierten Artikeln. Antworten Sie, um Ihr Interesse zu bestätigen."
+            },
+            {
+              "channel": "Email",
+              "title": "Ihr jährliches Partner-Wertschätzungspaket",
+              "description": "Jährliche Anerkennung",
+              "content": "Danke für ein unglaubliches Jahr der Partnerschaft. Als unser Dankeschön hier ist Ihr [Top-Tier]-Wertschätzungspaket: [Geschenk, Guthaben oder exklusives Angebot]. Wir sind dankbar für Ihr Geschäft und freuen uns auf ein weiteres erfolgreiches Jahr."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Schulung & Händler-Education",
+      "target": "Alle Händler, die ihre Verkaufsleistung verbessern möchten",
+      "objective": "Händler mit Wissen und Fähigkeiten befähigen, effektiver zu verkaufen",
+      "kpi": "Schulungsabschlussrate (Ziel: 40%), Verkaufsverbesserung nach Schulung (Ziel: +15%), Engagement-Rate (Ziel: 50%)",
+      "description": "Educational Content und Schulungsprogramme, die Händlern helfen, Produkte effektiver zu verkaufen und ihr Geschäft zu wachsen.",
+      "scenarios": [
+        {
+          "scenario_target": "Händler neu in Produktkategorien oder mit Bedarf an Produktwissen",
+          "scenario_objective": "Produktwissen und Verkaufsvertrauen aufbauen",
+          "main_messages_ideas": "Produktschulung, Verkaufstipps, FAQ-Handling, Feature-Education",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "[Produktkategorie] meistern: Kostenlose Schulung",
+              "description": "Neue Kategorie-Bestell-Trigger",
+              "content": "Gratulation zur Aufnahme von [Kategorie] in Ihr Sortiment! Hier ist kostenlose Produktschulung, um Ihnen und Ihrem Team zu helfen, selbstbewusst zu verkaufen: Schlüsselfeatures, Kunden-FAQs und bewährte Verkaufstechniken. In 20 Minuten abschließbar."
+            },
+            {
+              "channel": "Email",
+              "title": "[Produkt]-Verkaufstipps von Top-Performern",
+              "description": "Fortlaufende Education",
+              "content": "Wie verkaufen Top-Händler [Produkt]? Echte Tipps von echten Händlern: Kundengespräche die abschließen, häufige Einwände und wie man sie handhabt, und Upsell-Möglichkeiten."
+            },
+            {
+              "channel": "Email",
+              "title": "Live-Schulungs-Webinar: [Thema]",
+              "description": "Monatliche Gelegenheit",
+              "content": "Nehmen Sie an unserer Live-Schulungssession zu [Thema] teil: interaktive Q&A mit unseren Produktexperten und erfolgreichen Händlern. Lernen Sie Techniken, die Sie sofort anwenden können. Registrieren Sie sich für [Datum/Uhrzeit]."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Alle Händler für Geschäftswachstums-Education",
+          "scenario_objective": "Breitere Einzelhandels-Geschäftsunterstützung bieten",
+          "main_messages_ideas": "Einzelhandels-Best-Practices, Merchandising-Tipps, Geschäftswachstum, Branchentrends",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Einzelhandelserfolgs-Tipps: [Thema]",
+              "description": "Monatlicher Content",
+              "content": "Einzelhandelstipp dieses Monats: [Umsetzbares Thema wie Bestandsmanagement, Kundenservice, visuelle Präsentation]. Kurze Lektüre mit sofortiger Anwendung für Ihr Geschäft."
+            },
+            {
+              "channel": "Email",
+              "title": "Branchentrends: Was in [Kategorie] kommt",
+              "description": "Quartalsweiser Trendbericht",
+              "content": "Bleiben Sie voraus mit unserem Quartals-Trendbericht: Verbraucherverschiebungen, aufkommende Produkte und Merchandising-Trends. Positionieren Sie Ihr Geschäft für das Nächste in [Kategorie]."
+            },
+            {
+              "channel": "Email",
+              "title": "Händler-Ressourcenbibliothek aktualisiert",
+              "description": "Ressourcenverfügbarkeit",
+              "content": "Neue Ressourcen in Ihrem Händlerportal: [spezifische hinzugefügte Ressourcen]. Zugang zu Leitfäden, Templates und Tools für Ihr Geschäftswachstum. Alle kostenlos für Großhandelspartner."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Win-Back & Inaktive-Account-Reaktivierung",
+      "target": "Inaktive Accounts und abgewanderte Händler",
+      "objective": "Inaktive Accounts re-engagieren und abgewanderte Händler zurückgewinnen",
+      "kpi": "Reaktivierungsrate (Ziel: 20%), Win-Back-Konversion (Ziel: 12%), Wiedergewonnener Umsatz (Ziel: 25% des verlorenen Werts)",
+      "description": "Strategisches Re-Engagement für Händler, die aufgehört haben zu bestellen, mit maßgeschneiderten Ansätzen basierend auf wahrscheinlichen Inaktivitätsgründen.",
+      "scenarios": [
+        {
+          "scenario_target": "Händler ohne Bestellungen seit 60+ Tagen (unerwartete Inaktivität)",
+          "scenario_objective": "Grund verstehen und mit relevantem Angebot re-engagieren",
+          "main_messages_ideas": "Check-in, Aktualisierte Angebote, Re-Engagement-Anreiz, Feedback-Anfrage",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Wir vermissen Ihre Bestellungen",
+              "description": "60-Tage-Inaktivitäts-Trigger",
+              "content": "Es ist eine Weile seit Ihrer letzten Bestellung - wir hoffen, alles ist okay! Haben sich Ihre Bedürfnisse geändert? Gibt es etwas, das wir besser machen könnten? Wir schätzen Ihre Partnerschaft und möchten sicherstellen, dass wir Ihnen gut dienen."
+            },
+            {
+              "channel": "SMS",
+              "title": "Kurzer Check-in",
+              "description": "Tag 7: Persönlicher Touch",
+              "content": "Hallo [Name], hier ist [Rep] von [Firma]. Schon eine Weile nichts gehört - alles okay? Lassen Sie mich wissen, wenn Sie etwas brauchen."
+            },
+            {
+              "channel": "Email",
+              "title": "Was seit Ihrer letzten Bestellung neu ist",
+              "description": "Tag 14: Wert-Update",
+              "content": "Viel ist seit Ihrer letzten Bestellung passiert: neue Produkte, verbesserte Konditionen und erweiterte Services. Hier ein schnelles Update über Neuigkeiten - vielleicht einen weiteren Blick wert?"
+            },
+            {
+              "channel": "Email",
+              "title": "Willkommen-zurück-Angebot",
+              "description": "Tag 30: Re-Engagement-Anreiz",
+              "content": "Wir würden Sie gerne zurückhaben! Hier ein Willkommen-zurück-Angebot: [Rabatt, kostenloser Versand oder reduzierte Mindestmengen] auf Ihre nächste Bestellung. Keine Bedingungen - nur ein Danke dafür, dass Sie uns eine weitere Chance geben."
+            },
+            {
+              "channel": "Email",
+              "title": "Helfen Sie uns zu verbessern",
+              "description": "Tag 45: Feedback-Anfrage",
+              "content": "Selbst wenn Sie weitergezogen sind, würden wir Ihr Feedback schätzen. Was hätten wir besser machen können? Ihre ehrliche Meinung hilft uns, uns für alle Händler zu verbessern. Kurze Umfrage oder einfach mit Gedanken antworten."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Geschlossene oder saisonale Accounts, die zurückkommen könnten",
+          "scenario_objective": "Beziehung für mögliche Rückkehr pflegen",
+          "main_messages_ideas": "Eleganter Abschied, Tür offen, Saisonales Re-Engagement, Einfache Rückkehr",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Danke für unsere Partnerschaft",
+              "description": "Bei bestätigter Account-Pause/Schließung",
+              "content": "Wir verstehen, dass Sie Ihren Account pausieren oder schließen. Danke für das Geschäft, das wir gemeinsam gemacht haben. Ihre Account-Informationen bleiben erhalten - wenn sich Dinge ändern, sind wir da und die Reaktivierung ist einfach."
+            },
+            {
+              "channel": "Email",
+              "title": "Denken Sie über Wiedereröffnung nach?",
+              "description": "6-Monats-Check-in für saisonale/geschlossene Accounts",
+              "content": "Vor sechs Monaten haben Sie Ihren Account pausiert. Wenn Sie über Wiedereröffnung nachdenken, haben wir es einfach gemacht: Ihre Historie und Präferenzen sind gespeichert, und Ihre vorherige Preisstufe bleibt erhalten. Bereit, wieder loszulegen?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "program_name": "Empfehlungs- & Netzwerk-Wachstum",
+      "target": "Zufriedene Händler mit Branchenkontakten",
+      "objective": "Neue Händler-Leads durch Empfehlungen von bestehenden Partnern generieren",
+      "kpi": "Empfehlungsrate (Ziel: 15% der aktiven Accounts), Empfehlungs-Konversion (Ziel: 35%), Akquisekosten via Empfehlung (Ziel: 50% anderer Kanäle)",
+      "description": "Starke Händlerbeziehungen nutzen, um qualifizierte Empfehlungen von zufriedenen Partnern zu generieren.",
+      "scenarios": [
+        {
+          "scenario_target": "Hochzufriedenheits-Händler mit starker Partnerschaftshistorie",
+          "scenario_objective": "Als Empfehlungsquellen aktivieren",
+          "main_messages_ideas": "Wertschätzung, Empfehlungsprogramm, Gegenseitiger Nutzen, Einfacher Prozess",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Kennen Sie andere Händler, die profitieren würden?",
+              "description": "Nach positivem Zufriedenheitsindikator",
+              "content": "Wir freuen uns so, dass die Partnerschaft gut für Sie funktioniert! Viele unserer besten Händler kamen durch Empfehlungen von Partnern wie Ihnen. Kennen Sie jemanden, der von Großhandelspartnerschaft profitieren würde? Wir würden uns über eine Vorstellung freuen."
+            },
+            {
+              "channel": "Email",
+              "title": "Partner-Empfehlungsbelohnungen",
+              "description": "Tag 14: Programmdetails",
+              "content": "Unser Händler-Empfehlungsprogramm: Empfehlen Sie einen qualifizierten Händler und Sie profitieren beide. Sie erhalten [Empfehlungsbelohnung], sie erhalten [Neupartner-Vorteil]. Einfacher Prozess: teilen Sie einfach deren Kontakt oder machen Sie eine Email-Vorstellung."
+            },
+            {
+              "channel": "Email",
+              "title": "Einfache Empfehlung: Das weiterleiten",
+              "description": "Tag 30: Einfache Aktion",
+              "content": "Einfachster Weg zur Empfehlung: leiten Sie diese Email an einen Händler-Kollegen weiter, der profitieren könnte. Oder antworten Sie einfach mit Namen und Kontakt - wir melden uns professionell und erwähnen Ihre Empfehlung."
+            }
+          ]
+        },
+        {
+          "scenario_target": "Händler, die Messen oder Branchen-Events besuchen",
+          "scenario_objective": "Event-Networking für Vorstellungen nutzen",
+          "main_messages_ideas": "Event-Koordination, Vorstellungserleichterung, Networking",
+          "message_sequence": [
+            {
+              "channel": "Email",
+              "title": "Wir sehen uns auf [Event] - Lassen Sie uns verbinden",
+              "description": "Pre-Event-Ansprache",
+              "content": "Wir werden beide auf [Event] sein! Kommen Sie an Stand [#] vorbei - bringen Sie Kollegen mit, die an Großhandelspartnerschaft interessiert sein könnten. Gerne machen wir Vorstellungen und besprechen, wie wir auch deren Geschäft helfen können."
+            },
+            {
+              "channel": "SMS",
+              "title": "Auf [Event] - Kaffee?",
+              "description": "Während Event",
+              "content": "Auf [Event]? Kommen Sie an Stand [#] vorbei - Kaffee geht auf uns. Bringen Sie jeden mit, der von uns wissen sollte!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Neuhändler-Onboarding & Erstbestellungs-Erfolg",
+      "why_brevo_is_better": "Brevos B2B-Automatisierung ermöglicht strukturierte Onboarding-Sequenzen, die sicherstellen, dass jeder neue Händler konsistente, hilfreiche Kommunikation erhält, die Erstbestellungen innerhalb von Tagen, nicht Wochen, vorantreibt.",
+      "omnichannel_channels": "Email für detaillierte Anleitungen und Kataloge + SMS für schnelle Benachrichtigungen und dringende Alerts + Portal-Integration für Self-Service",
+      "setup_efficiency": "Vorgefertigte Großhandels-Onboarding-Templates helfen Ihnen, professionelle Sequenzen in Minuten zu erstellen, mit automatischer Personalisierung basierend auf Händlerprofil."
+    },
+    {
+      "scenario_name": "Nachbestellautomatisierung & Bestandsmanagement",
+      "why_brevo_is_better": "Integration mit Ihrem Auftragsmanagementsystem ermöglicht intelligente Nachbestellerinnerungen basierend auf den tatsächlichen Kaufmustern jedes Händlers, die Bedürfnisse vorhersagen, bevor Lieferengpässe auftreten.",
+      "omnichannel_channels": "Email für detaillierte Nachbestellinformationen und Kataloge + SMS für zeitkritische Lager-Alerts und Frist-Erinnerungen",
+      "setup_efficiency": "Bestellhistorien-Integration ermöglicht vollautomatisierte, personalisierte Nachbestellungs-Timing kalibriert auf die Verkaufsgeschwindigkeit jedes Händlers."
+    },
+    {
+      "scenario_name": "Saisonvorbereitung & Vorbestellung",
+      "why_brevo_is_better": "Kalenderbasierte Automatisierung und erweiterte Segmentierung stellen rechtzeitige saisonale Kommunikation sicher, die Händlern hilft, sich mit personalisierten Empfehlungen basierend auf vergangener Leistung auf Spitzennachfrage vorzubereiten.",
+      "omnichannel_channels": "Email für saisonale Kataloge und Planungsleitfäden + SMS für Frist-Erinnerungen und Lager-Alerts",
+      "setup_efficiency": "Jährliche Saisonkampagnen können templatebasiert und geplant werden, um automatisch zu wiederholen, mit leistungsbasierter Personalisierung, die sich jedes Jahr verbessert."
+    },
+    {
+      "scenario_name": "Händler-Stufen- & Belohnungsprogramm",
+      "why_brevo_is_better": "Automatisierte Stufenverfolgung und Meilenstein-Kommunikation hält Händler motiviert mit klarer Fortschrittssichtbarkeit und sofortiger Anerkennung, wenn Schwellen erreicht werden.",
+      "omnichannel_channels": "Email für Stufen-Updates und Vorteils-Kommunikation + SMS für Erfolgsbenachrichtigungen + Personalisierte Angebote basierend auf Stufenstatus",
+      "setup_efficiency": "Integration mit Bestelldaten ermöglicht automatische Stufenberechnung und getriggerte Kommunikation ohne manuelle Verfolgung oder verzögerte Updates."
+    },
+    {
+      "scenario_name": "Win-Back & Inaktive-Account-Reaktivierung",
+      "why_brevo_is_better": "Automatisierte Inaktivitätserkennung triggert rechtzeitiges Re-Engagement, bevor Accounts kalt werden, mit Segmentierung, die Win-Back-Ansätze auf wahrscheinliche Inaktivitätsgründe abstimmt.",
+      "omnichannel_channels": "Email für Re-Engagement-Angebote und Updates + SMS für persönliche Check-ins + Koordinierte Multi-Touch-Sequenzen",
+      "setup_efficiency": "Inaktivitäts-Trigger identifizieren automatisch gefährdete Accounts und initiieren Win-Back-Sequenzen ohne manuelle Überwachung der Account-Aktivität."
+    }
+  ],
+  "conclusion": "Großhändler, die diese umfassenden Relationship-Marketing-Programme implementieren, können verbesserte Händlerakquise durch systematisches Lead-Nurturing, konsistentere Bestellungen durch proaktives Bestandsmanagement, erweiterte Sortimente durch gezielten Cross-Sell und stärkere Partnerschaften durch stufenbasierte Anerkennung und Schulungsunterstützung erwarten. Das Großhandelsgeschäft belohnt Konsistenz, Zuverlässigkeit und gegenseitige Wachstumsorientierung - dieser Plan liefert alle drei durch systematisches, automatisiertes Engagement über den gesamten Händler-Lifecycle."
+}

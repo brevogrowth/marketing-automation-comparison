@@ -41,7 +41,7 @@
     }
   },
   "sidebar": {
-    "industryPlanTitle": "Industry Plan",
+    "industryPlanTitle": "Plan by Industry",
     "industryPlanDesc": "Get a ready-to-use marketing plan based on best practices for your industry. No signup required.",
     "customPlanTitle": "Custom Plan",
     "customPlanDesc": "Our AI analyzes your company and creates a fully personalized plan with specific recommendations for your brand.",
@@ -750,7 +750,7 @@
     "employees": "Employees",
     "businessModel": "Business Model",
     "customerLifecycle": "Customer Lifecycle",
-    "marketingPrograms": "Marketing Relationship Programs",
+    "marketingPrograms": "Relationship Programs Overview",
     "noProgramsAvailable": "No marketing programs available",
     "programName": "Program Name",
     "target": "Target",
