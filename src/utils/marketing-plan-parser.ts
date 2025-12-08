@@ -230,18 +230,61 @@ export function parsePlanData(
 
     // Debug: Log the incoming data structure
     console.log('[parsePlanData] Input type:', typeof responseData);
+
+    // Helper to extract JSON from string (handles markdown code blocks)
+    const extractJSON = (str: string): object | null => {
+      // Remove markdown code blocks if present
+      let cleaned = str.trim();
+      const jsonBlockMatch = cleaned.match(/```(?:json)?\s*([\s\S]*?)```/);
+      if (jsonBlockMatch) {
+        cleaned = jsonBlockMatch[1].trim();
+      }
+
+      // Try to find JSON object in the string
+      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        try {
+          return JSON.parse(jsonMatch[0]);
+        } catch {
+          console.error('[parsePlanData] Failed to parse extracted JSON');
+        }
+      }
+
+      // Try direct parse
+      try {
+        return JSON.parse(cleaned);
+      } catch {
+        return null;
+      }
+    };
+
     if (typeof responseData === 'string') {
       console.log('[parsePlanData] String content (first 500 chars):', responseData.substring(0, 500));
-      // Try to parse if it's a string
-      try {
-        responseData = JSON.parse(responseData);
+      const parsed = extractJSON(responseData);
+      if (parsed) {
+        responseData = parsed;
         console.log('[parsePlanData] Parsed string to object');
-      } catch {
+      } else {
         console.error('[parsePlanData] Failed to parse string as JSON');
+        throw new Error(`Invalid response: received string that is not valid JSON. First 200 chars: ${responseData.substring(0, 200)}`);
       }
     }
+
     if (typeof responseData === 'object' && responseData !== null) {
       console.log('[parsePlanData] Top-level keys:', Object.keys(responseData as object));
+
+      // Check if response contains a 'text' or 'message' field with JSON string
+      const dataObj = responseData as Record<string, unknown>;
+      for (const key of ['text', 'message', 'output', 'result', 'data']) {
+        if (typeof dataObj[key] === 'string') {
+          const nested = extractJSON(dataObj[key] as string);
+          if (nested && (nested as Record<string, unknown>).company_summary) {
+            console.log(`[parsePlanData] Found JSON in '${key}' field`);
+            responseData = nested;
+            break;
+          }
+        }
+      }
     }
 
     // Get content from multiple possible paths
@@ -250,15 +293,28 @@ export function parsePlanData(
       ['content'],
       ['response', 'data', 'content', 'json_response'],
       ['content', 'json_response'],
+      ['result'],
+      ['data'],
+      ['output'],
       [], // Direct object
     ]);
 
     console.log('[parsePlanData] Found content via path:', contentPath.join('.') || 'direct');
     console.log('[parsePlanData] Content type:', typeof content);
 
+    // If content is a string, try to parse it
+    let finalContentTemp = content;
+    if (typeof content === 'string') {
+      const parsed = extractJSON(content);
+      if (parsed) {
+        finalContentTemp = parsed;
+        console.log('[parsePlanData] Parsed content string to object');
+      }
+    }
+
     // If no nested path worked, try the response itself
     const finalContent =
-      content && typeof content === 'object' ? content : responseData;
+      finalContentTemp && typeof finalContentTemp === 'object' ? finalContentTemp : responseData;
 
     if (!finalContent || typeof finalContent !== 'object') {
       throw new Error('Invalid content structure or missing content');
