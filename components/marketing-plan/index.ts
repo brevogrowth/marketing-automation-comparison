@@ -7,5 +7,5 @@ export { ProgramDetails } from './ProgramDetails';
 export { BrevoHelp } from './BrevoHelp';
 export { BrevoCallToAction } from './BrevoCallToAction';
 export { LoadingState } from './LoadingState';
-export { LoadingBanner } from './LoadingBanner';
+export { LoadingBanner, type DebugInfo } from './LoadingBanner';
 export { ErrorState } from './ErrorState';
