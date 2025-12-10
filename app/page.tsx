@@ -277,6 +277,10 @@ export default function Home() {
         addDebugLog(`Poll #${i + 1}: status=${pollData.status}${pollData.message ? `, msg=${pollData.message.substring(0, 50)}` : ''}`);
 
         if (pollData.status === 'complete') {
+          // Log DB save result if available
+          if (pollData._dbSave) {
+            addDebugLog(`DB Save: ${JSON.stringify(pollData._dbSave)}`);
+          }
           addDebugLog('Plan complete! Redirecting...');
           setPlan(pollData.plan);
           setPlanSource('ai');
