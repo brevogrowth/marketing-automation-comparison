@@ -147,16 +147,35 @@ export async function upsertMarketingPlan(
 
     if (!isSupabaseConfigured()) {
       console.warn('[DB] Supabase not configured, skipping upsert');
-      return { success: true };
+      return { success: false, error: 'Supabase not configured' };
     }
 
     const normalizedDomain = normalizeDomain(companyDomain);
+    if (!normalizedDomain) {
+      return { success: false, error: `Domain normalization failed for: ${companyDomain}` };
+    }
+
+    console.log('[DB] Starting upsert:', {
+      originalDomain: companyDomain,
+      normalizedDomain,
+      userLanguage,
+      hasPlanData: !!planData,
+      planKeys: planData ? Object.keys(planData) : [],
+    });
+
     const supabase = getSupabaseClient();
 
     // Deep clone to preserve nested structure
     const preservedData = deepStructureClone(planData);
 
-    const { error } = await supabase.from('marketing_plans').upsert(
+    // Log the size of the data being saved
+    const dataStr = JSON.stringify(preservedData);
+    console.log('[DB] Data size:', {
+      chars: dataStr.length,
+      kb: Math.round(dataStr.length / 1024),
+    });
+
+    const { data, error } = await supabase.from('marketing_plans').upsert(
       [
         {
           company_domain: normalizedDomain,
@@ -168,12 +187,22 @@ export async function upsertMarketingPlan(
       {
         onConflict: 'company_domain,user_language',
       }
-    );
+    ).select();
 
     if (error) {
-      console.error('[DB] Error upserting marketing plan:', error);
-      return { success: false, error: error.message };
+      console.error('[DB] Error upserting marketing plan:', {
+        code: error.code,
+        message: error.message,
+        details: error.details,
+        hint: error.hint,
+      });
+      return { success: false, error: `${error.code}: ${error.message}` };
     }
+
+    console.log('[DB] Upsert success:', {
+      rowsAffected: data?.length,
+      domain: normalizedDomain,
+    });
 
     return { success: true };
   } catch (error) {
