@@ -183,15 +183,39 @@ export function ErrorState({
                       <pre className="text-xs text-gray-600 overflow-auto max-h-40 whitespace-pre-wrap font-mono">
                         {(() => {
                           try {
+                            const seen = new WeakSet();
                             return JSON.stringify(
                               Object.fromEntries(
                                 Object.entries(details).filter(([k, v]) =>
                                   !['errorMessage', 'resultType', 'dataKeys', 'resultPreview'].includes(k) &&
                                   typeof v !== 'function' &&
-                                  !(v instanceof Element)
+                                  !(typeof Element !== 'undefined' && v instanceof Element) &&
+                                  !(typeof Node !== 'undefined' && v instanceof Node)
                                 )
                               ),
-                              null,
+                              (key, value) => {
+                                // Skip React internals and DOM elements
+                                if (key.startsWith('__react') || key.startsWith('_react')) {
+                                  return '[React Internal]';
+                                }
+                                if (typeof value === 'function') {
+                                  return '[Function]';
+                                }
+                                if (typeof Element !== 'undefined' && value instanceof Element) {
+                                  return '[DOM Element]';
+                                }
+                                if (typeof Node !== 'undefined' && value instanceof Node) {
+                                  return '[DOM Node]';
+                                }
+                                // Handle circular references
+                                if (typeof value === 'object' && value !== null) {
+                                  if (seen.has(value)) {
+                                    return '[Circular]';
+                                  }
+                                  seen.add(value);
+                                }
+                                return value;
+                              },
                               2
                             );
                           } catch {

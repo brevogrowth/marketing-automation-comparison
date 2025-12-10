@@ -29,6 +29,36 @@ const VALID_INDUSTRIES: Industry[] = [
   'SaaS', 'Services', 'Manufacturing', 'Wholesale'
 ];
 
+// Safe JSON stringify that handles circular references
+const safeJsonStringify = (obj: unknown, maxLength: number = 500): string => {
+  try {
+    const seen = new WeakSet();
+    const result = JSON.stringify(obj, (key, value) => {
+      // Skip DOM elements and React internal properties
+      if (value instanceof Element || value instanceof Node) {
+        return '[DOM Element]';
+      }
+      if (key.startsWith('__react') || key.startsWith('_react')) {
+        return '[React Internal]';
+      }
+      if (typeof value === 'function') {
+        return '[Function]';
+      }
+      // Handle circular references
+      if (typeof value === 'object' && value !== null) {
+        if (seen.has(value)) {
+          return '[Circular]';
+        }
+        seen.add(value);
+      }
+      return value;
+    }, 2);
+    return result.length > maxLength ? result.substring(0, maxLength) + '...' : result;
+  } catch {
+    return '[Unable to serialize]';
+  }
+};
+
 export default function Home() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -246,7 +276,7 @@ export default function Home() {
         setConversationId(createData.conversationId);
         await pollForResults(createData.conversationId);
       } else {
-        addDebugLog(`Unexpected response: ${JSON.stringify(createData)}`);
+        addDebugLog(`Unexpected response: ${safeJsonStringify(createData)}`);
         throw new Error('Unexpected response from API');
       }
 
@@ -285,7 +315,7 @@ export default function Home() {
         if (pollData.status === 'complete') {
           // Log DB save result if available
           if (pollData._dbSave) {
-            addDebugLog(`DB Save: ${JSON.stringify(pollData._dbSave)}`);
+            addDebugLog(`DB Save: ${safeJsonStringify(pollData._dbSave)}`);
           }
           addDebugLog('Plan complete! Redirecting...');
           setPlan(pollData.plan);
@@ -303,7 +333,7 @@ export default function Home() {
           addDebugLog(`Error: ${pollData.error}`);
           // Capture debug info for display
           if (pollData.debug) {
-            addDebugLog(`Debug details: ${JSON.stringify(pollData.debug)}`);
+            addDebugLog(`Debug details: ${safeJsonStringify(pollData.debug)}`);
             setErrorDetails(pollData.debug);
           }
           throw new Error(pollData.error || 'Plan generation failed');

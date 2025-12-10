@@ -28,6 +28,39 @@ const VALID_INDUSTRIES: Industry[] = [
   'SaaS', 'Services', 'Manufacturing', 'Wholesale'
 ];
 
+// Safe JSON stringify that handles circular references
+const safeJsonStringify = (obj: unknown, maxLength: number = 500): string => {
+  try {
+    const seen = new WeakSet();
+    const result = JSON.stringify(obj, (key, value) => {
+      // Skip DOM elements and React internal properties
+      if (typeof Element !== 'undefined' && value instanceof Element) {
+        return '[DOM Element]';
+      }
+      if (typeof Node !== 'undefined' && value instanceof Node) {
+        return '[DOM Node]';
+      }
+      if (key.startsWith('__react') || key.startsWith('_react')) {
+        return '[React Internal]';
+      }
+      if (typeof value === 'function') {
+        return '[Function]';
+      }
+      // Handle circular references
+      if (typeof value === 'object' && value !== null) {
+        if (seen.has(value)) {
+          return '[Circular]';
+        }
+        seen.add(value);
+      }
+      return value;
+    }, 2);
+    return result.length > maxLength ? result.substring(0, maxLength) + '...' : result;
+  } catch {
+    return '[Unable to serialize]';
+  }
+};
+
 export default function DomainPlanPage() {
   const params = useParams();
   const router = useRouter();
@@ -299,7 +332,7 @@ export default function DomainPlanPage() {
 
         if (pollData.status === 'error') {
           if (pollData.debug) {
-            console.error('API Debug info:', JSON.stringify(pollData.debug, null, 2));
+            console.error('API Debug info:', safeJsonStringify(pollData.debug, 2000));
             setErrorDetails(pollData.debug);
           }
           throw new Error(pollData.error || 'Plan generation failed');
