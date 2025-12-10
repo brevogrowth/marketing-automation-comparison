@@ -59,17 +59,17 @@ export function ProgramDetails({ program, programNumber }: ProgramDetailsProps) 
   };
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 mb-4 overflow-hidden">
+    <div className="bg-white rounded-xl border border-gray-200 mb-3 sm:mb-4 overflow-hidden">
       {/* Collapsible Header */}
       <button
-        className="w-full flex justify-between items-center p-4 text-left hover:bg-gray-50 transition-colors"
+        className="w-full flex justify-between items-center p-3 sm:p-4 text-left hover:bg-gray-50 transition-colors min-h-[44px]"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-brevo-light rounded-lg flex items-center justify-center">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="w-7 h-7 sm:w-8 sm:h-8 bg-brevo-light rounded-lg flex items-center justify-center flex-shrink-0">
             <ClipboardList className="h-4 w-4 text-brevo-green" />
           </div>
-          <h3 className="font-semibold text-gray-900">{programName}</h3>
+          <h3 className="font-semibold text-gray-900 text-sm sm:text-base">{programName}</h3>
         </div>
         {isOpen ? (
           <ChevronUp className="h-5 w-5 text-gray-400" />
@@ -80,10 +80,10 @@ export function ProgramDetails({ program, programNumber }: ProgramDetailsProps) 
 
       {/* Expanded Content */}
       {isOpen && (
-        <div className="border-t border-gray-200 p-4">
+        <div className="border-t border-gray-200 p-3 sm:p-4">
           {/* Program Description */}
           {program.description && (
-            <p className="text-sm text-gray-600 mb-4">{program.description}</p>
+            <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">{program.description}</p>
           )}
 
           {/* Scenarios */}
@@ -92,7 +92,7 @@ export function ProgramDetails({ program, programNumber }: ProgramDetailsProps) 
               {t.marketingPlan?.noScenariosAvailable || 'No scenarios available'}
             </div>
           ) : (
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {scenarios.map((scenario, scenarioIndex) => {
                 const messages = getMessageSequence(scenario);
                 const scenarioTarget = scenario.scenario_target || scenario.target || 'General audience';

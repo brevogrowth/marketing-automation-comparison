@@ -41,6 +41,7 @@
     }
   },
   "sidebar": {
+    "configureTitle": "Konfiguration",
     "industryPlanTitle": "Plan nach Branche",
     "industryPlanDesc": "Erhalten Sie einen sofort einsetzbaren Marketingplan basierend auf Best Practices Ihrer Branche. Keine Anmeldung erforderlich.",
     "customPlanTitle": "Individueller Plan",
@@ -105,15 +106,16 @@
     },
     "cac_payback": {
       "name": "CAC Payback Period",
-      "description": "Zeit bis zur Amortisation der Kundenakquisitionskosten.",
-      "definition": "Die CAC Payback Period misst, wie viele Monate es dauert, die Kosten für die Kundenakquisition durch den Deckungsbeitrag des Kunden zurückzugewinnen.",
-      "importance": "CAC Payback ist entscheidend für SaaS-Wachstumsplanung. Kürzere Payback-Zeiten ermöglichen schnelleres Kapitalrecycling und Reinvestition in Wachstum. Ein Payback über 18 Monate signalisiert oft Unit-Economics-Probleme.",
-      "formula": "CAC ÷ (ARPU × Bruttomarge)",
+      "description": "Monate bis zur Amortisation der Kundenakquisitionskosten.",
+      "insight": "Geschwindigkeit der Investitionsrendite.",
+      "definition": "Die CAC Payback Period gibt an, wie viele Monate es dauert, bis ein Kunde genug Marge generiert, um seine Akquisitionskosten zu decken.",
+      "importance": "Diese Zeitspanne beeinflusst direkt Ihren Kapitalbedarf und die Nachhaltigkeit Ihres Wachstums. Ein kurzer Payback ermöglicht schnellere Reinvestition.",
+      "formula": "CAC ÷ (Monatlicher ARPU × Bruttomarge)",
       "bestPractices": [
-        "Payback unter 12 Monaten für Venture-backed SaaS anstreben",
-        "Payback nach Kundensegment und Akquisitionskanal überwachen",
-        "Payback durch höheren ARPU oder niedrigere CAC verbessern",
-        "Payback zusammen mit LTV:CAC für vollständiges Bild betrachten"
+        "Payback < 12 Monate für gesundes Wachstum anstreben",
+        "Nach Segment und Akquisitionskanal analysieren",
+        "Onboarding optimieren, um Monetarisierung zu beschleunigen",
+        "Kundenservice-Kosten in die Berechnung einbeziehen"
       ]
     },
     "roas": {
@@ -475,20 +477,6 @@
         "Mit Benchmarks nach Ihrer Phase und Branche vergleichen",
         "Verhältnis von Akquisition vs. Expansion überwachen",
         "Auf gleitenden 12-Monatsbasis projizieren, um Saisonalität auszugleichen"
-      ]
-    },
-    "cac_payback": {
-      "name": "CAC Payback Period",
-      "description": "Monate bis zur Amortisation der Kundenakquisitionskosten.",
-      "insight": "Geschwindigkeit der Investitionsrendite.",
-      "definition": "Die CAC Payback Period gibt an, wie viele Monate es dauert, bis ein Kunde genug Marge generiert, um seine Akquisitionskosten zu decken.",
-      "importance": "Diese Zeitspanne beeinflusst direkt Ihren Kapitalbedarf und die Nachhaltigkeit Ihres Wachstums. Ein kurzer Payback ermöglicht schnellere Reinvestition.",
-      "formula": "CAC ÷ (Monatlicher ARPU × Bruttomarge)",
-      "bestPractices": [
-        "Payback < 12 Monate für gesundes Wachstum anstreben",
-        "Nach Segment und Akquisitionskanal analysieren",
-        "Onboarding optimieren, um Monetarisierung zu beschleunigen",
-        "Kundenservice-Kosten in die Berechnung einbeziehen"
       ]
     },
     "email_open_rate": {

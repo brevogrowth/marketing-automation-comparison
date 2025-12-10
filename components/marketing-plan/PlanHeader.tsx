@@ -37,9 +37,9 @@ export function PlanHeader({
   };
 
   return (
-    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-6">
-      <div className="flex items-center gap-3 flex-wrap">
-        <h1 className="text-lg font-bold text-gray-900">
+    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+      <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+        <h1 className="text-base sm:text-lg font-bold text-gray-900">
           {t.marketingPlan?.headerTitle || 'Marketing Relationship Plan'}
         </h1>
         {isPersonalized ? (

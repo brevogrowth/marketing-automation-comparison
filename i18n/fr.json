@@ -1,6 +1,6 @@
 {
   "common": {
-    "language": "Fran\u00e7ais",
+    "language": "Français",
     "langCode": "fr"
   },
   "header": {
@@ -41,6 +41,7 @@
     }
   },
   "sidebar": {
+    "configureTitle": "Configuration",
     "industryPlanTitle": "Plan par secteur",
     "industryPlanDesc": "Obtenez un plan marketing prêt à l'emploi basé sur les meilleures pratiques de votre secteur. Aucune inscription requise.",
     "customPlanTitle": "Plan personnalisé",
@@ -62,9 +63,9 @@
     "b2cRetail": "Retail B2C",
     "b2b": "B2B",
     "Fashion": "Mode & Habillement",
-    "Home": "Maison & D\u00e9coration",
-    "Beauty": "Beaut\u00e9 & Bien-\u00eatre",
-    "Electronics": "\u00c9lectronique & Tech",
+    "Home": "Maison & Décoration",
+    "Beauty": "Beauté & Bien-être",
+    "Electronics": "Électronique & Tech",
     "Sports": "Sport & Outdoor",
     "Family": "Famille & Animaux",
     "Food": "Alimentation & Boissons",
@@ -75,12 +76,12 @@
     "Wholesale": "Commerce de gros & Distribution"
   },
   "priceTiers": {
-    "Budget": "Entr\u00e9e de gamme (PM < 50\u20ac)",
-    "Mid-Range": "Milieu de gamme (PM 50-150\u20ac)",
-    "Luxury": "Premium (PM > 150\u20ac)"
+    "Budget": "Entrée de gamme (PM < 50€)",
+    "Mid-Range": "Milieu de gamme (PM 50-150€)",
+    "Luxury": "Premium (PM > 150€)"
   },
   "categories": {
-    "Strategic Efficiency": "Efficacit\u00e9 strat\u00e9gique",
+    "Strategic Efficiency": "Efficacité stratégique",
     "Acquisition": "Acquisition",
     "Conversion": "Conversion",
     "Channel Mix": "Mix canal",
@@ -104,16 +105,17 @@
       ]
     },
     "cac_payback": {
-      "name": "Délai de récupération du CAC",
-      "description": "Temps nécessaire pour récupérer le coût d'acquisition client.",
-      "definition": "Le délai de récupération du CAC mesure le nombre de mois nécessaires pour récupérer le coût d'acquisition d'un client grâce à sa contribution à la marge brute.",
-      "importance": "Le CAC Payback est critique pour la planification de croissance SaaS. Un délai court permet un recyclage rapide du capital et la capacité à réinvestir. Un délai supérieur à 18 mois signale souvent des problèmes d'unit economics.",
-      "formula": "CAC ÷ (ARPU × Marge Brute)",
+      "name": "Période de remboursement CAC",
+      "description": "Mois pour récupérer le coût d'acquisition client.",
+      "insight": "Vitesse de retour sur investissement.",
+      "definition": "La période de remboursement CAC indique le nombre de mois nécessaires pour qu'un client génère assez de marge pour couvrir son coût d'acquisition.",
+      "importance": "Ce délai impacte directement vos besoins en trésorerie et la soutenabilité de votre croissance. Un payback court permet de réinvestir plus vite.",
+      "formula": "CAC ÷ (ARPU Mensuel × Marge Brute)",
       "bestPractices": [
-        "Viser un délai inférieur à 12 mois pour le SaaS venture-backed",
-        "Suivre le payback par segment client et canal d'acquisition",
-        "Améliorer le payback en augmentant l'ARPU ou réduisant le CAC",
-        "Considérer le payback avec le LTV:CAC pour une vision complète"
+        "Viser un payback < 12 mois pour une croissance saine",
+        "Analyser par segment et canal d'acquisition",
+        "Optimiser l'onboarding pour accélérer la monétisation",
+        "Considérer les coûts de service client dans le calcul"
       ]
     },
     "roas": {
@@ -477,20 +479,6 @@
         "Projeter sur 12 mois glissants pour lisser la saisonnalité"
       ]
     },
-    "cac_payback": {
-      "name": "Période de remboursement CAC",
-      "description": "Mois pour récupérer le coût d'acquisition client.",
-      "insight": "Vitesse de retour sur investissement.",
-      "definition": "La période de remboursement CAC indique le nombre de mois nécessaires pour qu'un client génère assez de marge pour couvrir son coût d'acquisition.",
-      "importance": "Ce délai impacte directement vos besoins en trésorerie et la soutenabilité de votre croissance. Un payback court permet de réinvestir plus vite.",
-      "formula": "CAC ÷ (ARPU Mensuel × Marge Brute)",
-      "bestPractices": [
-        "Viser un payback < 12 mois pour une croissance saine",
-        "Analyser par segment et canal d'acquisition",
-        "Optimiser l'onboarding pour accélérer la monétisation",
-        "Considérer les coûts de service client dans le calcul"
-      ]
-    },
     "email_open_rate": {
       "name": "Taux d'ouverture email",
       "description": "Pourcentage d'emails délivrés qui sont ouverts.",
@@ -578,15 +566,15 @@
   },
   "benchmark": {
     "belowAvg": "Sous la moyenne",
-    "median": "M\u00e9diane",
+    "median": "Médiane",
     "topPerformers": "Top performers",
-    "metrics": "m\u00e9triques",
-    "whyMetric": "Pourquoi cette m\u00e9trique ?",
-    "definition": "D\u00e9finition",
+    "metrics": "métriques",
+    "whyMetric": "Pourquoi cette métrique ?",
+    "definition": "Définition",
     "formula": "Formule",
     "whyMatters": "Pourquoi c'est important",
     "bestPractices": "Bonnes pratiques",
-    "selectToAnalyze": "S\u00e9lectionner pour analyser",
+    "selectToAnalyze": "Sélectionner pour analyser",
     "moveSlider": "Déplacez le curseur pour définir votre valeur",
     "yourValue": "Votre valeur",
     "microFeedbackGood": "✓ Bons résultats",
@@ -597,32 +585,32 @@
     "title": "Analyse IA",
     "getRecommendations": "Obtenir mes recommandations IA",
     "free": "Gratuit - Prend 2-3 minutes",
-    "generating": "Analyse de vos donn\u00e9es...",
-    "comparingData": "Comparaison avec les donn\u00e9es march\u00e9...",
-    "comparingDataDesc": "Examen de milliers de points de donn\u00e9es d'entreprises similaires.",
-    "findingOpportunities": "Identification des opportunit\u00e9s...",
+    "generating": "Analyse de vos données...",
+    "comparingData": "Comparaison avec les données marché...",
+    "comparingDataDesc": "Examen de milliers de points de données d'entreprises similaires.",
+    "findingOpportunities": "Identification des opportunités...",
     "findingOpportunitiesDesc": "Recherche des meilleurs leviers de croissance pour votre entreprise.",
-    "craftingRecs": "\u00c9laboration des recommandations...",
-    "craftingRecsDesc": "Presque termin\u00e9 ! G\u00e9n\u00e9ration de vos insights strat\u00e9giques personnalis\u00e9s.",
-    "step": "\u00c9tape",
+    "craftingRecs": "Élaboration des recommandations...",
+    "craftingRecsDesc": "Presque terminé ! Génération de vos insights stratégiques personnalisés.",
+    "step": "Étape",
     "of": "sur",
     "seeProcessLogs": "Voir les logs du processus",
     "resultTitle": "Analyse de performance IA",
-    "resultSubtitle": "Insights personnalis\u00e9s bas\u00e9s sur vos donn\u00e9es",
+    "resultSubtitle": "Insights personnalisés basés sur vos données",
     "exportPdf": "Exporter en PDF"
   },
   "banner": {
-    "instruction": "Choisissez des m\u00e9triques - D\u00e9finissez les valeurs - G\u00e9n\u00e9rez des insights",
-    "generateAnalysis": "G\u00e9n\u00e9rer l'analyse"
+    "instruction": "Choisissez des métriques - Définissez les valeurs - Générez des insights",
+    "generateAnalysis": "Générer l'analyse"
   },
   "contributors": {
-    "title": "Merci \u00e0 nos partenaires experts",
-    "subtitle": "Ces experts du secteur ont collabor\u00e9 \u00e0 la cr\u00e9ation de ce r\u00e9f\u00e9rentiel.",
-    "cartelis": "Cabinet de conseil op\u00e9rationnel sp\u00e9cialis\u00e9 en strat\u00e9gie data et CRM. A contribu\u00e9 \u00e0 d\u00e9finir la m\u00e9thodologie et la segmentation sectorielle.",
-    "epsilon": "Leader en technologie marketing pour l'engagement client personnalis\u00e9. A contribu\u00e9 aux standards d'acquisition et de r\u00e9tention.",
-    "niji": "Cabinet fran\u00e7ais de conseil et technologie en transformation digitale. A fourni les benchmarks de conversion e-commerce et insights UX.",
-    "expertsTitle": "Experts du march\u00e9",
-    "expertsSubtitle": "Leaders du secteur qui ont contribu\u00e9 \u00e0 valider nos benchmarks.",
+    "title": "Merci à nos partenaires experts",
+    "subtitle": "Ces experts du secteur ont collaboré à la création de ce référentiel.",
+    "cartelis": "Cabinet de conseil opérationnel spécialisé en stratégie data et CRM. A contribué à définir la méthodologie et la segmentation sectorielle.",
+    "epsilon": "Leader en technologie marketing pour l'engagement client personnalisé. A contribué aux standards d'acquisition et de rétention.",
+    "niji": "Cabinet français de conseil et technologie en transformation digitale. A fourni les benchmarks de conversion e-commerce et insights UX.",
+    "expertsTitle": "Experts du marché",
+    "expertsSubtitle": "Leaders du secteur qui ont contribué à valider nos benchmarks.",
     "experts": {
       "expert1": {
         "name": "Sophie Martin",
@@ -631,7 +619,7 @@
       },
       "expert2": {
         "name": "Thomas Dubois",
-        "role": "Strat\u00e8ge CRM & R\u00e9tention",
+        "role": "Stratège CRM & Rétention",
         "linkedin": "https://www.linkedin.com/in/"
       },
       "expert3": {
@@ -646,7 +634,7 @@
       },
       "expert5": {
         "name": "Claire Moreau",
-        "role": "Consultante Exp\u00e9rience Client",
+        "role": "Consultante Expérience Client",
         "linkedin": "https://www.linkedin.com/in/"
       },
       "expert6": {
@@ -657,13 +645,13 @@
     }
   },
   "cta": {
-    "title": "Pr\u00eat \u00e0 transformer vos insights en croissance ?",
-    "subtitle": "Fini les suppositions. Place \u00e0 la conversion.",
-    "description": "Brevo vous donne la bo\u00eete \u00e0 outils compl\u00e8te\u2014",
+    "title": "Prêt à transformer vos insights en croissance ?",
+    "subtitle": "Fini les suppositions. Place à la conversion.",
+    "description": "Brevo vous donne la boîte à outils complète—",
     "features": "CRM, Email, SMS et Automation",
-    "descriptionEnd": "\u2014pour transformer ces insights en revenus.",
-    "button": "Parler \u00e0 un expert",
-    "note": "Sans engagement. Obtenez une d\u00e9mo personnalis\u00e9e."
+    "descriptionEnd": "—pour transformer ces insights en revenus.",
+    "button": "Parler à un expert",
+    "note": "Sans engagement. Obtenez une démo personnalisée."
   },
   "error": {
     "title": "Une erreur s'est produite",

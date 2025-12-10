@@ -415,14 +415,14 @@ export default function DomainPlanPage() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header Section */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900">
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 px-2">
             {plan?.company_summary?.name
               ? `${t.marketingPlan?.planFor || 'Marketing Plan for'} ${plan.company_summary.name}`
               : t.marketingPlan?.pageTitle || 'Marketing Relationship Plan Generator'}
           </h1>
           {planSource === 'db' && (
-            <p className="text-gray-500 mt-2">
+            <p className="text-gray-500 mt-2 text-sm sm:text-base">
               {t.marketingPlan?.savedPlan || 'Personalized AI-generated plan'}
             </p>
           )}
@@ -441,7 +441,7 @@ export default function DomainPlanPage() {
         {/* Intro Accordion */}
         <IntroAccordion />
 
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8">
           {/* Sidebar */}
           <div className="lg:w-1/4">
             <MarketingPlanSidebar
@@ -453,6 +453,7 @@ export default function DomainPlanPage() {
               isLoading={isGenerating}
               isUnlocked={isUnlocked}
               domainError={domainError}
+              hasPlan={!!plan}
             />
           </div>
 

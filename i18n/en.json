@@ -41,6 +41,7 @@
     }
   },
   "sidebar": {
+    "configureTitle": "Configuration",
     "industryPlanTitle": "Plan by Industry",
     "industryPlanDesc": "Get a ready-to-use marketing plan based on best practices for your industry. No signup required.",
     "customPlanTitle": "Custom Plan",
@@ -105,15 +106,16 @@
     },
     "cac_payback": {
       "name": "CAC Payback Period",
-      "description": "Time to recover customer acquisition cost.",
-      "definition": "CAC Payback Period measures how many months it takes to recover the cost of acquiring a customer through their gross margin contribution.",
-      "importance": "CAC Payback is critical for SaaS growth planning. Shorter payback means faster capital recycling and ability to reinvest in growth. A payback over 18 months often signals unit economics issues.",
-      "formula": "CAC ÷ (ARPU × Gross Margin)",
+      "description": "Months to recover customer acquisition cost.",
+      "insight": "Cash efficiency indicator.",
+      "definition": "The number of months required to recover the cost of acquiring a customer through their subscription payments.",
+      "importance": "Payback period directly impacts cash flow and capital needs. Shorter payback means faster reinvestment in growth.",
+      "formula": "CAC ÷ (Monthly Revenue × Gross Margin)",
       "bestPractices": [
-        "Target payback under 12 months for venture-backed SaaS",
-        "Monitor payback by customer segment and acquisition channel",
-        "Improve payback by increasing ARPU or reducing CAC",
-        "Consider payback alongside LTV:CAC for full picture"
+        "Target under 12 months for efficient growth",
+        "Compare payback by segment and channel",
+        "Factor in expected expansion revenue",
+        "Balance payback with LTV for optimal investment"
       ]
     },
     "roas": {
@@ -475,20 +477,6 @@
         "Monitor growth efficiency (ARR per sales rep)",
         "Compare to Rule of 40 benchmark",
         "Forecast based on pipeline and conversion rates"
-      ]
-    },
-    "cac_payback": {
-      "name": "CAC Payback Period",
-      "description": "Months to recover customer acquisition cost.",
-      "insight": "Cash efficiency indicator.",
-      "definition": "The number of months required to recover the cost of acquiring a customer through their subscription payments.",
-      "importance": "Payback period directly impacts cash flow and capital needs. Shorter payback means faster reinvestment in growth.",
-      "formula": "CAC ÷ (Monthly Revenue × Gross Margin)",
-      "bestPractices": [
-        "Target under 12 months for efficient growth",
-        "Compare payback by segment and channel",
-        "Factor in expected expansion revenue",
-        "Balance payback with LTV for optimal investment"
       ]
     },
     "email_open_rate": {

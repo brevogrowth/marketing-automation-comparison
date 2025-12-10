@@ -27,19 +27,19 @@ export function CompanySummary({ summary, showTitle = true }: CompanySummaryProp
   const targetAudienceContent = safeSummary.target || safeSummary.target_audience || 'Not specified';
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
+    <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6 mb-4 sm:mb-6">
       {showTitle && (
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-8 h-8 bg-brevo-light rounded-lg flex items-center justify-center">
+        <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+          <div className="w-7 h-7 sm:w-8 sm:h-8 bg-brevo-light rounded-lg flex items-center justify-center">
             <Building2 className="h-4 w-4 text-brevo-green" />
           </div>
-          <h2 className="text-lg font-bold text-gray-900">
+          <h2 className="text-base sm:text-lg font-bold text-gray-900">
             {t.marketingPlan?.companySummary || 'Company Summary'}
           </h2>
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
         {/* Industry/Activities */}
         <div className="bg-gray-50 rounded-lg p-4 border border-gray-100">
           <div className="flex items-center gap-2 mb-2">

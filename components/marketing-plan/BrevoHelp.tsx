@@ -31,12 +31,12 @@ export function BrevoHelp({ scenarios }: BrevoHelpProps) {
   };
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-8 h-8 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center">
+    <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6 mb-4 sm:mb-6">
+      <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+        <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
           <Sparkles className="h-4 w-4 text-blue-600" />
         </div>
-        <h2 className="text-lg font-bold text-gray-900">
+        <h2 className="text-base sm:text-lg font-bold text-gray-900">
           {t.marketingPlan?.howBrevoHelps || 'How Brevo Could Help You'}
         </h2>
       </div>
