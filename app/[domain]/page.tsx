@@ -472,14 +472,14 @@ export default function DomainPlanPage() {
             {/* Plan Display */}
             {plan && !error && (
               <div className="space-y-6">
-                {/* CTA Inline (for personalized plans) */}
-                {planSource !== 'static' && (
-                  <BrevoCallToAction variant="inline" />
-                )}
-
                 {/* Company Summary */}
                 {planSource !== 'static' && (
-                  <CompanySummary summary={plan.company_summary} />
+                  <>
+                    <h2 className="text-lg font-bold text-gray-900">
+                      {t.marketingPlan?.companySummary || 'Company Summary'}
+                    </h2>
+                    <CompanySummary summary={plan.company_summary} showTitle={false} />
+                  </>
                 )}
 
                 {/* Marketing Programs Overview */}
@@ -552,8 +552,8 @@ export default function DomainPlanPage() {
         </div>
       </main>
 
-      {/* Sticky CTA Footer */}
-      {plan && planSource === 'static' && !isGenerating && !error && (
+      {/* Sticky CTA Footer (appears on scroll up, for all plans) */}
+      {plan && !isGenerating && !error && (
         <BrevoCallToAction variant="sticky" />
       )}
     </div>

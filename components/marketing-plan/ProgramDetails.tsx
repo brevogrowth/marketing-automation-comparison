@@ -69,12 +69,7 @@ export function ProgramDetails({ program, programNumber }: ProgramDetailsProps) 
           <div className="w-8 h-8 bg-brevo-light rounded-lg flex items-center justify-center">
             <ClipboardList className="h-4 w-4 text-brevo-green" />
           </div>
-          <div>
-            <span className="text-sm font-medium text-gray-500">
-              {t.marketingPlan?.program || 'Program'} {programNumber}
-            </span>
-            <h3 className="font-semibold text-gray-900">{programName}</h3>
-          </div>
+          <h3 className="font-semibold text-gray-900">{programName}</h3>
         </div>
         {isOpen ? (
           <ChevronUp className="h-5 w-5 text-gray-400" />

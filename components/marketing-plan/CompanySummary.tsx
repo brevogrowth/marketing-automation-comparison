@@ -6,6 +6,7 @@ import type { CompanySummary as CompanySummaryType } from '@/src/types/marketing
 
 interface CompanySummaryProps {
   summary: CompanySummaryType;
+  showTitle?: boolean;
 }
 
 // Helper to check if a string has meaningful content
@@ -15,7 +16,7 @@ const hasContent = (value?: string): boolean => {
   return value.trim().length > 0;
 };
 
-export function CompanySummary({ summary }: CompanySummaryProps) {
+export function CompanySummary({ summary, showTitle = true }: CompanySummaryProps) {
   const { t } = useLanguage();
 
   // Ensure we have a summary object even if null was passed
@@ -27,14 +28,16 @@ export function CompanySummary({ summary }: CompanySummaryProps) {
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-8 h-8 bg-brevo-light rounded-lg flex items-center justify-center">
-          <Building2 className="h-4 w-4 text-brevo-green" />
+      {showTitle && (
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-8 h-8 bg-brevo-light rounded-lg flex items-center justify-center">
+            <Building2 className="h-4 w-4 text-brevo-green" />
+          </div>
+          <h2 className="text-lg font-bold text-gray-900">
+            {t.marketingPlan?.companySummary || 'Company Summary'}
+          </h2>
         </div>
-        <h2 className="text-lg font-bold text-gray-900">
-          {t.marketingPlan?.companySummary || 'Company Summary'}
-        </h2>
-      </div>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Industry/Activities */}

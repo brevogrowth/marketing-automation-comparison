@@ -449,14 +449,14 @@ export default function Home() {
             {/* Plan Display - Always visible, even during loading for non-blocking UX */}
             {plan && !error && (
               <div className="space-y-6">
-                {/* CTA Inline (for personalized plans) */}
-                {planSource !== 'static' && (
-                  <BrevoCallToAction variant="inline" />
-                )}
-
                 {/* Company Summary - Only shown for personalized plans */}
                 {planSource !== 'static' && (
-                  <CompanySummary summary={plan.company_summary} />
+                  <>
+                    <h2 className="text-lg font-bold text-gray-900">
+                      {t.marketingPlan?.companySummary || 'Company Summary'}
+                    </h2>
+                    <CompanySummary summary={plan.company_summary} showTitle={false} />
+                  </>
                 )}
 
                 {/* Marketing Programs Overview */}
@@ -529,8 +529,8 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Sticky CTA Footer (for static plans, hidden during loading) */}
-      {plan && planSource === 'static' && !isLoading && !error && (
+      {/* Sticky CTA Footer (appears on scroll up, for all plans) */}
+      {plan && !isLoading && !error && (
         <BrevoCallToAction variant="sticky" />
       )}
     </div>
