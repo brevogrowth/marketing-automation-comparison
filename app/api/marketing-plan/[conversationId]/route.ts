@@ -67,6 +67,16 @@ export async function GET(
 
     const data = await response.json();
 
+    // Debug: Log full AI Gateway response structure
+    console.log('[Poll] AI Gateway response:', JSON.stringify({
+      status: data.status,
+      hasResult: !!data.result,
+      resultType: typeof data.result,
+      hasMetadata: !!data.metadata,
+      metadata: data.metadata,
+      topLevelKeys: Object.keys(data),
+    }));
+
     switch (data.status) {
       case 'completed': {
         // Parse and validate the AI response
@@ -79,15 +89,34 @@ export async function GET(
           }
           plan = parseResult;
 
+          // Debug: Log metadata check
+          console.log('[Poll] Metadata check:', {
+            hasDomain: !!data.metadata?.domain,
+            hasLanguage: !!data.metadata?.language,
+            domain: data.metadata?.domain,
+            language: data.metadata?.language,
+          });
+
           // Save to database if we have metadata
           if (data.metadata?.domain && data.metadata?.language) {
             const email = data.metadata?.email || 'ai-generated@brevo.com';
-            await upsertMarketingPlan(
+            console.log('[Poll] Saving to DB:', { domain: data.metadata.domain, language: data.metadata.language, email });
+
+            const dbResult = await upsertMarketingPlan(
               data.metadata.domain,
               email,
               plan,
               data.metadata.language
             );
+
+            if (dbResult.success) {
+              console.log('[Poll] DB save completed successfully');
+            } else {
+              console.error('[Poll] DB save FAILED:', dbResult.error);
+              // Continue anyway - plan can still be returned to user
+            }
+          } else {
+            console.warn('[Poll] Skipping DB save - missing metadata:', { metadata: data.metadata });
           }
         } catch (parseError) {
           // Log detailed error for debugging
