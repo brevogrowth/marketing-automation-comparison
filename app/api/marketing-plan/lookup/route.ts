@@ -28,7 +28,7 @@ export async function GET(request: Request) {
     const language = searchParams.get('language') || 'en';
     const debug = searchParams.get('debug') === 'true';
 
-    // Debug mode: return configuration status
+    // Debug mode: return configuration status and test DB write
     if (debug) {
       const supabaseConfigured = isSupabaseConfigured();
       const envVars = {
@@ -38,10 +38,46 @@ export async function GET(request: Request) {
         urlSource: process.env.NEXT_PUBLIC_SUPABASE_URL ? 'NEXT_PUBLIC' : (process.env.SUPABASE_URL ? 'non-prefixed' : 'none'),
         anonKeySource: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ? 'NEXT_PUBLIC' : (process.env.SUPABASE_ANON_KEY ? 'non-prefixed' : 'none'),
       };
+
+      // Test DB write if requested
+      let dbWriteTest = null;
+      if (searchParams.get('testWrite') === 'true' && supabaseConfigured) {
+        try {
+          const { getSupabaseClient } = await import('@/lib/marketing-plan/supabase');
+          const supabase = getSupabaseClient();
+          const testDomain = `test-${Date.now()}.example.com`;
+
+          // Try to insert a test row
+          const { data, error } = await supabase
+            .from('marketing_plans')
+            .insert([{
+              company_domain: testDomain,
+              email: 'debug-test@brevo.com',
+              form_data: { test: true },
+              user_language: 'en',
+            }])
+            .select();
+
+          if (error) {
+            dbWriteTest = { success: false, error: error.message, code: error.code };
+          } else {
+            // Clean up test row
+            await supabase
+              .from('marketing_plans')
+              .delete()
+              .eq('company_domain', testDomain);
+            dbWriteTest = { success: true, message: 'Write test passed' };
+          }
+        } catch (e) {
+          dbWriteTest = { success: false, error: e instanceof Error ? e.message : 'Unknown error' };
+        }
+      }
+
       return NextResponse.json({
         debug: true,
         supabaseConfigured,
         envVars,
+        dbWriteTest,
         timestamp: new Date().toISOString(),
       });
     }
