@@ -181,13 +181,23 @@ export function ErrorState({
                         <span className="text-xs font-semibold text-gray-700">Additional Info</span>
                       </div>
                       <pre className="text-xs text-gray-600 overflow-auto max-h-40 whitespace-pre-wrap font-mono">
-                        {JSON.stringify(
-                          Object.fromEntries(
-                            Object.entries(details).filter(([k]) => !['errorMessage', 'resultType', 'dataKeys', 'resultPreview'].includes(k))
-                          ),
-                          null,
-                          2
-                        )}
+                        {(() => {
+                          try {
+                            return JSON.stringify(
+                              Object.fromEntries(
+                                Object.entries(details).filter(([k, v]) =>
+                                  !['errorMessage', 'resultType', 'dataKeys', 'resultPreview'].includes(k) &&
+                                  typeof v !== 'function' &&
+                                  !(v instanceof Element)
+                                )
+                              ),
+                              null,
+                              2
+                            );
+                          } catch {
+                            return '[Unable to serialize debug info]';
+                          }
+                        })()}
                       </pre>
                     </div>
                   )}
