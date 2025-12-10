@@ -117,9 +117,17 @@ export async function GET(
           });
 
           // Save to database if we have domain
+          let dbSaveResult: { attempted: boolean; success?: boolean; error?: string; domain?: string; language?: string } = { attempted: false };
+
           if (extractedDomain) {
             const email = data.metadata?.email || 'ai-generated@brevo.com';
             console.log('[Poll] Saving to DB:', { domain: extractedDomain, language: extractedLanguage, email });
+
+            dbSaveResult = {
+              attempted: true,
+              domain: extractedDomain,
+              language: extractedLanguage,
+            };
 
             const dbResult = await upsertMarketingPlan(
               extractedDomain,
@@ -128,15 +136,24 @@ export async function GET(
               extractedLanguage
             );
 
-            if (dbResult.success) {
-              console.log('[Poll] DB save completed successfully');
-            } else {
+            dbSaveResult.success = dbResult.success;
+            if (!dbResult.success) {
+              dbSaveResult.error = dbResult.error;
               console.error('[Poll] DB save FAILED:', dbResult.error);
-              // Continue anyway - plan can still be returned to user
+            } else {
+              console.log('[Poll] DB save completed successfully');
             }
           } else {
             console.warn('[Poll] Skipping DB save - no domain found from any source');
+            dbSaveResult = { attempted: false, error: 'No domain found from any source' };
           }
+
+          // Include DB save result in response for debugging
+          return NextResponse.json({
+            status: 'complete',
+            plan,
+            _dbSave: dbSaveResult, // Debug info
+          });
         } catch (parseError) {
           // Log detailed error for debugging
           console.error('[Poll] Parse error:', parseError instanceof Error ? parseError.message : 'Unknown');
@@ -165,11 +182,6 @@ export async function GET(
             }
           });
         }
-
-        return NextResponse.json({
-          status: 'complete',
-          plan,
-        });
       }
 
       case 'failed':
