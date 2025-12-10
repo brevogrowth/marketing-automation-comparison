@@ -42,11 +42,11 @@ export async function getMarketingPlanByDomain(
     const normalizedDomain = normalizeDomain(companyDomain);
     const supabase = getSupabaseClient();
 
+    // Search by domain only (DB has unique constraint on company_domain alone)
     const { data, error } = await supabase
       .from('marketing_plans')
       .select('form_data')
       .eq('company_domain', normalizedDomain)
-      .eq('user_language', userLanguage)
       .single();
 
     if (error) {
@@ -178,12 +178,12 @@ export async function upsertMarketingPlan(
       kb: Math.round(dataStr.length / 1024),
     });
 
-    // Manual upsert: Check if record exists first
+    // Manual upsert: Check if record exists by domain only
+    // (DB has unique constraint on company_domain alone, not domain+language)
     const { data: existing, error: selectError } = await supabase
       .from('marketing_plans')
       .select('id')
       .eq('company_domain', normalizedDomain)
-      .eq('user_language', userLanguage)
       .maybeSingle();
 
     if (selectError) {
@@ -192,13 +192,14 @@ export async function upsertMarketingPlan(
     }
 
     if (existing) {
-      // UPDATE existing record
-      console.log('[DB] Updating existing plan:', { id: existing.id });
+      // UPDATE existing record (including language)
+      console.log('[DB] Updating existing plan:', { id: existing.id, newLanguage: userLanguage });
       const { error: updateError } = await supabase
         .from('marketing_plans')
         .update({
           email,
           form_data: preservedData,
+          user_language: userLanguage,
         })
         .eq('id', existing.id);
 
