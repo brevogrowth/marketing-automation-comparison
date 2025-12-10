@@ -323,22 +323,32 @@ SUPABASE_SERVICE_ROLE_KEY=xxx
 
 **Running Migrations**:
 
-The Supabase credentials are stored only in Netlify environment variables (not in local .env files).
-To run SQL migrations:
+To run SQL migrations, use the **Supabase Management API** (recommended method):
 
-1. **Via Supabase Dashboard** (recommended):
-   - Go to https://supabase.com/dashboard
-   - Select the project (brevo-marketing-plan)
-   - Navigate to **SQL Editor**
-   - Paste and run the SQL from `supabase/migrations/*.sql`
+```bash
+# List projects
+curl -s -H "Authorization: Bearer $SUPABASE_TOKEN" \
+  "https://api.supabase.com/v1/projects"
 
-2. **Via Claude Code MCP** (if configured):
-   - The `mcp__supabase__execute_sql` tool can run SQL directly
-   - Note: May timeout if not properly configured for this project
+# Execute SQL query
+curl -s -X POST "https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query" \
+  -H "Authorization: Bearer $SUPABASE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "YOUR_SQL_HERE"}'
+```
 
-3. **Migration files location**: `supabase/migrations/`
-   - `001_initial_schema.sql` - marketing_plans table
-   - `002_api_logs.sql` - api_logs table for API monitoring
+**Project info**:
+- Project name: `Dusty Plan`
+- Project ref: `yqmuzemeyndcpovfbjqu`
+- Database host: `db.yqmuzemeyndcpovfbjqu.supabase.co`
+
+**Alternative methods**:
+1. **Supabase Dashboard**: https://supabase.com/dashboard > SQL Editor
+2. **Supabase MCP**: `mcp__supabase__execute_sql` (may timeout)
+
+**Migration files location**: `supabase/migrations/`
+- `001_initial_schema.sql` - marketing_plans table
+- `002_api_logs.sql` - api_logs table for API monitoring
 
 ### Lead Capture (`@brevo/lead-capture`)
 
