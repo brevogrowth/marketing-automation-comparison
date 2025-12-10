@@ -199,7 +199,6 @@ export async function upsertMarketingPlan(
         .update({
           email,
           form_data: preservedData,
-          updated_at: new Date().toISOString(),
         })
         .eq('id', existing.id);
 
