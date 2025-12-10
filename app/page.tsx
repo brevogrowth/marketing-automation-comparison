@@ -70,7 +70,7 @@ export default function Home() {
   useEffect(() => {
     const industryParam = searchParams.get('industry');
     const domainParam = searchParams.get('domain');
-    const langParam = searchParams.get('lang');
+    const forceParam = searchParams.get('force') === 'true';
 
     if (industryParam && VALID_INDUSTRIES.includes(industryParam as Industry)) {
       setIndustry(industryParam as Industry);
@@ -78,8 +78,14 @@ export default function Home() {
 
     if (domainParam) {
       setDomain(domainParam);
-      // If domain is in URL, check for existing plan
-      lookupExistingPlan(domainParam, industryParam as Industry || industry);
+      // If domain is in URL, check for existing plan (unless force=true)
+      if (forceParam) {
+        // Force regeneration - trigger lead gate and generation
+        // Note: User will see the lead capture modal if not already unlocked
+        loadStaticPlan(industryParam as Industry || industry);
+      } else {
+        lookupExistingPlan(domainParam, industryParam as Industry || industry);
+      }
     } else {
       // Load static plan for default industry
       loadStaticPlan(industryParam as Industry || industry);
@@ -160,7 +166,7 @@ export default function Home() {
   };
 
   // Generate personalized plan (requires email)
-  const handleGeneratePersonalizedPlan = () => {
+  const handleGeneratePersonalizedPlan = (forceRegenerate: boolean = false) => {
     if (!validateDomain(domain)) {
       return;
     }
@@ -170,13 +176,13 @@ export default function Home() {
       reason: 'generate_marketing_plan',
       context: { industry, domain, language },
       onSuccess: () => {
-        generatePersonalizedPlan();
+        generatePersonalizedPlan(forceRegenerate);
       },
     });
   };
 
   // Core personalized plan generation
-  const generatePersonalizedPlan = async () => {
+  const generatePersonalizedPlan = async (forceRegenerate: boolean = false) => {
     setIsLoading(true);
     setError(null);
     setErrorDetails(null);
@@ -193,7 +199,7 @@ export default function Home() {
     setLastPollMessage(null);
     setDebugLogs([]);
     startTimeRef.current = Date.now();
-    addDebugLog(`Starting generation for domain: ${domain}, language: ${language}`);
+    addDebugLog(`Starting generation for domain: ${domain}, language: ${language}, force: ${forceRegenerate}`);
 
     // Scroll to top to see the loading banner
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -207,7 +213,7 @@ export default function Home() {
           industry,
           domain: domain.trim(),
           language,
-          force: false,
+          force: forceRegenerate,
         }),
       });
 

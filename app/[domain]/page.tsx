@@ -51,23 +51,62 @@ export default function DomainPlanPage() {
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [progress, setProgress] = useState(5);
   const [elapsedTime, setElapsedTime] = useState(0);
+  const [autoGenerateTriggered, setAutoGenerateTriggered] = useState(false);
 
   const startTimeRef = React.useRef<number | null>(null);
+
+  // Read URL parameters
+  const forceParam = searchParams.get('force') === 'true';
+  const industryParam = searchParams.get('industry');
+
+  // Set industry from URL param
+  useEffect(() => {
+    if (industryParam && VALID_INDUSTRIES.includes(industryParam as Industry)) {
+      setIndustry(industryParam as Industry);
+    }
+  }, [industryParam]);
 
   // Load plan from DB on mount
   useEffect(() => {
     if (urlDomain) {
-      loadPlanFromDB(urlDomain);
+      if (forceParam) {
+        // Force regeneration - skip DB lookup and trigger generation
+        setIsLoading(false);
+        setDomain(urlDomain);
+        loadStaticPlan(industryParam as Industry || industry);
+        // Auto-trigger generation after a short delay to let lead-capture initialize
+        if (!autoGenerateTriggered) {
+          setAutoGenerateTriggered(true);
+          setTimeout(() => {
+            triggerAutoGeneration(true);
+          }, 500);
+        }
+      } else {
+        loadPlanFromDB(urlDomain);
+      }
     }
-  }, [urlDomain, language]);
+  }, [urlDomain, language, forceParam]);
 
-  // Read URL parameters
-  useEffect(() => {
-    const industryParam = searchParams.get('industry');
-    if (industryParam && VALID_INDUSTRIES.includes(industryParam as Industry)) {
-      setIndustry(industryParam as Industry);
+  // Auto-generate function that triggers lead-capture then generation
+  const triggerAutoGeneration = (forceRegenerate: boolean = false) => {
+    if (!urlDomain) return;
+
+    // Validate domain
+    const stripped = urlDomain.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
+    if (!stripped.includes('.') || stripped.length < 4) {
+      setError(t.marketingPlan?.errorInvalidDomainFormat || 'Invalid domain format');
+      return;
     }
-  }, [searchParams]);
+
+    // Require lead capture before generating
+    requireLead({
+      reason: 'generate_marketing_plan',
+      context: { industry, domain: urlDomain, language },
+      onSuccess: () => {
+        generatePersonalizedPlan(forceRegenerate);
+      },
+    });
+  };
 
   // Load plan from database
   const loadPlanFromDB = async (domainToLoad: string) => {
@@ -93,11 +132,17 @@ export default function DomainPlanPage() {
           }
         }
       } else {
-        // Plan not found - show option to generate
-        setError(t.marketingPlan?.noPlanFound || `No marketing plan found for ${domainToLoad}`);
+        // Plan not found - auto-trigger generation with lead-capture
         setDomain(domainToLoad);
-        // Load static plan as fallback
-        loadStaticPlan(industry);
+        loadStaticPlan(industryParam as Industry || industry);
+
+        // Auto-trigger generation (with lead-capture gate)
+        if (!autoGenerateTriggered) {
+          setAutoGenerateTriggered(true);
+          setTimeout(() => {
+            triggerAutoGeneration(false);
+          }, 500);
+        }
       }
     } catch (err) {
       console.error('Error loading plan:', err);
@@ -170,7 +215,7 @@ export default function DomainPlanPage() {
   };
 
   // Core personalized plan generation
-  const generatePersonalizedPlan = async () => {
+  const generatePersonalizedPlan = async (forceRegenerate: boolean = false) => {
     setIsGenerating(true);
     setError(null);
     setErrorDetails(null);
@@ -189,7 +234,7 @@ export default function DomainPlanPage() {
           industry,
           domain: domain.trim(),
           language,
-          force: false,
+          force: forceRegenerate,
         }),
       });
 
