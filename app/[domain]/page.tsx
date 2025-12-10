@@ -233,7 +233,11 @@ export default function DomainPlanPage() {
   };
 
   // Generate personalized plan
-  const handleGeneratePersonalizedPlan = () => {
+  // Note: onClick may pass MouseEvent as first arg, so we explicitly check for boolean
+  const handleGeneratePersonalizedPlan = (forceRegenerate?: boolean | React.MouseEvent) => {
+    // Ensure forceRegenerate is a boolean (onClick passes MouseEvent)
+    const shouldForce = typeof forceRegenerate === 'boolean' ? forceRegenerate : false;
+
     if (!validateDomain(domain)) {
       return;
     }
@@ -242,7 +246,7 @@ export default function DomainPlanPage() {
       reason: 'generate_marketing_plan',
       context: { industry, domain, language },
       onSuccess: () => {
-        generatePersonalizedPlan();
+        generatePersonalizedPlan(shouldForce);
       },
     });
   };

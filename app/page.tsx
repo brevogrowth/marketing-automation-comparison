@@ -196,17 +196,21 @@ export default function Home() {
   };
 
   // Generate personalized plan (requires email)
-  const handleGeneratePersonalizedPlan = (forceRegenerate: boolean = false) => {
+  // Note: onClick may pass MouseEvent as first arg, so we explicitly check for boolean
+  const handleGeneratePersonalizedPlan = (forceRegenerate?: boolean | React.MouseEvent) => {
     if (!validateDomain(domain)) {
       return;
     }
+
+    // Ensure forceRegenerate is a boolean (onClick passes MouseEvent)
+    const shouldForce = typeof forceRegenerate === 'boolean' ? forceRegenerate : false;
 
     // Require lead capture
     requireLead({
       reason: 'generate_marketing_plan',
       context: { industry, domain, language },
       onSuccess: () => {
-        generatePersonalizedPlan(forceRegenerate);
+        generatePersonalizedPlan(shouldForce);
       },
     });
   };
