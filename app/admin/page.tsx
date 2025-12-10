@@ -119,7 +119,7 @@ export default function AdminPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-[#0B996E] rounded-lg flex items-center justify-center text-white font-bold text-lg">
@@ -140,7 +140,7 @@ export default function AdminPage() {
 
       {/* Tabs */}
       <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="px-6 lg:px-8">
           <nav className="flex gap-8">
             <TabButton active={activeTab === 'stats'} onClick={() => setActiveTab('stats')} icon="📊">
               Stats
@@ -159,7 +159,7 @@ export default function AdminPage() {
       </div>
 
       {/* Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1">
+      <main className="px-6 lg:px-8 py-8 flex-1">
         {activeTab === 'stats' && <StatsTab password={storedPassword} />}
         {activeTab === 'plans' && <PlansListTab password={storedPassword} />}
         {activeTab === 'logs' && <LogsTab password={storedPassword} />}
@@ -168,7 +168,7 @@ export default function AdminPage() {
 
       {/* Footer */}
       <footer className="border-t border-gray-200 bg-white mt-auto">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="px-6 lg:px-8 py-4">
           <div className="flex justify-between text-sm text-gray-500">
             <span>Marketing Plan Generator Admin</span>
             <span>{new Date().toLocaleString()}</span>
