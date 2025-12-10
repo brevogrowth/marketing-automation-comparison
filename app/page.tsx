@@ -266,7 +266,7 @@ export default function Home() {
       setElapsedTime(Math.floor((Date.now() - (startTimeRef.current || Date.now())) / 1000));
 
       try {
-        const pollResponse = await fetch(`/api/marketing-plan/${jobId}`);
+        const pollResponse = await fetch(`/api/marketing-plan/${jobId}?domain=${encodeURIComponent(domain)}&language=${language}`);
         const pollData = await pollResponse.json();
 
         // Update debug state

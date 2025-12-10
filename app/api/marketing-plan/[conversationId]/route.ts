@@ -26,6 +26,11 @@ export async function GET(
 ) {
   const { conversationId: jobId } = await params;
 
+  // Get optional query parameters for fallback
+  const { searchParams } = new URL(request.url);
+  const queryDomain = searchParams.get('domain');
+  const queryLanguage = searchParams.get('language');
+
   // Validate format
   if (!JOB_ID_REGEX.test(jobId)) {
     return NextResponse.json(
@@ -89,24 +94,38 @@ export async function GET(
           }
           plan = parseResult;
 
-          // Debug: Log metadata check
-          console.log('[Poll] Metadata check:', {
-            hasDomain: !!data.metadata?.domain,
-            hasLanguage: !!data.metadata?.language,
-            domain: data.metadata?.domain,
-            language: data.metadata?.language,
+          // Extract domain/language from multiple sources (in priority order)
+          // 1. AI Gateway metadata (if returned)
+          // 2. Query parameters (passed by frontend)
+          // 3. Plan data (company_summary.website)
+          const extractedDomain =
+            data.metadata?.domain ||
+            queryDomain ||
+            plan.company_summary?.website?.replace(/^(https?:\/\/)?(www\.)?/, '').split('/')[0];
+
+          const extractedLanguage =
+            data.metadata?.language ||
+            queryLanguage ||
+            'en'; // Default fallback
+
+          // Debug: Log metadata sources
+          console.log('[Poll] Metadata sources:', {
+            gatewayMetadata: data.metadata,
+            queryParams: { domain: queryDomain, language: queryLanguage },
+            planWebsite: plan.company_summary?.website,
+            extracted: { domain: extractedDomain, language: extractedLanguage },
           });
 
-          // Save to database if we have metadata
-          if (data.metadata?.domain && data.metadata?.language) {
+          // Save to database if we have domain
+          if (extractedDomain) {
             const email = data.metadata?.email || 'ai-generated@brevo.com';
-            console.log('[Poll] Saving to DB:', { domain: data.metadata.domain, language: data.metadata.language, email });
+            console.log('[Poll] Saving to DB:', { domain: extractedDomain, language: extractedLanguage, email });
 
             const dbResult = await upsertMarketingPlan(
-              data.metadata.domain,
+              extractedDomain,
               email,
               plan,
-              data.metadata.language
+              extractedLanguage
             );
 
             if (dbResult.success) {
@@ -116,7 +135,7 @@ export async function GET(
               // Continue anyway - plan can still be returned to user
             }
           } else {
-            console.warn('[Poll] Skipping DB save - missing metadata:', { metadata: data.metadata });
+            console.warn('[Poll] Skipping DB save - no domain found from any source');
           }
         } catch (parseError) {
           // Log detailed error for debugging
