@@ -10,7 +10,7 @@
 import { NextResponse } from 'next/server';
 import { getSupabaseClient, isSupabaseConfigured } from '@/lib/marketing-plan/supabase';
 
-const ADMIN_PASSWORD = 'growth';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'growth';
 
 function checkAdminAuth(request: Request): boolean {
   const password = request.headers.get('x-admin-password');

@@ -11,6 +11,8 @@
  * - language: string (optional) - Language code (en, fr, de, es). Defaults to 'en'
  * - industry: string (optional) - Industry type. If not provided, will be auto-detected
  * - force: boolean (optional) - Force regeneration even if plan exists. Defaults to false
+ * - webhook_url: string (optional) - URL to call when plan is ready
+ * - webhook_secret: string (optional) - Secret for webhook signature
  *
  * Response:
  * - If existing plan found: { status: 'complete', plan_url: string, plan: MarketingPlan }
@@ -24,16 +26,19 @@ import { NextResponse } from 'next/server';
 import { z } from 'zod';
 import { getMarketingPlanByDomain } from '@/lib/marketing-plan/db';
 import { normalizeDomain } from '@/lib/marketing-plan/normalize';
+import { logApiCall, createTimer, hashApiKey } from '@/lib/api-logger';
 
 export const runtime = 'nodejs';
 export const maxDuration = 10;
 
-// Simple API key validation (in production, use a proper key management system)
-const API_KEY = process.env.EXTERNAL_API_KEY || 'mp-api-key-2024';
+// API key validation - supports multiple keys separated by comma
+const API_KEYS = (process.env.EXTERNAL_API_KEYS || process.env.EXTERNAL_API_KEY || 'mp-api-key-2024')
+  .split(',')
+  .map((k) => k.trim());
 
 function checkApiKey(request: Request): boolean {
   const apiKey = request.headers.get('x-api-key');
-  return apiKey === API_KEY;
+  return apiKey ? API_KEYS.includes(apiKey) : false;
 }
 
 // Request validation schema
@@ -57,6 +62,8 @@ const CreatePlanRequestSchema = z.object({
     ])
     .optional(),
   force: z.boolean().optional().default(false),
+  webhook_url: z.string().url().optional(),
+  webhook_secret: z.string().optional(),
 });
 
 // Language-specific prompts for the AI
@@ -136,26 +143,38 @@ Enfócate en recomendaciones específicas y accionables. Incluye 3-5 programas d
 };
 
 export async function POST(request: Request) {
-  // API key validation
-  if (!checkApiKey(request)) {
-    return NextResponse.json(
-      {
-        error: 'Unauthorized',
-        message: 'Invalid or missing API key. Include x-api-key header.',
-      },
-      { status: 401 }
-    );
-  }
+  const timer = createTimer();
+  const apiKeyHash = hashApiKey(request.headers.get('x-api-key'));
+  let statusCode = 200;
+  let errorMessage: string | undefined;
+  let domain: string | undefined;
 
   try {
+    // API key validation
+    if (!checkApiKey(request)) {
+      statusCode = 401;
+      errorMessage = 'Invalid or missing API key';
+      return NextResponse.json(
+        {
+          error: 'Unauthorized',
+          message: 'Invalid or missing API key. Include x-api-key header.',
+        },
+        { status: 401 }
+      );
+    }
+
     // Validate request body
     const body = await request.json();
-    const { domain, language, industry, force } = CreatePlanRequestSchema.parse(body);
+    const { domain: rawDomain, language, industry, force, webhook_url, webhook_secret } =
+      CreatePlanRequestSchema.parse(body);
 
     // Normalize the domain
-    const normalizedDomain = normalizeDomain(domain);
+    const normalizedDomain = normalizeDomain(rawDomain);
+    domain = normalizedDomain || rawDomain;
 
     if (!normalizedDomain) {
+      statusCode = 400;
+      errorMessage = 'Invalid domain';
       return NextResponse.json(
         {
           error: 'Invalid domain',
@@ -189,6 +208,8 @@ export async function POST(request: Request) {
     const gatewayApiKey = process.env.AI_GATEWAY_API_KEY;
 
     if (!gatewayUrl || !gatewayApiKey) {
+      statusCode = 503;
+      errorMessage = 'AI service not configured';
       return NextResponse.json(
         {
           error: 'Service unavailable',
@@ -224,6 +245,8 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
             industry: industry || 'auto-detect',
             domain: normalizedDomain,
             language,
+            webhook_url,
+            webhook_secret,
           },
         }),
         signal: controller.signal,
@@ -232,6 +255,8 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
 
       if (!gatewayResponse.ok) {
         console.error('[External API] Gateway error status:', gatewayResponse.status);
+        statusCode = 502;
+        errorMessage = 'AI service error';
         return NextResponse.json(
           {
             error: 'AI service error',
@@ -244,7 +269,7 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
       const { jobId } = await gatewayResponse.json();
 
       // Return job info for polling
-      return NextResponse.json({
+      const response: Record<string, unknown> = {
         status: 'processing',
         message: 'Plan generation started. Poll the status URL to get results.',
         job_id: jobId,
@@ -253,10 +278,20 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
         poll_url: `/api/marketing-plan/${jobId}`,
         plan_url: `${baseUrl}/?domain=${encodeURIComponent(normalizedDomain)}&lang=${language}`,
         estimated_time: '2-3 minutes',
-      });
+      };
+
+      // Include webhook info if provided
+      if (webhook_url) {
+        response.webhook_url = webhook_url;
+        response.webhook_enabled = true;
+      }
+
+      return NextResponse.json(response);
     } catch (err) {
       clearTimeout(timeout);
       if (err instanceof Error && err.name === 'AbortError') {
+        statusCode = 504;
+        errorMessage = 'Request timeout';
         return NextResponse.json(
           {
             error: 'Timeout',
@@ -269,6 +304,8 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
     }
   } catch (error) {
     if (error instanceof z.ZodError) {
+      statusCode = 400;
+      errorMessage = 'Validation error';
       return NextResponse.json(
         {
           error: 'Validation error',
@@ -279,10 +316,9 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
       );
     }
 
-    console.error(
-      '[External API] Error:',
-      error instanceof Error ? `${error.name}: ${error.message}` : 'Unknown error'
-    );
+    statusCode = 500;
+    errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error('[External API] Error:', errorMessage);
     return NextResponse.json(
       {
         error: 'Internal error',
@@ -290,6 +326,17 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
       },
       { status: 500 }
     );
+  } finally {
+    // Log the API call (async, don't await)
+    logApiCall({
+      endpoint: '/api/v1/marketing-plan',
+      method: 'POST',
+      domain,
+      api_key_hash: apiKeyHash,
+      status_code: statusCode,
+      response_time_ms: timer(),
+      error_message: errorMessage,
+    });
   }
 }
 
@@ -297,12 +344,21 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
 export async function GET() {
   return NextResponse.json({
     status: 'ok',
-    version: '1.0',
+    version: '1.1',
+    features: ['webhook_callback', 'api_logging'],
     endpoints: {
       create_plan: {
         method: 'POST',
         path: '/api/v1/marketing-plan',
         description: 'Create a marketing plan for a domain',
+        params: {
+          domain: 'string (required)',
+          language: 'en|fr|de|es (optional, default: en)',
+          industry: 'string (optional, auto-detected)',
+          force: 'boolean (optional, default: false)',
+          webhook_url: 'string (optional) - URL to receive callback when plan is ready',
+          webhook_secret: 'string (optional) - Secret for webhook signature',
+        },
       },
       poll_status: {
         method: 'GET',
