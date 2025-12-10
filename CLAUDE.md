@@ -321,6 +321,25 @@ SUPABASE_SERVICE_ROLE_KEY=xxx
 - `saveMarketingPlan(domain, email, plan, language)` - Save new plan
 - `updateMarketingPlan(domain, plan, language)` - Update existing plan
 
+**Running Migrations**:
+
+The Supabase credentials are stored only in Netlify environment variables (not in local .env files).
+To run SQL migrations:
+
+1. **Via Supabase Dashboard** (recommended):
+   - Go to https://supabase.com/dashboard
+   - Select the project (brevo-marketing-plan)
+   - Navigate to **SQL Editor**
+   - Paste and run the SQL from `supabase/migrations/*.sql`
+
+2. **Via Claude Code MCP** (if configured):
+   - The `mcp__supabase__execute_sql` tool can run SQL directly
+   - Note: May timeout if not properly configured for this project
+
+3. **Migration files location**: `supabase/migrations/`
+   - `001_initial_schema.sql` - marketing_plans table
+   - `002_api_logs.sql` - api_logs table for API monitoring
+
 ### Lead Capture (`@brevo/lead-capture`)
 
 **Purpose**: Capture professional emails before generating personalized AI plans.
