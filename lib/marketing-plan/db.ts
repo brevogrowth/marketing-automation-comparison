@@ -129,6 +129,9 @@ export async function saveMarketingPlan(
 /**
  * Update an existing marketing plan (upsert)
  *
+ * Uses manual SELECT + INSERT/UPDATE pattern since Supabase upsert
+ * requires a unique constraint which may not exist in all environments.
+ *
  * @param companyDomain - The company domain (will be normalized)
  * @param email - The user's email
  * @param planData - The marketing plan data
@@ -175,34 +178,66 @@ export async function upsertMarketingPlan(
       kb: Math.round(dataStr.length / 1024),
     });
 
-    const { data, error } = await supabase.from('marketing_plans').upsert(
-      [
+    // Manual upsert: Check if record exists first
+    const { data: existing, error: selectError } = await supabase
+      .from('marketing_plans')
+      .select('id')
+      .eq('company_domain', normalizedDomain)
+      .eq('user_language', userLanguage)
+      .maybeSingle();
+
+    if (selectError) {
+      console.error('[DB] Error checking existing plan:', selectError);
+      return { success: false, error: `Select failed: ${selectError.message}` };
+    }
+
+    if (existing) {
+      // UPDATE existing record
+      console.log('[DB] Updating existing plan:', { id: existing.id });
+      const { error: updateError } = await supabase
+        .from('marketing_plans')
+        .update({
+          email,
+          form_data: preservedData,
+          updated_at: new Date().toISOString(),
+        })
+        .eq('id', existing.id);
+
+      if (updateError) {
+        console.error('[DB] Error updating marketing plan:', {
+          code: updateError.code,
+          message: updateError.message,
+          details: updateError.details,
+          hint: updateError.hint,
+        });
+        return { success: false, error: `Update failed: ${updateError.code}: ${updateError.message}` };
+      }
+
+      console.log('[DB] Update success:', { domain: normalizedDomain });
+    } else {
+      // INSERT new record
+      console.log('[DB] Inserting new plan');
+      const { error: insertError } = await supabase.from('marketing_plans').insert([
         {
           company_domain: normalizedDomain,
           email,
           form_data: preservedData,
           user_language: userLanguage,
         },
-      ],
-      {
-        onConflict: 'company_domain,user_language',
+      ]);
+
+      if (insertError) {
+        console.error('[DB] Error inserting marketing plan:', {
+          code: insertError.code,
+          message: insertError.message,
+          details: insertError.details,
+          hint: insertError.hint,
+        });
+        return { success: false, error: `Insert failed: ${insertError.code}: ${insertError.message}` };
       }
-    ).select();
 
-    if (error) {
-      console.error('[DB] Error upserting marketing plan:', {
-        code: error.code,
-        message: error.message,
-        details: error.details,
-        hint: error.hint,
-      });
-      return { success: false, error: `${error.code}: ${error.message}` };
+      console.log('[DB] Insert success:', { domain: normalizedDomain });
     }
-
-    console.log('[DB] Upsert success:', {
-      rowsAffected: data?.length,
-      domain: normalizedDomain,
-    });
 
     return { success: true };
   } catch (error) {
