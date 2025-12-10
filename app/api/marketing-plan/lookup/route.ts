@@ -16,6 +16,7 @@
 import { NextResponse } from 'next/server';
 import { getMarketingPlanByDomain } from '@/lib/marketing-plan/db';
 import { normalizeDomain } from '@/lib/marketing-plan/normalize';
+import { isSupabaseConfigured } from '@/lib/marketing-plan/supabase';
 
 export const runtime = 'nodejs';
 export const maxDuration = 10;
@@ -25,6 +26,25 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const domain = searchParams.get('domain');
     const language = searchParams.get('language') || 'en';
+    const debug = searchParams.get('debug') === 'true';
+
+    // Debug mode: return configuration status
+    if (debug) {
+      const supabaseConfigured = isSupabaseConfigured();
+      const envVars = {
+        hasSupabaseUrl: Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL),
+        hasSupabaseAnonKey: Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY),
+        hasSupabaseServiceKey: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY),
+        urlSource: process.env.NEXT_PUBLIC_SUPABASE_URL ? 'NEXT_PUBLIC' : (process.env.SUPABASE_URL ? 'non-prefixed' : 'none'),
+        anonKeySource: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ? 'NEXT_PUBLIC' : (process.env.SUPABASE_ANON_KEY ? 'non-prefixed' : 'none'),
+      };
+      return NextResponse.json({
+        debug: true,
+        supabaseConfigured,
+        envVars,
+        timestamp: new Date().toISOString(),
+      });
+    }
 
     if (!domain) {
       return NextResponse.json(
