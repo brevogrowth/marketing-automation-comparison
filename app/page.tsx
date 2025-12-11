@@ -451,15 +451,6 @@ export default function Home() {
             {/* Plan Display - Always visible, even during loading for non-blocking UX */}
             {plan && !error && (
               <div className="space-y-6">
-                {/* Action Buttons (Export PDF + Share) */}
-                <div className="flex justify-end">
-                  <PlanActions
-                    plan={plan}
-                    companyName={plan.company_summary?.name || domain || industry}
-                    isPersonalized={planSource !== 'static'}
-                  />
-                </div>
-
                 {/* Company Summary - Only shown for personalized plans */}
                 {planSource !== 'static' && (
                   <>
@@ -470,10 +461,17 @@ export default function Home() {
                   </>
                 )}
 
-                {/* Marketing Programs Overview */}
-                <h2 className="text-lg font-bold text-gray-900 mb-4">
-                  {t.marketingPlan?.marketingPrograms || 'Relationship Programs Overview'}
-                </h2>
+                {/* Marketing Programs Overview - Title + Actions on same line */}
+                <div className="flex items-center justify-between">
+                  <h2 className="text-lg font-bold text-gray-900">
+                    {t.marketingPlan?.marketingPrograms || 'Relationship Programs Overview'}
+                  </h2>
+                  <PlanActions
+                    plan={plan}
+                    companyName={plan.company_summary?.name || domain || industry}
+                    isPersonalized={planSource !== 'static'}
+                  />
+                </div>
                 <MarketingPrograms programs={plan.programs_list} />
 
                 {/* Program Details (expandable) */}

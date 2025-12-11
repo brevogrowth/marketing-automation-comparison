@@ -15,14 +15,16 @@ export const IntroAccordion: React.FC = () => {
   };
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 overflow-hidden mb-8">
+    <div className="mb-8">
       {/* Accordion Headers Row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {/* What is a relationship plan? */}
         <button
           onClick={() => toggleSection('what')}
-          className={`flex items-center justify-between px-6 py-4 text-left transition-colors hover:bg-gray-50 ${
-            openSection === 'what' ? 'bg-gray-50' : ''
+          className={`flex items-center justify-between px-6 py-4 text-left rounded-xl border transition-all duration-200 ${
+            openSection === 'what'
+              ? 'bg-white border-gray-200 shadow-sm'
+              : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'
           }`}
         >
           <span className="font-medium text-gray-900">
@@ -38,8 +40,10 @@ export const IntroAccordion: React.FC = () => {
         {/* How does it work? */}
         <button
           onClick={() => toggleSection('how')}
-          className={`flex items-center justify-between px-6 py-4 text-left transition-colors hover:bg-gray-50 ${
-            openSection === 'how' ? 'bg-gray-50' : ''
+          className={`flex items-center justify-between px-6 py-4 text-left rounded-xl border transition-all duration-200 ${
+            openSection === 'how'
+              ? 'bg-white border-gray-200 shadow-sm'
+              : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'
           }`}
         >
           <span className="font-medium text-gray-900">
@@ -55,8 +59,10 @@ export const IntroAccordion: React.FC = () => {
         {/* Can I trust this plan? */}
         <button
           onClick={() => toggleSection('trust')}
-          className={`flex items-center justify-between px-6 py-4 text-left transition-colors hover:bg-gray-50 ${
-            openSection === 'trust' ? 'bg-gray-50' : ''
+          className={`flex items-center justify-between px-6 py-4 text-left rounded-xl border transition-all duration-200 ${
+            openSection === 'trust'
+              ? 'bg-white border-gray-200 shadow-sm'
+              : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'
           }`}
         >
           <span className="font-medium text-gray-900">
@@ -72,7 +78,7 @@ export const IntroAccordion: React.FC = () => {
 
       {/* Accordion Content */}
       {openSection && (
-        <div className="border-t border-gray-200 px-6 py-6 bg-gray-50">
+        <div className="mt-3 rounded-xl border border-gray-200 bg-white px-6 py-6 shadow-sm">
           {/* What is a relationship plan? - Content */}
           {openSection === 'what' && (
             <div className="space-y-4">
