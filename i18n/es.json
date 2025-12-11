@@ -773,6 +773,9 @@
     "planFor": "Plan de Marketing para",
     "savedPlan": "Plan personalizado generado por IA",
     "exportPdf": "Exportar PDF",
-    "exportingPdf": "Exportando..."
+    "exportingPdf": "Exportando...",
+    "shareTitle": "Compartir este plan",
+    "shareDesc": "Copia el enlace para compartir este plan de marketing con tu equipo.",
+    "copyLink": "Copiar enlace"
   }
 }

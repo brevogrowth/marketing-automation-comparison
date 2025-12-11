@@ -773,6 +773,9 @@
     "planFor": "Marketingplan für",
     "savedPlan": "KI-generierter personalisierter Plan",
     "exportPdf": "PDF exportieren",
-    "exportingPdf": "Exportieren..."
+    "exportingPdf": "Exportieren...",
+    "shareTitle": "Plan teilen",
+    "shareDesc": "Kopieren Sie den Link, um diesen Marketingplan mit Ihrem Team zu teilen.",
+    "copyLink": "Link kopieren"
   }
 }

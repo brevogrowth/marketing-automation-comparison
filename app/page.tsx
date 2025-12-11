@@ -20,7 +20,7 @@ import {
   BrevoCallToAction,
   LoadingBanner,
   ErrorState,
-  ExportPdfButton,
+  PlanActions,
   type DebugInfo,
 } from '@/components/marketing-plan';
 
@@ -451,23 +451,9 @@ export default function Home() {
             {/* Plan Display - Always visible, even during loading for non-blocking UX */}
             {plan && !error && (
               <div className="space-y-6">
-                {/* Plan Header with Export Button */}
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-2">
-                  <div className="flex items-center gap-3 flex-wrap">
-                    <h2 className="text-lg font-bold text-gray-900">
-                      {t.marketingPlan?.headerTitle || 'Marketing Relationship Plan'}
-                    </h2>
-                    {planSource !== 'static' ? (
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-brevo-green text-white">
-                        {t.marketingPlan?.personalized || 'Personalized'}
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600">
-                        {t.marketingPlan?.template || 'Template'}
-                      </span>
-                    )}
-                  </div>
-                  <ExportPdfButton
+                {/* Action Buttons (Export PDF + Share) */}
+                <div className="flex justify-end">
+                  <PlanActions
                     plan={plan}
                     companyName={plan.company_summary?.name || domain || industry}
                     isPersonalized={planSource !== 'static'}

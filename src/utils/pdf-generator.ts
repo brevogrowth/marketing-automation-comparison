@@ -1,6 +1,28 @@
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
-import type { MarketingPlan, MarketingProgram, ProgramScenario } from '@/src/types/marketing-plan';
+import type { MarketingPlan, MarketingProgram, ProgramScenario, ScenarioMessage } from '@/src/types/marketing-plan';
+
+// Helper to get message sequence as array (same logic as ProgramDetails.tsx)
+const getMessageSequence = (scenario: ProgramScenario): ScenarioMessage[] => {
+  const sequence = scenario.message_sequence;
+  if (!sequence) return [];
+
+  if (Array.isArray(sequence)) {
+    return sequence;
+  }
+
+  // If it's an object, convert to array
+  if (typeof sequence === 'object') {
+    return Object.entries(sequence).map(([key, value]) => {
+      if (typeof value === 'string') {
+        return { title: key, content: value };
+      }
+      return { title: key, ...(value as object) };
+    });
+  }
+
+  return [];
+};
 
 // Brevo brand colors (as mutable arrays for jspdf-autotable compatibility)
 const BREVO_GREEN: [number, number, number] = [11, 153, 110]; // #0B996E
@@ -303,7 +325,7 @@ export function generateMarketingPlanPdf(
     const scenarios: ProgramScenario[] = program.scenarios || [];
     if (scenarios.length > 0) {
       scenarios.forEach((scenario, scenarioIndex) => {
-        checkPageBreak(40);
+        checkPageBreak(60);
 
         const scenarioTarget = scenario.scenario_target || scenario.target || 'General';
         const scenarioObjective = scenario.scenario_objective || scenario.objective || '-';
@@ -319,27 +341,83 @@ export function generateMarketingPlanPdf(
         yPos += 12;
 
         // Scenario details
-        doc.setFont('helvetica', 'normal');
         doc.setFontSize(8);
-        doc.setTextColor(...DARK_TEXT);
 
+        // Target
+        doc.setFont('helvetica', 'bold');
+        doc.setTextColor(...MEDIUM_TEXT);
+        doc.text(t.target + ':', margin + 10, yPos);
+        doc.setFont('helvetica', 'normal');
+        doc.setTextColor(...DARK_TEXT);
+        const targetLines = doc.splitTextToSize(scenarioTarget, contentWidth - 45);
+        doc.text(targetLines, margin + 35, yPos);
+        yPos += targetLines.length * 4 + 3;
+
+        // Objective
         doc.setFont('helvetica', 'bold');
         doc.setTextColor(...MEDIUM_TEXT);
         doc.text(t.objective + ':', margin + 10, yPos);
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(...DARK_TEXT);
-        const objLines = doc.splitTextToSize(scenarioObjective, contentWidth - 30);
+        const objLines = doc.splitTextToSize(scenarioObjective, contentWidth - 45);
         doc.text(objLines, margin + 35, yPos);
         yPos += objLines.length * 4 + 3;
 
+        // Main Messages
         doc.setFont('helvetica', 'bold');
         doc.setTextColor(...MEDIUM_TEXT);
         doc.text(t.mainMessages + ':', margin + 10, yPos);
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(...DARK_TEXT);
-        const msgLines = doc.splitTextToSize(mainMessages, contentWidth - 30);
-        doc.text(msgLines, margin + 45, yPos);
-        yPos += msgLines.length * 4 + 8;
+        const msgLines = doc.splitTextToSize(mainMessages, contentWidth - 45);
+        doc.text(msgLines, margin + 35, yPos);
+        yPos += msgLines.length * 4 + 5;
+
+        // Message Sequence (if available)
+        const messageSequence = getMessageSequence(scenario);
+        if (messageSequence.length > 0) {
+          checkPageBreak(30);
+
+          doc.setFont('helvetica', 'bold');
+          doc.setFontSize(8);
+          doc.setTextColor(...BREVO_GREEN);
+          doc.text(t.messageSequence + ':', margin + 10, yPos);
+          yPos += 5;
+
+          messageSequence.forEach((message, msgIndex) => {
+            checkPageBreak(15);
+
+            const messageTitle = message.title || `Message ${msgIndex + 1}`;
+            const messageContent = message.content || message.description || '';
+
+            // Message number circle
+            doc.setFillColor(...BREVO_LIGHT);
+            doc.circle(margin + 14, yPos + 1.5, 3, 'F');
+            doc.setFontSize(7);
+            doc.setTextColor(...BREVO_GREEN);
+            doc.text(`${msgIndex + 1}`, margin + 12.5, yPos + 3);
+
+            // Message title
+            doc.setFont('helvetica', 'bold');
+            doc.setFontSize(8);
+            doc.setTextColor(...DARK_TEXT);
+            doc.text(messageTitle, margin + 22, yPos + 3);
+            yPos += 5;
+
+            // Message content (if available)
+            if (messageContent) {
+              doc.setFont('helvetica', 'normal');
+              doc.setFontSize(7);
+              doc.setTextColor(...MEDIUM_TEXT);
+              const contentLines = doc.splitTextToSize(messageContent, contentWidth - 35);
+              doc.text(contentLines, margin + 22, yPos);
+              yPos += contentLines.length * 3 + 2;
+            }
+          });
+          yPos += 3;
+        }
+
+        yPos += 5;
       });
     }
 

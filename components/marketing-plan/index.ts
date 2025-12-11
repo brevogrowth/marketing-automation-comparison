@@ -10,3 +10,4 @@ export { LoadingState } from './LoadingState';
 export { LoadingBanner, type DebugInfo } from './LoadingBanner';
 export { ErrorState } from './ErrorState';
 export { ExportPdfButton } from './ExportPdfButton';
+export { PlanActions } from './PlanActions';
