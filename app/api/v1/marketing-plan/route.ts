@@ -185,7 +185,7 @@ export async function POST(request: Request) {
     }
 
     // Get base URL for plan links
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://marketing-plan.brevo.com';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://brevo-marketing-relationship-plan.netlify.app';
 
     // Check for existing plan in database (unless force=true)
     if (!force) {
