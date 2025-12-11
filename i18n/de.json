@@ -4,40 +4,48 @@
     "langCode": "de"
   },
   "header": {
-    "title": "Marketing Relationship Plan",
+    "title": "Marketing-Beziehungsplan",
     "subtitle": "KI-gestützter Strategie-Generator",
     "cta": "Demo anfordern"
   },
   "intro": {
     "what": {
       "question": "Was ist ein \"Beziehungsplan\"?",
-      "intro": "Ein Marketing-Beziehungsplan ist Ihr Fahrplan zum Aufbau dauerhafter Kundenbeziehungen durch automatisierte, personalisierte Kommunikation.",
+      "intro": "Ein Marketing-Beziehungsplan ist ein strategisches Dokument, das Ihre CRM- und Marketing-Automatisierungsinitiativen strukturiert, um nachhaltige Kundenbeziehungen aufzubauen.",
       "programsTitle": "Marketing-Programme",
-      "programsDesc": "Strukturierte Kampagnen wie Willkommensserien, Warenkorbabbruch, Reaktivierung und Treueprogramme — jedes für eine bestimmte Phase des Kundenlebenszyklus konzipiert.",
+      "programsDesc": "Koordinierte Maßnahmenpakete für spezifische Ziele: Willkommen, Kundenbindung, Reaktivierung, Warenkorbabbruch, Empfehlungsprogramm — jeweils auf eine Kundenlebenszyklus-Phase ausgerichtet.",
       "scenariosTitle": "Automatisierte Szenarien",
-      "scenariosDesc": "Vorgefertigte Nachrichtensequenzen mit Triggern, Timing und Content-Ideen — sofort einsatzbereit in Ihrer Marketing-Automation-Plattform.",
-      "tipTitle": "Profi-Tipp",
-      "tipDesc": "Die besten Beziehungspläne kombinieren E-Mail, SMS und Push-Benachrichtigungen, um Kunden auf ihren bevorzugten Kanälen zu erreichen."
+      "scenariosDesc": "Nachrichtensequenzen, die durch Kundenverhalten ausgelöst werden: Willkommens-E-Mails, Post-Kauf-Follow-ups, Reaktivierungskampagnen — orchestrieren Sie die gesamte Customer Journey.",
+      "sourceLabel": "Methodik:"
     },
     "how": {
       "question": "Wie funktioniert es?",
-      "step1Title": "Wählen Sie Ihre Branche",
-      "step1Desc": "Wählen Sie aus 12 Branchen (Mode, Beauty, SaaS usw.), um einen Plan mit relevanten Programmen, Botschaften und KPIs für Ihren Sektor zu erhalten.",
-      "step2Title": "Vorlage sofort erhalten",
-      "step2Desc": "Zeigen Sie einen vollständigen Beziehungsplan mit 4-6 Marketing-Programmen an, jeweils mit Szenarien und Nachrichtensequenzen. Keine Registrierung erforderlich.",
-      "step3Title": "Oder KI-Personalisierung erhalten",
-      "step3Desc": "Geben Sie Ihre Unternehmens-Domain ein und unsere KI analysiert Ihr Geschäft, um einen vollständig maßgeschneiderten Plan mit spezifischen Empfehlungen für Ihre Marke zu erstellen."
+      "intro": "Zwei Wege zu Ihrem Marketing-Beziehungsplan:",
+      "quickTitle": "Schnellmodus",
+      "quickBadge": "Sofort • Ohne Anmeldung",
+      "quickDesc": "Wählen Sie Ihre Branche und erhalten Sie sofort einen Template-Plan mit 4-6 bewährten Marketing-Programmen für Ihren Sektor.",
+      "quickFeature1": "12 Branchen verfügbar",
+      "quickFeature2": "Einsatzbereite Szenarien",
+      "quickFeature3": "Branchenspezifische Best Practices",
+      "personalizedTitle": "Personalisierter Modus",
+      "personalizedBadge": "~3 Min • KI-gestützt",
+      "personalizedDesc": "Geben Sie Ihre Unternehmens-Domain ein und unsere KI analysiert Ihr Geschäft, um einen vollständig personalisierten Plan mit spezifischen Empfehlungen zu erstellen.",
+      "personalizedFeature1": "Website-Analyse",
+      "personalizedFeature2": "Maßgeschneiderte Empfehlungen",
+      "personalizedFeature3": "Markenspezifische Botschaften"
     },
     "trust": {
       "question": "Kann ich diesem Plan vertrauen?",
-      "intro": "Absolut! Unsere Pläne basieren auf bewährten Marketing-Frameworks und realer Expertise:",
-      "expertiseTitle": "Branchen-Expertise",
-      "expertiseDesc": "Entwickelt mit Cartelis, einer führenden CRM- und Marketing-Automation-Beratung mit über 10 Jahren Erfahrung.",
-      "dataTitle": "Datengetrieben",
-      "dataDesc": "Basierend auf aggregierten Erkenntnissen von über 500.000 Unternehmen weltweit, die Brevo nutzen, aus allen Branchen und Unternehmensgrößen.",
-      "aiTitle": "KI-gestützt",
-      "aiDesc": "Unsere KI ist auf Best Practices erfolgreicher Marketing-Kampagnen trainiert und stellt sicher, dass Empfehlungen sowohl kreativ als auch effektiv sind.",
-      "note": "\"Diese Pläne sind Ausgangspunkte. Passen Sie sie basierend auf Ihrer Markensprache, Zielgruppen-Insights und Geschäftszielen an.\""
+      "intro": "Wir glauben an Transparenz. So entstehen diese Pläne:",
+      "frameworkTitle": "Framework",
+      "frameworkDesc": "Die Struktur folgt der Marketing-Beziehungsplan-Methodik entwickelt von",
+      "frameworkDesc2": ", einer französischen CRM- und Marketing-Automation-Beratung.",
+      "aiTitle": "KI-Generierung",
+      "aiDesc": "Personalisierte Pläne werden von einer KI erstellt, die wir mit Dutzenden realer Beispiele verfeinert haben. Template-Pläne werden von unserem Team kuratiert.",
+      "purposeTitle": "Zweck",
+      "purposeDesc": "Diese Pläne sind Ausgangspunkte zur Inspiration Ihrer Strategie. Sie ersetzen keine professionelle Beratung.",
+      "disclaimerTitle": "Wichtig:",
+      "disclaimerText": "KI-generierte Inhalte können Ungenauigkeiten oder \"Halluzinationen\" enthalten. Validieren Sie Empfehlungen immer anhand Ihres Geschäftswissens und Ihrer Ziele, bevor Sie sie umsetzen."
     }
   },
   "sidebar": {

@@ -10,34 +10,42 @@
   },
   "intro": {
     "what": {
-      "question": "C'est quoi un \"plan relationnel\" ?",
-      "intro": "Un plan marketing relationnel est votre feuille de route pour construire des relations durables avec vos clients grâce à une communication automatisée et personnalisée.",
+      "question": "Qu'est-ce qu'un \"plan relationnel\" ?",
+      "intro": "Un plan marketing relationnel est un document stratégique qui structure vos initiatives CRM et marketing automation pour construire des relations client durables.",
       "programsTitle": "Programmes Marketing",
-      "programsDesc": "Des campagnes structurées comme les Séries de Bienvenue, l'Abandon de Panier, la Réactivation et les programmes de Fidélité — chacune conçue pour une étape spécifique du cycle de vie client.",
+      "programsDesc": "Des ensembles d'actions coordonnées visant des objectifs spécifiques : Bienvenue, Fidélisation, Réactivation, Abandon de panier, Parrainage — chacun aligné sur une étape du cycle de vie client.",
       "scenariosTitle": "Scénarios Automatisés",
-      "scenariosDesc": "Des séquences de messages pré-construites avec déclencheurs, timing et idées de contenu — prêtes à être déployées dans votre plateforme de marketing automation.",
-      "tipTitle": "Conseil pro",
-      "tipDesc": "Les meilleurs plans relationnels combinent email, SMS et notifications push pour toucher les clients sur leurs canaux préférés."
+      "scenariosDesc": "Des séquences de messages déclenchées par le comportement client : emails de bienvenue, suivis post-achat, campagnes de réactivation — orchestrant tout le parcours client.",
+      "sourceLabel": "Méthodologie :"
     },
     "how": {
       "question": "Comment ça marche ?",
-      "step1Title": "Choisissez votre secteur",
-      "step1Desc": "Sélectionnez parmi 12 secteurs (Mode, Beauté, SaaS, etc.) pour obtenir un plan avec des programmes, messages et KPIs adaptés à votre industrie.",
-      "step2Title": "Obtenez votre template instantanément",
-      "step2Desc": "Visualisez un plan relationnel complet avec 4-6 programmes marketing, chacun avec ses scénarios et séquences de messages. Aucune inscription requise.",
-      "step3Title": "Ou obtenez une personnalisation IA",
-      "step3Desc": "Entrez le domaine de votre entreprise et notre IA analyse votre business pour créer un plan entièrement personnalisé avec des recommandations spécifiques à votre marque."
+      "intro": "Deux façons d'obtenir votre plan marketing relationnel :",
+      "quickTitle": "Mode Rapide",
+      "quickBadge": "Instantané • Sans inscription",
+      "quickDesc": "Sélectionnez votre secteur et obtenez instantanément un plan template avec 4-6 programmes marketing éprouvés adaptés à votre industrie.",
+      "quickFeature1": "12 secteurs disponibles",
+      "quickFeature2": "Scénarios prêts à l'emploi",
+      "quickFeature3": "Bonnes pratiques sectorielles",
+      "personalizedTitle": "Mode Personnalisé",
+      "personalizedBadge": "~3 min • Propulsé par l'IA",
+      "personalizedDesc": "Entrez le domaine de votre entreprise et notre IA analyse votre activité pour générer un plan entièrement personnalisé avec des recommandations spécifiques.",
+      "personalizedFeature1": "Analyse de votre site web",
+      "personalizedFeature2": "Recommandations sur mesure",
+      "personalizedFeature3": "Messages adaptés à votre marque"
     },
     "trust": {
       "question": "Puis-je faire confiance à ce plan ?",
-      "intro": "Absolument ! Nos plans sont construits sur des frameworks marketing éprouvés et une expertise terrain :",
-      "expertiseTitle": "Expertise Métier",
-      "expertiseDesc": "Développé avec Cartelis, cabinet de conseil leader en CRM & Marketing Automation avec plus de 10 ans d'expérience.",
-      "dataTitle": "Data-Driven",
-      "dataDesc": "Basé sur les insights agrégés de plus de 500 000 entreprises utilisant Brevo dans le monde, tous secteurs et tailles confondus.",
-      "aiTitle": "Propulsé par l'IA",
-      "aiDesc": "Notre IA est entraînée sur les meilleures pratiques de campagnes marketing réussies, garantissant des recommandations à la fois créatives et efficaces.",
-      "note": "\"Ces plans sont des points de départ. Personnalisez-les selon votre ton de marque, vos insights audience et vos objectifs business.\""
+      "intro": "Nous croyons en la transparence. Voici exactement comment ces plans sont créés :",
+      "frameworkTitle": "Framework",
+      "frameworkDesc": "La structure suit la méthodologie du Plan Marketing Relationnel développée par",
+      "frameworkDesc2": ", un cabinet de conseil français spécialisé en CRM et Marketing Automation.",
+      "aiTitle": "Génération IA",
+      "aiDesc": "Les plans personnalisés sont générés par une IA que nous avons affinée avec des dizaines d'exemples réels. Les plans templates sont élaborés par notre équipe.",
+      "purposeTitle": "Objectif",
+      "purposeDesc": "Ces plans sont des points de départ pour inspirer votre stratégie. Ils ne remplacent pas un accompagnement professionnel.",
+      "disclaimerTitle": "Important :",
+      "disclaimerText": "Le contenu généré par l'IA peut contenir des inexactitudes ou \"hallucinations\". Validez toujours les recommandations par rapport à votre connaissance métier et vos objectifs avant de les mettre en œuvre."
     }
   },
   "sidebar": {
