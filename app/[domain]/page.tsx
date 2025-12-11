@@ -20,6 +20,7 @@ import {
   BrevoCallToAction,
   LoadingBanner,
   ErrorState,
+  ExportPdfButton,
 } from '@/components/marketing-plan';
 
 // Valid industries
@@ -425,6 +426,16 @@ export default function DomainPlanPage() {
             <p className="text-gray-500 mt-2 text-sm sm:text-base">
               {t.marketingPlan?.savedPlan || 'Personalized AI-generated plan'}
             </p>
+          )}
+          {/* Export PDF Button */}
+          {plan && !isGenerating && (
+            <div className="mt-4 flex justify-center">
+              <ExportPdfButton
+                plan={plan}
+                companyName={plan.company_summary?.name || urlDomain || 'Company'}
+                isPersonalized={planSource !== 'static'}
+              />
+            </div>
           )}
         </div>
 

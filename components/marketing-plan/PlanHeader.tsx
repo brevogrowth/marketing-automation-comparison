@@ -3,19 +3,23 @@
 import { useState } from 'react';
 import { Share2, Check } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { ExportPdfButton } from './ExportPdfButton';
+import type { MarketingPlan } from '@/src/types/marketing-plan';
 
 interface PlanHeaderProps {
   companyName: string;
   companyDomain?: string;
   isPersonalized?: boolean;
   onShare?: () => void;
+  plan?: MarketingPlan;
 }
 
 export function PlanHeader({
   companyName,
   companyDomain,
   isPersonalized = false,
-  onShare
+  onShare,
+  plan
 }: PlanHeaderProps) {
   const [copied, setCopied] = useState(false);
   const { t } = useLanguage();
@@ -52,29 +56,41 @@ export function PlanHeader({
           </span>
         )}
         {isPersonalized && displayText && (
-          <span className="text-gray-500">
+          <span className="text-gray-500 text-sm">
             {t.marketingPlan?.forCompany || 'for'}{' '}
             <span className="font-medium text-gray-700">{displayText}</span>
           </span>
         )}
       </div>
 
-      <button
-        onClick={handleShare}
-        className="inline-flex items-center px-3 py-1.5 border border-gray-300 text-sm font-medium rounded-lg text-gray-600 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brevo-green transition-colors"
-      >
-        {copied ? (
-          <>
-            <Check className="h-4 w-4 mr-1.5 text-brevo-green" />
-            {t.marketingPlan?.copied || 'Copied!'}
-          </>
-        ) : (
-          <>
-            <Share2 className="h-4 w-4 mr-1.5" />
-            {t.marketingPlan?.share || 'Share'}
-          </>
+      <div className="flex items-center gap-2">
+        {/* Export PDF Button */}
+        {plan && (
+          <ExportPdfButton
+            plan={plan}
+            companyName={displayText}
+            isPersonalized={isPersonalized}
+          />
         )}
-      </button>
+
+        {/* Share Button */}
+        <button
+          onClick={handleShare}
+          className="inline-flex items-center px-3 py-1.5 border border-gray-300 text-sm font-medium rounded-lg text-gray-600 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brevo-green transition-colors"
+        >
+          {copied ? (
+            <>
+              <Check className="h-4 w-4 mr-1.5 text-brevo-green" />
+              {t.marketingPlan?.copied || 'Copied!'}
+            </>
+          ) : (
+            <>
+              <Share2 className="h-4 w-4 mr-1.5" />
+              {t.marketingPlan?.share || 'Share'}
+            </>
+          )}
+        </button>
+      </div>
     </div>
   );
 }

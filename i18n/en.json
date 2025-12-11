@@ -771,6 +771,8 @@
     "noPlanFound": "No marketing plan found for this company",
     "errorLoadingPlan": "Failed to load marketing plan",
     "planFor": "Marketing Plan for",
-    "savedPlan": "Personalized AI-generated plan"
+    "savedPlan": "Personalized AI-generated plan",
+    "exportPdf": "Export PDF",
+    "exportingPdf": "Exporting..."
   }
 }

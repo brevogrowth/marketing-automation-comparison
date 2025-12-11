@@ -9,3 +9,4 @@ export { BrevoCallToAction } from './BrevoCallToAction';
 export { LoadingState } from './LoadingState';
 export { LoadingBanner, type DebugInfo } from './LoadingBanner';
 export { ErrorState } from './ErrorState';
+export { ExportPdfButton } from './ExportPdfButton';

@@ -771,6 +771,8 @@
     "noPlanFound": "No se encontró ningún plan de marketing para esta empresa",
     "errorLoadingPlan": "Error al cargar el plan de marketing",
     "planFor": "Plan de Marketing para",
-    "savedPlan": "Plan personalizado generado por IA"
+    "savedPlan": "Plan personalizado generado por IA",
+    "exportPdf": "Exportar PDF",
+    "exportingPdf": "Exportando..."
   }
 }

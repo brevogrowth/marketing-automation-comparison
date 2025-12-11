@@ -771,6 +771,8 @@
     "noPlanFound": "Kein Marketingplan für dieses Unternehmen gefunden",
     "errorLoadingPlan": "Fehler beim Laden des Marketingplans",
     "planFor": "Marketingplan für",
-    "savedPlan": "KI-generierter personalisierter Plan"
+    "savedPlan": "KI-generierter personalisierter Plan",
+    "exportPdf": "PDF exportieren",
+    "exportingPdf": "Exportieren..."
   }
 }
