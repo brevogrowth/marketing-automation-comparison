@@ -231,6 +231,11 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
 
+    // Always use our internal webhook to save plans to DB
+    // Client can also provide their own webhook_url for additional notifications
+    const internalWebhookUrl = `${baseUrl}/api/v1/webhook`;
+    const webhookSecret = process.env.WEBHOOK_SECRET;
+
     try {
       const gatewayResponse = await fetch(`${gatewayUrl}/api/v1/analyze`, {
         method: 'POST',
@@ -246,6 +251,10 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
             industry: industry || 'auto-detect',
             domain: normalizedDomain,
             language,
+            // Internal webhook for DB persistence
+            internal_webhook_url: internalWebhookUrl,
+            internal_webhook_secret: webhookSecret,
+            // Client webhook (optional, for their own notifications)
             webhook_url,
             webhook_secret,
           },
