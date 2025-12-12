@@ -197,7 +197,8 @@ export async function POST(request: Request) {
           message: 'Existing plan found',
           domain: normalizedDomain,
           language,
-          plan_url: `${baseUrl}/?domain=${encodeURIComponent(normalizedDomain)}&lang=${language}`,
+          plan_url: `${baseUrl}/${encodeURIComponent(normalizedDomain)}?lang=${language}`,
+          timestamp: new Date().toISOString(),
           plan: existingPlan.data,
         });
       }
@@ -276,7 +277,8 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
         domain: normalizedDomain,
         language,
         poll_url: `/api/marketing-plan/${jobId}`,
-        plan_url: `${baseUrl}/?domain=${encodeURIComponent(normalizedDomain)}&lang=${language}`,
+        plan_url: `${baseUrl}/${encodeURIComponent(normalizedDomain)}?lang=${language}`,
+        timestamp: new Date().toISOString(),
         estimated_time: '2-3 minutes',
       };
 
