@@ -67,78 +67,23 @@ const CreatePlanRequestSchema = z.object({
 });
 
 // Language-specific prompts for the AI
+// NOTE: Keep prompts SHORT to avoid Dust timeout. The AI agent already knows the JSON structure.
 const languageConfig: Record<string, { intro: string; prompt: string }> = {
   en: {
-    intro:
-      'You are an expert marketing strategist. Analyze the company at {domain} and create a comprehensive marketing relationship plan.',
-    prompt: `Create a detailed marketing relationship plan for the company at {domain}.
-
-Structure your response as a JSON object with the following format:
-{
-  "introduction": "Brief overview of the plan",
-  "company_summary": {
-    "name": "Company name",
-    "website": "{domain}",
-    "activities": "Main activities",
-    "target": "Primary target audience",
-    "industry": "Detected industry",
-    "target_audience": "Detailed target description",
-    "nb_employees": "Estimated employee count",
-    "business_model": "B2B or B2C",
-    "customer_lifecycle_key_steps": "Key customer lifecycle stages"
-  },
-  "programs_list": [
-    {
-      "program_name": "Program Name",
-      "target": "Target audience for this program",
-      "objective": "Main objective",
-      "kpi": "Key performance indicator",
-      "description": "Program description",
-      "scenarios": [
-        {
-          "scenario_target": "Specific target",
-          "scenario_objective": "Scenario objective",
-          "main_messages_ideas": "Key messages",
-          "message_sequence": [
-            { "title": "Message 1", "description": "When to send", "content": "Message content" }
-          ]
-        }
-      ]
-    }
-  ],
-  "how_brevo_helps_you": [
-    {
-      "scenario_name": "Scenario",
-      "why_brevo_is_better": "Why Brevo is the best solution",
-      "omnichannel_channels": "Channels to use (Email, SMS, WhatsApp, etc.)",
-      "setup_efficiency": "How easy it is to set up"
-    }
-  ],
-  "conclusion": "Closing summary"
-}
-
-Focus on actionable, specific recommendations. Include 3-5 marketing programs with detailed scenarios.`,
+    intro: 'You are an expert marketing strategist.',
+    prompt: `Analyze {domain} and create a marketing relationship plan with 3-5 programs. Return JSON with: introduction, company_summary, programs_list, how_brevo_helps_you, conclusion.`,
   },
   fr: {
-    intro:
-      "Vous êtes un expert en stratégie marketing. Analysez l'entreprise {domain} et créez un plan marketing relationnel complet.",
-    prompt: `Créez un plan marketing relationnel détaillé pour l'entreprise {domain}.
-
-Structurez votre réponse en JSON. Concentrez-vous sur des recommandations actionnables et spécifiques. Incluez 3-5 programmes marketing avec des scénarios détaillés.`,
+    intro: 'Vous êtes un expert en stratégie marketing.',
+    prompt: `Analysez {domain} et créez un plan marketing relationnel avec 3-5 programmes. Retournez du JSON avec: introduction, company_summary, programs_list, how_brevo_helps_you, conclusion.`,
   },
   de: {
-    intro:
-      'Sie sind ein Experte für Marketingstrategie. Analysieren Sie das Unternehmen {domain} und erstellen Sie einen umfassenden Marketing-Beziehungsplan.',
-    prompt: `Erstellen Sie einen detaillierten Marketing-Beziehungsplan für das Unternehmen {domain}.
-
-Konzentrieren Sie sich auf umsetzbare, spezifische Empfehlungen. Fügen Sie 3-5 Marketingprogramme mit detaillierten Szenarien hinzu.`,
+    intro: 'Sie sind ein Experte für Marketingstrategie.',
+    prompt: `Analysieren Sie {domain} und erstellen Sie einen Marketing-Beziehungsplan mit 3-5 Programmen. JSON-Antwort mit: introduction, company_summary, programs_list, how_brevo_helps_you, conclusion.`,
   },
   es: {
-    intro:
-      'Eres un experto en estrategia de marketing. Analiza la empresa {domain} y crea un plan de marketing relacional completo.',
-    prompt: `Crea un plan de marketing relacional detallado para la empresa {domain}.
-
-Enfócate en recomendaciones específicas y accionables. Incluye 3-5 programas de marketing con escenarios detallados.`,
+    intro: 'Eres un experto en estrategia de marketing.',
+    prompt: `Analiza {domain} y crea un plan de marketing relacional con 3-5 programas. Responde en JSON con: introduction, company_summary, programs_list, how_brevo_helps_you, conclusion.`,
   },
 };
 
