@@ -233,7 +233,7 @@ ${langConfig.prompt.replace(/{domain}/g, normalizedDomain)}${industryContext}`;
         poll_url: `/api/marketing-plan/${jobId}`,
         plan_url: `${baseUrl}/${encodeURIComponent(normalizedDomain)}?lang=${language}`,
         timestamp: new Date().toISOString(),
-        estimated_time: '2-3 minutes',
+        estimated_time: '3-7 minutes',
       };
 
       // Include webhook info if provided

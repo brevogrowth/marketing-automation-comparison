@@ -25,7 +25,7 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const domain = searchParams.get('domain');
-    const language = searchParams.get('language') || 'en';
+    const language = searchParams.get('language') || searchParams.get('lang') || 'en';
     const debug = searchParams.get('debug') === 'true';
 
     // Debug mode: return configuration status and test DB write
