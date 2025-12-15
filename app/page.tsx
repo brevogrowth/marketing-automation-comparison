@@ -455,9 +455,9 @@ export default function Home() {
                 {planSource !== 'static' && (
                   <>
                     <h2 className="text-lg font-bold text-gray-900">
-                      {t.marketingPlan?.companySummary || 'Company Summary'}
+                      {(t.marketingPlan as Record<string, string>)?.companyAnalysis || 'Company Analysis'} {domain}
                     </h2>
-                    <CompanySummary summary={plan.company_summary} showTitle={false} />
+                    <CompanySummary summary={plan.company_summary} showTitle={false} companyDomain={domain} />
                   </>
                 )}
 

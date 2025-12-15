@@ -7,6 +7,7 @@ import type { CompanySummary as CompanySummaryType } from '@/src/types/marketing
 interface CompanySummaryProps {
   summary: CompanySummaryType;
   showTitle?: boolean;
+  companyDomain?: string;
 }
 
 // Helper to check if a string has meaningful content
@@ -16,7 +17,7 @@ const hasContent = (value?: string): boolean => {
   return value.trim().length > 0;
 };
 
-export function CompanySummary({ summary, showTitle = true }: CompanySummaryProps) {
+export function CompanySummary({ summary, showTitle = true, companyDomain }: CompanySummaryProps) {
   const { t } = useLanguage();
 
   // Ensure we have a summary object even if null was passed
@@ -26,6 +27,15 @@ export function CompanySummary({ summary, showTitle = true }: CompanySummaryProp
   const industryContent = safeSummary.activities || safeSummary.industry || 'Not specified';
   const targetAudienceContent = safeSummary.target || safeSummary.target_audience || 'Not specified';
 
+  // Determine company display name for the title
+  const companyDisplayName = safeSummary.name && safeSummary.name !== 'Unknown Company'
+    ? safeSummary.name
+    : companyDomain || '';
+
+  // Build the title: "Company Analysis" + company name if available
+  const titleLabel = (t.marketingPlan as Record<string, string>)?.companyAnalysis || 'Company Analysis';
+  const title = companyDisplayName ? `${titleLabel} ${companyDisplayName}` : titleLabel;
+
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6 mb-4 sm:mb-6">
       {showTitle && (
@@ -34,7 +44,7 @@ export function CompanySummary({ summary, showTitle = true }: CompanySummaryProp
             <Building2 className="h-4 w-4 text-brevo-green" />
           </div>
           <h2 className="text-base sm:text-lg font-bold text-gray-900">
-            {t.marketingPlan?.companySummary || 'Company Summary'}
+            {title}
           </h2>
         </div>
       )}
