@@ -270,16 +270,41 @@ export function parsePlanData(
 
             // Count braces to find the actual end of JSON
             let braceCount = 0;
+            let bracketCount = 0;
             let jsonEnd = -1;
+            let inString = false;
+            let escapeNext = false;
+
             for (let i = 0; i < jsonStr.length; i++) {
-              if (jsonStr[i] === '{') braceCount++;
-              if (jsonStr[i] === '}') {
+              const char = jsonStr[i];
+
+              if (escapeNext) {
+                escapeNext = false;
+                continue;
+              }
+
+              if (char === '\\') {
+                escapeNext = true;
+                continue;
+              }
+
+              if (char === '"') {
+                inString = !inString;
+                continue;
+              }
+
+              if (inString) continue;
+
+              if (char === '{') braceCount++;
+              if (char === '}') {
                 braceCount--;
-                if (braceCount === 0) {
+                if (braceCount === 0 && bracketCount === 0) {
                   jsonEnd = i + 1;
                   break;
                 }
               }
+              if (char === '[') bracketCount++;
+              if (char === ']') bracketCount--;
             }
 
             if (jsonEnd > 0 && jsonEnd < jsonStr.length) {
@@ -288,6 +313,59 @@ export function parsePlanData(
               const trimmedParsed = JSON.parse(jsonStr);
               console.log('[extractJSON] Successfully parsed trimmed JSON');
               return trimmedParsed;
+            }
+
+            // If JSON is truncated (unbalanced braces), try to complete it
+            if (braceCount > 0 || bracketCount > 0) {
+              console.log(`[extractJSON] JSON appears truncated: ${braceCount} unclosed braces, ${bracketCount} unclosed brackets`);
+
+              // Find last complete field before truncation
+              // Look for the last complete key-value pair
+              let repairStr = jsonStr;
+
+              // Remove incomplete string at the end (e.g., "linkedin_scrape_statu)
+              // Find the last complete property
+              const lastCompleteComma = repairStr.lastIndexOf(',\n');
+              const lastCompleteBrace = repairStr.lastIndexOf('},');
+              const lastCompleteBracket = repairStr.lastIndexOf('],');
+
+              // Find the best truncation point
+              let cutPoint = Math.max(lastCompleteComma, lastCompleteBrace, lastCompleteBracket);
+
+              if (cutPoint > repairStr.length * 0.5) { // Only if we're keeping more than 50%
+                // Cut at this point and close all open structures
+                repairStr = repairStr.substring(0, cutPoint);
+
+                // Remove trailing comma if present
+                repairStr = repairStr.replace(/,\s*$/, '');
+
+                // Recount braces/brackets after cutting
+                braceCount = 0;
+                bracketCount = 0;
+                inString = false;
+                escapeNext = false;
+
+                for (let i = 0; i < repairStr.length; i++) {
+                  const char = repairStr[i];
+                  if (escapeNext) { escapeNext = false; continue; }
+                  if (char === '\\') { escapeNext = true; continue; }
+                  if (char === '"') { inString = !inString; continue; }
+                  if (inString) continue;
+                  if (char === '{') braceCount++;
+                  if (char === '}') braceCount--;
+                  if (char === '[') bracketCount++;
+                  if (char === ']') bracketCount--;
+                }
+
+                // Close any open brackets then braces
+                for (let i = 0; i < bracketCount; i++) repairStr += ']';
+                for (let i = 0; i < braceCount; i++) repairStr += '}';
+
+                console.log('[extractJSON] Attempting to parse repaired truncated JSON');
+                const repairedParsed = JSON.parse(repairStr);
+                console.log('[extractJSON] Successfully parsed repaired JSON');
+                return repairedParsed;
+              }
             }
           } catch (repairError) {
             console.error('[extractJSON] JSON repair failed:', repairError instanceof Error ? repairError.message : 'Unknown');
