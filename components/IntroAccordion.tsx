@@ -15,7 +15,7 @@ export const IntroAccordion: React.FC = () => {
   };
 
   return (
-    <div className="mb-8">
+    <div className="my-10">
       {/* Accordion Headers Row */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {/* What is a relationship plan? */}
@@ -23,8 +23,8 @@ export const IntroAccordion: React.FC = () => {
           onClick={() => toggleSection('what')}
           className={`flex items-center justify-between px-6 py-4 text-left rounded-xl border transition-all duration-200 ${
             openSection === 'what'
-              ? 'bg-white border-gray-200 shadow-sm'
-              : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'
+              ? 'bg-white border-gray-300 shadow-sm'
+              : 'bg-gray-50 border-gray-200 hover:bg-white hover:border-gray-300 hover:shadow-sm'
           }`}
         >
           <span className="font-medium text-gray-900">
@@ -42,8 +42,8 @@ export const IntroAccordion: React.FC = () => {
           onClick={() => toggleSection('how')}
           className={`flex items-center justify-between px-6 py-4 text-left rounded-xl border transition-all duration-200 ${
             openSection === 'how'
-              ? 'bg-white border-gray-200 shadow-sm'
-              : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'
+              ? 'bg-white border-gray-300 shadow-sm'
+              : 'bg-gray-50 border-gray-200 hover:bg-white hover:border-gray-300 hover:shadow-sm'
           }`}
         >
           <span className="font-medium text-gray-900">
@@ -61,8 +61,8 @@ export const IntroAccordion: React.FC = () => {
           onClick={() => toggleSection('trust')}
           className={`flex items-center justify-between px-6 py-4 text-left rounded-xl border transition-all duration-200 ${
             openSection === 'trust'
-              ? 'bg-white border-gray-200 shadow-sm'
-              : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'
+              ? 'bg-white border-gray-300 shadow-sm'
+              : 'bg-gray-50 border-gray-200 hover:bg-white hover:border-gray-300 hover:shadow-sm'
           }`}
         >
           <span className="font-medium text-gray-900">

@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Font family definitions */
+@theme {
+  --font-tomato: 'Tomato Grotesk', system-ui, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+}
+
 @theme {
   /* Brand colors - override these per-project in config/branding.ts */
   --color-brand-light: #FFFFFF;

@@ -452,7 +452,7 @@ export default function DomainPlanPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header Section */}
         <div className="text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 px-2">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 px-2" style={{ fontFamily: 'var(--font-tomato)' }}>
             {plan?.company_summary?.name
               ? `${t.marketingPlan?.planFor || 'Marketing Plan for'} ${plan.company_summary.name}`
               : t.marketingPlan?.pageTitle || 'Marketing Relationship Plan Generator'}
