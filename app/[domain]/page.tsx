@@ -86,8 +86,18 @@ export default function DomainPlanPage() {
   const [progress, setProgress] = useState(5);
   const [elapsedTime, setElapsedTime] = useState(0);
   const [autoGenerateTriggered, setAutoGenerateTriggered] = useState(false);
+  const [pollCount, setPollCount] = useState(0);
+  const [lastPollStatus, setLastPollStatus] = useState<string | null>(null);
+  const [lastPollMessage, setLastPollMessage] = useState<string | null>(null);
+  const [debugLogs, setDebugLogs] = useState<string[]>([]);
 
   const startTimeRef = React.useRef<number | null>(null);
+
+  // Helper to add debug log
+  const addDebugLog = (message: string) => {
+    const timestamp = new Date().toLocaleTimeString();
+    setDebugLogs(prev => [...prev.slice(-50), `[${timestamp}] ${message}`]);
+  };
 
   // Read URL parameters
   const forceParam = searchParams.get('force') === 'true';
@@ -260,9 +270,14 @@ export default function DomainPlanPage() {
     setConversationId(null);
     setProgress(5);
     setElapsedTime(0);
+    setPollCount(0);
+    setLastPollStatus(null);
+    setLastPollMessage(null);
+    setDebugLogs([]);
     startTimeRef.current = Date.now();
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    addDebugLog(`Starting generation for domain: ${domain}, language: ${language}, force: ${forceRegenerate}`);
 
     try {
       const createResponse = await fetch('/api/marketing-plan', {
@@ -278,10 +293,12 @@ export default function DomainPlanPage() {
 
       if (!createResponse.ok) {
         const errorData = await createResponse.json();
+        addDebugLog(`Create error: HTTP ${createResponse.status} - ${errorData.error || 'Unknown'}`);
         throw new Error(errorData.error || `HTTP ${createResponse.status}`);
       }
 
       const createData = await createResponse.json();
+      addDebugLog(`Create response: status=${createData.status}, source=${createData.source || 'N/A'}`);
 
       if (createData.status === 'complete') {
         setPlan(createData.plan);
@@ -295,9 +312,11 @@ export default function DomainPlanPage() {
       }
 
       if (createData.status === 'created' && createData.conversationId) {
+        addDebugLog(`AI job created: conversationId=${createData.conversationId}`);
         setConversationId(createData.conversationId);
         await pollForResults(createData.conversationId);
       } else {
+        addDebugLog(`Unexpected response: ${safeJsonStringify(createData)}`);
         throw new Error('Unexpected response from API');
       }
 
@@ -313,9 +332,12 @@ export default function DomainPlanPage() {
     const MAX_POLLS = 120;
     const POLL_INTERVAL = 5000;
 
+    addDebugLog(`Starting polling for job ${jobId}`);
+
     for (let i = 0; i < MAX_POLLS; i++) {
       await new Promise(resolve => setTimeout(resolve, POLL_INTERVAL));
 
+      setPollCount(i + 1);
       setProgress(Math.min(90, 5 + ((i + 1) / MAX_POLLS) * 85));
       setElapsedTime(Math.floor((Date.now() - (startTimeRef.current || Date.now())) / 1000));
 
@@ -323,7 +345,15 @@ export default function DomainPlanPage() {
         const pollResponse = await fetch(`/api/marketing-plan/${jobId}`);
         const pollData = await pollResponse.json();
 
+        setLastPollStatus(pollData.status);
+        setLastPollMessage(pollData.message || null);
+        addDebugLog(`Poll #${i + 1}: status=${pollData.status}${pollData.message ? `, msg=${pollData.message.substring(0, 50)}` : ''}`);
+
         if (pollData.status === 'complete') {
+          if (pollData._dbSave) {
+            addDebugLog(`DB Save: ${safeJsonStringify(pollData._dbSave)}`);
+          }
+          addDebugLog('Plan complete! Redirecting...');
           setPlan(pollData.plan);
           setPlanSource('ai');
           setIsGenerating(false);
@@ -336,19 +366,24 @@ export default function DomainPlanPage() {
         }
 
         if (pollData.status === 'error') {
+          addDebugLog(`Error: ${pollData.error}`);
           if (pollData.debug) {
             console.error('API Debug info:', safeJsonStringify(pollData.debug, 2000));
+            addDebugLog(`Debug details: ${safeJsonStringify(pollData.debug)}`);
             setErrorDetails(pollData.debug);
           }
           throw new Error(pollData.error || 'Plan generation failed');
         }
 
       } catch (pollError) {
+        const errorMsg = pollError instanceof Error ? pollError.message : 'Unknown error';
+        addDebugLog(`Poll exception: ${errorMsg}`);
         console.error('Poll error:', pollError);
         throw pollError;
       }
     }
 
+    addDebugLog('TIMEOUT: Max polls reached (120 polls / 10 minutes)');
     throw new Error('Plan generation timed out. Please try again.');
   };
 
@@ -446,6 +481,13 @@ export default function DomainPlanPage() {
             progress={progress}
             elapsedTime={elapsedTime}
             onCancel={handleCancel}
+            debugInfo={{
+              conversationId,
+              pollCount,
+              lastPollStatus,
+              lastPollMessage,
+              logs: debugLogs,
+            }}
           />
         )}
 
