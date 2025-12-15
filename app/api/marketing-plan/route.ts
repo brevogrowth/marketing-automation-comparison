@@ -20,6 +20,7 @@ import { z } from 'zod';
 import { getMarketingPlanByDomain } from '@/lib/marketing-plan/db';
 import { normalizeDomain } from '@/lib/marketing-plan/normalize';
 import { getStaticPlan } from '@/data/static-marketing-plans';
+import { logApiCall, createTimer } from '@/lib/api-logger';
 import type { Industry } from '@/config/industries';
 
 export const runtime = 'nodejs';
@@ -80,12 +81,28 @@ const languageConfig: Record<string, string> = {
 };
 
 export async function POST(request: Request) {
+  const timer = createTimer();
+  let statusCode = 200;
+  let errorMessage: string | undefined;
+  let domain: string | undefined;
+  let source: string | undefined;
+
   // Rate limiting check
   const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
              request.headers.get('x-real-ip') ||
              'unknown';
 
   if (!checkRateLimit(ip)) {
+    statusCode = 429;
+    errorMessage = 'Rate limit exceeded';
+    logApiCall({
+      endpoint: '/api/marketing-plan',
+      method: 'POST',
+      domain,
+      status_code: statusCode,
+      response_time_ms: timer(),
+      error_message: errorMessage,
+    });
     return NextResponse.json(
       { error: 'Rate limit exceeded. Try again in 1 minute.' },
       { status: 429 }
@@ -95,10 +112,12 @@ export async function POST(request: Request) {
   try {
     // Validate request body
     const body = await request.json();
-    const { industry, domain, language, force } = MarketingPlanRequestSchema.parse(body);
+    const { industry, domain: rawDomain, language, force } = MarketingPlanRequestSchema.parse(body);
 
     // If no domain provided, return static plan
-    if (!domain || domain.trim() === '') {
+    if (!rawDomain || rawDomain.trim() === '') {
+      source = 'static';
+      statusCode = 200;
       const staticPlan = getStaticPlan(industry as Industry, language);
       return NextResponse.json({
         status: 'complete',
@@ -108,9 +127,12 @@ export async function POST(request: Request) {
     }
 
     // Normalize the domain
-    const normalizedDomain = normalizeDomain(domain);
+    const normalizedDomain = normalizeDomain(rawDomain);
+    domain = normalizedDomain || rawDomain;
 
     if (!normalizedDomain) {
+      statusCode = 400;
+      errorMessage = 'Invalid domain';
       return NextResponse.json(
         { error: 'Invalid domain provided' },
         { status: 400 }
@@ -122,6 +144,8 @@ export async function POST(request: Request) {
       const existingPlan = await getMarketingPlanByDomain(normalizedDomain, language);
 
       if (existingPlan.success && existingPlan.data) {
+        source = 'db';
+        statusCode = 200;
         return NextResponse.json({
           status: 'complete',
           source: 'db',
@@ -137,6 +161,8 @@ export async function POST(request: Request) {
     if (!gatewayUrl || !gatewayApiKey) {
       // Fallback to static plan if AI not configured
       console.warn('[Marketing Plan] AI Gateway not configured, returning static plan for industry:', industry);
+      source = 'static';
+      statusCode = 200;
       const staticPlan = getStaticPlan(industry as Industry, language);
       return NextResponse.json({
         status: 'complete',
@@ -177,6 +203,8 @@ export async function POST(request: Request) {
       if (!gatewayResponse.ok) {
         // Log status only, not response body which may contain sensitive data
         console.error('[Marketing Plan] Gateway error status:', gatewayResponse.status);
+        statusCode = 502;
+        errorMessage = 'AI service error';
         return NextResponse.json(
           { error: 'AI service temporarily unavailable' },
           { status: 502 }
@@ -186,6 +214,8 @@ export async function POST(request: Request) {
       const { jobId } = await gatewayResponse.json();
 
       // Return immediately with job ID (don't include domain in response)
+      source = 'ai';
+      statusCode = 200;
       return NextResponse.json({
         status: 'created',
         source: 'ai',
@@ -196,6 +226,8 @@ export async function POST(request: Request) {
     } catch (err) {
       clearTimeout(timeout);
       if (err instanceof Error && err.name === 'AbortError') {
+        statusCode = 504;
+        errorMessage = 'AI service timeout';
         return NextResponse.json(
           { error: 'AI service timeout' },
           { status: 504 }
@@ -206,16 +238,31 @@ export async function POST(request: Request) {
 
   } catch (error) {
     if (error instanceof z.ZodError) {
+      statusCode = 400;
+      errorMessage = 'Validation error';
       return NextResponse.json(
         { error: 'Invalid input', details: error.errors },
         { status: 400 }
       );
     }
     // Log error details for debugging
-    console.error('[Marketing Plan] Error:', error instanceof Error ? `${error.name}: ${error.message}` : 'Unknown error');
+    statusCode = 500;
+    errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error('[Marketing Plan] Error:', errorMessage);
     return NextResponse.json(
       { error: error instanceof Error ? error.message : 'Failed to process request' },
       { status: 500 }
     );
+  } finally {
+    // Log the API call (async, don't await)
+    logApiCall({
+      endpoint: '/api/marketing-plan',
+      method: 'POST',
+      domain,
+      status_code: statusCode,
+      response_time_ms: timer(),
+      error_message: errorMessage,
+      metadata: { source },
+    });
   }
 }
