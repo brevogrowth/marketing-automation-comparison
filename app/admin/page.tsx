@@ -33,13 +33,13 @@ interface StatsResponse {
 
 interface ApiLog {
   id: string;
-  timestamp: string;
-  endpoint: string;
-  method: string;
+  timestamp: string | null;
+  endpoint: string | null;
+  method: string | null;
   domain: string | null;
   api_key_hash: string | null;
-  status_code: number;
-  response_time_ms: number;
+  status_code: number | null;
+  response_time_ms: number | null;
   error_message: string | null;
 }
 
@@ -269,9 +269,12 @@ function TabButton({
 function StatsTab({ password }: { password: string }) {
   const [stats, setStats] = useState<StatsResponse | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
 
   const fetchStats = useCallback(async () => {
     setLoading(true);
+    setError(null);
     try {
       const response = await fetch('/api/admin/stats', {
         headers: { 'x-admin-password': password },
@@ -279,9 +282,14 @@ function StatsTab({ password }: { password: string }) {
       if (response.ok) {
         const data = await response.json();
         setStats(data);
+        setLastUpdated(new Date());
+      } else {
+        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+        setError(errorData.error || 'Failed to fetch stats');
       }
     } catch (err) {
       console.error('Failed to fetch stats:', err);
+      setError('Network error - failed to fetch stats');
     } finally {
       setLoading(false);
     }
@@ -291,28 +299,70 @@ function StatsTab({ password }: { password: string }) {
     fetchStats();
   }, [fetchStats]);
 
-  if (loading) {
-    return <div className="text-center py-8 text-gray-500">Loading statistics...</div>;
+  if (loading && !stats) {
+    return (
+      <div className="text-center py-16">
+        <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#0B996E] mb-4"></div>
+        <p className="text-gray-500">Loading statistics...</p>
+      </div>
+    );
+  }
+
+  if (error && !stats) {
+    return (
+      <div className="text-center py-16">
+        <div className="bg-red-50 border border-red-200 rounded-lg p-6 max-w-md mx-auto">
+          <p className="text-red-700 mb-4">{error}</p>
+          <button
+            onClick={fetchStats}
+            className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+          >
+            Retry
+          </button>
+        </div>
+      </div>
+    );
   }
 
   if (!stats) {
-    return <div className="text-center py-8 text-gray-500">Failed to load statistics</div>;
+    return <div className="text-center py-8 text-gray-500">No data available</div>;
   }
 
   const maxCount = Math.max(...stats.plans_per_day.map((d) => d.count), 1);
+  const totalLast30Days = stats.plans_per_day.reduce((acc, d) => acc + d.count, 0);
+  const avgPerDay = totalLast30Days > 0 ? (totalLast30Days / 30).toFixed(1) : '0';
+
+  // Calculate success rate for API
+  const apiSuccessRate =
+    stats.api_stats && stats.api_stats.total_calls > 0
+      ? (((stats.api_stats.total_calls - stats.api_stats.total_errors) / stats.api_stats.total_calls) * 100).toFixed(1)
+      : null;
 
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
           <h2 className="text-xl font-semibold text-gray-900">Dashboard</h2>
-          <p className="text-sm text-gray-500">Overview of marketing plan generation</p>
+          <p className="text-sm text-gray-500">
+            Overview of marketing plan generation
+            {lastUpdated && (
+              <span className="ml-2 text-gray-400">
+                • Updated {lastUpdated.toLocaleTimeString()}
+              </span>
+            )}
+          </p>
         </div>
         <button
           onClick={fetchStats}
-          className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2"
+          disabled={loading}
+          className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2 disabled:opacity-50"
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg
+            className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -324,30 +374,74 @@ function StatsTab({ password }: { password: string }) {
         </button>
       </div>
 
-      {/* Main Stats */}
-      <div className="grid grid-cols-4 gap-4">
-        <StatCard label="Total Plans" value={stats.total_plans} color="gray" />
-        <StatCard label="Unique Emails" value={stats.unique_emails} color="blue" />
-        <StatCard label="Plans Today" value={stats.plans_today} color="green" />
-        <StatCard
-          label="API Calls"
-          value={stats.api_stats?.total_calls || 0}
-          subValue={stats.api_stats ? `${stats.api_stats.total_errors} errors` : 'No logs'}
-          color="purple"
-        />
+      {error && (
+        <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-amber-800">
+          {error} - Showing cached data
+        </div>
+      )}
+
+      {/* Main Stats - Plans */}
+      <div>
+        <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">Marketing Plans</h3>
+        <div className="grid grid-cols-4 gap-4">
+          <StatCard label="Total Plans" value={stats.total_plans} color="gray" />
+          <StatCard label="Unique Emails" value={stats.unique_emails} color="blue" />
+          <StatCard label="Plans Today" value={stats.plans_today} color="green" />
+          <StatCard
+            label="Last 30 Days"
+            value={totalLast30Days}
+            subValue={`~${avgPerDay}/day avg`}
+            color="purple"
+          />
+        </div>
+      </div>
+
+      {/* API Stats */}
+      <div>
+        <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">API Usage</h3>
+        <div className="grid grid-cols-4 gap-4">
+          <StatCard
+            label="Total API Calls"
+            value={stats.api_stats?.total_calls || 0}
+            color="gray"
+          />
+          <StatCard
+            label="API Calls Today"
+            value={stats.api_stats?.calls_today || 0}
+            color="blue"
+          />
+          <StatCard
+            label="Total Errors"
+            value={stats.api_stats?.total_errors || 0}
+            color="red"
+          />
+          <StatCard
+            label="Success Rate"
+            value={apiSuccessRate ? `${apiSuccessRate}%` : 'N/A'}
+            subValue={stats.api_stats ? 'all time' : 'No API logs'}
+            color="green"
+            isPercentage
+          />
+        </div>
       </div>
 
       {/* Chart */}
       <div className="bg-white border border-gray-200 rounded-lg p-6">
-        <h3 className="font-medium text-gray-900 mb-4">Plans Created (Last 30 Days)</h3>
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="font-medium text-gray-900">Plans Created (Last 30 Days)</h3>
+          <span className="text-sm text-gray-500">{totalLast30Days} total</span>
+        </div>
         <div className="h-48 flex items-end gap-1">
           {stats.plans_per_day.map((day, i) => (
-            <div key={i} className="flex-1 flex flex-col items-center">
+            <div key={i} className="flex-1 flex flex-col items-center group relative">
               <div
-                className="w-full bg-[#0B996E] rounded-t transition-all hover:bg-[#098a62]"
+                className="w-full bg-[#0B996E] rounded-t transition-all hover:bg-[#098a62] cursor-pointer"
                 style={{ height: `${(day.count / maxCount) * 100}%`, minHeight: day.count > 0 ? '4px' : '0' }}
-                title={`${day.date}: ${day.count} plans`}
               />
+              {/* Tooltip */}
+              <div className="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 text-white text-xs rounded px-2 py-1 whitespace-nowrap z-10">
+                {day.date}: {day.count} plan{day.count !== 1 ? 's' : ''}
+              </div>
             </div>
           ))}
         </div>
@@ -360,15 +454,24 @@ function StatsTab({ password }: { password: string }) {
       {/* Language Distribution */}
       <div className="bg-white border border-gray-200 rounded-lg p-6">
         <h3 className="font-medium text-gray-900 mb-4">Plans by Language</h3>
-        <div className="grid grid-cols-4 gap-4">
-          {Object.entries(stats.by_language).map(([lang, count]) => (
-            <div key={lang} className="text-center p-4 bg-gray-50 rounded-lg">
-              <div className="text-2xl mb-1">{getLanguageFlag(lang)}</div>
-              <div className="text-2xl font-bold text-gray-900">{count}</div>
-              <div className="text-sm text-gray-500 uppercase">{lang}</div>
-            </div>
-          ))}
-        </div>
+        {Object.keys(stats.by_language).length === 0 ? (
+          <p className="text-gray-500 text-center py-4">No plans generated yet</p>
+        ) : (
+          <div className="grid grid-cols-4 gap-4">
+            {['en', 'fr', 'de', 'es'].map((lang) => (
+              <div key={lang} className="text-center p-4 bg-gray-50 rounded-lg">
+                <div className="text-2xl mb-1">{getLanguageFlag(lang)}</div>
+                <div className="text-2xl font-bold text-gray-900">{stats.by_language[lang] || 0}</div>
+                <div className="text-sm text-gray-500 uppercase">{lang}</div>
+                {stats.total_plans > 0 && (
+                  <div className="text-xs text-gray-400 mt-1">
+                    {(((stats.by_language[lang] || 0) / stats.total_plans) * 100).toFixed(0)}%
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -379,23 +482,28 @@ function StatCard({
   value,
   subValue,
   color,
+  isPercentage,
 }: {
   label: string;
-  value: number;
+  value: number | string;
   subValue?: string;
-  color: 'gray' | 'blue' | 'green' | 'purple';
+  color: 'gray' | 'blue' | 'green' | 'purple' | 'red';
+  isPercentage?: boolean;
 }) {
   const colorClasses = {
     gray: 'text-gray-900',
     blue: 'text-blue-600',
     green: 'text-green-600',
     purple: 'text-purple-600',
+    red: 'text-red-600',
   };
+
+  const displayValue = typeof value === 'number' ? value.toLocaleString() : value;
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-4">
       <div className="text-sm text-gray-500 uppercase tracking-wide">{label}</div>
-      <div className={`text-3xl font-bold mt-1 ${colorClasses[color]}`}>{value}</div>
+      <div className={`text-3xl font-bold mt-1 ${colorClasses[color]}`}>{displayValue}</div>
       {subValue && <div className="text-xs text-gray-400 mt-1">{subValue}</div>}
     </div>
   );
@@ -569,9 +677,11 @@ function LogsTab({ password }: { password: string }) {
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<'all' | 'success' | 'error'>('all');
   const [message, setMessage] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const fetchLogs = useCallback(async () => {
     setLoading(true);
+    setError(null);
     try {
       const params = new URLSearchParams();
       params.set('status', filter);
@@ -586,9 +696,13 @@ function LogsTab({ password }: { password: string }) {
         setLogs(data.logs);
         setTotal(data.total);
         setMessage(data.message || null);
+      } else {
+        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+        setError(errorData.error || 'Failed to fetch logs');
       }
     } catch (err) {
       console.error('Failed to fetch logs:', err);
+      setError('Network error - failed to fetch logs');
     } finally {
       setLoading(false);
     }
@@ -598,12 +712,23 @@ function LogsTab({ password }: { password: string }) {
     fetchLogs();
   }, [fetchLogs]);
 
+  // Calculate stats from current logs
+  const successCount = logs.filter((l) => l.status_code && l.status_code < 400).length;
+  const errorCount = logs.filter((l) => l.status_code && l.status_code >= 400).length;
+  const avgResponseTime =
+    logs.filter((l) => l.response_time_ms).length > 0
+      ? Math.round(
+          logs.filter((l) => l.response_time_ms).reduce((acc, l) => acc + (l.response_time_ms || 0), 0) /
+            logs.filter((l) => l.response_time_ms).length
+        )
+      : 0;
+
   return (
     <div>
       <div className="flex justify-between items-center mb-6">
         <div>
           <h2 className="text-xl font-semibold text-gray-900">API Logs</h2>
-          <p className="text-sm text-gray-500">{total} log entries</p>
+          <p className="text-sm text-gray-500">{total.toLocaleString()} total entries</p>
         </div>
         <div className="flex items-center gap-4">
           <select
@@ -617,9 +742,15 @@ function LogsTab({ password }: { password: string }) {
           </select>
           <button
             onClick={fetchLogs}
-            className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2"
+            disabled={loading}
+            className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2 disabled:opacity-50"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -632,6 +763,32 @@ function LogsTab({ password }: { password: string }) {
         </div>
       </div>
 
+      {/* Quick Stats */}
+      {!loading && logs.length > 0 && (
+        <div className="grid grid-cols-4 gap-4 mb-6">
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <div className="text-sm text-gray-500">Showing</div>
+            <div className="text-2xl font-bold text-gray-900">{logs.length}</div>
+          </div>
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <div className="text-sm text-gray-500">Success</div>
+            <div className="text-2xl font-bold text-green-600">{successCount}</div>
+          </div>
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <div className="text-sm text-gray-500">Errors</div>
+            <div className="text-2xl font-bold text-red-600">{errorCount}</div>
+          </div>
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <div className="text-sm text-gray-500">Avg Response</div>
+            <div className="text-2xl font-bold text-blue-600">{avgResponseTime > 0 ? `${avgResponseTime}ms` : 'N/A'}</div>
+          </div>
+        </div>
+      )}
+
+      {error && (
+        <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">{error}</div>
+      )}
+
       {message && (
         <div className="mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-amber-800">{message}</div>
       )}
@@ -639,47 +796,114 @@ function LogsTab({ password }: { password: string }) {
       {/* Table */}
       <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
         {loading ? (
-          <div className="p-8 text-center text-gray-500">Loading logs...</div>
+          <div className="p-8 text-center text-gray-500">
+            <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#0B996E] mb-2"></div>
+            <p>Loading logs...</p>
+          </div>
         ) : logs.length === 0 ? (
-          <div className="p-8 text-center text-gray-500">No logs found</div>
+          <div className="p-8 text-center text-gray-500">
+            <p className="text-lg mb-2">No logs found</p>
+            <p className="text-sm">API calls will appear here once the external API is used.</p>
+          </div>
         ) : (
-          <table className="w-full">
-            <thead className="bg-gray-50 border-b border-gray-200">
-              <tr>
-                <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase">Time</th>
-                <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase">Endpoint</th>
-                <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase">Domain</th>
-                <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase">API Key</th>
-                <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase">Status</th>
-                <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase">Time</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100">
-              {logs.map((log) => (
-                <tr key={log.id} className="hover:bg-gray-50">
-                  <td className="px-4 py-3 text-sm text-gray-600">{formatDate(log.timestamp)}</td>
-                  <td className="px-4 py-3">
-                    <span className="font-mono text-sm text-gray-900">{log.endpoint}</span>
-                  </td>
-                  <td className="px-4 py-3 text-gray-600">{log.domain || '-'}</td>
-                  <td className="px-4 py-3">
-                    <span className="font-mono text-xs text-gray-500">{log.api_key_hash || '-'}</span>
-                  </td>
-                  <td className="px-4 py-3">
-                    <StatusBadge code={log.status_code} error={log.error_message} />
-                  </td>
-                  <td className="px-4 py-3 text-sm text-gray-600">{log.response_time_ms}ms</td>
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead className="bg-gray-50 border-b border-gray-200">
+                <tr>
+                  <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase whitespace-nowrap">
+                    Timestamp
+                  </th>
+                  <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase whitespace-nowrap">
+                    Method
+                  </th>
+                  <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase whitespace-nowrap">
+                    Endpoint
+                  </th>
+                  <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase whitespace-nowrap">
+                    Domain
+                  </th>
+                  <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase whitespace-nowrap">
+                    API Key
+                  </th>
+                  <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase whitespace-nowrap">
+                    Status
+                  </th>
+                  <th className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase whitespace-nowrap">
+                    Duration
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {logs.map((log) => (
+                  <tr key={log.id} className="hover:bg-gray-50">
+                    <td className="px-4 py-3 text-sm text-gray-600 whitespace-nowrap">
+                      {log.timestamp ? formatDate(log.timestamp) : '-'}
+                    </td>
+                    <td className="px-4 py-3">
+                      <MethodBadge method={log.method} />
+                    </td>
+                    <td className="px-4 py-3">
+                      <span className="font-mono text-sm text-gray-900">
+                        {log.endpoint || <span className="text-gray-400 italic">unknown</span>}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3 text-gray-600">
+                      {log.domain || <span className="text-gray-400">-</span>}
+                    </td>
+                    <td className="px-4 py-3">
+                      <span className="font-mono text-xs text-gray-500">
+                        {log.api_key_hash || <span className="text-gray-400">-</span>}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3">
+                      <StatusBadge code={log.status_code} error={log.error_message} />
+                    </td>
+                    <td className="px-4 py-3 text-sm text-gray-600 whitespace-nowrap">
+                      {log.response_time_ms != null ? `${log.response_time_ms}ms` : <span className="text-gray-400">-</span>}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
       </div>
+
+      {/* Pagination info */}
+      {!loading && logs.length > 0 && (
+        <div className="mt-4 text-sm text-gray-500 text-center">
+          Showing {logs.length} of {total.toLocaleString()} entries
+        </div>
+      )}
     </div>
   );
 }
 
-function StatusBadge({ code, error }: { code: number; error: string | null }) {
+function MethodBadge({ method }: { method: string | null }) {
+  if (!method) {
+    return <span className="text-gray-400">-</span>;
+  }
+
+  const colors: Record<string, string> = {
+    GET: 'bg-blue-100 text-blue-800',
+    POST: 'bg-green-100 text-green-800',
+    PUT: 'bg-yellow-100 text-yellow-800',
+    PATCH: 'bg-orange-100 text-orange-800',
+    DELETE: 'bg-red-100 text-red-800',
+  };
+
+  return (
+    <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${colors[method.toUpperCase()] || 'bg-gray-100 text-gray-800'}`}>
+      {method.toUpperCase()}
+    </span>
+  );
+}
+
+function StatusBadge({ code, error }: { code: number | null | undefined; error: string | null }) {
+  if (code == null) {
+    return <span className="text-gray-400">-</span>;
+  }
+
   const isSuccess = code < 400;
   return (
     <span
@@ -696,80 +920,237 @@ function StatusBadge({ code, error }: { code: number; error: string | null }) {
 // API Docs Tab
 function ApiDocsTab() {
   const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+  const [copied, setCopied] = useState<string | null>(null);
+
+  const copyToClipboard = (text: string, id: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(id);
+    setTimeout(() => setCopied(null), 2000);
+  };
 
   return (
     <div className="space-y-8">
       <div>
         <h2 className="text-xl font-semibold text-gray-900 mb-2">API Documentation</h2>
-        <p className="text-gray-600">Use the Marketing Plan API to programmatically generate marketing plans.</p>
+        <p className="text-gray-600">
+          Use the Marketing Plan API to programmatically generate AI-powered marketing relationship plans.
+        </p>
       </div>
+
+      {/* Quick Start */}
+      <DocSection title="Quick Start">
+        <p className="text-gray-600 mb-4">
+          Generate a marketing plan with a single API call. The API will either return an existing plan or start
+          generating a new one.
+        </p>
+        <div className="relative">
+          <CodeBlock
+            code={`curl -X POST ${baseUrl}/api/v1/marketing-plan \\
+  -H "Content-Type: application/json" \\
+  -H "x-api-key: YOUR_API_KEY" \\
+  -d '{"domain": "example.com"}'`}
+          />
+          <button
+            onClick={() =>
+              copyToClipboard(
+                `curl -X POST ${baseUrl}/api/v1/marketing-plan -H "Content-Type: application/json" -H "x-api-key: YOUR_API_KEY" -d '{"domain": "example.com"}'`,
+                'quickstart'
+              )
+            }
+            className="absolute top-2 right-2 px-2 py-1 bg-gray-700 hover:bg-gray-600 text-white text-xs rounded transition-colors"
+          >
+            {copied === 'quickstart' ? 'Copied!' : 'Copy'}
+          </button>
+        </div>
+      </DocSection>
 
       {/* Authentication */}
       <DocSection title="Authentication">
         <p className="text-gray-600 mb-4">All API requests require an API key passed in the header:</p>
         <CodeBlock code="x-api-key: YOUR_API_KEY" />
-        <p className="text-sm text-gray-500 mt-3">
-          Configure via environment variable: <code className="bg-gray-100 px-1 rounded">EXTERNAL_API_KEY</code> or{' '}
-          <code className="bg-gray-100 px-1 rounded">EXTERNAL_API_KEYS</code> (comma-separated for multiple keys)
-        </p>
+        <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+          <h5 className="font-medium text-blue-900 mb-2">Configuration</h5>
+          <p className="text-sm text-blue-800">
+            Set your API key via environment variable:
+            <br />
+            <code className="bg-blue-100 px-1 rounded">EXTERNAL_API_KEY=your-api-key</code>
+            <br />
+            <br />
+            For multiple keys (comma-separated):
+            <br />
+            <code className="bg-blue-100 px-1 rounded">EXTERNAL_API_KEYS=key1,key2,key3</code>
+          </p>
+        </div>
       </DocSection>
 
       {/* Create Plan Endpoint */}
       <DocSection title="Create Marketing Plan">
         <div className="flex items-center gap-3 mb-4">
-          <span className="px-2 py-1 bg-green-100 text-green-800 font-mono text-sm rounded">POST</span>
-          <code className="text-gray-900 font-mono">/api/v1/marketing-plan</code>
+          <span className="px-2 py-1 bg-green-100 text-green-800 font-mono text-sm rounded font-bold">POST</span>
+          <code className="text-gray-900 font-mono text-lg">/api/v1/marketing-plan</code>
         </div>
 
-        <h4 className="font-medium text-gray-900 mb-2">Request Body</h4>
-        <CodeBlock
-          code={`{
-  "domain": "example.com",      // Required: Company website domain
-  "language": "en",             // Optional: en, fr, de, es (default: en)
-  "industry": "SaaS",           // Optional: Industry type (auto-detected)
-  "force": false,               // Optional: Force regeneration (default: false)
-  "webhook_url": "https://...", // Optional: Callback URL when plan is ready
-  "webhook_secret": "secret"    // Optional: Secret for webhook signature
-}`}
-        />
+        <p className="text-gray-600 mb-4">
+          Creates a new marketing plan or returns an existing one for the given domain. Plan generation takes 3-7
+          minutes for new domains.
+        </p>
 
-        <h4 className="font-medium text-gray-900 mb-2 mt-4">Response (Existing Plan)</h4>
+        <h4 className="font-medium text-gray-900 mb-2">Request Body</h4>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm mb-4">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left px-3 py-2 font-medium text-gray-700">Parameter</th>
+                <th className="text-left px-3 py-2 font-medium text-gray-700">Type</th>
+                <th className="text-left px-3 py-2 font-medium text-gray-700">Required</th>
+                <th className="text-left px-3 py-2 font-medium text-gray-700">Description</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              <tr>
+                <td className="px-3 py-2 font-mono text-sm">domain</td>
+                <td className="px-3 py-2 text-gray-600">string</td>
+                <td className="px-3 py-2">
+                  <span className="text-green-600 font-medium">Yes</span>
+                </td>
+                <td className="px-3 py-2 text-gray-600">Company website domain (e.g., "example.com")</td>
+              </tr>
+              <tr>
+                <td className="px-3 py-2 font-mono text-sm">language</td>
+                <td className="px-3 py-2 text-gray-600">string</td>
+                <td className="px-3 py-2 text-gray-400">No</td>
+                <td className="px-3 py-2 text-gray-600">
+                  Language code: <code className="bg-gray-100 px-1 rounded">en</code>,{' '}
+                  <code className="bg-gray-100 px-1 rounded">fr</code>,{' '}
+                  <code className="bg-gray-100 px-1 rounded">de</code>,{' '}
+                  <code className="bg-gray-100 px-1 rounded">es</code> (default: en)
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3 py-2 font-mono text-sm">industry</td>
+                <td className="px-3 py-2 text-gray-600">string</td>
+                <td className="px-3 py-2 text-gray-400">No</td>
+                <td className="px-3 py-2 text-gray-600">Industry type (auto-detected if not provided)</td>
+              </tr>
+              <tr>
+                <td className="px-3 py-2 font-mono text-sm">force</td>
+                <td className="px-3 py-2 text-gray-600">boolean</td>
+                <td className="px-3 py-2 text-gray-400">No</td>
+                <td className="px-3 py-2 text-gray-600">Force regeneration even if plan exists (default: false)</td>
+              </tr>
+              <tr>
+                <td className="px-3 py-2 font-mono text-sm">webhook_url</td>
+                <td className="px-3 py-2 text-gray-600">string</td>
+                <td className="px-3 py-2 text-gray-400">No</td>
+                <td className="px-3 py-2 text-gray-600">URL to receive callback when plan is ready</td>
+              </tr>
+              <tr>
+                <td className="px-3 py-2 font-mono text-sm">webhook_secret</td>
+                <td className="px-3 py-2 text-gray-600">string</td>
+                <td className="px-3 py-2 text-gray-400">No</td>
+                <td className="px-3 py-2 text-gray-600">Secret for HMAC-SHA256 webhook signature</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 className="font-medium text-gray-900 mb-2 mt-4">Response: Existing Plan Found</h4>
         <CodeBlock
           code={`{
   "status": "complete",
   "message": "Existing plan found",
   "domain": "example.com",
-  "plan_url": "${baseUrl}/?domain=example.com&lang=en",
-  "plan": { /* Full marketing plan */ }
+  "language": "en",
+  "plan_url": "${baseUrl}/example.com?lang=en",
+  "timestamp": "2024-01-15T10:30:00Z",
+  "plan": {
+    "introduction": "...",
+    "company_summary": { ... },
+    "programs_list": [ ... ],
+    "how_brevo_helps_you": [ ... ],
+    "conclusion": "..."
+  }
 }`}
         />
 
-        <h4 className="font-medium text-gray-900 mb-2 mt-4">Response (New Plan Started)</h4>
+        <h4 className="font-medium text-gray-900 mb-2 mt-4">Response: New Plan Started</h4>
         <CodeBlock
           code={`{
   "status": "processing",
-  "job_id": "job_abc123",
-  "poll_url": "/api/marketing-plan/job_abc123",
-  "plan_url": "${baseUrl}/?domain=example.com&lang=en",
-  "webhook_enabled": true,  // If webhook_url provided
-  "estimated_time": "2-3 minutes"
+  "message": "Plan generation started. Poll the status URL to get results.",
+  "job_id": "conv_abc123xyz",
+  "domain": "example.com",
+  "language": "en",
+  "poll_url": "/api/marketing-plan/conv_abc123xyz",
+  "plan_url": "${baseUrl}/example.com?lang=en",
+  "timestamp": "2024-01-15T10:30:00Z",
+  "estimated_time": "3-7 minutes",
+  "webhook_url": "https://your-server.com/webhook",
+  "webhook_enabled": true
+}`}
+        />
+      </DocSection>
+
+      {/* Check API Status */}
+      <DocSection title="Check API Status">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="px-2 py-1 bg-blue-100 text-blue-800 font-mono text-sm rounded font-bold">GET</span>
+          <code className="text-gray-900 font-mono text-lg">/api/v1/marketing-plan</code>
+        </div>
+        <p className="text-gray-600 mb-4">Check API availability and get endpoint documentation.</p>
+        <CodeBlock
+          code={`{
+  "status": "ok",
+  "version": "1.1",
+  "features": ["webhook_callback", "api_logging"],
+  "endpoints": {
+    "create_plan": { ... },
+    "poll_status": { ... }
+  }
+}`}
+        />
+      </DocSection>
+
+      {/* Poll Status */}
+      <DocSection title="Poll Generation Status">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="px-2 py-1 bg-blue-100 text-blue-800 font-mono text-sm rounded font-bold">GET</span>
+          <code className="text-gray-900 font-mono text-lg">/api/marketing-plan/&#123;job_id&#125;</code>
+        </div>
+        <p className="text-gray-600 mb-4">
+          Poll for plan generation status. Continue polling every 10-30 seconds until status is "complete" or "failed".
+        </p>
+
+        <h4 className="font-medium text-gray-900 mb-2">Response: Still Processing</h4>
+        <CodeBlock
+          code={`{
+  "status": "processing",
+  "message": "Plan is being generated..."
 }`}
         />
 
-        <h4 className="font-medium text-gray-900 mb-2 mt-4">Example cURL</h4>
+        <h4 className="font-medium text-gray-900 mb-2 mt-4">Response: Complete</h4>
         <CodeBlock
-          code={`curl -X POST ${baseUrl}/api/v1/marketing-plan \\
-  -H "Content-Type: application/json" \\
-  -H "x-api-key: YOUR_API_KEY" \\
-  -d '{"domain": "brevo.com", "language": "en"}'`}
+          code={`{
+  "status": "complete",
+  "plan": { /* Full marketing plan object */ }
+}`}
+        />
+
+        <h4 className="font-medium text-gray-900 mb-2 mt-4">Response: Failed</h4>
+        <CodeBlock
+          code={`{
+  "status": "failed",
+  "error": "Generation timed out. Please try again."
+}`}
         />
       </DocSection>
 
       {/* Webhook */}
       <DocSection title="Webhook Callback">
         <p className="text-gray-600 mb-4">
-          When you provide a <code className="bg-gray-100 px-1 rounded">webhook_url</code>, the API will send a POST
-          request to that URL when the plan is ready.
+          Instead of polling, you can provide a <code className="bg-gray-100 px-1 rounded">webhook_url</code> to receive
+          a POST request when the plan is ready. This is the recommended approach for production integrations.
         </p>
 
         <h4 className="font-medium text-gray-900 mb-2">Webhook Payload</h4>
@@ -778,75 +1159,220 @@ function ApiDocsTab() {
   "event": "plan.completed",
   "domain": "example.com",
   "language": "en",
-  "plan_url": "${baseUrl}/?domain=example.com&lang=en",
-  "plan": { /* Full marketing plan */ },
+  "plan_url": "${baseUrl}/example.com?lang=en",
+  "plan": { /* Full marketing plan object */ },
   "timestamp": "2024-01-15T10:30:00Z"
 }`}
         />
 
-        <p className="text-sm text-gray-500 mt-3">
-          If <code className="bg-gray-100 px-1 rounded">webhook_secret</code> is provided, the payload will include an{' '}
-          <code className="bg-gray-100 px-1 rounded">X-Signature</code> header with HMAC-SHA256 signature.
-        </p>
+        <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+          <h5 className="font-medium text-amber-900 mb-2">Webhook Security</h5>
+          <p className="text-sm text-amber-800">
+            If you provide a <code className="bg-amber-100 px-1 rounded">webhook_secret</code>, the request will include
+            an <code className="bg-amber-100 px-1 rounded">X-Signature</code> header with an HMAC-SHA256 signature of
+            the payload. Verify this signature to ensure the request is authentic.
+          </p>
+        </div>
       </DocSection>
 
-      {/* Poll Status */}
-      <DocSection title="Poll Status">
-        <div className="flex items-center gap-3 mb-4">
-          <span className="px-2 py-1 bg-blue-100 text-blue-800 font-mono text-sm rounded">GET</span>
-          <code className="text-gray-900 font-mono">/api/marketing-plan/&#123;job_id&#125;</code>
-        </div>
-        <p className="text-gray-600 mb-4">Poll for plan generation status and results.</p>
-
+      {/* Plan Structure */}
+      <DocSection title="Marketing Plan Structure">
+        <p className="text-gray-600 mb-4">The generated marketing plan includes the following sections:</p>
         <CodeBlock
-          code={`// Processing
-{ "status": "processing", "message": "Plan is being generated..." }
-
-// Complete
-{ "status": "complete", "plan": { /* Full marketing plan */ } }`}
+          code={`{
+  "introduction": "Welcome message and plan overview",
+  "company_summary": {
+    "name": "Company Name",
+    "website": "example.com",
+    "activities": "Main business activities",
+    "target": "Target audience description",
+    "industry": "Detected or specified industry",
+    "nb_employees": "Company size estimate",
+    "business_model": "B2B or B2C"
+  },
+  "programs_list": [
+    {
+      "program_name": "Welcome Program",
+      "target": "New subscribers",
+      "objective": "Convert to first purchase",
+      "kpi": "First purchase rate",
+      "description": "Program description",
+      "scenarios": [
+        {
+          "scenario_target": "Day 0-7 subscribers",
+          "scenario_objective": "Welcome and educate",
+          "main_messages_ideas": "Key messages",
+          "message_sequence": [...]
+        }
+      ]
+    }
+  ],
+  "how_brevo_helps_you": [
+    {
+      "scenario_name": "Welcome Program",
+      "why_brevo_is_better": "Brevo advantages",
+      "omnichannel_channels": "Email, SMS, Push",
+      "setup_efficiency": "Easy setup process"
+    }
+  ],
+  "conclusion": "Summary and next steps"
+}`}
         />
       </DocSection>
 
       {/* Industries */}
       <DocSection title="Available Industries">
-        <div className="grid grid-cols-2 gap-4">
+        <p className="text-gray-600 mb-4">
+          Industry is auto-detected from the domain, but you can specify it explicitly for better results.
+        </p>
+        <div className="grid grid-cols-2 gap-6">
           <div>
-            <h4 className="font-medium text-gray-700 mb-2">B2C Industries</h4>
-            <ul className="space-y-1 text-gray-600 text-sm">
+            <h4 className="font-medium text-gray-700 mb-3 flex items-center gap-2">
+              <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+              B2C Industries
+            </h4>
+            <div className="grid grid-cols-2 gap-2">
               {['Fashion', 'Beauty', 'Home', 'Electronics', 'Food', 'Sports', 'Luxury', 'Family'].map((i) => (
-                <li key={i}>• {i}</li>
+                <div key={i} className="px-3 py-2 bg-gray-50 rounded text-sm text-gray-700">
+                  {i}
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
           <div>
-            <h4 className="font-medium text-gray-700 mb-2">B2B Industries</h4>
-            <ul className="space-y-1 text-gray-600 text-sm">
+            <h4 className="font-medium text-gray-700 mb-3 flex items-center gap-2">
+              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+              B2B Industries
+            </h4>
+            <div className="grid grid-cols-2 gap-2">
               {['SaaS', 'Services', 'Manufacturing', 'Wholesale'].map((i) => (
-                <li key={i}>• {i}</li>
+                <div key={i} className="px-3 py-2 bg-gray-50 rounded text-sm text-gray-700">
+                  {i}
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </DocSection>
 
       {/* Error Codes */}
       <DocSection title="Error Codes">
-        <table className="w-full text-sm">
-          <tbody className="divide-y divide-gray-100">
-            {[
-              ['400', 'Invalid request parameters'],
-              ['401', 'Missing or invalid API key'],
-              ['502', 'AI service error'],
-              ['503', 'Service unavailable'],
-              ['504', 'Request timeout'],
-            ].map(([code, desc]) => (
-              <tr key={code}>
-                <td className="py-2 font-mono text-red-600 w-16">{code}</td>
-                <td className="py-2 text-gray-600">{desc}</td>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left px-3 py-2 font-medium text-gray-700">Code</th>
+                <th className="text-left px-3 py-2 font-medium text-gray-700">Error</th>
+                <th className="text-left px-3 py-2 font-medium text-gray-700">Description</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ['400', 'Bad Request', 'Invalid request parameters or missing required fields'],
+                ['401', 'Unauthorized', 'Missing or invalid API key in x-api-key header'],
+                ['404', 'Not Found', 'Job ID not found (for polling endpoint)'],
+                ['429', 'Too Many Requests', 'Rate limit exceeded'],
+                ['502', 'Bad Gateway', 'AI service returned an error'],
+                ['503', 'Service Unavailable', 'AI service or database not configured'],
+                ['504', 'Gateway Timeout', 'Request to AI service timed out'],
+              ].map(([code, error, desc]) => (
+                <tr key={code}>
+                  <td className="px-3 py-2">
+                    <span
+                      className={`font-mono px-2 py-0.5 rounded text-sm ${
+                        code.startsWith('4') ? 'bg-yellow-100 text-yellow-800' : 'bg-red-100 text-red-800'
+                      }`}
+                    >
+                      {code}
+                    </span>
+                  </td>
+                  <td className="px-3 py-2 font-medium text-gray-900">{error}</td>
+                  <td className="px-3 py-2 text-gray-600">{desc}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </DocSection>
+
+      {/* Rate Limits */}
+      <DocSection title="Rate Limits">
+        <p className="text-gray-600 mb-4">
+          The API has rate limiting to ensure fair usage and system stability:
+        </p>
+        <ul className="list-disc list-inside space-y-2 text-gray-600">
+          <li>
+            <strong>10 requests per minute</strong> per API key for plan creation
+          </li>
+          <li>
+            <strong>60 requests per minute</strong> per API key for status polling
+          </li>
+          <li>
+            Plan generation is cached - requesting the same domain/language combination returns the cached result
+          </li>
+        </ul>
+        <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+          <p className="text-sm text-gray-600">
+            Need higher limits? Contact us to discuss enterprise options.
+          </p>
+        </div>
+      </DocSection>
+
+      {/* Code Examples */}
+      <DocSection title="Code Examples">
+        <div className="space-y-4">
+          <div>
+            <h4 className="font-medium text-gray-900 mb-2">JavaScript / Node.js</h4>
+            <CodeBlock
+              code={`const response = await fetch('${baseUrl}/api/v1/marketing-plan', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'x-api-key': process.env.API_KEY
+  },
+  body: JSON.stringify({
+    domain: 'example.com',
+    language: 'en',
+    webhook_url: 'https://your-server.com/webhook'
+  })
+});
+
+const data = await response.json();
+
+if (data.status === 'complete') {
+  console.log('Plan ready:', data.plan);
+} else if (data.status === 'processing') {
+  console.log('Plan generating, poll:', data.poll_url);
+}`}
+            />
+          </div>
+          <div>
+            <h4 className="font-medium text-gray-900 mb-2">Python</h4>
+            <CodeBlock
+              code={`import requests
+import os
+
+response = requests.post(
+    '${baseUrl}/api/v1/marketing-plan',
+    headers={
+        'Content-Type': 'application/json',
+        'x-api-key': os.environ['API_KEY']
+    },
+    json={
+        'domain': 'example.com',
+        'language': 'en'
+    }
+)
+
+data = response.json()
+
+if data['status'] == 'complete':
+    print('Plan ready:', data['plan'])
+elif data['status'] == 'processing':
+    print('Plan generating, poll:', data['poll_url'])`}
+            />
+          </div>
+        </div>
       </DocSection>
     </div>
   );
