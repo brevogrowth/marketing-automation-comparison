@@ -778,5 +778,145 @@
     "shareTitle": "Compartir este plan",
     "shareDesc": "Copia el enlace para compartir este plan de marketing con tu equipo.",
     "copyLink": "Copiar enlace"
+  },
+  "ma": {
+    "pageTitle": "Comparativa de Marketing Automation",
+    "pageSubtitle": "Encuentra la plataforma de marketing automation perfecta para tu negocio",
+    "metaDescription": "Compara más de 30 plataformas de marketing automation. Encuentra la mejor opción para el tamaño de tu empresa, industria y objetivos.",
+    "sidebar": {
+      "profileTitle": "Tu Perfil",
+      "profileDescription": "Cuéntanos sobre tu empresa para recomendaciones personalizadas",
+      "advancedTitle": "Filtros Avanzados",
+      "advancedDescription": "Refina tu búsqueda con criterios detallados",
+      "advancedLocked": "Desbloquear con email corporativo",
+      "advancedUnlockButton": "Desbloquear Filtros Avanzados",
+      "companySize": "Tamaño de Empresa",
+      "companySizeHelp": "El tamaño de tu organización",
+      "industry": "Industria",
+      "industryHelp": "Tu sector de negocio principal",
+      "primaryGoal": "Objetivo Principal",
+      "primaryGoalHelp": "¿Qué quieres lograr?",
+      "channels": "Canales de Marketing",
+      "channelsHelp": "¿Qué canales necesitas?",
+      "integrations": "Integraciones Clave",
+      "integrationsHelp": "Integraciones imprescindibles",
+      "budgetSensitivity": "Sensibilidad al Presupuesto",
+      "budgetSensitivityHelp": "¿Qué tan importante es el precio?",
+      "governance": "Gobernanza Requerida",
+      "governanceHelp": "¿Necesitas SSO, RBAC, multi-marca?",
+      "implementationTolerance": "Tolerancia a la Implementación",
+      "implementationToleranceHelp": "¿Cuánta complejidad de configuración es aceptable?"
+    },
+    "vendors": {
+      "recommended": "Recomendado para ti",
+      "whyRecommended": "Por qué encaja",
+      "compare": "Comparar",
+      "addToCompare": "Añadir a comparación",
+      "removeFromCompare": "Quitar de comparación",
+      "viewDetails": "Ver detalles",
+      "visitWebsite": "Visitar sitio web",
+      "score": "Puntuación de Ajuste",
+      "complexity": "Complejidad",
+      "segment": "Ideal para",
+      "noVendorsFound": "Ningún proveedor coincide con tus criterios",
+      "showingClosestMatches": "Mostrando resultados más cercanos según tu perfil",
+      "sections": {
+        "overview": "Resumen",
+        "ratings": "Valoraciones y Reseñas",
+        "features": "Funcionalidades",
+        "feedback": "Opiniones de Usuarios",
+        "pricing": "Precios",
+        "integrations": "Integraciones",
+        "sources": "Fuentes"
+      },
+      "ratings": {
+        "g2": "Valoración G2",
+        "capterra": "Valoración Capterra",
+        "reviews": "reseñas",
+        "lastChecked": "Última verificación",
+        "viewOnG2": "Ver en G2",
+        "viewOnCapterra": "Ver en Capterra"
+      },
+      "feedback": {
+        "pros": "Lo que les gusta a los usuarios",
+        "cons": "Preocupaciones comunes",
+        "basedOn": "Basado en temas de reseñas"
+      },
+      "pricing": {
+        "model": "Modelo de Precios",
+        "startingAt": "Desde",
+        "contacts": "Por contactos",
+        "events": "Por eventos",
+        "seats": "Por usuario",
+        "messages": "Por mensajes",
+        "hybrid": "Precio híbrido",
+        "custom": "Precio personalizado",
+        "low": "Económico",
+        "medium": "Gama media",
+        "high": "Premium",
+        "enterprise": "Empresa",
+        "unknown": "Contactar para precio"
+      },
+      "features": {
+        "full": "Soporte completo",
+        "partial": "Soporte parcial",
+        "limited": "Limitado",
+        "none": "No disponible"
+      }
+    },
+    "toolbar": {
+      "search": "Buscar proveedores...",
+      "sortBy": "Ordenar por",
+      "recommended": "Recomendado",
+      "rating": "Mejor Valoración",
+      "complexity": "Más Simple Primero",
+      "name": "Nombre (A-Z)",
+      "compareMode": "Modo Comparación",
+      "clearCompare": "Limpiar",
+      "compareSelected": "Comparar Seleccionados"
+    },
+    "compare": {
+      "title": "Comparando Proveedores",
+      "selected": "seleccionado(s)",
+      "maxReached": "Máximo 4 proveedores",
+      "minRequired": "Selecciona al menos 2 proveedores",
+      "viewComparison": "Ver Comparación",
+      "exitCompare": "Salir de Comparación"
+    },
+    "cta": {
+      "tryBrevo": "Prueba Brevo Gratis",
+      "tryBrevoDesc": "Comienza tu prueba gratuita de 30 días",
+      "bookDemo": "Reservar Demo",
+      "bookDemoDesc": "Obtén orientación personalizada",
+      "title": "¿Listo para empezar?",
+      "subtitle": "Brevo ofrece todas las funcionalidades que necesitas a un precio competitivo."
+    },
+    "goals": {
+      "Acquisition": "Adquisición de Clientes",
+      "Activation": "Activación de Usuarios",
+      "Retention": "Retención de Clientes",
+      "Omnichannel": "Marketing Omnicanal",
+      "CRM": "Alineación CRM"
+    },
+    "sizes": {
+      "SMB": "Pequeña Empresa",
+      "MM": "Mediana Empresa",
+      "ENT": "Gran Empresa"
+    },
+    "complexity": {
+      "light": "Fácil",
+      "medium": "Moderado",
+      "heavy": "Complejo"
+    },
+    "budgetLevels": {
+      "low": "Sensible al precio",
+      "medium": "Equilibrado",
+      "high": "Orientado al valor"
+    },
+    "implementationLevels": {
+      "low": "Solo configuración rápida",
+      "medium": "Algo de complejidad OK",
+      "high": "Personalización completa"
+    }
   }
 }

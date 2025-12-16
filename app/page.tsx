@@ -1,546 +1,355 @@
 'use client';
 
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Header } from '@/components/Header';
-import { IntroAccordion } from '@/components/IntroAccordion';
-import { MarketingPlanSidebar } from '@/components/MarketingPlanSidebar';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLeadGate } from '@/lib/lead-capture';
-import { getStaticPlan } from '@/data/static-marketing-plans';
-import type { Industry } from '@/config/industries';
-import type { MarketingPlan } from '@/src/types/marketing-plan';
+import { getVendors, getVendorsByIds } from '@/data/ma';
+import { filterAndSortVendors } from '@/lib/ma';
+import type { UserProfile, AdvancedFilters, CompanySize, SortOption } from '@/src/types/ma';
+import { MAX_COMPARE_VENDORS } from '@/src/types/ma';
 
-// Import marketing plan components
+// Import MA components
 import {
-  CompanySummary,
-  MarketingPrograms,
-  ProgramDetails,
-  BrevoHelp,
-  BrevoCallToAction,
-  LoadingBanner,
-  ErrorState,
-  PlanActions,
-  type DebugInfo,
-} from '@/components/marketing-plan';
+  MASidebar,
+  MASidebarLoadingState,
+  VendorList,
+  CompareToolbar,
+  CompareBar,
+  MALoadingState,
+  MACallToAction,
+} from '@/components/ma';
 
-// Valid industries
-const VALID_INDUSTRIES: Industry[] = [
-  'Fashion', 'Beauty', 'Home', 'Electronics', 'Food', 'Sports', 'Luxury', 'Family',
-  'SaaS', 'Services', 'Manufacturing', 'Wholesale'
-];
-
-// Safe JSON stringify that handles circular references
-const safeJsonStringify = (obj: unknown, maxLength: number = 500): string => {
-  try {
-    const seen = new WeakSet();
-    const result = JSON.stringify(obj, (key, value) => {
-      // Skip DOM elements and React internal properties
-      if (value instanceof Element || value instanceof Node) {
-        return '[DOM Element]';
-      }
-      if (key.startsWith('__react') || key.startsWith('_react')) {
-        return '[React Internal]';
-      }
-      if (typeof value === 'function') {
-        return '[Function]';
-      }
-      // Handle circular references
-      if (typeof value === 'object' && value !== null) {
-        if (seen.has(value)) {
-          return '[Circular]';
-        }
-        seen.add(value);
-      }
-      return value;
-    }, 2);
-    return result.length > maxLength ? result.substring(0, maxLength) + '...' : result;
-  } catch {
-    return '[Unable to serialize]';
-  }
+// Default profile values
+const DEFAULT_PROFILE: UserProfile = {
+  company_size: 'MM',
+  industry: 'General',
+  primary_goal: 'Retention',
 };
 
-export default function Home() {
+export default function MAComparison() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   const { requireLead, isUnlocked } = useLeadGate();
+  const ma = t.ma;
 
-  // State
-  const [industry, setIndustry] = useState<Industry>('Fashion');
-  const [domain, setDomain] = useState('');
-  const [domainError, setDomainError] = useState<string>();
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [errorDetails, setErrorDetails] = useState<Record<string, unknown> | null>(null);
-  const [plan, setPlan] = useState<MarketingPlan | null>(null);
-  const [planSource, setPlanSource] = useState<'static' | 'db' | 'ai' | null>(null);
-  const [conversationId, setConversationId] = useState<string | null>(null);
-  const [pollCount, setPollCount] = useState(0);
-  const [progress, setProgress] = useState(5);
-  const [elapsedTime, setElapsedTime] = useState(0);
-  const [lastPollStatus, setLastPollStatus] = useState<string | null>(null);
-  const [lastPollMessage, setLastPollMessage] = useState<string | null>(null);
-  const [debugLogs, setDebugLogs] = useState<string[]>([]);
+  // Profile state (with defaults)
+  const [profile, setProfile] = useState<UserProfile>(DEFAULT_PROFILE);
 
-  const planRef = useRef<HTMLDivElement>(null);
-  const startTimeRef = useRef<number | null>(null);
+  // Advanced filters (gated - null means not unlocked)
+  const [advanced, setAdvanced] = useState<AdvancedFilters | null>(null);
 
-  // Helper to add debug log
-  const addDebugLog = (message: string) => {
-    const timestamp = new Date().toLocaleTimeString();
-    setDebugLogs(prev => [...prev.slice(-50), `[${timestamp}] ${message}`]);
-  };
+  // Compare mode
+  const [compareMode, setCompareMode] = useState(false);
+  const [compareVendorIds, setCompareVendorIds] = useState<string[]>([]);
 
-  // Helper to normalize domain for URL
-  const normalizeForUrl = (d: string): string => {
-    return d.trim().replace(/^https?:\/\//, '').replace(/\/.*$/, '').toLowerCase();
-  };
+  // Search & sort
+  const [search, setSearch] = useState('');
+  const [sortBy, setSortBy] = useState<SortOption>('recommended');
+
+  // Loading state
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Mobile sidebar
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Load all vendors
+  const allVendors = useMemo(() => {
+    try {
+      return getVendors();
+    } catch {
+      return [];
+    }
+  }, []);
+
+  // Filter and sort vendors
+  const filterResult = useMemo(() => {
+    return filterAndSortVendors(allVendors, profile, sortBy, advanced, search);
+  }, [allVendors, profile, sortBy, advanced, search]);
+
+  // Get compare vendors
+  const compareVendors = useMemo(() => {
+    return getVendorsByIds(compareVendorIds);
+  }, [compareVendorIds]);
 
   // Read URL parameters on mount
   useEffect(() => {
+    const sizeParam = searchParams.get('size') as CompanySize | null;
     const industryParam = searchParams.get('industry');
-    const domainParam = searchParams.get('domain');
-    const forceParam = searchParams.get('force') === 'true';
+    const goalParam = searchParams.get('goal');
+    const compareParam = searchParams.get('compare');
+    const sortParam = searchParams.get('sort') as SortOption | null;
+    const searchParam = searchParams.get('q');
 
-    if (industryParam && VALID_INDUSTRIES.includes(industryParam as Industry)) {
-      setIndustry(industryParam as Industry);
+    // Update profile from URL params
+    const newProfile: UserProfile = { ...DEFAULT_PROFILE };
+    if (sizeParam && ['SMB', 'MM', 'ENT'].includes(sizeParam)) {
+      newProfile.company_size = sizeParam;
     }
+    if (industryParam) {
+      newProfile.industry = industryParam;
+    }
+    if (goalParam && ['Acquisition', 'Activation', 'Retention', 'Omnichannel', 'CRM'].includes(goalParam)) {
+      newProfile.primary_goal = goalParam;
+    }
+    setProfile(newProfile);
 
-    if (domainParam) {
-      setDomain(domainParam);
-      // If domain is in URL, check for existing plan (unless force=true)
-      if (forceParam) {
-        // Force regeneration - trigger lead gate and generation
-        // Note: User will see the lead capture modal if not already unlocked
-        loadStaticPlan(industryParam as Industry || industry);
-      } else {
-        lookupExistingPlan(domainParam, industryParam as Industry || industry);
+    // Update compare vendors from URL
+    if (compareParam) {
+      const ids = compareParam.split(',').filter(Boolean).slice(0, MAX_COMPARE_VENDORS);
+      if (ids.length > 0) {
+        setCompareVendorIds(ids);
+        setCompareMode(true);
       }
-    } else {
-      // Load static plan for default industry
-      loadStaticPlan(industryParam as Industry || industry);
     }
+
+    // Update sort from URL
+    if (sortParam && ['recommended', 'rating', 'name', 'complexity'].includes(sortParam)) {
+      setSortBy(sortParam);
+    }
+
+    // Update search from URL
+    if (searchParam) {
+      setSearch(searchParam);
+    }
+
+    // Mark loading complete
+    setIsLoading(false);
   }, [searchParams]);
 
-  // Load static plan for an industry
-  const loadStaticPlan = useCallback((ind: Industry) => {
-    const staticPlan = getStaticPlan(ind, language);
-    setPlan(staticPlan);
-    setPlanSource('static');
-    setError(null);
-  }, [language]);
+  // Sync state to URL (debounced)
+  useEffect(() => {
+    if (isLoading) return;
 
-  // Lookup existing personalized plan from database
-  const lookupExistingPlan = async (domainToLookup: string, ind: Industry) => {
-    try {
-      const response = await fetch(
-        `/api/marketing-plan/lookup?domain=${encodeURIComponent(domainToLookup)}&language=${language}`
-      );
-      const data = await response.json();
+    const params = new URLSearchParams();
 
-      if (data.found && data.plan) {
-        setPlan(data.plan);
-        setPlanSource('db');
-        setError(null);
-      } else {
-        // No existing plan, show static
-        loadStaticPlan(ind);
-      }
-    } catch (err) {
-      console.error('Error looking up plan:', err);
-      loadStaticPlan(ind);
+    // Only add non-default values
+    if (profile.company_size !== DEFAULT_PROFILE.company_size) {
+      params.set('size', profile.company_size);
     }
-  };
-
-  // Handle industry change
-  const handleIndustryChange = (newIndustry: Industry) => {
-    setIndustry(newIndustry);
-
-    // If no domain, load static plan for new industry
-    if (!domain.trim()) {
-      loadStaticPlan(newIndustry);
+    if (profile.industry !== DEFAULT_PROFILE.industry) {
+      params.set('industry', profile.industry);
     }
-  };
-
-  // Validate domain input
-  const validateDomain = (domainInput: string): boolean => {
-    const trimmed = domainInput.trim();
-
-    if (!trimmed) {
-      setDomainError(t.marketingPlan?.errorEmptyDomain || 'Please enter a company domain');
-      return false;
+    if (profile.primary_goal !== DEFAULT_PROFILE.primary_goal) {
+      params.set('goal', profile.primary_goal);
+    }
+    if (compareVendorIds.length > 0) {
+      params.set('compare', compareVendorIds.join(','));
+    }
+    if (sortBy !== 'recommended') {
+      params.set('sort', sortBy);
+    }
+    if (search) {
+      params.set('q', search);
     }
 
-    // Strip protocol and path
-    const stripped = trimmed.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
+    const queryString = params.toString();
+    const newUrl = queryString ? `?${queryString}` : '/';
 
-    if (!stripped.includes('.')) {
-      setDomainError(t.marketingPlan?.errorInvalidDomainFormat || 'Please enter a valid domain (e.g., example.com)');
-      return false;
-    }
+    // Replace without adding to history for minor changes
+    router.replace(newUrl, { scroll: false });
+  }, [profile, compareVendorIds, sortBy, search, isLoading, router]);
 
-    if (stripped.length < 4) {
-      setDomainError(t.marketingPlan?.errorDomainTooShort || 'Domain appears too short');
-      return false;
-    }
+  // Handle profile update
+  const handleProfileChange = useCallback((newProfile: UserProfile) => {
+    setProfile(newProfile);
+  }, []);
 
-    // Check for placeholder domains
-    const placeholders = ['example.com', 'test.com', 'domain.com', 'yourcompany.com'];
-    if (placeholders.includes(stripped.toLowerCase())) {
-      setDomainError(t.marketingPlan?.errorPlaceholderDomain || 'Please enter your actual company domain');
-      return false;
-    }
-
-    setDomainError(undefined);
-    return true;
-  };
-
-  // Generate personalized plan (requires email)
-  // Note: onClick may pass MouseEvent as first arg, so we explicitly check for boolean
-  const handleGeneratePersonalizedPlan = (forceRegenerate?: boolean | React.MouseEvent) => {
-    if (!validateDomain(domain)) {
-      return;
-    }
-
-    // Ensure forceRegenerate is a boolean (onClick passes MouseEvent)
-    const shouldForce = typeof forceRegenerate === 'boolean' ? forceRegenerate : false;
-
-    // Require lead capture
+  // Handle advanced filters unlock
+  const handleUnlockAdvanced = useCallback(() => {
     requireLead({
-      reason: 'generate_marketing_plan',
-      context: { industry, domain, language },
+      reason: 'unlock_advanced_ma',
+      context: { profile },
       onSuccess: () => {
-        generatePersonalizedPlan(shouldForce);
+        setAdvanced({
+          channels: [],
+          integrations: [],
+          budget_sensitivity: 'medium',
+          governance: false,
+          implementation_tolerance: 'medium',
+        });
       },
     });
-  };
+  }, [requireLead, profile]);
 
-  // Core personalized plan generation
-  const generatePersonalizedPlan = async (forceRegenerate: boolean = false) => {
-    setIsLoading(true);
-    setError(null);
-    setErrorDetails(null);
-    // Keep the current plan visible while loading (non-blocking UX)
-    // Only clear plan if we don't have one
-    if (!plan) {
-      loadStaticPlan(industry);
-    }
-    setConversationId(null);
-    setPollCount(0);
-    setProgress(5);
-    setElapsedTime(0);
-    setLastPollStatus(null);
-    setLastPollMessage(null);
-    setDebugLogs([]);
-    startTimeRef.current = Date.now();
-    addDebugLog(`Starting generation for domain: ${domain}, language: ${language}, force: ${forceRegenerate}`);
+  // Handle advanced filters change
+  const handleAdvancedChange = useCallback((newAdvanced: AdvancedFilters | null) => {
+    setAdvanced(newAdvanced);
+  }, []);
 
-    // Scroll to top to see the loading banner
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    try {
-      // Step 1: Create the plan generation job
-      const createResponse = await fetch('/api/marketing-plan', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          industry,
-          domain: domain.trim(),
-          language,
-          force: forceRegenerate,
-        }),
-      });
-
-      if (!createResponse.ok) {
-        const errorData = await createResponse.json();
-        addDebugLog(`Create error: HTTP ${createResponse.status} - ${errorData.error || 'Unknown'}`);
-        throw new Error(errorData.error || `HTTP ${createResponse.status}`);
+  // Toggle compare vendor
+  const handleToggleCompare = useCallback((vendorId: string) => {
+    setCompareVendorIds(prev => {
+      if (prev.includes(vendorId)) {
+        return prev.filter(id => id !== vendorId);
       }
-
-      const createData = await createResponse.json();
-      addDebugLog(`Create response: status=${createData.status}, source=${createData.source || 'N/A'}`);
-
-      // If plan was found in DB or returned as static
-      if (createData.status === 'complete') {
-        setPlan(createData.plan);
-        setPlanSource(createData.source);
-        setIsLoading(false);
-
-        // Redirect to shareable URL if it's a personalized plan
-        if (createData.source === 'db' || createData.source === 'ai') {
-          const normalizedDomain = normalizeForUrl(domain);
-          router.push(`/${normalizedDomain}`);
-        }
-        return;
+      if (prev.length >= MAX_COMPARE_VENDORS) {
+        return prev;
       }
+      return [...prev, vendorId];
+    });
+  }, []);
 
-      // AI generation started - poll for results
-      if (createData.status === 'created' && createData.conversationId) {
-        addDebugLog(`AI job created: conversationId=${createData.conversationId}`);
-        setConversationId(createData.conversationId);
-        await pollForResults(createData.conversationId);
-      } else {
-        addDebugLog(`Unexpected response: ${safeJsonStringify(createData)}`);
-        throw new Error('Unexpected response from API');
-      }
+  // Clear compare
+  const handleClearCompare = useCallback(() => {
+    setCompareVendorIds([]);
+    setCompareMode(false);
+  }, []);
 
-    } catch (err) {
-      console.error('Error generating plan:', err);
-      setError(err instanceof Error ? err.message : 'An unexpected error occurred');
-      setIsLoading(false);
+  // Handle compare navigation
+  const handleCompare = useCallback(() => {
+    if (compareVendorIds.length >= 2) {
+      // For now, scroll to top to show comparison
+      // Future: navigate to /compare/[vendors] route
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  };
+  }, [compareVendorIds]);
 
-  // Poll for AI generation results
-  const pollForResults = async (jobId: string) => {
-    const MAX_POLLS = 120; // 10 minutes max
-    const POLL_INTERVAL = 5000; // 5 seconds
-
-    addDebugLog(`Starting polling for job ${jobId}`);
-
-    for (let i = 0; i < MAX_POLLS; i++) {
-      await new Promise(resolve => setTimeout(resolve, POLL_INTERVAL));
-
-      setPollCount(i + 1);
-      setProgress(Math.min(90, 5 + ((i + 1) / MAX_POLLS) * 85));
-      setElapsedTime(Math.floor((Date.now() - (startTimeRef.current || Date.now())) / 1000));
-
-      try {
-        const pollResponse = await fetch(`/api/marketing-plan/${jobId}?domain=${encodeURIComponent(domain)}&language=${language}`);
-        const pollData = await pollResponse.json();
-
-        // Update debug state
-        setLastPollStatus(pollData.status);
-        setLastPollMessage(pollData.message || pollData.error || null);
-
-        // Log every poll (compact format)
-        addDebugLog(`Poll #${i + 1}: status=${pollData.status}${pollData.message ? `, msg=${pollData.message.substring(0, 50)}` : ''}`);
-
-        if (pollData.status === 'complete') {
-          // Log DB save result if available
-          if (pollData._dbSave) {
-            addDebugLog(`DB Save: ${safeJsonStringify(pollData._dbSave)}`);
-          }
-          addDebugLog('Plan complete! Redirecting...');
-          setPlan(pollData.plan);
-          setPlanSource('ai');
-          setIsLoading(false);
-          setProgress(100);
-
-          // Redirect to shareable URL
-          const normalizedDomain = normalizeForUrl(domain);
-          router.push(`/${normalizedDomain}`);
-          return;
-        }
-
-        if (pollData.status === 'error') {
-          addDebugLog(`Error: ${pollData.error}`);
-          // Capture debug info for display
-          if (pollData.debug) {
-            addDebugLog(`Debug details: ${safeJsonStringify(pollData.debug)}`);
-            setErrorDetails(pollData.debug);
-          }
-          throw new Error(pollData.error || 'Plan generation failed');
-        }
-
-        // Still processing - continue polling
-      } catch (pollError) {
-        const errorMsg = pollError instanceof Error ? pollError.message : 'Unknown error';
-        addDebugLog(`Poll exception: ${errorMsg}`);
-        throw pollError;
-      }
+  // Toggle compare mode
+  const handleCompareModeChange = useCallback((mode: boolean) => {
+    if (!mode) {
+      // Exiting compare mode - clear selections
+      setCompareVendorIds([]);
     }
-
-    // Timeout
-    addDebugLog('TIMEOUT: Max polls reached (120 polls / 10 minutes)');
-    throw new Error('Plan generation timed out. Please try again.');
-  };
-
-  // Handle cancel during loading
-  const handleCancel = () => {
-    setIsLoading(false);
-    setConversationId(null);
-    loadStaticPlan(industry);
-  };
-
-  // Handle retry after error
-  const handleRetry = () => {
-    if (domain.trim()) {
-      generatePersonalizedPlan();
-    } else {
-      loadStaticPlan(industry);
-    }
-  };
-
-  // Handle try different domain
-  const handleTryDifferentDomain = () => {
-    setError(null);
-    setDomain('');
-    loadStaticPlan(industry);
-  };
-
-  // Get programs as array
-  const programsArray = plan?.programs_list
-    ? (Array.isArray(plan.programs_list)
-      ? plan.programs_list
-      : Object.values(plan.programs_list))
-    : [];
+    setCompareMode(mode);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header Section */}
-        <div className="text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 px-2" style={{ fontFamily: 'var(--font-tomato)' }}>
-            {t.marketingPlan?.pageTitle || 'Marketing Relationship Plan Generator'}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        {/* Page Header */}
+        <div className="text-center mb-8">
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 mb-3"
+            style={{ fontFamily: 'var(--font-tomato)' }}
+          >
+            {ma?.pageTitle || 'Marketing Automation Comparison'}
           </h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {ma?.pageSubtitle || 'Find the perfect marketing automation platform for your business'}
+          </p>
         </div>
 
-        {/* Loading Banner - Non-blocking, allows user to continue browsing */}
-        {isLoading && (
-          <LoadingBanner
-            companyDomain={domain}
-            progress={progress}
-            elapsedTime={elapsedTime}
-            onCancel={handleCancel}
-            debugInfo={{
-              conversationId,
-              pollCount,
-              lastPollStatus,
-              lastPollMessage,
-              logs: debugLogs,
-            }}
-          />
-        )}
+        {/* Mobile Filter Toggle */}
+        <div className="lg:hidden mb-4">
+          <button
+            type="button"
+            onClick={() => setSidebarOpen(true)}
+            className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium hover:bg-gray-50 transition-colors"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+            {ma?.sidebar?.profileTitle || 'Filters & Profile'}
+          </button>
+        </div>
 
-        {/* Intro Accordion */}
-        <IntroAccordion />
-
-        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8">
-          {/* Sidebar */}
-          <div className="lg:w-1/4">
-            <MarketingPlanSidebar
-              industry={industry}
-              setIndustry={handleIndustryChange}
-              domain={domain}
-              setDomain={setDomain}
-              onGeneratePersonalizedPlan={handleGeneratePersonalizedPlan}
-              isLoading={isLoading}
-              isUnlocked={isUnlocked}
-              domainError={domainError}
-              hasPlan={!!plan}
-            />
-          </div>
-
-          {/* Main Content - Plan Display */}
-          <div className="lg:w-3/4" ref={planRef}>
-            {/* Error State */}
-            {error && !isLoading && (
-              <ErrorState
-                message={error}
-                details={errorDetails}
-                domainName={domain}
-                onRetry={handleRetry}
-                onTryDifferentDomain={handleTryDifferentDomain}
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+          {/* Sidebar - Desktop */}
+          <aside className="hidden lg:block lg:w-1/4 xl:w-1/5">
+            {isLoading ? (
+              <MASidebarLoadingState />
+            ) : (
+              <MASidebar
+                profile={profile}
+                onProfileChange={handleProfileChange}
+                advanced={advanced}
+                onAdvancedChange={handleAdvancedChange}
+                isUnlocked={isUnlocked || advanced !== null}
+                onUnlock={handleUnlockAdvanced}
               />
             )}
+          </aside>
 
-            {/* Plan Display - Always visible, even during loading for non-blocking UX */}
-            {plan && !error && (
-              <div className="space-y-6">
-                {/* Company Summary - Only shown for personalized plans */}
-                {planSource !== 'static' && (
-                  <>
-                    <h2 className="text-lg font-bold text-gray-900">
-                      {(t.marketingPlan as Record<string, string>)?.companyAnalysis || 'Company Analysis'} {domain}
+          {/* Sidebar - Mobile Overlay */}
+          {sidebarOpen && (
+            <div className="fixed inset-0 z-50 lg:hidden">
+              <div
+                className="absolute inset-0 bg-black/50"
+                onClick={() => setSidebarOpen(false)}
+              />
+              <div className="absolute inset-y-0 left-0 w-full max-w-sm bg-gray-50 shadow-xl overflow-y-auto">
+                <div className="p-4">
+                  <div className="flex items-center justify-between mb-4">
+                    <h2 className="text-lg font-semibold text-gray-900">
+                      {ma?.sidebar?.profileTitle || 'Filters & Profile'}
                     </h2>
-                    <CompanySummary summary={plan.company_summary} showTitle={false} companyDomain={domain} />
-                  </>
-                )}
-
-                {/* Marketing Programs Overview - Title + Actions on same line */}
-                <div className="flex items-center justify-between">
-                  <h2 className="text-lg font-bold text-gray-900">
-                    {t.marketingPlan?.marketingPrograms || 'Relationship Programs Overview'}
-                  </h2>
-                  <PlanActions
-                    plan={plan}
-                    companyName={plan.company_summary?.name || domain || industry}
-                    isPersonalized={planSource !== 'static'}
+                    <button
+                      type="button"
+                      onClick={() => setSidebarOpen(false)}
+                      className="p-2 text-gray-500 hover:text-gray-700"
+                    >
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  <MASidebar
+                    profile={profile}
+                    onProfileChange={handleProfileChange}
+                    advanced={advanced}
+                    onAdvancedChange={handleAdvancedChange}
+                    isUnlocked={isUnlocked || advanced !== null}
+                    onUnlock={handleUnlockAdvanced}
                   />
                 </div>
-                <MarketingPrograms programs={plan.programs_list} />
+              </div>
+            </div>
+          )}
 
-                {/* Program Details (expandable) */}
-                {programsArray.length > 0 && (
-                  <div className="space-y-4">
-                    <h2 className="text-lg font-bold text-gray-900">
-                      {t.marketingPlan?.programDetailsTitle || 'Program Details'}
-                    </h2>
-                    {programsArray.map((program, index) => (
-                      <ProgramDetails
-                        key={index}
-                        program={program}
-                        programNumber={index + 1}
-                      />
-                    ))}
-                  </div>
-                )}
+          {/* Main Content */}
+          <section className="lg:w-3/4 xl:w-4/5">
+            {isLoading ? (
+              <MALoadingState />
+            ) : (
+              <div className="space-y-4">
+                {/* Toolbar */}
+                <CompareToolbar
+                  search={search}
+                  onSearchChange={setSearch}
+                  sortBy={sortBy}
+                  onSortChange={setSortBy}
+                  compareMode={compareMode}
+                  onCompareModeChange={handleCompareModeChange}
+                  compareCount={compareVendorIds.length}
+                  totalCount={filterResult.vendors.length}
+                />
 
-                {/* How Brevo Helps */}
-                {plan.how_brevo_helps_you && plan.how_brevo_helps_you.length > 0 && (
-                  <BrevoHelp scenarios={plan.how_brevo_helps_you} />
-                )}
-
-                {/* Conclusion */}
-                {plan.conclusion && (
-                  <div className="bg-white rounded-xl border border-gray-200 p-6">
-                    <h2 className="text-lg font-bold text-gray-900 mb-4">
-                      {t.marketingPlan?.conclusion || 'Conclusion'}
-                    </h2>
-                    <p className="text-gray-600">{plan.conclusion}</p>
-                  </div>
-                )}
+                {/* Vendor List */}
+                <VendorList
+                  filterResult={filterResult}
+                  profile={profile}
+                  advanced={advanced}
+                  compareMode={compareMode}
+                  compareVendors={compareVendorIds}
+                  onToggleCompare={handleToggleCompare}
+                />
               </div>
             )}
-          </div>
+          </section>
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16">
-          <div className="bg-[#0B1221] rounded-[2.5rem] p-12 md:p-16 text-center relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-64 h-64 bg-brevo-green opacity-20 blur-[100px] rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 opacity-20 blur-[120px] rounded-full transform translate-x-1/3 translate-y-1/3"></div>
-
-            <div className="relative z-10 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                {t.marketingPlan?.ctaSectionTitle || 'Ready to Execute Your Marketing Plan?'}
-              </h2>
-              <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
-                {t.marketingPlan?.ctaSectionDesc || 'Brevo provides all the tools you need to implement your marketing relationship programs: Email, SMS, WhatsApp, Marketing Automation, and CRM.'}
-              </p>
-              <div className="flex justify-center">
-                <a
-                  href="https://www.brevo.com/contact/"
-                  className="bg-brevo-green text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brevo-dark-green transition-all duration-300 shadow-[0_4px_14px_0_rgba(0,146,93,0.39)]"
-                >
-                  {t.marketingPlan?.ctaSectionButton || 'Talk to an Expert'}
-                </a>
-              </div>
-              <p className="mt-6 text-sm text-gray-400">
-                {t.marketingPlan?.ctaSectionNote || 'Free consultation, no commitment required'}
-              </p>
-            </div>
-          </div>
-        </div>
+        <MACallToAction />
       </main>
 
-      {/* Sticky CTA Footer (appears on scroll up, for all plans) */}
-      {plan && !isLoading && !error && (
-        <BrevoCallToAction variant="sticky" />
+      {/* Compare Bar - Fixed at bottom when comparing */}
+      {compareMode && compareVendorIds.length > 0 && (
+        <CompareBar
+          vendors={compareVendors}
+          onRemove={handleToggleCompare}
+          onClear={handleClearCompare}
+          onCompare={handleCompare}
+        />
+      )}
+
+      {/* Bottom padding when compare bar is visible */}
+      {compareMode && compareVendorIds.length > 0 && (
+        <div className="h-24" />
       )}
     </div>
   );

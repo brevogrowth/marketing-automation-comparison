@@ -778,5 +778,145 @@
     "shareTitle": "Share this plan",
     "shareDesc": "Copy the link to share this marketing plan with your team.",
     "copyLink": "Copy link"
+  },
+  "ma": {
+    "pageTitle": "Marketing Automation Comparison",
+    "pageSubtitle": "Find the perfect marketing automation platform for your business",
+    "metaDescription": "Compare 30+ marketing automation platforms. Find the best fit for your business size, industry, and goals.",
+    "sidebar": {
+      "profileTitle": "Your Profile",
+      "profileDescription": "Tell us about your business to get personalized recommendations",
+      "advancedTitle": "Advanced Filters",
+      "advancedDescription": "Refine your search with detailed criteria",
+      "advancedLocked": "Unlock with business email",
+      "advancedUnlockButton": "Unlock Advanced Filters",
+      "companySize": "Company Size",
+      "companySizeHelp": "Your organization's size",
+      "industry": "Industry",
+      "industryHelp": "Your primary business sector",
+      "primaryGoal": "Primary Goal",
+      "primaryGoalHelp": "What do you want to achieve?",
+      "channels": "Marketing Channels",
+      "channelsHelp": "Which channels do you need?",
+      "integrations": "Key Integrations",
+      "integrationsHelp": "Must-have integrations",
+      "budgetSensitivity": "Budget Sensitivity",
+      "budgetSensitivityHelp": "How important is pricing?",
+      "governance": "Governance Required",
+      "governanceHelp": "Need SSO, RBAC, multi-brand?",
+      "implementationTolerance": "Implementation Tolerance",
+      "implementationToleranceHelp": "How much setup complexity is acceptable?"
+    },
+    "vendors": {
+      "recommended": "Recommended for you",
+      "whyRecommended": "Why this fits",
+      "compare": "Compare",
+      "addToCompare": "Add to compare",
+      "removeFromCompare": "Remove from compare",
+      "viewDetails": "View details",
+      "visitWebsite": "Visit website",
+      "score": "Fit Score",
+      "complexity": "Complexity",
+      "segment": "Best for",
+      "noVendorsFound": "No vendors match your criteria",
+      "showingClosestMatches": "Showing closest matches based on your profile",
+      "sections": {
+        "overview": "Overview",
+        "ratings": "Ratings & Reviews",
+        "features": "Features",
+        "feedback": "User Feedback",
+        "pricing": "Pricing",
+        "integrations": "Integrations",
+        "sources": "Sources"
+      },
+      "ratings": {
+        "g2": "G2 Rating",
+        "capterra": "Capterra Rating",
+        "reviews": "reviews",
+        "lastChecked": "Last verified",
+        "viewOnG2": "View on G2",
+        "viewOnCapterra": "View on Capterra"
+      },
+      "feedback": {
+        "pros": "What users love",
+        "cons": "Common concerns",
+        "basedOn": "Based on review themes"
+      },
+      "pricing": {
+        "model": "Pricing Model",
+        "startingAt": "Starting at",
+        "contacts": "Per contacts",
+        "events": "Per events",
+        "seats": "Per seats",
+        "messages": "Per messages",
+        "hybrid": "Hybrid pricing",
+        "custom": "Custom pricing",
+        "low": "Budget-friendly",
+        "medium": "Mid-range",
+        "high": "Premium",
+        "enterprise": "Enterprise",
+        "unknown": "Contact for pricing"
+      },
+      "features": {
+        "full": "Full support",
+        "partial": "Partial support",
+        "limited": "Limited",
+        "none": "Not available"
+      }
+    },
+    "toolbar": {
+      "search": "Search vendors...",
+      "sortBy": "Sort by",
+      "recommended": "Recommended",
+      "rating": "Highest Rating",
+      "complexity": "Simplest First",
+      "name": "Name (A-Z)",
+      "compareMode": "Compare Mode",
+      "clearCompare": "Clear",
+      "compareSelected": "Compare Selected"
+    },
+    "compare": {
+      "title": "Comparing Vendors",
+      "selected": "selected",
+      "maxReached": "Maximum 4 vendors",
+      "minRequired": "Select at least 2 vendors",
+      "viewComparison": "View Comparison",
+      "exitCompare": "Exit Compare"
+    },
+    "cta": {
+      "tryBrevo": "Try Brevo Free",
+      "tryBrevoDesc": "Start your 30-day free trial",
+      "bookDemo": "Book a Demo",
+      "bookDemoDesc": "Get personalized guidance",
+      "title": "Ready to get started?",
+      "subtitle": "Brevo offers all the features you need at a competitive price."
+    },
+    "goals": {
+      "Acquisition": "Customer Acquisition",
+      "Activation": "User Activation",
+      "Retention": "Customer Retention",
+      "Omnichannel": "Omnichannel Marketing",
+      "CRM": "CRM Alignment"
+    },
+    "sizes": {
+      "SMB": "Small Business",
+      "MM": "Mid-Market",
+      "ENT": "Enterprise"
+    },
+    "complexity": {
+      "light": "Easy",
+      "medium": "Moderate",
+      "heavy": "Complex"
+    },
+    "budgetLevels": {
+      "low": "Price-sensitive",
+      "medium": "Balanced",
+      "high": "Value-focused"
+    },
+    "implementationLevels": {
+      "low": "Quick setup only",
+      "medium": "Some complexity OK",
+      "high": "Full customization"
+    }
   }
 }

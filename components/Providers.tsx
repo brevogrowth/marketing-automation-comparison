@@ -25,7 +25,7 @@ export function Providers({ children }: ProvidersProps) {
           <LeadCaptureProvider
             config={{
               apiEndpoint: '/api/lead',
-              storageKey: 'brevo_marketing_plan_lead',
+              storageKey: 'brevo_ma_comparison_lead',
               mode: 'blocking',
               blockFreeEmails: true,
             }}

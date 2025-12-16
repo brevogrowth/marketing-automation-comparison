@@ -3,8 +3,8 @@ import './globals.css'
 import { Providers } from '@/components/Providers'
 
 export const metadata: Metadata = {
-  title: 'Marketing Relationship Plan - Brevo',
-  description: 'Generate your personalized marketing relationship plan',
+  title: 'Marketing Automation Comparison | Brevo',
+  description: 'Compare 30+ marketing automation platforms. Find the best fit for your business size, industry, and goals.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',

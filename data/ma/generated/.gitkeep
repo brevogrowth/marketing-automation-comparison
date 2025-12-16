@@ -1,0 +1,2 @@
+# This folder contains generated JSON files from CSV sources.
+# The JSON files are git-ignored and regenerated at build time.

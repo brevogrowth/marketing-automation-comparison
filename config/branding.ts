@@ -11,7 +11,7 @@ export const branding = {
   name: 'Brevo',
 
   /** Project tagline */
-  tagline: 'Marketing KPI Benchmark',
+  tagline: 'Marketing Automation Comparison',
 
   /** Color palette */
   colors: {

@@ -62,3 +62,6 @@ nul
 
 # npm auth token - only ignore if it contains hardcoded secrets
 # .npmrc is safe to commit when using ${NPM_TOKEN} environment variable
+
+# MA Comparison - generated JSON from CSV (regenerated at build)
+data/ma/generated/*.json
