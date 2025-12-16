@@ -259,19 +259,40 @@ function applySearch(vendors: Vendor[], search: string): Vendor[] {
 // Helper Functions
 // =============================================================================
 
+/**
+ * Map UI channel names to feature categories and search terms
+ */
+const channelMapping: Record<string, string[]> = {
+  Email: ['Email Marketing', 'email'],
+  SMS: ['SMS Marketing', 'sms'],
+  WhatsApp: ['WhatsApp', 'whatsapp'],
+  Push: ['Push Notifications', 'push'],
+  'In-App': ['In-App Messaging', 'in-app'],
+  'Web Push': ['Push Notifications', 'web push'],
+};
+
+function hasChannel(vendor: Vendor, channel: string): boolean {
+  const searchTerms = channelMapping[channel] || [channel.toLowerCase()];
+
+  // Check feature categories
+  const hasFeature = vendor.features.some((f) =>
+    searchTerms.some((term) =>
+      f.category.toLowerCase().includes(term.toLowerCase())
+    )
+  );
+  if (hasFeature) return true;
+
+  // Check strength tags
+  const hasTag = vendor.strength_tags.some((tag) =>
+    searchTerms.some((term) => tag.toLowerCase().includes(term.toLowerCase()))
+  );
+  return hasTag;
+}
+
 function hasAnyChannel(vendor: Vendor, requiredChannels: string[]): boolean {
-  const vendorChannels = vendor.features
-    .filter((f) => f.category.toLowerCase() === 'channels')
-    .map((f) => f.feature.toLowerCase());
-
-  const channelTags = vendor.strength_tags.map((t) => t.toLowerCase());
-
+  // Return true if vendor has at least one of the required channels
   for (const channel of requiredChannels) {
-    const channelLower = channel.toLowerCase();
-    if (
-      vendorChannels.some((vc) => vc.includes(channelLower)) ||
-      channelTags.some((ct) => ct.includes(channelLower))
-    ) {
+    if (hasChannel(vendor, channel)) {
       return true;
     }
   }
