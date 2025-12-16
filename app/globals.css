@@ -1,42 +1,13 @@
-@import "tailwindcss";
+/* Import UI Kit theme (includes Tailwind, brand colors, fonts) */
+@import "@brevogrowth/brevo-tools-ui-kit/theme.css";
+
+/* Enable Tailwind to scan UI Kit components */
+@import "@brevogrowth/brevo-tools-ui-kit/source.css";
+
+/* Typography plugin */
 @plugin "@tailwindcss/typography";
 
-/* Font family definitions */
-@theme {
-  --font-tomato: 'Tomato Grotesk', system-ui, sans-serif;
-  --font-inter: 'Inter', system-ui, sans-serif;
-}
-
-@theme {
-  /* Brand colors - override these per-project in config/branding.ts */
-  --color-brand-light: #FFFFFF;
-  --color-brand-primary: #00925D;
-  --color-brand-primary-dark: #007A4D;
-  --color-brand-secondary: #0B1221;
-  --color-brand-accent: #0068FF;
-
-  /* Semantic color aliases (for backwards compatibility) */
-  --color-brevo-light: var(--color-brand-light);
-  --color-brevo-green: var(--color-brand-primary);
-  --color-brevo-dark: var(--color-brand-secondary);
-  --color-brevo-dark-green: var(--color-brand-primary-dark);
-  --color-brevo-blue: var(--color-brand-accent);
-
-  /* Status colors */
-  --color-status-success: #059669;
-  --color-status-warning: #F59E0B;
-  --color-status-error: #EF4444;
-
-  /* Text colors */
-  --color-text-primary: #111827;
-  --color-text-secondary: #6B7280;
-  --color-text-muted: #9CA3AF;
-
-  /* Border colors */
-  --color-border-default: #D1D5DB;
-  --color-border-focus: var(--color-brand-primary);
-}
-
+/* Project-specific overrides */
 body {
   background-color: var(--color-brand-light);
   color: var(--color-text-primary);
@@ -47,28 +18,4 @@ input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--color-brand-primary);
   box-shadow: 0 0 0 3px rgba(0, 146, 93, 0.1);
-}
-
-/* Button primary styles */
-.btn-primary {
-  background-color: var(--color-brand-primary);
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: var(--color-brand-primary-dark);
-}
-
-/* Slow pulse animation for loading banner */
-@keyframes pulse-slow {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.85;
-  }
-}
-
-.animate-pulse-slow {
-  animation: pulse-slow 3s ease-in-out infinite;
 }
