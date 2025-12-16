@@ -19,7 +19,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@brevogrowth/lead-capture": "^1.0.0",
+    "@brevogrowth/brevo-tools-ui-kit": "0.1.1",
+    "@brevogrowth/lead-capture": "1.1.1",
     "@supabase/supabase-js": "^2.86.2",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24.10.1",
