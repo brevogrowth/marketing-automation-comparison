@@ -805,9 +805,15 @@
       "governance": "Governance Erforderlich",
       "governanceHelp": "Benötigen Sie SSO, RBAC, Multi-Brand?",
       "implementationTolerance": "Implementierungstoleranz",
-      "implementationToleranceHelp": "Wie viel Setup-Komplexität ist akzeptabel?"
+      "implementationToleranceHelp": "Wie viel Setup-Komplexität ist akzeptabel?",
+      "tip": {
+        "title": "Profi-Tipp",
+        "content": "Klicken Sie auf eine Anbieterkarte, um Details, Bewertungen und Nutzerfeedback zu sehen."
+      }
     },
     "vendors": {
+      "topPicks": "Top-Empfehlungen für Sie",
+      "noVendorsFound": "Keine Anbieter gefunden",
       "recommended": "Für Sie empfohlen",
       "whyRecommended": "Warum es passt",
       "compare": "Vergleichen",

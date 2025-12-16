@@ -805,9 +805,15 @@
       "governance": "Governance Required",
       "governanceHelp": "Need SSO, RBAC, multi-brand?",
       "implementationTolerance": "Implementation Tolerance",
-      "implementationToleranceHelp": "How much setup complexity is acceptable?"
+      "implementationToleranceHelp": "How much setup complexity is acceptable?",
+      "tip": {
+        "title": "Pro tip",
+        "content": "Click on any vendor card to see detailed features, ratings, and user feedback."
+      }
     },
     "vendors": {
+      "topPicks": "Top Picks for You",
+      "noVendorsFound": "No vendors found",
       "recommended": "Recommended for you",
       "whyRecommended": "Why this fits",
       "compare": "Compare",
