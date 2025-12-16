@@ -260,15 +260,16 @@ function applySearch(vendors: Vendor[], search: string): Vendor[] {
 // =============================================================================
 
 /**
- * Map UI channel names to feature categories and search terms
+ * Map UI channel values (lowercase from config/ma.ts) to feature categories and search terms
+ * Keys must match the values from marketingChannels in config/ma.ts
  */
 const channelMapping: Record<string, string[]> = {
-  Email: ['Email Marketing', 'email'],
-  SMS: ['SMS Marketing', 'sms'],
-  WhatsApp: ['WhatsApp', 'whatsapp'],
-  Push: ['Push Notifications', 'push'],
-  'In-App': ['In-App Messaging', 'in-app'],
-  'Web Push': ['Push Notifications', 'web push'],
+  email: ['Email Marketing', 'email'],
+  sms: ['SMS Marketing', 'sms'],
+  whatsapp: ['WhatsApp', 'whatsapp'],
+  push: ['Push Notifications', 'push', 'mobile push'],
+  'in-app': ['In-App Messaging', 'in-app', 'in app'],
+  'web-push': ['Push Notifications', 'web push', 'web-push'],
 };
 
 function hasChannel(vendor: Vendor, channel: string): boolean {

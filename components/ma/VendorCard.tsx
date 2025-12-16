@@ -6,6 +6,101 @@ import { scoreVendor } from '@/lib/ma/scoring';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { complexityLabels, companySizeLabels } from '@/config/ma';
 
+/**
+ * Manual domain mapping for vendors where automatic extraction may fail
+ * or where a specific domain works better with Clearbit
+ */
+const vendorDomainOverrides: Record<string, string> = {
+  'brevo': 'brevo.com',
+  'salesforce-marketing-cloud': 'salesforce.com',
+  'adobe-campaign': 'adobe.com',
+  'pardot': 'salesforce.com',
+  'oracle-responsys': 'oracle.com',
+  'hubspot': 'hubspot.com',
+  'activecampaign': 'activecampaign.com',
+  'mailchimp': 'mailchimp.com',
+  'klaviyo': 'klaviyo.com',
+  'braze': 'braze.com',
+  'emarsys': 'emarsys.com',
+  'getresponse': 'getresponse.com',
+  'benchmark-email': 'benchmarkemail.com',
+  'activetrail': 'activetrail.com',
+  'mapp-cloud': 'mapp.com',
+  'zeta': 'zetaglobal.com',
+  'acoustic': 'acoustic.com',
+  'blueshift': 'blueshift.com',
+  'ortto': 'ortto.com',
+  'dolist': 'dolist.com',
+  'dialog-insight': 'dialoginsight.com',
+  'magnews': 'magnews.com',
+  'plezi': 'plezi.co',
+  'webmecanik': 'webmecanik.com',
+  'act-on': 'act-on.com',
+  'splio': 'splio.com',
+  'actito': 'actito.com',
+  'selligent': 'selligent.com',
+  'np6': 'np6.com',
+  '1by1': '1by1.io',
+  'scale': 'scale.com',
+};
+
+/**
+ * Extract domain from URL for Clearbit logo API
+ */
+function getDomainFromUrl(url: string, vendorId?: string): string {
+  // Use override if available
+  if (vendorId && vendorDomainOverrides[vendorId]) {
+    return vendorDomainOverrides[vendorId];
+  }
+
+  try {
+    const urlObj = new URL(url.startsWith('http') ? url : `https://${url}`);
+    return urlObj.hostname.replace('www.', '');
+  } catch {
+    return url.replace(/^(https?:\/\/)?(www\.)?/, '').split('/')[0];
+  }
+}
+
+/**
+ * Vendor Logo component with fallback chain:
+ * 1. Clearbit API (primary - reliable source) → 2. First letter with brand color
+ */
+function VendorLogo({ vendor }: { vendor: Vendor }) {
+  const [imgError, setImgError] = useState(false);
+
+  const domain = getDomainFromUrl(vendor.website_url, vendor.vendor_id);
+  const clearbitUrl = `https://logo.clearbit.com/${domain}`;
+
+  // If Clearbit fails, show styled initial
+  if (imgError) {
+    // Generate a consistent color based on vendor name
+    const colors = [
+      'bg-blue-500', 'bg-emerald-500', 'bg-purple-500', 'bg-orange-500',
+      'bg-pink-500', 'bg-indigo-500', 'bg-teal-500', 'bg-rose-500'
+    ];
+    const colorIndex = vendor.name.charCodeAt(0) % colors.length;
+
+    return (
+      <div className={`w-7 h-7 rounded-md ${colors[colorIndex]} flex items-center justify-center`}>
+        <span className="text-sm font-bold text-white">
+          {vendor.name.charAt(0)}
+        </span>
+      </div>
+    );
+  }
+
+  // Use Clearbit as primary source
+  return (
+    <img
+      src={clearbitUrl}
+      alt={`${vendor.name} logo`}
+      className="w-7 h-7 object-contain rounded-md"
+      loading="lazy"
+      onError={() => setImgError(true)}
+    />
+  );
+}
+
 interface VendorCardProps {
   vendor: Vendor;
   profile: UserProfile;
@@ -120,21 +215,7 @@ export function VendorCard({
 
           {/* Logo */}
           <div className="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center flex-shrink-0 border border-gray-100">
-            {vendor.logo_path ? (
-              <img
-                src={vendor.logo_path}
-                alt={`${vendor.name} logo`}
-                className="w-7 h-7 object-contain"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none';
-                  (e.target as HTMLImageElement).parentElement!.innerHTML = `<span class="text-sm font-semibold text-gray-400">${vendor.name.charAt(0)}</span>`;
-                }}
-              />
-            ) : (
-              <span className="text-sm font-semibold text-gray-400">
-                {vendor.name.charAt(0)}
-              </span>
-            )}
+            <VendorLogo vendor={vendor} />
           </div>
 
           {/* Name & Rating */}
