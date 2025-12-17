@@ -6,6 +6,7 @@ import Link from 'next/link';
 import {
   ToolLayout,
   Container,
+  SidebarLayout,
   Button,
   cn,
 } from '@brevogrowth/brevo-tools-ui-kit';
@@ -283,10 +284,45 @@ export default function MAComparison() {
           </Button>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-          {/* Sidebar - Desktop */}
-          <aside className="hidden lg:block lg:w-1/4 xl:w-1/5">
-            {isLoading ? (
+        {/* Sidebar - Mobile Overlay */}
+        {sidebarOpen && (
+          <div className="fixed inset-0 z-50 lg:hidden">
+            <div
+              className="absolute inset-0 bg-black/50"
+              onClick={() => setSidebarOpen(false)}
+            />
+            <div className="absolute inset-y-0 left-0 w-full max-w-sm bg-gray-50 shadow-xl overflow-y-auto">
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-lg font-semibold text-gray-900">
+                    {ma?.sidebar?.profileTitle || 'Filters & Profile'}
+                  </h2>
+                  <button
+                    type="button"
+                    onClick={() => setSidebarOpen(false)}
+                    className="p-2 text-gray-500 hover:text-gray-700 rounded-lg hover:bg-gray-100 transition-colors"
+                  >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <MASidebar
+                  profile={profile}
+                  onProfileChange={handleProfileChange}
+                  advanced={advanced}
+                  onAdvancedChange={handleAdvancedChange}
+                  isUnlocked={isUnlocked || advanced !== null}
+                  onUnlock={handleUnlockAdvanced}
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+        <SidebarLayout
+          sidebar={
+            isLoading ? (
               <MASidebarLoadingState />
             ) : (
               <MASidebar
@@ -297,76 +333,40 @@ export default function MAComparison() {
                 isUnlocked={isUnlocked || advanced !== null}
                 onUnlock={handleUnlockAdvanced}
               />
-            )}
-          </aside>
-
-          {/* Sidebar - Mobile Overlay */}
-          {sidebarOpen && (
-            <div className="fixed inset-0 z-50 lg:hidden">
-              <div
-                className="absolute inset-0 bg-black/50"
-                onClick={() => setSidebarOpen(false)}
+            )
+          }
+          sidebarPosition="left"
+          stickySidebar
+          gap="lg"
+        >
+          {isLoading ? (
+            <MALoadingState />
+          ) : (
+            <div className="space-y-4">
+              {/* Toolbar */}
+              <CompareToolbar
+                search={search}
+                onSearchChange={setSearch}
+                sortBy={sortBy}
+                onSortChange={setSortBy}
+                compareMode={compareMode}
+                onCompareModeChange={handleCompareModeChange}
+                compareCount={compareVendorIds.length}
+                totalCount={filterResult.vendors.length}
               />
-              <div className="absolute inset-y-0 left-0 w-full max-w-sm bg-gray-50 shadow-xl overflow-y-auto">
-                <div className="p-4">
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-gray-900">
-                      {ma?.sidebar?.profileTitle || 'Filters & Profile'}
-                    </h2>
-                    <button
-                      type="button"
-                      onClick={() => setSidebarOpen(false)}
-                      className="p-2 text-gray-500 hover:text-gray-700 rounded-lg hover:bg-gray-100 transition-colors"
-                    >
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
-                  <MASidebar
-                    profile={profile}
-                    onProfileChange={handleProfileChange}
-                    advanced={advanced}
-                    onAdvancedChange={handleAdvancedChange}
-                    isUnlocked={isUnlocked || advanced !== null}
-                    onUnlock={handleUnlockAdvanced}
-                  />
-                </div>
-              </div>
+
+              {/* Vendor List */}
+              <VendorList
+                filterResult={filterResult}
+                profile={profile}
+                advanced={advanced}
+                compareMode={compareMode}
+                compareVendors={compareVendorIds}
+                onToggleCompare={handleToggleCompare}
+              />
             </div>
           )}
-
-          {/* Main Content */}
-          <section className="lg:w-3/4 xl:w-4/5">
-            {isLoading ? (
-              <MALoadingState />
-            ) : (
-              <div className="space-y-4">
-                {/* Toolbar */}
-                <CompareToolbar
-                  search={search}
-                  onSearchChange={setSearch}
-                  sortBy={sortBy}
-                  onSortChange={setSortBy}
-                  compareMode={compareMode}
-                  onCompareModeChange={handleCompareModeChange}
-                  compareCount={compareVendorIds.length}
-                  totalCount={filterResult.vendors.length}
-                />
-
-                {/* Vendor List */}
-                <VendorList
-                  filterResult={filterResult}
-                  profile={profile}
-                  advanced={advanced}
-                  compareMode={compareMode}
-                  compareVendors={compareVendorIds}
-                  onToggleCompare={handleToggleCompare}
-                />
-              </div>
-            )}
-          </section>
-        </div>
+        </SidebarLayout>
 
         {/* CTA Section */}
         <MACallToAction />

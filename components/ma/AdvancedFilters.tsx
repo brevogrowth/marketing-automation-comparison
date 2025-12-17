@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { ToggleGroup } from '@brevogrowth/brevo-tools-ui-kit';
 import type { AdvancedFilters as AdvancedFiltersType } from '@/src/types/ma';
 import { marketingChannels, popularIntegrations } from '@/config/ma';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -103,23 +104,16 @@ export function AdvancedFilters({ filters, onChange }: AdvancedFiltersProps) {
           </svg>
           {ma?.sidebar?.budgetSensitivity || 'Budget Priority'}
         </label>
-        <div className="grid grid-cols-3 gap-1.5">
-          {budgetOptions.map((option) => (
-            <button
-              key={option.value}
-              type="button"
-              onClick={() => onChange({ ...filters, budget_sensitivity: option.value })}
-              className={`flex flex-col items-center gap-0.5 px-2 py-2 text-xs rounded-lg border transition-all ${
-                filters.budget_sensitivity === option.value
-                  ? 'bg-brevo-green text-white border-brevo-green shadow-sm'
-                  : 'bg-white text-gray-600 border-gray-200 hover:border-brevo-green hover:text-brevo-green'
-              }`}
-            >
-              <span>{option.icon}</span>
-              <span className="font-medium">{ma?.budgetLevels?.[option.value] || option.label}</span>
-            </button>
-          ))}
-        </div>
+        <ToggleGroup
+          variant="solid"
+          options={budgetOptions.map((option) => ({
+            value: option.value,
+            label: ma?.budgetLevels?.[option.value] || option.label,
+            sublabel: option.icon,
+          }))}
+          value={filters.budget_sensitivity}
+          onChange={(value) => onChange({ ...filters, budget_sensitivity: value as 'low' | 'medium' | 'high' })}
+        />
       </div>
 
       {/* Governance Required */}
@@ -151,26 +145,16 @@ export function AdvancedFilters({ filters, onChange }: AdvancedFiltersProps) {
           </svg>
           {ma?.sidebar?.implementationTolerance || 'Setup Time'}
         </label>
-        <div className="grid grid-cols-3 gap-1.5">
-          {implementationOptions.map((option) => (
-            <button
-              key={option.value}
-              type="button"
-              onClick={() => onChange({ ...filters, implementation_tolerance: option.value })}
-              className={`flex flex-col items-center gap-0.5 px-2 py-2 text-xs rounded-lg border transition-all ${
-                filters.implementation_tolerance === option.value
-                  ? 'bg-brevo-green text-white border-brevo-green shadow-sm'
-                  : 'bg-white text-gray-600 border-gray-200 hover:border-brevo-green hover:text-brevo-green'
-              }`}
-            >
-              <span>{option.icon}</span>
-              <span className="font-medium">{ma?.implementationLevels?.[option.value] || option.label}</span>
-              <span className={`text-[10px] ${filters.implementation_tolerance === option.value ? 'text-white/70' : 'text-gray-400'}`}>
-                {option.description}
-              </span>
-            </button>
-          ))}
-        </div>
+        <ToggleGroup
+          variant="solid"
+          options={implementationOptions.map((option) => ({
+            value: option.value,
+            label: ma?.implementationLevels?.[option.value] || option.label,
+            sublabel: `${option.icon} ${option.description}`,
+          }))}
+          value={filters.implementation_tolerance}
+          onChange={(value) => onChange({ ...filters, implementation_tolerance: value as 'low' | 'medium' | 'high' })}
+        />
       </div>
     </div>
   );

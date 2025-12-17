@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Card, Button, Badge, cn } from '@brevogrowth/brevo-tools-ui-kit';
+import { Card, Button, Badge, Select, cn } from '@brevogrowth/brevo-tools-ui-kit';
 import type { SortOption } from '@/src/types/ma';
 import { sortOptions } from '@/config/ma';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -74,26 +74,14 @@ export function CompareToolbar({
 
           {/* Sort */}
           <div className="flex items-center gap-2">
-            <div className="relative">
-              <select
-                id="sort"
-                value={sortBy}
-                onChange={(e) => onSortChange(e.target.value as SortOption)}
-                className="pl-8 pr-8 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brevo-green/20 focus:border-brevo-green bg-white text-sm text-gray-700 appearance-none cursor-pointer hover:border-gray-300 transition-colors"
-              >
-                {sortOptions.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {ma?.toolbar?.[option.value] || option.label}
-                  </option>
-                ))}
-              </select>
-              <svg className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
-              </svg>
-              <svg className="absolute right-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
+            <Select
+              options={sortOptions.map((option) => ({
+                value: option.value,
+                label: ma?.toolbar?.[option.value] || option.label,
+              }))}
+              value={sortBy}
+              onChange={(value) => onSortChange(value as SortOption)}
+            />
           </div>
 
           {/* Compare Toggle */}
