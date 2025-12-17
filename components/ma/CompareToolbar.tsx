@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Card, Button, Badge, cn } from '@brevogrowth/brevo-tools-ui-kit';
 import type { SortOption } from '@/src/types/ma';
 import { sortOptions } from '@/config/ma';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -34,7 +35,7 @@ export function CompareToolbar({
       {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-r from-white via-gray-50/50 to-white rounded-xl" />
 
-      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/80 p-4">
+      <Card padding="md" className="relative bg-white/80 backdrop-blur-sm">
         <div className="flex flex-col sm:flex-row gap-3">
           {/* Search */}
           <div className="relative flex-1">
@@ -96,15 +97,14 @@ export function CompareToolbar({
           </div>
 
           {/* Compare Toggle */}
-          <button
-            type="button"
-            data-testid="compare-toggle"
+          <Button
+            variant={compareMode ? 'primary' : 'secondary'}
             onClick={() => onCompareModeChange(!compareMode)}
-            className={`flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-              compareMode
-                ? 'bg-brevo-green text-white shadow-sm shadow-brevo-green/20'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-800'
-            }`}
+            data-testid="compare-toggle"
+            className={cn(
+              'gap-2',
+              compareMode && 'shadow-sm shadow-brevo-green/20'
+            )}
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -120,16 +120,16 @@ export function CompareToolbar({
                 {compareCount}
               </span>
             )}
-          </button>
+          </Button>
         </div>
 
         {/* Results count - more subtle */}
         <div className="mt-3 flex items-center justify-between">
           <div className="flex items-center gap-2 text-xs text-gray-500">
-            <span className="inline-flex items-center gap-1.5 px-2 py-0.5 bg-gray-100 rounded-full">
-              <span className="w-1.5 h-1.5 bg-brevo-green rounded-full"></span>
+            <Badge variant="default" size="sm">
+              <span className="w-1.5 h-1.5 bg-brevo-green rounded-full mr-1.5"></span>
               {totalCount} vendor{totalCount !== 1 ? 's' : ''}
-            </span>
+            </Badge>
           </div>
           {compareMode && (
             <span className="text-xs text-brevo-green font-medium">
@@ -137,7 +137,7 @@ export function CompareToolbar({
             </span>
           )}
         </div>
-      </div>
+      </Card>
     </div>
   );
 }

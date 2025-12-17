@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Button } from '@brevogrowth/brevo-tools-ui-kit';
 import { branding } from '@/config/branding';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -25,22 +26,27 @@ export function MACallToAction() {
             href={branding.links.trial}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-brevo-green font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
-            {ma?.cta?.tryBrevo || 'Try Brevo Free'}
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+            <Button
+              variant="secondary"
+              size="lg"
+              className="bg-white text-brevo-green hover:bg-gray-100 font-semibold gap-2"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              />
-            </svg>
+              {ma?.cta?.tryBrevo || 'Try Brevo Free'}
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </Button>
           </a>
 
           {/* Secondary CTA - Book Demo */}
@@ -48,9 +54,14 @@ export function MACallToAction() {
             href={branding.links.demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
           >
-            {ma?.cta?.bookDemo || 'Book a Demo'}
+            <Button
+              variant="ghost"
+              size="lg"
+              className="border-2 border-white text-white hover:bg-white/10 font-semibold"
+            >
+              {ma?.cta?.bookDemo || 'Book a Demo'}
+            </Button>
           </a>
         </div>
 
